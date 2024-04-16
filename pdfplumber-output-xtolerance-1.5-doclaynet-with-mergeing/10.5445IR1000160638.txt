@@ -1,0 +1,1320 @@
+Verhaltensentscheidung
+für automatisierte Fahrzeuge
+mittels Arbitrationsgraphen
+Zur Erlangung des akademischen Grades eines
+Doktors der Ingenieurwissenschaften (Dr.-Ing.)
+von der KIT-Fakultät für Maschinenbau
+des Karlsruher Instituts für Technologie (KIT)
+angenommene
+Dissertation
+von
+M.Sc. Piotr Franciszek Orzechowski
+Tag der mündlichen Prüfung:
+Hauptreferent:
+Korreferent:
+17.10.2022
+Prof. Dr.-Ing. Christoph Stiller
+Prof. Dr.-Ing. Tamim Asfour
+Dieses Werk ist lizenziert unter einer Creative Commons
+Namensnennung 4.0 International Lizenz (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/deed.de
+Abstract
+Automated driving promises to improve safety, comfort, and efficiency of road
+traffic and has the potential to catalyze a fundamental transformation of mo-
+bility. In addition to perceiving and interpreting its environment, an auto-
+mated vehicle must reliably make safe and temporally consistent decisions —
+for example, whether, when and how to change lanes.
+Since specialized behavior planning solutions already exist for many scenar-
+ios, the decision-making should be able to combine them appropriately. At
+the same time, it must be robust against faulty outputs or even failures of
+individual behavior options. Finally, the decision-making process should be
+transparent and traceable to enable an effective development process.
+Therefore, this work first proposes an application-independent system archi-
+tecture for secure and robust behavioral decision-making. It assembles basic
+behavior blocks in a hierarchical arbitration graph and ensures safety through
+verification and diverse levels of fallback. The respective behavior blocks are
+responsible for situation interpretation and behavior planning, while generic
+arbitrators carry out the decision process.
+This architecture is then applied to the context of automated driving and eval-
+uated in simulation. Thereby, the behavior options plan individual driving
+maneuvers and output them as trajectories. Multiple verifiers check these
+for feasibility, drivability and road safety. If a driving maneuver turns out to
+be unsafe, for example, the arbitration uses its alternative options and three
+fallback levels to continue generating safe behavior.
+The evaluation shows that the presented method produces safe and stable
+driving behavior even at high failure rates. Meanwhile, the decoupling of sit-
+uation interpretation and decision-making contributes to a transparent and
+comprehensible decision-making process. This rigorous modularity allows to
+combine a wide range of behavior planning methods in an efficient and scal-
+able manner. In addition, the bottom-up design leads to fast prototyping and
+iterative enhancement of the overall system.
+Kurzfassung
+Automatisiertes Fahren verspricht die Sicherheit, den Komfort und die Effi-
+zienz des Straßenverkehrs zu verbessern und hat das Potenzial eine grund-
+legende Transformation der Mobilität anzustoßen. Neben der Wahrnehmung
+und Interpretation seines Umfelds muss ein automatisiertes Fahrzeug zuver-
+lässig sichere und zeitlich konsistente Entscheidungen treffen — bspw. ob,
+wann und wie ein Fahrstreifenwechsel durchgeführt wird.
+Da es für viele Szenarien bereits spezialisierte Lösungsansätze zur Verhaltens-
+planung gibt, sollte die Verhaltensentscheidung in der Lage sein, diese sinn-
+voll miteinander zu kombinieren. Gleichzeitig muss sie robust gegen fehler-
+hafte Ausgaben oder gar Ausfälle einzelner Verhaltensoptionen sein. Schließ-
+lich sollte der Entscheidungsprozess transparent und nachvollziehbar sein,
+um einen effektiven Entwicklungsprozess zu ermöglichen.
+Daher wird in dieser Arbeit zunächst eine anwendungsunabhängige System-
+architektur zur sicheren und robusten Verhaltensentscheidung vorgeschla-
+gen. Diese setzt grundlegende Verhaltensoptionen in einem hierarchischen
+Arbitrationsgraphen zusammen und sichert dabei die Stellgrößen mittels
+Verifikation und diversen Rückfallebenen ab. Die jeweiligen Verhaltensbau-
+steine übernehmen dabei die Situationsinterpretation und Verhaltensplanung,
+während generische Arbitratoren den Entscheidungsprozess realisieren.
+Anschließend wird diese Architektur auf den Kontext des automatisierten
+Fahrens angewandt und in Simulation evaluiert. Dabei planen die Verhaltens-
+optionen einzelne Fahrmanöver und geben diese als Trajektorien aus. Drei Ve-
+rifikatoren prüfen diese auf Gültigkeit, Realisierbarkeit und Verkehrssicher-
+heit. Stellt sich ein Fahrmanöver bspw. als unsicher heraus, greift die Arbi-
+tration auf Alternativoptionen und drei Rückfallebenen zurück, um weiterhin
+ein sicheres Verhalten zu erzeugen.
+Die Evaluation zeigt, dass die vorgestellte Methode auch bei hohen Ausfall-
+raten ein sicheres und stabiles Fahrverhalten erzeugt. Die Entkopplung von
+Situationsinterpretation und Verhaltensentscheidung trägt außerdem zu einer
+transparenten und nachvollziehbaren Entscheidungsfindung bei. Dank kon-
+sequenter Modularität können vielfältige Methoden der Verhaltensplanung
+effizient und skalierbar miteinander kombiniert werden. Zudem ermöglicht
+der Bottom-Up Entwurf schnelles Prototyping und eine iterative Weiterent-
+wicklung des Gesamtsystems.
+Danksagung
+Die vorliegende Arbeit entstand während meiner Tätigkeit als wissenschaftli-
+cher Mitarbeiter am Institut für Mess- und Regelungstechnik (MRT) des Karls-
+ruher Instituts für Technologie (KIT) sowie am FZI Forschungszentrum In-
+formatik. Sie wäre nicht möglich gewesen ohne die vielfältige Unterstützung
+meiner KollegInnen, Familie und Freunde.
+Zunächst möchte ich mich bei Herrn Prof. Dr.-Ing. Christoph Stiller bedanken,
+für die Möglichkeit der Promotion und die tollen Rahmenbedingungen, die er
+am MRT geschaffen hat. Besonders habe ich zu schätzen gelernt, dass Ergeb-
+nisse direkt auf den Versuchsträgern integriert und anschließend auf Demos
+sowie im öffentlichen Straßenverkehr in Aktion gebracht werden konnten.
+Ebenso danke ich Prof. Dr.-Ing. Tamim Asfour für die Übernahme des Korre-
+ferats und das inhaltliche Feedback aus Sicht der humanoiden Robotik. Für die
+inhaltliche Inspiration zu den Arbitratoren und hervorragende wissenschaft-
+liche Betreuung möchte ich Herrn Dr. rer. nat. Martin Lauer danken.
+Meine Promotion startete ich insbesondere aus der Motivation heraus, ein
+wissenschaftliches Thema anwendungsnah zu erforschen und im Team um-
+zusetzen. Am MRT habe ich hierfür ein tolles Doktorandenkollegium gefun-
+den, geprägt von Teamgeist, Ansporn und Spaß an der Sache. Ich verzich-
+te darauf, alle KollegInnen aufzuzählen, hat doch jeder seinen Teil beigetra-
+gen. Daher bedanke ich mich bei allen für die anregenden sowie unterhaltsa-
+men Fach- und Triviadiskussionen in unseren Sommerseminaren, Gruppen-
+meetings, Konferenzbesuchen, Social-Tuesdays und endlosen Kaffeepausen.
+Ganz konkret einen Dank für das Korrekturlesen an Frank, Hendrik, Jan, Ling-
+guang, Martin, Nick und Sahin. Schließlich ein besonderer Dank an Christoph
+für die enge inhaltliche Zusammenarbeit an den Arbitrationsgraphen. Chris-
+toph hat einen wesentlichen Beitrag zum Gelingen dieser Arbeit beigetragen.
+Auch dem Sekretariat möchte ich danken, das durch seinen Einsatz einen rei-
+bungslosen Forschungs- und Lehrbetrieb ermöglicht. Ebenso den Kollegen
+aus den Werkstätten mein Dank, sie erwecken große sowie kleine Versuchs-
+träger zum Leben und halten sie für die Doktoranden und Studis am Laufen.
+Einen Gruß möchte ich auch an die Hochschulgruppe KITcar aussprechen, die
+mich in meinem Masterstudium sehr geprägt und letztlich zu der Promotion
+im Automatisierten Fahren gebracht hat.
+Nicht zuletzt möchte ich meinen Eltern von Herzen danken. Sie haben mich
+von klein auf geliebt, gefördert und ermutigt – und somit im weiteren Sinne
+die Grundlage für diese Arbeit geschaffen. Mein größter Dank gilt meiner Frau
+Anjuli, die mich tagtäglich bereichert, inspiriert, stärkt und unterstützt. Ohne
+ihren Rückhalt hätte ich diese Arbeit vermutlich nicht zu Ende gebracht.
+1 Einleitung
+Dieses Kapitel stellt zunächst die Motivation für die vorliegende Dissertati-
+on, sowie das zugrunde liegende Arbeitsumfeld vor. Anschließend wird in
+Abschnitt 1.2 der Stand der Technik zu verwandten Forschungsthemen um-
+rissen, bevor Abschnitt 1.3 die Beiträge dieser Arbeit zusammenfasst und Ab-
+schnitt 1.4 einen Überblick über die weiteren Kapitel gibt.
+1.1 Motivation und Umfeld der Arbeit
+Fahrerassistenzsysteme und automatisiertes Fahren haben in den letzten vier
+Jahrzehnten enorme Fortschritte erreicht [Ben14, Bad21]. Trotz gestiegener
+Neuzulassungen hat die Fahrerassistenz auf Stabilisierungsebene, wie ABS
+und ESP, die Zahl tödlicher Unfälle drastisch reduzieren können. Dies leite-
+te u. a. die Entwicklung von Unfallwarn- und Komfortsystemen ein, die sich
+mittlerweile fest auf dem Automobilmarkt etabliert haben. Das automatisierte
+Fahren stellt den nächsten Schritt dar, bei dem das Fahrzeug je nach Automa-
+tisierungsgrad die dynamische Fahraufgabe teilweise oder sogar ganz vom
+Menschen übernimmt [SAE21].
+Durch diese weitere Automatisierung soll die Verkehrssicherheit sowie der
+Fahrkomfort noch weiter erhöht sowie der Verkehrsfluss optimiert und somit
+Emissionen reduziert werden. Zusätzlich werden vollautomatisierte Fahrzeu-
+ge neue Formen der Mobilität ermöglichen, die sogar gesellschaftliche The-
+men wie die soziale Teilhabe mobilitätseingeschränkter Menschen berühren.
+Erhöht sich durch die Automatisierung zudem die Attraktivität von Carsha-
+ring und anderen alternativen Mobilitätsformen, besteht die Chance heuti-
+ge Parkflächen wieder zu lebenswerten öffentlichen Räumen umzugestalten.
+Schließlich werden die hohen Investitionen zweifellos auch durch wirtschaft-
+liche Überlegungen, wie bspw. Kosteneinsparungen in der Logistik und der
+Personenbeförderung, motiviert. Einerseits sind in diesen Branchen folglich
+Arbeitsplatzverluste zu erwarten [Moh22], andererseits verschlechtern sich
+die Arbeitsbedingungen von Berufskraftfahrern in der Logistik immer wei-
+ter [Dri14, Göt22]. Verkehrsverbünde im Öffentlichen Personennahverkehr
+haben zudem seit Jahren Schwierigkeiten ausreichend Berufskraftfahrer zu
+finden [Völ18].
+Teil- oder vollautomatisiertes Fahren hat also das Potenzial, die Art und Weise
+wie wir uns fortbewegen grundlegend hin zu einer sicheren, effizienten, nach-
+haltigen und inklusiven Mobilität zu verändern. Begleitet wird diese Trans-
+formation von einem Wandel in der Arbeitswelt des Mobilitätssektors und
+weiteren, bisweilen kaum voraussehbaren, Sekundäreffekten.
+Angetrieben durch die positiven Gestaltungsmöglichkeiten sowie technologi-
+sche Sprünge im Bereich des Maschinellen Lernens, haben die Forschungsan-
+strengungen im Bereich der Fahrerassistenzsysteme und vollautomatisierter
+Fahrzeuge zuletzt sowohl im akademischen als auch im kommerziellen Be-
+reich drastisch zugenommen. Dabei muss ein automatisiertes Fahrzeug sei-
+ne Umgebung zum einen zuverlässig wahrnehmen, zum anderen auf dieser
+Grundlage sichere Fahrmanöver generieren. Die Verhaltensentscheidung be-
+stimmt hierfür Zeitpunkt, Art und Ausprägung des geplanten Fahrmanövers
+– also ob, wie, wo und wann bspw. ein Fahrstreifenwechsel stattfinden oder
+wann und in welche Parklücke eingeparkt werden soll. Gleichzeitig stellt sie
+sicher, dass das Verhalten zeitlich konsistent, komfortabel, zielführend und
+sicher ist.
+Während die Wahrnehmung auf großen Datensätzen evaluiert werden kann,
+wird die Regelung in Simulation, mittels Hardware-in-the-Loop oder auf ge-
+schlossenem Testgelände auf dem Fahrzeug erprobt. Zwar können auch Teile
+der Verhaltensgenerierung in Simulation validiert werden, allerdings hängt
+ihre Leistungsfähigkeit stark von der Interaktion mit anderen Verkehrsteil-
+nehmern im realen Straßenverkehr ab, da menschliches Verhalten in Simu-
+lation nur unzureichend modelliert werden kann. Daher ist eine sichere und
+robuste Verhaltensentscheidung von wesentlicher Bedeutung, um die Erpro-
+bung und den späteren Einsatz von automatisierten Fahrzeugen im Straßen-
+verkehr zu ermöglichen.
+Gleichzeitig besteht der Bedarf für eine skalierende und generalisierende Soft-
+warearchitektur, die es ermöglicht, die vielfältigen erprobten Verfahren zur
+Verhaltensplanung in bestimmten Szenarien [Hoe17, Mir18, Hub19, Deb21]
+– einschließlich klassischer und probabilistischer Methoden sowie Ansätzen
+des Maschinellen Lernens – in einer übergeordneten Verhaltensentscheidung
+miteinander zu kombinieren. Unternehmen wie Waymo und Uber setzen die
+Generierung von taktischem und strategischem Verhalten jedoch ausschließ-
+lich mittels Maschinellem Lernen, in Teilen sogar in sog. Ende-zu-Ende Archi-
+tekturen, um [Ban19, Cas21]. Deutsche Fahrzeughersteller und -zulieferer set-
+zen hingegen auf klassische Ansätze, wie Endliche Zustandsautomaten oder
+Entscheidungsbäume [Aeb15], die eine solche Kombination von Methoden er-
+möglicht. Aber auch kleinere Forschungseinrichtungen, bspw. aus dem uni-
+versitären Kontext, setzen auf regelbasierte Verfahren zur Entscheidungsfin-
+dung, weil diese einfach umzusetzen und schnell einsatzbereit sind. Bei stei-
+gender Anzahl an Verhaltensoptionen leiden solche Ansätze in der Regel je-
+doch unter schlechter Erklärbarkeit, Wartbarkeit und Skalierbarkeit. Daher
+hat die Robotik viele Architekturen hervorgebracht, um diese Probleme zu
+adressieren. Darunter sind die verhaltensbasierten Systeme und ihre Derivate
+besonders interessant.
+Vor diesem Hintergrund wird in der vorliegenden Arbeit ein vielversprechen-
+des, verhaltensbasiertes Verfahren zur Entscheidungsfindung aus der Robotik
+aufgegriffen und auf den Anwendungsbereich des automatisierten Fahrens
+übertragen. Anschließend wird die Methode mit Maßnahmen aus der For-
+schung zu zuverlässigen und fehlertoleranten Systemen sowie der Verkehrs-
+sicherheit erweitert, um schließlich eine sichere und robuste Verhaltensent-
+scheidung für automatisierte Fahrzeuge zu realisieren. Die vorgeschlagene
+Methode nutzt modulare Verhaltensbausteine in einem hierarchischen Ar-
+bitrationsgraphen, ist skalierbar in der Anzahl der Verhaltensoptionen und
+ermöglicht die Kombination vielfältiger szenariospezifischer Verfahren. Au-
+ßerdem gewährleistet sie eine robuste Ausführung und sicheres Verhalten
+durch Verifikation und diverse Rückfallebenen. Der modulare und hierarchi-
+sche Aufbau ermöglicht zudem einen iterativen Entwurfsprozess, erhöht die
+Wartbarkeit und führt zu einer transparenten sowie nachvollziehbaren Ent-
+scheidungsfindung.
+1.2 Stand der Technik
+Die Literatur ist reich an diversen Verfahren zur Verhaltens- bzw. Trajektori-
+enplanung in spezifischen Situationen sowie zur Verhaltensentscheidung, die
+einer Strategie folgend zwischen diesen Manöveroptionen wählt. Dabei tref-
+fen erstere teilweise auch implizite kombinatorische Manöverentscheidun-
+gen, bspw. wann und in welche Lücke sich das Fahrzeug in einem Kreisver-
+kehr einordnet [Deb21]. Mittels Verhaltensverifikation soll zudem gewähr-
+leistet werden, dass nur sichere Fahrmanöver ausgeführt werden. Im Folgen-
+den wird der Stand der Technik in diesen drei Forschungsfeldern beleuchtet.
+1.2.1 Verhaltensplanung
+Zu den klassischen Methoden der Trajektorienoptimierung zählen u. a.
+Graphensuchverfahren aus der Dynamischen Programmierung, die Mo-
+dellprädiktive Regelung zur Lösung des Optimalsteuerungsproblems und
+direkte oder indirekte Methoden aus der statischen Optimierung [Wer17].
+2013 wurde die sog. Bertha Benz Memorial Route nahezu vollständig auto-
+matisiert befahren. Die Trajektorienplanung wurde hierbei als quadratisches
+Optimierungsproblem formuliert und mittels Sequentieller Quadratischer
+Programmierung gelöst [Zie14a]. Gutjahr u. a. [Gut17] schlagen hingegen
+eine lineare Modellprädiktive Regelung vor, um ein linear-quadratisches
+Optimalsteuerungsproblem zu lösen. Durch eine geschickte Modellierung
+konvergiert das Verfahren garantiert und außergewöhnlich schnell, sofern
+eine Lösung existiert. Schließlich bestimmen Banzhaf u. a. [Ban18] Trajek-
+torien zum Manövrieren in engen Umgebungen mittels Rapidly-exploring
+Random Trees (RRT*) und kinematischen Bewegungsmodellen. Bemerkens-
+wert ist, dass hierbei auch zu erwartende Unsicherheiten in der Regelung
+und Lokalisierung berücksichtigt werden.
+Neben Ansätzen aus der Regelungstechnik und Optimierungstheorie ge-
+winnen probabilistische Methoden sowie Verfahren des Maschinellen Ler-
+nens immer mehr Aufmerksamkeit [Kir21]. Partiell beobachtbare Markow-
+Entscheidungsprobleme (POMDPs) werden eingesetzt, um Unsicherheiten
+explizit in das Entscheidungsproblem zu integrieren. Somit werden Aktionen
+gefördert, die dazu beitragen Unsicherheiten bspw. in der Wahrnehmung
+und Prädiktion zu reduzieren. Hubmann u. a. [Hub18a] planen Trajektorien
+für komplexe Kreuzungssituationen entlang eines vorab bestimmten Pfades,
+wobei die nur indirekt beobachtbare Routenintention anderer Verkehrsteil-
+nehmer mittels POMDP optimal in die Planung einbezogen wird.
+Ansätze des Maschinellen Lernens, auch die des Bestärkenden Lernens, bauen
+häufig auf erfolgreiche Künstliche Neuronale Netze aus der Bildverarbeitung
+auf. Beispielsweise projizieren Chen u. a. [Che19] die Eingangsdaten in Vogel-
+perspektive, reduzieren dieses generierte Bild mithilfe eines Autoencoders in
+eine niedrig-dimensionale Repräsentation (sog. Latente Zustandscodierung)
+und speisen diese bspw. in eine Actor-Critic-Architektur ein. Hiermit gelingt
+es der Methode die Quer- und Längsplanung für einen komplexen, stark be-
+fahrenen Kreisverkehr zu realisieren.
+1.2.2 Verhaltensentscheidung
+Im Bereich der Verhaltensentscheidung finden sich sowohl monothematische
+Methoden als auch generische Architekturen, die es ermöglichen diverse Ver-
+fahren der Verhaltensplanung zu kombinieren. Insbesondere Ende-zu-Ende
+Architekturen des Maschinellen Lernens, setzen auf einen einheitlichen An-
+satz für alle möglichen Manöver- und Trajektorienvarianten. In [Cas21] wird
+die gesamte Verarbeitungskette – von der Wahrnehmung, über die Onlinekar-
+tierung bis hin zur Routenplanung – gelernt. Die Trajektorienkandidaten wer-
+den aus einer Datenbank real beobachteter Experten-Trajektorien entnom-
+men und mit einer ebenfalls gelernten Kostenfunktion bewertet.
+Solche Ansätze des Maschinellen Lernens haben, neben einer einheitlichen
+Formulierung, den Vorteil, dass sie Unsicherheiten in der Situationsinterpre-
+tation implizit mit berücksichtigen. Allerdings sind hierzu meist enorme Da-
+tenmengen und eine leistungsfähige Rechnerinfrastruktur notwendig. Zudem
+bieten sie beim Entwurf und der Weiterentwicklung nur sehr indirekte Mög-
+lichkeiten das Systemverhalten zu beeinflussen. Wird also in spezifischen Si-
+tuationen ein Fehlverhalten beobachtet, ist es schwierig dies gezielt zu ver-
+bessern, zumal bei Systemänderungen im Zweifelsfall auch das Verhalten in
+anderen Situationen verändert wird.
+Klassische Architekturen der Verhaltensentscheidung können solche Kopp-
+lungen reduzieren oder gar vollständig aufheben. Außerdem erlauben sie den
+Einsatz unterschiedlicher Verfahren zur Verhaltensplanung, sodass je nach
+angestrebter Funktionalität oder adressierter Situation die hierfür bestmög-
+liche Methode eingesetzt werden kann. Zunächst wurden vielfach zustands-
+basierte Architekturen, wie Endliche Zustandsautomaten verwendet, um je
+nach Situation einen geeigneten Fahrmodus zu wählen [Mon08, Zie14b]. In
+[Mon08] bspw. bilden die Zustände verschiedene Manöveroptionen – z. B.
+Freie Fahrt, Kreuzung passieren, Einparken und Wenden – ab. [Ard11] stellt
+ein hybrides Konzept vor, das Endliche Zustandsautomaten und Entschei-
+dungsbäume für das hochautomatisierte Fahren auf Autobahnen kombiniert.
+Ein übergeordnetes Netzwerk aus hybriden deterministischen Zustandsauto-
+maten bestimmt dabei den Systemzustand. Daraufhin bestimmen zwei Ent-
+scheidungsbäume den Fahrwunsch, prüfen die Durchführbarkeit von Manö-
+veroptionen und legen schließlich jeweils den Modus für die Quer- und Längs-
+führung fest.
+Zustandsbasierte Architekturen sind i. d. R. einfach umzusetzen und können
+verschiedene Verfahren zur Verhaltensplanung miteinander kombinieren.
+Durch ihren Top-Down Ansatz muss allerdings im Entwurfsprozess, wie auch
+der Weiterentwicklung, stets das Gesamtsystem und die Wechselwirkungen
+einzelner Zustände miteinander berücksichtigt werden. Bei einer großen
+Zahl an Zuständen wird somit die Komplexität von bspw. Endlichen Zu-
+standsautomaten nicht mehr beherrschbar. Folglich skalieren solche Systeme
+nur schlecht mit der Anzahl an Verhaltensoptionen.
+Als Gegenentwurf zu zustandsbasierten Architekturen haben sich in der
+Robotik, ausgehend von Brooks’ Subsumptionskonzept [Bro86], zahlreiche
+verhaltensbasierte Methoden entwickelt. Diese setzen das Gesamtverhalten
+im Bottom-Up Design aus einfachen Teilverhalten zusammen. Die Com-
+puterspielbranche brachte hieraus später die Verhaltensbäume hervor, die
+zunächst in [Ögr12] konzeptionell für unbemannte Luftfahrzeuge eingesetzt
+und anschließend auf weitere Anwendungsgebiete der Robotik übertragen
+wurden [Col18]. Dabei wird die Verhaltensentscheidung über eine Baum-
+struktur mittels sog. Kontrollfluss-Knoten realisiert. Die Blätter des Baumes
+übernehmen hingegen die Verhaltensplanung oder gar Regelung, wobei sie
+direkten Zugriff auf Sensorik und Aktorik haben können.
+Unabhängig davon wurden im Roboterfußball Arbitrationsgraphen entwor-
+fen, die u. a. das Subsumptionskonzept mit Objektorientierter Programmie-
+rung kombinieren [Lau10]. Dabei adressieren modulare Verhaltensbausteine
+grundlegende Verhaltenskompetenzen und übernehmen außerdem die zuge-
+hörige Situationsinterpretation. Jeder Verhaltensbaustein gibt also selbststän-
+dig an, ob sein Verhalten in der vorliegenden Situation sinnvoll anwendbar
+ist. Auf dieser Grundlage entscheiden anwendungsunabhängige Arbitrato-
+ren, die in einer hierarchischen Graphstruktur angeordnet sind, welche Ver-
+haltensoption voraussichtlich am geeignetsten ist. Einheitliche Eingabe- und
+Ausgabeschnittstellen der Verhaltensbausteine und Arbitratoren stellen ih-
+re Wiederverwendbarkeit sicher und erhöhen zugleich die Verständlichkeit
+des Gesamtsystems. In [Orz20] wurden Arbitrationsgraphen erstmalig in den
+Kontext des automatisierten Fahrens übertragen und ihre Vorzüge in Simula-
+tion validiert. Die Verhaltensbausteine realisieren dabei einzelne Fahrmanö-
+ver, wie Folgefahrt, Fahrstreifenwechsel und Einparken. Für die Verhaltens-
+entscheidung wurden Arbitratoren eingesetzt, die zwischen diesen Optionen
+nach festgelegter Priorität und zu erwartenden Routingkosten wählen.
+Verhaltensbasierte Architekturen zeichnen sich u. a. durch eine hohe Reak-
+tivität, konsequente Modularität und entsprechend gute Skalierbarkeit aus.
+Sie sind vergleichbar einfach umzusetzen wie zustandsbasierte Architektu-
+ren, und können ebenfalls verschiedene Verfahren der Verhaltensplanung in
+einem Gesamtsystem kombinieren. Zusätzlich bieten sie durch ihren hierar-
+chisch modularen Aufbau eine optimale Struktur, um einen Verifikationsme-
+chanismus mit Rückfallebenen direkt in die Verhaltensentscheidung zu in-
+tegrieren.
+1.2.3 Verhaltensverifikation
+Die Verifikation geplanter Fahrmanöver bzw. die Absicherung der Verhaltens-
+generierung ist ein noch junges und offenes Forschungsfeld. Bisher werden
+diesbezüglich insbesondere folgende zwei prominente Methodenklassen ver-
+folgt: Das Konzept der Verantwortungsbewussten Sicherheit [Sha17] ist dar-
+auf ausgelegt zu bewerten, ob ein Verhalten für die jeweilige Situation an-
+gemessen und verantwortungsvoll ist. Hierzu formalisiert es Verkehrsregeln,
+legt sinnvolle Annahmen fest und definiert Begriffe wie sicherer Abstand, ge-
+fährliche Situation, angemessene Reaktion und Verantwortung. Die Autoren zei-
+gen zudem, dass es zu keinem Unfall käme, wenn sich alle Verkehrsteilneh-
+mer an die vorgestellten Regeln hielten. Während die einzelnen formulier-
+ten Regeln sich in einfachen mathematischen Formeln niederschlagen, bildet
+das gesamte Konzept einen umfangreichen Katalog an situationsspezifischen
+Regeln und Anforderungen an die zeitlichen sowie räumlichen Abstände in
+Quer- und Längsrichtung, die Fahrzeuggeschwindigkeit und die Beschleuni-
+gung. Die überwältigende Anzahl an festzulegenden Parametern erschwert
+allerdings den Einsatz der Methode.
+Ein einheitlicherer Ansatz basiert auf der Erreichbare-Mengen-Analyse und
+zielt darauf ab, eine beweisbar sichere sog. Fail-Safe-Trajektorie vorzuhalten,
+auf die gewechselt werden kann, sofern eine Kollision droht [Alt16]. Dabei
+wird die Fail-Safe-Trajektorie nur dann als sicher eingestuft, wenn sie kei-
+ne Überlappung mit den Worst-Case-Belegungen anderer Verkehrsteilneh-
+mer hat, also garantiert kollisionsfrei ist. Die Soll-Trajektorie muss hingegen
+nur sicherstellen, dass im nächsten Planungsintervall noch auf die Fail-Safe-
+Trajektorie gewechselt werden kann. Allerdings treffen bisherige Publikatio-
+nen teilweise weitreichende Annahmen, die für die reale Anwendung sicher-
+lich noch relaxiert werden müssen. Beispielsweise gehen sie davon aus, dass
+Fahrzeuge ihren Fahrstreifen – abgesehen von Fahrstreifenwechseln – nicht
+verlassen, worauf man gerade in beengten Kreuzungsbereichen nicht vertrau-
+en kann, insbesondere wenn keine Fahrbahnmarkierungen vorhanden sind.
+Dennoch stellt die Erreichbare-Mengen-Analyse einen hilfreichen Ansatz dar,
+u. a. weil er konsistent, anschaulich und zugleich effizient ist. Zudem lässt sich
+das Konzept der Fail-Safe-Trajektorien sehr gut in eine Verhaltensentschei-
+dung mit Rückfallebenen integrieren.
+1.3 Beiträge der Arbeit
+Diese Arbeit schlägt eine Methode zur Verhaltensgenerierung für automati-
+sierte Fahrzeuge vor, welche bereits innerhalb der Verhaltensentscheidung si-
+cherstellt, dass geplante Fahrmanöver realisierbar und sicher sind. Somit kann
+sie bei riskanten Manövern oder bei Ausfällen einzelner Verhaltensoptionen
+rechtzeitig eingreifen und auf Alternativoptionen oder Rückfallebenen wech-
+seln.
+Hierzu wird ein Arbitrationsgraph entworfen, dessen Verhaltensbausteine
+grundlegende Verhaltenskompetenzen bzw. Fahrmanöver adressieren und
+in Form von Trajektorien ausgeben. Zudem wird das Arbitrationsverfahren
+um einen Verifikationsschritt und eine darauf ausgelegte Fehlerbehandlung
+erweitert. So wird garantiert, dass die Arbitratoren nur solche Trajektorien
+weiterreichen, die die Verifikation bestehen. Für die Rückfallebene werden
+Verhaltensbausteine implementiert, die das vorige Manöver fortsetzen, ei-
+ne vorgehaltene Plan-B-Trajektorie zurückgeben oder eine Notbremsung
+durchführen.
+Schließlich tragen diese Maßnahmen zu einer robusten und sicheren Verhal-
+tensgenerierung bei, die auch auf andere Robotikanwendungen übertragbar
+ist. Die wesentlichen Beiträge dieser Arbeit sind zusammenfassend:
+• Definition einer Szenario-unabhängigen Manöverrepräsentation für
+das automatisierte Fahren.
+• Erweiterung des Arbitrationsverfahrens um eine Verifikationslogik, die
+sicherstellt, dass nur Verhaltensoptionen ausgeführt werden, welche
+einer Verifikation standhalten.
+• Definition dreier Verifikatoren für das automatisierte Fahren, die
+potenzielle Manöver auf Gültigkeit, Realisierbarkeit und
+Verkehrssicherheit überprüfen.
+• Entwurf eines Sicherheitskonzepts, um – mittels Verifikation,
+Echtzeitfähigkeit, Redundanz und Diversität – eine robuste und
+sichere Verhaltensarbitration zu gewährleisten.
+• Evaluation des vorgeschlagenen Sicherheitskonzepts in einer
+anwendungsnahen Simulationsumgebung.
+1.4 Überblick
+Der restliche Teil der Arbeit ist wie folgt aufgebaut.
+In Kapitel 2 wird zunächst eine Einführung in die für diese Arbeit wesent-
+lichen Grundlagen gegeben. Im Anschluss beschreiben Kapitel 3 und 4 den
+Kern dieser Arbeit: Die Methode der Verhaltensarbitration wird zunächst auf
+das automatisierte Fahren übertragen und anschließend zu einem fehlertole-
+ranten und sicheren System erweitert. Daraufhin werden in Kapitel 5 grund-
+legende Fahrmanöver zur Befahrung der Karlsruher Teststrecke entworfen
+sowie Fahrmanöver der Rückfallebenen definiert, um das Sicherheitskonzept
+aus Kapitel 4 zu komplettieren. Anschließend präsentiert Kapitel 6 den Real-
+versuch und Ergebnisse der Evaluation. Zuletzt schließt Kapitel 7 die Arbeit
+mit einer Diskussion und Zusammenfassung ab.
+2 Grundlagen
+In diesem Kapitel sind die für diese Arbeit relevanten theoretischen Grundla-
+gen gebündelt. Zunächst wird die Fahraufgabe in Abschnitt 2.1 modelliert und
+gängige Softwarearchitekturen für automatisierte Fahrzeuge vorgestellt. An-
+schließend fasst Abschnitt 2.2 verwandte Verfahren zur Verhaltensentschei-
+dung zusammen, insbesondere die in dieser Arbeit erweiterten Arbitrations-
+graphen. Abschnitt 2.3 geht in Kürze auf die Trajektorienplanung ein, be-
+vor sich Abschnitt 2.4 zuverlässigen und fehlertoleranten Systemen widmet.
+Schließlich wird in Abschnitt 2.5 die Verkehrssicherheit und darin im Spezi-
+ellen die Erreichbare-Mengen-Analyse beschrieben.
+2.1 Architekturen für automatisierte
+Fahrzeuge
+Die Fahraufgabe lässt sich laut [Mic85] wie in Abb. 2.1 als kaskadierter Regel-
+kreis in eine strategische, taktische und operative Ebene gliedern. Die stra-
+tegische Ebene definiert allgemeine langfristige Präferenzen und Ziele, u. a.
+der geplanten Route. Abhängig von der aktuellen Situation und den zuvor
+definierten Zielen werden in der taktischen Ebene Fahrmanöver umgesetzt,
+beispielsweise ein Fahrstreifenwechsel oder ein Haltemanöver. Auf der ope-
+rativen Ebene wird das beabsichtigte Manöver letztlich mit einer Update-
+Frequenz in der Größenordnung von Millisekunden eingeregelt.
+Abbildung 2.1: Das 3-Ebenen-Modell nach [Mic85] unterteilt die Fahraufgabe in eine strategi-
+sche, taktische und operative Ebene.
+Dieses ursprünglich menschliche Fahrer beschreibende Modell wird häufig
+auch auf die Automatisierung der Fahrfunktion angewandt. Die strategische
+Ebene übernimmt ein Navigationsmodul. Es bestimmt ausgehend von einem
+gegebenen Fahrtziel, meist voreingestellten Gütekriterien, dem Wegenetz und
+ggf. der aktuellen Verkehrslage die Route. Diese wird in Form von Zwischen-
+zielen, Straßen oder gar Straßenabschnitten dargestellt. Ein Planungsmodul
+bestimmt Fahrmanöver auf taktischer Ebene mit einem Zeithorizont von et-
+wa 5 bis 20 Sekunden. Es bildet die aktuelle Situation einschließlich wahr-
+genommener Verkehrsteilnehmer unter Berücksichtigung der vorgesehenen
+Route und vorhandenen Verkehrsregeln auf eine geeignete Soll-Trajektorie
+ab. Hierfür bestimmt es ggf. auch den zu befahrenden Fahrstreifen. Die ope-
+rative Ebene wird schließlich von der Regelung übernommen. Sie setzt die
+Soll-Trajektorie in einer hochfrequenten Regelschleife in Aktor-Stellgrößen
+wie Lenkwinkel und Beschleunigung um.
+Die somit gängigsten Architekturen für automatisierte Fahrzeuge legt
+Abb. 2.2 dar. Im einfachsten Fall werden die Wahrnehmung, Prädiktion,
+Verhaltensentscheidung, Trajektorienplanung und Regelung in einer entkop-
+pelten Verarbeitungskette durchgeführt. Für die Planung von interaktivem
+Verhalten muss die Prädiktion hingegen in die Verhaltens- und Trajektori-
+enplanung integriert werden. Wird die gesamte Verarbeitungskette in einen
+gemeinsamen Verarbeitungsschritt verwoben, wie es beispielsweise in An-
+sätzen des Maschinellen Lernens häufig zu beobachten ist, spricht man von
+Ende-zu-Ende Planung.
+2.2 Verhaltensentscheidung
+Die Verhaltensentscheidung ist Teil der taktischen Ebene (vgl. Abb. 2.1) bzw.
+des Planungsmoduls. Ausgehend von der aktuellen Situation trifft sie die Ent-
+scheidung, welches Manöver gefahren wird. Dieses gibt sie entweder in Form
+von Nebenbedingungen an die nachgelagerte Trajektorienplanung oder,
+wenn sie die Trajektorienplanung selbst übernimmt, als Soll-Trajektorie an
+die Regelung weiter.
+In der Literatur haben sich vielfältige Verfahren etabliert, deren Einsatzberei-
+che von reiner Verhaltensentscheidung hin zur situationsspezifischen Trajek-
+torienplanung übergehen. Regelbasierte Verfahren, wie Endliche Zustandsau-
+tomaten, Entscheidungsbäume oder Arbitrationsgraphen, adressieren die rei-
+ne Verhaltensentscheidung durch diskrete Zustands-/Moduswechsel. Graph-
+bzw. suchbasierte Verfahren wie A*, Probabilistische Straßenkarten (PRM*)
+und Rapidly-exploring Random Trees (RRT*), sind insbesondere in der Pfad-
+planung mobiler Roboter beliebt, können aber auch zur Entscheidungsfin-
+dung eingesetzt werden. In der Trajektorienplanung kommen immer häufiger
+probabilistische Methoden, wie POMDPs, sowie Verfahren des Maschinellen
+Lernens, u. a. das Bestärkende Lernen, zum Einsatz. Dabei übernehmen sie
+teilweise auch implizite Entscheidungen, bspw. wann und in welche Lücke
+ein Fahrstreifenwechsel stattfindet.
+In diesem Abschnitt liegt der Fokus auf regelbasierten Verfahren, zu denen
+sowohl klassische zustandsbasierte Verfahren wie Endliche Zustandsautoma-
+ten (Abschnitt 2.2.1) und Entscheidungsbäume (Abschnitt 2.2.2), sowie Verhal-
+tensbasierte Verfahren wie Verhaltensbäume (Abschnitt 2.2.3) und Arbitrati-
+onsgraphen (Abschnitt 2.2.4) zählen. Für eine umfangreiche Methodenüber-
+sicht sei auf [Sch18, Yur20, Voß21, Gam21] verwiesen. Eine umfangreichere
+Fassung dieses Abschnitts erscheint außerdem in [Orz23].
+Regelbasierte Verfahren sind, wie bereits in Abschnitt 1.3 ausgeführt, insbe-
+sondere im Kontext der Fahrerassistenzsysteme sowie für den Einsatz von
+Versuchsfahrzeugen kleinerer Forschungsgruppen weit verbreitet [Aeb15,
+Bac08, Mon08, Zie14a]. Dies lässt sich u. a. auf ihre einfache Anwendung, zahl-
+reiche frei verfügbare Software-Frameworks [Sch14, Bur18, Gre21b, The20b],
+einschließlich direkter Einbindung in MATLAB [The20a], oder auch deren
+Standardisierung in der Unified Modeling Language [Obj17] zurückführen.
+2.2.1 Endliche Zustandsautomaten
+Endliche Zustandsautomaten, auch als deterministische endliche Automaten
+bezeichnet, haben ihren Ursprung im Hardware Design und der Theoretische
+Informatik [Wag06, Hop07, Vos16]. Mittlerweile werden sie auch in der Ro-
+botik [Sic16] und im Bereich der Fahrerassistenzsysteme eingesetzt [Zie14b,
+Aeb15]. Endliche Zustandsautomaten sind leicht zu verstehen und zugleich
+sehr einfach zu implementieren.
+Dieser Abschnitt fasst die wichtigsten Inhalte aus [Vos16] und [Hop07] zu-
+sammen, um eine praxisorientierte Einführung in die Theorie Endlicher Zu-
+standsautomaten zu geben.
+Ein Endlicher Zustandsautomat¹ besteht aus
+• einer endlichen Menge an Zuständen 𝑆,
+• einer endlichen Menge an Eingangssymbolen Σ (oder Ereignissen),
+• einer endlichen Menge an Ausgangssymbolen Δ (oder Aktionen),
+• einer Zustandsübergangsfunktion 𝛿 ∶ 𝑆 × Σ → 𝑆,
+• einer Ausgabefunktion 𝜆 ∶ 𝑆 → Δ,
+• einem Anfangszustand 𝑠 ∈ 𝑆 und
+0
+• einer endlichen Menge an Endzuständen 𝐹 ⊆ 𝑆.
+Ein Endlicher Zustandsautomat beginnt zunächst in dem Anfangszustand 𝑠 .
+0
+Bei jedem, in der Regel von außen eingehenden, Ereignis 𝑒 ∈ Σ wechselt er
+𝑖
+in einen neuen Zustand 𝑠 = 𝛿(𝑠 , 𝑒 ). Dabei kann der neue Zustand auch
+𝑖+1 𝑖 𝑖
+als derselbe Zustand 𝑠 = 𝑠 festgelegt sein. Nach jedem Zustandswechsel
+𝑖+1 𝑖
+in einen Zustand 𝑠 gibt der Zustandsautomat die Ausgabe 𝑎 = 𝜆(𝑠 ) aus. Ein-
+𝑖 𝑖 𝑖
+zelne Zustände können in Erweiterungen wie den Hierarchischen Zustands-
+automaten wiederum selbst Zustandsautomaten sein oder auch nebenläufige
+Zustandsautomaten enthalten.
+In der Robotik allgemein decken Zustände i. d. R. einzelne Verhaltensmodi ab,
+sodass ihre Ausgaben, die geplante Aktion, als Stell- oder Zielgrößen an die
+ausführende Schicht weitergegeben werden. Die Ereignisse des Zustandsau-
+tomaten werden meist von einer Situationsinterpretation erzeugt, um ggf. ei-
+nen Wechsel des Verhaltensmodus einzuleiten.
+Bspw. setzte das Team Junior der Universität Stanford Endliche Zustandsauto-
+maten erfolgreich in der DARPA Urban Challenge ein [Mon08]. Wie in Abbil-
+dung 2.3 veranschaulicht, stellen hierbei die Zustände taktische Fahrmanöver
+wie Weiterfahrt, Passieren einer Kreuzung oder Einparken ab. Im Sinne ei-
+ner besseren Übersichtlichkeit wurden allerdings zwei Zustände (Escape und
+Traffic Jam) ausgelassen, weil sie von fast allen übrigen Zuständen aus er-
+reichbar sind.
+¹ In dieser Arbeit wird die Moore-Notation verwendet. Alternativ lässt sich die Notation auch in
+das sog. Mealy-Modell überführen.
+Für überschaubare Verhaltensprobleme sind Endliche Zustandsautomaten
+aufgrund ihrer einfachen Umsetzung und intuitiven Darstellung eine gute
+Wahl. Da die Anzahl möglicher Zustandsübergänge allerdings im schlimms-
+ten Fall quadratisch mit der Anzahl der Zustände wächst, skalieren sie bei
+komplexeren Systemen schlecht. Dieses Wachstum können Hierarchische
+Zustandsautomaten zumindest auf manuell definierte hierarchische Ebenen
+begrenzen.
+Die schlechte Modifizierbarkeit ist ein weiterer Nachteil von Endlichen Zu-
+standsautomaten: Beim Hinzufügen oder Entfernen von Zuständen müssen
+ggf. viele der bereits vorhandenen Zustände und Zustandsübergänge in Be-
+tracht gezogen und mit angepasst werden.
+Die Zustandsübergänge in Endlichen Zustandsautomaten gleichen außerdem
+Sprunganweisungen, die es erschweren Quellcode zu verstehen, zu analysie-
+ren oder zu verifizieren. Um nachzuvollziehen, warum ein bestimmter Zu-
+stand aktuell aktiv ist, muss folglich eine Ereignishistorie erstellt und aufwen-
+dig Schritt für Schritt nachvollzogen werden. Daher werden Goto Befehle in
+der Softwareentwicklung spätestens seit Einführung Strukturierter Program-
+miersprachen weitgehend vermieden [Dij68, Dah72].
+Bei der Visualisierungen von Zustandsautomaten komplexerer Systeme leidet
+schließlich die Übersichtlichkeit an der großen Zahl an Zustandsübergängen.
+In Abb. 2.3 sah sich Team Junior daher sogar gezwungen, zwei stark vernetzte
+Zustände auszulassen.
+2.2.2 Entscheidungsbäume
+Entscheidungsbäume wurden ursprünglich als rekursive Strukturen zur Be-
+schreibung von Klassifikationsregeln entworfen [Mor82, Qui90]. Formal wer-
+den sie als gerichtete geordnete Bäume formuliert. Die Knoten bilden da-
+bei Bedingungen in Form diskreter oder gar boolescher Entscheidungsva-
+riablen 𝑥 ab, während die Blätter die daraus resultierenden Entscheidungen
+𝑖
+𝑓(𝑥 , … ,𝑥 ) repräsentieren. Die Auswertung beginnt am Wurzelknoten und
+1 𝑛
+wird, je nach Wert seiner Entscheidungsvariable 𝑥 = 𝑘 am 𝑘-ten Kindkno-
+𝑖
+ten, rekursiv fortgesetzt bis ein Blatt erreicht wird und somit die Entscheidung
+feststeht.
+In der Praxis werden Entscheidungsbäume häufig als hierarchische Verket-
+tung von if/else Verzweigungen realisiert. Daher erfreuen sie sich in über-
+schaubaren Entscheidungsproblemen großer Beliebtheit.
+Zum Einsatz in Fahrerassistenzsystemen wird i. d. R. eine geeignete Zustands-
+raumdarstellung gewählt, die anschließend mit den Entscheidungsvariablen
+geeignet unterteilt wird [Ard10]. Abbildung 2.4 stellt bspw. zwei Entschei-
+dungsbäume dar, die von BMW – in Kombination mit Endlichen Zustandsau-
+tomaten – für hochautomatisiertes Fahren auf Autobahnen und einen Nothal-
+teassistenten eingesetzt wurde [Ard11]. Hierbei wurden zwei separate Ent-
+scheidungsbäume, jeweils für die Quer- und Längsführung, entworfen. Die
+Entscheidungsvariablen wurden beispielsweise als Spurwechselwunsch aus
+der Situationsinterpretation abgeleitet. Schließlich gaben die Blätter Sollgrö-
+ßen und Nebenbedingungen für die nachgelagerte Trajektorienplanung vor.
+Vergleichbar zu Endlichen Zustandsautomaten sind Entscheidungsbäume ein-
+fach zu implementieren und intuitiv begreifbar. Ein weiterer Vorteil ist die
+Modularität und Erweiterbarkeit: Teilbäume können unabhängig vom Rest
+des Baumes entworfen, entwickelt und in den Entscheidungsbaum hinzuge-
+fügt werden können. Die Blätter geben allerdings keinerlei (Erfolgs-)Status
+oder anderweitige Leistungskriterien zurück, sodass das Resultat eines Ver-
+haltens die weitere Verhaltensauswahl nicht direkt beeinflussen kann.
+2.2.3 Verhaltensbäume
+Verhaltensbäume wurden zunächst in der Computerspiel-Entwicklung ent-
+worfen [Iov22] und sind seit 2012 immer häufiger auch in Robotikanwendun-
+gen im Einsatz [Bag12, Ögr12]. Im Bereich der Fahrerassistenzsysteme oder
+automatisierten Fahrzeuge wurde hingegen bisher nur eine Arbeit publiziert
+[Ols16]. Sie untersucht die Überlegenheit von Verhaltensbäumen gegenüber
+Endlichen Zustandsautomaten in Simulation, indem sie die Skalierbarkeit bei-
+der Methoden mit Softwaremetriken vergleicht. Eine ausführliche Übersicht
+und Einführung in Verhaltensbäume liefern [Iov22, Col18]. Dieser Abschnitt
+soll jedoch eine kurze praxisorientierte Einführung in die Methodik geben.
+Verhaltensbäume zeichnen sich zunächst durch eine strikte funktionale
+Trennung zwischen Verhaltensentscheidung und -ausführung aus. Formal
+betrachtet sind sie zusammenhängende kreisfreie ungerichtete Graphen,
+dessen innere Knoten (sog. Kontrollfluss-Knoten) den Selektionsmechanismus
+festlegen, während die Blätter mögliche Verhalten (sog. Aktions-Knoten)
+sowie Bedingungen (sog. Bedingungs-Knoten) beschreiben.
+Ausgehend vom Wurzelknoten wird der Baum mit einer festgelegten Fre-
+quenz, ähnlich einer Tiefensuche, ausgewertet. Dabei gibt ein ausgewerte-
+ter Knoten über seinen Rückgabewert an, ob er noch ausgeführt wird, er-
+folgreich abgeschlossen wurde oder fehlgeschlagen ist. Je nach Rückgabe-
+wert wertet der übergeordnete Kontrollfluss-Knoten weitere Kindknoten aus
+oder gibt seinen eigenen Status zurück. Dabei stehen verschiedene Arten von
+Kontrollfluss-Knoten zur Verfügung, u. a. zur Realisierung von Sequenzen,
+Fallback-Strukturen und Nebenläufigkeit.
+Wird ein Bedingungs-Knoten ausgewertet, gibt er über seinen Rückgabewert
+zurück, ob die zugrundeliegende Bedingung erfüllt ist, ohne selbst Einfluss
+auf die Umwelt zu nehmen. Aktions-Knoten führen bei einem Aufruf hin-
+gegen das entsprechende Verhalten aus und geben über ihren Rückgabewert
+den Status dieses Verhaltens zurück. Die Aktions-Knoten beschreiben folglich
+die einzelnen Verhaltensoptionen eines Systems, während ihre Vorbedingun-
+gen über Bedingungs-Knoten modelliert werden. Durch die Unterscheidung
+zwischen Bedingungs- und Aktions-Knoten, sind die Vorbedingungen eines
+Verhaltens allerdings von der eigentlichen Ausführung des Verhaltens ent-
+koppelt.
+Als Beispiel veranschaulicht Abb. 2.5 einen Verhaltensbaum eines interakti-
+ven humanoiden Unterhaltungs-Roboters (vereinfacht aus [Col18]). Der Ro-
+boter soll sich nach Aufforderung des Bedieners setzen, aufstehen, Ball spielen
+oder sich verabschieden. Jede Aktion wird hierbei über einen Sequenz-Knoten
+mit ihrem korrespondierenden Bedingungs-Knoten, welcher zurückgibt, ob
+diese Aktion ausgeführt werden soll, verknüpft. Bspw. hängt die Aktion Stand
+Up von der Bedingung Activity Stand Up ab.
+Abbildung 2.5: Verhaltensbaum für einen interaktiven humanoiden Roboter (angepasst aus
+[Col18]). Runde Blätter stellen die Bedingungs-Knoten und eckige Blätter die
+Aktions-Knoten dar. Sequenz-Knoten sind als Pfeil (→), Fallback-Knoten mit ei-
+nem Fragezeichen (?) und Nebenläufigkeits-Knoten mit einem Doppelpfeil (⇉)
+gekennzeichnet.
+Im Kontext der Fahrerassistenzsysteme oder des automatisierten Fahrens
+könnten Aktions-Knoten Fahrmanöver wie Folgefahrt, Fahrstreifenwechsel
+oder Einparken realisieren. Um ein sicheres System zu entwerfen, müssten
+sie allerdings mit zuverlässigen Bedingungs-Knoten verknüpft werden.
+Zusammenfassend generalisieren Verhaltensbäume viele andere Architektu-
+ren wie Hierarchische Endliche Zustandsautomaten und Entscheidungsbäu-
+me [Col17], bieten diesen gegenüber allerdings viele Vorteile: Sie überzeu-
+gen insbesondere durch Modularität, hierarchische Anordnung, Wiederver-
+wendbarkeit der Komponenten, Reaktionsschnelligkeit und Interpretierbar-
+keit [Col18]. Im Vergleich zu Endlichen Zustandsautomaten ist vor allem die
+größere Flexibilität vorteilhaft. Einzelne Verhalten können innerhalb eines
+Verhaltensbaums (wieder-)verwendet werden ohne spezifizieren zu müssen,
+welchen Bezug sie zu den anderen Verhaltensoptionen haben [Bag12]. In der
+grafischen Darstellung ist der Selektionsmechanismus eines Verhaltensbaums
+zudem intuitiv sehr gut erfassbar und auch im Online-Betrieb leicht nachvoll-
+ziehbar. Andererseits kann die Darstellung in der Praxis doch sehr umfang-
+reich werden, da häufig jede Vorbedingung als separater Blattknoten model-
+liert wird. Die Sicherheit des Systems hängt außerdem, durch die erwähnte
+Entkopplung von Vorbedingungen und Ausführung eines Verhaltens, maß-
+geblich von der Anordnung der Knoten im Baum ab. Diese Nachteile werden
+von den Arbitrationsgraphen im folgenden Abschnitt adressiert.
+2.2.4 Arbitrationsgraphen
+Das Konzept der Verhaltensarbitration ist im Kontext des Roboterfußballs
+entstanden und kombiniert Ideen aus Brooks’ verhaltensbasierter Subsumpti-
+on [Bro86], wissensbasierten Architekturen wie Belief-Desire-Intention (BDI)
+[Rao92] und Programmierparadigmen wie der Objektorientierten Program-
+mierung [Ste85]. Es wurde ausführlich in [Lau10] beschrieben und wird in
+diesem Abschnitt am selben Beispiel, dem Roboterfußball, zusammengefasst.
+Fußball ist durch eine sich hochdynamisch verändernde Umwelt und zugleich
+etablierte Spieltaktiken und -strategien für Angreifer, Verteidiger und Torhü-
+ter gekennzeichnet. Daher wurde für die Anwendung im Roboterfußball eine
+Architektur gesucht, die es ermöglicht geringe Reaktionszeiten zu erreichen,
+bekannte Spieltaktiken aus einfachen Teilbausteinen zusammenzusetzen und
+dabei deliberative Komponenten mit Ansätzen des Maschinellen Lernens zu
+kombinieren. Es sollte somit ein modulares Software-Framework entwickelt
+werden, das inkrementell erweiterbar ist, sich durch klare Schnittstellen aus-
+zeichnet und schließlich zu einem transparenten Entscheidungsprozess führt.
+Das Konzept setzt auf atomare Verhaltensbausteine, die einfache Fähigkei-
+ten und Verhaltensweisen abbilden. Diese werden nach Subsumptions-Prinzip
+mittels Arbitratoren zu komplexerem Systemverhalten, also Taktiken bis hin
+zu Strategien, kombiniert. Statt ein Problem also im wissensbasierten Top-
+Down Ansatz zu Teilproblemen zu zerlegen, wird komplexes Verhalten im
+Bottom-Up Entwurf iterativ aus einfachen Verhaltenskompetenzen zusam-
+mengesetzt.
+Im Roboterfußball gibt es bspw. Verhaltensbausteine zum Dribbeln, Ziel an-
+steuern oder Schießen. In Kombination realisieren sie komplexeres Verhalten
+— von simpleren Taktiken wie einem Flankenangriff oder Doppelpass bis hin
+zu ganzen Angriffs- oder Verteidigungs-Strategien in höheren Abstraktions-
+ebenen.
+Als Eingang dient den Verhaltensbausteinen die aktuelle Situation 𝒔 des Um-
+felds in Form von sensornahen Messdaten oder einem abstrahierten bis hin
+zu interpretierten Umweltmodell. Diese werden mit der Stellfunktion Aktion
+auf aktornahe Stellgrößen 𝒖 abgebildet:
+Im Roboterfußball besteht 𝒖 bspw. aus der gewünschten Längs- und Winkel-
+geschwindigkeit eines Spielers sowie aus Anweisungen für seine Schussvor-
+richtung. Um dabei nicht nur reaktives, sondern auch deliberatives Verhalten
+zu ermöglichen, können die Verhaltensbausteine Situations- und Befehlshis-
+torien anlegen oder randomisierte Verfahren nutzen.
+Jeder Verhaltensbaustein bestimmt, neben seiner eigentlichen Aktion, über die
+sogenannte Start-Bedingung Start auch, ob seine Vorbedingungen erfüllt
+sind und das Verhalten somit aktuell überhaupt anwendbar ist. Ein Fußball-
+spieler kann den Ball bspw. nur dann in Richtung Tor dribbeln, wenn er auch
+tatsächlich in Ballbesitz ist. Ist ein Verhaltensbaustein aktiv, gibt er über die
+Algorithmus 1 : Generisches Arbitrationsverfahren
+1 function BesteAnwendbareAktion(Situation 𝒔)
+2
+funcFtiilotenreBeanswteeAnndwbaernedObpatrieonAeknti𝒜on⊂(𝒪Sit
+2
+3
+FWilätehrleeaInntwenentidobna𝜃re∈Op𝒜tiaounsen
+4
+WBeäshtilmemInete𝒖nt=ionAk𝜃t∈io𝒜n𝜃a(u𝒔s)
+return 𝒖
+6 end
+8 while true do
+9 whilBeetsrtuime dmoe die aktuelle Situation 𝒔
+109 BBeessttiimmmmee d𝒖ie=akBteusetlleeASnitwueantidobna𝒔reAktion(𝒔)
+11
+BFüehstriem𝒖maeu𝒖s =
+Fortsetzungs-Bedingung Fortsetzung außerdem zurück, ob alle Bedingun-
+gen erfüllt sind, um das Verhalten weiterhin fortzuführen. Denn der Spieler
+kann nur so lange weiter dribbeln, bis er den Ball verliert oder das Dribbelziel
+erreicht hat. Über die Start- und Fortsetzungs-Bedingung bestimmt jeder Ver-
+haltensbaustein also selbst, ob er in der gegebenen Situation anwendbar ist.
+Daher benötigt die aufrufende Instanz selbst kein Wissen über die Vorausset-
+zungen zum Ausführen eines Verhaltensbausteins.
+Generische Arbitratoren stellen eine Menge an Verhaltensbausteinen, an die-
+ser Stelle auch als Optionen 𝒪 bezeichnet, zu einer Taktik zusammen. Al-
+gorithmus 1 beschreibt das Arbitrationsverfahren im Allgemeinen. Zunächst
+wird also die aktuelle Situation 𝒔 aus den aktuellsten Eingangsdaten bestimmt
+(Zeile 9) und den Verhaltensbausteinen zur Verfügung gestellt. Als Nächstes
+bestimmt der Arbitrator seine beste anwendbare Aktion. Hierzu filtert er aus
+seinen Optionen 𝒪 jene Optionen 𝒜 heraus, die aktuell anwendbar sind bzw.
+in deren Domäne die aktuelle Situation fällt. Dies signalisieren die Verhaltens-
+bausteine über ihre Start- und Fortsetzungs-Bedingung:
+Aus den anwendbaren Optionen 𝒜 wählt der Arbitrator schließlich die best-
+mögliche Option aus, definiert sie als seine Intention 𝜃 und führt diese aus.
+Für die eigentliche Arbitration, also die Bestimmung der bestmöglichen Opti-
+on, kommen unterschiedliche Schemata infrage. Ein Prioritäts-Arbitrator hält
+seine Optionen in einer nach Priorität sortierten Liste und wählt daraus in
+jeder Iteration die erstbeste anwendbare Option. Der Abschluss-Arbitrator
+nutzt ebenfalls eine Prioritätenliste, stellt allerdings sicher, dass eine aktive
+Option nicht durch eine höher priorisierte Option unterbrochen wird, solan-
+ge ihre Fortsetzungs-Bedingung wahr ist. Bei dem Zufalls-Arbitrator wird die
+Auswahl, mit ggf. gewichteten Wahrscheinlichkeiten, zufällig gefällt. Der Se-
+quenz-Arbitrator dient schließlich dazu, Verhaltensoptionen sequenziell ab-
+zuarbeiten. Hierzu führt er seine aktuelle Intention so lange aus, bis ihre Fort-
+setzungs-Bedingung nicht mehr zutrifft. Ist gleichzeitig die Start-Bedingung
+der nächsten Option wahr, wird diese zur neuen Intention und ausgeführt.
+Bei allen Arbitrationsschemata hängt die Start- und Fortsetzungs-Bedingung
+eines Arbitrators ausschließlich von den Start- und Fortsetzungs-Bedingun-
+gen seiner Optionen ab. Die Start-Bedingung des Prioritäts-, Abschluss- und
+Zufalls-Arbitrators ist zum Zeitpunkt 𝑘 bspw. dann wahr, solange eine seiner
+Optionen eine wahre Start-Bedingung hat:
+Der Sequenz-Arbitrator hat hingegen genau dann eine wahre Start-Bedin-
+gung, wenn seine erste Option 𝑜 eine wahre Start-Bedingung hat:
+1
+Die Fortsetzungs-Bedingung eines Arbitrators zeigt wie bei den Verhaltens-
+bausteinen an, ob er in der aktuellen Situation fortgesetzt werden kann. Bei
+den meisten Arbitratoren trifft dies bereits dann zu, wenn eine ihrer Optio-
+nen 𝒪 eine wahre Start-Bedingung hat oder die letzte Intention 𝜃 fortge-
+𝑘−1
+setzt werden kann. Dies trifft für den Prioritäts, Abschluss und Zufalls-Ar-
+bitrator zu:
+Beim Sequenz-Arbitrator hängt die Fortsetzungs-Bedingung wiederum von
+seiner letzten Intention 𝜃 und der in 𝒪 darauf folgenden Option 𝜃 +1 ab:
+𝑘−1 𝑘−1
+Fortsetzung (𝒔 ) = Fortsetzung (𝒔 ) ∨ Start (𝒔 ) (2.7)
+seq 𝑘 𝜃𝑘−1 𝑘 𝜃𝑘−1+1 𝑘
+Es ist an dieser Stelle hervorzuheben, dass die Arbitratoren ihre Wahl also
+nicht situationsspezifisch, sondern rein auf Basis der abstrakten Start- und
+Fortsetzungs-Bedingungen der Verhaltensoptionen treffen. Gegeben einer
+Menge anwendbarer Optionen 𝒜, wählt ein Arbitrator seine Intention 𝜃
+also ohne Berücksichtigung der Situation 𝒔 aus. Dadurch wird eine starke
+Entkopplung der Situationsinterpretation und der Auswahllogik erreicht.
+Erstere wird über die Start- und Fortsetzungs-Bedingungen ausschließlich
+in den Verhaltensbausteinen durchgeführt und letztere vollständig von den
+Arbitratoren übernommen. Damit bleiben die Arbitratoren anwendungsun-
+abhängig während die Verhaltensbausteine szenariospezifische Lösungen
+realisieren können.
+Um nun aus einfachen Verhaltensoptionen und überschaubaren Taktiken
+komplexe Strategien zu entwerfen, können Arbitratoren und Verhaltensbau-
+steine zu einem hierarchischen Graphen zusammengestellt werden. Hierzu
+gleichen Arbitratoren hinsichtlich ihrer Schnittstelle den Verhaltensbaustei-
+nen und können somit auch als solche interpretiert werden: Sie geben über
+ihre Start- und Fortsetzungs-Bedingungen an, ob sie in der aktuellen Situa-
+tion 𝒔 anwendbar sind, und bilden diese über die Stellfunktion Aktion auf
+Stellgrößen 𝒖 ab. Auf den Algorithmus 1 übertragen, entspricht die Aktion-
+Funktion eines Arbitrators der BesteAnwendbareAktion(𝒔) Funktion in
+Zeile 1. Dies ermöglicht es, einen Arbitrator wiederum als Verhaltensoption
+eines anderen Arbitrators einzusetzen.
+2 Grundlagen
+Abbildung 2.6: Beispiel für einen hierarchischen Arbitrationsgraphen eines Angreifers im Ro-
+boterfußball.AktuellnichtausführbareVerhaltensoptionensindgrauhinterlegt,
+während die gewählte Option grün hervorgehoben ist.
+Abbildung 2.6 zeigt beispielhaft einen zweistufigen Arbitrationsgraphen für
+einen Angreifer im Roboterfußball. Im Fließtext werden Verhaltensbausteine
+mit Kursiver Schrift und Arbitratoren mit KAPITAL SCHRIFT gekennzeichnet.
+Die Taktik ANGREIFEN besteht aus den sequenziell geschalteten Verhaltensop-
+tionen Zum Tor Dribbeln und Schießen. Diese wird in der Gesamtstrategie des
+Angreifers (ANGRIFF STRATEGIE) mit höchster Priorität ausgeführt. Ist ein An-
+griff jedoch nicht möglich, soll sich der Angreifer Dem Ball Nähern oder, falls
+auch dies nicht möglich oder sinnvoll ist, an seiner Spielposition Patrouillieren.
+Viele Vorteile von Arbitrationsgraphen werden insbesondere im Entwurfs-
+prozess, der Wartung sowie der Weiterentwicklung einer darauf aufbauenden
+Verhaltensentscheidung deutlich. Zum einen können die Verhaltensbausteine
+dank der bereits erwähnten Entkopplung von Situationsinterpretation und
+Auswahllogik, voneinander unabhängig entworfen, entwickelt und getestet
+werden. Hierzu müssen lediglich die Start- und Fortsetzungs-Bedingungen
+spezifiziert und die Stellfunktion definiert werden. Erst in einem nachgelager-
+ten Schritt werden die vorhandenen Verhaltensbausteine unter Berücksich-
+tigung von anwendungsspezifischem Wissen mittels geeigneter Arbitratoren
+hierarchisch in einem Graphen angeordnet. Stellt sich zu einem späteren Zeit-
+punkt zudem heraus, dass noch weitere Verhaltensbausteine notwendig sind,
+können auch diese unabhängig entwickelt und in den Graphen eingefügt wer-
+den, ohne die bereits vorhandenen Bausteine anpassen zu müssen. Auch bei
+einer umfassenden Rekonfiguration des Graphen bleiben die Verhaltensbau-
+steine i. d. R. unberührt.
+Der modulare Aufbau der Arbitrationsgraphen bildet zugleich eine optimale
+Grundlage, um Maßnahmen zur Robustifizierung und Absicherung des Aus-
+wahlprozesses umzusetzen. So wird die Arbitration in Abschnitt 4.2 um eine
+Verifikation der Stellgrößen und Rückfallebenen erweitert. Zudem könnten
+Metriken zum Systemzustand einbezogen werden, um auch bspw. im Fall von
+Sensorstörungen in defensiveres Verhalten zu wechseln [Taş17].
+2.3 Trajektorienplanung
+Zweck der Trajektorienplanung ist es, ausgehend vom aktuellen Zustand,
+bspw. in Form eines geschätzten Umweltmodells, eine Trajektorie zu gene-
+rieren, die ein gewünschtes Verhalten bzw. Manöver realisiert. Dabei können
+Trajektorien in kontinuierlicher oder diskreter Form modelliert werden
+(Definitionen 2.1 und 2.2).
+Definition 2.1: Kontinuierliche Trajektorie
+Eine Trajektorie beschreibt den zeitlichen Verlauf eines Zustands 𝒙 ∈ ℝ𝑛 über einen
+Zeithorizont 𝑡 ∈ [𝑡 ,𝑡 ]:
+0 ℎ
+Definition 2.2: Diskrete Trajektorie
+In der diskreten Darstellung, die u.a. in numerischen Verfahren zur Trajektorien-
+planung Anwendung findet, wird eine Trajektorie durch ihre 𝑁 ∈ ℕ diskreten
+0
+Stützpunkte beschrieben:
+Beispiel 2.1: Trajektorie eines Fahrzeugs in 2D
+Eine Fahrzeugtrajektorie lässt sich in Kartesischen Koordinaten mittels Position
+(𝑥,𝑦) und Orientierung 𝜙 modellieren [Wer17]:
+Im automatisierten Fahren beschreiben Trajektorien i. d. R. die Kartesischen
+Koordinaten 𝑥, 𝑦 eines Fahrzeuges sowie seine Orientierung 𝜙 (Beispiel 2.1).
+Da echtzeitfähige Methoden zur Trajektorienplanung zumeist nur lokale
+Lösungen liefern, wird häufig die Manöverentscheidung von der Trajektori-
+enplanung getrennt. Die Manöver- oder auch Verhaltensentscheidung wählt
+zunächst die erfolgversprechendste Homotopieklasse aus (siehe dazu auch
+[Ben15]) und bestimmt ggf. eine grobe zugehörige Referenztrajektorie. Beim
+automatisierten Fahren beschreibt eine solche Homotopieklasse bspw. ob
+und in welche Lücke ein Fahrstreifenwechsel vorgenommen werden soll.
+Zur Trajektorienplanung selbst bieten sich schließlich vielfältige Methoden
+an, darunter fallen u. a. Graphensuchverfahren, probabilistische Methoden,
+direkte Optimierung, Modellprädiktive Regelung sowie Ansätze des Maschi-
+nellen Lernens. Die Methoden arbeiten entweder direkt in Kartesischen Koor-
+dinaten oder den sog. Frenet-Koordinaten (Definition 2.3). Einige Ansätze pla-
+nen zudem zunächst die Querbewegung in Form eines Sollpfades und danach
+die Längsbewegung entlang dieses Pfades, während andere die Quer- und
+Längsplanung gemeinsam lösen (auch als 2D Trajektorienplanung bezeichnet).
+Definition 2.3: Trajektorie in Frenet Koordinaten
+Trajektorien können – z.B. zur entkoppelten Quer- und Längsplanung – in den sog.
+Frenet Koordinaten [Car16], also abhängig von der Bogenlänge 𝑠 entlang einer Re-
+ferenzkurve mit Normalenvektor 𝒏 , angegeben werden [Wer10]:
+𝑟
+wobei 𝒓 den Lotfußpunkt entlang der Referenzkurve und 𝑑 den orthogonalen Versatz
+dazu beschreibt.
+Im Folgenden werden nur die für diese Arbeit relevanten Methoden beschrie-
+ben. Für eine umfassende Übersicht zur Manöverentscheidung und Trajek-
+torienplanung sei u. a. auf [Pad16, Gon16, Wer17, Sch18, Kir21] verwiesen.
+2.3.1 Pfadplanung
+Wird die Trajektorienplanung in eine Quer- und Längskomponente ent-
+koppelt, bestimmt die Pfadplanung dabei die Querführung des Fahrzeugs.
+Auch hierfür kommen vielfältige Verfahren infrage: Im Freiraum, wie bspw.
+Parkflächen, werden häufig Graphensuchverfahren mit kinematischen Bewe-
+gungsmodellen verwendet [Ban18], während in Szenarios mit Fahrstreifen
+u. a. Dynamische Programmierung [Wer10] oder auch Optimierung [Gut17]
+zum Einsatz kommt. Solange keine Hindernisse in den Fahrkorridor hinein-
+ragen, kann auch schlicht die Mittellinie eines Fahrstreifens – ggf. mittels
+Splines interpoliert – als Referenzpfad genutzt werden.
+Abbildung 2.7: Die Pfadplanung bestimmt die Querführung eines Fahrzeugs unter Berücksich-
+tigung der Fahrbahnbegrenzung und hineinragenden Hindernissen. Die Opti-
+mierungsachsen sind in Orange dargestellt, der geplante Pfad in Grün.
+Abbildung 2.7 veranschaulicht beispielhaft die Pfadplanung mittels Optimie-
+rung. Die gelben Querbalken bilden die Optimierungsvariablen ab, während
+in Blau der resultierende Pfad dargestellt ist. Hierbei wurde folgende, aus
+[Zie14a] inspirierte, Kostenfunktion verwendet (vgl. Gleichung (2.15)):
+wobei 𝑗 das Überschreiten der Fahrstreifenbegrenzungen, 𝑗 die Abwei-
+bor pos
+chung zur Fahrstreifenmitte und 𝑗 die Länge des Pfades bestrafen. Durch die
+len
+Einpreisung von 𝑗 und 𝑗 werden zudem Krümmung und Krümmungs-
+cur dcur
+änderung minimiert.
+2.3.2 Intelligent Driver Model
+Das Intelligent Driver Model (IDM) [Tre00] ist ein mikroskopisches Ver-
+kehrsflussmodell, das das Längsverhalten von Fahrern bei der Folgefahrt
+beschreibt. Es kann, in Kombination mit einer vorgeschalteten Pfadplanung,
+als Folgefahrt-Regler oder gar zur Planung von Folgefahrt-Trajektorien
+verwendet werden:
+wobei 𝑣 und 𝑣 die Geschwindigkeit des Egofahrzeugs und Referenzob-
+ego obj
+jekts, 𝑑 den Abstand, Δ𝑣 die Geschwindigkeitsdifferenz, 𝑣 , 𝑎 und 𝑎 die
+des max cmf
+Wunschgeschwindigkeit, Maximalbeschleunigung und komfortable Brems-
+beschleunigung, 𝑇 den zeitlichen Wunschabstand (engl. „time headway“) und
+𝑑 den gewünschten Minimalabstand bezeichnet. Der Beschleunigungsex-
+min
+ponent wird typischerweise auf 𝛿 = 4 gesetzt.
+2.3.3 Nichtlineare Optimierung
+Bei der 2D-Trajektorienplanung mittels Nichtlinearer Optimierung wird ein,
+meist diskretes, nichtlineares Optimierungsproblem formuliert und mittels
+numerischer Methoden gelöst [Wer17]. Hierbei wird die Kostenfunktion 𝐽,
+unter Berücksichtigung von 𝑚 Ungleichungs- und 𝑞 Gleichungsnebenbedin-
+gungen 𝒈 und 𝒉, minimiert:
+Typische Kostenfunktionen umfassen die Abweichung zum Referenzpfad
+(bspw. die Fahrstreifenmitte) sowie der Sollgeschwindigkeit und bestrafen
+Beschleunigung, Ruck und Drehrate [Zie14a]:
+Um eine erfolgreiche Optimierung zu ermöglichen, müssen die Kostenfunk-
+tionale mindestens einmal stetig differenzierbar sein. Die Kostenfunktionale
+zur Sollgeschwindigkeit, Beschleunigung, Ruck und Drehrate sind in diesem
+Fall sogar mehrfach stetig differenzierbar, was die Konvergenz weiter begüns-
+tigt. Damit auch der Abstand zu einem Polygon-basierten Referenzpfad mehr-
+fach differenzierbar ist, muss entweder der Pfad oder die Abstandsfunktion
+geeignet interpoliert werden. Erstere können bspw. mittels Splines und letz-
+tere mittels sog. Pseudodistanzfunktionen [Zie14a] interpoliert werden.
+2.4 Fehlertolerante Systeme
+Im automatisierten Fahren können neben Hardwarefehlern eine Vielzahl von
+Softwareproblemen die Leistungsfähigkeit der Automatisierung und somit
+auch die Fahrsicherheit gefährden. Zu den Ursachen zählen u. a. Program-
+mierfehler und Laufzeitfehler, wie Konvergenzprobleme einer Trajektori-
+enoptimierung. Auch unsichere Trajektorien können als Fehler begriffen
+werden. Daher ist es unerlässlich beim Entwurf der Verhaltensentscheidung
+Maßnahmen zur Fehlerdiagnose und -behandlung mit einzubeziehen.
+Die Forschung im Bereich der zuverlässigen und fehlertoleranten Systeme
+[Ech90, Lap95, Dub13, Mon99, Kor20] entwickelt Maßnahmen zum Entwurf
+von Hard- oder Software-Systemen, die trotz potenzieller Störungs- und Feh-
+lerquellen eine möglichst hohe Zuverlässigkeit erreichen. Dabei können nach
+[Ech90] die Fehlerwahrscheinlichkeit, Überlebenswahrscheinlichkeit, mittle-
+re Lebensdauer, Ausfallrate und Verfügbarkeit als Kenngrößen der Zuverläs-
+sigkeit dienen.
+Die Begriffe Störung, Fehler und Ausfall werden umgangssprachlich häufig
+synonym verwendet und finden sogar in der Literatur unterschiedliche
+teils widersprüchliche Verwendung. [Dub13, Lap95, Mon99] unterscheiden
+zwischen einer Störung (engl. „fault“), einem Fehler (engl. „error“) und ei-
+nem Ausfall (engl. „failure“). Eine Störung führt erst bei Aktivierung der
+gestörten Komponente (z. B. durch einen Funktionsaufruf) zu einem Fehler
+(bspw. einem falschen Ergebnis). Wird ein Fehler erkannt, kann dieser ent-
+weder behandelt und behoben werden oder im schlimmsten Falle zu einem
+Funktions- oder Systemausfall führen. Das deutschsprachige Standardwerk
+von Echtle [Ech90] unterscheidet hingegen nicht zwischen Störungen und
+Fehlern, sondern spricht stattdessen von Fehlzuständen, die sich auf eine
+„Verletzung der inneren Spezifikation“ beziehen, während der Begriff Funk-
+tionsausfall die „Verletzung der äußeren Spezifikation“ beschreibt. Auch
+[Kor20] definiert den Funktionsausfall als Manifestation eines Fehlzustands,
+verwendet für den Fehlzustand allerdings die engl. Begriffe fault und failure
+synonym und bezeichnet den Funktionsausfall als error. Auch wenn die
+Unterscheidung zwischen einem Fehler und seiner Ursache (der Störung)
+sinnvoll erscheint und eine Diagnose zu präzisieren hilft, ist eine konsistente
+Übersetzung aller engl. domänenspezifischen Fachbegriffe wie in [Ech90]
+vorrangig. Daher werden im weiteren Verlauf dieser Arbeit die Definitionen
+nach [Ech90] verwendet.
+Die Maßnahmen zur Steigerung der Zuverlässigkeit lassen sich in Fehler-
+vermeidung, -beseitigung, -toleranz und -vorhersage kategorisieren [Dub13].
+Methoden zur Fehlervermeidung und -beseitigung setzen in der Entwurfs-
+und Entwicklungsphase an und setzen u. a. auf Qualitätskontrolle und Veri-
+fikation (vgl. Abschnitt 2.5.1). Der Bereich der Fehlertoleranz beschreibt An-
+sätze, mit denen Fehlzustände im Betrieb festgestellt und Funktionsausfälle
+verhindert werden können. Die Fehlervorhersage beschäftigt sich schließlich
+damit, im laufenden Betrieb die Anzahl fehlerhafter Komponenten zu schät-
+zen und somit bevorstehende Ausfälle vorherzusagen.
+Neben der Fehlervermeidung ist die Fehlertoleranz eine der wichtigsten Säu-
+len zuverlässiger Systeme und steht daher in der Literatur besonders im Fo-
+kus. Zur Fehlertoleranz gehört die Fehlerdiagnose – welche es ermöglicht ei-
+nen vorhandenen Fehlzustand zu erfassen – und die Fehlerbehandlung – die
+den Fehlzustand behebt, kompensiert oder ausgrenzt. Abbildung 2.8 stellt die
+Methoden zur Fehlerbehandlung dar: Für die Fehlerbehebung wird die fehler-
+hafte Komponente wieder in einen fehlerfreien Zustand (zurück-)gesetzt (z. B.
+über eine Zustandshistorie). Als Fehlerkompensierung bezeichnet man hin-
+gegen das Berechnen eines fehlerfreien Ergebnisses, trotz fehlerhafter Kom-
+ponente (bspw. über Redundanz und Diversität). Die Fehlerausgrenzung ent-
+fernt schließlich die fehlerhafte Komponente als letzte drastische Maßnahme
+dauerhaft aus dem System (engl. auch „reconfiguration“). Abbildung 2.9 fasst
+die Maßnahmen, die in zuverlässigen Systemen zum Einsatz kommen, struk-
+turiert zusammen.
+2.5 Verkehrssicherheit
+Der zunächst weitgefasste Begriff Verkehrssicherheit beschreibt „die Abwe-
+senheit von unvertretbaren Risiken bei der Ortsveränderung von Objekten
+(z. B. Güter, Personen, Nachrichten) in einem definierten (Verkehrs-)System“
+[Dre09]. Für den Kontext des automatisierten Fahrens ist dabei die spezifi-
+schere Verkehrsmittelsicherheit, also die Abwesenheit von unvertretbaren Ri-
+siken und Gefahren bezogen auf die Verkehrsmittel, von Bedeutung. Diese
+umfasst sowohl aktive unfallvermeidende Maßnahmen, sowie passive Unfall-
+folgen mindernde Maßnahmen.
+Dieser Abschnitt 2.5 greift zwei für diese Arbeit relevanten Themenfelder der
+aktiven unfallvermeidenden Maßnahmen auf: Die Sicherheitsanalyse in Ab-
+schnitt 2.5.1 wird zur Fehlervermeidung beim Systementwurf eingesetzt, wäh-
+rend die Verhaltensverifikation aus Abschnitt 2.5.2 der Fehlererkennung und
+-behandlung zur Laufzeit dient.
+2.5.1 Sicherheitsanalyse
+Das Feld der Sicherheitsanalyse insgesamt, sowie die darunter fallende Zuver-
+lässigkeitsanalyse im Besonderen, haben viele in der Automobilbranche eta-
+blierte Methoden und Standards hervorgebracht. Die ISO26262 [ISO18] erläu-
+tert bspw. wie mittels einer Gefährdungsanalyse und Risikoabschätzung die
+funktionale Sicherheit sicherheitsrelevanter elektrischer/elektronischer Sys-
+teme im Kraftfahrzeug (KFZ) gewährleistet werden kann (siehe auch [Ros16]).
+Die Methoden der sog. „Safety of the Intended Functionality“ (SOTIF) erwei-
+tern die ISO26262 um die Bereiche Umfeldwahrnehmung, Mensch-Maschine-
+Schnittstelle (HMI) und erwartbare Fehlnutzung durch den Anwender. De-
+duktive Methoden, wie die Fehlzustandsbaumanalyse (FTA) [DIN07], identi-
+fizieren kausale Ketten zwischen Gefahren und deren Ursachen, um die Wahr-
+scheinlichkeit festgelegter (i. d. R. kritischer) Ereignisse zu bestimmen. Induk-
+tive Methoden, wie die Fehlzustandsart- und -auswirkungsanalyse (FMEA)
+[DIN06], werden genutzt, um mögliche Produktfehler bereits während des
+Systementwurfs zu erkennen und ihr Risiko zu bewerten.
+Insgesamt sind diese Methoden und Standards allerdings nicht ausreichend,
+um die Sicherheit von hoch- oder voll-automatisierten Fahrzeugen zu gewähr-
+leisten [Way20b]. Daher ist die Sicherheitsanalyse automatisierter Fahrzeuge
+noch ein aktives Forschungsfeld [Mer18, Apt19, Sch20, Way20a, Way20b] aus
+dem zurzeit viele neue Leitlinien und Normen entstehen [NHT17, SAE21,
+SAE20, BSI20a, BSI20b, ISO21]. Eine gute und umfangreiche Zusammen-
+fassung über diese Publikationen verschafft [Way20b]. Im Folgenden sollen
+die für diese Arbeit wichtigsten Begriffe und Konzepte, in Anlehnung an
+[Way20b] und [NHT17], zusammengefasst werden.
+Operational Design Domain
+Um u. a. einen Szenarienkatalog zur Szenarien-basierten Validierung (siehe
+späteren Abschnitt zu Systemsicherheit und Validierung) und weitere Sicher-
+heitsanforderungen an ein automatisiertes Fahrzeug herzuleiten, wurde das
+Konzept der Operational Design Domain (ODD), das in Definition 2.4 erläu-
+tert wird, eingeführt.
+Definition 2.4: Operational Design Domain [SAE21]
+Die ODD eines gegebenen Fahrerassistenzsystems oder einer seiner Teilfunktionen
+legt die Betriebsbedingungen fest, für welche diese Funktion ausgelegt ist.
+Diese schließen unter anderem Anforderungen an die Szenerie (z.B. bestimmte er-
+forderliche Verkehrs- oder Fahrbahnmerkmale) sowie an die dynamischen Elemente
+der Szene (wie Verkehrsdichte oder Anwesenheit von vulnerable Verkehrsteilneh-
+mer (VRUs)) und Umweltbedingungen (u.a. Wetter oder GPS-Empfang) ein.
+Eine ausführliche Auflistung und Spezifikation möglicher ODD Elemente lie-
+fern unter anderem die British Standards Institution [BSI20b] und das Auto-
+mated Vehicle Safety Consortium™[SAE20]. Im Folgenden soll daraus eine
+mögliche Kategorisierung zusammengefasst werden.
+Die unterstützten Szenerien werden unter anderem beschrieben durch
+• geografisch oder rechtlich festgelegte Zonen wie Stadtbezirke,
+• befahrbare Flächen und Straßentypen wie Parkflächen oder
+Autobahnen,
+• Kreuzungsarten und -infrastruktur wie dreiarmige Knotenpunkte mit
+Lichtsignalanlage,
+• besondere Infrastruktur wie Mautschranken oder Tunnel,
+• Fahrbahnelemente wie Leitpfosten und
+• vorübergehende Straßenbauten wie Baustellen.
+Zur Beschreibung dynamischer Elemente einer ODD zählt
+• die Verkehrsdichte,
+• Art und Zustand anderer Verkehrsteilnehmer und
+• der Zustand des Ego-Fahrzeugs (z. B. seine Geschwindigkeit).
+Die Umweltbedingungen, für die die Assistenzfunktion ausgelegt ist, werden
+im Wesentlichen definiert durch
+• Wetterbedingungen wie Schneefall oder Regen,
+• Betriebszeiten wie zur Tageszeit oder nachts,
+• die Signalqualität von Satellitennavigationssystemen wie GPS und
+• die Verfügbarkeit von Datennetzen wie zum Beispiel V2X¹-Mobilfunk.
+Verhaltenskompetenzen
+Von der National Highway Traffic Safety Administration (NHTSA) wurden
+28 grundlegende Verhaltenskompetenzen, wie sie für die Szenarien-basierte
+Validierung verwendet werden können, vorgeschlagen und von Waymo auf
+insgesamt 47 Stück erweitert [Way20a]. Darunter fallen sowohl ganze Fahr-
+manöver wie die Folgefahrt oder Fahrstreifenwechsel als auch Teilaufgaben,
+wie das Einhalten der zugelassenen Maximalgeschwindigkeit oder Fällen
+korrekter Vorfahrtsentscheidungen. Häufig sind diese Verhaltenskompeten-
+zen an Wahrnehmungsaufgaben gekoppelt und als „Erkenne und reagiere
+angemessen“-Anweisung formuliert, bspw. „Erkenne und reagiere auf ein
+einscherendes Objekt“. Die detaillierte Auflistung der Verhaltenskompeten-
+zen aus [Way20a] kann Anhang A entnommen werden.
+Fehlererkennung und Reaktion
+Ein automatisiertes System muss sich stets überwachen und in der Lage sein,
+rechtzeitig Fehlfunktionen und degradierte Zustände in der Hardware oder
+den automatisierten Fahrfunktionen [Taş17], sowie das Verlassen der ODDs
+(z. B. durch sich ändernde Wetterbedingungen) zu erkennen. Handelt es sich
+um eine unkritische Störung, kann das Fahrzeug ggf. in einem degradierten
+Modus, also bspw. bei reduzierter Geschwindigkeit, die Fahrt fortsetzen. Bei
+schwerwiegenderen Fehlern muss das System in einen risikominimalen Zu-
+stand (MRC), wie in Definition 2.5 aus dem „Gesetz zum autonomen Fah-
+ren“ [Bun21] festgelegt, überführt werden. Je nach Schwere des Fehlers wird
+hierfür entweder in der Hardware- oder Verhaltens-Ebene eine angemessene
+¹ V2X umfasst Fahrzeug-Fahrzeug-Kommunikation (V2V), Fahrzeug-Infrastruktur-Kommunika-
+tion (V2I) und Kommunikation zur Flottenverwaltung (V2F).
+Reaktion bewirkt. Bei weniger schwerwiegenden Funktionsstörungen kann
+die Verhaltens-Ebene ein sog. risikominimierendes Manöver durchführen, das
+das Fahrzeug bspw. auf einem Standstreifen zum Stillstand bringt. Bei einem
+schwerwiegenden Systemausfall, der auch die Verhaltens-Ebene betrifft, be-
+tätigt die Hardware-Ebene eine Notbremsung.
+Definition 2.5: Risikominimaler Zustand [Bun21]
+Ein risikominimaler Zustand (MRC) ist ein Zustand, in den sich das Kraftfahrzeug
+mit autonomer Fahrfunktion auf eigene Veranlassung oder auf Veranlassung der
+technischen Aufsicht selbständig versetzt, um unter angemessener Beachtung der
+Verkehrssituation die größtmögliche Verkehrssicherheit für andere Verkehrsteilneh-
+mende und Dritte zu gewährleisten.
+Definition 2.6: Risikominimierendes Manöver [Apt19]
+Ein risikominimierendes Manöver (MRM) ist ein Manöver, das das Fahrzeug in einen
+MRC überführt.
+In [Apt19], einer gemeinsamen Publikation zahlreicher Automobilhersteller
+und -zulieferer, darunter Audi, BMW, Daimler, VW, Intel und Here, werden
+mögliche MRCs und MRMs vorgestellt:
+Beispiel 2.2: Risikominimale Zustände aus [Apt19]
+Je nach Fehlerschwere und ob ein Fahrzeugführer anwesend ist, kommen verschie-
+dene MRCs infrage.
+Übernahme durch Fahrzeugführer Der Fahrzeugführer hat die Fahraufgabe vollstän-
+dig übernommen.
+Eingeschränkter Betrieb Fahrzeug ist noch innerhalb der eingeschränkten Fahrfunk-
+tionen betriebsbereit. Je nach Funktionsdefinition und verbleibenden Fähig-
+keiten kann es mehrere eingeschränkte Betriebszustände geben.
+Betrieb einstellen Diese Bedingung beschreibt einen Fahrzeugzustand, der eine si-
+chere Abschaltung der Funktion ermöglicht.
+Beispiel 2.3: Risikominimierende Manöver aus [Apt19]
+Je nach angestrebten MRC kommen verschiedene MRMs infrage, die sich insbeson-
+dere bzgl. Komfort- und Funktionseinschränkung unterscheiden.
+Aufforderung zur Übernahme Übernahme durch den Fahrzeugführer anfordern.
+Funktionsumfang einschränken Überleiten in den eingeschränkten Betrieb. Je nach
+MRC und dem aktuellen Zustand sind mehrere MRM-Varianten möglich.
+Komfortabler Halt Komfortabler Übergang zum Ende des Betriebs
+Sicherer Halt Bei schwerwiegenden Ausfällen ist ein schneller, aber sicherer Über-
+gang zum Betriebsende erforderlich.
+Nothalt Bei hinreichend seltenen schweren Systemausfällen wird ein Notstopp ein-
+geleitet, um das Risiko zu minimieren und den Betrieb einstellen zu können.
+Systemsicherheit und Validierung
+Um die Sicherheit des Gesamtsystems, also eines im öffentlichen Straßenver-
+kehr agierenden hoch- oder voll-automatisierten Fahrzeuges, zu gewährleis-
+ten, müssen adäquate Methoden der Sicherheitsanalyse in den Entwicklungs-
+prozess integriert werden, währenddessen laufend die Risiken analysiert und
+auch im Betrieb überwacht werden. Waymo unterscheidet dabei drei Ebenen
+[Way20b] (Abb. 2.10): Die Hardware-Ebene umfasst das physische Fahrzeug,
+die Sensorik, die Aktorik, die Rechenplattform sowie die Cybersicherheit. Die-
+se können wie bisher mit den klassischen Methoden, u. a. FMEA, FTA, usw.
+verifiziert und validiert werden.
+Die Verhaltens-Ebene schließt die Trajektorien- und Verhaltensplanung ein.
+Aufgrund der Interaktion mit anderen Verkehrsteilnehmern und ihrem teils
+nicht-deterministischen Verhalten sind die klassischen Methoden der Sicher-
+heitsanalyse in dieser Ebene nicht ausreichend, sodass ein dreiteiliger Ansatz
+gewählt wurde:
+2 Grundlagen
+Zusätzlich zur Gefahrenanalyse mittels FTA, FMEA und einer systemtheore-
+tischen Prozessanalyse wird eine Szenario-basierte Verifikation mithilfe eines
+ständig zu erweiternden Szenarienkatalogs durchgeführt. Dieser Katalog soll
+sowohl grundlegende Verhaltenskompetenzen, aufbauend auf den Empfeh-
+lungen der US-amerikanischen NHTSA, sowie erwartbare kritische Szenarien
+abdecken. Zudem soll der Katalog das gesamte Spektrum der ODDs abdecken.
+Schließlich werden neue Softwareversionen in einer sog. simulierten Bereit-
+stellung (engl. „Simulated Deployments“) getestet. Diese bestehen einerseits
+aus Simulationen, die die Software auf umfangreich aufgezeichneten Daten
+neu auswerten. Bei immer mehr Realfahrten aus der semi-automatisierten
+Flotte und damit immer größeren Realdatensätzen ist dieser Ansatz sehr gut
+skalierbar. Andererseits wird ein solcher Softwarestand auf Fahrzeugen mit
+Sicherheitsfahrern auch im Realversuch getestet. Sollten die Fahrer eingrei-
+fen, werden diese manuell gesteuerten Abschnitte nochmals in Simulation
+überprüft. Hiermit sollen die in der Daten-basierten Evaluation attestierten
+Verbesserungen an Glaubwürdigkeit gewinnen.
+Sowohl in der Szenario-basierten Verifikation als auch der simulierten Bereit-
+stellung wird die Sicherheit des Systems anhand folgender Metriken bemes-
+sen:
+Unfallvermeidung Die in Simulation geschätzte Unfallrate des automati-
+sierten Fahrzeugs wird u. a. mit Unfallraten des Menschen verglichen.
+Abschluss automatisierter Fahrten Die Anzahl erfolgreich abgeschlosse-
+ner Fahrten im automatisierten Modus gibt Aufschluss über die Leis-
+tungsfähigkeit des Gesamtsystems.
+Einhalten von Verkehrsregeln Schließlich sollte das Fahrzeug auch die
+gesetzlich vorgeschriebenen oder gesellschaftlich etablierten Verkehrs-
+regeln einhalten, um Gefahrensituationen zu vermeiden.
+Die dritte Ebene adressiert schließlich den Betrieb einer ganzen Flotte auto-
+matisierter Fahrzeuge und den damit verbundenen Sicherheitsfragen. Mittels
+Methoden des Risikomanagements soll das Gesamtrisiko des Flottenbetriebs
+eingedämmt werden. Außerdem wird klar geregelt, welche Daten bei einem
+Unfall aufgezeichnet und gesichert werden müssen und wie der Betreiber
+nach dem Unfall handeln wird, z. B. wie er mit den zuständlichen örtlichen
+Behörden in Kontakt treten wird.
+2.5.2 Verhaltensverifikation
+Das Problem der Risikoanalyse automatisierter Fahrzeuge, insbesondere im
+Hinblick auf die Sicherheit eines geplanten Verhaltens, wird umfangreich er-
+forscht. [Lef14] bietet einen umfassenden Überblick über das Forschungsfeld.
+Die meisten der vorgestellten Methoden versuchen allerdings, das Risiko
+über Verhaltensmodelle abzuschätzen. Hierzu entwickeln sie Verhaltensmo-
+delle für die verschiedenen Verkehrsteilnehmer, prädizieren die Szene unter
+Annahme dieser Modelle und prüfen schließlich die geplante Trajektorie auf
+Kollisionen oder versuchen Abweichungen von den Modellen zu erkennen. In
+jedem Fall gehen solche Risikobewertungsansätze davon aus, dass alle mögli-
+chen Manöver in einem bestimmten Szenario modelliert werden können oder
+dass unerwartete Situationen zuverlässig erkannt werden können. Darüber
+hinaus wird in vielen Fällen die Unvollständigkeit eines Umgebungsmodells
+überhaupt nicht berücksichtigt.
+Risikoanalyse und Manöverplanung unter Unsicherheiten
+In letzter Zeit hat das Thema verdeckungsbewusste Risikobewertung und
+Verhaltensgenerierung an Aufmerksamkeit gewonnen [Hoe17, Lee17, Chu09,
+Bre14, Isa08, Sad04, Bou14, Zha16, Taş18a]. Die präsentierten Ansätze rei-
+chen von einfachen Sichtbarkeitsmodellierungen [Isa08], die das Tracking
+von zuvor erkannten Hindernissen verbessert, bis hin zu komplexen mehr-
+schichtigen Umgebungsmodellen [Hoe17].
+Einige von ihnen berücksichtigen explizit Unsicherheiten [Zha16, Hoe17,
+Bre14, Taş18a], während andere die Sichtbarkeitsanalyse nutzen, um Ge-
+schwindigkeitsbeschränkungen für die Trajektorienplanung zu definie-
+ren [Chu09, Lee17, Taş18a]. Nur drei dieser Veröffentlichungen weisen
+wenigstens passive Bewegungssicherheit (Definition 2.7) nach [Bou14,
+Taş18a] oder beweisen Kollisionsfreiheit für diskrete Zeitschritte ihrer
+Trajektorien [Zha16].
+Definition 2.7: Passive Bewegungssicherheit [Mac09]
+Ein Zustand 𝒙 des mobilen Robotersystems 𝑟 ist genau dann sicher im Sinne der
+passiven Bewegungssicherheit, wenn mindestens ein Bremsmanöver existiert, das
+bei 𝒙 beginnt und bis 𝑇 kollisionsfrei ist, wobei 𝑇 genau die Zeit ist, in der 𝑟 im
+𝑏 𝑏
+Stillstand ist. Folglich kollidiert niemals der Roboter selbst in ein anderes Objekt,
+sondern höchstens umgekehrt.
+Ein interessanter Ansatz wird in [Hoe17] vorgestellt. Die Autoren modellieren
+und prädizieren die Umgebung in einer dreischichtigen Grid-Map: Objekt-
+basierte, objektfreie und unbeobachtbare Umgebung. Während der Planung
+betrachten sie eine Zelle als belegt, sobald eine der drei Schichten als belegt
+vorhergesagt wird.
+Dennoch minimieren diese Methoden allenfalls das Risiko von Kollisio-
+nen [Bre14, Chu09, Hoe17, Lee17] und bieten keine oder zu geringe Si-
+cherheitsgarantien [Bou14, Zha16]. Einige der ersten Ansätze weisen sogar
+grundsätzliche Probleme auf, wie z. B. dass noch nicht beobachtete Hin-
+dernisse ignoriert werden [Isa08], dass verdeckte Bereiche ohne Prädiktion
+berücksichtigt werden [Sad04] oder dass ausschließlich Verdeckungen durch
+statische Hindernisse untersucht werden [Chu09]. Fahrzeuge mit solchen
+Verfahren der Risikoanalyse werden folglich der geplanten Trajektorie fol-
+gen, solange sie kein nennenswertes Risiko erkennen. Dies kann – aufgrund
+der unzureichenden Berücksichtigung von Unsicherheiten – jedoch zu Si-
+tuationen führen, in denen eine Kollision unvermeidlich ist. Daher müssen
+auch solche Methoden, bspw. durch Einbindung in Arbitrationsgraphen
+mit Verifikationslogik (siehe folgenden Teilabschnitt und Abschnitt 4.2),
+abgesichert werden.
+Verhaltensverifikation mittels Erreichbare-Mengen-Analyse
+Um diese Herausforderungen zu lösen, schlagen Althoff u. a. [Alt16] ein Ver-
+fahren zur Verhaltensverifikation mittels Erreichbare-Mengen-Analyse vor,
+das die Sicherheit einer geplanten Trajektorie unter klar spezifizierten An-
+nahmen beweisen kann. Orzechowski u. a. [Orz18] erweitern die Methode,
+um auch Verdeckungen und begrenzte Sensorreichweite bzw. -abdeckung zu
+berücksichtigen. Im Kern basiert die Methode zum einen darauf, zusätzlich
+zur Soll-Trajektorie eine Fail-Safe-Trajektorie zu planen, die das Fahrzeug in
+einen sicheren Zustand überführt und der Verifikation standhalten soll. Zum
+anderen werden alle möglichen Verhalten anderer Verkehrsteilnehmer mit ei-
+ner Worst-Case-Belegung überapproximiert. Überlappt die Belegung der ge-
+planten Fail-Safe-Trajektorie schließlich mit keiner der prädizierten Worst-
+Case-Belegungen, führt die Fail-Safe-Trajektorie das Fahrzeug in jedem Fall
+kollisionsfrei in einen sicheren Zustand und ist somit – unter den Annahmen
+des Verfahrens – beweisbar sicher. Abbildung 2.11 veranschaulicht den Ab-
+gleich der Belegungen einer geplanten Ego-Trajektorie mit den Worst-Case-
+Belegungen eines entgegenkommenden Fahrzeugs. Der Prädiktionshorizont
+wurde dabei in drei Zeitintervalle unterteilt.
+𝑡 ∈ [𝑡0,𝑡1] ∶
+Abbildung 2.11: Belegungen einer geplanten Ego-Trajektorie sowie prädizierte Worst-Case-
+Belegungen eines entgegenkommenden Fahrzeugs, allerdings ohne Berück-
+sichtigung von Verdeckungen oder begrenzter Sensorreichweite, nach [Alt16].
+Solange also für eine geplante Soll-Trajektorie eine beweisbar sichere Fail-
+Safe-Trajektorie gefunden werden kann, auf die im Zweifel im folgenden
+Planungsintervall ausgewichen werden kann, kann auch die Soll-Trajektorie
+selbst im aktuellen Planungsintervall sicher ausgeführt werden. Andernfalls
+muss auf die im vorigen Intervall verifizierte Fail-Safe-Trajektorie zurück-
+gegriffen werden. Abbildung 2.12 fasst den daraus resultierenden Prozess
+der Verhaltensgenerierung im Zusammenspiel mit einer Verifikation mittels
+Erreichbare-Mengen-Analyse zusammen.
+Abbildung 2.12: Ablauf einer Verhaltensverifikation mit der Erreichbare-Mengen-Analyse,
+nach [Alt16].
+Mittelpunkt der Methode ist folglich die Prädiktion der Worst-Case-
+Belegungen anderer Verkehrsteilnehmer. Gegeben sei hierzu das dynamische
+System 𝒙̇ = 𝑓(𝒙(𝑡), 𝒖(𝑡)) mit Zustand 𝒙, Eingangsgröße 𝒖 und Zeit 𝑡. Dann
+beschreibt das Tupel 𝑀 = (𝑓, 𝒳 , 𝒰), wobei 𝒙(0) ∈ 𝒳 und 𝒖 ∈ 𝒰, ein
+0 0
+Modell dieses Systems. Als Erreichbare-Menge bezeichnet man schließlich
+alle gemäß 𝑀 möglichen zukünftigen Zustände zum Zeitpunkt 𝑡 = 𝑟:
+Eine exakte Prädiktion der Erreichbaren-Menge eines Verkehrsteilnehmers
+ist u. a. aufgrund der nicht-linearen hybriden¹ Dynamik nicht effizient
+möglich. Andererseits ist zur Kollisionsvermeidung ohnehin hauptsächlich
+relevant welchen Raum die Verkehrsteilnehmer belegen könnten. Daher
+werden einerseits nur Belegungen prädiziert und diese andererseits effizient
+überapproximiert.
+Formal betrachtet bildet die Belegung ℬ(𝑡) eine Projektion der Erreichbaren-
+Menge auf einen Unterraum proj(𝒙) = [𝑥, 𝑦, 𝜙]T, mit der Position 𝑥, 𝑦 und
+Orientierung 𝜙, ab:
+Diese, auch Worst-Case-Belegungen genannten, Projektionen werden nicht
+nur zu diskreten Zeitpunkten, sondern für konsekutive Zeitintervalle 𝜏 =
+𝑙
+[𝑡 , 𝑡 ] mit Zeithorizont 𝑡 bestimmt. Zudem werden sie nicht exakt berech-
+𝑙 𝑙+1 ℎ
+net, sondern näherungsweise mit Modellen 𝑀 überapproximiert: ∀𝑡 > 0 ∶
+𝑖
+ℛ(𝑀, 𝑡) ⊆ ℛ(𝑀 , 𝑡). Werden schließlich 𝑚 unterschiedliche Modelle mitein-
+𝑖
+ander kombiniert, nähert sich die Schnittmenge ihrer Überapproximationen
+der realen Belegung des Modells 𝑀 an:
+0
+Somit kann die mögliche Belegung mit mehreren effizienten Überapproxi-
+mationen hinreichend gut angenähert werden. Aus dieser Motivation heraus
+wurden in [Alt16] zwei Modelle vorgestellt: die sog. Beschleunigungs-basierte
+Belegung 𝑀 und die sog. Fahrstreifen-basierte Belegung 𝑀 .
+1 2
+¹ resultierend aus der kontinuierlichen Fahrdynamik sowie diskreten Verkehrsregeln und
+Homotopieklassen
+Beiden Modellen liegenden folgende Annahmen zugrunde:
+1 Die positive Längsbeschleunigung wird beendet, sobald eine
+festgelegte Geschwindigkeit 𝑣 erreicht ist.
+max
+2 Ab einer Geschwindigkeit 𝑣 ist die positive Längsbeschleunigung
+𝑆
+umgekehrt proportional zur Geschwindigkeit.¹
+3 In einem Fahrstreifen ist Rückwärtsfahren nicht zugelassen.
+4 Die absolute Beschleunigung ist begrenzt durch 𝑎 .
+max
+5 Es ist untersagt, die Fahrstreifen, Geh-, Rad- und Überwege zu
+verlassen. Das Kreuzen von Fahrstreifen ist erlaubt, solange es nicht
+durch Fahrbahnmarkierungen oder Verkehrsregeln verboten ist.
+𝑀 prädiziert die Belegungen unter Verwendung eines Punktmassemodells
+1
+und des Kamm’schen Kreises, womit die Annahmen 3 und 4 berücksichtigt
+werden. 𝑀 wiederum addressiert explizit das Längsverhalten innerhalb der
+2
+Fahrstreifengeometrien, womit die Annahmen 1, 2 und 5 die Längskompo-
+nente von Annahme 4 einbezogen werden. Abbildung 2.13 veranschaulicht
+die resultierende Worst-Case-Belegung in einer Beispielsituation.
+(c) Resultierende Gesamtbelegung für den ganzen Prädiktionshorizont.
+Abbildung 2.13: Worst-Case-Prädiktionen möglicher Belegungen des beobachteten Fahrzeugs.

@@ -1,0 +1,1251 @@
+
+Fakultät für Mathematik und Wirtschaftswissenschaften
+Institut für Numerische Mathematik
+Segmentierung und Bewertung
+korrosionskritischer Konstruktionen einer
+Gesamtfahrzeugstruktur mittels Methoden
+der künstlichen Intelligenz
+Dissertationsschrift zur Erlangung des Doktorgrades Dr.rer.nat.
+der Fakultät Mathematik und Wirtschaftswissenschaften
+der Universität Ulm
+Vorgelegt von:
+Ludwig Waibel
+aus Memmingen
+2021
+Prof. Dr. Stefan Funken
+Prof. Dr. Stefan Funken
+Prof. Dr. Friedhelm Schwenker
+Dr. Andreas Mittelbach
+30.06.2022
+Amtierender Dekan:
+1. Gutachter:
+2. Gutachter:
+Betreuer Mercedes-Benz AG:
+Tag der Promotion:
+(Teil-)Ergebnisse zur Kanten- und Flanschsegmentierung sind in L. Waibel, A.
+Mittelbach und S. Funken. „Semantic segmentation of corrosive critical designs
+in body-in-white structures for corrosion simulation“. In: Materials and Corrosion
+72.5 (2021). doi: 10.1002/maco.202012134 veröffentlicht.
+(Teil-)Ergebnisse zur Kantenbewertung sind in L. Waibel et al. „Edge delamina-
+tion width prediction of 3D body-in-white part by finite element-based corrosion
+simulation and neural networks“. In: Materials and Corrosion 73.1 (2022). doi:
+10.1002/maco.202112637 veröffentlicht.
+Einleitung
+Der Prozess der Korrosion beschreibt die allmähliche Zersetzung von metallischen
+Materialien durch elektrochemische Reaktionen mit der Umgebung. Dabei verur-
+sacht die Umwandlung der Materialien allein in den USA einen direkten jährli-
+chen Schaden von 3.1% des Bruttoinlandsprodukts, wobei der Transportsektor für
+mehr als ein fünftel verantwortlich ist. [5, 108] Neben ökonomischen Gesichtspunk-
+ten ist eine Absicherung hinsichtlich Korrosion aus Gründen der Nachhaltigkeit,
+Sicherheit, Qualität, Garantieanforderung und Ästhetik auch im modernen Auto-
+mobilbau der Mercedes-Benz AG unerlässlich.
+Um in Zeiten immer kürzerer Produktzyklen und zunehmenden Kostendrucks
+einen langlebigen und qualitativ hochwertigen Korrosionsschutz entwickeln zu kön-
+nen, werden vermehrt digitale Modelle eingesetzt, die die Experten unterstützen.
+Insbesondere Methoden aus dem Bereich der künstlichen Intelligenz (KI) stellen
+einen vielversprechenden Weg dar, um die damit verbundenen Herausforderungen
+zu bewältigen, da diese sich durch ein menschenähnliches Vorgehen auszeichnen.
+So wird beispielsweise durch ein sogenanntes Neuronales Netz (NN) die Funkti-
+onsweise eines Gehirns modelliert. Eine weitere Parallele zeigt sich durch die Art
+und Weise des Wissenserwerbs, denn sowohl die menschliche als auch die künstli-
+che Intelligenz benötigen ein gewisses Training, um die gewünschten Resultate zu
+erzielen. Das heißt, dass anhand von Beispielen, die auch zum Teil inkonsistent
+sein können, ein Vorgehen gelernt und auf neue unbekannte Instanzen angewandt
+wird. Mittlerweile erreichen problemspezifische Methoden der KI, beispielsweise
+in der Bilderkennung [165], Fehlerraten auf menschlichem Niveau.
+Diese Methoden versprechen somit die Realisierung einer vollautomatisierten, di-
+gitalen, zuverlässigen und schnellen Umsetzung einer Vielzahl an korrosionsbe-
+zogener Aufgabenstellungen, wodurch die Arbeit der Korrosionsschutzexperten
+unterstützt, beschleunigt, standardisiert und objektiviert wird, was wiederum zur
+Sicherung der internationalen Wettbewerbsfähigkeit der Mercedes-Benz AG bei-
+trägt. Aus diesem Grund beschäftigt sich die vorliegende Promotionsarbeit mit
+dem Einsatz von KI Methoden im Kontext des Korrosionsschutzes.
+Einleitung
+Korrosionskritische Konstruktionen
+Bei der Mercedes-Benz AG werden momentan zur korrosiven Absicherung Fahr-
+zeugprototypen einerseits Felderprobungen auf der Straße und andererseits ag-
+gressiven Testumgebungen in speziellen Klimakammern unterzogen. Die Korrosi-
+onsschutzexperten identifizieren vor, während und nach den Tests kritische Bau-
+teilbereiche und definieren gegebenenfalls geeignete Korrosionsschutzmaßnahmen.
+Die durchgeführten Tests zeigen, dass gewisse Bauteilbereiche und spezielle Kon-
+struktionen wesentlich häufiger von Korrosion betroffen sind als andere.
+Abbildung 0.1: Kanten- (rot) und Flanschsegmentierung (gelb) eines GLAs.
+Diese korrosionskritischen Konstruktionen bestehen aus Bauteilkanten und Flan-
+schen, wobei ein Flansch eine nicht zerstörungsfrei lösbare Verbindung zwischen
+Rohbauteilen bezeichnet. Diese Konstruktionen werden aktuell aufwendig von den
+Korrosionsschutzexperten manuell herausgefiltert und analysiert, weshalb zur Un-
+terstützung eine neuartige Kanten- und Flanschsegmentierung für Fahrzeugkaros-
+serien entwickelt wird. Die Segmentierung erlaubt eine Reduktion der Gesamt-
+daten auf korrosionskritische Konstruktionen, was den bisherigen Analyseprozess
+beschleunigt. Beispielsweise wird so die zu prüfende Oberfläche eines GLAs (Ab-
+bildung 0.1) um circa dreiviertel reduziert.
+Zur Kanten- und Flanschsegmentierung erweisen sich Methoden der KI als be-
+sonders geeignet, nachdem korrosionskritische Konstruktionen nicht eindeutig de-
+finiert sind und diese Algorithmen auch anhand inkonsistenter Daten lernen kön-
+nen. Aus diesem Grund werden insbesondere KI Methoden zur Umsetzung der
+Kanten- und Flanschsegmentierung in dieser Arbeit untersucht.
+Einleitung
+Korrosionsrisiko
+Die beschriebene Hardware basierte Absicherung der Rohkarosserie hinsichtlich
+Korrosion erfordert das physische Vorhandensein der Prototypen, langwierige und
+kostspielige Tests sowie entsprechendes Equipment und geschultes Personal. Zur
+Reduktion der Kosten- und Zeitfaktoren wird im Zuge der Digitalisierung verstärkt
+auf qualitative und quantitative Simulationsergebnisse zurückgegriffen. In den Ar-
+beiten [18, 65, 101, 212] werden dazu Kanten- und Flansch-Korrosionssimulationen
+auf Basis der Finite Elemente Methode (FEM) beschrieben, die das Korrosions-
+verhalten über einen längeren Zeitraum stabil auf kleinen zweidimensionalen Geo-
+metrien in Abhängigkeit der räumlichen Lage und verschiedenen Klimaten model-
+lieren. Die Simulationsergebnisse werden durch entsprechende Korrosionstests an
+Probeblechen validiert.
+Eine Korrosionssimulation einer gesamten Fahrzeugkarosserie ist durch die naive
+Skalierung dieser Modelle allerdings nicht möglich, da dies rein rechnerisch einen
+Speicherbedarf in der Größenordnung von mehreren Exabyte ( = 1018 B = 109 GB)
+ergibt. Dieser immense Speicherbedarf und die damit verbundenen hohen Rechen-
+zeiten führen zu einer nicht durchführbaren, bzw. unpraktikablen Simulation.
+Durch die entwickelte Kantensegmentierung für Fahrzeugkarosserien wird der zu
+untersuchende Bereich der Bauteile auf Stellen mit potentiellem Korrosionsrisiko
+reduziert. Diese Datenreduktion ermöglicht die Bestimmung eines Korrosionsrisi-
+kos der identifizierten Bauteilkanten durch die FEM Simulationen. Da diese auf
+Basis der Korrosionserscheinungen an Prüfblechen entwickelt werden, wird die
+Anwendung an einem generischen Bauteil validiert. (Abbildung 0.2, Punkt 1 und
+2) Um die Bestimmung des Korrosionsrisikos der Bauteilkanten zu beschleunigen,
+werden verschiedene Arten von NNs mit den Simulationsergebnissen trainiert.
+(Abbildung 0.2, Punkt 3) Das trainierte NN wird dann auf das Rohbauteil an-
+gewendet, wodurch sich eine enorme Zeiteinsprung verglichen mit der Simulation
+ergibt, da keine Simulationen durchgefürt werden, sondern nur zwischen Simula-
+tionsergebnissen interpoliert wird. (Abbildung 0.2, Punkt 4)
+Zur Bestimmung der Kantenkorrosion einer Bauteilkonsole ergeben sich beispiels-
+weise folgende Kennwerte. Die naive Skalierung der Kanten-Korrosionssimulation
+benötigt rein rechnerisch einen Speicherbedarf von 495.9 1012 B bei entsprechend
+·
+hoher Berechnungszeit und ist somit für die industrielle Anwendung nicht ein-
+setzbar. Wird zunächst die in dieser Arbeit entwickelte Kantensegmentierung ein-
+gesetzt, so ergeben sich einerseits für die Anwendung der FEM basierten
+32 h
+Korrosionssimulation und andererseits 1.5 s für die Korrosionsprognose durch ein
+trainiertes NN.1
+1Auf einer Workstation mit Intel i7-8700K, 64GB RAM und NVIDIA Quadro P2000.
+Abbildung 0.2: Auswertung des experimentellen, simulierten und vorhergesag-
+ten Korrosionsrisikos. Durchgeführte Auswertungen sind dick ge-
+druckt.1
+Zielsetzung
+Aus den obengenannten Punkten leitet sich folgende Forschungsfrage ab, die im
+Verlauf der Promotionsarbeit beantwortet wird:
+Wie können korrosionskritische Konstruktionen einer Gesamtfahrzeugkarosserie
+mittels Methoden der KI segmentiert und Korrosionsrisiken prognostiziert wer-
+den?
+Die Ziele dieser Dissertation sind dabei insbesondere:
+i) Entwicklung von Methoden zur effizienten und exakten Segmentierung von
+korrosionskritischen Konstruktionen auf Basis der Geometriedaten
+ii) Entwicklung einer schnellen und genauen Korrosionsprognose unter Berück-
+sichtigung der Bauteilgeometrie, der räumlichen Lage und verschiedener Kli-
+maeinflüsse
+iii) Implementierung dieser Methoden in geeignete KI-Anwendungen
+1Modifiziert nach [203] mit freundlicher Genehmigung von John Wiley & Sons Inc.
+Einleitung
+Gliederung
+Im ersten Kapitel wird der Begriff der KI definiert und auf Standardmethoden
+sowie deren Bewertung und Optimierung eingegangen. Anschließend werden be-
+kannte Methoden zur dreidimensionalen Geometrieanalyse und die Grundlagen
+der Korrosionstheorie zusammengefasst.
+Das zweite Kapitel bildet den Schwerpunkt der Arbeit und behandelt die Kanten-
+und Flanschsegmentierung von Gesamtfahrzeugstrukturen. Um eine effiziente und
+korrekte Segmentierung gewährleisten zu können, werden einige Anforderungen
+an die einzelnen Geometrien bzw. den gesamten Datensatz gestellt und gegebe-
+nenfalls Fehler korrigiert. Des Weiteren werden Kanten- und Flansch-spezifische
+Eigenschaften beschrieben, die aus den Geometriedaten extrahiert werden. Die-
+se dienen als Ausgangspunkt für deterministische und KI basierte Analysen, die
+entsprechend ausgewertet, optimiert und miteinander verglichen werden. Abschlie-
+ßend wird dargestellt, wie die entwickelten Methoden zur Segmentierung von Ge-
+samtfahrzeugstrukturen verwendet werden.
+Kapitel drei behandelt die Bestimmung des Korrosionsrisikos an den zuvor identifi-
+zierten korrosionskritischen Konstruktionen. Dazu wird zunächst ein Validierungs-
+schema beschrieben, sodass sichergestellt wird, dass die von der Mercedes-Benz
+AG entwickelten Kanten-Korrosionssimulationen von Prüfblechen auf Rohbauteile
+übertragen werden können. Im nächsten Schritt wird erläutert, wie verschiedene
+NN Typen mit den Simulationsergebnissen trainiert und anschließend zur Pro-
+gnose der Kantenkorrosion von Rohbauteilen verwendet werden. Außerdem wird
+der Einsatz von KI Methoden zur Reproduktion der Simulationsergebnisse der
+Flanschkorrosion dargelegt.
+Das vierte Kapitel geht auf Kennwerte des Datenimports, der Korrektur sowie
+den verwendeten markierten Datensatz zum Training der unterschiedlichen Ana-
+lysemethoden ein. Darüber hinaus werden die Prognosegüten der verschiedenen
+deterministischen und KI basierten Methoden zur Kanten- und Flanschsegmen-
+tierung miteinander verglichen. Nachdem sich die Kanten-Korrosionssimulationen
+auf Rohbauteile übertragen lassen und die Simulationsresultate durch die verschie-
+denen NN Typen mit geringem Fehler reproduziert werden, ist eine sehr schnelle
+Korrosionsprognose realisierbar. Auch die Simulationsergebnisse der Flanschkor-
+rosion können mit Methoden der KI mit entsprechenden Trainingsdaten wieder-
+gegeben werden.
+1 Aktueller Kenntnisstand
+1.1 Künstliche Intelligenz
+1.1.1 Arten künstlicher Intelligenz
+Unter Methoden der künstlichen Intelligenz (KI) werden Systeme verstanden, die
+menschlich oder rational denken bzw. handeln. [166] Im Gegensatz zu determinis-
+tischen Ansätzen, die Probleme durch eine Liste formaler, mathematischer Regeln
+beschreiben, lernen KI Algorithmen aus Erfahrungen bzw. Daten. Dazu werden
+einfache Lösungskonzepte hierarchisch zusammengeschlossen, um komplexe Pro-
+bleme zu lösen. Wissensbasierte KI leitet basierend auf simplen Wissen komplexere
+Aussagen logisch ab. Wird hingegen das Wissen selbständig von der KI durch das
+Extrahieren von Mustern aus den Daten erlangt, so wird diese den Machine Lear-
+ning (ML) Ansätzen zugeordnet. Die klassischen ML Verfahren analysieren dabei
+manuell ausgewählte bzw. extrahierte Daten, die auch Features genannt werden.
+Im Unterschied dazu lernen Deep Learning (DL) Methoden Features selbstständig
+aus Rohdaten zu aggregieren. Insofern bilden DL Methoden eine Untermenge der
+ML Ansätze, die wiederum eine Untermenge der KI sind. [71]
+Des Weiteren wird zwischen überwachten (engl. supervised), semi-überwachten
+und unüberwachten Methoden unterschieden. Für überwachte Methoden werden
+den Features Klassen bzw. Werte zugeordnet, je nachdem ob diese zur Klassifika-
+tion oder zur Regression verwendet werden. [13, 191]
+Semi-supervised Verfahren [223] benutzen viele ungelabelte Instanzen zusammen
+mit wenigen gelabelten und können deshalb als supervised Verfahren mit kleiner
+Trainingsmenge betrachtet werden. [207]
+Unsupervised Methoden arbeiten ohne vorgegebene Klassen und fassen beispiels-
+weise ähnliche Features zu Clustern zusammen. [13, 166]
+1 Aktueller Kenntnisstand
+1.1.2 Features, Labels und Regressionswerte
+1.1.2.1 Notationen
+Die Modellparameter ω klassischer überwachter ML Methoden zur Klassifikation
+und Regression werden auf Basis der Trainingsmenge bestehend aus den Feature-
+daten RnT n
+f
+zusammen mit den Labels ZnT oder den Regressionswerten
+×
+F ∈ L ∈
+RnT ermittelt bzw. trainiert. Dabei bezeichnet
+n
+die Anzahl der verschie-
+f
+R ∈
+denen Features und die Anzahl der Trainingsinstanzen. Jede Trainingsinstanz,
+n
+T
+die den Featurevektor und das Label (f , (cid:96) ) , (cid:96) Z bzw. den Regressionswert
+j j
+∈
+(f , r ) , r R, j = 1, . . . , n umfasst, wird in die Anpassung des Modells in-
+j j T
+∈
+volviert. Das trainierte Modell wird dann genutzt, um für neue unbekannte Tes-
+tinstanzen f das Label l bzw. den Wert r , i = 1, . . . , n zu bestimmen. Dabei
+i i i A
+bezeichnet die Anzahl der Testinstanzen.
+n
+A
+1.1.2.2 Feature Normalisierung
+Um die Leistung eines Modells zu steigern ist es oftmals von Vorteil die Features
+vor der Analyse zu normalisieren. Dadurch wird sichergestellt, dass die Einfluss-
+größe jedes Features auf die zu optimierende Zielfunktion homogen ist. [13, 191]
+Der Erwartungswert µ und die Varianz σ2 der n -elementigen Trainingsmenge
+k k T
+des k-ten Features werden durch
+berechnet. Standardisierte Features werden mittels
+bestimmt, wobei die linear-transformierten Elemente f˜ des Trainingssets einen
+k
+Erwartungswert von und eine Standardabweichung von besitzen. [12, 191]
+0 1
+Eine nicht-lineare Skalierung ergibt sich durch die sogenannte Softmax-Normali-
+sierung [191] mit einem vorinitialisierten positiven Skalierungsfaktor β > 0
+1 Aktueller Kenntnisstand
+wodurch die Werte f¯ im Intervall (0, 1) liegen. Durch diese Normalisierung wer-
+jk
+den Werte, die stark vom Mittelwert abweichen, stärker beeinflusst. [191]
+Der Mittelwert und die Varianz in Gleichung (1.1) werden nur über der Trainings-
+menge ermittelt, da diese Eigenschaften im Allgemeinen für neue Daten unbekannt
+sind. Dennoch werden auch die Features der Testdaten f über Gleichung (1.2) oder
+i
+Gleichung (1.3) mit den bekannten Werten für µ und σ transformiert, damit alle
+k k
+Features die gleiche Normalisierung erfahren. [13, 191]
+1.1.2.3 Feature Reduktion
+Steht eine große Anzahl n an verschiedenen Features zur Verfügung, die oft-
+f
+mals voneinander abhängen, so kann es hilfreich sein diese vor der eigentlichen
+Featureanalyse auf n < n unabhängige zu reduzieren. Durch die Hauptkompo-
+u f
+nentenanalyse [88] wird der Datensatz auf sogenannte Hauptkomponenten redu-
+ziert, sodass der Informationsgehalt, also die Varianz des ursprünglichen Datensat-
+zes bestmöglich durch die wenigen Hauptkomponenten u , . . . , u approximiert
+1 nu
+wird. Für den Fall, dass gesetzt wird, so werden die originalen Featu-
+n = 1
+u
+res f Rn f , j = 1, . . . , n , die hier als Spaltenvektor interpretiert werden auf
+j T
+∈
+ut f R projiziert. Die Varianz der projizierten Daten wird durch ut Σu mit der
+1 j ∈ 1 1
+Kovarianzmatrix
+berechnet. Zusammen mit der Nebenbedingung ut u = 1, zeigt sich, dass die
+1 1
+projizierte Varianz maximiert wird, sobald Σu = λ u gilt. Die Varianz beträgt
+1 1 1
+dann ut Σu = λ 0. Das heißt, dass für eine Projektion mit maximalem Infor-
+1 1 1 ≥
+mationsgehalt die Hauptkomponente u dem Eigenvektor von Σ mit dem größten
+1
+Eigenwert entspricht. Falls n > 1 gewählt wird, so sind die Hauptkomponenten
+u
+u , u . . . , u durch die Eigenvektoren von Σ korrespondierend zu den größten
+1 2 nu
+Eigenwerten λ λ . . . λ 0 gegeben. [13]
+1
+≥
+2
+≥ ≥
+nu
+≥
+Vor der Anwendu≥ng d≥er Hau≥ptkoum≥ponentenanalyse werden die Features über Glei-
+chung (1.2) standardisiert, da die Varianz der Daten von der Skalierung der Fea-
+tures abhängt. [97]
+Die Anzahl n wird beispielsweise so gewählt, dass die kumulierte erklärte Vari-
+u
+anz (cid:80)nu λ / (cid:80)n f λ der n Hauptkomponenten einen vorgegebenen Anteil δ
+k=1 k k=1 k u u
+übersteigt. [97]
+1 Aktueller Kenntnisstand
+1.1.3 Methoden der künstlichen Intelligenz
+1.1.3.1 k -nächste Nachbarn
+nn
+Fix und Hodges Jr. [58] publizieren eine nicht-parametrische Methode zur Klassi-
+fizierung der Entität i durch die k -nächsten Nachbarn (KNN) im Featureraum
+nn
+bzw. deren Labels. Dazu wird bezüglich einer Distanzmetrik d der Abstand des
+unbekannten Featurevektors f = f , j 1, . . . , n zu den Trainingsdaten
+i j T
+(cid:54) ∀ ∈ { }
+(f , (cid:96) ) , j = 1, . . . , n bestimmt. Die Distanzen werden dann aufsteigend sortiert,
+j j T
+sodass d(f , f ) d(f , f ) . . . d(f , f ) gilt. Für ein binäres Klassifika-
+i j
+1 ≤
+i j
+2 ≤ ≤
+i jnT
+tionsproblem wird k ungerade gewählt, damit die Mehrheitsentscheidung zur
+nn
+Klassifizierung der Entität i durch
+eindeutig ist. Dabei bezeichnet
+die binäre Treppenfunktion. [13, 191]
+Im Rahmen einer Regression wird der Mittelwert der k -nächsten Nachbarn im
+nn
+Trainingsdatensatz (f , r ) , j = 1, . . . , n durch
+j j T
+ermittelt. Alternativ kann der Mittelwert durch das Inverse der Distanzen gewich-
+tet werden. [35, 55]
+Als Metrik werden unter anderem die euklidische d (x, y) = x y oder die
+2 (cid:107) − (cid:107)2
+Mahalanobis Distanz [128]
+mit Σ 1 als Inverses der Kovarianzmatrix verwendet. Die Mahalanobis Distanz
+−
+berücksichtigt somit die unterschiedlichen Skalen der Features und deren Korre-
+lation. [13, 137, 191]
+1 Aktueller Kenntnisstand
+1.1.3.2 Classification And Regression Trees
+Breiman et al. [22] publizieren auf Basis der Algorithmen von Sonquist und Mor-
+gan [179] und Messenger und Mandell [141] sogenannte Classification And Re-
+gression Trees (CART), also Bäume zur Klassifikation und Regression. Im Fal-
+le der Klassifikation werden die Feature-Label-Paare (f , (cid:96) ) , j = 1, . . . , n der
+j j T
+Trainingsmenge rekursiv in einem Top-down-Ansatz analysiert. In Bezug auf eine
+binäre Klassifikation werden für jeden Knoten des Baumes mit Elementen
+n
+folgende Schritte durchgeführt: K K
+i) Das Element j im Knoten wird dem Kindknoten zugewiesen, falls für
+l
+K K
+das k-te Feature f δ , j für eine Schranke δ gilt. Andernfalls
+jk k k
+≤ ∈ K
+werden die Elemente dem Kindknoten zugewiesen. Falls das Feature f
+r k
+K
+kategorisch ist, so erfolgt die Zuteilung durch f , wobei eine echte
+jk
+∈ A A
+Untermenge aller Kategorien in darstellt. Für ein geordnetes Feature er-
+K
+geben sich insgesamt n 1 und für kategorische Features 2nK 1 1 mögliche
+−
+Aufteilungen.
+K− −
+ii) Für alle möglichen Zerlegungen des Knotens wird jeweils ein Impurity
+K
+Gain
+n n
+berechnet. Die Impurity I kann beispiKelsweise durcKh den Gini-Index I( ) =
+1 (cid:80)1 p2 bestimmt werden, wobei p = 1 (cid:80)nK 1 ((cid:96) = g, j K ) die
+− g=0 g g nK j=1 j ∈ K
+relative Häufigkeit der Elemente mit Klasse g in bezeichnet. Falls ein
+K
+Knoten nur Elemente der gleichen Klasse besitzt, so ist I ( ) = 0.
+pure pure
+K K
+iii) Das FeatKure fˆ zusammen mit der Schranke δˆ , die den höchsteKn Impurity
+k k
+Gain erzielen, werden verwendet, um den Knoten in die Kindknoten
+l
+K K
+und aufzuspalten. Für I ( ) = 0 ist keine Aufteilung notwendig.
+r pure
+K K
+Die Klassenzuweisung eines Knotens erfolgt durch einen Mehrheitsentscheid
+bezüglich der Labels der Elemente im Knoten.
+Im Gegensatz zur Verwendung von Stoppregeln zur Aufspaltung der Knoten,
+wie in den Methoden von Sonquist und Morgan [179] und Messenger und Man-
+dell [141], generiert CART zunächst einen Baum mit I ( ) = 0 für alle Blatt-
+pure
+K
+knoten. Anschließend wird dieser Baum dann auf eine Größe beschnitten, die den
+niedrigsten Fehler bezüglich einer Kreuzvalidierung aufweist. Dadurch wird die
+Wahrscheinlichkeit einer Unter- bzw. Überanpassung des CART an die Trainings-
+daten im Gegensatz zu den Algorithmen [141, 179] reduziert. [125] Die ermittelten
+Entscheidungsregeln werden dann auf neue Testdaten angewandt.
+1 Aktueller Kenntnisstand
+Für eine Regression kann die Impurity durch die mittlere quadratische Abwei-
+chung (engl. Mean Squared Error (MSE)) I( ) = 1 (cid:80)nK (r r ) bestimmt
+werden, wobei dem Knoten der Mittelwert
+rK
+= 1
+n (cid:80)K nKj= r1 deµ r− darj
+in enthalte-
+K µ nK i=j j
+nen Regressionswerten zugewiesen wird. [22]
+Die Normalisierung der Features hat keinen Einfluss auf die Ergebnisse, da die
+Schranken δ aus den Elementen im Knoten gewählt und somit entsprechend an-
+gepasst werden.
+1.1.3.3 Diskriminanzanalyse
+Die Diskriminanzanalyse (DA) führt eine Klassifizierung des Featurevektors f
+i
+mithilfe der Entscheidungsregel l = 1 P (l = 1 f ) > P (l = 0 f ) durch. Nach
+i i i i i
+⇔ | |
+dem Satz von Bayes ist dies äquivalent zu
+unter der Annahme, dass P (l = 1) = P (l = 0) gilt. Wenn die Dichten
+i i
+einer multivariaten Normalverteilung entsprechen, ergibt sich aus Gleichung (1.10)
+und der Anwendung des natürlichen Logarithmus folgende Bayes-Regel für die
+Quadratische Diskriminanzanalyse (QDA)
+mit einem Schwellwert ω . Dabei werden Σ und µ auf den Trainingsdaten er-
+0 k k
+mittelt. [32, 49]
+Die Lineare Diskriminanzanalyse (LDA) resultiert aus der Annahme Σ = Σ = Σ,
+0 1
+wodurch sich Gleichung (1.12) auf l = 1 ωtf > ω reduziert, mit ω =
+i i 0
+⇔
+Σ 1 (µ µ ) und ω = 1ωt (µ + µ ) für P (l = 1) = P (l = 0). [49]
+− 0 − 1 0 2 0 1 i i
+Die von Fisher [57] publizierte lineare Diskriminanzanalyse kommt ohne die Ein-
+Die von−Fisher [57] publi2zierte lineare Diskriminanzanalyse kommt ohne die Ein-
+schränkung aus und maximiert das Verhältnis der Varianz zwischen
+Σ = Σ = Σ
+0 1
+und innerhalb der Klassen durch ω = (Σ
+0
++ Σ 1)−1 (µ
+0
+µ 1). [13, 49] Werden statt
+−
+den eigentlichen Features die über Gleichung (1.2) standardisierten Features ver-
+wendet, so hat dies keinen Einfluss auf die Klassifizierung. (Anhang A)
+1 Aktueller Kenntnisstand
+Eine Regularisierung der linearen bzw. der Fisher Diskriminanzanalyse kann durch
+realisiert werden, wobei (cid:0) Σ , Σ , . . . , Σ (cid:1)t die Diagonalelemente von Σ sind
+1,1 2,2 n ,n
+f f
+und I die Einheitsmatrix ist. [61, 76, 181]
+n
+f
+1.1.3.4 Support Vektor Maschine
+Vapnik [194] veröffentlicht eine sogenannte Support Vektor Maschine (SVM), die
+eine Hyperebene H = f Rn f ωtf+ω zur Trennung zweier linear separierbaren
+0
+{ ∈ | }
+Mengen = f (cid:96) = g, j = 1, . . . , n , g = 1, 1 findet, die maximalen Abstand
+g j j T
+L { | } −
+zu den Elementen in und besitzt. Das heißt, es wird das quadratische
+1 1
+Minimierungsproblem
+L− L
+gelöst. Vektoren f , die (cid:96) (ωtf + ω ) = 1 erfüllen, werden Support Vektoren (SV)
+j j j 0
+genannt. Diese sind ausreichend, um die optimale Wahl von ω als Linearkombina-
+tion ω = (cid:80)nT (cid:96) λ f = (cid:80) (cid:96) λ f mit λ 0 darzustellen, wobei λ > 0 nur für
+j=1 j j j SV j j j j ≥ j
+SV gilt. Für neue Daten f ergibt sich dann das Label durch
+i
+für einen SV f und f . [32, 195]
+1(cid:48)j ∈ L1 −(cid:48) 1k ∈ L−1
+Diese linearen SVMs benötigen eine linear separierbare Trainingsmenge und liefern
+auch nur eine lineare Entscheidungsfunktion, wie Abbildung 1.1 veranschaulicht.
+Dadurch ergeben sich zwei Problemstellungen:
+i) Zulassen von Fehlklassifikationen:
+Falls die Trainingsdaten nicht ohne Fehler linear separiert werden können,
+werden Schlupfvariablen ξ 0, j = 1, . . . , n in das Problem aus Glei-
+j T
+≥
+Abbildung 1.1: Entscheidungsebene H einer linearen SVM mit maximalem Ab-
+stand zwischen den linear separierbaren Klassen und sowie
+1 1
+den Support Vektoren f , f und f , f L− .L 1
+1(cid:48)1 1(cid:48)2 ∈ L1 −(cid:48) 11 −(cid:48) 12 ∈ L−1
+chung (1.14) eingeführt, sodass folgendes Minimierungsproblem
+mit einer Konstanten C entsteht. [13, 32, 195]
+ii) Finden einer nicht-linearen Entscheidungsfunktion:
+Durch das Abbilden der nicht-linear separierbaren Inputs f Rn f , j =
+j
+∈
+1, . . . , n in einen Raum Rm mithilfe einer passenden nicht-linearen Feature
+T
+Map Φ : Rn f Rm können linear separierbare Daten (Φ (f ) , (cid:96) ) erzeugt
+j j
+→
+werden. Die Nebenbedingung in Gleichung (1.14) entspricht in Rm somit
+(cid:96) (ωtΦ (f ) + ω ) 1 und durch die Darstellung von ω als Linearkombina-
+j j 0
+≥
+tion der Support Vektoren im Raum Rm ergibt sich
+ωtΦ (f ) + ω = (cid:88) (cid:96) λ Φ (f )t Φ (f ) + ω = (cid:88) (cid:96) λ K (f , f ) + ω , (1.17)
+i 0 j j j i 0 j j j i 0
+SV SV
+wobei die letzte Identität eine Funktion K(f , f ) enthält, die den Satz von
+j i
+1Eigene Abbildung in Anlehnung an [32].
+1 Aktueller Kenntnisstand
+Mercer erfüllt. [32] Durch solche Kernel Funktionen K muss die Funktion Φ
+und die Dimension des Bildraums m nicht bekannt sein, solange das inne-
+re Produkt des entsprechenden Raums bekannt ist. [34, 191] Beispielsweise
+(cid:16) (cid:17)
+erfüllen radiale Basisfunktionen K(x, y) = exp (cid:107)x −y (cid:107) oder Polynome
+− σ2
+K(x, y) = (xty + 1)q , q > 0 den Satz von Mercer. [32, 195]
+Im Falle einer Regression werden die Daten (f , r ) , j = 1, . . . , n , f Rn, r R
+j i T j ∈ f j ∈
+durch eine lineare Funktion h(f) = ωtΦ (f) + ω im Raum Rm approximiert. Vap-
+0
+nik [195] bestimmt dabei die optimalen Parameter ω und ω , indem das Funk-
+0
+tional 1 ω 2 + (cid:80)nT E (f , r ) mit einer ε-insensitiven Loss-Funktion E (f, r) =
+2 (cid:107) (cid:107) j=1 ε j j ε
+1 ( h(f) r > ε) h(f) r ε minimiert wird. Es wird gezeigt, dass die optimale
+Lös| ung d− er| Form| h(f ,− λ, λ| − ) = (cid:80)nT (cid:0) λ λ (cid:1) K (f , f ) + ω entspricht, wobei
+i ∗ j=1 ∗j − j j i 0
+λ und λ Lösungen eines quadratischen Optimierungsproblems sind und K eine
+∗
+Kernel Funktion ist. [48, 74, 195, 196]
+Nachdem die Bestimmung von ω durch die SVM in allen Fällen auf ein qua-
+dratisches Optimierungsproblem zurückgeführt wird, ist die Lösung dieses Pro-
+blems [53, 103, 152] der bestimmende Faktor bezüglich der Trainingszeit und des
+Speicherbedarfs.
+1.1.3.5 Neuronales Netz
+Multilayer Perzeptron Rosenblatt [162, 163] beschreibt ein Perzeptron, das li-
+near separierbare Daten trennen kann. Der Input f Rn f der Instanz i wird
+i
+∈
+der Klasse l 0, 1 zuweisen, indem eine lineare Trennebene zur Klassifikation
+i
+∈ { }
+benutzt wird. Das Label wird also durch l (f , ω) = 1 (ωtf + ω > 0) 0, 1
+i i i 0
+∈ { }
+berechnet. Wird zur Bestimmung des Outputs
+anstatt der binären Treppenfunktion eine andere Transferfunktion F verwendet, so
+wird von einem Neuron gesprochen. [13] (Abbildung 1.2) Es werden unter anderem
+folgende Transferfunktionen verwendet: [9, 171]
+i) Identität:
+ii) Tangens hyperbolicus:
+1 Aktueller Kenntnisstand
+iii) Logistische Sigmoid-Funktion:
+iv) Softmax-Funktion:
+Erweiterung der logistischen Sigmoid-Funktion auf den d-dimensionalen Fall
+mit d > 1
+exp (x )
+v) Exponential Linear Unit (ELU):
+Dabei bezeichnet ψ > 0 einen wählbaren Parameter (häufig ψ = 1).
+Der Zusammenschluss mehrerer Perzeptronen bzw. Neuronen in mehreren Schich-
+ten wird Multilayer Perzeptron oder auch feed-forward Neuronales Netz (NN)
+genannt. [13]
+Training Die Gewichte ω des NN sind trainierbar und werden aus dem gelabelten
+Datensatz gelernt, indem diese so angepasst werden, dass der Fehler zwischen
+der input-spezifischen Netzausgabe und dem tatsächlichen Output bezüglich einer
+2Eigene Abbildung in Anlehnung an [209].
+1 Aktueller Kenntnisstand
+sogenannten Loss-Funktion E minimal ist. Im Fall einer binären Klassifizierung
+loss
+wird für die Loss-Funktion beispielsweise die Kreuzentropie
+verwendet, die sich aus der tatsächlichen Klasse (cid:96) 0, 1 und der vorhergesag-
+j
+∈ { }
+ten Wahrscheinlichkeit NN (f ) = p (0, 1) des Netzes in Abhängigkeit von ω
+ω j j
+∈
+berechnet. Im Falle einer Regression wird beispielsweise der MSE
+zwischen den tatsächlichen Regressionswerten r und den ausgegebenen Werten
+j
+NN (f ) = r R, j = 1, . . . , n bestimmt und minimiert.
+ω j j T
+∈
+Das Update de∈r Netzwerkgewichte ω erfolgt iterativ, beispielsweise über den Back-
+propagation-Algorithmus [164]. Dabei werden die Gewichte im Schritt τ +1 durch
+berechnet, wobei ∆ω(τ) das Gewichtsupdate bezeichnet. Das Update für eine Klas-
+sifikation (analog für eine Regression) kann wie folgt berechnet werden:
+i) Offline oder Batch:
+Das Gewichtsupdate
+wird durch alle Trainingsinstanzen (f , (cid:96) ) , j = 1, . . . , n des Klassifizie-
+j j T
+rungsproblems bestimmt. Der Parameter ν > 0 beschreibt dabei die soge-
+nannte Lernrate. Der Aufwand zur Bestimmung des Updates liegt in
+(n )
+T
+O
+und ist somit abhängig von der Größe des Trainingssets. [13, 71]
+ii) Online:
+Für jede Trainingsinstanz (f , (cid:96) ) eines Klassifizierungsproblems werden die
+j j
+Gewichte durch
+∂E (NN (f ), (cid:96) )
+aktualisiert. Dieses Training besitzt somit sehr viele Gewichtsupdates. [13]
+1 Aktueller Kenntnisstand
+iii) Mini-Batch:
+Aus dem Trainingsdatensatz werden n Elemente zu Mini-Batches zusam-
+b
+mengefasst und die Parameter werden durch ∆ω(τ) = ν (cid:80)n b ∆ω(τ) ak-
+− j=1 j
+tualisiert. Dieser Ansatz aktualisiert die Gewichte seltener als das Online
+Training und die Anzahl der Updates kann unabhängig von der Trainings-
+größe gestaltet werden. [71]
+Zur Verbesserung der Konvergenz erweitern Rumelhart und McClelland [164] das
+beschriebene Gradientenabstiegsverfahren durch einen Momentum Term, sodass
+das Gewichtsupdate durch
+berechnet wird, wobei η einen Momentum-Parameter beschreibt. Der Adam Trai-
+ningsalgorithmus von Kingma und Ba [105] benutzt ebenfalls eine Momentum-
+strategie und bestimmt die Lernraten adaptiv.
+Quasi-Newton Verfahren [77, 124] versuchen optimale Lernraten zu erreichen,
+indem die Hesse-Matrix approximiert wird. Das skalierte konjugierte Gradien-
+ten (SCG) Verfahren von Møller [142] basiert auf dem Verfahren konjugierter
+Gradienten [96], führt allerdings keine Liniensuche durch. Diese Trainingsmetho-
+de ist passend für große NNs, weist einen geringen Speicheraufwand und eine
+schnelle Optimierung des Netzes auf und erzielt gleichzeitig gute Ergebnisse für
+eine Vielzahl an Problemen. [9]
+Nachdem die Gewichte ω frei wählbar sind, ist eine Normalisierung der Features
+wie in Abschnitt 1.1.2.2 beschrieben für Mehrschichtnetzwerke theoretisch nicht
+notwendig, da die unterschiedlichen Skalierungen auch durch die erste Netzwerk-
+schicht ausgeglichen werden können. Dennoch wird dadurch oft die Prognosegüte
+verbessert. [12, 191]
+Generalisierung Durch die passende Wahl der Anzahl und Hierarchie der Neu-
+ronen sowie der Transferfunktionen kann gezeigt werden, dass jede stetige Funk-
+tion auf einer kompakten Eingangsmenge mit beliebiger Genauigkeit durch ein
+NN approximiert werden kann. [36, 63, 87, 151] Im Allgemeinen ist allerdings
+nicht bekannt, wie die Anzahl der Neuronen in den versteckten Schichten und
+n
+n
+die Netztiefe optimal bezüglich des zu analysierenden Problems und den zur
+n
+l
+Verfügung gestellten Trainingsdaten zu wählen sind. Dennoch zeigt dieses Resul-
+tat, dass zumindest theoretisch eine beliebig genaue Anpassung an entsprechende
+Trainingsdaten möglich ist. Die Schwierigkeit besteht vielmehr darin das trainierte
+1 Aktueller Kenntnisstand
+Modell nicht zu stark oder zu schwach an die Trainingsdaten anzupassen, sodass
+die gelernte Relation zwischen den Features und Labels auf die neuen Daten ver-
+allgemeinert wird. Im ML Kontext wird dabei von Über- und Unteranpassung
+bzw. der Verallgemeinerungsleistung gesprochen. Abbildung 1.3 veranschaulicht
+verschiedene Anpassungen an die Trainingsdaten anhand eines verrauschten si-
+nusförmigen Regressionsproblems. [13, 191]
+Um die Verallgemeinerungsleistung eines Netzes zu verbessern, sind in der Lite-
+ratur (beispielsweise [9, 13, 71]) unter anderem folgende Ansätze bekannt:
+i) Feature Erweiterung:
+Durch das Training mit mehr Daten kann die Performance eines Netz-
+werks gesteigert werden. Da aber oftmals nur eine limitierte Anzahl an Trai-
+ningsdaten zur Verfügung steht, werden synthetisch neue Daten erstellt, die
+dann ebenfalls zum Training des Netzes herangezogen werden. Beispielswei-
+se können neue Daten erzeugt werden, indem ein Rauschen aufaddiert oder
+Klassen-abhängige Inter- bzw. Extrapolationen der Features durchgeführt
+werden. [43, 71]
+ii) Early Stopping:
+Dazu wird der D
+Dazu wird der Datensatz in disjunkte Trainings-, Validierungs- und Test-
+daten aufgeteilt und die Performance auf den Test- und Validierungsdaten
+während des Trainingsprozesses für jede Epoche ermittelt. Das Training wird
+abgebrochen wenn einer der folgenden Fälle eintritt: [9]
+a) Die vordefinierte maximale Anzahl an Epochen wird überstiegen.
+b) Die vordefinierte Trainingsdauer wird überschritten.
+3Eigene Abbildung in Anlehnung an [13].
+1 Aktueller Kenntnisstand
+c) Die Performance auf den Trainingsdaten unterschreitet einen vordefi-
+nierten Zielwert.
+d) Die Gewichtsupdates unterschreiten einen vordefinierten Schwellwert.
+e) Die Performance auf den Validierungsdaten verbessert sich für eine vor-
+definierte Anzahl an Epochen nicht.
+Die Validierungsdaten gehen über den letzten Punkt indirekt in das Training
+des NNs ein.
+iii) Regularisierung:
+Die Loss-Funktio
+Die Loss-Funktion E wird um einen Regularisierungsterm zu
+loss
+erweitert. [9] Dadurch werden zusätzlich die Gewichte des Netzes und somit
+die Modellkomplexität reduziert, solange die Trainingsdaten durch das NN
+hinreichend gut klassifiziert werden können. Durch die Wahl des Regulari-
+sierungsparameters γ wird der Trade-off zwischen Modellkomplexität und
+Anpassungsfähigkeit festgelegt.
+Nachdem diese Festlegung oft schwer zu bestimmen ist, benutzt MacKay [127]
+den Satz von Bayes, um Regularisierungsparameter automatisch berechnen
+zu können. Dan Foresee und Hagan [38] verwenden diese Methode zusammen
+mit dem Levenberg-Marquardt Algorithmus, um Netze mit hoher Verallge-
+meinerungsleistung zu erzeugen. Für kleine Trainingsmengen funktioniert
+die Bayes’sche Regularisierung häufig besser als das Early Stopping, denn
+es werden keine Daten der Trainingsmenge in eine Validierungsmenge aus-
+gelagert, wodurch mehr Daten zur Optimierung des Netzes zur Verfügung
+stehen. [9]
+iv) Dropout:
+Während des Trainings wird eine vordefinierte Anzahl an Neuronen zusam-
+men mit den Verbindungen zufällig aus dem Netz entfernt (Dropout) und
+stattdessen das ausgedünnte Netz optimiert. Somit lernt jedes Neuron all-
+gemein nützliche Features aus den vorhergehenden Schichten zu detektieren
+und zu verrechnen, anstatt nur in einem ganz spezifischen Kontext aktiviert
+zu werden. In der Anwendungsphase werden die ausgedünnten Netzwerke
+zu dem ursprünglichen Netzwerk zusammengefasst, indem die Netzgewichte
+durch die Wahrscheinlichkeit des Vorkommens des Knotens in den ausge-
+dünnten Netzwerken adaptiert werden. [83, 180]
+1 Aktueller Kenntnisstand
+Zeitreihenanalyse Die folgenden speziellen NN Typen werden zur Analyse von
+Zeitreihenfeatures und Regressionswerten verwendet. Für diese Daten sind
+Z Z
+F R
+alle Feature-Werte-Paare (f(z ), r(z )) , k = 1, . . . , n abhängig vom Zeitpunkt z .
+k k z k
+Ein TDNN benutzt n zeitverzögerte Inputs in der Eingabeschicht des feed-
+I
+forward Netzes zur Vorhersage von
+Waibel et al. [200] verwenden die Verzögerung auch zwischen den verstecken
+Schichten des feed-forward Netzes.
+ii) Nonlinear Autoregressive Exogenous Model (NARX):
+Leontaritis und Billings [120, 121] beschreiben ein rekurrentes NN, das so-
+wohl zeitverzögerte Inputs als auch Outputs als Eingabe in das Netz
+n n
+I O
+verwenden. Der Output zum Zeitpunkt z des NNs wird also durch
+k
+bestimmt. Werden die bekannten Regressionwerte r(z ), . . . , r(z ) der
+k 1 k nO
+Trainingsdaten statt der Netzvorhersagen benutzt, so ha−ndelt es sich− um ein
+reines feed-forward Netz.
+Hochreiter und Schmidhuber [85] beschreiben ein rekurrentes Netzwerk mit
+speziellen Netzeinheiten, wodurch Langzeitabhängigkeiten gelernt werden.
+Im Gegensatz zu rekurrenten Netzwerken besitzen die Netzeinheiten eines
+LSTMs Input-, Output- und Forget-Gates [64], die die in den Einheiten ab-
+gespeicherten Informationen organisieren. Dadurch werden verschwindende
+oder explodierende Gradienten im Training (Error Backpropagation) des re-
+kurrenten Netzwerkes vermieden, wodurch eine Analyse von Zeitreihen mit
+vielen Zeitschritten ermöglicht wird.
+Der Loss für ein LSTM Netzwerk wird oftmals bezüglich der in einem Mini-
+Batch enthaltenen Zeitreihen ausgewertet. Für ein Regressionsproblem er-
+gibt sich damit beispielsweise
+1 Aktueller Kenntnisstand
+1.1.3.6 Boosting
+Schapire [59, 168] führt sogenannte Boosting Algorithmen [59, 60, 62, 174, 193] ein,
+die durch die gewichtete Summe von „schwachen Lernern“ einen „starken Lerner“
+erzeugen. Als schwache Lerner können beispielsweise SVMs [195] oder Entschei-
+dungsstümpfe [174, 193] verwendet werden. Entscheidungsstümpfe treffen Ent-
+scheidungen der Form f δ und können somit als Entscheidungsbäume der
+ik k
+≤
+Tiefe betrachtet werden. Auf diese Weise wird durch die Entscheidungsstümpfe
+1
+die Relevanz der Features bestimmt. [193]
+1.1.4 Bewertungsmetriken
+1.1.4.1 Klassifikation
+Zur Bewertung der Prognosegüte des Modells werden die tatsächlichen Markierun-
+gen (cid:96) den vom Algorithmus ausgegebenen Klassen l gegenübergestellt. Im binären
+Fall ergeben sich dadurch folgende vier Fälle. Es werden die Bezeichnungen po-
+sitiv bzw. negativ für die Ergebnisklassifizierung und wahr bzw. falsch für die
+tatsächliche Klassifizierung verwendet.
+i) True Positive (TP):
+Die Anzahl der vom
+Die Anzahl der vom Algorithmus positiv klassifizierten Entitäten, die tat-
+sächlich wahr sind. (l = (cid:96) = 1)
+Die Anzahl der vom Algorithmus negativ klassifizierten Entitäten, die tat-
+sächlich falsch sind. (l = (cid:96) = 0)
+iii) False Positive (FP):
+Die Anzahl der vom Algorithmus positiv klassifizierten Entitäten, die tat-
+sächlich falsch sind. (l = 1, (cid:96) = 0)
+iv) False Negative (FN):
+Die Anzahl der vom Algorithmus negativ klassifizierten Entitäten, die tat-
+sächlich wahr sind. (l = 0, (cid:96) = 1)
+Auf Basis dieser lassen sich wichtige Kennziffern der Prognosegüte des ausgewer-
+teten Modells definieren, die neben anderen [153] entnommen werden können:
+1 Aktueller Kenntnisstand
+i) Der Recall oder die True Positive Rate (TPR) messen die Wahrscheinlich-
+keit, dass eine tatsächlich wahre Entität als positiv klassifiziert wird.
+ii) Die Präzision oder die True Positive Accuracy (TPA) messen die Wahr-
+scheinlichkeit, dass eine als positiv klassifizierte Entität auch tatsächlich
+wahr ist.
+TP
+iii) Die Genauigkeit misst die Wahrscheinlichkeit mit der der Algorithmus den
+N Entitäten die tatsächliche Klasse zuweist.
+iv) Das F-Maß [189] kombiniert den Recall und die Präzision über ein gewich-
+tetes harmonisches Mittel
+v) Der Matthews Korrelationskoeffizient (MCC) [136] bündelt alle vier Fälle
+eines binären Klassifizierungsproblems durch
+Werden die zu identifizierenden Entitäten durch (cid:96) = 1 gelabelt, so sind insbeson-
+dere die Wahrscheinlichkeit und die Präzision der Detektion, also TPR und TPA
+relevant. Gute Segmentierungen resultieren in hohen Werten für beide Kennzif-
+fern, allerdings ist für die direkte Vergleichbarkeit der dazugehörigen Algorithmen
+eine einzelne Metrik, wie Genauigkeit, F oder MCC notwendig.
+2
+Für den Fall eines schiefen DatensatzeFs2ergibt die Klassifikation aller Instanzen
+mit der mehrheitlich vorkommenden Klasse bereits eine hohe Genauigkeit, ob-
+wohl die Güte des Klassifikators schlecht ist. Wenn die Codierung der Klassen
+getauscht wird, schwankt der F Wert, denn dieser ist unabhängig von der Anzahl
+2
+der TN Instanzen. Der MCC berücksichtigt dagegen alle Fälle des Klassifizie-
+rungsproblems, ist invariant unter der Codierung der Klassen und ist für schiefe
+Datensätze geeignet. [29, 30, 189]
+1 Aktueller Kenntnisstand
+1.1.4.2 Regression
+Im Falle der Regression wird die Abweichung der eigentlichen Regressionswerte r
+i
+mit den durch den Algorithmus vorhergesagten Werten r für alle Testinstanzen
+i
+i = 1, . . . , n verglichen. Dazu eignen sich unter anderem folgende Metriken: [19]
+A
+i) Maximum Absolute Error (MaxAE):
+ii) Mean Average Error (MAE):
+iii) Mean Squared Error (MSE):
+iv) Root Mean Squared Error (RMSE): RMSE (r, r) = √MSE
+v) Mean Absolute Percentage Error (MAPE):
+vi) Symmetric Mean Absolute Percentage Error (SMAPE):
+Der MAE, MSE, RMSE und der MAPE sind dabei in der Literatur am häufigsten
+vertreten. [19]
+1 Aktueller Kenntnisstand
+1.1.5 Hyperparameter Optimierung
+Die oben beschriebenen Methoden der KI besitzen verschiedene Hyperparameter,
+die die Ergebnisse der Methoden signifikant beeinflussen können. Beispielsweise
+kann für ein NN die Anzahl der Neuronen pro Schicht oder die Anzahl der
+n
+n
+Schichten variiert werden. Da die optimale Wahl der Hyperparameter im All-
+n
+l
+gemeinen nicht a priori bekannt ist, wird oftmals eine Rastersuche oder eine ma-
+nuelle Suche zur Hyperparameter Optimierung verwendet. Dazu werden im ersten
+Fall alle in einem Hyperparameterraum vorkommenden Werte der Parameter
+P
+kombiniert und das Modell bezüglich dieser Parameterkonfiguration hinsichtlich
+einer Bewertungsmetrik (Abschnitt 1.1.4) evaluiert. Für kontinuierliche Parameter
+wird eine feste Anzahl an Auswertungspunkten festgesetzt. Die manuelle Suche
+wird verwendet, um Bereiche des Parameterraums zu identifizieren, die vielver-
+sprechend sind. [11]
+Abbildung 1.4: Auswertung der Raster- und der Zufallssuche bezüglich eines ro-
+busten und eines sensitiven Hyperparameters hinsichtlich eines
+Maximierungsproblems.4
+Eine andere Möglichkeit zur Hyperparameter Optimierung besteht darin, die Pa-
+rameter zufällig zu wählen. Dies führt insbesondere dann zu einer wesentlichen
+Verbesserung der Ergebnisse, wenn das Modell bezüglich des einen Parameters
+sehr robust und eines anderen sensitiv ist, denn wie Abbildung 1.4 veranschau-
+licht, wird mit der selben Anzahl an Auswertungen der sensitive Parameter durch
+die Zufallssuche öfter abgetastet. Aus diesem Grund resultiert eine zufällige Wahl
+an Parametern oft in besseren Ergebnissen. [11]
+Neben diesen einfachen Optimierungsmethoden sind weitere Algorithmen [37, 92,
+147] zur Wahl der Hyperparameter in der Literatur bekannt.
+4Eigene Abbildung in Anlehnung an [11].
+1 Aktueller Kenntnisstand
+1.2 Segmentierung von 3D Objekten
+1.2.1 Geometrierepräsentation
+1.2.1.1 Computer Aided Design Austauschdatenformate
+Die Mercedes-Benz AG verwendet zur Darstellung, Verwaltung und Dokumen-
+tation von Design- und Konstruktions-Daten der verschiedenen Baureihen eine
+Computer Aided Design (CAD) Applikation namens Engineering Client. Abbil-
+dung 1.5 veranschaulicht, wie Experten korrosionskritische Konstruktionen (Ab-
+schnitt 1.3.1.2), wie Kanten (orange) und Flansche (rote Box) mithilfe dieses Tools
+visuell ermitteln. Die Geometriedaten sind so aus dem Engineering Client auszule-
+sen, dass diese in eine programmierbare Umgebung, wie beispielsweise Matlab R ,
+(cid:13)
+importiert und analysiert werden können.
+Abbildung 1.5: Querschnitt durch eine Kotflügel Baugruppe zur Darstellung von
+Bauteilkanten (orange) und eines Flansches (rot).
+Die Masterarbeit [201] beschreibt die Extraktion der Geometriedaten der digi-
+talen CAD Daten aus der Mercedes-Benz internen Datenbank Smaragd. Dazu
+wird zunächst über den Engineering Client das zu extrahierende Bauteil oder die
+Bauteilgruppe ausgewählt und an das Programm Siemens NX weitergeleitet, das
+wiederum die Speicherung der Geometrie als
+i) Stereo Lithography (STL) [94],
+ii) Initial Graphics Exchange Specification (IGES) [177] oder
+iii) Standard for the Exchange of Product Model Data (STEP) [95]
+1 Aktueller Kenntnisstand
+Datei erlaubt. Es stehen jeweils rund 40 Fahrzeugmodelle zur Verfügung, die in
+Siemens NX bzw. in Catia V5 konstruiert sind. Die älteren Catia Daten weisen
+allerdings eine schlechtere Datenqualität auf und können nur als STL extrahiert
+werden, da diese Daten plattformübergreifend migriert werden.
+Außerdem werden in der Masterarbeit [201] die verschiedenen Austauschdatenfor-
+mate hinsichtlich ihrer Eignung zur semantischen Segmentierung, also dem Zuord-
+nen einzelner Entitäten in bestimmte Klassen, untersucht. Das STL Format bietet
+den Vorteil, dass die Geometrie ausschließlich durch Dreieckselemente beschrieben
+wird (siehe Abschnitt 1.2.1.2), wohingegen IGES und STEP Daten eine Vielzahl
+an unterschiedlichen geometrischen Objekten nutzen, um in Summe die Geometrie
+zu repräsentieren. Auch wenn IGES und STEP die Geometrie genauer beschrei-
+ben, muss doch jede Objektklasse einzeln analysiert werden, was das Design von
+Klassifikationsalgorithmen erschwert. Außerdem beschreiben manche geometrische
+Objekte der IGES und STEP Daten große Flächen, weshalb die Klassifikation die-
+ser in einer gröberen Segmentierung resultiert als dies der Fall für STL Daten ist.
+Des Weiteren werden STL Daten auch für andere Untersuchungen der Mercedes-
+Benz AG, wie beispielsweise zur Steinschlag- oder Wassersimulationen verwendet.
+Aus diesen Gründen empfiehlt die Masterarbeit [201] die Verwendung der STL
+Daten, weswegen auf diese im nächsten Kapitel nochmals genauer eingegangen
+wird.
+1.2.1.2 Stereo Lithography Daten
+Das von 3D Systems beschriebene Stereo Lithography (STL) Datenformat [94]
+besitzt folgende Struktur:
+solid <name>
+facet normal <single> <single> <single>
+outer loop
+vertex <single> <single> <single>
+vertex <single> <single> <single>
+vertex <single> <single> <single>
+endloop
+endfacet
+facet normal <single> <single> <single>
+outer loop
+.
+.
+.
+endfacet
+endsolid
+Abbildung 1.6: Approximation der Oberflächen der Bauteile des Kotflügel Zusam-
+menbaus der C-Klasse durch Dreieckselemente der STL Daten.
+Dabei wird die Oberfläche des dreidimensionalen (3D) Objekts ausschließlich durch
+Dreieckselemente beschrieben und stellt somit einen Sonderfall sogenannter Po-
+lygon-Netze dar. In Abbildung 1.6 sind beispielhaft die Oberflächen der Bauteile
+des Kotflügel Zusammenbaus der C-Klasse durch die Dreieckselemente der STL
+Daten dargestellt. Aus den STL Daten ergeben sich die absoluten Koordinaten
+der Eckpunkte
+(cid:110) (cid:12) (cid:111)
+in einfacher Genauigkeit sowie die geordnete Verbindung zwischen den Eckpunkten
+wobei n und n die Anzahl der Eckpunkte und der Dreiecke bezeichnet. [93,
+v t
+182, 186] Die Angabe der Normalenvektoren N = n R3 i = 1, . . . , n der
+i t
+{ ∈ | }
+Dreieckselemente ist redundant, da sich die Normale für das Dreieck t durch die
+i
+Reihenfolge der Eckpunkte über die rechte Handregel
+ergibt. (Abbildung 1.7) Die Dreieckselemente, die eine gemeinsame Kante besitzen,
+werden Nachbarn N genannt. [78] Aus der Knotenliste T lässt sich implizit die
+Kantenmenge E ableiten, da jedes Dreieck t = (id , id , id ) genau drei Kanten
+i i1 i2 i3
+e = (id , id ), e = (id , id ) und e = (id , id ) definiert.
+i1,i2 i1 i2 i2,i3 i2 i3 i3,i1 i3 i1
+Abbildung 1.7: Links: Orientierung eines Dreiecks t .
+i
+Rechts: Verletzung der Eckpunkt-zu-Eckpunkt Regel (rot).5
+Diese sogenannte Tesselierung ist einfach in der Handhabung, unabhängig von
+spezifischen CAD Modellierungen, beinhaltet allerdings redundante Daten. [78, 93]
+Durch eine Taylor-Entwicklung wird ersichtlich, dass der Konvertierung genügend
+glatter Oberflächen in stückweise lineare Flächen ein Approximationsfehler der
+Größenordnung (cid:0) d2 (cid:1) inhärent ist, wobei
+O emax
+die maximale Kantenlänge beschreibt. [20]
+1.2.1.3 Dreiecksnetzkorrektur
+Hamann [78] definiert eine „verbundene Eckpunkt-zu-Eckpunkt Oberflächen Tri-
+angulierung“ als eine endliche Menge an Dreiecken, die folgende Eigenschaften
+erfüllen:
+i) Es dürfen maximal zwei Dreiecke an einer Kante der Triangulierung anliegen.
+ii) Es können beliebig viele Dreiecke an einem Eckpunkt anliegen.
+iii) Die Triangulierung ist miteinander verbunden, dass heißt jedes Dreiecksele-
+ment besitzt mindestens einen gemeinsamen Eckpunkt mit einem anderen
+Dreieck.
+iv) Die Eckpunkt-zu-Eckpunkt Regel besagt, dass falls ein Eckpunkt mit einem
+zweiten Dreieck geteilt wird, so ist dieser Punkt auch ein Eckpunkt des
+anderen Dreiecks. (Abbildung 1.7)
+v) Es existieren keine Schnittpunkte mit anderen Dreieckselementen im inneren
+eines Dreiecks.
+5Eigene Abbildung in Anlehnung an [93].
+1 Aktueller Kenntnisstand
+Durch Punkt i) ist die Anzahl der Nachbarn des Dreiecks t auf N(i) 3 be-
+i
+| | ≤
+schränkt, wodurch keine Verzweigungen im Dreiecknetz entstehen. Wird zusätzlich
+die Eigenschaft gefordert, dass jede Kante der Triangulierung von mindestens zwei
+Dreiecken geteilt werden, also N(i) = 3 gilt, so beschreibt das Dreiecksnetz eine
+| |
+geschlossene Oberfläche, enthält also keine Löcher. [7]
+Durch die Konvertierung von CAD Daten in Dreiecksnetze kommt es teilweise
+zur Verletzung dieser Eigenschaften. Die resultierenden Netze weisen dann Lö-
+cher, Kanten die von mehr als zwei Dreiecken geteilt werden und falsch orientierte
+Normalenvektoren auf. [7, 14, 118, 119, 132]
+Zum Schließen der Löcher ermitteln Bohn und Wozny [14] alle Kanten e =
+ij
+(v(id ), v(id )), für die e = (v(id ), v(id )) nicht im Dreiecksnetz vorkommt und
+i j ji j i
+erstellt daraus gerichtete Polygonzüge. Diese werden anschließend durch ein Greedy-
+Verfahren geschlossen, indem das Dreieck erzeugt wird, für das der Winkel zwi-
+schen drei aufeinander folgenden Eckpunkten des Polygonzugs minimal ist.
+Mäkelä und Dolenc [132] nutzen eine Datenstruktur basierend auf einem Baum,
+zur lokalen Bestimmung der Orientierung der Normalenvektoren und zur Detekti-
+on von Überschneidungen der Dreiecke. Zum Schließen der Löcher wird ebenfalls
+ein Greedy-Verfahren verwendet, das sowohl die Kantenlängen als auch die Ab-
+weichung der Normalen zu den Dreiecken des Netzes einbezieht.
+Klincsek [107] beschriebt eine dynamische Programmierung zur Triangulierung ei-
+nes Polygonzugs, die die Summe der Kanten minimiert. Dieses Verfahren wird von
+Barequet und Sharir [7] so adaptiert, dass eine Triangulierung zum Schließen der
+Löcher mit möglichst geringer Fläche gefunden wird. Liepa [123] erweitert diese
+Methode, indem zusätzlich die Flächenwinkel zwischen benachbarten Dreiecksele-
+menten involviert werden.
+Leong, Chua und Ng [118, 119] entwickeln eine generische Lösung, um Löcher im
+Dreiecksnetz zu schließen und gehen auf den Fall ein, dass zwei Löcher über einen
+Eckpunkt miteinander verbunden sind. Zur Vereinheitlichung der Orientierung der
+Normalen generieren Hoppe et al. [86] im Rahmen einer Oberflächenrekonstrukti-
+on einen Dualgraphen des Dreiecksnetzes, der zusätzlich weitere Kanten enthält,
+die die k-nächsten Nachbarn involvieren. Auf diesem Graph wird ein minimaler
+Spannbaum bezüglich der Kantengewichte 1 ntn erzeugt, entlang dessen die
+− | i j |
+Normalen so orientiert werden, dass diese einheitlich sind.
+Borodin, Zachmann und Klein [15] fassen mehrere Polygone zu Gruppen zusam-
+men, für die dann die Normalen konsistent orientiert werden. Zur Bestimmung
+einer global einheitlichen Orientierung der Normalen wird einerseits die Sichtbar-
+keit bei äußerer Betrachtung der Gruppe und andererseits die Übereinstimmung
+der Normalenvektoren mit den benachbarten Gruppen berücksichtigt.
+1 Aktueller Kenntnisstand
+1.2.2 Geometrieanalyse
+1.2.2.1 Geometriedatentransformation
+Die effiziente Verarbeitung von Geometriedaten hängt maßgeblich von der Reprä-
+sentation der Geometrie ab. Die im Folgenden aufgezählten Datenformate zur Geo-
+metrieanalyse werden stets durch eine Transformation der STL Daten generiert
+und lassen sich in sogenannte euklidische und nicht-euklidische Daten unterteilen.
+Die exemplarische Aufzählung der Publikationen zur Analyse der entsprechend
+transformierten Daten erhebt keinen Anspruch auf Vollständigkeit.
+i) Euklidische Daten:
+Diese Daten haben alle eine zugrunde liegende euklidische Struktur und
+besitzen somit eine globale Parametrisierung und ein gemeinsames Koordi-
+natensystem. [23]
+Dazu zählen:
+Dazu zählen:
+a) Über Deskriptoren extrahierte Features (Abschnitt 1.2.2.3) [10, 70, 89,
+91, 98, 99, 102, 126, 149, 170, 175, 176, 184, 205, 207, 216, 222]
+b) Bildanalysen [26, 68, 69, 80, 100, 111, 144, 145, 157, 158, 205, 208, 224]
+c) Voxelanalysen [157, 159, 204, 211]
+ii) Nicht-euklidische Daten:
+Diese Daten, deren zugrunde liegende Struktur einem nicht-euklidischen
+Raum entspricht, haben keine globale Parametrisierung, Vektorraumstruk-
+tur, gemeinsames Koordinatensystem und sind verschiebungsvariant. [23]
+Dazu zählen:
+a) Punktwolken [90, 104, 122, 154–156, 188, 206]
+b) Polygon-Netze und Graphen (Abschnitt 1.2.2.4) [6, 16, 24, 39, 56, 79,
+81, 106, 110, 135, 146, 148, 167, 219]
+1 Aktueller Kenntnisstand
+1.2.2.2 Segmentierung korrosionskritischer Konstruktionen
+Die Machbarkeitsstudie [201] zur Segmentierung von 3D Bauteilen hinsichtlich
+korrosionskritischer Konstruktionen bewertet Segmentierungsmethoden basierend
+auf den verschiedenen geometrischen Repräsentationen theoretisch und resultiert
+in der Erkenntnis, dass die untersuchten Bild-, Voxel- und Punktmengenanalysen
+den folgenden prinzipiellen Nachteilen unterliegen:
+i) Die entsprechende Repräsentation der 3D Formen kann die korrosionskriti-
+schen Strukturen nicht mit hinreichender Genauigkeit darstellen.
+ii) Die Datenmenge und der korrelierende Berechnungsaufwand kann zu groß
+werden.
+iii) Die Balance zwischen Auflösung und Segmentierungsgenauigkeit in 3D kann
+nicht a priori definiert werden.
+iv) Es sind aufwendige und fehleranfällige Umrechnungen zwischen Oberflächen-
+elementen und Pixeln, Voxeln oder Punkten durchzuführen.
+Deswegen wird die Auswertung der STL Daten über Deskriptoren und Polygon-
+Netze bzw. Graphen favorisiert, da
+i) auf 3D CAD kompatiblen Daten gearbeitet wird,
+ii) keine Umrechnungen zwischen verschiedenen Datenrepräsentationen not-
+wendig sind,
+iii) eine automatisierte Schwachstellendetektion realisierbar erscheint,
+iv) angebrachte Laufzeiten zu erwarten sind,
+v) hohe Segmentierungsgenauigkeiten für andere Anwendungen erreicht wer-
+den,
+vi) durch die Verwendung von lokalen Features weitere Korrosionsfaktoren in
+das System involviert werden können.
+Somit wird die Geometrieanalyse durch Deskriptoren und die räumlichen Geometric
+Deep Learning (GDL) Methoden vorgeschlagen, auf die im folgenden nochmals ex-
+plizit eingegangen wird.
+1 Aktueller Kenntnisstand
+1.2.2.3 Deskriptoren
+Anstatt die 3D Geometrie direkt auszuwerten, werden über Deskriptoren einfache
+geometrische oder auch andere Eigenschaften der 3D Form extrahiert und diese
+analysiert. [3] Dabei werden die zuvor festgelegten Entitäten, wie Knoten, Kan-
+ten oder Dreiecksflächen klassifiziert, wodurch dann die Segmentierung der 3D
+Geometrie entsteht.
+Sun et al. [184] formulieren einen robusten, deterministischen Algorithmus zur
+Kantendetektion, der aus den tesselierten Daten einer 3D Form für jeden Kno-
+ten des Netzes eine Kantenstärke ermittelt, indem die Normalen der umliegenden
+Dreiecksflächen innerhalb einer geodätischen Nachbarschaft evaluiert werden. Mit-
+hilfe eines 3D Watershed Algorithmus basierend auf der Arbeit von Mangan und
+Whitaker [134] werden die Kantenstärken partitioniert und die 3D Form entspre-
+chend segmentiert. [184]
+Shapira, Shamir und Cohen-Or [170] beschreiben die sogenannte Shape Diame-
+ter Funktion (SDF), die durch das Emittieren von Strahlen lokal ein Volumen
+bestimmt, das zur Segmentierung der 3D Geometrie verwendet wird. Die Arbei-
+ten von Kazmi, You und Zhang [102], Shamir [169] und Zhang et al. [222] fassen
+verschiedene Deskriptoren zusammen und vergleichen diese.
+Die Verwendung von Features zur Beschreibung der 3D Geometrie eröffnet die
+Möglichkeit, diese durch klassische ML Verfahren zu analysieren. Neben semi-
+supervised Methoden [126, 207] sind auch unüberwachte Anstäze zur Segmentie-
+rung von 3D Geometrien bekannt. Letztere Klasse lässt sich in Cluster- [89, 175,
+176] und Matching-Verfahren [70, 91, 149] unterteilen. Werden solche Methoden
+verwendet, so ist eine manuelle Zuweisung der Klassen zu den erhaltenen Segmen-
+te erforderlich, weshalb auf diese nicht gesondert eingegangen wird.
+Benhabiles et al. [10] beschreiben eine überwachte Segmentierung, die unter ande-
+rem Flächenwinkel benachbarter Dreieckselemente, Krümmungen der Oberfläche
+und die SDF durch einen Adaboost Algorithmus [59, 60] zum Lernen von Seg-
+mentgrenzen verwendet.
+Oftmals ist es nicht ausreichend, die Entität i und ihre korrespondierenden Ein-
+zelmerkmale f isoliert zu betrachten, weshalb zusätzlich zum Klassifikator auch
+i
+Nachbarschaftsbeziehungen f , beispielsweise über ein sogenanntes Conditional
+ij
+Random Field (CRF) [112], involviert werden. Das CRF basiert auf einem Ener-
+gie Minimierungsproblem, das durch
+1 Aktueller Kenntnisstand
+gegeben ist, wobei E die Konsistenz der Features f der Entität i und dem Label
+1 i
+l und analog E die Konsistenz zwischen benachbarten Entitäten i und j mit
+i 2
+Labeln l und l unter gegebenen paarweisen Features f misst.
+i j ij
+Die Modellparameter ω = ω , ω werden unabhängig voneinander bestimmt
+1 2
+{ }
+bzw. trainiert und zur Lösung des Optimierungsproblems aus Gleichung (1.48)
+Graph-Cut Algorithmen [21, 109] verwendet. [99, 217, 218] Auch wenn die Aus-
+wertung der unären Features f dabei die wichtigere Komponente des Systems ist,
+i
+so werden durch die Hinzunahme der paarweisen Features insbesondere die Seg-
+mentgrenzen optimiert. [99]
+Kalogerakis, Hertzmann und Singh [99] verwenden einen JointBoost Klassifikator
+[174, 193] für die Bestimmung von ω bzw. E , der automatisch aus einer großen
+1 1
+Menge an geometrischen Einzelmerkmalen diejenigen auswählt, die für die Seg-
+mentierungsaufgabe relevant sind. Mithilfe eines GentleBoost Klassifikators [62]
+wird die Wahrscheinlichkeit errechnet, dass zwei benachbarte Dreieckselemente
+unterschiedliche Labels haben. Zusätzlich wird eine Matrix, die die Konsistenz
+der benachbarten Labels gewichtet, verwendet, um E zu bestimmten.
+2
+Xie et al. [216] benutzen spezielle Einschicht feed-forward NN zur Bestimmung des
+Terms E aus den selben Einzelfeatures, die auch von Kalogerakis, Hertzmann und
+1
+Singh [99] verwendet werden. Für die Nachbarschaftsbeziehung des CRF Optimie-
+rungsproblems (1.48) wird der trainingsunabhängige Term
+(cid:40)
+0, l = l
+i j
+E (c , c f ) =
+2 i j
+|
+ij
+θ d
+(cid:0)
+1 log
+(cid:0)αij (cid:1)(cid:1)
+, sonst
+ij eij − π
+entwickelt, wobei θ ein Gewichtsfaktor, d = e die Länge der gemeinsamen
+ij eij (cid:107) ij (cid:107)2
+Dreieckskante und α den Flächenwinkel darstellt.
+ij
+Wang et al. [205] beschreiben ein Fully Convolutional Network [172] basierend auf
+einer Graphenstruktur, das für jedes der drei verwendeten Features eine eigen-
+ständige Klassenwahrscheinlichkeit berechnet. Die wahrscheinlichste Klasse wird
+gewählt und E bestimmt. Der zweite Term wird über Flächenwinkel berechnet.
+1
+Xu, Dong und Zhong [217] werten globale Eigenschaften der 3D Form über ein
+NN und die lokalen über ein faltendes NN, ein sogenanntes Convolutional Neuro-
+nal Network (CNN) aus und vereinen diese über ein CRF, um eine semantische
+Segmentierung zu erhalten.
+Kaick et al. [98] ergänzt Gleichung (1.48) um einen dritten Term, der die Klassi-
+fizierung ähnlicher Gebiete weiterer 3D Geometrien berücksichtigt.
+1 Aktueller Kenntnisstand
+1.2.2.4 Graphen- und Netzanalyse
+Die 3D Polygon-Netze der Geometrien werden als Graph interpretiert, indem Kno-
+ten des Polygon-Netzes mit Knoten des Graphen korrespondieren und Kanten zwei
+Knoten verbinden. [3]
+Im Unterschied zu Deskriptoren erlernen die im Folgenden vorgestellten GDL
+Methoden die relevanten Features direkt aus den Rohgeometriedaten, also den
+Graphen und benötigen keine Feature Extraktion. Motiviert durch die erzielten
+Durchbrüche in vielen Bereichen der zweidimensionalen (2D) Bildanalyse mithilfe
+von CNNs wird versucht, die Faltung auf unstrukturierte, nicht-euklidische Daten
+zu erweitern. [56]
+Die Graphenanalyse kann dabei in zwei Bereiche aufgeteilt werden:
+i) Spektrale Filter:
+Diese Methoden
+Diese Methoden [24, 39, 81, 106, 219] basieren auf der spektralen Graphen
+Theorie [31], wobei die spektrale Eigenzerlegung des kombinatorischen La-
+place Operators des Graphen (siehe z.B. [23]) durch entsprechende Methoden
+gefalten werden. Somit wird die eigentliche Faltung in einem euklidischen
+Raum durchgeführt. Die gelernten Modelle sind allerdings basisabhängig,
+was bedeutet, dass die Anwendung auf neue Graphen zu stark veränder-
+ten Ergebnissen führt. Es ist jedoch möglich, kompatible orthogonale Basen
+über verschiedene Domänen hinweg zu konstruieren, indem ein gemeinsames
+Diagonalisierungsverfahren [52, 110] verwendet wird. [23]
+ii) Räumliche Filter:
+Im Gegensatz zu spektralen Filtern aggregieren diese Methoden [6, 16, 79,
+135, 146, 148, 167] die Features direkt aus den benachbarten Knoten, unter
+Beachtung der räumlichen Struktur des Eingangsgraphen. Die aggregierten
+Features werden dann über eine zusätzliche Operation zusammengefasst.
+[3] Durch das Fehlen der Verschiebungsinvarianz ist die Faltung für nicht-
+euklidische Daten positionsabhängig. Nachdem auch keine globale Parame-
+trisierung für Graphen oder Netze gegeben ist, muss der Filter in einem
+lokalen, intrinsischen Koordinatensystem repräsentiert werden. Dazu wer-
+den Gewichtsfunktionen, die um den Mittelpunkt des Filters angeordnet
+werden, eingeführt, durch die dann die Umgebung entsprechend adaptiert
+wird. Auf den angepassten Werten wird dann die Faltung durchgeführt. Die
+Wahl unterschiedlicher Gewichtsfunktionen führt zu den Methoden von Ma-
+sci et al. [135] und Boscaini et al. [16], die als Sonderfälle der von Monti et
+al. [146] vorgestellten Faltung betrachtet werden können, da diese auch die
+Gewichtsfunktion lernt. [23]
+1 Aktueller Kenntnisstand
+Anstatt lokale Filter auf die Geometrie anzupassen, werten Fey et al. [56]
+durch SplineCNN nur die direkten Nachbarn des Knoten aus. Dadurch ist
+es möglich, Graphen beliebiger Dimension d, also auch Netze zu analysie-
+ren. Zur Anwendung des Filters wird der Graph so skaliert, dass die re-
+lativen kartesischen Koordinaten stets in [0, 1]d liegen. Der Filter lernt die
+Gewichtung einer vordefinierten Anzahl an Stützstellen und durch B-Spline-
+Basisfunktionen wird eine Gewichtung des gesamten Raums [0, 1]d appro-
+ximiert. Abbildung 1.8 veranschaulicht die Gewichtung des Raumes [0, 1]2
+durch die aufgetragene Höhe der 62 Stützstellen und die Interpolation durch
+lineare B-Splines. Somit wird für die gesamte Fläche [0, 1]2 eine Gewich-
+tung durch eine feste Anzahl an Stützstellen definiert. Die Faltung besteht
+nun darin, dass die Features aller Nachbarknoten mit dem im Filter lokal
+vorliegenden Gewicht skaliert, aufsummiert und gemittelt werden. Dadurch
+erreichen Fey et al. zu anderen bekannten Methoden vergleichbare Ergeb-
+nisse für verschiedene Problemstellungen und sind zudem sehr effizient, da
+die B-Splines nur lokalen Support besitzen, wodurch der Filter sehr schnell
+ausgewertet werden kann.
+1 Aktueller Kenntnisstand
+1.3 Grundlagen der Korrosionstheorie
+1.3.1 Korrosionsprozess
+1.3.1.1 Elektrochemisches Korrosionsverhalten
+Die DIN EN ISO 8044 beschreibt Korrosion als „physikochemische Wechselwirkung
+zwischen einem Metall und seiner Umgebung, die zu einer Veränderung der Eigen-
+schaften des Metalls führt und die zu erheblichen Beeinträchtigungen der Funktion
+des Metalls, der Umgebung oder des technischen Systems führen kann.“ [46] Die
+über die elektrochemischen Reaktionen erzeugten Korrosionsprodukte sind che-
+misch stabiler als die metastabilen elementaren Metalle, weshalb die Korrosion
+nicht verhindert, aber mit geeigneten Maßnahmen verlangsamt werden kann. [65]
+Als galvanische Korrosion wird die beschleunigte Auflösung eines Metalls in direk-
+tem leitenden Kontakt zu einem zweiten edleren Metall unter Anwesenheit eines
+Elektrolyts, in dem der Elektronenfluss stattfindet, definiert. Das edlere Metall
+kann dabei als Kathode und das unedlere bzw. aktivere Metall als Anode ver-
+standen werden, wobei zur Unterscheidung zwischen edel und unedel das Ruhepo-
+tential des jeweiligen Metalls maßgeblich ist. Das Material mit einem geringeren
+Ruhepotential wird dabei stärker korrodiert. Die Korrosionsrate hängt von einer
+Vielzahl an Faktoren, wie der Differenz der Ruhepotentiale, dem Polarisationsver-
+halten oder dem Verhältnis der Anoden- zur Kathodenfläche ab. [42, 65]
+Im Automobilbau wird dieses Verhalten gezielt ausgenutzt, indem auf die metal-
+lischen Legierung, aus denen die Bauteile bestehen, eine Zinkschicht aufgebracht
+wird. Diese fungiert als Opferanode, wodurch das Grundsubstrat geschützt wird.
+Nach dem Zusammenbau der Rohkarosserie wird diese durch ein Tauchbad hin-
+durchgeführt, sodass sich an den Bauteilen die sogenannte Kathodische Tauch-
+Lackierung (KTL) abscheidet. Diese nicht-metallische Beschichtung schützt die
+Karosserie zusätzlich. Deshalb entsteht Korrosion hauptsächlich dort, wo diese
+Schutzmechanismen nicht vollständig ausgeprägt sind.
+1.3.1.2 Korrosionskritische Konstruktionen
+Ritze Ritze sind Beschädigungen der Oberfläche der Bauteile und weisen des-
+halb eine unvollständige Beschichtung auf, weshalb das Korrosionsrisiko erhöht
+ist. Nachdem Ritze auf Bauteilen in einem digitalem Datensatz nicht repräsen-
+tiert werden, beschränkt sich diese Arbeit auf die semantische Segmentierung der
+Bauteile hinsichtlich Kanten, Flanschen und der Oberfläche der Bauteile.

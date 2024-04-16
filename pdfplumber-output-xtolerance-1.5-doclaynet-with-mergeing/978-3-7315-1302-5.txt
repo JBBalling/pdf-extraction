@@ -1,0 +1,1082 @@
+Christian Emanuel Negara
+Abbildende Ellipsometrie
+mit Lichtwegumkehrung
+für die optische
+Charakterisierung von
+gekrümmten Oberflächen
+
+Christian Emanuel Negara
+Abbildende Ellipsometrie mit
+Lichtwegumkehrung für die optische
+Charakterisierung von gekrümmten Oberflächen
+Schriftenreihe Automatische Sichtprüfung und Bildverarbeitung
+Band 21
+Herausgeber: Prof. Dr.-Ing. habil. Jürgen Beyerer
+Lehrstuhl für Interaktive Echtzeitsysteme
+am Karlsruher Institut für Technologie
+Fraunhofer-Institut für Optronik, Systemtechnik
+und Bildauswertung IOSB
+Abbildende Ellipsometrie mit
+Lichtwegumkehrung für die
+optische Charakterisierung
+von gekrümmten Oberflächen
+von
+Christian Emanuel Negara
+Karlsruher Institut für Technologie
+Lehrstuhl für Interaktive Echtzeitsysteme
+Abbildende Ellipsometrie mit Lichtwegumkehrung für die
+optische Charakterisierung von gekrümmten Oberflächen
+Zur Erlangung des akademischen Grades eines Doktors der Ingenieur-
+wissenschaften von der KIT-Fakultät für Informatik des Karlsruher
+Instituts für Technologie (KIT) genehmigte Dissertation
+von Christian Emanuel Negara
+Tag der mündlichen Prüfung: 26. Januar 2023
+Erster Gutachter: Prof. Dr.-Ing. habil. Jürgen Beyerer
+Zweiter Gutachter: Prof. Dr. rer. nat. Uli Lemmer
+Impressum
+
+Karlsruher Institut für Technologie (KIT)
+KIT Scientific Publishing
+Straße am Forum 2
+D-76131 Karlsruhe
+KIT Scientific Publishing is a registered trademark
+of Karlsruhe Institute of Technology.
+Reprint using the book cover is not allowed.
+www.ksp.kit.edu
+This document – excluding parts marked otherwise, the cover, pictures and graphs –
+is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/deed.en
+The cover page is licensed under a Creative Commons
+Attribution-No Derivatives 4.0 International License (CC BY-ND 4.0):
+https://creativecommons.org/licenses/by-nd/4.0/deed.en
+Print on Demand 2023 – Gedruckt auf FSC-zertifiziertem Papier
+ISSN 1866-5934
+IISSSBNN 1987686-3--57933145-1302-5
+IDSOBNI 9107.85-434-753/1K5S-P1/310020-051 5 8762
+Kurzfassung
+Die Ellipsometrie ist ein optisches Messverfahren zur Oberflächencharak-
+terisierung und Dünnschichtmessung unter Verwendung von polarisiertem
+Licht, das aufgrund der hohen Sensitivität insbesondere in der Halbleiter-
+industrie eine breite Anwendung findet. Licht hat einen Polarisationszustand,
+der durch vier reelle Parameter beschrieben werden kann, die zu einem
+sogenannten Stokes-Vektor zusammengefasst werden. Es gibt einen Kal-
+kül, in dem die Polarisationszustandsänderungen an optischen Elementen
+mit Hilfe von reellen 4×4-Matrizen modelliert werden können, den soge-
+nannten Müller-Matrizen. Diese hängen nichtlinear von den physikalischen
+Materialparametern ab. Viele komplexe Aufgabenstellungen in der Ellip-
+sometrie können durch diese Abstraktionsebene über die Matrix-Algebra
+gelöst werden, ohne auf die elektromagnetische Wellennatur des Lichtes
+zurückgreifen zu müssen.
+Bei der Messung wird das Licht an der Oberfläche spekular reflektiert und
+anschließend von einem Polarisationszustandsdetektor erfasst. Die Pola-
+risationszustandsmessung lässt sich durch drei Matrizen beschreiben: die
+Modulationsmatrix der Beleuchtung, die die Stokes-Vektoren der emittierten
+Lichtstrahlen enthält, die Müller-Matrix des Prüflings, die in mehrere Müller-
+Matrizen faktorisiert werden kann und die Analysematrix des Detektors, die
+die Stokes-Vektoren des einfallenden Lichts auf eine Matrix mit gemessenen
+Intensitäten abbildet.
+Die Ellipsometrie ist ein indirektes, modellbasiertes Messverfahren. Die
+Oberfläche wird dabei als eine Schichtstruktur modelliert, die von mehreren
+sog. Modellparametern abhängt. Diese unterteilen sich in Material-bezogene
+Modellparameter zur Beschreibung der Schichtstruktur und Topographie-
+bezogene Modellparameter zur Beschreibung der Oberflächenform. Die
+gesuchten Modellparameter stehen mit den Messwerten in einem nichtlinea-
+ren funktionalen Zusammenhang, wodurch spezielle Auswertealgorithmen
+erforderlich sind. Standardmäßig werden in der spektroskopischen Ellipso-
+metrie einige wenige unbekannte Modellparameter aus vielen spektralen
+Messdaten bestimmt. Unter Annahme von Gauß’schem Sensorrauschen wird
+über iterative Verfahren eine Maximum-Likelihood-Schätzung der gesuchten
+Modellparameter berechnet.
+Ein Nachteil der Ellipsometrie ist die geometrische Einschränkung der Prüf-
+anordnung aufgrund des Reflexionsgesetzes. Dadurch wird eine Vermessung
+von gekrümmten Oberflächen i. Allg. verhindert. Ein relativ neues Messprin-
+zip basierend auf Lichtwegumkehrung und mikrostrukturierten Retroreflek-
+toren ermöglicht jedoch die Erfassung von beliebigen Freiformflächen. Dieses
+neue Messprinzip und die damit verbundenen Änderungen der Messabbil-
+dung, der Messunsicherheiten, der Mehrdeutigkeiten, der Freiheitsgrade und
+der Auswertealgorithmik einer Polarisationsmessung bilden den Forschungs-
+schwerpunkt dieser Arbeit. Es wurde ein Einwellenlängen-Ellipsometer für
+die großflächige Prüfung gekrümmter Oberflächen realisiert und dazu ein an-
+gepasster Kalibrier-Algorithmus entwickelt, der mittels einer Matrixfaktori-
+sierung mit Nebenbedingungen die Modulations- und Analysematrix simul-
+tan berechnet.
+In den meisten Anwendungsfällen reduziert sich beim neuen Messverfahren
+die Anzahl der Freiheitsgrade der gemessenen Müller-Matrix von 16 auf 10.
+Außerdem verdoppelt sich die Anzahl der Elemente in der Lösungsmenge der
+Modellparameter, falls das untersuchte Medium nicht-depolarisierend und in-
+variant gegenüber Lichtwegumkehrung ist. Bekannte inverse Abbildungen
+für die Ellipsometrie an ebenen Oberflächen wurden für die Anwendung an
+gekrümmten Oberflächen generalisiert. Dies bringt eine deutliche Performan-
+cesteigerung gegenüber den standardmäßig verwendeten iterativen Optimie-
+rungsverfahren. Bei der Einwellenlängen-Ellipsometrie ist zudem der Vorteil
+einer probabilistischen Datenauswertung gegenüber direkten Verfahren über
+inverse Abbildungen verschwindend gering, da die Anzahl der Messwerte oft
+unwesentlich größer als die Anzahl der Unbekannten ist.
+An gekrümmten Oberflächen muss zusätzlich zu anderen Modellparametern
+auch die unbekannte Oberflächennormale bestimmt werden. Hierfür werden
+zwei Verfahren vorgestellt. Das erste Verfahren ist ein Marker-basiertes Ver-
+fahren, ähnlich dem monokularen Stereo, und ermöglicht eine grobe Abschät-
+zung des Oberflächenreliefs ohne Verwendung von kalibrierten Polarisations-
+messungen. Das zweite Verfahren misst die Oberflächennormalen anhand von
+Polarisationsmessungen. Nach bisherigem Technikstand ist hierbei Vorwis-
+sen über die Materialstruktur der Oberfläche erforderlich. Das vorgestellte
+Verfahren benötigt jedoch kein Vorwissen über die Materialstruktur. Ermög-
+licht wird dies durch einen speziellen optischen Aufbau und eine Modulation
+der Polarisationseigenschaften des Retroreflektors im Zeitmultiplexverfahren.
+Die Oberflächennormale wird dann aus dem Richtungsvektor des reflektier-
+ten Lichts bestimmt.
+Danksagung
+Die vorliegende Dissertation entstand im Rahmen meiner Tätigkeit als wis-
+senschaftlicher Mitarbeiter am Fraunhofer Institut für Optronik, Systemtech-
+nik und Bildauswertung IOSB. Im Folgenden möchte ich einige Personen na-
+mentlich erwähnen, die durch den wissenschaftlichen Austausch oder sonsti-
+ge Unterstützung wertvolle Beiträge für die Arbeit geleistet oder diese über-
+haupt erst ermöglicht haben.
+Prof. Dr.-Ing. Jürgen Beyerer danke ich einerseits für die wissenschaftliche
+Betreuung der Arbeit durch Anregungen, Verbesserungsvorschläge und Ko-
+ordinierung. Andererseits möchte ich mich auch für die kontinuierliche För-
+derung der Arbeit und für die persönliche Unterstützung bedanken. Prof. Dr.
+rer. nat. Uli Lemmer danke ich für die freundliche Übernahme des Korreferats
+und für die Bereitschaft für Kooperationen.
+Den Mitarbeitern am IOSB und am Lehrstuhl für Interaktive Echtzeitsysteme
+möchte ich ebenfalls für die wissenschaftlichen Diskussionen und die hilfrei-
+chen Tipps danken, woraus wertvolle Beiträge für die Arbeit entstanden sind.
+Ohne Anspruch auf Vollständigkeit möchte ich hierbei Dr. Alexey Pak, Dr.-
+Ing. Christian Frese, Dr. Tim Zander, Chia-Wei Chen, Dr.-Ing. Zheng Li, Dr.-
+Ing. Johannes Meyer, Dr.-Ing. Miro Taphanel, Dr.-Ing. Robin Gruna und Dr.-
+Ing. Ding Luo namentlich erwähnen. Einen besonderen Beitrag hat Dr.-Ing.
+Matthias Hartrumpf durch die Entdeckung des neuartigen Messprinzips ge-
+leistet, auf dem diese Arbeit beruht, und durch die gemeinsamen Arbeiten und
+Publikationen in diesem Themenfeld. Prof. Dr.-Ing. Thomas Längle möchte ich
+für die langjährige wissenschaftliche Förderung, Projektfinanzierung sowie
+Flexibilität bei der Vereinbarkeit von Beruf und Privatleben danken. Dr.-Ing.
+Christian Frese, Dr.-Ing. Johannes Meyer, Dr. Alexey Pak, Dr. Tim Zander und
+Dr.-Ing. Miro Taphanel möchte ich zudem fürs Korrekturlesen der umfangrei-
+chen Arbeit und für die Verbesserungsvorschläge danken. Den Fortschritt der
+Arbeit habe ich zudem auch den vielen studentischen Hilfskräften zu verdan-
+ken, die durch die Implementierung von Software-Prototypen, Durchführung
+von experimentellen Untersuchungen und Analyse der experimentellen Er-
+gebnisse mir wichtige Aufgaben abgenommen und wertvolle Erkenntnisse ge-
+liefert haben. Dr.-Ing. Alexander Schwarz und seinem Team aus der Abteilung
+Signatorik am Fraunhofer IOSB gilt mein Dank für die Nutzungsmöglichkeit
+der BRDF-Roboteranlage und für die Klärung meiner zahlreichen Rückfragen.
+Außerhalb der wissenschaftlichen Tätigkeit rund um das Thema Ellipsome-
+trie hatte ich am IOSB die Gelegenheit, in vielen weiteren Themenbereichen
+Erfahrungen zu sammeln und in Industrie- und Forschungsprojekten mitzu-
+wirken, wofür ich den Kollegen der Abteilung Sichtprüfsysteme und darüber
+hinaus für die gemeinsame Zeit und gute Zusammenarbeit danken möchte.
+Auch privat habe ich viel Unterstützung auf dem langen Weg von den ersten
+Ideen bis zum Abschluss der Promotion erfahren. Meiner Frau Christina dan-
+ke ich für die langjährige Begleitung entlang dieses Weges und für Ihre per-
+manente Unterstützung in allen Lebensbereichen trotz vieler Entbehrungen.
+Meinem Sohn Gabriel verdanke ich viel Freude und seine zahlreichen Versu-
+che, mir bei der Arbeit behilflich zu sein, waren ebenfalls wichtig. Ein großer
+Dank gilt meinen Eltern, auf die immer Verlass ist, wann immer ich ihre Hilfe
+benötige. Auch für die Korrektur der Dissertation möchte ich meiner Mutter,
+mit Unterstützung von Wolfgang Gerhardt, danken. Meinen Verwandten und
+Freunden danke ich für die abwechslungsreiche, gemeinsame Zeit und insbe-
+sondere meinen Schwestern für die Unterstützung bei der Kinderbetreuung.
+Trotz dieser großen Unterstützung, hätte ich die Arbeit ohne Gottes Hilfe und
+die Kraft und Zuversicht die er mir gab, nicht abschließen können, weshalb
+ihm mein besonderer Dank gilt.
+Christian Negara
+Köln, Mai 2023
+Notation
+Nachfolgend ist die in dieser Arbeit verwendete Notation dargestellt.
+Allgemein
+Operator
+Konstanten
+Abbildungsmatrix einer Achsenspiegelung an der
+𝑥-Achse:
+𝑥-Achse:
+𝐓 ∶= diag(1, − 1, − 1)
+𝑦𝑧
+Lateinische Symbole und Variablen
+𝐉 (Ψ) Jones-Matrix eines optischen Bauelements mit linearem
+Ψ
+Dichroismus für den polarisationsabhängigen
+Verlustwinkel Ψ:
+𝐉 (Δ) Jones-Matrix eines Verzögerungselements in
+Δ
+Transmissionsanordnung mit Verzögerung Δ und
+horizontaler schneller Achse:
+Jones-Matrix der optischen Rotation um den Winkel 𝜙:
+𝐌 (Ψ) Müller-Matrix eines optischen Bauelements mit linearem
+Ψ
+Dichroismus für den polarisationsabhängigen
+Verlustwinkel Ψ:
+𝐌 (Δ) Müller-Matrix eines Verzögerungselements mit
+Δ
+Verzögerung Δ:
+Müller-Matrix der optischen Rotation um den Winkel 𝜙:
+𝐌 (𝐌,𝜙) Müller-Mat⎝rix eines um den Winkel⎠𝜙 gedrehten
+Er
+optischen Bauteils, welches nicht gedreht die
+Müller-Matrix 𝐌 aufweist:
+𝐌 (𝐌,𝜙) ∶= 𝐌 (−𝜙)𝐌𝐌 (𝜙)
+Er r r
+𝐌 (Ψ,Δ,𝑅) Müller-Matrix einer Probe mit linearem Dichroismus,
+L
+Verzögerung und Absorption in Reflexions- oder
+Transmissionsanordnung:
+𝑴, 𝑴 reelle bzw. komplexe Magnetisierung
+N(𝝁,𝚺) multivariate Normalverteilung mit Erwartungswert 𝝁
+und Kovarianzmatrix 𝚺
+𝐍(𝐌) Normierte Müller-Matrix: 𝐌/ (𝐌)
+11
+Griechische Symbole und Variablen
+optischer Gangunterschied bzw. Verzögerung
+reelle Permittivität als Skalar bzw. Tensor
+xviii
+Operatoren und mathematische Symbole
+Vektor bestehend aus den Elementen 𝑎
+𝑖
+Matrix bestehend aus den Matrixelementen 𝑎
+𝑖𝑗
+) komplexer Tensor der Stufe 𝑛 mit den Tensor-Elementen
+…𝑖𝑛
+𝑎 und dazugehörigen Multiindizes (𝑖 , 𝑖 , … , 𝑖 )
+𝑖1𝑖2…𝑖𝑛 1 2 𝑛
+𝑖-tes Element des Vektors 𝒂
+Element einer Matrix 𝐀 in Zeile 𝑖 und Spalte 𝑗
+Teilvektor von 𝒂 = (𝑎 ) bestehend aus den Elementen 𝑎
+𝑖 𝑖
+mit den Indizes 𝑖 ∈ I
+Menge von Teilvektoren, die aus den Elementen der
+Menge A gewonnen werden: (A) ∶= {(𝒗) ∣ 𝒗 ∈ A}
+I I
+eine Teilmatrix von 𝐀 = (𝑎 ) bestehend aus den
+J 𝑖𝑗
+Elementen 𝑎 mit den Indizes (𝑖,𝑗) ∈ I × J
+𝑖𝑗
+Transponierte der Matrix 𝐀
+Adjungierte der Matrix 𝐀
+Konjugierte der komplexen Zahl 𝑎 bzw. elementweise,
+komplexe Konjugation der komplexen Matrix 𝐀
+Skalarprodukt zweier Vektoren: ⟨𝒂, 𝒃⟩ = ∑ (𝒂) (𝒃)
+𝑖 𝑖
+𝑖
+Standardskalarprodukt zweier Vektoren:
+s ∗
+⟨𝒂, 𝒃⟩ = ∑ (𝒂) (𝒃)
+𝑖 𝑖
+𝑖
+Kreuzprodukt der Vektoren 𝒂 = (𝑎 ) und 𝒃 = (𝑏 ):
+𝑖 𝑖
+𝑎 𝑏 − 𝑎 𝑏
+⎛ 2 3 3 2⎞
+𝒂 × 𝒃 = ⎜𝑎 𝑏 − 𝑎 𝑏 ⎟
+⎜ 3 1 1 3⎟
+⎝𝑎 𝑏 − 𝑎 𝑏 ⎠
+1 2 2 1
+𝐀) spaltenweise Vektorisierung der Matrix 𝐀
+Determinante der Matrix 𝐀
+𝐁 Kronecker-Produkt der Matrizen 𝐀 und 𝐁
+∇ Nabla-Operator
+⟨∇, 𝑭⟩ Divergenz des Vektorfelds 𝑭 als formales Skalarprodukt
+von ∇ und 𝑭
+∇ × 𝑭 Rotation des Vektorfelds 𝑭 als formales Kreuzprodukt
+von ∇ und 𝑭
+⟨∇, ∇⟩ 𝑭 Laplace-Operator eines Vektorfelds 𝑭 als formales
+Skalarprodukt zweier Nabla-Operatoren
+⟨𝒙, ∇⟩ Formales Skalarprodukt zwischen einem Vektor 𝒙 und
+dem Nabla-Operator
+R {𝑎} , R {𝑓} Realteil einer komplexen Zahl 𝑎 bzw. Realteil einer
+komplexen Funktion 𝑓
+{𝑎} , ℑ {𝑓} Imaginärteil einer komplexen Zahl 𝑎 bzw. Imaginärteil
+einer komplexen Funktion 𝑓
+Moore-Penrose-Inverse einer Matrix 𝐀 ∈ R𝑚×𝑛 mit
+vollem Rang:
+𝑓 ∗𝒙 𝑔 Örtliche Faltung von 𝑓 und 𝑔 in drei Raumdimensionen
+A| Lebesgue-Borel-Maß der Menge A, wobei A eine
+Borelmenge ist
+Oberflächenintegral einer Funktion 𝑓 über einer
+zweidimensionalen Menge A ⊂ R3 mit skalarem
+Oberflächenelement d𝐴
+1 Einleitung
+1.1 Motivation
+Die Ellipsometrie ist ein optisches Messverfahren für die Schichtdickenmes-
+sung im Nanometerbereich, das seit dem 19. Jahrhundert bekannt ist [Dru89].
+Darüber hinaus kann man mit der Ellipsometrie den Brechungsindex,
+den Kristallinitätsgrad, die elektrische Leitfähigkeit, die Oberflächenrauheit
+u. v. m. quantitativ erfassen [Tom99, Gar13b]. Bei der Ellipsometrie wird Licht
+mit bekanntem Polarisationszustand an einer Probe reflektiert oder transmit-
+tiert und anschließend der Polarisationszustand wieder gemessen [Azz99].
+Das Messprinzip der Ellipsometrie beruht auf einer modellbasierten Aus-
+wertung der Polarisationszustandsänderung [Jel91]. Eine Änderung des
+Polarisationszustands tritt üblicherweise auf, wenn polarisiertes Licht unter
+einem schrägen Einfall auf eine Oberfläche auftrifft. Die Änderung des Pola-
+risationszustands hängt von der Schichtstruktur der Oberfläche sowie vom
+Einfallswinkel des Lichts ab und lässt sich anhand von bekannten Gesetzmä-
+ßigkeiten der Optik berechnen [Hec02]. Über ein Fitting der Modellparameter
+oder eine Inversion dieser funktionalen Beziehungen lassen sich die Modell-
+parameter bestimmen. Da sehr viele unterschiedliche Modellparameter
+wie Schichtdicke, Doppelbrechung, Oberflächenneigung, Kristallinitätsgrad
+u. v. m. eine Polarisationszustandsänderung bewirken, ergibt sich ein sehr
+großes Anwendungspotenzial für die Ellipsometrie [Gar13b]. Die Abbildung
+der physikalischen Realität auf mögliche Polarisationszustandsänderungen
+ist jedoch nicht injektiv, so dass es bei der Bestimmung der Modellparameter
+häufig zu Mehrdeutigkeiten kommt [Tom99]. Zudem können natürlich nur so
+viele Modellparameter der Oberfläche bestimmt werden, wie Messwerte vor-
+handen sind; die übrigen Modellparameter sind als bekannt vorauszusetzen.
+Ein Vorteil der Ellipsometrie gegenüber vielen anderen optischen Verfahren
+ist der aus dem gemessenen Polarisationszustand resultierende Informations-
+gewinn. Wird ein spektroskopisches Ellipsometer für Reflektanzmessungen
+kalibriert, so wird durch Messung der Intensität, der Wellenlänge und des
+Polarisationszustands die Licht-Materie-Interaktion sehr umfangreich erfasst.
+Eine weite Verbreitung fand die Ellipsometrie in der Halbleiterindustrie, wo
+sie einen festen Platz eingenommen hat [Tom99]. Als universell einsetzbare
+Messtechnik hat sie sich darüber hinaus in Regierungs- und Industriela-
+boratorien sowie in der Forschung und an Universitäten etabliert [Tom99,
+Fuj07]. Außerhalb der Halbleiterindustrie sind viele Industriezweige von
+dieser Messtechnik noch nicht erschlossen. Während früher die indirekte
+Messung mittels numerischen Optimierungsverfahren ein Problem darstellte,
+welches durch das Aufkommen von leistungsstarken Rechnern weitest-
+gehend gelöst wurde [Fuj07], sind die heutigen Hürden vor allem das
+physikalisch-modellbasierte Messprinzip der Ellipsometrie [Fuj07] und die
+geometrisch-optischen Einschränkungen. Das physikalisch-modellbasierte
+Messprinzip führt dazu, dass sich die Anwendung der Ellipsometrie mit we-
+nig Vorwissen über die Materialstruktur als schwierig gestaltet [Tom99]. Ist
+ausreichend Vorwissen über die Probe vorhanden, kann das Messprinzip auch
+von Vorteil sein, falls das physikalische Modell die Realität adäquat abbildet,
+da die gesuchte Kenngröße der Oberfläche in vielen Anwendungsfällen mit
+der Messgröße in einem bekannten Zusammenhang steht. In diesen Fällen
+sind bspw. keine Kalibrierstandards wie bei vielen anderen Messverfahren der
+Dünnschichtmessung erforderlich [Abo15]. Die geometrisch-optischen Ein-
+schränkungen ergeben sich aus dem Reflexionsgesetz, da mit Ellipsometrie
+meist spiegelnde Oberflächen gemessen werden [Asp13]. Als Konsequenz ist
+eine präzise Justage von Lichtquelle, Probe und Detektor erforderlich [Par02].
+Zudem wird der Lichtpfad nicht durch die Probe, sondern durch die Mess-
+apparatur vorgegeben, die die Richtungen des emittierten und detektierten
+Lichts festlegt. Folglich beschränkt sich der Anwendungsbereich der Ellip-
+sometrie fast nur auf ebene Oberflächen. Eine großflächige Prüfung von
+gekrümmten Oberflächen im Durchlauf oder im Stop-and-go-Verfahren, wie
+sie in der industriellen Sichtprüfung üblich ist [Str19], ist mit herkömmlichen
+Methoden und Ellipsometrie-Aufbauten nicht realisierbar.
+Die Möglichkeit Beschichtungen im Nano- und Mikrometerbereich vollflächig
+zu vermessen, wäre für die Industrie von großem Nutzen. Funktionale Schich-
+ten finden sich z. B. in der Automobilindustrie [Tag97], in der optischen In-
+dustrie [Han09, Duw19] und in der flexiblen Elektronik, z. B. bei organischen
+Leuchtdioden (engl. organic light emitting diode, OLEDs) [Käl21]. In vielen
+Anwendungsbereichen findet momentan nur eine stichprobenhafte, punktu-
+elle Messung der Oberflächenstruktur statt. Im Rahmen der sog. Industrie 4.0
+sind flexible Sensorlösungen für eine 100%-Prüfung von Oberflächen wün-
+schenswert [Zür20], weil dadurch eine Steigerung der Qualität und der Res-
+sourceneffizienz sowie eine Minimierung des Ausschusses und der Material-
+kosten erreicht wird. Die vorliegende Arbeit soll einen Beitrag dazu leisten,
+diese Lücke im Bereich der optischen Messtechnik zu schließen.
+1.2 Problemstellung und Zielsetzung
+Der klassische Aufbau eines Ellipsometers besteht aus einer Lichtquelle und
+einem Detektor, wobei das Licht spekular an einer Probe unter schrägem
+Lichteinfall reflektiert [Azz99] und hier als Ellipsometrie ohne Lichtwegum-
+kehrung (engl. unidirectional ellipsometry, UE) bezeichnet wird. Das Beleuch-
+tungsmodul emittiert Licht mit einem festen oder modulierten Polarisations-
+zustand und wird als Polarisationszustandsgenerator (engl. polarization sta-
+te generator, PSG) bezeichnet. Der Detektor detektiert den Polarisationszu-
+stand und wird als Polarisationszustandsdetektor (engl. polarization state de-
+tector, PSD) bezeichnet. Aus dem Stand der Technik ist eine Variante dieses
+Ellipsometrie-Aufbaus bekannt, bei der das Licht eine doppelte Reflexion an
+der Probenoberfläche erfährt und hier als Ellipsometrie mit Lichtwegumkeh-
+rung (engl. return-path ellipsometry, RPE) bezeichnet wird. Bisher wurde ein
+Spiegel verwendet, um das von der Probe reflektierte Licht zurück zu reflek-
+tieren [Azz81b]. Der Aufbau kann die Proben-Justage vereinfachen und er-
+möglicht auch Messungen an nicht-planen Oberflächen.
+In den letzten Jahren wurde am Fraunhofer IOSB eine neue Variante der RPE
+entwickelt und vorgestellt, bei dem die Lichtwegumkehrung nicht mit ei-
+nem Spiegel, sondern mit einem mikrostrukturierten Retroreflektor erreicht
+wird [Har99, Har12]. Diese Modifikation stellt einen vielversprechenden
+Ansatz dar, um erstmals die Ellipsometrie an annähernd beliebig geformten
+Oberflächen anzuwenden. Der erste Prototyp ist ein Sensormodul zur par-
+allelen Messung von vier Intensitäten mittels Laser-Scanning und arbeitet
+als Zeilensensor im Zeilenabtastverfahren. Der darin verwendete PSD weist
+Abtastraten im MHz-Bereich auf und misst drei von vier Freiheitsgraden
+des Polarisationszustands. Aufgrund der partiellen Polarisationszustands-
+messung verdoppeln sich die Mehrdeutigkeiten bei der Bestimmung der
+Modellparameter. Der Polarisationszustandsdetektor mit Amplitudenteilung
+(engl. division-of-amplitude photopolarimeter, DoAmP) stellt ein alternatives
+und optimales Design zur vollständigen Messung des Polarisationszustands
+dar [Azz03]. Die Güte von alternativen Aufbauten eines PSD basierend auf
+Strahlungsteilung lassen sich daran messen, wie nah das Gütemaß an den
+Optimalwert des DoAmP heranreicht. Gütemaße sind z. B. die Determinante
+der Analysematrix des PSD sowie die Konditionszahl. Der DoAmP gibt zwar
+Aufschluss über das prinzipielle Design eines optimalen PSD. Dessen Her-
+stellung gestaltet sich jedoch aufgrund von speziellen Polarisationsoptiken
+als aufwändig. Daher werden alternative Aufbauten des DoAmP basierend
+auf Standard-Polarisationsoptiken vorgestellt, die bezüglich der Gütemaße
+ebenfalls optimal sind.
+Um präzise Polarisationsmessungen durchzuführen, werden handelsübliche
+Ellipsometer kalibriert. Gängige Kalibrierverfahren sind bei der RPE aufgrund
+der Lichtwegumkehrung jedoch eher ungeeignet. Neben der Kalibrierung
+gibt es auch bei der Polarisationsmessung zwischen der RPE und der UE
+Unterschiede, die eine geänderte Messabbildung und Datenauswertung er-
+fordern. Üblicherweise werden die Modellparameter in der Ellipsometrie
+über eine nichtlineare Optimierung berechnet. Einige wenige geschlossene
+Lösungen sind für die Einwellenlängen-Ellipsometrie basierend auf der UE
+bekannt [Azz89b, Rus91, Rus99]. Diese weisen gegenüber iterativen Ver-
+fahren eine deutlich bessere Performanz auf, was im Echtzeit-Betrieb ein
+wichtiges Kriterium darstellt. Allerdings setzen sie eine bekannte Oberflä-
+chenneigung voraus. Da die Oberflächenneigung den Polarisationszustand
+ebenfalls verändert, können die Einflüsse von Material-Parametern und
+Topographie-Parametern nicht ohne Weiteres separiert werden und müssen
+üblicherweise gemeinsam berechnet werden. Die zwei zusätzlichen Un-
+bekannten der Oberflächenneigung verringern außerdem die Anzahl der
+Material-Parameter, die mit einer Messung bestimmt werden können. Ein
+wichtiges Ziel dieser Arbeit besteht daher darin, alternative Aufbauten,
+Algorithmen und Kalibrierverfahren aufzuzeigen, die die zuvor genannten
+Nachteile ausgleichen, um die Mächtigkeit der Ellipsometrie an ebenen
+Oberflächen mit möglichst wenig Einschränkungen bei der Messung von
+beliebig-geformten Oberflächen zu erhalten.
+1.3 Beiträge
+Die vorliegende Arbeit analysiert die Möglichkeiten und Einschränkungen
+der RPE basierend auf Retroreflexfolien. Die Retroreflexfolie bildet bei diesem
+neuartigen Messprinzip eine kritische Komponente, da deren Polarisati-
+onseigenschaften nur innerhalb sehr enger Toleranzen variieren dürfen.
+Da das Licht aus unterschiedlichen Richtungen auf den Retroreflektor auf-
+trifft, spielt ebenfalls die Einfallswinkelabhängigkeit eine wichtige Rolle. Die
+Eignung der in dieser Arbeit verwendeten Retroreflexfolie für Ellipsometrie-
+Anwendungen kann theoretisch begründet werden und wird experimentell
+bestätigt. Zudem werden Qualitätsmerkmale geeigneter Retroreflexfolien
+aufgezeigt, die sowohl für die Auswahl als auch für die Herstellung solcher
+Folien wichtig sind.
+Auf dem neuartigen Messprinzip aufbauend, werden zwei Anordnungen der
+RPE betrachtet und untersucht: die Laser-Ellipsometrie und die Kamera-
+basierte, abbildende Ellipsometrie. Arbeiten zur Laser-Ellipsometrie be-
+handeln vorwiegend den optischen Aufbau des PSD. Es wird ein PSD auf
+Basis des DoAmP unter Verwendung von Verzögerungsplättchen vorgestellt,
+der sich im Vergleich zum Stand der Technik durch eine deutlich verein-
+fachte Herstellung auszeichnet. Es wird theoretisch gezeigt, dass bei der
+Einwellenlängen-Ellipsometrie mit dem geänderten Aufbau die Gütemaße
+optimale Werte annehmen. Ebenfalls vorgestellt wird ein PSD für den Ein-
+satz in der spektroskopischen Ellipsometrie, dessen Gütemaße erstmalig im
+gesamten Wellenlängenbereich von 400 nm bis 1000 nm annähernd optimale
+Werte annehmen. Dieser Wellenlängenbereich spielt für Silizium-basierte
+Photodetektoren eine herausragende Rolle.
+Die zweite Anordnung der RPE ist ein Prototyp basierend auf der Kamera-
+basierten, abbildenden Ellipsometrie. Die abbildende Ellipsometrie wird nicht
+wie sonst üblich mit Mikroskopie kombiniert [Asi08], sondern ermöglicht bei
+dieser Ausführung die vollflächige Abbildung größerer Objekte wie Linsen
+und Parabolspiegeln. Der vorgestellte Aufbau des abbildenden Ellipsometers
+ist ein Einwellenlängen-Ellipsometer. Im Gegensatz zur Laser-Ellipsometrie
+wird kein monochromatisches Licht, sondern schmalbandiges Licht emittiert.
+Obwohl dieser Prototyp als Einwellenlängen-Ellipsometer ausgeführt ist, ist
+das neue Messprinzip basierend auf Retroreflexion nicht darauf beschränkt
+und der Übergang zur spektroskopischen Ellipsometrie ist unkompliziert.
+Für verschiedene Ausführungen der RPE werden Messabbildungen präsen-
+tiert, um geneigte Oberflächen, Lichtwegumkehrung, Strahlteilung und Re-
+troreflexion zu berücksichtigen. Zudem werden bisher unbekannte analyti-
+sche Lösungen mit dem Fokus auf geneigte Oberflächen vorgestellt und ein
+funktionaler Zusammenhang zwischen den Messwerten der UE und der RPE
+hergestellt. Durch Kombination bekannter und neuer Formeln lassen sich ei-
+nige wichtige Aufgabenstellungen der Ellipsometrie an gekrümmten Ober-
+flächen über direkte Verfahren lösen. Dies bringt eine deutliche Performan-
+cesteigerung mit sich und erleichtert die Echtzeit-Datenauswertung bei der
+abbildenden Ellipsometrie erheblich.
+Mit der Einwellenlängen-RPE können an isotropen Medien zwei Neigungs-
+winkel und ein Material-Parameter bestimmt werden, bspw. eine Schichtdi-
+cke. Die Anzahl der simultan bestimmbaren Material-Parameter kann jedoch
+erhöht werden, indem die Topographie des Prüflings auf andere Art und Wei-
+se gemessen wird. Die Verwendung von zusätzlicher Sensorik ist die nahelie-
+gendste Möglichkeit 3D-Messdaten zu gewinnen. In Laborumgebungen bietet
+sich eine andere Möglichkeit an, auf einfache Art und Weise 3D-Messdaten zu
+gewinnen, ohne den optischen Aufbau zu ändern. Hierfür wird ein Messver-
+fahren vorgestellt, welches eine (zerstörungsfreie) Präparation des zu unter-
+suchenden Prüflings erfordert. Dabei wird nach der Aufnahme der Polarisati-
+onsmessungen ein retroreflektierender Staub oder retroreflektierende Schnip-
+sel auf die Probe aufgetragen und mit monokularem Stereo basierend auf Or-
+thogonalprojektion die 3D-Form bestimmt. Eine dritte Möglichkeit 3D-Daten
+während der Messung zu gewinnen, besteht in der Modulation der Polarisa-
+tionseigenschaften des Retroreflektors während der Messung.
+Die genannten Methoden der separaten Messung von Topographie-Parame-
+tern bieten den Vorteil, dass bereits bekannte Methoden der Datenauswertung
+in der Ellipsometrie an ebenen Oberflächen auf gekrümmte Oberflächen über-
+tragen werden können. Allerdings sind die Möglichkeiten der RPE zur Ober-
+flächencharakterisierung gegenüber der UE etwas eingeschränkt, was in den
+meisten Anwendungsfällen jedoch unerheblich ist. Die Ursache für die Ein-
+schränkungen liegt in der Lichtwegumkehrung. Daher treten die Einschrän-
+kungen der RPE sowohl bei ebenen als auch gekrümmten Oberflächen auf.
+Eine Gegenüberstellung der RPE und der UE hinsichtlich der Vor- und Nach-
+teile bildet einen Teil dieser Arbeit.
+1.4 Gliederung der Arbeit
+Die Arbeit beginnt in Kapitel 2 mit einer Einführung in das Messprin-
+zip der Ellipsometrie, die Datenauswertung und bekannte Aufbauten von
+Ellipsometern aus dem Stand der Technik. Es wird auf die Einwellenlängen-
+Ellipsometrie, die spektroskopische Ellipsometrie, die punktmessende und die
+abbildende Ellipsometrie an ebenen Oberflächen ebenso eingegangen wie auf
+neue Entwicklungen der Ellipsometrie mit Lichtwegumkehrung an gekrümm-
+ten Oberflächen. Kapitel 3 behandelt die physikalischen und mathematischen
+Grundlagen der Lichtausbreitung und die beiden Darstellungsmöglichkeiten
+des Polarisationszustands als Jones- und Stokes-Vektoren. Auf örtlich vari-
+ierende Jones- und Stokes-Vektoren bzw. Jones- und Müller-Matrizen wird
+ein besonderes Augenmerk gelegt, da sie für nachfolgende Berechnungen
+erforderlich sind. Demgegenüber wird in der Literatur der Jones- und Müller-
+Formalismus meist auf unendlich ausgedehnte ebene Wellen eingeschränkt.
+Weiterhin werden Aufbauten zur Messung des Polarisationszustands und
+der Polarisationszustandsänderung von Licht behandelt sowie das direk-
+te Problem und das inverse Problem bei der Datenauswertung adressiert.
+Aufbauend auf diesen theoretischen Grundlagen werden in Kapitel 3 die
+Polarisationseigenschaften von mikrostrukturierten Retroreflexfolien unter-
+sucht. Retroreflexfolien basierend auf Mikrokugeln und Mikrotripeln sowie
+phasenkonjugierende Spiegel werden in die Analyse mit einbezogen. Ein ab-
+bildendes Ellipsometer zur Oberflächencharakterisierung beliebig geformter
+Oberflächen basierend auf der RPE mit Retroreflexion wird in Kapitel 5 vor-
+gestellt. Die Datenauswertung und mögliche Lösungsansätze für das Problem
+der unbekannten Oberflächenneigung werden ebenfalls in diesem Kapitel
+behandelt. Sehr wichtig für eine praktische Umsetzung des vorgeschlagenen
+Sensordesigns ist das Thema Sensorkalibrierung aus Kapitel 6. Durch die
+Kombination von abbildender Ellipsometrie und der RPE gestaltet sich die
+Sensorkalibrierung schwieriger als bei der UE. Der vorgestellte, angepasste
+Kalibrieralgorithmus verwendet ähnlich zur etablierten Eigenwert-basierten
+Kalibrierung Methoden der linearen Algebra und der Numerik, unterscheidet
+sich jedoch deutlich von dieser hinsichtlich der algorithmischen Struktur. In
+Kapitel 7 werden schließlich die Möglichkeiten des abbildenden Ellipsometers
+zur Charakterisierung von ebenen und gekrümmten Oberflächen evaluiert.
+Die Zusammenfassung in Kapitel 8 schließt die Arbeit ab.
+2 Stand der Forschung und Technik
+Die Ellipsometrie als Messtechnik hat seit ihren Anfängen vor über 100 Jah-
+ren wichtige technologische Entwicklungen durchgemacht, die nachfolgend
+kurz zusammengefasst werden. Auch wenn sich das Messprinzip und die er-
+zielbaren Messunsicherheiten über viele Jahre kaum geändert haben [Rot45,
+Gon02], haben erst diese Weiterentwicklungen und Automatisierungen es er-
+möglicht, die Ellipsometrie für eine Vielzahl von Problemstellungen und ins-
+bes. für die Dünnschichtmessung als Messtechnik zu etablieren [The81]. Ei-
+ne wesentliche Weiterentwicklung wurde am Fraunhofer IOSB erst kürzlich
+erfunden: Die Ellipsometrie mit Lichtwegumkehrung unter Ausnutzung von
+Retroreflexion [Har99, Har12]. Diese Neuerung stellt die Grundlage dar, auf
+der die vorliegende Arbeit aufbaut.
+2.1 Ellipsometrie und spektroskopische
+Ellipsometrie
+Die Ellipsometrie ist ein modellbasiertes, indirektes Messverfahren. Zu mes-
+sende Kenngrößen einer spiegelnden Oberfläche, wie die Schichtdicke einer
+Nano-Beschichtung, werden nicht direkt gemessen. Gemessen werden nur
+Polarisationszustandsänderungen von polarisiertem Licht, das an einer Ober-
+fläche gespiegelt oder transmittiert wird. Die gesuchten Kenngrößen werden
+als Modellparameter bezeichnet und stehen mit der Polarisationszustandsän-
+derung und ggf. weiteren bekannten oder unbekannten Modellparametern in
+einem meist nichtlinearen Zusammenhang. Das direkte Problem, also die Be-
+rechnung der Polarisationszustandsänderung aus den Modellparametern, ist
+analytisch oder mit direkten Verfahren lösbar. Die Berechnung der Modell-
+parameter aus der Polarisationszustandsänderung bildet das inverse Problem
+und ist i. Allg. nur mit numerischen, iterativen Verfahren lösbar. Das inverse
+Problem ist i. Allg. schlecht gestellt [Liu21] und erfordert Vorwissen sowohl
+über die Schichtstruktur der Oberfläche als auch über den Suchraum der Mo-
+dellparameter. Bei der Datenauswertung spielt die numerische Optimierung
+eine zentrale Rolle. Für wichtige Spezialfälle existieren jedoch geschlossene
+Lösungen.
+Die Oberflächencharakterisierung erfolgt in der Ellipsometrie meist über ein
+phänomenologisches Modell, dass die zu untersuchende Probe als ein Schicht-
+stapel aus mehreren, meist homogenen Medien und plan-parallelen Grenz-
+flächen approximiert. Auch wenn dieses Modell eine Abstraktion der realen
+Probe darstellt, hat es sich als sehr fruchtbar erwiesen [Tom99]. Es können da-
+mit die Polarisationseigenschaften komplexer Proben mit rauen Oberflächen,
+rauen Grenzflächen, variablem Brechungsindex und Diffusionsschichten be-
+schrieben werden. Durch die Unterteilung der Probe in mehrere Schichten
+können bekannte Gesetze für Reflexion und Transmission von Licht an einer
+Grenzschicht genutzt werden, um die Polarisationszustandsänderung für die
+ganze Probe zu berechnen.
+Eine Messung mit einem Ellipsometer kann (quasi-)monochromatisch,
+schmalbandig oder spektral aufgelöst erfolgen. Eine breitbandige Messung
+ergibt hingegen keinen Sinn. Der Grund liegt in der Dispersion von Ma-
+terialien und der daraus resultierende Mittelung des Messsignals. Daher
+wurde bereits in den Anfängen der Ellipsometrie entweder monochromatisch
+beleuchtet oder spektral aufgelöst gemessen [Dru88, Dru89, Rot45]. Die
+anfangs manuelle Spektralmessung wurde erst Anfang der 1970er automa-
+tisiert [Asp14]. Gleichzeitig erhöhte sich aufgrund der spektral aufgelösten
+Messung der Rechenaufwand.
+Obwohl der Fokus dieser Arbeit auf der Einwellenlängen-Ellipsometrie liegt,
+sind für manche Untersuchungen spektral aufgelöste Messungen erforderlich.
+Diese wurden mit dem spektroskopischen Ellipsometer Smart SE der Fa. Hori-
+ba¹ durchgeführt. Dieses Ellipsometer dient auch als Referenz, um Messwerte
+von UE und RPE zu vergleichen. Dabei wird entweder aus den spektral aufge-
+lösten Messwerten ein Wert bei der mittleren Wellenlänge des Emissionsspek-
+trums des Einwellenlängen-Ellipsometers herausgegriffen oder die spektral
+aufgelösten Messwerte mit dem Emissionsspektrum gewichtet.
+2.2 Messanordnungen und Messprinzip
+Jedes Ellipsometer beinhaltet im Wesentlichen zwei Komponenten: einen PSD
+und einen PSG [Azz99]. Der PSD misst den Polarisationszustand des Lichts,
+das in den Detektor einfällt. Hier kann eine vollständige oder eine partielle
+Messung des Polarisationszustands erfolgen. Bei einer vollständigen Messung
+wird der sog. Stokes-Vektor bestehend aus vier Stokes-Parametern vollständig
+gemessen. Dazu sind vier Intensitätsmessungen erforderlich. Bei einer par-
+tiellen Messung wird nur eine Untermenge der vier Stokes-Parameter oder
+Linearkombinationen hiervon gemessen.
+Welche Messanordnung für eine Aufgabenstellung erforderlich ist, hängt vom
+zu untersuchenden Prüfling ab. Handelt es sich um ebene, optisch isotrope
+Medien, reicht eine Messung der ellipsometrischen Winkel Ψ und Δ aus. Bei
+anisotropen, nicht-depolarisierenden Medien ist die Messung der 2×2-Jones-
+Matrix erforderlich. Depolarisierende Proben erfordern schließlich die Mes-
+sung der reellen 4×4-Müller-Matrix. Bei der spektroskopischen Ellipsometrie
+werden diese Matrizen für jeden Spektralkanal gemessen, was zu einer ent-
+sprechend großen Anzahl von Messwerten führt. Methoden der Schätztheo-
+rie sind zumindest bei der spektroskopischen Ellipsometrie wichtig, da weni-
+ge unbekannte Modellparameter aus vielen spektroskopischen Messwerten
+geschätzt werden müssen, die zudem unterschiedliche Messunsicherheiten
+aufweisen. Bei der Einwellenlängen-Ellipsometrie bringt eine probabilistische
+Datenauswertung nicht immer einen Mehrwert, da die Anzahl der Messwerte
+¹ https://www.horiba.com/de/scientific/products/ellipsometers/spectroscopic-ellipsometers/
+details/smart-se-14909/ (25.12.2020)
+oft unwesentlich größer als die Anzahl der Unbekannten ist. Dies resultiert
+in eine vergleichsweise geringe Fisher-Information, die mit der Anzahl der
+unabhängigen Observablen akkumuliert [Geo09]. Lediglich bei der Dimen-
+sionsreduktion der Polarisationsmessungen, z. B. von den 16 Elementen der
+Müller-Matrix auf die drei unabhängigen Messgrößen Ψ, Δ und 𝑅, kann eine
+Fortpflanzung von Verteilungen nach [JCG09] sinnvoll sein.
+Grundsätzlich gibt es drei Möglichkeiten einen PSG zu betreiben: Es wird ent-
+weder ein fester, ein kontinuierlich modulierter oder ein diskret modulierter
+Polarisationszustand emittiert [Azz78a]. Nur für die Messung von Ψ und Δ
+ist ein fester, emittierter Polarisationszustand ausreichend. Die Modulation
+erfolgt entweder über mechanisch rotierende oder photoelektrisch modulier-
+te Polarisationselemente. Der PSD kann ebenfalls über eine kontinuierliche
+oder diskrete Modulation den Polarisationszustand messen. Zusätzlich gibt es
+auch die Möglichkeit diesen gänzlich ohne Modulation oder bewegliche Kom-
+ponenten zu messen. Gemessen wird immer eine Linearkombination der Ele-
+mente der Müller-Matrix. Ein Müller-Matrix-Ellipsometer misst die gesamte
+Müller-Matrix und für die Messung müssen vier linear unabhängige Stokes-
+Vektoren emittiert und vier Stokes-Vektoren gemessen werden. Ein häufig
+verwendeter Aufbau zur Messung der Müller-Matrix ist in Abb. 2.1 abgebildet.
+Dieses Ellipsometer verwendet sowohl auf Beleuchtungs- als auch auf Detek-
+torseite rotierende Kompensatoren (engl. dual rotating compensator ellipsome-
+ter)¹. Der Polarisator und der Analysator sind Polarisatoren und können fest
+montiert sein. Die Kompensatoren sind Verzögerungsplättchen und können
+beliebig in der Winkellage gedreht werden. Zerlegt man das Licht in zwei li-
+near polarisierte Wellen, so absorbieren Polarisatoren eine der beiden Wellen.
+Der (lineare) Dichroismus beschreibt den Quotienten der Absorption der line-
+ar polarisierten Wellen und wird mit Ψ bezeichnet. Hingegen bewirken Kom-
+pensatoren eine Phasenverschiebung zwischen den beiden Wellen, die durch
+eine Verzögerung Δ beschrieben wird. Die Drehlage von Polarisationsopti-
+ken wird durch deren Azimutwinkel angegeben. Betrachtet man ein zweidi-
+mensionales Koordinatensystem im dreidimensionalen Raum mit beliebigem
+Nullpunkt, das durch die Vektoren 𝒆PSG und 𝒆PSG aufgespannt wird, so ergibt
+𝑥 𝑦
+sich der Azimutwinkel des Polarisators aus dem Richtungsvektor der Schwin-
+gungsebene des elektrischen Feldes in diesem Koordinatensystem. Analog da-
+zu ergibt sich der Azimutwinkel des Kompensators auf der Beleuchtungsseite
+aus dem Richtungsvektor der schnellen Achse. Allgemein beschreibt der Azi-
+mutwinkel eine Drehung des Koordinatensystems, wobei die Ausbreitungs-
+richtung des Lichtstrahls die Drehachse definiert und die Drehung gegen den
+Uhrzeigersinn bei Betrachtung der Lichtquelle ausgeführt wird¹.
+Abbildung 2.1: AufbaueinesEllipsometersohneLichtwegumkehrungmitrotierendenKompen-
+satoren.
+2.3 Abbildende Ellipsometrie
+Mit der abbildenden Ellipsometrie lassen sich die Polarisationseigenschaften
+von Oberflächen räumlich auflösen. Viele Anwendungsfälle im Forschungs-
+umfeld erfordern sowohl eine hohe laterale als auch eine hohe Tiefenauflö-
+sung [Mat12, Art14], weshalb im Handel erhältliche abbildende Ellipsome-
+ter als Mikro-Ellipsometer ausgelegt sind². Die abbildende Ellipsometrie wird
+daher meist in Kombination mit Mikroskopie eingesetzt und unterscheidet
+¹ Um Unklarheiten bei der Ausrichtung von Polarisationsoptiken vorzubeugen, wurde die
+Nebraska-Konvention eingeführt, auf die hier verwiesen wird [Hau80, Fuj07].
+sich zur nicht-abbildenden Ellipsometrie vor allem durch folgende Merkma-
+le [Asi08]:
+• Die hohe laterale Auflösung der Mikro-Ellipsometrie erfordert
+aufgrund des Abbe-Limits eine große numerischen Apertur.
+Üblicherweise liegt diese zwischen 0,3 und 0,9 [Zha02, Asi08, Art14].
+• Eine große numerische Apertur führt zu großen
+Einfallswinkeländerungen.
+• Eine große numerische Apertur verringert die Schärfentiefe.
+Die Einfallswinkelvariationen der von einem Sensorpixel detektierten Licht-
+strahlen wirken sich negativ auf die Genauigkeit des Messergebnisses aus,
+solange ein konstanter Einfallswinkel angenommen wird. Daher wurde die
+abbildende Ellipsometrie in der Vergangenheit für Relativ- statt Absolutmes-
+sungen eingesetzt, da letztere eine Berücksichtigung von Einfallswinkelvaria-
+tionen und höhere Rechenkapazitäten erfordern [Asi08].
+Bei der abbildenden Makro-Ellipsometrie werden keine mikroskopisch klei-
+nen Strukturen untersucht, so dass die o. g. Einschränkungen der abbilden-
+den Mikro-Ellipsometrie nicht bzw. nur in abgeschwächter Form gelten. Die
+abbildende Makro-Ellipsometrie spielt insbesondere in Spezialanwendungen
+der industriellen Produktion wie der Folienherstellung und der flexiblen Elek-
+tronik eine Rolle, wo eine 100-Prozent-Kontrolle der Oberfläche erforderlich
+ist [Sha14, Bam19]. In dieser Arbeit wird der Fokus ebenfalls auf die Makro-
+Ellipsometrie gelegt.
+2.4 Messanordnungen mit
+Lichtwegumkehrung
+Der PSG und der PSD werden bei der Ellipsometrie mit Lichtwegumkehrung
+in einem Sensormodul kombiniert. Um das emittierte und einfallende Licht
+zu separieren, ist üblicherweise ein Strahlteiler erforderlich. Diese als RPE
+bezeichnete Messtechnik wurde bisher unter Verwendung eines Spiegels rea-
+lisiert und ist schon lange bekannt [OBr36]. Später wurden weitere Varianten
+dieses Aufbaus bzw. weitere Anwendungsfälle untersucht [Yam74, Kaw76,
+Yam80, Azz81a, Azz81b, Azz77a, Azz77b] und die Messabbildung mittels
+Jones- und Müller-Matrizen formalisiert [Azz77a, Azz77b, Azz81c].
+Eine interessante Eigenschaft der Ellipsometrie mit Lichtwegumkehrung ist,
+dass Messungen auch dann möglich sind, wenn die Probe nicht eben oder
+nicht perfekt ausgerichtet ist. Wird die Neigung einer Probe variiert und trifft
+das Licht auf einen zentrierten, sphärischen Spiegel auf, so wird das Licht
+zurück reflektiert und gelangt auf dem gleichen Weg schließlich in den De-
+tektor [Fu95, Joh11]. Dasselbe gilt, wenn die Höhe einer Probe variiert wird
+und das Licht unter senkrechtem Einfall auf einen ebenen Spiegel auftrifft.
+Sind sowohl Neigung als auch Höhe variabel und unbekannt, lässt sich mit
+Spiegeln keine Rückreflexion erreichen.
+Es gibt jedoch auch Ellipsometer ohne Lichtwegumkehrung, die für die Mes-
+sung von Oberflächen mit Neigungs- und Höhenvariation ausgelegt sind. Bei
+dem punktmessenden Messsystem aus [Hol96, Neu02b] wird die Toleranz ge-
+genüber Neigungsänderungen mithilfe einer Sammellinse erreicht, wobei der
+Messpunkt in der Schärfeebene liegen muss. Die Toleranz gegenüber Höhen-
+änderungen wird durch eine Autofokus-Einrichtung sichergestellt. Obwohl
+das Licht durch die Sammellinse emittiert und eingefangen wird, zählt das
+Messsystem nicht zu der RPE, da die emittierten und reflektierten Lichtstrah-
+len nicht koinzident sind. Ein abbildendes Ellipsometer zur Vermessung von
+gekrümmten Oberflächen wurde in [Han08, Han09, Lee05, Cha05, Cha17] vor-
+gestellt. Das reflektierte Licht wird nach der Transmission durch den Analysa-
+tor auf ein Milchglas projiziert und auf der Rückseite detektiert. Weitere Auf-
+bauten zur Messung von gekrümmten Oberflächen, die auf der Detektorseite
+Sammel- oder Fresnellinsen verwenden, finden sich in [Duw19, Li16, Wir08].
+Einige der genannten Aufbauten haben die Schwierigkeit, das in einem gro-
+ßen Raumwinkel reflektierte Licht wieder einzufangen und kommen nur mit
+kleinen Variationen des Neigungswinkels zurecht. Bei anderen Aufbauten be-
+steht bei großen Variationen des Neigungswinkels das Problem, dass das Licht
+unter großen Einfallswinkeln auf Polarisationsoptiken auftrifft.
+Abb. 2.2 zeigt einen völlig neuartigen Aufbau eines bildgebenden Ellipso-
+meters mit Lichtwegumkehrung. Das polarisationssensitive Laserscanner-
+Messsystem wurde am Fraunhofer IOSB entwickelt und ist ein Zeilensen-
+sor [Har99], jedoch wurden auch Kamerasysteme erprobt [Har12]. Statt
+eines Spiegels wird ein mikrostrukturierter Retroreflektor verwendet. Die
+Kombination von Polarisationsmessung und Retroreflexion auf Basis von
+mikrostrukturierten Retroreflexfolien ermöglichte erstmals die Messung der
+Polarisationszustandsänderung an nicht-planen Oberflächen, die eine starke
+Variation der Oberflächenneigung aufweisen. Die untersuchte Oberfläche
+kann eine sog. Freiformfläche sein, unterliegt also keinen weiteren geo-
+metrischen Einschränkungen. Der erste Prototyp arbeitet ohne modulierte
+Beleuchtung und ist für eine partielle Messung des Stokes-Vektors ausgelegt.
+Die Intensitätsmessungen erfolgen über Photomultiplier, um bei niedriger
+Lichtausbeute eine hohe Abtastrate zu ermöglichen. Eine später entwickelte
+Variante des Laserscanner-Messsystems emittiert links- und rechtszirkular
+polarisiertes Licht. Das Messprinzip dieses Aufbaus bildet die Grundlage für
+das vorgestellte abbildende Ellipsometer aus Kapitel 5, das ebenfalls nach
+dem RPE-Prinzip mit Retroreflexion arbeitet.
+Abbildung 2.2: Laserscanner-Messsystem zur bildgebenden, polarimetrischen Vermessung von
+gekrümmten Oberflächen. Der Strahlengang ist rot eingezeichnet. Abgeänderter
+Nachdruck mit Genehmigung aus [Har20]. Copyright 2020, De Gruyter, Fraun-
+hofer IOSB, Indigo Werbefotografie.
+2.5 Sensorkalibrierung
+Das Licht wird bei der Messung mit einem Ellipsometer an vielen optischen
+Elementen transmittiert oder reflektiert, die potentiell alle den Polarisations-
+zustand ändern. Von Interesse ist jedoch nur die vom Prüfling verursachte Po-
+larisationszustandsänderung, die entweder durch die ellipsometrischen Win-
+kel Ψ und Δ oder durch die Müller-Matrix 𝐌 beschrieben wird. Die Ein-
+S S S
+flüsse der anderen optischen Bauelemente im PSG bzw. PSD auf das Mess-
+ergebnis lassen sich zu einer Modulationsmatrix 𝐖 bzw. einer Analysematrix
+𝐀 zusammenfassen und werden während eines Kalibriervorgangs einmalig
+bestimmt, z. B. durch Verwendung von Kalibrierstandards. Die so bestimmte
+Kalibrierfunktion wird invertiert, um die optischen Parameter des Prüflings
+während des Messvorgangs zu berechnen [JCG09]. Selbst wenn die Polari-
+sationseigenschaften der optischen Bauelemente des Sensors bekannt sind,
+erfordert eine nicht vermeidbare Fehljustierung dennoch eine Kalibrierung
+des Messsystems [Tom05]. Bei handelsüblichen Ellipsometern muss die Ka-
+librierung üblicherweise in regelmäßigen Abständen wiederholt werden, um
+bspw. Umgebungseinflüsse auf das Messergebnis auszugleichen.
+Ein relativ einfaches, aber trotzdem genaues Kalibrierverfahren für die UE
+wurde in [Azz89a] vorgestellt. Ein möglichst idealer Polarisator wird vor dem
+PSD platziert und mittels einer Drehbühne gedreht. Die Drehwinkel wer-
+den dort als sehr genau vorausgesetzt (ca. 0,01∘). Durch Drehung des annä-
+hernd idealen Polarisators kann bereits die Sub-Matrix (𝐀) über ei-
+[[1,4]]×[[1,3]]
+ne Fourier-Analyse präzise bestimmt werden, solange Intensitätsschwankun-
+gen des einfallenden Lichts herausgerechnet werden. Dazu wird ein Teil des
+einfallenden Lichts über eine Strahlteilerplatte unter einem kleinen Einfalls-
+winkel ausgekoppelt und die Intensität von einem Photodetektor gemessen.
+Um Polarisationszustandsänderungen durch die Strahlteilerplatte zu vermei-
+den, muss das Licht annähernd senkrecht auf die Strahlteilerplatte auftreffen.
+Um die letzte Spalte von 𝐀 zu messen, wird der Linearpolarisator durch einen
+rechts- bzw. linkszirkularen Polarisator ausgetauscht. Diese bestehen aus Ver-
+zögerer, die herstellungsbedingt einer größeren Fertigungstoleranz unterlie-
+gen. Diese Abweichung der Verzögerung vom Nominalwert wird durch eine
+Drehung des zirkularen Polarisators um 90∘ herausgerechnet. Nach der Ka-
+librierung des PSD wird der PSG über Polarisationszustandsmessungen des
+emittierten Lichts kalibriert. Ein frühes Kalibrierverfahren für die RPE fin-
+det sich in [Azz77a]. Dabei wird ebenfalls eine unbekannte Verzögerung des
+Kompensators angenommen. Diese wird während des Messvorgangs mit ei-
+nem sog. Mehr-Zonen-Verfahren bestimmt. Da sich dieses Kalibrierverfahren
+jedoch auf die sog. Null-Ellipsometrie [Tom99] bezieht, spielt es für heutige
+Ellipsometrie-Aufbauten kaum noch eine Rolle.
+Ein neueres Kalibrierverfahren für die UE wurde in [Com99] vorgestellt
+und wird als Eigenwert-basierte Kalibrierung bezeichnet. Die Kalibrierung
+erfolgt mittels Kalibrierproben, die entweder eine lineare Anisotropie auf-
+weisen [Art11]¹ oder ideale Polarisatoren sind. Es ist keine präzise Aktorik
+erforderlich und die Kalibrierproben können in beliebiger Winkellage plat-
+ziert werden. Mit Methoden der linearen Algebra lassen sich dann 𝐖 und
+𝐀 bestimmen. Eine Erweiterung des Verfahrens auf die mikroskopische RPE
+findet sich in [Mac12]. Das Kalibrierverfahren arbeitet mehrstufig, sodass der
+Strahlteiler und die Fokussieroptik des Mikro-Ellipsometers separat kalibriert
+werden. Eine Schwierigkeit scheint hierbei zu sein, einen systematischen
+Fehler bei der Umpositionierung der Kalibrierproben zwischen den ein-
+zelnen Kalibrierstufen zu vermeiden, d. h. das Koordinatensystem für den
+Müller-Formalismus nicht zu verändern bzw. zu drehen.
+2.6 Retroreflektierende Strukturen
+Das im weiteren Verlauf der Arbeit untersuchte Messprinzip basiert auf
+der Verwendung von Retroreflexion. Vollständig diffus reflektierende Ober-
+flächen weisen ein Reflexionsverhalten entsprechend dem Lambert’schen
+Kosinusgesetz auf [Bey16], wohingegen spiegelnde Oberflächen das Licht
+entsprechend dem Reflexionsgesetz reflektieren [Hec02]. Retroreflektierende
+Oberflächen haben Eigenschaften, die sich von diffus oder spekular reflektie-
+renden Oberflächen unterscheiden, da sie einen Teil des Lichtes wieder in die
+Richtung des einfallenden Lichtes zurück reflektieren – mehr als dies nach
+dem Kosinusgesetz zu erwarten wäre. Dies gilt nicht nur für den senkrechten,
+sondern auch für schrägen Lichteinfall. Die meisten natürlichen Oberflächen
+weisen eine schwach ausgeprägte Retroreflexion auf [Ega76]. Dabei spielen
+verschiedene Wirkungsmechanismen eine Rolle, die oft in Kombination
+auftreten und als Oppositionseffekt [Hap86], Heiligenschein [Nil04] und
+kohärente Rückstreuung [Hap93, Akk86] bezeichnet werden. Rundförmi-
+ge Objekte wie Wassertropfen, Glaskugeln oder die Glaskörper mancher
+Tierarten sind häufig die Ursache für die in der Natur auftretende Retrore-
+flexion. Letztere haben einen hohen Rückstrahlwert [Gre10] und bildeten
+die Grundlage für die Entwicklung von künstlich hergestellten Retroreflek-
+toren im Straßenverkehr [Ren98]. Es gibt viele Variationen, die auf dem
+Funktionsprinzip von Kugelreflektoren basieren. Dazu gehören zusammen-
+gesetzte Halbkugeln unterschiedlicher Größe [Gol96] oder katadioptrische
+Systeme. Eine weitere, relativ neue Methode zur Herstellung von Kugelre-
+flektoren bzw. Kugellinsen bilden Metamaterialien [Ma09, Zha16, Gar19].
+Diese befinden sich derzeit jedoch im Versuchsstadium. Hinsichtlich der
+Polarisationseigenschaften gewöhnlicher Kugelreflektoren aus Glas gibt es
+bislang relativ wenig Publikationen. Das katadioptrische System aus [Sny75]
+wurde als polarisationserhaltend beschrieben, ohne eine genaue Begründung
+zu liefern. Aus Halbkugeln zusammengesetzte Makro-Reflektoren mit einem
+Durchmesser von 40 − 100 mm wurden ebenfalls als polarisationserhal-
+tend beschrieben [Gol96]. Dort treffen die Lichtstrahlen unter annähernd
+senkrechtem Einfall auf der Kugeloberfläche auf, bevor sie zum Detektor
+zurück reflektiert werden. Daraus folgt die Polarisationserhaltung, da auf-
+treffendes Licht an isotropen Medien unter kleinen Einfallswinkeln eine
+vernachlässigbare Polarisationszustandsänderung erfährt. In [Li17b] wurde
+die Polarisationszustandsänderung einzelner paraxialer Lichtstrahlen bei
+der Reflexion an einem Makro-Kugelreflektor (⌀ = 60 mm) mittels strah-
+lenoptischer Simulation untersucht. Dabei wurden Maximalwerte für den
+Dichroismus und die Verzögerung ermittelt. Es lässt sich allerdings zeigen,
+dass diese Abschätzung von den geometrischen Randbedingungen abhängig
+ist. Insbesondere ist die in der Literatur häufig vorgefundene Annahme, dass
+nur paraxiale Strahlen den Detektor treffen, nicht immer erfüllt.
+Retroreflektoren basierend auf pyramidalen Mikrotripeln oder Mikrowürfeln
+finden ebenfalls breite Anwendung im Straßenverkehr [DIN13, Ren98] und
+haben i. Allg. einen höheren Rückstrahlwert als Mikrokugeln [Gre10]. Die
+Retroreflexion eines Lichtstrahls an einem Reflektorelement wird durch
+Spiegelung an drei, im rechten Winkel zueinander angeordneten Spiegel-
+flächen erreicht. Jede Spiegelung bewirkt eine Richtungsänderung in einer
+Raumdimension. Werden alle drei Spiegel getroffen, wird der Strahl in die
+entgegengesetzte Richtung zurück reflektiert. Im Idealfall wird ein kolli-
+mierter Strahl wieder kollimiert zurück reflektiert. Für den Einsatz von
+Tripel-Reflektoren in Ellipsometern sind die Polarisationseigenschaften ent-
+scheidend. Der Menge an Publikationen zu den Polarisationseigenschaften
+von Retroreflektoren basierend auf Tripel-Spiegeln ist deutlich umfangreicher
+als bei Kugel-Reflektoren [Liu97, Azz08, OBr99, Cha71, Seg03, Lee08]. Jedoch
+sind die Untersuchungen aus dem Stand der Technik häufig auf einzelne
+Lichtstrahlen bzw. Makroreflektoren beschränkt.
+Eine gänzlich andere Möglichkeit, Retroreflexion mit künstlichen optischen
+Bauteilen zu realisieren, bieten phasenkonjugierende Spiegel [Zel85, Pep82].
+Diese nutzen Effekte aus der nichtlinearen Optik [She03], weshalb sowohl
+große Feldstärken als auch ein nichtlineares Medium erforderlich sind. Ob-
+wohl phasenkonjugierende Spiegel einige Vorteile aufweisen, können nach
+derzeitigem Stand der Technik keine großen Retroreflektoren realisiert wer-
+den. Da dies aber für Makro-Ellipsometrie erforderlich ist, wird in dieser Ar-
+beit nur kurz auf diesen optischen Effekt eingegangen.
+3 Modellierung der Emission und
+Detektion von polarisiertem Licht
+3.1 Beschreibung des Polarisationszustands
+von Licht
+Für die Beschreibung von Licht und optischen Phänomenen gibt es traditio-
+nell zwei unterschiedliche Betrachtungsweisen: Licht kann demnach als ei-
+ne sich ausbreitende Welle oder als Teilchen (sog. Photonen) betrachtet wer-
+den [Hec02]. In der Realität weist Licht Eigenschaften beider Betrachtungs-
+weisen auf, was als Welle-Teilchen-Dualismus bezeichnet wird. In der vorlie-
+genden Arbeit und allgemein in der Ellipsometrie ist fast ausschließlich die
+Welleneigenschaft von Licht von Interesse. Diese wird als eine sich ausbrei-
+tende elektromagnetische Welle mit einem örtlich und zeitlich variierenden
+elektrischen und magnetischen Feld beschrieben, die sich entsprechend den
+sog. Maxwell’schen Gleichungen wechselseitig beeinflussen.
+3.1.1 Maxwell’sche Gleichungen und Lichtausbreitung
+Zunächst wird die Lichtausbreitung in einem räumlich unbegrenzten Va-
+kuum ohne Materie betrachtet. Die Maxwell’schen Gleichungen lauten
+dann [Gri13]:
+wobei 𝜖 die Permittivität des Vakuums, 𝜇 die Vakuumpermeabilität, 𝑬 die
+0 0
+elektrische Feldstärke, 𝑫 = 𝜖 𝑬 die elektrische Flussdichte, 𝑩 die magne-
+0
+tische Flussdichte und 𝑯 = 𝜇−1𝑩 die magnetische Feldstärke bezeichnen.
+0
+Alle Größen sind Funktionen, die von dem Ort 𝒙 und der Zeit 𝑡 abhängig
+sind. Diese zeitabhängigen Skalar- und Vektorfelder können reell- oder kom-
+plexwertig sein. Die komplexwertigen, sog. analytischen Signale werden im
+Zeitbereich aus den entsprechenden reellwertigen, physikalischen Signalen
+berechnet, indem der Realteil übernommen und der Imaginärteil über eine
+Hilbert-Transformation aus dem Realteil berechnet wird. Dadurch werden im
+Frequenzbereich die negativen Frequenzanteile entfernt [Bor19, Goo15].
+Die Propagation von Licht in einem Medium kann sowohl durch die mikro-
+skopischen als auch makroskopischen Maxwell’schen Gleichungen beschrie-
+ben werden. Nur letztere sind für diese Arbeit von Bedeutung. Bei den makro-
+skopischen Maxwell’schen Gleichungen wird das Medium durch makrosko-
+pische Materialparameter beschrieben und als kontinuierlich angenommen.
+In Medien lauten die makroskopischen Maxwell’schen Gleichungen [Jac06]:
+wobei 𝒋 die elektrische Stromdichte der freien Ladungsträger und 𝜚 die La-
+dungsdichte der freien Ladungsträger bezeichnen [Jac06].
+Entsprechend dem Durchflutungsgesetz wird ein magnetisches Wirbelfeld
+nicht nur durch die zeitliche Änderung der elektrischen Flussdichte 𝑫, son-
+dern auch durch eine elektrische Stromdichte 𝒋 der freien, ungebundenen
+Ladungsträger verursacht. Die Stromdichte 𝒋 beschreibt ebenfalls ein zeit-
+abhängiges Vektorfeld. Das zeitliche Skalarfeld 𝜚 im Gauß’schen Gesetz für
+elektrische Felder entspricht der Volumendichte der freien Ladungsträger.
+In Medien können 𝜚 und 𝒋 Werte ungleich Null annehmen. Zudem ist der
+Zusammenhang zwischen 𝑬 und 𝑫 sowie 𝑯 und 𝑩 i. Allg. komplexer als im
+Vakuum. 𝑬 und 𝑩 werden als äußere Felder in Abwesenheit eines Mediums an
+einem Raumpunkt bezeichnet [Jac06, Hec02]. Die elektrische Polarisation 𝑷
+und die Magnetisierung 𝑴 werden dagegen als innere Felder bezeichnet, die
+durch die Interaktion der äußeren Felder mit dem Medium induziert werden.
+Aus der Überlagerung von äußerem und innerem Feld ergeben sich 𝑫 und 𝑯
+über die folgenden Materialgleichungen der Elektrodynamik [Jac06]:
+Üblicherweise hängt 𝑷 von 𝑬 und 𝑴 von 𝑩 ab. Der Zusammenhang zwischen
+𝑬 und 𝑷 kann systemtheoretisch über ein zeitinvariantes, lineares oder nicht-
+lineares Filter modelliert werden, welches durch die elektrische Suszeptibilität
+χ charakterisiert wird und den Eingang 𝑬 auf den Ausgang 𝑷 abbildet. Ana-
+e
+log erhält man 𝑴 aus 𝑩 anhand der magnetischen Suszeptibilität ζ . Zur Ver-
+m
+einfachung werden im sichtbaren Spektralbereich nur lokale Abhängigkeiten
+betrachtet: 𝑷 hängt dann nur lokal, also am selben Ort, von 𝑬 ab[Sut03, Jac06].
+Gleiches gilt für 𝑴 und 𝑩. Es ist üblich, das lineare oder nichtlineare, zeitin-
+variante Filter mittels Integraloperatoren in einer Potenzreihenentwicklung
+zu beschreiben [Pas13, Sut03]:
+Überträgt man diesen Zusammenhang auf die Magnetisierung ergibt sich fol-
+gende Reihenentwicklung:
+χ(𝑙) und ζ(𝑙) sind reellwertige Funktionen, die Ort und Zeit auf einen Tensor
+e m
+der Stufe 𝑙 + 1 abbilden (vgl. Anhang A.2). Negative Zeitparameter werden
+auf den Null-Tensor abgebildet.
+Für die nachfolgenden Betrachtungen ist es hilfreich 𝑷, 𝑴, 𝑬 und 𝑩 in den
+Zeitfrequenzbereich zu überführen. Dabei wird für das elektrische und ma-
+gnetische Feld angenommen, dass diese ein diskretes Frequenzspektrum mit
+abzählbar vielen Frequenzen aufweisen¹. Sind 𝑬 = 𝑬 und 𝑩 = 𝑩 reelle Grö-
+ßen, erhält man nach Anhang A.3 die folgenden Beziehungen:
+¹ Es werden in diesem Kapitel einige Vereinfachungen getroffen, die einerseits die durchgeführ-
+ten Berechnungen erleichtern und andererseits geeignet sind, die Abschätzungen und Schluss-
+folgerungen nicht zu beeinträchtigen. Der Fokus wird wie bei der wellenoptischen Simulation
+auf approximative Lösungen gelegt (vgl. [Wyr11]) und weniger auf eine präzise Modellierung
+des Lichts anhand der statistischen Optik (vgl. [Goo15])
+wobei 𝑬′, 𝑩′, χ̃(𝑙) und ζ̃(𝑙) im Anhang A.3 eingeführt werden. Durch die zeit-
+𝑖 𝑖 e m
+liche Fourier-Transformation (vgl. Anhang A.1) vereinfacht sich der Integral-
+operator im Zeitbereich zu einer Summe im Zeitfrequenzbereich. Eine weitere
+Vereinfachung ergibt sich für ein lineares, zeitinvariantes System. Die System-
+antwort entspricht im Zeitfrequenzbereich einer Multiplikation von 𝑬̃(𝒙, 𝜔)
+mit einer sog. Übertragungsfunktion [Bra00]¹:
+wobei χ̃ ∶= χ̃(1) und ζ̃ ∶= ζ̃(1) orts- und frequenzabhängige Matrizen sind
+e e 𝑚 𝑚
+und die höheren Potenzen in den Gleichungen (3.10) und (3.11) vernachlässigt
+werden. Das zugehörige Medium nennt man linear, da eine lineare Abbildung
+zwischen 𝑷̃(𝒙, 𝜔) und 𝑬̃(𝒙, 𝜔) existiert [Boy08, Li17a]. Diesen linearen Zu-
+sammenhang gibt es nur im Zeitfrequenzbereich, wohingegen im Zeitbereich
+der Faltungsoperator erforderlich ist, sofern das äußere Feld weder nieder-
+noch monofrequent ist. Grund hierfür ist die Dispersion von Medien bzw. die
+Frequenzabhängigkeit der Übertragungsfunktion, da Wechselwirkungen zwi-
+schen Licht und Materie frequenzabhängig sind [Wol82, Kit02]. Bildet man
+in der Gleichung (3.7) die Fourier-Transformation und setzt die Gleichun-
+gen (3.12) und (3.13) ein, erhält man für die Fourier-Transformierten 𝑫̃, 𝑬̃,
+¹ Dieses Ergebnis aus der Systemtheorie gilt sowohl für vektorielle als auch komplexwertige
+Größen.
+𝑯̃ und 𝑩̃ folgende Beziehungen:
+wobei ϵ̃ die Permittivität und µ̃ ∶= µ̃′−1 die Permeabilität bezeichnen. In der
+Wellenoptik wird bei absorbierenden Medien zusätzlich das Ohm’sche Gesetz
+benötigt. Aus dem Gesetz folgt eine lineare Abbildung zwischen 𝑬̃ und 𝒋̃:
+wobei σ̃ den matrixwertigen elektrischen Leitfähigkeitstensor bezeichnet.
+Für die Rechnung mit frequenzabhängigen Größen bietet es sich an, die
+Maxwell’schen Gleichungen über die Fourier-Transformation in den Fre-
+quenzbereich zu überführen. Dabei beschreibt F die zeitliche und F die
+T S
+örtliche Fourier-Transformation (vgl. Anhang A.1.2). Das Funktionsargu-
+ment zur Beschreibung des Zeitfrequenz- bzw. Ortsfrequenzbereichs ist die
+Kreisfrequenz 𝜔 bzw. der Wellenvektor 𝒌. Bei Verwendung der komplexen
+Fourier-Transformation aus Gleichung (A.4) können diese Größen auch
+komplex sein und werden mit 𝜔 und 𝒌 bezeichnet. Obwohl die Rechnung mit
+Fourier-transformierten Größen insbesondere bei Differentialgleichungen
+Vorteile bietet, ist die Existenz der Fourier-Transformierten nicht immer
+gegeben [Goo15] und wird im Folgenden angenommen.
+Die Anwendung von F auf beiden Seiten der Maxwell’schen ergibt:
+T
+Aus den Gleichungen (3.14) bis (3.20) folgt:
+und mithilfe bekannter Formeln aus der Vektoranalysis (vgl. [Jac06])
+wobei ϵ̃ als verallgemeinerte Permittivität bezeichnet wird. Die Überführung
+v
+der Maxwell’schen Gleichungen vom Zeitfrequenz in den Orts-/Zeitfrequenz-
+bereich mithilfe der Fourier-Transformation F führt zu:
+S
+mit
+Im Fall von linearen Medien gilt aufgrund des Faltungstheorems und der Li-
+nearität der Fourier-Transformation:
+Für lineare, homogene Medien entsprechen ϵ̃̃, µ̃̃′ und σ̃̃ im Ortsfrequenzbe-
+reich einer Delta-Distribution und der Zusammenhang vereinfacht sich zu:
+Einsetzen in Gleichung (3.26) unter Verwendung der Identität aus Glei-
+chung (3.21) liefert:
+Das bisher betrachtete lineare Medium wurde ziemlich allgemein durch die
+matrixwertigen Materialparameter bzw. deren Fourier-Transformierten be-
+schrieben. Bei bestimmten Materialklassen ergeben sich jedoch Spezialfälle
+der Maxwell’schen Gleichungen.
+In Medien bewirken die freien Ladungsträger, dass 𝜚 und 𝒋 Werte ungleich
+Null annehmen können. Im visuellen Spektrum gilt bei elektrisch neutralen,
+leitenden Medien annähernd 𝜚 ≡ 0. Im Fall von nicht-absorbierenden und
+somit nicht-leitenden Medien sind ϵ̃ und µ̃ reell¹: ϵ̃ = ϵ̃ = ϵ̃ und µ̃ = µ̃.
+v v
+Betrachtet man elektrisch geladenen Medien, so gilt 𝜚 ≢ 0.
+Eine weitere Klassifizierung eines Mediums erfolgt anhand der Form der Ma-
+trizen ϵ̃ , µ̃ und σ̃. Handelt es sich dabei um Diagonalmatrizen mit gleichen
+v
+Einträgen, spricht man von optisch isotropen Medien (d. h. von der Beobach-
+tungsrichtung unabhängig), andernfalls von anisotropen Medien. Bei optisch
+isotropen Medien verwendet man statt Matrizen die Skalare 𝜖̃ , 𝜇̃ und 𝜎.̃ Kris-
+v
+talle sind aufgrund ihrer Gitterstruktur nicht isotrop. Dennoch können sie
+optisch isotrop sein [Bor19], wohingegen isotrope Medien stets auch optisch
+isotrop sind. Treten in einem Material dielektrische Verluste durch gebundene
+Ladungsträger auf, so ist 𝜖̃ eine komplexe oder negative Zahl. Ist 𝜖̃ komplex
+v
+¹ ϵ̃ (𝜔) kann aufgrund der Kramers-Kronig-Beziehungen allerdings nur in einem begrenzten
+v
+Wellenlängenband reell sein [Fuj07].
+oder negativ, werden die Verluste durch freie oder durch gebundene Ladungs-
+träger hervorgerufen [Jac06].
+Aus der Permeabilität und der Permittivität lässt sich die Ausbreitungs-
+geschwindigkeit einer elektromagnetischen Welle berechnen, die Lichtge-
+schwindigkeit genannt wird. Diese beträgt im Vakuum:
+In einem optisch isotropen Medium erhält man i. Allg. eine komplexe Licht-
+geschwindigkeit:
+Aus dem Verhältnis zwischen Vakuumlichtgeschwindigkeit und Lichtge-
+schwindigkeit im Medium resultiert der komplexe Brechungsindex:
+wobei 𝑛 den (reellen) Brechungsindex und 𝜅 den Extinktionskoeffizi-
+ent bezeichnen. Entsprechend den obigen Anmerkungen sind bei nicht-
+absorbierenden Medien 𝑛 = 𝑛 und 𝑐 = 𝑐 reellwertige Funktionen. Bei an-
+isotropen Medien gibt es keine eindeutig definierte Lichtgeschwindigkeit
+oder eindeutig definierten Brechungsindex, da diese von der Polarisation
+abhängen.
+Bisher wurden komplexwertige Felder in Form von analytischen Signalen be-
+trachtet, da diese rechnerisch einige Vorteile bieten. Monochromatische Fel-
+der können bspw. im Frequenzbereich durch eine einzelne Kreisfrequenz be-
+schrieben werden. In der Realität können im Orts- und Zeitbereich jedoch nur
+reellwertige Skalar- und Vektorfelder vorkommen. Dies stellt kein Problem
+unter der Annahme dar, dass das Medium linear ist und die elektrische und
+magnetische Suszeptibilität im Orts- und Zeitbereich reellwertige Funktionen
+sind. Falls 𝑬 und 𝑩 komplexwertige Lösungen sind, so sind die dazugehörigen
+reellen Funktionen 𝑬(𝒙, 𝑡) = R {𝑬(𝒙, 𝑡)} bzw. 𝑩(𝒙, 𝑡) = R {𝑩(𝒙, 𝑡)} ebenfalls
+Lösungen der Maxwell’schen Gleichungen (3.3) bis (3.6). Dies wird sofort er-
+sichtlich, wenn man den Realteil auf beiden Seiten der Maxwell’schen Glei-
+chungen und der Materialgleichungen berechnet. Bei nichtlinearen Medien
+erhält man aus dem Realteil einer komplexwertigen Lösung i. Allg. keine re-
+ellwertige Lösung. Daher ist es in diesem Fall erforderlich, im Zeitbereich statt
+der analytischen Signale die zugrundeliegenden reellen Felder zu betrachten
+(vgl. Gleichung (A.24)).
+Der zuvor beschriebene Formalismus basierend auf den Maxwell’schen Glei-
+chungen, den Materialgleichungen und dem Ohm’schen Gesetz liefert zwar
+eine Berechnungsgrundlage für die wichtigsten optischen Phänomene, aller-
+dings ist er nicht universell gültig. Folgende Fälle werden damit nicht abge-
+deckt:
+• Zuckerlösungen sind isotrope Medien, da die Zuckermoleküle im
+Wasser statistisch verteilt angeordnet sind und die Orientierung
+makroskopisch gesehen keine Richtungsabhängigkeit aufweist.
+Allerdings sind die Zuckermoleküle aufgrund ihrer Chiralität nicht
+invariant gegenüber einer Ebenenspiegelung. Bei der Transmission
+von linear polarisiertem Licht in einer Zuckerlösung führt diese
+fehlende Symmetrie zu einer Drehung der Polarisationsebene. Man
+nennt das Medium in diesem Fall optisch aktiv. Bei einer Drehung der
+Polarisationsebene kann die Abhängigkeit zwischen 𝑬̃ und 𝑫̃ nicht
+mehr durch eine Skalarmultiplikation mit 𝜖̃ beschrieben werden, wie
+es für isotrope Medien eigentlich erforderlich wäre. Dieses Problem
+wird dadurch gelöst, dass 𝑷̃ bei optisch aktiven Medien nicht nur von
+𝑬̃, sondern auch von 𝑩̃ abhängt. Falls 𝑷̃ von 𝑩̃ oder 𝑴̃ von 𝑬̃ abhängt,
+nennt man ein isotropes Medium bi-isotrop und ein anisotropes
+Medium bi-anisotrop [Jac06, Kon72, Sem96]. Zur Vereinfachung
+werden (nicht-depolarisierende) optisch isotrope, achirale Medien
+schlicht als isotrope Medien bezeichnet.

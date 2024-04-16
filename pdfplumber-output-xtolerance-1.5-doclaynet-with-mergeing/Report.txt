@@ -1,0 +1,1478 @@
+
+
+
+Automatisierte Generierung von
+plattformu¨bergreifenden
+Wissensnetzwerken mit Metadaten
+und Volltextindexierung
+Bachelorarbeit
+Andreas Waldis, Patrick Siegfried
+8. Juni 2017
+Projektpartner & Betreuer: Prof. Dr. sc. inf. Michael Kaufmann
+Experte: Urs Zumstein
+Departement Informatik, Hochschule Luzern
+
+Hochschule Luzern
+Informatik
+Bachelor Diplomarbeit an der Hochschule Luzern – Informatik
+Titel: Automatisierte Generierung von plattformübergreifenden Wissensnetzwerken mit
+Metadaten und Volltextindexierung
+Diplomandin / Diplomand: Andreas Waldis
+Diplomandin / Diplomand: Patrick Siegfried
+Studiengang: BSc Informatik
+Abschlussjahr: 2017
+Dozentin / Dozent: Prof. Dr. sc. inf. Michael Kaufmann
+Diplomexpertin / Diplomexperte: Urs Zumstein
+Codierung / Klassifizierung der Arbeit:
+þ A: Einsicht (Normalfall)
+o B: Rücksprache (Dauer: Jahr / Jahre)
+o C: Sperre (Dauer: Jahr / Jahre)
+Eingangsvisum:
+Visum: ____________________
+o termingerecht (9. Juni 2017, bis 16:00 Uhr) o verspätet
+Hinweis: Diese Ausgabe der Bachelor Diplomarbeit wurde von keinem Dozierenden
+nachbearbeitet. Veröffentlichungen (auch auszugsweise) sind ohne das Einverständnis der
+Studiengangleitung der Hochschule Luzern – Informatik nicht erlaubt.
+Hochschule Luzern
+Informatik
+Verdankung
+An dieser Stelle möchten wir uns bei all denjenigen bedanken, welche uns während dieser Arbeit
+motiviert und unterstützt haben. Im Speziellen Michael Kaufmann, welcher uns die Chance gab, an
+seinem Forschungsprojekt mitzuarbeiten. Wir schätzten insbesondere die angenehme
+Zusammenarbeit und die wöchentlichen Anregungen sehr. Ein Dankeschön gilt auch Kevin
+Stadelmann, welcher uns mit seiner Arbeit wertvolle Unterstützung lieferte.
+Weiter möchten wir uns auch bei unserem Diplomexperten Urs Zumstein für die Begleitung unserer
+Arbeit bedanken.
+Selbstständigkeit
+Hiermit erklären wir, dass wir die vorliegende Arbeit „Automatisierte Generierung von
+plattformübergreifenden Wissensnetzwerken mit Metadaten und Volltextindexierung“ selbstständig
+angefertigt und keine anderen als die angegebenen Hilfsmittel verwendet haben.
+Redlichkeit
+RSäemdltilcichhkee vite rwendeten Textausschnitte, Zitate oder Inhalte anderer Verfasser werden in
+Übereinstimmung mit Art. 25, Abs. 2 URG ausdrücklich als solche gekennzeichnet.
+Ort / Datum, Unterschrift
+Ort / Datum, Unterschrift
+Copyright © 2017 Hochschule Luzern – Informatik
+Alle Rechte vorbehalten. Kein Teil dieser Arbeit darf ohne die schriftliche Genehmigung der
+Studiengangleitung der Hochschule Luzern – Informatik in irgendeiner Form reproduziert oder in
+eine von Maschinen verwendete Sprache übertragen werden.
+Abstract
+The project Intuitive Knowledge Connectivity offers a technical web
+interface giving the user the possibility to interconnect and label exter-
+nal data sources. Based on this project the following thesis provides a
+full-text index to search all the user-defined data sources. Additional-
+ly it presents an algorithm to extract important phrases inside a text
+based on an entire corpus of documents. It combines stochastic ap-
+proaches with rule-based natural language processing methods. This
+task consists of stages like preparation, keyword generation, score
+calculation, selection. The shown algorithm addresses the project’s
+demand of information retrieval. Furthermore, the implementation
+embeds the resulting business logic into two separate services to sup-
+port. In conclusion the evaluation is based on an expert review enclo-
+sed with a swot analysis and an open discussion.
+Das Projekt Intuitive Knowledge Connectivity bietet eine Web-Appli-
+kation, welche die Verbindung und Beschriftung von Daten mehrerer
+externen Quellen ermo¨glicht. Darauf basierend bescha¨ftigt sich die
+vorliegende Arbeit mit einem Volltextindex, welcher die Suche u¨ ber
+alle benutzerdefinierten Datenquellen ermo¨glicht. Zusa¨tzlich pra¨sen-
+tiert sie einen Algorithmus, welcher wichtige Begriffe eines einzelnen
+Textes auf Basis eines Dokumentenkorpus extrahiert. Dabei verbindet
+er statistische und sprachwissenschaftliche Ansa¨tze. Dieser Vorgang
+besteht aus Vorbereitung, Keyword Extraction, Berechnung einer Me-
+trik und Auswahl. Der gezeigte Algorithmus bescha¨ftigt sich mit dem
+Problem der Informationsgewinnung. The Implementation teilt die
+entstandene Applikation zur Unterstu¨ tzung in zwei individuelle Ser-
+vices auf. Abschliessend wurde eine Evaluation auf Basis eines Exper-
+ten-Workshops, einer SWOT-Analyse und einer offenen Diskussion
+durchgefu¨ hrt.
+Kapitel 1
+Einleitung
+Mit dem Forschungsprojekt IKC als Grundlage bescha¨ftigt sich die
+vorliegende Arbeit vertieft mit der Analyse von Datenquellen und
+der Extraktion von relevanten Informationen. Aktuell werden Daten-
+quellen verknu¨ pft, jedoch wird deren Inhalt noch nirgends genutzt.
+Mit der Analyse dieser Inhalte werden zusa¨tzliche Informationen Teil
+des Wissensnetzwerks. Dadurch wird aus einer reinen Verknu¨ pfung
+von Datenquellen eine tatsa¨chliche Integration der Informationen.
+Zum besseren Versta¨ndnis werden potentiell unbekannte oder pro-
+jekt-spezifische Begriffe kursiv und fett dargestellt. Zu jedem Begriff
+ist eine kurze Beschreibung im Glossar (Kapitel Glossar) am Ende
+der Dokumentation zu finden. Im Anhang sind neben der Aufgaben-
+stellung (Abschnitt A.3) auch das Arbeitsjounrnal (Abschnitt A.2) bei-
+gelegt. Der dokumentierte Sourcecode1 ist auf dem entsprechenden
+Repository der Hochschule Luzern verfu¨ gbar.
+1.1 Ausgangslage
+Abbildung 1.1 zeigt den Kontext des zu entwicklenden Prototypen.
+Der Benutzer arbeitet wie anhin mit dem ikc-core. Dieser wird aber
+vor allem im Hintergrund aber auch in der Benutzeroberfla¨che auf
+die neue Funktionalita¨t hin angepasst und optimiert. Der Prototyp
+nimmt Anfragen fu¨ r Keyphrases und fu¨ r Suchresultate fu¨ r den ent-
+sprechenden Begriff entgegen und liefert die angeforderten Resultate
+zuru¨ ck.
+1https://gitlab.enterpriselab.ch/ikc
+Abbildung 1.1: Kontextdiagramm
+Keyphrases sind Begriffe, welche aus einem oder mehreren Wo¨rtern
+bestehend und den zugrunde liegenden Text kurz und pra¨gnant fu¨ r
+den Benutzer zusammenfassen. Fu¨ r weitere Informationen steht das
+Glossar zur Verfu¨ gung (Kapitel Glossar).
+Basierend auf der Aufgabenstellung, dem Projekt-Kontext und den
+bestehenden Systemen definieren die folgenden Punkte die Ausgangs-
+lage:
+• Der bestehende Prototyp ikc-core dient als Grundlage fu¨ r die-
+se Bachelorarbeit. Mit dem Fokus der reinen Datenanalyse wird
+auf die Datenquellen Dropbox und Evernote verzichtet. Der re-
+sultierende Prototyp baut auf der bestehenden Umgebung auf.
+• Aufgrund der bisherigen Erfahrungen und dem bestehenden
+Code wird als Programmiersprache weiterhin Typescript einge-
+setzt. Dies hat unter anderem den Vorteil, dass Typescript so-
+wohl client- als auch serverseitig lauffa¨hig ist.
+• Der Prototyp soll nach wie vor im Browser ausgefu¨ hrt werden.
+Jegliche Daten werden nur an benutzerdefinierten Orten gespei-
+chert. Es wird keine zusa¨tzlich Persistenz eingefu¨ hrt.
+• Als Plattform wird weiterhin das Docker-basierte Dokku einge-
+setzt. Dieses wird bereits fu¨ r den Proof of Concept (PoC) und
+fu¨ r das Prototyping verwendet.
+1.2 Scope
+Zur Abgrenzung definiert der Scope den Inhalt und den Umfang ei-
+nes Projektes. Fu¨ r dieses Projekt ist er wie folgt festgelegt:
+• Da die Herkunft der Informationen fu¨ r die Analyse nicht wich-
+tig ist, beschra¨nkt sich die Arbeit auf Text-Dateien. Versprechen
+die Resultate einen grossen Mehrwert, ko¨nnen die Konzepte
+spa¨ter fu¨ r die Verwendung mit weiteren Datenquellen erweitert
+werden.
+• Um mo¨gliche Schwierigkeiten und Hindernisse mit Dropbox
+von Beginn an auszuschliessen, wird eine neue Datenquelle und
+Persistenzbasis auf der Grundlage von SFTP eingefu¨ hrt.
+• Der Projektpartner stellt die Testdaten auf Basis einer Samm-
+lung von Wikipedia-Artikeln zur Verfu¨ gung. Mo¨glicherweise
+muss die Auswahl aufgrund der grossen Datenmenge einge-
+schra¨nkt werden.
+• Aufgrund der Anforderungsanalyse2 mit dem Projektpartner
+wurde das Projekt noch spezifischer auf die Schlu¨ sselwortex-
+traktion fokussiert. Ein SFTP-Service ersetzt dabei eine Anbin-
+dung an Dropbox und Evernote komplett.
+• Die Implementation beschra¨nkt sich auf die herko¨mmliche Ver-
+sion des ikc-cores ohne die Visualisierung. Dies hat den Grund,
+dass zum Zeitpunkt des Projektstarts die Visualisierung noch
+nich ausreichend stabil lauffa¨hig war.
+1.3 Projektstrukturplan
+Die Abbildung A.1 gewa¨hrt einen U¨ berblick u¨ ber das Projekt. Sie
+stellt die wichtigsten Bereiche und Phasen dar, in welche die Arbeit
+grob eingegliedert werden kann:
+1. Die Projektfu¨ hrung beinhaltet die Planung des Vorhabens u¨ ber
+den gegebenen Zeitraum. Sta¨ndige Kontrolle des Ist- gegenu¨ ber
+dem Soll-Zustand kann gegebenenfalls jederzeit zur Steuerung
+oder Anpassungen des Zeitplans fu¨ hren. Da das Projekt agil
+organisiert ist, liegt das Augenmerk auf der Priorisierung der
+Anforderungen.
+2. In der Konzeption werden neben den Anforderungen auch vor-
+stellbare Lo¨sungsansa¨tze in den Bereichen Architektur sowie
+Schnittstellen gepru¨ ft.
+3. Nach einer anfa¨nglichen Recherchephase werden zu Testzwe-
+cken bereits erste Prototypen entwickelt. So sollen mo¨gliche Op-
+tionen u¨ berpru¨ ft und gegebenenfalls spa¨ter implementiert oder
+weiterentwickelt werden. Nach einer Evaluation werden die ge-
+eigneten Lo¨sungen ausgewa¨hlt.
+2Protokoll der Anforderungsanalyse Abschnitt A.4
+4. In der Entwicklung werden die gesammelten Erkenntnisse ge-
+sammelt und analysiert. Grundsa¨tzlich soll auf den zuvor ent-
+wickelten Prototypen aufgebaut werden. Zuna¨chst wird eigen-
+sta¨ndig, ohne Einbindung in den ikc-core entwickelt.
+5. Sobald die Implementierung die erforderlichen Anforderungen
+reibungslos erfu¨ llt, wird sie in den bestehenden ikc-core inte-
+griert. Nach letzten Optimierungen sind nun alle Anforderun-
+gen erfu¨ llt und intensivere Tests ko¨nnen durchgefu¨ hrt werden.
+Fu¨ r die Entwicklung werden hauptsa¨chlich Integrationstests ver-
+wendet. Fu¨ r einen besseren U¨ berblick ist das Testkonzept in der
+Tabelle A.1 zu finden. Anhand dieses wurde die Funktionalita¨t
+wa¨hrend der Entwicklung laufend getestet.
+6. Nachdem die Entwicklungsarbeit abgeschlossen ist, folgt der
+Projektabschluss. Dabei wird die endgu¨ ltige Version des Pro-
+jektreports erstellt und die Abschlusspra¨sentation gehalten.
+1.4 Rahmenplan
+Die Rahmenplanung, basierend auf dem Projektstrukturplan (Abbil-
+dung A.2), repra¨sentiert die zeitliche Planung des Projekts. Dabei
+werden Kalenderwochen anstelle von Daten oder Schulwochen ver-
+wendet. Enthalten sind alle Projektphasen, Sprints und Meilensteine,
+als auch alle Lieferobjekte welche im Unterabschnitt A.5.6 weiter aus-
+gefu¨ hrt werden. Die Dauer der Sprints wird bewusst unterschiedlich
+ausgestaltet, um den verschiedenen Projektphasen und deren Inhal-
+ten bestmo¨glich Rechnung zu tragen.
+Ein wichtiger Teil der Rahmenplanung sind die Meilensteine. Sie un-
+terteilen das Projekt in Phasen, welche dadurch klar voneinander ge-
+trennt sind. Ebenfalls sind sie eine wichtige Orientierungshilfe im
+Projekt und weisen den Weg zu einem erfolgreichen Abschluss. Sie
+werden in Tabelle A.2 aufgelistet.
+1.5 Projektziele
+Projektziele werden definiert, um den Erfolg an ausgewa¨hlten Punk-
+ten zu u¨ berpru¨ fen und sicherstellen. Sie wurden in Absprache mit
+dem Projektpartner definiert. Die Ziele sind in der folgenden Tabel-
+le 1.1 aufgelistet und anschliessend genauer ausgefu¨ hrt.
+Tabelle 1.1: Projektziele
+1. Z1: Der Prototyp bietet eine Volltextsuche u¨ ber den gesamten
+Inhalt der Dokumente einer externen Datenquelle an. Die Such-
+funktion ist in den ikc-core integriert.
+2. Z2: Zu den einzelnen Dokumenten extrahiert der Prototyp aus
+dem Text relevante Keyphrases.
+3. Z3: Diese Keyphrases werden nach der Extraktion direkt Teil
+des Wissensnetzwerkes. Diese ko¨nnen vom Benutzer wieder ent-
+fernt werden.
+4. Z4: Sowohl Keyphrase als auch Dokument werden als Node in-
+nerhalb des ikc-core repra¨sentiert und sind miteinander verbun-
+den.
+1.6 Anforderungen
+Fu¨ r die weitere Unterteilung in Arbeitspakete und Stories werden die
+Anforderungen zuna¨chst in Prosa gesammelt. Diese entstammen dem
+Kundenworkshop und der Aufgabenstellung. Sie widerspiegeln die
+Projektziele (Abschnitt 1.5). Die Anforderungen werden in funktiona-
+le und nicht-funktionale Anforderungen unterschieden. Die funktio-
+nalen Anforderungen definieren direkt die Eigenschaften. Im Gegen-
+satz dazu definieren nicht-funktionale Anforderungen die Leistung
+und die Randbedingungen. Diese sind in der Tabelle Tabelle A.3, be-
+ziehungsweise Tabelle A.4 zu finden.
+Die Priorisierung erfolgt nach dem MoSCoW-System:
+Tabelle 1.2: MosCow-Priorisierung
+Neben den in der Aufgabenstellung vorgegebenen Lieferobjekte (Ta-
+belle A.6) sind noch zusa¨tzliche, interne Lieferobjekte (Tabelle A.7)
+festlegt. Diese sind lediglich als Unterstu¨ tzung der Projektkontrolle,
+eine Art Orientierungshilfe, gedacht.
+Kapitel 2
+Stand der Technik
+Im Folgenden werden bestehende literarische Grundlagen fu¨ r die vor-
+liegende Arbeit aus Forschung und Entwicklung kurz zusammenge-
+fasst und die wichtigsten Punkte aufgezeigt. Der Inhalt befasst sich
+vorwiegend mit Konzepten, Theorien und Begrifflichkeiten, welche
+fu¨ r das tiefere Versta¨ndnis der vorliegenden Thematik unabdingbar
+sind. Auch wurden bestehende Verfahren, welche a¨hnliche Ziele ha-
+ben, genauer untersucht.
+2.1 Wissensmanagement
+Die Grundlage dieser Arbeit bilden die Daten eines Nutzers. Diese
+alleine sind aber noch von keinem grossen Nutzen. Wie Bellinger,
+Castro und Mills (2004) zeigen, bescha¨ftigt man sich ha¨ufig mit der
+U¨ bertragung und dem Empfang von Informationen. Viel weniger be-
+fasst man sich aber mit derselbigen mit der Grundlage von Wissen
+oder gar Versta¨ndnis.
+Auch die Unterscheidung von Daten, Informationen und Wissen ist
+selten explizit festgelegt. Fu¨ r ein tieferes Versta¨ndnis hilft folgendes
+Zitat aus Ackoff (1989). Es stellt die Dimensionen zwischen den ver-
+schiedenen Ausdru¨ cken her: Daten bilden die Grundlage. Informatio-
+nen basieren auf Daten, besitzen aber bereits einen grossen Mehrwert.
+Der na¨chste Schritt ist der Aufbau von Wissen, und dieses basiert
+wiederum auf Informationen und somit Daten. Versteht man nun das
+Wissen zusa¨tzlich, ist man am Ziel angelangt. Die Daten sind vollkom-
+men genutzt, man erlangt den gro¨ssten Mehrwert. Eine Definition der
+Ausdru¨ cke folgt im na¨chsten Absatz.
+An ounce of information is worth a pound of data.
+An ounce of knowledge is worth a pound of information.
+An ounce of understanding is worth a pound of knowledge.
+Bellinger et al. (2004) definieren diese Ausdru¨ cke folgendermassen:
+Daten sind Zeichen oder Symbole, welche Eigenschaften von Inhalten
+repra¨sentieren. Informationen bestehen aus aufbereiteten oder verar-
+beiteten Daten. Diese Vorga¨nge haben das Ziel, die Bedeutung und
+den Nutzen der Daten zu erho¨hen. Wissen ist eine Sammlung an In-
+formationen. Es ist ein Prozess, welcher zum Ziel hat, die Informatio-
+nen nu¨ tzlich zu gestalten.
+Nach Chen (2005) ist der Wert von Informationen gegeben durch Zeit-
+losigkeit, Zuga¨nglichkeit, Zuverla¨ssigkeit und Verfu¨ gbarkeit. A¨ hnlich
+wichtig in Choo (1996) sind aber die Bedu¨ rfnisse des Nutzers. Eine
+weitere, offenere Definition stammt von Bierly III, Kessler und Chris-
+tensen (2000): Informationen sind bedeutungsvolle und nu¨ tzliche Da-
+ten, welche das Versta¨ndnis von Informationen klarer machen. Wis-
+sen nach Barlas, Ginart und Dorrity (2005) ist eine Aggregation von
+a¨hnlichen oder zusammengeho¨rigen Informationen.
+2.1.1 Bedeutung in dieser Arbeit
+In der vorliegenden Arbeit wird alles als Information verstanden, was
+auf Nutzerdaten basiert und gleichzeitig fu¨ r den Nutzer einen gewis-
+sen Mehrwert an Bedeutung oder Versta¨ndnis darstellt. Die Aggre-
+gation und vor allem die Verknu¨ pfung der Informationen zu einem
+Wissensnetzwerk definiert das Wissen im gegebenen Kontext.
+2.2 Intuitive Knowledge Connectivity
+Das Forschungsprojekt Intuitive Knowledge Connectivity (IKC)1 der
+Hochschule Luzern Informatik ist die Grundlage fu¨ r diese Bachelor-
+Arbeit. Aus diesem Grund ist hier fu¨ r das tiefere Versta¨ndnis der The-
+matik eine kurze Einfu¨ hrung zu finden (siehe auch Kaufmann et al.
+(2016)).
+Wie auch zu sehen in Manyika et al. (2011) bringt Big Data Heraus-
+forderungen mit sich. Das steigende Volumen und die immer detail-
+lierten Informationen, zusammen mit Trends wie Social Media und
+1https://www.hslu.ch/en/lucerne-university-of-applied-sciences-and
+-arts/research/projects/detail/?pid=3631
+Internet Of Things, fu¨ hren schnell zu exponentiellem Wachstum der
+Daten. Die immense Flut gilt es auszuwerten und mit einem Mehr-
+wert produktiv zu nutzen.
+Im unternehmerischen Umfeld gibt es diverse Mo¨glichkeiten fu¨ r die
+Verarbeitung und die Analyse der Daten. Diese agieren immer im
+Kontext der Unternehmung als Ganzes. Vor a¨hnlichen Problemen,
+wie grosse Unternehmungen, stehen aber auch immer mehr Einzel-
+personen. IKC befasst sich darum mit dem perso¨nlichen Datenmana-
+gement in Zusammenhang mit Big Data und Cloud Computing.
+Die bestehenden Ansa¨tze der Verarbeitung bilden die Grundlage. IKC
+geht aber einen Schritt weiter, indem es Verbindungen u¨ ber die Gren-
+zen von verschiedenen Cloud-Dienstleistern ermo¨glicht. Einzelperso-
+nen ko¨nnen so ihr perso¨nliches, plattformu¨ bergreifenden Wissens-
+netzwerkes aufbauen. Durch die Verknu¨ pfung von Daten aus den ver-
+schieden Quellen entsteht neues und wertvolles Wissen. Gleichzeitig
+ermo¨glicht die Aggregation eine einheitliche Verwaltung und Suche
+der eigentlich verteilten Informationen.
+Aus der Forschung ging ein PoC hervor, welcher die vorgeschlagenen
+Konzepte anhand von Dropbox, Evernote und Weblinks erfolgreich
+umsetzt. Dieser Prototyp bildet die Grundlage fu¨ r die Implementati-
+on dieser Arbeit.
+2.3 Artifical Intelligence
+Wie Russell und Norvig (2009) aufzeigen, ist Artifical Intelligence im
+Allgemeinen als Versuch eines Systems, menschliches Verhalten be-
+ziehungsweise Intelligenz zu automatisieren oder zu simulieren, defi-
+niert. Die Definition solcher Systeme kann grundsa¨tzlich in vier Kate-
+gorien aufgeteilt werden:
+• Systeme, die wie Menschen denken.
+• Systeme, die rational denken.
+• Systeme, die wie Menschen handeln.
+• Systeme, die rational denken.
+Menschliche Systeme versuchen Entscheidungen mit dem Menschen
+a¨hnlichen Prozessen zu fa¨llen. Wa¨hrend rationale Systeme Entschei-
+dungen basierend auf den vorliegenden Daten treffen. Diese Unter-
+schiede zeigen gleichzeitig auch die Evolution in der Forschung im
+Bereich von Artifical Intelligence an. Bis 1970 wurde versucht, ein
+System zu entwickeln, welches wie ein Mensch denkt und handelt.
+Von 1970 an gelangten jedoch Systeme mit einer rationalen Intelli-
+genz, welche jederzeit die richtige Entscheidung treffen ko¨nnen, in
+den Fokus.
+Systeme, welche Verfahren aus dem Feld von Artifical Intelligence
+anwenden, werden auch Agenten genannt. Abha¨ngig vom gewa¨hlten
+Verfahren, entscheiden solche Agenten, auf Grund unterschiedlicher
+Argumentation, wie auf ein Ereignis zu reagieren ist. Dabei werden
+drei unterschiedliche Ebenen der Argumentation unterschieden:
+• Assoziative Argumentation, was wenn der Agent bestimmte
+Ereignisse beobachtet?
+• Ursa¨chliche Argumentation, was wenn der Agent bestimmte
+Aktionen durchfu¨ hrt?
+• Gegensa¨tzliche Argumentation, was wenn der Agent bestimm-
+te Aktionen nicht durchgefu¨ hrt ha¨tte?
+Diese verschiedenen Ebenen unterstu¨ tzen die Entscheidung zur Aus-
+wahl von Teildaten, welche fu¨ r den jeweiligen Anwendungsfall wich-
+tig sind.
+So beeinflussen sich beispielsweise die Anzahl von Verbindungen
+einer Mobilantenne neben einem Autobahnabschnitt und das Stau-
+Aufkommen auf dem gleichen Abschnitt gegenseitig. Wa¨hrend der
+Wochentag und der Geburtstag des Beifahrers keinen Einfluss auf
+das Stauaufkommen haben. Dies obwohl sie zu diesem Zeitpunkt in
+einer Beziehung zu einander stehen.
+2.4 Machine Learning
+Neben Natural Language Processing oder Computer Vision ist Ma-
+chine Learning ein weiterer Aspekt aus dem Bereich von Artifical
+Intelligence. Dabei gewinnt ein Agent, auf Grund von Mustern inner-
+halb von Daten neue Informationen. Dieser Vorgang wird allgemein
+als Lernen bezeichnet. Grundsa¨tzlich ko¨nnen nach Russell und Nor-
+vig (2009) folgende drei Kategorien des Lernens unterschieden wer-
+den:
+• Supervised learning: Anhand von beobachteten und beschrif-
+teten Ereignissen und den dazugeho¨rigen Aktionen lernt der
+Agent eine Funktion, mit welcher er auf zuku¨ nftige Ereignis-
+se reagieren kann. Zum Beispiel die Erkennung von Fru¨ chten
+auf Bildern, anhand einer Bildmenge, welche mit der jeweiligen
+Frucht beschriftet ist.
+• Unsupervised learning: Innerhalb von beobachteten und unbe-
+schrifteten Daten erkennt der Agent Muster, welche er nutzt, um
+auf zuku¨ nftige Ereignisse zu reagieren. So erkennt beispielswei-
+se ein Navigationssystem Tage mit viel Stau anhand der Fahr-
+zeit fu¨ r eine zuru¨ ckgelegte Strecke. Dies funktioniert ohne Da-
+tensa¨tze, welche einen Tag mit viel Stau beschreiben.
+• Reinforcement learning: Basierend auf einer Belohnung lernt
+ein Agent, mit welcher Reaktion er eine bestimmte Situation
+entgegnen muss. So kann zum Beispiel ein lauffa¨higer Roboter
+lernen, wie er Hindernisse im Gela¨nde bewa¨ltigen kann. Dabei
+ist es denkbar, dass die Aktion durch die verschiedenen Winkel
+seiner Gelenke und der Geschwindigkeit gegeben ist. Diese op-
+timiert er anschliessend anhand der Belohnung. Die Belohnung
+ist ein Indikator fu¨ r den Erfolg oder den Nichterfolg.
+2.5 Natural Language Processing
+Unter Natural Language Processing wird die maschinelle Verarbei-
+tung von natu¨ rlicher Sprache (Wort und Schrift) verstanden. Dabei
+werden Methoden und Erkenntnisse aus der klassischen Linguistik
+angewendet. So ko¨nnen Wortarten bestimmt, Wortsta¨mme gebildet
+oder Satzstrukturen analysiert werden. Mit Hilfe solcher Informatio-
+nen ko¨nnen Algorithmen formuliert werden. Diese ko¨nnen zum Bei-
+spiel eine Stimmungsanalyse von Texten durchzufu¨ hren.
+Generally speaking, systems based entirely on natural lan-
+guage concepts are not at all competitive with systems ba-
+sed on statistical analysis of texts.
+Kantor (2001)
+Grundsa¨tzlich sind Algorithmen, welche ausschliesslich auf Konzep-
+ten der natu¨ rlichen Sprache aufbauen, nach Kantor (2001) nicht ver-
+gleichbar mit denjenigen, welche lediglich auf statistischen Analysen
+beruhen. Aber sprachwissenschaftliche Konzepte als zusa¨tzliche Ba-
+sis einer Analyse sind durchaus wertvoll.
+2.5.1 Tokenization
+Ein wichtiger Begriff in diesem Kontext ist Tokenization im Sinne von
+Grefenstette und Tapanainen (1994). Ein zu verarbeitender Text ist in
+diesem Stadium repra¨sentiert durch einen langen String. Er besteht
+aus aneinandergereihten Zeichen. Der Vorgang des Tokenization teilt
+den Text zuna¨chst nach Satz- und Sonderzeichen auf. Anschliessend
+werden die Sa¨tze und Satzteile (beispielsweise nach Leerschla¨gen)
+in einzelne Einheiten (Tokens) aufgesplittet. Diese ko¨nnen in einem
+spa¨teren Schritt in bestimmte syntaktische Klassen eingeteilt werden.
+2.5.2 Stemming
+Beim Stemming geht es nach Porter (1980) um die Entfernung von
+Suffixen eines Wortes. Wo¨rter, die grundsa¨tzlich eine a¨hnliche Bedeu-
+tung oder einen a¨hnlichen Ursprung haben, besitzen oftmals einen
+gemeinsamen Wortstamm. Durch den Verzicht auf Suffixe ko¨nnen ge-
+meinsame Wortsta¨mme gefunden werden.
+Dies kann beispielsweise soweit gehen, dass Nomen und Verben auf
+einen gemeinsamen Wortstamm reduziert werden ko¨nnen. Dies ist
+aber nicht das in jeder Situation gewu¨ nschte Endergebnis, denn oft-
+mals ist es wichtig, die Wortarten unterscheiden zu ko¨nnen. Mit Stem-
+ming ist immer auch ein Informationsverlust verbunden.
+2.5.3 Stopwords
+Als Stopwords bezeichnet man, wie beschrieben in Manning, Ragha-
+van, Schu¨ tze et al. (2008), u¨ blicherweise sehr ha¨ufig vorkommende
+Wo¨rter, welche zwar eine grammatikalische Funktion aber fu¨ r die Ge-
+winnung von Informationen keine weitere Bedeutung haben. Deren
+Funktion ist eher von syntaktischer als semantischer Natur. Fu¨ r die
+Ermittlung dieser Stopwords gibt es nach Manning et al. (2008) und
+Wilbur und Sirotkin (1992) sowohl statistische als auch heuristische
+(regelbasierte) Verfahren.
+2.5.4 Part of Speech Tagging
+Wie in Brill (1992, 1994); Manning, Schu¨ tze et al. (1999) erla¨utert, ord-
+net der Prozess des Part of Speech Tagging einem Wort eine entspre-
+chenden Wortart zu. Dabei werden die verschiedenen Algorithmen
+in regelbasierte und stochastische Algorithmen unterschieden.
+Regelbasierte nutzten eine Menge an Regeln, welche zur Bestimmung
+der Wortart verwendet werden. Solche Regeln ko¨nnen zum Beispiel,
+ein Wort einer Wortart, eine Endung einer Wortart oder einem Wort
+anhand von den umliegenden Wo¨rter eine Wortart zuweisen. Diese
+Regeln sind fix im Algorithmus Codiert.
+Bei der Verwendung einem stochastischen Algorithmus werden als
+erstes Wo¨rter in Trainingsdaten manuell einer Wortart zugeordnet.
+Anhand diese Trainingsdaten ko¨nnen nun Regeln berechnet werden,
+welche sich der Wortabfolge orientieren. Bei der Verwendung des Al-
+gorithmus wird pro Wort die Wahrscheindlichste Wortart verwendet.
+2.6 Textanalyse
+Durch den Prozess der Textanalyse (oder Text Mining nach Tan et
+al. (1999)) ko¨nnen Informationen aus einem Text extrahiert werden.
+Basierend auf diesen Informationen werden Anwendungen wie eine
+Volltextsuche oder die Erkennung von A¨ hnlichkeiten oder wichtigen
+Stichworten ermo¨glicht. Je nach Anwendungsfall werden statistische
+Verfahren mit Techniken aus dem Feld von Natural Language Pro-
+cessing (Abschnitt 2.5) kombiniert. Ein Beispiel fu¨ r Textanalyse ist
+die Keyphrase Extraction (Unterabschnitt 2.6.2).
+2.6.1 Volltextsuche
+Unter Volltextsuche versteht man die Funktionalita¨t eine Menge von
+Wo¨rtern innerhalb eines Dokumentenkorpus zu suchen und bei Er-
+folg auch zu finden. Die Grundlage fu¨ r die Volltextsuche bildet der
+Volltextindex, welcher alle in einem Text vorhandenen Wo¨rter bein-
+haltet.
+2.6.2 Extraktion
+Ein mo¨gliches Resultat der Textanalyse stellen Schlu¨ sselwo¨rter (Key-
+phrases) dar. Sie fassen im Idealfall, wie gesehen in (Zhang, Xu, Tang
+& Li, 2006, S. 85), den zugrundeliegenden Text kurz und pra¨gnant zu-
+sammen, stellen damit wichtige semantische Informationen dar. Wei-
+ter bilden sie eine fundamentale Grundlage fu¨ r Dokumentenanalyse
+und -klassifizierung.
+Fu¨ r die Generierung dieser Keyphrases benutzt man Verfahren der
+Keyphrase Extraction. Hierbei geht nach es Hulth (2004) um die Aus-
+wahl einer kleinen Menge an Wo¨rtern oder Begriffen aus einem Text,
+welche den Inhalt oder die Bedeutung mo¨glichst gut widerspiegeln.
+Diese Keyphrases bestehen aus einem oder mehreren Konzepten. Kon-
+zepte beziehen sich auf Objekte, Entita¨ten, Ereignisse und Themen,
+welche fu¨ r suchende Benutzer interessant sein ko¨nnten (Dalvi et al.
+(2009)). Die Definition ist bewusst offen gewa¨hlt, da sich eine ge-
+nauere Eingrenzung schwierig gestaltet. Eine weiterfu¨ hrende Defini-
+tion geht in Richtung Nutzen fu¨ r Menschen: Sobald eine gewisse An-
+zahl von Personen etwas als Konzept erkennt, kann dieses als Kon-
+zept angesehen werden (Parameswaran, Garcia-Molina und Rajara-
+man (2010)). Das Nutzung von Konzepten findet unter anderen bei
+Suchmaschinen, automatischem Tagging statt.
+Nach der Auswahl aller potentiellen Keyphrases wird zuna¨chst ver-
+sucht, semantisch nicht wertvolle Begriffe auszuschliessen. Dies ist
+ein wichtiger Schritt, denn die anschliessende Berechnung der Rele-
+vanz ist ein sehr aufwa¨ndiger Prozess.
+Vorgeschlagene Methoden fu¨ r diesen Vorgang nehmen nach (Zhang
+et al., 2006, S. 85) oftmals sogenannte globale Kontext-Informationen
+zum Gebrauch. Diese beinhalten unter anderem die Ha¨ufigkeit eines
+Begriffes innerhalb eines Dokuments und auch die Ha¨ufigkeit eines
+Begriffes innerhalb des gesamten Dokumentenkorpus.
+H¨aufigkeit und Gewichtung
+Ein Dokument, welches einen gesuchten Begriff o¨fters entha¨lt als an-
+dere, ist mit grosser Wahrscheinlichkeit von gro¨sserer Bedeutung als
+eines, welches den Begriff weniger oft entha¨lt. Die Ha¨ufigkeit eines
+gesuchten Begriffes innerhalb eines Dokumentes ist somit ein wich-
+tiger Teil der Gewichtung. Die Gewichtung ist die Grundlage zum
+Vergleich der Relevanz der verschiedenen Begriffe. Der einfachste An-
+satz der Bestimmung dieser Gewichtung besteht darin, diese mit der
+Vorkommensha¨ufigkeit innerhalb eines Dokumentes gleichzusetzen.
+Diese Gewichtung bezeichnet man als term frequency. In der Notati-
+on als tf zu finden, wobei t fu¨ r einen Begriff (term) innerhalb eines
+t,d
+Dokumentes d steht.
+Die alleinige Beachtung der Ha¨ufigkeit zur Bestimmung der Relevanz
+bringt aber Probleme, alle Begriffe werden als gleichermassen wichtig
+eingestuft. Bestimmte Begriff ko¨nnen aber von vornherein direkt als
+weniger wichtig eingestuft werden. Kommt ein Begriff in einem Kor-
+pus durchga¨ngig in allen Dokumenten ha¨ufig vor, ist es fu¨ r ein ein-
+zelnes Dokument keine geeignete Grundlage fu¨ r die Bestimmung der
+Relevanz. Denn dieses Wort hebt einen Text gegenu¨ ber dem Korpus
+nicht ab, ist somit keine ausreichende Repra¨sentation des Inhaltes.
+Ein erster Ansatz nach (Manning et al. (2008)) ist die Gewichtung
+auf Grund der Vorkommensha¨ufigkeit eines Begriffes innerhalb des
+Korpus zu skalieren. Dieser Wert wird als collection frequency (cf) be-
+zeichnet. Je ha¨ufiger der Begriff, umso tiefer die Gewichtung. Begriffe,
+welche im Allgemeinen ha¨ufig auftauchen wu¨ rden, so in ihrer Rele-
+vanz niedriger.
+Da aber versucht wird, mit einer Gewichtung auf Basis von unter-
+schiedlichen Dokumenten zu arbeiten, macht es Sinn ebenfalls einen
+Wert auf derselben Basis zu verwenden. Darum wird die Anzahl Do-
+kumente verwendet, welche einen bestimmten Begriff enthalten. Die-
+ser Wert wird als Dokumentenha¨ufigkeit (document frequency, df) be-
+zeichnet und mit df notiert.
+Der Grund, warum die document frequency bevorzugt wird, ist in Ta-
+belle 2.1 aufgezeigt. Der cf-Wert der beiden Wo¨rter ’insurance’ und
+’try’ ist in etwa identisch. Doch beim df-Wert gibt es einen erheblichen
+Unterschied. Die beiden Werte ko¨nnen sich somit also durchaus sehr
+unterschiedlich verhalten. Zusa¨tzlich kann man noch anmerken, dass
+der df-Wert mehr dem intuitiv erwarteten Resultat entspricht. Ein
+Schlu¨ sselwort ’insurance’ sollte relevanter sein als ein Schlu¨ sselwort
+’try’.
+Um nun die Gewichtung mit der Basis der Dokumentenha¨ufigkeit zu
+skalieren, wird folgende Formel eingefu¨ hrt:
+Diese bezeichnet man als inverse Dokumentenha¨ufigkeit (inverse do-
+cument frequency (idf)) fu¨ r einen Begriff t. Die Gesamtanzahl der Do-
+kumente ist durch N gegeben.
+kMuamnneninteg iestt adlu. r(2ch00N8) g
+TF-IDF
+TF-IDF ist ein Gewichtungsalgorithmus zur Bestimmung der Rele-
+vanz eines Begriffes. Wie oben bereits erwa¨hnt, nimmt er Bezug auf
+globale Kontext-Informationen. Er kombiniert die auf den im Ab-
+schnitt 2.6.2 definierten Werte.
+2(Manning et al., 2008, S. 118)
+tf-idf = tf idf
+t,d t,d f
+×
+Der TF-IDF Wert ist hoch, wenn ein Begriff in einem Dokument oft,
+in allen anderen Dokumenten hingegen nicht vorkommt. Er ist tief,
+wenn der Begriff in vielen oder allen Dokumenten vorkommt.
+Vector Space Model
+Wie Manning et al. (2008) beschreibt nutzt das Vector Space Model hoch-
+dimensionale Vektoren, um ein Wort zu repra¨sentieren. So kann ei-
+ne Keyphrase oder ein Dokument zum Beispiel durch die Ha¨ufigkeit
+der vorkommenden Wo¨rter dargestellt werden. Mit Hilfe der Cosine
+Distance kann nun der Winkel zwischen dem Keyphrase-Vektor und
+einem Dokument-Vektor berechnet werden. Dadurch kann die Rele-
+vanz der Keyphrase fu¨ r das Dokument ausgedru¨ ckt werden. Weiter
+ist es mo¨glich, Wo¨rter als Vektor durch die Ha¨ufigkeit anderer Wo¨rter
+in seiner Umgebung auszudru¨ cken.
+Okapi BM25
+Okapi BM25 ist, wie von Robertson, Zaragoza et al. (2009) beschrie-
+ben, eine Weiterentwicklung von TF-IDF. Es wurden verschiedene
+Steuerung-Parameter eingefu¨ hrt, welche die Reduktion der Auswir-
+kung von hohen Keyphrase-Frequenzen als auch der Grad der Nor-
+malisierung regeln.
+2.7 React
+Nach (Alex Banks, 2017, S. 11-16) ist React eine popula¨re, von Face-
+book entwickelte Bibliothek fu¨ r Benutzeroberfla¨chen. Sie basiert auf
+Javascript und ist optimiert fu¨ r die Skalierung und den Umgang mit
+sich laufend a¨ndernden Daten. Wie zu sehen in Facebook (2017) ist
+React deklarativ und Komponenten-basiert. Fu¨ r einen Zustand gibt
+es die entsprechende Komponente, welche bei Aktualisierungen neu
+gerendert wird . Es verwendet unter anderem eine XML a¨hnliche Syn-
+tax fu¨ r den Aufbau dieser Komponenten.
+Zur selben Zeit vero¨ffentlichte Facebook auf eine Design-Architektur
+namens Flux (Alex Banks, 2017, S. 12). Bei diesem Ansatz wird mit-
+tels einem unidirektionalen Datenfluss mit Dateninkonsistenzen um-
+gegangen. Dies geht in den Bereich der funktionalen Programmie-
+rung. React arbeitet mit einer vereinfachten Version von Flux namens
+Redux.
+2.8 Architekturpatterns
+• Microservices: Das Microservice-Pattern geho¨rt zufolge Rich-
+ards (2016)[S. 1-33] zu den Service-basierten Architekturen. Ser-
+vices bilden die Grundlage der einzelnen Komponenten. Ser-
+vice-basierte Architekturen sind immer auch verteilte Architek-
+turen. Das bedeutet weiter, dass Zugriffe u¨ ber remote-access-
+Protkolle, beispielsweise REST, vorgenommen werden. Services
+laufen entkoppelt und eigensta¨ndig. Das bedeutet weiter, dass
+diese einfach skaliert oder modular neu genutzt werden ko¨nnen.
+• Message Passing: Wie in (William Gropp, 2014, S. 5) beschrie-
+ben, versteht man unter Message Passing das Senden und Emp-
+fangen von Nachrichten zwischen Prozessen.
+• Message oriented middleware: Message oriented Middleware
+(MoM) ist nach (Chappell, 2004, S. 77-100) ein Konzept, welches
+sich mit der U¨ bermittlung von Daten zwischen Applikationen
+oder Prozessen bescha¨ftigt. Dies erfolgt u¨ ber einen Kommunika-
+tionskanal, woru¨ ber unabha¨ngige Informationseinheiten (Mes-
+sages) u¨ bermittelt werden. Die Kommunikation zwischen zwei
+Teilnehmern funktioniert asynchron. Durch die Message-basier-
+te Kommunikation ist eine abstrakte Entkopplung gewa¨hrleistet.
+Die Sender und Empfa¨nger wissen nichts voneinander. Dieses
+Messaging-System ist verantwortlich fu¨ r die fehlerlose U¨ bermit-
+tlung an die jeweiligen Empfa¨nger.
+2.9 Kommunikation
+Die Kommunikation bescha¨ftigt sich mit den grundlegenden Techno-
+logien zum Austausch von Informationen. Im Gegensatz zum Kapi-
+tel Datentransfer (Abschnitt 2.10) befasst sich dieser Abschnitt mit
+Verbindungen an sich und nicht mit der Form oder Kapselung der
+Daten.
+2.9.1 REST-API
+Representational State Transfer (REST) ist, nach einer Vielzahl von
+Autoren (Fielding (2000); Richardson und Ruby (2008); W3C (2004)),
+ein Architekturstil zum Aufbau eines Web-Services. Es baut auf den
+Grundlagen des Webs, insbesondere dem HTTP-Protokoll, auf und
+ist optimiert fu¨ r Web-Services.
+Die Anfragen an den Server sind zustandslos. Das bedeutet, sie sind
+komplett unabha¨ngig von anderen Anfragen. Zusa¨tzlich geben sie
+bei mehrmaliger Ausfu¨ hrung stets dieselbe Antwort zuru¨ ck. Das be-
+deutet weiter, dass jede Anfrage alle fu¨ r die auf dem Server fu¨ r die
+Verarbeitung notwendigen Informationen entha¨lt.
+2.9.2 Websocket
+Websockets (siehe IETF (2011); websocket.org (o. J.)) bieten eine asyn-
+chrone bidirektionale (full duplex) Kommunikation zwischen Client
+und Server. Dies funktioniert u¨ ber einen Kanal, welcher u¨ ber einen
+einzigen Socket la¨uft. Dies bedeutet eine enorme Reduktion von un-
+no¨tigem Netzwerkverkehr und Latenz im Vergleich zu (Long-)Polling-
+Lo¨sungen. Das vor allem, da versucht wird mittels zwei Verbindun-
+gen das Verhalten von Websockets zu simulieren. Websockets ko¨nnen
+automatisch mit netzwerkspezifischen Umsta¨nden, wie beispielswei-
+se Proxy-Servern oder Firewalls, umgehen und machen so eine Ver-
+bindung praktisch u¨ berall mo¨glich.
+2.9.3 socket.io
+Socket.io ist eine WebSocket API, welche die Verwendung von Web-
+sockets unterstu¨ tzt (siehe Prusty (2016); Rai (2013); Walsh (2010)). Bei-
+spielsweise erkennt socket.io selbststa¨ndig, ob WebSocket in der ver-
+wendeten Umgebung unterstu¨ tzt werden und sucht gegebenenfalls
+Alternativen:
+• WebSocket
+• Flash Socket
+• AJAX long-polling
+• AJAX multipart streaming
+• IFrame
+• JSONP polling
+Diese Auswahl funktioniert automatisch im Hintergrund u¨ ber eine ge-
+meinsame API. Der Entwickler kann aber auch explizit angeben, wel-
+chen Transport er verwenden will. Ein grosser Vorteil ist auch, dass di-
+verse Bibliotheken zur Erweiterung der Funktionalita¨t verfu¨ gbar sind.
+2.9.4 Stream
+Wie gesehen in (Prusty, 2016, S. 56) ist ein Stream ganz allgemein
+formuliert eine Sequenz von Daten, welcher u¨ ber die Zeit verfu¨ gbar
+gemacht wird. Da dies asynchron abla¨uft, werden EventHandler oder
+Callbacks eingesetzt, welche aufgerufen werden, wann immer Daten
+verfu¨ gbar sind. Daten ko¨nnen so in Teilstu¨ cken u¨ bermittelt werden.
+2.10 Datentransfer
+Nach der Sicherstellung einer Verbindung zwischen zwei Instanzen,
+gilt es einen Weg zu finden, in welchem Format die erforderlichen
+Daten bestmo¨glich u¨ bertragen werden ko¨nnen. Dafu¨ r gibt es verschie-
+dene Ansa¨tze:
+2.10.1 JSON
+JavaScript Object Notation (JSON) ist ein schmales, text-basiertes und
+sprachunabha¨ngiges Datenu¨ bertragungsformat. Nach Bray (2014) ist
+es ein anerkannter Standard. Abgeleitet ist es von Javascript (ECMA
+Script). Eine kleine Menge an Formatierungsregeln ist verantwortlich
+fu¨ r die Repra¨sentation von strukturierten Daten.
+2.10.2 MessagePack
+MessagePack3 ist ein weiteres Format zur bina¨ren Serialisierung von
+Daten (a¨hnich Unterabschnitt 2.10.1). Nach Izzo (2016) ist es flexibler
+und in bestimmen Fa¨llen leistungsfa¨higerer als andere Lo¨sungen wie
+JSON oder XML. Dies auch in Fa¨llen der U¨ bermittlung u¨ ber das Netz-
+werk, wo es im vorliegenden Projekt auch Anwendung findet.
+2.11 Persistenz
+Daten, wie der gesamte Dokumentenkorpus und die berechneten In-
+dizes, mu¨ ssen persistiert werden. Dafu¨ r wurden folgende Mo¨glich-
+keiten in Betracht gezogen. Von grosser Wichtigkeit ist, dass der Be-
+nutzer stets volle Transparenz u¨ ber den Inhalt und auch den Speicher-
+ort seiner Daten hat. Zusa¨tzlich sind Datensicherheit, Verschlu¨ sselung
+und Integrita¨t essentiell.
+3http://msgpack.org
+2.11.1 Dropbox
+Bis anhin speichert der ikc-core die Daten in einem dafu¨ r vorgesehe-
+nen Ordner auf der Dropbox des Benutzers. Dies hat den Grund, das
+Dropbox ebenfalls als Datenquelle verwendet wird und bereits eine
+a¨hnliche Anbindung verfu¨ gbar ist. Der Benutzer hat so einfach und
+jederzeit Einblick in die Daten seines Wissensnetzwerks.
+Die Anbindung ist umgesetzt mit der Javascript Implementation der
+Dropbox API V24. Die Autorisierung funktioniert mittels der oauth-
+Bibliothek5. Zu beachten ist, dass die API gewisse Limitationen hat6:
+Unter anderem ist die Anzahl einzelner Anfragen in einer gewissen
+Zeitspanne begrenzt. Dem kann mittels Stapel-Methoden aber entge-
+gengewirkt werden.
+2.11.2 storj
+Cloud-Storage oder allgemein der Begriff Cloud ist allgegenwa¨rtig.
+Der Markt ruft nach Cloud-Lo¨sungen. Wie in (Wilkinson, Lowry &
+Boshevski, 2014, S. 1-3) dargelegt, steckt hinter dem Begriff Cloud
+aber ha¨ufig viel Marketing, um eine schon seit langem existierende
+Technologie. Werden Daten in der Cloud gespeichert, werden sie vom
+Client u¨ ber TCP/IP zu einem Server eines Datencenters u¨ bermittelt.
+Dies passiert schon seit den Anfa¨ngen der Informatik auf dem selben
+Weg. Viele dieser Cloud-Services funktionieren u¨ ber zentrale Server,
+dies birgt Sicherheitsrisiken.
+Storj strebt ein dezentralisiertes Speichernetzwerk an, welches sich
+nicht auf Vertrauen zwischen Client und Host verla¨sst. Vor jeglicher
+U¨ bermittlung werden die Daten verschlu¨ sselt. Um dieses Ziel zu errei-
+chen und gleichzeitig Skalierbarkeit, Kosteneffizienz und die gewu¨ n-
+schte Sicherheit zu erreichen, ist viel technisches Wissen notwendig.
+4https://www.dropbox.com/developers/documentation/http/
+documentation
+5https://www.dropbox.com/developers/reference/oauth-guide
+6https://www.dropbox.com/developers/reference/data-ingress-guide
+
+Das Prinzip des verteilten Netzwerks funktioniert, wie (Wilkinson,
+Boshevski, Brandoff & Buterin, 2014, S. 2-16) erkla¨rt, folgendermas-
+sen: Die Abbildung 2.1 dient der Veranschaulichung. Das Netzwerk
+besteht aus zahlreichen Peers. Storj ermo¨glicht diesen u¨ ber das Netz-
+werk Vertra¨ge auszuhandeln, Daten zu u¨ bertragen und gleichzeitig
+ho¨chste Sicherheit, Integrita¨t und Verfu¨ gbarkeit zu garantieren. Jeder
+Peer hat die gleichen Mo¨glichkeiten und alle sind gleichwertig. Da-
+ten werden nicht als Ganzes, sondern in Einzelteilen verteilt und ver-
+schlu¨ sselt u¨ ber das Netzwerk der Peers gespeichert. Die Verfu¨ gbarkeit
+kann durch Redundanz einzelner Peers gewa¨hrleistet werden.
+2.11.3 SFTP
+U¨ ber das Protokoll SFTP ist ein sicherer Datentransfer, gleichzeitig
+auch ein Systemzugriff, mo¨glich. Die Spezifikation nach (Galbraith,
+Saarenmaa, Ylonen & Lehtinen, 2006, S. 3) sagt weiter aus, dass eine
+bereits aktive SSH-Verbindung und die entsprechende Authentifizie-
+rung vorausgesetzt wird. Grundsa¨tzlich funktioniert es nach einem
+simplen Anfrage-Antwort-Modell.
+Alle fu¨ r den Prototypen notwendigen Operationen, wie beispielswei-
+se den Inhalt eines Verzeichnisses lesen und das Lesen und Schrei-
+ben von Dateienm, ist mo¨glich. Weiter bietet das unterliegende SSH-
+Protokoll viele weitere Funktionen.
+Kapitel 3
+L¨osungsdesign
+Das Lo¨sungsdesign beinhaltet die Grundlagen fu¨ r die erfolgreiche
+Umsetzung des Prototyps. Darin wird basierend auf den Anforde-
+rungen und der Aufgabenstellung die Software-Architektur definiert.
+Wa¨hrend dies auf einer hohen Abstraktionsebene geschieht, erfolgt
+in einem na¨chsten Schritt der Entwurf und das Design der Software.
+Dabei dient die Architektur als Leitplanke, welche zusammen mit der
+Recherche u¨ ber den aktuellen Stand der Technik (Kapitel 2) zu einem
+konkreten Entwurf fu¨ hrt.
+3.1 Architektur
+Der Architektur-Entwurf betrachtet die zu entwickelnde Software aus
+einer abstrakten Sicht. Das Ziel ist eine grundsa¨tzliche U¨ bersicht u¨ ber
+die Software, deren Komponenten, Schnittstellen und auch deren Ver-
+teilung.
+Basierend auf den Anforderungen (Abschnitt 1.6) an den zu entwi-
+ckelnden Prototypen, wird im folgenden Abschnitt der zugrunde-
+liegende Architektur-Entwurf ausgefu¨ hrt. Die Architektur-Entschei-
+dungen bilden die Grundlage fu¨ r die Designentscheidungen des Soft-
+ware-Entwurfs. Ausschlaggebend dafu¨ r ist das aus Kruchten (1995)
+stammende 4+1 Schichtenmodell.
+3.1.1 Kontextsicht
+Die Abbildung 3.1 gibt einen U¨ berblick u¨ ber den Kontext des zu ent-
+wickelnden Prototypen: Der ikc-core nutzt den Prototypen zur Er-
+weiterung seiner Funktionalita¨t. Damit ko¨nnen die Hauptanforderun-
+gen, wie die Volltextsuche und die Extraktion von Schlu¨ sselwo¨rter,
+abgedeckt werden. Diese beiden Funktionen sind fu¨ r den Benutzer
+u¨ ber das UserInterface innerhalb des ikc-core verfu¨ gbar. Sowohl der
+ikc-core als auch der Prototyp haben Zugriff auf die externen Daten-
+quellen. Der Prototyp hat dort die Quellen fu¨ r die Dateiinhalte und
+ha¨lt dort auch Indizes fu¨ r die Volltextsuche und die Schlu¨ sselwort-Ex-
+traktion.
+3.1.2 Einflussfaktoren
+Basierend auf dem Kontext des ikc-core, dem Scope und den funktio-
+nalen und nichtfunktionalen Anforderungen beeinflussen verschiede-
+nen Faktoren den Architektur-Entwurf.
+Software Infrastruktur Als Basis fu¨ r Applikationsverteilung auf das
+Entwicklungs- und Produktions-System wird
+Dokku in Kombination mit Gitlab CI ver-
+wendet. Das Versionskontrollsystem verteilt
+A¨ nderungen so direkt an die vorgesehende
+Infrastruktur. Die Software wird als Docker-
+Container ausgeliefert und anschliessend als
+dedizierte Applikation innerhalb des Dokku-
+Frameworks gestartet.
+Der ikc-core nutzt keine zusa¨tzlichen
+zentralen Services fu¨ r die Persistenz von
+Benutzerdaten oder deren Applikations-
+Konfiguration. Es werden die lokalen
+Ressourcen oder externe Datenquellen wie
+Dropbox verwendet.
+Tabelle 3.1: Einflussfaktoren
+3.1.3 Architekturtreiber
+Drei elementare Architekturtreiber beeinflussen die Konzeption des
+Prototyps. Diese wurden teilweise bereits weiter oben als Einflussfak-
+tor (Unterabschnitt 3.1.2) erwa¨hnt, haben jedoch auch fu¨ r den Proto-
+typ eine zentrale Bedeutung.
+• Entkopplung und Wiederverwendbarkeit: Module und Kom-
+ponenten sind entkoppelt voneinander. Dadurch ko¨nnen diese
+innerhalb der Applikation, oder auch fu¨ r zuku¨ nftige Projekte,
+leicht wiederverwendet werden. Bei Performance-Engpa¨ssen ist
+es weiter mo¨glich, bestimmte Module auszulagern, dies sowohl
+lokal innerhalb der Client-Applikation, als auch extern auf eine
+Server-Umgebung.
+• Verhinderung von zusa¨tzlicher Persistenz: Applikationsdaten
+und Konfiguration sind stets lediglich von den bestehenden Da-
+tenquellen zu beziehen. Hierbei handelt es sich entweder um
+den lokalen Cache des Benutzers oder die entsprechende exter-
+ne Datenquelle. Durch diesen Umstand kann viel Zeit fu¨ r die
+Entwicklung und die Absicherung einer Persistenz-Infrastruk-
+tur gespart werden. Der Benutzer hat so zusa¨tzlich immer eine
+transparente Kontrolle u¨ ber den Speicherort und auch den In-
+halt der eigenen Daten.
+• Inspiration durch React und Flux: Wie in Abschnitt 2.7 bereits
+erwa¨hnt, arbeitet React im Hintergrund mit einer eigenen Im-
+plementation von Flux. Dieser orientiert sich stark am funktio-
+nalen Programmier-Paradigma: Innere Zusta¨nde, also Variabeln,
+sind wann immer mo¨glich zu verhindern. Dies wirkt allfa¨lligen
+Seiteneffekten entgegen, macht den Code so nachvollziehbarer.
+Auch der unidirektionale Datenfluss strebt a¨hnliche Ziele an.
+Diese U¨ berlegungen begleiteten die Entwicklung sta¨ndig. So
+sind an vielen Orten Programmierkonstrukte zu finden, welche
+prinzipiell verwandte Ansa¨tze verfolgen.
+3.1.4 Architekturziele
+Der zu entwickelnde Prototyp baut auf dem bestehenden ikc-core auf.
+Dabei soll das Augenmerk weiterhin auf den bereits bestehenden Ei-
+genschaften der Architektur, insbesondere der Modularita¨t und der
+Erweiterbarkeit, gehalten werden. Dies ist im Kontext des zugrun-
+deliegenden Forschungsprojekts von hoher Wichtigkeit. Die Vergan-
+genheit hat gezeigt, dass eine solide aber gleichzeitig auch anpas-
+sungsfa¨hige Basis ein kritischer Faktor fu¨ r die agile Weiterentwick-
+lung ist. Einzig unter diesen Voraussetzungen ist es mo¨glich, auf die
+stetig a¨ndernden Anforderungen entsprechend zu reagieren.
+Die wichtigsten Ziele der Architektur sind in folgender Tabelle (Tabel-
+le 3.2) kurz erla¨utert:
+Tabelle 3.2: Ziele der Architektur
+3.1.5 Bausteinsicht
+Die Abbildung 3.2 zeigt die Bausteinsicht der Architektur des Pro-
+totypen. Darin werden die verschiedenen Komponenten und Modu-
+le und deren Beziehungen untereinander aufgezeigt. Hierbei werden
+drei verschiedene Abstraktionslevel unterschieden.
+Nachfolgend werden diese na¨her erla¨utert.
+Bausteinsicht Level 0
+Innerhalb des Level 0 werden die Zusammenha¨nge zwischen dem
+User, dem ikc-core und dem Prototypen aufgezeigt. Ebenfalls ist
+die Systemgrenze zwischen der bestehenden und der zu erstellenden
+Komponente ersichtlich. Die Systemgrenze grenzt den Kern des Pro-
+totyps ein.
+User
+Wie bisher hat der Benutzer u¨ ber die Benutzeroberfla¨che des ikc-core
+Zugriff auf die gesamte Funktionalita¨t. Die Zusatzfunktionen, welche
+neu durch den Prototyp zur Verfu¨ gung gestellt werden, sind fu¨ r den
+Benutzer in der Suchfunktion und den extrahierten Schlu¨ sselwo¨rtern
+ersichtlich.
+ikc-core
+Neben der bisherigen Funktionalita¨t nutzt der ikc-core zusa¨tzlich
+die neuen Funktionen, welche vom Prototypen zu Verfu¨ gung gestellt
+werden. Dazu za¨hlt die Volltextsuche und die Schlu¨ sselwort-Extrak-
+tion. Er besteht prinzipiell aus verschiedenen UIElements, welche UI-
+Services nutzen, um zugrundeliegende Logik zu kapseln. In dieser
+Logik soll der Prototype integriert werden.
+Prototype
+Die Komponente Prototype kapselt die essentiellen Funktionen: die
+Textanalyse und die Anbindung der externen Datenquelle. Darin wer-
+den die Module DataService und IndexService unterschieden.
+Bausteinsicht Level 1
+Mithilfe des zweiten Abstraktionlevels (Level 1) werden die verschie-
+denen Module und die Beziehungen innerhalb der Komponente auf-
+gezeigt.
+UI Elements
+Die Interaktion mit dem Benutzer wird durch die Komponente UI-
+Elements abgehandelt. Dabei werden alle sichtbaren Teile der Ober-
+fla¨che in verschiedene Elemente gekapselt. Die resultierenden Ele-
+mente sollen innerhalb der Applikation beliebig wiederverwendbar
+sein (zum Beispiel SearchField). Mit Hilfe des Applikationzustandes
+wird der Inhalt der Elemente festgelegt.
+UI Services
+Die Logik der Applikation wird in verschiedene UIServices aufge-
+teilt, diese steuern das Verhalten der Applikation durch die Aktuali-
+sierung des jeweiligen Applikationzustandes.
+DataService
+Das Modul DataService regelt den Zugriff auf externe Datenquellen.
+Dank der Abstraktion des spezifischen Zugriffs ko¨nnen verschiedene
+Quellen, je nach Bedarf, verwendet werden. Weiter kann der Zugriff
+mittels der Freigabe-Token an andere Module weitergegeben werden.
+Innerhalb der Komponente der Bachelorarbeit beschra¨nkt man sich
+auf die Verwendung von externen Datenquellen u¨ ber SFTP. Eine Er-
+weiterung verschiedener Datenquellen soll jedoch mo¨glich sein.
+IndexService
+Die Textanalyse wird mit dem Modul IndexService durchgefu¨ hrt.
+Die beiden Teilmodule Search und InformationExtraction nutzen
+den Index als Basis fu¨ r die Berechnung von Suchresultaten oder die
+Extraktion von Schlu¨ sselwo¨rtern.
+Bausteinsicht Level 2
+Mit Hilfe des letzten Abstraktionslevels (Leve 2) der Bausteinsicht
+werden die verschiedenen Teilmodule erla¨utert.
+DataAccess
+Eine der Hauptaufgaben des DataService-Moduls, der Zugriff auf
+verschiedene externe Datenquellen, wird mittels des Teilmoduls Da-
+taSharing abgehandelt. Darin wird der spezifische Zugriff auf die
+Quelle beschrieben.
+DataSharing
+Neben dem Zugriff sollen Elemente von externen Quellen innerhalb
+der Applikation via Freigabe-Token zu Verfu¨ gung gestellt werden.
+Diese werden innerhalb des DataSharing Teilmoduls gehalten. Nach
+einmaliger Verwendung sollen diese verfallen.
+Datasource
+U¨ ber das externe Modul DataSource findet der Zugriff auf externe
+Datenquellen statt. Einerseits ko¨nnen hier Daten im Volltext bezogen
+werden, andererseits ko¨nnen hier Konfigurationsdaten oder Indizes
+gespeichert werden.
+Index
+Innerhalb des Teilmoduls Index wird der Textkorpus zusammen mit
+allen wichtigen Informationen gehalten. Dazu geho¨rt insbesondere
+der Volltext-Index fu¨ r die Suche, als auch Informationen zu der An-
+zahl der Vorkommnisse potentieller Schlu¨ sselwo¨rter innerhalb des
+Korpus. Er bildet somit die Grundlage fu¨ r die Volltextsuche und die
+Schlu¨ sselwortextraktion.
+Search
+Das Teil-Modul Search handelt Suchanfragen ab. Die Resultate wer-
+den basierend auf dem Volltext Index generiert.
+InformationExtractor
+Die Extraktion von Schlu¨ sselwo¨rtern wird durch das Teilmodul In-
+formationExtractor abgehandelt. Basierend auf dem Index berech-
+net er eine Auswahl aus den potentiellen Kandidaten.
+3.1.6 Ablaufsicht
+Die Abbildung 3.3 gewa¨hrt einen U¨ berblick u¨ ber den Gesamtablauf
+vom Beginn der Nutzung des ikc-core bis hin zur Betrachtung der
+Suchresultate oder der extrahierten Schlu¨ sselwo¨rter.
+Der Benutzer ist Ursprung der Abla¨ufe: Er nutzt den ikc-core und
+hat darin eine externe Datenquelle (beispielsweise SFTP) hinterlegt.
+Sind diese Voraussetzungen erfu¨ llt, holt sich der ikc-core beim Data-
+Service die Freigabe fu¨ r die beno¨tigten Daten (shareData). Beno¨tigte
+Daten ko¨nnen die berechneten Indizes oder den Volltext der Dateien
+beinhalten. Der DataService antwortet und gibt damit die Freigabe
+zuru¨ ck.
+Die erhaltene Freigabe gibt der ikc-core im Prozess initIndex an den
+IndexService weiter. Hat dieser den angeforderten Index bereits gela-
+den, gibt er diesen an den ikc-core zuru¨ ck. Ist dies nicht der Fall, holt
+er sich beim DataService wiederum die beno¨tigten Daten (loadData).
+Diese ko¨nnen denselben Inhalt wie oben haben. Das ist abha¨ngig da-
+von, ob der Index bereits erstellt wurde. Ist dies nicht der Fall, muss
+dieser auf Basis aller Dateien erstellt werden. Ist er bereits erstellt,
+oder spa¨testens nach dessen Erstellung, wird dies an den ikc-core
+gemeldet.
+Nun kann der ikc-core die Funktionalita¨t des IndexService nutzen:
+Er hat Zugriff auf die Volltextsuche (search) und die extrahierten
+Schlu¨ sselwo¨rter (extractKeywords).
+3.1.7 Verteilung
+Wie oben schon angesprochen, findet die Entwicklung sowohl client-
+als auch serverseitig statt. Abbildung 3.4 gibt einen detaillierten U¨ ber-
+blick. Auf der Seite des Clients la¨uft der ikc-core im Browser. Dieser
+verwendet fu¨ r die Zwischenspeicherung von Daten eine in-browser
+Datenbank.
+3.2 Algorithmus
+Der Kern des Prototyps bilden die verschiedenen Algorithmen. Ba-
+sierend auf den externen Datenquellen ermo¨glichen sie eine Volltext-
+Suche und die Extraktion der relevanten Keyphrases. Nachfolgend
+werden die Funktionsweise als auch wichtigsten U¨ berlegungen dazu
+veranschaulicht. Basierend auf verschiedenen bestehenden Ansa¨tzen
+wird die Lo¨sungsfindung fu¨ r den hier verwendeten Algorithmus dar-
+gelegt.
+Um die relevanten Keyphrases fu¨ r ein spezifisches Dokument zu ex-
+trahieren, werden verschiedene Methoden aus dem Feld von Natu-
+ral Language Processing kombiniert mit statistischen Analsysen und
+heuristischen Vorgaben. Fu¨ r die Analyse der Keyphrases werden N-
+Gramme der Gro¨sse eins bis vier beru¨ cksichtigt. Nebst mo¨glichst tref-
+fenden Resultaten liegt der Fokus auch auf der raschen Aussortie-
+rung von ungeeigneten Kandidaten. Da die Berechnung der Relevanz
+der Rechen- und Speicher-intensivste Vorgang des Algorithmus ist,
+kann die Gesamtleistung des Algorithmus durch fru¨ he Aussschei-
+dung unno¨tiger Kandidaten enorm gesteigert werden. Die Anzahl
+mo¨glicher N-Gramme ist definiert als:
+Wobei N die maximale La¨nge eines N-Gramms und x die La¨nge des
+Textes repra¨sentieren.
+In der Abbildung 3.5 werden dafu¨ r der konzeptionelle Ablauf gra-
+phisch dargestellt und anschliessend die verschiedenen Elemente ge-
+nauer erla¨utert.
+3.2.1 Eingabe
+Als Eingabe in den Algorithmus wird ein Text erwartet. Im Fall die-
+ses Prototyps handelt es sich um einen Wikipedia-Artikel aus den
+Trainingsdaten. Um die folgenden Schritte besser zu illustrieren, wird
+der folgende Satz als Beispieltext verwendete. Mit einer La¨nge von 19
+Wo¨rter, besitzt er 70 mo¨gliche N-Gramme mit La¨nge eins bis vier.
+The Guardian newspaper was founded in 1821 as The Manche-
+”
+ster Guardian“, which head office is still located in Manchester.
+Mit einer La¨nge von 19 Wo¨rtern besitzt er 70 mo¨gliche N-Gramme
+mit einer La¨nge von eins bis vier.
+3.2.2 Vorverarbeitung (1)
+Im ersten Schritt wird der Text anhand verschiedener Vorgaben vorbe-
+reitet. Dazu werden zu Beginn die Buchstaben nach einem Punkt, ei-
+nem Fragezeichen, Ausrufezeichen oder einer Zeilenschaltung in die
+Kleinschreibung umgewandelt. Dies dient dazu Wo¨rter zu erkennen,
+welche als Nomen genutzt werden, jedoch nicht aus dieser Wortart
+stammen. Dadurch vera¨ndert sich der Beispielsatz geringfu¨ gig.
+the Guardian newspaper was founded in 1821 as The Manche-
+”
+ster Guardian“, which head office is still located in Manchester.
+Weiter wird nun der Text in Fragmente aufgeteilt. Dabei wird davon
+ausgegangen, dass sich relevante Keyphrases nicht u¨ ber ein Satzzei-
+chen erstrecken. Es entsteht eine Abfolge von Textfragmenten.
+(the Guardian newspaper was founded in 1821 as) (The Manche-
+ster Guardian) (which head office is still located in Manchester)
+Nach dem ersten Schritt wurde der Text mit 19 + 18 + 17 + 16 = 70
+mo¨glichen N-Grammen in eine Liste von Textfragmenten mit (8 + 7 +
+6 + 5) + (3 + 2 + 1) + (8 + 7 + 6 + 5) = 58 mo¨glichen N-Grammen
+transformiert. Dadurch konnten bereits 12 Kandidaten ausgeschlos-
+sen werden.
+3.2.3 Text Zerlegung (2)
+Vor der Bildung der eigentlichen Kandidaten werden nun die Text-
+fragmente durch Tokenization in eine Liste von einzelnen Wo¨rter auf-
+geteilt. Ebenfalls werden dabei unerwu¨ nschte Sonderzeichen am An-
+fang oder am Ende eines Wortes entfernt. Dabei handelt es sich in
+erster Linie um alle anderen Satzzeichen, welche bei der Aufteilung
+des Textes in Text-Fragmente nicht beru¨ cksichtigt wurden.
+[the, Guardian, newspaper, was, founded, in, 1821, as], [The,
+Manchester, Guardian], [which, head, office, is, still, located, in,
+Manchester]
+3.2.4 Generierung m¨oglicher Keyphrases (3)
+Anhand der generierten Wortlisten ko¨nnen nun die verschiedenen N-
+Gramme generiert werden. Es entsteht eine Liste von N-Grammen der
+La¨nge von eins bis vier.
+[the Guardian newspaper was, the Guardian newspaper, the Gu-
+ardian, the, ... , located in Manchester, located in, located, in
+Manchester, in, Manchester]
+3.2.5 Filter mittels POS-Tagger (4)
+Wie von Parameswaran et al. (2010) beschrieben, folgen relevante
+Keyphrases bestimmten grammatikalischen Regeln. Diese sind wie
+folgt definiert:
+1. Eine relevante Keyphrase besteht mindestens aus einem Nomen.
+Somit entfallen Keyphrases wie zum Beispiel was oder located in.
+2. Eine relevante Keyphrase beginnt nicht mit einem Pronomen,
+einem Verb oder einem Partikel. Diese Regel sortiert Keyphrases
+wie the Guardian newspaper aus.
+3. Eine relevante Keyphrase endet nicht mit einem Pronomen, Verb
+oder Partikel. Diese Regel sortiert zusa¨tztlich Keyphrases wie
+Guardian newspaper was aus.
+Allerdings gibt es auch Ausnahmen: Es existieren Keyphrases, wel-
+che kein eigentliches Nomen enthalten. In der englischen Sprache
+gibt es beispielsweise zahlreiche Eigennamen, welche ebenfalls po-
+tentielle Keyphrases darstellen ko¨nnen. Diese beginnen oft mit einem
+Grossbuchstaben. Also kann weiter folgende Regel definiert werden:
+4. Eine relevante Keyphrase beginnt mit einem Grossbuchstaben.
+Wie bereits erwa¨hnt, wurden vorga¨ngig Wo¨rter innerhalb des
+Textes nach bestimmten Satzzeichen in die Kleinschreibung um-
+gewandelt. Dieser Vorgang schliesst diese Wo¨rter von dieser Re-
+gel aus. Dadurch wird zum Beispiel The Manchester Guardian
+weiter beachtet, auch wenn es grundsa¨tzlich der zweiten Regel
+widerspricht, da diese mit einem Pronomen startet.
+Um diese Regeln umszusetzen, wird ein Part-Of-Speech-Tagger ver-
+wendet. Dabei handelt es sich um einen Algorithmus, welcher die
+Wortarten von gegebenen Wo¨rtern bestimmt. Um den Regeln zu ent-
+sprechen, muss eine Keyphrase sowohl Regeln eins und drei folgend,
+zusa¨tzlich entweder der Regel zwei, Regel vier oder beiden folgen.
+Mittels dieser drei Regeln ko¨nnen alle mo¨glichen Kandidaten, ausser
+den folgenden ignoriert werden:
+[Guardian newspaper, Guardian, newspaper, 1821, The Man-
+chester Guardian, The Manchester, The, Manchester Guardian,
+Manchester, Guardian, head office, head, office, Manchester]
+Damit bleiben noch 14 mo¨gliche Keyphrases von urspru¨ nglich 70.
+Nun werden gleiche Keyphrases zusammengefasst, indem sie zusam-
+men mit der jeweiligen Anzahl Vorkommnisse kombiniert werden.
+Das reduziert die Anzahl unterschiedlicher Keyphrases auf 12 (Tabel-
+le 3.3). Ebenfalls wird jeweils das erste Wort einer Keyphrase kleinge-
+schrieben, falls es sich nicht um ein Nomen handelt. So kann sicher-
+gestellt werden, dass zum Beispiel das 1-Gramm The“ im na¨chsten
+”
+Schritt tiefer bewertet wird. Da die Grossschreibung nur im Kontext
+der Keyphrase The Manchester Guardian von Bedeutung ist.
+Tabelle 3.3: Keyphrase mit Anzahl Vorkommnissen
+3.2.6 Berechnung der Relevanz (5)
+Um die verschiedenen Keyphrases zu gewichten, wird ein individuel-
+ler Score pro Keyphrase ausgerechnent. Dazu werden folgende Metri-
+ken beno¨tigt (Tabelle 3.4).
+Tabelle 3.4: Beno¨tigte Metriken
+Basierend auf den eingefu¨ hrten Metriken wird mit Hilfe einer ange-
+passten Version der Similarity-Formel1 des Apache Lucene Projekts ge-
+arbeitet. Die verwendet Formel fu¨ r die Berechnung des Scores sieht
+folgendermassen aus:
+Gleichung 3.1 repra¨sentiert die Ha¨ufigkeit der Keyphrase innerhalb
+des gegebenen Dokuments. Wenn sich Anzahl erho¨ht, steigt auch der
+tf -Wert. Um den Einfluss diese Faktors zu reduzieren, wird der Wert
+mittels der Wurzelfunktion etwas geda¨mpft.
+Neben der Ha¨ufigkeit innerhalb des Dokuments ist die inverse Ha¨u-
+figkeit (Gleichung 3.2) ein wichtiger Wert. Diese basiert auf den Vor-
+kommnissen einer Keyphrase u¨ ber den gesamten Korpus. Dadurch
+wird die Einzigartigkeit der Keyphrase innerhalb des Korpus ausge-
+dru¨ ckt. Dieser Wert sinkt, je o¨fter die gleiche Keyphrase in anderen
+Dokumenten enthalten ist. Mittels der Addition von eins im Nenner
+innerhalb der Logarithmus-Funktion wird eine Division durch Null
+verhindert.
+Wu¨ rde der Score lediglich mit den beiden Faktoren Gleichung 3.1 und
+Gleichung 3.2 berechnet, so wa¨ren die berechneten Scores aus Doku-
+menten mit unterschiedlicher Textla¨nge nicht vergleichbar. Auch die
+Verwendung eines Schwellenwertes fu¨ r die Begrenzung der Anzahl
+Keyphrases wa¨re verunmo¨glicht. Eine Normalisierung u¨ ber die Do-
+kumentenla¨nge ist somit notwendig. Dazu wird die Gleichung 3.3
+eingesetzt.
+3.2.7 Auswahl (6)
+Schlussendlich werden die berechneten Keyphrases mit Hilfe eines
+Schwelwerts und anhand deren Inhalt begrenzt. Damit ko¨nnen eine
+sinnvolle Anzahl an Dokumenten zuru¨ ckgegeben. Im Gegensatz zu
+einer Begrenzung der Anzahl Keyphrases kann mit einem Schwell-
+wert je nach Text eine Anzahl an Keyphrases zuru¨ ckgegeben werden,
+1TFIDFSimilarity (Lucene 4.5.0 API) (o. J.)
+welche fu¨ r den Text ideal ist. Beispielsweise macht es wenig Sinn, dass
+aus einem kurzen Text gleich viele Keyphrases extrahiert werden wie
+aus einem langem. Denn aufgrund der unterschiedlichen La¨nge ent-
+halten die beiden Texte prinzipiell eher nicht gleich viel relevanten
+Inhalt. Weiter werden Keyphrases gefiltert welche in anderen Key-
+phrases enthalten sind. So werden zum Beispiel head und office ge-
+filtert da beide im Keyphrase head office enthalten sind.
+3.2.8 Dokumente fu¨r Schlu¨sselwort
+Die gegenteilige Operation der Keyphrase-Extraktion ist die Extrakti-
+on aller Dokumente fu¨ r eine bestimmte Keyphrase. Dabei wird eine
+Liste an Dokumenten erwartet, in welchen eine bestimmte Keyphrase
+einen hohen Score ausweist.
+Abbildung 3.6: Ablauf: relevante Dokumente fu¨ r eine Keyphrase
+1. Dazu werden in einem ersten Schritt alle mo¨glichen Dokumen-
+te ausgewa¨hlt. In dieser Menge an Dokumenten kommt die ent-
+sprechende Keyphrase mindestens einmal vor, jedoch ungeach-
+tet der Relevanz der Keyphrases fu¨ r das jeweilige Dokument.
+2. In einem na¨chsten Schritt wird fu¨ r jedes Dokument der jeweili-
+gen Score fu¨ r die entsprechende Keyphrase berechnet. Die Be-
+rechnung folgt dabei exakt dem bereits vorgestellten Ablauf
+(Unterabschnitt 3.2.6).
+3. Nun wird ebenfalls die Anzahl an Resultaten mit Hilfe eines
+Schwellwerts reduziert. Somit kann die Auswahl auf die wirk-
+lich relevanten Dokumente fu¨ r die entsprechende Keyphrase
+vermindert werden.
+3.3 Integration des Prototypen
+Basierend auf der ausgefu¨ hrten Architektur (Abschnitt 3.1) werden
+im folgenden Abschnitt die wichtigsten Software-Konzepte erla¨utert.
+Diese werden kurz zusammengefasst, anschliessend folgt eine Be-
+schreibung der Integration des Prototyps in den bestehenden ikc-
+core.
+3.3.1 U¨ bersicht
+Im Klassendiagramm auf Abbildung 3.7 sieht man einen U¨ berblick
+u¨ ber den zu entwickelnden Prototypen. Abgebildet sind die wich-
+tigsten Klassen und deren Beziehungen untereinander. Zuna¨chst lie-
+gen die zwei Teile ikc-core und Prototype vor. Der ikc-core ist der
+aus dem Forschungsprojekt IKC herausgehende bestehende Proto-
+typ. Dieser nimmt Gebrauch von den beiden vom Prototypen zur
+Verfu¨ gung gestellten Schnittstellen des Index- und des DataServices.
+Grundsa¨tzlich besteht der Prototyp aus den Komponenten Index-
+und DataService. Diese verwenden das von ausserhalb verfu¨ gbare
+MessageModel. Es entha¨lt die Protokolle fu¨ r die jeweilige Kommuni-
+kation und wird somit auch vom ikc-core in Anspruch genommen.
+Die genauen Abla¨ufe und auch die Implementation des Index- bezie-
+hungsweise DataServices ist unter dem Abschnitt der technischen
+Umsetzung (Kapitel 4) zu finden.
+Der Kern der Software bildet der Algorithmus. Dieser ist, neben der
+Suchfunktionalita¨t und dem Aufbau der Indizes, ein Hauptbestand-
+teil des IndexService. Abbildung 4.12 gewa¨hrt einen U¨ berblick u¨ ber
+die beteiligten Komponenten. Als Grundlage beno¨tigt der IndexSer-
+vice alle zu indexierenden Dateien im Volltext. Deren Quelle ist der
+DataService. Der Index- und der DataService bilden zusammen den
+eigentlichen Prototypen. Wie in der Bausteinsicht auf Abbildung 3.2
+zu erkennen, gibt es neben der Integration der Services auch eine
+Einbindung in die bestehende Benutzeroberfla¨che des ikc-core.
+3.3.2 Schnittstellen
+Der Prototyp soll sich mo¨glichst nahtlos in den ikc-core integrieren.
+Um dies zu erreichen sollen in keiner Situation Funktionen des ikc-
+cores blockiert werden durch den Prototyp.
+So werden Suchresultate des Index innerhalb der bestehenden Suche
+integriert und bei Bedarf aktualisiert. Die verschiedenen Resultate der
+unterschiedlichen Quellen sollen in Echtzeit nach ihrem Eintreffen
+dargestellt werden. Somit wird sich die Liste mit Resultaten trotz glei-
+chem Suchbegriff u¨ ber die Zeit vera¨ndern, da weitere Resultate von
+entfernten Quellen eintreffen. Bei der Auswahl eines Resultats wird
+es herko¨mmlicher Node dargestellt.
+Weiter werden extrahierte Keyphrases klar getrennt von den bestehen-
+den Eigenschaften des Nodes als Chips oberhalb des Titels dargestellt
+werden. Sowohl ein Dokument mit entsprechenden Keyphrases als
+auch eine Keyphrase mit den verknu¨ pften Dokumenten werden als
+Node dargestellt. Abbildung 3.8 zeigt einen Entwurf dieser Integrati-
+on.
+Um die Schnittstellen des Prototyps ideal zu verwenden und die
+obigen Oberfla¨chenanpassungen umzusetzen, sind Anpassungen be-
+ziehungsweise Erweiterungen in der Software-Struktur des ikc-core
+no¨tig.
+Auf obigem Klassendiagramm (Abbildung 3.7) ist ersichtlich, dass
+sowohl der IndexService, als auch der DataService externe Schnitt-
+stellen bereithalten.
+3.4 Datenfreigabe
+Fu¨ r den Auftraggeber ist eine sichere Kommunikation, stetige Trans-
+parenz und Kontrolle u¨ ber den Verbleib von benutzergenerierten Da-
+ten von hoher Wichtigkeit. Um diesen Anforderungen gerecht zu
+werden, wurde unter anderem ein Datenfreigabe-Konzept entwickelt.
+Dieses basiert auf Einweg-Tokens, welche als Schlu¨ ssel fu¨ r die Freiga-
+be verwendet werden. Dabei fordert einen Accessor beim Provider den
+Zugriff auf eine Ressource an. Der Provider ha¨lt dabei die Informatio-
+nen fu¨ r den Zugriff auf die Ressourcen und der DataService regelt
+den tasa¨chlichen Zugriff auf die Ressource. In Abbildung 3.9 ist der
+Ablauf genauer aufgezeigt:
+• Als erster Schritt fordert der Accessor beim Provider Zugriff auf
+eine Ressource.
+• Der Provider sendet nun die no¨tigen Informationen fu¨ r die Ver-
+bindung auf die Ressource an den DataService und fordert einen
+Token.
+• Sobald der Token generiert wurde, erha¨lt der Provider dieser
+und sendet ihn an den Accessor.
+• Anschliessend kann der Accessor mithilfe des Token beim Data-
+Service den Inhalt der Ressource anfragen.
+• Beim Erhalt eines Token u¨ berpru¨ ft nun den DataService den To-
+ken auf deren Gu¨ ltigkeit u¨ berpru¨ ft. Ist der Token gu¨ ltig, werden
+die Daten anhand der Informationen zur Verbindungen von der
+externen Datenquelle bezogen und an den Accessor geliefert. An-
+schliessend wird der Token gelo¨scht, so dass er nicht wiederholt
+verwendet werden kann.
+3.5 Auto-Indexierung
+Durch die Auto-Indexierung der externen Datenquellen, wird die
+Volltext-Suche mo¨glich und bietet die Grundlage fu¨ r die Keyphrase-
+Extraktion. Die Indexierung der Datenquellen, wird durchgefu¨ hrt so-
+bald der Benutzer die entsprechenden Berechtigungen hinterlegt hat.
+Dazu werden sa¨mtliche Elemente geladen und verarbeitet. Falls schon
+ein Index existiert, wird dieser eingelesen und mit den gea¨nderten
+oder neuen Elemente aktualisiert. Der Index ist aufgeteilt in zwei Be-
+reiche: Zum einen der Suche-Index, welcher mit Hilfe der Bibliothek
+elasticlunr erstellt wird. Zum anderen ha¨lt der Frequenz-Index die
+mo¨glichen Keyphrases zusammen mit Ihrer Frequenz im Korpus und
+den jeweilig Dokumente, welche das Keyphrase enthalten.
+3.6 Variantendiskussion
+Basierend auf dem Stand der Technik (Kapitel 2) wurden verschie-
+dene Optionen fu¨ r die Umsetzung no¨tiger Funktionen getestet und
+evaluiert. Dieser Abschnitt zeigt die grundlegenden Gru¨ nde und U¨ b-
+erlegungen, welche fu¨ r oder gegen eine Bibliothek oder allgemein
+eine Variante sprechen.
+3.6.1 Algorithmus
+Die Berechnung der Relevanz (Unterabschnitt 3.2.6) ist eine der zen-
+tralsten Aufgaben des Algorithmus. Die Schwierigkeit dabei liegt in
+der beno¨tigten Ausgewogenheit der gesuchten Formel. Die relevan-
+te Keyphrases sollen sowohl spezifisch fu¨ r den jeweiligen Text sein,
+jedoch auch ein gewisse Generalisierung aufweisen. Dazu wurden
+verschiedenen Varianten gepru¨ ft:
+• Die Standard TF-IDF (Gleichung 3.5) ist eine der verbreitetsten
+Formeln zur Berechnung der Relevanz. Sie ist leicht zu berech-
+nen und gut geeignet fu¨ r eine Suche oder die Bestimmung von
+a¨hnlichen Dokumenten. Jedoch ist sie nicht normalisiert und so-
+mit ist der Vergleich von Dokumenten unterschiedlicher La¨ngen
+eher schwer. Dies wird aber beno¨tigt, um einen einheitlichen
+Schwellenwert fu¨ r relevante Keyphrases zu definieren. Weiter
+ko¨nnen sehr spezifische Begriffe extrem hoch gewertete Key-
+phrases werden. Obwohl sie fu¨ r eine Abstraktion des Textes
+nicht optimal sind.
+• Basierend auf der Gleichung 3.5 wird bei der Gleichung 3.6 der
+IDF Wert mit der Ha¨ufigkeit (termFreq) des Keyphrase innerhalb
+des Korpus berechnet und nicht mit der Anzahl Dokumente
+(docFreq), welche diese Keyphrase entha¨lt.
+• Die Gleichung 3.7 erweitert die Gleichung 3.6 mit einer Nor-
+malisierung. Dadurch werden Keyphrases von Dokumenten ver-
+schiedener La¨ngen vergleichbar. Dabei wird der TF Wert durch
+die La¨nge des jeweiligen Dokument dividiert.
+• Gleichung 3.8 beschreibt eine von Lucene verwendete Formel
+zur Berechnung der Relevanz. Dazu wurde TF-IDF als Grund-
+lage verwendet und angepasst. Hierfu¨ r wurde anstelle des TF-
+Wertes, die Wurzel davon und als Ersatz des IDF-Wertes das
+Quadrat des IDF-Wertes verwendet. Weiter wurde eine Norma-
+lisierung eingefu¨ hrt, dazu wird der gesamte Term durch die
+Wurzel der Textla¨nge dividiert. Mit diesen Anpassungen wurde
+der Stellenwert des IDF-Wertes erho¨ht, damit werden automa-
+tisch Keyphrases, welche sehr selten in anderen Dokumenten
+vorkommen ho¨her gewichtet. Dies geschieht durch die Quadrie-
+rung des IDF-Wertes und der Radizierung des TF-Wertes.
+3.6.2 Kommunikation
+Wiederum bescha¨ftigt sich der Abschnitt Kommunikation mit der
+grundlegenden Infrastruktur zum Austausch von Informationen. Un-
+terabschnitt 3.6.3 geht anschliessend auf die Form ein, in welcher die
+Daten effektiv ausgetauscht werden.
+Websocket
+Fu¨ r den Transport u¨ ber das Netzwerk sind Websockets eine erste
+Mo¨glichkeit. Im Umgang mit kleinen Dateien sind Websockets eine
+einfache und schlanke Lo¨sung. Fu¨ r grosse Dateien sind sie alleine
+aber nicht ausreichend, da man schnell den verfu¨ gbaren Arbeitsspei-
+cher u¨ berschreitet und auch die maximale String-La¨nge begrenzt ist.
+Fu¨ r den Umgang mit grossen Dateien ist somit die Verwendung von
+Streams und Buffers Pflicht.
+Stream
+Fu¨ r einen asynchronen Datentransfer von gro¨sseren Dateien u¨ ber das
+Netzwerk sind Streams no¨tig. Sie funktionieren prinzipiell analog zu
+grundlegenden Streams in Unix-Systemen. Streams teilen die Gesamt-
+heit der zu sendenden oder zu empfangenden Daten in eine Sequenz
+von kleineren Daten auf. Die U¨ bertragung verla¨uft kontinuierlich.
+Die Verwendung von Streams auf Basis von Websockets fu¨ hrte mit
+der Bibliothek websocket-stream2 leider ebenfalls nicht zum Erfolg. Die
+Verwendung der verschiedenen Streams Probleme fu¨ hrte zu Proble-
+men, wessen Ursprung nicht gefunden werden konnte.
+2https://github.com/maxogden/websocket-stream
+Zu diesem Zeitpunkt war festgelegt, dass fu¨ r die U¨ bermittlung defi-
+nitiv Streams verwendet werden mu¨ ssen. Also konnte die Recherche
+zumindest weiter eingeschra¨nkt werden. Der Fokus wurde auf Biblio-
+theken gesetzt, welche auf Websockets und Streams basieren.
+Bibliotheken
+Websockets als Grundlage erscheinen sinnvoll. Allerdings kann deren
+Verwendung mit Hilfe von Zusatzbibliotheken vereinfacht und deren
+Funktionalita¨t erweitert werden.
+Delivery.js3 war die na¨chste interessante Bibliothek. Der Status Expe-
+”
+rimental“war nicht der Grund fu¨ r den Entscheid gegen diese Biblio-
+thek. Vielmehr ist sie fu¨ r eine Verwendung direkt mit FileStreams,
+also direkt mit der I/O vorgesehen. Zwar werden im Prototypen auch
+FileStream verwendet, jedoch werden die Streams nicht direkt u¨ ber
+das Netzwerk weitergeleitet, sondern die einzulesenden Daten mu¨ s-
+sen zusa¨tzlich noch vera¨ndert werden. Delivery.js grundsa¨tzlich ba-
+siert auf node-streams und socket.io.
+Die grosse Verbreitung von socket.io war der Grund fu¨ r eine vertief-
+te Recherche in diese Richtung. Schnell wurden auch diverse Zusatz-
+bibliotheken gefunden, welche vielversprechend aussahen. socket.-
+io-stream ist eine Erweiterung fu¨ r die Verwendung von Streams, wel-
+che einfach in Kombination mit socket.io verwendet werden kann.
+Sie wird als Hu¨ lle um den grundlegenden Stream gelegt. Diese Vari-
+ante fu¨ hrte schnell zu guten Ergebnissen, wurde deshalb auch weiter
+eingesetzt.
+3.6.3 Datentransfer
+Ein erster Versuch war das simple Senden von Daten u¨ ber die zur
+Verfu¨ gung stehende Infrastruktur. Dies funktioniert bei kleinen Da-
+ten ohne interne Struktur recht einfach. Allerdings sind die Daten
+im vorliegenden Fall teilweise sehr gross und auch ist fu¨ r eine effi-
+ziente Verarbeitung auch eine gewisse interne Struktur in Form von
+Message-Objekten notwendig. Diese Strukturen sollen sowohl client-
+als auch serverseitig verfu¨ gbar sein. Also mu¨ ssen diese in irgendeiner
+Form mit u¨ bermittelt werden. Dazu mu¨ ssen die Strukturen in eine
+Form gebracht werden, welche u¨ ber das Netzwerk u¨ bermittelt wer-
+den kann. Dieser Prozess wird Serialisierung genannt, welcher weiter
+auch fu¨ r die Persistenz eingesetzt werden kann.
+3https://github.com/liamks/Delivery.js
+JSON
+JSON ist ein textbasiertes Format, welche die Struktur und den Inhalt
+von Objekten abbildet. Es ist sehr verbreitet und in Javascript stan-
+dardma¨ssig verfu¨ gbar. Allerdings ist es fu¨ r den vorliegenden Anwen-
+dungsfall nicht ideal, da es ohne weiteres nicht mit grossen Dateien
+umgehen kann und auch nicht sonderlich performant ist.
+Ein oft gesehenes weiteres Problem ist die Verwendung von JSON-
+.parse und oder JSON.stringify. Diese sind na¨mlich beschra¨nkt auf
+die maximale String-La¨nge. Fu¨ r die Verwendung dieser Methoden
+mu¨ ssten die Daten somit vorga¨ngig aufteilt werden. Andernfalls kom-
+men diese Funktionen schnell an ihre Grenzen. Fu¨ r diesen Zweck gibt
+es aber auch Erweiterungen:
+Die Bibliothek bfj4 ku¨ ndigt zwar an mit grossen Dateien arbeiten zu
+ko¨nnen, verwendet im Hintergrund aber die oben genannten Funktio-
+nen, welche nicht performant im Umgang mit grossen Dateien sind
+und zusa¨tzlich ebenfallls auf die maximale String-La¨nge beschra¨nkt
+sind.
+MessagePack
+Wie auch in Nang (2016)[S.69-70] angemerkt erzielt man mit Messa-
+gePack fu¨ r die Serialisierung a¨hnliche Resultate. Diese sind aber klei-
+ner als mit JSON. Darum wurde hier auch MessagePack bevorzugt.
+MessagePack ist ebenfalls sehr verbreitet und es gibt zahlreiche Im-
+plementationen in verschiedenen Programmiersprachen.
+3.6.4 Persistenz
+Betreffend der Persistenz gibt es, wie im (Abschnitt 2.11) besprochen,
+unter vielen anderen Mo¨glichkeiten Dropbox, stor.j und SFTP. Diese
+besitzen alle ihre spezifischen Vor- und auch Nachteile. Trotz der be-
+reits bestehenden Basis der Anbindung an Dropbox, wurde bewusst
+auf die Verwendung verzichtet. Wa¨hrend der Entwicklung dieser An-
+bindung kamen immer wieder Probleme mit der Begrenzung der Zu-
+griffe auf. Diese konnten zwar mit einer Art Stapelverarbeitung ein-
+geda¨mmt werden, allerdings ist die Anbindung trotzdem nicht ideal
+fu¨ r die erwarteten grossen Datenmengen. Das Riskio von weiteren
+Begrenzungen und mangelnder Performance soll verhindert werden.
+Darum wurden Alternativen gepru¨ ft.
+4https://github.com/philbooth/bfj
+Da der Projektparnter grossen Wert auf die Sicherheit und Trans-
+parenz der benutzereigenen Daten legt, ist stor.j eine interessante
+Option. Es basiert auf einem komplett anderen Ansatz als Dropbox
+oder SFTP, welcher zusa¨tzliche Sicherheit verspricht. Bei der Entwick-
+lung einer kleinen Demo-Anbindung konnten aber nicht alle Anfor-
+derungen erfu¨ llt werden. Die Entwicklung der Bibliothek ist noch im
+Anfangsstadium. Darum wurde gegen die Verwendung entschieden.
+Stor.j gilt es aber sicherlich im Auge zu behalten, da die bestehenden
+Ansa¨tze durchaus vielversprechend scheinen.
+Schlussendlich wurde in Absprache mit dem Projektparter entschie-
+den, dass eine SFTP-Anbindung die beste Lo¨sung fu¨ r die Entwick-
+lung des Prototypen ist. So sind praktisch keinerlei Beschra¨nkungen
+oder Risiken zu befu¨ rchten. Mit einem eigenem Server und der ei-
+genen Anbindung sind die Mo¨glichkeiten nahezu unbeschra¨nkt. Der
+ausschlaggebende Punkte war aber der Fokus dieser Arbeit. Dieser
+soll na¨mlich auf der Volltextsuche und der Extraktion und nicht auf
+der Anbindung von externen Services liegen.
+Kapitel 4
+Technische Umsetzung
+Die technische Umsetzung befasst sich mit der Implementation der
+aus dem Lo¨sungsdesign gewonnenen Erkenntnisse. Dazu werden die
+vorgestellten Prinzipien des Software-Designs und der Algorithmus
+umgesetzt. Hierfu¨ r werden diese konkret in Typescript programmiert
+und innerhalb der Applikationsstruktur platziert. Diese Struktur ba-
+siert zum einen auf dem bestehenden ikc-core und zum anderen auf
+der vorgestellten Struktur innerhalb des Kapitels der Architektur. Punk-
+tuell wird die Implementation zusa¨tzlich durch die Nutzung von ver-
+schiedenen externen Bibliotheken optimiert.
+Die gezeigten Code-Ausschnitte werden bei Bedarf fu¨ r dieses Doku-
+ment angepasst. Diese A¨ nderungen dienen der Versta¨ndlichkeit im
+Kontext des Dokuments und beinhalten lediglich strukturelle, jedoch
+keine A¨ nderungen an der Applikationslogik.
+Der Kern der Software bildet der Algorithmus, dieser ist, neben der
+Suchfunktionalita¨t und dem Aufbau der Indizes, ein Hauptbestand-
+teil des IndexService. Der Abschnitt 4.1 gewa¨hrt einen U¨ berblick
+u¨ ber die beteiligten Komponenten und deren ungefa¨hre Funktiona-
+lita¨t. Als Grundlage beno¨tigt der IndexService alle zu indexierenden
+Dateien im Volltext. Deren Quelle ist der DataService. Der Index-
+und der DataService bilden zusammen den eigentlichen Prototypen.
+Eine kurze Einfu¨ hrung folgt in den folgenden Abschnitten. Erwa¨hn-
+enswerte weitere Themen in diesem Kapitel sind der Umgang mit Da-
+ten und die Kommunikation zwischen den verschiedenen Services.
+Wie in der Bausteinsicht auf Abbildung 3.2 zu erkennen ist, gibt es
+neben der Integration der Services auch eine Einbindung in die beste-
+hende Benutzeroberfla¨che des ikc-core.
+4.1 IndexService
+Innerhalb des IndexService werden die prima¨ren Funktionen des
+Prototyps fu¨ r die Schlu¨ sselwort-Extraktion gekapselt. Abbildung 4.1
+zeigt dabei, wie die wichtigsten Klassen miteinander kommunizieren.
+Anschliessend werden zentrale Abla¨ufe genauer belichtet.
+• Main: Die Klasse Main ist die zentrale Starter-Klasse des ganzen
+Services. Dazu initialisiert sie den Server.
+• Server: Hier werden Netzwerk-Anfragen entgegengenommen,
+und gegebenenfalls wird eine Antwort zuru¨ ckgeschickt.
+• Index: Das Datenobjekt-Index ha¨lt alle Daten, welche fu¨ r die
+Suche als auch fu¨ r die Extraktion von Keyphrases und Doku-
+menten beno¨tigt werden. Diese Klasse wird jedoch zur reinen
+Datenhaltung verwendet und beinhaltet keinerlei implementier-
+te Logik. Sie beinhaltet den Volltext-Index und den Frequenz-
+Index.
+• MessageManager: Dies ist der Kern des IndexService: Anfra-
+gen werden basierend auf deren Typ fu¨ r die Verarbeitung zu
+den drei Services SearchService, ExtractionService und In-
+dexInitService weitergeleitet.
+• IndexInitService: Die Aufgabe, einen Index zu laden, hat der
+IndexInitService. Dazu kann er u¨ ber den DataAccessService
+auf den DataService zugreifen, um die beno¨tigten Daten abzu-
+fragen. Nach der Initialisierung wird der entsprechende Index
+innerhalb des IndexStore abgelegt.
+• SearchService: Dieser Service ist verantwortlich fu¨ r die Abarbei-
+tung von Suchanfragen. Als Grundlage fu¨ r die Resultate wird
+der Volltext-Index verwendet.
+• ExtractionService: Die Extraktion von Keyphrases oder Doku-
+menten wird durch den ExtractionService erledigt.
+• DataAccessService: Fungiert als Schnittstelle zum DataService.
+• IndexStore: Beinhaltet alle geladenen Index-Objekte und stellt
+diese zur Verfu¨ gung.
+4.1.1 Integration des Algorithmus
+Der vorgestellte Algorithmus wird innerhalb des IndexService in der
+Klasse ExtractionService implementiert. Sie stellt zwei Methoden,
+mit denen relevante Keyphrases (getKeyphraseForDocument) oder re-
+levante Dokumente (getDocumentsForKeyphrase) berechnet werden
+ko¨nnen, bereit. Da sie Funktionen bereit stellt, jedoch selbst keine
+Eigenschaften beispielsweise in Form von Variablen ha¨lt, muss ihr
+der beno¨tigte Index mit der aufgerufenen Funktion zur Verfu¨ gung
+gestellt werden. Im Folgenden wird die Implementation der verschie-
+denen Schritte des Algorithmus genauer erla¨utert.
+Vorverarbeitung
+Im ersten Schritt geht es um die Vorverarbeitung des Texts. Dazu
+wird regex verwendet, dadurch kann die Gro¨sse des Codes erheblich
+reduziert werden im Vergleich zu einer Implementation ohne regex.
+Codeausschnitt 1 zeigt die zwei no¨tigen Schritte:
+• Zuerst wird der Buchstabe, welcher auf einen Punkt, Fragezei-
+chen, Ausrufezeichen oder Zeilenschaltung folgt, in die Klein-
+schreibung umgewandelt. Mithilfe des regex-Ausdrucks werden
+diese erkannt und mittels einer anonymen Funktion transfor-
+miert.
+• Anschliessend werden die einzelne Fragmente des Textes gebil-
+det. Dazu wird ein regex-Ausdruck verwendet, welcher eine Kol-
+lektion von Textfragmenten zuru¨ ckgibt. Anders als beim vorhe-
+rigen Schritt, wird eine Negation innerhalb des Ausdrucks ver-
+wendet. Dadurch werden nur Textfragmente ausgewa¨hlt, wel-
+che die entsprechenden Zeichen nicht enthalten. Somit entha¨lt
+ein Fragment den Text zwischen einem Punkt und einem Kom-
+ma oder innerhalb zweier Klammern.
+Listing 1: Vorverarbeitung
+Text Zerlegung
+Die Textfragmente werden nun in die verschiedenen Wo¨rter zerlegt.
+Codeausschnitt 2 zeigt die no¨tigen Schritte dazu:
+• Alle Fragmente werden bei einem Leerschlag aufgesplittet (Zei-
+le 3).
+• weiter werden ’s“ durch “ ersetzt (Zeile 6). Der apostrophier-
+” ”
+te Buchstabe S steht im Englischen (unter anderem) fu¨ r den Ge-
+nitiv. Da dies fu¨ r die Auswertung (momentan) keine weitere Be-
+deutung hat, wird es ersatzlos gestrichen.
+• Anschliessend werden unerwu¨ nschte Sonderzeichen zu Beginn
+oder am Ende eines Wortes mithilfe der Funktion trimmer der
+elasticlunr Bibliothek entfernt (Zeile 5).
+• Zum Schluss werden neu entstandere leere Wo¨rter gefiltert, um
+diese nicht weiter zu verarbeiten (Zeile 9-11).

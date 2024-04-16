@@ -1,0 +1,855 @@
+ALTAR IV: Epidemiologie des präklinischen
+Airwaymanagements
+Inaugural- Dissertation
+zur Erlangung des Grades eines Doktors der Medizin
+des Fachbereichs Humanmedizin
+der Justus- Liebig- Universität Gießen
+vorgelegt von Martin Schürtz
+aus Düsseldorf
+Gießen 2023
+Aus dem Fachbereich Medizin der Justus- Liebig- Universität Gießen
+Abteilung Anästhesiologie und operative Intensivmedizin
+Gutachter: Prof. Dr. med. Michael Sander
+Gutachter: Priv.- Doz. Dr. med. Valesco Mann
+Tag der Disputation: 22.11.2023
+Ehrenwörtliche Erklärung
+„Hiermit erkläre ich, dass ich die vorliegende Arbeit selbständig und ohne unzulässige
+Hilfe oder Benutzung anderer als der angegebenen Hilfsmittel angefertigt habe. Alle
+Textstellen, die wörtlich oder sinngemäß aus veröffentlichten oder nichtveröffentlichten
+Schriften entnommen sind, und alle Angaben, die auf mündlichen Auskünften beruhen,
+sind als solche kenntlich gemacht. Bei den von mir durchgeführten und in der Dissertation
+erwähnten Untersuchungen habe ich die Grundsätze guter wissenschaftlicher Praxis, wie
+sie in der „Satzung der Justus- Liebig- Universität Gießen zur Sicherung guter
+wissenschaftlicher Praxis“ niedergelegt sind, eingehalten sowie ethische,
+datenschutzrechtliche und tierschutzrechtliche Grundsätze befolgt. Ich versichere, dass
+Dritte von mir weder unmittelbar noch mittelbar geldwerte Leistungen für Arbeiten
+erhalten haben, die im Zusammenhang mit dem Inhalt der vorgelegten Dissertation
+stehen, und dass die vorgelegte Arbeit weder im Inland noch im Ausland in gleicher oder
+ähnlicher Form einer anderen Prüfungsbehörde zum Zweck einer Promotion oder eines
+anderen Prüfungsverfahrens vorgelegt wurde. Alles aus anderen Quellen und von anderen
+Personen übernommene Material, das in der Arbeit verwendet wurde oder auf das direkt
+Bezug genommen wird, wurde als solches kenntlich gemacht. Insbesondere wurden alle
+Personen genannt, die direkt und indirekt an der Entstehung der vorliegenden Arbeit
+beteiligt waren. Mit der Überprüfung meiner Arbeit durch eine
+Plagiatserkennungssoftware, bzw. ein internetbasiertes Softwareprogramm, erkläre ich
+mich einverstanden.“
+Gießen, 1.2.2023
+1 Einleitung
+1.1 Die Bedeutung des präklinischen Atemwegsmanagements im Rettungsdienst
+Die in dieser Dissertation verwendeten Personenbezeichnungen beziehen sich
+immer gleichermaßen auf weibliche und männliche Personen. Auf eine Doppelnennung
+und gegenderte Bezeichnungen wird zugunsten einer besseren Lesbarkeit verzichtet.
+Ohne Zweifel gehört ein effektives Atemwegsmanagement (AWM) zur Sicherung eines
+offenen Atemwegs bei der Behandlung von Notfallpatienten zu den entscheidenden
+Aufgaben des Rettungsdienstfachpersonals. Muss ein Atemweg bei Notfallpatienten
+gesichert werden, dann beeinflusst die Effektivität des AWM aufgrund der zeitkritischen
+Bedingungen maßgeblich das Outcome. Von daher wundert es nicht, dass das AWM
+einen zentralen Stellenwert innerhalb der modernen algorithmenbasierten
+Behandlungsleitlinien für verschiedene Notfallszenarien genießt [1;2]. Die besonderen
+Bedingungen in der präklinischen Notfallmedizin erschweren jedoch das
+Atemwegsmanagement von Notfallpatienten deutlich [3]: Zusätzlich zu den auch in der
+Klinik vorhandenen patientenbezogenen Risikofaktoren (z.B. reduzierte funktionale
+Residualkapazität des Notfallpatienten) erschweren am Einsatzort kaum beinflussbare
+situations- und/ oder umfeldbedingte Umstände (z.B. ein schwer zugänglicher
+eingeklemmter Patient nach Verkehrsunfall) das AWM [4]. Es bestehen aber auch
+beeinflussbare Risikofaktoren des präklinischen AWM, wobei in diesem Zusammenhang
+in erster Linie der Ausbildungsstand des Rettungsdienstfachpersonals zu nennen ist [5].
+Aus Studien zur Anwendungssicherheit verschiedener Hilfsmittel zum erweiterten AWM
+ist bekannt, dass diese mit dem Training und der Routine steigt [6]. Dabei zeigen die
+vorhandenen Daten, dass man bei der Anwendung von Maßnahmen zum erweiterten
+AWM von einem exponentiellen Verlauf der Lernkurve ausgehen muss, so dass zum
+Erreichen von adäquaten Erfolgsquoten, welche an sich bereits schwer zu definieren sein
+dürften, ein erheblicher Ausbildungsaufwand betrieben werden muss [7;8]. Da die
+Indikation zum (erweiterten) AWM im Rettungsdienst (RD) zu selten vorliegt, um die
+Ausbildung oder lediglich den Routineerhalt im Regelbetrieb zu ermöglichen [3], und da
+bei der Organisation der Aufgaben des Rettungsdienstes das Gebot der Wirtschaftlichkeit
+gilt (z.B. §1 Hessisches Rettungsdienst Gesetz (HRDG)), stehen die im föderal
+strukturierten deutschen Rettungsdienst für das Qualitätsmanagement und die
+Konzeption von Behandlungspfaden für das nicht- ärztliche RD- Fachpersonal
+Verantwortlichen, in der Regel die ärztlichen Leiter/ -innen RD (ÄLRD), vor einer großen
+Herausforderung: Es müssen für die jeweils lokalen Anforderungen des eigenen RD-
+Bereichs medizinisch sinnvolle und wirtschaftlich vertretbare Vorgaben und Konzepte
+für eine seltene und ausbildungsintensive, aber im Bedarfsfall auch zeitkritische und
+alternativlos überlebenssichernde Maßnahme konzipiert werden. Stellen sich die
+Verantwortlichen dieser schwierigen Aufgabe, offenbart sich ihnen ein weiteres
+Dilemma: Die Organisation des deutschen Rettungsdienstes ist im internationalen
+Vergleich aufgrund der im System fest integrierten arztbesetzten Rettungsmittel
+einzigartig, so dass insbesondere für die Maßnahmen mit sehr geringer Inzidenz, wie das
+AWM, kaum auf eine belastbare Datenlage zurückzugreifen ist. Deshalb wurde für das
+Qualitätsmanagement im Rettungsdienstbereich (RDB) Gießen die im Folgenden
+vorgestellte Erhebung initiiert, welche die Epidemiologie, die Wahl der angewendeten
+Techniken, die dazugehörigen medizinischen Strategien und die Effizienz der
+präklinischen Atemwegssicherung für die jeweils am RD beteiligten Berufsgruppen des
+RDB Gießen von 2010- 2016 näher untersucht.
+1.2 Fragestellungen
+Mit der vorliegenden Erhebung sollen folgende Fragen zu den Themen Epidemiologie,
+Techniken/ Medikation und Erfolg beantwortet werden:
+1.2.1 Epidemiologie (deskriptiv)
+• Wie hoch ist die Inzidenz der Indikation zur Atemwegssicherung bei
+Notfalleinsätzen?
+• Welche biometrischen Daten liegen bei Notfallpatienten mit der Indikation zum
+AWM vor (Alter, Geschlecht, Grunderkrankungen, Krankheitsschwere (gemäß
+der Klassifikation der American Society of Anesthesiologists (ASA))?
+• Welche Indikationen lagen zu dem AWM vor?
+• Wie häufig und über welchen Zeitraum muss das nicht- ärztliche RD- Personal
+selbstständig Atemwege vor Eintreffen des Notarztes (NA) sichern?
+1.2.2 Techniken und Medikation
+• Welche Hilfsmittel zum AWM werden (getrennt nach Berufsgruppen)
+eingesetzt?
+• Welche medikamentöse Strategie wird zum AWM verfolgt?
+• Wie hoch ist die Adhärenz beim Einsatz der Kapnographie?
+1.2.3 Effizienz und Outcome
+• Welche Komplikationen treten beim AWM auf (getrennt nach Berufsgruppen)?
+• Wie hoch ist die Erfolgsquote bei der Anwendung der jeweiligen
+Atemwegshilfen (getrennt nach Berufsgruppen)?
+• Wie hoch ist die Letalität von Notfallpatienten mit der Indikation zum AWM in
+der Präklinik?
+2 Material und Methoden
+2.1 Rettungsdienstbereich Gießen
+2.1.1 Die Struktur des Rettungsdienstbereiches Gießen (Stand 31.12.2016)
+Der Rettungsdienstbereich (RDB) Gießen umfasst den Landkreis Gießen. Er hat eine
+vorwiegend ländliche Struktur, umfasst aber auch einzelne Ballungsräume bzw. Städte,
+wie Gießen, Grünberg, Reiskirchen, Lich und weitere.
+Der RDB Gießen hat eine Gesamteinwohnerzahl von 265699. Die Fläche umfasst 854,64
+km². Der RDB Gießen weist zehn Städte und acht Gemeinden auf.
+Zur präklinischen Versorgung der Bevölkerung des RDB Gießen stehen in dreizehn
+Rettungswachen und fünf Notarztstandorten folgende Rettungsmittel zur Verfügung: drei
+Notarzteinsatzfahrzeuge (NEF), ein Intensivtransportwagen (ITW), ein
+Rettungshubschrauber (RTH) und 20 Rettungswagen (KTW Typ C), sowie sechs
+Krankentransportfahrzeuge (KTW Typ B). Diese leisten unter der Koordination der
+zentralen Leitstelle Gießen jährlich über 44.000 Einsätze. Die Leistungserbringer im
+Rettungsdienst sind das Deutsche Rote Kreuz (DRK)- Rettungsdienst Mittelhessen
+(gGmbH) und die Johanniter- Unfall- Hilfe (JUH), e.V. Regionalverband Mittelhessen.
+Angrenzende Rettungsdienstbereiche sind der Lahn- Dill- Kreis, der Wetteraukreis, der
+Vogelsbergkreis und der Landkreis Marburg- Biedenkopf.
+2.1.2 Ausbildungsstand des Rettungsdienstpersonals im Rettungsdienstbereich Gießen
+Nicht- ärztliches Rettungsdienstpersonal Beispiel Notfallsanitäter (NFS):
+Die Erlaubnis zum Führen der Berufsbezeichnung „Notfallsanitäter“ erhält man nach
+erfolgreicher Absolvierung einer dreijährigen Berufsausbildung nach dem Gesetz über
+den Beruf der Notfallsanitäterin und des Notfallsanitäters („Notfallsanitätergesetz“
+(NotSanG) [9]). Die Berufsausbildung umfasst theoretischen und praktischen Unterricht
+an staatlich anerkannten Schulen, sowie eine praktische Ausbildung an genehmigten
+Lehrrettungswachen und geeigneten Krankenhäusern. Sie schließt mit einer staatlichen
+Prüfung ab.
+Notärztin/ Notarzt:
+Um in Hessen die Zusatzbezeichnung Notfallmedizin zu führen und als Notarzt tätig sein
+zu können, müssen Ärzte eine 24- monatige Weiterbildung in einem Gebiet der
+stationären Patientenversorgung neben einer Weiterbildung von sechs Monaten in den
+Bereichen Intensivmedizin, Anästhesiologie, oder in der Notfallaufnahme nachweisen.
+Zudem muss ein 80- stündiger Weiterbildungskurs zur allgemeinen und speziellen
+Notfallbehandlung, sowie 50 Einsätze auf dem Notarzteinsatzfahrzeug, oder
+Rettungshubschrauber unter Anleitung eines verantwortlichen Notarztes absolviert
+werden.
+2.1.3 Vorhaltung von Atemwegshilfen im Rettungsdienstbereich Gießen
+Nachfolgend werden die zur Sicherung der Atemwege im RDB Gießen benutzten
+Hilfsmittel dargestellt.
+2.1.3.1 Hilfsmittel zum elementaren Atemwegsmanagement
+Beatmungsbeutel
+Der Beatmungsbeutel wurde 1956 von der Firma Ambu® und dem Anästhesisten
+Henning Ruben entwickelt (s. Abb. 2; https://www.ambu.de/unternehmen/unsere-
+geschichte). Er wird zur Beutel- Masken- Beatmung, oder zur manuellen Beatmung bei
+endotracheal intubierten Patienten eingesetzt.
+Abbildung 2: Beatmungsbeutel mit Maske
+Oropharyngeal-, bzw. Guedeltubus
+Der Guedel- Tubus wurde 1933 von dem amerikanischen Anästhesisten Arthur Guedel
+entwickelt (https://www.thieme.de/de/aerzte-in-weiterbildung/sicherung-der-atemwege-
+49181.htm). Als Oropharyngealtubus dient er zum Offenhalten der oberen Atemwege.
+Abbildung 3: Güdeltubus
+2.1.3.2 Hilfsmittel zum erweiterten Atemwegsmanagement
+Larynxmaske
+Im Rettungsdienstbereich Gießen wird eine Larynxmaske der 2. Generation (LMA®-
+Supreme, Fa. Teleflex, Irland) zur supraglottischen Atemwegssicherung eingesetzt.
+Larynxmasken der 2. Generation besitzen zusätzlich zum Ventilationskanal einen
+Drainagekanal zur Entlastung des Gastrointestinaltraktes. Über diesen Drainagekanal
+sollte zur Verbesserung des Aspirationsschutzes bzw. zur Lagekontrolle [10] eine
+Magensonde eingelegt werden.
+Abbildung 4: Larynxmaske LMA Supreme mit zusätzlichem Absaugkanal
+Endotrachealtubus
+Der Endotrachealtubus (ET) gilt als Goldstandard der Atemwegssicherung
+(https://link.springer.com/chapter/10.1007/978-3-642-18701-8_30). Eingeführt in den
+1950er Jahren wird er fortwährend in zahlreichen Varianten zur AWS eingesetzt. Die
+Abbildung 5 zeigt einen Magilltubus, wie er im RD in Gießen Verwendung findet.
+Konventionelles Laryngoskop
+Das Intubationslaryngoskop wird zur endotrachealen Intubation eingesetzt. Es kommen
+verschiedene Spatelformen zur Verwendung. Die Abbildung 6 zeigt den vorwiegend
+verwendeten Macintosh- Spatel (nach Robert Macintosh), wie er auch im RD Gießen
+eingesetzt wird. Seltener und insbesondere bei der Atemwegssicherung von Kindern wird
+der gerade Miller- Spatel eingesetzt.
+Abbildung 5: Magill Endotrachealtubus
+Abbildung 6: Laryngoskop mit Macintoshspatel
+Videolaryngoskope
+Videolaryngoskope sind in verschiedenen Ausführungen verfügbar. Ein Kamerachip an
+der Spitze der unterschiedlich geformten Spatel erlaubt die indirekte Laryngoskopie, bei
+der das Bild des Atemwegs auf Monitoreinheiten, welche je nach Hersteller
+unterschiedlich positioniert sind, dargestellt wird. Einige Systeme erlauben aufgrund
+ihrer Spatelform zudem die sogenannte direkte Laryngoskopie wie bei konventionellen
+Laryngoskopen. Videolaryngoskope bieten eine bessere indirekte Sicht auf die Glottis
+(Abbildungswinkel, Spatelform), als konventionelle Laryngoskope und erlauben eine
+endotracheale Intubation ohne ausgeprägte Reklination und somit einer geringeren
+Achsabweichung der Halswirbelsäule (bei erschwerten Intubationen (z.B. bei
+Halswirbelsäulentrauma)) [11].
+Abbildung 7: Glidescope (Glidescope®, Fa Verathon, USA)
+2.1.4 Vorgaben zum AWM im Rettungsdienstbereich Gießen
+Im RDB Gießen werden für das nichtärztliche Rettungsdienstpersonal „Erweiterte
+Versorgungsmaßnahmen (EVM)“ als quasi vorweggenommene Delegation durch den
+ÄLRD vorgegeben. Die für das Atemwegsmanagement geltenden Vorgaben sind in
+Abbildung 8 dargestellt.
+Die Notärzte orientieren sich an den gängigen Leitlinien zum präklinischen AWM
+[4;12;13].
+Abbildung 8: Algorithmus „Akute Luftnot“ aus dem Katalog der „Erweiterten Versorgungsmaßnahmen (EVM)“ des
+Rettungsdienstbereichs Mittelhessen
+2.1.5 Studienparameter
+Die vorliegende Erhebung orientiert sich an den Empfehlungen von Lossius et al für
+präklinische Atemwegsmanagementstudien [14;15].
+Als AWM- assoziierte System- und Kernvariablen wurden die Qualifikation des
+Anwenders, die Hilfsmittel zum AWM, Medikamente zum AWM, Transportmittel,
+Erkrankungsschwere (ASA- Klassifikation), Alter, Geschlecht, Notfallart, AWM
+Indikation, Atemfrequenz, systolischer Blutdruck (RR), Herzfrequenz, Glasgow Coma
+Scale (GCS) und die Sauerstoffsättigung erfasst. Die jeweiligen Parameter und die dazu
+erfassten Codes werden nachfolgend dargestellt.
+Als Kernvariablen nach AWM wurden die Beatmungsart, RR nach AWM,
+Sauerstoffsättigung (Sp- O2) nach AWM, Einsatz der Kapnographie nach AWM, RR bei
+Eintreffen im Krankenhaus (KH), Herzfrequenz (HF) nach AWM, Sp- O2 bei Eintreffen
+im KH, Einsatz der Kapnographie bei Eintreffen im KH, Überleben, die Anzahl der
+Versuche der Atemwegssicherung im Rahmen des AWM, Komplikationen beim AWM,
+Intubations-/ Insertionserfolg der eingesetzten Atemwegshilfen und die final eingesetzten
+Methoden der Atemwegssicherung erfasst. Die jeweiligen Parameter und die dazu
+erfassten Codes werden nachfolgend dargestellt.
+Als allgemeine Systemvariablen wurde die Bevölkerungszahl, die Größe des RDB, die
+Struktur des RDB (Stadt/ Land) und die Überprüfung des Intubationserfolges, sowie der
+Einsatzzeiten erfasst.
+AWM assoziierte Systemvariablen und Kernvariablen
+9 = Glidescope®
+10 = keine Intervention
+1 = Hypnotika
+2 = Muskelrelaxantien
+4 = Lokalanästhetika
+0 = keine Medikamente
+Tabelle 1: AWM assoziierte Systemvariablen und Kernvariablen
+Kernvariablen nach Durchführung des AWM
+3 = “Assisted Spontaneous Breathing” (ASB)/ “Continuous
+5 = Hypoxie (Sp- O2 <90 %)
+6 = Bradykardie (HF < 60/ min)
+7 = Blutdruckabfall (RR < 90mm Hg)
+8 = sonstige
+9 = keine
+8 = Koniotomie
+9 = Videolaryngoskop
+10 = keine Intervention
+11 = nicht bekannt
+Tabelle 2: Kernvariablen nach Durchführung des AWM
+2.1.6 Erläuterung zu der Datenerhebung und den Datenquellen im RDB Gießen
+Die Dokumentation der Rettungseinsätze im Landkreis Gießen erfolgt seit 2006
+elektronisch mit Hilfe eines Notfallinformationsmanagementsystems (NIS). Zum Einsatz
+kommt das NIDApad® (medDV GmbH, Fernwald, Deutschland), welches als mobile
+Touchpad-Lösung die Dokumentation von Einsatz-, Stamm- und Vitaldaten, die
+Ergebnisse aller Untersuchungen, sowie die Protokollierung durchgeführter Maßnahmen
+ermöglicht. Grundlage des flexibel anzupassenden Systems ist der Minimale
+Notfalldatensatz (MIND) der Deutschen Gesellschaft für Interdisziplinäre
+Intensivmedizin e. V. (DIVI) (Version 1.0 vom 27.2.2017).
+Nach dem Abschluss eines Einsatzes können die erhobenen Daten in Form eines
+Notfallprotokolles ausgedruckt werden. Sie werden anschließend in eine Datenbank des
+jeweiligen Rettungsdienstleistungserbringers importiert. Dabei werden die Daten in eine
+MySQL- Datenbank überführt. Der Erfassungszeitraum der vorliegenden Dissertation
+bezieht sich auf die Jahre 2010- 2016.
+Die Datenextraktion aus den anonymisierten Notfallprotokollen erfolgte aus den
+MySQL- Datenbanken der beiden Rettungsdienstleistungserbringer (JUH
+Regionalverband Mittelhessen und DRK Mittelhessen) mittels Standard- Query-
+Language (SQL)- Scripten und dem Open- Source Tool SQL Workbench/ J (Thomas
+Kellerer, https://www.sql-workbench.eu/). Dabei wurden im ersten Schritt alle
+Notfalleinsätze im Beobachtungszeitraum für jeden Dienstleister separat selektiert. Diese
+Menge wurde um die Einsätze ohne AWM- Maßnahmen reduziert. Anschließend wurden
+die vorab definierten „parameters of interest“ (poi) aus den Datenelementen der Einsätze
+extrahiert und in eine „comma separeted values“ (csv)- Form überführt. Zur weiteren
+Auswertung wurden diese csv- Daten in das Tabellenkalkulationsprogramm Microsoft
+Excel (Microsoft®, Redmond, USA) importiert. Darin gab es Doppelungen von
+Einsätzen, bei denen für Patienten, sowohl ein RTW-, als auch ein Notarzt- Protokoll
+angelegt wurden. Nach Identifizierung und Löschung der Doppelnennungen wurden die
+Daten der beiden Leistungserbringer fusioniert. Zur Qualitätssicherung wurden
+Stichproben aus dieser Tabelle gewonnen. Dropouts entstanden hierbei aufgrund
+fehlender Dokumentation.
+Als weitere Datenquelle wurden die anonymisierten Einsatzdaten der Leitstelle Gießen
+(Zeiten des Funkmeldesystems, Auftragsnummer, Einsatzort, beteiligte Fahrzeuge) als
+csv- Datei genutzt und mit den vorbereiteten klinischen Einsatzdaten der beiden
+Leistungserbringer in eine MySQL-Datenbank importiert. Da es keine einheitliche
+Identifikationsnummer der Einsätze gab- die führende Einsatznummer der Leitstelle
+wurde nicht automatisiert an die NIDApads® übertragen- geschah die Fusionierung der
+Daten durch die Kombination zweier Parameter, die mit sehr großer Sicherheit die
+korrekten Datensätze der Leitstelle und der Rettungsdienstleister identifizierten: Abgleich
+des Geburtsdatums des Patienten und Zeitpunkt der Intubation (gewonnener Rückschluss
+des im NIDApad dokumentierten Intubationszeitpunktes im Einsatzzeitraum).
+Den kompletten Ablauf der Datenerfassung stellt das nachfolgend aufgeführte Prisma-
+Flussdiagramm (www. http://prisma-statement.org) dar.
+Abbildung 10: PRISMA Flussdiagramm zur Datenerhebung
+3 Ergebnisse
+3.1 Epidemiologie
+.1 Die Inzidenz der Indikation zur Atemwegssicherung im RDB Gießen,
+Vorerkrankungen (nach ASA Klassifikation), Geschlecht und Letalität
+Tabelle 3: Darstellung der Notfallpatienten im Rettungsdienstbereich Gießen zwischen 2010 und 2016 nach der Inzidenz der
+Indikation zur Atemwegssicherung, nach Vorerkrankungen (ASA 1 = keine Vorerkrankungen, > ASA 1 = Vorerkrankungen
+unterschiedlicher Schwere, unbekannt), nach Geschlecht und Sterblichkeit
+Tab. 1 stellt die Inzidenz der Indikation zur Atemwegssicherung, die
+Erkrankungsschwere, das Geschlecht und die Letalität der Notfallpatienten dar.
+Insgesamt wurden bei der vorliegenden Erhebung 203614 Patienten mit der Indikation
+zur rettungsdienstlichen Betreuung erfasst. Hiervon wurden 133963 als Notfallpatienten
+identifiziert (65,3 %). Die Indikation zum AWM lag bei 0,5 % der insgesamt
+rettungsdienstlich betreuten Patienten und bei 0,8 % der Notfallpatienten vor.
+Unter den Notfallpatienten mit Indikation zum AWM befanden sich zu 61,7 % Männer
+und 38,3 % Frauen.
+5,5 % der Patienten mit Indikation zum AWM hatten keine Vorerkrankungen (ASA 1).
+65,6 % der Patienten wiesen mindestens eine leichte Grunderkrankung auf (ASA ≥ 2).
+Bei 29 % der betrachteten Fälle waren aufgrund fehlender, bzw. unzureichender
+Dokumentation keine Klassifizierungen erhebbar.
+30 % der Patienten verstarben vor Eintreffen in der Klinik, zum Teil sogar noch an der
+Einsatzstelle.
+3.1.2 Verteilung der Altersgruppen innerhalb der Notfallpatienten mit Indikation zum
+AWM
+Grafik 1: Darstellung der Notfallpatienten im Rettungsdienstbereich Gießen zwischen 2010 und 2016 nach Altersklassen (1 = 0- 1
+Monate, 2 = 1 Monat- 1 Jahr, 3 = 1- 6 Jahre, 4 = 7- 14 Jahre, 5 = 15- 40 Jahre, 6 = 41- 60 Jahre, 7 = 60- 80 Jahre, 8 = > 80 Jahre)
+Grafik 1 stellt die Inzidenz zur Atemwegssicherung nach Altersklassen dar. Im
+Untersuchungszeitraum mussten fast 2/ 3 der Atemwegssicherungen bei Patienten im
+Alter von über 60 Jahren durchgeführt werden (65,8 %). Der Anteil der unter 14- Jährigen
+betrug 1,2 %.
+3.2 Inzidenz des AWM
+3.2.1 Indikationen für das AWM im RDB Gießen
+AWM Indikationen, n=1088
+Grafik 2: Darstellung der Notfallpatienten im Rettungsdienstbereich Gießen zwischen 2010 und 2016 nach der Indikation zum
+AWM (Bewusstseinseisstörung (GCS), Hypoxie, Ateminsuffizienz, Verlegung (bestehend), Verlegung (drohend), Agitiertheit,
+Schmerz/ notfallspez., CPR, sonstige (Anamnese/ Freitext))
+Grafik 2 zeigt die Indikationen für das AWM. Kardiopulmonale Reanimationen stellen
+die Hauptindikation zum AWM dar (60 %). Weitere häufigere Indikationen waren
+Vigilanzminderung (22 %), Ateminsuffizienz (8,6 %) und Atemwegsverlegung (3 %).
+Die verbleibenden Indikationen summieren sich auf 6 %.
+3.2.2 Häufigkeit und Dauer der selbstständigen Atemwegssicherung durch das nicht-
+ärztliche RD- Personal vor Eintreffen des NA
+Grafik 3 zeigt die Anzahl der Fälle und die dazugehörige Zeitspanne für Einsätze im
+Untersuchungszeitraum, bei denen das Notarzteinsatzfahrzeug bei Patienten mit
+Indikation zur Atemwegssicherung nach dem RTW am Einsatzort eintraf. Das geschah
+bei mehr als einem Drittel (35,2 %, n = 338) der mit AWM versorgten Patienten
+(entspricht 0,2 % aller erfassten Notfallpatienten). Das Studiendesign erlaubt jedoch
+keine exakte Aussage zum Zeitpunkt des Auftretens der AWS Indikation während des
+Notfalleinsatzes. Deswegen ist keine Aussage zu dem Zeitintervall zwischen Auftreten
+der Indikation zur AWS und dem Eintreffen des Notarztes ableitbar.
+3.3 Techniken und Medikation
+3.3.1 Verwendung der Hilfsmittel zum AWM (getrennt nach Berufsgruppen)
+AW Hilfsmittel, n=1088
+Grafik 4: Darstellung der Notfallpatienten mit Indikation zum AWM im Rettungsdienstbereich Gießen zwischen 2010 und 2016
+nach der Versorgung mit AWM Hilfsmitteln (gesamt), orange dargestellt die Gruppe der intubierten Patienten (Beatmungsmaske,
+Güdeltubus, Larynxmaske (LAMA), Combitubus, Wendltubus, ETT oral (konventionell), ETT nasal (konventionell), ETT (via
+Glidescope®))
+AW Hilfsmittel Notärzte, n=706
+606/85,9%
+Grafik 5: Darstellung der Notfallpatienten im Rettungsdienstbereich Gießen zwischen 2010 und 2016 nach der Versorgung mit
+AWM Hilfsmitteln durch Notärzte, orange dargestellt die Gruppe der intubierten Patienten (Beatmungsmaske, Güdeltubus, LAMA,
+Combitubus, Wendltubus, ETT oral (konventionell), ETT nasal (konventionell), ETT (via Glidescope®))
+AW Hilfsmittel NFS, n=382
+322/83,8%
+Grafik 6: Darstellung der Notfallpatienten im Rettungsdienstbereich Gießen zwischen 2010 und 2016 nach der Versorgung mit
+AWM Hilfsmitteln durch Notfallsanitäter, orange dargestellt die Gruppe der intubierten Patienten (Beatmungsmaske, Güdeltubus,
+LAMA, Combitubus, Wendltubus, ETT oral (konventionell), ETT nasal (konventionell), ETT (via Glidescope®))
+Die Grafiken 4- 6 zeigen die Verteilung der angewendeten Atemwegshilfen. Insgesamt
+fanden hauptsächlich Endotrachealtuben in 85,2 % der Fälle Verwendung. Die
+Verwendung von Larynxmasken zum AWM geschah bei über 10 % der Patienten. Die
+Verwendung der anderen Hilfsmittel zum AWM fand in ca. 2 % der Fälle statt. Darunter
+fällt auch die Nutzung der Videolaryngoskopie, die bei 27 Patienten (2,5 %) dokumentiert
+wurde.
+Grafik 7: Darstellung der Notfallpatienten im Rettungsdienstbereich Gießen zwischen 2010 und 2016 nach den zur Durchführung
+des AWM durch Notärzte verwendeten Medikamente (1 = Gesamtzahl der mit Medikamenten versorgten Patienten, 2 = mit
+Hypnotika versorgt, 3 = mit Muskelrelaxantien versorgt, 4 = mit Opioiden versorgt, 5 = mit Vasopressoren versorgt)
+Grafik 7 zeigt eine Aufstellung der im Rahmen der notärztlichen Versorgung von
+Notfallpatienten mit Indikation zum AWM verwendeten Medikamentgruppen. Bei 2/ 3
+der betreffenden Patienten wurde die Verwendung von Medikamenten dokumentiert. Es
+wurden vor allem Hypnotika (64,6 %), Vasopressoren (60,1 %), Muskelrelaxantien (MR)
+(49,9 %) und Opioide (43,8 %) eingesetzt.
+3.3.3 Angewandte Ventilationsarten
+Tabelle 4: Darstellung der Notfallpatienten mit Indikation zum und nach durchgeführtem AWM im Rettungsdienstbereich Gießen
+zwischen 2010 und 2016 nach Beatmungsarten
+Tabelle 2 zeigt die Verteilung der genutzten Beatmungsmodi nach präklinischem
+Atemwegsmanagement. Bei 69,8 % der Fälle war keine Beatmungsart dokumentiert. Bei
+den übrigen Patienten wurde vor allem der Modus der kontrollierten Beatmung
+angewendet (28,7 %). 1,5 % der Patienten wurden nichtinvasiv (NIV) beatmet.
+Grafik 8 stellt die Methoden zur Lagekontrolle des Endotrachealtubus nach
+durchgeführter endotrachealer Intubation durch Notärzte (NÄ) und Notfallsanitäter
+(NFS) dar. Der Einsatz der Kapnographie wurde von Notärzten häufiger dokumentiert,
+als von Notfallsanitätern (65,3 % vs. 49,4 %). Die Auskultation wurde durch die NFS in
+49,4 % der Fälle (42 Pat.) und durch NÄ in 34,7 % der Fälle (242 Pat.) dokumentiert.
+3.4 Effizienz des AWM im RDB Gießen
+3.4.1 Komplikationen beim AWM im RDB Gießen (getrennt nach Berufsgruppen)
+Fehlintubation Aspiration HypoxieSpO2<90% Bradykardie <60/min sonstige keine
+Grafik 9: Darstellung der Notfallpatienten im Rettungsdienstbereich Gießen zwischen 2010 und 2016 nach den Komplikationen
+nach durchgeführtem AWM verschiedener Gruppen (Fehlintubation (ITN ösophageal), Erbrechen/ Aspiration, Hypoxie (Sp O2 < 90
+%), Bradykardie (< 60/ min), sonstige, keine)
+Grafik 9 stellt die Komplikationen beim AWM der verschiedenen medizinischen
+Berufsgruppen dar. Die Aspiration stellt die Hauptkomplikation im Rahmen einer
+Atemwegssicherung bei allen beteiligten Berufsgruppen dar. An zweiter Stelle stehen
+ösophageale Tubusfehllagen, gefolgt von der Hypoxie. Betrachtet man die Gruppen nach
+dem Auftreten eines komplikationslosen AWM, lag dies bei den NÄ aus der Inneren
+Medizin in 85 % (n = 34) der Fälle, bei den NÄ aus der Anästhesie (ANA) in 80 % (n =
+230) der Fälle, bei den NFS in 76 % (n = 65) der Fälle und bei den NÄ aus der
+Unfallchirurgie (UCH) in 75 % (n = 27) der dokumentierten Fälle vor. Die Fallzahlen der
+einzelnen betrachteten Gruppen weichen dabei stark voneinander ab.
+3.4.2 Erfolgsquoten bei der Anwendung der endotrachealen Intubation (getrennt nach
+Berufsgruppen) im RDB Gießen
+Grafik 10 stellt den Anteil der Notfallintubationen dar, bei denen der Endotrachealtubus
+ohne Dokumentation einer Komplikation platziert werden konnte. Betrachtet man den
+Intubationserfolg im Vergleich zwischen NÄ und NFS, so liegt die Erfolgsquote bei den
+NFS im Vergleich zu den NÄ um 3,3 % höher.
+3.4.3 Die Inzidenz des Verfahrenswechsels beim initialen AWM durch nicht- ärztliches
+RD- Personals nach Übernahme der Patientenversorgung durch Notärzte im RDB
+Gießen
+Grafik 11: Darstellung der Notfallpatienten im Rettungsdienstbereich Gießen mit Indikation zum AWM zwischen 2010 und 2016
+nach der Inzidenz des Verfahrenswechsels nach verschiedenen Indikationen (GCS, Hypoxie, Ateminsuffizienz, bestehende
+Atemwegsverlegung, drohende Atemwegsverlegung, Agitiertheit, CPR, sonstige, Gesamtzahl der Pat. b. denen das AWM durch den
+Notarzt übernommen wurde)
+Grafik 11 zeigt die Inzidenz der Übernahme der Atemwegssicherung durch Notärzte nach
+initialem AWM Anwendung durch Notfallsanitäter. In 27 % der Fälle wurde das AWM
+vom NFS an NÄ übergeben. An erster Stelle der Ereignisse, die mit einem
+Verfahrenswechsel assoziiert waren, stehen kardiopulmonale Reanimationen (79 %),
+gefolgt von sonstigen nicht näher bezeichneten Ereignissen in nahezu 8 % und
+Bewußtseinsstörungen (6,1 %). Ateminsuffizienz und eine bestehende
+Atemwegsverlegung sind jeweils mit 3 % vertreten.
+4 Diskussion
+Nach Kenntnis der Autoren stellt die vorliegende Arbeit die erste Erhebung zur
+Epidemiologie des präklinischen Atemwegsmanagements in Deutschland dar, welche
+einen gesamten Rettungsdienstbereich umfasst. Von 2010 bis 2016 konnten insgesamt
+203614 rettungsdienstlich behandelte Patienten, darunter 133963 Notfallpatienten,
+rekrutiert werden. Damit lag der Anteil an Notfallpatienten am gesamten
+Patientenkollektiv rettungsdienstlich versorgter Patienten in der vorliegenden Erhebung
+mit 65,3 % deutlich über den Angaben bisheriger Erhebungen aus Deutschland [16]. Eine
+mögliche Erklärung für diese Beobachtung scheint der Trend der stetig steigenden
+Inanspruchnahme der Notfallversorgung (Rettungsdienst, Notfallaufnahmen) durch die
+Bevölkerung zu sein [17]. Prinzipiell wäre auch eine im Rettungsdienstbereich Gießen
+gelebte „liberalere“ Kategorisierung der Hilfesuchenden durch die Leitfunkstelle Gießen
+denkbar.
+4.1 Epidemiologie des AWM im RDB Gießen
+4.1.1 Inzidenz der Indikation zum Atemwegsmanagement
+Bisherige Angaben zur Inzidenz der Indikation zu einer Atemwegssicherung im
+deutschsprachigen Raum lagen im Bereich von ca. 5 % der Notfallpatienten [18;19]. In
+der vorliegenden Studie lag die Inzidenz bei 0,5 % aller rettungsdienstlich betreuten
+Patienten, bzw. bei 0.8 % der potentiell vital bedrohten Notfallpatienten und ist somit
+deutlich niedriger.
+Diese Beobachtung könnte auf folgenden Ursachen, ggf. auch kombiniert, beruhen:
+1. In den zitierten Studien wurden ausschließlich Notarzteinsätze untersucht,
+während in der vorliegenden Studie die Evaluation aller durch die Leitfunkstelle
+Gießen disponierten Einsätze (die anhand des Meldebilds als Notfall kategorisiert
+wurden) erfolgte. Es ist bekannt, dass bei arztbesetzten Rettungsmitteln,
+insbesondere diejenigen der Luftrettung, mit einer höheren Inzidenz der
+Indikation zur Atemwegssicherung bei den betreuten Notfallpatienten zu rechnen
+ist [19].
+2. Für die zitierten Studien wurden die Daten im Bereich einzelner
+Rettungsdienststandorte erhoben. In der vorliegenden Arbeit stammen sie aus
+einem gesamten Rettungsdienstbereich (RDB Gießen) mit seiner heterogenen
+Struktur. Die Selektion einzelner Rettungsdienststandorte kann hierbei durchaus
+Schwächen hinsichtlich der Repräsentativität aufweisen.
+3. Der bereits oben erwähnte Trend zur gesteigerten Inanspruchnahme
+medizinischer Dienstleistungen der Notfallversorgung über die Zeit könnte die
+Diskrepanz zwischen der Inzidenz der disponierten und den tatsächlichen
+Notfalleinsätzen vergrößern.
+4.1.2 Biometrie der Notfallpatienten aus dem RDB Gießen mit Indikation zum AWM
+Konsistent mit der vorhandenen Literatur war auch in der vorliegenden Erhebung der
+überwiegende Anteil der untersuchten Notfallpatienten mit Indikation zum AWM am
+Einsatzort männlichen Geschlechts [20;21].
+Hinsichtlich der Erfassung der Morbidität dieser Notfallpatienten anhand der ASA-
+Klassifikation wird die Validität dieser Erhebung durch eine eingeschränkte
+Datenqualität limitiert: Nur bei ca. 2/ 3 der Notfallpatienten erfolgte eine Dokumentation
+der Einstufung der Erkrankungsschwere anhand der ASA- Klassifikation im
+Notfallprotokoll.
+Wurde die Erkrankungsschwere der Notfallpatienten klassifiziert, erfolgte bei nahezu
+einem Drittel der Patienten die Einstufung in die Klasse ≥ 3. Es lagen also schwere
+Vorerkrankungen mit deutlicher Beeinträchtigung vor. Diese Patienten stellen bereits im
+klinischen Alltag eine besondere Risikogruppe dar und sollen gemäß aktueller
+Empfehlungen bei prozeduralen Sedierungen bzw. Allgemeinanästhesien von
+spezialisierten Ärzten (Anästhesisten) betreut werden [22].
+Aber auch andere Gründe sprechen für die besondere Herausforderung beim
+präklinischen Atemwegsmanagement: Jede endotracheale Intubation außerhalb des
+Operationssaals, also z.B. in der Präklinik, ist als risikobehaftet einzustufen (abweichende
+personelle/ materielle Ressourcen, unbekanntes Umfeld, etc.). Zudem erschweren
+situations-, bzw. umfeldbedingte widrige Faktoren am Einsatzort das
+Atemwegsmanagement [12;23;24]. Trotz der Berücksichtigung der zuvor genannten
+Limitationen bei der Erhebung der Erkrankungsschwere dieser Studie resultiert demnach
+unter Berücksichtigung der Morbidität der untersuchten Rettungsdienstpatienten im
+Kontext der Besonderheiten der präklinischen Atemwegssicherung ein deutlicher
+Hinweis auf den besonders hohen Anspruch an die Behandler bei der Durchführung des
+präklinischen Atemwegsmanagements.
+Nahezu ein Drittel der Notfallpatienten mit Indikation zum AWM verstarb präklinisch. Die
+Untersuchung der Ursachen dieser Todesfälle war nicht die Fragestellung dieser Erhebung.
+Dennoch weisen vorhandene Daten aus der Präklinik darauf hin, dass sicher auch
+Komplikationen des Atemwegsmanagements für die präklinische Mortalität anzunehmen
+sind. So zeigen Studien, die verschiedene Berufsgruppen des Rettungsdienstes betrachten,
+dass neben Intubationsschwierigkeiten ebenso ösophageale Fehlintubationen, oder einseitige
+Intubationen anzutreffen sind [25;26;27;28;29].
+Die vorliegende Studie belegt, dass die größte Gruppe der Notfallpatienten mit Indikation
+zur präklinischen Atemwegssicherung Erwachsene im fortgeschrittenen Alter sind (65,8
+% ≥ 60 Jahre). Dies entspricht den Ergebnissen früherer Erhebungen und der prinzipiellen
+Situation zur Altersstruktur der Empfänger der nationalen Heilmittelausgaben [30].
+Die Inzidenz des präklinischen Atemwegsmanagements bei Notfallpatienten im Alter von
+unter einem Jahr war im RBD Gießen sehr selten (0,4 % der Einsätze), ebenfalls in der
+Gruppe der 1-14- jährigen Notfallpatienten (0,8 % der Einsätze). Die Inzidenz der
+pädiatrischen Notfalleinsätze von Patienten im Alter von 0- 14 Jahre mit Notwendigkeit
+eines AWM in der Gesamtgruppe der Notfallpatienten liegt in der vorliegenden Erhebung
+aus dem Rettungsdienstbereich Gießen bei ca. 0,01 % . Einen ähnlich niedrigen Wert von
+0,25 % der präklinisch intubierten pädiatrischen Notfallpatienten beschreiben Kaufmann
+et al. bei einem gleichaltrigen Patientenkollektiv. Die Gruppe um Kaufmann nimmt dabei
+Bezug zu den Kindernotfällen in Deutschland und speziell zu der Altersgruppe der 0-14-
+Jährigen [31]. Insgesamt kann man postulieren, dass die Gruppe der unter 14- jährigen
+Notfallpatienten in mehrerlei Hinsicht eine besondere Bedeutung hat: Es sind seltene
+(Notfall-) Patienten im Rettungsdienst, welche in der Regel auf einen in der pädiatrischen
+Notfallmedizin wenig routinierten Notarzt treffen [31]. Das invasive
+Atemwegsmanagement ist in diesen Fällen als besonders komplikationsträchtig
+einzustufen und bedarf routinierter Anwender [32]. Diese Routine ist im Rettungsdienst
+keinesfalls im Regeldienst erreich-, bzw. erhaltbar. Daher fordert die aktuelle Leitlinie
+zur Versorgung polytraumatisierter Kinder vor dem Hintergrund des zeitnahen
+Transportes in eine klinische Notfalleinheit zum kritischen Hinterfragen einer invasiven
+Atemwegssicherung auf [33]. Unter Berücksichtigung der häufigsten Notfalldiagnosen
+im Kindesalter [34], der geringen Inzidenz schwerwiegender Erkrankungen und der
+geringen Inzidenz der Indikation invasiver Maßnahmen in der Kindernotfallmedizin
+sollte sich die Notfallversorgung dieser besonderen Patientengruppe durch wenig
+routinierte Behandler auf effektive und einfach zu erlernende Maßnahmen, wie Beutel-
+Maskenbeatmung, inhalative Therapie, intranasale Medikamentenapplikation, etc.,
+beschränken [35;36].
+4.2 Kennzahlen zum AWM im RDB Gießen
+4.2.1 Inzidenz des eigenständigen AWM durch nicht- ärztliches RDP
+Die vorliegende Studie belegt, dass das nichtärztliche Rettungsdienstpersonal (RDP) im
+RDB Gießen in mehr als einem Drittel der Notfalleinsätze, bei denen schlussendlich eine
+Indikation zum AWM besteht bzw. entsteht, ohne Unterstützung des Notarztes am
+Notfallort eintreffen. Letztendlich konnte durch die vorliegende Erhebung jedoch keine
+zuverlässige Aussage über die Zeitspanne des selbständigen AWM durch das
+nichtärztliche RDP erhoben werden. Ebenso fehlt es in diesem Kontext an Literaturdaten.
+4.2.2 Inzidenz der Indikationen zum AWM im RD
+Kardiopulmonale Reanimationen (60 %) stellen in der vorliegenden Untersuchung die
+Hauptindikation zum AWM dar. Bzgl. der Häufigkeit der Indikationen zum AWM folgen
+Bewußtseinsstörungen (22 %), Ateminsuffizienz und bestehende Atemwegsverlegungen
+(8,6 %). Dieses Ergebnis bestätigt die Angaben aus der vorhandenen Literatur mit Daten
+aus den nicht- arztbesetzten RD- Systemen [12].
+4.2.3 Inzidenz der problemlosen Insertion des Endotrachealtubus im RDB Gießen
+Nach den Ergebnissen der vorliegenden Studie kann davon ausgegangen werden, dass
+eine problemlose Insertion des Endotrachealtubus in der Gruppe der Notfallsanitäter in
+85,9 % (n = 73) und in der Gruppe der Notärzte in 82,6 % (n = 582) durchgeführt werden
+konnte. Bzgl. dieser Selbstdokumentation darf aber nicht unberücksichtigt bleiben, dass
+vermeintlich gute präklinische Ergebnisse sich klinisch als fatale Komplikationen
+demaskieren (durch unerkannte Tubusfehllagen, etc.) und tatsächlich eine schlechtere
+Erfolgsrate vorliegt [37]. So fiel bei der Untersuchung der Komplikationen des
+präklinischen AWM im RDB Gießen in der Subgruppe der Notärzte mit internistischem
+Hintergrund bei auffallend wenig dokumentierten AWS- Komplikationen eine Häufung
+dokumentierter Bradykardien auf. Dies deutet auf eine potentielle Limitation der
+vorliegenden Erhebung durch einen systematischen Fehler aufgrund der
+„Selbstdokumentation“ der Anwender hin. Denn zweifelsohne sind Bradykardien im
+Rahmen des AWM nicht selten eine Folge einer (unerkannten) Hypoxämie.
+4.2.4 Inzidenz von Komplikationen bei dem AWM im RDB Gießen
+Die vorliegende Erhebung belegt im Einklang mit der vorhandenen Literatur, dass die
+pulmonale Aspiration (12,5 %) und ösophageale Tubusfehllagen (7,2 %) die
+Hauptkomplikationen beim präklinischen AWM darstellen [38]. Bei den dokumentierten
+pulmonalen Aspirationen konnte durch diese Erhebung nicht sicher zwischen einer
+bereits vor dem AWM vorliegenden, oder einer im Rahmen des AWM auftretenden
+Aspiration differenziert werden. Sicherlich hat diese Limitation für den Patienten weniger
+klinische Relevanz, jedoch ist diese Unterscheidung für die Festlegung der
+Ausbildungsziele hinsichtlich des AWM von hoher Relevanz: So erfordert das AWM
+eines Patienten nach Aspiration eher invasive Maßnahmen, wohingegen eine Häufung
+von Aspirationen unter Anwendung von wenig invasiver Atemwegssicherung eine
+Neubewertung dieser Methoden zur Folge haben sollte.
+4.3 Material, Techniken und Medikation bei Notfalleinsätzen mit Indikation zum
+AWM im RDB Gießen
+4.3.1 Atemwegssicherung
+Zur Sicherung der Atemwege wurden vorrangig Endotrachealtuben (85,2 %) verwendet.
+Am zweithäufigsten wurden Larynxmasken (LAMA; 10,6 %) eingesetzt. Die LAMA, als
+extraglottische Atemwegshilfe (EGA) leitliniengerecht eingesetzt, ist mittlerweile ein in
+der nationalen Präklinik gut etabliertes Hilfsmittel zur Atemwegssicherung [39].
+Dennoch erfordert die Anwendung extraglottischer Atemwegshilfen, wie der LAMA,
+gerade bei der Überwachung der Ventilation vom Anwender, z.B. aufgrund
+intermittierender Leckagen, ein hohes Maß an Aufmerksamkeit und klinischer
+Ausbildung [40].
+4.3.2 Medikation bei Notfalleinsätzen mit Indikation zum AWM
+Hypnotika, Muskelrelaxantien (MR) und Ino-/Vasopressoren wurden im
+Erhebungszeitraum im Rahmen des AWM am häufigsten eingesetzt. Die Nutzung von
+MR und Hypnotika ist in diesem Zusammenhang selbsterklärend, Ino-/Vasopressoren
+kamen im Rahmen der CPR und zur Therapie von Hypotonien zum Einsatz. Diese
+Ergebnisse stützen die Empfehlung der Leitlinie „Prähospitale Notfallnarkose beim
+Erwachsenen“, einen Vasopressor bei einer Notfallnarkoseinduktion griffbereit verfügbar
+zu haben [41].
+4.3.3 Lagekontrolle der Atemwegshilfen nach erweitertem AWM im RD
+Die Studie belegt, dass trotz flächendeckender Vorhaltung der Kapnometrie im RDB
+Gießen deren Verwendung nicht grundsätzlich vorauszusetzen ist. In der Gruppe der
+Notärzte fand die Kapnographie in 65,3 % der betrachteten Fälle Verwendung, in der
+Gruppe der NFS nur in 49,4 % der Fälle. Dieses Ergebnis ist ernüchternd und bedarf
+einer Intervention, denn es herrscht Konsens, dass die Überwachung der Ventilation und
+der korrekten Platzierung von Atemwegshilfen beim Notfallpatienten nach invasivem
+Atemwegsmanagement den obligaten Einsatz der Kapnometrie erfordert. [41].
+4.4 Welche Schlussfolgerungen lassen die Ergebnisse der vorliegenden Studie
+hinsichtlich der Festlegung der Lernziele (EVM) des nicht- ärztlichen RDP im RDB
+Gießen zu?
+Die vorliegende Erhebung soll den medizinisch Verantwortlichen im Rettungsdienst
+Gießen einen Überblick über die Epidemiologie und Ausführung des präklinischen
+Atemwegsmanagements im RDB Gießen im Rahmen der Qualitätssicherung bieten.
+Diese haben die zentrale Frage zu beantworten, in welchem Umfang Maßnahmen des
+Atemwegsmanagements vorweg zu delegieren sind (erweiterte Versorgungsmaßnahmen)
+und dem daraus resultierenden notwendigen Aus- und Weiterbildungsaufwand.
+Gleichzeitig muss hierbei eine Verhältnismäßigkeit zwischen medizinisch notwendiger
+Versorgung der Bevölkerung durch den Rettungsdienst und der Wirtschaftlichkeit
+sichergestellt werden (§ 1 des HRDG): Die Bewertung des Stellenwertes der
+dazugehörigen Aspekte ist eine ethische bzw. gesellschaftspolitische Fragestellung, deren
+Beantwortung in vielen Punkten den Gegenstand dieser Erhebung übertrifft.
+Dennoch lassen die Ergebnisse der vorliegenden Erhebung unter Berücksichtigung der
+diskutierten Literatur folgende Aussagen zu:
+Die Inzidenz für das erweiterte präklinische AWM ist im Rettungsdienstbereich Gießen
+sehr gering. Sie liegt bei 0,5 % aller Rettungsdiensteinsätze bzw. 0,8 % aller
+rettungsdienstlichen Notfalleinsätze. In der Subgruppe der Patienten unter 14
+Lebensjahren muss ein AWM bei 0,01 % aller Notfalleinsätze erfolgen.
+Für die pädiatrischen Notfallpatienten kann man daher schlussfolgern, dass insbesondere
+vor dem Hintergrund, dass das erweiterte AWM in dieser Altersklasse schwer zu erlernen
+und präklinisch eher nicht mit einer Verbesserung des Outcomes assoziiert ist [42],
+vorzugsweise einfach zu erlernende und zu beherrschende Maßnahmen (Beutel- Masken-
+Beatmung, LAMA etc.) erfolgen sollten [35].
+Das AWM erwachsener Notfallpatienten ist präklinisch jedenfalls schwieriger, als unter
+klinischen Bedingungen einzustufen. Die Daten der vorliegenden Erhebung zeigen, dass
+das nicht-ärztliche Rettungsdienstfachpersonal bei mehr als einem Drittel der
+Notfallpatienten, bei denen im Rahmen des Notfalleinsatzes ein AWM indiziert ist, vor
+dem Notarzt am Einsatzort eintrifft und potenziell den Atemweg autark sichern muss.
+Hierbei handelt es sich zum größten Teil um Patienten der Risikostufe ≥ ASA III, die in
+Hinsicht auf die Narkoseinduktion eine besondere Herausforderung darstellen [22].
+Daher stellt sich die Frage, welches Ziel die Aus- und Weiterbildung der NFS verfolgen
+soll:
+Soll sich das AWM des nichtärztlichen RD- Fachpersonals vor Eintreffen des Notarztes
+grundsätzlich auf die Beutelmaskenbeatmung und die Verwendung von Oro/
+Nasopharyngealtuben reduzieren, ist dies mit einem überschaubaren Aus- und
+Weiterbildungsaufwand verbunden [35].
+Fokussieren die Lernziele bei der Anwendung der endotrachealen Intubation auf die
+Patientengruppe mit Indikation zur kardiopulmonalen Reanimation, werden 60 % der
+Indikationen zum AWM im Rettungsdienst abgedeckt. Jedoch ist die unausweichliche
+Konsequenz eine deutliche Steigerung des notwendigen Aus- und
+Fortbildungsaufwands., der sich im Kontext der folgenden Veröffentlichungen näher
+abschätzen lässt:
+1. Warner et. al. demonstrierten, dass Paramedics nach einer Ausbildung über 2500
+Stunden neben regelmäßigen Rezertifizierungen eine Intubationserfolgsquote von 98,3 %
+erreichen[8].
+2. Trimmel et al. beschreiben einen Ausbildungsaufwand von 50- 150 endotrachealen
+Intubationen und monatlichen Trainingseinheiten unter Supervision durch erfahrene
+Anwender zum Praxiserhalt, um eine Erfolgsrate von 90 % zu erzielen [43]. Genannte
+Trainingseinheiten umfassen für alle im RD tätigen Ärzte ein dreitägiges Programm pro
+Monat in einer Anästhesieabteilung zum Routineerhalt.
+3. Die aktuelle S1- Leitlinie „Prähospitales Atemwegsmanagement“ [12] fordert sowohl
+100 ETI- und 45 EGA- Anwendungen an Patienten zur Ausbildung, als auch 10 ETI pro
+Jahr zur Sicherung des Routineerhaltes als Voraussetzung der Anwendung des
+erweiterten AWM im Rettungsdienst.
+Hierbei gilt es auch zu berücksichtigen, dass aufgrund der seltenen Inzidenz der
+Indikation zum AWM im RD diese Aus- und Weiterbildung keinesfalls im Regeldienst
+des nicht- ärztlichen Rettungsdienstfachpersonals geleistet werden kann [19;3;35].
+In diesem Zusammenhang ist auch die Frage nach der durch das nicht- ärztliche
+Rettungdienstfachpersonal bevorzugt einzusetzende Atemwegshilfe zu klären:
+Sicherlich benötigt die Insertion der extraglottischen Atemwegshilfen einen geringeren
+Ausbildungsaufwand [44]. Dennoch sind gerade im rettungsdienstlichen Umfeld die
+anspruchsvollere Überwachung der Ventilation durch derartige Hilfsmittel [40] und das
+höhere pulmonale Aspirationsrisiko im Vergleich zur Anwendung des
+Entdotrachealtubus zu berücksichtigen.
+Die Erweiterung der Lernziele auf das invasive AWM bei Notfallpatienten mit anderen
+Grundleiden setzt eine differenzierte Ausbildung zur Anwendung von Medikamenten
+voraus. Hier belegt die vorliegende Studie konsistent zu aktuellen Empfehlungen [41],
+dass Kenntnisse über folgende Medikamentengruppen notwendig wären:
+Induktionsnarkotika, Muskelrelaxantien (Erhöhung der Intubationserfolgs [45]), Sedativa
+und Opioide zur Aufrechterhaltung der Analgosedierung, sowie Vasopressoren.
+Sicherlich sollte zudem auch eine SOP zur Volumensubstitution vorhanden sein.
+Zweifelsohne wäre der Idealfall für das präklinische AWM, dass flächendeckend auf im
+beschriebenen Maße umfassend ausgebildete Anwender mit einer ausreichenden
+täglichen klinischen Routine zurückgegriffen werden kann [46]. Dieses Ziel erscheint
+aber im Kontext der beschriebenen Inzidenzen und des dazugehörigen Aufwands aus
+wirtschaftlichen Gründen kaum je erreichbar.
+Unter der Voraussetzung, dass im RDB Gießen zum Erhebungszeitpunkt von einer
+sorgfältige Dokumentation auszugehen ist, weisen die Ergebnisse der vorliegenden
+Erhebung zudem darauf hin, dass bei den Vorgaben und der Schulung zum erweiterten
+AWM im RDB Gießen zukünftig ein besonderer Augenmerk auf die Maßnahmen zur
+Lagekontrolle der Atemwegshilfen nach Insertion bzw. Intubation und während der
+Beatmung gelegt werden muss: Die Anwendung der Kapnometrie und die Durchführung
+einer klinische Untersuchung zur Lagekontrolle (Auskultation) der angewendeten
+Atemwegshilfen bei erweitertem AWM ist in einem unzureichendem Umfang in den
+Notfallprotokollen dokumentiert.
+4.5 Limitationen der vorliegenden Erhebung
+Die vorliegende Erhebung erfolgte retrospektiv. Dies kann die Aussagekraft insbesondere
+der nicht- epidemiologischen Ergebnisse einschränken.
+Grundlage der Erhebung waren die Notfallprotokolle des Rettungsdienstes. Hier erfolgt
+die Dokumentation durch den Anwender. Deren Qualität ist von dessen Routine und
+Ausbildungsstand hinsichtlich des Datenerfassungstools abhängig und unterliegt als
+„Selbstdokumentation“ einem möglichen Bias.
+4.6 Fazit
+Bei der Festlegung der Lernziele zum präklinischen AWM durch nicht- ärztliches RD-
+Fachpersonal stehen die Verantwortlichen vor der Herausforderung medizinisch- ethische
+Aspekte mit den meist hierzu im Konflikt stehenden wirtschaftlichen Ressourcen zu
+vereinbaren. Die vorliegende Erhebung beschreibt für den RDB Gießen epidemiologische
+Daten des präklinischen AWM und schlägt anhand der Daten der vorhandenen Literatur
+mögliche Strategien für pädiatrische und erwachsene Notfallpatienten vor.
+5 Zusammenfassung
+Einleitung: Die vorliegende Arbeit beschreibt die Epidemiologie, Techniken, Methoden,
+Komplikationen und Effizienz im Zusammenhang mit dem präklinischen
+Airwaymanagement (AWM) im Rettungsdienstbereich (RDB) Gießen. Methoden: Es
+wurden anonymisierte Notfallprotokolle aus den Jahren 2010- 2016 aus den Datenbanken
+der Leistungserbringer im Rettungsdienst (RD) und der zentralen Leitfunkstelle Gießen
+ausgewertet (n = 203614). Ergebnisse: Im Vergleich zu den wenigen vorhandenen Daten
+aus dem RD musste im RDB Gießen bei einem geringeren Anteil der Notfallpatienten
+eine Atemwegssicherung (AWS) erfolgen (0,8 %). Der Großteil der Notfallpatienten mit
+Indikation zum AWM war älter als 60 Jahre. Die mit AWM versorgte Gruppe der 0- 14
+Jährigen stellte nur einen Anteil von 0,8 % der Notfallpatienten dar. Bei einem Drittel der
+Notfälle mit AWM trafen die Notfallsanitäter (NFS) vor den Notärzten (NÄ) ein. Die
+Hauptindikation zum AWM war die kardiopulmonale Reanimation. Aspirationen waren
+neben Tubusfehllagen die häufigsten Komplikationen der AWS. Zur AWS wurden vor
+allem Endotrachealtuben und seltener Larynxmasken eingesetzt. Diskussion: Bei der
+Gruppe der 0- 14 jährigen Notfallpatienten (mit sehr seltener Indikation zum AWM) ist
+aufgrund anatomischer und physiologischer Besonderheiten das AWM sehr
+anspruchsvoll. Es bietet sich an, diese Patienten in der Präklinik durch gekonnte
+Anwendung weniger und leichter zu erlernenden Massnahmen, zum Beispiel Beutel-
+Maskenbeatmung, Inhalation und weitere effektiv zu versorgen. Für das AWM bei
+erwachsenen Patienten gilt es einen guten Kompromiß aus Ausbildungsaufwand und
+Effizienz am Patienten im eigenen Umfeld zu finden. Während der Ausbildungsaufwand
+für das AWM bei kardiopulmonalen Reanimationen (die Hauptindikation im RD)
+vertretbar erscheint, ist derjenige zum AWM bei Bewußtseinsstörungen ungleich
+komplexer, da die Verwendung von Narkosemedikamenten und auch kreislaufaktiver
+Medikamente obligat erscheint. Den medizinisch Verantwortlichen des Rettungsdienstes
+Gießen soll im Rahmen der Qualitätssicherung eine Planungsgrundlage des notwendigen
+Aus- und Weiterbildungsaufwandes (als vorweggenommene Delegation im Sinne der
+bereits existierenden erweiterten Versorgungsmaßnahmen) angeboten werden. Die
+Verhältnismäßigkeit zwischen medizinisch notwendiger Versorgung der Bevölkerung
+durch den Rettungsdienst und der Wirtschaftlichkeit ist eine ethische bzw.
+gesellschaftspolitische Fragestellung, deren Beantwortung außerhalb der vorliegenden
+Erhebung liegt.
+6 Summary
+Introduction: The work presents the epidemiology, techniques, methods, reliability and
+efficiency related to the preclinical Airway Manegement (AWM) in the emergency
+services area (ESA) Gießen. Methods: Anonymized emergency logs from the years
+2010- 2016 from the databases of the service providers in the rescue service (RS) and the
+central control station in Gießen were evaluated (n = 203614). Results: Compared to the
+few available data from the RS, a lower proportion of emergency patients had to be treated
+with an AWM in the ESA GI (0.8%). The majority of emergency patients with an
+indication for AWM were older than 60 years. The group of 0-14 year old patients treated
+with AWM represented only 0.8% of the emergency patients. In one third of the
+emergencies with AWM, the Notfallsanitäter (NFS) arrived before the Notarzt (NA). The
+main indication for AWM was cardiopulmonary resuscitation. In addition to tube
+malpositions, aspirations were the most common complications of the AWM.
+Endotracheal tubes and less often laryngeal masks were used for AWM. Discussion: The
+group of 0-14 year old emergency patients represents a special group in the RD in which
+the indication for AWM was very rare. However, since the AWM of pediatric emergency
+patients is very demanding due to anatomical and physiological peculiarities, it makes
+sense to effectively care for these patients in the preclinic through skillful application less
+and lighter ventilation methods, for example bag-mask ventilation, inhalation and so on.
+For AWM in adult patients, it is important to find a good compromise between training
+costs and efficiency. While the training effort for the AWM in cardiopulmonary
+resuscitation (the main indication in the RD) seems justifiable, someone for the AWM in
+impaired consciousness is much more complex, since the use of anesthetic drugs and
+possibly also circulatory drugs appears obligatory. Within the scope of quality assurance,
+the medically responsible persons of the Giessen rescue service should be offered a basis
+for planning the necessary training and further education (as an anticipated delegation in
+the sense of the already existing extended care measures). The relationship between the
+necessary medical care of the population by the emergency services and the profitability
+is an ethical and socio-political question, the answer to which lies outside the present
+survey.
+HRDG Hessisches Rettungsdienstgesetz
+ITW Intensivtransportwagen
+LAMA /LM Larynxmaske
+MIND Minimaler Notfalldatensatz
+MR Muskelrelaxanz, -ien
+NEF Notarzteinsatzfahrzeug
+NIS Notfallinformationsmanagementsystem
+NIV Nichtinvasive Ventilation
+Pat Patient, -en
+poi Parameters of Interest
+RDB Rettungsdienstbereich
+RDP Rettungsdienstpersonal
+RR systolischer Blutdruck
+RTH Rettungstransporthubschrauber
+RTW Rettungstransportwagen
+SpO2 partielle Sauerstoffsättigung
+SQL Standard Query Language
+UCH Unfallchirurgie
+z.B. zum Beispiel
+370–376, 2015.
+[11] C. Kill, W. Dersch, and A. Jerrentrup, “Videolaryngoskopie,” pp. 5–8, 2012.
+[12] S. Leitlinie, “publiziert bei : AWMF Leitlinie „ Prähospitales
+Atemwegsmanagement “ Mail : a.timmermann@drk-kliniken-berlin.de,” pp. 23,
+14, 2019.
+[13] A. Register-nr, “S3LL Polytrauma Schwerverletzten-Behandlung,” no. 012, 2017.
+[14] S. J. Sollid, D. Lockey, H. Lossius, and Pre-hospital advanced airway management
+expert group, “A consensus-based template for uniform reporting of data from pre-
+hospital advanced airway management,” Scand. J. Trauma. Resusc. Emerg. Med.,
+vol. 17, no. 1, p. 58, Nov. 2009.
+[15] G. A. Sunde et al., “Standardised data reporting from pre-hospital advanced airway
+management – a nominal group technique update of the Utstein-style airway
+template,” Scand. J. Trauma. Resusc. Emerg. Med., vol. 26, no. 1, p. 46, Dec. 2018.
+[16] R. Schmiedel and H. Behrendt, “BASt - Berichte der BASt - Leistungen des
+Rettungsdienstes 2008/09.” p. 77, 2011.
+[17] M. H. Schmiedhofer, J. Searle, A. Slagman, and M. Möckel, “Inanspruchnahme
+zentraler Notaufnahmen: Qualitative Erhebung der Motivation von Patientinnen
+und Patienten mit nichtdringlichem Behandlungsbedarf,” Gesundheitswesen, vol.
+79, no. 10, pp. 835–844, 2017.
+[18] M. Steinberger, “Danksagung,” 2019.
+[19] A. Gries, W. Zink, M. Bernhard, M. Messelken, and T. Schlechtriemen,
+“Realistische Bewertung des Notarztdienstes in Deutschland,” vol. 55, no. 10, pp.
+1080–1086, 2006.
+[20] G. A. Sunde et al., “Airway management by physician-staffed Helicopter
+Emergency Medical Services - a prospective, multicentre, observational study of
+2,327 patients,” Scand. J. Trauma. Resusc. Emerg. Med., vol. 23, no. 1, pp. 1–10,
+2015.
+[21] J. Klier and S. Gießen, “Effizienzanalyse der Notarztsysteme im
+Rettungsdienstbereich Gießen Eine retrospektive Auswertung von
+Notarzteinsatzprotokollen über zwei Jahre vor und nach Einführung eines weiteren
+Notarztsystems (Rendezvoussystem) im Inhaltsverzeichnis 1 EINLEITUNG.”
+[22] B. Schmitz and K. B. Buch, “BD Aktuell DGA,” pp. 603–614, 2010.
+[23] A. Timmermann and T. Piepho, “Handlungsempfehlung für das präklinische
+Atemwegsmanagement*,” pp. 294–305, 2012.
+[24] S. G. Russo, W. Zink, H. Herff, and C. H. R. Wiese, “Tod durch (k)einen atemweg:
+Trauma durch die präklinische atemwegssicherung?,” Anaesthesist, vol. 59, no. 10,
+pp. 929–939, 2010.
+[25] M. A. Cobas, M. A. de La Pena, R. Manning, K. Candiotti, and A. J. Varon,
+“Prehospital intubations and mortality: A level 1 trauma center perspective,” vol.
+109, no. 2, pp. 489–493, 2009.
+[26] D. D. Wirtz, C. Ortiz, D. H. Newman, and I. Zhitomirsky, “Unrecognized
+misplacement of endotracheal tubes by ground prehospital providers,” vol. 11, no.
+2, pp. 213–218, 2007.
+[27] H. E. Wang, J. R. Lave, C. A. Sirio, and D. M. Yealy, “Paramedic intubation errors:
+Isolated events or symptoms of larger problems?,” vol. 25, no. 2, pp. 501–509,
+2006.
+[28] D. J. Lockey, B. Healey, K. Crewdson, G. Chalk, A. E. Weaver, and G. E. Davies,
+“Advanced airway management is necessary in prehospital trauma patients,” Br.
+J. Anaesth., vol. 114, no. 4, pp. 657–662, 2015.
+[29] L. Rognås, T. M. Hansen, H. Kirkegaard, and E. Tønnesen, “Pre-hospital advanced
+airway management by experienced anaesthesiologists: A prospective descriptive
+study,” Scand. J. Trauma. Resusc. Emerg. Med., vol. 21, no. 1, pp. 1–10, 2013.
+[30] C. Thümmler, “Notfallmedizin: Senioren verändern das Einsatzspektrum,” Dtsch
+Arztebl Int., vol. 100, no. 11, p. A-680, 2003.
+[31] Z. Fortbildung, “Die präklinische Ver ‑ sorgung von Notfällen im Kindesalter
+Prehospital emergency care in children,” pp. 254–266, 2012.
+[32] B. Ziegler, K. Becke, and M. Weiss, “Reduction the risk in pediatric anesthesia—
+what should we know—what should we do,” Wiener Medizinische Wochenschrift,
+vol. 169, no. 3–4, pp. 56–60, 2019.
+[33] Deutsche Gessellschaft für Kinderchirurgie, “S2 - Leitlinie Polytraumaversorgung
+im Kindesalter AWMF-Reg.-Nr. 006-120,” no. 006, 2020.
+[34] C. Eich et al., “Characteristics of out-of-hospital paediatric emergencies attended
+by ambulance- and helicopter-based emergency physicians,” Resuscitation, vol.
+80, no. 8, pp. 888–892, 2009.
+[35] E. Mascha, D. Ph, D. Yang, and M. Ozaki, “IN Learning Curves for Bag-and-mask
+Ventilation and,” no. 6, pp. 1525–1531, 2015.
+[36] A. Timmermann and S. G. Russo, “Neubewertung extraglottischer
+Atemwegshilfsmittel in der Notfallmedizin,” Notfallmedizin up2date, 2017.
+[37] A. von Goedecke, H. Herff, P. Paal, V. Dorges, and V. Wenzel, “Field airway
+management disasters,” vol. 104, no. 3, pp. 481–483, 2007.
+[38] T. C. Mort, “Emergency tracheal intubation: Complications associated with
+repeated laryngoscopic attempts,” vol. 99, no. 2, pp. 607–13, table, 2004.
+[39] V. Mann et al., “Innovative techniques in out-of-hospital emergency medicine in
+Germany. A five year follow-up internet survey among medical emergency service
+directors,” Anasthesiol. und Intensivmed., 2020.
+[40] V. Mann, S. T. Mann, E. Alejandre-Lafont, R. Röhrig, M. A. Weigand, and M.
+Müller, “Supraglottische Atemwegshilfen in der Notfallmedizin: Stellenwert der
+Magendrainage,” Anaesthesist, 2013.
+[41] M. Bernhard et al., “Handlungsempfehlung: Prähospitale Notfallnarkose beim
+Erwachsenen,” Anasthesiol. und Intensivmed., 2015.
+[42] M. Hansen et al., “Patient safety events in out-of-hospital paediatric airway
+management: a medical record review by the CSI-EMS,” BMJ Open. 2016.
+[43] H. Trimmel, C. Beywinkler, S. Hornung, J. Kreutziger, and W. G. Voelckel,
+“Success rates of pre-hospital difficult airway management: a quality control study
+evaluating an in-hospital training program,” Int. J. Emerg. Med., vol. 11, no. 1,
+2018.
+[44] A. Timmermann et al., “Novices ventilate and intubate quicker and safer via
+intubating laryngeal mask than by conventional bag-mask ventilation and
+laryngoscopy,” vol. 107, no. 4, pp. 570–576, 2007.
+[45] M. W. Hubble, L. H. Brown, D. A. Wilfong, A. Hertelendy, R. W. Benner, and M.
+E. Richards, “A meta-analysis of prehospital airway control techniques part I:
+Orotracheal and nasotracheal intubation success rates,” vol. 14, no. 3, pp. 377–401,
+2010.
+[46] H. M. Lossius, J. Roislien, and D. J. Lockey, “Patient safety in pre-hospital
+emergency tracheal intubation: A comprehensive meta-analysis of the intubation
+success rates of EMS providers,” vol. 16, no. 1, p. R24, 2012.

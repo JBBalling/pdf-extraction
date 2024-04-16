@@ -1,0 +1,1586 @@
+Skalierung von nebenläufigen und
+verteilten Simulationssystemen für
+interagierende Agenten
+An der Universität Hamburg eingereichte
+D i s s e r t a t i o n
+zur Erlangung des akademischen Grads
+Dr. rer. nat.
+Jan Henrik Röwekamp
+aus Hamburg
+Hamburg, 2023
+Dissertation zur Erlangung der Würde des Doktors der Naturwissenschaften der
+Fakultät für Mathematik, Informatik und Naturwissenschaften,
+Fachbereich Informatik der Universität Hamburg
+vorgelegt von Jan Henrik Röwekamp aus Hamburg.
+Gutachten wurden erstellt von:
+Dr. Daniel Moldt
+Prof. Dr. Leonie Dreschler-Fischer
+Prof. Dr. Karsten Wolf
+Prüfungskomission:
+Prof. Dr. Peter Kling (Vorsitz)
+Dr. Daniel Moldt
+Prof. Dr. Leonie Dreschler-Fischer
+Prof. Dr. Norbert Ritter
+Tag der Disputation:
+22. Juli 2022
+Betreuung:
+Dr. Daniel Moldt
+Prof. Dr. Leonie Dreschler-Fischer
+Zusammenfassung
+Diese Arbeit behandelt die Integration von dynamischer Skalierbarkeit, dynami-
+scher Anpassung und modellbasierten Simulationssystemen. Diese Simulations-
+systeme sind dabei auf die nebenläufige Simulation von auf Plattformen inter-
+agierenden Agenten ausgelegt. Das zentrale Ergebnis hierbei ist die im Rahmen
+der Arbeit eingeführte »Mushu-Architektur«. Diese beschreibt in diesem Kon-
+text ein Agentensystem, in welchem Agenten, heterogene Plattformen und das
+Management von Plattformen in einer integrierten Architektur bestehen. Dabei
+sind Agenten durch das Design der Architektur explizit in der Lage dynamischen
+Einfluss auf die Form ihrer Plattformen und deren Anzahl zu nehmen.
+In der realen Welt treten Entitäten wie Systeme und insbesondere Menschen
+stets in einem bestimmten Raum oder Rahmen miteinander in Interaktion. Die
+Mushu-Architektur beabsichtigt die Möglichkeit dieser Entitäten spontan Räume
+für die Kommunikation und Interaktion zu schaffen konzeptuell abzubilden. Die
+agentenorientierte Softwareentwicklung bietet hierfür eine solide Grundlage und
+interpretiert die genannten Entitäten als Agenten. Die Simulation großer Systeme
+ist jedoch ab einer gewissen Größe auf einzelnen Maschinen nicht mehr möglich
+oder kosteneﬀizient. Daher wurde die Mushu-Architektur unter der Maßgabe
+entworfen, dass in einer Realisierung die Gesamtarchitektur ein verteiltes System
+beschreibt und die Plattformen die größten lokalen Einheiten darstellen. Es wird
+hergeleitet, dass die dynamische Erzeugung von Plattformen durch Agenten als
+Skalierungsoperation auf der technischen Ebene beschrieben werden kann. Auf
+technischer Ebene beschreibt die Mushu-Architektur gleichermaßen Anteile von
+Softwarekomponente bis Deploymentlandschaft.
+Als letzter verbleibender Punkt wird die Abbildung von Realweltsituationen auf
+derartige Modelle adressiert. Eine geeignete Methodik dafür besteht im Kontext
+der Szenenanalyse, bei welcher aus (Bild)daten und Wissen Hypothesen über
+beobachtete Situationen abgeleitet werden, passend zum generellen agentenori-
+entierten Ansatz. Da eine umfassende Betrachtung dieses Ablaufs den Umfang
+mehrerer eigener Arbeiten hätte, motiviert diese Arbeit lediglich diesen Weg. Da-
+bei wird dargelegt, dass es gerade bei umfangreichen Berechnungen vorteilhaft ist,
+eine solche Abbildung schneller durchführen zu können. Um hierbei einen Beitrag
+zu leisten, wird eine Heuristik eingeführt, welche grundlegend für die Beschleuni-
+gung einer Klasse an Mustererkennungsalgorithmen eingesetzt werden kann.
+Die Arbeit verfolgt einen dreistufigen Ansatz von Konzeptualisierung, Realisie-
+rungskonzept und Beschreibung von Prototypen. In der Konzeptualisierung wird
+die abstrakte Architektur beschrieben, im Realisierungskonzept die Abbildung auf
+bestehende (oder zu konstruierende) Technologieformen und schlussendlich in den
+Prototypen die Abbildung des Realisierungskonzepts auf konkrete Technologien,
+Frameworks, etc. sowie erfolgte Implementationen.
+Abstract
+This thesis addresses the integration of dynamic scalability, dynamic adaptation
+and model-based simulation systems, which are designed for the concurrent simu-
+lation of agents interacting on platforms. The main result is the newly introduced
+“Mushu architecture”. It describes an agent system, in which agents, heteroge-
+neous platforms and the management of platforms exist in an integrated archi-
+tecture, where agents are explicitly able to dynamically influence their platforms
+themselves as well as the platform quantity through the design of the architecture.
+Based on the real-world observation that entities, such as systems and especially
+humans, interact with each other in certain spaces or contexts, the Mushu archi-
+tecture intends to cover the possibility of these entities to spontaneously create
+spaces for communication and interaction on a conceptual level. Agent-oriented
+software development provides a solid foundation for this and interprets the en-
+tities mentioned as agents. However, the simulation of large systems is no longer
+possible or cost-eﬀicient for single machines above a certain extent. Therefore,
+the Mushu architecture was designed with the idea in mind that within a reali-
+sation, the overall architecture describes a distributed system and the platforms
+are the largest local entities. It is then deduced that the dynamic generation of
+platforms by agents can be described as scaling operations from a technical point
+of view. On the technical level, the Mushu architecture thus describes different
+parts ranging from software components to the deployment landscape.
+The last remaining aspect is the mapping of real-world situations to such models.
+A viable methodology for this exists in the context of scene analysis, in which hy-
+potheses about observed situations are derived from (image) data and contextual
+knowledge, in line with the general agent-oriented approach. Since a compre-
+hensive consideration of this process would take up the scope of several separate
+theses, this thesis only discusses the approach. In doing so, it is explained that
+a mapping for large-scale calculations should nevertheless be quick to compute.
+In order to make a generalised contribution to this aspect, a heuristic is intro-
+duced which is fundamental for the acceleration of a class of pattern recognition
+algorithms.
+The thesis follows a three-step approach of a conceptualisation, the creation of a
+realisation concept and the description of prototypes. In the conceptualisation the
+abstract architecture is described, the creation of a realisation concept addresses
+the mapping to existing (or to be constructed) kinds of technology, and finally
+prototypes apply the realisation concepts to concrete technologies, frameworks,
+etc., and also describe the implementations that have taken place within the
+context of the thesis.
+Danksagung
+Mein Dank geht an meinen Betreuer Dr. Daniel Moldt und meine Betreuerin
+Prof. Dr. Leonie Dreschler-Fischer für ihre Hilfestellungen im Rahmen der Ar-
+beit. Insbesondere durch die Hinweise, die unzähligen Gespräche und gemeinsa-
+men Projekte mit Dr. Daniel Moldt und der damit einhergehenden exzellenten
+Unterstützung war ich in der Lage die Thematik der Arbeit in dieser Form bear-
+beiten zu können. Darüber hinaus danke ich Prof. Dr. Dreschler-Fischer für die
+vielen Gespräche und die fortlaufende Unterstützung während der Arbeit. Fer-
+ner gilt mein Dank Prof. Dr. Peter Kling für die Übernahme des Vorsitzes der
+Prüfungskomission, Prof. Dr. Karsten Wolf für die Begutachtung und die Unter-
+stützung der Prüfungskomission, sowie Prof. Dr. Norbert Ritter für die Teilnahme
+an der Prüfungskomission.
+Ich möchte weiterhin allen Menschen in meiner Familie für die fortlaufende Unter-
+stützung während der Anfertigung der Dissertation und allen Höhen und Tiefen
+während des ganzen Promotionsverfahrens danken. Mein Dank gilt dabei meinen
+Eltern Gaby und Claus, meiner Partnerin Manuela und ihrer Mutter Birgit.
+Im weiteren Rahmen der Universität gilt mein Dank allen Dozenten, Doktoran-
+den, Postdocs, Kommilitonen und Studierenden, welche über die Jahre meines
+Bachelor-, Master- und Promotionsstudiums hilfreiches Feedback geliefert und zu
+spannenden Diskussionen beigetragen haben. Insbesondere sind dies (ohne spe-
+zifische Reihenfolge): Michael Haustermann, David Mosteller, Dennis Schmitz,
+Michael Simon, Dr. Benjamin Seppke, Dr. Thomas Wagner, Prof. Dr. Micha-
+el Köhler-Bußmeier, Eva Müller, Dr. Frank Heitmann, Dr. Matthias Wester-
+Ebbinghaus, Prof. Dr. Rüdiger Valk, Prof. Dr. Peer Stelldinger, Matthias Feld-
+mann, Felix Beese, Rainer Jürgensen, Jan Robert Janneck und Laif-Oke Clasen.
+Darüber hinaus gilt mein spezieller Dank Marvin Taube, Patrick Mohr, Henri
+Engelhardt, Laszlo Korte, Alexander Senger, Sven Willrodt, Laif-Oke Clasen und
+Manuela Buchholz für die Unterstützung bei der technischen Implementationsar-
+beit im Rahmen dieser Arbeit.
+Dann möchte ich allen Freunden, Familie und Bekannten danken, die sich die
+Zeit genommen haben diese Arbeit korrekturzulesen: Bennet, Jann, Adrian, Kay,
+Benni, Peer, Dennis, Voßi, Elly, Gaby, Felix, Laif, Jürgen, Manuela, Sven und
+Thomas. Zuletzt danke ich noch Hanna für die Ermöglichung äußerst flexibler
+Arbeitszeiten im letzten Jahr der Anfertigung der Arbeit.
+Ausgangspunkt
+1. Einleitung
+Bei genauer Betrachtung der Welt und der in ihr agierenden Menschen, Syste-
+me, Software, Tiere und weiteren sowie deren Umgebungen fällt auf, dass sich
+bestimmte Strukturen an vielen Orten wiederholen. So kann beispielsweise ein
+Austausch zwischen drei alten Freunden in einem Café stattfinden, ein Mensch
+eine Katze streicheln, ein Analytiker die soeben berechneten Geschäftszahlen eines
+Unternehmens lesen oder aber sich ein Smartphone mit einem Nachrichtenserver
+synchronisieren. Diese auf den ersten Blick sehr verschiedenen Situationen haben
+jedoch eine gemeinsame Basis. Entitäten, die individuell und für sich entscheiden,
+planen und handeln, gehen eine gemeinsame Interaktion ein, sie synchronisieren
+sich.
+Derartige beschriebene Interaktionen finden immer innerhalb eines Kontextes,
+bzw. einer Räumlichkeit statt. So befinden sich die Freunde in einem Café, der
+Mensch mit der Katze beispielsweise im Wohnzimmer seiner Wohnung, der Ana-
+lytiker im Büro und die Synchronisation zwischen Smartphone und Server gewis-
+sermaßen in einem geschlossenen Kommunikationskanal im Netzwerk. In unserer
+Umgebung geschehen derartige Prozesse millionenfach und zu jeder denkbaren
+Zeit. Sie folgen dabei keiner gemeinsamen globalen Taktung, sondern geschehen
+vielfach zeitlich vollständig unabhängig voneinander, sie geschehen nebenläufig.
+Dies bedeutet jedoch keineswegs, dass zwangsläufig alle Aktionen unabhängig
+voneinander geschehen müssen. So kann der Mensch, der die Katze streichelt,
+beispielsweise gleichzeitig noch ein Telefonat führen und auf einen stummgeschal-
+teten Fernseher schauen. Einzelne Aktionen können sich auch bedingen und somit
+in einem Kausalzusammenhang stehen, so könnte das Telefonat aufgrund einer
+entsprechenden Nachricht auf dem Smartphone initiiert worden sein. Die verschie-
+denen Aktionen können sich beliebig überlappen.
+Jede Entität in diesem globalen System handelt getrieben durch innere Prozesse,
+je nach Komplexität basierend auf einer Form der Wissensspeicherung. Sie han-
+deln alleine, können sich jedoch auch in Kooperation mit anderen begeben, um ge-
+meinsam eine Handlung zu vollziehen. Dabei treffen sie an einem physischen oder
+virtuellen Ort – oder allgemeiner gesagt – einer Plattform aufeinander. Beispie-
+le für eine solche Plattform sind gegeben durch Räume, Konferenzen, Telefonate
+und viele weitere.
+1. Einleitung
+Darüber hinaus sind Entitäten in der Lage diese Plattformen zu manipulieren,
+sie zu erzeugen, zu zerstören bzw. abzubauen und anzupassen. Räume können
+gebaut, Telefonate gestartet, Internetverbindungen hergestellt und Konferenzen
+verabredet werden. Die Änderung an Plattformen findet meist indirekt durch
+die Entitäten statt, so kann z.B. in einem Raum das Licht angeschaltet werden
+oder das Routing einer Verbindung geändert werden. Bei größeren Änderungen
+ist meist eine übergeordnete Instanz involviert, welche die Plattform bereitstellt,
+an die die Anfrage gerichtet werden kann. So könnte ein Unternehmen die kon-
+krete Ausrichtung einer Abteilung ändern oder durch den Gebäudeverwalter eine
+technische Ausstattung in einem Raum installiert werden. Als Beispiele für die
+Zerstörung von Räumen kann die Beendigung eines Telefonates, das Ende einer
+Konferenz, der Abriss eines Gebäudes und weitere genannt werden.
+Wenn die Idee der Entitäten und Plattformen weiter abstrahiert wird, können in
+bestimmten Fällen Plattformen wiederum mit anderen Plattformen kooperieren
+und sich somit selbst wie Entitäten verhalten. Reale Beispiele sind Abteilungen
+in einem Unternehmen oder gemeinsam ausgerichtete Konferenzen.
+Eine der großen Erleichterungen durch die Informatik besteht darin durch Simu-
+lationen bereits im Vorfeld Aussagen über Verhalten unter bestimmten Parame-
+tern treffen zu können. Von dieser Technologie profitieren täglich Milliarden von
+Menschen, sei es durch berechnete Wettervorhersagen, Bahnfahrpläne oder Ver-
+kehrsplanung um beispielsweise Ampelschaltungen zu optimieren. Häufig existiert
+zu jedem speziellen Anwendungsfall eine sehr spezialisierte Simulationssoftware,
+die mit großer Präzision versucht die Domäne eines spezifischen Problems abzu-
+bilden. Simulationen, die allerdings generalisierte Informationen und Vorhersagen
+zulassen, sind seltener anzutreffen.
+Für Simulationen ist es stets sinnvoll ein geeignetes Modell der zu simulieren-
+den Systeme zu erzeugen. Die modellgetriebene Softwareentwicklung ist eines der
+Resultate aus diesem Umstand. Für die Ableitung von Modellen aus der realen
+Welt existieren verschiedene Herangehensweisen. Eine mögliche dieser Herange-
+hensweisen ist die Szenenanalyse, welche ihrerseits wieder eine Unterkategorie
+der Bild(folgen)verarbeitung ist. Die Szenenanalyse beschäftigt sich mit der Ex-
+traktion von Hypothesen aus Bildfolgen auf der Basis von Bildinformationen und
+Kontextwissen. Dabei sind die Hypothesen auf höherer Ebene zu verorten als
+einfache Bilddaten. So sind beabsichtigte Ergebnisse beispielsweise die Differen-
+zierung zwischen einem Tanz und einem Handgemenge. Je genauer das extrahierte
+Modell der zugehörigen Welt ausfällt, desto detailliertere Hypothesen können ex-
+trahiert werden.
+Trotz der offensichtlichen Zusammenhänge zwischen nebenläufigen Handlungen,
+großer Anzahl der Entitäten und der Möglichkeit die eigene Laufzeitumgebung an-
+zupassen und zu ändern, existieren jedoch bislang wenige Softwarearchitekturen,
+welche diese Anforderungen umfassend in einem System in Einklang bringen und
+eine ausreichende Basis liefern, um daraus Ableitungen zu ermöglichen. Dies ist in
+erster Linie der hohen Komplexität der Kombination der einzelnen Bestandteile
+geschuldet. Weiterführende Argumentationen zu dieser These werden in Kapitel 4
+geführt.
+Da somit noch grundlegende Fragen für die Modellierung dieses Verständnisses
+von Realweltabläufen für die Interpretation im Rahmen der Szenenanalyse unge-
+klärt sind, adressiert diese Arbeit die Schaffung einer entsprechenden architektu-
+rellen Grundlage. Diese kann sodann sowohl in der Szenenanalyse, aber auch in
+anderen Anwendungsszenarien eingesetzt werden. Beispielhafte Anwendungssze-
+narien jenseits der Szenenanalyse werden in Abschnitt 1.2 noch einmal genauer
+ausgeführt.
+Zur Bearbeitung der Aufgabe ist es zunächst angebracht einen entsprechenden
+Grundansatz der Softwarearchitektur zu betrachten. Die agentenorientierte Soft-
+wareentwicklung ist dabei hervorragend geeignet, da sie den sogenannten Soft-
+wareagenten autonome Eigenschaften zugesteht. Die Definition eines Software-
+agenten ist durch die Literatur hinweg nicht eindeutig, meist wird damit jedoch
+ein gewisses Maß an Autonomie, Zielorientierung, Interaktionsvermögen und Wis-
+sen verbunden. Eine genauere Definition des Begriffes für diese Arbeit folgt in Ka-
+pitel 2. Diese Grundeigenschaften machen Agenten zu einem guten Ansatz, um
+interagierende Entitäten zu modellieren. Folglich bezieht sich diese Arbeit auf das
+Paradigma der agentenorientierten Softwareentwicklung.
+Um den Ansatz weiter eingrenzen und zielgerichteter bearbeiten zu können, wer-
+den im Rahmen der Arbeit Agenten im Sinne des Mulan Modells (Rölke, 2004)
+und dessen Erweiterungen betrachtet. Sie entsprechen damit nach und analog
+zu (Wagner, 2018) dem Agentenbegriff aus (Wooldridge, 2009, S.26-27). Da-
+mit einhergehend umfasst das betrachtete Agentenmodell keine kognitiven Kon-
+zepte oder solche, welche künstlicher Intelligenz entsprechen würden. Insbesondere
+Agenten nach dem BDI-Ansatz (»Believe«, »Desire«, »Intention«) (Bratman,
+1987; Rao und Georgeff, 1991) und Verwandte sind damit außerhalb des Um-
+fangs der Arbeit, wenngleich sich die BDI-Konzepte und die Intelligenz in Mulan
+konzeptionell gut eingliedern (Rölke, 2004).
+Zahlreiche andere Arbeiten setzen bereits auf dem Mulan-Ansatz auf, wie bei-
+spielsweise (Reese, 2009), (Wester-Ebbinghaus, 2010), (Cabac, 2010), (Wag-
+ner, 2018) und weitere. Analog zu diesen Publikationen setzt auch diese Arbeit
+als Modellierungstechnik Petrinetze und im speziellen Referenznetze (Kummer,
+2002) ein.
+Petrinetze eignen sich hervorragend als Modellierungswerkzeug für nebenläufige
+Systeme und auch verteilte Systeme. Durch ihre strikte Trennung von aktiven und
+passiven Komponenten und auch durch die Grundidee der Marken sind sie in der
+Lage, Ressourcen und Abläufe prägnant zu modellieren. Petrinetze untergliedern
+sich in eine Vielzahl verschiedener Formalismen, bei denen die Referenznetze in-
+nerhalb dieser Arbeit eine gesonderte Stellung einnehmen. Je nach Kontext bzw.
+Bedarf oder Vermögen der Werkzeuge können verschiedene Semantiken wie die
+(echte) Nebenläufigkeit (Petri, 1962), die Schritt- oder Interleaving-Semantik
+zur Simulation von Petrinetzen zum Einsatz kommen.
+Referenznetze gehören den Objektnetzen an, basieren auf Netzen-in-Netzen (Valk,
+1998) und integrieren objektorientierte Netze (Moldt, 1996) und synchrone Ka-
+näle (J. Christensen, 1994). Zugehörige formale Arbeiten bestehen durch (Köh-
+ler, 2004) und (Heitmann, 2013). Weitere Beiträge zum Thema Objektnetze
+umfassen beispielsweise die Publikationen (Buchs, Flumet und Racloz, 1992;
+Lakos, 1995; Buchs und Guelfi, 2000; Farwer und I. Lomazova, 2001; Irina
+Lomazova und Ermakova, 2016). Referenznetze können auf einfache Art und
+Weise inhärent hierarchische, nebenläufige Systeme kompakt modellieren. Eben
+diese Art von Systemen stellen Agenten, welche auf Plattformen miteinander in-
+teragieren, dar.
+Während Petrinetze einen formalen Rahmen vorgeben und viele Beweise und
+Ansätze der Verifikation für einfache Klassen der Petrinetze bestehen, sind sol-
+che Verfahren bei Referenznetzen Gegenstand aktueller Forschung. Entsprechende
+Grundlagen wurden bereits in den Arbeiten Kummers (Kummer, 2002) auf der
+Basis von Graphtransformationssystemen und weiteren formalen Hintergründen
+geschaffen. Aktuellere Arbeiten umfassen beispielsweise die Beiträge (Willrodt,
+2019), (Willrodt, Moldt und M. Simon, 2020) und (Engelhardt, 2020).
+Entsprechende Untersuchungen bildeten die Grundlage der Implementation des
+Referenznetzsimulators Renew (Kummer und Wienberg, 1999b; Kummer,
+Wienberg, Duvigneau, Cabac u. a., 2020a), in dessen Kontext auch eine tech-
+nische Implementation der Mulan-Architektur erfolgte. Deshalb und da die Un-
+tersuchungen aktuell aktiv vorangetrieben werden, wird argumentiert, dass der
+fehlende umfassende formale Rahmen von Mulan und von Referenznetzen in
+Kauf genommen werden kann, um das Grundmodell der Referenznetze und ihren
+hierarchischen Modellierungseigenschaften dennoch einsetzen zu können. Dies gilt
+insbesondere, wenn es sich um praktische und angewandte Modellierung handelt.
+Ferner sind aus diesem Grund Ansätze formaler Verifikation und ähnliches nicht
+Teil des Umfangs dieser Arbeit.
+Der Petri net-based, Agent- and Organization-Oriented Software
+Engineering(Paose)-Ansatz nach (Moldt, 2005) (Cabac, Dörges, Duvi-
+gneau, Moldt u. a., 2008) (Cabac, 2010) erweitert das Verständnis des Agen-
+tensystems auf die Entwicklung derartiger Multiagentensysteme und etabliert es
+als übergreifendes Leitbild (Cabac, 2007). Der Paose-Ansatz ist zugeschnitten
+auf die Entwicklung im Capa-Umfeld (Concurrent Agent Platform Ar-
+chitecture) (Duvigneau, 2002), (Duvigneau, Moldt und Rölke, 2002),
+1.1. Ziele der Arbeit und Forschungsfragen
+(Duvigneau, Moldt und Rölke, 2003), wobei Capa eine FIPA1-konforme spe-
+zifische Implementation von Mulan darstellt. Paose selbst ist auch allgemeiner
+einsetzbar. Capa wird im Rahmen der Arbeit zwar referenziert, dient jedoch nicht
+als direkte Grundlage. Das generelle Verfahren in der Erstellung der Arbeit ist an
+den Paose-Ansatz angelehnt, setzt ihn aber nicht vollumfänglich um, da die Ar-
+beit lediglich Überschneidungen mit dem Rahmen von Capa aufweist. Einzelne
+Artefakte wie beispielsweise Agenteninteraktionsprotokolle (AIPs) zur Beschrei-
+bung von Teilsystemen und Abläufen kommen aber dennoch zum Einsatz. Umge-
+kehrt stellt diese Arbeit jedoch in Hinblick auf eine konzeptionelle und software-
+technische ergänzende Verbesserung der Modellierung, Verteilung und Nutzung
+einen Beitrag zur Erweiterung des Paose-Ansatzes dar.
+Eine Besonderheit in der Simulation derartiger agentenorientierter Systeme im
+Kontext der Szenenanalyse ist der Umstand, dass Algorithmen im direkten Be-
+reich der Bildverarbeitung meist entweder auf reine Umsetzbarkeit untersucht
+werden oder aber den harschen Anforderungen einer Echtzeitanwendung unter-
+liegen. Beide Ansätze sind unglücklich für den hier intendierten Einsatzzweck
+der Abbildung und Simulation realer Prozesse. Übermäßig langsame Algorith-
+men bremsen die Simulation aus und Echtzeitalgorithmen bringen größere Opfer
+als es für den Kontext notwendig wäre.
+1.1. Ziele der Arbeit und Forschungsfragen
+Während viele der im vergangenen Abschnitt angesprochenen Bereiche interes-
+sante Untersuchungsfelder darstellen können, ist jedoch der Umfang einer jeden
+Arbeit auf ein spezifisches Thema eingegrenzt. Für diese Arbeit wird daher im
+Kontext der bisherigen Ausführungen zu interagierenden Agenten und deren Wir-
+kung auf die Plattformen, auf denen sie interagieren, und insbesondere die Er-
+zeugung und Zerstörung dieser Plattformen durch die Agenten, die folgende For-
+schungsfrage gestellt:
+Wie können, entsprechend realweltlichen Interaktionen, nebenläufige,
+interagierende Agenten mit Einfluss auf die Plattformen, auf denen ihre
+Interaktion stattfindet, sowie auf deren Gesamtmenge als Modell bzw.
+Architektur eines verteilten Systems, beschrieben werden?
+Die Forschungsfrage umfasst damit zwei Hauptbestandteile: Den Einfluss von
+Agenten auf die Plattform sowie den Einfluss der Agenten auf die Skalierung der
+Menge der verfügbaren Plattformen.
+1Foundation for Intelligent Physical Agents
+1. Einleitung
+Während der erste Teil im Kern die Interaktion und dynamische Modifikation
+einer einzelnen Plattform betrifft, adressiert der zweite Teil die Interaktion und
+dynamische Modifikation der Gesamtmenge der Plattformen. Die Dynamisierung
+der Plattformen führt jedoch unweigerlich zu potentiell problematischer Kommu-
+nikation zwischen Agenten. Plattformen könnten durch Skalierungsoperationen
+temporär oder permanent verloren gehen. Die klassischen Ansätze für Kommuni-
+kation (Nachrichtenzustellung) in verteilten Multiagentensystemen könnten dabei
+auf Probleme stoßen. Dies betrifft insbesondere Interaktionen, welche auf bilate-
+ralem Informationsaustausch basieren, da hierbei meist eine gewisse Form der
+Garantie für Zustellungsoperationen nötig ist.
+Aus diesen Herleitungen soll daher die zweite betrachtete Forschungsfrage lauten:
+Wie kann eine nebenläufige bilaterale Kommunikation zwischen Agenten
+gewährleistet werden, wenn ihre Plattformen zur Interaktion potentiell flüchtige
+Entitäten sind?
+Trotz der natürlichen Relevanz der Forschungsfragen existieren – wie sich in Ab-
+schnitt 4.3.4 zeigen wird – bisher nur unzureichende Lösungen. Auf die Relevanz
+wird in Abschnitt 1.2 noch weiterführend eingegangen. Existierende Lösungen de-
+cken zumeist wenigstens einen der betrachteten Aspekte nicht ab: Modellbasierte
+Entwicklung, echte Nebenläufigkeit, Autonomie der Entitäten, Einfluss der Enti-
+täten auf Plattformen oder die Modellierung von lokalen und verteilten Anteilen
+des Systems. Weitere Informationen zu dieser Aussage werden in Kapitel 3 zum
+Stand der Forschung sowie in Kapitel 4 zur Anforderungsanalyse aufgearbeitet.
+Um möglichst universell einsatzfähig zu sein, sollte das Architekturkonzept der
+Forschungsfragen möglichst abstrakt gehalten werden und nicht auf konkrete tech-
+nische Lösungen eingehen. Eine Umsetzung einer entsprechenden Architektur, wie
+sie von den Forschungsfragen gefordert wird, umfasst zwangsläufig den Einsatz
+mehrerer physikalischer Recheneinheiten und damit die Konstruktion eines ver-
+teilten Systems. Die Konstruktion verteilter Systeme ist im besonderen Maße an-
+spruchsvoll. Unter diesem Aspekt ist es daher angebracht neben dem abstrakten
+Architekturkonzept ebenso ein Realisierungskonzept vorzustellen, welches als Bin-
+deglied zwischen technischer Implementation und abstrakter Spezifikation dient.
+Auf Basis des Realisierungskonzepts können dann Proof-of-Concept Implementa-
+tionen (Prototypen) erfolgen. Die Gliederung der Arbeit folgt diesen Überlegun-
+gen. Eine genaue Übersicht erfolgt am Ende der Einleitung in Abschnitt 1.3.
+Jenseits der direkten Anforderungen der aufgestellten Forschungsfragen wurde be-
+reits motiviert, dass die moderate Beschleunigung von Bildverarbeitungsprozessen
+ein wenig untersuchtes Feld ist. Aus diesem Grund soll eine weitere Forschungs-
+frage angeschlossen werden, welche sich jedoch nur im Kontext der Anwendungs-
+domäne der Szenenanalyse formulieren lässt:
+Ist es möglich, für einige Bildverarbeitungsalgorithmen grundlegende und
+beschleunigende Heuristiken zu definieren, deren Leistung zwischen reiner
+Umsetzbarkeit der Aufgabe und den Anforderungen einer Echtzeitanwendung
+liegt?
+1.2. Anwendungsbeispiele
+Die generelle Abbildung der Forschungsfragen auf realweltliche Zusammenhänge
+wurde bereits in den vergangenen Abschnitten erläutert. Dennoch ist zur Illus-
+tration die Darstellung entsprechender realweltlicher Beispiele hilfreich. Um zu
+motivieren, wie ein Ergebnis in diesem Bereich bedeutsame Verbesserungen mit
+sich ziehen kann, werden im Folgenden einige Anwendungsszenarien umrissen.
+Krankheitsstand ausgleichen In diesem Szenario können Mitarbeiter für andere,
+erkrankte Mitarbeiter einspringen und deren Aufgaben übernehmen. Dabei
+sind die Fähigkeiten der Vertretung bezogen auf die übernommene Aufga-
+be jedoch nicht so stark ausgeprägt wie bei dem ausgefallenen Mitarbei-
+ter. Die Arbeit erfordert den Austausch mit Kollegen und die Interaktion
+mit der Arbeitsstätte. Neben den weitestgehend festen Arbeitsstätten in-
+teragieren Kollegen auch miteinander und schaffen sich zu diesem Zweck
+dynamisch Plattformen wie Telefonverbindungen oder Meetings. Bei größe-
+ren Unternehmen ist eine Kooperation verschiedener Arbeitsstätten denkbar
+(Fertigungsstraßen). Mit einem Modell der Belegschaft und den Arbeitsstät-
+ten könnten verschiedene Vertretungs-Szenarien exploriert werden, um gute
+Lösungen für die Vertretungspläne vorauszuberechnen. Als weitere unter-
+suchbare Eigenschaften in der Simulation sind Verletzungsrisiken, soziale
+Dynamiken zwischen den Mitarbeitern, Zufriedenheit und andere denkbar.
+Kooperierende Roboter Hierbei werden mehrere autonome kooperierende Ro-
+boter betrachtet. Dabei kann die Aufgabenstellung vielfältig sein. So könnte
+ein Roboter Waren aus einem Lagerregal heben und einem zweiten Roboter
+zielsicher übergeben, sodass letzterer diese dann zur Versandstation bringt,
+wo er mit einem weiteren Roboter kooperiert. Für Interaktionen erzeugen
+oder nutzen die Roboter dynamisch Plattformen wie Räume oder den Auf-
+bau einer Verbindung mit einer Kommunikationstechnologie.
+Verkehrsfluss Eine andere Anwendung sind in diesem Kontext Kraftfahrzeuge
+auf der Straße. Durch die Kooperation der einzelnen Individualfahrzeu-
+ge entsteht ein globaler Verkehrsfluss. Durch eine skalierbare Simulation
+der Situation können Verkehrsdichten vorausberechnet werden, während
+auf den individuellen Charakter der Einzelfahrzeuge eingegangen werden
+kann. Klassische Verkehrssimulationen sind gezwungen an dieser Stelle auf
+1. Einleitung
+Vereinfachungen wie die Aufgabe der Modellierung inidividueller Verkehrs-
+teilnehmer zurückzugreifen, um die Geschehnisse in überschaubare mathe-
+matische Formeln zu überführen. Auch Änderungen an der Straßenführung
+wären denkbar durch die Möglichkeit der Agenten Einfluss auf die Platt-
+form zu nehmen. So wären dynamische Anpassungen im Modell möglich.
+Entsprechende Modelle können durch Verkehrskameras oder Fahrzeuge mit
+entsprechenden Sensoren auf der Basis der Szenenanalyse unterstützt wer-
+den, um bestimmte Situationen zu erkennen.
+Balancierung von Gesellschafts- oder Onlinespielen Kompetitive Spiele erhal-
+ten ihre Spannung dadurch, dass die Chancen der Spielteilnehmer ausgegli-
+chen sind, egal mit welchen der auswählbaren Startbedingungen sie jeweils
+beginnen. Die Balancierung von Spielen ist in sich keine leichte Aufgabe;
+eine Vorhersage zu treffen, welche Ausprägung die Gesamtheit der (späte-
+ren) Spieler haben wird, ist äußert schwierig. Durch die Modellierung der
+interagierenden Spieler und der Codierung der Spielregeln kann durch eine
+agentenorientierte Simulation jedoch darüber eine Aussage getroffen wer-
+den, indem die Simulationsläufe in Bezug auf Gewinnhäufigkeit analysiert
+werden. Durch die dynamische Erzeugung von Plattformen können Kom-
+munikationen im und neben dem Spiel modelliert werden.
+Simulation von Märkten Märkte sind komplexe Systeme mit vielen autonom
+agierenden Teilnehmern. Handel kann zwischen verschiedenen Teilnehmern
+auf unterschiedlichen (Handels)plattformen stattfinden, Teilnehmer kön-
+nen in direkten Austausch treten und (Handels)plattformen weisen unter-
+schiedliche Ausprägungen aus. Mit der Modellierung entsprechender Agen-
+ten könnten sich mit Simulationen Vorhersagen über Marktverhalten treffen
+lassen. Die Hauptschwierigkeit besteht selbstverständlich in der korrekten
+Modellierung der Agenten und ihrer jeweiligen Verhaltensmuster. Mit einer
+Architektur, wie sie in dieser Arbeit angestrebt wird, wäre ein konkreter
+Rahmen und eine Realisierungsmöglichkeit einer naturgetreuen Abbildung
+geschaffen.
+Allen Beispielen ist gemein, dass die Erschließung neuer Kommunikationskanäle
+bzw. Plattformen der abgebildeten Entitäten maßgeblichen Einfluss auf die je-
+weils skizzierte Simulation hat. Auch die Flüchtigkeit dieser Plattformen spielt
+eine entscheidende Rolle bei dem Verlauf der Simulation. Mit dem Bestehen ei-
+ner entsprechenden Architektur, welche diese Eigenschaften adressiert, könnte ein
+Beitrag für die genannten Anwendungsszenarien geleistet werden.
+1.3. Aufbau der Arbeit
+Die Arbeit gliedert sich in fünf Hauptbestandteile. Teil I führt in Kapitel 2 zu-
+nächst die notwendigen Grundlagen ein, um eine Diskussion bestehender Lösun-
+gen zu ermöglichen. In Kapitel 3 werden danach bestehende Lösungen und be-
+reits im erweiterten Kontext der Forschungsfragen erfolgte Forschung diskutiert.
+Kapitel 4 analysiert und evaluiert diese Lösungen insbesondere im Kontext der
+Forschungsfragen und zeigt nötige Arbeiten für die Beantwortung der Forschungs-
+fragen auf. Ferner wird dabei das generelle Vorgehen hierzu ausgeführt.
+Anschließend widmet sich Teil II der konzeptuellen Aufarbeitung einer Architek-
+tur für interagierende Agenten mit Einfluss auf die Skalierung ihrer Plattform-
+menge. Entlang der Forschungsfragen adressiert Kapitel 5 die Kommunikation
+zwischen Agenten, Kapitel 6 die Interaktion mit der Plattform durch Agenten
+und Kapitel 7 konzipiert eine Verwaltungsebene für Plattformen selbst. Abschlie-
+ßend fasst Kapitel 8 die Ergebnisse in eine kombinierte Architektur zusammen.
+Ausgehend von der in Kapitel 8 zusammengefügten Architektur beschreibt Teil III
+eine Abbildung der abstrakten Architektur auf verschiedene Bausteine und Sys-
+temkomponenten in der Form von Realisierungskonzepten. Ein Realisierungskon-
+zept ist dabei nicht als Pflichtenheft der Wasserfall-Softwareentwicklung zu ver-
+stehen, sondern als konzeptuelle Zusammenstellung verschiedener technologischer
+Lösungsansätze mit dem Ziel der Umsetzung der Architektur. Dabei wird eine et-
+was niedrigere Abstraktionsebene eingenommen und der Einsatz von Renew als
+Referenznetzsimulator vorgegeben, jedoch darüber hinaus keine Einschränkung
+auf konkrete Technologien vorgenommen. Kapitel 9 erörtert zunächst die techni-
+schen Rahmenbedingungen bestehender Lösungen und Anknüpfungspunkte. Auf
+dieser Basis diskutiert Kapitel 10 eine mögliche Realisierung der Verwaltungsebe-
+ne von Plattformen, Kapitel 11 die Realisierung einer entsprechenden Schnittstelle
+zu Plattformen und Kapitel 12 eine mögliche Umsetzung der Agentenkommuni-
+kation. Zuletzt adressiert Kapitel 13 die letzte Forschungsfrage im Kontext der
+Anwendungsdomäne der Szenenanalyse. Das Ziel hierbei ist eine grundlegende
+und beschleunigende Heuristik für häufig in dem Kontext eingesetzte Algorith-
+men.
+Abschließend widmet sich Teil IV der Evaluation der Untersuchungen. In Kapi-
+tel 14 folgt eine Beschreibung konkreter Prototypen und Implementationen im
+Rahmen der Arbeit. Dabei handelt es sich um konkrete technische Ausgestal-
+tung der Realisierungskonzepte (oder Vorläufer davon) aus Teil III. Anschließend
+evaluiert Kapitel 15 die Ergebnisse der Arbeit bezogen auf die Forschungsfragen.
+Im letzten Teil V folgt in Kapitel 16 eine Gesamtzusammenfassung der Arbeit und
+Kapitel 17 wirft neben einem Gesamtfazit einen Blick auf mögliche zukünftige und
+anschließende Arbeiten.
+2. Grundlagen
+Zunächst soll eine Orientierung der möglichen Umsetzungsmöglichkeiten der Fra-
+gestellung erfolgen. Dabei werden verschiedene Vorarbeiten beleuchtet und vor-
+gestellt. Das Ziel dieses Kapitels umfasst die Bereitstellung eines grundlegenden
+Rahmens für die Analyse und Beurteilung bestehender Arbeiten im Kontext der
+Forschungsfragen sowie darin die Basis für die darauf folgenden Teile der Arbeit
+zu schaffen. Dieses Kapitel enthält keine Neuentwicklungen des Autors, sondern
+lediglich eine Aufarbeitung von Vorarbeiten für einen generellen Kontext der Ar-
+beit.
+2.1. Nebenläufigkeit, Modelle und Simulationen
+Zunächst sollen einige der zentralen Begriffe der Arbeit eingeführt werden. Dabei
+handelt es sich um den Begriff der Nebenläufigkeit, des Modells und der Simulati-
+on. Diese sind erforderlich, um weitere darauf aufbauende Konzepte zu erörtern.
+2.1.1. Nebenläufigkeit und Parallelität
+Im Laufe der Arbeit werden die Begriffe »Nebenläufigkeit« und »Parallelität«
+häufig fallen. In vielen Referenzen werden die beiden Begriffe synonym verwendet.
+Während dies in vielen Situationen sinnvoll ist, sollen beide Begriffe im Rahmen
+dieser Arbeit unterschiedliche Konzepte beschreiben. Die Nebenläufigkeit wird im
+Sinne der Nebenläufigkeitstheorie Petris verstanden (Petri, 1962).
+Intuitiv beschreiben beide Begriffe zwei Ereignisse, welche gemeinsame voraus-
+gehende Ereignisse und/oder gemeinsame nachfolgende Ereignisse besitzen oder
+aber in keinerlei derartiger Beziehung stehen und sich selbst gegenseitig nicht in
+eine zeitliche Abfolge oder in Reihenfolge bringen lassen. Parallelität sieht dabei
+jedoch einen globalen Takt bzw. Schrittgeber vor, sodass Ereignisse in diskreten,
+gleichen Takten (Schritten) auftreten können. Nebenläufigkeit hingegen sieht diese
+Form von Taktung nicht vor, sodass nebenläufige Ereignisse gänzlich unvergleich-
+bar sind. Nebenläufigkeit wird im Rahmen der Arbeit gelegentlich auch als »echte
+Nebenläufigkeit« bezeichnet, um gesondert auf diesen Umstand hinzuweisen. Ech-
+te Nebenläufigkeit und Nebenläufigkeit bezeichnen im Rahmen der Arbeit jedoch
+ein und dasselbe Konzept.
+Beispiele für Parallelität sind häufig anzutreffen, insbesondere in verteilten Syste-
+men kommt Parallelität häufig in der Form von Nachrichtenrunden zum Einsatz.
+Auch ein zentraler Taktgeber für Arbeitsschritte in einem Prozessor oder einem
+verteilten System entspricht dem Ansatz der Parallelität. Während Parallelität
+die zeitliche Abfolge diskretisiert und diese somit deutlich leichter handhabbar
+macht, wirkt die Abbildung von Realweltinteraktionen darauf wenig realistisch.
+Konversationen und weitere Interaktionen aller Entitäten der Welt unterliegen
+keiner globalen Taktung. Aus diesem Grund soll im Rahmen dieser Arbeit das
+Konzept der Nebenläufigkeit eine federführende Rolle einnehmen.
+2.1.2. Modell
+Durch den Einsatz von Nebenläufigkeit ist eine formal mathematische Beschrei-
+bung komplexer Systeme schwierig. Um die umfassenden Untersuchungen für den
+Rahmen einer einzelnen Arbeit handhabbar zu erhalten, soll innerhalb der Arbeit
+ein modell- und simulationsgetriebener Ansatz verfolgt werden. Zu diesem Zweck
+soll zunächst der Modellbegriff definiert werden.
+Stachowiak definiert Modelleigenschaften hierbei beispielsweise wie folgt:
+Modelle sind stets Modelle von etwas, nämlich Abbildungen, Re-
+präsentationen natürlicher oder künstlicher Originale, die selbst
+wieder Modelle sein können. [...] Modelle erfassen im allgemei-
+nen nicht alle Attribute des durch sie repräsentierten Originals,
+sondern nur solche, die den jeweiligen Modellerschaffern und/o-
+der Modellbenutzern relevant scheinen. [...] Modelle sind ihren
+Originalen nicht per se eindeutig zugeordnet. Sie erfüllen ihre
+Ersetzungsfunktion a) für bestimmte - erkennende und/oder han-
+delnde, modellbenutzende Subjekte, b) innerhalb bestimmter Zeit-
+intervalle und c) unter Einschränkung auf bestimmte gedankliche
+oder tatsächliche Operationen.
+— (Stachowiak, 1973, Seiten 131-133)
+Für die Repräsentation der im einleitenden Teil der Arbeit beschriebenen Kom-
+munikationen bilden Modelle die Abbildung der Kommunikationsteilnehmer sowie
+der Plattformen der Kommunikation auf verarbeitbare Konzepte. Diese Modelle
+sollen so konstruiert sein, dass über sie Rückschlüsse auf reale Zusammenhänge
+möglich sind.
+2.1.3. Simulation
+Die »Simulation« bezeichnet eine Nachahmung bzw. Nachbildung realtweltlicher
+Systeme und Zusammenhänge. Gewöhnlich basiert sie auf einem Modell und ahmt
+die Ausführung bestimmter Interaktionen der Komponenten des Modells nach.
+Oberkampf und Roy definieren:
+Simulation: the exercise or use of a model to produce a result.
+(dt.: Simulation: Die Ausübung oder Verwendung eines Modells,
+um ein Ergebnis zu erzielen.)
+— (Oberkampf und Roy, 2010, Seite 92)
+Dementsprechend soll auch der Simulationsbegriff im Rahmen der Arbeit verstan-
+den werden.
+Eine besondere Form der Simulation soll an dieser Stelle noch eingeführt werden.
+Während Simulationen eingesetzt werden können, um verteilte Systeme zu simu-
+lieren, findet in vielen Fällen die Simulationen der Systeme selbst wiederum lokal
+und unverteilt statt. Die Sinnhaftigkeit dieses Vorgangs wird aus den oben ge-
+nannten Definitionen von Modell und Simulation ersichtlich: Aus der Simulation
+sollen Rückschlüsse auf das Verhalten des simulierten Systems ermöglicht werden.
+Hierzu ist eine echte Verteilung nicht immer unbedingt nötig. Die Verteilung kann
+ebenfalls simuliert werden.
+In Fällen großer Simulationen genügen einzelne Rechner jedoch unter Umständen
+nicht oder erzeugen unverhältnismäßig hohe Kosten. Unter Umständen lassen sich
+Aspekte der Verteilung jedoch auch nur unzureichend simulieren. In diesem Fall
+ist es sinnvoll die Simulation selbst ebenfalls verteilt auszuführen; es ist die Rede
+von verteilter Simulation verteilter Systeme. Die Schnitte zwischen verschiedenen
+lokalen Einheiten der Simulation können sich dabei an den Schnitten des Originals
+orientieren, müssen dies jedoch nicht zwangsläufig. Entlang der Argumentation
+verteilte Systeme auch lokal simulieren zu können, liegt es häufig nahe, mehr
+Operationen lokal auszuführen als es im Original der Fall wäre, da wie beschrieben
+ein Modell einen Ausschnitt des Originals abbildet.
+Diese Arbeit beschäftigt sich im Wesentlichen mit der verteilten Simulation ver-
+teilter Systeme.
+2.2. Petrinetze
+Petrinetze sind eine Modellierungstechnik für nebenläufige Prozesse (Petri, 1962,
+1977, 1987). Häufig wird bei Modellierungsaufgaben die Unified Modeling Lan-
+guage1 (UML; dt. Vereinheitlichte Modellierungssprache) eingesetzt. Neben ihren
+Stärken liefert sie jedoch keine formale Fundierung und auch keine operationale
+Semantik. Ebenso ist keine interaktive Simulation auf der Basis von UML möglich.
+Aus diesem Grund wird argumentiert, dass Petrinetze als Modellierungstechnik
+besser für den Kontext dieser Arbeit geeignet sind als die UML.
+Die folgenden Ausführungen richten sich im Wesentlichen nach der Beschreibung
+von Petrinetzen in (Girault und Valk, 2003). Petrinetze können das Erzeugen
+und Verbrauchen von Ressourcen modellieren und werden meist als bipartiter, ge-
+richteter Graph dargestellt, bestehend aus den disjunkten Mengen der Plätze und
+der Transitionen. Im Laufe der Arbeit werden Petrinetze auch verkürzt nur als
+Netze bezeichnet. In Plätzen können Marken existieren, wobei die Gesamtmenge
+aller vorhandenen Marken in allen Plätzen den aktuellen Zustand des Systems be-
+schreibt. Transitionen können Marken von Plätzen abziehen und Marken in ihnen
+ablegen. Diese Aktion wird gemeinhin als das Feuern oder Schalten einer Transiti-
+on bezeichnet. Durch wiederholtes (nebenläufiges) Feuern von Transitionen kann
+eine Simulation des durch das Petrinetz abgebildeten Modells erfolgen.
+Eine fundamentale Eigenschaft von Petrinetzen ist die Nebenläufigkeit, welche
+besagt, dass verschiedene Transitionen in einem Netz in vollständiger zeitlicher
+Unabhängigkeit voneinander feuern können, sofern genug Marken zur Verfügung
+stehen. Selbst ein und dieselbe Transition kann nebenläufig zu sich selbst feuern.
+An dieser Stelle sei erneut auf den Unterschied zwischen Nebenläufigkeit und Par-
+allelität hingewiesen, welcher in Abschnitt 2.1.1 eingeführt wurde und so durchweg
+in dieser Arbeit Verwendung findet. Parallelität beschreibt innerhalb dieser Arbeit
+immer ein getaktetes Verhalten, bei dem alle an dem globalen Prozess beteiligten
+Knoten in vorgegebenen Intervallen Operationen ausführen. Bei der Nebenläufig-
+keit hingegen entfällt diese Bedingung der Taktung und zwei Operationen können
+mit vollständig beliebigem zeitlichen Delta zueinander erfolgen.
+Formal ist das Verhalten von Petrinetzen durch verschiedene Prinzipien definiert.
+Das Prinzip der Dualität besagt wie eingangs beschrieben, dass zwei disjunkte
+Mengen an Grundelementen existieren: Die Stellen, in denen Marken abgelegt
+sein können, welche wiederum Daten bzw. Ressourcen modellieren können, sowie
+die Transitionen, welche beim Feuern Marken aus Stellen entnehmen und in einer
+einzelnen Aktion in andere Stellen hineinlegen können. Wichtig ist dabei, dass
+die Marken von der Transition stets verbraucht und erzeugt werden und nicht
+etwa verschoben. Auch die Anzahl der erzeugten und verbrauchten Marken einer
+einzelnen Transition muss nicht identisch sein.
+Das Prinzip der Lokalität besagt, dass das Verhalten einer Transition ausschließ-
+lich durch die Gesamtheit ihrer Eingangs- und Ausgangselemente (der Lokalität)
+1Siehe auch: https://www.omg.org/spec/UML/ - Zuletzt abgerufen am 24.01.2022
+bestimmt wird. Das Prinzip der Nebenläufigkeit besagt, dass Transitionen mit
+einer disjunkten Lokalität vollständig unabhängig voneinander schalten können.
+Darüber hinaus existieren zwei grundlegende Arten und Weisen Petrinetze darzu-
+stellen: Zum einen die grafische Darstellung, bei der nach Konvention die Menge
+von Plätzen durch Kreise und die Menge von Transitionen durch Rechtecke und
+die Zuordnung als Eingangs- oder Ausgangselement durch eine gerichtete Kan-
+te dargestellt werden. Zum anderen eine formaltextuelle Darstellung, bei der die
+Spezifikation eines Netzes mithilfe von mathematischen Konstrukten wie Mengen
+angegeben wird. Dabei ist vor allem darauf zu achten, dass die beiden Darstel-
+lungsformen jeweils zueinander äquivalent sind. Beide Darstellungsformen haben
+ihre jeweiligen Vorteile, so sind Beweise auf der formaltextuellen Darstellungs-
+form wesentlich einfacher zu führen, während Beispiele in grafischer Darstellung
+um ein Vielfaches anschaulicher sind.
+Beispiel 2.1. In Abbildung 2.1 befindet sich ein Beispiel für ein Petrinetz in
+grafischer Darstellung. In 𝑝1 und 𝑝4 steht jeweils eine Marke zur Verfügung,
+sodass 𝑡1 feuern und eine Marke in 𝑝3 ablegen kann. 𝑡2 ist nun aktiviert und
+kann schalten und 𝑝3 wieder leeren, da der Vorbereich von 𝑡2, welcher nur 𝑝3
+umfasst, nun eine Marke beinhaltet. Nach dem Feuern legt 𝑡2 eine weitere Marke
+in 𝑝2 ab. 𝑡3 kann unabhängig und beliebig oft zu jeder Zeit nebenläufig feuern.
+Darüber hinaus wird im Folgenden eine formale Definition von Netzen erfolgen.
+Diese ist entnommen und übersetzt aus (Girault und Valk, 2003, Seite 14), ist
+aber für den Kontext der Arbeit auf endliche Netze angepasst.
+Nicht endliche Netze sind für die Modellierung nicht endender Prozesse durchaus
+üblich. Tiefergehende semantische Betrachtungen in Hinblick auf das Prozessver-
+halten sind jedoch nicht Teil dieser Arbeit, sodass eine Einschränkung auf endliche
+Netze erfolgen kann. Alle Netzmodelle, welche als explizite Repräsentationen von
+Systemen zum Einsatz kommen, sind endlich.
+2. Grundlagen
+Definition 2.2 (Netz). Ein Netz ist ein Tripel 𝑁 = (𝑃 , 𝑇 , 𝐹 ),
+wobei:
+• 𝑃 eine [endliche] Menge an Plätzen ist.
+• 𝑇 eine [endliche,] von 𝑃 disjunkte Menge an Transitionen
+ist.
+• 𝐹 ⊆ (𝑃 × 𝑇 ) ∪ (𝑇 × 𝑃 ) eine Flussrelation für die Menge der
+Kanten ist.
+— (Girault und Valk, 2003, Seite 14)
+Die vereinigte Menge 𝑃 ∪𝑇 aller Plätze und Transitionen in einem Netz wird auch
+als Menge der Netzelemente bezeichnet. In einem Netz 𝑁 = (𝑃 , 𝑇 , 𝐹 ) werden für
+ein gegebenes Netzelement 𝑒 ∈ 𝑃 ∪𝑇 alle anderen Netzelemente 𝑥 ∈ (𝑃 ∪𝑇 )\{𝑒},
+als Vorbereich von 𝑒 bezeichnet, falls (𝑥, 𝑒) ∈ 𝐹 und als Nachbereich von 𝑒, falls
+(𝑒, 𝑥) ∈ 𝐹 . Der Vorbereich von 𝑒 wird mit »•𝑒« und der Nachbereich mit »𝑒•« be-
+zeichnet. Es ist zu beachten, dass sowohl Vor- als auch Nachbereich stets gänzlich
+vom jeweils anderen Typ (Platz oder Transition) sind wie ihr Bezugselement.
+In einem gegebenen Netz kann ein Teil der Plätze markiert sein. In Plätzen können
+einzelne Marken existieren, wobei die Gesamtmenge aller Marken als Markierung
+bezeichnet wird. Eine Marke wird in der graphischen Repräsentation in einem
+Platz zumeist mit einem schwarzen Punkt dargestellt. Eine Marke in einem Platz
+ist notwendige (aber nicht immer hinreichende) Voraussetzung für das Feuern ei-
+ner Transition im Nachbereich des Platzes. Eine Transition kann nur dann feuern,
+wenn alle Plätze in ihrem Vorbereich eine Marke beinhalten. Die Transition wird
+in diesem Fall als aktiviert bezeichnet.
+2.2.1. P/T-Netze
+Während klassische Petrinetze gut dafür geeignet sind nebenläufige Prozesse abzu-
+bilden, ist ihre Ausdrucksmächtigkeit doch eingeschränkt. Insbesondere bei großen
+Systemen ist eine sehr große Zahl an Stellen für eine korrekte Abbildung notwen-
+dig. Aus diesem Grund existieren neben dem klassischen Petrinetzformalismus
+noch eine Vielzahl weiterer Formalismen. Eine sehr einfache Erweiterung bilden
+die sogenannten P/T Netze, welche lediglich eine Anfangsmarkierung, sowie ei-
+ne Gewichtungsfunktion der Flussrelation hinzufügen. Darüber hinaus erlauben
+P/T Netze die Anwesenheit mehrerer Marken auf einem Platz. In der graphischen
+Darstellung können an Kanten ganze Zahlen aufgeführt sein, welche die für einen
+Feuervorgang benötigte Markenanzahl von dem entsprechenden Platz bzw. die
+Anzahl an produzierten Marken angeben.
+Abbildung 2.2.: Ein Beispiel für ein P/T-Netz
+Analog zur Definition von Petrinetzen sollen P/T Netze im Wesentlichen nach
+(Girault und Valk, 2003) wie folgt definiert werden:
+Definition 2.3 (P/T-Netz). Ein P/T-Netz 𝑁 = (𝑃 , 𝑇 , 𝐹 , 𝑊 , m ) ist ein 5-
+0
+Tupel. Dabei ist:
+• (𝑃 , 𝑇 , 𝐹 ) ein Netz.
+• 𝑊 ∶ 𝐹 → ℕ eine Gewichtungsfunktion.
++
+• m ∶ 𝑃 → ℕ eine Initialmarkierung.
+0 0
+Beispiel 2.4. Ein Beispiel für ein P/T-Netz findet sich in Abbildung 2.2. Das
+Netz besteht aus drei zusammenhängenden Komponenten. Die Transition 𝑡1 be-
+sitzt weder Vor- noch Nachbereich, die Transition 𝑡2 hingegen einen Platz in ihrem
+Nachbereich. 𝑡3 benötigt eine Marke aus dem Platz 𝑝1, sowie zwei Marken aus
+dem Platz 𝑝4 und erzeugt beim Feuern vier Marken, welche in den Platz 𝑝2 gelegt
+werden. Da sowohl 𝑡1 als auch 𝑡2 keinen Vorbereich haben, können beide beliebig
+oft feuern. Obwohl in 𝑝4 insgesamt vier Marken zur Verfügung stehen, steht in
+𝑝1 nur eine Marke zur Verfügung, sodass 𝑡3 nur ein einziges Mal schalten kann.
+Folglich kann 𝑡4 insgesamt vier mal schalten, jedoch erst nachdem 𝑡3 geschaltet
+hat.
+2.2.2. Erreichbarkeitsgraphen
+Für die Beantwortung einzelner Fragestellungen im Kontext eines Netzes ist es
+hilfreich einen systematischen Verlauf aller möglichen Schaltungen durch das Netz
+abbilden zu können. Dies wird durch die Konstruktion eines Erreichbarkeitsgra-
+phen umgesetzt. In einfachen (üblichen) Erreichbarkeitsgraphen kann das Schalt-
+verhalten eines Netz nach Interleaving-Semantik (sequentielles Schalten) abgele-
+sen werden. Genauere Beschreibungen zur Interleaving- und anderen Petrinetzse-
+mantiken folgen in Abschnitt 2.2.5.
+2. Grundlagen
+Abbildung 2.3.: Ein Beispiel für ein gefärbtes Netz
+Dabei wird ausgehend von der Initialmarkierung sequenziell jede mögliche Schal-
+tung einer aktivierten Transition betrachtet. Die jeweiligen Folgemarkierungen
+werden in den Graphen aufgenommen, dessen erster Knoten der Initialmarkie-
+rung entspricht. Gleiche Markierungen sind unabhängig von ihrer Entstehung
+auch dieselben Knoten im Erreichbarkeitsgraphen. Auf diese Weise werden syste-
+matisch alle erreichbaren Zustände des Systems gefunden. Erreichbarkeitsgraphen
+sind nur endlich, sofern das zugehörige Netz beschränkt ist. Ohne eine genaue
+Definition anzugeben, bedeutet Beschränktheit, dass kein Platz im Netz durch
+wiederholte Schaltvorgänge beliebig viele Marken aufnehmen kann. Ferner sind
+Erreichbarkeitsgraphen im schlimmsten Fall hyperexponentiell groß bzw. nicht
+primitiv-rekursiv in Hinblick auf die Größe des gesamten Netzes.
+2.2.3. Gefärbte Netze
+Eine Erweiterung der P/T-Netze ergibt sich, indem für bestimmte Bedeutungen
+verschiedene Marken verwendet werden. Die Bezeichnung »Farbe« ist für die Ty-
+pen der Marken gebräuchlich, daher die Bezeichnung gefärbtes Netz.
+Es liegt nahe, Transitionen die Möglichkeit einzuräumen zwischen Marken zu un-
+terscheiden. Zu diesem Zwecke können mit sogenannten Transitions-Guards Be-
+dingungen (Prädikate) hinzugefügt werden, welche der Marken zum Schalten ver-
+wendet werden dürfen und welcher Typ Marken produziert wird. An den Kanten
+werden in diesen Fällen Variablen eingesetzt, welche durch die Guard-Prädikate
+referenziert werden. Im Gegensatz zu den einfachen P/T-Netzen sind gefärbte
+Netze bereits Turing-mächtig (sofern sie beliebige Farbmengen aufweisen).
+Beispiel 2.5. In Abbildung 2.3 findet sich ein Beispiel für ein gefärbtes Netz.
+Im Platz 𝑝1 befinden sich je eine Marke des Markentyps »5« und »6«, sowie
+eine des Typs »3« in 𝑝3. Die Transition 𝑡1 kann beliebig schalten, während die
+Transition 𝑡2 durch ein Guard-Prädikat eingeschränkt ist. Die Transition 𝑡2 kann
+nur mit solchen Marken schalten, bei denen der Typ (als Ganzzahl betrachtet)
+der Marke aus 𝑝3 ein Teiler der Marke aus 𝑝1 ist. Folglich können hier zwei finale
+Markierungen erreicht werden: Entweder liegen zwei Marken des Typs der Marken
+aus 𝑝1 in 𝑝2, wenn 𝑡1 zwei mal geschaltet hat, oder aber eine Marke »5« liegt in
+𝑝2 und eine Marke »6« in 𝑝4. Dies ist der Fall, wenn 𝑡1 einmal mit 𝑥 = 5 und 𝑡2
+ebenfalls einmal geschaltet hat. Es gibt jedoch keine Möglichkeit eine Marke vom
+Typ »5« in den Platz 𝑝4 abzulegen, da dies durch das Guard-Prädikat verhindert
+wird.
+2.2.4. Netze-in-Netzen
+Eine weitere Möglichkeit Netze zu erweitern besteht darin, das Konzept von Net-
+zen-in-Netzen (Valk, 1998) zuzulassen. Dabei kann eine Marke ein ganzes eigen-
+ständiges (Sub-) Netz darstellen, welches durch das übergeordnete Netz bewegt
+werden kann. Maßgebliches Leitbild dabei war die Idee mobiler Agenten, welche
+sich durch eine Plattform bewegen und an unterschiedlichen Orten unterschiedli-
+che Operationen ausführen können. Die Agenten ändern intern dabei jedoch nicht
+ihre Verhaltensstruktur, sondern lediglich ggf. ihren gegenwärtigen Zustand. Net-
+ze-in-Netzen bzw. Objektnetze verfolgen zusätzlich Ansätze der objektorientierten
+Programmierung, da Marken einen Verweis auf ein anderes Netz darstellen, ge-
+nau wie in der objektorientierten Programmierung Objekte Referenzen auf andere
+Objekte halten können.
+Eine Erweiterung auf Basis der Netze-in-Netzen findet sich in Form des Referenz-
+netzformalismus. Da dieser eine zentrale Vorarbeit dieser Arbeit ist, wurde ihm
+der eigenständige Abschnitt 2.3 gewidmet.
+2.2.5. Petrinetzsemantiken
+Bei der Simulation bzw. Ausführung von Petrinetz-Modellen existieren verschiede-
+ne Semantiken. Als einfachste Semantik kann die Schaltsequenz-Semantik genannt
+werden, bei der zu einem Zeitpunkt nur eine Transition feuert und alle produzier-
+ten und konsumierten Marken zum Zeitpunkt des nächsten Transitionsfeuerns
+eindeutig feststehen. Durch diese Semantik kann selbstverständlich keine echte
+Nebenläufigkeit erzeugt werden, da alle Transitionen in einer zeitlichen Abfolge
+gefeuert werden. Die Garantien an das Vorhandensein von Marken und den Ge-
+samtzustand sind hierbei jedoch am höchsten. Die Schaltsequenz-Semantik wird
+auch als Interleaving-Semantik bezeichnet.
+Werden innerhalb eines Zeitpunktes nicht nur eine einzige Transition, sondern
+gleich mehrere Transitionen auf einmal geschaltet, so wird das Netz mittels Schritt-
+Semantik bzw. Step-Semantik simuliert. Diese Semantik ermöglicht eine gewisse
+Form von Nebenläufigkeit, basiert aber durch die Existenz von Takten (Schrit-
+ten) auf Parallelität. Dies bedeutet, dass das Netz immer nach einem Schritt und
+2. Grundlagen
+vor dem nächsten Schritt in einen konsistenten Zustand überführt wird. Die Aus-
+führung unterschiedlich komplexer Operation ist jedoch nur schwer abbildbar, da
+Zeitschritte diskret betrachtet werden. Im Zweifel führt die Parallelität zu länge-
+ren Wartezeiten bei kürzeren Operationen.
+Die letzte betrachtete Semantik ist die sogenannte True-Concurrency-Semantik
+(dt. »echte Nebenläufigkeit«). Sie wird auch als Partial-Order-Semantik (dt. »Se-
+mantik partieller Ordnung«) oder auch als TC-Semantik bezeichnet. Hierbei sind
+Markierungen von Plätzen und Transitionsschaltungen lediglich durch eine par-
+tielle Ordnung in Relation zueinander gesetzt. Dies hat zur Folge, dass manche
+Schaltungen in ihrer zeitlichen Reihenfolge unvergleichbar sind. Diese Semantik
+hat daher die stärkste Anlehnung an ein natürliches System aus interagierenden
+Agenten, wie sie auch in der realen Welt anzutreffen sind. Als Nachteil kann aufge-
+führt werden, dass Netzsimulationen nach der True-Concurrency-Semantik nicht
+zwangsläufig zu einem bestimmten Zeitpunkt einen Zustand aufweisen müssen,
+bei dem keine Transition aktiv feuert. Diese Eigenschaft wird später noch ein-
+mal adressiert und trägt erheblich zur Komplexität der Überlegungen bei. Wird
+jedoch der Gesamtablauf einer Schaltung als Kausalnetz (ein Netz ohne Nichtde-
+terminismus) dargestellt, lassen sich durch Schnitte durch den Graphen, welche
+ausschließlich durch Plätze verlaufen (sogenannte P-Schnitte), mögliche Zustände
+des Systems beschreiben. Diese Überlegung wird im Kontext von True-Concur-
+rency Checkpoints in Abschnitt 11.6.6 erneut aufgegriffen werden.
+Für den verbleibenden Teil der Arbeit wird bei der Simulation von Petrinetzen je-
+der Form stets der Einsatz von True-Concurrency-Semantik angenommen, sofern
+dies nicht explizit abweichend angegeben ist. Ausnahmen sind mit der Referenz
+auf die entsprechend verwendete Semantik kenntlich gemacht.
+2.2.6. Weitere relevante Konzepte im Kontext von Petrinetzen
+Abschließend werden in diesem Abschnitt noch einige weitere Konzepte vorge-
+stellt, welche an einzelnen Stellen innerhalb der Arbeit referenziert werden. Diese
+haben dabei entweder keine herausragende Stellung oder werden an der betref-
+fenden Stelle noch einmal detaillierter eingeführt.
+Invarianten
+Invarianten beschreiben bestimmte strukturelle Eigenschaften von Netzen. So
+kann beispielsweise die (gewichtete) Menge aller Marken in einer bestimmten Teil-
+menge aller Plätze unabhängig von erfolgten Feuervorgängen konstant sein oder
+eine bestimmte Folge von Transitionsfeuervorgängen die Markierung eines Netzes
+wieder in den gleichen Zustand versetzen wie vor der Folge von Feuervorgängen.
+Im Allgemeinen wird zwischen Platz- und Transitionsinvarianten unterschieden.
+Da beide Formen im Kontext der Arbeit nur am Rande erwähnt werden, soll an
+dieser Stelle die intuitive Einführung genügen und auf eine volle formale Definition
+verzichtet werden.
+Komplementäre Plätze
+Komplementäre Plätze beschreiben ebenfalls eine strukturelle Eigenschaft von
+Netzelementen. Für bestimmte Anwendungsfälle kann es hilfreich sein, ein stati-
+sches Limit für die Marken in einem Platz einzuführen. Ein Anwendungsbeispiel
+könnte die maximale Anzahl an verfügbaren Arbeitsplätzen umfassen. Strukturell
+kann dies so modelliert werden, dass neben dem Platz, welcher die Arbeitsplät-
+ze beschreibt, ein weiterer Platz mit der maximal zulässigen Anzahl an Marken
+existiert. Dieser Platz besitzt die umgekehrte Flussrelation des Platzes, welche die
+Arbeitsplätze beschreibt. Legt nun eine Transition eine Marke in den Platz, zieht
+sie gleichzeitig eine Marke vom komplementären Platz ab. Transitionen, welche
+Marken vom Platz entfernen, legen gleichzeitig Marken im komplementären Platz
+ab. Komplementäre Plätze sind ein effektives Mittel, um Plätze zu beschränken,
+ohne dass die Ausdrucksmächtigkeit von Netzen eingeschränkt wird.
+Verklemmung
+Die Verklemmung ist eine dynamische Eigenschaft der Simulation eines Petrinet-
+zes. Sie beschreibt den Zustand, in dem keine Transition des Netzes aktiviert ist
+und somit auch keine Transition feuern kann. Die Bedeutung für das simulier-
+te System ist dabei nicht vorweggenommen. Ein verklemmtes Netz kann ebenso
+einen Fehlerzustand darstellen wie auch eine erfolgreich abgeschlossene Bearbei-
+tung seiner Aufgaben. Durch eine Verklemmung terminiert die Simulation eines
+Netzes.
+Workflownetze
+Workflownetze sind eine spezielle Kategorie von Petrinetzen. Sie können ein-
+gesetzt werden, um Geschäftsprozesse zu modellieren. Sie werden im Kontext
+der Agentenkommunikation erneut aufgegriffen werden. Workflownetze definie-
+ren sich nach (Aalst, 1997) (übersetzt) wie folgt:
+2. Grundlagen
+Definition 2.6 (Workflow Netz). Ein Netz 𝑁 = (𝑃 , 𝑇 , 𝐹 ) ist
+ein Workflow Netz, genau dann wenn:
+• 𝑁 zwei spezielle Plätze 𝑖 und 𝑜 besitzt. 𝑖 ist eine Quelle:
+•𝑖 = ∅ und 𝑜 eine Senke: 𝑜• = ∅.
+• Falls eine Transition 𝑡∗ zu 𝑁 hinzugefügt wird, welche die
+Plätze 𝑜 und 𝑖 verbindet (•𝑡∗ = {𝑜} und 𝑡∗• = {𝑖}), dann
+ist das resultierende Netz streng zusammenhängend.
+— (Aalst, 1997, Seite 413)
+Darüber hinaus kann ein Workflownetz als korrekt bezeichnet werden, falls:
+Definition 2.7 (Korrektes Workflow Netz). Eine Prozedur, wel-
+che durch ein Workflow Netz 𝑁 = (𝑃 , 𝑇 , 𝐹 ) modelliert wird, ist
+genau dann korrekt, wenn:
+• Für jeden Zustand 𝑀, welcher von Zustand 𝑖 erreicht werden
+kann, eine Feuersequenz existiert, welche von 𝑀 zu 𝑜 führt.
+∗ ∗
+Formal: ∀𝑀(𝑖 → 𝑀) ⇒ (𝑀 → 𝑜)
+• Zustand 𝑜 ist der einzig erreichbare Zustand aus Zustand 𝑖
+mit wenigstens einer Marke im Platz 𝑜.
+∗
+Formal: ∀𝑀(𝑖 → 𝑀 ∧ 𝑀 ≥ 𝑜) ⇒ (𝑀 = 𝑜)
+• Es existieren keine nicht lebendigen Transitionen in (𝑁, 𝑖).
+∗ 𝑡
+Formal: ∀ ∃ 𝑖 → 𝑀 → 𝑀′
+𝑡∈𝑇 𝑀,𝑀′
+— (Aalst, 1997, Seite 413-414)
+Ein weiteres Konzept von Interesse im Kontext der Workflownetze ist die Task-
+Transition (Aalst, 1997; Jacob, 2002), welche den Fehlschlag des Feuervorgangs
+unterstützt und im Falle des Fehlschlags alle Marken zurück in die jeweiligen
+Plätze des Vorbereichs legt. Die Task-Transition wird detaillierter in Abschnitt 5.1
+vorgestellt.
+2.3. Referenznetze
+Ausgehend von der »Netze-in-Netzen« Theorie (Valk, 1998), »Objektorientier-
+ten Netzen« (Moldt, 1996) sowie »Synchronen Kanälen« (S. Christensen und
+Hansen, 1994; Maier und Moldt, 2001), welche im folgenden Abschnitt 2.3.2
+noch erläutert werden, liegt die Grundidee bei Referenznetzen darin diese Kon-
+zepte zu vereinen. Die Theorie zu den Referenznetzen und der zugehörige Refe-
+renznetzformalismus geht im Wesentlichen auf die Arbeiten von Olaf Kummer
+(Kummer, 1996, 1998, 1999, 2000, 2002) zurück, nach welchen sich auch die
+Ausführung an dieser Stelle richtet.
+Referenznetze verbinden analog zu Netzen-in-Netzen die Konzepte der objektori-
+entierten Programmierung von Klassen und Instanzen mit der Petrinetztheorie.
+Somit existieren im Referenznetzformalismus nicht nur Netze mit Plätzen und
+Transitionen, sondern auch Netzinstanzen mit Platzinstanzen und Transitionsin-
+stanzen. Diese Eigenschaft ist fundamental für die Grundlage dieser Arbeit, da
+durch diese Eigenschaft von Referenznetzen zur Simulationszeit weitere Instan-
+zen von Netzen generiert werden können. Die physikalische Größe der Simula-
+tion (verbrauchter Speicher, benötigte Prozessorressourcen, etc.) sind also nicht
+zwangsläufig im Vorhinein bekannt. Die Netzstruktur ist dynamisch, sodass Re-
+ferenznetze eine inhärent höhere Komplexität aufweisen als niedrigere Petrinetz-
+formalismen.
+2.3.1. Instanziierung
+Wie eingehend beschrieben, ist eine der wichtigsten Eigenschaften des Referenz-
+netzformalismus die Instanziierung von Netzen. Während in klassischen Petrinetz-
+Formalismen direkt in einem Netz simuliert wurde, betrachtet der Referenznetz-
+formalismus ein Netz wie eine Klasse der objektorientierten Programmierung.
+Auf Basis dieses Netzes können zur Laufzeit beliebig viele Netzinstanzen erzeugt
+werden. Dies bedeutet insbesondere auch, dass durch Netzinstanzen sowohl Plät-
+ze als auch Transitionen eines Netzes insgesamt in beliebig häufiger Replikation
+existieren können. Somit liegt es nahe, neben Netzinstanzen auch von Platz- und
+Transitionsinstanzen zu sprechen. Um zusätzlich den Unterschied zwischen Net-
+zen und Netzinstanzen zu betonen, werden Netze im Rahmen der Arbeit auch als
+statische Netze oder Netztemplates bezeichnet. Insbesondere wird in dieser Arbeit
+durchweg im Kontext von Referenznetzen durch »Netz« stets das Netztemplate
+bzw. statische Netz und durch »Netzinstanz« die Instanz eines Netzes bezeichnet.
+Damit das Konzept der Instanziierung von Netzen einen gewinnbringenden Nut-
+zen aufweist, ist es notwendig innerhalb der Netzinstanzen mit anderen Netz-
+instanzen umgehen zu können. An dieser Stelle hilft das Konzept von Netzen-
+in-Netzen (Valk, 1998), bei dem ungerichtete synchrone Kanäle zum Einsatz
+kommen, sodass das Schalten von Transitionen synchronisiert wird und bei dem
+einzelne Netze als Marken innerhalb von Plätzen in anderen Netzen existieren
+können. Im Formalismus der Referenznetze ist dieser Ansatz ebenfalls umgesetzt,
+jedoch mit Hilfe von Referenzen auf die anderen Netzinstanzen. So begründet sich
+auch der Name Referenznetze.
+Innerhalb von Netzinstanzen von Referenznetzen besteht somit die Möglichkeit
+neue Netzinstanzen von anderen bekannten statischen Netzen zu erzeugen. Da die
+2. Grundlagen
+Erzeugung einer neuen Netzinstanz stets eine Aktion ist, liegt es nahe, dass sie
+mittels einer speziellen Anschrift an einer Transition umgesetzt ist. Feuert eine
+derartige Transition innerhalb einer Netzinstanz, so entsteht eine Marke mit einer
+Referenz auf eine neu erzeugte Netzinstanz.
+2.3.2. Synchrone Kanäle
+Das bloße Erzeugen von Netzinstanzen, welche unabhängig voneinander schalten
+können und lediglich Referenzen zu jeweils anderen Netzinstanzen halten, bietet
+auf den ersten Blick keine großen Vorteile. An dieser Stelle fehlt eine Methodik
+um zwischen den jeweiligen Netzinstanzen zu kommunizieren. Referenznetze rea-
+lisieren dieses Bedürfnis nach Kommunikation mithilfe sogenannter synchroner
+Kanäle.
+Der Austausch von Nachrichten ist bei jeder Form der Programmierung und der
+Modellierung von Abläufen, Prozessen und Protokollen einer der zentralen Be-
+standteile. Während in der klassischen Programmierung meist ein Aufrufer und
+ein Aufgerufener existieren, ist dieses Modell gerade für die Abbildung natürlicher
+Kommunikationsstrukturen nicht immer zutreffend. Die Annahme eines Kom-
+munikationsinitiators, auf dessen Initiierung ein gleichberechtigter Informations-
+austausch folgt ist im Allgemeinen realistischer. Synchrone Kanäle beabsichtigen
+diesen Zusammenhang in Form einer Gruppensynchronisation zu formalisieren.
+Wie alle Inhalte dieser Arbeit zu Referenznetzen orientiert sich auch dieser Ab-
+schnitt im Wesentlichen an der Dissertation (Kummer, 2002). Synchrone Kanäle
+in diesem Kontext als Vorarbeit schafft die Veröffentlichung (S. Christensen
+und Hansen, 1994).
+Um die Abbildung von Gruppensynchronisation auf Petrinetze umsetzen zu kön-
+nen, ist es zunächst notwendig zu betrachten, welche Aspekte bereits von her-
+kömmlichen Petrinetzen, wie P/T-Netzen, umgesetzt werden. So bieten Petri-
+netze beispielsweise die Möglichkeit individuelles Verhalten der einzelnen Kom-
+munikationspartner durch die inhärente Nebenläufigkeit abzubilden. Dabei spielt
+die Betrachtung der im Falle der Simulation anzuwendenden Petrinetzsemantik
+eine entscheidende Rolle. Die True-Concurrency-Semantik bildet wie im vorhe-
+rigen Abschnitt beschrieben die natürliche Kommunikation am ehesten ab und
+soll daher betrachtet werden. Da durch die Nebenläufigkeit auch Transitionen zu
+sich selbst nebenläufig schalten können und das Unterbinden der Möglichkeit zum
+Schalten ausschließlich durch fehlende Marken erzeugt werden kann, findet sich
+klassisch keine Möglichkeit mehrere Transitionen exakt gleichzeitig zu schalten
+und dabei Informationen zwischen den Transitionen auszutauschen. Der Forma-
+lismus muss somit um eine Mechanik erweitert werden, welche dieses Verhalten
+unterstützt. Dies kann beispielsweise durch Transitionsanschriften formalisiert
+werden, wie es bei Referenznetzen der Fall ist. Diese benötigen eine Informati-
+on darüber welche Transitionen an der Synchronisation teilnehmen und welche
+Art von Informationen ausgetauscht werden kann. Während die erste Komponen-
+te durch eine gezielte Benennung des entsprechenden Kanals gewährleistet werden
+kann, müssen für den zweiten Aspekt Parameter eingesetzt werden.
+Während die Einführung von synchronen Kanälen in den Petrinetzformalismus
+auf den ersten Blick konzeptuell nicht komplex erscheint, ergeben sich bei ge-
+nauerer Betrachtung jedoch diverse Schwierigkeiten in der detaillierten Umset-
+zung. Petrinetze erlauben im normalen Fall umfangreiche Zusammenlegungen und
+Spaltungen bestimmter Kontrollflüsse, insbesondere durch den Einsatz gefärbter
+Netze. Der Fachbegriff hierzu lautet (Ent-)Faltung. Ein Netz mit synchronen Ka-
+nälen kann jedoch bei extrem komplexen Beziehungen zwischen den Synchronisa-
+tionspartnern in eine Situation laufen, bei der ein endliches Netz mit synchronen
+Kanälen nicht mehr endlich in seiner entpackten Fassung ist. (S. Christensen
+und Hansen, 1994) beschreiben in diesem Kontext jedoch hinreichende Bedin-
+gungen, die ein Netz mit synchronen Kanälen erfüllen muss, damit es zu solchen
+Problemen nicht kommt.
+2.3.3. Anschriften
+Der Referenznetzformalismus zählt zu den höheren2 Petrinetz-Formalismen. Es ist
+daher naheliegend, dass dafür eine komplexe Anschriftensprache notwendig ist.
+Die formale Definition von Referenznetzen im Originalwerk (Kummer, 2002) ist
+absichtlich allgemein gehalten und auf Basis von Graphersetzungssystemen spezi-
+fiziert. In der grundlegenden Definition kommen beschriftete Algebren zum Ein-
+satz und auf eine Ausformulierung von etwaigen Beschriftungen wird im formalen
+Teil der Arbeit zunächst vollständig verzichtet. Jedoch ist es für den Einsatz in
+dieser Arbeit hilfreich den Referenznetzformalismus im Kontext der Implemen-
+tation im Simulator Renew und der Programmiersprache Java zu betrachten
+und an der zugehörigen Stelle direkt Anschriften zu behandeln. Folglich wird die-
+ser Abschnitt zur Anschriftensprache, auch wenn er formal zu der Definition von
+Referenznetzen zählt, in Abschnitt 2.8 zum Simulator Renew behandelt.
+2.3.4. Beispiele zu Referenznetzen
+Die anschauliche Betrachtung von beispielhaften Referenznetzen bedarf der Kon-
+kretisierung der Anschriftensprache. Wie im Abschnitt 2.3.3 erläutert, umfasst
+die Konkretisierung der abstrakten Referenznetze im Rahmen dieser Arbeit die
+2. Grundlagen
+Anwendung auf die Programmiersprache Java. Aus diesem Grund wird auf die
+Darstellung eines Beispiels von Referenznetzen nur auf Basis des Formalismus
+verzichtet und dieses nur im Kontext der Realisierung mit Java betrachtet. Bei-
+spiele finden sich somit im Unterabschnitt 2.8.3 zu Renew, nachdem die Details
+der Implementation in Renew behandelt wurden.
+2.4. Softwareagenten
+Softwareagenten sind seit langer Zeit ein aktives Forschungs- und Anwendungs-
+feld. Die zentrale Idee umfasst die Kapselung einzelner Bereiche der Software
+in Komponenten, welche eine gewisse Autonomie aufweisen. Diese Komponenten
+werden als Agenten bezeichnet. Agenten besitzen eine Wissensbasis und kommu-
+nizieren über Nachrichten. Die Antwort auf eine Nachricht ist dabei nicht explizit
+ausgestaltet oder für den Agenten verpflichtend, wodurch sich Agenten elementar
+von beispielsweise Subroutinen oder Objekten unterscheiden. Agenten versuchen
+das Verhalten von Menschen und anderen autonomen Realweltentitäten unter-
+einander genauer abzubilden als es durch andere Softwareentwicklungsmuster der
+Fall ist.
+Dieser Abschnitt gibt eine Definition eines Softwareagenten für den Rahmen der
+Arbeit an, führt die grundlegenden Überlegungen der Organisation »Foundation
+for Intelligent Physical Agents« (FIPA) an und beschreibt den Paose Ansatz.
+2.4.1. Definitionen eines Agenten
+In der Literatur finden sich sehr verschiedene Definitionen des Agentenbegriffs.
+So definiert beispielsweise Shoham:
+[...] An entity that functions continuously and autonomously in
+an environment in which other processes take place and other
+agents exist.
+(dt.: Eine Entität, welche fortlaufend und autonom in einer Um-
+gebung funktioniert, in der andere Prozesse ablaufen und andere
+Agenten existieren.)
+— (Shoham, 1993, Seite 52)
+Ähnlich definiert die FIPA, deren Vorgaben detaillierter in Abschnitt 2.4.2 auf-
+gegriffen werden:
+An agent is a computational process that implements the auto-
+nomous, communicating functionality of an application.
+(dt.: Ein Agent ist ein Berechnungsprozess, welcher die autono-
+me und kommunizierende Funktionalität einer Anwendung imple-
+mentiert.)
+— (Foundation for Intelligent Physical Agents
+(FIPA), 2002, Zeile 1019, Seite 29)
+Eine sehr bekannte Definition erfolgt durch Wooldridge, welche auch als Basis
+in (Wagner, 2018) eingesetzt wird:
+An agent is a computer system that is situated in some environ-
+ment, and that is capable of autonomous action in this environ-
+ment in order to meet its delegated objectives.
+(dt.: Ein Agent ist ein Computersystem, welches sich ein einer
+Umgebung befindet und welches in der Lage ist, autonome Ak-
+tionen in dieser Umgebung auszuführen, um seine übertragenen
+Aufgaben zu erfüllen.)
+— (Wooldridge, 2009, Seite 21)
+Auf der Basis dieser Definitionen soll nun eine entsprechende eigene Definition für
+diese Arbeit geschaffen werden, welche zusätzlich den für diese Arbeit relevanten
+Begriff der Plattform umfasst:
+Definition 2.8 (Agent, Plattform). Ein Agent ist ein autonomes Computersys-
+tem, welches sich in einer Umgebung befindet und in der Lage ist auf bestimmen
+Plattformen mit anderen Agenten in Kommunikation sowie mit den Umgebungen
+bzw. Plattformen in Interaktion zu treten. Agenten nutzen diese Eigenschaften,
+um ihre designierten Aufgaben zu verfolgen und zu erfüllen. Eine Plattform kann
+Agenten beherbergen und mit ihnen und den Umgebungen in Interaktion treten.
+Die internen Abläufe eines Agenten umfassen verschiedene Prozesse und Opera-
+tionen:
+Definition 2.9 (Protokoll). Die internen Abläufe eines Agenten werden als Pro-
+tokolle bezeichnet.
+Protokolle können von Agenten gestartet und beendet werden. Protokolle sind
+ebenfalls in der Lage auf die Wissensbasis des Agenten zuzugreifen. Dabei liegt
+ein Protokoll stets in einem Agenten, sodass ein anderer Agent keinen Zugriff auf
+das Protokoll eines gleichberechtigten anderen Agenten hat. Das Protokoll kann
+jedoch den Agenten veranlassen eine Nachricht zu verschicken, um so mit anderen
+Agenten zu kommunizieren. Protokolle sind daher in der Arbeit anders definiert
+als beispielsweise in der Netzwerkkommunikation. Als Abgrenzung werden derar-
+tige Netzwerk-Protokolle verschiedener Ebenen wie beispielsweise TCP, HTTP,
+FTP, usw. im Rahmen dieser Arbeit als Kommunikationsprotokolle bezeichnet.
+Bei wiederverwendbaren Protokollfragmenten können Subprotokolle zum Einsatz
+kommen:
+Definition 2.10 (Subprotokoll). Ein Subprotokoll ist ein eigenständiger Ablauf
+innerhalb eines Agenten, welcher nur durch ein übergeordnetes Protokoll gestartet
+werden kann, jedoch nicht direkt durch den Agenten.
+Wegen der Nachrichtenbasiertheit der Kommunikation können eingehende Nach-
+richten den Start eines Protokolls verursachen. Diese Form des Protokollstarts
+wird als reaktiv bezeichnet. Die gegenteilige Form tritt auf, falls der Agent das
+Protokoll ohne äußeres Einwirken startet, beispielsweise durch ein anderes Pro-
+tokoll. In diesem Fall wird von einem proaktiven Start des Protokolls gesprochen.
+In der Kombination von Umgebung und der Gesamtheit der Agenten ergibt sich
+ein Multiagentensystem.
+Definition 2.11 (Multiagentensystem). Die Gesamtheit aus Agenten, Umgebun-
+gen und etwaigen Plattformen wird als Multiagentensystem bezeichnet.
+Während Multiagentensysteme in ihrem konzeptuellen Aufbau als verteiltes Sys-
+tem zu verstehen sind, muss eine Simulation eines Multiagentensystem nicht
+zwangsläufig verteilt sein, ähnlich wie auch andere verteilte Systeme auch ohne
+Verteilungsaspekt simuliert werden können.
+2.4.2. FIPA
+Die »Foundation for Intelligent Physical Agents« (FIPA)3 ist eine Standardisie-
+rungsorganisation des Institue of Electrical and Electronics Engineers (IEEE). Sie
+wurde 1996 in der Schweiz gegründet und befasst sich mit der Standardisierung
+von Agenten- und Multiagentensystemen. Im Laufe ihrer Arbeit hat die FIPA
+diverse Standards zu dem Thema hervorgebracht, welche weitreichende Adaption
+im Bereich der agentenorientierten Softwareentwicklung erfahren haben.
+Die wesentliche Architektur nach der FIPA findet sich in Abbildung 2.4. Die ein-
+zelnen Bestandteile umfassen nach (Foundation for Intelligent Physical
+Agents (FIPA), 2004):
+Agent Management System (AMS) Bezeichnet einen Verwaltungsdienst, wel-
+cher wie ein herkömmlicher Agent ansprechbar sein muss.
+3http://www.fipa.org/ - Zuletzt abgerufen am 15.12.2021
+Abbildung 2.4.: Das »Agent Management Reference Model«. Entnommen aus
+(Foundation for Intelligent Physical Agents (FIPA),
+2004, Seite 5).
+Directory Facilitator (DF) Bezeichnet einen Verzeichnisdienst.
+Message Transport Service (MTS) Bezeichnet einen Transportservice für Nach-
+richten, dessen interne Schnittstelle beliebig aufgebaut sein kann.
+Agent Communication Channel (ACC) Bezeichnet die externe Schnittstelle des
+MTS, die einheitlich ist.
+Agent Message Transport Protocol (MTP) Bezeichnet die Protokolle, die von
+der FIPA als Protokolle zum Nachrichtenaustausch zwischen Agenten vor-
+gesehen sind.
+Agent Communication Language (ACL) Bezeichnet die Sprache, die innerhalb
+des MTP eingesetzt wird. Sie folgt der Sprechakttheorie von (Searle,
+1969). Die Grundbausteine der ACL sind Sprechakte im Sinne der Sprech-
+akttheorie.
+»Software« in der Abbildung beschreibt alle Anteile der lokalen Anwendung, wel-
+che nicht agentenbasiert sind.
+Des Weiteren definiert die FIPA Abläufe für den Agenten-Lebenszyklus in (Foun-
+dation for Intelligent Physical Agents (FIPA), 2004). Ein Agent kann
+initialisiert bzw. erzeugt werden und ist sodann aktiv. Anstatt aktiv zu sein, kann
+er warten, pausiert sein oder umziehen. Sind die jeweiligen Vorgänge abgeschlos-
+sen kehrt er in den aktiven Zustand zurück. Wird der Agent beendet, kehrt er
+in einen »unbekannten« Zustand zurück, bis er erneut erzeugt bzw. initialisiert
+wird.
+2.4.3. PAOSE
+Der Ansatz des Petri net-based, Agent- and Organization-Oriented
+Software Engineering(Paose) (Moldt, 2005) (Cabac, Dörges, Duvi-
+gneau, Moldt u. a., 2008) (Cabac, 2010) erweitert das Design und die Entwick-
+lung eines Multiagentensystems zu einem Leitbild des gesamten Entwicklungspro-
+zesses (Cabac, 2007). Der Ansatz wurde seit den 1990er-Jahren entwickelt und
+trug im Laufe der Zeit verschiedene Namen. Anfang der 2000er-Jahre etablierte
+sich das Akronym Paose (Moldt, 2005). Der Prozess ist in der Beschreibung
+der Quellen eng mit der Capa-Plattform im Kontext der Mulan-Architektur
+verknüpft, welche erst in Abschnitt 3.3.1 vorgestellt werden wird. Paose ist auf
+konzeptueller Ebene jedoch allgemein gehalten und der Ansatz ist ohne den kon-
+kreten Zusammenhang zu Capa nutzbar. Einen guten Einstieg in die Thematik
+liefert auch (Wagner, 2018, Seiten 26-30).
+Der Grundgedanke von Paose umfasst die Interpretation eines Entwicklerteams
+als Multiagentensystem, bei dem einzelne Entwickler als Agenten verstanden wer-
+den. Paose setzt damit auf der gleichen Ausgangsüberlegung wie das Gesetz von
+Conway (Conway, 1968) auf. Dieses besagt, dass die Struktur einer Software
+der Struktur der Organisation entspricht, welche sie entwickelt. Der Einsatz des
+umgekehrten Gesetzes von Conway beinhaltet die Organisation derart zu struk-
+turieren, dass sie die gewünschte Struktur der Software abbildet.
+Das zentrale Konstrukt des Paose Ansatzes und die Sicht auf Multiagentensys-
+teme ist die Paose Matrix. Paose umfasst drei Betrachtungsperspektiven bzw.
+Dimensionen, welche ein Multiagentensystem hinreichend beschreiben: Die Struk-
+tur, das Verhalten und die Ontologie.
+Die Struktur umfasst die verschiedenen Rollen, welche von Agenten eingenom-
+men werden können. Das Verhalten beschreibt die möglichen Interaktionen der
+einzelnen Rollen. Nicht alle Rollen interagieren mit allen anderen Rollen, jedoch
+ist bei einer möglichen Interaktion ein gemeinsames Verständnis von Konzepten
+und Terminologien nötig. Dieses Verständnis wird durch die dritte Dimension, der
+Ontologie, ausgedrückt. Abbildung 2.5 aus (Cabac, 2010) zeigt diesen Zusam-
+menhang beispielhaft und für Verhalten und Struktur bildlich. Ontologien müssen
+für die mit roten Kreisen markierten Überschneidungen definiert sein, da dort eine
+Interaktionskomponente mit einer Rollenkomponente in Beziehung steht.
+Entwicklungsprozess
+Der Entwicklungsprozess nach Paose umfasst mehrere Stufen. Zunächst werden
+im Sinne des Requirements Engineerings grundlegende Rollen identifiziert und in
+einem »Coarse Design Diagram (CDD)« festgehalten. Auf dieser Basis werden
+sodann Interaktionen mit der Hilfe sogenannter »Agenteninteraktionsprotokolle
+(AIPs)« beschrieben. Weitere Ableitungen sind Rollen und Abhängigkeiten und
+die benötigten Ontologien. Im vollen Prozess werden aus den identifizierten AIPs
+Protokolle in Form von Petrinetzen (sogenannte »Protokollnetze«) für die Agen-
+ten konstruiert, aus Rollen und Abhängigkeiten werden Entscheidungskomponen-
+ten generiert und aus den Ontologien Ontologieklassen und Wissensbasen.
+Viele Aspekte des Paose-Ansatzes und -Prozesses sind auch für diese Arbeit
+interessant und sollen Anwendung finden. Insbesondere die Beschreibung von In-
+teraktionen durch AIPs wird genutzt werden sowie das (implizite) Verständnis
+von Rollen im System. Der vollständige Weg bis hin zur Capa Plattform wird
+jedoch nicht umgesetzt. Die Begründung liegt darin, dass die Capa Plattform
+in ihrer Form die Notwendigkeiten im Rahmen der Forschungsfragen der Arbeit
+nicht in hinreichendem Umfang liefert. Weitere Details und Begründungen hierzu
+werden in Abschnitt 4.3.3 aufgegriffen werden.
+Abbildung 2.6 zeigt ein beispielhaftes AIP, wie es auch im verbleibenden Teil der
+Arbeit auftreten wird. Einige Details sind dabei vereinfacht dargestellt wie bei-
+spielsweise die explizite Unterscheidung von proaktiven und reaktiven Anteilen.
+Beschrieben sind im Beispiel vier Rollen und deren Interaktionen untereinander.
+Rolle 1 startet den Prozess proaktiv. Rolle 2, Rolle 3 und Rolle 4 starten durch
+den eingehenden Pfeil die Aktionen 2-A, 3-A und 4-A jeweils reaktiv. In Rolle
+4 ist ein sogenannter »XOR-Split« zu beobachten, bei dem je nach einer Bedin-
+gung nur eine der Aktionen ausgeführt wird aber niemals beide. Rolle 3 weist
+einen entsprechenden »AND-Split« auf, welcher stets beide Aktionen ausführt.
+Sind beide Aktionen ausgeführt, wartet Rolle 3 auf eine Nachricht von Rolle 4
+(Aktion 3-C), welche abgeschickt wird, sobald die entsprechend der Bedingung
+ausgewählte Aktion von Rolle 4 und nachfolgend Aktion 4-C ausgeführt wurde.
+2.5. Architekturen und Systeme
+Die Architektur einer Software ist ein entscheidender Aspekt der Softwareent-
+wicklung. Da im Rahmen der Arbeit eine Architektur beschrieben bzw. entworfen
+werden soll, liegt es nahe, zunächst den Begriff zu definieren. Zu diesem Zweck
+soll das Standardwerk von Bass et al. in seiner aktuellen, vierten Auflage heran-
+gezogen werden:
+Definition 2.12 (Softwarearchitektur). The software architec-
+ture of a system is the set of structures needed to reason about
+the system. These structures comprise software elements, relati-
+ons among them, and properties of both.
+(dt.: Die Softwarearchitektur eines Systems ist die Menge an
+Strukturen, welche benötigt wird, um über ein System nachzu-
+denken. Diese Strukturen umfassen Softwareelemente, die Bezie-
+hungen zwischen diesen und die jeweils zugehörigen Eigenschaf-
+ten.)
+(Bass u. a., 2021, Kapitel 1.1)
+Das Ziel ist somit sowohl Komponenten als auch Beziehungen zu beschreiben, um
+ein zielgerichtetes Durchdenken der Software zu ermöglichen. Vor diesem Hin-
+tergrund widmet sich dieser Abschnitt diesem Aspekt insbesondere im Kontext
+der verteilten Systeme. Weitere Diskussionen in diesem Kontext umfassen ins-
+besondere den Aspekt der Skalierbarkeit und werden separat in Abschnitt 2.6
+adressiert. Neben den Inhalten zu verteilten Systemen soll abschließend noch die
+Einheitentheorie beschrieben werden, welche als Grundkonstrukt für den Entwurf
+der Architektur im Rahmen der Arbeit Anwendung finden wird.
+2.5.1. Kohäsion und Koppelung
+Die Begriffe Kohäsion und Koppelung beschreiben die Menge an Beziehungen in-
+nerhalb von Modulen einer Software sowie zwischen solchen. Gerade im Kontext
+der zuvor genannten Definition einer Softwarearchitektur fällt den beiden Begrif-
+fen Bedeutung zu. Die Konstruktion von Modulen selbst geht auf das Geheim-
+nisprinzip (engl.: information hiding) (Parnas, 1971) zurück, welches besagt,
+dass einzelne Entwurfsentscheidungen innerhalb einzelner Module gekapselt sein
+sollten. Module sollten die gekapselten Entwurfsentscheidungen anderer Modu-
+le nicht kennen und dürfen nur so viele Verbindungen zueinander aufweisen wie
+unbedingt nötig.
+Brügge und Dutoit definieren:
+Definition 2.13 (Koppelung). Coupling is the number of depen-
+dencies between two subsystems.
+(dt.: Koppelung ist die Anzahl an Abhängigkeiten zwischen zwei
+Subsystemen.)
+— (Brügge und Dutoit, 2004, Seite 230)
+Definition 2.14 (Kohäsion). Cohesion is the number of depen-
+dencies within a subsystem.
+d(detn.c:iKesowhäitshioinn aistsudbiesyAstnezma.hl an Abhängigkeiten innerhalb eines
+Subsystems.)
+— (Brügge und Dutoit, 2004, Seite 231)
+Nach den Ausführungen von (Brügge und Dutoit, 2004) ist es erstrebenswert
+Systeme mit niedriger Koppelung und hoher Kohäsion zu konstruieren. Niedrige
+Koppelung erhöht die Flexibilität und Autonomie der einzelnen Komponenten,
+während eine hohe Kohäsion die Zielgerichtetheit der einzelnen Komponenten
+forciert. Zusammenhangslose Bestandteile einzelner Komponenten führen zu einer
+niedrigen Kohäsion. Die Gestaltung entlang dieser Richtlinie bezüglich Koppelung
+und Kohäsion ist insbesondere in verteilten Systemen wichtig.
+2.5.2. Verteilte Systeme
+Verteilte Systeme werden seit vielen Jahrzehnten untersucht. Die Vorläufer ver-
+teilter Systeme finden sich nach Andrews (Andrews, 1999) in Algorithmen zum
+Nachrichtenversand in Betriebssystemen in den 1960er Jahren. Bereits 1962 ver-
+öffentlichte Carl Adam Petri seine Dissertation zum Thema »Kommunikation
+mit Automaten« (Petri, 1962) und legte die Grundlage der gesamten heutigen
+Petrinetzforschung.
+In den 1970er Jahren schritt die Entwicklung stark voran, Ethernet wurde er-
+funden, Firmen wie Microsoft und Apple gegründet. Auf dem Gebiet der verteil-
+ten Systeme wurde zentrale Grundlagenforschung veröffentlicht, wie beispielswei-
+se Dijkstras Arbeit zu selbst-stabilisierenden Systemen (Dijkstra, 1974) oder
+Lamports Arbeit zu verteilten Uhren (Lamport, 1978). Ende der 1970er Jah-
+re wurde das OSI Schichtenmodell vorgestellt, welches Anfang der 1980er Jahre
+dann standardisiert wurde.
+Mit dem Wandel der Jahre ging die Entwicklung über serviceorientierte Archi-
+tekturen zur Jahrtausendwende zu modernen Cloud-Architekturen über. Diese
+aktuelleren Entwicklungen werden vermehrt im Abschnitt 2.6 zu Skalierbarkeit
+adressiert, da diese eine der zentralen Herausforderungen des Designs verteilter
+Systeme in den 2010er und frühen 2020er Jahren ist. Dieser Abschnitt adressiert
+vor allem einige grundlegende Überlegungen im Kontext verteilter Systeme.
+Grundbegriffe
+Zunächst erfolgt die Definition einiger Grundbegriffe, welche so immer wieder in
+der Arbeit auftreten werden.
+Knoten/Instanz Im Kontext von Rechnernetzen wird sich der Begriff Instanz
+bzw. Knoten auf eine physikalische Maschine innerhalb eines Verbundes
+von physikalischen Maschinen beziehen.
+(Netzwerk)koordinaten Um die Kommunikation mit einem Knoten aufnehmen
+zu können, müssen entsprechende Nachrichten an eine Adresse gerichtet
+werden. Diese Adresse wird durch den Begriff Netzwerkkoordinate oder
+schlicht Koordinate bezeichnet. Eine konkrete technische Ausprägung ei-
+ner Koordinate ist eine IP-Adresse, ein konkretes Beispiel für eine Koordi-
+nate 192.168.1.1. Beim Begriff Koordinate schwingt mit, dass diese leicht
+änderbar und/oder temporär sind. Dies ist beabsichtigt, da in verwalteten
+Rechnerverbünden genau dies der Fall sein kann und erwartet werden sollte.
+Headless Klassische Clientanwendungen weisen im Normalfall eine grafische Ober-
+fläche für Nutzerinteraktionen auf. Ist es möglich diese Anwendungen eben-
+falls ohne Oberfläche einzusetzen, wird dies mit dem Adjektiv/Adverb head-
+less bezeichnet. Eine Anwendung ist headless oder aber wird headless ausge-
+führt. Bei Serveranwendungen, welche so oder so ohne grafische Oberfläche
+konzipiert wurden, ist der Begriff zwar anwendbar und nicht falsch, ist je-
+doch ungebräuchlich.
+Architektur der Datenhaltung
+Über die Jahrzehnte haben sich verschiedene Architekturen für Datenmodelle
+für nebenläufige Anwendungen herauskristallisiert. Als wichtigste Vertreter der
+Ansätze sind shared-everything, shared-memory, shared-disk und shared-nothing
+zu nennen. Dabei beschreibt jeder Ansatz die Art und Weise, wie ein Prozessor
+im Gesamtsystem Datenhaltung in Bezug auf die anderen Prozessoren betreibt.
+Da es sich dabei um die grundlegenden Ansätze der Integration nebenläufiger
+Prozesse handelt und jedes verteilte System im Allgemeinen auch nebenläufig4
+ist, ist es unumgänglich die Vor- und Nachteile im Kontext der verteilten Refe-
+renznetzsimulation zu erörtern. Die folgenden Konzepte werden beispielsweise in
+(Stonebraker, 1986) beschrieben.
+shared-everything Bei diesem Ansatz teilen sich die Prozessoren alle verbleiben-
+den Systemkomponenten. Dieser Ansatz ist in seiner Reinform heute sel-
+ten anzutreffen, da moderne Mehrkernprozessoren zumindest einen eigenen
+Cache Speicher pro Prozessorkern aufweisen. Im Kontext eines verteilten
+Systems ist dieser Ansatz nicht relevant oder zielführend, da die Kompo-
+nenten sehr eng gekoppelt sein müssen. Für jede Lese- oder Schreiboperati-
+on des Prozessors müsste im Zweifel ein Nachrichtenaustausch stattfinden.
+Dieser Overhead ist praktisch in keinem Fall zu rechtfertigen.
+shared-memory Beim shared-memory Ansatz teilen sich die verschiedenen Pro-
+zessoren einen gemeinsamen Hauptspeicher. Diese Architektur ist heute in
+Mehrkernprozessorsystemen weit verbreitet. Da die Prozessoren den glei-
+chen Speicher verwenden, kann dieser Ansatz mit sehr schneller Kommu-
+nikation aufwarten. Ein Nachteil besteht jedoch in der erschwerten Konsis-
+tenzerhaltung der Daten, wenn beispielsweise mehrere Prozessoren an der
+gleichen Speicheradresse Schreiboperationen ausführen. Zusätzlich kann bei
+speicherintensiven Anwendungen der gemeinsame Speicher zum Flaschen-
+hals werden. Auf den ersten Blick wirkt dieser Ansatz ungeeignet für ein
+verteiltes System, da im Zweifel bei jedem Hauptspeicherzugriff ein Nach-
+richtenaustausch stattfinden müsste. Im Zuge der Containerisierung5, bei
+dem mehrere abgeschlossene Systemteile (Container) durchaus auf dem
+4Es lassen sich auch parallele, getaktete verteilte Systeme konstruieren, diese bauen aber auf
+der grundlegenden Nebenläufigkeit des verteilten Systems auf.
+5
+5sid ee hr eg Aru bn scd hle ng ite tnd 2e .6n .4N
+2. Grundlagen
+gleichen Hostsystem ausgeführt werden können, ist eine Kommunikation
+über gemeinsamen Hauptspeicher jedoch wieder ein interessanter Ansatz
+Grundsätzlich würde es sich dabei streng genommen jedoch nicht mehr um
+ein verteiltes System handeln, sofern alle Komponenten auf dem gleichen
+Hostsystem ausgeführt werden.
+shared-disk Der shared-disk Ansatz findet u.A. Anwendung bei Applikationen
+mit einer zentralisierten Datenbank. Alle Prozessoren beziehen sich auf den
+gleichen persistenten Speicher. Ein großer Vorteil dieses Ansatzes ist die ver-
+einfachte Konsistenzerhaltung der Daten. Die Datenbanktechnologie wur-
+de über die Jahrzehnte immer weiter verfeinert und perfektioniert, sodass
+heutige Datenbanksysteme hervorragend mit konkurrierenden Speicherzu-
+griffen umgehen können. In einer shared-disk Architektur kann auf diese
+Erkenntnisse direkt zugegriffen werden, sodass ein fertiges Datenbankma-
+nagementsystem zum Einsatz kommen kann. Ein Nachteil bei diesem An-
+satz ergibt sich daraus, dass die zentrale Datenbank als single point of failure
+angesehen werden muss. Sofern die Datenbank ausfällt und nicht in Repli-
+kation vorliegt, erliegt das gesamte verteilte System dem Ausfall. Analog
+zum shared-memory Modell ist auch hier die Datenbank der zentrale Fla-
+schenhals, sofern datenintensive Aufgaben vom System bewältigt werden.
+Es muss zusätzlich ein globales Datenmodell definiert werden. Dies kann
+dazu führen, dass im Falle komplexer Entitäten viel mehr Daten übertra-
+gen werden müssen, als beispielsweise bei einer einfachen Berechnung nötig
+wären. Darüber hinaus gestaltet sich die Skalierbarkeit der Anwendung als
+schwierig, da die zentrale Datenbank im Normalfall auf einem Rechnerkno-
+ten ausgeführt wird. Nichtsdestotrotz gibt es in modernen Datenbanksys-
+temen Bestrebungen zur Verteilung und Replikation, wie beispielsweise das
+sharding. Kapitel 7 geht detaillierter auf Skalierbarkeitsfragen ein. Für eine
+erste Fassung der verteilten Referenznetzsimulation ist der shared-disk An-
+satz aber durchaus geeignet, da komplizierte Konsistenzfragen an bestehen-
+de Datenbanksysteme ausgelagert werden können und der Fokus gänzlich
+auf die Algorithmen der Referenznetzsimulation gerichtet werden kann.
+shared-nothing Falls keine besondere Technologie im verteilten System zum Ein-
+satz kommt, folgt automatisch ein naives shared-nothing Datenmodell. Wie
+der Name suggeriert, teilen sich die Rechnerknoten keinerlei Bestandteile.
+Jeder Knoten nutzt und wartet seinen eigenen Hauptspeicher und persis-
+tenten Speicher. Die Vorteile liegen darin, dass jeder Knoten sein eigenes
+Datenmodell und eigene Technologie nutzen kann. Konkurrierende Zugriffe
+existieren nicht und müssen daher auch nicht behandelt werden. Die Skalie-
+rung im shared-nothing Ansatz ist ebenfalls hervorragend, da jeder Bestand-
+teil der verteilten Anwendung seine eigene Datenhaltung betreibt. Die je-
+doch größte Problematik besteht in der Datenkonsistenz. Durch verschiede-
+ne Datenbanken und Datenmodelle existiert im Allgemeinen keine zentrale
+Kontrolle oder Transaktionsmanager. Anwendungen müssen die Konsistenz
+selbst sicherstellen.
+Konsistenz in verteilten Systemen
+CAP-Theorem
+Im Rahmen der Erörterung von Konsistenz in verteilten Referenznetzsimulationen
+wird es notwendig werden das CAP-Theorem zu betrachten. Da es sich dabei um
+ein grundlegendes Ergebnis für alle verteilten Systeme handelt, soll es an dieser
+Stelle einleitend vorgestellt werden.
+Das CAP-Theorem wurde erstmals bei einem Keynote Vortrag von Eric Brewer
+auf dem ACM Symposium on Principles of Distributed Computing (PODC) in
+2000 vorgestellt (Brewer, 2000). Durch die Vorstellung adressierte Brewer das
+Problem, dass die Forschergemeinschaft, die sich verteilten Systemen widmet,
+und die, die sich der Datenbankentheorie widmen, deutliche Überlappungen ha-
+ben, aber weitestgehend getrennt agieren und keine übergreifenden Ergebnisse
+und Theoreme verfügbar waren (Brewer, 2000). Das CAP-Theorem besagt im
+Kern, dass in jedem verteilten System und jeder verteilten Datenbank zu einer
+gegebenen Zeit nur zwei der drei Eigenschaften erfüllt sein können:
+• Konsistenz (Consistency)
+• Verfügbarkeit (Availability)
+• Toleranz gegenüber Netzwerkpartitionierung (Partition tolerance)
+Für zwei Jahre handelte es sich beim CAP-Theorem nur um eine Hypothese,
+bis im Jahre 2002 ein Beweis des CAP-Theorems von Nancy Lynch und Seth Gil-
+bert vorgestellt wurde (Gilbert und Lynch, 2002). Somit ist unumstritten, dass
+sowohl damalige als auch heutige – sowie alle zukünftigen – verteilten Systeme
+diesem Gesetz unterworfen sind.
+Die zentrale Frage ist dabei jedoch inwiefern sich das CAP-Theroem konkret auf
+das Design verteilter Anwendungen auswirkt. Jede der drei Eigenschaften ist von
+deutlicher Wichtigkeit. Die Erwartungshaltung gegenüber einem System ist es,
+dass alle drei Eigenschaften zu jeder Zeit erfüllt sind. Systeme großer kommer-
+zieller Anbieter scheinen auch alle Eigenschaften erfüllen zu können, doch der
+Schein trügt.
+Ein Fehlschluss ist außerdem die Annahme, dass sich ein System fix zu zwei dieser
+drei Eigenschaften bekennen muss. Der Spielraum, den das Theorem offen lässt,
+umfasst sowohl das Design von Subsystemen als auch eine zeitliche Varianz be-
+züglich der Erfüllung der Eigenschaften. So kann ein System problemlos sowohl
+Konsistenz als auch Verfügbarkeit gleichzeitig gewährleisten, solange es zu kei-
+ner Netzwerkpartition kommt. Sollte es jedoch zu einer Partitionierung kommen,
+so muss das zu Grunde liegende Protokoll eine Entscheidung für Verfügbarkeit
+oder unmittelbare Konsistenz treffen. Konkret bedeutet dies entweder die letzten
+bekannten Daten auszuliefern oder aber nur solche, die sicher konsistent sind.
+ACID
+ACID ist eins der bekanntesten konsistenzorientierten Grundprinzipien, welches
+vielfach in der Datenbanktheorie speziell bei Transaktionen zum Einsatz kommt.
+Es wurde erstmals in (Härder und Reuter, 1983) beschrieben. Eine umfassende
+Einführung wird beispielsweise in (Kemper und Eickler, 2011) gegeben. ACID
+ist ein Akronym und steht für die vier Eigenschaften einer Transaktion:
+(A)tomarität Die Operation soll äquivalent zu einer atomaren Änderung sein, es
+sollen also alle oder keine Änderungen erfolgen.
+(C)onsistency / dt. Konsistenz Nach Ausführung sollen die Daten in einem kon-
+sistenten Zustand sein, sofern sie dies vor der Ausführung bereits waren.
+Insbesondere sollen keine Datenbankconstraints verletzt sein oder wider-
+sprüchliche Daten im System (bzw. der Datenbank) vorhanden sein.
+(I)solation Jede Operation darf nicht derart durch nebenläufig laufende Opera-
+tionen beeinflusst werden wie es nicht auch in einer sequentiellen Ausfüh-
+rung beider Operationen möglich wäre.
+(D)urability / dt. Persistenz Änderungen sollen persistent gesichert sein und
+Systemabstürze oder beispielsweise Stromausfälle überdauern.
+Zu diesen verschiedenen Eigenschaften existiert eine Vielzahl an Abstufungen und
+verschiedenen Implementationen. Da im Rahmen dieser Arbeit insbesondere die
+folgende Abgrenzung zum BASE-Ansatz von Interesse ist, sei an dieser Stelle aber
+auf die Ausführung verzichtet.
+Verteilte Transaktionen
+Einer der ältesten und bekanntesten Ansätze in verteilten Systemen Datenkon-
+sistenz herzustellen bildet die verteilte Transaktion und insbesondere die verteilte
+Commitverwaltung. Es existieren verschiedene Ansätze und Standards, wobei der
+wohl bekannteste von der Open Group6 betreut und unter dem Namen X/O-
+pen DTP7 geführt wird. Den meisten verteilten Commitprotokollen ist gemein,
+dass mit Hilfe eines Koordinators ab einem gewissen Punkt in der Abarbeitung
+die Knotenautonomie der Nicht-Koordinatoren aufgegeben wird und diese auf die
+Anweisung zum Commit des Koordinators warten. Die Zahl der Zwischenschrit-
+te, die notwendig ist, bis es zur Aufgabe dieser Autonomie kommt, bestimmt
+meist maßgeblich das Protokoll. Im Allgemeinen werden ein-, zwei- und drei-
+Phasen-Commit-Protokolle betrachtet, wobei die zweiphasige Variante am häu-
+figsten anzutreffend ist. Verteilte Transaktionsverwaltung verfolgt das primäre
+Ziel der Konsistenz in den entfernten Datenbankinstanzen. Im Zweifel und bei
+Netzwerkausfall wird das System unreaktiv, da Sperren das Lesen von (unsau-
+beren) Daten verhindern können. Verteilte Transaktionsverwaltung stellt somit
+Konsistenz über Verfügbarkeit bei Auftreten von Netzwerkpartitionierung.
+BASE
+Das Akronym BASE steht für die Bestandteile:
+(B)asically (A)vailable / dt. Generell verfügbar Daten sind generell verfügbar,
+wenn sie angefordert werden.
+(S)oft state / dt. »Weicher« Zustand Der Zustand der Daten ist nicht immer
+eindeutig (global) definiert und kann zeitweilig inkonsistent sein.
+(E)ventual Consistency / dt. Letztendliche Konsistenz Das System konvergiert
+über die Zeit sicher in einen konsistenten Zustand.
+BASE wurde insbesondere entwickelt, um mit den wachsenden Datenmengen in
+sozialen Netzwerken und anderen Big Data Anwendungen umzugehen. Der Artikel
+(Pritchett, 2008) gibt beispielsweise eine Einführung in das BASE Prinzip.
+BASE entwickelte sich in direktem Anschluss an die Erkenntnisse aus dem CAP
+Theorem.
+BASE gibt wesentlich weniger strikte Vorgaben als das verwandte ACID-Prinzip.
+Das Grundprinzip sieht vor, dass Daten zu jeder Zeit gelesen oder geschrieben
+werden können. Dabei kann es jedoch passieren, dass durch die Konvergenz zu
+einem konsistenten Zustand Daten nachträglich geändert werden und somit getä-
+tigte Schreibvorgänge wieder überschrieben werden. Beim Lesen aus einer lokalen
+Datenbank kann somit nicht generell ein konsistenter Zustand garantiert wer-
+den, da sich das System zu jeder Zeit im Prozess der Konvergenz befinden kann.
+Stammen Daten aus Datenbanken, welche nach dem BASE Prinzip agieren, soll-
+ten diese mit Vorsicht behandelt werden und gegebenenfalls nach einiger Zeit
+erneut geprüft werden.
+Saga-Pattern
+Eine weiterer Ansatz der Konsistenzherstellung in einem verteilen System besteht
+in der Verwendung des sog. Saga-Patterns. Es ist eine mögliche Implementation
+einer verteilten Konsistenzherstellung nach dem BASE-Ansatz. Eine Saga wird
+hierbei absichtlich nicht als »verteilte Transaktion« bezeichnet, da sie nicht alle
+Eigenschaften einer Transaktion besitzt. Das Saga-Pattern wurde ursprünglich
+von Hector Garcia-Molina und Kenneth Salem 1987 vorgestellt (Garcia-Molina
+und Salem, 1987) und wurde seitdem mehrere tausend Male zitiert. Im Kontext
+des Aufstiegs von Microservices erlebte es dann zur Zeit der 2010er Jahre einen
+Aufschwung.
+2. Grundlagen
+Zu aktuellerer Literatur diesbezüglich zählt beispielsweise das Buch »Microser-
+vices Patterns« (Richardson, 2019). Entsprechende Onlinequellen zur Veröf-
+fentlichung Richardsons existieren ebenso8. Die hier vorgestellte Form des Saga-
+Patterns und seine Bedeutung im Kontext von verteilten Systemen und insbeson-
+dere einer Microservicearchitektur richtet sich im Wesentlichen nach (Richard-
+son, 2019). Microservices werden im Abschnitt 2.6.1 noch einmal gesondert ein-
+geführt und definiert.
+Das Saga-Pattern garantiert die Eigenschaften Atomizität, Konsistenz und Dauer-
+haftigkeit. In seiner grundlegenden Form garantiert es keine Isolation, sodass mit
+entsprechenden Anomalien umgegangen werden muss. Ein großer Vorteil besteht
+darin, dass es ohne Blockierung der Systemkomponenten auskommt, was ein ent-
+scheidender Vorteil gegenüber der klassischen verteilten Transaktionsverwaltung
+ist.
+Eine Saga ist eine Folge von lokalen Transaktionen, welche auf den verschiedenen
+Komponenten des verteilten Systems ausgeführt werden. Dabei ist nicht vorgege-
+ben welche Techniken, Datenbankformate, etc. dabei lokal zum Einsatz kommen.
+So kann eine Komponente auf einer klassischen relationalen Datenbank basieren
+und eine andere eine dokumentenorientierte NoSQL Datenbank einsetzen.
+Der Saga-Ansatz sieht kein Zurückrollen (»Rollback«) einer Saga im Fehlerfall
+vor, sondern arbeitet mit kompensierenden Transaktionen. Dabei unterscheidet
+der Saga Ansatz zwischen drei Arten von lokalen Transaktionen: »Kompensier-
+bare Transaktionen«, »Wiederholbare und garantiert erfolgreiche Transaktionen«
+und die sogenannten »PivotTransaktionen«.
+Kompensierbare Transaktionen Diese Transaktionen haben so überschaubaren
+Einfluss im lokalen System, dass ihre Effekte problemlos durch eine weitere
+Transaktion aufgehoben werden können. Im Falle eines Fehlschlags der gan-
+zen Saga, können die lokalen Änderungen so wieder in den ursprünglichen
+Zustand versetzt werden. Beispiele für kompensierbare Transaktionen sind
+das Anlegen eines neuen Auftragsobjekts in einem Bestellsystem sowie das
+Verbrauchen einer Marke in einem Petrinetz.
+Wiederholbare Transaktionen Bei wiederholbaren Transaktionen handelt es sich
+um solche, die bei einem Fehlschlag erneut ausgeführt werden können, da sie
+garantiert erfolgreich sind und nur durch Systemabstürze oder Netzwerk-
+partitionierungen oder ähnliche äußere Einflüsse zum Scheitern gebracht
+werden können. Im Fehlerfall kann die Transaktion einfach erneut ausge-
+führt werden. Beispiele wären die Ablage von Dokumenten in einem Archiv
+oder das Erzeugen einer Marke durch eine Transition in einem Petrinetz.
+Wichtig ist an dieser Stelle noch, dass es sich bei der Transaktion nicht
+zwangsläufig um eine idempotente Operation handeln muss. Die Erwartung
+8https://microservices.io/patterns/data/saga.html - Zuletzt abgerufen am 22.09.2019
+ist lediglich so weit, dass der lokale Transaktionsmanager die eigene Daten-
+haltung in einen Zustand versetzt, die dem einmaligen Ausführen entspricht,
+sei es durch Idempotenz der Operation oder durch entsprechendes Logging
+und Fehlerbehandlungen.
+Pivot Transaktionen Diese Transaktionen sind sowohl zentrales Element des
+Saga-Patterns, als auch eine weitere Einschränkung, die damit einhergeht.
+Eine Pivot-Transaktion ist eine Transaktion, die nicht kompensierbar ist
+und deren Ausgang im Vorhinein ungewiss ist. Sie stellt den zentralen (mitt-
+leren) Bereich einer Saga dar und bestimmt über Erfolg oder Misserfolg der
+ganzen Saga. Ein Beispiel wäre die Abbuchung von einer Kreditkarte von
+einem Online-Zahlungsdienstleister oder speziell im Kontext der Referenz-
+netze die Ausführung einer »action« Anschrift, welche explizit für seitenef-
+fektbehaftete Operationen vorgesehen ist.
+Eine Saga wird im Normalfall so konzipiert, dass zunächst alle kompensierba-
+ren Transaktionen ausgeführt werden, dann genau eine Pivot Transaktion und
+abschließend alle wiederholbaren Transaktionen.
+Für die konkrete Ausführung der Saga existieren zwei Ansätze, die (Richard-
+son, 2019) als Choreography (dt. Choreographie) und Orchestration (dt. ebenso)
+vorstellt. Die grundlegenden Unterschiede finden sich darin, dass eine Choreogra-
+phie einen dezentralen, verteilten Charakter hat, wohingegen eine Orchestration
+mit einem zentralen Verwalter agiert.
+Choreographie Beim diesem Ansatz existiert keine zentrale Verwaltungsinstanz
+innerhalb des verteilten Systems, welche die Saga koordiniert. Die Vorteile
+liegen durch eine vollständige Dezentralität auf der Hand, es gibt keinen
+Single Point of Failure und Teile des verteilten Systems können autonom
+agieren. Damit geht jedoch einher, dass jeder Systemteil zu jeder möglichen
+Saga die Services kennen muss, die in der Reihenfolge dahinter liegen. Da
+wie bereits erwähnt in einer Saga auch kompensierbare Transaktionen auf-
+treten können, muss ein Service für diese auch den Vorgängerservice kennen,
+um ein etwaiges Kompensieren zu ermöglichen. Dadurch entsteht eine deut-
+lich engere Kopplung zwischen den Services. Ein weiterer Nachteil besteht
+darin, dass bei der Änderung einer Saga diverse Komponenten geändert
+werden müssen, in einer Entwicklungsumgebung mit mehreren Teams, un-
+ter Umständen durch mehrere oder alle Teams. Zusätzlich muss etwaige
+Nebenläufigkeit an vielen Stellen gleichzeitig umgesetzt werden, beispiels-
+weise dadurch, dass ein Service zwei Nachfolge-Services anstößt.
+Orchestration Das logische Gegenstück zur Choreographie bildet die Orchestra-
+tion. Hierbei übernimmt ein Koordinator die Ausführung der Saga. Der
+Koordinator kennt alle Services, die an der Saga beteiligt sind und führt die
+Operationen in entsprechender Reihenfolge durch. Da nur der Koordinator
+2. Grundlagen
+Wissen über eine Saga hält, können die Services mit einem neutralen Inter-
+face implementiert werden. Die Kopplung sinkt und der Wartungsaufwand
+für eine Saga wird übersichtlicher. Auch kann durch Monitoring Features
+wesentlich einfacher ein Zustand über die Abarbeitung verschiedener Sagas
+abgerufen werden. Ein weiterer Vorteil ergibt sich durch die Möglichkeit
+der Beeinflussung der Abarbeitung durch die zentrale Kontrollinstanz. Die-
+ser Aspekt wird sich später im Rahmen der Arbeit als hilfreich erweisen.
+Im Gegensatz zur Choreographie ergibt sich der offensichtliche Nachteil des
+Single Point of Failures beim Orchestration-Ansatz.
+In der Literatur wird der Ablauf einer gegebenen Saga meist durch eine finite state
+machine (dt. endliche Zustandsmaschine, endlicher Automat) beschrieben. Für
+einfache Abläufe ist dieser Ansatz sicher ausreichend, es können damit einfache
+Abläufe und Konditionale modelliert werden. Um eine Saga zu implementieren
+übernimmt beispielsweise der Koordinator in einer Orchestration die Ausführung
+des endlichen Automaten.
+Zustandslosigkeit und REST
+Zustandslosigkeit beschreibt dem Namen entsprechend die Abwesenheit eines Zu-
+standes. Der Begriff kann sowohl auf Protokolle als auch auf Systeme oder Sys-
+temteile angewandt werden. Die Beschreibung in diesem Abschnitt richtet sich
+im Wesentlichen nach (Fielding, 2000).
+Zustandslose Systemkomponenten wie beispielsweise Webserver halten keine cli-
+entbezogenen Informationen z.B. in der Form von Sessions vor. Dies ist nicht per
+Definition als Vorteil zu werten, sondern umfasst wie viele architekturelle Ent-
+scheidungen einen trade-off. Zunächst fällt auf, dass derartige Systemkomponen-
+ten als Sammlung verschiedener Prozeduren gesehen werden können, da sie per
+Definition keine (persistenten) Daten enthalten. Aus diesem Grund ist eine Re-
+plikation des Systemteils problemlos möglich, da keine Datenkonflikte entstehen
+können. Auf der Negativseite müssen jedoch mehr Daten zum System übermittelt
+werden, um eine Abarbeitung zu ermöglichen. Eine derartige Bereitstellung der
+Daten lässt sich jedoch meist nebenläufig realisieren, insbesondere, wenn mehrere
+Clients involviert sind. Aus diesem Grund sind zustandslose Systeme generell als
+günstig im Bezug auf ihre Skalierbarkeit zu bewerten, auch wenn individuell und
+fallbezogen einzelne Unterschiede existieren.
+Anfragen an zustandslose Systemkomponenten erfolgen über zustandslose Proto-
+kolle. Bei einer Anfrage müssen daher alle relevanten Daten entweder direkt im
+Aufruf mitgeliefert werden oder aber während der Abarbeitung aus externen Quel-
+len bezogen werden. Das Übermitteln eines solchen repräsentierenden Zustands
+ist der Kerninhalt des REST (»Representational State Transfer«) Paradigmas.

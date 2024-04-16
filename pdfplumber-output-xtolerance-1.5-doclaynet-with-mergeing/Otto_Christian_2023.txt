@@ -1,0 +1,1344 @@
+Automatic Understanding of
+Multimodal Content for Web-based
+Learning
+Von der Fakultät für Elektrotechnik und Informatik
+der Gottfried Wilhelm Leibniz Universität Hannover
+zur Erlangung des Grades
+Doktor der Naturwissenschaften
+Dr. rer. nat.
+genehmigte Dissertation von
+M. Sc. Christian Ralf Otto
+2023
+Prof. Dr. Ralph Ewerth
+Prof. Dr. Johannes Krugel
+20.02.2023
+Referent:
+Korreferent:
+Tag der Promotion:
+Abstract
+Web-based learning has become an integral part of everyday life for all ages and back-
+grounds. On the one hand, the advantages of this learning type, such as availability,
+accessibility, flexibility, and cost, are apparent. On the other hand, the oversupply of
+content can lead to learners struggling to find optimal resources efficiently. The interdisci-
+plinary research field Search as Learning is concerned with the analysis and improvement
+of Web-based learning processes, both on the learner and the computer-science side.
+So far, automatic approaches that assess and recommend learning resources in Search
+as Learning (SAL) focus on textual, resource, and behavioral features. However, these
+approaches commonly ignore multimodal aspects. This work addresses this research gap
+by proposing several approaches that address the question of how multimodal retrieval
+methods can help support learning on the Web. First, we evaluate whether textual
+metadata of the TIB AV-Portal can be exploited and enriched by semantic word embeddings
+to generate video recommendations and, in addition, a video summarization technique
+to improve exploratory search. Then we turn to the challenging task of knowledge gain
+prediction that estimates the potential learning success given a specific learning resource.
+We used data from two user studies for our approaches. The first one observes the
+knowledge gain when learning with videos in a Massive Open Online Course (MOOC)
+setting, while the second one provides an informal Web-based learning setting where
+the subjects have unrestricted access to the Internet. We then extend the purely textual
+features to include visual, audio, and cross-modal features for a holistic representation of
+learning resources. By correlating these features with the achieved knowledge gain, we
+can estimate the impact of a particular learning resource on learning success.
+We further investigate the influence of multimodal data on the learning process by exam-
+ining how the combination of visual and textual content generally conveys information.
+For this purpose, we draw on work from linguistics and visual communications, which
+investigated the relationship between image and text by means of different metrics and
+categorizations for several decades. We concretize these metrics to enable their compat-
+ibility for machine learning purposes. This process includes the derivation of semantic
+image-text classes from these metrics. We evaluate all proposals with comprehensive
+experiments and discuss their impacts and limitations at the end of the thesis.
+Keywords: Web-based learning, informal learning, natural language processing, mul-
+timodal information extraction, user study, deep learning, knowledge gain prediction,
+semantic image-text relation, semantic image-text class, semantic gap
+Zusammenfassung
+Web-basiertes Lernen ist ein fester Bestandteil des Alltags aller Alters- und Bevölkerungs-
+schichten geworden. Einerseits liegen die Vorteile dieser Art des Lernens wie Verfügbarkeit,
+Zugänglichkeit, Flexibilität oder Kosten auf der Hand. Andererseits kann das Überangebot
+an Inhalten auch dazu führen, dass Lernende nicht in der Lage sind optimale Ressourcen
+effizient zu finden. Das interdisziplinäre Forschungsfeld Search as Learning beschäftigt sich
+mit der Analyse und Verbesserung von Web-basierten Lernprozessen.
+Bisher sind automatische Ansätze bei der Bewertung und Empfehlung von Lernressourcen
+fokussiert auf monomodale Merkmale, wie Text oder Dokumentstruktur. Die multimodale
+Betrachtung ist hingegen noch nicht ausreichend erforscht. Daher befasst sich diese
+Arbeit mit der Frage wie Methoden des Multimedia Retrievals dazu beitragen können
+das Lernen im Web zu unterstützen. Zunächst wird evaluiert, ob textuelle Metadaten des
+TIB AV-Portals genutzt werden können um in Verbindung mit semantischen Worteinbet-
+tungen einerseits Videoempfehlungen zu generieren und andererseits Visualisierungen
+zur Inhaltszusammenfassung von Videos abzuleiten. Anschließend wenden wir uns der
+anspruchsvollen Aufgabe der Vorhersage des Wissenszuwachses zu, die den potenziellen
+Lernerfolg einer Lernressource schätzt. Wir haben für unsere Ansätze Daten aus zwei
+Nutzerstudien verwendet. In der ersten wird der Wissenszuwachs beim Lernen mit Videos
+in einem MOOC-Setting beobachtet, während die zweite eine informelle Web-basierte
+Lernumgebung bietet, in der die Probanden uneingeschränkten Internetzugang haben.
+Anschließend erweitern wir die rein textuellen Merkmale um visuelle, akustische und
+cross-modale Merkmale für eine ganzheitliche Darstellung der Lernressourcen. Durch die
+Korrelation dieser Merkmale mit dem erzielten Wissenszuwachs können wir den Einfluss
+einer Lernressource auf den Lernerfolg vorhersagen.
+Weiterhin untersuchen wir wie verschiedene Kombinationen von visuellen und textuellen
+Inhalten Informationen generell vermitteln. Dazu greifen wir auf Arbeiten aus der
+Linguistik und der visuellen Kommunikation zurück, die seit mehreren Jahrzehnten die
+Beziehung zwischen Bild und Text untersucht haben. Wir konkretisieren vorhandene
+Metriken, um ihre Verwendung für maschinelles Lernen zu ermöglichen. Dieser Prozess
+beinhaltet die Ableitung semantischer Bild-Text-Klassen. Wir evaluieren alle Ansätze mit
+umfangreichen Experimenten und diskutieren ihre Auswirkungen und Limitierungen am
+Ende der Arbeit.
+Stichworte: Web-basiertes Lernen, Informelles Lernen, Natürliche Sprachverarbeitung,
+Vorhersage von Lernerfolg, Multimodale Informationsextraktion, Nutzerstudie, Deep
+Learning, Semantische Bild-Text Relation, Semantische Lücke
+Acknowledgments
+I interacted with many people during my work on this thesis, which influenced me to
+various degrees. I can say with conviction that without their help, this would not have
+been possible, which is why I want to thank them here.
+First, I want to thank my supervisor Prof. Dr. Ralph Ewerth, for granting me the
+opportunity to embark on this journey by inviting me to Hannover to his newly established
+Visual Analytics research group. He found a way to resolve my initial doubts about this
+venture and motivated me to approach the challenges of the scientific world. He helped
+me find value and purpose in this line of work, be it supervising students, writing papers,
+or giving talks to rooms full of other researchers.
+Parts of this thesis are supported by and have been created in collaboration with partners
+of the project ”SALIENT, Search as Learning – Investigating, Enhancing, and Predicting
+Learning During Multimodal (Web) Search“, financially supported by the Leibniz As-
+sociation, Germany (Leibniz Competition 2018, funding line "Collaborative Excellence"
+project SALIENT [K68/2017]). The goals of this project were in line with the interdisci-
+plinary ambitions toward improving Web-based learning. I would especially like to thank
+Dr. Anett Hoppe, Dr. Ran Yu, Georg Pardi, Johannes von Hoyer, and Markus Rokicki for
+their collaboration.
+During my time in the Visual Analytics research group, I had the opportunity to work with
+several students. In particular, by supervising their bachelor’s and master’s theses. While
+I enjoyed working with all of them, I want to thank (in chronological order), especially
+Justyna Medrek, Hang Zhou, Jianwei Shi, and Markos Stamatakis for their contributions
+to the publications in this thesis.
+As always in life, overcoming obstacles is easier with friends at your side. Here I want
+to thank Dr.-Ing. Eric Müller-Budack and Matthias Springstein, who were here with me
+from the beginning. They always provided valuable input if I got stuck with my work in
+the form of new ideas or the right piece of code for my implementation. Also, I have to
+thank Eric, in particular, for being a pacemaker in the final stages of my thesis, pushing
+me toward the finish line.
+Lastly, I want to thank my parents, my brother, and most importantly my beloved wife,
+Lisa, for always being supportive during these years. In the final year of the Ph.D., you
+brought our son Joschua into our life and completed our family bliss. Even though the
+short nights put a slight damper on the speed of completion of this thesis, he also provided
+the final push of motivation necessary. I dedicate this thesis to him.
+1 Introduction
+1.1 Motivation
+The advent of web-based learning, driven by two decades of digitization, has proven its
+worth and necessity during the Covid-19 pandemic. Internationally, children, college
+students, researchers, and employees of sectors like, for instance, public administration
+or information and communication, were forced to work and, to some extent, learn in
+front of their computer screens [52]. However, a clear trend was noticeable even before
+this worldwide situation arose. By 2018 one in three students in the US was enrolled in
+an online course [205], 22 of the top 25 US universities offer online courses for free [169],
+and even 45% of elementary school students report their favorite learning methods to be
+educational games and online videos [282].
+Depending on many subjective and topic-related factors, web-based learning has certain
+disadvantages compared to traditional learning. Disadvantages are, for example, the
+less motivating, impersonal online classrooms, the associated social isolation, technical
+inequalities for different social backgrounds [195], and the lack of assessment for a majority
+of online resources when compared to, for instance, text books [236]. However, there
+are many advantages connected to this trend as well. At first, it is accessible and, thus,
+convenient. Given a device that is able to connect to the internet, a learner is free to
+consume content any time of the day and, with enough network coverage, wherever he or
+she wants. The second advantage, affordability, underlines accessibility even more. The
+increasing cost of traditional education, ranging from textbooks over public transportation
+to college tuition, traditionally prevents students from families with lower incomes from
+partaking in higher education [61]. Lastly, from an individual’s perspective, Web-based
+learning allows for more flexibility, enabling work-life balance, and can also be adapted to
+personal preferences and interests.
+With this trend comes the need for a better automatic understanding of learning material.
+That entails, improving computer-based algorithms in their ability to describe complex
+content similar to humans. Otherwise, it becomes more and more challenging to explore
+the vast amount of available content. In other words, typical information retrieval (IR)
+methods in search engines are not tailored toward the learner, but monetary gain in terms
+of, for example, ad revenue. A learner-focused approach, however, needs reliable ways
+to generate optimal results for learners. This task is challenging due to multiple factors.
+First, the given information often only consists of a search query where the learner might
+not even be sure whether it fits their needs. Occasionally, platforms collect historical data
+of previous searches that hint at personal interests or fields of study. In a perfect world, a
+retrieval algorithm has to recommend an optimal set of resources to achieve the desired
+learning goal of the learner, given these sparse clues. However, this algorithm requires
+a thorough and human-like understanding of the respective databases’ textual, visual,
+and audio-visual material. Simple author-provided annotations like keywords or tags,
+combined with popularity measures and video categorizations, allow for good, superficial
+results, at least on the entertainment side of video consumption (e.g., YouTube [175]).
+Nevertheless, techniques like these are prone to generate unsatisfying results due to
+clickbait titles [270] because their annotations are not guaranteed to have a direct link to
+the content. On the other hand, semantic feature extraction methods, realized for example
+through semantic word embeddings [182, 22], directly derive metadata from the content
+of a given material, which, in theory, circumvents this problem. The trade-off here is
+the accuracy of the generated labels, which is limited by an algorithm’s capabilities to
+interpret not only text, image, and audio individually, but also their combinations. Further,
+it has to factor in subjective quality measures for learning resources to make the correct
+decision when being forced to decide between, e.g., two content-wise identical videos with
+significant differences in presentation quality.
+1.2 Summary of the State-of-the-Art
+This section provides a selection of related work to provide context for the research ques-
+tions and associated contributions in this thesis. Search as Learning is the interdisciplinary
+research area that deals with all topics surrounding Web-based learning. That entails
+thoroughly investigating every aspect of learning sessions with an informational search
+intent (besides transactional or navigational intents [34]), thus implying the intent to acquire
+knowledge. Search as Learning (SAL) is considered interdisciplinary, because it considers
+insights and techniques from psychology, educational sciences, and computer science. As
+stated by Hoppe et al. [113], this encompasses (a) improving the retrieval and ranking
+process of search engines, (b) predicting and considering individual knowledge states,
+intents, and needs, and (c) taking all forms of formal and informal learning settings
+into consideration, especially the wide range of available types of multimodal content
+(textual, visual and audio-visual). Past research on SAL has, however, widely focused
+on the exploration of behavioral features (e.g., [47, 78]), and textual features of Web
+resources [250], neglecting the impact of multimodal data [69]. However, multimodal
+research that evaluates and measures the importance of visual and audio-visual informa-
+tion for these tasks is still in its infancy. Even though modern approaches show excellent
+results detecting what is seen in an image, SAL attempts to understand how the shown
+information influences the learning outcome in combination with other modalities consider-
+ing the current characteristics of the individual user. These characteristics entail previously
+acquired domain knowledge [285, 193], Web search literacy [284, 286], or working memory
+capacity [207], and task characteristics, such as the type of knowledge to be acquired (e.g.,
+1.3. Problem Statement and Research Questions
+factual, conceptual, or procedural knowledge) [266] and the cognitive process dimension
+(e.g., understand or apply) [6].
+There is evidence that visual elements can have an impact on both, searching and learning.
+Several studies have examined how images may help searchers to find the information
+they are looking for [196, 134]. They show that they can be used to guide their attention
+and allow for a more efficient identification of relevant (passages in) Web resources.
+Research on learning goes into more depth and analyzes how text, images, and videos
+have to be combined to enable efficient learning. However, the fact that multimedia
+representation does support many types of learning tasks can be considered as well
+established [148]. Amadieu et al. [5] state that a combination of hypertext elements,
+animations, and other multimedia can stimulate “deep processing of the material”, but
+may also lead to problems due to the split attention effect [171].
+The risks of multimedia material to cause additional cognitive load for a learner has been
+discussed by Mayer and Moreno [172]. Therefore, recent research closely analyzes the
+interplay of different modalities with respect to learning outcomes. For instance, studies
+explore how the distribution of information on text and image influences their integration
+[233, 232], the effect of the temporal sequence of presentation [9] and how inter-modality
+signaling can support learners [223]. Similarly, video learning has been researched with
+respect to the usefulness of structure elements [97, 4], interaction functionalities, [180, 179,
+58], and added functionalities for engagement [186].
+In summary, there is clear evidence that the integration of multimedia resources does
+support human learning in general, and that this transfers to Web environments. How-
+ever, the composition of learning resources play an important role. It can ensure the
+efficient communication of learning contents, but it can also lead to cognitive overload
+and distraction. In consequence, a detailed, large-scale analysis of multimedia features
+in learning-oriented resources may lead to a better understanding of Web-based learning
+processes.
+More facets of SAL will be discussed in Section 4.2.2.
+1.3 Problem Statement and Research Questions
+The result of the growth of available online resources is the challenge to automatically
+understand and, consequently, index the plethora of multimodal information associated
+with them to recommend optimal learning resources to learners based on their individual
+needs and knowledge states. The following subsections highlight the individual steps
+and challenges towards this goal. Motivated by these open questions, we will derive the
+research questions that we will answer in the upcoming chapters.
+1.3.1 Exploiting Textual Metadata to improve Web-based Learning
+The automatic analysis of audio-visual content is a challenging task. As pointed out
+by Beyer et al. [17], a fundamental problem of this research is the semantic gap between
+low-level features and high-level semantics portrayed in the visual domain. To narrow
+down this gap should enable us to improve the explorative search capabilities, like
+video recommendation of content summarization, of video search engines like the TIB
+AV-Portal [259].
+Usually, video recommender systems rely on user-based information, for example viewing
+history [56] or current trends [54]. However, these methods are prone to fail when the
+search engine does not want to record this type of information, the user utilizes privacy
+software, or visits the website for the first time [146]. This raises the question whether
+possible watching interests can be made based on the currently watched video, or, to be
+more precise, the metadata associated with it. A similar challenge is presented for video
+summarization techniques in the context of educational videos. Related works aim to
+generate a short synopsis of a given video that focuses on visual features in the form of
+key frames or key fragments [8]. They are stitched then together to form a story board.
+However, in the educational domain (e.g. lecture videos), where the content lacks visual
+variance, these methods struggle to provide good solutions [290].
+A possible avenue to solve this problem is to further process, enrich, or repurpose the
+textual metadata associated with each video. Metadata is, per definition, structured
+data about data [82]. Or, in other words, textual information that describe (digital) ob-
+jects. Consequently, we can apply Natural Language Processing (NLP)-based content
+analysis methods, like semantic word embeddings [182, 22]. They have the potential to
+improve educational video Web platforms without the need for extensive data-gathering
+or high processing power usually connected to algorithms that consider the visual do-
+main. These considerations, together with the mentioned shortcomings of popular video
+recommendation and video summarization techniques, raise our first research question:
+Research Question 1
+How can we utilize textual metadata associated with learning content to improve
+exploratory search in video search portals?
+1.3.2 Extraction of Multimodal Features for Knowledge Gain Prediction
+There are numerous ways to exploit text-based content for more effective information
+retrieval algorithms [300, 156, 50] in SAL, especially with the advancements in NLP. Fea-
+tures from visual and audio-visual content are, however, still somewhat underrepresented
+in information retrieval systems [114]. Commercial video platforms such as YouTube rely
+on manual metadata such as titles, descriptions, or topic categories [56] in conjunction
+1.3. Problem Statement and Research Questions
+with easy-to-compute, text-based video features like continuous bag-of-words [54], which
+might be too unspecific or insufficient for longer, educational content like lecture videos.
+This stands in contrast to current learning research which suggests that users may prefer
+images and videos when tackling certain learning needs (e.g., procedural learning tasks
+[80, 209]). Since nowadays almost all media is multimodal (i.e., contains textual, visual,
+and audio-visual information), especially in education, it seems necessary to consider these
+modalities to understand the meaning of a multimodal document thoroughly. To capture
+arbitrary layouts of Web-content and consequently, their content, requires a document
+layout analysis (DLA). Machine learning algorithms that approach this task have been
+proposed, for example, for historical documents [283, 237], scientific papers [303], or hand-
+written pages [75]. However, neither a dedicated dataset nor an end-to-end approach have
+been published for the purpose of DLA on Web documents, yet. Besides the missing visual
+components of the learning resource, recent works [293] showed that the consideration
+of behavioral features summarizing the interaction of the learner with the computer, and
+resource features that provide statistics (e.g., readability, complexity, linguistics) about the
+content, are beneficial for Knowledge Gain (KG) prediction as well.
+Even though multimodal feature extraction is already a complex task, it is only a prepro-
+cessing step to improve web-based learning [117], see Figure 1.1.
+Figure 1.1: The Salient spaceship model outlining the main components of
+the informal Web-based learning process, namely the learner, the interface
+and the IR backend (D). This thesis investigates the feature extraction process
+and the feature processing part of the IR backend and analyzes how the
+information displayed on the interface (C) influence the learners knowledge
+gain.
+Statistics about multimodal learning resources need to be aligned with realistic learning
+results to understand how others might benefit from a certain type of learning material [208,
+293]. In SAL, this type of data is collected via user studies that resemble formal or informal
+learning settings. A formal setting, in this context, means controlled environments where
+participants are constrained by design regarding, for example, available websites, learning
+resources, resource type, or generally how they are supposed to consume knowledge.
+Brockman and Dirkx [33] found that such a scenario provides critical thinking and
+independent learning skills that people need to perform well in demanding work situations.
+It also enhances their ability and desire to learn on their own [158].
+Learning in an informal setting on the other hand, is mainly initiated by individuals in
+their everyday life, characterized by free access to any search engine and available Web
+resource. In the context of user studies, the challenge is to replicate real-life scenarios as
+well as possible while simultaneously enforcing a specific learning task. In addition, the
+participants should not feel constrained in their actions and act naturally. Otherwise, the
+drawn conclusions may not apply to general learning scenarios. If possible, they should
+be allowed to use familiar browsers and search engines, and the underlying recording and
+tracking software should not disturb the learning process.
+It is also helpful to choose topics that are somewhat interesting to the participant, which
+brings up the following challenge: to choose the appropriate task topic and task type [106].
+The goal when choosing the task topic is to cover two aspects: on the one hand, ensure
+that it is not too simple, or, in other words, the average participant does not already
+know everything about it. Otherwise a gain in knowledge would not be possible. On the
+other hand, a topic too complex would prevent the person from learning as well. Further,
+we need to align the task type (informational, navigational, or procedural [34]) with the
+hypotheses to be proven. Lastly, the pre- and post-knowledge questionnaires must be well
+chosen to capture the respective knowledge states given a topic, but not too easy to allow
+for guessing the correct answers by the elimination method. The sum of these parameters
+influence how well the gathered results generalize to other experiments and, thus, the
+external validity of this kind of experiment.
+Elaborate studies that record all types of interdisciplinary data, meaning knowledge
+metrics as well as multimodal, gaze, resource, and behavioral features from such carefully
+constructed studies have neither been published, nor automatically investigated, yet. In
+summary, automatic multimodal analyses in SAL are still in their infancy in multiple parts
+of the learning process, which brings up our second research question:
+Research Question 2
+To what extent can we extract textual, multimedia, and cross-modal features and
+utilize them for knowledge gain prediction?
+1.3.3 Computable Crossmodal Relations
+Exploring how different modalities act together to convey an author’s intended message
+might help to get an even better understanding of how information is conveyed from
+1.3. Problem Statement and Research Questions
+medium to learner. For the scope of this thesis, we take an in-depth look at the relationship
+between visual and associated textual information purposely put in place together.
+As Bateman states [16], at first glance, combining image and text to convey information of
+any kind seems to be a natural and easy thing to do. People of all ages do it every day and
+have done so for hundreds of years. On second thought, by asking how these two modes
+work together to create an intended meaning, one quickly comes to realize that image
+and text are very different tools whose interplay has many potential interpretations. This
+difference in expressiveness between two linguistic representations, or modalities [84],
+is called the semantic gap [102]. In computer science, Smeulders et al. [243] describe
+it as the lack of coincidence between the information in visual data and their possible
+interpretations. Due to the semantic gap, images and text are very rarely able to portray
+the same information [103, 104]. Conversely, in most cases they are meant to complement
+each other with one being dominant regarding the amount of information brought into
+the joint message.
+To get a basic understanding of these interplays, it is beneficial to define a set of inter-
+pretable, comprehensive, and computable metrics that describe the relationship between
+visual and textual content in detail. The approach of Henning and Ewerth [103, 104]
+creates a foundation of such a metric-based distinction, but has not been aligned with
+research from communication and media science. However, there are various taxonomies
+and in-depth discussions about semantic image-text classes, which, as this thesis will
+elaborate on, are based on underlying metrics [15, 166, 167, 264]. So far, a transfer of
+linguistics knowledge into computer science approaches has only been attempted partially,
+usually pruned to the problem at hand instead of generally applicable to arbitrary media.
+Kruk et al. [143], for instance, tailor Marsh and White’s taxonomy [166] to measure the
+author’s intent for Instagram posts in terms of two different relationship measures. Zhang
+et al. [298], on the other hand, investigate only one relationship in the advertisements
+domain, determining whether a equivalent or non-equivalent parallel information transfer
+is present. Lastly, diverse, domain-independent, and sufficiently large datasets, which
+contain a broad range of semantic image-text metrics, do not exist yet. These observations
+pose our final research question:
+Research Question 3
+Based on insights from linguistics and visual communications, how can we derive
+computational models that describe the relationship between image and text?
+1.4 Contributions
+1.4.1 Improving Video Learning Platforms with Text-Based Features
+Chapter 3 explores how, for instance, semantic word embeddings and keyphrase extraction
+methods, next to others, can be used to improve web-based educational applications to
+enhance the user experience. In particular, we conduct two user studies on the open-
+access dataset provided by the TIB AV-Portal [259], comprised of scientific videos (e.g.,
+lecture recordings) enriched with metadata composed of a speech transcript and keywords
+derived from Optical Character Recognition (OCR) and Visual Concept Detection (VCD).
+We demonstrate and evaluate how this data can be post-processed and extended to
+provide two improvements to the educational video Web platforms. First, a novel video
+recommendation tool (Section 3.1) is implemented that suggests related videos based
+on video content rather than title similarity. Second, we present a visual summary
+visualization that allows for a more efficient explorative search for learners that try to find
+a fitting video for their query (Section 3.2).
+1.4.2 Prediction of Knowledge Gain with Multimodal Features
+Chapter 4 investigates how to assess multimedia educational content from two directions.
+In a smaller study (Section 4.1) that focuses on MOOC videos, we propose a new feature
+set comprised of acoustic and visual features but also their cross-modal combinations with
+the shown textual content. A correlation analysis with the measured learning outcome will
+indicate their usefulness for an eventual knowledge gain prediction. To further strengthen
+this assumption, we extend this cross-modal dataset with a wide range of textual features
+and compare their potential for knowledge gain in a large study.
+In our second lab study, carried out by 114 participants, we implemented an informal
+setting, meaning we extended our scope to unrestricted search on the internet (Section 4.2).
+To align the chosen, highly diverse resources with the learning outcome, we recorded
+a plethora of log data. In an attempt to capture the full range of stimuli, we record the
+learner’s gaze, the visited websites in chronological order, the individual behavior (for
+instance, mouse movements and actions), screen capture, and a wide range of knowledge
+metrics. We propose an automatic framework that requires minimal manual labor but
+can extract statistics about the design of the seen websites and classify their content. We
+use these features in conjunction with a set of behavioral and resource features to achieve
+state-of-the-art results in knowledge gain prediction.
+1.4.3 Categorization of Semantic Image-Text Relations
+In Chapter 5 of this thesis, we build upon recent work on image-text metrics and bridge
+the gap between research in computer science and communication science. Based on
+previous proposals [103, 15], we define three semantic image-text metrics to describe three
+1.5. List of Publications
+dimensions of the semantic interplay of jointly placed visual and textual information.
+Subsequently, we derive a categorization of eight semantic image-text classes that combines
+research from communication science with these metrics and thus, provides a general
+system to categorize image-text pairs. Next, we show how modern deep learning-based
+methods, specifically multimodal embeddings, can be utilized to predict these metrics
+(and classes). Therefore, we employ data augmentation methods to generate a dataset of
+about 240 000 image-text pairs, which is available to the public (Chapter 5).
+1.5 List of Publications
+The following papers have been published in the context of this thesis. As in most
+academic work, other authors have contributed to a certain extent to these publications.
+Thus, the academic we is used throughout this thesis. Below the individual abstracts my
+contributions to each respective paper are listed under My Contributions according to
+the Contributor Roles Taxonomy (CRediT) [28].
+Two papers have been published at conferences ranked A ([202, 201] and three at confer-
+ences ranked B ([177, 304, 200] according to the Australian Computing Research & Education
+(CORE1) Conference Portal (source: CORE2021). ”Understanding, Categorizing and Predicting
+Semantic Image-Text Relations“ [200] received the Best Paper Award at the ACM International
+Conference for Multimedia Retrieval 2019 and was subsequently invited as an extended
+version called ”Characterization and classification of semantic image-text relations“ [199] in
+the International Journal of Multimedia Information Retrieval (IJMIR). The paper entitled
+”Investigating Correlations of Automatically Extracted Multimodal Features and Lecture Video
+Quality“ [240] was presented at the International Workshop on Search as Learning with Mul-
+timedia Information co-located with an A* conference (ACM International Conference on
+Multimedia). In the following section, all publications are outlined and set into context
+with their respective chapters.
+Chapter 3 presents two approaches to improve the TIB AV-Portal [259], a scientific video
+Web platform, with text-based features and is based on the publications ”Recommending
+Scientific Videos Based on Metadata Enrichment Using Linked Open Data“ [177] and ”Visual
+Summarization of Scholarly Videos Using Word Embeddings and Keyphrase Extraction“ [304].
+10.1007/978-3-030-00066-0_25
+Abstract: The amount of available videos in the Web has significantly increased not
+only for entertainment etc., but also to convey educational or scientific information
+1http://portal.core.edu.au/conf-ranks/
+in an effective way. There are several web portals that offer access to the latter kind
+of video material. One of them is the TIB AV-Portal of the Leibniz Information
+Centre for Science and Technology (TIB), which hosts scientific and educational
+video content. In contrast to other video portals, automatic audiovisual analysis
+(VCD, OCR, Automatic Speech Recognition (ASR)) is utilized to enhance metadata
+information and semantic search. In this paper, we propose to further exploit
+and enrich this automatically generated information by linking it to the Integrated
+Authority File (GND) of the German National Library. This information is used to
+derive a measure to compare the similarity of two videos which serves as a basis for
+recommending semantically similar videos. A user study demonstrates the feasibility
+of the proposed approach.
+My Contributions: Conceptualization, Formal Analysis, Project administration,
+Supervision, Validation, Visualization, Writing – original draft, Writing – review &
+editing
+[304] Hang Zhou, Christian Otto, and Ralph Ewerth. “Visual Summarization of Scholarly
+Videos Using Word Embeddings and Keyphrase Extraction”. In: Digital Libraries for
+Open Knowledge - 23rd International Conference on Theory and Practice of Digital Libraries,
+TPDL 2019, Oslo, Norway, September 9-12, 2019, Proceedings. Vol. 11799. Lecture Notes
+in Computer Science. Springer, 2019, pp. 327–335. doi : 10.1007/978-3-030-30760-
+8_28
+Abstract: Effective learning with audiovisual content depends on many factors. Be-
+sides the quality of the learning resource’s content, it is essential to discover the most
+relevant and suitable video in order to support the learning process most effectively.
+Video summarization techniques facilitate this goal by providing a quick overview
+over the content. It is especially useful for longer recordings such as conference
+presentations or lectures. In this paper, we present a domain specific approach that
+generates a visual summary of video content using solely textual information. For
+this purpose, we exploit video annotations that are automatically generated by ASR
+and video OCR. Textual information is represented by semantic word embeddings
+and extracted keyphrases. We demonstrate the feasibility of the proposed approach
+through its incorporation into the TIB AV-Portal (http://av.tib.eu/), which is a
+platform for scientific videos. The accuracy and usefulness of the generated video
+content visualizations is evaluated in a user study.
+My Contributions: Conceptualization, Formal Analysis, Project administration,
+Supervision, Validation, Visualization, Writing – original draft, Writing – review &
+editing
+The KG prediction methods in Chapter 4 are based on two user studies and a total of
+four publications. Section 4.1 describes the contributions of the papers ”Investigating Corre-
+lations of Automatically Extracted Multimodal Features and Lecture Video Quality“ [240] and
+1.5. List of Publications
+”Predicting Knowledge Gain for MOOC Video Consumption“ [201]. In these two publications
+we investigate learning in a formal setting (MOOC videos) by conducting a user study
+and extensive, multimodal feature extraction procedure. Afterward, Section 4.2 explores
+learning in an informal setting in a larger lab study, the creation of an extensive dataset,
+and proposes a novel multimedia extraction framework for subsequent knowledge gain
+prediction. This work is published in the ”SaL-Lightning Dataset: Search and Eye Gaze
+Behavior, Resource Interactions and Knowledge Gain during Web Search“ [198] and ”Predicting
+Knowledge Gain During Web Search Based on Multimedia Resource Consumption“ [202].
+[240] Jianwei Shi, Christian Otto, Anett Hoppe, Peter Holtz, and Ralph Ewerth. “Inves-
+tigating Correlations of Automatically Extracted Multimodal Features and Lecture
+Video Quality”. In: Proceedings of the 1st International Workshop on Search as Learning
+with Multimedia Information. SALMM ’19. Nice, France: Association for Computing
+Machinery, 2019, pp. 11–19. isbn : 9781450369190. doi : 10.1145/3347451.3356731
+Abstract: Ranking and recommendation of multimedia content such as videos is
+usually realized with respect to the relevance to a user query. However, for lecture
+videos and MOOC it is not only required to retrieve relevant videos, but particularly
+to find lecture videos of high quality that facilitate learning, for instance, indepen-
+dent of the video’s or speaker’s popularity. Thus, metadata about a lecture video’s
+quality are crucial features for learning contexts, e.g., lecture video recommendation
+in search as learning scenarios. In this paper, we investigate whether automatically
+extracted features are correlated to quality aspects of a video. A set of scholarly
+videos from a MOOC is analyzed regarding audio, linguistic, and visual features.
+Furthermore, a set of cross-modal features is proposed which are derived by com-
+bining transcripts, audio, video, and slide content. A user study is conducted to
+investigate the correlations between the automatically collected features and human
+ratings of quality aspects of a lecture video. Finally, the impact of our features on
+the knowledge gain of the participants is discussed.
+My Contributions: Conceptualization, Formal Analysis, Project administration,
+Supervision, Validation, Visualization, Writing – original draft, Writing – review &
+editing
+[201] Christian Otto, Markos Stamatakis, Anett Hoppe, and Ralph Ewerth. “Predict-
+ing Knowledge Gain for MOOC Video Consumption”. In: Artificial Intelligence in
+Education. Posters and Late Breaking Results, Workshops and Tutorials, Industry and
+Innovation Tracks, Practitioners’ and Doctoral Consortium - 23rd International Confer-
+ence, AIED 2022, Durham, UK, July 27-31, 2022, Proceedings, Part II. ed. by Maria
+Mercedes T. Rodrigo, Noburu Matsuda, Alexandra I. Cristea, and Vania Dimitrova.
+doi
+Vol. 13356. Lecture Notes in Computer Science. Springer, 2022, pp. 458–462. :
+10.1007/978-3-031-11647-6_92
+Abstract: Informal learning on the Web using search engines as well as more
+structured learning on MOOC platforms have become very popular. However,
+the automatic assessment of this content with regard to the challenging task of
+predicting (potential) knowledge gain has not been addressed by previous work
+yet. In this paper, we investigate whether we can predict learning success after
+watching a specific type of MOOC video using 1) multimodal features, and 2) a wide
+range of text-based features describing the structure and content of the video. In a
+comprehensive experimental setting, we test four different classifiers and various
+feature subset combinations. We conduct a feature importance analysis to gain
+insights in which modality benefits knowledge gain prediction the most.
+Source Code: https://github.com/TIBHannover/mooc_knowledge_gain
+My Contributions: Conceptualization, Formal Analysis, Project administration,
+Supervision, Validation, Visualization, Writing – original draft, Writing – review &
+editing
+66.3505835
+Abstract: The emerging research field SAL investigates how the Web facilitates
+learning through modern information retrieval systems. SAL research requires
+significant amounts of data that capture both search behavior of users and their
+acquired knowledge in order to obtain conclusive insights or train supervised
+machine learning models. However, the creation of such datasets is costly and
+requires interdisciplinary efforts in order to design studies and capture a wide range
+of features. In this paper, we address this issue and introduce an extensive dataset
+based on a user study, in which 114 participants were asked to learn about the
+formation of lightning and thunder. Participants’ knowledge states were measured
+before and after Web search through multiple-choice questionnaires and essay-based
+free recall tasks. To enable future research in SAL -related tasks we recorded a
+plethora of features and person-related attributes. Besides the screen recordings,
+visited Web pages, and detailed browsing histories, a large number of behavioral
+features and resource features were monitored. We underline the usefulness of the
+dataset by describing three, already published, use cases.
+My Contributions: Conceptualization, Data curation, Project administration, Re-
+sources, Software, Visualization, Writing – original draft, Writing – review & editing
+1.5. List of Publications
+[202] Christian Otto, Ran Yu, Georg Pardi, Johannes von Hoyer, Markus Rokicki, Anett
+Hoppe, Peter Holtz, Yvonne Kammerer, Stefan Dietze, and Ralph Ewerth. “Predicting
+Knowledge Gain During Web Search Based on Multimedia Resource Consumption”.
+In: Artificial Intelligence in Education - 22nd International Conference, AIED 2021, Utrecht,
+The Netherlands, June 14-18, 2021, Proceedings, Part I. vol. 12748. Lecture Notes in
+Computer Science. Springer, 2021, pp. 318–330. doi : 10.1007/978-3-030-78292-4
+_26
+Abstract: In informal learning scenarios the popularity of multimedia content, such
+as video tutorials or lectures, has significantly increased. Yet, the users’ interactions,
+navigation behavior, and consequently learning outcome, have not been researched
+extensively. Related work in this field, also called search as learning, has focused
+on behavioral or text resource features to predict learning outcome and knowledge
+gain. In this paper, we investigate whether we can exploit features representing
+multimedia resource consumption to predict KG during Web search from in-session
+data, that is without prior knowledge about the learner. For this purpose, we suggest
+a set of multimedia features related to image and video consumption. Our feature
+extraction is evaluated in a lab study with 113 participants where we collected
+data for a given search as learning task on the formation of thunderstorms and
+lightning. We automatically analyze the monitored log data and utilize state-of-
+the-art computer vision methods to extract features about the seen multimedia
+resources. Experimental results demonstrate that multimedia features can improve
+KG prediction. Finally, we provide an analysis on feature importance (text and
+multimedia) for KG prediction.
+My Contributions: Conceptualization, Data curation, Formal Analysis, Investigation,
+Methodology, Software, Validation, Visualization, Writing – original draft, Writing –
+review & editing
+Finally, the main contribution of Chapter 5 is based on the paper in ”Characterization and
+classification of semantic image-text relations“ [199], which is an extended journal version of
+”Understanding, Categorizing and Predicting Semantic Image-Text Relations“ [200]. In these
+publications, we propose and define three semantic image-text metrics and a categorization
+of eight semantic image-text classes. We create a large dataset and suggest a neural
+network-based method for automatic classification.
+[200] Christian Otto, Matthias Springstein, Avishek Anand, and Ralph Ewerth. “Under-
+standing, Categorizing and Predicting Semantic Image-Text Relations”. In: Proceed-
+ings of the 2019 on International Conference on Multimedia Retrieval, ICMR 2019, Ottawa,
+ON, Canada, June 10-13, 2019. Ed. by Abdulmotaleb El-Saddik, Alberto Del Bimbo,
+Zhongfei Zhang, Alexander G. Hauptmann, K. Selçuk Candan, Marco Bertini, Lexing
+Xie, and Xiao-Yong Wei. ACM, 2019, pp. 168–176. doi : 10.1145/3323873.3325049
+[199] Christian Otto, Matthias Springstein, Avishek Anand, and Ralph Ewerth. “Character-
+ization and classification of semantic image-text relations”. In: International Journal of
+Multimedia Information Retrieval 9.1 (2020), pp. 31–45. doi : 10.1007/s13735-019-001
+87-6
+Abstract: The beneficial, complementary nature of visual and textual information to
+convey information is widely known, for example, in entertainment, news, advertise-
+ments, science, or education. While the complex interplay of image and text to form
+semantic meaning has been thoroughly studied in linguistics and communication
+sciences for several decades, computer vision and multimedia research remained
+on the surface of the problem more or less. An exception is previous work that
+introduced the two metrics Cross-Modal Mutual Information and Semantic Correlation in
+order to model complex image-text relations. In this paper, we motivate the necessity
+of an additional metric called Status in order to cover complex image-text relations
+more completely. This set of metrics enables us to derive a novel categorization
+of eight semantic image-text classes based on three dimensions. In addition, we
+demonstrate how to automatically gather and augment a dataset for these classes
+from the Web. Further, we present a deep learning system to automatically predict
+either of the three metrics, as well as a system to directly predict the eight image-text
+classes. Experimental results show the feasibility of the approach, whereby the
+predict-all approach outperforms the cascaded approach of the metric classifiers.
+My Contributions: Conceptualization, Data curation, Formal analysis, Investigation,
+Methodology, Project administration, Software, Validation, Visualization, Writing –
+original draft, Writing – review & editing
+The following list shows additional publications, which are only partially related to the
+topic, and will therefore not be covered in this thesis:
+[197] Christian Otto, Sebastian Holzki, and Ralph Ewerth. “Is This an Example Image?
+- Predicting the Relative Abstractness Level of Image and Text”. In: Advances in
+Information Retrieval - 41st European Conference on IR Research, ECIR 2019, Cologne,
+Germany, April 14-18, 2019, Proceedings, Part I. vol. 11437. Lecture Notes in Computer
+Science. Springer, 2019, pp. 711–725. doi : 10.1007/978-3-030-15712-8_46
+[117] Johannes von Hoyer, Anett Hoppe, Yvonne Kammerer, Christian Otto, Georg Pardi,
+Markus Rokicki, Ran Yu, Stefan Dietze, Ralph Ewerth, and Peter Holtz. “The
+Search as Learning Spaceship: Toward a Comprehensive Model of Psychological
+and Technological Facets of Search as Learning”. In: Frontiers in Psychology 13 (Mar.
+2022). doi : 10.3389/fpsyg.2022.827748
+[70] Ralph Ewerth, Christian Otto, and Eric Müller-Budack. “Computational Approaches
+isbn
+for the Interpretation of Image-Text Relations”. In: Oct. 2021, pp. 109–138. :
+9783110725001. doi : 10.1515/9783110725001-005
+1.6. Organization of this Thesis
+[188] Markus Mühling, Nikolaus Korfhage, Eric Müller, Christian Otto, Matthias Spring-
+stein, Thomas Langelage, Uli Veith, Ralph Ewerth, and Bernd Freisleben. “Deep
+learning for content-based video retrieval in film and television production”. In:
+vol. 76. 21. 2017, pp. 22169–22194. doi : 10.1007/s11042-017-4962-9
+[189] Eric Müller, Christian Otto, and Ralph Ewerth. “Semi-supervised Identification of
+Rarely Appearing Persons in Video by Correcting Weak Labels”. In: Proceedings of
+the 2016 ACM on International Conference on Multimedia Retrieval, ICMR 2016, New
+York, New York, USA, June 6-9, 2016. ACM, 2016, pp. 381–384. doi : 10.1145/2911996
+.2912073
+1.6 Organization of this Thesis
+Chapter 1 introduces the aspects and challenges associated with multimedia learning
+that are addressed in this thesis. It defines problems and states research questions that
+we will answer. Chapter 2 covers the fundamentals of the key techniques utilized in our
+methodologies. That entails neural network basics and their relevant applications for
+uni- and multimodal representations and a selection of classifiers we utilized. Chapter 3
+introduces multiple ways of exploiting textual features to improve educational search
+engines based on previously extracted text-based metadata. Following up in Chapter 4,
+we contribute two user studies that resemble learning in formal and informal settings
+to reveal interesting connections between consumed learning resources and knowledge
+gain. In particular, our workflow entails a comprehensive feature extraction process
+covering individual methods for audio, visual, audio-visual, textual, and behavioral
+features, followed by an extensive correlation analysis. Afterward, Chapter 5 assesses
+this topic from a different angle. In reality, creators of multimodal content intend their
+information to be understood in unison, meaning ”Which message does, for example,
+image and text convey *together*? “, rather than individually. So, this final chapter
+models the cross-modal interplay on a theoretical level to foster future research in the
+automatic understanding of multimodal content. We propose a categorization of semantic
+image-text classes derived from communication science and extend with recent proposals
+of computable image-text metrics from computer science. Finally, we demonstrate the
+utility of these metrics by evaluating their applicability on two unseen datasets. Finally,
+Chapter 6 summarizes the various topics covered by this thesis and consolidates the
+findings, outlines limitations, and derives avenues for future work.
+(cid:51) (cid:51) (cid:51)
+The next Chapter introduces a the most important foundations of the methods and
+algorithms covered in this thesis.
+2 Foundations
+2.1 Introduction
+This chapter presents a number of approaches and techniques we will leverage in the
+upcoming chapters. Understanding the foundations of these methods will complement
+the motivations and design choices in the following methodologies. First, we take a close
+look at neural networks in general before investigating the neural network-based methods
+that we use in Chapters 3, 4, and 5, namely semantic word embeddings and autoencoders.
+Second, this chapter introduces the classification approaches utilized for KG prediction
+in Chapter 4, namely Random Forest (RF), Naive Bayes (NB), Support Vector Machines
+(SVMs), and Multilayer Perceptrons (MLPs).
+Finally, an introduction to research in the area of the visual-verbal divide as proposed by
+researchers in communication and media science is given by means of four classification
+systems that allow for the differentiation of different types of image-text pairs. We end
+this chapter with a discussion about the limitations of these systems that make a direct
+adoption from a computer science perspective difficult. In other words, we shed light on
+the requirements for a categorization of image-text classes that allow us to detect these
+intricate, semantic relations automatically.
+2.2 Neural Networks
+This section gives an introduction to artificial neural networks (Section 2.2.1), explains
+their components and general mechanics and provides a superficial look at the underlying
+calculus. Afterward, we give a more detailed description of the techniques used in
+this thesis. This entails semantic word embeddings (Section 2.2.6) and autoencoders
+(Section 2.2.5).
+2.2.1 Foundations
+As the name suggests, artificial neural networks (NN) consist of artificial neurons, which
+are inspired by biological neurons, one of the fundamental units of the brain. On their
+own, they are simple entities that receive inputs, process them, and, eventually, provide
+an output. In machine learning, these networks can be utilized as universal function
+approximators. That means they are able to approximate any problem that can be
+represented by a function, regardless of its complexity. Moreover, the past decade of
+research has proven that neural networks can be applied to a large variety of real-world
+problems, not rarely exceeding human performance [71]. Their ability to do so is mainly
+attributed to a) their hierarchical structure that allows for the abstraction of tasks similar to
+the human problem-solving process (”This object has four wheels, windows, and a steering
+wheel. It must be a car! “) and b) their independence from manually crafting features for
+each individual task, which was the dominant approach until the advent of Deep Learning.
+The term Deep Learning comes from the flexible design of these networks that allows
+intricate and, therefore, often deep (concerning the number of layers) architectures that
+are tailored to the problem at hand.
+Neurons
+The integral building blocks of neural networks are, as stated before, neurons. In their
+simplest form neurons resemble a linear function f (x) = w · x + b, where x is the input, w
+a weight applied to x, and b a bias value, see Figure 2.1a.
+(a) The simple form of a neuron resembling a
+linear function.
+Since that is not very useful yet beyond linear problems, NNs extend this concept in
+multiple ways, see Figure 2.1b. First, similar to the brain, a neuron is not limited to one
+input. Instead the number of inputs X = x , x , ..., x is variable, and each input comes
+1 2 n
+with its own weight W = w , w , ..., w . The value of the resulting formula is computed by
+1 2 3
+the weighted sum of the inputs plus the bias, see Equation 2.1.
+Second, an equally important difference is the choice of the non-linear activation
+function a(x), which is wrapped around this computation. The activation function allows
+the neural network to approximate non-linear functions. Linear algebra shows that,
+regardless of the number of layers and neurons, a neural network with a linear activation
+can be reduced to a 2-layer version of itself representing, again, a simple linear function
+f (x) = w · x + b. Activation functions will be discussed in more detail in Section 2.2.3.
+2.2. Neural Networks
+2.2.2 Types of Networks
+With some exceptions (e.g., Gated Recurrent Units (GRUs) [42]), a typical neural network
+consists solely of neurons arranged into layers, hierarchical tiers starting from the input
+layer, over a variable amount of hidden layers, to the output layer. The desired input data
+determines the input layer’s shape. For example, a visual concept classifier expecting a
+30x30 pixel, 4-channel image requires 30x30x4 = 3600 input neurons. The output, on the
+other hand, is determined by the problem to solve. If we label two classes for our visual
+concept classifier, the neural network would have two output neurons, one for each class,
+as in Figure 2.2. So-called feedforward networks are then trained by feeding training samples
+forward through the network, meaning ”from input to output without loops“. As neural
+networks are generally supervised approaches, each sample has an associated label. At
+the end of a forward step, the predicted outcome is compared to the expected output by
+means of a cost function. This function, which again differs based on the given problem,
+returns a value representing the difference between the ground truth and prediction value.
+By propagating this loss backward through the neural network, adjusting weights and
+biases of the neurons along the way, the potential error of the network is reduced the next
+time it sees a similar sample. We go further into detail in Section 2.2.4.
+Research of the past decade, however, heavily focuses on the intermediate part, the
+hidden layers. Their design varies depending on the type of data a researcher is working
+with. Image processing, for instance, makes use of convolutional layers, which can
+be interpreted as a repeated application of a filter to regions of the original image to
+receive a feature map of a lower dimension, see Figure 2.3. These filters aim to pick
+up patterns of various complexities and take advantage of correlations in the image.
+Hidden layers at the beginning of the network identify low-level features such as lines
+and edges, while filters at the end detect complex structures such as eyes or entire faces.
+The most important advantage of these approaches, as compared, for instance, to a Sobel
+filter [132], is that these filters are automatically learned during training and do not need
+to be designed manually. After applying the filter and adding the bias, the neural network
+passes the values of the feature map, again, through an activation function. Lastly, to
+further summarize the information of the feature map, a pooling operation is applied.
+Most commonly a MaxPooling operation, as shown in Figure 2.3. It only retains the
+maximum element of a certain region of the feature map and thus, depending on the
+size of the pooling kernel, reduces the dimensionality of the input even further. Current
+state-of-the-art approaches are ConvNeXt [157], EfficientNet [256], MobileNetV2 [228],
+and ResNeXt [287].
+Figure 2.3: The general idea of convolutional layers for image encoding. A
+filter is convolved with the input image to reduce its dimensionality. After
+pooling the dimensions of the original image are reduced from 36 to 4
+while the most important information, with regards to the filter kernel, are
+preserved.
+Sequential data, meaning data with an intrinsic order (e.g., video frames, sentences in
+a text, temporal data), utilize Recurrent Neural Networks (RNN) which can store memory
+about previously seen tokens of the current sample to make meaningful connections
+between these tokens. To do this, they contain loops referencing previous parts of the
+encoding procedure (e.g., the network), which means they are not feedforward networks as
+discussed up until now. Or in other words, information from previous tokens of the input
+sequence influence how the current token will be encoded. In practice, this may help give
+ambiguous words context by allowing the network to consider the entire sentence when
+encoding, for example, the word ”beat“ which has multiple meanings: e.g., overcoming a
+high score, hitting someone, or the noun describing the basic unit of time in a song.
+One building block for RNNs, which will also be utilized in Section 5.3.7, is the GRU [42].
+They are a simpler version of Long-Short-Term-Memory Cells (LSTMs [111]) that is,
+however, better able to deal with vanishing gradients during training (cf. Section 2.2.3).
+Simpler because they have only two gates instead of three and, thus, fewer parameters.
+Gates are the main difference between a GRU and a typical neuron, enabling the network
+to memorize things it has seen before. In particular, GRUs have an Update gate Z and
+t
+a Reset gate R , which, as their names imply, determine how the memory of the current
+t
+unit is altered given a certain input. Inputs for GRUs are, besides the current token of the
+sequence of our input data X t, the hidden state H t−1 of the unit that encoded the previous
+token in our data, see Figure 2.4. At time step t, both X t and H t−1 have to pass through
+2.2. Neural Networks
+the Reset Gate where the GRU decides whether to retain the information in H t−1 or discard
+it, In other words, it resets what the network has learned so far, see Equation 2.2. This
+decision is influenced by the activation function a, the weight matrices W , W , and the
+xr hr
+bias b .
+r
+2.1: This equation computes a value between [0,1] to determine whether the
+current GRU will reset (i.e., forget) what has been learned by the network so
+far.
+Next, based on the input X t and the amount of information from H t−1 that passed
+through the Reset gate, a candidate hidden state H˜ is computed, see Equation 2.3. Its
+t
+content can be interpreted as the amount of new information that is potentially added
+to the memory of the network given our current sequence token. If R = 0, only X will
+t t
+influence this candidate hidden state. Again, two trainable weight matrics (W and W ),
+xh hh
+a bias b , and a sigmoid function are part of the equation.
+h
+2.2: This equation computes the candidate hidden state depending on the
+input X
+t
+and the information retained from H t−1, which is decided by R t.
+Finally, the Update gate Z determines to what extent the candidate hidden state (or the
+t
+new information given by the current input X ) influences the already existing memory
+t
+from all the previously seen tokens H t−1. Similar to the Reset gate, due to the sigmoid
+activation, a value between 0 and 1 is calculated, see Equation 2.4. This value enables the
+computation of the output of the GRU, which is a weighted combination of the previous
+memory H t−1 and the candidate hidden state H˜ t according to Equation 2.5.
+Z = σ(X W + H W + b )
+t t xz t−1 hz z
+2.3: This equation computes the a value between [0,1] to determine to which
+extent new information influences the already established memory of the
+network.
+2.4: This equation computes output of the GRU combining the previous
+memory H t−1 and the information from the current token H˜ t according to
+the value of the Update gate Z .
+t
+In the experiments in Section 4 we utilize a bidirectional GRU to encode our textual
+inputs forwards and backward at the same time and concatenate the outputs. Thus, giving
+the network two perspectives on the sentence(s) to capture their semantics even better.
+State-of-the-art approaches for sequential data-based tasks, such as machine translation,
+image captioning, or question answering are, for instance, Sentence-BERT [220] and
+MPNet [246].
+2.2.3 Activation Functions
+The sigmoid function σ was one of the first popular approaches for the activation function
+for multiple reasons. It satisfies all requirements for an activation function, since it is
+• monotonically increasing
+• defined everywhere
+• continuous
+• and differentiable in R.
+As a bonus, the derivative required for back-propagation (cf. Section 2.2.4) of σ is
+simply σ′(x) = σ(x)(1 − σ(x)). It fell out of popularity because of the vanishing gradient
+problem [110]. Neural networks learn by applying gradient descent [137] to the results of
+their cost functions E after passing a training sample through the network. That means
+they compute the derivative E′ and utilize it to adjust the weights and biases in the network.
+However, sigmoid has a meaningful gradient only close to 0 or, in other words, very large
+or tiny input values return a gradient close to 0 (the gradient ”vanished“). The impact
+2.2. Neural Networks
+these small values have on the training diminishes the further we go backward through
+the hidden layers during back-propagation. This leads to the network getting stuck and
+being unable to find a useful solution during training. The vanishing gradient problem also
+occurs for the tanh activation function which is related to sigmoid by tanh(x) = 2σ(2x) − 1.
+An even simpler function that does not suffer from vanishing gradients and is therefore
+commonly used in Deep Learning is the Rectified Linear Unit (ReLU)[191] defined as
+a(x) = max{0, x}. ReLUs are nearly linear. That means they preserve many properties
+that make linear models easy to optimize with gradient-based methods. Even though
+they are not continuous at x = 0, the gradient can still be defined as either 0 or 1 without
+introducing too much error. While this original design works sufficiently well in general,
+large derivatives during back-propagation can cause it to get stuck returning 0 forever,
+also called the dying ReLU problem [159]. This happens especially during the beginning of
+the training, where high learning rates cause significant weight swings. To circumvent
+this problem variations such as LeakyReLU [162] or the ELU (exponential linear unit) [45]
+have been introduced, that return negative values for inputs < 0, see Figure 2.5.
+2.2.4 Back-propagation and Optimization
+As briefly introduced in Section 2.2.2, back-propagation [225] is the first key component
+of the process responsible for the network learning from its errors during training. It
+stands for ”backward propagation of errors“, and with the second key component, an
+optimization function like gradient descent optimizes the networks’ ability to solve a given
+task. It does so by calculating a gradient of the cost function after each sample of the
+training dataset, or, if that is not feasible due to hardware restrictions, each sample of the
+current batch (which equals a shuffled subset of the training data) has passed through
+the network. The optimizer then decides, according to the chosen learning rate lr, to
+which extent this gradient will influence the weights wk and biases bk of the network.
+i,j i
+These weights and biases are commonly summarized as the parameters θ = {wk , bk} of
+i,j i
+the network. Following the slope of the cost function step by step in the direction of this
+computed gradient reduces the error produced by the dataset predictions P compared to
+the ground-truth labels Yˆ. For this explanation, we consider a simple yet commonly used
+cost function: the mean of the squared errors (MSE), see Equation 2.6.
+2.5: An example of the mean squared error cost function that averages the
+squared differences between the predictions P and the ground-truth labels
+Yˆ for each sample of the dataset (or batch).
+Mathematically, back-propagation determines the rate of change to our cost function
+E given an adjustment of the parameters θ. With this, our neural network updates all
+parameters according to the following Equation 2.7:
+2.6: Calculation of a parameter update (weights and biases) of a neural
+network according to the learning rate and the computed gradient.
+The old parameters θ are updated by subtracting (since we want to minimize the
+old
+cost function) the computed gradient times the learning rate, which is typically a value
+< 1, e.g., 0.0001. This step is necessary since large gradients can cause the network’s
+performance to drop, because it fails to converge towards a minimum, also known as
+the exploding gradient problem. Computing the gradient in Equation 2.7 requires us to
+determine and average the rate of change of the cost function considering each individual
+weight and bias in the network. Luckily, this process can be significantly simplified due
+to the chain rule in calculus. This chain rule describes how the gradient of a nested
+function can be computed as the multiple of the derivatives of the nested functions, see
+Equation 2.8. Calculating each derivative for each weight and bias is significantly sped up
+by reusing the terms of these chains that form the derivatives.
+Computing the gradient of E follows a similar pattern for two reasons: First, the
+output of a neuron itself is a nested function (cf. Equation 2.1) since the weighted sum
+z = ∑|X| w · x + b is input for the activation function a. Second, considering were are
+i i=1 i i
+not in the input layer, x resembles the output of the activation functions of the neurons
+i
+in the previous layer, which can be substituted by their nested inputs again. In other
+words, starting with the output layer, each layer is a function of the activations of its
+predecessors. Therefore, the entire neural network resembles a nested function as well. In
+a network with L layers that uses the mean squared error cost function (cf. Equation 2.6)
+the derivative for a weight wl between neuron k of layer l − 1 and neuron j of layer l, for
+jk
+instance, is computed as follows:
+EITHER: iteratively replace last term with next layer
+2.8: Computation of the influence weight wl has on the cost function. The
+jk
+result of this equation in conjunction with the learning rate is used to update
+this particular weight.
+Verbatim, these equations can be understood as: the influence weight wl has on the
+jk
+cost function E is determined by the outputs of neuron k in layer l − 1 called al−1, the
+k
+derivative of the activation function of the neuron it is connected to with respected to the
+weighted sum, called
+a′(zj),
+and, the influence of that same activation function on the cost
+l
+function E. Afterward, this last term is then substituted for either the derivative of all
+neurons of the next layer connected to our target neuron or, if we are already in the output
+layer, simply the derivative of the cost function.
+2.2.5 Autoencoders
+Autoencoders are a special kind of neural network whose goal is to learn useful represen-
+tations for any type of input in an unsupervised manner, meaning without the need for
+labeled training samples. They achieve this by a symmetric architecture that consists of 1)
+an encoding pipeline that reduces the dimensionality of the input down to the desired
+level, 2) the hidden embedding layer in the ”middle“ that, optimally, retains only the most
+salient information about the input sample, and 3) the decoding pipeline that attempts to
+reconstruct the input sample as similar as possible based on this embedding. Figure 2.6
+outlines these basic components.
+Chapter 2. Foundations
+Figure 2.6: Simplistic structure of an autoencoder. Detailed architecture
+of the encoder and decoder component depends on the modality to be
+encoded.
+This functionality has multiple practical applications, which will be briefly outlined
+next. Early applications utilized autoencoder for denoising all types of imagery [41]. By
+encoding noisy images and thus reducing them to their key information, the noise will be
+dismissed, and the reconstruction returns a clean(er) image. Another field of applications
+are compression algorithms. For most use cases, autoencoder-based compression methods
+can have disadvantages when compared to traditional algorithms such as JPEG2000 [257]
+or BPG [26] in terms of general applicability, the requirement for training samples, and
+compression performance. However, recent state-of-the-art approaches [43, 87] showed
+comparable performances for the error introduced by compression measure by the peak
+signal-to-noise ratio (PSNR) as well as the more perceptual MS-SSIM [280] metric that
+describes the structural similarity of the output image compared to the original. For the
+purpose of neural network-based machine learning, autoencoders are mainly utilized in
+two ways. Due to their capabilities of learning salient representations in a self-supervised
+manner, the required number of labeled samples for an application can be reduced
+significantly. For example, a classification network, as in Figure 2.2 has to learn how
+to encode an image and how to predict the desired output. With an autoencoder, this
+representation could be learned beforehand with a much larger number of samples. Then,
+the decoder part of the network would be replaced with a set of fully-connected layers
+for classification that will be trained with the labeled samples. Finally, by introducing a
+probability distribution to the decoding component of the autoencoder, visually similar
+variants of the input image can be generated as additional training samples. These types
+of autoencoders are called variational autoencoders. Finally, a third, very common usecase
+for autoencoder is shown in the next section.
+2.2.6 Semantic Word Embeddings
+Semantic word embeddings are an invaluable building block for modern natural language
+applications. With them, computers are able to represent not only text representations but
+also their semantic meaning. This ability enables algorithms to
+2.2. Neural Networks
+1. determine whether text passages (words, sentences, paragraphs) are semantically
+similar or not
+2. align visual and textual encodings to describe their relation to one another (cf.
+Chapter 5)
+3. detect antonyms or positive and negative connotations
+4. model ties between certain word, e.g., capital - country (cf. Figure 2.7)
+The process of establishing a semantic word embedding relies on the assumption that
+words that appear in similar contexts have similar meanings [95, 129]. Modern approaches
+exploit this fact which allows them to convert words into high-dimensional vector rep-
+resentations in a self-supervised manner. The variance and quality of the trained model
+relies, besides the architecture of the neural network, solely on the chosen text corpora.
+This is convenient to align a model to a given task or finetune a model without additional,
+manual labeling. The trick in generating a semantic word embedding is to encode, in
+addition to the so-called focus word, a certain amount of context, and thus, going beyond
+simple representation encoding. In a pioneering work, Mikolov et al. [182] introduced two
+approaches to embed contexts for their word2vec model called Continuous Bag of Words
+(CBOW) and Skip-gram (SG).
+The quick brown fox jumps right over the lazy dog.
+Figure 2.8: CBOW and SG consider c=2 context words (blue) on each side of the focus word
+(green).
+As exemplary shown in Figure 2.8, given a context parameter c, CBOW and SG
+consider a variable amount of context words for each focus word they encode. They differ
+in the way they try to reconstruct texts: CBOW tries to estimate the focus word given
+the context, and SG predicts the context words given the focus word. The algorithm is
+self-supervised because the training process resembles an autoencoder with just one input,
+hidden, and output layer. The input and output layer have the dimension of the desired
+vocabulary, representing the word to be encoded in the input (one-hot encoded), while
+the output is the probability of each word in the vocabulary appearing close to the input
+word. The hidden layer has the dimensionality of the desired semantic word embedding.
+After training, the output layer is dismissed, and the hidden layer is used for further
+experiments since it returns the desired embeddings. Even though the number of layers is
+small, the number of parameters is high due to the size of the input and output layers.
+Moreover, given the nature of the problem, the sample size can exceed billions of samples,
+see Figure 2.9.
+That means, given a random initialization of the word embeddings, one training step
+entails the relocation of all word vectors in a way that the input focus and context words
+move closer to each other and the rest moves further away. This computationally heavy
+process has been improved in the same paper by Mikolov et al. [182]. By subsampling
+words, which means removing them from an input sentence with a probability proportional
+to their frequency in the training data, the number of training samples is decreased
+significantly. Words like the or a are removed, which a) improves the training time and
+2.3. Classifiers
+b) improves the quality of the sentence embedding in the end since they are not adding
+valuable context information.
+A second method to drastically improve training time is negative sampling. As mentioned,
+for each training step, the respective ground-truth label of a sample is a one-hot encoded
+vector the length of the vocabulary, where only 1 is a context word to the current focus
+word. That means all other bins of the vectors are 0, forcing the neural network to update
+all weights of the model. For negative sampling, the authors suggest selecting only 5 − 20
+bins that are 0 according to a unigram distribution, which chooses more frequent words
+more often. Only updating the weights associated with this selection of negative words
+reduces the number of weights to be changed tremendously, depending on the vocabulary
+size.
+In 2016, Bojanowski et al. [22] presented another semantic word embedding approach
+called fastText. As it will be used in multiple sections of this thesis, we will go further into
+detail about how it works. It extends word2vec by a key concept: it encodes each word as a
+bag of n-grams, which allows the model to harness subword information. Consequently,
+the model can return valuable encodings for rare words, or even words it has never seen
+during training but whose parts are similar to other known words. This is especially
+potent for languages with many compound words, like German. This is another reason
+fastText is used in this thesis since the experiments in Chapter 3 are based on a german
+dataset. Additionally, the authors utilize angular brackets to denote the start and end of a
+word, see Figure 2.10. Lastly, they append the entire word to the bag of n-grams as well.
+With this, shorter words like <her> can be distinguished from words they appear in, like
+<gather>.
+fastText(library) = <li, lib, ibr, bra, rar, ary, ry>, <library>
+Figure 2.10: Representation of the word library in fastText using 3-grams. The angular brackets
+denote the start and end of a word.
+2.3 Classifiers
+This section gives detailed descriptions of four machine learning classification approaches
+that are utilized in Chapter 4 in the context of knowledge gain prediction based on a
+set of input features. To make these explanations more coherent within this context, the
+following definitions will use this terminology of features as input and knowledge gain as
+output.
+2.3.1 Random Forest
+This classifier is a popular and reliable supervised learning algorithm. It is an ensemble ap-
+proach combining multiple decision trees to partially mitigate their individual drawbacks
+and generate a better prediction result. Random Forests can be utilized for regression and
+classification problems. To understand the prediction process, we first need a definition of
+decision trees.
+Similar to RFs, Decision Trees are also supervised and, in addition, non-parametric. Their
+goal is to learn simple if-then-else rules to separate and classify a given dataset effectively.
+How well a rule separates the data is measured as information gain, or in other words, the
+reduction of impurity given by separating a dataset by this rule. How impure a dataset is,
+is measured by its entropy H, see Equation 2.12.
+A simple example tailored to our use case would be a dataset that contains four learner
+samples, with two achieving a high knowledge gain, while the others achieved a moderate
+and low result. Also, one numerical feature time was recorded that measures the time
+edu
+spent on educational websites compared to the overall study time. In the beginning, the
+entropy or impurity of the dataset is
+2.9: Entropy of the input dataset. Label high constitutes 50% of the samples while the other two
+occur only 25% of the time.
+Separating the four samples by a rule that divides the participants by, for instance,
+whether they spent more than 15 minutes on educational websites would separate the
+data labels into two subsets: high, high and moderate, low. The resulting information gain is
+a result of the initial entropy minus the sum of the weighted entropies of the two subsets
+S:
+Whichever rule yields the highest information gain is set to be the first if-then branch
+in the tree. In our case, for a second step, another rule could be established separating the
+low and moderate class leading to an optimal result for this trivial example. Alternatively,
+by defining a minimum requirement for the impurity of the tree, we could stop early,
+saving computational time.
+The simplicity of decision trees bears some disadvantages. They tend to overfit on data
+with a large number of features, are sensitive to outliers, skew the results towards dominant
+classes in biased datasets, and are not guaranteed to produce optimal results due to the
+large potential number of possible rules. RFs mitigate some of these effects by creating
+multiple decision trees for the same task, evaluating all of them for a given test sample,
+2.3. Classifiers
+and returning the most voted one as the prediction. To be more robust toward outliers,
+the classifier considers subsets of the original dataset to create its individual trees. Also,
+based on the training process, the voting result could be weighted according to the error
+rate of the respective tree. Additional parameters are the number of trees to be generated,
+tree-depth, or the minimum number of samples per tree node to continue splitting.
+2.3.2 Naive Bayes
+NB is a classifier that is known for its easy implementation and inference time paired with
+decent results for specific tasks such as sentiment analysis [261] and spam filters [210]. It is
+based on Bayes’ theorem (Equation 2.15) that computes the probability of an event based
+on prior knowledge about conditions related to the event. For our task, this translates
+to: by observing the joint occurrences of a feature together with a high knowledge gain,
+the classifier learns the probability of that event for each individual feature-knowledge
+gain combination during training. With this and the given features of a test sample, the
+classifier computes the probability of each output dimension, returning the highest one as
+the prediction.
+The reason for it being called Naive are two assumptions the classifier makes about the
+input data: (1) all features are independent, meaning uncorrelated, and (2) all features
+have an equal effect on the target variable. They are, however, rarely true for real-
+world problems. Nonetheless, by ignoring these effects, the classifier predicts binary or
+multivariate problems as follows: We consider y as our knowledge gain variable with
+three dimensions (low, moderate, high) and X as a feature set with individual features
+X = (x , x , ..., x ). By substituting this into Equation 2.15 we get:
+1 2 n
+In Equation 2.16 the denominator is always static, and since we are not interested in
+the actual probabilities, just an overall ranking of scores, we can remove it. This step turns
+the equation into a proportionality. Consolidating the product in the numerator yields:
+Here, P(y) describes the prior knowledge we have about the probability of the knowl-
+edge gain dimensions. A common guess is the distribution of the classes in the training
+data, but it is possible to replace this value with more educated guesses with the goal of
+not skewing the final result. Lastly, to get a classification result for our input sample X we
+compute all three probabilities (one for each knowledge gain dimension), and the highest
+score is our guess.
+To summarize: the Naive Bayes classifier computes the probability of each knowledge
+gain dimension by considering a priori knowledge about that dimension together with
+the likelihood of each individual input feature being present given that dimension. As
+stated above, training this classifier is fast. However, neither of the two assumptions
+stated above are true for our task of knowledge gain prediction. First, in an ensemble
+of, e.g., textual features, it is highly possible that two of them are correlated and, thus,
+not independent. Second, the premise of the experiments conducted in Chapter 4 is
+to determine the difference in importance of a given feature set with the knowledge
+gain. And as the results of the feature importance analysis will show, the impact of the
+individual features varies heavily.
+2.3.3 Support Vector Machines
+Another supervised learning technique are SVMs, suitable for linear and non-linear
+regression and classification problems. The core idea is to separate n-dimensional data
+into two classes with an (n-1)-dimensional hyperplane. For two-dimensional data, this
+translates to finding a line that separates the given classes optimally, see Figure 2.11.
+Optimal refers to the fact that even though there are infinite lines that separate linear
+separable classes, SVMs aim to predict the one solution that maximizes the margin (the
+”corridor“) between the classes. The margin is defined as the minimal distance between a
+sample of the class and the found hyperplane (also called support vector), so a solution
+where both classes are equidistant to the nearest sample of each class is considered
+optimal. This approach is also called maximal margin classification, and it allows no
+misclassification, which makes it impractical for noisy data and outliers.
+SVMs, however, are not maximal margin classifiers. They utilize a soft margin that allows
+misclassifications to find a better solution regarding margin size. For example, if the blue
+sample x in Figure 2.11 was considered for a support vector, the classifier performance
+would have increased only marginally while the margin’s size had been roughly divided
+by four.
+For data that is not linear separable, SVMs utilize the Kernel Trick. By purposefully
+adding one or more dimensions to the samples, it is possible to find a hyperplane in
+a higher dimension that allows for the separation of the data. Figure 2.12 gives an
+example that shows two classes that are not linearly separable (left). Adding a temporary
+third dimension z = x2 + y2 to each sample resembling the distance to the center of the
+coordinate system returns the middle image. As we are now in 3-dimensional space, a
+2-dimensional plane is able to separate the data. Transforming the intersection between
+the plane and the 3-dimensional space returns the image on the right, again showing the
+optimal hyperplane, margin, and support vectors.
+In practice, the training and, therefore, estimation of an optimal solution is NP-
+-complete, entailing a time complexity of O(N3), where N is the number of samples.
+Consequently, it becomes inefficient for large datasets. One approach to solve this issue is
+Sequential Minimal Optimization (SMO), proposed by Platt [214]. The core idea is to, instead
+of trying to find a solution considering all data points at once, only consider two variables
+simultaneously in an iterative manner, optimizing the solution step by step. Selecting
+these variables can be done by various heuristics, starting from random choice. Their
+explanation goes beyond the scope of this thesis, however.
+2.4 Image-Text Taxonomies
+As outlined in Section 1.4, Chapter 5 proposes an interdisciplinary approach to model
+semantic image-text relations. Interdisciplinary because we built the analysis upon research
+from communication and media sciences. In particular, we consider multiple approaches
+that categorize image-text pairs into meaningful taxonomies. This Section introduces,
+largely based on Bateman [16], some of the most impactful works and briefly discusses
+their advantages and limitations since we are just referring to parts of them later in the
+thesis.
+For the earlier parts of the 20th century, monomodality (as in text-only) was the predomi-
+nant approach for the analysis of meaning-making in linguistics [269]. In a pioneering
+work, Barthes [15] questioned this practice by arguing that, in order to deal with multi-
+modal artifacts of everyday life such as advertisements and film, a mere textual view is
+not sufficient to describe the respective message(s). For example, one effect he mentions
+that had yet to be described is the ’floating’ or ’vague’ meaning of images. An image of,
+for instance, a baby with puffy cheeks eating a snack titled ”my little sunshine enjoying
+his food“ portrays an entirely different story when paired with the caption ”Child obesity
+in country XY on an all-time high“. Fixing the intended interpretation of the image by
+providing an appropriate caption is called Anchorage by Barthes, which is inherently
+important in media such as news. As the text is a mere tool to fixate the image’s meaning,
+it is, according to Barthes, subordinate to the image, which shows their unequal relation-
+ship. Conversely, he also describes the (up to this point in time) traditional role of the
+image, namely providing a visual aid to the dominant text modality, as Illustration. That
+means the image realizes the text by showing a concrete instance of the entities or concepts
+described in the text. In this function, the image plays a subordinate role. Finally, there are
+also instances where image and text provide an equal amount of information to the overall
+message by the author called Relay. This relationship is characterized by the modalities
+complementing and subsequently depending on each other to make sense. The resulting
+classification of image-text relations is shown in Figure 2.13.
+This categorization discretizes the importance of both modalities in arbitrary constellations.
+However, it only superficially talks about how information is conveyed. In 2005, Martinec
+and Salway [167] constructed their own classification system with the goal of being
+2.4. Image-Text Taxonomies
+able to assign each image-text pair to a distinct class. For this, the authors propose
+to describe each image-text pair based on two already developed dimensions. First,
+Barthes’ distinction regarding the relative importance (called Status) as explained above
+and so-called logicosemantic relations, see Figure 2.14.
+Figure 2.14: The image-text classification by Martinec and Salway [167] describing image-text pairs
+by means of the Status and Logicosemantic Relation.
+First of all, Martinec and Salway extend Barthes’ Status relation by arguing that image
+and text are also of equal importance when both modalities portray the same information
+and are therefore independent. However, as Henning and Ewerth [103] pointed out, it
+is debatable whether real independence occurs in practice since the two modalities are
+two different to portray identical information. The logicosemantic relations are based on
+work from Halliday and Matthiessen [94] who developed this system for relating clauses
+in English grammar but adopted it to relate images and texts. It distinguishes between
+whether the modalities expand each other or when the content that has been presented in
+one modality is re-represented in the other modality by means of projection.
+According to [167], Projection mainly appears in two contexts: comic strips and labeled
+diagrams such as Venn diagrams or technical drawings. In other words, instances where
+the image itself contains text. The differentiate then between Meaning, where the content
+of one modality is given in a different form in the other modality, e.g., a diagram about the
+amount of rain per month in Berlin and the associated text which explains and interprets
+the diagram. Conversely, the Idea relationship is present when, according to Martinec and
+Salway, the text reports an approximate meaning. For instance, in comic strips when a
+character expresses a thought in form of a speech bubble about the current situation.
+The different forms of expansion subsequently describe which type of information is added
+by the other modality. Considering an image of a woman in a suit, an Elaboration text
+would provide further details about this person, for example, her name and profession.
+On the other hand, an Extension would provide additional information about this woman’s
+actions: ”The woman is leaving the building and walks to the nearest train station“.
+Finally, Enhancement provides additional information about the situation’s circumstances
+or environment, for example, ”After receiving news about the bad quarterly earnings, the
+CEO leaves the building“. All three of these relations describe similar situations, namely
+information being added by the opposite modality. As criticized by [16], due to a lack of
+annotation studies, an inter-coder agreement was not established that would prove how
+distinct these classes really are, and one could argue how it can be difficult to assign an
+image-text class to only one of Martinec and Salway’s categories.
+Unsworth [264] identified certain shortcomings of this approach with respect to educational
+materials. He argues that since Martinec and Salway [167] focus their attention on
+advertisements and online news, their systems lack the robustness required for a more
+generalized application. They state, however, that their work is the subject of ongoing
+work. Basically, as can be seen in Figure 2.15, Unsworth extends (and partially renames)
+the subcategories of expansion in order to fill in identified gaps in [167]’s classification
+system.
+Unsworth makes some significant additions to the work of Martinec and Salway for the
+context of this thesis. First, the divergence class under complementarity (former: extension),
+which was first considered by [140]. It describes circumstances where image and text
+’pull in different directions, i.e., appear to convey incoherent messages, according to
+Bateman [16]. Inspired by [103] we talk in Section 5.3 about how these arrangements
+(intended or unintended) can be described by means of an image-text relation. Further,
+2.4. Image-Text Taxonomies
+Unsworth adds Exemplification to Martinec and Salway’s Elaboration, which he calls Concur-
+rence. Lastly, the relationship called augmentation, which differentiates between examples
+where an image adds new information to those given in the text and vice versa, will be
+considered in Section 5.3.
+The classification system presented by [167] and the extension by [264] already consider
+a substantial amount of semantic image-text. Consequently, the process of assigning a label
+to an image-text sample is tricky, especially for longer texts and similar class definitions
+(e.g., extension, elaboration, enhancement). However, in 2003, Marsh and White [166] estab-
+lished a system of 46 distinct image-text classes to describe even more intricate rhetorical
+figures in print and digital media. Their system, see Figure 2.16, contains three categories
+measuring how closely the image is related to the text in portraying the overall message.
+Interestingly, this is a unidirectional version of what Henning and Ewerth [104] propose
+with their finegrained semantic correlation (SC) metric. We discuss their work in Chapter 5.
+Basically, little relation to text implies that the image has a subordinate role, for example, as
+a form of decoration. Next, a close relation to text encapsulates forms of relations similar to
+Unsworth’s concurrence and complementarity subtrees describing different ways of reiterating
+information in the opposite modality, clarifying details of examining whether the content
+is, for example, of parallel or contrasting nature. The last category, going beyond text,
+summarizes instances where the image goes beyond the information given in the text
+by interpreting, developing, or transforming them. While the plethora of image-text classes
+makes it seem as if a majority of possible combinations can be covered and the authors
+themselves claim that their system is ”largely complete“, Bateman [16] points out that this
+was not evaluated based on strict criteria but rather by applying the framework to random
+websites and see whether the taxonomy covers all occurring visuals. Marsh and White
+circumvent the aforementioned challenge of assigning an image-text pair to a distinct class
+by describing them with multiple relations of their classification. This, however, makes the
+process of determining a definitive set of labels even more subjective.
+From a computer science perspective, the number of different classification systems, the
+heterogeneity of approaches towards differentiating between the relations, and the ambi-
+guity between classes within the individual systems make adopting research from media
+and communication science challenging. From our perspective, an optimal taxonomy of
+semantic image-text classes has the following attributes:
+• not limited to a media domain
+• allows every possible image-text pair to be assigned to exactly one class
+• the assignment process by multiple people should achieve high inter-coder agreement
+• image-text classes should be derived from measurable metrics and not from a
+non-representative set of image-text pairs
+In Chapter 5, we propose a novel categorization of semantic image-text classes based on
+basic, interpretable metrics to establish an entry point to computable image-text relations
+from a computer science perspective.
+(cid:51) (cid:51) (cid:51)
+The next Chapter presents the first category of contributions surrounding research
+question 1. We present two approaches to improve exploratory search in the TIB AV-Portal,
+a learning-oriented video platform.
+3 Improving Video Learning Platforms with Text-Based Features
+This Chapter presents two approaches that focus on improving an educational video
+platform called the TIB AV-Portal [259]. Given the unique metadata provided, we introduce
+methods to utilize this textual information to improve the exploratory search capabilities
+of the platform. Our goal is to answer the first research question, namely:
+Research Question 1
+How can we utilize textual metadata associated with learning content to improve
+exploratory search in video search portals?
+Section 3.1 introduces a ranking algorithm for related videos based on semantic word
+embeddings in conjunction with linked open data from the GND. Since educational
+videos tend to be longer on average, we propose a method to give an overview of the
+content independent of video length in Section 3.2. Section 3.3 concludes our findings and
+discusses the implications of this Chapter.
+3.1 Recommending Scientific Videos based on Metadata Enrich-
+ment using Linked Open Data
+3.1.1 Motivation
+Videos hold a great potential to communicate educational and scientific information. The
+growing influence of e-Learning platforms such as Udacity [263] or Coursera [53] reflects
+that [169]. However, a growth in available content makes it more challenging for providers
+of e-Learning websites to recommend relevant results. Optimally, retrieval algorithms have
+to align search queries, which can be short and imprecise, with hours of video content
+while ensuring that the retrieved documents are of good quality, recent and tailored
+towards the learners’ assumed state of knowledge [117]. To narrow down the semantic
+gap [17] between the query and the high-level semantics in, e.g., video content, can be
+expensive and time-consuming.
+Because of this, recommender systems in online shopping platforms or video portals
+mainly rely on user-based information such as the viewing history [56], current trends [54],
+or item similarity [100]. There is also another type of Web portals that offer exclusively
+scholarly videos, one of them being the TIB AV-Portal [259] of the Leibniz Information
+Centre for Science and Technology (TIB). Researchers can provide, search, and access
+Chapter 3. Improving Video Learning Platforms with Text-Based Features
+scientific and educational audio-visual material, while benefiting from several advantages
+compared to other portals. First, the TIB AV-Portal reviews submitted videos to check
+whether they contain scientific or educational content. Second, videos are represented in a
+persistent way using Digital Object Identifier (DOI), potentially even at the segment and
+frame level, making it easy and reliable to reference them. Finally, they apply audio-visual
+content analysis in order to allow the user to not only search for terms in descriptive
+metadata (e.g., title, manually annotated keywords) but also in the audio-visual content,
+i.e., in the speech transcript, in the recognized overlaid or scene text through video OCR,
+and keywords derived from VCD.
+In this section, we investigate how similar videos can be recommended based on their
+metadata, particularly by using automatically extracted metadata from audio-visual
+content analysis. This is relevant, for example, when users do not agree that their search
+behavior is tracked or a sufficient amount of user data is not available. Particularly, we
+propose to exploit and enrich the entire set of available metadata, be it created manually
+or extracted automatically, to improve recommendations of semantically similar videos.
+In the first step, we utilize a Word2Vec approach [130] to make the semantic content of
+two videos comparable based on title, tags, and abstract. Then, we enrich automatically
+extracted metadata about the audio-visual content by linking them to the Integrated
+Authority File (in German: GND - Gemeinsame Normdatei) of the German National
+Library (in German: DNB - Deutsche Nationalbibliothek). We use these two kinds of
+information to derive a measure to compare the content of two videos which serves as a
+basis for recommending similar videos. A user study demonstrates the feasibility of the
+proposed approach.
+First, we give a brief overview of related work in Section 3.1.2. The proposed approach to
+generate video recommendations is presented in Section 3.1.3. Section 3.1.4 describes the
+conducted user study to evaluate the proposed approach.
+3.1.2 Related Work
+Scientific Video Portals
+Yovisto is a scientific video portal that allows the user to search for information via text-
+based metadata [274, 275]. Learners can reduce the number of search results by refining
+their query via additional criteria and grouping videos by language, organization, or
+category. On the contrary, to increase the scope of possible results, a tool for exploratory
+search reveals interrelations between different types of videos to present a broader spec-
+trum of results to the user. Their approach is to exploit an ontology structure, which is
+part of every video element and Linked Open Data (LOD) resources, namely DBpedia [57].
+Marchionini [165] describes a similar portal that automatically feeds the uploaded content
+into a data analysis chain. This process assigns semantic entities to each video segment
+resulting in a storyboard comprising the video content. In contrast to the AV-Portal, their
