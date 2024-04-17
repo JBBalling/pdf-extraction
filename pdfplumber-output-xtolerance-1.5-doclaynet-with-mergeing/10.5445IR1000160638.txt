@@ -708,19 +708,19 @@ tatsächlich in Ballbesitz ist. Ist ein Verhaltensbaustein aktiv, gibt er über 
 Algorithmus 1 : Generisches Arbitrationsverfahren
 1 function BesteAnwendbareAktion(Situation 𝒔)
 2
-funcFtiilotenreBeanswteeAnndwbaernedObpatrieonAeknti𝒜on⊂(𝒪Sit
+funcFtiilotenreBeanswteeAnndwbaernedObpatrieonAeknti𝒜on⊂(𝒪Si
 2
 3
-FWilätehrleeaInntwenentidobna𝜃re∈Op𝒜tiaounsen
+FWilätehrleeaInntwenentidobna𝜃re∈Op𝒜tiaounse
 4
 WBeäshtilmemInete𝒖nt=ionAk𝜃t∈io𝒜n𝜃a(u𝒔s)
 return 𝒖
 6 end
 8 while true do
-9 whilBeetsrtuime dmoe die aktuelle Situation 𝒔
+9 Bestimme die aktuelle Situation 𝒔
 109 BBeessttiimmmmee d𝒖ie=akBteusetlleeASnitwueantidobna𝒔reAktion(𝒔)
 11
-BFüehstriem𝒖maeu𝒖s =
+BFüehstriem𝒖maeu𝒖s
 Fortsetzungs-Bedingung Fortsetzung außerdem zurück, ob alle Bedingun-
 gen erfüllt sind, um das Verhalten weiterhin fortzuführen. Denn der Spieler
 kann nur so lange weiter dribbeln, bis er den Ball verliert oder das Dribbelziel
@@ -793,7 +793,6 @@ Stellgrößen 𝒖 ab. Auf den Algorithmus 1 übertragen, entspricht die Aktion-
 Funktion eines Arbitrators der BesteAnwendbareAktion(𝒔) Funktion in
 Zeile 1. Dies ermöglicht es, einen Arbitrator wiederum als Verhaltensoption
 eines anderen Arbitrators einzusetzen.
-2 Grundlagen
 Abbildung 2.6: Beispiel für einen hierarchischen Arbitrationsgraphen eines Angreifers im Ro-
 boterfußball.AktuellnichtausführbareVerhaltensoptionensindgrauhinterlegt,
 während die gewählte Option grün hervorgehoben ist.
@@ -1139,7 +1138,6 @@ Aufgrund der Interaktion mit anderen Verkehrsteilnehmern und ihrem teils
 nicht-deterministischen Verhalten sind die klassischen Methoden der Sicher-
 heitsanalyse in dieser Ebene nicht ausreichend, sodass ein dreiteiliger Ansatz
 gewählt wurde:
-2 Grundlagen
 Zusätzlich zur Gefahrenanalyse mittels FTA, FMEA und einer systemtheore-
 tischen Prozessanalyse wird eine Szenario-basierte Verifikation mithilfe eines
 ständig zu erweiternden Szenarienkatalogs durchgeführt. Dieser Katalog soll

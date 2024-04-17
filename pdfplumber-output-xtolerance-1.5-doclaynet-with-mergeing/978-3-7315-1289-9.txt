@@ -50,8 +50,8 @@ Attribution-No Derivatives 4.0 International License (CC BY-ND 4.0):
 https://creativecommons.org/licenses/by-nd/4.0/deed.en
 Print on Demand 2023 – Gedruckt auf FSC-zertifiziertem Papier
 ISSN 1863-6489
-IISSSBNN 1978683-3--67438195-1289-9
-IDSOBNI 91708.5-434-753/K15SP-1/1208090-91 56884
+ISBN 978-3-7315-1289-9
+DOI 10.5445/KSP/1000156884
 Kurzfassung
 Die Digitalisierung hat bereits viele Bereiche der Wirtschaft und des gesell-
 schaftlichen Lebens verändert. Auch unterliegen die Aspekte des Gesund-
@@ -584,7 +584,6 @@ gorow [Kol33] erfüllt sein:
 1. 𝑃(𝛼) ≥ 0 für alle 𝛼 ∈ 𝑆,
 2. 𝑃(Ω) = 1,
 3. Wenn 𝛼, 𝛽 ∈ 𝑆 und 𝛼 ∩ 𝛽 = ∅, dann 𝑃(𝛼 ∪ 𝛽) = 𝑃(𝛼) + 𝑃(𝛽).
-2 Wissensbasierte Modellierung
 Als anschauliches Beispiel sei das Glücksrad-Gewinnspiel in Abbildung 2.3
 gegeben. Die Flächen des Rades sind mit römischen Ziffern versehen. Der Er-
 gebnisraum ist durch Ω = {I, II, III} gegeben. Die Potenzmenge 𝑆 möglicher
@@ -1165,7 +1164,6 @@ aus dem System SNOMDED CT (system=SNOMED CT), trägt den Code
 ¹ Hinweis: Die Erweiterung wurde zur probabilistischen Modellierung von Arbeitsabläufen ei-
 gens erstellt, validiert und den FHIR-Interessensgruppen unter dem folgenden Link zur Verfü-
 gung gestellt: https://simplifier.net/probabilisticdm/probobservation/$validate.
-2 Wissensbasierte Modellierung
 Abbildung 2.11: Die Abbildung zeigt ein Objektdiagramm mit einer Aktion a der Klasse Ac-
 tion, der als output[0] das Objekt der Klasse Datarequirement zugewiesen wur-
 de. Hinweis: Aus Gründen der Übersichtlichkeit werden alle weiteren Objek-

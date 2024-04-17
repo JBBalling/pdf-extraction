@@ -295,7 +295,7 @@ Eigenwerten λ λ . . . λ 0 gegeben. [13]
 ≥ ≥
 nu
 ≥
-Vor der Anwendu≥ng d≥er Hau≥ptkoum≥ponentenanalyse werden die Features über Glei-
+Vor der Anwendu≥ng d≥er Hau≥ptkom≥ponentenanalyse werden die Features über Glei-
 chung (1.2) standardisiert, da die Varianz der Daten von der Skalierung der Fea-
 tures abhängt. [97]
 Die Anzahl n wird beispielsweise so gewählt, dass die kumulierte erklärte Vari-
@@ -436,7 +436,6 @@ i i 0
 ⇔
 Σ 1 (µ µ ) und ω = 1ωt (µ + µ ) für P (l = 1) = P (l = 0). [49]
 − 0 − 1 0 2 0 1 i i
-Die von Fisher [57] publizierte lineare Diskriminanzanalyse kommt ohne die Ein-
 Die von−Fisher [57] publi2zierte lineare Diskriminanzanalyse kommt ohne die Ein-
 schränkung aus und maximiert das Verhältnis der Varianz zwischen
 Σ = Σ = Σ
@@ -449,7 +448,6 @@ und innerhalb der Klassen durch ω = (Σ
 −
 den eigentlichen Features die über Gleichung (1.2) standardisierten Features ver-
 wendet, so hat dies keinen Einfluss auf die Klassifizierung. (Anhang A)
-1 Aktueller Kenntnisstand
 Eine Regularisierung der linearen bzw. der Fisher Diskriminanzanalyse kann durch
 realisiert werden, wobei (cid:0) Σ , Σ , . . . , Σ (cid:1)t die Diagonalelemente von Σ sind
 1,1 2,2 n ,n
@@ -490,7 +488,7 @@ Abbildung 1.1: Entscheidungsebene H einer linearen SVM mit maximalem Ab-
 stand zwischen den linear separierbaren Klassen und sowie
 1 1
 den Support Vektoren f , f und f , f L− .L 1
-1(cid:48)1 1(cid:48)2 ∈ L1 −(cid:48) 11 −(cid:48) 12 ∈ L−1
+1(cid:48)1 1(cid:48)2 ∈ L1 (cid:48) 11 (cid:48) 12 ∈ L−1
 chung (1.14) eingeführt, sodass folgendes Minimierungsproblem
 mit einer Konstanten C entsteht. [13, 32, 195]
 ii) Finden einer nicht-linearen Entscheidungsfunktion:
@@ -556,7 +554,6 @@ wird von einem Neuron gesprochen. [13] (Abbildung 1.2) Es werden unter anderem
 folgende Transferfunktionen verwendet: [9, 171]
 i) Identität:
 ii) Tangens hyperbolicus:
-1 Aktueller Kenntnisstand
 iii) Logistische Sigmoid-Funktion:
 iv) Softmax-Funktion:
 Erweiterung der logistischen Sigmoid-Funktion auf den d-dimensionalen Fall
@@ -571,7 +568,6 @@ Training Die Gewichte ω des NN sind trainierbar und werden aus dem gelabelten
 Datensatz gelernt, indem diese so angepasst werden, dass der Fehler zwischen
 der input-spezifischen Netzausgabe und dem tatsächlichen Output bezüglich einer
 2Eigene Abbildung in Anlehnung an [209].
-1 Aktueller Kenntnisstand
 sogenannten Loss-Funktion E minimal ist. Im Fall einer binären Klassifizierung
 loss
 wird für die Loss-Funktion beispielsweise die Kreuzentropie
@@ -665,7 +661,6 @@ se können neue Daten erzeugt werden, indem ein Rauschen aufaddiert oder
 Klassen-abhängige Inter- bzw. Extrapolationen der Features durchgeführt
 werden. [43, 71]
 ii) Early Stopping:
-Dazu wird der D
 Dazu wird der Datensatz in disjunkte Trainings-, Validierungs- und Test-
 daten aufgeteilt und die Performance auf den Test- und Validierungsdaten
 während des Trainingsprozesses für jede Epoche ermittelt. Das Training wird
@@ -682,7 +677,6 @@ definierte Anzahl an Epochen nicht.
 Die Validierungsdaten gehen über den letzten Punkt indirekt in das Training
 des NNs ein.
 iii) Regularisierung:
-Die Loss-Funktio
 Die Loss-Funktion E wird um einen Regularisierungsterm zu
 loss
 erweitert. [9] Dadurch werden zusätzlich die Gewichte des Netzes und somit
@@ -763,7 +757,6 @@ Fall ergeben sich dadurch folgende vier Fälle. Es werden die Bezeichnungen po-
 sitiv bzw. negativ für die Ergebnisklassifizierung und wahr bzw. falsch für die
 tatsächliche Klassifizierung verwendet.
 i) True Positive (TP):
-Die Anzahl der vom
 Die Anzahl der vom Algorithmus positiv klassifizierten Entitäten, die tat-
 sächlich wahr sind. (l = (cid:96) = 1)
 Die Anzahl der vom Algorithmus negativ klassifizierten Entitäten, die tat-
@@ -776,7 +769,6 @@ Die Anzahl der vom Algorithmus negativ klassifizierten Entitäten, die tat-
 sächlich wahr sind. (l = 0, (cid:96) = 1)
 Auf Basis dieser lassen sich wichtige Kennziffern der Prognosegüte des ausgewer-
 teten Modells definieren, die neben anderen [153] entnommen werden können:
-1 Aktueller Kenntnisstand
 i) Der Recall oder die True Positive Rate (TPR) messen die Wahrscheinlich-
 keit, dass eine tatsächlich wahre Entität als positiv klassifiziert wird.
 ii) Die Präzision oder die True Positive Accuracy (TPA) messen die Wahr-
@@ -1021,7 +1013,6 @@ Diese Daten haben alle eine zugrunde liegende euklidische Struktur und
 besitzen somit eine globale Parametrisierung und ein gemeinsames Koordi-
 natensystem. [23]
 Dazu zählen:
-Dazu zählen:
 a) Über Deskriptoren extrahierte Features (Abschnitt 1.2.2.3) [10, 70, 89,
 91, 98, 99, 102, 126, 149, 170, 175, 176, 184, 205, 207, 216, 222]
 b) Bildanalysen [26, 68, 69, 80, 100, 111, 144, 145, 157, 158, 205, 208, 224]
@@ -1171,7 +1162,6 @@ von CNNs wird versucht, die Faltung auf unstrukturierte, nicht-euklidische Daten
 zu erweitern. [56]
 Die Graphenanalyse kann dabei in zwei Bereiche aufgeteilt werden:
 i) Spektrale Filter:
-Diese Methoden
 Diese Methoden [24, 39, 81, 106, 219] basieren auf der spektralen Graphen
 Theorie [31], wobei die spektrale Eigenzerlegung des kombinatorischen La-
 place Operators des Graphen (siehe z.B. [23]) durch entsprechende Methoden

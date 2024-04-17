@@ -69,7 +69,6 @@ processing frameworks like MapReduce, Spark, or Flink are often used to
 perform complex data analyses due to the simple access methods of NoSQL
 databases. These systems are powerfull but more difficult to use than query
 languages such as SQL.
-languages such as SQL.
 In this thesis, a data-transformation language called NotaQL is presen-
 ted. This language follows three objectives. Firstly, it is easy to learn, concise
 and powerful. Secondly, it is independent of the actual underlying databa-
@@ -93,7 +92,6 @@ SQL databases; it can also be used to analyze and transform data from rela-
 tional databases, files, services, and data streams. When a user reaches the
 limits of NotaQL, user-defined functions and engines can be developed to
 extend the language and connect transformations to other systems.
-extend the language and connect transformations to other systems.
 The fields of application of the presented language are data transforma-
 tions of any kind: from Big-Data analytics and polyglot-persistence appli-
 cations to data migrations and information integration.
@@ -112,7 +110,7 @@ Ein großer Dank geht an zwei weitere Professoren, und zwar zum einen
 Prof. Reinhard Gotzhein, der sich bereiterklärt hat, den Vorsitz des Promoti-
 onskommittees zu übernehmen und an Prof. Wolfgang Lehner, den zweiten
 Gutachter dieser Doktorarbeit.
-GutOachhnteermdeieinseerKDoollketgoernarabmeitL. ehrstuhl wäre meine Arbeit nur halb so an-
+Ohne meine Kollegen am Lehrstuhl wäre meine Arbeit nur halb so an-
 genehm gewesen. Daher bedanke ich mich für unterhaltsame Mittagspau-
 sen in der Mensa und aufregende Partien am Kickertisch bei Caetano Sauer,
 Daniel Schall, Evica Milchevski, Heike Neu, Kiril Panev, Koninika Pal, Ma-
@@ -121,7 +119,7 @@ die wissenschaftlichen Mitarbeiter des Lehrgebiets zu meiner Studienzeit
 geht ein großer Dank, insbesondere Karsten Schmidt, Sebastian Bächle und
 Thomas Jörg. Ihr habt mir vorgemacht, wie man erfolgreich promoviert,
 lehrt, forscht und betreut.
-lehrItn, fmoresicnhetnunvdierbeeitnrheualtb. Jahren in der Arbeitsgruppe Heterogene Infor-
+In meinen viereinhalb Jahren in der Arbeitsgruppe Heterogene Infor-
 mationssysteme hatte ich das große Glück, ständig von hervorragenden
 Studenten umgeben zu sein. Die Betreuung deren Bachelor- und Masterar-
 beiten war nicht nur eine große Freunde für mich, sondern jede der Arbei-
@@ -129,7 +127,6 @@ ten leistete auch einen großen Beitrag für diese Doktorarbeit. Danke Fabian
 Süß, Florian Haubold, Jan Adamczyk, Jonathan Priebe, Manuel Hoffmann,
 Marc Schäfer, Michael Emde, Nico Schäfer, Peter Brucker, Philipp Thau,
 Sougata Bhattacharjee, Stefan Braun, Thomas Lottermann, Tobias Hamann,
-Voichita Droanca und Yannick Krück!
 Voichita Droanca und Yannick Krück!
 Zu guter Letzt möchte ich meiner Familie und ganz besonders Inna dan-
 ken – dafür, dass ich euch habe und dass ihr für mich da seid.
@@ -144,7 +141,6 @@ me bieten nicht nur Möglichkeiten, um große Datenmengen verteilt zu spei-
 chern, sondern bringen auch eine gewisse Schema-Flexibilität mit sich. Eben-
 diese flexiblen Schemata erlauben die Speicherung heterogener Daten. We-
 der muss zu Beginn ein Datenschema definiert werden, noch müssen die
-zu speichernden Datensätze zueinander homogen sein.
 zu speichernden Datensätze zueinander homogen sein.
 In relationalen Datenbanken bietet die Structured Query Language (SQL)
 Möglichkeiten zur Definition von Tabellen samt ihrer Spalten und deren
@@ -193,7 +189,6 @@ die Veraciy (Richtigkeit), dass wir nicht mehr zwangsweise von einer wah-
 ren Welt sprechen können. In Systemen, in denen vom Benutzer generierte
 Daten gespeichert und verbreitet werden, kommen falsche Informationen
 ebenso vor wie Widersprüche, fehlerhafte Übersetzungen sowie Nutzer-
-Reaktionen auf fälschlich interpretierte Nachrichten.
 Reaktionen auf fälschlich interpretierte Nachrichten.
 Die Herausforderungen bei der Analyse von Big Data lassen sich aus den
 soeben dargestellten Vs ableiten: Da wir es mit großen Datenmengen zu tun
@@ -244,7 +239,6 @@ forderungen es noch zu meistern gilt. Aktuell existieren keine Ansätze, die
 das Ziel verfolgen, Heterogenität in der vollständigen NoSQL-Landschaft
 zu überwinden. Stattdessen entstehen immer mehr Ansätze, die lediglich
 auf einer speziellen Klasse von Systemen anwendbar ist.
-auf einer speziellen Klasse von Systemen anwendbar ist.
 Der Hauptteil der Arbeit besteht aus der Vorstellung der Sprache No-
 taQL. Anhand dieser Sprache wird exemplarisch gezeigt, wie Datentrans-
 formationen auf flexiblen Schemata und unterschiedlichen Datenmodel-
@@ -253,7 +247,6 @@ aufgezeigten Probleme zwar bereits gelöst werden, jedoch erfordern diese
 einen hohen Aufwand bei der Einarbeitung, Entwicklung von Transforma-
 tionsprogrammen und der Wartung. Aus diesem Grund werden verschie-
 dene Ansätze vorgestellt, welche auf existierenden Frameworks basieren,
-um NotaQL-Transformationen effizient auszuführen.
 um NotaQL-Transformationen effizient auszuführen.
 Der zweite große Teil der Arbeit beschäftigt sich mit inkrementellen Da-
 tentransformationen. Solche Art von Berechnungen kommen häufig im Data-
@@ -266,7 +259,6 @@ existierende Techniken zur Änderungserfassung und zur inkrementellen
 Wartbarkeit untersucht und auf NoSQL-Datenbanken sowie die Sprache
 NotaQL übertragen. Eine NotaQL-Plattform vereinigt verschiedene inkre-
 mentelle und nicht-inkrementelle Ausführungsarten und wählt mit ihrer
-Advisor-Komponente automatisch die als schnellste eingeschätzte Art.
 Advisor-Komponente automatisch die als schnellste eingeschätzte Art.
 Zusammengefasst sind die Beiträge der vorliegenden Arbeit wie folgt:
 • Eine Datentransformationssprache, die für die Schema-Flexibilität und
@@ -351,8 +343,7 @@ falls im zweiten Kapitel vorgestellten Änderungserfassungsmethoden.
 In Kapitel 7 werden einige Anwendungsmöglichkeiten präsentiert, für
 welche sich die Sprache NotaQL einsetzen lässt. Zum Ende in Kapitel 8
 erfolgt eine Zusammenfassung der Arbeit.
-2
-Grundlagen
+Grund2lagen
 In diesem Kapitel werden die Grundlagen zu dieser Arbeit präsentiert. Da-
 bei wird zunächst mit der Definition und Vorstellung von NoSQL-Daten-
 banksystemen begonnen. Da diese Systeme Daten meist auf eine verteilte
@@ -400,7 +391,6 @@ Kommentaren als eine Einheit speichern. Zusätzlich gilt für diese Systeme,
 dass jeder Datensatz einen Identifikator besitzt. Über welchen Geltungsbe-
 reich dieser eindeutig definiert sein muss, unterscheidet sich von Klasse zu
 Klasse.
-Klasse.
 Da es keine einheitliche klassenübergreifende Terminologie gibt, wer-
 den in dieser Arbeit in der Regel die allgemeinen Begriffe Datenquelle, Da-
 tensatz, Attribut, Wert und ID verwendet. Bei relationalen Datenbanken wür-
@@ -420,7 +410,6 @@ ständig angesehen werden können. Im ersten Fall ist das Datenbanksystem
 eine Art Map, die zu jedem Schlüssel einen Wert zuordnet:
 Schlu¨ssel W ert
 →
-→
 Im zweiten Fall existiert für jede Datenbank eine eigene Map:
 Datenbank (Schlu¨ssel W ert)
 → →
@@ -438,14 +427,14 @@ nur auf einer einzigen Datenbank, deren Nummer direkt nach dem Ver-
 bindungsaufbau angegeben wird. Innerhalb dieser Datenbank werden un-
 terschiedliche Entitätsmengen meist mittels Schlüsselpräfixen voneinander
 separiert, z. B. produkt/812.
-sepaDreierrZt,uzg. rBi.ff auf Schlüssel-.Wert-Paare erfolgt ähnlich wie bei Maps mit
+Der Zugriff auf Schlüssel-Wert-Paare erfolgt ähnlich wie bei Maps mit
 den Methoden GET und PUT. GET nimmt einen Schlüssel entgegen und lie-
 fert den dazugehörigen Wert (oder null). PUT übergibt man ein Schlüssel-
 Wert-Paar, um es zu speichern. Die PUT-Operation bietet ein sogenann-
 tes Upsert-Verhalten, welches eine Mischung aus Insert und Update dar-
 stellt. Das bedeutet, dass der Wert eines Schlüssels geändert wird, wenn
 der Schlüssel bereits vorhanden ist. Andernfalls erfolgt ein Einfügen.
-derDSciehlmüsesiestlebnerKeeitys-vVoarluhae-nSdtoenreisstu.nAtnerdsetürntzfaelnlseeinrfeolVgiteelzinahElinvfoüngeDna.tenty-
+Die meisten Key-Value-Stores unterstützen eine Vielzahl von Datenty-
 pen für die zu speichernden Werte. Neben primitiven Typen wie Zahlen
 und Zeichenketten werden auch große binäre Objekte wie Bilder oder Vi-
 deos unterstützt. Aber auch komplexe Typen wie Listen, geordnete und un-
@@ -480,14 +469,13 @@ Anwendungsseite vor der Speicherung in einen Byte-Array gewandelt und
 beim Lesen wieder rückkonvertiert werden.
 Das vereinfachte Datenmodell eines Wide-Column-Stores lässt sich wie
 folgt darstellen:
-→ → →
 Eine bestimmte Spalte innerhalb einer Zeile einer Tabelle nennen wir auch
 Zelle. Wenn das Datenbankmanagementsystem Versionierung unterstützt,
 wird zu jeder Zelle eine Historie an Werten gespeichert, üblicherweise zu-
 sammen mit den Zeitstempeln des Schreibens:
 T abelle (Row-ID (Spalte (V ersion W ert)))
 → → → →
-Der Datenzugriff →erfolgt auch→hier wiede→r mit den Ko→mmandos GET und
+Der Datenzugriff erfolgt auch hier wieder mit den Kommandos GET und
 PUT. Das folgende Beispiel gilt für das Datenbankmanagementsystem HBa-
 se:
 PUT 'pers', 'P1', 'info:vorname', 'Rita'
@@ -514,7 +502,7 @@ einfach war, sind in Dokumentendatenbanken komplexe hierarchische Struk-
 turen möglich. Das Datenmodell erscheint jedoch zunächst sehr simpel:
 Datenbank (Kollektion Dokument )
 → → ∗
-Eine Kollektion, die sich in ei→ner bestimmten→Datenbank be∗findet, beinhaltet
+Eine Kollektion, die sich in einer bestimmten Datenbank befindet, beinhaltet
 eine Menge von Dokumenten. Die Komplexität kommt erst durch den mög-
 lichen Aufbau dieser Dokumente zustande. Es gilt, dass die ID stets ein Teil
 des Dokuments ist, also - anders als bei den oben vorgestellten Systemen
@@ -523,7 +511,7 @@ lich, sondern es werden - ähnlich wie bei SQL - beliebige Selektionen auf
 Sekundärattributen unterstützt. Zur effizienten Suche unterstützen Doku-
 mentendatenbanken die Definition von Indexen auf ebendiesen Attributen.
 Ein Index auf der Dokumenten-ID ist üblicherweise immer vorhanden.
-EinDInodkeuxmaeunftdeehraDbeonkuombjeenktteänh-nIlDichiset üStbrluickhteurrwene.isSeieimbeminehravloternhaFnedldeenr,. die
+Dokumente haben objektähnliche Strukturen. Sie beinhalten Felder, die
 Werte haben. Diese Werte können neben Zahlen und Zeichenketten auch
 Listen und verschachtelte Unterdokumente sein. Listen können ebenfalls
 wieder Werte beliebigen Typs beinhalten und Unterdokumente wieder be-
@@ -564,7 +552,6 @@ kumente werden also zusammen in eine Datenbank geschrieben, was in
 folgendem alternativen Datenmodell dargestellt werden soll:
 Datenbank Dokument
 → ∗
-→ ∗
 Zur Unterscheidung verschiedenartiger Dokumententypen wird in Couch-
 DB oft das Attribut doc_type verwendet. Die erste Operation in der Defi-
 nition einer Sicht ist somit meistens if(doc.doc_type == "...").
@@ -594,7 +581,6 @@ E. Knoten besitzen beliebige Properties sowie optional Labels und eine ID.
 Auch Kanten können Properties besitzen. Bei ihnen ist das Label Pflicht,
 um die Art der Beziehung zwischen zwei Knoten anzugeben. Kanten sind
 in den meisten Graphdatenbanken stets gerichtet, sie besitzen also jeweils
-einen Start- und einen Ziel-Knoten.
 einen Start- und einen Ziel-Knoten.
 Das folgende Beispiel zeigt, wie ein Graph bearbeitet und angefragt
 werden kann. Die hier verwendete Sprache ist Gremlin [Rod15], die sich
@@ -666,14 +652,7 @@ und durch geeignete Partitionierungstechniken optimiert werden kann. Die
 Ausgabe einer Berechnung wird üblicherweise in eine Datenbank oder ei-
 ne Datei geschrieben. Die direkte Verwendung des Ergebnisses innerhalb
 einer Anwendung ist in vielen Frameworks aber auch möglich.
-eine Br eA
-i
-Fn rw amen ed wu on rg ksis ht ain ndv eie ltle en
-s
-sF ir ca hm ue mwPorrokgsraambemriaeurgcehrümstöeg
-,
-ali lc sh o.
-um Schnitt-
+Bei Frameworks handelt es sich um Programmiergerüste, also um Schnitt-
 stellenbeschreibungen sowie fertige Klassen und Methoden, die einem An-
 wendungsprogrammierer gewisse Aufgaben abnehmen. Der Anwender ent-
 wickelt weiterhin in einer Programmiersprache wie Java oder Python und
@@ -722,7 +701,7 @@ dem groben Verständnis dienen. Verschiedene MapReduce-Implementie-
 rungen weichen teilweise stark von diesem Modell ab. Manche setzen vor-
 aus, dass bereits die Eingabedaten als Schlüssel-Wert-Paare vorliegen. Auch
 ist es möglich, dass die Reduce-Funktion mehrere Ausgaben liefern kann.
-ist eIsnmHöagdloiocph,edrfaoslsgdt ideieReAduuscfeü-hFruunnkgtieoinnemseMhraeprRe eAduuscgea-bJoebns laielsfeerinnekaMnenn. -
+In Hadoop erfolgt die Ausführung eines MapReduce-Jobs als eine Men-
 ge von Tasks. Auf jedem Rechner wenden ein oder mehrere Map-Tasks die
 Map-Funktion auf einer Menge von Eingabedatensätzen an. Beim Auftre-
 ten eines Fehlers oder beim Ausfall eines Rechners wird der betreffende
@@ -731,7 +710,7 @@ worfen, um ein Exacly-Once-Verhalten und damit die Korrektheit des End-
 ergebnisses sowie eine deterministische Ausführung zu gewährleisten. Nach
 Abschluss der Map-Phase erfolgt äquivalent dazu die Ausführung der Re-
 duce-Tasks.
-ducVe-oTratesiklse. von MapReduce sind neben dem einfachen Programmiermo-
+Vorteile von MapReduce sind neben dem einfachen Programmiermo-
 dell, der Mächtigkeit und der Fehlertoleranz auch die gute Skalierbarkeit.
 MapReduce wird häufig für Text- und Log-Analysen eingesetzt sowie zur
 Ausführung von Graph-Algorithmen. Nachteile sind die Einschränkungen,
@@ -744,7 +723,7 @@ ben und Lesen kann zu einer sehr inperformanten Ausführung führen. Das
 gleiche Problem tritt bei iterativen Berechnungen auf. Dort wird das Ergeb-
 nis jeder Iteration auf der Festplatte gespeichert, bevor es in der nächsten
 Iteration gelesen werden kann.
-IteraMtiaonnchgeeleDsaetnenwbearndkesnykstaenmne. - wie zum Beispiel MongoDB - bieten eine
+Manche Datenbanksysteme - wie zum Beispiel MongoDB - bieten eine
 eingebaute MapReduce-Funktionalität, um benutzerdefinierte Berechnun-
 gen verteilt auszuführen. Der allgemeingültige und elegantere Weg ist es
 jedoch, Apache Hadoop in Verbindung mit den für ein Datenbanksystem
@@ -792,7 +771,7 @@ Kollektion, sie hebt also die Verteilung auf und materialisiert die Ergeb-
 nisse. Die cache-Operation liefert wie gehabt ein RDD, erzwingt aller-
 dings das Ausführen vorangegangener Transformationen. Dies ermöglicht
 ein mehrfaches Wiederverwenden von Berechnungszwischenergebnissen.
-ein SmpeahrkrfSactrheeasmWiniged[Zeravhe+r1w2e]nedrweneivtoernt BSepraerckhnuumngdsizewMisöchgleincherkgeeitb,nDisasteenn.-
+Spark Streaming [Zah+12] erweitert Spark um die Möglichkeit, Daten-
 ströme in Echtzeit zu analysieren. Im Gegensatz zur klassischen Stapelver-
 arbeitung von gespeicherten Datensätzen sind Datenströme kontinuierlich,
 sodass die Berechnung theoretisch nie abgeschlossen ist. Stattdessen liegen
@@ -839,7 +818,6 @@ schnitt geht es darum, OLAP-Anwendungen inkrementell wartbar zu ma-
 chen. Unter inkrementeller Wartbarkeit versteht man die Fähigkeit, dass
 eine Anwendung zur erneuten Berechnung eines Ergebnisses das vorheri-
 ge Ergebnis als Basis nehmen kann und die Änderungen an den Basisdaten
-darauf anwendet.
 darauf anwendet.
 Soll eine Berechnung inkrementell wartbar sein, müssen die folgenden
 Fragen geklärt werden:
@@ -890,7 +868,7 @@ on beinhaltet, ob sich der Datensatz seit der vorherigen Berechnung ändert
 hat oder nicht. In letzterem Falle muss das Transformationssystem nach ei-
 ner Berechnung diesen Wert zurücksetzen, während Zeitstempel und Ver-
 sionsnummern in den Basisdaten erhalten bleiben können.
-sionDsnasurmelmateironnainledDeanteBnabsiasndkamteanneargheamlteenntbsylesitbeemn IkBöMnnDenB.2 für z/OS bietet
+Das relationale Datenbankmanagementsystem IBM DB2 für z/OS bietet
 eine native Unterstützung für Audit-Columns. Beim Anlegen der Tabelle
 wird die betreffende Spalte mit der Option ON UPDATE AS ROW CHANGE
 TIMESTAMP versehen, sodass das Datenbanksystem automatisch den Zeit-
@@ -908,7 +886,6 @@ In MongoDB werden auf diese Art nur neu eingefügte Dokumente gefun-
 den. In jedem Fall ist das Erkennen von Löschungen ausgeschlossen. Um
 dieses Problem zu lösen, müssen Löschungen verboten werden und statt-
 dessen eine Audit-Column mit den Zeitpunkt der logischen Löschung ein-
-geführt werden.
 geführt werden.
 Mit Audit-Columns lässt sich zwar feststellen, dass sich etwas am Da-
 tensatz geändert hat, aber nicht was. Das Analyseprogramm hat nur Zu-
@@ -1038,7 +1015,7 @@ wändige Methoden, wie dem Durchsuchen der Log nach vorherigen Ope-
 rationen auf einem gegebenen Datensatz oder über eine Kombination mit
 Snapshot-basiertem Logging (siehe nächster Absatz) lässt sich auch Log-
 basiertes CDC zuverlässig verwenden.
-basiDeratsesfoClgDeCndzeuvBeerilsäpsiseilgzveeirgwt eenindeenn.Eintrag der in MongoDB zur Repli-
+Das folgende Beispiel zeigt einen Eintrag der in MongoDB zur Repli-
 kation geführten Operationen-Log. Er beinhaltet unter anderem einen Zeit-
 stempel (ts), die Art der Operation (i = Einfügung), die betroffene Da-
 tenbank und Kollektion (ns = Namespace) sowie das neue Objekt (o). Bei
@@ -1108,7 +1085,6 @@ schungen erfolgt auf gleiche Weise das Entfernen der Sätze. Lediglich bei
 ren und immer noch erfüllt sind. Sieht man Änderungen jedoch als Lö-
 schungen mit anschließendem Neueinfügen, ist auch hier die Lösung ein-
 fach.
-fach.
 Komplexe Berechnungen sind jedoch diejenigen, in denen Daten grup-
 piert und aggregiert werden. Bei der Berechnung einer Summe wird das bei
 der vorherigen Analyse berechnete Ergebnis als Basis genommen und die
@@ -1135,7 +1111,7 @@ Die Gehälter der einzelnen Firmen ändern sich also folgendermaßen:
 Es fällt auf, dass die Zahl 42000, die zur Berechnung der neuen Summen
 benötigt wird, nicht in der Liste der Änderungsoperationen zu finden ist.
 Es ist also auch nötig, unveränderte Attribute zu betrachten.
-Es iDstiaelsseos aUuncthernköatpigit,eulnsvoellrälenddigerlitcehAetitnriebnuktelezinuebnetEriancbhltiecnk.in die Heraus-
+Dieses Unterkapitel soll lediglich einen kleinen Einblick in die Heraus-
 forderungen bei inkrementellen Berechnungen liefern. Im späteren Verlauf
 der Arbeit wird auf diese genauer eingegangen. Bei der Verwendung von
 anderen Aggregatfunktionenen als der Summenfunktion treten noch wei-
@@ -1144,7 +1120,6 @@ AVG Die Berechnung eines Durchschnittes ist nicht möglich, wenn ledig-
 lich ein zuvor berechneter Durchschnittswert vorliegt. Dies liegt daran, dass
 die Durchschnittsfunktion nicht assoziativ ist:
 AVG(AVG(a, b), c) = AVG(a, AVG(b, c)) = AVG(a, b, c)
-6 6
 6 6
 Später in dieser Arbeit werden wir sehen, dass die Assoziativität für die
 inkrementelle Berechnung erfüllt sein muss. Bei der Durchschnittsfunktion
@@ -1442,7 +1417,6 @@ gration um eine Aufgabe, die nur ein einziges mal ausgeführt werden muss,
 beispielsweise die Übernahme von Kundendaten in ein neues System, ver-
 wendet man dazu die materialisierte Integration. Ändern sich jedoch die
 Basisdaten ständig und es ist vonnöten, dass die Änderungen im Zielsys-
-tem sofort sichtbar sind, kann eine virtuelle Integration sinnvoll sein.
 tem sofort sichtbar sind, kann eine virtuelle Integration sinnvoll sein.
 In einem Data-Warehouse findet man die materialisierte Integrationen
 in der Form von ETL-Jobs wieder. Die drei Phasen des Extract-Transform-

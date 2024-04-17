@@ -23,29 +23,28 @@ loping software flexibly and agilely from a large number of decoupled components
 However, as the system complexity increases, this approach leads to a number of new
 challenges in areas such as debugging, logging and tracing. A promising approach to
 addressing these challenges is to use a service mesh.
-addressing these challenges is to use a service mesh.
 In a service mesh, the introduction of an additional infrastructure layer creates a logi-
 cal separation between the technical tasks of the microservices and the infrastructural
 tasks of the microservice architecture. In this way, monitoring, routing, resilience and
 security can be increased within distributed systems while at the same time the deve-
 lopment effort for microservices is reduced.
-lDoepsmpeitnet tehfefosret foardvmainctraogseesrv,icseesrviisceremduecsehde.s still do not offer a sufficient solution for
+Despite these advantages, service meshes still do not offer a sufficient solution for
 all challenges in the development and operation of distributed systems. Among other
 things, the subject of high availability has not yet been fully clarified within modern ser-
 vice meshes. Despite numerous security mechanisms to ensure high system availa-
 bility, there are still various scenarios in service meshes in which availability problems
 can arise. The aim of this master thesis is therefore to experimentally examine and
 optimize the system availability when using service meshes.
-oFpotrimthiizseptuhreposysset,etmesat vsayislatebmilistywwithhetnwuosdinifgfesreenrvtisceermviceeshmees.shes are set up – one with
+For this purpose, test systems with two different service meshes are set up – one with
 Linkerd and one with Istio. Then different problem scenarios are experimentally inves-
 tigated for both service meshes. For any availability problems found, various solutions
 are then worked out and – if possible – verified experimentally.
-aTrheethmeenawsuorrekmedenotust sahnodw– tihf aptosbsoitbhleL–invkeerridfieadndexIpsetiroimheanvtealslye.vere system availability
+The measurements show that both Linkerd and Istio have severe system availability
 restrictions in certain situations. Some of these availability issues can be resolved by
 manually enabling advanced security features. For the other availability problems, in-
 dividual solutions are outlined. In addition, one of the approaches outlined is realized
 through a tangible implementation and verified experimentally.
-tOhvroeuraglhl, athtisanmgaibsleteirmthpelesmisesnhtoawtiosnthaantdvvaeriroifiuesdaevxapilearbimiliteynptarollby.lems still exist in service
+Overall, this master thesis shows that various availability problems still exist in service
 meshes. In Istio and Linkerd in particular, significant drops in system availability can
 be observed in different scenarios. The solution approaches developed create a good
 basis for the further development of the service meshes. For a sufficient solution to the
@@ -76,14 +75,14 @@ nes mit Linkerd und eines mit Istio. Anschließend werden für beide Service Mes
 unterschiedliche Problemszenarien experimentell untersucht. Für gefundene Verfüg-
 barkeitsprobleme werden im Anschluss verschiedene Lösungsansätze erarbeitet und
 – sofern möglich – experimentell verifiziert.
-–ImsoRfearhnmmeöngdliechr M– eesxspuenrigmeennwteilrldvegreifizzeiiegrtt,. dass sowohl für Linkerd als auch für Istio
+Im Rahmen der Messungen wird gezeigt, dass sowohl für Linkerd als auch für Istio
 in bestimmten Situationen teils gravierende Einschränkungen der Systemverfügbar-
 keit vorliegen. Einige dieser Verfügbarkeitsprobleme lassen sich durch eine manuelle
 Aktivierung erweiterter Sicherheitsfeatures beheben. Für die anderen Verfügbarkeits-
 probleme werden individuelle Lösungsansätze skizziert. Zusätzlich wird einer der skiz-
 zierten Ansätze durch eine konkrete Implementierung realisiert und experimentell ve-
 rifiziert.
-rInifiszgieersta. mt wird im Rahmen dieser Masterarbeit gezeigt, dass auch in Service Mes-
+Insgesamt wird im Rahmen dieser Masterarbeit gezeigt, dass auch in Service Mes-
 hes noch verschiedene Verfügbarkeitsprobleme existieren. Speziell in Istio und Linkerd
 lassen sich zum Teil erhebliche Einbrüche der Systemverfügbarkeit feststellen. Durch
 die erarbeiteten Lösungsansätze wird eine gute Grundlage zur Weiterentwicklung der
@@ -272,7 +271,6 @@ die Zielstellung gegeben wurde, wird in Kapitel 2 das Grundlagenwissen vermittel
 ches zum Verständnis des Forschungsgegenstands nötig ist. Hierzu wird zunächst der
 zugrunde liegende Technologie-Stack erläutert und anschließend ein Überblick über
 den aktuellen Stand der Forschung gegeben.
-den aktuellen Stand der Forschung gegeben.
 In Kapitel 3 wird dann das methodische Vorgehen bei der Vorbereitung der experimen-
 tellen Forschung beschrieben. Hierbei wird zuerst erläutert, anhand welcher Kriterien
 die zu untersuchenden Service Mesh Projekte ausgewählt werden. Anschließend wird
@@ -285,7 +283,7 @@ kutiert diese. Hierbei werden anhand von Messungen in Testsystemen konkrete Ver-
 fügbarkeitsprobleme aufgezeigt und passende Lösungen erarbeitet. Gefundene Lö-
 sungen werden anschließend anhand zusätzlicher Messungen evaluiert und ausge-
 wertet.
-wIneKrtaept.itel 5 wird zuletzt das Fazit aus den Forschungsergebnissen gezogen. Zudem
+In Kapitel 5 wird zuletzt das Fazit aus den Forschungsergebnissen gezogen. Zudem
 wird ein Ausblick auf potentielle zukünftige Forschungsthemen gegeben, die an diese
 Masterarbeit anknüpfen könnten.
 KAPITEL
@@ -403,7 +401,6 @@ tems innerhalb eines anderen Betriebssystems [14]. Zuletzt sind Container im Ver
 gleich zu virtuellen Maschinen flüchtig und verlieren nach dem Herunterfahren all ihre
 Daten. Dadurch ist die Persistenz von Daten bei Containern wesentlich komplizierter
 als bei virtuellen Maschinen [14].
-als bei virtuellen Maschinen [14].
 Aufgrund der Nachteile, die Container mit sich bringen, wird in modernen Softwaresys-
 temen immer häufiger auf eine Kombination aus Containern und virtuellen Maschinen
 gesetzt, zum Beispiel indem Container innerhalb von virtuellen Maschinen ausgeführt
@@ -429,7 +426,6 @@ benannt wurde [28]
 Zur besseren Lesbarkeit ist mit dem Begriff „Docker“ im Folgenden jedoch stets und
 ausschließlich die Docker-Software gemeint, sofern nicht explizit etwas anderes ange-
 geben wird.
-geben wird.
 Docker stellt eine Plattform für die Erstellung, Verwaltung und den Betrieb von Con-
 tainern dar [27]. Da der Grundstein für moderne Containervirtualisierung bereits im
 Jahr 2008 mit der Einführung der Linux-Container (LXC) gelegt wurde [29, 30], soll-
@@ -437,7 +433,7 @@ te Docker jedoch nicht irrtümlich als Erfindung der Container-Technologie anges
 werden. Viel mehr ist Docker als eine Implementierung der Containervirtualisierung zu
 verstehen, welche sich durch eine besonders hohe Benutzerfreundlichkeit auszeichnet
 [25].
-[A2b5b].ildung 2.2 veranschaulicht schematisch die wichtigsten Komponenten, aus denen
+Abbildung 2.2 veranschaulicht schematisch die wichtigsten Komponenten, aus denen
 Docker besteht. Diese umfassen zum einen die Docker-Objekte und zum anderen den
 Docker Daemon. Zu den Docker-Objekten zählen [25]:
 1. Die Container, in denen Docker Applikationen und Microservices ausführt.
@@ -458,7 +454,6 @@ genannten Dockerfile. Diese beschreibt den Aufbau eines Images basierend auf ein
 Abfolge von Befehlen, die beim Erzeugen des Images sequentiell ausgeführt werden
 [25]. Hierdurch lassen sich verschiedene Eigenschaften des Images definieren wie:
 Der Name und Versions-Tag
-•
 •
 Ein Parent-Image, auf dem das Image basieren soll
 •
@@ -607,7 +602,6 @@ sequentiell jeder Pod durch einen neuen Pod ersetzt, indem zunächst der neue Po
 erzeugt und anschließend der alte Pod entfernt wird. Somit lassen sich in laufenden
 Produktivsystemen ohne Einschränkungen der Verfügbarkeit sowohl Rolling Updates
 als auch Rollbacks durchführen. [44]
-als auch Rollbacks durchführen. [44]
 Durch ReplicaSets ist es zwar möglich mehrere identische Pods parallel zu betreiben,
 jedoch hat hierbei jeder Pod eine eigene IP-Adresse und ist für Clients auch nur über
 diese erreichbar. Um die hohe Verfügbarkeit der ReplicaSets praktisch nutzbar zu ma-
@@ -751,7 +745,6 @@ speziell für den Betrieb in Kubernetes entwickelt [54] und erstmals im Juli 201
 öffentlicht [63]. Seither wird das Projekt vor allem von Google stark vorangetrieben
 und konnte sich so in den letzten Jahren als weltweit bekanntestes und am häufigsten
 eingesetztes Service Mesh durchsetzen [64].
-eingesetztes Service Mesh durchsetzen [64].
 Abbildung 2.6 zeigt schematisch die wichtigsten Komponenten des Istio Service Meshs.
 Wie zu erkennen ist, ist die gesamte Control Plane in einer einzelnen Binärdatei na-
 mens istiod gekapselt [65, 66]. Diese beinhaltet die folgenden drei Komponenten:
@@ -813,7 +806,7 @@ portunities“ [11]. Dort nennen Wubin Li et al. das Thema Hochverfügbarkeit al
 von insgesamt vier offenen Forschungsthemen für zukünftige wissenschaftliche Arbei-
 ten im Bereich der Service Meshes. Die Literaturrecherche zum aktuellen Stand der
 Forschung knüpft daher an genau dieses Paper an.
-FImorsecrshtuenngSkcnhürpitftt ddaehr eRreacnhgeercnhaeu wdiierdseesinPeapmear naune. lle Suche mittels Google Scholar
+Im ersten Schritt der Recherche wird eine manuelle Suche mittels Google Scholar
 durchgeführt. Hierbei werden systematisch alle Veröffentlichungen zusammengetra-
 gen, deren Titel nach subjektiver Beurteilung potentiell relevant für das Thema dieser
 Masterarbeit sind. Die Suche erfolgt dabei anhand von drei Schwerpunkten:
@@ -901,7 +894,6 @@ Microservice Architektur vor. Hierzu wird ein Ansatz gewählt, bei dem beim Neus
 rimentellen Forschung dieser Masterarbeit steht.
 eines Microservice eine Verbindungsübergabe an ein noch laufendes Replikat des je-
 weiligen Microservice stattfindet. Dieses Konzept ließe sich potentiell auch in Service
-Meshes anwenden. [79]
 Meshes anwenden. [79]
 Zusammenfassend lässt sich sagen, dass das Thema der Hochverfügbarkeit in Sevice
 Meshes nach wie vor noch nicht hinreichend erforscht ist. Es existieren zwar verschie-
@@ -1061,7 +1053,6 @@ dieser Sicherheitsmechanismus nicht mehr funktionieren. In der Folge würden
 Anfragen an den betroffenen Service teilweise an einen nicht verfügbaren Pod
 weitergeleitet werden, was zu einer eingeschränkten Verfügbarkeit des betroffe-
 nen Service führen würde.
-nen Service führen würde.
 In der Standard-Konfiguration von Linkerd wird die Destination-Komponente nur
 in einem einzelnen Pod ausgeführt. Der beschriebene Fehlerfall könnte also auf-
 treten, sobald dieser Pod ausfällt.
@@ -1104,7 +1095,6 @@ im Folgenden experimentell reproduziert und untersucht werden. Hierzu müssen zu
 nächst passende Testsysteme entworfen werden, innerhalb derer entsprechende Ex-
 perimente durchgeführt werden können. Ziel ist es hierbei sowohl für Linkerd als auch
 für Istio ein jeweils eigenständiges Testsystem zu entwerfen, welches möglichst gut
-eine reale Produktivumgebung nachbildet.
 eine reale Produktivumgebung nachbildet.
 Der folgende Abschnitt beschreibt die Struktur und Konzeption der wichtigsten Be-
 standteile beider Testsysteme. Hierzu wird zunächst beschrieben, welche Cluster-In-
@@ -1149,7 +1139,6 @@ den. Dieser Aufbau ist einer realitätsnahen einfachen Produktivumgebung nachemp
 funden, bei der das Cluster durch eine Hardware-Firewall – den Router – geschützt
 wird und zugleich eine Steuerung des Clusters durch den Client von außerhalb des
 Cluster-Netzwerks N1 möglich ist.
-Cluster-Netzwerks N1 möglich ist.
 Auf den vier Knoten des Clusters wird die Kubernetes-Distribution K3s ausgeführt.
 Diese zeichnet sich durch ihre Leichtgewichtigkeit und ihren vergleichsweise geringen
 Ressourcenverbrauch aus [101] und eignet sich damit besonders gut für den Einsatz
@@ -1158,16 +1147,12 @@ chenleistung und Arbeitsspeicher verfügen. Aufbauend auf K3s wird zudem Linkerd
 Service Mesh ausgeführt. Hierbei werden die folgenden Versionen eingesetzt4:
 Linkerd-CLI: stable-2.10.2
 •
-•
 Linkerd-Control-Plane: stable-2.10.2
 •
-•
 Kubernetes-CLI: v1.21.1
-•
-•
 Kubernetes-Server-Version (K3s): v1.20.7+k3s1
 •
-Da •das Cluster-Netzwerk N1 durch die Firewall des Routers vom Client-Netzwerk N2
+Da das Cluster-Netzwerk N1 durch die Firewall des Routers vom Client-Netzwerk N2
 abgeschirmt ist, müssen in dem Router noch verschiedene Port-Weiterleitungen ein-
 gerichtet werden. Hierdurch wird den CLI-Tools auf dem MacBook Pro der Zugriff auf
 die Kubernetes- und Linkerd-Control-Plane des Clusters gewährt. Zudem wird dem
@@ -1205,8 +1190,6 @@ Istio-CLI: 1.9.2
 Istio-Control-Plane: 1.9.2
 •
 Istio-Data-Plane: 1.9.2
-•
-•
 Kubernetes-CLI: v1.21.1
 •
 Kubernetes-Server-Version (K3s): v1.20.6+k3s1
@@ -1255,7 +1238,6 @@ ten Werten und gibt anschließend einen boolschen Wert und einen Zeitstempel zur
 Der zurückgegebene boolsche Wert ist hierbei true, wenn die vom Frontend empfange-
 nen Daten identisch zu den fest hinterlegten Werten sind und false, falls das nicht der
 Fall ist. Im Frontend werden dann nach Aufruf des jeweiligen Backend-Microservices
-dessen Rückgabewerte in einem Popup angezeigt.
 dessen Rückgabewerte in einem Popup angezeigt.
 Sämtlicher Quellcode der Testapplikation ist im Ordner 01_TestApp des digitalen An-
 hangs dieser Masterarbeit zu finden [102]. Dort befinden sich sowohl die IntelliJ-Pro-
@@ -1355,7 +1337,6 @@ der insgesamt 4 Pods des Registrierungs-Microservice ausgeführt. Sämtliche and
 Komponenten, die für die Erreichbarkeit der Microservices wichtig sind, werden jeweils
 auf den übrigen 3 Knoten des Clusters ausgeführt:
 Die gesamte Kubernetes Control Plane läuft auf raspi0-master.
-•
 •
 Der Ingress läuft auf raspi2-node2. Hierbei kommt ein Traefik Ingress zum Ein-
 •
@@ -1491,7 +1472,6 @@ Neustart eines einzelnen Knotens des Linkerd-Clusters durchgeführt wird. Dadurc
 soll gezielt eine temporäre Downtime einzelner Pods der Backend-Microservices pro-
 voziert werden, welche implizit auch zu einer Downtime der Linkerd-Proxies der betrof-
 fenen Pods führt.
-fenen Pods führt.
 Um ungewollte Störeinflüsse während der Messung zu vermeiden, muss darauf ge-
 achtet werden, dass der Neustart des Knotens:
 zu einer Downtime von mindestens einem – jedoch nicht allen – Pods des Login-
@@ -1501,7 +1481,6 @@ zu einer Downtime von mindestens einem – jedoch nicht allen – Pods des Re-
 •
 gistrierungs-Microservice führt.
 nicht zu einer Downtime aller Pods des Frontend-Microservice führt.
-•
 nicht zu einem Ausfall der Kubernetes Control Plane führt.
 •
 nicht zu einem Totalausfall irgendeiner Komponente der Linkerd Control Plane
@@ -1512,7 +1491,7 @@ nicht zu einem Ausfall des Ingress führt.
 Da all diese Kriterien bereits durch die Messung aus Abschnitt 4.1.2 erfüllt werden,
 können die Ergebnisse dieser Messung ebenfalls zur Auswertung der Verfügbarkeit
 beim Ausfall des Linkerd-Proxies herangezogen werden.
-bWeiiembAeuresiftasllindeAsbLsicnhkneirtdt -4P.1ro.2xieesrlähuetrearntgweuzrodgee,nkowmermdet ne.s beim Ausfall einzelner Pods
+Wie bereits in Abschnitt 4.1.2 erläutert wurde, kommt es beim Ausfall einzelner Pods
 der Backend-Microservices selbst mit einer funktionierenden Linkerd Control Plane
 vereinzelt zu fehlgeschlagenen Anfragen. Entgegen der ursprünglichen Vermutung tre-
 ten diese jedoch nicht am Anfang einer Downtime auf. Stattdessen kommt es am Ende
@@ -1612,8 +1591,7 @@ hierbei 1 zu 1. Wie in den Abbildungen 4.6 und 4.7 zu sehen ist, kommt es dabei
 entgegen der Erwartung während der gesamten Messung zu keinerlei fehlgeschlage-
 nen Anfragen. Obwohl beide TLS-Zertifikate etwa in der Mitte der Messung ablaufen,
 werden weiterhin alle Anfragen erfolgreich beantwortet.
-werden weiterhin alle Anfragen erfolgreich beantwortet.
 Um das Verhalten beim Ablaufen der TLS-Zertifikate noch etwas genauer zu untersu-
 chen, soll diese Messung noch einmal wiederholt werden. Diesmal werden jedoch nur
-1Sowohl in diesem Skript als auch in allen anderen Skripten aus Abschnitt 4.3 erfolgt die Generierung
+Sowohl in diesem Skript als auch in allen anderen Skripten aus Abschnitt 4.3 erfolgt die Generierung
 neuer Zertifikate mit Hilfe des kostenlosen Command-Line-Tools Smallstep CLI Version 0.15.16.

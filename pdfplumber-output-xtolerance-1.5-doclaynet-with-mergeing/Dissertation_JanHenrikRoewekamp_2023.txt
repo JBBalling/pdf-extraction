@@ -172,7 +172,6 @@ meinsam eine Handlung zu vollziehen. Dabei treffen sie an einem physischen oder
 virtuellen Ort – oder allgemeiner gesagt – einer Plattform aufeinander. Beispie-
 le für eine solche Plattform sind gegeben durch Räume, Konferenzen, Telefonate
 und viele weitere.
-1. Einleitung
 Darüber hinaus sind Entitäten in der Lage diese Plattformen zu manipulieren,
 sie zu erzeugen, zu zerstören bzw. abzubauen und anzupassen. Räume können
 gebaut, Telefonate gestartet, Internetverbindungen hergestellt und Konferenzen
@@ -294,7 +293,6 @@ tensystems auf die Entwicklung derartiger Multiagentensysteme und etabliert es
 als übergreifendes Leitbild (Cabac, 2007). Der Paose-Ansatz ist zugeschnitten
 auf die Entwicklung im Capa-Umfeld (Concurrent Agent Platform Ar-
 chitecture) (Duvigneau, 2002), (Duvigneau, Moldt und Rölke, 2002),
-1.1. Ziele der Arbeit und Forschungsfragen
 (Duvigneau, Moldt und Rölke, 2003), wobei Capa eine FIPA1-konforme spe-
 zifische Implementation von Mulan darstellt. Paose selbst ist auch allgemeiner
 einsetzbar. Capa wird im Rahmen der Arbeit zwar referenziert, dient jedoch nicht
@@ -330,7 +328,6 @@ Die Forschungsfrage umfasst damit zwei Hauptbestandteile: Den Einfluss von
 Agenten auf die Plattform sowie den Einfluss der Agenten auf die Skalierung der
 Menge der verfügbaren Plattformen.
 1Foundation for Intelligent Physical Agents
-1. Einleitung
 Während der erste Teil im Kern die Interaktion und dynamische Modifikation
 einer einzelnen Plattform betrifft, adressiert der zweite Teil die Interaktion und
 dynamische Modifikation der Gesamtmenge der Plattformen. Die Dynamisierung
@@ -407,7 +404,6 @@ ge entsteht ein globaler Verkehrsfluss. Durch eine skalierbare Simulation
 der Situation können Verkehrsdichten vorausberechnet werden, während
 auf den individuellen Charakter der Einzelfahrzeuge eingegangen werden
 kann. Klassische Verkehrssimulationen sind gezwungen an dieser Stelle auf
-1. Einleitung
 Vereinfachungen wie die Aufgabe der Modellierung inidividueller Verkehrs-
 teilnehmer zurückzugreifen, um die Geschehnisse in überschaubare mathe-
 matische Formeln zu überführen. Auch Änderungen an der Straßenführung
@@ -646,7 +642,6 @@ Nicht endliche Netze sind für die Modellierung nicht endender Prozesse durchaus
 halten sind jedoch nicht Teil dieser Arbeit, sodass eine Einschränkung auf endliche
 Netze erfolgen kann. Alle Netzmodelle, welche als explizite Repräsentationen von
 Systemen zum Einsatz kommen, sind endlich.
-2. Grundlagen
 Definition 2.2 (Netz). Ein Netz ist ein Tripel 𝑁 = (𝑃 , 𝑇 , 𝐹 ),
 wobei:
 • 𝑃 eine [endliche] Menge an Plätzen ist.
@@ -711,7 +706,6 @@ phen umgesetzt. In einfachen (üblichen) Erreichbarkeitsgraphen kann das Schalt-
 verhalten eines Netz nach Interleaving-Semantik (sequentielles Schalten) abgele-
 sen werden. Genauere Beschreibungen zur Interleaving- und anderen Petrinetzse-
 mantiken folgen in Abschnitt 2.2.5.
-2. Grundlagen
 Abbildung 2.3.: Ein Beispiel für ein gefärbtes Netz
 Dabei wird ausgehend von der Initialmarkierung sequenziell jede mögliche Schal-
 tung einer aktivierten Transition betrachtet. Die jeweiligen Folgemarkierungen
@@ -777,7 +771,6 @@ gleich mehrere Transitionen auf einmal geschaltet, so wird das Netz mittels Schr
 Semantik bzw. Step-Semantik simuliert. Diese Semantik ermöglicht eine gewisse
 Form von Nebenläufigkeit, basiert aber durch die Existenz von Takten (Schrit-
 ten) auf Parallelität. Dies bedeutet, dass das Netz immer nach einem Schritt und
-2. Grundlagen
 vor dem nächsten Schritt in einen konsistenten Zustand überführt wird. Die Aus-
 führung unterschiedlich komplexer Operation ist jedoch nur schwer abbildbar, da
 Zeitschritte diskret betrachtet werden. Im Zweifel führt die Parallelität zu länge-
@@ -844,7 +837,6 @@ Workflownetze sind eine spezielle Kategorie von Petrinetzen. Sie können ein-
 gesetzt werden, um Geschäftsprozesse zu modellieren. Sie werden im Kontext
 der Agentenkommunikation erneut aufgegriffen werden. Workflownetze definie-
 ren sich nach (Aalst, 1997) (übersetzt) wie folgt:
-2. Grundlagen
 Definition 2.6 (Workflow Netz). Ein Netz 𝑁 = (𝑃 , 𝑇 , 𝐹 ) ist
 ein Workflow Netz, genau dann wenn:
 • 𝑁 zwei spezielle Plätze 𝑖 und 𝑜 besitzt. 𝑖 ist eine Quelle:
@@ -920,7 +912,6 @@ jedoch mit Hilfe von Referenzen auf die anderen Netzinstanzen. So begründet sic
 auch der Name Referenznetze.
 Innerhalb von Netzinstanzen von Referenznetzen besteht somit die Möglichkeit
 neue Netzinstanzen von anderen bekannten statischen Netzen zu erzeugen. Da die
-2. Grundlagen
 Erzeugung einer neuen Netzinstanz stets eine Aktion ist, liegt es nahe, dass sie
 mittels einer speziellen Anschrift an einer Transition umgesetzt ist. Feuert eine
 derartige Transition innerhalb einer Netzinstanz, so entsteht eine Marke mit einer
@@ -993,7 +984,6 @@ Referenznetzen zählt, in Abschnitt 2.8 zum Simulator Renew behandelt.
 Die anschauliche Betrachtung von beispielhaften Referenznetzen bedarf der Kon-
 kretisierung der Anschriftensprache. Wie im Abschnitt 2.3.3 erläutert, umfasst
 die Konkretisierung der abstrakten Referenznetze im Rahmen dieser Arbeit die
-2. Grundlagen
 Anwendung auf die Programmiersprache Java. Aus diesem Grund wird auf die
 Darstellung eines Beispiels von Referenznetzen nur auf Basis des Formalismus
 verzichtet und dieses nur im Kontext der Realisierung mit Java betrachtet. Bei-
@@ -1224,9 +1214,9 @@ Subsystemen.)
 — (Brügge und Dutoit, 2004, Seite 230)
 Definition 2.14 (Kohäsion). Cohesion is the number of depen-
 dencies within a subsystem.
-d(detn.c:iKesowhäitshioinn aistsudbiesyAstnezma.hl an Abhängigkeiten innerhalb eines
+(dt.: Kohäsion ist die Anzahl an Abhängigkeiten innerhalb eines
 Subsystems.)
-— (Brügge und Dutoit, 2004, Seite 231)
+(Brügge und Dutoit, 2004, Seite 231)
 Nach den Ausführungen von (Brügge und Dutoit, 2004) ist es erstrebenswert
 Systeme mit niedriger Koppelung und hoher Kohäsion zu konstruieren. Niedrige
 Koppelung erhöht die Flexibilität und Autonomie der einzelnen Komponenten,
@@ -1310,9 +1300,8 @@ dem mehrere abgeschlossene Systemteile (Container) durchaus auf dem
 der grundlegenden Nebenläufigkeit des verteilten Systems auf.
 5
 5sid ee hr eg Aru bn scd hle ng ite tnd 2e .6n .4N
-2. Grundlagen
 gleichen Hostsystem ausgeführt werden können, ist eine Kommunikation
-über gemeinsamen Hauptspeicher jedoch wieder ein interessanter Ansatz
+über gemeinsamen Hauptspeicher jedoch wieder ein interessanter Ansatz.
 Grundsätzlich würde es sich dabei streng genommen jedoch nicht mehr um
 ein verteiltes System handeln, sofern alle Komponenten auf dem gleichen
 Hostsystem ausgeführt werden.
@@ -1464,7 +1453,6 @@ von Hector Garcia-Molina und Kenneth Salem 1987 vorgestellt (Garcia-Molina
 und Salem, 1987) und wurde seitdem mehrere tausend Male zitiert. Im Kontext
 des Aufstiegs von Microservices erlebte es dann zur Zeit der 2010er Jahre einen
 Aufschwung.
-2. Grundlagen
 Zu aktuellerer Literatur diesbezüglich zählt beispielsweise das Buch »Microser-
 vices Patterns« (Richardson, 2019). Entsprechende Onlinequellen zur Veröf-
 fentlichung Richardsons existieren ebenso8. Die hier vorgestellte Form des Saga-
@@ -1545,7 +1533,6 @@ Orchestration Das logische Gegenstück zur Choreographie bildet die Orchestra-
 tion. Hierbei übernimmt ein Koordinator die Ausführung der Saga. Der
 Koordinator kennt alle Services, die an der Saga beteiligt sind und führt die
 Operationen in entsprechender Reihenfolge durch. Da nur der Koordinator
-2. Grundlagen
 Wissen über eine Saga hält, können die Services mit einem neutralen Inter-
 face implementiert werden. Die Kopplung sinkt und der Wartungsaufwand
 für eine Saga wird übersichtlicher. Auch kann durch Monitoring Features

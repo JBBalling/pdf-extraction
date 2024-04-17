@@ -14,7 +14,7 @@ Prof. Dr. Johannes Krugel
 20.02.2023
 Referent:
 Korreferent:
-Tag der Promotion:
+Tag der Promotion
 Abstract
 Web-based learning has become an integral part of everyday life for all ages and back-
 grounds. On the one hand, the advantages of this learning type, such as availability,
@@ -191,7 +191,6 @@ information influences the learning outcome in combination with other modalities
 ing the current characteristics of the individual user. These characteristics entail previously
 acquired domain knowledge [285, 193], Web search literacy [284, 286], or working memory
 capacity [207], and task characteristics, such as the type of knowledge to be acquired (e.g.,
-1.3. Problem Statement and Research Questions
 factual, conceptual, or procedural knowledge) [266] and the cognitive process dimension
 (e.g., understand or apply) [6].
 There is evidence that visual elements can have an impact on both, searching and learning.
@@ -263,7 +262,6 @@ retrieval algorithms [300, 156, 50] in SAL, especially with the advancements in 
 tures from visual and audio-visual content are, however, still somewhat underrepresented
 in information retrieval systems [114]. Commercial video platforms such as YouTube rely
 on manual metadata such as titles, descriptions, or topic categories [56] in conjunction
-1.3. Problem Statement and Research Questions
 with easy-to-compute, text-based video features like continuous bag-of-words [54], which
 might be too unspecific or insufficient for longer, educational content like lecture videos.
 This stands in contrast to current learning research which suggests that users may prefer
@@ -328,7 +326,6 @@ utilize them for knowledge gain prediction?
 1.3.3 Computable Crossmodal Relations
 Exploring how different modalities act together to convey an author’s intended message
 might help to get an even better understanding of how information is conveyed from
-1.3. Problem Statement and Research Questions
 medium to learner. For the scope of this thesis, we take an in-depth look at the relationship
 between visual and associated textual information purposely put in place together.
 As Bateman states [16], at first glance, combining image and text to convey information of
@@ -398,7 +395,6 @@ state-of-the-art results in knowledge gain prediction.
 In Chapter 5 of this thesis, we build upon recent work on image-text metrics and bridge
 the gap between research in computer science and communication science. Based on
 previous proposals [103, 15], we define three semantic image-text metrics to describe three
-1.5. List of Publications
 dimensions of the semantic interplay of jointly placed visual and textual information.
 Subsequently, we derive a categorization of eight semantic image-text classes that combines
 research from communication science with these metrics and thus, provides a general
@@ -471,7 +467,6 @@ editing
 The KG prediction methods in Chapter 4 are based on two user studies and a total of
 four publications. Section 4.1 describes the contributions of the papers ”Investigating Corre-
 lations of Automatically Extracted Multimodal Features and Lecture Video Quality“ [240] and
-1.5. List of Publications
 ”Predicting Knowledge Gain for MOOC Video Consumption“ [201]. In these two publications
 we investigate learning in a formal setting (MOOC videos) by conducting a user study
 and extensive, multimodal feature extraction procedure. Afterward, Section 4.2 explores
@@ -543,7 +538,6 @@ features and resource features were monitored. We underline the usefulness of th
 dataset by describing three, already published, use cases.
 My Contributions: Conceptualization, Data curation, Project administration, Re-
 sources, Software, Visualization, Writing – original draft, Writing – review & editing
-1.5. List of Publications
 [202] Christian Otto, Ran Yu, Georg Pardi, Johannes von Hoyer, Markus Rokicki, Anett
 Hoppe, Peter Holtz, Yvonne Kammerer, Stefan Dietze, and Ralph Ewerth. “Predicting
 Knowledge Gain During Web Search Based on Multimedia Resource Consumption”.
@@ -621,7 +615,6 @@ and Technological Facets of Search as Learning”. In: Frontiers in Psychology 1
 isbn
 for the Interpretation of Image-Text Relations”. In: Oct. 2021, pp. 109–138. :
 9783110725001. doi : 10.1515/9783110725001-005
-1.6. Organization of this Thesis
 [188] Markus Mühling, Nikolaus Korfhage, Eric Müller, Christian Otto, Matthias Spring-
 stein, Thomas Langelage, Uli Veith, Ralph Ewerth, and Bernd Freisleben. “Deep
 learning for content-based video retrieval in film and television production”. In:
@@ -715,7 +708,6 @@ the neural network to approximate non-linear functions. Linear algebra shows tha
 regardless of the number of layers and neurons, a neural network with a linear activation
 can be reduced to a 2-layer version of itself representing, again, a simple linear function
 f (x) = w · x + b. Activation functions will be discussed in more detail in Section 2.2.3.
-2.2. Neural Networks
 2.2.2 Types of Networks
 With some exceptions (e.g., Gated Recurrent Units (GRUs) [42]), a typical neural network
 consists solely of neurons arranged into layers, hierarchical tiers starting from the input
@@ -778,7 +770,6 @@ t
 unit is altered given a certain input. Inputs for GRUs are, besides the current token of the
 sequence of our input data X t, the hidden state H t−1 of the unit that encoded the previous
 token in our data, see Figure 2.4. At time step t, both X t and H t−1 have to pass through
-2.2. Neural Networks
 the Reset Gate where the GRU decides whether to retain the information in H t−1 or discard
 it, In other words, it resets what the network has learned so far, see Equation 2.2. This
 decision is influenced by the activation function a, the weight matrices W , W , and the
@@ -839,7 +830,6 @@ their cost functions E after passing a training sample through the network. That
 they compute the derivative E′ and utilize it to adjust the weights and biases in the network.
 However, sigmoid has a meaningful gradient only close to 0 or, in other words, very large
 or tiny input values return a gradient close to 0 (the gradient ”vanished“). The impact
-2.2. Neural Networks
 these small values have on the training diminishes the further we go backward through
 the hidden layers during back-propagation. This leads to the network getting stuck and
 being unable to find a useful solution during training. The vanishing gradient problem also
@@ -931,7 +921,6 @@ level, 2) the hidden embedding layer in the ”middle“ that, optimally, retain
 salient information about the input sample, and 3) the decoding pipeline that attempts to
 reconstruct the input sample as similar as possible based on this embedding. Figure 2.6
 outlines these basic components.
-Chapter 2. Foundations
 Figure 2.6: Simplistic structure of an autoencoder. Detailed architecture
 of the encoder and decoder component depends on the modality to be
 encoded.
@@ -962,7 +951,6 @@ for autoencoder is shown in the next section.
 Semantic word embeddings are an invaluable building block for modern natural language
 applications. With them, computers are able to represent not only text representations but
 also their semantic meaning. This ability enables algorithms to
-2.2. Neural Networks
 1. determine whether text passages (words, sentences, paragraphs) are semantically
 similar or not
 2. align visual and textual encodings to describe their relation to one another (cf.
@@ -1228,7 +1216,6 @@ which was first considered by [140]. It describes circumstances where image and 
 ’pull in different directions, i.e., appear to convey incoherent messages, according to
 Bateman [16]. Inspired by [103] we talk in Section 5.3 about how these arrangements
 (intended or unintended) can be described by means of an image-text relation. Further,
-2.4. Image-Text Taxonomies
 Unsworth adds Exemplification to Martinec and Salway’s Elaboration, which he calls Concur-
 rence. Lastly, the relationship called augmentation, which differentiates between examples
 where an image adds new information to those given in the text and vice versa, will be
@@ -1303,7 +1290,6 @@ mainly rely on user-based information such as the viewing history [56], current 
 or item similarity [100]. There is also another type of Web portals that offer exclusively
 scholarly videos, one of them being the TIB AV-Portal [259] of the Leibniz Information
 Centre for Science and Technology (TIB). Researchers can provide, search, and access
-Chapter 3. Improving Video Learning Platforms with Text-Based Features
 scientific and educational audio-visual material, while benefiting from several advantages
 compared to other portals. First, the TIB AV-Portal reviews submitted videos to check
 whether they contain scientific or educational content. Second, videos are represented in a

@@ -328,7 +328,6 @@ Erfahrungen, oft nur unzureichend Berücksichtigung finden:
 angestrebte Modellierungstiefe und der damit verbundenen Detaillierung?
 7Unified Modeling Language [69]
 8Business Process Model and Notation [65]
-1.2. Problemstellung
 • Welche Notationen werden zur Modellierung gewählt und sind diese zur Erreichung
 der Ziele geeignet?
 • Welche Erfahrungen und Kenntnisse im Bereich der Modellierung sind bei den
@@ -394,7 +393,6 @@ garantiert aber per se noch keinen höheren Projekterfolg gegenüber IT-Projekte
 grafischem Modellierungsanteil. Nur qualitativ hochwertige Modelle ermöglichen auch
 einen höheren Projekterfolg und werden dann nicht zu einem schlecht einschätzbarem
 Risiko.
-1.3. Qualität in der Modellierung
 Nun ist es kein Geheimnis, dass auch viele Jahre nach der Einführung des Paradigmas
 der serviceorientierten Architekturen es noch immer unzählige Bücher, Fachvorträge,
 Arbeiten und Diskussionen darüber gibt, wie die Qualität in diesen Projekten verbessert
@@ -426,11 +424,10 @@ bis zur technischen Bereitstellung der geforderten Funktionalität durchlaufen w
 12z.B. mit Scrum, siehe Kap. 7.3, in der diese Phasen in kurzen Abständen iterativ wiederholt
 durchlaufen werden) werden die einzelnen Phasen iterative durchlaufen und das Projekt inkrementel
 realisiert.
-13
-rea1l3iEsirefrütl.lung der nicht funktionalen Anforderungen an den Service, wie z.B. Antwortzeiten, Wartezeiten,
+13Erfüllung der nicht funktionalen Anforderungen an den Service, wie z.B. Antwortzeiten, Wartezeiten,
 durchschnittliche Verfügbarkeit, max. tolerierte Ausfallzeiten
 14
-du1r4chhisecrhwniitrtdlicsheherVheärufüfiggbadriekeeint,gmlisacxh.etBoleezreieicrhtenuAnugsfSaelrlzveiciteenLevel Agreements (SLA) verwendet
+14hier wird sehr häufig die englische Bezeichnung Service Level Agreements (SLA) verwendet
 Abb. 1.3: Zusammenführung von Projektphasen eines SOA-Projekts
 mit dazugehörigen Qualitätsbereichen
 (Farben in Anlehnung an ArchiMate® [91]) Inhalt:
@@ -490,7 +487,7 @@ Diese Arbeit untersucht, ob durch die gezielte Anwendung der Six Sigma Vorgehens
 weise17, die in der Industrie eine anerkannte und gelebte Vorgehensweise zur Qualitäts-
 15Beschreibt die möglichen Wege durch ein betrachtendes Softwaremodul
 16
-16BsieehscehhreieibrztudKieampiötgellic7h.2enLWineeagreesduVrocrhgeehinenbe
+16siehe hierzu Kapitel 7.2 Lineares Vorgehen
 17
 17s Si ie eh he
 e
@@ -498,7 +495,7 @@ h hi ie er rz zu
 u
 K Ka ap pi it te el
 l
-7 5.2
+7 5.
 verbesserung ist, eine Verbesserung von grafischen Modellen in SOA-Projekten erreicht
 werden kann.
 Im Bereich der Realisierung existieren bereits einige Ansätze der Qualitätsverbesserungen
@@ -588,9 +585,9 @@ mit ihren Messmethoden und mögliche gewünschte Verbesserungen analysiert.
 19SOA wird im Rahmen dieser Arbeit im Kontext von IT-Landschaften zur Bereitstellung geforderter
 Services, ungeachtet einer möglichen technischen Realisierung, betrachtet.
 20
-Se2r0v zic .Bes, Wu an sg se ea rfc ah lt le (t sie ei hn eer Km aö pg .l 7ic .2h )en
+e2r0v zic .Bes, Wu an sg se ea rfc ah lt le (t sie ei hn eer Km aö pg .l 7ic .2h )e
 21
-21zz..BB.WScarsusmerfa(sllie(hseieKheapK.a7p..3)7.2
+21z z. .B B.W Sca rs us merfa (sll ie( hs eie Khe apK .a 7p .. 3)7
 • Entwicklung eines qualitätsgestützten Vorgehensmodells auf Basis von Six Sigma,
 dass die Lösungswege zur Reduzierung bzw. Beseitigung von Modellierungsdefiziten
 abbildet.
@@ -756,7 +753,6 @@ dung aufgrund der vorgegebenen Geheimhaltungspflicht nicht umfassend veröffentl
 werden dürfen, weswegen mit verallgemeinerten Beispielen gearbeitet werden muss.
 Eine abschließende Zusammenfassung und Bestätigung der Thesen erfolgen dann im
 Kapitel 11.
-Kapitel 1. Thematik
 Serviceorientierte Architekturen
 2.1 Einleitung
 Der Begriff „SOA“ (Serviceorientierten Architektur) hat in den letzten ca. 15 Jahren
@@ -850,8 +846,7 @@ von Microsoft ebenfalls einzuschließen wären. Es sollte immer bewusst sein, da
 SOA-Begriff zu einem Zeitpunkt definiert wurde, als Technologien wie z.B. JEE, REST
 oder auch .NET noch nicht verfügbar waren.
 2Software as a Service
-3
-3SPolafttwfoarrme aass aa SSeerrvviiccee
+3Platform as a Service
 Diese beginnt mit den ersten Anforderungen, geht über Prozess- und Datenbeschreibun-
 gen und architekturellen Systembeschreibungen bis zur abschließenden Gesamtdokumen-
 tation. Auf allen Ebenen der Dokumentation können bzw. idealerweise sollten Modelle

@@ -558,7 +558,6 @@ Dennoch erfordert die Anwendung extraglottischer Atemwegshilfen, wie der LAMA,
 gerade bei der Überwachung der Ventilation vom Anwender, z.B. aufgrund
 intermittierender Leckagen, ein hohes Maß an Aufmerksamkeit und klinischer
 Ausbildung [40].
-4.3.2 Medikation bei Notfalleinsätzen mit Indikation zum AWM
 Hypnotika, Muskelrelaxantien (MR) und Ino-/Vasopressoren wurden im
 Erhebungszeitraum im Rahmen des AWM am häufigsten eingesetzt. Die Nutzung von
 MR und Hypnotika ist in diesem Zusammenhang selbsterklärend, Ino-/Vasopressoren
@@ -757,7 +756,6 @@ SpO2 partielle Sauerstoffsättigung
 SQL Standard Query Language
 UCH Unfallchirurgie
 z.B. zum Beispiel
-370–376, 2015.
 [11] C. Kill, W. Dersch, and A. Jerrentrup, “Videolaryngoskopie,” pp. 5–8, 2012.
 [12] S. Leitlinie, “publiziert bei : AWMF Leitlinie „ Prähospitales
 Atemwegsmanagement “ Mail : a.timmermann@drk-kliniken-berlin.de,” pp. 23,

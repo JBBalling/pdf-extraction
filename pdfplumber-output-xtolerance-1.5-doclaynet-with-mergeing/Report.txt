@@ -12,8 +12,6 @@ Projektpartner & Betreuer: Prof. Dr. sc. inf. Michael Kaufmann
 Experte: Urs Zumstein
 Departement Informatik, Hochschule Luzern
 
-Hochschule Luzern
-Informatik
 Bachelor Diplomarbeit an der Hochschule Luzern – Informatik
 Titel: Automatisierte Generierung von plattformübergreifenden Wissensnetzwerken mit
 Metadaten und Volltextindexierung
@@ -33,8 +31,6 @@ o termingerecht (9. Juni 2017, bis 16:00 Uhr) o verspätet
 Hinweis: Diese Ausgabe der Bachelor Diplomarbeit wurde von keinem Dozierenden
 nachbearbeitet. Veröffentlichungen (auch auszugsweise) sind ohne das Einverständnis der
 Studiengangleitung der Hochschule Luzern – Informatik nicht erlaubt.
-Hochschule Luzern
-Informatik
 Verdankung
 An dieser Stelle möchten wir uns bei all denjenigen bedanken, welche uns während dieser Arbeit
 motiviert und unterstützt haben. Im Speziellen Michael Kaufmann, welcher uns die Chance gab, an
@@ -48,7 +44,7 @@ Hiermit erklären wir, dass wir die vorliegende Arbeit „Automatisierte Generie
 plattformübergreifenden Wissensnetzwerken mit Metadaten und Volltextindexierung“ selbstständig
 angefertigt und keine anderen als die angegebenen Hilfsmittel verwendet haben.
 Redlichkeit
-RSäemdltilcichhkee vite rwendeten Textausschnitte, Zitate oder Inhalte anderer Verfasser werden in
+Sämtliche verwendeten Textausschnitte, Zitate oder Inhalte anderer Verfasser werden in
 Übereinstimmung mit Art. 25, Abs. 2 URG ausdrücklich als solche gekennzeichnet.
 Ort / Datum, Unterschrift
 Ort / Datum, Unterschrift
@@ -537,7 +533,7 @@ skalieren, wird folgende Formel eingefu¨ hrt:
 Diese bezeichnet man als inverse Dokumentenha¨ufigkeit (inverse do-
 cument frequency (idf)) fu¨ r einen Begriff t. Die Gesamtanzahl der Do-
 kumente ist durch N gegeben.
-kMuamnneninteg iestt adlu. r(2ch00N8) g
+Manning et al. (2008)
 TF-IDF
 TF-IDF ist ein Gewichtungsalgorithmus zur Bestimmung der Rele-
 vanz eines Begriffes. Wie oben bereits erwa¨hnt, nimmt er Bezug auf

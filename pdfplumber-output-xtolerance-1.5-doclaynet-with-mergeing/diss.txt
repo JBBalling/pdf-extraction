@@ -103,7 +103,6 @@ künstliche Intelligenzen bezeichnet. Eine starke künstliche Intelligenz hingeg
 sich durch perpetuelle Verallgemeinerungs- und Konkretisierungsfähigkeit aus, also der
 Fähigkeit, beliebig Wissen zu akkumulieren und für neue Aufgaben zu nutzen.
 Hierbei stellt sich die grundsätzliche Frage nach dem Wesen von Erkenntnis und dessen
-Hierbei stellt sich die grundsätzliche Frage nach dem Wesen von Erkenntnis und dessen
 Übertragbarkeit in Form von Wissen. Im Rahmen des Deep Learning führt diese Suche
 zu den Forschungsfragen des Transferlernens und des Metalernens. Das Transferlernen
 umfasst eine besondere Klasse von Lernverfahren, welche bereits vorhandenes Wissen aus
@@ -290,7 +289,6 @@ Grundgedanken dahingehend, dass die Genotypen als Vektoren reeller Zahlen reprä
 tiert werden, die nach einer Wahrscheinlichkeitsverteilung mutieren, welche während des
 Evolutionsprozesses strategisch vorteilhaft angepasst wird.
 Im Kontext des Trainings tiefer künstlicher neuronaler Netzwerke im Allgemeinen und des
-Im Kontext des Trainings tiefer künstlicher neuronaler Netzwerke im Allgemeinen und des
 Transferlernens im Besonderen finden evolutionäre Algorithmen Anwendung in der Opti-
 mierung von Hyperparametern [90], in der gegnerischen Umprogrammierung [91, 92] oder
 bei der Inferenz eines Weltmodells durch ein aufgabenspezifisches künstliches neuronales
@@ -377,7 +375,6 @@ Algorithmus 1 (1 + 1)-Evolutionsstrategie nach Rechenbergs 1-Regel
 3: while ¬ Abbruchkriterium do
 4: x0 ← N (x, σ2)
 5: if f(x0) ≤ f(x) then
-)
 6: x ← x0)
 7: σ ← σ · c4
 8: else
@@ -428,7 +425,6 @@ reduziert. Die Anzahl der Filterparameter eines CNN ist also vergleichsweise ger
 somit schnell zu lernen, die strukturellen Hierarchien dieser Netzwerke vereinfachen die
 Zusammensetzung komplexerer Muster aus einfachen Mustern.
 Von essentieller Bedeutung in allen Ansätzen des Deep Learning ist das Konzept der
-Von essentieller Bedeutung in allen Ansätzen des Deep Learning ist das Konzept der
 neuronalen Aktivierung a, welche im Prinzip die Summe der Aktivierungen der einge-
 henden Signale abbildet. Je nach Aufbau werden verschiedene Nichtlinearitäten in Form
 von Aktivierungsfunktionen σ(a) mit in die Berechnungen aufgenommen. Die Aktivie-
@@ -439,7 +435,6 @@ den Vorhersagefehler auf die einzelnen neuronalen Gewichte zurückzuführen und 
 entsprechend dem Optimierungskriterium, zu verändern. Hierbei wird zunächst schicht-
 weise die Aktivierung bestimmt, zuletzt die Aktivierung der Ausgabeschicht betrachtet
 und einer erwarteten Zielausgabe gegenübergestellt.
-Neben den Anwendungen und vielzähligen Erfolgen im Bereich künstlicher Intelligenz
 Neben den Anwendungen und vielzähligen Erfolgen im Bereich künstlicher Intelligenz
 werden auch die Grenzen und Nachteile dieses Ansatzes untersucht. In einem Artikel über
 die Grenzen des Deep Learning identifiziert [105] einige problematische Eigenschaften
@@ -468,7 +463,6 @@ rungsfunktionen einzelner neuronaler Schichten unterliegt den durch die Aufgaben
 gegebenen Bedingungen. In Abbildung 2.2 werden die wichtigsten Aktivierungsfunktionen
 gezeigt, welche die Ausgabeaktivierung σ(x) eines künstlichen Neurons entlang einer
 Eingabedimension x auf unterschiedliche Weise begrenzen.
-Welche Aktivierungsfunktion in welcher neuronalen Schicht genutzt wird hängt vom zu
 Welche Aktivierungsfunktion in welcher neuronalen Schicht genutzt wird hängt vom zu
 lösenden Optimierungsproblem ab. Um während der Fehlerrückführung verschwindend
 geringe oder über die Maßen hohe Gradienten zu vermeiden sind Aktivierungsfunktionen
@@ -1097,7 +1091,6 @@ Wahrscheinlichkeitsverteilung, in einen Folgezustand s ∈ S übergeht. Der mark
 Entscheidungsprozess stellt eine Erweiterung dieser Idee dar, indem die Übergangswahr-
 scheinlichkeiten in Abhängigkeit einer Aktion formuliert werden.
 Da sich der Zustand der Umgebung nach der Handlung von deren Zustand vor der
-Da sich der Zustand der Umgebung nach der Handlung von deren Zustand vor der
 Handlung unterscheidet, ergibt sich ein Begriff schrittweiser zeitlicher Ordnung. Für
 jeden Zeitschritt t existiert ein Zustandsübergang s → s , bis die Umgebung in einen
 t t+1
@@ -1120,7 +1113,6 @@ bung und dem Verfolgen der optimalen Strategie vorgenommen werden (E: Exploratio
 Exploitation Dilemma) [191]. Zur Lösung dieses Dilemmas können, einem linear abfallen-
 den Prozentwert (cid:15) folgend, zufällige Aktionen durchgeführt werden oder die Entropie der
 Strategie in das Optimierungskriterium integriert werden [175, 192, 193].
-Eine Strategie, welche auf Grundlage der Beobachtungen immer diejenigen Handlungen
 Eine Strategie, welche auf Grundlage der Beobachtungen immer diejenigen Handlungen
 entscheidet, welche die Umgebung in Zustände mit höherem Zustandswerten versetzen,
 wird als optimale Strategie π∗ bezeichnet. Um die notwendige Zuordnung eines Zustands-
@@ -1200,11 +1192,9 @@ t t+1
 Ziel t 2
 8: L = Optimierungskriterium(q , q )
 1 Ziel
-9:
-∆Θ = dL
+9: ∆Θ = dL
 dΘ
-10:
-Θ = Θ + η∆Θ
+10: Θ = Θ + η∆Θ
 11: end procedure
 Mit der Einführung eines Erinnerungswiederholungsprozesses (E: Action Replay Process,
 ARP) zeigt sich die Stabilisierung der Strategiefindung [174]. Während des Lernprozesses
@@ -1266,8 +1256,8 @@ der Belohnungsgrundlinie b gewichtet. Die Belohnungsgrundlinie b entspricht hier
 t t
 einer Zustandswertfunktion V (s ) zum Lernschritt t.
 t
-Das Verfahren A3C nutzt akkumulierte Belohnungen = P∞ k , um Gradienten
-Das Verfahren A3C nutzt akkumt ulierte Belohnungen R = P∞ γkr , um Gradienten
+Das Verfahren A3C nutzt akkumulierte Belohnungen = P , um Gradienten
+Das Verfahren A3C nutzt akkumulierte Belohnungen R = P∞ γkr , um Gradienten
 t k=0 t+k
 für den Entscheidungsparametervektor Θ nach folgender Funktionsvorschrift aufzustellen
 [175]:
@@ -1637,7 +1627,7 @@ Verlust umsetzen soll. Dadurch verlängert sich die Zeit zwischen den Handelsakt
 zugunsten einer höheren Erfolgswahrscheinlichkeit. Jedes mehrschichtige Perzeptron und
 LSTM-Netzwerk führt insgesamt 1.000 Testgeschäfte auf den ungesehenen Daten durch,
 jede Testreihe beginnt mit einem Eigenkapital von 1.000$.
-Aus der Verteilung der Aktionen in der Abbildung 3.6 i.st ersichtlich, dass sowohl der MLP-
+Aus der Verteilung der Aktionen in der Abbildung 3.6 ist ersichtlich, dass sowohl der MLP-
 als auch der LSTM-Agent häufiger Leerverkaufspositionen als Kaufpositionen eröffnen.
 Das lineare Modell trifft häufiger Kaufentscheidungen und führt zwar zu einer positiven
 Kapitalentwicklung bei geringeren Trainingszeiten, unterliegt jedoch den Erträgen der

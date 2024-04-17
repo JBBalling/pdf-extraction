@@ -51,8 +51,8 @@ Attribution-No Derivatives 4.0 International License (CC BY-ND 4.0):
 https://creativecommons.org/licenses/by-nd/4.0/deed.en
 Print on Demand 2023 – Gedruckt auf FSC-zertifiziertem Papier
 ISSN 1866-5934
-IISSSBNN 1987686-3--57933145-1302-5
-IDSOBNI 9107.85-434-753/1K5S-P1/310020-051 5 8762
+ISBN 978-3-7315-1302-5
+DOI 10.5445/KSP/1000158762
 Kurzfassung
 Die Ellipsometrie ist ein optisches Messverfahren zur Oberflächencharak-
 terisierung und Dünnschichtmessung unter Verwendung von polarisiertem
@@ -188,7 +188,6 @@ Operator
 Konstanten
 Abbildungsmatrix einer Achsenspiegelung an der
 𝑥-Achse:
-𝑥-Achse:
 𝐓 ∶= diag(1, − 1, − 1)
 𝑦𝑧
 Lateinische Symbole und Variablen
@@ -209,7 +208,7 @@ Verlustwinkel Ψ:
 Δ
 Verzögerung Δ:
 Müller-Matrix der optischen Rotation um den Winkel 𝜙:
-𝐌 (𝐌,𝜙) Müller-Mat⎝rix eines um den Winkel⎠𝜙 gedrehten
+𝐌 (𝐌,𝜙) Müller-Matrix eines um den Winkel 𝜙 gedrehten
 Er
 optischen Bauteils, welches nicht gedreht die
 Müller-Matrix 𝐌 aufweist:
