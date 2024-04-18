@@ -374,8 +374,7 @@ muliert [Tur09]. Eine Frage die Hermann Schmidt sowie Norbert Wiener (vgl. das W
 bzw. Wiener-Kolmogoroff-Filter) mit dem Begriff „Kybernetik“ verknüpften [Wie48]. Nachhal-
 tig in den 1960er Jahren geprägt von Karl Steinbuch [Ste65], ist die Kybernetik heute weitest-
 gehend im Begriff der KI aufgegangen.
-gehend im Begriff der KI aufgegangen.
-² Hinweis: Die Testergebnisse hängen also nicht von der Fähigkeit der Maschine ab, „korrekte“
+² Hgeihnewnedisi:mDBieegTreisfftedregrebKnIiassuefgheägnagnegnena.lso nicht von der Fähigkeit der Maschine ab, „korrekte“
 Antworten im Hinblick auf die Konstituenten des Problems zu geben, sondern nur davon, wie
 sehr ihre Antworten denen eines Menschen (bzw. der Menschen der Stichprobe) ähneln.
 Jedoch wurde, insbesondere von dem Philosophen John Searle, Kritik am Tu-
@@ -727,8 +726,7 @@ Während eine gerichtete Kante 𝑣 → 𝑣 der Kantenmenge ℰ eine direkte Ab
 hängigkeit zwischen zwei Variablen angibt, symbolisiert eine fehlende Kante
 die Unabhängigkeit zweier Variablen¹.
 ¹ Hinweis: Da Graph 𝐺 sowohl gerichtet als auch azyklisch ist, existiert kein Pfad der von einem
-Knoten zu sich selbst zurück führt: ∄ Pfad 𝑣 → … → 𝑣 .
-𝑖 𝑖
+Knoten zu sich selbst zurück führt: ∄ Pfad 𝑣𝑖 → … → 𝑣𝑖.
 Die gemeinsame Wahrscheinlichkeitsverteilung ist durch das Produkt aller
 bedingten Wahrscheinlichkeitsverteilungen gegeben, welche mit den Kno-
 ten von 𝐺 verknüpft sind. Sie repräsentiert die Parameter des BN. Dabei be-
@@ -764,13 +762,11 @@ liegen, sowie nicht 𝑋 selbst sind (d.h. Nicht-Nachfahren von 𝑋 ).
 𝑖 𝑖
 ¹ Hinweis: Durch den verwendeten DAG (mit seiner azyklischen sowie gerichteten Eigenschaft)
 ist sichergestellt, dass die Elternbeziehung eindeutig für jeden Knoten angegeben werden kann.
-ist sichergestellt, dass die Elternbeziehung eindeutig für jeden Knoten angegeben werden kann.
-² Hinweis: Wenn Pa(𝑋 ) = ∅, ist die Zufallsvariable 𝑋 ein Wurzelknoten und 𝑃(𝑋 | ∅) =
+² Histinswicheiesr:gWesetnelnlt,Pdaa(s𝑋s d)ie=Elt∅er,nibsetzdieiehuZnugfaelilnsvdaeruiatibglefü𝑋r jedeiennWKnuortzeenlkannogteegneubenndw𝑃e(r𝑋den| ∅ka)n=n.
 𝑖 𝑖 𝑖
 𝑃(𝑋 ) gibt folglich die A-priori-Wahrscheinlichkeit an.
 𝑖
-𝑃(𝑋𝑖) gibt folglich die A-priori-Wahrscheinlichkeit an.
-³ Hinweis: Umgekehrt müssen aber nicht alle Unabhängigkeiten in 𝑃 auch in 𝐺 repräsentiert
+³ H𝑃(in𝑋w𝑖e)igs:ibUtmfoglgekliechhrdtime Aüs-spernioraib-WeranhircshcthaelilneliUchnkaebihtäanng.igkeiten in 𝑃 auch in 𝐺 repräsentiert
 sein.
 Abbildung 2.4: Bayessches Netz aus [Kol09, Kor10, Dar09] in Anlehnung an [Pea88]. Graph mit
 Knoten und zugeordneten bedingten Wahrscheinlichkeitsverteilungen. Es gilt:
@@ -904,8 +900,7 @@ stellten Index des Zeitschritts 0.
 Abbildung 2.6: Vereinfachte Darstellung eines zeitlichen Bayes-Netzes mit zwei Zeitscheiben.
 Dieses wird im englischsprachigen Raum auch als Temporal Bayesian Network
 (TBN) mit zwei Zeitscheiben oder kurz als 2TBN bezeichnet. Das 2TBN (oder
-auch: 𝐵 ) wird als Schablone für nachfolgende Zeitschritte 𝑡 eingesetzt. Aus
-→
+auch: 𝐵→) wird als Schablone für nachfolgende Zeitschritte 𝑡 eingesetzt. Aus
 Gründen der Übersichtlichkeit sind Knoten der Zufallsvariablen 𝑋𝑡−1 nicht ab-
 1∶4
 gebildet, denn es existiert in diesem Beispiel keine direkte Abhängigkeit zu
@@ -949,16 +944,13 @@ auf Seite 36 mit den jeweils beispielhaft dargestellten Ressourcen.
 Weitere Ressourcen können nach Bedarf hinzugefügt werden [Ben21]. Insge-
 samt können so Daten mittels FHIR auffindbar (engl. Findable), zugänglich
 ¹ Gesprochen: [ˈfaɪə] (engl. fire).
-¹ Gesprochen: [ˈfaɪə] (engl. fire).
-² Hinweis: Systeme werden in der Begriffswelt der Softwaretechnik als Ausschnitte der realen
+¹² GHeinspwreoicsh: eSny:st[eˈfmaɪəe]w(eenrdgel.nfirine).der Begriffswelt der Softwaretechnik als Ausschnitte der realen
 oder gedanklichen Welt gesehen, welche aus Komponenten, darauf vorhandenen Strukturen
 sowie einer Systemgrenze bestehen [Hes84, Bal10]. Letztere wird auch als Schnittstelle oder
 seltener als Nahtstelle bezeichnet (engl. interface).
-seltener als Nahtstelle bezeichnet (engl. interface).
-³ Hinweis: Der Anwendungsbereich umfasst Human- und Veterinärmedizin und hierin die me-
+³ Hseilntewneeirs:aDlseNraAhntswteelnledubnezgesibcehrneeicth(eunmglf.aisnstteHrfuacmea).n- und Veterinärmedizin und hierin die me-
 dizinische Versorgung selbst als auch Finanz- und Verwaltungsaspekte[Ben21, FHI21].
-dizinische Versorgung selbst als auch Finanz- und Verwaltungsaspekte[Ben21, FHI21].
-⁴ Hinweis: Die Zahl 7 ist eine Anspielung auf das Open Systems Interconnection (OSI) Schichten-
+⁴ Hdiizninwiescish:eDVieerZsaohrgl 7unisgt eseinlbesAt anlsspaieulcuhngFianuafndza-suOndpeVneSrwysatletmunsgIsnatseprceoknten[eBcetnio2n1,(OFHSII)2S1c]h. ichten-
 modell der International Organization for Standardization (ISO) – häufig kurz als ISO/OSI Mo-
 dell bezeichnet [Pro93]. Dieses bezieht sich auf die Verbindung (Interconnection) verschiedener
 Systeme. Hierin ist die Schicht 7 die sog. Anwendungsschicht, welche sich mit dem Austausch

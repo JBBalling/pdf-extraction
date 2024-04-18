@@ -1299,7 +1299,7 @@ dem mehrere abgeschlossene Systemteile (Container) durchaus auf dem
 4Es lassen sich auch parallele, getaktete verteilte Systeme konstruieren, diese bauen aber auf
 der grundlegenden Nebenläufigkeit des verteilten Systems auf.
 5
-5sid ee hr eg Aru bn scd hle ng ite tnd 2e .6n .4N
+5sideehregArubnscdhlengitetnd2e.6n.4N
 gleichen Hostsystem ausgeführt werden können, ist eine Kommunikation
 über gemeinsamen Hauptspeicher jedoch wieder ein interessanter Ansatz.
 Grundsätzlich würde es sich dabei streng genommen jedoch nicht mehr um

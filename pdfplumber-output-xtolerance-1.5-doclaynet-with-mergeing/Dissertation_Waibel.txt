@@ -99,7 +99,7 @@ lieren. Die Simulationsergebnisse werden durch entsprechende Korrosionstests an
 Probeblechen validiert.
 Eine Korrosionssimulation einer gesamten Fahrzeugkarosserie ist durch die naive
 Skalierung dieser Modelle allerdings nicht möglich, da dies rein rechnerisch einen
-Speicherbedarf in der Größenordnung von mehreren Exabyte ( = 1018 B = 109 GB)
+Speicherbedarf in der Größenordnung von mehreren Exabyte (= 1018 B = 109 GB)
 ergibt. Dieser immense Speicherbedarf und die damit verbundenen hohen Rechen-
 zeiten führen zu einer nicht durchführbaren, bzw. unpraktikablen Simulation.
 Durch die entwickelte Kantensegmentierung für Fahrzeugkarosserien wird der zu
@@ -120,8 +120,7 @@ benötigt rein rechnerisch einen Speicherbedarf von 495.9 1012 B bei entsprechen
 ·
 hoher Berechnungszeit und ist somit für die industrielle Anwendung nicht ein-
 setzbar. Wird zunächst die in dieser Arbeit entwickelte Kantensegmentierung ein-
-gesetzt, so ergeben sich einerseits für die Anwendung der FEM basierten
-32 h
+gesetzt, so ergeben sich einerseits 32 h für die Anwendung der FEM basierten
 Korrosionssimulation und andererseits 1.5 s für die Korrosionsprognose durch ein
 trainiertes NN.1
 1Auf einer Workstation mit Intel i7-8700K, 64GB RAM und NVIDIA Quadro P2000.
@@ -207,18 +206,13 @@ weise ähnliche Features zu Clustern zusammen. [13, 166]
 1.1.2.1 Notationen
 Die Modellparameter ω klassischer überwachter ML Methoden zur Klassifikation
 und Regression werden auf Basis der Trainingsmenge bestehend aus den Feature-
-daten RnT n
-f
-zusammen mit den Labels ZnT oder den Regressionswerten
-×
+daten RnT×nf zusammen mit den Labels ZnT oder den Regressionswerten
 F ∈ L ∈
-RnT ermittelt bzw. trainiert. Dabei bezeichnet
-n
-die Anzahl der verschie-
+RnT ermittelt bzw. trainiert. Dabei bezeichnet n
 f
+die Anzahl der verschie-
 R ∈
-denen Features und die Anzahl der Trainingsinstanzen. Jede Trainingsinstanz,
-n
+denen Features und n die Anzahl der Trainingsinstanzen. Jede Trainingsinstanz,
 T
 die den Featurevektor und das Label (f , (cid:96) ) , (cid:96) Z bzw. den Regressionswert
 j j
@@ -229,8 +223,7 @@ j j T
 volviert. Das trainierte Modell wird dann genutzt, um für neue unbekannte Tes-
 tinstanzen f das Label l bzw. den Wert r , i = 1, . . . , n zu bestimmen. Dabei
 i i i A
-bezeichnet die Anzahl der Testinstanzen.
-n
+bezeichnet n die Anzahl der Testinstanzen.
 A
 1.1.2.2 Feature Normalisierung
 Um die Leistung eines Modells zu steigern ist es oftmals von Vorteil die Features
@@ -242,8 +235,7 @@ des k-ten Features werden durch
 berechnet. Standardisierte Features werden mittels
 bestimmt, wobei die linear-transformierten Elemente f˜ des Trainingssets einen
 k
-Erwartungswert von und eine Standardabweichung von besitzen. [12, 191]
-0 1
+Erwartungswert von 0 und eine Standardabweichung von 1 besitzen. [12, 191]
 Eine nicht-lineare Skalierung ergibt sich durch die sogenannte Softmax-Normali-
 sierung [191] mit einem vorinitialisierten positiven Skalierungsfaktor β > 0
 1 Aktueller Kenntnisstand
@@ -267,11 +259,13 @@ nentenanalyse [88] wird der Datensatz auf sogenannte Hauptkomponenten redu-
 ziert, sodass der Informationsgehalt, also die Varianz des ursprünglichen Datensat-
 zes bestmöglich durch die wenigen Hauptkomponenten u , . . . , u approximiert
 1 nu
-wird. Für den Fall, dass gesetzt wird, so werden die originalen Featu-
-n = 1
+wird. Für den Fall, dass n = 1 gesetzt wird, so werden die originalen Featu-
 u
-res f Rn f , j = 1, . . . , n , die hier als Spaltenvektor interpretiert werden auf
-j T
+res f
+j
+Rnf , j = 1, . . . , n
+T
+, die hier als Spaltenvektor interpretiert werden auf
 ∈
 ut f R projiziert. Die Varianz der projizierten Daten wird durch ut Σu mit der
 1 j ∈ 1 1
@@ -300,7 +294,7 @@ chung (1.2) standardisiert, da die Varianz der Daten von der Skalierung der Fea-
 tures abhängt. [97]
 Die Anzahl n wird beispielsweise so gewählt, dass die kumulierte erklärte Vari-
 u
-anz (cid:80)nu λ / (cid:80)n f λ der n Hauptkomponenten einen vorgegebenen Anteil δ
+anz (cid:80)nu λ / (cid:80)nf λ der n Hauptkomponenten einen vorgegebenen Anteil δ
 k=1 k k=1 k u u
 übersteigt. [97]
 1 Aktueller Kenntnisstand
@@ -317,10 +311,10 @@ i j T
 (f , (cid:96) ) , j = 1, . . . , n bestimmt. Die Distanzen werden dann aufsteigend sortiert,
 j j T
 sodass d(f , f ) d(f , f ) . . . d(f , f ) gilt. Für ein binäres Klassifika-
-i j
-1 ≤
-i j
-2 ≤ ≤
+i j1
+≤
+i j2
+≤ ≤
 i jnT
 tionsproblem wird k ungerade gewählt, damit die Mehrheitsentscheidung zur
 nn
@@ -348,8 +342,7 @@ gression Trees (CART), also Bäume zur Klassifikation und Regression. Im Fal-
 le der Klassifikation werden die Feature-Label-Paare (f , (cid:96) ) , j = 1, . . . , n der
 j j T
 Trainingsmenge rekursiv in einem Top-down-Ansatz analysiert. In Bezug auf eine
-binäre Klassifikation werden für jeden Knoten des Baumes mit Elementen
-n
+binäre Klassifikation werden für jeden Knoten des Baumes mit n Elementen
 folgende Schritte durchgeführt: K K
 i) Das Element j im Knoten wird dem Kindknoten zugewiesen, falls für
 l
@@ -365,8 +358,7 @@ jk
 ∈ A A
 Untermenge aller Kategorien in darstellt. Für ein geordnetes Feature er-
 K
-geben sich insgesamt n 1 und für kategorische Features 2nK 1 1 mögliche
-−
+geben sich insgesamt n 1 und für kategorische Features 2nK−1 1 mögliche
 Aufteilungen.
 K− −
 ii) Für alle möglichen Zerlegungen des Knotens wird jeweils ein Impurity
@@ -374,9 +366,15 @@ K
 Gain
 n n
 berechnet. Die Impurity I kann beispiKelsweise durcKh den Gini-Index I( ) =
-1 (cid:80)1 p2 bestimmt werden, wobei p = 1 (cid:80)nK 1 ((cid:96) = g, j K ) die
-− g=0 g g nK j=1 j ∈ K
-relative Häufigkeit der Elemente mit Klasse g in bezeichnet. Falls ein
+1 (cid:80)1 p2 bestimmt werden, wobei p = 1 (cid:80)nK 1((cid:96) = g, j K ) die
+re− lativeg= H0 äug
+figkeit der Elemente mit
+Kg lassenK
+g
+inj=1 bej
+zeichnet.
+∈ FaK
+lls ein
 K
 Knoten nur Elemente der gleichen Klasse besitzt, so ist I ( ) = 0.
 pure pure
@@ -404,13 +402,11 @@ Entscheidungsregeln werden dann auf neue Testdaten angewandt.
 1 Aktueller Kenntnisstand
 Für eine Regression kann die Impurity durch die mittlere quadratische Abwei-
 chung (engl. Mean Squared Error (MSE)) I( ) = 1 (cid:80)nK (r r ) bestimmt
-werden, wobei dem Knoten der Mittelwert
-rK
-= 1
-n (cid:80)K nKj= r1 deµ r− darj
-in enthalte-
-K µ nK i=j j
-nen Regressionswerten zugewiesen wird. [22]
+werden, wobei dem Knoten der Mittelwert rK = 1 n (cid:80)K nKj= r1 deµ r− darj in enthalte-
+nen Regressionswerten
+zugewK
+iesen wird. [22]
+µ nK i=j j
 Die Normalisierung der Features hat keinen Einfluss auf die Ergebnisse, da die
 Schranken δ aus den Elementen im Knoten gewählt und somit entsprechend an-
 gepasst werden.
@@ -437,8 +433,7 @@ i i 0
 Σ 1 (µ µ ) und ω = 1ωt (µ + µ ) für P (l = 1) = P (l = 0). [49]
 − 0 − 1 0 2 0 1 i i
 Die von−Fisher [57] publi2zierte lineare Diskriminanzanalyse kommt ohne die Ein-
-schränkung aus und maximiert das Verhältnis der Varianz zwischen
-Σ = Σ = Σ
+schränkung Σ = Σ = Σ aus und maximiert das Verhältnis der Varianz zwischen
 0 1
 und innerhalb der Klassen durch ω = (Σ
 0
@@ -449,16 +444,15 @@ und innerhalb der Klassen durch ω = (Σ
 den eigentlichen Features die über Gleichung (1.2) standardisierten Features ver-
 wendet, so hat dies keinen Einfluss auf die Klassifizierung. (Anhang A)
 Eine Regularisierung der linearen bzw. der Fisher Diskriminanzanalyse kann durch
-realisiert werden, wobei (cid:0) Σ , Σ , . . . , Σ (cid:1)t die Diagonalelemente von Σ sind
-1,1 2,2 n ,n
-f f
+realisiert werden, wobei (cid:0)Σ , Σ , . . . , Σ (cid:1)t die Diagonalelemente von Σ sind
+1,1 2,2 nf,nf
 und I die Einheitsmatrix ist. [61, 76, 181]
-n
-f
+nf
 1.1.3.4 Support Vektor Maschine
 Vapnik [194] veröffentlicht eine sogenannte Support Vektor Maschine (SVM), die
-eine Hyperebene H = f Rn f ωtf+ω zur Trennung zweier linear separierbaren
+eine Hyperebene H = f Rnf ωtf+ω
 0
+zur Trennung zweier linear separierbaren
 { ∈ | }
 Mengen = f (cid:96) = g, j = 1, . . . , n , g = 1, 1 findet, die maximalen Abstand
 g j j T
@@ -492,13 +486,13 @@ den Support Vektoren f , f und f , f L− .L 1
 chung (1.14) eingeführt, sodass folgendes Minimierungsproblem
 mit einer Konstanten C entsteht. [13, 32, 195]
 ii) Finden einer nicht-linearen Entscheidungsfunktion:
-Durch das Abbilden der nicht-linear separierbaren Inputs f Rn f , j =
+Durch das Abbilden der nicht-linear separierbaren Inputs f
 j
+Rnf , j =
 ∈
 1, . . . , n in einen Raum Rm mithilfe einer passenden nicht-linearen Feature
 T
-Map Φ : Rn f Rm können linear separierbare Daten (Φ (f ) , (cid:96) ) erzeugt
-j j
+Map Φ : Rnf Rm können linear separierbare Daten (Φ (f j) , (cid:96) j) erzeugt
 →
 werden. Die Nebenbedingung in Gleichung (1.14) entspricht in Rm somit
 (cid:96) (ωtΦ (f ) + ω ) 1 und durch die Darstellung von ω als Linearkombina-
@@ -516,8 +510,7 @@ Mercer erfüllt. [32] Durch solche Kernel Funktionen K muss die Funktion Φ
 und die Dimension des Bildraums m nicht bekannt sein, solange das inne-
 re Produkt des entsprechenden Raums bekannt ist. [34, 191] Beispielsweise
 (cid:16) (cid:17)
-erfüllen radiale Basisfunktionen K(x, y) = exp (cid:107)x −y (cid:107) oder Polynome
-− σ2
+erfüllen radiale Basisfunktionen K(x, y) = exp −(cid:107)x σ−2y (cid:107) oder Polynome
 K(x, y) = (xty + 1)q , q > 0 den Satz von Mercer. [32, 195]
 Im Falle einer Regression werden die Daten (f , r ) , j = 1, . . . , n , f Rn, r R
 j i T j ∈ f j ∈
@@ -539,8 +532,9 @@ blems [53, 103, 152] der bestimmende Faktor bezüglich der Trainingszeit und des
 Speicherbedarfs.
 1.1.3.5 Neuronales Netz
 Multilayer Perzeptron Rosenblatt [162, 163] beschreibt ein Perzeptron, das li-
-near separierbare Daten trennen kann. Der Input f Rn f der Instanz i wird
+near separierbare Daten trennen kann. Der Input f
 i
+Rnf der Instanz i wird
 ∈
 der Klasse l 0, 1 zuweisen, indem eine lineare Trennebene zur Klassifikation
 i
@@ -592,8 +586,7 @@ Das Gewichtsupdate
 wird durch alle Trainingsinstanzen (f , (cid:96) ) , j = 1, . . . , n des Klassifizie-
 j j T
 rungsproblems bestimmt. Der Parameter ν > 0 beschreibt dabei die soge-
-nannte Lernrate. Der Aufwand zur Bestimmung des Updates liegt in
-(n )
+nannte Lernrate. Der Aufwand zur Bestimmung des Updates liegt in (n )
 T
 O
 und ist somit abhängig von der Größe des Trainingssets. [13, 71]
@@ -607,7 +600,7 @@ aktualisiert. Dieses Training besitzt somit sehr viele Gewichtsupdates. [13]
 iii) Mini-Batch:
 Aus dem Trainingsdatensatz werden n Elemente zu Mini-Batches zusam-
 b
-mengefasst und die Parameter werden durch ∆ω(τ) = ν (cid:80)n b ∆ω(τ) ak-
+mengefasst und die Parameter werden durch ∆ω(τ) = ν (cid:80)nb ∆ω(τ) ak-
 − j=1 j
 tualisiert. Dieser Ansatz aktualisiert die Gewichte seltener als das Online
 Training und die Anzahl der Updates kann unabhängig von der Trainings-
@@ -634,11 +627,9 @@ Generalisierung Durch die passende Wahl der Anzahl und Hierarchie der Neu-
 ronen sowie der Transferfunktionen kann gezeigt werden, dass jede stetige Funk-
 tion auf einer kompakten Eingangsmenge mit beliebiger Genauigkeit durch ein
 NN approximiert werden kann. [36, 63, 87, 151] Im Allgemeinen ist allerdings
-nicht bekannt, wie die Anzahl der Neuronen in den versteckten Schichten und
+nicht bekannt, wie die Anzahl der Neuronen n in den versteckten Schichten und
 n
-n
-die Netztiefe optimal bezüglich des zu analysierenden Problems und den zur
-n
+die Netztiefe n optimal bezüglich des zu analysierenden Problems und den zur
 l
 Verfügung gestellten Trainingsdaten zu wählen sind. Dennoch zeigt dieses Resul-
 tat, dass zumindest theoretisch eine beliebig genaue Anpassung an entsprechende
@@ -717,14 +708,16 @@ Waibel et al. [200] verwenden die Verzögerung auch zwischen den verstecken
 Schichten des feed-forward Netzes.
 ii) Nonlinear Autoregressive Exogenous Model (NARX):
 Leontaritis und Billings [120, 121] beschreiben ein rekurrentes NN, das so-
-wohl zeitverzögerte Inputs als auch Outputs als Eingabe in das Netz
-n n
+wohl n zeitverzögerte Inputs als auch n Outputs als Eingabe in das Netz
 I O
 verwenden. Der Output zum Zeitpunkt z des NNs wird also durch
 k
 bestimmt. Werden die bekannten Regressionwerte r(z ), . . . , r(z ) der
-k 1 k nO
-Trainingsdaten statt der Netzvorhersagen benutzt, so ha−ndelt es sich− um ein
+Trainingsdaten statt der Netzvorhersagen benutzt, so
+hk a−n1
+delt es
+sick h−n uO
+m ein
 reines feed-forward Netz.
 Hochreiter und Schmidhuber [85] beschreiben ein rekurrentes Netzwerk mit
 speziellen Netzeinheiten, wodurch Langzeitabhängigkeiten gelernt werden.
@@ -746,8 +739,7 @@ dungsstümpfe [174, 193] verwendet werden. Entscheidungsstümpfe treffen Ent-
 scheidungen der Form f δ und können somit als Entscheidungsbäume der
 ik k
 ≤
-Tiefe betrachtet werden. Auf diese Weise wird durch die Entscheidungsstümpfe
-1
+Tiefe 1 betrachtet werden. Auf diese Weise wird durch die Entscheidungsstümpfe
 die Relevanz der Features bestimmt. [193]
 1.1.4 Bewertungsmetriken
 1.1.4.1 Klassifikation
@@ -815,11 +807,9 @@ vertreten. [19]
 1.1.5 Hyperparameter Optimierung
 Die oben beschriebenen Methoden der KI besitzen verschiedene Hyperparameter,
 die die Ergebnisse der Methoden signifikant beeinflussen können. Beispielsweise
-kann für ein NN die Anzahl der Neuronen pro Schicht oder die Anzahl der
+kann für ein NN die Anzahl der Neuronen pro Schicht n oder die Anzahl der
 n
-n
-Schichten variiert werden. Da die optimale Wahl der Hyperparameter im All-
-n
+Schichten n variiert werden. Da die optimale Wahl der Hyperparameter im All-
 l
 gemeinen nicht a priori bekannt ist, wird oftmals eine Rastersuche oder eine ma-
 nuelle Suche zur Hyperparameter Optimierung verwendet. Dazu werden im ersten

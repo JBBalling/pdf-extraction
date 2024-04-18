@@ -382,8 +382,7 @@ Algorithmus 1 (1 + 1)-Evolutionsstrategie nach Rechenbergs 1-Regel
 10: end if
 11: end while
 Algorithmus 2 (µ, λ)-Evolutionsstrategie mit Kovarianzmatrixadaption
-1: Parameter µ, λ, η, w , ..., w , m, C
-1:µ µ:µ
+1: Parameter µ, λ, η, w 1:µ, ..., w µ:µ, m, C
 2: while ¬ Abbruchkriterium do
 3: for i ∈ {1, ..., λ} do
 2.2 Tiefe künstliche neuronale Netzwerke
@@ -1179,19 +1178,14 @@ Folgewert q zur Zielvorgabe q addiert. Pseudocode 4 skizziert einen solchen Abla
 2 Ziel
 des Q-Lernschrittes:
 Algorithmus 4 Q-Lernschritt
-1: procedure Q-Lernen(s , a, s , r, e)
-t t+1
+1: procedure Q-Lernen(s t, a, s t+1, r, e)
 2: Parametervektor Θ
 3: Lernrate η
 4: Diskontfaktor γ
-5: q ← Ausgabe(Θ|s )
-1 t
-6: q ← Maximum(Ausgabe(Θ|s ))
-2 t+1
-7: q (s , a) ← r + γ(1 − e)q
-Ziel t 2
-8: L = Optimierungskriterium(q , q )
-1 Ziel
+5: q 1 ← Ausgabe(Θ|s t)
+6: q 2 ← Maximum(Ausgabe(Θ|s t+1))
+7: q Ziel(s t, a) ← r + γ(1 − e)q 2
+8: L = Optimierungskriterium(q 1, q Ziel)
 9: ∆Θ = dL
 dΘ
 10: Θ = Θ + η∆Θ
@@ -1463,8 +1457,7 @@ gestaltete Zwischenschichten; lediglich das rekurrente Faltungsnetzwerk erweiter
 Eingabeschicht um eine weitere Dimension für die n zu korrelierenden Basiswerte.
 Algorithmus 7 Simulierte Marktlogik
 1: procedure Belohnungsfunktion R(Aktion a)
-2: Take-Profit, Stop-Loss Faktoren d ≥ 0, d ≤ 0
-profit loss
+2: Take-Profit, Stop-Loss Faktoren d profit ≥ 0, d loss ≤ 0
 3: Historische Handelsdaten X
 4: Sequenzlänge l
 5: r ← 0

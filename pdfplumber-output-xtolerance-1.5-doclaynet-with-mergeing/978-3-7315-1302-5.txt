@@ -1023,8 +1023,7 @@ optisch isotrop sein [Bor19], wohingegen isotrope Medien stets auch optisch
 isotrop sind. Treten in einem Material dielektrische Verluste durch gebundene
 Ladungsträger auf, so ist 𝜖̃ eine komplexe oder negative Zahl. Ist 𝜖̃ komplex
 v
-¹ ϵ̃ (𝜔) kann aufgrund der Kramers-Kronig-Beziehungen allerdings nur in einem begrenzten
-v
+¹ ϵ̃v(𝜔) kann aufgrund der Kramers-Kronig-Beziehungen allerdings nur in einem begrenzten
 Wellenlängenband reell sein [Fuj07].
 oder negativ, werden die Verluste durch freie oder durch gebundene Ladungs-
 träger hervorgerufen [Jac06].

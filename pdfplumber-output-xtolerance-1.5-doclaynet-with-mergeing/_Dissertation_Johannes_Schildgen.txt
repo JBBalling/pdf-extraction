@@ -162,8 +162,7 @@ enthält -, sind die in verteilten Datenbanken sehr kostspieligen Verbun-
 doperationen nicht mehr vonnöten. In NoSQL-Datenbanken findet man
 dementsprechend nicht nur spezielle Datenmodelle, sondern auch neuar-
 tige und meist sehr schlichte Anfragemechanismen.
-tige und meist sehr schlichte Anfragemechanismen.
-Es zeigt sich, dass die Heterogenität, die in der Datenbankforschung be-
+tigeEusnzdeimgtesiiscths,edharssscdhileicHhteeteArnogfreangietämt,edchieainnisdmerenD.atenbankforschung be-
 reits seit langer Zeit eine große Herausforderung bei der Datenintegration
 und -migration darstellt [LN07], im Zeitalter von NoSQL auf neue Proble-
 me stößt. Dazu zählt auch der Trend zur polyglotten Persistenz [SF12]. So-
@@ -294,8 +293,7 @@ Sprache NotaQL, wie sie aktuell ist. Zum einen bedeutet das, dass weitere
 Iterationen die Sprache NotaQL weiter verändern, zum anderen kann bei
 der Entwicklung neuer Sprachen auf die hier vorgestellten Ansätze zurück-
 gegriffen werden.
-gegriffen werden.
-Um Missverständnisse zu vermeiden, soll die folgende Aufzählung The-
+gegUrifmfeMn wissevrderesnt.ändnisse zu vermeiden, soll die folgende Aufzählung The-
 men zeigen, die zwar mit der vorliegenden Arbeit verwandt sind, jedoch
 als orthogonal oder außerhalb des Fokus angesehen werden:
 • Performanz: Die Performanz hängt vom verwendeten Datenbanksys-
@@ -840,15 +838,11 @@ Verfahren eignen sich gut, wenn die Änderungen seit der letzten Durch-
 führung gering sind, andere, wenn sich viel geändert hat. Wenn wir von
 Änderungen sprechen, teilen wir diese in zwei Arten auf, und zwar Einfü-
 gungen und Löschungen. Sei B die Datenbasis, auf der die Berechnung er-
-folgt. B(t ) bezeichnet den aktuellen Zustand und B(t ) den Zustand der
-1 0
-Basisdaten zum Zeitpunkt t der vorherigen Berechnung.
-0
-Einfügungen ∆ =B(t ) B(t )
-1 0
+folgt. B(t 1) bezeichnet den aktuellen Zustand und B(t 0) den Zustand der
+Basisdaten zum Zeitpunkt t 0 der vorherigen Berechnung.
+Einfügungen ∆ =B(t 1) B(t 0)
 −
-Löschungen =B(t ) B(t )
-0 1
+Löschungen =B(t 0) B(t 1)
 ∇ −
 Einfügungen sind also diejenigen Datensätze, die seit der vorherigen Be-
 rechnung neu hinzugekommen sind, Löschungen diejenigen, die seitdem
@@ -893,8 +887,7 @@ griff auf den neuen Stand der Daten, nicht aber auf den Stand zum Zeit-
 punkt der vorherigen Berechnung. Das liegt daran, dass beim Einsatz von
 Audit-Columns keine automatische Historie vorheriger Attributwerte an-
 gelegt wird.
-gelegt wird.
-Das folgende Beispiel zeigt mehrere Varianten, wie Audit-Columns ein-
+geleDgat swfiorldg.ende Beispiel zeigt mehrere Varianten, wie Audit-Columns ein-
 gesetzt werden können, um Änderungen an Datensätzen zu erfassen:
 { _id: 1, name: "Ute", inserted: 1451606400 }
 { _id: 2, name: "Jörg", inserted: 1451606400,
@@ -1156,52 +1149,43 @@ len lesend zugegriffen werden. Zum einen auf die eigentlichen Basisdaten,
 auf denen auch die Änderungserfassung erfolgt, zum anderen aber auch
 auf das Ergebnis der vorherigen Berechnung. Das Ziel der inkrementellen
 Berechnung soll sein, dass das Resultat äquivalent zu dem einer vollstän-
-digen Berechnung ist. Betrachten wir die Basisdatensätze a , . . . , a , die be-
-1 j
-reits bei einer vorherigen Berechnung das Ergebnis f(a , . . . , a ) erzeugt ha-
-1 j
-ben. Nach der Löschung von a , . . . , a und der Einfügung von a , . . . , a
-i j j+1 k
+digen Berechnung ist. Betrachten wir die Basisdatensätze a 1, . . . , aj, die be-
+reits bei einer vorherigen Berechnung das Ergebnis f(a 1, . . . , aj) erzeugt ha-
+ben. Nach der Löschung von ai, . . . , aj und der Einfügung von aj+1, . . . , a k
 gilt die inkrementelle Berechnung unter der Operation als korrekt, genau
 ◦
 dann wenn gilt:
-f(a 1, . . . , a j) f∗(a i, . . . , a j) f(a j+1, . . . , a k) = f(a 1, . . . , a i−1, a j+1, . . . , a k)
+f(a 1, . . . , aj) f∗(ai, . . . , aj) f(aj+1, . . . , a k) = f(a 1, . . . , ai−1, aj+1, . . . , a k)
 ◦ ◦
 Es fällt auf, dass eine Funktion f∗ vonnöten ist, um eine zu f inverse Be-
 rechnung auszuführen, also um die Auswirkungen einer Berechnung wie-
-∗
-der zu kompensieren. Es muss gelten f f = e, wobei e das neutrale Ele-
+der zu kompensieren. Es muss gelten f f∗ = e, wobei e das neutrale Ele-
 ◦
 ment bezüglich ist. Des Weiteren ist Assoziativität und Kommutativität
-◦ ∗
-von vonnöten, sodass , f und e auf dem Wertebereich von f eine abel-
+von vonnöten,◦ sodass , f∗ und e auf dem Wertebereich von f eine abel-
 ◦ ◦
 sche Gruppe bilden. Die genaue Definition der Operationen hängt von der
 Art der Berechnung ab. Einige Beispiele:
 • Keine Aggregation: Die Berechnung bestehe lediglich aus einer Projek-
-tion. Aus jedem Personendatensatz a soll das Geburtsjahr y = f(a )
-j j j
+tion. Aus jedem Personendatensatz aj soll das Geburtsjahr yj = f(aj)
 extrahiert werden. Da keine Aggregation erfolgt, ist das Ergebnis eine
-Multimenge von Geburtsjahren y , . . . , y = f(a , . . . , a ). Bei der
-1 j 1 j
+Multimenge von Geburtsjahren y 1, . . . , yj = f(a 1, . . . , aj). Bei der
 { }
 Operation handelt es sich um die Multimengen-Vereinigung , die
-◦∗ ⊎
-Funktion f fungiert wie f, jedoch mit negativen Häufigkeiten. Das
-∗
-neutrale Element ist die leere Multimenge: f f = = e.
+Funktion
+f◦∗
+fungiert wie f, jedoch mit negativen
+Häufigkeiten⊎
+. Das
+neutrale Element ist die leere Multimenge: f f∗ = = e.
 ◦ ∅
-• Summenbildung: Ist f(a , . . . , a ) = i, handelt es sich bei
-1 j
-∗
-i∈a1,...,aj
-◦
-um die Addition + und es gilt f =P1 f.
+• S uu mm dm ieen Abi dld du itn ig o: nIs +t uf n(a d1, e. s. g. i, la tj f) ∗= =P1i∈a f1, ....,aj i, handelt es sich bei ◦
 − ·
-• Zählen: f(a , . . . , a ) = 1 ist ein Spezialfall der Summe, so-
-1 j i∈a1,...,aj
-∗
-mit ist auch hier die APddition und f = 1 f.
+• Z mä ih tl ie sn t: af u( ca h1, h. i. e. r, aj d) ie=
+APddi∈ ita i1 o,. n..,a uj
+n1 dis ft ∗e =in Sp 1ez fia
+.
+lfall der Summe, so-
 ◦ − ·
 Weitere Funktionen wie die Durchschnittsberechnung oder die Summen-
 bildung im Anschluss an eine Projektion unter der Bildung von Gruppie-
@@ -1209,8 +1193,9 @@ rungen stellen Spezialformen der drei genannten Berechnungen dar und
 können durch ihre Kombination dargestellt werden. Dabei gelten die im
 vorherigen Abschnitt genannten Einschränkungen. Hier ist nochmals zu
 erwähnen, dass es zur Berechnung von Minima und Maxima nicht ohne
-∗
-Weiteres möglich ist, f zu definieren.
+Weiteres möglich ist,
+f∗
+zu definieren.
 Bei der eigentlichen Berechnung eines Transformationsergebnisses un-
 ter Verwendung der sich seit der letzten Berechnung geänderten Basisda-
 ten sowie des vorherigen Ergebnisses gibt es zwei Alternativen, wann das

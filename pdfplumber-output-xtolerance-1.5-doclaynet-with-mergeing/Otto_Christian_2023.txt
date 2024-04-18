@@ -446,7 +446,7 @@ editing
 Videos Using Word Embeddings and Keyphrase Extraction”. In: Digital Libraries for
 Open Knowledge - 23rd International Conference on Theory and Practice of Digital Libraries,
 TPDL 2019, Oslo, Norway, September 9-12, 2019, Proceedings. Vol. 11799. Lecture Notes
-in Computer Science. Springer, 2019, pp. 327–335. doi : 10.1007/978-3-030-30760-
+in Computer Science. Springer, 2019, pp. 327–335. doi: 10.1007/978-3-030-30760-
 8_28
 Abstract: Effective learning with audiovisual content depends on many factors. Be-
 sides the quality of the learning resource’s content, it is essential to discover the most
@@ -479,7 +479,7 @@ Knowledge Gain During Web Search Based on Multimedia Resource Consumption“ [20
 tigating Correlations of Automatically Extracted Multimodal Features and Lecture
 Video Quality”. In: Proceedings of the 1st International Workshop on Search as Learning
 with Multimedia Information. SALMM ’19. Nice, France: Association for Computing
-Machinery, 2019, pp. 11–19. isbn : 9781450369190. doi : 10.1145/3347451.3356731
+Machinery, 2019, pp. 11–19. isbn: 9781450369190. doi: 10.1145/3347451.3356731
 Abstract: Ranking and recommendation of multimedia content such as videos is
 usually realized with respect to the relevance to a user query. However, for lecture
 videos and MOOC it is not only required to retrieve relevant videos, but particularly
@@ -503,8 +503,7 @@ Education. Posters and Late Breaking Results, Workshops and Tutorials, Industry 
 Innovation Tracks, Practitioners’ and Doctoral Consortium - 23rd International Confer-
 ence, AIED 2022, Durham, UK, July 27-31, 2022, Proceedings, Part II. ed. by Maria
 Mercedes T. Rodrigo, Noburu Matsuda, Alexandra I. Cristea, and Vania Dimitrova.
-doi
-Vol. 13356. Lecture Notes in Computer Science. Springer, 2022, pp. 458–462. :
+Vol. 13356. Lecture Notes in Computer Science. Springer, 2022, pp. 458–462. doi:
 10.1007/978-3-031-11647-6_92
 Abstract: Informal learning on the Web using search engines as well as more
 structured learning on MOOC platforms have become very popular. However,
@@ -543,7 +542,7 @@ Hoppe, Peter Holtz, Yvonne Kammerer, Stefan Dietze, and Ralph Ewerth. “Predict
 Knowledge Gain During Web Search Based on Multimedia Resource Consumption”.
 In: Artificial Intelligence in Education - 22nd International Conference, AIED 2021, Utrecht,
 The Netherlands, June 14-18, 2021, Proceedings, Part I. vol. 12748. Lecture Notes in
-Computer Science. Springer, 2021, pp. 318–330. doi : 10.1007/978-3-030-78292-4
+Computer Science. Springer, 2021, pp. 318–330. doi: 10.1007/978-3-030-78292-4
 _26
 Abstract: In informal learning scenarios the popularity of multimedia content, such
 as video tutorials or lectures, has significantly increased. Yet, the users’ interactions,
@@ -575,10 +574,10 @@ standing, Categorizing and Predicting Semantic Image-Text Relations”. In: Proc
 ings of the 2019 on International Conference on Multimedia Retrieval, ICMR 2019, Ottawa,
 ON, Canada, June 10-13, 2019. Ed. by Abdulmotaleb El-Saddik, Alberto Del Bimbo,
 Zhongfei Zhang, Alexander G. Hauptmann, K. Selçuk Candan, Marco Bertini, Lexing
-Xie, and Xiao-Yong Wei. ACM, 2019, pp. 168–176. doi : 10.1145/3323873.3325049
+Xie, and Xiao-Yong Wei. ACM, 2019, pp. 168–176. doi: 10.1145/3323873.3325049
 [199] Christian Otto, Matthias Springstein, Avishek Anand, and Ralph Ewerth. “Character-
 ization and classification of semantic image-text relations”. In: International Journal of
-Multimedia Information Retrieval 9.1 (2020), pp. 31–45. doi : 10.1007/s13735-019-001
+Multimedia Information Retrieval 9.1 (2020), pp. 31–45. doi: 10.1007/s13735-019-001
 87-6
 Abstract: The beneficial, complementary nature of visual and textual information to
 convey information is widely known, for example, in entertainment, news, advertise-
@@ -605,24 +604,23 @@ topic, and will therefore not be covered in this thesis:
 - Predicting the Relative Abstractness Level of Image and Text”. In: Advances in
 Information Retrieval - 41st European Conference on IR Research, ECIR 2019, Cologne,
 Germany, April 14-18, 2019, Proceedings, Part I. vol. 11437. Lecture Notes in Computer
-Science. Springer, 2019, pp. 711–725. doi : 10.1007/978-3-030-15712-8_46
+Science. Springer, 2019, pp. 711–725. doi: 10.1007/978-3-030-15712-8_46
 [117] Johannes von Hoyer, Anett Hoppe, Yvonne Kammerer, Christian Otto, Georg Pardi,
 Markus Rokicki, Ran Yu, Stefan Dietze, Ralph Ewerth, and Peter Holtz. “The
 Search as Learning Spaceship: Toward a Comprehensive Model of Psychological
 and Technological Facets of Search as Learning”. In: Frontiers in Psychology 13 (Mar.
-2022). doi : 10.3389/fpsyg.2022.827748
+2022). doi: 10.3389/fpsyg.2022.827748
 [70] Ralph Ewerth, Christian Otto, and Eric Müller-Budack. “Computational Approaches
-isbn
-for the Interpretation of Image-Text Relations”. In: Oct. 2021, pp. 109–138. :
-9783110725001. doi : 10.1515/9783110725001-005
+for the Interpretation of Image-Text Relations”. In: Oct. 2021, pp. 109–138. isbn:
+9783110725001. doi: 10.1515/9783110725001-005
 [188] Markus Mühling, Nikolaus Korfhage, Eric Müller, Christian Otto, Matthias Spring-
 stein, Thomas Langelage, Uli Veith, Ralph Ewerth, and Bernd Freisleben. “Deep
 learning for content-based video retrieval in film and television production”. In:
-vol. 76. 21. 2017, pp. 22169–22194. doi : 10.1007/s11042-017-4962-9
+vol. 76. 21. 2017, pp. 22169–22194. doi: 10.1007/s11042-017-4962-9
 [189] Eric Müller, Christian Otto, and Ralph Ewerth. “Semi-supervised Identification of
 Rarely Appearing Persons in Video by Correcting Weak Labels”. In: Proceedings of
 the 2016 ACM on International Conference on Multimedia Retrieval, ICMR 2016, New
-York, New York, USA, June 6-9, 2016. ACM, 2016, pp. 381–384. doi : 10.1145/2911996
+York, New York, USA, June 6-9, 2016. ACM, 2016, pp. 381–384. doi: 10.1145/2911996
 .2912073
 1.6 Organization of this Thesis
 Chapter 1 introduces the aspects and challenges associated with multimedia learning
@@ -790,9 +788,7 @@ xh hh
 a bias b , and a sigmoid function are part of the equation.
 h
 2.2: This equation computes the candidate hidden state depending on the
-input X
-t
-and the information retained from H t−1, which is decided by R t.
+input Xt and the information retained from H t−1, which is decided by Rt.
 Finally, the Update gate Z determines to what extent the candidate hidden state (or the
 t
 new information given by the current input X ) influences the already existing memory
@@ -801,15 +797,19 @@ from all the previously seen tokens H t−1. Similar to the Reset gate, due to t
 activation, a value between 0 and 1 is calculated, see Equation 2.4. This value enables the
 computation of the output of the GRU, which is a weighted combination of the previous
 memory H t−1 and the candidate hidden state H˜ t according to Equation 2.5.
-Z = σ(X W + H W + b )
-t t xz t−1 hz z
+Z
+t
+= σ(X tW
+xz
++ H t−1W
+hz
++ b z)
 2.3: This equation computes the a value between [0,1] to determine to which
 extent new information influences the already established memory of the
 network.
 2.4: This equation computes output of the GRU combining the previous
 memory H t−1 and the information from the current token H˜ t according to
-the value of the Update gate Z .
-t
+the value of the Update gate Zt.
 In the experiments in Section 4 we utilize a bidirectional GRU to encode our textual
 inputs forwards and backward at the same time and concatenate the outputs. Thus, giving
 the network two perspectives on the sentence(s) to capture their semantics even better.

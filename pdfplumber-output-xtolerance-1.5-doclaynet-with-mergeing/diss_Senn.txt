@@ -303,7 +303,7 @@ teiligte in den Projektdokumenten nicht tiefergreifend hinterfragt wird, wird be
 Anwendung der Modellierung oft fälschlicherweise auch von einem allgemeinen ausrei-
 chenden Kenntnisstand der Projektbeteiligten in der Modellierung ausgegangen.
 Ein gerne gesagter Satz, ohne die Realität wirklich abzufragen, lautet: „Unsere Leute
-können alle UML7 bzw. BPMN8 , die Modellierung ist kein Problem.“ Die Ergänzung,
+können alle UML7 bzw. BPMN8, die Modellierung ist kein Problem.“ Die Ergänzung,
 dass die genannten Personen dieses u.U. doch vor kurzem erst auf einer Schulung kennen
 gelernt haben, zeigt die fehlende Sensibilität für dieses Thema.
 Theorie und Realität treffen hier sehr oft konträr aufeinander. Die eigentlichen Voraus-
@@ -489,13 +489,7 @@ weise17, die in der Industrie eine anerkannte und gelebte Vorgehensweise zur Qua
 16
 16siehe hierzu Kapitel 7.2 Lineares Vorgehen
 17
-17s Si ie eh he
-e
-h hi ie er rz zu
-u
-K Ka ap pi it te el
-l
-7 5.
+17sSiieehhee hhiieerrzzuu KKaappiitteell 75.
 verbesserung ist, eine Verbesserung von grafischen Modellen in SOA-Projekten erreicht
 werden kann.
 Im Bereich der Realisierung existieren bereits einige Ansätze der Qualitätsverbesserungen
@@ -585,9 +579,9 @@ mit ihren Messmethoden und mögliche gewünschte Verbesserungen analysiert.
 19SOA wird im Rahmen dieser Arbeit im Kontext von IT-Landschaften zur Bereitstellung geforderter
 Services, ungeachtet einer möglichen technischen Realisierung, betrachtet.
 20
-e2r0v zic .Bes, Wu an sg se ea rfc ah lt le (t sie ei hn eer Km aö pg .l 7ic .2h )e
+e2r0vzic.Bes,Wuansgseearfcahltle(tsieeihneerKmaöpg.l7ic.2h)e
 21
-21z z. .B B.W Sca rs us merfa (sll ie( hs eie Khe apK .a 7p .. 3)7
+21zz..BB.WScarsusmerfa(sllie(hseieKheapK.a7p..3)7
 • Entwicklung eines qualitätsgestützten Vorgehensmodells auf Basis von Six Sigma,
 dass die Lösungswege zur Reduzierung bzw. Beseitigung von Modellierungsdefiziten
 abbildet.
