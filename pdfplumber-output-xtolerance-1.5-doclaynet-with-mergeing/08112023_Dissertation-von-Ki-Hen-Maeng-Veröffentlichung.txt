@@ -186,7 +186,7 @@ verfolgt.
 
 
 Es fällt besonders auf, dass in der Chronik über Davids Tod mit tm'Y"w:, anders als im DtrG mit
-FOOTNOTE:wyt_'boa]-~[i PN bK;îv.YwI : berichtet wird. Die Formel tm'Y"w: verwendet der Deuteronomist üblicherweise
+wyt_'boa]-~[i PN bK;îv.YwI : berichtet wird. Die Formel tm'Y"w: verwendet der Deuteronomist üblicherweise
 nicht für den Bericht über den Tod eines Königs, außer wenn ein König unnatürlich gestorben
 ist. Es soll untersucht werden, warum der Chronist bei David von dieser dtr. Regel abweicht
 (1.Chr 29,28).
@@ -228,7 +228,7 @@ In der Forschung werden verschiedene Erklärungen der Divergenzen vertreten.
 und R. W. Klein (2012) als historische Erweiterungen bzw. Verbesserungen verstanden.
 Für W. Rudolph werfen sie als Sondergut des Chronisten die Frage nach der Geschichtlichkeit
 auf. Er behauptet, dass der Chronist über den Tod und die Bestattung einer Person offenbar aus
-FOOTNOTE:besserer Sachkenntnis berichtet.2
+besserer Sachkenntnis berichtet.$$$2$$$
 
 
 J. M. Myers hält die chr. Angaben ebenfalls für authentisch und führt sie auf eine vom DtrG
@@ -252,7 +252,7 @@ Joschijas im Krieg und seine Bestattung werden lediglich kurz dargestellt (23,30
 Gegensatz dazu berichtet der Chronist gern Einzelheiten über ihren Tod und ihre Bestattung,
 
 
-FOOTNOTE:2 W. Rudolph, Chronikbücher, S.266 Anm. 5. und S.249.267.333.
+FOOTNOTE:2 W. Rudolph, Chronikbücher, S.$$$266$$$ Anm. 5. und S.249.267.333.
 
 
 FOOTNOTE:4 JW. M. J.o Mhnysetorsn,e I,I 1
@@ -275,7 +275,7 @@ Joasch und Ahas berichtet er in gleicher Weise (24,25; 28,27). Diese drei König
 dem Chronisten am stärksten negativ beurteilt, so dass ihnen wohl nach seiner Meinung keine
 Bestattung in den Gräbern der Könige gebühren kann. Im Gegensatz dazu werden die drei
 König Asa, Hiskija und Joschija von dem Chronisten ausdrücklich an der gleichen Stelle mit
-der Angabe ויתָ֑ ָּ ֹבאֲ תוֹר֣ בְּ קִּ בְּ רבֵ֖ קָּ יִּ וַ bestattet ($$$16$$$,14; $$$32$$$,33; $$$35$$$,24), weil sie gottwohlgefällig gelebt
+der Angabe ויתָ֑ ָּ ֹבאֲ תוֹר֣ בְּ קִּ בְּ רבֵ֖ קָּ יִּ וַ bestattet (16,14; 32,33; 35,24), weil sie gottwohlgefällig gelebt
 haben und vom Volk nach ihrem Tod geehrt wurden. So katalogisiert der Chronist die
 davidischen Könige in gute und schlechte.
 
@@ -315,7 +315,7 @@ kein Feuer zu Ehren Jorams nach dessen Tod entzündet hat, und dass sein Grab au
 abseits von den Gräbern der Könige lag, eigene Hinzufügungen darstellen oder auf
 zeitgenossische Berichte über die negative Einstellung zu seiner Regierung zurückgehen. Er
 sieht besonders im Bestattungsort einer Person die finale Bewertung ihres Lebens durch JHWH
-(2.Chr 21,20; 22,9 u.a).$$$7$$$
+(2.Chr 21,20; 22,9 u.a).7
 
 
 J. Becker argumentiert in seinem Kommentar zu der chr. Darstellung Jorams, dass die Frage,
@@ -397,17 +397,17 @@ Gestaltungsprinzipien zu erklären. Dabei wird den kultischen Elementen bei den 
 3.1.1 Die deutronomistische Darstellung von Tod und Bestattung der davidischen Könige
 
 
-FOOTNOTE:Die Formel wyt'b_ oa]-~[i PN bK;îv.YIw: verwendet der Deuteronomist in dem Bericht über einen
+Die Formel wyt'b_ oa]-~[i PN bK;îv.YIw: verwendet der Deuteronomist in dem Bericht über einen
 natürlichen Tod der Könige, z.B. bei David und Salomo. Hingegen benutzt er eine andere
 Formulierung bei einem ungewöhnlichen Tod: tm'Y"ßw: oder WhtuÞmiy>w: (bzw. %lM, ,Þh-; ta, WtymiîY"w:), so bei Ahas,
 Joasch, Amazja, Amon, Joschija und Joahas.
 
 
-FOOTNOTE:Die Formel wyt'b_ oa]-~[i PN bK;îv.YIw: wird nur für Könige verwendet,12 nicht für andere bedeutende
+Die Formel wyt'b_ oa]-~[i PN bK;îv.YIw: wird nur für Könige verwendet,$$$12$$$ nicht für andere bedeutende
 Personen. Deutlich wird dies in 1.Kön 11,21: „Hadad aber hatte in Ägypten gehört, dass David
 sich zu seinen Vorfahren gelegt hatte (wyt'bê oa]-~[i ‘dwID" bk;Ûv'-yKi) und dass Joab, der Heerführer,
 gestorben war (ab'C_ 'h;-rf:) ba'Aä y tmeÞ-ykiw>) ... “ Selbst der Tod des Elischa wird nur mit twm umschrieben:
-WhrU_B.q.YIw:) [v'yÞ lia/ tm'Y"ïw: ($$$2$$$.Kön $$$13$$$,20a).
+WhrU_B.q.YIw:) [v'yÞ lia/ tm'Y"ïw: (2.Kön 13,20a).
 
 
 Was die Bestattung eines davidischen Königs betrifft, wird diese in wenigen Worten
@@ -424,7 +424,7 @@ FOOTNOTE:12 Diese Formulierung erscheint auch in der Erzählung über Jakob und 
 aber sie wird nicht in dem Bericht über ihren Tod selber verwendet (Gen 47,30; Dtn 31,16).
 
 
-FOOTNOTE:Bei den Königen des Nordreichs wird die Formel wyt'b_ oa]-~[i PN bK;îv.YIw: in dem Bericht über den
+Bei den Königen des Nordreichs wird die Formel wyt'b_ oa]-~[i PN bK;îv.YIw: in dem Bericht über den
 natürlichen Tod des jeweiligen Königs verwendet, so bei Jerobeam I., Bascha, Omri, Jehu,
 Joahas, Joasch, Jerobeam II. und Menachem. Eine Ausnahme gibt es bei Ahab, für dessen Tod
 diese Formel verwendet wird, obwohl er laut biblischer Erzählung eines ungewöhnlichen Todes
@@ -433,14 +433,14 @@ gestorben ist. Auffälligerweise wird Ahabs Tod zweimal berichtet: Der eine Beri
 solcher nicht in den Abschluss passen, und der andere im Abschluss, wo der Tod lediglich mit
 
 
-FOOTNOTE:der üblichen Formel wyt'b_ oa]-~[i PN bK;îv.YIw:. registriert wird (V.40a).13
+der üblichen Formel wyt'b_ oa]-~[i PN bK;îv.YIw:. registriert wird (V.40a).13
 Im Nordreich gab es 19 Könige. Achtmal ereignete sich eine Verschwörung. Nur neun Könige
 konnten ihren Thron einem Sohn überlassen.$$$14$$$ Bemerkenswerterweise erscheint nur bei diesen
-FOOTNOTE:Königen die Formel wyt'b_ oa]-~[i PN bK;îv.YIw:. Wahrscheinlich wird dadurch die Nachfolge eng mit
+Königen die Formel wyt'b_ oa]-~[i PN bK;îv.YIw:. Wahrscheinlich wird dadurch die Nachfolge eng mit
 ihrem Sterben verbunden und somit eine Kontinuität in der Dynastie angezeigt. Hingegen wird
 bei dem ungewöhnlichen Tod anderer Könige die Formulierung Whteêymiy>w: ... WhKeäY:w: bzw. tmo)Y"w
 benutzt. Wenn ein König bei einer Verschwörung ermordet wird, wird darüber in der Regel mit
-der Formulierung Whteämiy>w: ... WhKeäY:w: berichtet, so bei Nadab, Ela, Ahab$$$15$$$, Joram$$$16$$$, Secharja,
+der Formulierung Whteämiy>w: ... WhKeäY:w: berichtet, so bei Nadab, Ela, Ahab15, Joram16, Secharja,
 Schallum, Pekachja und Pekach. Wenn ein König sich selbst tötet oder an einer schweren
 Krankheit stirbt, wird das mit tmo)Y"w : angezeigt, so bei Simri und Ahas.
 
@@ -486,14 +486,14 @@ Bei Ahasja, Joasch, Amazja, Usija, Amon und Joschija wird ihr ungewöhnlicher To
 Chronik ausführlicher dargestellt als im DtrG. Dabei fällt auf, dass der Chronist ihren Tod
 explizit theologisch interpretiert (2.Chr 22,7; 24,25; 25,27; 26,16.20; 33,23; 35,22).
 Bei Asa und Joram formuliert er neu, weil er darstellen will, dass sie an einer schweren
-FOOTNOTE:Krankheit gestorben sind. Bemerkenswert ist, dass Asas Tod mit wyt'b_ oa]-~[i PN bK;îv.YIw: berichtet wird
+Krankheit gestorben sind. Bemerkenswert ist, dass Asas Tod mit wyt'b_ oa]-~[i PN bK;îv.YIw: berichtet wird
 (16,12-13), während Jorams Tod mit הדָָּּ֔ מְּ חֶ אֹ ל֣ בְּ ךֵּ֙ לֶ י וֵּ֙ ַ. Damit werden der Tod Asas und der Jorams
-deutlich unterschieden ($$$21$$$,18-19a).17
+deutlich unterschieden (21,18-19a).17
 
 
 Was die Bestattung der Könige betrifft, gibt der Chronist unterschiedliche Bestattungsstätten
 an. Dabei unterscheidet er zwischen einer Bestattung in der Stadt Davids und jener in den
-FOOTNOTE:Gräbern der Könige, so bei Joram, Joach und Ahas (~yki(l'M.h ; tArïbq. iB . al{ß oder lae_r"f.yI ykeäl.m; yrEÞb.qil. Whauêybih
+Gräbern der Könige, so bei Joram, Joach und Ahas (~yki(l'M.h ; tArïbq. iB . al{ß oder lae_r"f.yI ykeäl.m; yrEÞb.qil. Whauêybih
 al{ß). Bei Hiskija und Joschija erwähnt er ausdrücklich, dass sie in den Gräbern der Könige
 bestattet wurden (dywId"-ynEb. yrEäb.q i éhle[m] ;B.( éWhrUB.q.YIw:) oder wyt'b_ oa] tAråb.qBi . rbEßQ'YIw:). Der Deuteronomist ist in
 der Regel bei seinen Angaben weniger präzise und formuliert pauschal (außer bei Amon, Usija
@@ -549,29 +549,29 @@ Die Septuaginta übersetzt den hebräischen Bericht über Tod und Bestattung ein
 Königs fast wörtlich. Nur für Hiskija wird dessen Bestattung durch die Angabe des Ortes
 ergänzt. Offenkundig wurden die Könige von David bis Hiskija „in den Gräbern der Könige in
 der Stadt Davids“ bestattet. Die Bestattung Manasses und seines Nachfolgers Amon erfolgten
-„im Garten des Oza“, offensichtlich an einer anderen Stätte (2.Kön $$$21$$$,18.26).19
+„im Garten des Oza“, offensichtlich an einer anderen Stätte (2.Kön 21,18.26).19
 
 
 FOOTNOTE:18 In der Urgeschichte (Gen 1-11) wird tmo)Y"w:. Jahreszahl PN ymeÛy>-lK' Wyùh.YI)w: : zu kai. egv e,nonto pa/sai ai` h`me,rai PN
-FOOTNOTE:Jahreszahl kai. avpe,qanen (5,5.8; 9,29 u.a.). In der Vätergeschichte (Gen 12-50) wird Jahreszahl PN yYxEï -; yn)vE . yme²y> hL,aeªw
-FOOTNOTE:zu kai. tau/ta ta. e;th th/j zwh/j PN Jahreszahl und `wyM'[( ;-la, @s,a'ÞYEw: [:b_fe 'w >. … PN tm'Y"ôw: [w:“g>YIw:; zu kai. evklipw.n avpeq, anen
+Jahreszahl kai. avpe,qanen (5,5.8; 9,29 u.a.). In der Vätergeschichte (Gen 12-50) wird Jahreszahl PN yYxEï -; yn)vE . yme²y> hL,aeªw
+zu kai. tau/ta ta. e;th th/j zwh/j PN Jahreszahl und `wyM'[( ;-la, @s,a'ÞYEw: [:b_fe 'w >. … PN tm'Y"ôw: [w:“g>YIw:; zu kai. evklipw.n avpeq, anen
 kai. proseteq, h pro.j to . ge,noj auvtou/ ... kai. eq; ayan auvton. PN oi` ui`oi. auvtou/ ... (Gen 25,7-10; 35,28-29 u.a.) In
-FOOTNOTE:der Zeit der Wüstenwanderung: ... PN ~v'ø tm'Y"“w: zu kai. etv eleu,thsen oder avpeq, anen evkei/ PN ... (Num 20,1bα; Dtn
-FOOTNOTE:34,5 u.a.), und ...B. ‘AtÜao rBo’q.YIw: zu kai. eq; ayan auvto.n env ... (Dtn 34,6) bzw. ~v' ( rbQEß 'Tiw : zu kai. etv a,fh ekv ei/ (Num 20,1bβ).
+der Zeit der Wüstenwanderung: ... PN ~v'ø tm'Y"“w: zu kai. etv eleu,thsen oder avpeq, anen evkei/ PN ... (Num 20,1bα; Dtn
+34,5 u.a.), und ...B. ‘AtÜao rBo’q.YIw: zu kai. eq; ayan auvto.n env ... (Dtn 34,6) bzw. ~v' ( rbQEß 'Tiw : zu kai. etv a,fh ekv ei/ (Num 20,1bβ).
 Wie ersichtlich, werden für den Bericht über den Tod zwei Worte ohne besonderen Bedeutungsunterschied
-FOOTNOTE:verwendet: evteleu,thsen und avpeq, anen. Von der Zeit der Landnahme Kanaans bis zu der Richterzeit wird ... PN
-FOOTNOTE:tmY' "“w: zu kai. avpeq, anen PN ... (Jos 24,30; Ri 3,11 u.a.) und ...B. rbeªQ'YIw: zu kai. evta,fh evn ... (Ri 8,32; 10,2.5 u.a.) bzw.
-FOOTNOTE:...B. ‘AtÜao rBo’q.YIw: zu kai. e;qayan auvton. env ... (Jos 24,31; Ri 2,9; 12,12 u.a.). In dem Bericht über Tod und Bestattung
-FOOTNOTE:der davidischen Könige wird `dwI)D" ry[iîB. rbQEß 'YIw: wytb'_ oa]-~[i PN bKîv; .YIw: zu kai. ekv oimh,qh PN meta. tw/n pater, wn auvtou
-kai. evta,fh env pol, ei Dauid ($$$1$$$.Kön $$$2$$$,10; $$$11$$$,43 u.a.).
+verwendet: evteleu,thsen und avpeq, anen. Von der Zeit der Landnahme Kanaans bis zu der Richterzeit wird ... PN
+tmY' "“w: zu kai. avpeq, anen PN ... (Jos 24,30; Ri 3,11 u.a.) und ...B. rbeªQ'YIw: zu kai. evta,fh evn ... (Ri 8,32; 10,2.5 u.a.) bzw.
+...B. ‘AtÜao rBo’q.YIw: zu kai. e;qayan auvton. env ... (Jos 24,31; Ri 2,9; 12,12 u.a.). In dem Bericht über Tod und Bestattung
+der davidischen Könige wird `dwI)D" ry[iîB. rbQEß 'YIw: wytb'_ oa]-~[i PN bKîv; .YIw: zu kai. ekv oimh,qh PN meta. tw/n pater, wn auvtou
+kai. evta,fh env pol, ei Dauid (1.Kön 2,10; 11,43 u.a.).
 
 
 FOOTNOTE:19 Nur der sog. antiochenische Text lässt Jojakim ausdrücklich im Garten des Oza bestattet sein: kai. evta,fh evn tw
-kh,pw| tou/ oi;kou auvtou/ env kh,pw| Oza ($$$2$$$.Kön $$$24$$$,6)
+kh,pw| tou/ oi;kou auvtou/ env kh,pw| Oza (2.Kön 24,6)
 
 
-FOOTNOTE:In der Septuaginta wird wyt'b_ oa]-~[i PN bK;îv.YIw: mit kai. evkoimh,qh PN meta. tw/n pate,rwn auvtou/ übersetzt
-FOOTNOTE:und PN tm'Y"“w: mit kai avpe,qanen PN. Bemerkenswerterweise wird die Übersetzung von tm'Y"“w: mit kai
+In der Septuaginta wird wyt'b_ oa]-~[i PN bK;îv.YIw: mit kai. evkoimh,qh PN meta. tw/n pate,rwn auvtou/ übersetzt
+und PN tm'Y"“w: mit kai avpe,qanen PN. Bemerkenswerterweise wird die Übersetzung von tm'Y"“w: mit kai
 avpe,qanen für den Bericht über den natürlichen Tod Rehabeams und Abijas verwendet. Wie bereits
 beobachtet, wird tm'Y"“w: bei den Königen sonst nur für den ungewöhnlichen Tod – außer im chr.
 Bericht über den Tod Davids - verwendet.
@@ -579,7 +579,7 @@ Bericht über den Tod Davids - verwendet.
 
 Die Tabelle zeigt, dass der Bestattungsort der oben erwähnten Personen in der Septuaginta
 bearbeitet wird. Bei Amazja und Manasse wird der Ort genauer beschrieben als im MT (2.Kön
-14,20; 21,18) und bei Jojakim überhaupt ein Ort, nämlich Ganoza20, angegeben. Dadurch zeigt
+FOOTNOTE:14,20; 21,18) und bei Jojakim überhaupt ein Ort, nämlich Ganoza20, angegeben. Dadurch zeigt
 die Septuaginta deutlich ihr starkes Interesse an dem Ort der Bestattung.
 
 
@@ -599,8 +599,8 @@ vermutlich aus besserer historischer und örtlicher Kenntnis, während der MT ka
 seiner Bewertung der Könige als gut oder schlecht formuliert.
 
 
-FOOTNOTE:Was den chr. Bericht über den Tod betrifft, wird die Übersetzung von tm'Y"w: mit kai. avpe,qanen für
-FOOTNOTE:den natürlichen Tod des Königs jetzt öfter verwendet. Dieser Ausdruck ersetzt wyt'b_ oa]-~[i PN bK;îv.YIw
+Was den chr. Bericht über den Tod betrifft, wird die Übersetzung von tm'Y"w: mit kai. avpe,qanen für
+den natürlichen Tod des Königs jetzt öfter verwendet. Dieser Ausdruck ersetzt wyt'b_ oa]-~[i PN bK;îv.YIw
 des MTs. Die Darstellung der vorexilischen Gesellschaftsstrukturen wird bestimmt durch die
 Gegenüberstellung von König und Volk. In der nachexilischen Zeit führt die veränderte
 soziopolitische Situation dazu, dass Formulierungen, die den Beschreibungen der
@@ -612,36 +612,36 @@ werden können.
 
 
 Im Alten Testament werden drei Formulierungen im Bericht über den Tod einer Person
-FOOTNOTE:verwendet: ... tm'Y"±w:, wyM'[( ;-la, @s,a'YÞ Ew: ... tm'Y"ôw: [w:“g>YIw: und wyt'b_ oa]-~[i PN bK;îv.YIw:.21
+verwendet: ... tm'Y"±w:, wyM'[( ;-la, @s,a'YÞ Ew: ... tm'Y"ôw: [w:“g>YIw: und wyt'b_ oa]-~[i PN bK;îv.YIw:.21
 
 
-FOOTNOTE:Die erste Formulierung ... tm'Y"±w: erscheint in der Urgeschichte, in der Vätergeschichte für Frauen,
+Die erste Formulierung ... tm'Y"±w: erscheint in der Urgeschichte, in der Vätergeschichte für Frauen,
 darüber hinaus für Mirjam, Aaron und Mose sowie für alle Richter, von Otniel bis zu Samuel.
 Außerdem umschreibt diese Wendung auch den ungewöhnlichen Tod einiger Könige.
 Die zweite Formulierung wyM'[( ;-la, @s,a'YÞ Ew: ... tm'Y"ôw: [w:“g>YIw: wird in der Vätergeschichte für die Männer
 Abraham, Ismael, Isaak und Jakob verwendet. Sie betont, dass diese ein langes und gutes Leben
 genossen haben und friedlich gestorben sind. Dabei werden die familiären Beziehungen betont
 und verknüpft mit der Notiz, dass die Verstorbenen in einem Familiengrab beigesetzt werden.
-FOOTNOTE:Die dritte Formulierung wyt_'bao ]-~[i PN bKîv; .YIw: erscheint seit David für die Könige des Südreiches und
+Die dritte Formulierung wyt_'bao ]-~[i PN bKîv; .YIw: erscheint seit David für die Könige des Südreiches und
 gelegentlich auch für die Könige des Nordreiches. Im DtrG wird sie für den natürlichen Tod
 eines Königs verwendet. Von der Chronik (MT) wird sie nicht im Bericht über den natürlichen
 Tod Davids und Jojakims gebraucht und auch von der Chronik (LXX) nicht im Bericht über
 den natürlichen Tod Rehabeams und Abijas.
 
 
-FOOTNOTE:Der Chronist verwendet für den Tod Davids ... tm'Y"±w: statt wyt'b_ oa]-~[i PN bK;îv.YIw:. In der LXX kommt
+Der Chronist verwendet für den Tod Davids ... tm'Y"±w: statt wyt'b_ oa]-~[i PN bK;îv.YIw:. In der LXX kommt
 dieses Phänomen in ihrer Übersetzung kai. avpe,qanen auch noch bei Rehabeam und Abija vor. Dies
 zeigt, dass in der Zeit des Chronisten der König nicht mehr in einer besonderen,
 hervorgehobenen Rolle gesehen wird. Dies erklärt auch, dass für den Priester Jojada wyt_'boa]-~[
 
 
 FOOTNOTE:21 Außerdem gibt es noch einen Ausdruck für die Sterbenotiz: Die Mischform „versammelt werden zu den Vätern
-FOOTNOTE:(wyt_'bao ]-la, @s,a'ÞYEw): “, in der die Formulierungen wyM'[( ;-la, @s,a'ÞYEw : und wyt_'bao ]-~[i PN bKîv; .YIw: gemischt werden. Diese kommt
+(wyt_'bao ]-la, @s,a'ÞYEw): “, in der die Formulierungen wyM'[( ;-la, @s,a'ÞYEw : und wyt_'bao ]-~[i PN bKîv; .YIw: gemischt werden. Diese kommt
 zweimal vor (Ri 2,10; 2.Kön 22,20).
 
 
-FOOTNOTE:PN bK;îv.YwI : verwendet werden kann, der kein König war (2.Chr 24,15). Die Formulierung wyt'b_ oa]-
-FOOTNOTE:~[i PN bK;îv.YIw: wird nicht unbedingt als ein Terminus für den gewöhnlichen Tod des Königs
+PN bK;îv.YwI : verwendet werden kann, der kein König war (2.Chr 24,15). Die Formulierung wyt'b_ oa]-
+~[i PN bK;îv.YIw: wird nicht unbedingt als ein Terminus für den gewöhnlichen Tod des Königs
 verstanden.
 
 
@@ -657,7 +657,7 @@ Wohnsitz in Kanaan. Aus diesem Grund wurden sie an ihrem Todesort bestattet (Gen
 
 
 Nach der Landnahme sind Heimatstadt und Bestattungsort in der Regel identisch: (Ortsname)B
-FOOTNOTE:rbeªQ'YIw: bzw. (Ortsname)B. wybaiê ' PN ‘rb,q,’B. rbeªQ'YIw.: In dieser Zeit ist es üblich, dass eine Person in ihrem
+rbeªQ'YIw: bzw. (Ortsname)B. wybaiê ' PN ‘rb,q,’B. rbeªQ'YIw.: In dieser Zeit ist es üblich, dass eine Person in ihrem
 Familiengrab in ihrer Heimat bestattet wird. Wenn jemand seinen Tod nahen fühlt, bleibt er in
 seinem Heimatort oder kehrt dorthin zurück (2.Sam 17,23; 19,38). Wenn jemand außerhalb
 seiner Heimat stirbt, wird sein Leichnam in die Heimat überführt (u.a. Ri 16,31; 1.Sam 31,12-
@@ -753,7 +753,7 @@ Schilderung der davidischen Dynastie.$$$23$$$ Das Interesse des Chronisten gilt 
 Leistungen eines Königs während dessen Regierungszeit. Darum beschreibt er das Leben eines
 Königs nur von dessen Thronbesteigung an bis zum Thronantritt seines Nachfolgers. In diesem
 Kontext findet sich der Bericht über Tod und Bestattung eines Königs am Ende seiner
-FOOTNOTE:Darstellung - in der Regel kurz vor einer Notiz über seine Nachfolge.24
+Darstellung - in der Regel kurz vor einer Notiz über seine Nachfolge.$$$24$$$
 
 
 Daneben kommen in der Chronik fünf nicht-davidische Personen vor, die einen Bericht über
@@ -809,7 +809,7 @@ Kontext als Abschluss, denn sie enthalten die Daten des Regierungswechsels und b
 Zusammenfassungen.26
 
 
-Im DtrG liegen eindeutig zwei Aufbauschemata der Königschroniken vor$$$27$$$:
+Im DtrG liegen eindeutig zwei Aufbauschemata der Königschroniken vor27:
 
 
 Bei diesen Schemata steht der Bericht über Tod und Bestattung nicht am Anfang. Er wird nicht
@@ -824,7 +824,7 @@ Chronist über Tod und Bestattung eines davidischen Königs im Kontext berichtet
 den chr. Bericht über Tod und Bestattung kann sein, wo dieser sich befindet, ob im Abschluss
 oder in der Hauptdarstellung. Ferner wird erörtert, welche Rolle dem Bericht in seinem
 jeweiligen Kontext zukommt, wenn er in der Hauptdarstellung mit anderen Erzählelementen
-FOOTNOTE:verknüpft wird.
+verknüpft wird.
 
 
 FOOTNOTE:26 Diese Notizen sind in der Regel formelhaft. Deswegen sind sie literarisch von der Hauptdarstellung abgegrenzt,
@@ -864,7 +864,7 @@ drei folgenden Notizen vorhanden, und zwar in dieser Reihenfolge:
 3. Der Nachfolger
 
 
-Das betrifft Abija, Joram, Joasch, Amazja, Usija, Ahas, Hiskija$$$30$$$, Manasse, Joschija und
+Das betrifft Abija, Joram, Joasch, Amazja, Usija, Ahas, Hiskija30, Manasse, Joschija und
 Jojakim.
 
 
@@ -893,7 +893,7 @@ dem Bericht über den Tod und die Bestattung: `hn")v' ~y[iÞB'r>a; laeêr"f.yI-l
 ~ymiªY"h;w > (1.Kön 11,42). Bei Rehabeam, Asa, Joschafat und Jotam hingegen tauchen in der
 Hauptdarstellung nicht erwähnte Tatsachen kurz auf, gleichsam wie in einem Nachtrag. Dabei
 kann eine kurze rein historische Anmerkung vorkommen, z.B. bei Rehabeam: `~ymi(Y"h-; lK' ~['bÞ .r"y
-FOOTNOTE:!ybeîW ~[²b' .x;r>-!ybe ht'yó >h' hm'’x'l.miW (14,30), bei Asa: `wyl'g( >r:-ta, hl'Þx' Atên"q.zI t[eäl. qr:… (15,23b).
+!ybeîW ~[²b' .x;r>-!ybe ht'yó >h' hm'’x'l.miW (14,30), bei Asa: `wyl'g( >r:-ta, hl'Þx' Atên"q.zI t[eäl. qr:… (15,23b).
 Die andere Variante ist, dass eine Notiz zwischen dem Bericht über den Tod und die Bestattung
 (2) und dem Bericht über die Nachfolge (3) vorkommt.
 
@@ -999,7 +999,7 @@ Es gibt eine Variante dieser Reihenfolge. Bei Amon ist das der Fall (2.Kön 21,2
 
 Der Bericht über Amons Tod ist nicht direkt mit dem über seine Bestattung verbunden. Der
 Bericht über Amons Tod (1) und die Notiz über seine Nachfolge (2) schließen sich direkt an
-FOOTNOTE:die Hauptdarstellung an, d.h. mit wa-yyiqtol (... WtymiîY"w: ... Wrïv.qY. Iw:; 2.Kön 21,23-24) wird nach V.22
+die Hauptdarstellung an, d.h. mit wa-yyiqtol (... WtymiîY"w: ... Wrïv.qY. Iw:; 2.Kön 21,23-24) wird nach V.$$$22$$$
 (... bzO¨[]Y:w:) weiter erzählt:
 
 
@@ -1150,7 +1150,7 @@ Bei Rehabeam und Joschafat zeigt sich eine besondere Reihenfolge (2.Chr 12,13-16
 4. Die Quellenangabe
 
 
-5. Ein besonderes geschichtliches Ereignis (nur bei Joschafat$$$35$$$)
+5. Ein besonderes geschichtliches Ereignis (nur bei Joschafat35)
 
 
 6. Der Bericht über Tod und Bestattung
@@ -1187,7 +1187,7 @@ Amon noch in diese Gruppe:
 Bei diesen beiden Königen zeigt sich die Reihenfolge (2.Chr 22,9; 33,24-25):
 
 
-1. Der Bericht über den Tod (und die Bestattung; nur bei Ahas$$$36$$$)
+1. Der Bericht über den Tod (und die Bestattung; nur bei Ahas36)
 
 
 FOOTNOTE:34 Auffällig ist, dass der Bericht über Davids Bestattung nicht in der Chronik vorkommt.
@@ -1209,7 +1209,7 @@ sterben: Joram und Usija sind an einer schweren Krankheit gestorben (21,18-19; 2
 Joasch und Amon werden bei der Verschwörung ihrer Diener ermordet (24,25-26; 33,24),
 Ahasja und Joschija werden in einem Krieg getötet (22,9; 35,23-24). Ihr Tod und ihre
 Bestattung werden nicht nur rein historisch geschildert, sondern auch theologisch beurteilt, z.
-FOOTNOTE:B. bei Joram (21,12-15):
+B. bei Joram (21,12-15):
 
 
 FOOTNOTE:aybiÞN"h ; WhY"ïliaeme( bT'kê .mi ‘wyl'ae aboÜY"w: 12
@@ -1330,7 +1330,7 @@ Joram ist an einer unheilbaren Krankheit seiner Eingeweide gestorben und wird in
 Davids, aber ausdrücklich nicht in den Gräbern der Könige beigesetzt (2.Chr 21,18-20). Usija
 war bis zum Tod aussätzig und wird wohl in der Stadt Davids, aber auch nicht in den Gräbern
 der Könige beigesetzt; „Und man bestattete ihn bei seinen Vorfahren auf dem Gräberfeld für
-die Könige (d.h. eben nicht in den eigentlichen Gräbern der Könige)$$$37$$$, denn man sagte: Er ist
+die Könige (d.h. eben nicht in den eigentlichen Gräbern der Könige)37, denn man sagte: Er ist
 aussätzig!“ (26,21-23). Wie zu seiner Lebenszeit bleibt er auch im Tod abgesondert.
 Wie bereits erwähnt, sind Joram und Usija an ihren schweren Krankheiten gestorben. Nach der
 Ansicht des Chronisten stellen die Krankheiten eine Strafe JHWHs dar. Und solch ein Tod gilt
@@ -1392,7 +1392,7 @@ platziert. Beide Könige sind an ihren schweren Krankheiten gestorben (2.Chr 21,
 Der Chronist stellt ihre Krankheit und ihren Tod zuerst narrativ in der Hauptdarstellung dar und
 erwähnt dann nur ihren Tod noch einmal im Abschluss und zusätzlich ihre Bestattung (21,20b;
 26,23). Auffällig ist, dass ihr Tod im Abschluss formelhaft wie ein natürlicher Tod berichtet
-FOOTNOTE:wird: für Joram %l,YE’w: und für Usija wyt'b_ oa]-~[i PN bK;îv.YIw:. Wahrscheinlich versucht der Chronist,
+wird: für Joram %l,YE’w: und für Usija wyt'b_ oa]-~[i PN bK;îv.YIw:. Wahrscheinlich versucht der Chronist,
 dadurch ihren Tod von einem anderen ungewöhnlichen Tod zu unterscheiden und so sein Urteil
 über diese Könige abzumildern.
 
@@ -1411,13 +1411,13 @@ dargestellt als im DtrG, so für neun Könige, nämlich David, Asa, Joram, Ahasj
 Amazja, Usija, Amon und Joschija. Von diesen wird der Tod in der Chronik erzählerisch
 dargestellt für David, Asa, Joram und Usija, obwohl er im DtrG nur formelhaft erwähnt wird.
 Dennoch übernimmt der Chronist in der Regel – außer bei David und Joram - die übliche dtr.
-FOOTNOTE:Formel: wyt'b_ oa]-~[i PN bK;îv.YIw:, so für zehn Könige, nämlich Salomo, Rehabeam, Abija, Asa,
+Formel: wyt'b_ oa]-~[i PN bK;îv.YIw:, so für zehn Könige, nämlich Salomo, Rehabeam, Abija, Asa,
 Joschafat, Usija, Jotam, Ahas, Hiskija und Manasse.
 
 
 Bei David und Joram wird zunächst auch über ihren Tod berichtet, allerdings mit anderen
 Formeln als im DtrG, und dann noch eine kurze erzählerische Anmerkung angefügt, um die
-FOOTNOTE:Umstände ihres Todes zu schildern.
+Umstände ihres Todes zu schildern.
 
 
 Wie bereits beobachtet, übernimmt der Chronist in der Regel den dtr. Bericht über den Tod.
@@ -1524,8 +1524,8 @@ Jorams Regierungsantritt aus dem Vers 2.Chr 21,5 wortgetreu in 2.Chr 21,20a wied
 
 
 46
-FOOTNOTE:In der Chronik werden Joram, Ahasja, Ahas, Joahas, Jojakim, Jojachin und Zidkija ohne Abstriche negativ
-beurteilt. $$$47$$$ In der Chronik erscheint eine Anmerkung über Regierungsantritt und Regierungsdauer eines König in der Regel
+In der Chronik werden Joram, Ahasja, Ahas, Joahas, Jojakim, Jojachin und Zidkija ohne Abstriche negativ
+beurteilt. 47 In der Chronik erscheint eine Anmerkung über Regierungsantritt und Regierungsdauer eines König in der Regel
 
 
 FOOTNOTE:47 In der Chronik erscheint eine Anmerkung über Regierungsantritt und Regierungsdauer eines König in der Regel
@@ -1539,7 +1539,7 @@ eingerahmt.$$$48$$$ Ein ähnlicher Rahmen erscheint noch einmal in der Chronik b
 
 Der Chronist wiederholt die Einleitungsworte zu Jotams Regierung aus 2.Chr 27, 1a in Vers 8.
 Dadurch entsteht ein literarischer Rahmen, in dem Jotam durchweg positiv$$$49$$$ dargestellt wird
-(2.Chr $$$27$$$,6):50
+(2.Chr 27,6):50
 
 
 `wyh('l{a/ hw"ïhy> ynEßp.l i wyk'rê "D > !ykiäh e yKi… ~t'_Ay qZEßx;t.YIw
@@ -1559,7 +1559,7 @@ Abschluss (1.Chr 29,27; 2.Chr 9,30; 12,13; 20,31) vor.
 FOOTNOTE:48 Vgl. I. Kalimi, Zur Geschichtsschreibung des Chronisten, S.251-259: Der Chronist verwendet bei der
 Neugestaltung von Texten aus Sam-Kön in seinem Werk häufig diese literarische Technik: Ein Wort oder ein
 Ausdruck, das bzw. der eine beliebig lange literarische Einheit eröffnet und an deren Ende markant wiederkehrt,
-bildet durch seine Wiederholung einen literarischen Rahmen. $$$49$$$ Im DtrG wird Jotam nicht besonders positiv bewertet.
+bildet durch seine Wiederholung einen literarischen Rahmen. 49 Im DtrG wird Jotam nicht besonders positiv bewertet.
 
 
 FOOTNOTE:50 VImg lD. Ptr.G W welitredn J, oGtaemsc hniicchhtt eb eusnodn Gdeerssc phoicshittisvd abreswteelrlutentg. in den Chronikbüchern, S.186-189: Dieser Schilderung
@@ -1581,7 +1581,7 @@ gegen die Ammoniter und macht Ammon zum Vasallenstaat.
 
 
 2) Der Chronist bildet einen neuen theologischen Rahmen, in dem Jorams Leben noch einmal
-FOOTNOTE:beurteilt wird.
+beurteilt wird.
 
 
 JHWHs Urteil über Joram wird in der Wiedergabe von Elijas Brief mitgeteilt. Die prophetische
@@ -1668,7 +1668,7 @@ Taten als klug (2.Chr 11,23):
 
 
 Nach der Darstellung des Chronisten ermordete Joram seine unschuldigen Brüder (2.Chr
-FOOTNOTE:21,13):
+21,13):
 
 
 T'g>r")h ' ^ßM.mi ~ybiîAJh; ^ybi²a'-tybe ^yx,óa;-ta, ~g:“w
@@ -1682,7 +1682,7 @@ Chronisten ein grausamer König war, der zudem nicht klug gehandelt hat.
 (2) Der chronistische Bericht über Tod und Bestattung Jorams
 
 
-FOOTNOTE:2.Kön 8,23-24
+2.Kön 8,23-24
 
 
 2.Chr 21,18-20
@@ -1710,7 +1710,7 @@ Abschluss steht.
 ~yaiälux]t;B. tm'Y"ßw:
 
 
-Nach der chr. Version stirbt Joram an der von JHWH verhängten Krankheit (V.$$$18$$$-19a).55 Der
+Nach der chr. Version stirbt Joram an der von JHWH verhängten Krankheit (V.18-19a).55 Der
 Chronist beschreibt, wie Joram an seiner Krankheit zwei Jahre lang bis zu seinem Tod leidet.
 Der Chronist meint wahrscheinlich, dass er diese zwei Jahre lang Gelegenheit hatte, von seinen
 Sünden abzulassen.
@@ -1760,7 +1760,7 @@ Joasch sein ganzes Leben lang (wym'y_ "-lK'), was recht war in den Augen JHWHs, 
 Priester, unterwies ihn.“ (2.Kön 12,3). Anders lautet die chr. Version: „Joasch tat, was recht
 war in den Augen JHWHs, solange Jojada, der Priester, lebte (!hE)Koh; [d"îy"Ahy> ymeÞy>-lK')“ (2.Chr 24,2).
 Daher werden die Leistungen Joaschs in der Chronik zunächst positiv beschrieben, solange der
-König auf Jojada hörte (2.Chr 24,4-14), und erst nach dem Tod Jojadas negativ ($$$24$$$,17-26).58
+König auf Jojada hörte (2.Chr 24,4-14), und erst nach dem Tod Jojadas negativ (24,17-26).58
 
 
 1) Der Chronist bildet einen neuen Rahmen für die Darstellung der Leistungen Joaschs:
@@ -1769,10 +1769,10 @@ König auf Jojada hörte (2.Chr 24,4-14), und erst nach dem Tod Jojadas negativ 
 24,1-16 Joaschs Leistungen
 
 
-FOOTNOTE:`!hE)Koh; [d"îy"Ahy> ymeÞy-> lK' hw"+hy> ynEåy[eB . rv"ßY"h; va'²Ay f[;Y:ôw: (V.2)
+`!hE)Koh; [d"îy"Ahy> ymeÞy-> lK' hw"+hy> ynEåy[eB . rv"ßY"h; va'²Ay f[;Y:ôw: (V.2)
 
 
-`[d"(y"Ahy> ymeîy> lKoß dymiêT' ‘hw"hy>-tybeB. tAlÜ[o ~yli’[]m; Wyh.YI)w: ... (V.$$$14$$$)
+`[d"(y"Ahy> ymeîy> lKoß dymiêT' ‘hw"hy>-tybeB. tAlÜ[o ~yli’[]m; Wyh.YI)w: ... (V.14)
 
 
 24,15-16: Jojadas Tod und Bestattung
@@ -1823,10 +1823,10 @@ dargestellt als im DtrG.$$$60$$$ Dadurch entsteht der Eindruck, dass der Chronis
 erhebliche Bedeutung zumisst. In erster Linie wird Jojada als ein mutiger Retter der davidischen
 Dynastie geschildert (2.Chr 22,10-23,15). Dabei werden Jojadas Rettung des jungen
 davidischen Prinzen Joasch und dessen Inthronisation als Heldentaten zur Erfüllung der
-Verheißung JHWHs an David und dessen Nachkommen überarbeitet (2.Chr $$$23$$$,3).61 Außerdem
+Verheißung JHWHs an David und dessen Nachkommen überarbeitet (2.Chr 23,3).61 Außerdem
 wird in der chr. Joasch-Darstellung betont, dass Jojada seinem König Joasch als kluger
 Ratgeber im Palast gedient hat. Jojada gibt seinem König zwei Frauen (2.Chr 24,3) und
-unterstützt die Herrschaft Joaschs als Priester, der für beständiges Opfern sorgt ($$$24$$$,14).62
+unterstützt die Herrschaft Joaschs als Priester, der für beständiges Opfern sorgt (24,14).62
 
 
 3) In der ersten Hälfte von Joaschs Regierung (2.Chr 24,1-14) wird seine Tempelrenovierung

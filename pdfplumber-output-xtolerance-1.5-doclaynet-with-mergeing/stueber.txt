@@ -77,7 +77,7 @@ Im Rahmen der Erforschung der Auswirkungen des Klimawandels auf die Umwelt
 hat das von der World Meteorological Organization (WMO) und dem United Nations
 Environment Programme (UNEP) ins Leben gerufene Intergovernmental Panel on
 Climate Change (IPCC) in den letzten Jahren eine Reihe von Berichten veröffentlicht,
-darunter den IPCC WG1 AR4 Report aus dem Jahre 2007. Insgesamt haben über 650
+darunter den IPCC WG$$$1$$$ AR$$$4$$$ Report aus dem Jahre 2007. Insgesamt haben über 650
 Wissenschaftler aus allen Teilen der Welt zum Inhalt des Dokumentes beigetragen,
 hinzu kommen noch über 200 Gutachter. Dieses Beispiel zeigt, was kollaboratives
 Schreiben im Extremfall bedeuten kann. Ein Großteil aller erstellten Textdokumente
@@ -1439,7 +1439,7 @@ Word erlaubt es dagegen mit zwei oder mehreren Benutzern auf einem gemeinsa-
 men Textdokument zu arbeiten. Dies setzt jedoch eine SharePoint-Infrastruktur
 voraus. SharePoint ist eine Server-Plattform zur Bereitstellen von Kollaborations-
 und Web-Publishing-Diensten der Firma Microsoft. Grundsätzlich gibt es zwei Mög-
-FOOTNOTE:lichkeiten, SharePoint nutzbar zu machen:
+lichkeiten, SharePoint nutzbar zu machen:
 
 
 1. Installation von SharePoint 2010 auf einem Server im Netzwerk oder Inter-
@@ -1450,7 +1450,7 @@ net.
 Festplatte im Internet zur Verfügung stellt. Da SkyDrive auf der SharePoint-
 Infrastruktur aufbaut, kann dieser Dienst ebenfalls als Kollaborationsplatt-
 form genutzt werden. Die Nutzung von SkyDrive setzt voraus, dass alle Be-
-nutzer eine Windows-Live-ID$$$2$$$ besitzen.
+nutzer eine Windows-Live-ID2 besitzen.
 
 
 Möchten zwei oder mehr Benutzer gemeinsam an einem Dokument arbeiten, müs-
@@ -1492,7 +1492,7 @@ loser wie kostenpflichtiger Dienste von Microsoft. SkyDrive ist ein kostenloser 
 KS-Software
 
 
-FOOTNOTE:o Unmittelbare Planung eines Besprechungstermins
+o Unmittelbare Planung eines Besprechungstermins
 
 
 Editiert ein Benutzer einen Absatz, wird dieser für andere Benutzer solange
@@ -1639,7 +1639,7 @@ Da die Technik des virtuellen Dateisystems Teil des Betriebssystems ist, können
 Textverarbeitungssysteme wie Word, Pages oder Writer darüber sehr leicht an ein
 DMS angebunden werden. ODMA wird lediglich in Word offiziell unterstützt. Web-
 DAV wird von Word und Writer offiziell unterstützt. Pages unterstützt WebDAV indi-
-rekt durch die Integration im Apple-Betriebssystem$$$3$$$.
+rekt durch die Integration im Apple-Betriebssystem3.
 
 
 3.2.3 Kollaborative Texteditoren
@@ -1679,7 +1679,7 @@ FOOTNOTE:3 Interessanterweise basiert das Internetportal iworks.com selbst auf W
 KS-Software
 
 
-Google Text ist ein Google-Konto$$$4$$$. Möchten zwei oder mehr Benutzer gemeinsam
+Google Text ist ein Google-Konto4. Möchten zwei oder mehr Benutzer gemeinsam
 an einem Dokument arbeiten, müssen sie zunächst wie folgt vorgehen:
 
 
@@ -1691,17 +1691,17 @@ Dokument anlegen.
 Jedem Benutzer muss eine der folgenden Rollen zugewiesen werden:
 
 
-FOOTNOTE:o Besitzer: Erlaubt das Editieren und Löschen von Dokumenten und das
+o Besitzer: Erlaubt das Editieren und Löschen von Dokumenten und das
 Einladen von Kollaborateuren und Betrachtern.
 
 
-FOOTNOTE:o Kollaborateure: Erlaubt das Editieren von Dokumenten und das Ein- und
+o Kollaborateure: Erlaubt das Editieren von Dokumenten und das Ein- und
 Ausladen (Berechtigung durch den Besitzer vorausgesetzt) von Kollabo-
 rateuren und Betrachtern. Es darf eine Kopie des Dokuments auf der ei-
 genen lokalen Festplatte angelegt werden.
 
 
-FOOTNOTE:o Betrachter: Erlaubt lediglich das Lesen der aktuellsten Version des Do-
+o Betrachter: Erlaubt lediglich das Lesen der aktuellsten Version des Do-
 kuments. Es darf eine Kopie des Dokuments auf der eigenen lokalen
 Festplatte angelegen.
 
@@ -1756,7 +1756,7 @@ deren Funktionsumfang gegenüber den Desktop-Versionen stark reduziert. Insbe-
 sondere die fehlende Möglichkeit unter Office Web Apps Word-Dokumente gleich-
 zeitig von verschiedenen Autoren editieren zu können stellt einen nicht unerhebli-
 chen Nachteil gegenüber Google Text dar, weshalb auf eine ausführlichere Darstel-
-lung dieser web-basierten Textverarbeitung verzichtet werden soll$$$5$$$.
+lung dieser web-basierten Textverarbeitung verzichtet werden soll5.
 
 
 3.2.5 Wiki-Systeme
@@ -1824,7 +1824,7 @@ Es existieren zahlreiche Veröffentlichungen zum Thema kollaboratives Schreiben.
 Neben dem besseren Verständnis und dem Erstellen von Anforderungsprofilen,
 werden vor allem die technologischen Herausforderungen näher untersucht. Bei-
 spiele dafür sind Arbeiten zur Konfliktvermeidung, -erkennung bzw. -auflösung (z.B.
-Operational Transformation$$$7$$$), Arbeiten zur besseren Integration von KS in beste-
+Operational Transformation7), Arbeiten zur besseren Integration von KS in beste-
 hende Systeme, sowie die konkrete Entwicklung von KS-Systemen. Im Folgenden
 sollen einige dieser KS-Systeme vorgestellt werden.
 
@@ -2080,7 +2080,7 @@ Einfache und effiziente Kommunikationsmöglichkeit mit Team-
 leiter und Autoren
 
 
-FOOTNOTE:Tabelle 3: KS-Rollen und ihre Bedürfnisse
+Tabelle 3: KS-Rollen und ihre Bedürfnisse
 
 
 Bei genauerer Betrachtung der KS-Rollen und ihrer Bedürfnisse lässt sich folgendes
@@ -2122,18 +2122,18 @@ Einige Rollen haben die gleichen Bedürfnisse (z.B. Editor und Lektor) und
 können daher zusammengefasst werden:
 
 
-FOOTNOTE:o Der Teamleiter bestimmt die Teammitglieder und weist ihnen ihre Rollen
+o Der Teamleiter bestimmt die Teammitglieder und weist ihnen ihre Rollen
 zu.
 
 
 KS-Software
 
 
-FOOTNOTE:o Der Gesamttext wie auch Teiltexte muss zu zeit- und ortsunabhängig
+o Der Gesamttext wie auch Teiltexte muss zu zeit- und ortsunabhängig
 zugreifbar sein.
 
 
-FOOTNOTE:o Eigene Teiltexte können von Autoren zeit- und ortsunabhängig bearbei-
+o Eigene Teiltexte können von Autoren zeit- und ortsunabhängig bearbei-
 tet werden.
 
 
@@ -2141,7 +2141,7 @@ o Eigene Teiltexte müssen vor unerlaubter Veränderung von anderen
 Teammitgliedern geschützt werden.
 
 
-FOOTNOTE:o Alle Teammitglieder müssen auf einfache und effiziente Weise miteinan-
+o Alle Teammitglieder müssen auf einfache und effiziente Weise miteinan-
 der kommunizieren können.
 
 
@@ -2339,7 +2339,7 @@ Die Gründe dafür können sein:
 
 
 Durch eine unscharfe Abgrenzung des Inhalts unter den beteiligten Auto-
-FOOTNOTE:ren, muss ein Autor den Text eines anderen Autors bearbeiten.
+ren, muss ein Autor den Text eines anderen Autors bearbeiten.
 
 
 Ein Lektor muss in der Lage sein, einen Text bezüglich Rechtschreib- und
@@ -2543,7 +2543,7 @@ lich ist, bietet nur sie ein wirklich flüssiges Arbeiten mit großen Texten. Es
 zu beobachten, dass die Online-Synchronisation mit zunehmender Größe der Texte
 an Performanz verliert und somit den Arbeitsfluss erheblich stören kann. Zudem
 möchte ein Autor nicht ständig seinen Online-Status Preis geben, um keine Rück-
-FOOTNOTE:schlüsse auf seinen Arbeitsrhythmus zuzulassen.
+schlüsse auf seinen Arbeitsrhythmus zuzulassen.
 
 
 Das Konflikt-Management in Word 2010 ist durchaus als vorbildlich anzusehen. Im

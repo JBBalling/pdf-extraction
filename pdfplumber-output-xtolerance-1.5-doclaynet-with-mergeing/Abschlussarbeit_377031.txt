@@ -299,7 +299,7 @@ Datenebene bietet eine Service Mesh Architektur gegenüber einer einfachen Micro
 service Architektur folgende Vorteile:
 
 
-FOOTNOTE:Das Monitoring wird verbessert, da die Sidecars Metadaten des Netzwerkver- •
+Das Monitoring wird verbessert, da die Sidecars Metadaten des Netzwerkver- •
 kehrs aufzeichnen und an die Kontrollebene senden, wo diese gesammelt und
 verarbeitet werden können.
 
@@ -308,7 +308,7 @@ Das Routing wird verbessert, da die Kontrollebene zentral Regeln für das Rou- �
 ting definieren und an die einzelnen Sidecars verteilen kann.
 
 
-FOOTNOTE:Die Resilienz wird verbessert, da die Kontrollebene zentral Regeln wie Ti- •
+Die Resilienz wird verbessert, da die Kontrollebene zentral Regeln wie Ti- •
 meouts im Falle von Netzwerkfehlern definieren und an die einzelnen Sidecars
 verteilen kann.
 
@@ -373,7 +373,7 @@ eine pragmatische Problemanalyse und -bewertung einzelner Verfügbarkeitsproblem
 beschränken, welche auf Grundlage ihrer technischen und praktischen Relevanz aus-
 gewählt werden. Der Schwerpunkt der Masterarbeit liegt somit also weder auf dem
 Sammeln aller denkbaren Verfügbarkeitsprobleme und Problemlösungen noch auf der
-FOOTNOTE:Implementierung technisch umfangreicher Lösungen für alle identifizierten Probleme.
+Implementierung technisch umfangreicher Lösungen für alle identifizierten Probleme.
 
 
 1.3 Aufbau der Arbeit
@@ -453,7 +453,7 @@ Maschine und der Container. Diese werden in den folgenden zwei Abschnitten nähe
 erläutert.
 
 
-FOOTNOTE:2.1.1 Virtuelle Maschinen
+2.1.1 Virtuelle Maschinen
 
 
 Eine virtuelle Maschine – kurz VM – ist eine vollständig simulierte Nachbildung eines
@@ -525,7 +525,7 @@ dient hierbei als eine Art Blaupause für den zu erzeugenden Container [21], sod
 mittels eines einzelnen Images eine Vielzahl gleicher Container erzeugt werden kann.
 Zudem können Images auf bereits existierenden anderen Images aufbauen [21], was
 zu einer guten Erweiterbarkeit und folglich zu einem geringeren Entwicklungsaufwand
-FOOTNOTE:beim Erstellen von Images führt.
+beim Erstellen von Images führt.
 
 
 Die größte Stärke der Container gegenüber den virtuellen Maschinen liegt in ihrer
@@ -591,7 +591,7 @@ vorangetrieben wird [27]. Wie also zu sehen ist, verbergen sich hinter dem Begri
 benannt wurde [28]
 
 
-FOOTNOTE:3. Das Unternehmen „Docker, Inc.“
+3. Das Unternehmen „Docker, Inc.“
 
 
 Zur besseren Lesbarkeit ist mit dem Begriff „Docker“ im Folgenden jedoch stets und
@@ -652,7 +652,7 @@ Der Name und Versions-Tag •
 Ein Parent-Image, auf dem das Image basieren soll •
 
 
-FOOTNOTE:Dateien und Ordnerstrukturen, die der Container beinhalten soll •
+Dateien und Ordnerstrukturen, die der Container beinhalten soll •
 
 
 Skripte oder Anwendungen, die in dem Container ausgeführt werden sollen •
@@ -706,7 +706,7 @@ cher renommierter IT-Konzerne sowie einer weitreichenden Community [40].
 Um die Funktionsweise von Kubernetes zu verstehen, müssen sowohl die wichtigsten
 Komponenten und deren Zusammenspiel als auch die Architektur verteilter Systeme
 innerhalb von Kubernetes verstanden werden. Die folgenden zwei Teilabschnitte geben
-FOOTNOTE:hierzu jeweils einen kurzen Überblick.
+hierzu jeweils einen kurzen Überblick.
 
 
 2.3.1 Aufbau und Zusammenspiel der wichtigsten Komponenten
@@ -732,7 +732,7 @@ Abbildung 2.3: Schematische Darstellung der wichtigsten Komponenten in Kubernete
 Abbildung 2.3 veranschaulicht die wichtigsten Komponenten innerhalb eines Kuber-
 netes-Clusters. Wie zu sehen ist, kann ein Cluster aus sowohl mehreren Mastern als
 auch mehreren Workern bestehen. Jeder Master verfügt hierbei über eine Reihe zen-
-FOOTNOTE:traler Komponenten, die gemeinsam die so genannte Control Plane bilden1 [44]:
+traler Komponenten, die gemeinsam die so genannte Control Plane bilden$$$1$$$ [44]:
 
 
 Der API Server stellt das zentrale Herzstück eines jeden Kubernetes-Clusters •
@@ -746,7 +746,7 @@ der Open-Source-Technologie etcd. Er dient der Speicherung sämtlicher Daten
 und Konfigurationen des Clusters.
 
 
-$$$1$$$Im einfachsten Fall kann ein Kubernetes-Cluster auch aus nur einem einzelnen Master Node beste-
+1Im einfachsten Fall kann ein Kubernetes-Cluster auch aus nur einem einzelnen Master Node beste-
 hen. Dieser dient dann sowohl als Control Plane als auch als Worker. Derartige Single-Node-Cluster
 finden in der Regel jedoch nur in einfachen Test- und Entwicklungsumgebungen Anwendungen. In
 Produktivumgebungen hingegen empfiehlt sich stets die parallele Verwendung mehrerer Master und
@@ -756,7 +756,7 @@ Worker, um eine hohe Verfügbarkeit und Skalierbarkeit zu gewährleisten. [46, 4
 Der Controller Manager beinhaltet eine Sammlung von Steuerungskomponen- •
 ten, die das Cluster überwachen und auf verschiedene Ereignisse reagieren.
 Durch ihn wird sichergestellt, dass der Ist-Zustand des Clusters jederzeit an den
-FOOTNOTE:Soll-Zustand angeglichen wird.
+Soll-Zustand angeglichen wird.
 
 
 Der Scheduler dient dazu, die auszuführenden Container auf die verschiedenen
@@ -902,10 +902,10 @@ denen Ebenen: der Control Plane, der Data Plane und der Anwendungsebene [9].
 Diese drei Ebenen werden gemeinsam auf einem Kubernetes-Cluster ausgeführt, wor-
 duch die Funktionalität von Kubernetes um die Vorteile des Service Meshs erweitert
 wird. Die Komponenten der Control Plane werden hierbei – je nach konkreter Imple-
-mentierung – in einem oder mehreren verschiedenen Pods ausgeführt $$$2$$$. In der Da-
+mentierung – in einem oder mehreren verschiedenen Pods ausgeführt 2. In der Da-
 
 
-FOOTNOTE:$$$2$$$Hierbei ist zu beachten, dass die Control Plane des Service Meshs und die Control Plane von Kuber-
+2Hierbei ist zu beachten, dass die Control Plane des Service Meshs und die Control Plane von Kuber-
 netes zwei unterschiedliche Komponenten sind, die losgelöst voneinander ausgeführt werden.
 
 
@@ -955,7 +955,7 @@ sich hierbei der Unterstützung einer ständig wachsenden Community.
 
 Abbildung 2.5 stellt die wichtigsten Komponenten des Linkerd Service Meshs dar. Wie
 zu sehen ist, wird die Control Plane in einem separaten Namespace ausgeführt, wel-
-FOOTNOTE:cher folgende Komponenten beinhaltet: [59]
+cher folgende Komponenten beinhaltet: [59]
 
 
 Die Controller-Komponente: Sie stellt die Schnittstelle zwischen der Control Pla-
@@ -968,7 +968,7 @@ dafür zuständig, Metadaten des Traffic innerhalb des Service Meshs zu sammeln,
 z.B. die Anzahl an Timeouts oder Wiederholungen fehlgeschlagener Anfragen.
 
 
-$$$3$$$Zur besseren Lesbarkeit ist mit dem Begriff „Linkerd“ im Folgenden stets und ausschließlich Linkerd
+3Zur besseren Lesbarkeit ist mit dem Begriff „Linkerd“ im Folgenden stets und ausschließlich Linkerd
 Version 2.x gemeint und nicht Linkerd Version 1.x.
 
 
@@ -987,7 +987,7 @@ te Timeout-Intervalle oder die maximale Anzahl an Wiederholungen fehlgeschla-
 gener Anfragen.
 
 
-FOOTNOTE:Abbildung 2.5: Schematische Darstellung der wichtigsten Komponenten in Linkerd [59]
+Abbildung 2.5: Schematische Darstellung der wichtigsten Komponenten in Linkerd [59]
 
 
 Die Kommunikation mit der Control Plane erfolgt über die gRPC-API der Controller-
@@ -1069,9 +1069,9 @@ API des zugrundeliegenden Kubernetes-Clusters. Hierzu stellt Istio ein eigenes C
 mand Line Interface namens istioctl zur Verfügung, mit dessen Hilfe die Kommunika-
 tion mit der Control Plane abstrahiert und vereinfacht wird. [69]
 In der Data Plane verwendet Istio Envoy-Proxies als Sidecars für die Microservices der
-Anwendungsschicht $$$4$$$. Diese verfügen über eine Vielzahl wichtiger Funktionen zur Ver-
+Anwendungsschicht 4. Diese verfügen über eine Vielzahl wichtiger Funktionen zur Ver-
 besserung der Resilienz des Service Meshs. Zudem sind sie zuständig für Aufgaben
-FOOTNOTE:wie das Load Balancing und das Sammeln von Metadaten des Traffics. [66, 68]
+wie das Load Balancing und das Sammeln von Metadaten des Traffics. [66, 68]
 
 
 Im Vergleich zu Linkerd ist Istio um einiges umfangreicher und verfügt über mehr Fea-
@@ -1080,7 +1080,7 @@ oder die Autorisierung des Service-Mesh-internen Traffics bereits seit längerem
 dard in Istio sind, holt Linkerd hier nur langsam auf und stößt schnell an seine Grenzen
 
 
-$$$4$$$Envoy ist ein Open-Source Service-Proxy, der von Lyft Inc. entwickelt wurde. Er wurde erstmals im
+4Envoy ist ein Open-Source Service-Proxy, der von Lyft Inc. entwickelt wurde. Er wurde erstmals im
 September 2016 veröffentlicht. [70]
 
 
@@ -1231,10 +1231,10 @@ gern, aber niemals vollständig vermeiden. [77, 78]
 Zuletzt sei noch das Paper „Zero Downtime Release: Disruption-free Load Balancing
 of a Multi-Billion User Website“ von Usama Naseer et al. erwähnt. Dieses stellt ein
 Framework für Hochverfügbarkeit bei Updateprozessen in Produktivumgebungen mit
-FOOTNOTE:Microservice Architektur vor. Hierzu wird ein Ansatz gewählt, bei dem beim Neustart
+Microservice Architektur vor. Hierzu wird ein Ansatz gewählt, bei dem beim Neustart
 
 
-$$$5$$$Consul ist eine weitere populäre Service Mesh Implementierung, die jedoch nicht im Fokus der expe-
+5Consul ist eine weitere populäre Service Mesh Implementierung, die jedoch nicht im Fokus der expe-
 rimentellen Forschung dieser Masterarbeit steht.
 
 
@@ -1285,7 +1285,7 @@ ausgewählt:
 
 
 Die Beurteilung des wichtigsten Kriteriums – der Verbreitung in Produktivumgebungen
-– erfolgt anhand der Ergebnisse des zuletzt veröffentlichten CNCF Surveys $$$20201$$$. Wie
+– erfolgt anhand der Ergebnisse des zuletzt veröffentlichten CNCF Surveys 20201. Wie
 in Abbildung 3.1 zu sehen ist, ist Istio die derzeit am häufigsten verwendete Service
 Mesh Implementierung in Produktivumgebungen. Von den mehr als 350 Befragten, die
 angaben Service Meshes in ihren Produktivsystemen einzusetzen, verwenden ganze
@@ -1318,7 +1318,7 @@ wurde bereits im April 2017 veröffentlicht [55]. Aufgrund zahlreicher technisch
 bleme folgte noch im selben Jahr eine komplette Neuentwicklung, welche im Dezember
 
 
-FOOTNOTE:$$$1$$$Das CNCF Survey ist eine jährlich durchgeführte Umfrage der Cloud Native Computer Foundation.
+1Das CNCF Survey ist eine jährlich durchgeführte Umfrage der Cloud Native Computer Foundation.
 Hierbei werden Vertreter von Unternehmen und anderen Organisationen zu verschiedenen Themen
 und Technologien im Bereich „Cloud Native Computing“ befragt.
 
@@ -1380,7 +1380,7 @@ Die Discourse-Foren von Linkerd [89] und Istio [90] •
 Die Q/A-Website Stackoverflow [91] •
 
 
-FOOTNOTE:$$$2$$$Die Auswahl dieser Plattformen erfolgt subjektiv durch den Autor dieser Masterarbeit basierend auf
+2Die Auswahl dieser Plattformen erfolgt subjektiv durch den Autor dieser Masterarbeit basierend auf
 seiner mehr als siebenjährigen Berufserfahrung im IT-Umfeld.
 
 
@@ -1403,10 +1403,10 @@ ab aussortiert. Tabelle 3.2 gibt eine Übersicht über die angewendeten Suchrege
 
 
 Tabelle 3.2: Regeln zur Einschränkung der Suchergebnisse der Schlagwortsuche auf
-FOOTNOTE:Slack, Github, Discourse und Stackoverflow
+Slack, Github, Discourse und Stackoverflow
 
 
-$$$3$$$Ein Score von 3 oder höher bedeutet, dass in Summe von Nutzern mindestens 3 Upvotes mehr verteilt
+3Ein Score von 3 oder höher bedeutet, dass in Summe von Nutzern mindestens 3 Upvotes mehr verteilt
 wurden als Downvotes.
 
 
@@ -1454,7 +1454,7 @@ den im folgenden Abschnitt genauer beschrieben.
 
 Basierend auf den Literaturrecherchen aus den Abschnitten 2.5.2 und 3.2.1 sowie der
 manuellen Systemanalyse aus dem vorangegangenen Abschnitt 3.2.2 lassen sich die
-FOOTNOTE:folgenden Verfügbarkeitsproblemszenarien für Linkerd und Istio ableiten:
+folgenden Verfügbarkeitsproblemszenarien für Linkerd und Istio ableiten:
 
 
 Verfügbarkeitsproblemszenarien für Linkerd
@@ -1477,7 +1477,7 @@ nen Service führen würde.
 
 In der Standard-Konfiguration von Linkerd wird die Destination-Komponente nur
 in einem einzelnen Pod ausgeführt. Der beschriebene Fehlerfall könnte also auf-
-FOOTNOTE:treten, sobald dieser Pod ausfällt.
+treten, sobald dieser Pod ausfällt.
 
 
 2. Ausfall eines Linkerd-Proxies: Wie im vorhergehenden Punkt beschrieben, wird
@@ -1551,7 +1551,7 @@ Simulation und zum Logging von Nutzerinteraktionen verwendet wird.
 
 
 Abbildung 3.2 stellt schematisch den Aufbau der verwendeten Infrastruktur des Linkerd-
-FOOTNOTE:Testsystems dar.
+Testsystems dar.
 
 
 Abbildung 3.2: Schematische Darstellung der Infrastruktur des Linkerd-Testsystems
@@ -1604,7 +1604,7 @@ Diese zeichnet sich durch ihre Leichtgewichtigkeit und ihren vergleichsweise ger
 Ressourcenverbrauch aus [101] und eignet sich damit besonders gut für den Einsatz
 auf Servern wie den verwendeten Raspberry Pis, die über vergleichsweise wenig Re-
 chenleistung und Arbeitsspeicher verfügen. Aufbauend auf K3s wird zudem Linkerd als
-Service Mesh ausgeführt. Hierbei werden die folgenden Versionen eingesetzt$$$4$$$:
+Service Mesh ausgeführt. Hierbei werden die folgenden Versionen eingesetzt4:
 
 
 Linkerd-CLI: stable-2.10.2 •
@@ -1616,7 +1616,7 @@ Linkerd-Control-Plane: stable-2.10.2 •
 Kubernetes-CLI: v1.21.1
 
 
-FOOTNOTE:Kubernetes-Server-Version (K3s): v1.20.7+k3s1 •
+Kubernetes-Server-Version (K3s): v1.20.7+k3s1 •
 
 
 Da das Cluster-Netzwerk N1 durch die Firewall des Routers vom Client-Netzwerk N2
@@ -1630,7 +1630,7 @@ clientseitige Zugriff auf die in Abschnitt 3.3.3 beschriebene Testapplikation er
 Tabelle 3.3 gibt eine Übersicht über alle relevanten Port-Weiterleitungen.
 
 
-$$$4$$$Die aufgelisteten Versionen entsprechen den jeweils aktuellsten Versionen zum Zeitpunkt der Einrich-
+4Die aufgelisteten Versionen entsprechen den jeweils aktuellsten Versionen zum Zeitpunkt der Einrich-
 tung des Testsystems.
 
 
@@ -1665,7 +1665,7 @@ richtung des Clusters wird K3d verwendet. Hierbei handelt es sich um einen leich
 wichtigen Wrapper zur Ausführung von K3s in Docker-Containern [42], durch welchen
 sich ressourcenschonend ein vollständig virtuelles Kubernetes-Cluster betreiben lässt.
 Auf dem virtuellen K3d-Cluster wird zudem Istio als Service Mesh ausgeführt. Hierbei
-kommen folgende Versionen zu Einsatz$$$5$$$:
+kommen folgende Versionen zu Einsatz5:
 
 
 Istio-CLI: 1.9.2 •
@@ -1680,13 +1680,13 @@ Istio-Data-Plane: 1.9.2
 Kubernetes-CLI: v1.21.1 •
 
 
-FOOTNOTE:Kubernetes-Server-Version (K3s): v1.20.6+k3s1 •
+Kubernetes-Server-Version (K3s): v1.20.6+k3s1 •
 
 
 Durch die Einrichtung des K3d-Clusters wird ein virtuelles Cluster-Netzwerk in Docker
 erstellt. Um für Clients den Zugriff auf das in Abschnitt 3.3.3 beschriebene Testsystem
 zu ermöglichen, muss daher im Rahmen der Einrichtung des K3d-Clusters noch eine
-Port-Weiterleitung von Port localhost:9080 des lokalen Netzwerks des Host-Systems
+Port-Weiterleitung von Port localhost:$$$9080$$$ des lokalen Netzwerks des Host-Systems
 zu Port 80 des virtuellen Cluster-Netzwerks eingerichtet werden. Dies wird über einen
 optionalen Parameter des K3d-Command-Line-Tools ermöglicht.
 
@@ -1719,7 +1719,7 @@ Der Frontend-Microservice ist in TypeScript und unter Verwendung von React$$$6$$
 grammiert. Er wird in einem NGINX-Webserver ausgeführt und in einem ReplicaSet
 
 
-$$$5$$$Die aufgelisteten Versionen entsprechen den jeweils aktuellsten Versionen zum Zeitpunkt der Einrich-
+5Die aufgelisteten Versionen entsprechen den jeweils aktuellsten Versionen zum Zeitpunkt der Einrich-
 tung des Testsystems.
 
 
@@ -1727,13 +1727,13 @@ tung des Testsystems.
 oder TypeScript.
 
 
-FOOTNOTE:Abbildung 3.5: Loginseite und Registrierungsseite der Testapplikation
+Abbildung 3.5: Loginseite und Registrierungsseite der Testapplikation
 
 
 mit insgesamt 5 replizierten Pods betrieben. Die Backend-Microservices hingegen sind
 jeweils in Java programmiert und laufen in ReplicaSets mit insgesamt je 4 replizierten
 Pods. Der Login-Microservice verwendet hierbei Spring, während der Registrierungs-
-Microservice Quarkus einsetzt$$$7$$$.
+Microservice Quarkus einsetzt7.
 
 
 Zusätzlich zu den Microservices wird zudem noch ein Ingress eingerichtet. Der Ingress
@@ -1753,10 +1753,10 @@ Fall ist. Im Frontend werden dann nach Aufruf des jeweiligen Backend-Microservic
 dessen Rückgabewerte in einem Popup angezeigt.
 
 
-Sämtlicher Quellcode der Testapplikation ist im Ordner $$$01$$$_TestApp des digitalen An-
+Sämtlicher Quellcode der Testapplikation ist im Ordner 01_TestApp des digitalen An-
 hangs dieser Masterarbeit zu finden [102]. Dort befinden sich sowohl die IntelliJ-Pro-
 jekte der drei Microservices als auch die YAML-Dateien zur Orchestrierung der Micro-
-FOOTNOTE:services auf den jeweiligen Test-Clustern.
+services auf den jeweiligen Test-Clustern.
 
 
 3.3.4 Struktur und Funktionsweise des Traffic-Generators
@@ -1771,7 +1771,7 @@ gen an die Backend-Microservices der in Abschnitt 3.3.3 beschriebenen Webapplika
 tion senden und somit clientseitige Nutzerinteraktionen simulieren. Zudem verfügt er
 
 
-$$$7$$$Spring und Quarkus sind Frameworks für die Entwicklung von Webapplikationen in Java.
+7Spring und Quarkus sind Frameworks für die Entwicklung von Webapplikationen in Java.
 
 
 über ein Logging sämtlicher aus dem Backend erhaltenen Antworten und stellt die so
@@ -1780,7 +1780,7 @@ grafische Benutzeroberfläche des entwickelten Traffic-Generators.
 
 
 Wie zu erkennen ist, verfügt der Traffic-Generator über einen Start-Button, durch wel-
-chen die aktuelle Messung gestartet, angehalten und wieder fortgesetzt werden kann$$$8$$$.
+chen die aktuelle Messung gestartet, angehalten und wieder fortgesetzt werden kann8.
 Zudem existiert ein Clear-Button, mit dem sich die Daten der aktuellen Messung lö-
 schen lassen. Über den Save-Diagram-Button kann darüberhinaus das aktuelle Dia-
 gramm als PNG-Datei exportiert werden. Mit dem Save-Data-Button hingegen lassen
@@ -1792,7 +1792,7 @@ erneut grafisch dargestellt werden.
 In dem Diagramm werden insgesamt 6 verschiedene Messwerte dargestellt:
 
 
-FOOTNOTE:1. Die Gesamtanzahl aller Anfragen seit Beginn der aktuellen Messung
+1. Die Gesamtanzahl aller Anfragen seit Beginn der aktuellen Messung
 
 
 2. Die Anzahl aller erfolgreichen Anfragen seit Beginn der aktuellen Messung
@@ -1801,7 +1801,7 @@ FOOTNOTE:1. Die Gesamtanzahl aller Anfragen seit Beginn der aktuellen Messung
 3. Die Anzahl aller fehlgeschlagenen Anfragen seit Beginn der aktuellen Messung
 
 
-$$$8$$$Wenn eine neue Messung noch nicht gestartet oder eine laufende Messung gestoppt wurde, steht auf
+8Wenn eine neue Messung noch nicht gestartet oder eine laufende Messung gestoppt wurde, steht auf
 dem Button „Start“. In diesem Fall führt eine Betätigung des Buttons zum Start der neuen Messung
 bzw. zur Fortsetzung der gestoppten Messung. Läuft hingegen aktuell eine Messung, so steht auf
 dem Button „Stop“ und eine Betätigung führt dazu, dass die laufende Messung gestoppt wird.
@@ -1810,7 +1810,7 @@ dem Button „Stop“ und eine Betätigung führt dazu, dass die laufende Messun
 4. Die Gesamtanzahl aller Anfragen je Sekunde der Messung
 
 
-FOOTNOTE:5. Die Anzahl aller erfolgreichen Anfragen je Sekunde der Messung
+5. Die Anzahl aller erfolgreichen Anfragen je Sekunde der Messung
 
 
 6. Die Anzahl aller fehlgeschlagenen Anfragen je Sekunde der Messung
@@ -1850,7 +1850,7 @@ hingegen enthalten andere Login- bzw. Registrierungsdaten und führen entspreche
 zum Rückgabewert false. Das Verhältnis von gültigen zu ungültigen Anfragen beträgt
 hierbei 7:1 bei den Loginanfragen und 3:1 bei den Registrierungsanfragen.
 Weitergehende Informationen sowie der gesamte Quellcode des Traffic-Generators
-sind im Ordner $$$02$$$_TrafficGenerator des digitalen Anhangs dieser Masterarbeit zu fin-
+sind im Ordner 02_TrafficGenerator des digitalen Anhangs dieser Masterarbeit zu fin-
 den [102].
 
 

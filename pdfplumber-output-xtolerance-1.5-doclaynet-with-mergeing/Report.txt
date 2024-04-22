@@ -1,5 +1,5 @@
 Automatisierte Generierung von
-plattformu¨bergreifenden
+plattformübergreifenden
 Wissensnetzwerken mit Metadaten
 und Volltextindexierung
 
@@ -19,7 +19,7 @@ Departement Informatik, Hochschule Luzern
 Bachelor Diplomarbeit an der Hochschule Luzern – Informatik
 
 
-FOOTNOTE:Titel: Automatisierte Generierung von plattformübergreifenden Wissensnetzwerken mit
+Titel: Automatisierte Generierung von plattformübergreifenden Wissensnetzwerken mit
 Metadaten und Volltextindexierung
 
 
@@ -32,7 +32,7 @@ Diplomandin / Diplomand: Patrick Siegfried
 Studiengang: BSc Informatik
 
 
-Abschlussjahr: $$$2017$$$
+Abschlussjahr: 2017
 
 
 Dozentin / Dozent: Prof. Dr. sc. inf. Michael Kaufmann
@@ -113,7 +113,7 @@ eine von Maschinen verwendete Sprache übertragen werden.
 Abstract
 
 
-FOOTNOTE:The project Intuitive Knowledge Connectivity offers a technical web
+The project Intuitive Knowledge Connectivity offers a technical web
 interface giving the user the possibility to interconnect and label exter-
 nal data sources. Based on this project the following thesis provides a
 full-text index to search all the user-defined data sources. Additional-
@@ -142,7 +142,7 @@ Problem der Informationsgewinnung. The Implementation teilt die
 entstandene Applikation zur Unterstu¨ tzung in zwei individuelle Ser-
 vices auf. Abschliessend wurde eine Evaluation auf Basis eines Exper-
 ten-Workshops, einer SWOT-Analyse und einer offenen Diskussion
-durchgefu¨ hrt.
+durchgefü hrt.
 
 
 Kapitel 1
@@ -151,7 +151,7 @@ Kapitel 1
 Einleitung
 
 
-FOOTNOTE:Mit dem Forschungsprojekt IKC als Grundlage bescha¨ftigt sich die
+Mit dem Forschungsprojekt IKC als Grundlage bescha¨ftigt sich die
 vorliegende Arbeit vertieft mit der Analyse von Datenquellen und
 der Extraktion von relevanten Informationen. Aktuell werden Daten-
 quellen verknu¨ pft, jedoch wird deren Inhalt noch nirgends genutzt.
@@ -186,7 +186,7 @@ zuru¨ ck.
 1https://gitlab.enterpriselab.ch/ikc
 
 
-FOOTNOTE:Abbildung 1.1: Kontextdiagramm
+Abbildung 1.1: Kontextdiagramm
 
 
 Keyphrases sind Begriffe, welche aus einem oder mehreren Wo¨rtern
@@ -233,7 +233,7 @@ nes Projektes. Fu¨ r dieses Projekt ist er wie folgt festgelegt:
 tig ist, beschra¨nkt sich die Arbeit auf Text-Dateien. Versprechen
 
 
-FOOTNOTE:die Resultate einen grossen Mehrwert, ko¨nnen die Konzepte
+die Resultate einen grossen Mehrwert, ko¨nnen die Konzepte
 spa¨ter fu¨ r die Verwendung mit weiteren Datenquellen erweitert
 werden.
 
@@ -264,7 +264,7 @@ nich ausreichend stabil lauffa¨hig war.
 1.3 Projektstrukturplan
 
 
-Die Abbildung A.1 gewa¨hrt einen U¨ berblick u¨ ber das Projekt. Sie
+Die Abbildung A.$$$1$$$ gewa¨hrt einen U¨ berblick u¨ ber das Projekt. Sie
 stellt die wichtigsten Bereiche und Phasen dar, in welche die Arbeit
 grob eingegliedert werden kann:
 
@@ -286,13 +286,13 @@ Schnittstellen gepru¨ ft.
 cken bereits erste Prototypen entwickelt. So sollen mo¨gliche Op-
 tionen u¨ berpru¨ ft und gegebenenfalls spa¨ter implementiert oder
 weiterentwickelt werden. Nach einer Evaluation werden die ge-
-eigneten Lo¨sungen ausgewa¨hlt.
+eigneten Lösungen ausgewählt.
 
 
-$$$2$$$Protokoll der Anforderungsanalyse Abschnitt A.4
+2Protokoll der Anforderungsanalyse Abschnitt A.4
 
 
-FOOTNOTE:4. In der Entwicklung werden die gesammelten Erkenntnisse ge-
+4. In der Entwicklung werden die gesammelten Erkenntnisse ge-
 sammelt und analysiert. Grundsa¨tzlich soll auf den zuvor ent-
 wickelten Prototypen aufgebaut werden. Zuna¨chst wird eigen-
 sta¨ndig, ohne Einbindung in den ikc-core entwickelt.
@@ -304,7 +304,7 @@ griert. Nach letzten Optimierungen sind nun alle Anforderun-
 gen erfu¨ llt und intensivere Tests ko¨nnen durchgefu¨ hrt werden.
 Fu¨ r die Entwicklung werden hauptsa¨chlich Integrationstests ver-
 wendet. Fu¨ r einen besseren U¨ berblick ist das Testkonzept in der
-Tabelle A.1 zu finden. Anhand dieses wurde die Funktionalita¨t
+Tabelle A.$$$1$$$ zu finden. Anhand dieses wurde die Funktionalita¨t
 wa¨hrend der Entwicklung laufend getestet.
 
 
@@ -336,7 +336,7 @@ werden in Tabelle A.2 aufgelistet.
 1.5 Projektziele
 
 
-FOOTNOTE:Projektziele werden definiert, um den Erfolg an ausgewa¨hlten Punk-
+Projektziele werden definiert, um den Erfolg an ausgewa¨hlten Punk-
 ten zu u¨ berpru¨ fen und sicherstellen. Sie wurden in Absprache mit
 dem Projektpartner definiert. Die Ziele sind in der folgenden Tabel-
 le 1.1 aufgelistet und anschliessend genauer ausgefu¨ hrt.
@@ -345,21 +345,21 @@ le 1.1 aufgelistet und anschliessend genauer ausgefu¨ hrt.
 Tabelle 1.1: Projektziele
 
 
-1. Z$$$1$$$: Der Prototyp bietet eine Volltextsuche u¨ ber den gesamten
+1. Z1: Der Prototyp bietet eine Volltextsuche u¨ ber den gesamten
 Inhalt der Dokumente einer externen Datenquelle an. Die Such-
 funktion ist in den ikc-core integriert.
 
 
-2. Z$$$2$$$: Zu den einzelnen Dokumenten extrahiert der Prototyp aus
+2. Z2: Zu den einzelnen Dokumenten extrahiert der Prototyp aus
 dem Text relevante Keyphrases.
 
 
-3. Z$$$3$$$: Diese Keyphrases werden nach der Extraktion direkt Teil
+3. Z3: Diese Keyphrases werden nach der Extraktion direkt Teil
 des Wissensnetzwerkes. Diese ko¨nnen vom Benutzer wieder ent-
 fernt werden.
 
 
-4. Z$$$4$$$: Sowohl Keyphrase als auch Dokument werden als Node in-
+4. Z4: Sowohl Keyphrase als auch Dokument werden als Node in-
 nerhalb des ikc-core repra¨sentiert und sind miteinander verbun-
 den.
 
@@ -375,13 +375,13 @@ le und nicht-funktionale Anforderungen unterschieden. Die funktio-
 nalen Anforderungen definieren direkt die Eigenschaften. Im Gegen-
 satz dazu definieren nicht-funktionale Anforderungen die Leistung
 und die Randbedingungen. Diese sind in der Tabelle Tabelle A.3, be-
-ziehungsweise Tabelle A.4 zu finden.
+ziehungsweise Tabelle A.$$$4$$$ zu finden.
 
 
 Die Priorisierung erfolgt nach dem MoSCoW-System:
 
 
-FOOTNOTE:Tabelle 1.2: MosCow-Priorisierung
+Tabelle 1.2: MosCow-Priorisierung
 
 
 Neben den in der Aufgabenstellung vorgegebenen Lieferobjekte (Ta-
@@ -396,7 +396,7 @@ Kapitel 2
 Stand der Technik
 
 
-FOOTNOTE:Im Folgenden werden bestehende literarische Grundlagen fu¨ r die vor-
+Im Folgenden werden bestehende literarische Grundlagen fu¨ r die vor-
 liegende Arbeit aus Forschung und Entwicklung kurz zusammenge-
 fasst und die wichtigsten Punkte aufgezeigt. Der Inhalt befasst sich
 vorwiegend mit Konzepten, Theorien und Begrifflichkeiten, welche
@@ -428,7 +428,7 @@ men genutzt, man erlangt den gro¨ssten Mehrwert. Eine Definition der
 Ausdru¨ cke folgt im na¨chsten Absatz.
 
 
-FOOTNOTE:An ounce of information is worth a pound of data.
+An ounce of information is worth a pound of data.
 An ounce of knowledge is worth a pound of information.
 An ounce of understanding is worth a pound of knowledge.
 
@@ -449,7 +449,7 @@ weitere, offenere Definition stammt von Bierly III, Kessler und Chris-
 tensen (2000): Informationen sind bedeutungsvolle und nu¨ tzliche Da-
 ten, welche das Versta¨ndnis von Informationen klarer machen. Wis-
 sen nach Barlas, Ginart und Dorrity (2005) ist eine Aggregation von
-a¨hnlichen oder zusammengeho¨rigen Informationen.
+ähnlichen oder zusammengehörigen Informationen.
 
 
 2.1.1 Bedeutung in dieser Arbeit
@@ -465,7 +465,7 @@ Wissensnetzwerk definiert das Wissen im gegebenen Kontext.
 2.2 Intuitive Knowledge Connectivity
 
 
-Das Forschungsprojekt Intuitive Knowledge Connectivity (IKC)$$$1$$$ der
+Das Forschungsprojekt Intuitive Knowledge Connectivity (IKC)1 der
 Hochschule Luzern Informatik ist die Grundlage fu¨ r diese Bachelor-
 Arbeit. Aus diesem Grund ist hier fu¨ r das tiefere Versta¨ndnis der The-
 matik eine kurze Einfu¨ hrung zu finden (siehe auch Kaufmann et al.
@@ -481,7 +481,7 @@ lierten Informationen, zusammen mit Trends wie Social Media und
 -arts/research/projects/detail/?pid=3631
 
 
-FOOTNOTE:Internet Of Things, fu¨ hren schnell zu exponentiellem Wachstum der
+Internet Of Things, fu¨ hren schnell zu exponentiellem Wachstum der
 Daten. Die immense Flut gilt es auszuwerten und mit einem Mehr-
 wert produktiv zu nutzen.
 
@@ -539,7 +539,7 @@ schiede zeigen gleichzeitig auch die Evolution in der Forschung im
 Bereich von Artifical Intelligence an. Bis 1970 wurde versucht, ein
 
 
-FOOTNOTE:System zu entwickeln, welches wie ein Mensch denkt und handelt.
+System zu entwickeln, welches wie ein Mensch denkt und handelt.
 Von 1970 an gelangten jedoch Systeme mit einer rationalen Intelli-
 genz, welche jederzeit die richtige Entscheidung treffen ko¨nnen, in
 den Fokus.
@@ -595,7 +595,7 @@ Agent eine Funktion, mit welcher er auf zuku¨ nftige Ereignis-
 se reagieren kann. Zum Beispiel die Erkennung von Fru¨ chten
 
 
-FOOTNOTE:auf Bildern, anhand einer Bildmenge, welche mit der jeweiligen
+auf Bildern, anhand einer Bildmenge, welche mit der jeweiligen
 Frucht beschriftet ist.
 
 
@@ -651,7 +651,7 @@ Ein wichtiger Begriff in diesem Kontext ist Tokenization im Sinne von
 Grefenstette und Tapanainen (1994). Ein zu verarbeitender Text ist in
 
 
-FOOTNOTE:diesem Stadium repra¨sentiert durch einen langen String. Er besteht
+diesem Stadium repra¨sentiert durch einen langen String. Er besteht
 aus aneinandergereihten Zeichen. Der Vorgang des Tokenization teilt
 den Text zuna¨chst nach Satz- und Sonderzeichen auf. Anschliessend
 werden die Sa¨tze und Satzteile (beispielsweise nach Leerschla¨gen)
@@ -705,7 +705,7 @@ anhand von den umliegenden Wo¨rter eine Wortart zuweisen. Diese
 Regeln sind fix im Algorithmus Codiert.
 
 
-FOOTNOTE:Bei der Verwendung einem stochastischen Algorithmus werden als
+Bei der Verwendung einem stochastischen Algorithmus werden als
 erstes Wo¨rter in Trainingsdaten manuell einer Wortart zugeordnet.
 Anhand diese Trainingsdaten ko¨nnen nun Regeln berechnet werden,
 welche sich der Wortabfolge orientieren. Bei der Verwendung des Al-
@@ -758,7 +758,7 @@ welche fu¨ r suchende Benutzer interessant sein ko¨nnten (Dalvi et al.
 (2009)). Die Definition ist bewusst offen gewa¨hlt, da sich eine ge-
 
 
-FOOTNOTE:nauere Eingrenzung schwierig gestaltet. Eine weiterfu¨ hrende Defini-
+nauere Eingrenzung schwierig gestaltet. Eine weiterfu¨ hrende Defini-
 tion geht in Richtung Nutzen fu¨ r Menschen: Sobald eine gewisse An-
 zahl von Personen etwas als Konzept erkennt, kann dieses als Kon-
 zept angesehen werden (Parameswaran, Garcia-Molina und Rajara-
@@ -779,7 +779,7 @@ Begriffes innerhalb eines Dokuments und auch die Ha¨ufigkeit eines
 Begriffes innerhalb des gesamten Dokumentenkorpus.
 
 
-H¨aufigkeit und Gewichtung
+Häufigkeit und Gewichtung
 
 
 Ein Dokument, welches einen gesuchten Begriff o¨fters entha¨lt als an-
@@ -811,7 +811,7 @@ Korpus zu skalieren. Dieser Wert wird als collection frequency (cf) be-
 zeichnet. Je ha¨ufiger der Begriff, umso tiefer die Gewichtung. Begriffe,
 
 
-FOOTNOTE:welche im Allgemeinen ha¨ufig auftauchen wu¨ rden, so in ihrer Rele-
+welche im Allgemeinen ha¨ufig auftauchen wu¨ rden, so in ihrer Rele-
 vanz niedriger.
 
 
@@ -854,10 +854,10 @@ globale Kontext-Informationen. Er kombiniert die auf den im Ab-
 schnitt 2.6.2 definierten Werte.
 
 
-$$$2$$$(Manning et al., 2008, S. 118)
+2(Manning et al., 2008, S. 118)
 
 
-FOOTNOTE:tf-idf = tf idf t,d t,d f ×
+tf-idf = tf idf t,d t,d f ×
 
 
 Der TF-IDF Wert ist hoch, wenn ein Begriff in einem Dokument oft,
@@ -879,10 +879,10 @@ ist es mo¨glich, Wo¨rter als Vektor durch die Ha¨ufigkeit anderer Wo¨rter
 in seiner Umgebung auszudru¨ cken.
 
 
-Okapi BM25
+Okapi BM$$$25$$$
 
 
-Okapi BM25 ist, wie von Robertson, Zaragoza et al. (2009) beschrie-
+Okapi BM$$$25$$$ ist, wie von Robertson, Zaragoza et al. (2009) beschrie-
 ben, eine Weiterentwicklung von TF-IDF. Es wurden verschiedene
 Steuerung-Parameter eingefu¨ hrt, welche die Reduktion der Auswir-
 kung von hohen Keyphrase-Frequenzen als auch der Grad der Nor-
@@ -908,7 +908,7 @@ tels einem unidirektionalen Datenfluss mit Dateninkonsistenzen um-
 gegangen. Dies geht in den Bereich der funktionalen Programmie-
 
 
-FOOTNOTE:rung. React arbeitet mit einer vereinfachten Version von Flux namens
+rung. React arbeitet mit einer vereinfachten Version von Flux namens
 Redux.
 
 
@@ -960,7 +960,7 @@ Representational State Transfer (REST) ist, nach einer Vielzahl von
 Autoren (Fielding (2000); Richardson und Ruby (2008); W3C (2004)),
 
 
-FOOTNOTE:ein Architekturstil zum Aufbau eines Web-Services. Es baut auf den
+ein Architekturstil zum Aufbau eines Web-Services. Es baut auf den
 Grundlagen des Webs, insbesondere dem HTTP-Protokoll, auf und
 ist optimiert fu¨ r Web-Services.
 
@@ -1024,7 +1024,7 @@ verse Bibliotheken zur Erweiterung der Funktionalita¨t verfu¨ gbar sind.
 2.9.4 Stream
 
 
-FOOTNOTE:Wie gesehen in (Prusty, 2016, S. 56) ist ein Stream ganz allgemein
+Wie gesehen in (Prusty, 2016, S. 56) ist ein Stream ganz allgemein
 formuliert eine Sequenz von Daten, welcher u¨ ber die Zeit verfu¨ gbar
 gemacht wird. Da dies asynchron abla¨uft, werden EventHandler oder
 Callbacks eingesetzt, welche aufgerufen werden, wann immer Daten
@@ -1077,7 +1077,7 @@ und Integrita¨t essentiell.
 2.11.1 Dropbox
 
 
-FOOTNOTE:Bis anhin speichert der ikc-core die Daten in einem dafu¨ r vorgesehe-
+Bis anhin speichert der ikc-core die Daten in einem dafu¨ r vorgesehe-
 nen Ordner auf der Dropbox des Benutzers. Dies hat den Grund, das
 Dropbox ebenfalls als Datenquelle verwendet wird und bereits eine
 a¨hnliche Anbindung verfu¨ gbar ist. Der Benutzer hat so einfach und
@@ -1085,8 +1085,8 @@ jederzeit Einblick in die Daten seines Wissensnetzwerks.
 
 
 Die Anbindung ist umgesetzt mit der Javascript Implementation der
-Dropbox API V$$$24$$$. Die Autorisierung funktioniert mittels der oauth-
-Bibliothek$$$5$$$. Zu beachten ist, dass die API gewisse Limitationen hat$$$6$$$:
+Dropbox API V24. Die Autorisierung funktioniert mittels der oauth-
+Bibliothek5. Zu beachten ist, dass die API gewisse Limitationen hat6:
 Unter anderem ist die Anzahl einzelner Anfragen in einer gewissen
 Zeitspanne begrenzt. Dem kann mittels Stapel-Methoden aber entge-
 gengewirkt werden.
@@ -1121,7 +1121,7 @@ documentation
 6https://www.dropbox.com/developers/reference/data-ingress-guide
 
 
-FOOTNOTE:Das Prinzip des verteilten Netzwerks funktioniert, wie (Wilkinson,
+Das Prinzip des verteilten Netzwerks funktioniert, wie (Wilkinson,
 Boshevski, Brandoff & Buterin, 2014, S. 2-16) erkla¨rt, folgendermas-
 sen: Die Abbildung 2.1 dient der Veranschaulichung. Das Netzwerk
 besteht aus zahlreichen Peers. Storj ermo¨glicht diesen u¨ ber das Netz-
@@ -1156,7 +1156,7 @@ Kapitel 3
 L¨osungsdesign
 
 
-FOOTNOTE:Das Lo¨sungsdesign beinhaltet die Grundlagen fu¨ r die erfolgreiche
+Das Lo¨sungsdesign beinhaltet die Grundlagen fu¨ r die erfolgreiche
 Umsetzung des Prototyps. Darin wird basierend auf den Anforde-
 rungen und der Aufgabenstellung die Software-Architektur definiert.
 Wa¨hrend dies auf einer hohen Abstraktionsebene geschieht, erfolgt
@@ -1192,7 +1192,7 @@ weiterung seiner Funktionalita¨t. Damit ko¨nnen die Hauptanforderun-
 gen, wie die Volltextsuche und die Extraktion von Schlu¨ sselwo¨rter,
 
 
-FOOTNOTE:abgedeckt werden. Diese beiden Funktionen sind fu¨ r den Benutzer
+abgedeckt werden. Diese beiden Funktionen sind fu¨ r den Benutzer
 u¨ ber das UserInterface innerhalb des ikc-core verfu¨ gbar. Sowohl der
 ikc-core als auch der Prototyp haben Zugriff auf die externen Daten-
 quellen. Der Prototyp hat dort die Quellen fu¨ r die Dateiinhalte und
@@ -1208,7 +1208,7 @@ nalen und nichtfunktionalen Anforderungen beeinflussen verschiede-
 nen Faktoren den Architektur-Entwurf.
 
 
-FOOTNOTE:Software Infrastruktur Als Basis fu¨ r Applikationsverteilung auf das
+Software Infrastruktur Als Basis fu¨ r Applikationsverteilung auf das
 Entwicklungs- und Produktions-System wird
 Dokku in Kombination mit Gitlab CI ver-
 wendet. Das Versionskontrollsystem verteilt
@@ -1219,7 +1219,7 @@ dedizierte Applikation innerhalb des Dokku-
 Frameworks gestartet.
 
 
-FOOTNOTE:Der ikc-core nutzt keine zusa¨tzlichen
+Der ikc-core nutzt keine zusa¨tzlichen
 zentralen Services fu¨ r die Persistenz von
 Benutzerdaten oder deren Applikations-
 Konfiguration. Es werden die lokalen
@@ -1259,7 +1259,7 @@ transparente Kontrolle u¨ ber den Speicherort und auch den In-
 halt der eigenen Daten.
 
 
-FOOTNOTE:• Inspiration durch React und Flux: Wie in Abschnitt 2.7 bereits
+• Inspiration durch React und Flux: Wie in Abschnitt 2.7 bereits
 erwa¨hnt, arbeitet React im Hintergrund mit einer eigenen Im-
 plementation von Flux. Dieser orientiert sich stark am funktio-
 nalen Programmier-Paradigma: Innere Zusta¨nde, also Variabeln,
@@ -1274,7 +1274,7 @@ prinzipiell verwandte Ansa¨tze verfolgen.
 3.1.4 Architekturziele
 
 
-FOOTNOTE:Der zu entwickelnde Prototyp baut auf dem bestehenden ikc-core auf.
+Der zu entwickelnde Prototyp baut auf dem bestehenden ikc-core auf.
 Dabei soll das Augenmerk weiterhin auf den bereits bestehenden Ei-
 genschaften der Architektur, insbesondere der Modularita¨t und der
 Erweiterbarkeit, gehalten werden. Dies ist im Kontext des zugrun-
@@ -1295,7 +1295,7 @@ Tabelle 3.2: Ziele der Architektur
 3.1.5 Bausteinsicht
 
 
-FOOTNOTE:Die Abbildung 3.2 zeigt die Bausteinsicht der Architektur des Pro-
+Die Abbildung 3.2 zeigt die Bausteinsicht der Architektur des Pro-
 totypen. Darin werden die verschiedenen Komponenten und Modu-
 le und deren Beziehungen untereinander aufgezeigt. Hierbei werden
 drei verschiedene Abstraktionslevel unterschieden.
@@ -1307,7 +1307,7 @@ Nachfolgend werden diese na¨her erla¨utert.
 Bausteinsicht Level 0
 
 
-FOOTNOTE:Innerhalb des Level 0 werden die Zusammenha¨nge zwischen dem
+Innerhalb des Level 0 werden die Zusammenha¨nge zwischen dem
 User, dem ikc-core und dem Prototypen aufgezeigt. Ebenfalls ist
 die Systemgrenze zwischen der bestehenden und der zu erstellenden
 Komponente ersichtlich. Die Systemgrenze grenzt den Kern des Pro-
@@ -1346,7 +1346,7 @@ den die Module DataService und IndexService unterschieden.
 Bausteinsicht Level 1
 
 
-Mithilfe des zweiten Abstraktionlevels (Level $$$1$$$) werden die verschie-
+Mithilfe des zweiten Abstraktionlevels (Level 1) werden die verschie-
 denen Module und die Beziehungen innerhalb der Komponente auf-
 gezeigt.
 
@@ -1354,7 +1354,7 @@ gezeigt.
 UI Elements
 
 
-FOOTNOTE:Die Interaktion mit dem Benutzer wird durch die Komponente UI-
+Die Interaktion mit dem Benutzer wird durch die Komponente UI-
 Elements abgehandelt. Dabei werden alle sichtbaren Teile der Ober-
 fla¨che in verschiedene Elemente gekapselt. Die resultierenden Ele-
 mente sollen innerhalb der Applikation beliebig wiederverwendbar
@@ -1388,7 +1388,7 @@ IndexService
 
 
 Die Textanalyse wird mit dem Modul IndexService durchgefu¨ hrt.
-FOOTNOTE:Die beiden Teilmodule Search und InformationExtraction nutzen
+Die beiden Teilmodule Search und InformationExtraction nutzen
 den Index als Basis fu¨ r die Berechnung von Suchresultaten oder die
 Extraktion von Schlu¨ sselwo¨rtern.
 
@@ -1396,7 +1396,7 @@ Extraktion von Schlu¨ sselwo¨rtern.
 Bausteinsicht Level 2
 
 
-Mit Hilfe des letzten Abstraktionslevels (Leve $$$2$$$) der Bausteinsicht
+Mit Hilfe des letzten Abstraktionslevels (Leve 2) der Bausteinsicht
 werden die verschiedenen Teilmodule erla¨utert.
 
 
@@ -1405,14 +1405,14 @@ DataAccess
 
 Eine der Hauptaufgaben des DataService-Moduls, der Zugriff auf
 verschiedene externe Datenquellen, wird mittels des Teilmoduls Da-
-FOOTNOTE:taSharing abgehandelt. Darin wird der spezifische Zugriff auf die
+taSharing abgehandelt. Darin wird der spezifische Zugriff auf die
 Quelle beschrieben.
 
 
 DataSharing
 
 
-FOOTNOTE:Neben dem Zugriff sollen Elemente von externen Quellen innerhalb
+Neben dem Zugriff sollen Elemente von externen Quellen innerhalb
 der Applikation via Freigabe-Token zu Verfu¨ gung gestellt werden.
 Diese werden innerhalb des DataSharing Teilmoduls gehalten. Nach
 einmaliger Verwendung sollen diese verfallen.
@@ -1456,7 +1456,7 @@ net er eine Auswahl aus den potentiellen Kandidaten.
 3.1.6 Ablaufsicht
 
 
-FOOTNOTE:Die Abbildung 3.3 gewa¨hrt einen U¨ berblick u¨ ber den Gesamtablauf
+Die Abbildung 3.3 gewa¨hrt einen U¨ berblick u¨ ber den Gesamtablauf
 vom Beginn der Nutzung des ikc-core bis hin zur Betrachtung der
 Suchresultate oder der extrahierten Schlu¨ sselwo¨rter.
 
@@ -1483,7 +1483,7 @@ oder spa¨testens nach dessen Erstellung, wird dies an den ikc-core
 gemeldet.
 
 
-FOOTNOTE:Nun kann der ikc-core die Funktionalita¨t des IndexService nutzen:
+Nun kann der ikc-core die Funktionalita¨t des IndexService nutzen:
 Er hat Zugriff auf die Volltextsuche (search) und die extrahierten
 Schlu¨ sselwo¨rter (extractKeywords).
 
@@ -1516,7 +1516,7 @@ ral Language Processing kombiniert mit statistischen Analsysen und
 heuristischen Vorgaben. Fu¨ r die Analyse der Keyphrases werden N-
 
 
-FOOTNOTE:Gramme der Gro¨sse eins bis vier beru¨ cksichtigt. Nebst mo¨glichst tref-
+Gramme der Gro¨sse eins bis vier beru¨ cksichtigt. Nebst mo¨glichst tref-
 fenden Resultaten liegt der Fokus auch auf der raschen Aussortie-
 rung von ungeeigneten Kandidaten. Da die Berechnung der Relevanz
 der Rechen- und Speicher-intensivste Vorgang des Algorithmus ist,
@@ -1548,7 +1548,7 @@ The Guardian newspaper was founded in 1821 as The Manche- ”
 ster Guardian“, which head office is still located in Manchester.
 
 
-FOOTNOTE:Mit einer La¨nge von 19 Wo¨rtern besitzt er 70 mo¨gliche N-Gramme
+Mit einer La¨nge von 19 Wo¨rtern besitzt er 70 mo¨gliche N-Gramme
 mit einer La¨nge von eins bis vier.
 
 
@@ -1577,8 +1577,8 @@ ster Guardian) (which head office is still located in Manchester)
 
 
 Nach dem ersten Schritt wurde der Text mit 19 + 18 + 17 + 16 = 70
-mo¨glichen N-Grammen in eine Liste von Textfragmenten mit ($$$8$$$ + 7 +
-FOOTNOTE:6 + 5) + (3 + 2 + 1) + (8 + 7 + 6 + 5) = 58 mo¨glichen N-Grammen
+mo¨glichen N-Grammen in eine Liste von Textfragmenten mit (8 + 7 +
+FOOTNOTE:6 + 5) + (3 + 2 + 1) + (8 + 7 + 6 + 5) = 58 möglichen N-Grammen
 transformiert. Dadurch konnten bereits 12 Kandidaten ausgeschlos-
 sen werden.
 
@@ -1599,7 +1599,7 @@ Manchester, Guardian], [which, head, office, is, still, located, in,
 Manchester]
 
 
-3.2.4 Generierung m¨oglicher Keyphrases (3)
+3.2.4 Generierung möglicher Keyphrases (3)
 
 
 Anhand der generierten Wortlisten ko¨nnen nun die verschiedenen N-
@@ -1607,7 +1607,7 @@ Gramme generiert werden. Es entsteht eine Liste von N-Grammen der
 La¨nge von eins bis vier.
 
 
-FOOTNOTE:[the Guardian newspaper was, the Guardian newspaper, the Gu-
+[the Guardian newspaper was, the Guardian newspaper, the Gu-
 ardian, the, ... , located in Manchester, located in, located, in
 Manchester, in, Manchester]
 
@@ -1664,7 +1664,7 @@ chester Guardian, The Manchester, The, Manchester Guardian,
 Manchester, Guardian, head office, head, office, Manchester]
 
 
-FOOTNOTE:Damit bleiben noch 14 mo¨gliche Keyphrases von urspru¨ nglich 70.
+Damit bleiben noch 14 mo¨gliche Keyphrases von urspru¨ nglich 70.
 Nun werden gleiche Keyphrases zusammengefasst, indem sie zusam-
 men mit der jeweiligen Anzahl Vorkommnisse kombiniert werden.
 Das reduziert die Anzahl unterschiedlicher Keyphrases auf 12 (Tabel-
@@ -1689,8 +1689,8 @@ ken beno¨tigt (Tabelle 3.4).
 Tabelle 3.4: Beno¨tigte Metriken
 
 
-FOOTNOTE:Basierend auf den eingefu¨ hrten Metriken wird mit Hilfe einer ange-
-passten Version der Similarity-Formel$$$1$$$ des Apache Lucene Projekts ge-
+Basierend auf den eingefu¨ hrten Metriken wird mit Hilfe einer ange-
+passten Version der Similarity-Formel1 des Apache Lucene Projekts ge-
 arbeitet. Die verwendet Formel fu¨ r die Berechnung des Scores sieht
 folgendermassen aus:
 
@@ -1730,10 +1730,10 @@ einer Begrenzung der Anzahl Keyphrases kann mit einem Schwell-
 wert je nach Text eine Anzahl an Keyphrases zuru¨ ckgegeben werden,
 
 
-$$$1$$$TFIDFSimilarity (Lucene 4.5.0 API) (o. J.)
+1TFIDFSimilarity (Lucene 4.5.0 API) (o. J.)
 
 
-FOOTNOTE:welche fu¨ r den Text ideal ist. Beispielsweise macht es wenig Sinn, dass
+welche fu¨ r den Text ideal ist. Beispielsweise macht es wenig Sinn, dass
 aus einem kurzen Text gleich viele Keyphrases extrahiert werden wie
 aus einem langem. Denn aufgrund der unterschiedlichen La¨nge ent-
 halten die beiden Texte prinzipiell eher nicht gleich viel relevanten
@@ -1785,7 +1785,7 @@ core.
 3.3.1 U¨ bersicht
 
 
-FOOTNOTE:Im Klassendiagramm auf Abbildung 3.7 sieht man einen U¨ berblick
+Im Klassendiagramm auf Abbildung 3.7 sieht man einen U¨ berblick
 u¨ ber den zu entwickelnden Prototypen. Abgebildet sind die wich-
 tigsten Klassen und deren Beziehungen untereinander. Zuna¨chst lie-
 gen die zwei Teile ikc-core und Prototype vor. Der ikc-core ist der
@@ -1794,7 +1794,7 @@ typ. Dieser nimmt Gebrauch von den beiden vom Prototypen zur
 Verfu¨ gung gestellten Schnittstellen des Index- und des DataServices.
 
 
-FOOTNOTE:Grundsa¨tzlich besteht der Prototyp aus den Komponenten Index-
+Grundsa¨tzlich besteht der Prototyp aus den Komponenten Index-
 und DataService. Diese verwenden das von ausserhalb verfu¨ gbare
 MessageModel. Es entha¨lt die Protokolle fu¨ r die jeweilige Kommuni-
 kation und wird somit auch vom ikc-core in Anspruch genommen.
@@ -1810,7 +1810,7 @@ Suchfunktionalita¨t und dem Aufbau der Indizes, ein Hauptbestand-
 teil des IndexService. Abbildung 4.12 gewa¨hrt einen U¨ berblick u¨ ber
 die beteiligten Komponenten. Als Grundlage beno¨tigt der IndexSer-
 vice alle zu indexierenden Dateien im Volltext. Deren Quelle ist der
-FOOTNOTE:DataService. Der Index- und der DataService bilden zusammen den
+DataService. Der Index- und der DataService bilden zusammen den
 eigentlichen Prototypen. Wie in der Bausteinsicht auf Abbildung 3.2
 zu erkennen, gibt es neben der Integration der Services auch eine
 Einbindung in die bestehende Benutzeroberfla¨che des ikc-core.
@@ -1819,7 +1819,7 @@ Einbindung in die bestehende Benutzeroberfla¨che des ikc-core.
 3.3.2 Schnittstellen
 
 
-FOOTNOTE:Der Prototyp soll sich mo¨glichst nahtlos in den ikc-core integrieren.
+Der Prototyp soll sich mo¨glichst nahtlos in den ikc-core integrieren.
 Um dies zu erreichen sollen in keiner Situation Funktionen des ikc-
 cores blockiert werden durch den Prototyp.
 
@@ -1844,7 +1844,7 @@ on.
 Um die Schnittstellen des Prototyps ideal zu verwenden und die
 obigen Oberfla¨chenanpassungen umzusetzen, sind Anpassungen be-
 ziehungsweise Erweiterungen in der Software-Struktur des ikc-core
-no¨tig.
+nötig.
 
 
 Auf obigem Klassendiagramm (Abbildung 3.7) ist ersichtlich, dass
@@ -1859,7 +1859,7 @@ Fu¨ r den Auftraggeber ist eine sichere Kommunikation, stetige Trans-
 parenz und Kontrolle u¨ ber den Verbleib von benutzergenerierten Da-
 
 
-FOOTNOTE:ten von hoher Wichtigkeit. Um diesen Anforderungen gerecht zu
+ten von hoher Wichtigkeit. Um diesen Anforderungen gerecht zu
 werden, wurde unter anderem ein Datenfreigabe-Konzept entwickelt.
 Dieses basiert auf Einweg-Tokens, welche als Schlu¨ ssel fu¨ r die Freiga-
 be verwendet werden. Dabei fordert einen Accessor beim Provider den

@@ -390,7 +390,7 @@ Einsatz unterschiedlicher Verfahren zur Verhaltensplanung, sodass je nach
 angestrebter Funktionalität oder adressierter Situation die hierfür bestmög-
 liche Methode eingesetzt werden kann. Zunächst wurden vielfach zustands-
 basierte Architekturen, wie Endliche Zustandsautomaten verwendet, um je
-nach Situation einen geeigneten Fahrmodus zu wählen [Mon$$$08$$$, Zie14b]. In
+nach Situation einen geeigneten Fahrmodus zu wählen [Mon08, Zie14b]. In
 [Mon08] bspw. bilden die Zustände verschiedene Manöveroptionen – z. B.
 Freie Fahrt, Kreuzung passieren, Einparken und Wenden – ab. [Ard11] stellt
 ein hybrides Konzept vor, das Endliche Zustandsautomaten und Entschei-
@@ -436,7 +436,7 @@ ren, die in einer hierarchischen Graphstruktur angeordnet sind, welche Ver-
 haltensoption voraussichtlich am geeignetsten ist. Einheitliche Eingabe- und
 Ausgabeschnittstellen der Verhaltensbausteine und Arbitratoren stellen ih-
 re Wiederverwendbarkeit sicher und erhöhen zugleich die Verständlichkeit
-des Gesamtsystems. In [Orz$$$20$$$] wurden Arbitrationsgraphen erstmalig in den
+des Gesamtsystems. In [Orz20] wurden Arbitrationsgraphen erstmalig in den
 Kontext des automatisierten Fahrens übertragen und ihre Vorzüge in Simula-
 tion validiert. Die Verhaltensbausteine realisieren dabei einzelne Fahrmanö-
 ver, wie Folgefahrt, Fahrstreifenwechsel und Einparken. Für die Verhaltens-
@@ -462,7 +462,7 @@ tegrieren.
 Die Verifikation geplanter Fahrmanöver bzw. die Absicherung der Verhaltens-
 generierung ist ein noch junges und offenes Forschungsfeld. Bisher werden
 diesbezüglich insbesondere folgende zwei prominente Methodenklassen ver-
-folgt: Das Konzept der Verantwortungsbewussten Sicherheit [Sha$$$17$$$] ist dar-
+folgt: Das Konzept der Verantwortungsbewussten Sicherheit [Sha17] ist dar-
 auf ausgelegt zu bewerten, ob ein Verhalten für die jeweilige Situation an-
 gemessen und verantwortungsvoll ist. Hierzu formalisiert es Verkehrsregeln,
 legt sinnvolle Annahmen fest und definiert Begriffe wie sicherer Abstand, ge-
@@ -479,7 +479,7 @@ allerdings den Einsatz der Methode.
 
 Ein einheitlicherer Ansatz basiert auf der Erreichbare-Mengen-Analyse und
 zielt darauf ab, eine beweisbar sichere sog. Fail-Safe-Trajektorie vorzuhalten,
-auf die gewechselt werden kann, sofern eine Kollision droht [Alt$$$16$$$]. Dabei
+auf die gewechselt werden kann, sofern eine Kollision droht [Alt16]. Dabei
 wird die Fail-Safe-Trajektorie nur dann als sicher eingestuft, wenn sie kei-
 ne Überlappung mit den Worst-Case-Belegungen anderer Verkehrsteilneh-
 mer hat, also garantiert kollisionsfrei ist. Die Soll-Trajektorie muss hingegen
@@ -665,7 +665,7 @@ sondere im Kontext der Fahrerassistenzsysteme sowie für den Einsatz von
 Versuchsfahrzeugen kleinerer Forschungsgruppen weit verbreitet [Aeb15,
 Bac08, Mon08, Zie14a]. Dies lässt sich u. a. auf ihre einfache Anwendung, zahl-
 reiche frei verfügbare Software-Frameworks [Sch14, Bur18, Gre21b, The20b],
-einschließlich direkter Einbindung in MATLAB [The$$$20$$$a], oder auch deren
+einschließlich direkter Einbindung in MATLAB [The20a], oder auch deren
 Standardisierung in der Unified Modeling Language [Obj17] zurückführen.
 
 
@@ -680,7 +680,7 @@ Aeb15]. Endliche Zustandsautomaten sind leicht zu verstehen und zugleich
 sehr einfach zu implementieren.
 
 
-Dieser Abschnitt fasst die wichtigsten Inhalte aus [Vos$$$16$$$] und [Hop$$$07$$$] zu-
+Dieser Abschnitt fasst die wichtigsten Inhalte aus [Vos16] und [Hop07] zu-
 sammen, um eine praxisorientierte Einführung in die Theorie Endlicher Zu-
 standsautomaten zu geben.
 
@@ -691,7 +691,7 @@ Ein Endlicher Zustandsautomat¹ besteht aus
 • einer endlichen Menge an Zuständen 𝑆,
 
 
-FOOTNOTE:• einer endlichen Menge an Eingangssymbolen Σ (oder Ereignissen),
+• einer endlichen Menge an Eingangssymbolen Σ (oder Ereignissen),
 
 
 • einer endlichen Menge an Ausgangssymbolen Δ (oder Aktionen),
@@ -703,7 +703,7 @@ FOOTNOTE:• einer endlichen Menge an Eingangssymbolen Σ (oder Ereignissen),
 • einer Ausgabefunktion 𝜆 ∶ 𝑆 → Δ,
 
 
-FOOTNOTE:• einem Anfangszustand 𝑠 ∈ 𝑆 und 0
+• einem Anfangszustand 𝑠 ∈ 𝑆 und 0
 
 
 • einer endlichen Menge an Endzuständen 𝐹 ⊆ 𝑆.
@@ -712,7 +712,7 @@ FOOTNOTE:• einem Anfangszustand 𝑠 ∈ 𝑆 und 0
 Ein Endlicher Zustandsautomat beginnt zunächst in dem Anfangszustand 𝑠 . 0
 Bei jedem, in der Regel von außen eingehenden, Ereignis 𝑒 ∈ Σ wechselt er 𝑖
 in einen neuen Zustand 𝑠 = 𝛿(𝑠 , 𝑒 ). Dabei kann der neue Zustand auch 𝑖+1 𝑖 𝑖
-als derselbe Zustand 𝑠 = 𝑠 festgelegt sein. Nach jedem Zustandswechsel 𝑖+1 𝑖
+FOOTNOTE:als derselbe Zustand 𝑠 = 𝑠 festgelegt sein. Nach jedem Zustandswechsel 𝑖+1 𝑖
 in einen Zustand 𝑠 gibt der Zustandsautomat die Ausgabe 𝑎 = 𝜆(𝑠 ) aus. Ein- 𝑖 𝑖 𝑖
 zelne Zustände können in Erweiterungen wie den Hierarchischen Zustands-
 automaten wiederum selbst Zustandsautomaten sein oder auch nebenläufige
@@ -727,7 +727,7 @@ nen Wechsel des Verhaltensmodus einzuleiten.
 
 
 Bspw. setzte das Team Junior der Universität Stanford Endliche Zustandsauto-
-maten erfolgreich in der DARPA Urban Challenge ein [Mon$$$08$$$]. Wie in Abbil-
+maten erfolgreich in der DARPA Urban Challenge ein [Mon08]. Wie in Abbil-
 dung 2.3 veranschaulicht, stellen hierbei die Zustände taktische Fahrmanöver
 wie Weiterfahrt, Passieren einer Kreuzung oder Einparken ab. Im Sinne ei-
 ner besseren Übersichtlichkeit wurden allerdings zwei Zustände (Escape und
@@ -735,7 +735,7 @@ Traffic Jam) ausgelassen, weil sie von fast allen übrigen Zuständen aus er-
 reichbar sind.
 
 
-¹ In dieser Arbeit wird die Moore-Notation verwendet. Alternativ lässt sich die Notation auch in
+FOOTNOTE:¹ In dieser Arbeit wird die Moore-Notation verwendet. Alternativ lässt sich die Notation auch in
 das sog. Mealy-Modell überführen.
 
 
@@ -758,7 +758,7 @@ Die Zustandsübergänge in Endlichen Zustandsautomaten gleichen außerdem
 Sprunganweisungen, die es erschweren Quellcode zu verstehen, zu analysie-
 ren oder zu verifizieren. Um nachzuvollziehen, warum ein bestimmter Zu-
 stand aktuell aktiv ist, muss folglich eine Ereignishistorie erstellt und aufwen-
-FOOTNOTE:dig Schritt für Schritt nachvollzogen werden. Daher werden Goto Befehle in
+dig Schritt für Schritt nachvollzogen werden. Daher werden Goto Befehle in
 
 
 der Softwareentwicklung spätestens seit Einführung Strukturierter Program-
@@ -779,20 +779,20 @@ schreibung von Klassifikationsregeln entworfen [Mor82, Qui90]. Formal wer-
 den sie als gerichtete geordnete Bäume formuliert. Die Knoten bilden da-
 bei Bedingungen in Form diskreter oder gar boolescher Entscheidungsva-
 riablen 𝑥 ab, während die Blätter die daraus resultierenden Entscheidungen 𝑖
-𝑓(𝑥 , … ,𝑥 ) repräsentieren. Die Auswertung beginnt am Wurzelknoten und 1 𝑛
+FOOTNOTE:𝑓(𝑥 , … ,𝑥 ) repräsentieren. Die Auswertung beginnt am Wurzelknoten und 1 𝑛
 wird, je nach Wert seiner Entscheidungsvariable 𝑥 = 𝑘 am 𝑘-ten Kindkno- 𝑖
 ten, rekursiv fortgesetzt bis ein Blatt erreicht wird und somit die Entscheidung
 feststeht.
 
 
 In der Praxis werden Entscheidungsbäume häufig als hierarchische Verket-
-FOOTNOTE:tung von if/else Verzweigungen realisiert. Daher erfreuen sie sich in über-
+tung von if/else Verzweigungen realisiert. Daher erfreuen sie sich in über-
 schaubaren Entscheidungsproblemen großer Beliebtheit.
 
 
 Zum Einsatz in Fahrerassistenzsystemen wird i. d. R. eine geeignete Zustands-
 raumdarstellung gewählt, die anschließend mit den Entscheidungsvariablen
-FOOTNOTE:geeignet unterteilt wird [Ard10]. Abbildung 2.4 stellt bspw. zwei Entschei-
+geeignet unterteilt wird [Ard10]. Abbildung 2.4 stellt bspw. zwei Entschei-
 dungsbäume dar, die von BMW – in Kombination mit Endlichen Zustandsau-
 tomaten – für hochautomatisiertes Fahren auf Autobahnen und einen Nothal-
 teassistenten eingesetzt wurde [Ard11]. Hierbei wurden zwei separate Ent-
@@ -811,7 +811,7 @@ oder anderweitige Leistungskriterien zurück, sodass das Resultat eines Ver-
 haltens die weitere Verhaltensauswahl nicht direkt beeinflussen kann.
 
 
-FOOTNOTE:2.2.3 Verhaltensbäume
+2.2.3 Verhaltensbäume
 
 
 Verhaltensbäume wurden zunächst in der Computerspiel-Entwicklung ent-
@@ -821,7 +821,7 @@ automatisierten Fahrzeuge wurde hingegen bisher nur eine Arbeit publiziert
 [Ols16]. Sie untersucht die Überlegenheit von Verhaltensbäumen gegenüber
 Endlichen Zustandsautomaten in Simulation, indem sie die Skalierbarkeit bei-
 der Methoden mit Softwaremetriken vergleicht. Eine ausführliche Übersicht
-und Einführung in Verhaltensbäume liefern [Iov$$$22$$$, Col18]. Dieser Abschnitt
+und Einführung in Verhaltensbäume liefern [Iov22, Col18]. Dieser Abschnitt
 soll jedoch eine kurze praxisorientierte Einführung in die Methodik geben.
 
 
@@ -907,7 +907,7 @@ Das Konzept der Verhaltensarbitration ist im Kontext des Roboterfußballs
 entstanden und kombiniert Ideen aus Brooks’ verhaltensbasierter Subsumpti-
 on [Bro86], wissensbasierten Architekturen wie Belief-Desire-Intention (BDI)
 [Rao92] und Programmierparadigmen wie der Objektorientierten Program-
-mierung [Ste$$$85$$$]. Es wurde ausführlich in [Lau10] beschrieben und wird in
+mierung [Ste85]. Es wurde ausführlich in [Lau10] beschrieben und wird in
 diesem Abschnitt am selben Beispiel, dem Roboterfußball, zusammengefasst.
 
 
@@ -942,7 +942,7 @@ ebenen.
 
 Als Eingang dient den Verhaltensbausteinen die aktuelle Situation 𝒔 des Um-
 felds in Form von sensornahen Messdaten oder einem abstrahierten bis hin
-FOOTNOTE:zu interpretierten Umweltmodell. Diese werden mit der Stellfunktion Aktion
+zu interpretierten Umweltmodell. Diese werden mit der Stellfunktion Aktion
 auf aktornahe Stellgrößen 𝒖 abgebildet:
 
 
@@ -954,7 +954,7 @@ torien anlegen oder randomisierte Verfahren nutzen.
 
 
 Jeder Verhaltensbaustein bestimmt, neben seiner eigentlichen Aktion, über die
-FOOTNOTE:sogenannte Start-Bedingung Start auch, ob seine Vorbedingungen erfüllt
+sogenannte Start-Bedingung Start auch, ob seine Vorbedingungen erfüllt
 sind und das Verhalten somit aktuell überhaupt anwendbar ist. Ein Fußball-
 spieler kann den Ball bspw. nur dann in Richtung Tor dribbeln, wenn er auch
 tatsächlich in Ballbesitz ist. Ist ein Verhaltensbaustein aktiv, gibt er über die
@@ -994,7 +994,7 @@ FOOTNOTE:9 Bestimme die aktuelle Situation 𝒔
 11 BFüehstriem𝒖maeu𝒖s
 
 
-FOOTNOTE:Fortsetzungs-Bedingung Fortsetzung außerdem zurück, ob alle Bedingun-
+Fortsetzungs-Bedingung Fortsetzung außerdem zurück, ob alle Bedingun-
 gen erfüllt sind, um das Verhalten weiterhin fortzuführen. Denn der Spieler
 kann nur so lange weiter dribbeln, bis er den Ball verliert oder das Dribbelziel
 erreicht hat. Über die Start- und Fortsetzungs-Bedingung bestimmt jeder Ver-
@@ -1004,9 +1004,9 @@ zungen zum Ausführen eines Verhaltensbausteins.
 
 
 Generische Arbitratoren stellen eine Menge an Verhaltensbausteinen, an die-
-FOOTNOTE:ser Stelle auch als Optionen 𝒪 bezeichnet, zu einer Taktik zusammen. Al-
+ser Stelle auch als Optionen 𝒪 bezeichnet, zu einer Taktik zusammen. Al-
 gorithmus 1 beschreibt das Arbitrationsverfahren im Allgemeinen. Zunächst
-FOOTNOTE:wird also die aktuelle Situation 𝒔 aus den aktuellsten Eingangsdaten bestimmt
+wird also die aktuelle Situation 𝒔 aus den aktuellsten Eingangsdaten bestimmt
 (Zeile 9) und den Verhaltensbausteinen zur Verfügung gestellt. Als Nächstes
 bestimmt der Arbitrator seine beste anwendbare Aktion. Hierzu filtert er aus
 seinen Optionen 𝒪 jene Optionen 𝒜 heraus, die aktuell anwendbar sind bzw.
@@ -1014,8 +1014,8 @@ in deren Domäne die aktuelle Situation fällt. Dies signalisieren die Verhalten
 bausteine über ihre Start- und Fortsetzungs-Bedingung:
 
 
-FOOTNOTE:Aus den anwendbaren Optionen 𝒜 wählt der Arbitrator schließlich die best-
-FOOTNOTE:mögliche Option aus, definiert sie als seine Intention 𝜃 und führt diese aus.
+Aus den anwendbaren Optionen 𝒜 wählt der Arbitrator schließlich die best-
+mögliche Option aus, definiert sie als seine Intention 𝜃 und führt diese aus.
 
 
 Für die eigentliche Arbitration, also die Bestimmung der bestmöglichen Opti-
@@ -1040,7 +1040,7 @@ Optionen eine wahre Start-Bedingung hat:
 
 
 Der Sequenz-Arbitrator hat hingegen genau dann eine wahre Start-Bedin-
-FOOTNOTE:gung, wenn seine erste Option 𝑜 eine wahre Start-Bedingung hat: 1
+gung, wenn seine erste Option 𝑜 eine wahre Start-Bedingung hat: 1
 
 
 Die Fortsetzungs-Bedingung eines Arbitrators zeigt wie bei den Verhaltens-
@@ -1052,10 +1052,10 @@ bitrator zu:
 
 
 Beim Sequenz-Arbitrator hängt die Fortsetzungs-Bedingung wiederum von
-seiner letzten Intention 𝜃 und der in 𝒪 darauf folgenden Option 𝜃 +$$$1$$$ ab: 𝑘−1 𝑘−1
+seiner letzten Intention 𝜃 und der in 𝒪 darauf folgenden Option 𝜃 +1 ab: 𝑘−1 𝑘−1
 
 
-FOOTNOTE:Fortsetzung (𝒔 ) = Fortsetzung (𝒔 ) ∨ Start (𝒔 ) (2.7) seq 𝑘 𝜃𝑘−1 𝑘 𝜃𝑘−1+1 𝑘
+Fortsetzung (𝒔 ) = Fortsetzung (𝒔 ) ∨ Start (𝒔 ) (2.7) seq 𝑘 𝜃𝑘−1 𝑘 𝜃𝑘−1+1 𝑘
 
 
 Es ist an dieser Stelle hervorzuheben, dass die Arbitratoren ihre Wahl also
@@ -1077,9 +1077,9 @@ steine zu einem hierarchischen Graphen zusammengestellt werden. Hierzu
 gleichen Arbitratoren hinsichtlich ihrer Schnittstelle den Verhaltensbaustei-
 nen und können somit auch als solche interpretiert werden: Sie geben über
 ihre Start- und Fortsetzungs-Bedingungen an, ob sie in der aktuellen Situa-
-FOOTNOTE:tion 𝒔 anwendbar sind, und bilden diese über die Stellfunktion Aktion auf
+tion 𝒔 anwendbar sind, und bilden diese über die Stellfunktion Aktion auf
 Stellgrößen 𝒖 ab. Auf den Algorithmus 1 übertragen, entspricht die Aktion-
-FOOTNOTE:Funktion eines Arbitrators der BesteAnwendbareAktion(𝒔) Funktion in
+Funktion eines Arbitrators der BesteAnwendbareAktion(𝒔) Funktion in
 Zeile 1. Dies ermöglicht es, einen Arbitrator wiederum als Verhaltensoption
 eines anderen Arbitrators einzusetzen.
 
@@ -1131,21 +1131,21 @@ Zweck der Trajektorienplanung ist es, ausgehend vom aktuellen Zustand,
 bspw. in Form eines geschätzten Umweltmodells, eine Trajektorie zu gene-
 rieren, die ein gewünschtes Verhalten bzw. Manöver realisiert. Dabei können
 Trajektorien in kontinuierlicher oder diskreter Form modelliert werden
-FOOTNOTE:(Definitionen 2.1 und 2.2).
+(Definitionen 2.1 und 2.2).
 
 
 Definition 2.1: Kontinuierliche Trajektorie
 
 
 Eine Trajektorie beschreibt den zeitlichen Verlauf eines Zustands 𝒙 ∈ ℝ𝑛 über einen
-FOOTNOTE:Zeithorizont 𝑡 ∈ [𝑡 ,𝑡 ]: 0 ℎ
+Zeithorizont 𝑡 ∈ [𝑡 ,𝑡 ]: 0 ℎ
 
 
 Definition 2.2: Diskrete Trajektorie
 
 
 In der diskreten Darstellung, die u.a. in numerischen Verfahren zur Trajektorien-
-FOOTNOTE:planung Anwendung findet, wird eine Trajektorie durch ihre 𝑁 ∈ ℕ diskreten 0
+planung Anwendung findet, wird eine Trajektorie durch ihre 𝑁 ∈ ℕ diskreten 0
 Stützpunkte beschrieben:
 
 
@@ -1153,7 +1153,7 @@ Beispiel 2.1: Trajektorie eines Fahrzeugs in 2D
 
 
 Eine Fahrzeugtrajektorie lässt sich in Kartesischen Koordinaten mittels Position
-FOOTNOTE:(𝑥,𝑦) und Orientierung 𝜙 modellieren [Wer17]:
+(𝑥,𝑦) und Orientierung 𝜙 modellieren [Wer17]:
 
 
 Im automatisierten Fahren beschreiben Trajektorien i. d. R. die Kartesischen
@@ -1182,12 +1182,12 @@ Längsplanung gemeinsam lösen (auch als 2D Trajektorienplanung bezeichnet).
 Definition 2.3: Trajektorie in Frenet Koordinaten
 
 
-FOOTNOTE:Trajektorien können – z.B. zur entkoppelten Quer- und Längsplanung – in den sog.
-FOOTNOTE:Frenet Koordinaten [Car16], also abhängig von der Bogenlänge 𝑠 entlang einer Re-
+Trajektorien können – z.B. zur entkoppelten Quer- und Längsplanung – in den sog.
+Frenet Koordinaten [Car16], also abhängig von der Bogenlänge 𝑠 entlang einer Re-
 ferenzkurve mit Normalenvektor 𝒏 , angegeben werden [Wer10]: 𝑟
 
 
-FOOTNOTE:wobei 𝒓 den Lotfußpunkt entlang der Referenzkurve und 𝑑 den orthogonalen Versatz
+wobei 𝒓 den Lotfußpunkt entlang der Referenzkurve und 𝑑 den orthogonalen Versatz
 dazu beschreibt.
 
 
@@ -1207,7 +1207,7 @@ gungsmodellen verwendet [Ban18], während in Szenarios mit Fahrstreifen
 u. a. Dynamische Programmierung [Wer10] oder auch Optimierung [Gut17]
 zum Einsatz kommt. Solange keine Hindernisse in den Fahrkorridor hinein-
 ragen, kann auch schlicht die Mittellinie eines Fahrstreifens – ggf. mittels
-FOOTNOTE:Splines interpoliert – als Referenzpfad genutzt werden.
+Splines interpoliert – als Referenzpfad genutzt werden.
 
 
 Abbildung 2.7: Die Pfadplanung bestimmt die Querführung eines Fahrzeugs unter Berücksich-
@@ -1221,8 +1221,8 @@ in Blau der resultierende Pfad dargestellt ist. Hierbei wurde folgende, aus
 [Zie14a] inspirierte, Kostenfunktion verwendet (vgl. Gleichung (2.15)):
 
 
-FOOTNOTE:wobei 𝑗 das Überschreiten der Fahrstreifenbegrenzungen, 𝑗 die Abwei- bor pos
-FOOTNOTE:chung zur Fahrstreifenmitte und 𝑗 die Länge des Pfades bestrafen. Durch die len
+wobei 𝑗 das Überschreiten der Fahrstreifenbegrenzungen, 𝑗 die Abwei- bor pos
+chung zur Fahrstreifenmitte und 𝑗 die Länge des Pfades bestrafen. Durch die len
 Einpreisung von 𝑗 und 𝑗 werden zudem Krümmung und Krümmungs- cur dcur
 änderung minimiert.
 
@@ -1237,12 +1237,12 @@ als Folgefahrt-Regler oder gar zur Planung von Folgefahrt-Trajektorien
 verwendet werden:
 
 
-FOOTNOTE:wobei 𝑣 und 𝑣 die Geschwindigkeit des Egofahrzeugs und Referenzob- ego obj
+wobei 𝑣 und 𝑣 die Geschwindigkeit des Egofahrzeugs und Referenzob- ego obj
 jekts, 𝑑 den Abstand, Δ𝑣 die Geschwindigkeitsdifferenz, 𝑣 , 𝑎 und 𝑎 die des max cmf
 Wunschgeschwindigkeit, Maximalbeschleunigung und komfortable Brems-
 beschleunigung, 𝑇 den zeitlichen Wunschabstand (engl. „time headway“) und
-FOOTNOTE:𝑑 den gewünschten Minimalabstand bezeichnet. Der Beschleunigungsex- min
-ponent wird typischerweise auf 𝛿 = $$$4$$$ gesetzt.
+𝑑 den gewünschten Minimalabstand bezeichnet. Der Beschleunigungsex- min
+ponent wird typischerweise auf 𝛿 = 4 gesetzt.
 
 
 2.3.3 Nichtlineare Optimierung
@@ -1281,7 +1281,7 @@ auch die Fahrsicherheit gefährden. Zu den Ursachen zählen u. a. Program-
 mierfehler und Laufzeitfehler, wie Konvergenzprobleme einer Trajektori-
 enoptimierung. Auch unsichere Trajektorien können als Fehler begriffen
 werden. Daher ist es unerlässlich beim Entwurf der Verhaltensentscheidung
-FOOTNOTE:Maßnahmen zur Fehlerdiagnose und -behandlung mit einzubeziehen.
+Maßnahmen zur Fehlerdiagnose und -behandlung mit einzubeziehen.
 
 
 Die Forschung im Bereich der zuverlässigen und fehlertoleranten Systeme
@@ -1313,7 +1313,7 @@ Unterscheidung zwischen einem Fehler und seiner Ursache (der Störung)
 sinnvoll erscheint und eine Diagnose zu präzisieren hilft, ist eine konsistente
 Übersetzung aller engl. domänenspezifischen Fachbegriffe wie in [Ech90]
 vorrangig. Daher werden im weiteren Verlauf dieser Arbeit die Definitionen
-FOOTNOTE:nach [Ech90] verwendet.
+nach [Ech90] verwendet.
 
 
 Die Maßnahmen zur Steigerung der Zuverlässigkeit lassen sich in Fehler-
@@ -1362,7 +1362,7 @@ Dieser Abschnitt 2.5 greift zwei für diese Arbeit relevanten Themenfelder der
 aktiven unfallvermeidenden Maßnahmen auf: Die Sicherheitsanalyse in Ab-
 schnitt 2.5.1 wird zur Fehlervermeidung beim Systementwurf eingesetzt, wäh-
 rend die Verhaltensverifikation aus Abschnitt 2.5.2 der Fehlererkennung und
-FOOTNOTE:-behandlung zur Laufzeit dient.
+-behandlung zur Laufzeit dient.
 
 
 2.5.1 Sicherheitsanalyse
@@ -1382,7 +1382,7 @@ fizieren kausale Ketten zwischen Gefahren und deren Ursachen, um die Wahr-
 scheinlichkeit festgelegter (i. d. R. kritischer) Ereignisse zu bestimmen. Induk-
 tive Methoden, wie die Fehlzustandsart- und -auswirkungsanalyse (FMEA)
 [DIN06], werden genutzt, um mögliche Produktfehler bereits während des
-FOOTNOTE:Systementwurfs zu erkennen und ihr Risiko zu bewerten.
+Systementwurfs zu erkennen und ihr Risiko zu bewerten.
 
 
 Insgesamt sind diese Methoden und Standards allerdings nicht ausreichend,
@@ -1391,7 +1391,7 @@ leisten [Way20b]. Daher ist die Sicherheitsanalyse automatisierter Fahrzeuge
 noch ein aktives Forschungsfeld [Mer18, Apt19, Sch20, Way20a, Way20b] aus
 dem zurzeit viele neue Leitlinien und Normen entstehen [NHT17, SAE21,
 SAE20, BSI20a, BSI20b, ISO21]. Eine gute und umfangreiche Zusammen-
-fassung über diese Publikationen verschafft [Way$$$20$$$b]. Im Folgenden sollen
+fassung über diese Publikationen verschafft [Way20b]. Im Folgenden sollen
 die für diese Arbeit wichtigsten Begriffe und Konzepte, in Anlehnung an
 [Way20b] und [NHT17], zusammengefasst werden.
 
@@ -1411,7 +1411,7 @@ tert wird, eingeführt.
 Definition 2.4: Operational Design Domain [SAE21]
 
 
-FOOTNOTE:Die ODD eines gegebenen Fahrerassistenzsystems oder einer seiner Teilfunktionen
+Die ODD eines gegebenen Fahrerassistenzsystems oder einer seiner Teilfunktionen
 legt die Betriebsbedingungen fest, für welche diese Funktion ausgelegt ist.
 Diese schließen unter anderem Anforderungen an die Szenerie (z.B. bestimmte er-
 forderliche Verkehrs- oder Fahrbahnmerkmale) sowie an die dynamischen Elemente
@@ -1492,7 +1492,7 @@ einscherendes Objekt“. Die detaillierte Auflistung der Verhaltenskompeten-
 zen aus [Way20a] kann Anhang A entnommen werden.
 
 
-FOOTNOTE:Fehlererkennung und Reaktion
+Fehlererkennung und Reaktion
 
 
 Ein automatisiertes System muss sich stets überwachen und in der Lage sein,
@@ -1507,7 +1507,7 @@ ren“ [Bun21] festgelegt, überführt werden. Je nach Schwere des Fehlers wird
 hierfür entweder in der Hardware- oder Verhaltens-Ebene eine angemessene
 
 
-¹ V2X umfasst Fahrzeug-Fahrzeug-Kommunikation (V2V), Fahrzeug-Infrastruktur-Kommunika-
+FOOTNOTE:¹ V2X umfasst Fahrzeug-Fahrzeug-Kommunikation (V2V), Fahrzeug-Infrastruktur-Kommunika-
 tion (V2I) und Kommunikation zur Flottenverwaltung (V2F).
 
 
@@ -1518,7 +1518,7 @@ schwerwiegenden Systemausfall, der auch die Verhaltens-Ebene betrifft, be-
 tätigt die Hardware-Ebene eine Notbremsung.
 
 
-FOOTNOTE:Definition 2.5: Risikominimaler Zustand [Bun21]
+Definition 2.5: Risikominimaler Zustand [Bun21]
 
 
 Ein risikominimaler Zustand (MRC) ist ein Zustand, in den sich das Kraftfahrzeug

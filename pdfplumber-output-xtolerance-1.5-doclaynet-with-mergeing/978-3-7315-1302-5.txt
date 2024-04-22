@@ -111,7 +111,7 @@ industrie eine breite Anwendung findet. Licht hat einen Polarisationszustand,
 der durch vier reelle Parameter beschrieben werden kann, die zu einem
 sogenannten Stokes-Vektor zusammengefasst werden. Es gibt einen Kal-
 kül, in dem die Polarisationszustandsänderungen an optischen Elementen
-mit Hilfe von reellen $$$4$$$×$$$4$$$-Matrizen modelliert werden können, den soge-
+mit Hilfe von reellen 4×4-Matrizen modelliert werden können, den soge-
 nannten Müller-Matrizen. Diese hängen nichtlinear von den physikalischen
 Materialparametern ab. Viele komplexe Aufgabenstellungen in der Ellip-
 sometrie können durch diese Abstraktionsebene über die Matrix-Algebra
@@ -282,7 +282,7 @@ Abbildungsmatrix einer Achsenspiegelung an der
 𝑥-Achse:
 
 
-𝐓 ∶= diag($$$1$$$, − 1, − 1) 𝑦𝑧
+𝐓 ∶= diag(1, − 1, − 1) 𝑦𝑧
 
 
 Lateinische Symbole und Variablen
@@ -313,7 +313,7 @@ Verzögerung Δ:
 Müller-Matrix der optischen Rotation um den Winkel 𝜙:
 
 
-FOOTNOTE:𝐌 (𝐌,𝜙) Müller-Matrix eines um den Winkel 𝜙 gedrehten Er
+𝐌 (𝐌,𝜙) Müller-Matrix eines um den Winkel 𝜙 gedrehten Er
 optischen Bauteils, welches nicht gedreht die
 Müller-Matrix 𝐌 aufweist:
 
@@ -321,24 +321,24 @@ Müller-Matrix 𝐌 aufweist:
 𝐌 (𝐌,𝜙) ∶= 𝐌 (−𝜙)𝐌𝐌 (𝜙) Er r r
 
 
-FOOTNOTE:𝐌 (Ψ,Δ,𝑅) Müller-Matrix einer Probe mit linearem Dichroismus, L
+𝐌 (Ψ,Δ,𝑅) Müller-Matrix einer Probe mit linearem Dichroismus, L
 Verzögerung und Absorption in Reflexions- oder
 Transmissionsanordnung:
 
 
-FOOTNOTE:𝑴, 𝑴 reelle bzw. komplexe Magnetisierung
+𝑴, 𝑴 reelle bzw. komplexe Magnetisierung
 N(𝝁,𝚺) multivariate Normalverteilung mit Erwartungswert 𝝁
 und Kovarianzmatrix 𝚺
 
 
-FOOTNOTE:𝐍(𝐌) Normierte Müller-Matrix: 𝐌/ (𝐌) 11
+𝐍(𝐌) Normierte Müller-Matrix: 𝐌/ (𝐌) 11
 
 
 Griechische Symbole und Variablen
 
 
 optischer Gangunterschied bzw. Verzögerung
-FOOTNOTE:reelle Permittivität als Skalar bzw. Tensor
+reelle Permittivität als Skalar bzw. Tensor
 
 
 xviii
@@ -347,7 +347,7 @@ xviii
 Operatoren und mathematische Symbole
 
 
-FOOTNOTE:Vektor bestehend aus den Elementen 𝑎 𝑖
+Vektor bestehend aus den Elementen 𝑎 𝑖
 Matrix bestehend aus den Matrixelementen 𝑎 𝑖𝑗
 ) komplexer Tensor der Stufe 𝑛 mit den Tensor-Elementen …𝑖𝑛
 FOOTNOTE:𝑎 und dazugehörigen Multiindizes (𝑖 , 𝑖 , … , 𝑖 ) 𝑖1𝑖2…𝑖𝑛 1 2 𝑛
@@ -356,26 +356,26 @@ Element einer Matrix 𝐀 in Zeile 𝑖 und Spalte 𝑗
 Teilvektor von 𝒂 = (𝑎 ) bestehend aus den Elementen 𝑎 𝑖 𝑖
 mit den Indizes 𝑖 ∈ I
 Menge von Teilvektoren, die aus den Elementen der
-FOOTNOTE:Menge A gewonnen werden: (A) ∶= {(𝒗) ∣ 𝒗 ∈ A} I I
-FOOTNOTE:eine Teilmatrix von 𝐀 = (𝑎 ) bestehend aus den J 𝑖𝑗
+Menge A gewonnen werden: (A) ∶= {(𝒗) ∣ 𝒗 ∈ A} I I
+eine Teilmatrix von 𝐀 = (𝑎 ) bestehend aus den J 𝑖𝑗
 Elementen 𝑎 mit den Indizes (𝑖,𝑗) ∈ I × J 𝑖𝑗
 Transponierte der Matrix 𝐀
 Adjungierte der Matrix 𝐀
 Konjugierte der komplexen Zahl 𝑎 bzw. elementweise,
-FOOTNOTE:komplexe Konjugation der komplexen Matrix 𝐀
-FOOTNOTE:Skalarprodukt zweier Vektoren: ⟨𝒂, 𝒃⟩ = ∑ (𝒂) (𝒃) 𝑖 𝑖
+komplexe Konjugation der komplexen Matrix 𝐀
+Skalarprodukt zweier Vektoren: ⟨𝒂, 𝒃⟩ = ∑ (𝒂) (𝒃) 𝑖 𝑖
 𝑖
-FOOTNOTE:Standardskalarprodukt zweier Vektoren: s ∗
-FOOTNOTE:⟨𝒂, 𝒃⟩ = ∑ (𝒂) (𝒃) 𝑖 𝑖
+Standardskalarprodukt zweier Vektoren: s ∗
+⟨𝒂, 𝒃⟩ = ∑ (𝒂) (𝒃) 𝑖 𝑖
 𝑖
-FOOTNOTE:Kreuzprodukt der Vektoren 𝒂 = (𝑎 ) und 𝒃 = (𝑏 ): 𝑖 𝑖
+Kreuzprodukt der Vektoren 𝒂 = (𝑎 ) und 𝒃 = (𝑏 ): 𝑖 𝑖
 FOOTNOTE:𝑎 𝑏 − 𝑎 𝑏 ⎛ 2 3 3 2⎞
 𝒂 × 𝒃 = ⎜𝑎 𝑏 − 𝑎 𝑏 ⎟
-⎜ 3 1 1 $$$3$$$⎟
+⎜ 3 1 1 3⎟
 ⎝𝑎 𝑏 − 𝑎 𝑏 ⎠ 1 2 2 1
 𝐀) spaltenweise Vektorisierung der Matrix 𝐀
 Determinante der Matrix 𝐀
-FOOTNOTE:𝐁 Kronecker-Produkt der Matrizen 𝐀 und 𝐁
+𝐁 Kronecker-Produkt der Matrizen 𝐀 und 𝐁
 
 
 ∇ Nabla-Operator
@@ -405,16 +405,16 @@ komplexen Funktion 𝑓
 einer komplexen Funktion 𝑓
 
 
-FOOTNOTE:Moore-Penrose-Inverse einer Matrix 𝐀 ∈ R𝑚×𝑛 mit
+Moore-Penrose-Inverse einer Matrix 𝐀 ∈ R𝑚×𝑛 mit
 vollem Rang:
 
 
 𝑓 ∗𝒙 𝑔 Örtliche Faltung von 𝑓 und 𝑔 in drei Raumdimensionen
-FOOTNOTE:A| Lebesgue-Borel-Maß der Menge A, wobei A eine
+A| Lebesgue-Borel-Maß der Menge A, wobei A eine
 Borelmenge ist
 
 
-FOOTNOTE:Oberflächenintegral einer Funktion 𝑓 über einer
+Oberflächenintegral einer Funktion 𝑓 über einer
 FOOTNOTE:zweidimensionalen Menge A ⊂ R3 mit skalarem
 Oberflächenelement d𝐴
 
@@ -433,7 +433,7 @@ u. v. m. quantitativ erfassen [Tom99, Gar13b]. Bei der Ellipsometrie wird Licht
 mit bekanntem Polarisationszustand an einer Probe reflektiert oder transmit-
 tiert und anschließend der Polarisationszustand wieder gemessen [Azz99].
 Das Messprinzip der Ellipsometrie beruht auf einer modellbasierten Aus-
-wertung der Polarisationszustandsänderung [Jel$$$91$$$]. Eine Änderung des
+wertung der Polarisationszustandsänderung [Jel91]. Eine Änderung des
 Polarisationszustands tritt üblicherweise auf, wenn polarisiertes Licht unter
 einem schrägen Einfall auf eine Oberfläche auftrifft. Die Änderung des Pola-
 risationszustands hängt von der Schichtstruktur der Oberfläche sowie vom
@@ -443,7 +443,7 @@ oder eine Inversion dieser funktionalen Beziehungen lassen sich die Modell-
 parameter bestimmen. Da sehr viele unterschiedliche Modellparameter
 wie Schichtdicke, Doppelbrechung, Oberflächenneigung, Kristallinitätsgrad
 u. v. m. eine Polarisationszustandsänderung bewirken, ergibt sich ein sehr
-FOOTNOTE:großes Anwendungspotenzial für die Ellipsometrie [Gar13b]. Die Abbildung
+großes Anwendungspotenzial für die Ellipsometrie [Gar13b]. Die Abbildung
 der physikalischen Realität auf mögliche Polarisationszustandsänderungen
 ist jedoch nicht injektiv, so dass es bei der Bestimmung der Modellparameter
 häufig zu Mehrdeutigkeiten kommt [Tom99]. Zudem können natürlich nur so
@@ -494,7 +494,7 @@ dustrie [Han09, Duw19] und in der flexiblen Elektronik, z. B. bei organischen
 Leuchtdioden (engl. organic light emitting diode, OLEDs) [Käl21]. In vielen
 Anwendungsbereichen findet momentan nur eine stichprobenhafte, punktu-
 elle Messung der Oberflächenstruktur statt. Im Rahmen der sog. Industrie 4.0
-sind flexible Sensorlösungen für eine $$$100$$$%-Prüfung von Oberflächen wün-
+sind flexible Sensorlösungen für eine 100%-Prüfung von Oberflächen wün-
 schenswert [Zür20], weil dadurch eine Steigerung der Qualität und der Res-
 sourceneffizienz sowie eine Minimierung des Ausschusses und der Material-
 kosten erreicht wird. Die vorliegende Arbeit soll einen Beitrag dazu leisten,
@@ -511,7 +511,7 @@ kehrung (engl. unidirectional ellipsometry, UE) bezeichnet wird. Das Beleuch-
 tungsmodul emittiert Licht mit einem festen oder modulierten Polarisations-
 zustand und wird als Polarisationszustandsgenerator (engl. polarization sta-
 te generator, PSG) bezeichnet. Der Detektor detektiert den Polarisationszu-
-FOOTNOTE:stand und wird als Polarisationszustandsdetektor (engl. polarization state de-
+stand und wird als Polarisationszustandsdetektor (engl. polarization state de-
 tector, PSD) bezeichnet. Aus dem Stand der Technik ist eine Variante dieses
 Ellipsometrie-Aufbaus bekannt, bei der das Licht eine doppelte Reflexion an
 der Probenoberfläche erfährt und hier als Ellipsometrie mit Lichtwegumkeh-
@@ -537,7 +537,7 @@ messung verdoppeln sich die Mehrdeutigkeiten bei der Bestimmung der
 Modellparameter. Der Polarisationszustandsdetektor mit Amplitudenteilung
 (engl. division-of-amplitude photopolarimeter, DoAmP) stellt ein alternatives
 und optimales Design zur vollständigen Messung des Polarisationszustands
-dar [Azz$$$03$$$]. Die Güte von alternativen Aufbauten eines PSD basierend auf
+dar [Azz03]. Die Güte von alternativen Aufbauten eines PSD basierend auf
 Strahlungsteilung lassen sich daran messen, wie nah das Gütemaß an den
 Optimalwert des DoAmP heranreicht. Gütemaße sind z. B. die Determinante
 der Analysematrix des PSD sowie die Konditionszahl. Der DoAmP gibt zwar
@@ -593,14 +593,14 @@ Folien wichtig sind.
 Auf dem neuartigen Messprinzip aufbauend, werden zwei Anordnungen der
 RPE betrachtet und untersucht: die Laser-Ellipsometrie und die Kamera-
 basierte, abbildende Ellipsometrie. Arbeiten zur Laser-Ellipsometrie be-
-FOOTNOTE:handeln vorwiegend den optischen Aufbau des PSD. Es wird ein PSD auf
+handeln vorwiegend den optischen Aufbau des PSD. Es wird ein PSD auf
 Basis des DoAmP unter Verwendung von Verzögerungsplättchen vorgestellt,
 der sich im Vergleich zum Stand der Technik durch eine deutlich verein-
 fachte Herstellung auszeichnet. Es wird theoretisch gezeigt, dass bei der
 Einwellenlängen-Ellipsometrie mit dem geänderten Aufbau die Gütemaße
 optimale Werte annehmen. Ebenfalls vorgestellt wird ein PSD für den Ein-
 satz in der spektroskopischen Ellipsometrie, dessen Gütemaße erstmalig im
-gesamten Wellenlängenbereich von $$$400$$$ nm bis $$$1000$$$ nm annähernd optimale
+gesamten Wellenlängenbereich von 400 nm bis 1000 nm annähernd optimale
 
 
 Werte annehmen. Dieser Wellenlängenbereich spielt für Silizium-basierte
@@ -631,7 +631,7 @@ cesteigerung mit sich und erleichtert die Echtzeit-Datenauswertung bei der
 abbildenden Ellipsometrie erheblich.
 
 
-FOOTNOTE:Mit der Einwellenlängen-RPE können an isotropen Medien zwei Neigungs-
+Mit der Einwellenlängen-RPE können an isotropen Medien zwei Neigungs-
 winkel und ein Material-Parameter bestimmt werden, bspw. eine Schichtdi-
 cke. Die Anzahl der simultan bestimmbaren Material-Parameter kann jedoch
 erhöht werden, indem die Topographie des Prüflings auf andere Art und Wei-
@@ -748,7 +748,7 @@ Die Oberflächencharakterisierung erfolgt in der Ellipsometrie meist über ein
 phänomenologisches Modell, dass die zu untersuchende Probe als ein Schicht-
 stapel aus mehreren, meist homogenen Medien und plan-parallelen Grenz-
 flächen approximiert. Auch wenn dieses Modell eine Abstraktion der realen
-Probe darstellt, hat es sich als sehr fruchtbar erwiesen [Tom$$$99$$$]. Es können da-
+Probe darstellt, hat es sich als sehr fruchtbar erwiesen [Tom99]. Es können da-
 mit die Polarisationseigenschaften komplexer Proben mit rauen Oberflächen,
 rauen Grenzflächen, variablem Brechungsindex und Diffusionsschichten be-
 schrieben werden. Durch die Unterteilung der Probe in mehrere Schichten
@@ -762,7 +762,7 @@ schmalbandig oder spektral aufgelöst erfolgen. Eine breitbandige Messung
 ergibt hingegen keinen Sinn. Der Grund liegt in der Dispersion von Ma-
 terialien und der daraus resultierende Mittelung des Messsignals. Daher
 wurde bereits in den Anfängen der Ellipsometrie entweder monochromatisch
-beleuchtet oder spektral aufgelöst gemessen [Dru$$$88$$$, Dru$$$89$$$, Rot$$$45$$$]. Die
+beleuchtet oder spektral aufgelöst gemessen [Dru88, Dru89, Rot45]. Die
 anfangs manuelle Spektralmessung wurde erst Anfang der 1970er automa-
 tisiert [Asp14]. Gleichzeitig erhöhte sich aufgrund der spektral aufgelösten
 Messung der Rechenaufwand.
@@ -796,9 +796,9 @@ Linearkombinationen hiervon gemessen.
 Welche Messanordnung für eine Aufgabenstellung erforderlich ist, hängt vom
 zu untersuchenden Prüfling ab. Handelt es sich um ebene, optisch isotrope
 Medien, reicht eine Messung der ellipsometrischen Winkel Ψ und Δ aus. Bei
-anisotropen, nicht-depolarisierenden Medien ist die Messung der $$$2$$$×$$$2$$$-Jones-
+anisotropen, nicht-depolarisierenden Medien ist die Messung der 2×2-Jones-
 Matrix erforderlich. Depolarisierende Proben erfordern schließlich die Mes-
-sung der reellen $$$4$$$×$$$4$$$-Müller-Matrix. Bei der spektroskopischen Ellipsometrie
+sung der reellen 4×4-Müller-Matrix. Bei der spektroskopischen Ellipsometrie
 werden diese Matrizen für jeden Spektralkanal gemessen, was zu einer ent-
 sprechend großen Anzahl von Messwerten führt. Methoden der Schätztheo-
 rie sind zumindest bei der spektroskopischen Ellipsometrie wichtig, da weni-
@@ -808,8 +808,8 @@ aufweisen. Bei der Einwellenlängen-Ellipsometrie bringt eine probabilistische
 Datenauswertung nicht immer einen Mehrwert, da die Anzahl der Messwerte
 
 
-¹ https://www.horiba.com/de/scientific/products/ellipsometers/spectroscopic-ellipsometers/
-FOOTNOTE:details/smart-se-14909/ (25.12.2020)
+FOOTNOTE:¹ https://www.horiba.com/de/scientific/products/ellipsometers/spectroscopic-ellipsometers/
+details/smart-se-14909/ (25.12.2020)
 
 
 oft unwesentlich größer als die Anzahl der Unbekannten ist. Dies resultiert
@@ -840,7 +840,7 @@ montiert sein. Die Kompensatoren sind Verzögerungsplättchen und können
 beliebig in der Winkellage gedreht werden. Zerlegt man das Licht in zwei li-
 near polarisierte Wellen, so absorbieren Polarisatoren eine der beiden Wellen.
 Der (lineare) Dichroismus beschreibt den Quotienten der Absorption der line-
-FOOTNOTE:ar polarisierten Wellen und wird mit Ψ bezeichnet. Hingegen bewirken Kom-
+ar polarisierten Wellen und wird mit Ψ bezeichnet. Hingegen bewirken Kom-
 pensatoren eine Phasenverschiebung zwischen den beiden Wellen, die durch
 eine Verzögerung Δ beschrieben wird. Die Drehlage von Polarisationsopti-
 ken wird durch deren Azimutwinkel angegeben. Betrachtet man ein zweidi-
@@ -872,7 +872,7 @@ ter als Mikro-Ellipsometer ausgelegt sind². Die abbildende Ellipsometrie wird
 daher meist in Kombination mit Mikroskopie eingesetzt und unterscheidet
 
 
-¹ Um Unklarheiten bei der Ausrichtung von Polarisationsoptiken vorzubeugen, wurde die
+FOOTNOTE:¹ Um Unklarheiten bei der Ausrichtung von Polarisationsoptiken vorzubeugen, wurde die
 Nebraska-Konvention eingeführt, auf die hier verwiesen wird [Hau80, Fuj07].
 
 
@@ -882,7 +882,7 @@ le [Asi08]:
 
 • Die hohe laterale Auflösung der Mikro-Ellipsometrie erfordert
 aufgrund des Abbe-Limits eine große numerischen Apertur.
-Üblicherweise liegt diese zwischen $$$0$$$,3 und $$$0$$$,9 [Zha02, Asi08, Art14].
+Üblicherweise liegt diese zwischen 0,3 und 0,9 [Zha02, Asi08, Art14].
 
 
 • Eine große numerische Apertur führt zu großen
@@ -939,7 +939,7 @@ Spiegeln keine Rückreflexion erreichen.
 
 Es gibt jedoch auch Ellipsometer ohne Lichtwegumkehrung, die für die Mes-
 sung von Oberflächen mit Neigungs- und Höhenvariation ausgelegt sind. Bei
-dem punktmessenden Messsystem aus [Hol$$$96$$$, Neu02b] wird die Toleranz ge-
+dem punktmessenden Messsystem aus [Hol96, Neu02b] wird die Toleranz ge-
 genüber Neigungsänderungen mithilfe einer Sammellinse erreicht, wobei der
 Messpunkt in der Schärfeebene liegen muss. Die Toleranz gegenüber Höhen-
 änderungen wird durch eine Autofokus-Einrichtung sichergestellt. Obwohl
@@ -1000,7 +1000,7 @@ Kalibrierfunktion wird invertiert, um die optischen Parameter des Prüflings
 während des Messvorgangs zu berechnen [JCG09]. Selbst wenn die Polari-
 sationseigenschaften der optischen Bauelemente des Sensors bekannt sind,
 erfordert eine nicht vermeidbare Fehljustierung dennoch eine Kalibrierung
-des Messsystems [Tom$$$05$$$]. Bei handelsüblichen Ellipsometern muss die Ka-
+des Messsystems [Tom05]. Bei handelsüblichen Ellipsometern muss die Ka-
 librierung üblicherweise in regelmäßigen Abständen wiederholt werden, um
 bspw. Umgebungseinflüsse auf das Messergebnis auszugleichen.
 
@@ -1008,21 +1008,21 @@ bspw. Umgebungseinflüsse auf das Messergebnis auszugleichen.
 Ein relativ einfaches, aber trotzdem genaues Kalibrierverfahren für die UE
 wurde in [Azz89a] vorgestellt. Ein möglichst idealer Polarisator wird vor dem
 PSD platziert und mittels einer Drehbühne gedreht. Die Drehwinkel wer-
-den dort als sehr genau vorausgesetzt (ca. $$$0$$$,$$$0$$$1∘). Durch Drehung des annä-
-hernd idealen Polarisators kann bereits die Sub-Matrix (𝐀) über ei- [[1,4]]×[[1,3]]
+den dort als sehr genau vorausgesetzt (ca. 0,01∘). Durch Drehung des annä-
+FOOTNOTE:hernd idealen Polarisators kann bereits die Sub-Matrix (𝐀) über ei- [[1,4]]×[[1,3]]
 ne Fourier-Analyse präzise bestimmt werden, solange Intensitätsschwankun-
 gen des einfallenden Lichts herausgerechnet werden. Dazu wird ein Teil des
 einfallenden Lichts über eine Strahlteilerplatte unter einem kleinen Einfalls-
 winkel ausgekoppelt und die Intensität von einem Photodetektor gemessen.
 Um Polarisationszustandsänderungen durch die Strahlteilerplatte zu vermei-
 den, muss das Licht annähernd senkrecht auf die Strahlteilerplatte auftreffen.
-FOOTNOTE:Um die letzte Spalte von 𝐀 zu messen, wird der Linearpolarisator durch einen
+Um die letzte Spalte von 𝐀 zu messen, wird der Linearpolarisator durch einen
 rechts- bzw. linkszirkularen Polarisator ausgetauscht. Diese bestehen aus Ver-
 zögerer, die herstellungsbedingt einer größeren Fertigungstoleranz unterlie-
 gen. Diese Abweichung der Verzögerung vom Nominalwert wird durch eine
 
 
-Drehung des zirkularen Polarisators um $$$90$$$∘ herausgerechnet. Nach der Ka-
+Drehung des zirkularen Polarisators um 90∘ herausgerechnet. Nach der Ka-
 librierung des PSD wird der PSG über Polarisationszustandsmessungen des
 emittierten Lichts kalibriert. Ein frühes Kalibrierverfahren für die RPE fin-
 det sich in [Azz77a]. Dabei wird ebenfalls eine unbekannte Verzögerung des
@@ -1044,7 +1044,7 @@ Strahlteiler und die Fokussieroptik des Mikro-Ellipsometers separat kalibriert
 werden. Eine Schwierigkeit scheint hierbei zu sein, einen systematischen
 Fehler bei der Umpositionierung der Kalibrierproben zwischen den ein-
 zelnen Kalibrierstufen zu vermeiden, d. h. das Koordinatensystem für den
-FOOTNOTE:Müller-Formalismus nicht zu verändern bzw. zu drehen.
+Müller-Formalismus nicht zu verändern bzw. zu drehen.
 
 
 2.6 Retroreflektierende Strukturen
@@ -1053,8 +1053,8 @@ FOOTNOTE:Müller-Formalismus nicht zu verändern bzw. zu drehen.
 Das im weiteren Verlauf der Arbeit untersuchte Messprinzip basiert auf
 der Verwendung von Retroreflexion. Vollständig diffus reflektierende Ober-
 flächen weisen ein Reflexionsverhalten entsprechend dem Lambert’schen
-Kosinusgesetz auf [Bey$$$16$$$], wohingegen spiegelnde Oberflächen das Licht
-FOOTNOTE:entsprechend dem Reflexionsgesetz reflektieren [Hec02]. Retroreflektierende
+Kosinusgesetz auf [Bey16], wohingegen spiegelnde Oberflächen das Licht
+entsprechend dem Reflexionsgesetz reflektieren [Hec02]. Retroreflektierende
 
 
 Oberflächen haben Eigenschaften, die sich von diffus oder spekular reflektie-
@@ -1074,7 +1074,7 @@ toren im Straßenverkehr [Ren98]. Es gibt viele Variationen, die auf dem
 Funktionsprinzip von Kugelreflektoren basieren. Dazu gehören zusammen-
 gesetzte Halbkugeln unterschiedlicher Größe [Gol96] oder katadioptrische
 Systeme. Eine weitere, relativ neue Methode zur Herstellung von Kugelre-
-flektoren bzw. Kugellinsen bilden Metamaterialien [Ma$$$09$$$, Zha16, Gar19].
+flektoren bzw. Kugellinsen bilden Metamaterialien [Ma09, Zha16, Gar19].
 Diese befinden sich derzeit jedoch im Versuchsstadium. Hinsichtlich der
 Polarisationseigenschaften gewöhnlicher Kugelreflektoren aus Glas gibt es
 bislang relativ wenig Publikationen. Das katadioptrische System aus [Sny75]
@@ -1109,7 +1109,7 @@ mierter Strahl wieder kollimiert zurück reflektiert. Für den Einsatz von
 Tripel-Reflektoren in Ellipsometern sind die Polarisationseigenschaften ent-
 scheidend. Der Menge an Publikationen zu den Polarisationseigenschaften
 von Retroreflektoren basierend auf Tripel-Spiegeln ist deutlich umfangreicher
-als bei Kugel-Reflektoren [Liu$$$97$$$, Azz08, OBr99, Cha71, Seg03, Lee08]. Jedoch
+als bei Kugel-Reflektoren [Liu97, Azz08, OBr99, Cha71, Seg03, Lee08]. Jedoch
 sind die Untersuchungen aus dem Stand der Technik häufig auf einzelne
 Lichtstrahlen bzw. Makroreflektoren beschränkt.
 

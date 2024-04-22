@@ -799,7 +799,7 @@ Dennoch weisen vorhandene Daten aus der Präklinik darauf hin, dass sicher auch
 Komplikationen des Atemwegsmanagements für die präklinische Mortalität anzunehmen
 sind. So zeigen Studien, die verschiedene Berufsgruppen des Rettungsdienstes betrachten,
 dass neben Intubationsschwierigkeiten ebenso ösophageale Fehlintubationen, oder einseitige
-Intubationen anzutreffen sind [$$$25$$$;26;27;28;29].
+Intubationen anzutreffen sind [25;26;27;28;29].
 
 
 Die vorliegende Studie belegt, dass die größte Gruppe der Notfallpatienten mit Indikation
@@ -1194,6 +1194,6 @@ RTH Rettungstransporthubschrauber
 RTW Rettungstransportwagen
 
 
-SpO2 partielle Sauerstoffsättigung
+SpO$$$2$$$ partielle Sauerstoffsättigung
 
 

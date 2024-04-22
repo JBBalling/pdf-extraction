@@ -327,7 +327,7 @@ durchgeführt.
 
 
 1.8.1.1 Transorale mikrolaryngoskopische CO2-Laserresektion
-So wie bei den Larynxkarzinomen hat sich die transorale mikrolaryngoskopische CO - 2
+FOOTNOTE:So wie bei den Larynxkarzinomen hat sich die transorale mikrolaryngoskopische CO - 2
 Laserchirurgie in der organerhaltenden Therapie kleinerer und mittlerer Hypopharynx-
 karzinome durchgesetzt [1][82]. Die Voraussetzung für eine sichere Tumorresektion ist
 dabei die optimale Exposition des Kehlkopfes und des Sinus piriformis. Günstig sind
@@ -442,19 +442,19 @@ Die Chemotherapie ist der dritte Pfeiler in der Behandlung von Hypopharynxkarzi-
 nomen, wobei im Wesentlichen folgende Substanzen zur Anwendung kommen:
 
 
-FOOTNOTE:- Platinderivate wie Carboplatin und Cisplatin, die als Schwermetallkomplexe zur
+- Platinderivate wie Carboplatin und Cisplatin, die als Schwermetallkomplexe zur
 Vernetzung der DNA-Stränge führen;
 
 
-FOOTNOTE:- 5-Fluorouracil, das als Antimetabolit in die DNS-Synthese der Zellen integriert
+- 5-Fluorouracil, das als Antimetabolit in die DNS-Synthese der Zellen integriert
 wird und deren weiteres Voranschreiten hemmt;
 
 
-FOOTNOTE:- Methotrexat, welches als zytostatisches Folsäureanalog die Bildung von Tetra-
+- Methotrexat, welches als zytostatisches Folsäureanalog die Bildung von Tetra-
 hydrofolsäure blockiert;
 
 
-FOOTNOTE:- Taxane wie Paclitaxel und Docetaxel sind natürlich vorkommende bzw. teilsyn-
+- Taxane wie Paclitaxel und Docetaxel sind natürlich vorkommende bzw. teilsyn-
 thetisierte Zytostatika, die am Spindelapparat angreifen und so die Zellteilung
 hemmen.
 
@@ -587,7 +587,7 @@ lückenhafter Dokumentation und unklarem Behandlungsverlauf.
 - Tumorstadium (TNM/ UICC-Klassifikation)
 
 
-FOOTNOTE:- Histologie und Grading
+- Histologie und Grading
 
 
 - Datum und Art der synchronen Metastasen
@@ -679,14 +679,14 @@ Bis 2010 wurde als Chemotherapeutikum Carboplatin eingesetzt, danach erfolgte au
 grund der besseren Strahlensensibilität die Umstellung auf Cisplatin.
 Im Rahmen von Studienprotokollen zum Organerhalt (Larynxerhalt) wurde bis 2007
 das DeLOS I Studienprotokoll angewandt. Dieses sah eine Induktionschemotherapie
-mit Paclitaxel ($$$200$$$mg/m2) und Cisplatin ($$$100$$$mg/m2) jeweils an Tag 1 und 22 gefolgt
+mit Paclitaxel (200mg/m2) und Cisplatin (100mg/m2) jeweils an Tag 1 und 22 gefolgt
 von einer akzelerierten, hyperfraktionierten Radiotherapie (69,9 Gy in 5,5 Wochen mit
 Boost von 1,5Gy in der 4. und 5. Woche an den Tagen 1-5 und an den Tagen 1-2 in
 Woche 6) vor. Danach, von 2007 bis 2009, folgte die Induktionschemotherapie dem
 ursprünglichen DeLOS-II-Studienprotokoll (s. Abb. 3). Nach 2009 bis 2012 wurde die
 Induktion aufgrund mehrerer Todesfälle infolge der hohen Toxizität von 5-Fluorouracil
 umgestellt, woraus das geänderte DeLOS-II-Studienprotokoll entstand (siehe Abb. 4),
-FOOTNOTE:das dann auch in Kassel zur Anwendung kam [21]. D e L O S I I : P r o t o c o l ( 2 0 0 7 – 2 0 0 9 )
+das dann auch in Kassel zur Anwendung kam [21]. D e L O S I I : P r o t o c o l ( 2 0 0 7 – 2 0 0 9 )
 
 
 Die bei Hypopharynxkarzinom- Patienten durchgeführten Chemotherapiekonzepte des
@@ -800,7 +800,7 @@ Behandlungskonzept
 Es zeigte sich ein Zusammenhang zwischen Karnowsky-Index und Tumorgröße. Pati-
 enten mit fortgeschrittenem Tumorstadium (T3/T4) gaben prätherapeutisch in 12% und
 posttherapeutisch in 18% einen Karnowsky-Index <70 an. Patienten mit Tumoren im
-Anfangsstadium (T1/T2) gaben in ~$$$7$$$% prätherapeutisch und in ~10% postthera-
+Anfangsstadium (T1/T2) gaben in ~7% prätherapeutisch und in ~10% postthera-
 peutisch einen Karnowsky-Index <70 an (siehe Tab. 4).
 
 
@@ -1105,6 +1105,6 @@ bei Patienten mit N0-Karzinomen 48% gegenüber 13% für Patienten mit N3-
 Karzinomen. Dabei ist interessant, dass sich die Überlebensraten zwischen N0, N1 und
 N2 statistisch nicht signifikant unterscheiden. Jedoch ist der Unterschied der
 Kurvenverläufe von N0, N1 und N2 zu N3 statistisch signifikant (p ≤ 0,01). Die Details
-FOOTNOTE:sind in Tabelle 11 aufgelistet.
+sind in Tabelle 11 aufgelistet.
 
 

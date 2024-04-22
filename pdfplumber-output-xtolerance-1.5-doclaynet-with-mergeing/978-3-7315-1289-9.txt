@@ -407,14 +407,14 @@ pitel 2.5 vorgestellt.
 
 Über die Zeit hinweg finden sich verschiedene Definitionen des Begriffs
 WBS [Ort77, Kur92, Ake09, Pup13b]. Allen gemein ist die Aufspaltung der
-Architektur des Systems in zwei Bereiche (vgl. Abbildung 2.1). Auf der einen
+FOOTNOTE:Architektur des Systems in zwei Bereiche (vgl. Abbildung 2.1). Auf der einen
 Seite steht die sogenannte Wissensbasis mit spezifischem Wissen über den
 Anwendungsbereich. Dem gegenüber steht die tatsächliche Verarbeitung des
 Wissens (Wissensverarbeitung) in Form einer anwendungsunabhängigen
 Problemlösungskomponente.
 
 
-An Anlehnung an die Definitionen aus [Ort$$$77$$$, Kur$$$92$$$, Ake$$$09$$$, Pup$$$13$$$b], wird
+An Anlehnung an die Definitionen aus [Ort77, Kur92, Ake09, Pup13b], wird
 in der vorliegenden Arbeit ein WBS definiert als:
 
 
@@ -441,9 +441,9 @@ allen Definitionen gemein.
 
 
 In der Literatur findet sich üblicherweise eine Abgrenzung des Begriffs des
-FOOTNOTE:Expertensystems zum Begriff WBS. Hierbei existieren verschiedene Sicht-
+Expertensystems zum Begriff WBS. Hierbei existieren verschiedene Sicht-
 weisen, von einigen Autoren werden die Begriffe auch synonym verwendet
-[Hop$$$92$$$]. Eine gängige Möglichkeit ein Expertensystem von einem WBS ab-
+[Hop92]. Eine gängige Möglichkeit ein Expertensystem von einem WBS ab-
 zugrenzen ist die Herkunft des im System repräsentierten Wissens. Dabei sind
 Expertensysteme spezielle WBS, deren Wissen von Experten stammt [Wat86].
 
@@ -487,7 +487,7 @@ Wissensbasis und die Problemlösungskomponente.
 
 Die Wissensbasis bildet dabei den Kern eines Expertensystems – in ihr wird
 das benötigte Fachwissen über das Anwendungsgebiet des Expertensystems
-FOOTNOTE:in einer geeigneten Repräsentationsform abgelegt [Kur92]. Unabhängig von
+in einer geeigneten Repräsentationsform abgelegt [Kur92]. Unabhängig von
 der Art der Wissensrepräsentation kann der Inhalt einer Wissensbasis nach
 
 
@@ -500,7 +500,7 @@ gerade betrachtete Problemstellung im Anwendungsgebiet des Expertensys-
 tems. Fallspezifisches Wissen kann aufgrund von Beobachtungen – im me-
 dizinischen Bereich beispielsweise aufgrund von Untersuchungsergebnissen
 eines Patienten – vorliegen. Das fallspezifische Wissen kann vom Benutzer
-des Expertensystems während der Nutzung eingegeben [Kna$$$93$$$] oder ohne
+des Expertensystems während der Nutzung eingegeben [Kna93] oder ohne
 direkte Benutzerbeteiligung erhoben werden [Bie13].
 
 
@@ -515,7 +515,7 @@ Wissen über den Ablauf einer Operation.
 Am Anfang der Entwicklung eines Expertensystems steht die Akquisition des
 Fachwissens aus der Anwendungsdomäne. Zur Akquisition des Wissens dient
 im Expertensystem eine sogenannte Wissenserwerbskomponente², die den
-Aufbau der Wissensbasis unterstützt [Bei$$$19$$$, Pup$$$13$$$b].
+Aufbau der Wissensbasis unterstützt [Bei19, Pup13b].
 
 
 Da unterschiedliche Quellen für den Wissenserwerb in Frage kommen
@@ -535,7 +535,7 @@ Wobei letzteres im Sinne eines allgemeinen bzw. bereichsbezogenen Wissens zu int
 ist und nicht im Sinne der Form der Repräsentation in Form von Regeln.
 
 
-² Histinuwnedisn:icEhint iigmeSAinuntoerdeenrsFporremchdeenr hRieeprräasuecnhtavtoionndinerFWormissvenonsaRkeqgueislnit.ionskomponente (vgl.
+FOOTNOTE:² Histinuwnedisn:icEhint iigmeSAinuntoerdeenrsFporremchdeenr hRieeprräasuecnhtavtoionndinerFWormissvenonsaRkeqgueislnit.ionskomponente (vgl.
 [Kur92, Alt13]).
 
 
@@ -580,7 +580,7 @@ tig in den 1960er Jahren geprägt von Karl Steinbuch [Ste65], ist die Kybernetik
 gehend im Begriff der KI aufgegangen.
 
 
-² Hgeihnewnedisi:mDBieegTreisfftedregrebKnIiassuefgheägnagnegnena.lso nicht von der Fähigkeit der Maschine ab, „korrekte“
+FOOTNOTE:² Hgeihnewnedisi:mDBieegTreisfftedregrebKnIiassuefgheägnagnegnena.lso nicht von der Fähigkeit der Maschine ab, „korrekte“
 Antworten im Hinblick auf die Konstituenten des Problems zu geben, sondern nur davon, wie
 sehr ihre Antworten denen eines Menschen (bzw. der Menschen der Stichprobe) ähneln.
 
@@ -617,7 +617,7 @@ Kann also analog eine Maschine auf in chinesischer Schrift gestellte Fragen
 mit passenden chinesischen Schriftzeichen antworten, sodass sie den Turing
 Test besteht, kann hierdurch noch nicht angenommen werden, dass die Ma-
 schine tatsächlich versteht was sie übersetzt – also eine Art von Bewusstsein
-für die Problemstellung hat [Sea$$$80$$$].
+für die Problemstellung hat [Sea80].
 
 
 2.3.1 Sichten
@@ -677,7 +677,7 @@ mit dem Begriff der „konnektionistischen“ (engl. connectionist) oder „neur
 nalen“ (engl. neural) KI verknüpft [Smo87, Smo90].
 
 
-FOOTNOTE:Tabelle 2.1: Drei Sichten auf den Begriff der KI. Die Sichten beleuchten verschiedene Aspekte,
+Tabelle 2.1: Drei Sichten auf den Begriff der KI. Die Sichten beleuchten verschiedene Aspekte,
 wie das Vorhandensein eines Bewusstseins, der Universalität der Intelligenz oder
 der Repräsentation der Problemstellung.
 
@@ -689,16 +689,16 @@ Das Forschungsfeld der KI ist mit verschiedenen weiteren Forschungsfeldern
 verknüpft. Im Bereich der Informatik bestehen starke Verbindungen zu den
 
 
-¹ Hinweis: In diesem Zusammenhang wird die symbolische KI auch als Good Old-Fashioned
+FOOTNOTE:¹ Hinweis: In diesem Zusammenhang wird die symbolische KI auch als Good Old-Fashioned
 Artificial Intelligence (GOFAI) bezeichnet [Hau89] und bezieht sich damit auf die symbolische
 Repräsentation der Wissensbasen früherer Expertensysteme.
 
 
-FOOTNOTE:Abbildung 2.2: Die Abbildung zeigt ein Mengendiagramm zur Verdeutlichung der Zusammen-
+Abbildung 2.2: Die Abbildung zeigt ein Mengendiagramm zur Verdeutlichung der Zusammen-
 hänge zwischen den Begriffen Künstliche Intelligenz, Maschinelles Lernen, Wis-
 senbasierte Systeme und Expertensysteme. Die Punkte A, B und C verdeutlichen
 den Schnitt dieser Mengen mit der Menge der Künstlichen Intelligenz. Dabei
-FOOTNOTE:nutzt KI die Methoden des Maschinellen Lernens (C). Neben dem Aspekt des
+nutzt KI die Methoden des Maschinellen Lernens (C). Neben dem Aspekt des
 Lernens spielt auch die Wissensbasierte Modellierung in Form von Wissensba-
 sierten Systemen und insbesondere Expertensystemen eine Rolle. Letztere kön-
 nenreinauf FormalisierungvonExpertenwissen(A)oderauf einerKombination
@@ -710,7 +710,7 @@ schinellen Lernens auf symbolischer Ebene (bspw. über Entscheidungsbäume)
 oder subsymbolischer Ebene (bpsw. Neuronale Netze) nutzen (vgl. Abbildung
 2.2, Punkt C). Die Teilmenge des Bereichs des Maschinellen Lernens, die sich
 speziell mit mehrschichtigen Neuronalen Netzen beschäftigt, wird auch Tie-
-fes Lernen (engl. Deep Learning [Goo$$$16$$$]) genannt – diese Teilmenge ist aus
+fes Lernen (engl. Deep Learning [Goo16]) genannt – diese Teilmenge ist aus
 Gründen der Übersichtlichkeit nicht Bestandteil der Abbildung.
 
 
@@ -737,7 +737,7 @@ Problemlösung
 
 Zur Einführung werden verschiedene Wahrscheinlichkeitsbegriffe in Kapitel
 2.4.1 beleuchtet. Daran anschließend folgen in Kapitel 2.4.2 die Grundlagen
-der Wahrscheinlichkeitstheorie. In den darauf folgenden Kapiteln 2.4.3 und
+FOOTNOTE:der Wahrscheinlichkeitstheorie. In den darauf folgenden Kapiteln 2.4.3 und
 2.4.4 werden Bayes-Netze genauer besprochen.
 
 
@@ -772,7 +772,7 @@ in anderen Galaxien“).
 
 
 Dies gelingt jedoch mittels des Bayes’schen Wahrscheinlichkeitsbegriffes, der
-den frequentistischen Wahrscheinlichkeitsbegriff erweitert [Kor$$$10$$$] und es
+den frequentistischen Wahrscheinlichkeitsbegriff erweitert [Kor10] und es
 insbesondere erlaubt, Vorwissen, beispielsweise von Experten, einzubeziehen
 [Mor90].
 
@@ -789,7 +789,7 @@ sich, sondern zusätzlich abhängig vom Wissensstand [Mor90].
 
 Innerhalb der Bayes’schen Deutung gibt es noch einmal zwei Strömungen mit
 unterschiedlichen Interpretationen des Grad-des-Dafürhaltens: Die subjekti-
-ve Deutung und die objektive Deutung [Pre$$$09$$$].
+ve Deutung und die objektive Deutung [Pre09].
 
 
 Erstere interpretiert den Bayes’schen Wahrscheinlichkeitsbegriff als persönli-
@@ -811,7 +811,7 @@ Dafürhaltens steht hier für eine allgemeine, neutrale Erwartung, die jeder
 mit dem gleichen Wissensstand teilen sollte. So sollte beispielsweise bei
 Nichtvorhandensein relevanter Evidenzen der Grad-des-Dafürhaltens ge-
 mäß des Indifferenz-Prinzips¹, gleichmäßig auf alle in Betracht kommenden
-möglichen Ereignisse verteilt werden [Eva$$$19$$$].
+möglichen Ereignisse verteilt werden [Eva19].
 
 
 Auf dem Konzept der Maximalen Entropie basieren zudem weitere Metho-
@@ -848,7 +848,7 @@ Literatur diverse Verfahren zur Kombination unterschiedlicher Expertenmei-
 nungen [Jac95].
 
 
-FOOTNOTE:2.4.2 Wahrscheinlichkeitstheorie
+2.4.2 Wahrscheinlichkeitstheorie
 
 
 Ein zentrales Element der Wahrscheinlichkeitstheorie ist ein Ereignis (vgl.
@@ -856,7 +856,7 @@ Abschnitt 2.4.1). Dieses kann beispielsweise gegeben sein durch das Ergeb-
 nis eines Glücksrad-Gewinnspiels, wie in Abbildung 2.3 dargestellt.
 
 
-FOOTNOTE:Es werde der Raum solcher Ergebnisse mit Ω bezeichnet. Für den Ereignis-
+Es werde der Raum solcher Ergebnisse mit Ω bezeichnet. Für den Ereignis-
 raum 𝑆 gelten nun die drei Eigenschaften:
 
 
@@ -893,7 +893,7 @@ Sei 𝛽 = {I, III} ∈ 𝑆, dann ist ebenso 𝛼 ∪ 𝛽 = {I, II, III} ∈ �
 
 Wenn nun die Wahrscheinlichkeit proportional zur Fläche vergeben und mit
 der Gesamtfläche normiert wird, dann gilt für Abbildung 𝑃(⋅) zum Beispiel,
-dass 𝑃(𝛼) = 𝑃({II}) = $$$0$$$,5. Weil weiterhin 𝛼 ∩ 𝛽 = ∅, gilt 𝑃(𝛼 ∪ 𝛽) =
+dass 𝑃(𝛼) = 𝑃({II}) = 0,5. Weil weiterhin 𝛼 ∩ 𝛽 = ∅, gilt 𝑃(𝛼 ∪ 𝛽) =
 𝑃({I, II, III}) ist gleich der Summe der einzelnen Abbildungen 𝑃(𝛼) + 𝑃(𝛽) =
 𝑃({II}) + 𝑃({I, III}) = 1.
 
@@ -903,10 +903,10 @@ des Ereignisses 𝛽 unter Kenntnis des Eintretens des Ereignisses 𝛼:
 
 
 Wie sich leicht nachrechnen lässt, ergibt sich die bedingte Wahrscheinlichkeit
-FOOTNOTE:für die konkreten, sich ausschließende Ereignisse, 𝛼 = {II} und 𝛽 = {I, III} zu:
+für die konkreten, sich ausschließende Ereignisse, 𝛼 = {II} und 𝛽 = {I, III} zu:
 
 
-𝑃(𝛽|𝛼) = $$$0$$$. Das bedeutet, dass sich die a-prior bekannte Wahrscheinlichkeit
+𝑃(𝛽|𝛼) = 0. Das bedeutet, dass sich die a-prior bekannte Wahrscheinlichkeit
 𝑃(𝛽) = 0,5 unter Kenntnis des Eintretens des Ereignisses 𝛼 auf 𝑃(𝛽|𝛼) = 0
 reduziert hat.
 
@@ -919,7 +919,7 @@ Die a-priori Wahrscheinlichkeit 𝑃(𝛾) = 0,25 hat sich also unter Kenntnis d
 Ereignisses 𝛽 (d.h. es liegt ein ungerades Ergebnis vor) auf 𝑃(𝛾|𝛽) = 0,3 er-
 höht. Damit ergibt sich die bedingte Wahrscheinlichkeit anschaulich aus dem
 Verhältnis der Ergebnisse die sowohl in 𝛽 als auch in 𝛾 liegen zu den Ergeb-
-nissen die in 𝛽 liegen [Kol$$$09$$$].
+nissen die in 𝛽 liegen [Kol09].
 
 
 Um die Kettenregel der bedingten Wahrscheinlichkeiten zu erhalten, kann
@@ -965,7 +965,7 @@ nicht oder nur unter enormen Aufwand bestimmen lässt.
 
 
 Weiterhin kann von Interesse sein, wie Ereignisse voneinander abhängen. Für
-eine vollständige Unabhängigkeit gilt [Kol$$$09$$$]:
+eine vollständige Unabhängigkeit gilt [Kol09]:
 
 
 Definition 2.6. In 𝑃 ist ein Ereignis 𝛼 unabhängig von einem Ereignis 𝛽, also
@@ -977,12 +977,12 @@ wenn 𝑃(𝛼 ∩ 𝛽) = 𝑃(𝛼)𝑃(𝛽):
 
 
 FOOTNOTE:Im Beispiel des Glücksrad-Gewinnspiels ist ein Ereignis 𝛼 = {II} unabhängig 2
-von einem Ereignis 𝛼 = {II} aus einer vorangegangen Drehung des Rades. 1
+FOOTNOTE:von einem Ereignis 𝛼 = {II} aus einer vorangegangen Drehung des Rades. 1
 Es können aber auch Ereignisse der selben Drehung unabhängig voneinander
 sein.
 
 
-Zur Veranschaulichung werde das Glücksrad aus Abbildung $$$2$$$.3 auf $$$6$$$ Kreis-
+Zur Veranschaulichung werde das Glücksrad aus Abbildung 2.3 auf 6 Kreis-
 segmente zu einem fairen Glücksrad erweitert: Ω = {I, II, III, IV, V, VI} so-
 wie 𝑃({I}) = 𝑃({II}) = 𝑃({III}) = 𝑃({IV}) = 𝑃({V}) = 𝑃({VI}). Für dem
 
@@ -1017,28 +1017,28 @@ Wie zuvor beschrieben, können Ereignisse anschaulich über Mengen von
 Ergebnissen beschrieben werden. In der Praxis werden Ergebnisse häufig
 über Werte referenziert und zu Mengen gebündelt. Bei der fairen Glücksrat-
 Lotterie könnte dies zum Beispiel die Menge alle ungeraden Ergebnisse
-FOOTNOTE:sein.
+sein.
 
 
-Nach [Kol$$$09$$$] ist die Zuweisung solcher Werte zu einem Ergebnis gegeben
+Nach [Kol09] ist die Zuweisung solcher Werte zu einem Ergebnis gegeben
 durch:
 
 
 Definition 2.8. Eine Zufallsvariable 𝑋 sei definiert als eine Funktion 𝐹 . 𝑋
-FOOTNOTE:Diese Funktion weist jedem Ergebnis 𝜔 ∈ Ω einen Wert 𝑥 zu.
+Diese Funktion weist jedem Ergebnis 𝜔 ∈ Ω einen Wert 𝑥 zu.
 
 
-FOOTNOTE:Ein Ereignis kann also über {𝜔 ∈ Ω ∶ 𝐹 (𝜔) = 𝑥} angegeben werden – oder 𝑋
-FOOTNOTE:in Kurzschreibweise 𝑋 = 𝑥. Dabei wird eine Zufallsvariable 𝑋 als diskret
+Ein Ereignis kann also über {𝜔 ∈ Ω ∶ 𝐹 (𝜔) = 𝑥} angegeben werden – oder 𝑋
+in Kurzschreibweise 𝑋 = 𝑥. Dabei wird eine Zufallsvariable 𝑋 als diskret
 bezeichnet, wenn der Wertebereich Val(𝑋) von 𝑋 endlich oder abzählbar ist
 
 
 – sie kann aber auch kontinuierlich sein, beispielsweise reellwertig [Nea04].
-Gilt |Val(𝑋)| = $$$2$$$, wird die Zufallsvariable 𝑋 in dieser Ausarbeitung als binär
+Gilt |Val(𝑋)| = 2, wird die Zufallsvariable 𝑋 in dieser Ausarbeitung als binär
 bezeichnet.
 
 
-FOOTNOTE:Im Beispiel der fairen Glücksrad-Lotterie weise eine Zufallsvariable 𝑋 jedem
+Im Beispiel der fairen Glücksrad-Lotterie weise eine Zufallsvariable 𝑋 jedem
 Ergebnis zu, ob dieses ungerade oder gerade ist. Das bedeutet, der Werte-
 bereich der binären Zufallsvariablen ist gegeben durch den Wertebereich
 Val(𝑋) = {ungerade, gerade}. Ein bestimmtes Ereignis kann zum Beispiel an-
@@ -1053,11 +1053,11 @@ geschrieben.
 
 
 Um im Rahmen einer probabilistischen Wissensbasis eine multivariate Ver-
-teilung 𝑃 über Zufallsvariablen 𝑋 = 𝑋 , … , 𝑋 angeben zu können, muss 0∶𝑛 0 𝑛
+FOOTNOTE:teilung 𝑃 über Zufallsvariablen 𝑋 = 𝑋 , … , 𝑋 angeben zu können, muss 0∶𝑛 0 𝑛
 eine Vielzahl an Parametern festgelegt werden. Selbst in einem einfachen Falle
-von binären Zufallsvariablen müssten $$$2$$$𝑛+1 mögliche Ergebniskombinationen
-FOOTNOTE:parametrisiert werden, d.h. $$$2$$$𝑛+1 − 1 Parameter gesetzt werden. Für 12 binäre
-Zufallsvariablen ergeben sich also $$$4096$$$ − $$$1$$$ = $$$4095$$$ Parameter. Offensichtlich
+von binären Zufallsvariablen müssten 2𝑛+1 mögliche Ergebniskombinationen
+FOOTNOTE:parametrisiert werden, d.h. 2𝑛+1 − 1 Parameter gesetzt werden. Für 12 binäre
+Zufallsvariablen ergeben sich also 4096 − 1 = 4095 Parameter. Offensichtlich
 steigt die Anzahl der Parameter exponentiell mit der Anzahl der Zufallsvaria-
 blen [Phi15b].
 
@@ -1079,7 +1079,7 @@ hängigkeit zwischen Zufallsvariablen können probabilistische Wissensbasen
 allerdings kompakter dargestellt und handhabbar repräsentiert werden.
 
 
-FOOTNOTE:Definition 2.9. Ein BN über den Zufallsvariablen 𝑋 = 𝑋 , … , 𝑋 ist ge- 0∶𝑛 0 𝑛
+Definition 2.9. Ein BN über den Zufallsvariablen 𝑋 = 𝑋 , … , 𝑋 ist ge- 0∶𝑛 0 𝑛
 geben durch ein Tupel
 
 
@@ -1095,18 +1095,18 @@ und
 die gemeinsame Wahrscheinlichkeitsverteilung repräsentieren [Kol09].
 
 
-FOOTNOTE:Der Graph 𝐺 wird verwendet, um Abhängigkeiten zwischen Zufallsvariablen
-𝑋 zu definieren. Er wird auch als Struktur des BN bezeichnet und äußerst 0∶𝑛
+Der Graph 𝐺 wird verwendet, um Abhängigkeiten zwischen Zufallsvariablen
+FOOTNOTE:𝑋 zu definieren. Er wird auch als Struktur des BN bezeichnet und äußerst 0∶𝑛
 sich als gerichteter (engl. directed) azyklischer Graph (DAG). Seine Knoten-
 bzw. Vertexmenge 𝒱 repräsentiert die Zufallsvariablen 𝑋 . 0∶𝑛
 
 
-FOOTNOTE:Während eine gerichtete Kante 𝑣 → 𝑣 der Kantenmenge ℰ eine direkte Ab- 𝑖 𝑗
+Während eine gerichtete Kante 𝑣 → 𝑣 der Kantenmenge ℰ eine direkte Ab- 𝑖 𝑗
 hängigkeit zwischen zwei Variablen angibt, symbolisiert eine fehlende Kante
 die Unabhängigkeit zweier Variablen¹.
 
 
-¹ Hinweis: Da Graph 𝐺 sowohl gerichtet als auch azyklisch ist, existiert kein Pfad der von einem
+FOOTNOTE:¹ Hinweis: Da Graph 𝐺 sowohl gerichtet als auch azyklisch ist, existiert kein Pfad der von einem
 Knoten zu sich selbst zurück führt: ∄ Pfad 𝑣𝑖 → … → 𝑣𝑖.
 
 
@@ -1122,7 +1122,7 @@ Tables – bedingte Wahrscheinlichkeitstabellen (CPT) herangezogen werden,
 um die Verteilungen zu repräsentieren.
 
 
-FOOTNOTE:Bei der obigen Darstellung wird angenommen, dass 𝐺 eine I-MAP (engl. Inde-
+Bei der obigen Darstellung wird angenommen, dass 𝐺 eine I-MAP (engl. Inde-
 pence Map) der Wahrscheinlichkeitsverteilung 𝑃 ist, d.h. dass jede Unabhän-
 gigkeitsbeziehung, die durch 𝐺 gegeben ist, auch in 𝑃 erfüllt ist³ [Kol09]. Nur
 in diesem Falle kann die Berechnung von 𝑃 durch die bedingten Unabhän-
@@ -1134,16 +1134,16 @@ Um die für die I-MAP benötigten bedingten Unabhängigkeiten formal ange-
 ben zu können, müssen folgende Knotenmengen definiert werden:
 
 
-FOOTNOTE:• Pa(𝑋 ): Menge der Knoten, von denen eine gerichtete Kante nach 𝑋 𝑖 𝑖
+• Pa(𝑋 ): Menge der Knoten, von denen eine gerichtete Kante nach 𝑋 𝑖 𝑖
 führt (d.h. die Eltern von 𝑋 ), 𝑖
 
 
-FOOTNOTE:• Desc(𝑋 ): Menge der Knoten, die auf einem von 𝑋 ausgehenden Pfad 𝑖 𝑖
+• Desc(𝑋 ): Menge der Knoten, die auf einem von 𝑋 ausgehenden Pfad 𝑖 𝑖
 liegen (d.h. die Nachfahren von 𝑋 ), 𝑖
 
 
 • NDesc(𝑋 ): Menge der Knoten, die weder in Pa(𝑋 ) noch in Desc(𝑋 ) 𝑖 𝑖 𝑖
-FOOTNOTE:liegen, sowie nicht 𝑋 selbst sind (d.h. Nicht-Nachfahren von 𝑋 ). 𝑖 𝑖
+liegen, sowie nicht 𝑋 selbst sind (d.h. Nicht-Nachfahren von 𝑋 ). 𝑖 𝑖
 
 
 ¹ Hinweis: Durch den verwendeten DAG (mit seiner azyklischen sowie gerichteten Eigenschaft)
@@ -1154,11 +1154,11 @@ FOOTNOTE:² Histinswicheiesr:gWesetnelnlt,Pdaa(s𝑋s d)ie=Elt∅er,nibsetzdieie
 𝑃(𝑋 ) gibt folglich die A-priori-Wahrscheinlichkeit an. 𝑖
 
 
-³ H𝑃(in𝑋w𝑖e)igs:ibUtmfoglgekliechhrdtime Aüs-spernioraib-WeranhircshcthaelilneliUchnkaebihtäanng.igkeiten in 𝑃 auch in 𝐺 repräsentiert
+FOOTNOTE:³ H𝑃(in𝑋w𝑖e)igs:ibUtmfoglgekliechhrdtime Aüs-spernioraib-WeranhircshcthaelilneliUchnkaebihtäanng.igkeiten in 𝑃 auch in 𝐺 repräsentiert
 sein.
 
 
-FOOTNOTE:Abbildung 2.4: Bayessches Netz aus [Kol09, Kor10, Dar09] in Anlehnung an [Pea88]. Graph mit
+Abbildung 2.4: Bayessches Netz aus [Kol09, Kor10, Dar09] in Anlehnung an [Pea88]. Graph mit
 Knoten und zugeordneten bedingten Wahrscheinlichkeitsverteilungen. Es gilt:
 𝑃(𝐴,𝐸,𝐾,𝑁,𝑆) = 𝑃(𝐴)𝑃(𝐸|𝑁)𝑃(𝑁|𝐴,𝐾)𝑃(𝐾)𝑃(𝑆|𝐴).
 
@@ -1167,7 +1167,7 @@ Mit diesen Knotenmengen kann die lokale Markovbedingung, die der I-MAP
 zugrunde liegt, definiert werden:
 
 
-FOOTNOTE:Definition 2.10. Der DAG 𝐺 eines Bayes-Netzes, dessen Knoten 𝑣 die Zu-
+Definition 2.10. Der DAG 𝐺 eines Bayes-Netzes, dessen Knoten 𝑣 die Zu-
 fallsvariablen 𝑋 repräsentieren, steht für die Menge der lokalen bedingten 0∶𝑛
 Unabhängigkeiten
 
@@ -1205,7 +1205,7 @@ hängigkeiten wie folgt festgelegt:
 
 
 In Definition 2.10 aus Kapitel 2.4.3 wurde gezeigt, dass durch den Graphen
-FOOTNOTE:𝐺 = (𝑉,𝐸) eines Bayes-Netzes die Menge lokaler bedingter Unabhängigkei-
+𝐺 = (𝑉,𝐸) eines Bayes-Netzes die Menge lokaler bedingter Unabhängigkei-
 ten 𝐼 (𝐺) gegeben ist. 𝑙
 
 
@@ -1217,15 +1217,15 @@ blen unabhängig von einander sind.
 
 
 Um dieses Konzept herzuleiten wird zunächst der Begriff des (aktiven) Weges
-definiert, vgl. [Gei$$$90$$$] und [Kol$$$09$$$]:
+definiert, vgl. [Gei90] und [Kol09]:
 
 
-¹ Hinweis: Eine detaillierte Darstellung dieses Beispiels findet sich auch in der einschlägigen
+FOOTNOTE:¹ Hinweis: Eine detaillierte Darstellung dieses Beispiels findet sich auch in der einschlägigen
 Literatur [Kol09, Kor10, Pea88].
 
 
 Definition 2.11. Gegeben sei der Graph 𝐺 = (𝒱, ℰ) eines Bayes-Netzes mit
-Zufallsvariablen 𝑋 . Weiterhin sei 𝒵 eine Teilmenge der Zufallsvariablen, 0∶𝑛
+FOOTNOTE:Zufallsvariablen 𝑋 . Weiterhin sei 𝒵 eine Teilmenge der Zufallsvariablen, 0∶𝑛
 die beobachtet wurde. 𝒵 sei durch die Knotenmenge 𝒱 ⊆ 𝒱 repräsentiert. Ein 𝒵
 Weg ist eine Sequenz von Kanten, die in der ungerichteten Repräsentation des
 DAGs 𝐺 = (𝒱, ℰ) einen Pfad (Sequenz von Knoten) bildet¹. Hierfür schreibt
@@ -1248,12 +1248,12 @@ liegen.
 
 
 Mithilfe der Definition eines aktiven Weges kann das Konzept der d-
-Separation definiert werden[Gei$$$90$$$]:
+Separation definiert werden[Gei90]:
 
 
 Definition 2.12. Seien 𝒲, 𝒴 und 𝒵 drei disjunkte Teilmengen der Zufalls-
 variablen, die in der Struktur 𝐺 = (𝒱, ℰ) eines Bayes-Netzes durch die dis-
-FOOTNOTE:junkten Knotenmengen 𝒱𝒲, 𝒱𝒴 und 𝒱𝒵 repräsentiert werden. Dann heißt 𝒲
+junkten Knotenmengen 𝒱𝒲, 𝒱𝒴 und 𝒱𝒵 repräsentiert werden. Dann heißt 𝒲
 d-separiert von 𝒴 gegeben 𝒵 genau dann, wenn es keinen aktiven Weg zwi-
 schen beliebigen Knoten 𝑣𝒲 ∈ 𝒱𝒲 und 𝑣𝒴 ∈ 𝒱𝒴 gibt, gegeben 𝒱𝒵.
 
@@ -1262,7 +1262,7 @@ Mit dem Konzept der d-Separation können die globalen Markovunabhängig-
 keiten beschrieben werden.
 
 
-¹ Hinweis: Die Begriffe Weg und Pfad werden in der deutschsprachigen Literatur teils synonym
+FOOTNOTE:¹ Hinweis: Die Begriffe Weg und Pfad werden in der deutschsprachigen Literatur teils synonym
 verwendet. Hier sind die Übersetzungen der Begriffe trail (= Sequenz von Kanten) und path (=
 Sequenz von Knoten) gemeint, die sich unterscheiden.
 
@@ -1303,20 +1303,20 @@ und
 die gemeinsame Wahrscheinlichkeitsverteilung [Kol09].
 
 
-FOOTNOTE:Der Graph 𝐺 wird genutzt, um Abhängigkeiten zwischen den Zufallsvariablen
-zu definieren und repräsentiert damit die Struktur des BN (vgl. Kapitel $$$2$$$.4.3).
+Der Graph 𝐺 wird genutzt, um Abhängigkeiten zwischen den Zufallsvariablen
+zu definieren und repräsentiert damit die Struktur des BN (vgl. Kapitel 2.4.3).
 Die Vertexmenge 𝒱 repräsentiert die Menge der Zufallsvariablen, während
 
 
 FOOTNOTE:ung 2.5: Graph eines Bayes-Netzes (BN) über den Zufallsvariablen 𝑋 . Diese 0∶4
 tur, die auch Naive BN genannt wird, ist gekennzeichnet durch ge
-te Kanten ausgehend von Wurzelknoten 𝑋 zu seinen Kindern 𝑋 0 1∶
+FOOTNOTE:te Kanten ausgehend von Wurzelknoten 𝑋 zu seinen Kindern 𝑋 0 1∶
 eine fehlende Kante die Unabhängigkeit zweier Zufallsvariablen verk
-kann die Verbundwahrscheinlichkeit 𝑃(𝑋 ) wie folgt faktorisiert w 0∶4
+FOOTNOTE:kann die Verbundwahrscheinlichkeit 𝑃(𝑋 ) wie folgt faktorisiert w 0∶4
 𝑃(𝑋 ) = 𝑃(𝑋 )𝑃(𝑋 |𝑋 )𝑃(𝑋 |𝑋 )𝑃(𝑋 |𝑋 )𝑃(𝑋 |𝑋 ). 0∶4 0 1 0 2 0 3 0 4 0
 
 
-FOOTNOTE:eine gerichtete Kante 𝑣 → 𝑣 der Menge der Kanten ℰ eine direkte Abhän- 𝑖 𝑗
+eine gerichtete Kante 𝑣 → 𝑣 der Menge der Kanten ℰ eine direkte Abhän- 𝑖 𝑗
 gigkeit zwischen zwei Variablen darstellt. Eine fehlende Kante symbolisiert
 die Unabhängigkeit dieser beiden Variablen (cf. Figure 2.5).
 
@@ -1336,19 +1336,19 @@ die zeitlichen Abhängigkeiten der Zufallsvariablen berücksichtigen kann
 
 
 Ersteres, also 𝐵 , wird genutzt, um die Struktur als auch die a-priore Wahr- 0
-FOOTNOTE:scheinlichkeitsverteilung über den Zufallsvariablen 𝑋 in Zeitschritt 0, 0∶𝑛
+scheinlichkeitsverteilung über den Zufallsvariablen 𝑋 in Zeitschritt 0, 0∶𝑛
 FOOTNOTE:sprich: 𝑃(𝑋0 ), anzugeben. Die Struktur von 𝐵 kann beispielsweise nach 0∶𝑛 0
 Abbildung 2.5 erfolgen – die Variablen tragen dann zusätzlich einen hochge-
-stellten Index des Zeitschritts $$$0$$$.
+stellten Index des Zeitschritts 0.
 
 
-FOOTNOTE:Abbildung 2.6: Vereinfachte Darstellung eines zeitlichen Bayes-Netzes mit zwei Zeitscheiben.
+Abbildung 2.6: Vereinfachte Darstellung eines zeitlichen Bayes-Netzes mit zwei Zeitscheiben.
 Dieses wird im englischsprachigen Raum auch als Temporal Bayesian Network
 (TBN) mit zwei Zeitscheiben oder kurz als 2TBN bezeichnet. Das 2TBN (oder
 auch: 𝐵→) wird als Schablone für nachfolgende Zeitschritte 𝑡 eingesetzt. Aus
-Gründen der Übersichtlichkeit sind Knoten der Zufallsvariablen 𝑋𝑡−$$$1$$$ nicht ab- 1∶4
+Gründen der Übersichtlichkeit sind Knoten der Zufallsvariablen 𝑋𝑡−1 nicht ab- 1∶4
 gebildet, denn es existiert in diesem Beispiel keine direkte Abhängigkeit zu
-𝑋$$$0$$$∶4. Eine solch vereinfachte Darstellung eines 2TBN, also eine Darstellung 𝑡
+𝑋0∶4. Eine solch vereinfachte Darstellung eines 2TBN, also eine Darstellung 𝑡
 mit nur relevanten Knoten des vorgelagerten Zeitschritts, wird teils als 1,5TBN
 bezeichnet [Mur02].
 
@@ -1358,12 +1358,12 @@ diskrete Zeitschritte 𝑡 hinweg, nämlich durch die Verwendung von:
 
 
 Dabei bezeichnet Pa(𝑋𝑡) die Menge der Eltern von 𝑋𝑡 im zugehörigen Gra- 𝑖 𝑖
-FOOTNOTE:phen. Eltern können hierin dem selben Zeitschritt 𝑡 oder aber dem voran-
-gegangenen Zeitschritt 𝑡 − $$$1$$$ zugeordnet sein. Im letzteren Falle zeigen ge-
+phen. Eltern können hierin dem selben Zeitschritt 𝑡 oder aber dem voran-
+gegangenen Zeitschritt 𝑡 − 1 zugeordnet sein. Im letzteren Falle zeigen ge-
 richteten Kanten in Zeitschritte mit höherem Index, was das zeitliche Voran-
 schreiten widerspiegelt [Mur02]. Abbildung 2.6 zeigt hierzu beispielhaft den
-FOOTNOTE:Graphen 𝐵 eines DBNs. Dabei besitzt der Knoten der Zufallsvariablen 𝑋𝑡 → 0
-FOOTNOTE:einen Elternknoten im vorgelagerten Zeitschritt 𝑡 − 1; es existiert also eine
+Graphen 𝐵 eines DBNs. Dabei besitzt der Knoten der Zufallsvariablen 𝑋𝑡 → 0
+einen Elternknoten im vorgelagerten Zeitschritt 𝑡 − 1; es existiert also eine
 gerichtete Kante über zwei verschiedene Zeitschritte hinweg. Weiterhin exis-
 tieren Kanten innerhalb eines Zeitschrittes, beispielsweise zwischen Knoten
 der Zufallsvariablen 𝑋𝑡 und 𝑋𝑡. 0 1
@@ -1386,8 +1386,8 @@ len spezifiziert werden [Ben21]. Ressourcen sind allerdings die zentralen Bau-
 steine der FHIR [Oem21]. Aus diesen allgemeinen Schablonen können do-
 mänentypische Objekte wie beispielsweise Patient (engl. Patient), Untersu-
 chungswert (engl. Observation) oder Behandlungsort (engl. Location) abge-
-leitet werden. Es stehen 145 verschiedene Ressourcen zur Verfügung [FHI$$$21$$$],
-die sich gemäß ihres Typus in einer Taxonomie verorten lassen [Ben$$$21$$$]. Mit
+leitet werden. Es stehen 145 verschiedene Ressourcen zur Verfügung [FHI21],
+die sich gemäß ihres Typus in einer Taxonomie verorten lassen [Ben21]. Mit
 Berücksichtigung der entsprechenden fachlichen Sicht ergibt sich Tabelle 2.2
 auf Seite 36 mit den jeweils beispielhaft dargestellten Ressourcen.
 
@@ -1396,7 +1396,7 @@ Weitere Ressourcen können nach Bedarf hinzugefügt werden [Ben21]. Insge-
 samt können so Daten mittels FHIR auffindbar (engl. Findable), zugänglich
 
 
-FOOTNOTE:¹ Gesprochen: [ˈfaɪə] (engl. fire).
+¹ Gesprochen: [ˈfaɪə] (engl. fire).
 
 
 ¹² GHeinspwreoicsh: eSny:st[eˈfmaɪəe]w(eenrdgel.nfirine).der Begriffswelt der Softwaretechnik als Ausschnitte der realen
@@ -1405,7 +1405,7 @@ sowie einer Systemgrenze bestehen [Hes84, Bal10]. Letztere wird auch als Schnitt
 seltener als Nahtstelle bezeichnet (engl. interface).
 
 
-³ Hseilntewneeirs:aDlseNraAhntswteelnledubnezgesibcehrneeicth(eunmglf.aisnstteHrfuacmea).n- und Veterinärmedizin und hierin die me-
+FOOTNOTE:³ Hseilntewneeirs:aDlseNraAhntswteelnledubnezgesibcehrneeicth(eunmglf.aisnstteHrfuacmea).n- und Veterinärmedizin und hierin die me-
 dizinische Versorgung selbst als auch Finanz- und Verwaltungsaspekte[Ben21, FHI21].
 
 

@@ -554,7 +554,7 @@ ständig angesehen werden können. Im ersten Fall ist das Datenbanksystem
 eine Art Map, die zu jedem Schlüssel einen Wert zuordnet:
 
 
-Schlu¨ssel W ert →
+Schlüssel W ert →
 
 
 Im zweiten Fall existiert für jede Datenbank eine eigene Map:
@@ -576,7 +576,7 @@ dungen voneinander zu separieren. Eine Anwendung arbeitet dann meist
 nur auf einer einzigen Datenbank, deren Nummer direkt nach dem Ver-
 bindungsaufbau angegeben wird. Innerhalb dieser Datenbank werden un-
 terschiedliche Entitätsmengen meist mittels Schlüsselpräfixen voneinander
-separiert, z. B. produkt/$$$812$$$.
+separiert, z. B. produkt/812.
 
 
 Der Zugriff auf Schlüssel-Wert-Paare erfolgt ähnlich wie bei Maps mit
@@ -605,14 +605,14 @@ SET counter 9
 INCR counter
 GET counter // liefert 10
 RPUSH pers:1:projekte "DB Projekt"
-HSET pers:1 vorname "Rita"
-HGET pers:1 vorname // liefert Rita
+HSET pers:$$$1$$$ vorname "Rita"
+HGET pers:$$$1$$$ vorname // liefert Rita
 
 
 Im Beispiel wurde ein Counter-Wert gesetzt, um eins erhöht und anschlie-
 ßend wieder gelesen. An das rechte Ende einer projekte-Liste wurde ein
 neues Projekt angefügt und in einer Hash-Map bekommt die Person mit
-dem Schlüssel pers:1 an der Stelle vorname den Wert Rita. Der letzte
+dem Schlüssel pers:$$$1$$$ an der Stelle vorname den Wert Rita. Der letzte
 Befehlt gibt schließlich ebendiesen Vornamen aus.
 
 
@@ -646,7 +646,7 @@ sammen mit den Zeitstempeln des Schreibens:
 T abelle (Row-ID (Spalte (V ersion W ert))) → → → →
 
 
-FOOTNOTE:Der Datenzugriff erfolgt auch hier wieder mit den Kommandos GET und
+Der Datenzugriff erfolgt auch hier wieder mit den Kommandos GET und
 PUT. Das folgende Beispiel gilt für das Datenbankmanagementsystem HBa-
 
 
@@ -658,13 +658,13 @@ GET 'pers', 'P1'
 SCAN 'pers'
 
 
-FOOTNOTE:Das erste Kommando fügt eine Zeile in die Tabelle pers mit der Row-ID
-P$$$1$$$ sowie einer Vornamen-Spalte hinzu. HBase kategorisiert Spalten in so-
+Das erste Kommando fügt eine Zeile in die Tabelle pers mit der Row-ID
+P1 sowie einer Vornamen-Spalte hinzu. HBase kategorisiert Spalten in so-
 genannte Spaltenfamilien. Beim Anlegen einer Tabelle müssen die Spalten-
 familien festgelegt werden. Diese dienen zur Aufteilung unterschiedlicher
 Anwendungskonzepte innerhalb einer Zeile. Im genannten Beispiel wird
-FOOTNOTE:lediglich die Spaltenfamilie info verwendet, in der die Spalte info:vor-
-FOOTNOTE:name Platz findet. Informationen über Profilaufrufstatistiken oder Bezie-
+lediglich die Spaltenfamilie info verwendet, in der die Spalte info:vor-
+name Platz findet. Informationen über Profilaufrufstatistiken oder Bezie-
 hungen zwischen Personen könnten in anderen Spaltenfamilien abgelegt
 werden. Das GET-Kommando liefert die Zeile mit der gegebenen Row-ID
 samt aller ihrer Spalten. Über weitere Parameter kann eine Projektion nach
@@ -726,7 +726,7 @@ Zwar verwaltet auch CouchDB Dokumente im JSON-Format und unter-
 stützt damit beliebige strukturierte Objekte mit Arrays und Unterdoku-
 menten, allerdings gibt es im Vergleich zu MongoDB einige fundamenta-
 le Unterschiede. Der standardmäßige Zugriff auf Dokumente erfolgt über
-FOOTNOTE:eine REST-API unter der Verwendung von den HTTP-Methoden PUT, GET
+eine REST-API unter der Verwendung von den HTTP-Methoden PUT, GET
 und DELETE. Für komplexere Suchanfragen über Sekundärattribute wird
 der Einsatz von Views empfohlen. Diese Sichten haben einen eindeutigen
 Namen und werden über eine JavaScript-Funktion definiert, welche eine
@@ -781,7 +781,7 @@ thematischen Sinne gesehen werden kann:
 G = (V, E)
 
 
-FOOTNOTE:Der Property-Graph G besteht aus einer Menge von Knoten V und Kanten
+Der Property-Graph G besteht aus einer Menge von Knoten V und Kanten
 E. Knoten besitzen beliebige Properties sowie optional Labels und eine ID.
 Auch Kanten können Properties besitzen. Bei ihnen ist das Label Pflicht,
 um die Art der Beziehung zwischen zwei Knoten anzugeben. Kanten sind
@@ -1112,7 +1112,7 @@ zufinden. Anschließend beschreiben wir Ideen zur Einbringung der Ände-
 rungen auf das vorherige Ergebnis (Punkte 2 und 3).
 
 
-FOOTNOTE:Verfahren zur Änderungserfassung
+Verfahren zur Änderungserfassung
 
 
 Verschiedene Änderungserfassungsverfahren unterscheiden sich zum einen
@@ -1124,13 +1124,13 @@ Verfahren eignen sich gut, wenn die Änderungen seit der letzten Durch-
 führung gering sind, andere, wenn sich viel geändert hat. Wenn wir von
 Änderungen sprechen, teilen wir diese in zwei Arten auf, und zwar Einfü-
 gungen und Löschungen. Sei B die Datenbasis, auf der die Berechnung er-
-folgt. B(t $$$1$$$) bezeichnet den aktuellen Zustand und B(t $$$0$$$) den Zustand der
+folgt. B(t 1) bezeichnet den aktuellen Zustand und B(t 0) den Zustand der
 Basisdaten zum Zeitpunkt t 0 der vorherigen Berechnung.
 
 
-FOOTNOTE:Einfügungen ∆ =B(t 1) B(t 0)
+Einfügungen ∆ =B(t 1) B(t 0)
 −
-Löschungen =B(t $$$0$$$) B(t $$$1$$$) ∇ −
+Löschungen =B(t 0) B(t 1) ∇ −
 
 
 Einfügungen sind also diejenigen Datensätze, die seit der vorherigen Be-
@@ -1155,7 +1155,7 @@ ner Berechnung diesen Wert zurücksetzen, während Zeitstempel und Ver-
 sionsnummern in den Basisdaten erhalten bleiben können.
 
 
-Das relationale Datenbankmanagementsystem IBM DB2 für z/OS bietet
+Das relationale Datenbankmanagementsystem IBM DB$$$2$$$ für z/OS bietet
 eine native Unterstützung für Audit-Columns. Beim Anlegen der Tabelle
 wird die betreffende Spalte mit der Option ON UPDATE AS ROW CHANGE
 
@@ -1167,7 +1167,7 @@ der Einfügung verwendet. Nachträgliche Änderungen am Dokument ver-
 ändern allerdings nicht die Objekt-ID und damit auch nicht den Zeitstem-
 pel. Da auf dem ID-Attribut stets ein B+-Baum-Index existiert, sind mittels
 Präfixanfragen effiziente Suchen nach neu eingefügten Dokumenten mög-
-lich. Im Falle von DB2 lassen sich mit einer Selektion auf der Audit-Column
+lich. Im Falle von DB$$$2$$$ lassen sich mit einer Selektion auf der Audit-Column
 alle Zeilen finden, die sich seit der letzten Berechnung geändert haben. Eine
 Unterscheidung, ob es sich um einen komplett neuen oder um einen verän-
 derten Datensatz handelt, ist in beiden genannten Ansätzen nicht möglich.
@@ -1216,7 +1216,7 @@ zu entfernen oder die Attributwerte auf null zu setzen. Einige NoSQL-
 Datenbanksysteme wie HBase bieten eine eingebaute Multi-Versionierung,
 die allerdings meist erst explizit aktiviert werden muss. Dazu gibt man die
 Anzahl n der zu verwaltenden Versionen an. Im Extremfall kann dies bei
-FOOTNOTE:einer Datenbank der Größe N zu einem Speicheraufwand von O(N n) ·
+einer Datenbank der Größe N zu einem Speicheraufwand von O(N n) ·
 führen. Bei HBase wird zu jedem Attribut eine Historie von Datenwerten
 
 
@@ -1400,7 +1400,7 @@ werden diese Änderungen direkt auf das materialisierte Ergebnis der Sicht
 angewandt.
 
 
-FOOTNOTE:Inkrementelle Aggregationen
+Inkrementelle Aggregationen
 
 
 Datentransformationen, die lediglich Selektionen oder Projektionen durch-
@@ -1457,7 +1457,7 @@ Die Gehälter der einzelnen Firmen ändern sich also folgendermaßen:
 { _id: 'SAP', summe: 37000+42000=79000 }
 
 
-Es fällt auf, dass die Zahl $$$42000$$$, die zur Berechnung der neuen Summen
+Es fällt auf, dass die Zahl 42000, die zur Berechnung der neuen Summen
 benötigt wird, nicht in der Liste der Änderungsoperationen zu finden ist.
 Es ist also auch nötig, unveränderte Attribute zu betrachten.
 
@@ -1492,12 +1492,12 @@ größten Werte gespeichert werden, um zumindest die Unterstützung von
 n Löschungen zu bieten.
 
 
-COUNT Nehmen wir an, es soll eine Zählung von Werten ($$$1$$$, $$$7$$$, $$$9$$$) vorge-
-nommen werden. Das Ergebnis ist $$$3$$$. Soll nun die Zahl $$$9$$$ eingefügt werden,
-ist das Ergebnis nicht COUNT($$$3$$$, $$$9$$$) = $$$2$$$ sondern $$$3$$$+COUNT(9) = $$$4$$$. Beim Zäh-
+COUNT Nehmen wir an, es soll eine Zählung von Werten (1, 7, 9) vorge-
+nommen werden. Das Ergebnis ist 3. Soll nun die Zahl 9 eingefügt werden,
+ist das Ergebnis nicht COUNT(3, 9) = 2 sondern 3+COUNT(9) = 4. Beim Zäh-
 len darf also nicht der Fehler gemacht werden, dass eine vorherige Zählung
 lediglich als ein einziges Element interpretiert wird. Als Lösung bietet sich
-an, die Zählfunktion als Summe von Einsen SUM($$$1$$$) zu interpretieren.
+an, die Zählfunktion als Summe von Einsen SUM(1) zu interpretieren.
 
 
 Sonstige Bei nicht-kommutativen Aggregatfunktionen wie IMPLODE (zur
@@ -1514,7 +1514,7 @@ nicht mehr weiß, ob die letzte Instanz eines Wertes gelöscht wurde oder ob
 der Wert noch in anderen Datensätzen präsent ist.
 
 
-FOOTNOTE:Änderungseinbringung
+Änderungseinbringung
 
 
 Bei inkrementellen Berechnungen muss in der Regel auf zwei Datenquel-
@@ -1522,9 +1522,9 @@ len lesend zugegriffen werden. Zum einen auf die eigentlichen Basisdaten,
 auf denen auch die Änderungserfassung erfolgt, zum anderen aber auch
 auf das Ergebnis der vorherigen Berechnung. Das Ziel der inkrementellen
 Berechnung soll sein, dass das Resultat äquivalent zu dem einer vollstän-
-digen Berechnung ist. Betrachten wir die Basisdatensätze a $$$1$$$, . . . , aj, die be-
-reits bei einer vorherigen Berechnung das Ergebnis f(a $$$1$$$, . . . , aj) erzeugt ha-
-FOOTNOTE:ben. Nach der Löschung von ai, . . . , aj und der Einfügung von aj+$$$1$$$, . . . , a k
+digen Berechnung ist. Betrachten wir die Basisdatensätze a 1, . . . , aj, die be-
+reits bei einer vorherigen Berechnung das Ergebnis f(a 1, . . . , aj) erzeugt ha-
+ben. Nach der Löschung von ai, . . . , aj und der Einfügung von aj+1, . . . , a k
 gilt die inkrementelle Berechnung unter der Operation als korrekt, genau ◦
 dann wenn gilt:
 
@@ -1544,7 +1544,7 @@ Art der Berechnung ab. Einige Beispiele:
 • Keine Aggregation: Die Berechnung bestehe lediglich aus einer Projek-
 tion. Aus jedem Personendatensatz aj soll das Geburtsjahr yj = f(aj)
 extrahiert werden. Da keine Aggregation erfolgt, ist das Ergebnis eine
-Multimenge von Geburtsjahren y $$$1$$$, . . . , yj = f(a $$$1$$$, . . . , aj). Bei der { }
+Multimenge von Geburtsjahren y 1, . . . , yj = f(a 1, . . . , aj). Bei der { }
 Operation handelt es sich um die Multimengen-Vereinigung , die
 Funktion f◦∗ fungiert wie f, jedoch mit negativen Häufigkeiten⊎ . Das
 neutrale Element ist die leere Multimenge: f f∗ = = e. ◦ ∅
@@ -1553,7 +1553,7 @@ neutrale Element ist die leere Multimenge: f f∗ = = e. ◦ ∅
 FOOTNOTE:• S uu mm dm ieen Abi dld du itn ig o: nIs +t uf n(a d1, e. s. g. i, la tj f) ∗= =P1i∈a f1, ....,aj i, handelt es sich bei ◦ − ·
 
 
-FOOTNOTE:• Z mä ih tl ie sn t: af u( ca h1, h. i. e. r, aj d) ie= APddi∈ ita i1 o,. n..,a uj n1 dis ft ∗e =in Sp 1ez fia . lfall der Summe, so- ◦ − ·
+• Z mä ih tl ie sn t: af u( ca h1, h. i. e. r, aj d) ie= APddi∈ ita i1 o,. n..,a uj n1 dis ft ∗e =in Sp 1ez fia . lfall der Summe, so- ◦ − ·
 
 
 Weitere Funktionen wie die Durchschnittsberechnung oder die Summen-
@@ -1582,7 +1582,7 @@ Form gebracht, sodass es direkt mit den eigentlichen Basisdaten aggregiert
 werden kann. Nehmen wir als Beispiel die Berechnung der Gehaltsumme
 pro Firma. Aus dem Ergebnisdatensatz (SAP, 1500000) wird ein anony-
 mer Personen-Eingabedatensatz erzeugt mit der Firma SAP und dem Ge-
-halt $$$1500000$$$. Zu Beginn der Berechnung - im gegebenen Beispiel also vor
+halt 1500000. Zu Beginn der Berechnung - im gegebenen Beispiel also vor
 der Summenbildung - liegen alle zur Ermittlung des Endergebnisses not-
 wendigen Daten vor. Das Endergebnis ist vollständig und beinhaltet alle
 Endwerte, auch solche, die sich nicht geändert haben. Die Variante trägt
@@ -1601,7 +1601,7 @@ me und Anzahl verwendet. Theoretisch ist das Verfahren aber auch auf
 andere Analysen übertragbar. Die Berechnung läuft unter dieser Varian-
 te so ab, dass sie nur auf den Änderungen in den Basisdaten basiert. Das
 Ergebnis der Berechnung ist also nicht final, sondern stellt nur eine abso-
-lute Änderung dar, etwa (SAP, $$$17000$$$), weil entweder das Gehalt einer −
+lute Änderung dar, etwa (SAP, 17000), weil entweder das Gehalt einer −
 bei SAP arbeitenden Person gekürzt wurde oder weil eine ebensolche Per-
 son die Firma gewechselt hat oder ganz gelöscht wurde. Dieses Ergebnis
 darf natürlich nicht wie bei der Overwrite-Installation einfach die Werte
@@ -1656,7 +1656,7 @@ lichkeiten zur Datenintegration vorgestellt und diskutiert, nämlich die ma-
 terialisierte und die virtuelle Integration.
 
 
-FOOTNOTE:Formen von Heterogenität
+Formen von Heterogenität
 
 
 Technische Heterogenität Betrachtet man zwei verschiedene Datenbank-
@@ -1760,7 +1760,7 @@ nen kann die schematische Heterogenität meist mit einfachen Operatoren
 überwunden werden.
 
 
-FOOTNOTE:Semantische Heterogenität Während die bisher vorgestellten Formen der
+Semantische Heterogenität Während die bisher vorgestellten Formen der
 Heterogenität damit zu tun hatten, wie die Konzepte der realen Welt in ei-
 nem speziellen Datenbanksystem umgesetzt werden, ist die semantische
 Heterogenität eine Folge der Autonomie bei der Verwendung von Namen

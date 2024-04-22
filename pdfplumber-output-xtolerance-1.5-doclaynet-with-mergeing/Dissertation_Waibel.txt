@@ -20,9 +20,6 @@ Ludwig Waibel
 aus Memmingen
 
 
-2021
-
-
 Prof. Dr. Stefan Funken
 Prof. Dr. Stefan Funken
 Prof. Dr. Friedhelm Schwenker
@@ -63,7 +60,7 @@ Einleitung
 Der Prozess der Korrosion beschreibt die allmähliche Zersetzung von metallischen
 Materialien durch elektrochemische Reaktionen mit der Umgebung. Dabei verur-
 sacht die Umwandlung der Materialien allein in den USA einen direkten jährli-
-chen Schaden von $$$3$$$.1% des Bruttoinlandsprodukts, wobei der Transportsektor für
+chen Schaden von 3.1% des Bruttoinlandsprodukts, wobei der Transportsektor für
 mehr als ein fünftel verantwortlich ist. [5, 108] Neben ökonomischen Gesichtspunk-
 ten ist eine Absicherung hinsichtlich Korrosion aus Gründen der Nachhaltigkeit,
 Sicherheit, Qualität, Garantieanforderung und Ästhetik auch im modernen Auto-
@@ -152,7 +149,7 @@ Probeblechen validiert.
 
 Eine Korrosionssimulation einer gesamten Fahrzeugkarosserie ist durch die naive
 Skalierung dieser Modelle allerdings nicht möglich, da dies rein rechnerisch einen
-Speicherbedarf in der Größenordnung von mehreren Exabyte (= $$$1018$$$ B = $$$109$$$ GB)
+Speicherbedarf in der Größenordnung von mehreren Exabyte (= 1018 B = 109 GB)
 ergibt. Dieser immense Speicherbedarf und die damit verbundenen hohen Rechen-
 zeiten führen zu einer nicht durchführbaren, bzw. unpraktikablen Simulation.
 
@@ -173,20 +170,20 @@ tionsergebnissen interpoliert wird. (Abbildung 0.2, Punkt 4)
 
 Zur Bestimmung der Kantenkorrosion einer Bauteilkonsole ergeben sich beispiels-
 weise folgende Kennwerte. Die naive Skalierung der Kanten-Korrosionssimulation
-benötigt rein rechnerisch einen Speicherbedarf von $$$495$$$.9 $$$1012$$$ B bei entsprechend
-FOOTNOTE:· hoher Berechnungszeit und ist somit für die industrielle Anwendung nicht ein-
+benötigt rein rechnerisch einen Speicherbedarf von 495.9 1012 B bei entsprechend
+· hoher Berechnungszeit und ist somit für die industrielle Anwendung nicht ein-
 setzbar. Wird zunächst die in dieser Arbeit entwickelte Kantensegmentierung ein-
 gesetzt, so ergeben sich einerseits 32 h für die Anwendung der FEM basierten
-Korrosionssimulation und andererseits $$$1$$$.5 s für die Korrosionsprognose durch ein
+Korrosionssimulation und andererseits 1.5 s für die Korrosionsprognose durch ein
 trainiertes NN.1
 
 
-$$$1$$$Auf einer Workstation mit Intel i7-8700K, 64GB RAM und NVIDIA Quadro P2000.
+1Auf einer Workstation mit Intel i7-8700K, 64GB RAM und NVIDIA Quadro P2000.
 
 
 Abbildung 0.2: Auswertung des experimentellen, simulierten und vorhergesag-
 ten Korrosionsrisikos. Durchgeführte Auswertungen sind dick ge-
-druckt.1
+druckt.$$$1$$$
 
 
 Zielsetzung
@@ -216,7 +213,7 @@ maeinflüsse
 iii) Implementierung dieser Methoden in geeignete KI-Anwendungen
 
 
-$$$1$$$Modifiziert nach [203] mit freundlicher Genehmigung von John Wiley & Sons Inc.
+1Modifiziert nach [203] mit freundlicher Genehmigung von John Wiley & Sons Inc.
 
 
 Einleitung
@@ -320,9 +317,9 @@ daten RnT×nf zusammen mit den Labels ZnT oder den Regressionswerten
 F ∈ L ∈ RnT ermittelt bzw. trainiert. Dabei bezeichnet n f die Anzahl der verschie-
 R ∈ denen Features und n die Anzahl der Trainingsinstanzen. Jede Trainingsinstanz, T
 die den Featurevektor und das Label (f , (cid:96) ) , (cid:96) Z bzw. den Regressionswert j j
-∈ (f , r ) , r R, j = $$$1$$$, . . . , n umfasst, wird in die Anpassung des Modells in- j j T
+∈ (f , r ) , r R, j = 1, . . . , n umfasst, wird in die Anpassung des Modells in- j j T
 ∈ volviert. Das trainierte Modell wird dann genutzt, um für neue unbekannte Tes-
-tinstanzen f das Label l bzw. den Wert r , i = $$$1$$$, . . . , n zu bestimmen. Dabei i i i A
+tinstanzen f das Label l bzw. den Wert r , i = 1, . . . , n zu bestimmen. Dabei i i i A
 bezeichnet n die Anzahl der Testinstanzen. A
 
 
@@ -332,7 +329,7 @@ bezeichnet n die Anzahl der Testinstanzen. A
 Um die Leistung eines Modells zu steigern ist es oftmals von Vorteil die Features
 vor der Analyse zu normalisieren. Dadurch wird sichergestellt, dass die Einfluss-
 größe jedes Features auf die zu optimierende Zielfunktion homogen ist. [13, 191]
-FOOTNOTE:Der Erwartungswert µ und die Varianz σ$$$2$$$ der n -elementigen Trainingsmenge k k T
+Der Erwartungswert µ und die Varianz σ2 der n -elementigen Trainingsmenge k k T
 des k-ten Features werden durch
 
 
@@ -348,7 +345,7 @@ sierung [191] mit einem vorinitialisierten positiven Skalierungsfaktor β > 0
 1 Aktueller Kenntnisstand
 
 
-wodurch die Werte f¯ im Intervall ($$$0$$$, $$$1$$$) liegen. Durch diese Normalisierung wer- jk
+wodurch die Werte f¯ im Intervall (0, 1) liegen. Durch diese Normalisierung wer- jk
 den Werte, die stark vom Mittelwert abweichen, stärker beeinflusst. [191]
 Der Mittelwert und die Varianz in Gleichung (1.1) werden nur über der Trainings-
 menge ermittelt, da diese Eigenschaften im Allgemeinen für neue Daten unbekannt
@@ -367,20 +364,20 @@ nentenanalyse [88] wird der Datensatz auf sogenannte Hauptkomponenten redu-
 ziert, sodass der Informationsgehalt, also die Varianz des ursprünglichen Datensat-
 FOOTNOTE:zes bestmöglich durch die wenigen Hauptkomponenten u , . . . , u approximiert 1 nu
 wird. Für den Fall, dass n = 1 gesetzt wird, so werden die originalen Featu- u
-res f j Rnf , j = $$$1$$$, . . . , n T , die hier als Spaltenvektor interpretiert werden auf
+res f j Rnf , j = 1, . . . , n T , die hier als Spaltenvektor interpretiert werden auf
 ∈ ut f R projiziert. Die Varianz der projizierten Daten wird durch ut Σu mit der
 1 j ∈ 1 1
 Kovarianzmatrix
 
 
-FOOTNOTE:berechnet. Zusammen mit der Nebenbedingung ut u = $$$1$$$, zeigt sich, dass die 1 1
-projizierte Varianz maximiert wird, sobald Σu = λ u gilt. Die Varianz beträgt 1 1 1
+FOOTNOTE:berechnet. Zusammen mit der Nebenbedingung ut u = 1, zeigt sich, dass die 1 1
+FOOTNOTE:projizierte Varianz maximiert wird, sobald Σu = λ u gilt. Die Varianz beträgt 1 1 1
 FOOTNOTE:dann ut Σu = λ 0. Das heißt, dass für eine Projektion mit maximalem Infor- 1 1 1
-FOOTNOTE:≥ mationsgehalt die Hauptkomponente u dem Eigenvektor von Σ mit dem größten
+≥ mationsgehalt die Hauptkomponente u dem Eigenvektor von Σ mit dem größten
 1
-FOOTNOTE:Eigenwert entspricht. Falls n > 1 gewählt wird, so sind die Hauptkomponenten u
+Eigenwert entspricht. Falls n > 1 gewählt wird, so sind die Hauptkomponenten u
 FOOTNOTE:u , u . . . , u durch die Eigenvektoren von Σ korrespondierend zu den größten 1 2 nu
-Eigenwerten λ λ . . . λ 0 gegeben. [$$$13$$$] 1 ≥ 2 ≥ ≥ nu ≥
+Eigenwerten λ λ . . . λ 0 gegeben. [13] 1 ≥ 2 ≥ ≥ nu ≥
 
 
 Vor der Anwendu≥ng d≥er Hau≥ptkom≥ponentenanalyse werden die Features über Glei-
@@ -405,11 +402,11 @@ FOOTNOTE:anz (cid:80)nu λ / (cid:80)nf λ der n Hauptkomponenten einen vorgegeb
 Fix und Hodges Jr. [58] publizieren eine nicht-parametrische Methode zur Klassi-
 fizierung der Entität i durch die k -nächsten Nachbarn (KNN) im Featureraum nn
 bzw. deren Labels. Dazu wird bezüglich einer Distanzmetrik d der Abstand des
-unbekannten Featurevektors f = f , j $$$1$$$, . . . , n zu den Trainingsdaten i j T
-(cid:54) ∀ ∈ { } (f , (cid:96) ) , j = $$$1$$$, . . . , n bestimmt. Die Distanzen werden dann aufsteigend sortiert, j j T
-FOOTNOTE:sodass d(f , f ) d(f , f ) . . . d(f , f ) gilt. Für ein binäres Klassifika- i j1
+unbekannten Featurevektors f = f , j 1, . . . , n zu den Trainingsdaten i j T
+(cid:54) ∀ ∈ { } (f , (cid:96) ) , j = 1, . . . , n bestimmt. Die Distanzen werden dann aufsteigend sortiert, j j T
+sodass d(f , f ) d(f , f ) . . . d(f , f ) gilt. Für ein binäres Klassifika- i j1
 ≤
-i j$$$2$$$
+i j2
 ≤ ≤
 i jnT
 tionsproblem wird k ungerade gewählt, damit die Mehrheitsentscheidung zur nn
@@ -430,8 +427,8 @@ ermittelt. Alternativ kann der Mittelwert durch das Inverse der Distanzen gewich
 tet werden. [35, 55]
 
 
-Als Metrik werden unter anderem die euklidische d (x, y) = x y oder die 2
-FOOTNOTE:(cid:107) − (cid:107)2 Mahalanobis Distanz [128]
+FOOTNOTE:Als Metrik werden unter anderem die euklidische d (x, y) = x y oder die 2
+(cid:107) − (cid:107)2 Mahalanobis Distanz [128]
 
 
 FOOTNOTE:mit Σ 1 als Inverses der Kovarianzmatrix verwendet. Die Mahalanobis Distanz −
@@ -448,10 +445,10 @@ lation. [13, 137, 191]
 Breiman et al. [22] publizieren auf Basis der Algorithmen von Sonquist und Mor-
 gan [179] und Messenger und Mandell [141] sogenannte Classification And Re-
 gression Trees (CART), also Bäume zur Klassifikation und Regression. Im Fal-
-le der Klassifikation werden die Feature-Label-Paare (f , (cid:96) ) , j = $$$1$$$, . . . , n der j j T
+le der Klassifikation werden die Feature-Label-Paare (f , (cid:96) ) , j = 1, . . . , n der j j T
 Trainingsmenge rekursiv in einem Top-down-Ansatz analysiert. In Bezug auf eine
 binäre Klassifikation werden für jeden Knoten des Baumes mit n Elementen
-FOOTNOTE:folgende Schritte durchgeführt: K K
+folgende Schritte durchgeführt: K K
 
 
 i) Das Element j im Knoten wird dem Kindknoten zugewiesen, falls für l
@@ -459,7 +456,7 @@ K K das k-te Feature f δ , j für eine Schranke δ gilt. Andernfalls jk k k
 ≤ ∈ K werden die Elemente dem Kindknoten zugewiesen. Falls das Feature f r k
 K kategorisch ist, so erfolgt die Zuteilung durch f , wobei eine echte jk
 ∈ A A Untermenge aller Kategorien in darstellt. Für ein geordnetes Feature er-
-K geben sich insgesamt n 1 und für kategorische Features $$$2$$$nK−1 1 mögliche
+K geben sich insgesamt n 1 und für kategorische Features 2nK−1 1 mögliche
 Aufteilungen. K− −
 
 
@@ -469,14 +466,14 @@ n n
 
 
 berechnet. Die Impurity I kann beispiKelsweise durcKh den Gini-Index I( ) =
-FOOTNOTE:1 (cid:80)1 p$$$2$$$ bestimmt werden, wobei p = 1 (cid:80)nK 1((cid:96) = g, j K ) die
-re− lativeg= H$$$0$$$ äug figkeit der Elemente mit Kg lassenK g inj=$$$1$$$ bej zeichnet. ∈ FaK lls ein
-K Knoten nur Elemente der gleichen Klasse besitzt, so ist I ( ) = $$$0$$$. pure pure K K
+FOOTNOTE:1 (cid:80)1 p2 bestimmt werden, wobei p = 1 (cid:80)nK 1((cid:96) = g, j K ) die
+re− lativeg= H0 äug figkeit der Elemente mit Kg lassenK g inj=1 bej zeichnet. ∈ FaK lls ein
+K Knoten nur Elemente der gleichen Klasse besitzt, so ist I ( ) = 0. pure pure K K
 
 
 iii) Das FeatKure fˆ zusammen mit der Schranke δˆ , die den höchsteKn Impurity k k
 Gain erzielen, werden verwendet, um den Knoten in die Kindknoten l
-K K und aufzuspalten. Für I ( ) = $$$0$$$ ist keine Aufteilung notwendig. r pure
+K K und aufzuspalten. Für I ( ) = 0 ist keine Aufteilung notwendig. r pure
 K K Die Klassenzuweisung eines Knotens erfolgt durch einen Mehrheitsentscheid
 bezüglich der Labels der Elemente im Knoten.
 
@@ -516,7 +513,7 @@ mithilfe der Entscheidungsregel l = 1 P (l = 1 f ) > P (l = 0 f ) durch. Nach i 
 ⇔ | | dem Satz von Bayes ist dies äquivalent zu
 
 
-unter der Annahme, dass P (l = $$$1$$$) = P (l = $$$0$$$) gilt. Wenn die Dichten i i
+unter der Annahme, dass P (l = 1) = P (l = 0) gilt. Wenn die Dichten i i
 
 
 einer multivariaten Normalverteilung entsprechen, ergibt sich aus Gleichung (1.10)
@@ -524,11 +521,11 @@ und der Anwendung des natürlichen Logarithmus folgende Bayes-Regel für die
 Quadratische Diskriminanzanalyse (QDA)
 
 
-mit einem Schwellwert ω . Dabei werden Σ und µ auf den Trainingsdaten er- 0 k k
+FOOTNOTE:mit einem Schwellwert ω . Dabei werden Σ und µ auf den Trainingsdaten er- 0 k k
 mittelt. [32, 49]
 
 
-Die Lineare Diskriminanzanalyse (LDA) resultiert aus der Annahme Σ = Σ = Σ, 0 1
+FOOTNOTE:Die Lineare Diskriminanzanalyse (LDA) resultiert aus der Annahme Σ = Σ = Σ, 0 1
 FOOTNOTE:wodurch sich Gleichung (1.12) auf l = 1 ωtf > ω reduziert, mit ω = i i 0
 FOOTNOTE:⇔ Σ 1 (µ µ ) und ω = 1ωt (µ + µ ) für P (l = 1) = P (l = 0). [49]
 − 0 − 1 0 2 0 1 i i
@@ -536,7 +533,7 @@ FOOTNOTE:⇔ Σ 1 (µ µ ) und ω = 1ωt (µ + µ ) für P (l = 1) = P (l = 0). 
 
 Die von−Fisher [57] publi2zierte lineare Diskriminanzanalyse kommt ohne die Ein-
 schränkung Σ = Σ = Σ aus und maximiert das Verhältnis der Varianz zwischen 0 1
-und innerhalb der Klassen durch ω = (Σ 0 + Σ $$$1$$$)−$$$1$$$ (µ 0 µ $$$1$$$). [13, 49] Werden statt
+und innerhalb der Klassen durch ω = (Σ 0 + Σ 1)−1 (µ 0 µ 1). [13, 49] Werden statt
 − den eigentlichen Features die über Gleichung (1.2) standardisierten Features ver-
 wendet, so hat dies keinen Einfluss auf die Klassifizierung. (Anhang A)
 
@@ -544,7 +541,7 @@ wendet, so hat dies keinen Einfluss auf die Klassifizierung. (Anhang A)
 Eine Regularisierung der linearen bzw. der Fisher Diskriminanzanalyse kann durch
 
 
-FOOTNOTE:realisiert werden, wobei (cid:$$$0$$$)Σ , Σ , . . . , Σ (cid:1)t die Diagonalelemente von Σ sind 1,1 2,2 nf,nf
+FOOTNOTE:realisiert werden, wobei (cid:0)Σ , Σ , . . . , Σ (cid:1)t die Diagonalelemente von Σ sind 1,1 2,2 nf,nf
 und I die Einheitsmatrix ist. [61, 76, 181] nf
 
 
@@ -553,14 +550,14 @@ und I die Einheitsmatrix ist. [61, 76, 181] nf
 
 Vapnik [194] veröffentlicht eine sogenannte Support Vektor Maschine (SVM), die
 eine Hyperebene H = f Rnf ωtf+ω 0 zur Trennung zweier linear separierbaren
-{ ∈ | } Mengen = f (cid:96) = g, j = $$$1$$$, . . . , n , g = $$$1$$$, 1 findet, die maximalen Abstand g j j T
+{ ∈ | } Mengen = f (cid:96) = g, j = 1, . . . , n , g = 1, 1 findet, die maximalen Abstand g j j T
 L { | } − zu den Elementen in und besitzt. Das heißt, es wird das quadratische 1 1
 Minimierungsproblem L− L
 
 
-gelöst. Vektoren f , die (cid:$$$96$$$) (ωtf + ω ) = $$$1$$$ erfüllen, werden Support Vektoren (SV) j j j 0
+gelöst. Vektoren f , die (cid:96) (ωtf + ω ) = 1 erfüllen, werden Support Vektoren (SV) j j j 0
 genannt. Diese sind ausreichend, um die optimale Wahl von ω als Linearkombina-
-FOOTNOTE:tion ω = (cid:80)nT (cid:$$$96$$$) λ f = (cid:80) (cid:$$$96$$$) λ f mit λ 0 darzustellen, wobei λ > 0 nur für j=1 j j j SV j j j j
+FOOTNOTE:tion ω = (cid:80)nT (cid:96) λ f = (cid:80) (cid:96) λ f mit λ 0 darzustellen, wobei λ > 0 nur für j=1 j j j SV j j j j
 ≥
 j
 SV gilt. Für neue Daten f ergibt sich dann das Label durch i
@@ -594,10 +591,10 @@ mit einer Konstanten C entsteht. [13, 32, 195]
 
 ii) Finden einer nicht-linearen Entscheidungsfunktion:
 Durch das Abbilden der nicht-linear separierbaren Inputs f j Rnf , j =
-∈ $$$1$$$, . . . , n in einen Raum Rm mithilfe einer passenden nicht-linearen Feature T
-FOOTNOTE:Map Φ : Rnf Rm können linear separierbare Daten (Φ (f j) , (cid:96) j) erzeugt
+∈ 1, . . . , n in einen Raum Rm mithilfe einer passenden nicht-linearen Feature T
+Map Φ : Rnf Rm können linear separierbare Daten (Φ (f j) , (cid:96) j) erzeugt
 → werden. Die Nebenbedingung in Gleichung (1.14) entspricht in Rm somit
-(cid:96) (ωtΦ (f ) + ω ) 1 und durch die Darstellung von ω als Linearkombina- j j 0
+FOOTNOTE:(cid:96) (ωtΦ (f ) + ω ) 1 und durch die Darstellung von ω als Linearkombina- j j 0
 ≥ tion der Support Vektoren im Raum Rm ergibt sich
 
 
@@ -606,7 +603,7 @@ SV SV
 
 
 wobei die letzte Identität eine Funktion K(f , f ) enthält, die den Satz von j i
-$$$1$$$Eigene Abbildung in Anlehnung an [32].
+1Eigene Abbildung in Anlehnung an [32].
 
 
 1 Aktueller Kenntnisstand
@@ -618,12 +615,12 @@ re Produkt des entsprechenden Raums bekannt ist. [34, 191] Beispielsweise
 (cid:16) (cid:17) erfüllen radiale Basisfunktionen
 K(x, y) = exp
 FOOTNOTE:−(cid:107)x σ−2y
-(cid:107) oder Polynome
-K(x, y) = (xty + $$$1$$$)q , q > 0 den Satz von Mercer. [32, 195]
+FOOTNOTE:(cid:107) oder Polynome
+K(x, y) = (xty + 1)q , q > 0 den Satz von Mercer. [32, 195]
 
 
-FOOTNOTE:Im Falle einer Regression werden die Daten (f , r ) , j = 1, . . . , n , f Rn, r R j i T j
-FOOTNOTE:∈ f
+Im Falle einer Regression werden die Daten (f , r ) , j = 1, . . . , n , f Rn, r R j i T j
+∈ f
 j
 ∈ durch eine lineare Funktion h(f) = ωtΦ (f) + ω im Raum Rm approximiert. Vap- 0
 nik [195] bestimmt dabei die optimalen Parameter ω und ω , indem das Funk- 0
@@ -649,8 +646,8 @@ Speicherbedarfs.
 
 Multilayer Perzeptron Rosenblatt [162, 163] beschreibt ein Perzeptron, das li-
 near separierbare Daten trennen kann. Der Input f i Rnf der Instanz i wird
-∈ der Klasse l $$$0$$$, 1 zuweisen, indem eine lineare Trennebene zur Klassifikation i
-∈ { } benutzt wird. Das Label wird also durch l (f , ω) = 1 (ωtf + ω > 0) $$$0$$$, 1 i i i 0
+∈ der Klasse l 0, 1 zuweisen, indem eine lineare Trennebene zur Klassifikation i
+FOOTNOTE:∈ { } benutzt wird. Das Label wird also durch l (f , ω) = 1 (ωtf + ω > 0) 0, 1 i i i 0
 ∈ { } berechnet. Wird zur Bestimmung des Outputs
 
 
@@ -678,7 +675,7 @@ mit d > 1 exp (x )
 v) Exponential Linear Unit (ELU):
 
 
-Dabei bezeichnet ψ > $$$0$$$ einen wählbaren Parameter (häufig ψ = $$$1$$$).
+Dabei bezeichnet ψ > 0 einen wählbaren Parameter (häufig ψ = 1).
 
 
 Der Zusammenschluss mehrerer Perzeptronen bzw. Neuronen in mehreren Schich-
@@ -691,20 +688,20 @@ Datensatz gelernt, indem diese so angepasst werden, dass der Fehler zwischen
 der input-spezifischen Netzausgabe und dem tatsächlichen Output bezüglich einer
 
 
-$$$2$$$Eigene Abbildung in Anlehnung an [209].
+2Eigene Abbildung in Anlehnung an [209].
 
 
 sogenannten Loss-Funktion E minimal ist. Im Fall einer binären Klassifizierung loss
 wird für die Loss-Funktion beispielsweise die Kreuzentropie
 
 
-verwendet, die sich aus der tatsächlichen Klasse (cid:$$$96$$$) $$$0$$$, $$$1$$$ und der vorhergesag- j
-∈ { } ten Wahrscheinlichkeit NN (f ) = p ($$$0$$$, 1) des Netzes in Abhängigkeit von ω ω j j
+verwendet, die sich aus der tatsächlichen Klasse (cid:96) 0, 1 und der vorhergesag- j
+∈ { } ten Wahrscheinlichkeit NN (f ) = p (0, 1) des Netzes in Abhängigkeit von ω ω j j
 ∈ berechnet. Im Falle einer Regression wird beispielsweise der MSE
 
 
 zwischen den tatsächlichen Regressionswerten r und den ausgegebenen Werten j
-FOOTNOTE:NN (f ) = r R, j = 1, . . . , n bestimmt und minimiert. ω j j T ∈
+NN (f ) = r R, j = 1, . . . , n bestimmt und minimiert. ω j j T ∈
 
 
 Das Update de∈r Netzwerkgewichte ω erfolgt iterativ, beispielsweise über den Back-
@@ -719,16 +716,16 @@ i) Offline oder Batch:
 Das Gewichtsupdate
 
 
-FOOTNOTE:wird durch alle Trainingsinstanzen (f , (cid:96) ) , j = 1, . . . , n des Klassifizie- j j T
-rungsproblems bestimmt. Der Parameter ν > $$$0$$$ beschreibt dabei die soge-
-FOOTNOTE:nannte Lernrate. Der Aufwand zur Bestimmung des Updates liegt in (n ) T
+wird durch alle Trainingsinstanzen (f , (cid:96) ) , j = 1, . . . , n des Klassifizie- j j T
+rungsproblems bestimmt. Der Parameter ν > 0 beschreibt dabei die soge-
+nannte Lernrate. Der Aufwand zur Bestimmung des Updates liegt in (n ) T
 O und ist somit abhängig von der Größe des Trainingssets. [13, 71]
 
 
 ii) Online:
 
 
-Für jede Trainingsinstanz (f , (cid:$$$96$$$) ) eines Klassifizierungsproblems werden die j j
+Für jede Trainingsinstanz (f , (cid:96) ) eines Klassifizierungsproblems werden die j j
 Gewichte durch ∂E (NN (f ), (cid:96) )
 
 
@@ -778,8 +775,8 @@ Generalisierung Durch die passende Wahl der Anzahl und Hierarchie der Neu-
 ronen sowie der Transferfunktionen kann gezeigt werden, dass jede stetige Funk-
 tion auf einer kompakten Eingangsmenge mit beliebiger Genauigkeit durch ein
 NN approximiert werden kann. [36, 63, 87, 151] Im Allgemeinen ist allerdings
-FOOTNOTE:nicht bekannt, wie die Anzahl der Neuronen n in den versteckten Schichten und n
-FOOTNOTE:die Netztiefe n optimal bezüglich des zu analysierenden Problems und den zur l
+nicht bekannt, wie die Anzahl der Neuronen n in den versteckten Schichten und n
+die Netztiefe n optimal bezüglich des zu analysierenden Problems und den zur l
 Verfügung gestellten Trainingsdaten zu wählen sind. Dennoch zeigt dieses Resul-
 tat, dass zumindest theoretisch eine beliebig genaue Anpassung an entsprechende
 Trainingsdaten möglich ist. Die Schwierigkeit besteht vielmehr darin das trainierte
@@ -827,7 +824,7 @@ a) Die vordefinierte maximale Anzahl an Epochen wird überstiegen.
 b) Die vordefinierte Trainingsdauer wird überschritten.
 
 
-$$$3$$$Eigene Abbildung in Anlehnung an [13].
+3Eigene Abbildung in Anlehnung an [13].
 
 
 1 Aktueller Kenntnisstand
@@ -904,12 +901,12 @@ Schichten des feed-forward Netzes.
 
 ii) Nonlinear Autoregressive Exogenous Model (NARX):
 Leontaritis und Billings [120, 121] beschreiben ein rekurrentes NN, das so-
-FOOTNOTE:wohl n zeitverzögerte Inputs als auch n Outputs als Eingabe in das Netz I O
+wohl n zeitverzögerte Inputs als auch n Outputs als Eingabe in das Netz I O
 verwenden. Der Output zum Zeitpunkt z des NNs wird also durch k
 
 
 bestimmt. Werden die bekannten Regressionwerte r(z ), . . . , r(z ) der
-Trainingsdaten statt der Netzvorhersagen benutzt, so hk a−n$$$1$$$ delt es sick h−n uO m ein
+Trainingsdaten statt der Netzvorhersagen benutzt, so hk a−n1 delt es sick h−n uO m ein
 reines feed-forward Netz.
 
 
@@ -950,7 +947,7 @@ die Relevanz der Features bestimmt. [193]
 
 
 Zur Bewertung der Prognosegüte des Modells werden die tatsächlichen Markierun-
-gen (cid:$$$96$$$) den vom Algorithmus ausgegebenen Klassen l gegenübergestellt. Im binären
+gen (cid:96) den vom Algorithmus ausgegebenen Klassen l gegenübergestellt. Im binären
 Fall ergeben sich dadurch folgende vier Fälle. Es werden die Bezeichnungen po-
 sitiv bzw. negativ für die Ergebnisklassifizierung und wahr bzw. falsch für die
 tatsächliche Klassifizierung verwendet.
@@ -960,25 +957,25 @@ i) True Positive (TP):
 
 
 Die Anzahl der vom Algorithmus positiv klassifizierten Entitäten, die tat-
-sächlich wahr sind. (l = (cid:96) = $$$1$$$)
+sächlich wahr sind. (l = (cid:96) = 1)
 
 
 Die Anzahl der vom Algorithmus negativ klassifizierten Entitäten, die tat-
-sächlich falsch sind. (l = (cid:96) = $$$0$$$)
+sächlich falsch sind. (l = (cid:96) = 0)
 
 
 iii) False Positive (FP):
 
 
 Die Anzahl der vom Algorithmus positiv klassifizierten Entitäten, die tat-
-sächlich falsch sind. (l = 1, (cid:96) = $$$0$$$)
+sächlich falsch sind. (l = 1, (cid:96) = 0)
 
 
 iv) False Negative (FN):
 
 
 Die Anzahl der vom Algorithmus negativ klassifizierten Entitäten, die tat-
-sächlich wahr sind. (l = 0, (cid:96) = $$$1$$$)
+sächlich wahr sind. (l = 0, (cid:96) = 1)
 
 
 Auf Basis dieser lassen sich wichtige Kennziffern der Prognosegüte des ausgewer-
@@ -1006,17 +1003,17 @@ v) Der Matthews Korrelationskoeffizient (MCC) [136] bündelt alle vier Fälle
 eines binären Klassifizierungsproblems durch
 
 
-Werden die zu identifizierenden Entitäten durch (cid:$$$96$$$) = $$$1$$$ gelabelt, so sind insbeson-
+Werden die zu identifizierenden Entitäten durch (cid:96) = 1 gelabelt, so sind insbeson-
 dere die Wahrscheinlichkeit und die Präzision der Detektion, also TPR und TPA
 relevant. Gute Segmentierungen resultieren in hohen Werten für beide Kennzif-
 fern, allerdings ist für die direkte Vergleichbarkeit der dazugehörigen Algorithmen
 eine einzelne Metrik, wie Genauigkeit, F oder MCC notwendig. 2
 
 
-Für den Fall eines schiefen DatensatzeFs$$$2$$$ergibt die Klassifikation aller Instanzen
+Für den Fall eines schiefen DatensatzeFs2ergibt die Klassifikation aller Instanzen
 mit der mehrheitlich vorkommenden Klasse bereits eine hohe Genauigkeit, ob-
 wohl die Güte des Klassifikators schlecht ist. Wenn die Codierung der Klassen
-getauscht wird, schwankt der F Wert, denn dieser ist unabhängig von der Anzahl 2
+FOOTNOTE:getauscht wird, schwankt der F Wert, denn dieser ist unabhängig von der Anzahl 2
 der TN Instanzen. Der MCC berücksichtigt dagegen alle Fälle des Klassifizie-
 rungsproblems, ist invariant unter der Codierung der Klassen und ist für schiefe
 Datensätze geeignet. [29, 30, 189]
@@ -1077,7 +1074,7 @@ sprechend sind. [11]
 
 Abbildung 1.4: Auswertung der Raster- und der Zufallssuche bezüglich eines ro-
 busten und eines sensitiven Hyperparameters hinsichtlich eines
-Maximierungsproblems.4
+Maximierungsproblems.$$$4$$$
 
 
 Eine andere Möglichkeit zur Hyperparameter Optimierung besteht darin, die Pa-
@@ -1093,7 +1090,7 @@ Neben diesen einfachen Optimierungsmethoden sind weitere Algorithmen [37, 92,
 147] zur Wahl der Hyperparameter in der Literatur bekannt.
 
 
-$$$4$$$Eigene Abbildung in Anlehnung an [11].
+4Eigene Abbildung in Anlehnung an [11].
 
 
 1 Aktueller Kenntnisstand
@@ -1141,7 +1138,7 @@ iii) Standard for the Exchange of Product Model Data (STEP) [95]
 1 Aktueller Kenntnisstand
 
 
-Datei erlaubt. Es stehen jeweils rund $$$40$$$ Fahrzeugmodelle zur Verfügung, die in
+Datei erlaubt. Es stehen jeweils rund 40 Fahrzeugmodelle zur Verfügung, die in
 Siemens NX bzw. in Catia V5 konstruiert sind. Die älteren Catia Daten weisen
 allerdings eine schlechtere Datenqualität auf und können nur als STL extrahiert
 werden, da diese Daten plattformübergreifend migriert werden.
@@ -1183,6 +1180,6 @@ outer loop
 . .
 .
 endfacet
-FOOTNOTE:endsolid
+endsolid
 
 

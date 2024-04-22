@@ -159,7 +159,7 @@ der Säugetiere geben Anlass, bisher als nicht näher verwandt geltende Taxa mor
 anatomisch miteinander zu vergleichen. So konnten Mess und Carter (2006) und Carter et al.
 (2006) unter Berücksichtigung molekular begründeter Stammbäume ein morphologisches
 Merkmal, den vierlappigen Alantois-Sack, als mögliche Autapomorphie der Afrotheria be-
-FOOTNOTE:schreiben.
+schreiben.
 
 
 Obwohl die phylogenetische Position einiger der damals als „Insectivora“ zusammengefassten
@@ -177,7 +177,7 @@ Vertretern Europas und anderer Kontinente verglichen, entsprechend benannt und k
 Deshalb sind für Vertreter der Macroscelidea irreführende Trivialnamen, wie zum Beispiel
 „Elefantenspitzmaus“ und „Rüsselspringer“, erhalten geblieben. Um Verwechslungen vorzu-
 beugen und um eine klare Abgrenzung der hier untersuchten Macroscelidea vorzunehmen,
-wird in dieser Arbeit der Begriff „Sengis“$$$2$$$ als Ersatz für die Trivialnamen dieser Gruppe ver-
+wird in dieser Arbeit der Begriff „Sengis“2 als Ersatz für die Trivialnamen dieser Gruppe ver-
 wendet (vgl. auch Grafik 1, S. 3).
 
 
@@ -247,7 +247,7 @@ Stammbaum der Afrotheria gibt wesentliche Hinweise auf die phylogenetische Platz
 der Afrotheria innerhalb der Säugetiere.
 
 
-FOOTNOTE:Grafik 1: Übersicht über die Systematik der Sengis, (in Klammern stehen die deutschen Bezeichnungen)
+Grafik 1: Übersicht über die Systematik der Sengis, (in Klammern stehen die deutschen Bezeichnungen)
 
 
 1.1 Phylogenetische und palaeontologische Einordnung
@@ -282,7 +282,7 @@ lung einiger Gruppen innerhalb der Macroscelidea bis heute nicht zufriedenstelle
 werden kann (Wenhold und Robinson, 1987; Tolliver et al., 1989; Novacek, 1992) und durch
 Douady (2001) die Monophylie von Elephantulus angezweifelt wird, äußern sich einige Auto-
 ren gegenwärtig kritisch gegenüber dem von Corbet und Hanks (1968) aufgestellten Stamm-
-FOOTNOTE:baum der Macroscelidea.
+baum der Macroscelidea.
 
 
 Unter anderem wurde aus der insektivoren Lebensweise der Macroscelidea auf ihre Zugehö-
@@ -384,7 +384,7 @@ Merkmale untersucht. Das geschah aus zwei Gründen:
 
 - Die Zahneigenschaften einiger Säugetiere, welche zum Vergleich herangezogen werden
 könnten, fehlen (z. B. Fossilien) oder sind zu einzigartig (Orycteropus afer), als dass sie aus-
-FOOTNOTE:wertbar wären.
+wertbar wären.
 
 
 - Zahnmerkmale wurden bereits in verschiedenen Publikationen intensiv untersucht (z. B.
@@ -406,7 +406,7 @@ präparate von Macroscelides proboscideus, wobei die Nasal- und die Oticalregion
 Beachtung finden.
 
 
-FOOTNOTE:Tab. 1: Übersicht über Bezeichnungen der Arten innerhalb der Macroscelidea (Sengis); Buchstaben in
+Tab. 1: Übersicht über Bezeichnungen der Arten innerhalb der Macroscelidea (Sengis); Buchstaben in
 Klammern kennzeichnen alternative Schreibweisen
 
 
@@ -539,7 +539,7 @@ Arten und den Entwicklungszustand der verwendeten Individuen zeigen die Tabellen
 (S. 14).
 
 
-FOOTNOTE:Tab. 2: Histologische Schnittserien von Macroscelides proboscideus, die für die vorliegende Arbeit angefertigt wurden.
+Tab. 2: Histologische Schnittserien von Macroscelides proboscideus, die für die vorliegende Arbeit angefertigt wurden.
 
 
 Tab. 3: Histologische Schnittserien von Elephantulus spec. und Loxodonta africana, die für die vorliegende Arbeit verwendet wurden.
@@ -551,7 +551,7 @@ Bouin wurde gemischt aus 15 Teilen gesättigter Pikrinsäure und 5 Teilen 37 % F
 laun und Eosin; Azan nach Heidenhain = Azokarmin und Anillinblau-Orange; (6) Zur Verfügung gestellt als digitalisierte Schnittserie durch Robert Asher.
 
 
-FOOTNOTE:Tab. 4. Für diese Untersuchung herangezogene mazerierte Osteocranien aus der Sammlung des Muse-
+Tab. 4. Für diese Untersuchung herangezogene mazerierte Osteocranien aus der Sammlung des Muse-
 ums für Naturkunde
 
 
@@ -583,7 +583,7 @@ dern insgesamt transversal zur Körperlängsachse aufgearbeitet worden.
 Alle Köpfe mit einer Mindestlänge von 15 mm mussten vor der Anfertigung der Schnittpräpa-
 rate dekalzifiziert werden. Dazu lagern sie für 6 Tage in 7 %-iger Salpetersäure. Anschließend
 wurde das Material gewässert, in Natriumsulfat gewaschen und in 70 %-igem Ethanol aufbe-
-FOOTNOTE:wahrt.
+wahrt.
 
 
 Köpfe bis zu einer maximalen Länge von 40 mm wurden in Paraffin eingebettet. Für die his-
@@ -621,7 +621,7 @@ gegeben und das zu präparierende Objekt für maximal 20 Stunden in dieser Lösu
 Zum Differenzieren und Auswaschen diente eine Lösung die zu 20 % Glycerin und 80 %
 KOH bestand. Das Präparat wurde anschließend in 40 %-igem und 70 %-igem Glycerin je-
 weils für 24 Stunden gewaschen. Danach wurde das Objekt in 85 %-igem Glycerin, dem als
-FOOTNOTE:Fungizid einige Thymolkristalle zugesetzt waren, aufbewahrt.
+Fungizid einige Thymolkristalle zugesetzt waren, aufbewahrt.
 
 
 Die gefärbten Präparate wurden entweder unter einem Zeiss-Binokular (KF2) bei einer
@@ -901,7 +901,7 @@ einigen histologischen Schnitten (z.B. Abb. 16) eine deutliche Abgrenzung vom Te
 zum Septum nasi, ohne dass jedoch eine Lücke zwischen beiden zu erkennen ist. In der Kni-
 ckungszone des Rostralorgans ist der Knorpel des Septum nasi in allen ontogenetischen Sta-
 dien ungleichmäßig resorbiert (Abb. 18). Dadurch existiert stellenweise keine Verbindung mit
-FOOTNOTE:dem Tectum nasi.
+dem Tectum nasi.
 
 
 3.1.5 Lamina cribrosa
@@ -926,7 +926,7 @@ Knorpel, der zwar weiterhin zum Nasenboden gehört, von dem aber lateral eine se
 Knorpellamelle gebildet wird, die mit dem Paries nasi zur Zona anularis verwächst. Sie wurde
 bei allen untersuchten Stadien von Macroscelides proboscideus gefunden und ist beim Indivi-
 duum Nr. 3 teilweise zu einer Crista verdickt (Abb. 13). Hier ist die Ausprägung des vertika-
-FOOTNOTE:len Bereichs besonders deutlich.
+len Bereichs besonders deutlich.
 
 
 Die Lamina transversalis posterior bildet die Basis der Pars ethmoturbinalis der Nasenregion.
@@ -1060,7 +1060,7 @@ ventral fast senkrecht stehende Wand, die den Recessus maxillaris (Reinbach) vom
 Nasenbereich medial abgrenzt (Abb. 21). Nach caudal verliert die Lamina semicircularis die
 Verbindung zum Maxillare, behält aber den Kontakt zum Tectum nasi. Sie ist mit dem Proces-
 sus supracribrosus des Nasale verschmolzen, so dass eine Abgrenzung dieser beiden Struktu-
-FOOTNOTE:ren bei keinem Stadium möglich ist.
+ren bei keinem Stadium möglich ist.
 
 
 3.1.12 Muskeln des Rostralorgans
@@ -1096,7 +1096,7 @@ Sowohl der Boden und die Seitenwand des Cavum cranii als auch Nasen- und Ohrkaps
 begrenzen die Regio orbitotemporalis. Durch eine bei Säugetieren ausgebildete sekundäre
 Schädelseitenwand wird dieser Bereich in einen lateralen und einen medialen Abschnitt unter-
 teilt. Den medialen Bereich bezeichnet man bei allen Mammalia als Cavum epiptericum und
-FOOTNOTE:bezieht ihn in das Cavum cranii ein.
+bezieht ihn in das Cavum cranii ein.
 
 
 3.2.1 Cavum epiptericum und Hirnnerven
@@ -1117,7 +1117,7 @@ Das Foramen opticum (Abb. 26) liegt rostral des dorsalen Endes der Cupula nasi p
 zwischen Alisphenoid und Orbitosphenoid. Diese Lage findet sich auch im jüngsten Macros-
 celides-Stadium (Nr. 1). Bei allen untersuchten Macroscelides-Stadien sind das Foramen ro-
 tundum und die Fissura supraorbitalis miteinander verschmolzen. Damit verlassen im Adultc-
-FOOTNOTE:ranium die Nerven III, IV, V , V und VI das Cavum epiptericum gemeinsam durch das 1 2
+ranium die Nerven III, IV, V , V und VI das Cavum epiptericum gemeinsam durch das 1 2
 Foramen sphenorbitale. Der Alisphenoid-Kanal fehlt bei den untersuchten Osteocranien so-
 wohl bei Macroscelidinae als auch bei den Rhynchocyoninae. In jungen Ontogenesestadien
 verläuft der Nervus trochlearis (IV) direkt nach seinem Austritt aus dem Cavum cranii dorsal
@@ -1209,7 +1209,7 @@ dings nur vom Os frontale gebildet wird. Bei Rhynchocyon spec. ist die gesamte O
 einem scharfen Rand umgeben, der im Processus postorbitalis des Squamosum endet.
 Alle Sengis haben eine durchgehende knöcherne Verbindung zwischen beiden Foramina opti-
 ci. Eine zusätzliche Öffnung im Orbitosphenoid, das Foramen subopticum, ist bei allen Mac-
-FOOTNOTE:roscelidea vorhanden.
+roscelidea vorhanden.
 
 
 Der rostro-ventrale Abschluss der Orbita wird bei Rhynchocyoninae und bei den Orycteropo-
@@ -1371,7 +1371,7 @@ gerade und dünne Crura. Zwischen diesen verläuft von ventral nach dorsal der C
 dialis mit der Arteria stapedialis.
 
 
-FOOTNOTE:3.4 Deckknochen
+3.4 Deckknochen
 
 
 Im Folgenden werden die Anatomie und der Grad der Ossifikation der Deckknochen be-
@@ -1393,7 +1393,7 @@ Verfügung.
 
 Das Nasale von Macroscelides proboscideus (Abb. 1, 5c) bildet die dorsale knöcherne Be-
 grenzung der Nasenregion und gemeinsam mit dem Praemaxillare die vordere Apertura nasi
-FOOTNOTE:ossea.
+ossea.
 
 
 Als relativ dünner Knochen grenzt es an die knorpelige Nasenkapsel und überlagert sie
@@ -1454,7 +1454,7 @@ kräftig ausgebildet und über eine lange Naht mit dem Jugale verwachsen. Die Su
 Nasale verläuft gerade nach rostral. Weiter caudal bildet das Maxillare eine Sutur mit dem
 Frontale, die sich bis zur Orbita erstreckt. Im dorsalen Bereich befindet sich das Foramen
 infraorbitalis, dessen Form bei allen untersuchten Arten etwa gleich, oval und lateral abge-
-FOOTNOTE:flacht ist.
+flacht ist.
 
 
 Die Länge des Canalis infraorbitalis unterscheidet sich bei den untersuchten Arten stark. Der

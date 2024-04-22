@@ -389,7 +389,7 @@ auf die Entwicklung im Capa-Umfeld (Concurrent Agent Platform Ar-
 chitecture) (Duvigneau, 2002), (Duvigneau, Moldt und Rölke, 2002),
 
 
-(Duvigneau, Moldt und Rölke, 2003), wobei Capa eine FIPA$$$1$$$-konforme spe-
+(Duvigneau, Moldt und Rölke, 2003), wobei Capa eine FIPA1-konforme spe-
 zifische Implementation von Mulan darstellt. Paose selbst ist auch allgemeiner
 einsetzbar. Capa wird im Rahmen der Arbeit zwar referenziert, dient jedoch nicht
 als direkte Grundlage. Das generelle Verfahren in der Erstellung der Arbeit ist an
@@ -435,7 +435,7 @@ Agenten auf die Plattform sowie den Einfluss der Agenten auf die Skalierung der
 Menge der verfügbaren Plattformen.
 
 
-$$$1$$$Foundation for Intelligent Physical Agents
+1Foundation for Intelligent Physical Agents
 
 
 Während der erste Teil im Kern die Interaktion und dynamische Modifikation
@@ -479,7 +479,7 @@ Architekturkonzept ebenso ein Realisierungskonzept vorzustellen, welches als Bin
 deglied zwischen technischer Implementation und abstrakter Spezifikation dient.
 Auf Basis des Realisierungskonzepts können dann Proof-of-Concept Implementa-
 tionen (Prototypen) erfolgen. Die Gliederung der Arbeit folgt diesen Überlegun-
-gen. Eine genaue Übersicht erfolgt am Ende der Einleitung in Abschnitt $$$1$$$.3.
+gen. Eine genaue Übersicht erfolgt am Ende der Einleitung in Abschnitt 1.3.
 
 
 Jenseits der direkten Anforderungen der aufgestellten Forschungsfragen wurde be-
@@ -661,7 +661,7 @@ Im Laufe der Arbeit werden die Begriffe »Nebenläufigkeit« und »Parallelität
 häufig fallen. In vielen Referenzen werden die beiden Begriffe synonym verwendet.
 Während dies in vielen Situationen sinnvoll ist, sollen beide Begriffe im Rahmen
 dieser Arbeit unterschiedliche Konzepte beschreiben. Die Nebenläufigkeit wird im
-Sinne der Nebenläufigkeitstheorie Petris verstanden (Petri, $$$1962$$$).
+Sinne der Nebenläufigkeitstheorie Petris verstanden (Petri, 1962).
 
 
 Intuitiv beschreiben beide Begriffe zwei Ereignisse, welche gemeinsame voraus-
@@ -832,7 +832,7 @@ Das Prinzip der Lokalität besagt, dass das Verhalten einer Transition ausschlie
 lich durch die Gesamtheit ihrer Eingangs- und Ausgangselemente (der Lokalität)
 
 
-$$$1$$$Siehe auch: https://www.omg.org/spec/UML/ - Zuletzt abgerufen am 24.01.2022
+1Siehe auch: https://www.omg.org/spec/UML/ - Zuletzt abgerufen am 24.01.2022
 
 
 bestimmt wird. Das Prinzip der Nebenläufigkeit besagt, dass Transitionen mit
@@ -861,7 +861,7 @@ in 𝑝2 ab. 𝑡3 kann unabhängig und beliebig oft zu jeder Zeit nebenläufig 
 
 
 Darüber hinaus wird im Folgenden eine formale Definition von Netzen erfolgen.
-Diese ist entnommen und übersetzt aus (Girault und Valk, $$$2003$$$, Seite $$$14$$$), ist
+Diese ist entnommen und übersetzt aus (Girault und Valk, 2003, Seite 14), ist
 aber für den Kontext der Arbeit auf endliche Netze angepasst.
 
 
@@ -966,7 +966,7 @@ abbilden zu können. Dies wird durch die Konstruktion eines Erreichbarkeitsgra-
 phen umgesetzt. In einfachen (üblichen) Erreichbarkeitsgraphen kann das Schalt-
 verhalten eines Netz nach Interleaving-Semantik (sequentielles Schalten) abgele-
 sen werden. Genauere Beschreibungen zur Interleaving- und anderen Petrinetzse-
-FOOTNOTE:mantiken folgen in Abschnitt 2.2.5.
+mantiken folgen in Abschnitt 2.2.5.
 
 
 Abbildung 2.3.: Ein Beispiel für ein gefärbtes Netz
@@ -1036,7 +1036,7 @@ Objekte halten können.
 
 Eine Erweiterung auf Basis der Netze-in-Netzen findet sich in Form des Referenz-
 netzformalismus. Da dieser eine zentrale Vorarbeit dieser Arbeit ist, wurde ihm
-der eigenständige Abschnitt $$$2$$$.3 gewidmet.
+der eigenständige Abschnitt 2.3 gewidmet.
 
 
 2.2.5. Petrinetzsemantiken
@@ -1151,7 +1151,7 @@ Workflownetze
 Workflownetze sind eine spezielle Kategorie von Petrinetzen. Sie können ein-
 gesetzt werden, um Geschäftsprozesse zu modellieren. Sie werden im Kontext
 der Agentenkommunikation erneut aufgegriffen werden. Workflownetze definie-
-FOOTNOTE:ren sich nach (Aalst, 1997) (übersetzt) wie folgt:
+ren sich nach (Aalst, 1997) (übersetzt) wie folgt:
 
 
 Definition 2.6 (Workflow Netz). Ein Netz 𝑁 = (𝑃 , 𝑇 , 𝐹 ) ist
@@ -1199,7 +1199,7 @@ Formal: ∀ ∃ 𝑖 → 𝑀 → 𝑀′ 𝑡∈𝑇 𝑀,𝑀′
 Ein weiteres Konzept von Interesse im Kontext der Workflownetze ist die Task-
 Transition (Aalst, 1997; Jacob, 2002), welche den Fehlschlag des Feuervorgangs
 unterstützt und im Falle des Fehlschlags alle Marken zurück in die jeweiligen
-Plätze des Vorbereichs legt. Die Task-Transition wird detaillierter in Abschnitt $$$5$$$.1
+Plätze des Vorbereichs legt. Die Task-Transition wird detaillierter in Abschnitt 5.1
 vorgestellt.
 
 
@@ -1270,7 +1270,7 @@ derartige Transition innerhalb einer Netzinstanz, so entsteht eine Marke mit ein
 Referenz auf eine neu erzeugte Netzinstanz.
 
 
-FOOTNOTE:2.3.2. Synchrone Kanäle
+2.3.2. Synchrone Kanäle
 
 
 Das bloße Erzeugen von Netzinstanzen, welche unabhängig voneinander schalten
@@ -1387,7 +1387,7 @@ Arbeit an, führt die grundlegenden Überlegungen der Organisation »Foundation
 for Intelligent Physical Agents« (FIPA) an und beschreibt den Paose Ansatz.
 
 
-FOOTNOTE:2.4.1. Definitionen eines Agenten
+2.4.1. Definitionen eines Agenten
 
 
 In der Literatur finden sich sehr verschiedene Definitionen des Agentenbegriffs.
@@ -1503,7 +1503,7 @@ Verteilungsaspekt simuliert werden können.
 2.4.2. FIPA
 
 
-Die »Foundation for Intelligent Physical Agents« (FIPA)$$$3$$$ ist eine Standardisie-
+Die »Foundation for Intelligent Physical Agents« (FIPA)3 ist eine Standardisie-
 rungsorganisation des Institue of Electrical and Electronics Engineers (IEEE). Sie
 wurde 1996 in der Schweiz gegründet und befasst sich mit der Standardisierung
 von Agenten- und Multiagentensystemen. Im Laufe ihrer Arbeit hat die FIPA
@@ -1511,7 +1511,7 @@ diverse Standards zu dem Thema hervorgebracht, welche weitreichende Adaption
 im Bereich der agentenorientierten Softwareentwicklung erfahren haben.
 
 
-FOOTNOTE:Die wesentliche Architektur nach der FIPA findet sich in Abbildung 2.4. Die ein-
+Die wesentliche Architektur nach der FIPA findet sich in Abbildung 2.4. Die ein-
 zelnen Bestandteile umfassen nach (Foundation for Intelligent Physical
 Agents (FIPA), 2004):
 
@@ -1520,7 +1520,7 @@ Agent Management System (AMS) Bezeichnet einen Verwaltungsdienst, wel-
 cher wie ein herkömmlicher Agent ansprechbar sein muss.
 
 
-$$$3$$$http://www.fipa.org/ - Zuletzt abgerufen am 15.12.2021
+3http://www.fipa.org/ - Zuletzt abgerufen am 15.12.2021
 
 
 Abbildung 2.4.: Das »Agent Management Reference Model«. Entnommen aus
@@ -1555,7 +1555,7 @@ che nicht agentenbasiert sind.
 
 
 Des Weiteren definiert die FIPA Abläufe für den Agenten-Lebenszyklus in (Foun-
-dation for Intelligent Physical Agents (FIPA), $$$2004$$$). Ein Agent kann
+dation for Intelligent Physical Agents (FIPA), 2004). Ein Agent kann
 initialisiert bzw. erzeugt werden und ist sodann aktiv. Anstatt aktiv zu sein, kann
 
 
@@ -1634,7 +1634,7 @@ nicht in hinreichendem Umfang liefert. Weitere Details und Begründungen hierzu
 werden in Abschnitt 4.3.3 aufgegriffen werden.
 
 
-FOOTNOTE:Abbildung 2.6 zeigt ein beispielhaftes AIP, wie es auch im verbleibenden Teil der
+Abbildung 2.6 zeigt ein beispielhaftes AIP, wie es auch im verbleibenden Teil der
 Arbeit auftreten wird. Einige Details sind dabei vereinfacht dargestellt wie bei-
 spielsweise die explizite Unterscheidung von proaktiven und reaktiven Anteilen.
 Beschrieben sind im Beispiel vier Rollen und deren Interaktionen untereinander.

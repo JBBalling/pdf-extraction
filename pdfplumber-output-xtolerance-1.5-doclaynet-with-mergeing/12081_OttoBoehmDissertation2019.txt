@@ -59,8 +59,8 @@ bei wahrgenommen habe. Ich war von Beginn an an der Konzeption und Durchführung
 der Bildungsangebote am Memorium Nürnberger Prozesse für Schulen, Bundeswehr und
 Polizei beteiligt. Das Memorium – der historische Saal 600 des Nürnberger Justizgebäu-
 des und eine Ausstellung – existiert seit dem Jahr 2010 als eine Einrichtung der Museen
-der Stadt Nürnberg.1 Das wachsende Interesse an diesen Angeboten will ich durch eine
-konzeptionelle Begründung im Rahmen der politischen Bildung unterstützen.2 Diese Po-
+der Stadt Nürnberg.$$$1$$$ Das wachsende Interesse an diesen Angeboten will ich durch eine
+konzeptionelle Begründung im Rahmen der politischen Bildung unterstützen.$$$2$$$ Diese Po-
 litikdidaktik der Nürnberger Prozesse liegt hiermit vor. In der Sache ist die Untersuchung
 ein Beitrag zur Konkretisierung von Gerechtigkeit als einem menschenrechtlichen Ziel-
 wert in einem bestimmten zeitgeschichtlichen und politischen Zusammenhang. Nach
@@ -81,7 +81,7 @@ FOOTNOTE:1 Im Saal 600 fanden von 1945–1949 die Kriegsverbrecherprozesse statt
 FOOTNOTE:2 Meine Begründung bezieht sich nicht auf museumspädagogische Konzeptionen.
 
 
-FOOTNOTE:zustande gekommen ist.3 Aber damit hat dieses Projekt nicht seine Legitimität eingebüßt;
+zustande gekommen ist.$$$3$$$ Aber damit hat dieses Projekt nicht seine Legitimität eingebüßt;
 sie soll hier verteidigt werden als Beitrag zu einer „Rechtsordnung der Menschheit“.4
 
 
@@ -133,7 +133,7 @@ nen und Besucher nicht aus Deutschland. Aber für dieses Publikum wird selten ei
 Begleitprogramm gebucht.
 
 
-FOOTNOTE:politischen Didaktik“ (Lange 2002, S. 234)6. Am Beginn meiner Arbeit stand eine von
+politischen Didaktik“ (Lange 2002, S. 234)6. Am Beginn meiner Arbeit stand eine von
 Habbo Knoch formulierte Perspektive, die ich hier als Leitmotiv zitieren möchte:
 
 
@@ -162,7 +162,7 @@ würde die Gefahr von bloßer Gesinnungsethik und sachfremder Emotionalität pro
 (Reinhardt 2005, S. 375)
 
 
-FOOTNOTE:„Mit 15 oder 16 Jahren hockten wir an den Radiogeräten und erfuhren, was vor dem
+„Mit 15 oder 16 Jahren hockten wir an den Radiogeräten und erfuhren, was vor dem
 Nürnberger Tribunal verhandelt wurde; als andere dann, statt vor dem Grauenhaften zu
 verstummen, anhuben, über die Rechtmäßigkeit des Gerichts, über Verfahrensfragen und
 Zuständigkeiten zu streiten, gab es wohl jenen ersten Riß, der immer noch klafft.“
@@ -200,13 +200,13 @@ wurde im Jahr 2001 in einem Teil der unvollendeten Kongresshalle eröffnet. Für
 ist eine Überarbeitung und Erweiterung der Ausstellung geplant.
 
 
-Die Nürnberger Prozesse sind vielfach beschrieben und untersucht.8 Auch die For-
+Die Nürnberger Prozesse sind vielfach beschrieben und untersucht.$$$8$$$ Auch die For-
 schungslücken in Bezug auf die Nachfolgeprozesse sind gefüllt worden (Priemel & Stiller
 2013). Zu den ab 1945 parallel stattfindenden Verfahren in den vier Besatzungszonen
 liegen Untersuchungen vor (u.a. Broszat 1981; Rueckerl 1982; Eichmüller 2012; Raim
-$$$2013$$$).9 Das Internationale Militärtribunal ist wissenschaftlicher Bezugspunkt im Völker-
+2013).9 Das Internationale Militärtribunal ist wissenschaftlicher Bezugspunkt im Völker-
 strafrecht (Safferling 2011, S. 44–75) und im neuen Forschungszweig Transitional Jus-
-tice$$$10$$$, nicht aber in der politischen Bildung. Die vorliegende Untersuchung will eine Be-
+tice10, nicht aber in der politischen Bildung. Die vorliegende Untersuchung will eine Be-
 gründung dafür liefern, dass die Nürnberger Prozesse als wichtiger Teil der deutschen
 Geschichts- und Vergangenheitspolitik$$$11$$$ auch ein politikdidaktisch reflektierter Teil von
 intendierten Lern- und Bildungsprozessen werden.
@@ -217,7 +217,7 @@ die Bedeutung von Recht und Gerechtigkeit wird hier umfassender verstanden. Denn
 Recht, so die allgemeine Definition von Bernhard Schlink,
 
 
-FOOTNOTE:„kann das Erinnern unterstützen, das Vergessen und das Verdrängen. Das Erinnern un-
+„kann das Erinnern unterstützen, das Vergessen und das Verdrängen. Das Erinnern un-
 terstützt es besonders durch Strafverfolgungen, Wiedergutmachungen, Wahrheitskom-
 missionen und -tribunale und durch die Gewährung von Einsicht in Akten und Archive,
 
@@ -254,7 +254,7 @@ abgeschlossenen Fällen hat; zur Debatte über die Verdrängungsthese siehe Dier
 (2011) „Von der Vergangenheitsbewältigung zur Vergangenheitspolitik“ (S. 38–47).
 
 
-FOOTNOTE:das Vergessen und Verdrängen durch Amnestieren und Verbote von Themen und The-
+das Vergessen und Verdrängen durch Amnestieren und Verbote von Themen und The-
 sen.“ (Schlink 2002, S. 92)
 
 
@@ -275,7 +275,7 @@ sich Besuchergruppen und Schulklassen mit NS-Prozessen auseinandersetzen.$$$13$$
 
 Das Internationale Militärtribunal (IMT)14 und die Nachfolgeprozesse der US-Ameri-
 kaner sind seit der Eröffnung eines Memorium am historischen Ort Bestandteil der au-
-ßerschulischen politischen Bildung.15 Die Prozesse fanden im Saal 600 des Ostflügels des
+ßerschulischen politischen Bildung.$$$15$$$ Die Prozesse fanden im Saal 600 des Ostflügels des
 Justizpalastes statt. Die US-Armee gab das 1916 errichtete Justizgebäude im Jahr 1961
 an den Freistaat Bayern zurück (Urban 2008, S. 12–25). In diesem Gebäude wurde im
 
@@ -300,7 +300,7 @@ auch dieses Akronym nutzen; ‚Militärtribunal‘ deshalb, weil es von den alli
 als Militärgerichtshof eingerichtet wurde.
 
 
-$$$15$$$Siehe Memorium Nürnberger Prozesse: /https://museen.nuernberg.de/memorium-nuernberger-
+15Siehe Memorium Nürnberger Prozesse: /https://museen.nuernberg.de/memorium-nuernberger-
 prozesse/bildungsprogramm/bildungsangebot-uebersicht/ (zuletzt überprüft am 16.03.2019).
 
 
@@ -319,7 +319,7 @@ der Angeklagten, nach der Grundlage der Verfahren, ihrer Fairness und Gerechtigk
 sowie der historischen Wirkung der Nürnberger Prinzipien auf das Völkerrecht und den
 Menschenrechtsschutz. Die Nürnberger Prinzipien wurden als völkerstrafrechtliches
 Substrat der alliierten Verfahren von der International Law Commission der Vereinten
-FOOTNOTE:Nationen am 29. Juli 1950 formuliert (siehe Fremuth 2015, S. 484/485).
+Nationen am 29. Juli 1950 formuliert (siehe Fremuth 2015, S. 484/485).
 
 
 „Mit diesen Prinzipien sollten die wichtigsten Grundlagen des IMT-Statuts und der IMT-
@@ -332,7 +332,7 @@ Akademie Nürnberger Prinzipien 2014)16
 
 
 Um das historische Ereignis und seine Wirkungsgeschichte als ein sinnvolles Element
-der zeitgenössischen Politikdidaktik17 zu nutzen, bedarf es einer systematischen Begrün-
+der zeitgenössischen Politikdidaktik$$$17$$$ zu nutzen, bedarf es einer systematischen Begrün-
 dung.
 
 
@@ -365,7 +365,7 @@ können.“ (Steinbach in Steur 2005, S. 7) Peter Steinbachs Desiderat wird hier
 dungsauftrag verstanden, der zu begründen und zu entfalten ist.
 
 
-FOOTNOTE:Im Mittelpunkt der Arbeit steht die zeitgeschichtliche Frage: Wie kann aus dem poli-
+Im Mittelpunkt der Arbeit steht die zeitgeschichtliche Frage: Wie kann aus dem poli-
 tisch-strafrechtlichen Problem von Schuld und Strafgerechtigkeit eine gerechte Lösung
 auf nationaler und internationaler Ebene mit der Perspektive Frieden durch Recht und
 Schutz der Menschenrechte entwickelt werden?
@@ -395,28 +395,28 @@ versucht, den didaktischen Prinzipien des Faches zu folgen, die hier zu Beginn k
 muliert werden:
 
 
-FOOTNOTE:● Die fachliche Klärung des Gegenstandes – Lernen mit und aus dem IMT – soll
-mit der didaktischen Begründung18 verbunden sein; die zugrunde gelegte Wis-
+● Die fachliche Klärung des Gegenstandes – Lernen mit und aus dem IMT – soll
+mit der didaktischen Begründung$$$18$$$ verbunden sein; die zugrunde gelegte Wis-
 sensbasis soll mehr als ein Lernzielkatalog sein. Aber ohne ein Grund- und Ori-
 entierungswissen sind begründete Urteile als Teil und Ausweis der politischen
 Mündigkeit auch nicht möglich.
 
 
-FOOTNOTE:● Sie darf andererseits aber auch nicht die subjektive Seite der aktuellen Interes-
+● Sie darf andererseits aber auch nicht die subjektive Seite der aktuellen Interes-
 siertheit zugunsten der stofflichen, objektiven Seite vernachlässigen.
 
 
-FOOTNOTE:● Fachdidaktik soll die Trennung von Grundwissen einerseits und Problembewusst-
+● Fachdidaktik soll die Trennung von Grundwissen einerseits und Problembewusst-
 sein sowie Urteilsvermögen andererseits aufheben und die Zusammenhänge in
 fruchtbare Lernschritte gliedern.
 
 
-FOOTNOTE:● Politikdidaktische Prinzipien sollen eine didaktisch-konzeptionelle und metho-
+● Politikdidaktische Prinzipien sollen eine didaktisch-konzeptionelle und metho-
 disch-operationalisierende Dimension haben.$$$19$$$ In diesem Konzept können nur die
 didaktisch-konzeptuellen Profile ausgearbeitet werden.
 
 
-FOOTNOTE:● Besonderes Augenmerk muss auf die Zeitgeschichte gerichtet werden: Geschichte
+● Besonderes Augenmerk muss auf die Zeitgeschichte gerichtet werden: Geschichte
 kann nicht einfach nacherzählt werden. Sie stellt immer auch eine Rekonstruktion
 im gegenwärtigen Bewusstsein dar. Daher ist es erforderlich, die Prinzipien der
 Rekonstruktion offenzulegen und die Auswahl zwischen angemessener Interpre-
@@ -424,7 +424,7 @@ tation der historischen Situation und gegenwärtigen Erkenntnisinteressen zu be-
 gründen.
 
 
-FOOTNOTE:● Die Arbeit muss von vorliegenden politischen, historischen, rechtsphilosophi-
+● Die Arbeit muss von vorliegenden politischen, historischen, rechtsphilosophi-
 schen und völkerrechtlichen Ergebnissen ausgehen; sie kann das aber nur
 
 
@@ -449,7 +449,7 @@ summarisch und exemplarisch leisten. Dabei kommt es auf die begründete Aus-
 wahl und didaktische Verarbeitung von fachwissenschaftlichen Ergebnissen für
 die politische Bildung an. Den wissenschaftlichen Gegenstand dieser Arbeit bildet
 daher nicht die jeweilige Fach-Auseinandersetzung, sondern die politik-didakti-
-sche Vermittlung der Nürnberger Prozesse$$$20$$$. Entscheidend ist dabei die Verarbei-
+sche Vermittlung der Nürnberger Prozesse20. Entscheidend ist dabei die Verarbei-
 tung der unterschiedlichen Fachebenen zu einer einheitlichen und aktuellen Poli-
 tikdidaktik mit Fokus ‚Nürnberg‘. Da empirische Erhebungen noch nicht vorlie-
 gen, müssen somit plausible Annahmen und Erfahrungswerte herangezogen wer-
@@ -461,7 +461,7 @@ Ergebnissen der Bezugswissenschaften gerecht werden. Dem Anspruch der Politikdid
 tik selbst, eine eigenständige Wissenschaftsdisziplin von der Praxis des Lehrens und Ler-
 nens zu sein, soll durch die Begründung aus unterschiedlichen Konzepten des Faches
 heraus entsprochen werden. Die entscheidende didaktische Aufgabe ist dabei die Ver-
-mittlung von historischen Tatsachen$$$21$$$, historisch-politischer Urteilskompetenz und zu-
+mittlung von historischen Tatsachen21, historisch-politischer Urteilskompetenz und zu-
 kunftsbezogenen Lösungen für unter Umständen vergleichbare Konflikte der Gegenwart.
 Neben den normativen und konstruktivistischen Ansätzen können die Zusammenhänge
 aus der Sicht der Fachdidaktik auch im Rahmen eines pragmatistischen Verständnisses
@@ -495,7 +495,7 @@ mentaren und exemplarischen Teilen können die Lernprozesse entfaltet werden? Wi
 kann die Transformation von zeitgeschichtlichem, deskriptivem Basiswissen in Deu-
 tungswissen und Gerechtigkeitskompetenz als Lernweg strukturiert werden? Das hier
 vorgelegte Konzept einer historisch-politischen Menschenrechtsbildung will damit dem
-FOOTNOTE:Anspruch genügen, den Peter Henkenborg so formuliert:
+Anspruch genügen, den Peter Henkenborg so formuliert:
 
 
 „Politische Bildung ermöglicht Demokratie-Lernen und Werteerziehung, wenn die Span-
@@ -539,10 +539,10 @@ Bezug zur Erforschung der Nachkriegsgeschichte (Benz 2010; D. Hoffmann 2011), zu
 geschichtspolitischen Diskussion (Reichel 2001; Frei 2012), zu Rechtserziehung, Men-
 schenrechtsbildung und Gedenkstättenpädagogik (siehe besonders Kapitel 1.2) sowie zur
 politikwissenschaftlichen Diskussion der Internationalen Beziehungen (IB).24 Grundle-
-gend bleibt dabei der Fachbezug zu Kategorien und Kompetenzen.25
+gend bleibt dabei der Fachbezug zu Kategorien und Kompetenzen.$$$25$$$
 
 
-FOOTNOTE:● Die Arbeit muss von vorliegenden politischen, historischen, rechtsphilosophi-
+● Die Arbeit muss von vorliegenden politischen, historischen, rechtsphilosophi-
 schen und völkerrechtlichen Ergebnissen ausgehen; sie kann das aber nur summarisch
 und exemplarisch leisten. Dabei kommt es auf die begründete Auswahl und didaktische
 Verarbeitung von fachwissenschaftlichen Ergebnissen für die politische Bildung an. Den
@@ -588,22 +588,22 @@ sis gegenüber einem menschen- und völkerrechtlichen Universalismus angesichts 
 kularisierter nationaler Machtinteressen aufgreifen.
 
 
-FOOTNOTE:b, Sachbereiche, Zeitebenen und Darstellungsprinzipien
+b, Sachbereiche, Zeitebenen und Darstellungsprinzipien
 
 
 Das Tribunal 1945/46 wird in dieser Arbeit in drei Zeitdimensionen untersucht und
 vermittelt:
 
 
-FOOTNOTE:● Es ist als primäres Ereignis zu verstehen: Zum ersten Mal in der Geschichte
+● Es ist als primäres Ereignis zu verstehen: Zum ersten Mal in der Geschichte
 findet ein derartiger internationaler Strafprozess statt.
 
 
-FOOTNOTE:● Es ist aber immer auch sekundär und nachfolgend, bezogen auf die national-
+● Es ist aber immer auch sekundär und nachfolgend, bezogen auf die national-
 sozialistischen Gewaltverbrechen und die NS-Herrschaft.
 
 
-FOOTNOTE:● Sowohl durch diesen Gegenstand im Gegenstand als auch durch die Neuartig-
+● Sowohl durch diesen Gegenstand im Gegenstand als auch durch die Neuartig-
 keit des internationalen Projektes erhält das historische Ereignis sein großes
 Gewicht für die Gegenwart – als dritte Dimension.
 
@@ -611,10 +611,10 @@ Gewicht für die Gegenwart – als dritte Dimension.
 Zu unterscheiden sind somit in dieser Bildungskonzeption
 
 
-FOOTNOTE:● die NS-Verbrechen als Gegenstand der Anklage und Urteile
+● die NS-Verbrechen als Gegenstand der Anklage und Urteile
 
 
-FOOTNOTE:● das Prozessgeschehen selbst26
+● das Prozessgeschehen selbst$$$26$$$
 
 
 FOOTNOTE:26 Das komplexe Prozessgeschehen wird häufig in der dominierenden angelsächsischen Perspek-
@@ -625,7 +625,7 @@ Perspektive siehe Irina Schulmeister-Andre (2016) und Lilia Antipow (2015); zur 
 und John Tusa (2003) und Rainer Huhle (2015).
 
 
-FOOTNOTE:● der Bezug zur gegenwärtigen politischen Bildung vermittelt durch die Nach-
+● der Bezug zur gegenwärtigen politischen Bildung vermittelt durch die Nach-
 kriegsgeschichte.27
 
 
@@ -654,7 +654,7 @@ Argumentierens und Urteilens fördern.
 
 Für die Anordnung des Materials und der Argumente bringt diese didaktisch und nicht
 nach Sachbereichen oder chronologisch aufgebaute Struktur eine unvermeidliche Viel-
-FOOTNOTE:schichtigkeit mit sich.29 Erstes Ordnungsprinzip im Anschluss an die Darstellung des
+schichtigkeit mit sich.$$$29$$$ Erstes Ordnungsprinzip im Anschluss an die Darstellung des
 Standes der Fachdiskussion im Kapitel 1 sind die drei genannten fachdidaktischen
 
 
@@ -671,18 +671,18 @@ wiederholen sich dann die folgenden zeitgeschichtlichen und thematischen Bezugs-
 punkte:
 
 
-FOOTNOTE:● Rückbezüge auf die fachdidaktische Entwicklung der jeweiligen Zugänge der
+● Rückbezüge auf die fachdidaktische Entwicklung der jeweiligen Zugänge der
 Zeitgeschichte: Nachkriegszeit, Zeit der Wende und des Endes des Kalten
 Krieges und Gegenwart
 
 
-FOOTNOTE:● Justizielle Vergangenheitsbewältigung in Deutschland: Nürnberger Prozesse
+● Justizielle Vergangenheitsbewältigung in Deutschland: Nürnberger Prozesse
 
 
-FOOTNOTE:● Stationen in der Bundesrepublik und Entwicklungen nach 1990
+● Stationen in der Bundesrepublik und Entwicklungen nach 1990
 
 
-FOOTNOTE:● Internationale Politik: Politik der Alliierten, Entwicklung der Vereinten Nati-
+● Internationale Politik: Politik der Alliierten, Entwicklung der Vereinten Nati-
 onen, der Menschenrechte und des Völkerstrafrechtes einschließlich der Tran-
 sitional Justice.
 
@@ -696,7 +696,7 @@ Kategorien sind Schuld und Strafgerechtigkeit.
 
 
 Die Fragen nach Schuld und Gerechtigkeit waren ein Fokus des demokratischen Neu-
-beginns nach 1945 und des Selbstverständnisses der Bundesrepublik Deutschland.30 Der
+beginns nach 1945 und des Selbstverständnisses der Bundesrepublik Deutschland.$$$30$$$ Der
 Anspruch, sie als Grundkategorien der politischen Bildung schulisch wie außerschulisch
 zu nutzen, wird in diesem Konzept mit den Bildungsmöglichkeiten am Memorium Nürn-
 berger Prozesse und der Anschlussfähigkeit an Unterrichtsthemen konkretisiert.
@@ -721,7 +721,7 @@ Schuld und Strafgerechtigkeit liegen aber auch anderen Prozessen des Überganges
 Diktaturen zur Demokratie und jedem Strafprozess-Gedanken zugrunde. Schuld ist dabei
 zwar ein wissenschaftlich schwer zu klärender, aber doch im Strafrecht entscheidender
 Begriff in Zusammenhang mit der Frage nach der Verantwortlichkeit. Ungeläufiger da-
-gegen ist der in der Politik nicht sehr verbreitete Begriff der ‚Strafgerechtigkeit.‘$$$32$$$ Des-
+gegen ist der in der Politik nicht sehr verbreitete Begriff der ‚Strafgerechtigkeit.‘32 Des-
 halb soll sein Inhalt zu Beginn kurz geklärt werden. Der Terminus, den ich als zentrale
 Kategorie nutze (siehe Kapitel 4, besonders 4.3.2.a), fehlt in Sachregistern politik- und
 rechtswissenschaftlicher Überblicksbände. Eine einschlägige Publikation liegt jedoch mit
@@ -741,7 +741,7 @@ Eine für die Diskussion der Nürnberger Prozesse entscheidende Dimension der St
 gerechtigkeit ist die Verfahrensgerechtigkeit.$$$33$$$ Dieser Anspruch beinhaltet die Norm Ge-
 rechtigkeit durch Verfahren, zum Beispiel durch das Prinzip der Unparteilichkeit (Nie-
 mand sei Richter in eigener Sache; in Streitfällen ist auch die andere Seite zu hören; siehe
-FOOTNOTE:Höffe 2010, S. 48).
+Höffe 2010, S. 48).
 
 
 Urteile sollen begründet, angemessen und gerecht sein. Dieser Anspruch gilt in demo-
@@ -765,13 +765,13 @@ Lernräume. Im Unterschied zu den endgültigen Urteilen vor Gericht darf in den 
 gischen Räumen demokratischer Gesellschaften jedoch nicht ‘überwältigt‘ werden. Al-
 lerdings bleibt es die Aufgabe der politischen Bildung, für die individuelle Urteilsfähig-
 keit bestimmte Voraussetzungen zu schaffen und den Zusammenhang von gerichtlichen
-Urteilen und politischen Entscheidungen plausibel zu machen. Wissen und Werte$$$34$$$, de-
+Urteilen und politischen Entscheidungen plausibel zu machen. Wissen und Werte34, de-
 skriptive und normative Elemente, sind in den drei Sachbereichen dieser Arbeit, dem ju-
 ristischen, dem politischen und dem historischen, unabdingbar. Politische Urteile können
 dabei nicht beliebig offen sein, aber die Grenzen der Offenheit müssen begründet werden.
 Meine Begründung einer historisch-politisch-menschenrechtlichen Bildung$$$35$$$ verbindet
 die Klärung von Schuld und Strafgerechtigkeit mit Lernwegen, die Urteilsbildungen er-
-FOOTNOTE:möglichen.
+möglichen.
 
 
 FOOTNOTE:34 Dieser Arbeit liegt ein (Grund)-Werte-Verständnis zugrunde, wie es in der politischen Bildung
@@ -792,21 +792,21 @@ binierten Begriffes verstanden.
 1.1 ‘Nürnberg’: Prozessort und ambivalentes Symbol
 
 
-FOOTNOTE:Gerichtssäle können Lernorte sein, sie werden gelegentlich als Klassenzimmer genutzt.
+Gerichtssäle können Lernorte sein, sie werden gelegentlich als Klassenzimmer genutzt.
 Sie dienen als Raum und Rahmen für die Darstellung historischer Ereignisse. Sie sind
 somit in doppeltem Sinne politisch und historisch bildend, als Ereignis (Ebene 1) und als
 Bühne, auf der auf andere Ereignisse verwiesen wird (Ebene 2). In den Abläufen im Saal
 600 des Nürnberger Justizgebäudes werden die von den NS-Angeklagten zu verantwor-
-tenden Taten und das NS-System als Ganzes thematisiert. Am historischen Ort36 der
+tenden Taten und das NS-System als Ganzes thematisiert. Am historischen Ort$$$36$$$ der
 Nürnberger Prozesse wird mit dem Memorium nicht nur Geschichtspflege betrieben, son-
 dern auch die Auseinandersetzung mit den nationalsozialistischen Gewaltverbrechen im
-Völkerstrafrecht37 thematisiert. Saal und Ausstellung zusammen sind als historischer
+Völkerstrafrecht$$$37$$$ thematisiert. Saal und Ausstellung zusammen sind als historischer
 Lern- und politischer Erinnerungs-Ort zu bezeichnen.$$$38$$$
 
 
 Das Memorium als außerschulischer Bildungsort wird hier auch als Ort schulischer
 Bildung verstanden, weil Schulklassen mit Abstand den Hauptanteil an den Angeboten
-der zeitgeschichtlichen Bildung (‚Moderierte Themengespräche‘) ausmachen.39 Auch
+der zeitgeschichtlichen Bildung (‚Moderierte Themengespräche‘) ausmachen.$$$39$$$ Auch
 wenn der Begriff ‚Memorium‘ Gedenken anklingen lässt, ist diese Einrichtung keine Ge-
 denkstätte. Jedoch bietet sich die Gedenkstättenpädagogik (Gryglewski u.a. 2015; Zumpe
 
@@ -840,7 +840,7 @@ FOOTNOTE:39 Die unveröffentlichten Statistiken werden in der pädagogischen Abt
 stellt und den Partnern des pädagogischen Programms mitgeteilt.
 
 
-2012; Eberle 2008) als Bezugspunkt für die politisch-zeitgeschichtliche Bildung40 mit den
+2012; Eberle 2008) als Bezugspunkt für die politisch-zeitgeschichtliche Bildung$$$40$$$ mit den
 Nürnberger Prozessen an. Zugleich kann die Bildungsarbeit am Memorium zur Men-
 schenrechtsbildung gerechnet werden, weil sie die Werte, die den Gehalt der Menschen-
 rechte ausmachen, zugrunde legt und den menschenrechtlichen Bezug der Prozessnormen
@@ -851,7 +851,7 @@ basieren auf der Symbolik ‘Nürnberg’. Sie wird von Donald Bloxham so zusamm
 fasst:
 
 
-FOOTNOTE:„Was bedeutet »Nürnberg«? Auf der einfachsten, wörtlichen Ebene bezieht sich der To-
+„Was bedeutet »Nürnberg«? Auf der einfachsten, wörtlichen Ebene bezieht sich der To-
 pos auf die strafrechtliche Verfolgung von 22 deutschen Spitzen- Funktionären und sechs
 Organisationen vor dem Internationalen Militärtribunal in Nürnberg von Oktober 1945
 bis Oktober 1946. Als Sammelbegriff kann es aber auch für die Zehntausende von Pro-
@@ -881,7 +881,7 @@ eben auch ‘Menschenrechtserziehung‘ – geschuldet dem internationalen Einfl
 Rights Education‘ (siehe Lohrenscheit ((Hrsg.)) 2005).
 
 
-FOOTNOTE:unter den veränderten internationalen Bedingungen der 1950er Jahre vorzeitig entlassen
+unter den veränderten internationalen Bedingungen der 1950er Jahre vorzeitig entlassen
 wurden.“ (Bloxham 2013, S. 493)
 
 
@@ -933,15 +933,15 @@ der Suche nach einem “Schlussstrich“ gewesen, um die Bewältigung der NS-Zei
 
 Mit der seit Mitte der 1960-er Jahre wachsenden Bereitschaft zur Auseinandersetzung
 mit dem Nationalsozialismus und seinen Verbrechen entstand zwar eine inzwischen kon-
-solidierte und ritualisierte45 Erinnerungskultur und eine Gedenkstättenpädagogik. Die
-NS-Prozesse wurden als grundlegende politische und rechtliche Leistung46 anerkannt,
+solidierte und ritualisierte$$$45$$$ Erinnerungskultur und eine Gedenkstättenpädagogik. Die
+NS-Prozesse wurden als grundlegende politische und rechtliche Leistung$$$46$$$ anerkannt,
 aber ihr politikdidaktischer ‚Mehrwert‘ wurde nicht genutzt. Da sie mehr als ein histori-
 sches Thema sind, kann ihr völkerstrafrechtliches Erbe in der politischen Bildungsarbeit
 kritisch aufgenommen werden. Zudem ist auch das internationale Interesse seit dem Ende
 des Ost-West-Konflikts gestiegen.
 
 
-FOOTNOTE:Ursprünglich war das Prozessgeschehen vor allem in der Re-Demokratisierungsper-
+Ursprünglich war das Prozessgeschehen vor allem in der Re-Demokratisierungsper-
 spektive der US-amerikanischen Politik als Teil des Lernprozesses für das besiegte NS-
 Deutschland gesehen worden. Von Beginn an war ein derartiges Vorhaben in Deutsch-
 land durch die Hypothek bzw. mit der Abwehr der Entnazifizierung belastet. Diese Ab-
@@ -951,7 +951,7 @@ die Gefängnisse in Landsberg, Spandau, Werl oder Wittlich“ (Priemel & Stiller
 bilitation und Restitution (‚Wiedergutmachung‘) waren hingegen lästig (siehe Pross
 1988) und sind erst 2006 abgeschlossen worden (siehe Jansen & Saathoff 2007). Inzwi-
 schen kann in der politischen Bildung ein differenziertes Fazit zur Entnazifizierung ver-
-mittelt werden. Konrad Jarausch47 arbeitet den „widersprüchlichen Charakter“ dieses da-
+mittelt werden. Konrad Jarausch$$$47$$$ arbeitet den „widersprüchlichen Charakter“ dieses da-
 maligen Transitional-Justice-Prozesses heraus: Das ‘Gesetz zur Befreiung von National-
 sozialismus und Militarismus‘ der Alliierten vom 5. März 1946 „übertrug die Entnazifi-
 zierung in deutsche Hände und gab ihr die endgültige Gestalt eines Spruchkammerver-
@@ -997,11 +997,11 @@ weiten Teilen der deutschen Öffentlichkeit nach den Urteilen vom Herbst 1946 (d
 auch die Beschreibung der Gesamtkonstellation ‚Re-Education‘ in Kapitel 1.4.1)
 
 
-FOOTNOTE:Der politischen Bildung gehen die öffentlichen Meinungs- und Bewusstseinsbildungs-
+Der politischen Bildung gehen die öffentlichen Meinungs- und Bewusstseinsbildungs-
 prozesse voraus. Ein Blick auf jüngere und auch verbreitete Bewertungen des IMT und
 der Nachfolgeprozesse im populärwissenschaftlichen Diskurs ist von Nutzen, weil davon
 ausgegangen werden muss, dass Elemente des öffentlichen Bewusstseins über diese his-
-torischen Ereignisse sich auch im Schülerwissen bruchstückhaft wiederfinden.48 Ein Teil
+torischen Ereignisse sich auch im Schülerwissen bruchstückhaft wiederfinden.$$$48$$$ Ein Teil
 dieser Publikationen (Selbstdarstellungen, Erinnerungen und Biografien der Beteiligten)
 gibt ein Bild der Argumentation und der Konflikte im Gerichtssaal wieder (siehe Priemel
 & Stiller 2013, S. 18).49 Besonders die Verteidigungsstrategien waren erfolgreich, wurden
@@ -1022,7 +1022,7 @@ darstellung nach seiner Entlassung 1966 (Brechtken 2016).
 Nachkriegsgesellschaft vorformuliert (Friedrich 1985, S. 59). Damit verbunden war das
 vorübergehende Vergessen und Beschweigen von Verbrechen in der Phase des Umbru-
 ches und Neuaufbaus. Damit muss nicht zwingend eine Relativierung der Verbrechen des
-FOOTNOTE:Nationalsozialismus einhergehen50.
+Nationalsozialismus einhergehen50.
 
 
 Zwei weitere kritische Untersuchungen sollen noch genannt werden: Viele der verbrei-
@@ -1052,7 +1052,7 @@ ren den öffentlichen ‘Nürnberg-Diskurs‘ (Darnstädt 2015; Heydecker & Leeb
 Kastner 2001) und können als Einführungslektüre dienen.
 
 
-FOOTNOTE:Auch in der zeitgeschichtlichen Forschung werden skeptische Gesamtbilanzen formu-
+Auch in der zeitgeschichtlichen Forschung werden skeptische Gesamtbilanzen formu-
 liert:
 
 
@@ -1066,13 +1066,13 @@ mit der NS-Vergangenheit in der Bundesrepublik“, S. 86–92; siehe auch Brochh
 leitung S. 7–16).
 
 
-FOOTNOTE:dazu, durch Personalisierung der ‚Hauptverantwortung‘ zu viele Mittäter und Mitläufer
+dazu, durch Personalisierung der ‚Hauptverantwortung‘ zu viele Mittäter und Mitläufer
 FOOTNOTE:der verbrecherischen Herrschaft zu entlasten.“ (Morsey 2000, S. 5/6) 51
 
 
 Ein schon mit Blick auf die politische Bildung differenziertes Bild entwirft Jürgen We-
 ber im Jahr 1969 in einem Schwerpunktheft von Aus Politik und Zeitgeschichte (Weber
-$$$1969$$$). Webers Untersuchung kann als erste, die wesentlichen Gesichtspunkte erwägende
+1969). Webers Untersuchung kann als erste, die wesentlichen Gesichtspunkte erwägende
 Darstellung der Prozesse gelten. Er diskutiert vor allem die „Grenzen der Macht des
 Rechtes“ angesichts der Aufgabe, den Frieden zwischen Staaten zu sichern (S. 19–23).
 Allerdings fehlen auch nicht die polemischen Stichworte zur US-amerikanischen Politik
@@ -1108,8 +1108,8 @@ FOOTNOTE:51 Rudolf Morsey setzt den alliierten Begriff ‘Hauptkriegsverbrecher�
 S. 5).
 
 
-Maßstäbe für das Zusammenleben der Staaten auch in Zukunft zu setzen.“ (Diller $$$1994$$$,
-FOOTNOTE:S. 49).
+Maßstäbe für das Zusammenleben der Staaten auch in Zukunft zu setzen.“ (Diller 1994,
+S. 49).
 
 
 Inzwischen ist die Ablehnung überwunden und von Anerkennung abgelöst, das Bild
@@ -1150,19 +1150,19 @@ schen Neubeginns nach 1945 erledigte sich nicht ‚mit der Zeit‘.
 Lässt sich für die politische Bildung eine Auswirkung dieser Diskurse über ‚Nürnberg‘
 und die justizielle Vergangenheitspolitik feststellen? Die hier kurz skizzierte Entwicklung
 wurde von der sich etablierenden politischen Bildung innerhalb und außerhalb der Schu-
-len in der Bundesrepublik in den 1950-er Jahren nicht beachtet.52 Eine angemessene The-
+len in der Bundesrepublik in den 1950-er Jahren nicht beachtet.$$$52$$$ Eine angemessene The-
 matisierung des Nationalsozialismus und seiner Verbrechen bekam erst in den 1960-er
 Jahren Gewicht (siehe Dudek 1995, S. 260–272). Stattdessen hatte die frühe pädagogi-
 sche Flucht ins Abendländische und Allgemeinmenschliche zu einem Bewältigungsver-
 ständnis geführt, das die deutsche Jugend als Opfer eines Missbrauches durch den Natio-
-nalsozialismus sah.53 Die Frage nach einer rechtlichen Bewältigung von Schuld und die
+nalsozialismus sah.$$$53$$$ Die Frage nach einer rechtlichen Bewältigung von Schuld und die
 Frage nach Gerechtigkeit für die NS-Opfer und gerechter Strafe für Täter blieb so jenseits
 des Horizontes einer Pädagogik54, für die jeder schuldig werden konnte. Die Jaspers‘sche
 Differenzierung von strafrechtlicher, politischer, metaphysischer oder religiöser Schuld
-FOOTNOTE:wurde von der Universitätspädagogik nicht aufgegriffen (Dudek 1995, S. 105–116).
+wurde von der Universitätspädagogik nicht aufgegriffen (Dudek 1995, S. 105–116).
 
 
-Gleichwohl wären Orte der Erkenntnis und der Erinnerung naheliegend gewesen.55
+Gleichwohl wären Orte der Erkenntnis und der Erinnerung naheliegend gewesen.$$$55$$$
 Nach Kriegsende entstanden auf Initiative der KZ-Überlebenden Gedenkstätten an Orten
 der NS-Verbrechen wie den Konzentrationslagern, in denen neben dem Gedenken eine
 Bildungsarbeit aufgebaut wurde. Diese außerschulische Bildung als Gedenkstättenpäda-
@@ -1193,7 +1193,7 @@ von Walter Dircks und Eugen Kogon) mit ihren Themen “Entnazifizierung, Schuldp
 Antisemitismus, Re-education“ (Dudek 1995, S. 124) angeboten.
 
 
-FOOTNOTE:„Die sechziger Jahre sind nämlich das Jahrzehnt, in dem der Nationalsozialismus irre-
+„Die sechziger Jahre sind nämlich das Jahrzehnt, in dem der Nationalsozialismus irre-
 versibel zum Gegenstand der schulischen und außerschulischen Jugendarbeit gemacht
 wurde. Adornos berühmte Rundfunkvorträge über ‘Aufarbeitung der Vergangenheit‘ und
 ‘Erziehung nach Auschwitz‘ haben hier eine Verbindung von wissenschaftlicher Analyse
@@ -1211,7 +1211,7 @@ Materialbasis und neue Aspekte wie „Von Dachau nach Den Haag“ (Hess 2007 und
 gesamt Eiber & Sigel 2007) an. Auch wenn die NS-Prozesse seit den 1960-er Jahren in
 der Bildungsarbeit der Gedenkstätten in den Blick kommen, gibt es nach meinem Über-
 blick keine ausdrückliche und systematische Umsetzung in ein rechte-orientiertes Bil-
-dungsprogramm$$$56$$$, das mit diesen Strafprozessen als Material arbeiten würde. Auch die
+dungsprogramm56, das mit diesen Strafprozessen als Material arbeiten würde. Auch die
 Durchsicht der aktuelleren Untersuchung von Bynjamin Werker (2016) zur „Gedenkstät-
 tenpädagogik im Zeitalter der Globalisierung“ bestätigt diesen Befund. Das Gewicht der
 Strafverfolgung von NS-Verbrechen ist dabei unbestritten: Über die justiziable Ahndung
@@ -1234,13 +1234,13 @@ Weitere Anregungen kommen aus dem Fritz-Bauer-Institut zur Erforschung und Wir-
 kung des Holocaust, das durch seine pädagogische Arbeit, aber auch durch die Person
 von Fritz Bauer für diese Untersuchung relevant ist. Fritz Bauer wurde zu einem maß-
 geblichen Juristen in der strafrechtlichen Aufarbeitung der NS-Verbrechen. Er gilt zudem
-als wichtiger Impulsgeber für die Lernprozesse im Gerichtssaal.57 Der erste Auschwitz-
+als wichtiger Impulsgeber für die Lernprozesse im Gerichtssaal.$$$57$$$ Der erste Auschwitz-
 Prozess in Frankfurt (1963–1965) gehört zu den wichtigsten Themen und Aufgabenfel-
 dern des Institutes mit seiner pädagogischen Abteilung. Der anlässlich der Ausstellung
 zum Auschwitz-Prozess im Jahr 2004 in Frankfurt herausgegebene Band „Auschwitz-
 Prozess 4 Ks 2/63“ (Wojak 2004) kann als eine sachliche Grundlage für die historisch-
 politische Bildung mit dem Auschwitz-Prozess dienen. In ihrem Beitrag zitiert Wojak
-FOOTNOTE:Bauers Forderung nach einer „Pädagogik der Menschlichkeit“ (Wojak 2004, S. 62):
+Bauers Forderung nach einer „Pädagogik der Menschlichkeit“ (Wojak 2004, S. 62):
 
 
 „Wir besitzen eine Gewaltenteilung und unser Grundgesetz hat die Menschenrechte als
@@ -1250,7 +1250,7 @@ müssen von Menschen mit Leben gefüllt werden“ (F. Bauer 1998, S. 86).
 
 
 Diese Ansätze werden noch nicht als Bildungsarbeit mit juristischem Material oder mit
-einer rechtlichen Strukturanalyse als Hauptthema entwickelt und angeboten.58 Im Vorder-
+einer rechtlichen Strukturanalyse als Hauptthema entwickelt und angeboten.$$$58$$$ Im Vorder-
 grund steht naheliegend das, was Gegenstand im Gerichtssaal war – die Taten der Ange-
 klagten, die Aussagen der Opfer und die angemessene Bewertung der Taten. In Erweite-
 rung dieser Themenangebote sollen in diesem Konzept hier mit den Nürnberger Prozes-
@@ -1275,7 +1275,7 @@ rischem Ort selbst ebenfalls schon einen ‚Stand der Diskussion‘ mit Bezug zu
 stättenpädagogik.
 
 
-FOOTNOTE:Der Nexus von Menschenrechtsbildung und Gedenkstättenpädagogik
+Der Nexus von Menschenrechtsbildung und Gedenkstättenpädagogik
 
 
 Die primäre Aufgabe von Gedenkstätten ist das Gedenken an die Opfer der NS-Ver-
@@ -1317,7 +1317,7 @@ Beispiel aus Nürnberg“ (Huhle 2002) und „Historisch-politische Bildung in G
 (Kaiser 2011); insgesamt zum Kontext siehe auch Eckmann 2013.
 
 
-FOOTNOTE:„Menschenrechte sind schon immer Gegenstand der Gedenkstättenpädagogik gewesen,
+„Menschenrechte sind schon immer Gegenstand der Gedenkstättenpädagogik gewesen,
 jedoch zumeist nur implizit. Anhand der NS-Verbrechen kann man exemplarisch zeigen,
 welchen Bedrohungen eine Gesellschaft und die einzelnen Menschen ausgesetzt sind,
 wenn Grundrechte missachtet werden.“ (Kaiser & Lutz 2012, S. 11)
@@ -1367,15 +1367,15 @@ keitsparadox, Vergleichbarkeitsparadox und Aktualisierungsparadox (Brumlik 2004b
 Ganze der NS-Verbrechen:
 
 
-FOOTNOTE:● Die NS-Verbrechen lassen sich nicht direkt angemessen darstellen, obwohl sie
+● Die NS-Verbrechen lassen sich nicht direkt angemessen darstellen, obwohl sie
 in den Prozessen stets präsent sind.
 
 
-FOOTNOTE:● Sie lassen sich nicht vergleichen, obwohl die Vergleiche eine notwendige und
+● Sie lassen sich nicht vergleichen, obwohl die Vergleiche eine notwendige und
 sinnvolle gedankliche und didaktische Operation sind.
 
 
-FOOTNOTE:● Sie lassen sich nicht ‘aktualisieren‘, auch wenn unvermeidlich an sie erinnert
+● Sie lassen sich nicht ‘aktualisieren‘, auch wenn unvermeidlich an sie erinnert
 wird mit der Absicht, in der Gegenwart menschenrechtlich wirksam zu sein.
 
 
@@ -1416,7 +1416,7 @@ Ganske ein verallgemeinerndes Element unerlässlich, das sie als ein Fazit ihrer
 chung formuliert:
 
 
-FOOTNOTE:„Daraus wird deutlich, dass der Beitrag der Gedenkstättenpädagogik zur Menschen-
+„Daraus wird deutlich, dass der Beitrag der Gedenkstättenpädagogik zur Menschen-
 rechtsbildung in einer Form des Fehlerlernens liegen könnte. Ein Wissen darüber, wie
 etwas nicht zu sein hat, ist ähnlich bedeutungsvoll für identitätsbezogenes Lernen wie die
 Identifikation mit Werten und Handlungen, die der Einzelne als moralisch richtig erach-
@@ -1433,7 +1433,7 @@ Reichsparteitagsgelände, aus. Das pädagogische Begleitangebot im ‚Studienfor
 Dokumentationszentrums wird von Partner-Organisationen des Dokumentationszent-
 rums mit langjähriger Erfahrung in der außerschulischen Jugend- und Erwachsenenbil-
 dung durchgeführt (Christmeier 2009, S. 125–127). Die Konzepte wurden als Projekttage
-und moderierte Themengespräche (ebd.) entwickelt.64 Sie finden entweder auf dem Ge-
+und moderierte Themengespräche (ebd.) entwickelt.$$$64$$$ Sie finden entweder auf dem Ge-
 lände oder in den Räumen des ‘Studienforum‘ statt. Dieser Lernort und die Ausstellung
 „Faszination und Gewalt“ entstanden aus der Thematisierung der NS-Architektur. Das
 Memorium und der Saal 600 konstituieren einen anderen Lernort: Im IMT traten die al-
@@ -1473,7 +1473,7 @@ pädagogischen Arbeitszusammenhang heraus vorschlägt. „Rechte als Leitkategor
 Erinnerungskultur“ überschreibt Knoch seine Begründung:
 
 
-FOOTNOTE:„Rechte stellen das zentrale Medium der modernen Gesellschaft dar, in dem Handlungs-
+„Rechte stellen das zentrale Medium der modernen Gesellschaft dar, in dem Handlungs-
 räumen von Menschen und durch Menschen über politische, juristische und soziale Ord-
 nungen disponiert, unter moralischen Gesichtspunkten verhandelt und durch praktisches
 Handeln lebensweltlich relevant werden“ (Knoch 2011, S. 10).
@@ -1484,7 +1484,7 @@ kann der Forderung nach historischem Urteilsvermögen und Gegenwartsorientierung
 sprochen werden.
 
 
-FOOTNOTE:Der Schutz der Würde und der Rechte von Menschen ist die verbindende Idee von
+Der Schutz der Würde und der Rechte von Menschen ist die verbindende Idee von
 Gedenkstättenpädagogik und Menschenrechtsbildung und zugleich ein normativer Gehalt
 der Nürnberger Prozesse. Wie sich dieser Gehalt explizit in die politische Bildung und in
 die Politikdidaktik aufnehmen lässt, soll hier entwickelt werden. Nach der Untersuchung
@@ -1523,7 +1523,7 @@ mit zeitgenössischen und aktuellen Zeitungsartikeln, Zitaten aus der Nürnberge
 Robert H. Jacksons und einem Liedtext von Ina Deter.
 
 
-FOOTNOTE:● Im Schwerpunktheft ‘Vergangenheitsbewältigung und Wiedergutmachung‘
+● Im Schwerpunktheft ‘Vergangenheitsbewältigung und Wiedergutmachung‘
 von ‘Geschichte lernen‘ 119/2007 werden die Nürnberger Prozesse im Basis-
 artikel von Franziska Conrad unter dem Titel „‘Bewältigung‘ und ‚Wiedergut-
 machung‘“ in die Nachkriegsgeschichte eingeordnet.$$$67$$$ Im Kasten ‘Didaktische
@@ -1533,11 +1533,11 @@ die Forderungen der ehemals von Nazideutschlands Vernichtungskrieg be-
 troffenen Staaten erklären und verstehen können…“ (ebd. S. 4).
 
 
-FOOTNOTE:● In den Unterrichtsmaterialien der Zeitschrift ‚Geschichte betrifft uns‘, Ausgabe
-6/2008, wird ein Arbeitsblatt zum Nürnberger Prozess angeboten (S. $$$13$$$).68
+● In den Unterrichtsmaterialien der Zeitschrift ‚Geschichte betrifft uns‘, Ausgabe
+6/2008, wird ein Arbeitsblatt zum Nürnberger Prozess angeboten (S. 13).68
 
 
-FOOTNOTE:● In ‚Praxis Geschichte‘ mit dem Schwerpunkt „NS-Verbrechen – erinnern und
+● In ‚Praxis Geschichte‘ mit dem Schwerpunkt „NS-Verbrechen – erinnern und
 urteilen“, Ausgabe September Heft 5 /2012, werden verschiedene Prozessthe-
 men ausgearbeitet.$$$69$$$
 
@@ -1569,10 +1569,10 @@ behandelt „Auschwitz im Gerichtssaal - Die Aburteilung des Holocaust in Ost un
 Methoden gewidmet.
 
 
-FOOTNOTE:Politische Bildung in Bayern mit dem IMT
+Politische Bildung in Bayern mit dem IMT
 
 
-In die fachlich und institutionell etablierte politische Bildung in Bayern70 fanden NS-
+In die fachlich und institutionell etablierte politische Bildung in Bayern$$$70$$$ fanden NS-
 Prozesse, also Strafverfahren gegen NS-Täter, als Bausteine einer Antitotalitarismus-Ar-
 gumentation Eingang. So stellte im Jahr 1983 Manfred Hättich auf einer Tagung der Po-
 litischen Akademie Tutzing folgende Argumentation vor: In Gerichtsverfahren zu den
@@ -1592,16 +1592,16 @@ und Atmosphäre, in der sich Einschüchterung und Zustimmung vermischten.“ (H�
 Im Jahr 1994 wurde von der Bayerischen Landeszentrale für Politische Bildungsarbeit
 (durch Ansgar Diller) eine Gesamtsicht zu „Nürnberg und die Entnazifizierung“ vorge-
 legt. Ihre Kernaussagen sollen hier aufgelistet werden, weil sie als erste Formulierung
-einer wegweisenden ‘Basis-Erzählung‘$$$71$$$ für die historisch-politische Bildung verstanden
+einer wegweisenden ‘Basis-Erzählung‘71 für die historisch-politische Bildung verstanden
 werden können:
 
 
-FOOTNOTE:● Die Bestrafung der Kriegsverbrecher war ein Kriegsziel der Alliierten: aber
+● Die Bestrafung der Kriegsverbrecher war ein Kriegsziel der Alliierten: aber
 auch der deutsche Widerstand forderte Sühne für die Verbrechen, die weltweite
 Empörung ausgelöst hatten.
 
 
-FOOTNOTE:● Der Internationale Militärgerichtshof habe allerdings ein unsicheres juristi-
+● Der Internationale Militärgerichtshof habe allerdings ein unsicheres juristi-
 sches Fundament. Seine Überzeugungskraft in Deutschland wäre größer gewe-
 sen, wenn nach deutschem Strafrecht verfahren worden wäre.
 
@@ -1619,22 +1619,22 @@ sein, kann aber als eine tragfähige Konstruktion dienen. Die ‚Gewordenheit‘
 wird damit nicht bestritten.
 
 
-FOOTNOTE:● Die breite Berichterstattung über das, was im Prozess als Bestandsaufnahme
+● Die breite Berichterstattung über das, was im Prozess als Bestandsaufnahme
 der NS-Herrschaft vorgelegt worden sei, habe ein Nicht-Wahrnehmen schwer
 gemacht. Die zeitgenössischen Kommentare sahen im Prozess und seinem Ur-
 teil einen Sieg der Gerechtigkeit über das Unrecht.
 
 
-FOOTNOTE:● Neues Völkerrecht sei begründet worden, ein Weltgericht habe im Namen des
+● Neues Völkerrecht sei begründet worden, ein Weltgericht habe im Namen des
 Weltgewissens zu einer neuen Weltordnung beigetragen.
 
 
-FOOTNOTE:● Allerdings erfüllten sich die Hoffnungen nicht. Kriegsverbrechen in Vietnam
+● Allerdings erfüllten sich die Hoffnungen nicht. Kriegsverbrechen in Vietnam
 zum Beispiel seien nie nach den in Nürnberg aufgestellten Maßstäben geprüft
 worden.
 
 
-FOOTNOTE:● Erst die Kriegsgräuel in Bosnien-Herzegowina hätten zu einem Wiederan-
+● Erst die Kriegsgräuel in Bosnien-Herzegowina hätten zu einem Wiederan-
 knüpfen an die Nürnberger Grundsätze geführt (siehe Diller 1994, 52–61).
 
 
@@ -1650,7 +1650,7 @@ gen, ob und von welchem Zeitpunkt an die NS-Prozesse in der Fachdidaktik aufgegr
 wurden oder ob ihre Bearbeitung verpasst wurde.72
 
 
-FOOTNOTE:Der Bildungswert einer Prozesskunde liegt in ihrem menschenrechtlichen Gehalt: der
+Der Bildungswert einer Prozesskunde liegt in ihrem menschenrechtlichen Gehalt: der
 demokratische Verfassungsstaat, der sich in den drei westlichen Besatzungszonen durch-
 setzte, garantierte faire Prozesse als eine Antwort auf den Nationalsozialismus. Sie hätten
 auch zur normativen Grundlage der politischen Bildung als Disziplin beitragen können.
@@ -1684,14 +1684,14 @@ Vergangenheit war in dreifacher Hinsicht eine Aufforderung und (nicht angenommen
 Einladung an die frühe politische Bildung:
 
 
-FOOTNOTE:● die in den Prozessen thematisierten und zu klärenden Verbrechenskomplexe als
+● die in den Prozessen thematisierten und zu klärenden Verbrechenskomplexe als
 historische Aufklärung
 
 
 ● die Prozesse als Teil der Re-Education
 
 
-FOOTNOTE:● die Prozesse als normative Basis für eine Verurteilung von Verbrechen gegen die
+● die Prozesse als normative Basis für eine Verurteilung von Verbrechen gegen die
 Menschlichkeit.
 
 
@@ -1712,7 +1712,7 @@ S. 102 und Bungenstab 1970, S. 40/41)
 
 Die auf diesen Werten aufbauende Re-Education-Perspektive der US-amerikanischen
 Politik wurde in der Bundesrepublik nicht im Sinne einer neuen demokratischen politi-
-schen Bildung aufgegriffen.74 Ein Mitarbeiter des State Department bilanzierte das
+schen Bildung aufgegriffen.$$$74$$$ Ein Mitarbeiter des State Department bilanzierte das
 Grundproblem im Jahr 1949 so: „Wir wurden gewahr, daß keine Siegermacht ein anderes
 Volk ‚umerziehen‘ kann; sie kann bestenfalls dabei helfen, jene Bedingungen zu schaf-
 fen, die eine Umerziehung möglich machen.“ (Byroade 1949, S. 705) Die politisch-kul-
@@ -1734,7 +1734,7 @@ in Nürnberg führte allen Menschen die Verbrechen der NS-Diktatur vor Augen.“
 ziehungsprozess hätte die NS-Verbrechen, vermittelt über die Prozesse und ihre Ermitt-
 lungsergebnisse, als Anschauungsmaterial greifbar vor sich gehabt. Walter Gagel nennt
 als Abwehrgründe Barrieren gegenüber der Besatzungspolitik und negative Vorstellun-
-FOOTNOTE:gen über das US-amerikanische Schulsystem (Gagel 1994, S. 39–42).
+gen über das US-amerikanische Schulsystem (Gagel 1994, S. 39–42).
 
 
 Die Re-Education, die von der pragmatistischen Erziehungsphilosophie John Deweys
@@ -1772,7 +1772,7 @@ befinden sich die Lehrenden (oder die Bildungsinstitutionen oder die Lehrmateria
 im Besitz einer gültigen Wahrheit, die die Lernenden lediglich nachzuvollziehen haben.
 
 
-FOOTNOTE:Anders ein drittes Denkmuster - hier dient politische Bildung einer eigenständigen Aus-
+Anders ein drittes Denkmuster - hier dient politische Bildung einer eigenständigen Aus-
 einandersetzung der Lernenden mit dem Wirklichkeitsbereich Politik, ohne die Ergeb-
 nisse dieser Auseinandersetzung, die politischen Meinungen, Urteile und Überzeugun-
 gen, zu denen die Lernenden im Einzelnen kommen können, vorwegnehmen zu wollen.
@@ -1817,10 +1817,10 @@ gelegt werden.
 
 Das Recht als Strukturelement der politisch-gesellschaftlichen Ordnung und Gestal-
 tung war der politischen Bildung an sich nicht fremd. Sie findet immer – nach einer For-
-mulierung von Oetinger/Wilhelm – im „Horizont des Rechtes“75 statt. Im Rückblick von
+mulierung von Oetinger/Wilhelm – im „Horizont des Rechtes“$$$75$$$ statt. Im Rückblick von
 1965 aus beklagt Friedrich Oetinger, der inzwischen wieder seinen Namen Theodor Wil-
-helm angenommen hatte$$$76$$$, die zu unpolitische Rechtsstaatlichkeit der Bildungsdiskussion
-FOOTNOTE:der Nachkriegszeit (Wilhelm 1965, S. 423–426).
+helm angenommen hatte76, die zu unpolitische Rechtsstaatlichkeit der Bildungsdiskussion
+der Nachkriegszeit (Wilhelm 1965, S. 423–426).
 
 
 Fachliche Ansätze wurden allerdings auch von der Bundesregierung nicht gefordert
@@ -1832,7 +1832,7 @@ menhang der Bundeszentrale für Politische Bildung (seit 1963) aus dem Heimatdie
 Deutscher Osten. Aus der Vorgeschichte berichtet sie diesen Vorgang: 1949 wurde als
 deutsches Pendant einer in Frankfurt am Main ansässigen US-amerikanischen Einrich-
 tung namens Institute of Public Affairs das Institut zur Förderung öffentlicher Angele-
-genheiten77 gegründet (Hentges 2015, S. 70–72). „Als Verbindungsmänner der amerika-
+genheiten$$$77$$$ gegründet (Hentges 2015, S. 70–72). „Als Verbindungsmänner der amerika-
 nischen Militärregierung waren Dr. Kurt Glaser sowie Prof. Dr. Robert Max Wasilii
 Kempner (1899 – 1994) tätig, der in den Nürnberger Kriegsverbrecherprozessen als Stell-
 vertreter des amerikanischen Chefanklägers Robert H. Jackson fungierte.“ (ebda., S. 71)
@@ -1861,13 +1861,13 @@ Heimatdienst ins Leben rufen wird.“ (zitiert nach Hentges 2015, S. 75)
 
 Wissenschaftlich-organisatorische Strukturen einer als Schulfach geplanten politischen
 Bildung gab es in der Zeit der Re-Education und der Frühphase der Bundesrepublik noch
-nicht, sodass die Aufgabe keinen direkten Adressaten hatte.78 Walter Eisenhart beschreibt
+nicht, sodass die Aufgabe keinen direkten Adressaten hatte.$$$78$$$ Walter Eisenhart beschreibt
 den Prozess der Institutionalisierung der schulischen politischen Bildung in den Jahren
 1948–1955 im Spannungsfeld von etabliertem Geschichtsunterricht und der Konstitution
 eines neuen Schulfaches. Eine Verortung der rechtlichen ‚Vergangenheitsbewältigung‘
-lässt sich in diesem Feld nicht finden.79 Im Rückblick ist es somit als verpasste Gelegen-
+lässt sich in diesem Feld nicht finden.$$$79$$$ Im Rückblick ist es somit als verpasste Gelegen-
 heit zu sehen, dass die Perspektive auf eine erneuerte Rechtsstaatlichkeit nicht mit der
-FOOTNOTE:völkerrechtlichen Thematik der Nürnberger Prozesse verbunden wurde.80
+völkerrechtlichen Thematik der Nürnberger Prozesse verbunden wurde.80
 
 
 Gustav Radbruch

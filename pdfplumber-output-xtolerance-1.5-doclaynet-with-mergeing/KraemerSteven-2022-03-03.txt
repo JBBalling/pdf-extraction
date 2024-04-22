@@ -384,7 +384,7 @@ Diagnose als Richtlinie zu besitzen (Reed et al., 2013).
 
 Im Jahr 2019 verabschiedete die Weltgesundheitsorganisation (WHO) die elfte Revision
 der ICD. Sie enthält erstmals eine trauerspezifische Diagnose namens ,Prolonged Grief
-FOOTNOTE:Disorder (PGD)‘:
+Disorder (PGD)‘:
 
 
 „Prolonged grief disorder is a disturbance in which, following the death of a
@@ -436,7 +436,7 @@ Ansätze bieten. Einen ähnlichen Ansatz verfolgt Lund (1998).
 2.3! Intervention und Versorgung
 
 
-FOOTNOTE:$$$2$$$.3.1! Interventionen bei Trauernden
+2.3.1! Interventionen bei Trauernden
 
 
 Während Trauerreaktionen nach Trauerfällen für individuell einzigartig sind, wird
@@ -476,7 +476,7 @@ Unterstützungsbedarfs ermittelt werden, weshalb es sinnvoll erscheint, für die
 Trauerversorgung flexible und zielgerichtete Trauerdienste anzubieten.
 
 
-$$$2$$$.3.$$$2$$$! Trauerversorgung in Deutschland
+2.3.2! Trauerversorgung in Deutschland
 
 
 Obwohl sich das das Tätigkeitsfeld der Trauerversorgung in Deutschland vor über 30
@@ -528,7 +528,7 @@ Die Fragestellung nach dem Status quo der Trauerversorgung vor Einführung des I
 sorgungsstandard auf unterschiedlichen Ebenen abzubilden versucht.
 
 
-FOOTNOTE:-! Wer leistet die Trauerversorgung?
+-! Wer leistet die Trauerversorgung?
 
 
 -! Wie beschreiben sich die Akteur*innen hinsichtlich der Trauerversorgung selbst?
@@ -611,7 +611,7 @@ sollte abschließend angegeben werden, wie viele Trauernde pro Jahr die Interven
 Befragten in Anspruch nehmen, siehe Tabelle 1.
 
 
-FOOTNOTE:Tabelle 1 - Auswahlmöglichkeiten in Frage 16
+Tabelle 1 - Auswahlmöglichkeiten in Frage 16
 
 
 Des Weiteren wurden demografische und ausbildungsbezogene Merkmale erfasst (Ge-
@@ -731,7 +731,7 @@ Sozialpädagogen stellten dabei die größte Berufsgruppe mit 18,3% (17). Mit 44
 gab ein Großteil der Befragten hierbei keine Angabe ab.
 
 
-FOOTNOTE:Abbildung 3 - Zugrundeliegende Ausbildung der hauptberuflich tätigen (Antworten ohne Angabe wurden
+Abbildung 3 - Zugrundeliegende Ausbildung der hauptberuflich tätigen (Antworten ohne Angabe wurden
 nicht abgebildet)
 
 
@@ -754,7 +754,7 @@ Befragten, ihre Tätigkeit sowohl als ,Trauerberatung‘ wie auch als ,Trauerbeg
 bezeichnen.
 
 
-FOOTNOTE:Tabelle 3 - Berufsbezeichnung
+Tabelle 3 - Berufsbezeichnung
 
 
 Bei der Frage, welche Art von Psychotherapie angeboten wird, falls eine
@@ -846,7 +846,7 @@ aufzunehmen. 71% (291) nehmen die Versorgung erst nach Eintritt des Todesfalls a
 und 10% machten keine Angabe.
 
 
-FOOTNOTE:Abbildung 10 - Zeitpunkt der Aufnahme der Trauerversorgung bei Verlust durch Krankheit mit Leidenszeit
+Abbildung 10 - Zeitpunkt der Aufnahme der Trauerversorgung bei Verlust durch Krankheit mit Leidenszeit
 
 
 Auch hier lässt sich bei weiterer Unterteilung nach Tätigkeitsform feststellen, dass mit
@@ -864,7 +864,7 @@ vorhanden „keine Angabe“ aufgeführt. Dabei war es möglich, Mehrfachantwort
 geben.
 
 
-FOOTNOTE:Tabelle 4 - Berufsgruppen mit entsprechender Tätigkeitsform (Auswahlmöglichkeit "Andere" (30) nicht
+Tabelle 4 - Berufsgruppen mit entsprechender Tätigkeitsform (Auswahlmöglichkeit "Andere" (30) nicht
 abgebildet) bei Verlust durch Krankheit mit Leidenszeit & Intervention nach Eintritt des To-
 desfalls
 
@@ -887,7 +887,7 @@ die Befragten an, standardisierte psychologische Fragebögen zu verwenden. Hierb
 es möglich, Mehrfachantworten zu geben.
 
 
-FOOTNOTE:Tabelle 6 - Verwendete diagnostische Mittel bei der Eingangsdiagnostik (Gesamtzahl 177)
+Tabelle 6 - Verwendete diagnostische Mittel bei der Eingangsdiagnostik (Gesamtzahl 177)
 
 
 In 32,2% (132) der Fälle erfolgte am Ende der Versorgung eine Erfolgskontrolle während
@@ -915,7 +915,7 @@ wurde, zeigte sich ein sehr heterogenes Bild. Die fünf am Häufigsten genannten
 Einrichtungen waren:
 
 
-FOOTNOTE:-! Trauerinstitut Deutschland e.V., Chris Paul
+-! Trauerinstitut Deutschland e.V., Chris Paul
 
 
 -! Akademie für menschliche Begleitung, Dr. Jorgos Canacakis
@@ -965,7 +965,7 @@ bestimmtes Konzept dabei verfolgen. Bei den zwischen 11 bis 20 Jahre im selbigen
 Bereich Arbeitenden liegt der Anteil bei 31,9% (44).
 
 
-FOOTNOTE:Abbildung 12 - Unterschiedlich lange Berufserfahrung und dabei Vorliegen eines bestimmten Konzeptes
+Abbildung 12 - Unterschiedlich lange Berufserfahrung und dabei Vorliegen eines bestimmten Konzeptes
 sowie einer trauerspezifischen Zusatzausbildung (Berufserfahrung von 21 - 30 Jahren sowie >30
 Jahren hier nicht abgebildet)
 
@@ -1262,7 +1262,7 @@ Personen an der Erhebung teil, wovon 410 Antworten deskriptiv ausgewertet werden
 konnten.
 
 
-FOOTNOTE:Die Erhebung ergab, dass die Berufserfahrung bei 57,6% der Befragten bei weniger als
+Die Erhebung ergab, dass die Berufserfahrung bei 57,6% der Befragten bei weniger als
 10 Jahren liegt. Mit 45,4% gaben 186 Personen an, ihre Tätigkeit hauptberuflich
 auszuüben, wovon die Hälfte eine trauerspezifische Zusatzausbildung vorweisen kann.
 Die Akteure der Trauerversorgung bezeichnen sich in 80,2% als Trauerbegleiter*innen,

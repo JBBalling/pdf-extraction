@@ -16,9 +16,6 @@ genehmigte Dissertation von
 M. Sc. Christian Ralf Otto
 
 
-2023
-
-
 Prof. Dr. Ralph Ewerth
 Prof. Dr. Johannes Krugel
 20.02.2023
@@ -236,7 +233,7 @@ This section provides a selection of related work to provide context for the res
 tions and associated contributions in this thesis. Search as Learning is the interdisciplinary
 research area that deals with all topics surrounding Web-based learning. That entails
 thoroughly investigating every aspect of learning sessions with an informational search
-FOOTNOTE:intent (besides transactional or navigational intents [34]), thus implying the intent to acquire
+intent (besides transactional or navigational intents [34]), thus implying the intent to acquire
 knowledge. Search as Learning (SAL) is considered interdisciplinary, because it considers
 insights and techniques from psychology, educational sciences, and computer science. As
 stated by Hoppe et al. [113], this encompasses (a) improving the retrieval and ranking
@@ -303,7 +300,7 @@ understand and, consequently, index the plethora of multimodal information assoc
 with them to recommend optimal learning resources to learners based on their individual
 needs and knowledge states. The following subsections highlight the individual steps
 and challenges towards this goal. Motivated by these open questions, we will derive the
-FOOTNOTE:research questions that we will answer in the upcoming chapters.
+research questions that we will answer in the upcoming chapters.
 
 
 1.3.1 Exploiting Textual Metadata to improve Web-based Learning
@@ -341,7 +338,7 @@ main. These considerations, together with the mentioned shortcomings of popular 
 recommendation and video summarization techniques, raise our first research question:
 
 
-FOOTNOTE:Research Question 1
+Research Question 1
 
 
 How can we utilize textual metadata associated with learning content to improve
@@ -373,7 +370,7 @@ been published for the purpose of DLA on Web documents, yet. Besides the missing
 components of the learning resource, recent works [293] showed that the consideration
 of behavioral features summarizing the interaction of the learner with the computer, and
 resource features that provide statistics (e.g., readability, complexity, linguistics) about the
-FOOTNOTE:content, are beneficial for Knowledge Gain (KG) prediction as well.
+content, are beneficial for Knowledge Gain (KG) prediction as well.
 
 
 Even though multimodal feature extraction is already a complex task, it is only a prepro-
@@ -422,7 +419,7 @@ hypotheses to be proven. Lastly, the pre- and post-knowledge questionnaires must
 chosen to capture the respective knowledge states given a topic, but not too easy to allow
 for guessing the correct answers by the elimination method. The sum of these parameters
 influence how well the gathered results generalize to other experiments and, thus, the
-FOOTNOTE:external validity of this kind of experiment.
+external validity of this kind of experiment.
 
 
 Elaborate studies that record all types of interdisciplinary data, meaning knowledge
@@ -461,7 +458,7 @@ it as the lack of coincidence between the information in visual data and their p
 interpretations. Due to the semantic gap, images and text are very rarely able to portray
 the same information [103, 104]. Conversely, in most cases they are meant to complement
 each other with one being dominant regarding the amount of information brought into
-FOOTNOTE:the joint message.
+the joint message.
 
 
 To get a basic understanding of these interplays, it is beneficial to define a set of inter-
@@ -489,7 +486,7 @@ Based on insights from linguistics and visual communications, how can we derive
 computational models that describe the relationship between image and text?
 
 
-FOOTNOTE:1.4 Contributions
+1.4 Contributions
 
 
 1.4.1 Improving Video Learning Platforms with Text-Based Features
@@ -550,22 +547,22 @@ methods, specifically multimodal embeddings, can be utilized to predict these me
 about 240 000 image-text pairs, which is available to the public (Chapter 5).
 
 
-FOOTNOTE:1.5 List of Publications
+1.5 List of Publications
 
 
 The following papers have been published in the context of this thesis. As in most
 academic work, other authors have contributed to a certain extent to these publications.
 Thus, the academic we is used throughout this thesis. Below the individual abstracts my
-FOOTNOTE:contributions to each respective paper are listed under My Contributions according to
+contributions to each respective paper are listed under My Contributions according to
 the Contributor Roles Taxonomy (CRediT) [28].
 
 
 Two papers have been published at conferences ranked A ([202, 201] and three at confer-
-FOOTNOTE:ences ranked B ([177, 304, 200] according to the Australian Computing Research & Education
-(CORE$$$1$$$) Conference Portal (source: CORE2021). ”Understanding, Categorizing and Predicting
-Semantic Image-Text Relations“ [$$$200$$$] received the Best Paper Award at the ACM International
+ences ranked B ([177, 304, 200] according to the Australian Computing Research & Education
+(CORE1) Conference Portal (source: CORE2021). ”Understanding, Categorizing and Predicting
+Semantic Image-Text Relations“ [200] received the Best Paper Award at the ACM International
 Conference for Multimedia Retrieval 2019 and was subsequently invited as an extended
-version called ”Characterization and classification of semantic image-text relations“ [$$$199$$$] in
+version called ”Characterization and classification of semantic image-text relations“ [199] in
 the International Journal of Multimedia Information Retrieval (IJMIR). The paper entitled
 ”Investigating Correlations of Automatically Extracted Multimodal Features and Lecture Video
 Quality“ [240] was presented at the International Workshop on Search as Learning with Mul-
@@ -605,7 +602,7 @@ recommending semantically similar videos. A user study demonstrates the feasibil
 of the proposed approach.
 
 
-FOOTNOTE:My Contributions: Conceptualization, Formal Analysis, Project administration,
+My Contributions: Conceptualization, Formal Analysis, Project administration,
 Supervision, Validation, Visualization, Writing – original draft, Writing – review &
 editing
 
@@ -633,7 +630,7 @@ platform for scientific videos. The accuracy and usefulness of the generated vid
 content visualizations is evaluated in a user study.
 
 
-FOOTNOTE:My Contributions: Conceptualization, Formal Analysis, Project administration,
+My Contributions: Conceptualization, Formal Analysis, Project administration,
 Supervision, Validation, Visualization, Writing – original draft, Writing – review &
 editing
 
@@ -650,14 +647,14 @@ learning in an informal setting in a larger lab study, the creation of an extens
 and proposes a novel multimedia extraction framework for subsequent knowledge gain
 prediction. This work is published in the ”SaL-Lightning Dataset: Search and Eye Gaze
 Behavior, Resource Interactions and Knowledge Gain during Web Search“ [198] and ”Predicting
-FOOTNOTE:Knowledge Gain During Web Search Based on Multimedia Resource Consumption“ [202].
+Knowledge Gain During Web Search Based on Multimedia Resource Consumption“ [202].
 
 
 [240] Jianwei Shi, Christian Otto, Anett Hoppe, Peter Holtz, and Ralph Ewerth. “Inves-
 tigating Correlations of Automatically Extracted Multimodal Features and Lecture
 Video Quality”. In: Proceedings of the 1st International Workshop on Search as Learning
 with Multimedia Information. SALMM ’19. Nice, France: Association for Computing
-Machinery, 2019, pp. 11–19. isbn: 9781450369190. doi: $$$10$$$.1145/3347451.3356731
+Machinery, 2019, pp. 11–19. isbn: 9781450369190. doi: 10.1145/3347451.3356731
 
 
 Abstract: Ranking and recommendation of multimedia content such as videos is
@@ -676,7 +673,7 @@ ratings of quality aspects of a lecture video. Finally, the impact of our featur
 the knowledge gain of the participants is discussed.
 
 
-FOOTNOTE:My Contributions: Conceptualization, Formal Analysis, Project administration,
+My Contributions: Conceptualization, Formal Analysis, Project administration,
 Supervision, Validation, Visualization, Writing – original draft, Writing – review &
 editing
 
@@ -691,7 +688,7 @@ Vol. 13356. Lecture Notes in Computer Science. Springer, 2022, pp. 458–462. do
 10.1007/978-3-031-11647-6_92
 
 
-FOOTNOTE:Abstract: Informal learning on the Web using search engines as well as more
+Abstract: Informal learning on the Web using search engines as well as more
 structured learning on MOOC platforms have become very popular. However,
 the automatic assessment of this content with regard to the challenging task of
 predicting (potential) knowledge gain has not been addressed by previous work
@@ -706,7 +703,7 @@ insights in which modality benefits knowledge gain prediction the most.
 Source Code: https://github.com/TIBHannover/mooc_knowledge_gain
 
 
-FOOTNOTE:My Contributions: Conceptualization, Formal Analysis, Project administration,
+My Contributions: Conceptualization, Formal Analysis, Project administration,
 Supervision, Validation, Visualization, Writing – original draft, Writing – review &
 editing
 
@@ -740,11 +737,11 @@ Hoppe, Peter Holtz, Yvonne Kammerer, Stefan Dietze, and Ralph Ewerth. “Predict
 Knowledge Gain During Web Search Based on Multimedia Resource Consumption”.
 In: Artificial Intelligence in Education - 22nd International Conference, AIED 2021, Utrecht,
 The Netherlands, June 14-18, 2021, Proceedings, Part I. vol. 12748. Lecture Notes in
-FOOTNOTE:Computer Science. Springer, 2021, pp. 318–330. doi: 10.1007/978-3-030-78292-4
+Computer Science. Springer, 2021, pp. 318–330. doi: 10.1007/978-3-030-78292-4
 _26
 
 
-FOOTNOTE:Abstract: In informal learning scenarios the popularity of multimedia content, such
+Abstract: In informal learning scenarios the popularity of multimedia content, such
 as video tutorials or lectures, has significantly increased. Yet, the users’ interactions,
 navigation behavior, and consequently learning outcome, have not been researched
 extensively. Related work in this field, also called search as learning, has focused
@@ -778,18 +775,18 @@ network-based method for automatic classification.
 [200] Christian Otto, Matthias Springstein, Avishek Anand, and Ralph Ewerth. “Under-
 standing, Categorizing and Predicting Semantic Image-Text Relations”. In: Proceed-
 ings of the 2019 on International Conference on Multimedia Retrieval, ICMR 2019, Ottawa,
-ON, Canada, June 10-13, $$$2019$$$. Ed. by Abdulmotaleb El-Saddik, Alberto Del Bimbo,
+ON, Canada, June 10-13, 2019. Ed. by Abdulmotaleb El-Saddik, Alberto Del Bimbo,
 Zhongfei Zhang, Alexander G. Hauptmann, K. Selçuk Candan, Marco Bertini, Lexing
-Xie, and Xiao-Yong Wei. ACM, 2019, pp. 168–176. doi: $$$10$$$.1145/3323873.3325049
+Xie, and Xiao-Yong Wei. ACM, 2019, pp. 168–176. doi: 10.1145/3323873.3325049
 
 
 [199] Christian Otto, Matthias Springstein, Avishek Anand, and Ralph Ewerth. “Character-
 ization and classification of semantic image-text relations”. In: International Journal of
-FOOTNOTE:Multimedia Information Retrieval 9.1 (2020), pp. 31–45. doi: 10.1007/s13735-019-001
+Multimedia Information Retrieval 9.1 (2020), pp. 31–45. doi: 10.1007/s13735-019-001
 87-6
 
 
-FOOTNOTE:Abstract: The beneficial, complementary nature of visual and textual information to
+Abstract: The beneficial, complementary nature of visual and textual information to
 convey information is widely known, for example, in entertainment, news, advertise-
 ments, science, or education. While the complex interplay of image and text to form
 semantic meaning has been thoroughly studied in linguistics and communication
@@ -807,7 +804,7 @@ classes. Experimental results show the feasibility of the approach, whereby the
 predict-all approach outperforms the cascaded approach of the metric classifiers.
 
 
-FOOTNOTE:My Contributions: Conceptualization, Data curation, Formal analysis, Investigation,
+My Contributions: Conceptualization, Data curation, Formal analysis, Investigation,
 Methodology, Project administration, Software, Validation, Visualization, Writing –
 original draft, Writing – review & editing
 
@@ -820,49 +817,49 @@ topic, and will therefore not be covered in this thesis:
 - Predicting the Relative Abstractness Level of Image and Text”. In: Advances in
 Information Retrieval - 41st European Conference on IR Research, ECIR 2019, Cologne,
 Germany, April 14-18, 2019, Proceedings, Part I. vol. 11437. Lecture Notes in Computer
-Science. Springer, 2019, pp. 711–725. doi: $$$10$$$.$$$10$$$07/978-3-030-15712-8_46
+Science. Springer, 2019, pp. 711–725. doi: 10.1007/978-3-030-15712-8_46
 
 
 [117] Johannes von Hoyer, Anett Hoppe, Yvonne Kammerer, Christian Otto, Georg Pardi,
 Markus Rokicki, Ran Yu, Stefan Dietze, Ralph Ewerth, and Peter Holtz. “The
 Search as Learning Spaceship: Toward a Comprehensive Model of Psychological
 and Technological Facets of Search as Learning”. In: Frontiers in Psychology 13 (Mar.
-2022). doi: $$$10$$$.3389/fpsyg.2022.827748
+2022). doi: 10.3389/fpsyg.2022.827748
 
 
 [70] Ralph Ewerth, Christian Otto, and Eric Müller-Budack. “Computational Approaches
 for the Interpretation of Image-Text Relations”. In: Oct. 2021, pp. 109–138. isbn:
-9783110725001. doi: $$$10$$$.1515/97831$$$10$$$725001-005
+9783110725001. doi: 10.1515/9783110725001-005
 
 
 [188] Markus Mühling, Nikolaus Korfhage, Eric Müller, Christian Otto, Matthias Spring-
 stein, Thomas Langelage, Uli Veith, Ralph Ewerth, and Bernd Freisleben. “Deep
 learning for content-based video retrieval in film and television production”. In:
-FOOTNOTE:vol. 76. 21. 2017, pp. 22169–22194. doi: 10.1007/s11042-017-4962-9
+vol. 76. 21. 2017, pp. 22169–22194. doi: 10.1007/s11042-017-4962-9
 
 
 [189] Eric Müller, Christian Otto, and Ralph Ewerth. “Semi-supervised Identification of
 Rarely Appearing Persons in Video by Correcting Weak Labels”. In: Proceedings of
 the 2016 ACM on International Conference on Multimedia Retrieval, ICMR 2016, New
-FOOTNOTE:York, New York, USA, June 6-9, $$$2016$$$. ACM, 2016, pp. 381–384. doi: 10.1145/2911996
+York, New York, USA, June 6-9, 2016. ACM, 2016, pp. 381–384. doi: 10.1145/2911996
 .2912073
 
 
 1.6 Organization of this Thesis
 
 
-FOOTNOTE:Chapter 1 introduces the aspects and challenges associated with multimedia learning
+Chapter 1 introduces the aspects and challenges associated with multimedia learning
 that are addressed in this thesis. It defines problems and states research questions that
 we will answer. Chapter 2 covers the fundamentals of the key techniques utilized in our
 methodologies. That entails neural network basics and their relevant applications for
 uni- and multimodal representations and a selection of classifiers we utilized. Chapter 3
 introduces multiple ways of exploiting textual features to improve educational search
-engines based on previously extracted text-based metadata. Following up in Chapter $$$4$$$,
+engines based on previously extracted text-based metadata. Following up in Chapter 4,
 we contribute two user studies that resemble learning in formal and informal settings
 to reveal interesting connections between consumed learning resources and knowledge
 gain. In particular, our workflow entails a comprehensive feature extraction process
 covering individual methods for audio, visual, audio-visual, textual, and behavioral
-features, followed by an extensive correlation analysis. Afterward, Chapter $$$5$$$ assesses
+features, followed by an extensive correlation analysis. Afterward, Chapter 5 assesses
 this topic from a different angle. In reality, creators of multimodal content intend their
 information to be understood in unison, meaning ”Which message does, for example,
 image and text convey *together*? “, rather than individually. So, this final chapter
@@ -871,7 +868,7 @@ automatic understanding of multimodal content. We propose a categorization of se
 image-text classes derived from communication science and extend with recent proposals
 of computable image-text metrics from computer science. Finally, we demonstrate the
 utility of these metrics by evaluating their applicability on two unseen datasets. Finally,
-FOOTNOTE:Chapter 6 summarizes the various topics covered by this thesis and consolidates the
+Chapter 6 summarizes the various topics covered by this thesis and consolidates the
 findings, outlines limitations, and derives avenues for future work.
 
 
@@ -885,7 +882,7 @@ algorithms covered in this thesis.
 2 Foundations
 
 
-FOOTNOTE:2.1 Introduction
+2.1 Introduction
 
 
 This chapter presents a number of approaches and techniques we will leverage in the
@@ -973,7 +970,7 @@ With some exceptions (e.g., Gated Recurrent Units (GRUs) [42]), a typical neural
 consists solely of neurons arranged into layers, hierarchical tiers starting from the input
 layer, over a variable amount of hidden layers, to the output layer. The desired input data
 determines the input layer’s shape. For example, a visual concept classifier expecting a
-$$$30$$$x$$$30$$$ pixel, 4-channel image requires $$$30$$$x$$$30$$$x4 = 3600 input neurons. The output, on the
+30x30 pixel, 4-channel image requires 30x30x4 = 3600 input neurons. The output, on the
 other hand, is determined by the problem to solve. If we label two classes for our visual
 concept classifier, the neural network would have two output neurons, one for each class,
 as in Figure 2.2. So-called feedforward networks are then trained by feeding training samples
@@ -982,7 +979,7 @@ networks are generally supervised approaches, each sample has an associated labe
 the end of a forward step, the predicted outcome is compared to the expected output by
 means of a cost function. This function, which again differs based on the given problem,
 returns a value representing the difference between the ground truth and prediction value.
-FOOTNOTE:By propagating this loss backward through the neural network, adjusting weights and
+By propagating this loss backward through the neural network, adjusting weights and
 biases of the neurons along the way, the potential error of the network is reduced the next
 time it sees a similar sample. We go further into detail in Section 2.2.4.
 
@@ -1005,11 +1002,11 @@ further summarize the information of the feature map, a pooling operation is app
 Most commonly a MaxPooling operation, as shown in Figure 2.3. It only retains the
 maximum element of a certain region of the feature map and thus, depending on the
 size of the pooling kernel, reduces the dimensionality of the input even further. Current
-state-of-the-art approaches are ConvNeXt [157], EfficientNet [256], MobileNetV2 [228],
+state-of-the-art approaches are ConvNeXt [157], EfficientNet [256], MobileNetV$$$2$$$ [228],
 and ResNeXt [287].
 
 
-FOOTNOTE:Figure 2.3: The general idea of convolutional layers for image encoding. A
+Figure 2.3: The general idea of convolutional layers for image encoding. A
 filter is convolved with the input image to reduce its dimensionality. After
 pooling the dimensions of the original image are reduced from 36 to 4
 while the most important information, with regards to the filter kernel, are
@@ -1040,9 +1037,9 @@ sequence of our input data X t, the hidden state H t−1 of the unit that encode
 token in our data, see Figure 2.4. At time step t, both X t and H t−1 have to pass through
 
 
-the Reset Gate where the GRU decides whether to retain the information in H t−1 or discard
+FOOTNOTE:the Reset Gate where the GRU decides whether to retain the information in H t−1 or discard
 it, In other words, it resets what the network has learned so far, see Equation 2.2. This
-FOOTNOTE:decision is influenced by the activation function a, the weight matrices W , W , and the xr hr
+decision is influenced by the activation function a, the weight matrices W , W , and the xr hr
 bias b . r
 
 
@@ -1060,12 +1057,12 @@ a bias b , and a sigmoid function are part of the equation. h
 
 
 2.2: This equation computes the candidate hidden state depending on the
-FOOTNOTE:input Xt and the information retained from H t−1, which is decided by Rt.
+input Xt and the information retained from H t−1, which is decided by Rt.
 
 
 Finally, the Update gate Z determines to what extent the candidate hidden state (or the t
 new information given by the current input X ) influences the already existing memory t
-from all the previously seen tokens H t−$$$1$$$. Similar to the Reset gate, due to the sigmoid
+from all the previously seen tokens H t−1. Similar to the Reset gate, due to the sigmoid
 activation, a value between 0 and 1 is calculated, see Equation 2.4. This value enables the
 computation of the output of the GRU, which is a weighted combination of the previous
 memory H t−1 and the candidate hidden state H˜ t according to Equation 2.5.
@@ -1074,7 +1071,7 @@ memory H t−1 and the candidate hidden state H˜ t according to Equation 2.5.
 Z t = σ(X tW xz + H t−1W hz + b z)
 
 
-FOOTNOTE:2.3: This equation computes the a value between [0,1] to determine to which
+2.3: This equation computes the a value between [0,1] to determine to which
 extent new information influences the already established memory of the
 network.
 
@@ -1112,7 +1109,7 @@ for multiple reasons. It satisfies all requirements for an activation function, 
 
 
 As a bonus, the derivative required for back-propagation (cf. Section 2.2.4) of σ is
-simply σ′(x) = σ(x)($$$1$$$ − σ(x)). It fell out of popularity because of the vanishing gradient
+simply σ′(x) = σ(x)(1 − σ(x)). It fell out of popularity because of the vanishing gradient
 problem [110]. Neural networks learn by applying gradient descent [137] to the results of
 their cost functions E after passing a training sample through the network. That means
 they compute the derivative E′ and utilize it to adjust the weights and biases in the network.
@@ -1123,12 +1120,12 @@ or tiny input values return a gradient close to 0 (the gradient ”vanished“).
 these small values have on the training diminishes the further we go backward through
 the hidden layers during back-propagation. This leads to the network getting stuck and
 being unable to find a useful solution during training. The vanishing gradient problem also
-FOOTNOTE:occurs for the tanh activation function which is related to sigmoid by tanh(x) = 2σ(2x) − 1.
+occurs for the tanh activation function which is related to sigmoid by tanh(x) = 2σ(2x) − 1.
 
 
 An even simpler function that does not suffer from vanishing gradients and is therefore
 commonly used in Deep Learning is the Rectified Linear Unit (ReLU)[191] defined as
-a(x) = max{$$$0$$$, x}. ReLUs are nearly linear. That means they preserve many properties
+a(x) = max{0, x}. ReLUs are nearly linear. That means they preserve many properties
 that make linear models easy to optimize with gradient-based methods. Even though
 they are not continuous at x = 0, the gradient can still be defined as either 0 or 1 without
 introducing too much error. While this original design works sufficiently well in general,
@@ -1152,8 +1149,8 @@ task. It does so by calculating a gradient of the cost function after each sampl
 training dataset, or, if that is not feasible due to hardware restrictions, each sample of the
 current batch (which equals a shuffled subset of the training data) has passed through
 the network. The optimizer then decides, according to the chosen learning rate lr, to
-FOOTNOTE:which extent this gradient will influence the weights wk and biases bk of the network. i,j i
-FOOTNOTE:These weights and biases are commonly summarized as the parameters θ = {wk , bk} of i,j i
+which extent this gradient will influence the weights wk and biases bk of the network. i,j i
+These weights and biases are commonly summarized as the parameters θ = {wk , bk} of i,j i
 the network. Following the slope of the cost function step by step in the direction of this
 computed gradient reduces the error produced by the dataset predictions P compared to
 the ground-truth labels Yˆ. For this explanation, we consider a simple yet commonly used
@@ -1210,7 +1207,7 @@ this particular weight.
 
 
 Verbatim, these equations can be understood as: the influence weight wl has on the jk
-FOOTNOTE:cost function E is determined by the outputs of neuron k in layer l − 1 called al−1, the k
+cost function E is determined by the outputs of neuron k in layer l − 1 called al−1, the k
 derivative of the activation function of the neuron it is connected to with respected to the
 weighted sum, called a′(zj), and, the influence of that same activation function on the cost l
 function E. Afterward, this last term is then substituted for either the derivative of all
@@ -1231,7 +1228,7 @@ reconstruct the input sample as similar as possible based on this embedding. Fig
 outlines these basic components.
 
 
-FOOTNOTE:Figure 2.6: Simplistic structure of an autoencoder. Detailed architecture
+Figure 2.6: Simplistic structure of an autoencoder. Detailed architecture
 of the encoder and decoder component depends on the modality to be
 encoded.
 
@@ -1241,7 +1238,7 @@ next. Early applications utilized autoencoder for denoising all types of imagery
 encoding noisy images and thus reducing them to their key information, the noise will be
 dismissed, and the reconstruction returns a clean(er) image. Another field of applications
 are compression algorithms. For most use cases, autoencoder-based compression methods
-can have disadvantages when compared to traditional algorithms such as JPEG2000 [257]
+can have disadvantages when compared to traditional algorithms such as JPEG$$$2000$$$ [257]
 or BPG [26] in terms of general applicability, the requirement for training samples, and
 compression performance. However, recent state-of-the-art approaches [43, 87] showed
 comparable performances for the error introduced by compression measure by the peak
@@ -1251,7 +1248,7 @@ purpose of neural network-based machine learning, autoencoders are mainly utiliz
 two ways. Due to their capabilities of learning salient representations in a self-supervised
 manner, the required number of labeled samples for an application can be reduced
 significantly. For example, a classification network, as in Figure 2.2 has to learn how
-FOOTNOTE:to encode an image and how to predict the desired output. With an autoencoder, this
+to encode an image and how to predict the desired output. With an autoencoder, this
 representation could be learned beforehand with a much larger number of samples. Then,
 the decoder part of the network would be replaced with a set of fully-connected layers
 for classification that will be trained with the labeled samples. Finally, by introducing a
@@ -1274,7 +1271,7 @@ similar or not
 
 
 2. align visual and textual encodings to describe their relation to one another (cf.
-FOOTNOTE:Chapter 5)
+Chapter 5)
 
 
 3. detect antonyms or positive and negative connotations
@@ -1358,7 +1355,7 @@ potent for languages with many compound words, like German. This is another reas
 fastText is used in this thesis since the experiments in Chapter 3 are based on a german
 dataset. Additionally, the authors utilize angular brackets to denote the start and end of a
 word, see Figure 2.10. Lastly, they append the entire word to the bag of n-grams as well.
-FOOTNOTE:With this, shorter words like <her> can be distinguished from words they appear in, like
+With this, shorter words like <her> can be distinguished from words they appear in, like
 <gather>.
 
 
@@ -1402,7 +1399,7 @@ A simple example tailored to our use case would be a dataset that contains four 
 samples, with two achieving a high knowledge gain, while the others achieved a moderate
 and low result. Also, one numerical feature time was recorded that measures the time edu
 spent on educational websites compared to the overall study time. In the beginning, the
-FOOTNOTE:entropy or impurity of the dataset is
+entropy or impurity of the dataset is
 
 
 2.9: Entropy of the input dataset. Label high constitutes 50% of the samples while the other two
@@ -1411,7 +1408,7 @@ occur only 25% of the time.
 
 Separating the four samples by a rule that divides the participants by, for instance,
 whether they spent more than 15 minutes on educational websites would separate the
-FOOTNOTE:data labels into two subsets: high, high and moderate, low. The resulting information gain is
+data labels into two subsets: high, high and moderate, low. The resulting information gain is
 a result of the initial entropy minus the sum of the weighted entropies of the two subsets
 S:
 

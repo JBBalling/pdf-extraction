@@ -283,7 +283,7 @@ In einer engen Abhängigkeit zur Beantwortung der vorangegangenen Fragen des Umf
 und der Detaillierung ist in Folge auch eine Entscheidung über die zu verwendende
 Notation(en) und somit auch eine Auswahl der zu verwendenden Diagrammarten und
 Elemente zu fällen. So können z.B. Prozesse mit verschiedenen Notationsarten modelliert
-werden (z.B. BPMN$$$2$$$-Process vs. UML$$$3$$$-Activity).
+werden (z.B. BPMN2-Process vs. UML3-Activity).
 
 
 Wurde eine Entscheidung zugunsten der Modellierung getroffen, sind die wichtigsten
@@ -308,8 +308,8 @@ tationsfreie Vorgaben in der Modellierung
 ständnissen, Fehlinterpretationen und Abstimmungsaufwänden
 
 
-$$$2$$$siehe auch Kapitel 2.4.2 Business Process Model and Notation (BPMN)
-$$$3$$$siehe auch Kapitel 2.4.3 Unified Modeling Language (UML)
+2siehe auch Kapitel 2.4.2 Business Process Model and Notation (BPMN)
+3siehe auch Kapitel 2.4.3 Unified Modeling Language (UML)
 
 
 • Einhaltung zeitlicher Zielvorgaben unter Beibehaltung der zu Projektstart defi-
@@ -334,7 +334,7 @@ weitere Dimension der strukturellen Information erweitert und verfeinert werden.
 
 Am Beispiel der grafische Prozessmodellierung sei erwähnt, dass diese mittlerweile auch
 in verschiedenen Projektstandards und Normen empfohlen, umgesetzt und angewendet
-wird. Zu nennen sind hier z.B. verschiedene Bereiche in ITIL®$$$4$$$ oder auch verschiedenen
+wird. Zu nennen sind hier z.B. verschiedene Bereiche in ITIL®4 oder auch verschiedenen
 ISO-Normen (z.B. ISO 9001:2015 [49]). Auf einer noch allgemeineren Ebene, die sich
 nicht nur auf die IT bezieht, wird z.B. in verschiedenen Phasen eines Six Sigma Projekts
 [40][41] die Erstellung von Prozessmodellen empfohlen.
@@ -362,10 +362,10 @@ werden, dass die Modelle die notwendige Qualität besitzen, damit aus diesen der
 Mehrwert entstehen kann.“
 
 
-$$$4$$$IT Infrastructure Library [7] 5
+4IT Infrastructure Library [7] 5
 
 
-$$$5$$$kITlasIsnifsrcahsetrSuOctAuremLitibkroamryp[l7e]xen Systemen vs. MicroServices mit kleinen in sich abgeschlossenen
+5kITlasIsnifsrcahsetrSuOctAuremLitibkroamryp[l7e]xen Systemen vs. MicroServices mit kleinen in sich abgeschlossenen
 Einheiten
 
 
@@ -449,7 +449,7 @@ bindliche Voraussetzung und Basis für den Projektabschluss fixiert worden, wär
 wertschöpfenden Verwendung dieser „Modellfriedhöfe“ nicht zum Problem geworden.
 
 
-$$$6$$$Hiervon ausgenommen sind zahlreiche Abhandlung über Softwarequalität.
+6Hiervon ausgenommen sind zahlreiche Abhandlung über Softwarequalität.
 
 
 In Projekten werden sehr oft nur ein bis zwei Schriftsprachen (z.B. Englisch und/oder
@@ -468,7 +468,7 @@ chenden Kenntnisstand der Projektbeteiligten in der Modellierung ausgegangen.
 
 
 Ein gerne gesagter Satz, ohne die Realität wirklich abzufragen, lautet: „Unsere Leute
-können alle UML$$$7$$$ bzw. BPMN$$$8$$$, die Modellierung ist kein Problem.“ Die Ergänzung,
+können alle UML$$$7$$$ bzw. BPMN8, die Modellierung ist kein Problem.“ Die Ergänzung,
 dass die genannten Personen dieses u.U. doch vor kurzem erst auf einer Schulung kennen
 gelernt haben, zeigt die fehlende Sensibilität für dieses Thema.
 
@@ -501,8 +501,8 @@ Erfahrungen, oft nur unzureichend Berücksichtigung finden:
 angestrebte Modellierungstiefe und der damit verbundenen Detaillierung?
 
 
-$$$7$$$Unified Modeling Language [69]
-$$$8$$$Business Process Model and Notation [65]
+7Unified Modeling Language [69]
+8Business Process Model and Notation [65]
 
 
 • Welche Notationen werden zur Modellierung gewählt und sind diese zur Erreichung
@@ -535,14 +535,14 @@ Dies soll in Abb. 1.2 beispielhaft dargestellt werden, in der zwei Blackbox-Syst
 
 Das System „BlackBoxSystem-1“ (BBS1) realisiert diese Schnittstelle und ein
 zweites System „BlackBoxSystem-2“ (BBS2) benötigt diese. So wird dies z.B. in der
-UML mit den entsprechenden Elementen für «realize»$$$9$$$ und «use»$$$10$$$ Beziehungen
+UML mit den entsprechenden Elementen für «realize»9 und «use»10 Beziehungen
 eindeutig definiert und dargestellt.
 
 
 Was kann nun aber für die weniger erfahrene modellierende Person eine „Realisie-
 rung“ bzw. „Verwendung“ bedeuten? Ihr ist vielleicht die Bedeutung des „Reali-
 sierungs“ Elements nicht bewusst. Für sie „wandern“ lediglich Daten immer von
-BBS1 zu BBS2. Den Aspekt einer „Hol- bzw. Bringschuld“ bzgl. der Daten werden
+BBS$$$1$$$ zu BBS2. Den Aspekt einer „Hol- bzw. Bringschuld“ bzgl. der Daten werden
 hier u.U. vielleicht nicht ausreichend berücksichtigt.
 
 
@@ -556,8 +556,8 @@ sorgen kann. Die Auswirkungen eines falschen Modells z.B. in einer serviceori-
 entierten Architektur können dann erheblich sein, da eine Schnittstelle anstatt
 
 
-$$$9$$$Definiert, dass das entsprechende System die in der Schnittstelle geforderte Funktionalität bereitstellt.
-$$$10$$$Definiert, dass das entsprechende System die in der Schnittstelle geforderte Funktionalität benötigt
+9Definiert, dass das entsprechende System die in der Schnittstelle geforderte Funktionalität bereitstellt.
+10Definiert, dass das entsprechende System die in der Schnittstelle geforderte Funktionalität benötigt
 bzw. verwendet.
 
 
@@ -618,12 +618,12 @@ Tatsache, dass dies ein grundsätzliches Problem darstellt, werden in dieser Dar
 die gebräuchlichen Phasen einer Produktentwicklung stark verallgemeinert von oben
 nach unten gezeigt, ohne hier auf ein bestimmtes Vorgehen (z.B. nach TOGAF® [90])
 genauer eingehen zu wollen. Die dargestellten Phasen können auch unabhängig von der
-Vorgehensweise (z.B. Wasserfallmodell$$$11$$$ vs. agile Softwareentwicklung$$$12$$$) angewendet
+Vorgehensweise (z.B. Wasserfallmodell$$$11$$$ vs. agile Softwareentwicklung12) angewendet
 und betrachtet werden.
 
 
-Der Bereich der „Quality of Service“13 (QoS) am Ende der Entwicklungsstrecke, mit der
-Überprüfung der Erfüllung der geforderten Servicevereinbarungen$$$14$$$, erhält aus meiner
+Der Bereich der „Quality of Service“$$$13$$$ (QoS) am Ende der Entwicklungsstrecke, mit der
+Überprüfung der Erfüllung der geforderten Servicevereinbarungen14, erhält aus meiner
 Erfahrung heraus die mit Abstand größte Aufmerksamkeit. Dieser Bereich wurde in der
 Vergangenheit intensivst und mehr oder weniger erfolgreich behandelt und in Projekten
 umgesetzt. Der Grund hierfür liegt in der „Greifbarkeit“ und somit der automatisierten
@@ -631,20 +631,20 @@ Testbarkeit der Ergebnisse. Dieser Bereich wird im Rahmen dieser Arbeit nicht we
 betrachtet.
 
 
-$$$11$$$Ein nicht iteratives Vorgehensmodell (siehe Kap. 7.2, bei dem die einzelnen Phasen nacheinander
+11Ein nicht iteratives Vorgehensmodell (siehe Kap. 7.2, bei dem die einzelnen Phasen nacheinander
 bis zur technischen Bereitstellung der geforderten Funktionalität durchlaufen werden. 12
 
 
-$$$12$$$z.B. mit Scrum, siehe Kap. 7.3, in der diese Phasen in kurzen Abständen iterativ wiederholt
+12z.B. mit Scrum, siehe Kap. 7.3, in der diese Phasen in kurzen Abständen iterativ wiederholt
 durchlaufen werden) werden die einzelnen Phasen iterative durchlaufen und das Projekt inkrementel
 realisiert.
 
 
-$$$13$$$Erfüllung der nicht funktionalen Anforderungen an den Service, wie z.B. Antwortzeiten, Wartezeiten,
+13Erfüllung der nicht funktionalen Anforderungen an den Service, wie z.B. Antwortzeiten, Wartezeiten,
 durchschnittliche Verfügbarkeit, max. tolerierte Ausfallzeiten 14
 
 
-$$$14$$$hier wird sehr häufig die englische Bezeichnung Service Level Agreements (SLA) verwendet
+14hier wird sehr häufig die englische Bezeichnung Service Level Agreements (SLA) verwendet
 
 
 Abb. 1.3: Zusammenführung von Projektphasen eines SOA-Projekts
@@ -678,7 +678,7 @@ der Modellierung unverständlicherweise sehr oft noch mehr aus. Die Bewertung un
 Untersuchung von Aspekten wie z.B. das Verhältnis von Codezeilen zu Kommentaren
 
 
-oder z.B. der Cyclomatic complexity15 als Teil von „Quality of Code“ (QoC) setzen jedoch
+oder z.B. der Cyclomatic complexity$$$15$$$ als Teil von „Quality of Code“ (QoC) setzen jedoch
 erst bei der Realisierung ein. Die Phase der Modellierung, die einer Realisierung (und dies
 gilt für Wasserfall-getriebene wie agile Projekte gleichermaßen) vorgelagert ist, wird im
 Bereich der Qualitätssicherung aufgrund ihrer bereits genannten „Nichtgreifbarkeit“ sehr
@@ -727,13 +727,13 @@ nur durch eine Verbesserung des Modellierungsprozesses erreicht werden.
 
 
 Diese Arbeit untersucht, ob durch die gezielte Anwendung der Six Sigma Vorgehens-
-weise$$$17$$$, die in der Industrie eine anerkannte und gelebte Vorgehensweise zur Qualitäts-
+weise17, die in der Industrie eine anerkannte und gelebte Vorgehensweise zur Qualitäts-
 
 
-$$$15$$$Beschreibt die möglichen Wege durch ein betrachtendes Softwaremodul 16
+15Beschreibt die möglichen Wege durch ein betrachtendes Softwaremodul 16
 
 
-$$$16$$$siehe hierzu Kapitel 7.2 Lineares Vorgehen 17
+16siehe hierzu Kapitel 7.2 Lineares Vorgehen 17
 
 
 17sSiieehhee hhiieerrzzuu KKaappiitteell 75.
@@ -831,18 +831,18 @@ gewertet und daraus mögliche Verbesserungen im angewendeten Modellierungsprozes
 herausgearbeitet.
 
 
-Dieses entwickelte Vorgehen trägt den Namen SixSigma$$$4$$$SOA und stellt das Ergebnis
+Dieses entwickelte Vorgehen trägt den Namen SixSigma4SOA und stellt das Ergebnis
 dieser Arbeit da.
 
 
 Die bereits aus Kap. 1.2 bekannten stark vereinfachten und gebräuchlichen Projektphasen
 zeigen in der vereinfachten Abb. 1.4 das Grundprinzip eines möglichen Modellierungs-
-prozesses$$$18$$$, bei dem nicht das Modell mit seinen Inhalten verändert, sondern der damit
+prozesses18, bei dem nicht das Modell mit seinen Inhalten verändert, sondern der damit
 verbundene Modellierungsprozess optimiert werden soll. Hierdurch soll eine notwendige
 Rückkopplung von den Modelldefiziten auf die verantwortlichen Ursachen analysiert und
 
 
-$$$18$$$Dies ist unabhängig von der Art des Vorgehens und ob sich die dargestellten Phasen auf ein
+18Dies ist unabhängig von der Art des Vorgehens und ob sich die dargestellten Phasen auf ein
 umfangreiches Projekt oder einen Sprint bezieht.
 
 
@@ -856,11 +856,11 @@ zess in jeder Phase eines SOA-Projekts möglich.
 
 
 Der Verbesserungsprozess muss ein genau spezifiziertes Vorgehen besitzen, welches
-trotzdem flexibel auf die verschiedenen Phasen eines SOA$$$19$$$-Projekts angewendet werden
+trotzdem flexibel auf die verschiedenen Phasen eines SOA19-Projekts angewendet werden
 kann. Der Prozess darf nicht an bestimmten Phasen bzw. Arbeitsergebnisse gebunden
 sein und muss losgelöst bzw. parallel zum eigentlichen Entwicklungsprozess ausführbar
 sein. Dies bedingt, dass keine Abhängigkeiten zu einem bestimmten Vorgehen (z.B.
-sequenzielles Vorgehen$$$20$$$ oder agiles Vorgehen$$$21$$$) bestehen dürfen.
+sequenzielles Vorgehen$$$20$$$ oder agiles Vorgehen21) bestehen dürfen.
 
 
 Abb. 1.4: Anwendung von SixSigma4SOA in möglichen Phasen
@@ -881,7 +881,7 @@ in Projekten am meisten eingesetzten wissenschaftlichen Literatur.
 mit ihren Messmethoden und mögliche gewünschte Verbesserungen analysiert.
 
 
-$$$19$$$SOA wird im Rahmen dieser Arbeit im Kontext von IT-Landschaften zur Bereitstellung geforderter
+19SOA wird im Rahmen dieser Arbeit im Kontext von IT-Landschaften zur Bereitstellung geforderter
 Services, ungeachtet einer möglichen technischen Realisierung, betrachtet. 20
 
 
@@ -914,7 +914,7 @@ Arbeit zweistufig angewendet werden. Wie in der folgenden Abb. 1.5 dargestellt, 
 das zu verbessernde SOA-Projekt (2) eine zentrale Rolle ein.
 
 
-In einer initialen Anwendung wird in ($$$1$$$) mit SixSigma4SOA ein bestehendes SOA-Pro-
+In einer initialen Anwendung wird in (1) mit SixSigma4SOA ein bestehendes SOA-Pro-
 jekt (2) mit dem Ziel, aus den Ergebnissen erste Qualitätsverbesserungsmaßnahmen
 ableiten zu können, analysiert. In dieser initialen Anwendung werden vorhandene Model-
 lierungsergebnisse eines SOA-Projekts (z.B. modelliert in BPMN oder UML) und deren
@@ -925,7 +925,7 @@ kann jedoch auch die Erkenntnis sein, dass aktuell kein Modellierungsprozesses f
 zu verbessernde Projekt durchgängig definiert bzw. angewendet wird.
 
 
-In ($$$1$$$) schließt sich eine Untersuchung darüber an, wie die Qualität der Modellierung mit
+In (1) schließt sich eine Untersuchung darüber an, wie die Qualität der Modellierung mit
 SixSigma4SOA (durch Einsatz der auf die Modellierung adaptierten Six Sigma Vorgehens-
 weise) verbessert und die aktuelle Modellqualität auf ein höheres Six Sigma Niveau (siehe
 auch [40]) angehoben werden kann. Daraus wird für das entsprechende SOA-Projekt (2)
@@ -936,12 +936,12 @@ Der Abschluss der initialen Anwendung bildet die Manifestierung der regelmäßig
 kontinuierlichen Durchführung von SixSigma4SOA im Unternehmen.
 
 
-In ($$$3$$$) wird im Anschluss auf Basis der gewonnenen Erkenntnisse der initialen Anwendung
+In (3) wird im Anschluss auf Basis der gewonnenen Erkenntnisse der initialen Anwendung
 SixSigma4SOA kontinuierlich zur Qualitätsverbesserung in aufeinander folgenden Six-
 Sigma4SOA-Projekten angewendet.
 
 
-Es muss jedoch auch berücksichtigt werden, dass eine initiale Durchführung in ($$$1$$$)
+Es muss jedoch auch berücksichtigt werden, dass eine initiale Durchführung in (1)
 aufgrund geringer vorhandener Informationen und somit eventuell mit einer geringeren
 Anzahl von Werkzeugen von SixSigma4SOA durchgeführt wurde, als dies dann in (3)
 getan werden kann, was eine reduzierte Menge an Ergebnissen für die erste kontinuierliche
@@ -963,7 +963,7 @@ sernde Prozesse mit geeigneten Modell- bzw. Diagrammarten zu dokumentieren.
 Das SixSigma4SOA-Meta-Model beinhaltet alle wichtigen Artefakte und ist somit die
 
 
-$$$22$$$Das SixSigma4SOA-Modell wird hier lediglich aufgrund der Übersichtlichkeit doppelt dargestellt.
+22Das SixSigma4SOA-Modell wird hier lediglich aufgrund der Übersichtlichkeit doppelt dargestellt.
 
 
 Hauptinformationsquelle eines SixSigma4SOA-Projekts. Diese Modelle sind entsprechend
@@ -974,7 +974,7 @@ dieser Arbeit auf Ihre Qualität hin nicht weiter untersucht.
 
 
 Da die Six Sigma ISO Norm die Vorgehensweise zu Qualitätsverbesserungen in einem
-DMAIC-Regelkreis$$$23$$$ allgemeingültig und ohne explizite Vorgaben einer grafischen Mo-
+DMAIC-Regelkreis23 allgemeingültig und ohne explizite Vorgaben einer grafischen Mo-
 dellierung betrachtet, kann das hier spezifisch betrachtete Problem einer schlechten bzw.
 fehlerhaften Modellierung innerhalb von Six Sigma (bzw. SixSigma4SOA-) Projekten
 nicht explizit behandelt werden. Auch werden keine Qualitätsprüfungsverfahren zur
@@ -1016,10 +1016,10 @@ rung
 Durch die regelmäßige Durchführung wird im Unternehmen ein Bewusstsein für
 
 
-$$$23$$$siehe Kapitel 5.4
+23siehe Kapitel 5.4
 
 
-FOOTNOTE:die notwendige Modellqualität geschaffen. Zur Akzeptanz- und Bewusstseinsverbes-
+die notwendige Modellqualität geschaffen. Zur Akzeptanz- und Bewusstseinsverbes-
 serung eines Qualitätsverbesserungsprozess konzentriert sich dieser immer nur auf
 spezielle Aspekte der Modellierung, die in kurzer Zeit verbessert werden können.
 Dadurch können bei einer verantwortungsvollen Anwendung indirekt nachhaltig
@@ -1060,7 +1060,7 @@ erforderlichen Funktionalitäten zur Modellierung besitzt.
 
 Ebenso wird sich die Arbeit nicht analytisch und wissenschaftlich mit den Themen der
 Realisierung anhand einer bestimmten Programmiersprache (z.b. Java, C++/C#) oder
-eine bestimmten Technologie (z.B. WEBServices mit JEE, XSD/WSDL, REST$$$25$$$-Services
+eine bestimmten Technologie (z.B. WEBServices mit JEE, XSD/WSDL, REST25-Services
 mit HTTP) beschäftigen.
 
 
@@ -1068,16 +1068,16 @@ Aspekte, die die Hardware einer SOA betreffen sind ebenfalls kein Bestandteil di
 Arbeit.
 
 
-$$$24$$$In Six Sigma werden methodische Vorgehensweisen als Werkzeuge bezeichnet, diese sind jedoch
+24In Six Sigma werden methodische Vorgehensweisen als Werkzeuge bezeichnet, diese sind jedoch
 keine Werkzeuge im Sinne von IT-Anwendungen
-$$$25$$$REST : REpresentational State Transfer
+25REST : REpresentational State Transfer
 
 
 1.6 Inhaltsüberblick dieser Arbeit
 
 
-FOOTNOTE:Der Aufbau dieser Arbeit orientiert sich konsequenter Weise an dem in der Abb. 1.6
-dargestellten DMAIC-Kreis$$$26$$$ von Six Sigma.
+Der Aufbau dieser Arbeit orientiert sich konsequenter Weise an dem in der Abb. 1.6
+dargestellten DMAIC-Kreis26 von Six Sigma.
 
 
 Die folgende Abb. 1.7 stellt die Phasen dieser Arbeit mit den wichtigsten Arbeitsergeb-
@@ -1112,7 +1112,7 @@ Rahmen der Qualitätssteigerung auch Anwendung finden, betrachtet und beschriebe
 Analyse
 
 
-FOOTNOTE:Im darauf folgenden Kapitel 6 erfolgt in der „Analyse“-Phase die Untersuchung und
+Im darauf folgenden Kapitel 6 erfolgt in der „Analyse“-Phase die Untersuchung und
 Auswertung von Fehlern in der Modellierung, deren Klassifizierung, Metriken und
 Messgrößen.
 
@@ -1162,7 +1162,7 @@ Serviceorientierte Architekturen
 2.1 Einleitung
 
 
-FOOTNOTE:Der Begriff „SOA“ (Serviceorientierten Architektur) hat in den letzten ca. 15 Jahren
+Der Begriff „SOA“ (Serviceorientierten Architektur) hat in den letzten ca. 15 Jahren
 eine Dynamik entwickelt, bei der immer wieder mit dem Versuch der Findung einer
 eindeutigen Definition, gleichzeitig die Feststellung erfolgt, dass diese mit jedem Zuwachs
 an technischen Möglichkeiten und der damit verbundenen organisationsübergreifenden
@@ -1188,12 +1188,12 @@ sind nicht Teil dieser Arbeit.
 Das Paradigma der serviceorientierten Architektur (SOA) wurde erstmals 1996 von
 Gartner definiert und beschrieben, in der zusammenfassend erklärt wird, dass eine SOA
 nicht nur eine spezielle Form der Umsetzung gewünschter Funktionalitäten auf Basis
-FOOTNOTE:einer bestimmten Technologie sind: „A service-oriented architecture is a style of multitier
+einer bestimmten Technologie sind: „A service-oriented architecture is a style of multitier
 computing that helps organizations share logic and data among multiple applications and
-usage modes.“ [$$$31$$$]
+usage modes.“ [31]
 
 
-FOOTNOTE:Im Laufe der Jahre haben sich sowohl unterschiedliche Sichtweisen einer SOA, wie
+Im Laufe der Jahre haben sich sowohl unterschiedliche Sichtweisen einer SOA, wie
 auch Herangehensweisen an dieses Thema entwickelt. Ebenso existiert ein teilweise
 sehr gegensätzliches Verständnis von der Bedeutung des Begriffs SOA. Die vielfältigen
 Definitionen erstrecken sich von einer sehr punktuellen Sichtweise, die die technische
@@ -1237,16 +1237,16 @@ Wurde z.B. vor ca. 20 Jahren einer monolithischen Single-Applikation und deren A
 tektur relativ oft nur von einem kleinen Personenkreis verantwortet, der die geforderte
 
 
-$$$1$$$Organization for the Advancement of Structured Information Standards, www.oasis-open.org
+1Organization for the Advancement of Structured Information Standards, www.oasis-open.org
 
 
-FOOTNOTE:Funktionalität (Prozesse und verwendetet Daten) recht gut verstand, ist dies bei heutigen
+Funktionalität (Prozesse und verwendetet Daten) recht gut verstand, ist dies bei heutigen
 verteilten und mitunter vielfach komplexeren SOA-Applikationen (Multi-Tier) nicht
 mehr vorstellbar. Die Verantwortungen und Zuständigkeiten einer serviceorientierten
 Architektur sind auf viele fachliche und technische Bereiche bzw. Verantwortlichkeiten
 verteilt. Verbunden mit der Entwicklung von 1-Tier-Applikation, hin zur heutigen Um-
 setzung einer komplexen und variabel nutzbaren SOA (u.U. bereits mit MicroServices,
-SaaS$$$2$$$, PaaS$$$3$$$,...) ist auch der Bedarf an einer allgemein verständlichen Dokumentation
+SaaS2, PaaS3,...) ist auch der Bedarf an einer allgemein verständlichen Dokumentation
 (und der damit verbundene Bedarf an Traceability zwischen den Dokumentationsar-
 tefakten über mehrere Software-Releases) und somit im erweiterten Sinne auch der
 Modellierungsbedarf über viele Zuständigkeitsbereiche stark gestiegen.
@@ -1286,10 +1286,10 @@ SOA-Begriff zu einem Zeitpunkt definiert wurde, als Technologien wie z.B. JEE, R
 oder auch .NET noch nicht verfügbar waren.
 
 
-$$$2$$$Software as a Service
+2Software as a Service
 
 
-$$$3$$$Platform as a Service
+3Platform as a Service
 
 
 Diese beginnt mit den ersten Anforderungen, geht über Prozess- und Datenbeschreibun-
@@ -1303,7 +1303,7 @@ der Projektrealisation z.B. Wasserfall vs. Agile nicht berücksichtigt.
 2.2 Was bedeutet SOA in der Praxis?
 
 
-FOOTNOTE:Bei der Betrachtung und Analyse des Begriffs SOA stellt sich immer wieder die Frage
+Bei der Betrachtung und Analyse des Begriffs SOA stellt sich immer wieder die Frage
 des Huhns und des entsprechenden Ei. Was war zuerst da? Die Idee einer SOA oder
 das System, welches in eine Architektur überführt werden soll, die systemübergreifend
 und serviceorientiert ausgerichtet ist? Eine SOA ist kein Selbstzweck und soll auch nicht

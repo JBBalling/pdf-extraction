@@ -45,7 +45,7 @@ Sehnervenläsion des Goldfisches die retinalen Ganglienzellen überlebten und es
 einer Regeneration der Axone und der Neuronen kam. Aufgrund der vermuteten
 Beteiligung der Flotilline an dem Regenerationsvorgang wurden sie von der
 Arbeitsgruppe ,,Reggies“ bezeichnet (Schulte et al., 1997). Gleichzeitig entdeckten
-FOOTNOTE:Bickel et al., dass dieselben Proteine in frei flottierenden Fraktionen, sogenannten ,,Lipid
+Bickel et al., dass dieselben Proteine in frei flottierenden Fraktionen, sogenannten ,,Lipid
 Rafts“, in Detergenz-unlöslicher Form vorkamen. Daraufhin nannte man sie Flotilline
 (Bickel et al., 1997). Durch die unterschiedliche Namensgebung von den zwei
 Arbeitsgruppen entspricht Flotillin-1 dem Reggie-2 und Flotillin-2 dem Reggie-1.
@@ -77,7 +77,7 @@ Zellen sind sie hauptsächlich an der Plasmamembran lokalisiert (Glebov et al., 
 Neumann-Giesen et al., 2007). Die Proteine konnten auch in Endosomen, Lysosomen
 
 
-FOOTNOTE:und Exosomen nachgewiesen werden (Stuermer et al., 2001; De Gassart et al., 2003).
+und Exosomen nachgewiesen werden (Stuermer et al., 2001; De Gassart et al., 2003).
 Ebenfalls konnten Flotilline im Golgi-Apparat und im Zusammenhang mit der prostate
 tumor overexpressed-1 (PTOV-1) Phosphatase im Zellkern beobachtet werden
 (Gkantiragas et al., 2001; Santamaria et al., 2005).
@@ -110,10 +110,10 @@ Ursprünglich wurde vermutet, dass es sich bei den Flotillinen um Caveolae-assoz
 integrale Transmembranproteine handelt (Bickel et al., 1997). In späteren Studien konnte
 diese Theorie jedoch widerlegt werden und es wurde herausgefunden, dass Flotilline sich
 in nicht-caveolären Membran-Mikrodomänen befinden und nicht in der Lage sind, die
-Zellmembran zu durchspannen (Morrow et al., 2002; Fernow et al., $$$2007$$$).
+Zellmembran zu durchspannen (Morrow et al., 2002; Fernow et al., 2007).
 
 
-FOOTNOTE:Abbildung 1: Domänenstruktur der Flotillin-Proteine
+Abbildung 1: Domänenstruktur der Flotillin-Proteine
 
 
 Die Flotillin-Proteine bestehen aus 428 Aminosäuren. Der N-Terminus besteht aus der
@@ -154,7 +154,7 @@ eine wichtige Rolle in der Zellproliferation. In diversen Karzinomzellen konnte 
 erhöhte Expression von Flotillinen beobachtet werden. Dazu gehören unteranderem
 Melanomzellen, Brustkrebszellen und das Nicht-kleinzellige Lungenkarzinom.
 Andererseits führte die Abwesenheit von Flotillinen ebenfalls zu einer erhöhten Aktivität
-FOOTNOTE:spezifischer Signalwege (Banning et al., 2013; Kurrle et al., 2013).
+spezifischer Signalwege (Banning et al., 2013; Kurrle et al., 2013).
 
 
 1.2.1 Signaltransduktion
@@ -162,11 +162,11 @@ FOOTNOTE:spezifischer Signalwege (Banning et al., 2013; Kurrle et al., 2013).
 
 Aufgrund der Assoziation von Flotillinen mit den Lipid rafts gelten sie als Raft-
 Markerproteine und sind dementsprechend an mehrere Signalwege beteiligt (Bickel et
-FOOTNOTE:al., 1997; Salzer et al., 2001; Morrow et al., 2002; Neumann-Giesen et al., 2004). Flotillin-
+al., 1997; Salzer et al., 2001; Morrow et al., 2002; Neumann-Giesen et al., 2004). Flotillin-
 1 spielt eine wichtige Rolle in der IgE-Rezeptor-vermittelten Aktivierung von Mastzellen
 und in der Regulation der Lyn-Kinase Aktivität. Durch die Phosphorylierung des IgE-
 Rezeptors mittels der Lyn-Kinase kommt es unter anderem zur Erhöhung der
-intrazellulären Ca$$$2$$$+-Konzentration, zur MAPK-Aktivierung und Degranulation (Kato et al.,
+intrazellulären Ca2+-Konzentration, zur MAPK-Aktivierung und Degranulation (Kato et al.,
 2006). Des Weiteren wurde festgestellt, dass Flotillin-1 und Flotillin-2 mit verschiedenen
 Glykosylphosphatidylinositol (GPI)-verankerten Proteinen, wie Thy-1, F3 und dem
 Prionprotein (PrPc), sowie mit Src-Kinasen kopräzipitieren (Deininger et al., 2003;
@@ -189,7 +189,7 @@ entsteht ein Komplex, bestehend aus dem multifunktionellen Adapterprotein, der E
 Ubiquitin-Protein Ligase Cbl (c-Cbl) und dem Cbl-assoziierten Protein (CAP).
 
 
-FOOTNOTE:Die Interaktion basiert auf der sorbin homology (SoHo) -Domäne des CAP und der
+Die Interaktion basiert auf der sorbin homology (SoHo) -Domäne des CAP und der
 ersten hydrophoben Region von Flotillin-1. Es wurde keine Verbindung zwischen Flotillin-
 2 und CAP beobachtet vermutlich aufgrund der fehlenden hydrophoben Region
 (Baumann et al., 2000; Liu et al., 2005).
@@ -215,7 +215,7 @@ Studien konnte diese Annahme jedoch widerlegt werden.
 
 Die endozytotische Eigenschaft von Flotillinen wurde erstmals in Zusammenhang mit
 dem GM1-Rezeptor der Choleratoxin B-Untereinheit (CTxB) und dem GPI-verankerten
-Protein CD59 entdeckt. Es konnte nachgewiesen werden, dass die Internalisierung
+Protein CD$$$59$$$ entdeckt. Es konnte nachgewiesen werden, dass die Internalisierung
 dieser Cargoproteine nicht nur über den Clathrin-abhängigen Endozytoseweg erfolgt,
 sondern auch von Flotillin-1 und Flotillin-2 abhängig ist. (Glebov et al., 2006; Frick et al.,
 2007; Amaddii et al., 2012). In der Arbeit von Saslowsky et. al konnte in COS-1 Zellen
@@ -243,19 +243,19 @@ Endozytose eine direkte Rolle zu spielen (Schneider et al., 2008). Außerdem wur
 erstmals in der Studie von John et. al. entdeckt, dass Flotillin-1 an ein spezifisches
 Sortierungssignal (Dileucin-Motiv) der Protease, die ß-Secretase 1 (BACE1) bindet und
 die endosomale Sortierung vermittelt und daraus schließend notwendig für das Recycling
-von BACE1 ist (John et al., 2014). Des Weiteren wurde eine Assoziation von Flotillinen
+von BACE$$$1$$$ ist (John et al., 2014). Des Weiteren wurde eine Assoziation von Flotillinen
 mit dem Niemann-Pick C1-like protein 1 (NPC1L1) -Rezeptor, der für die
-FOOTNOTE:Cholesterinaufnahme in die Leberzellen verantwortlich ist, festgesellt.
+Cholesterinaufnahme in die Leberzellen verantwortlich ist, festgesellt.
 
 
 Flotilline tragen ein cholesterol recognition/interaction amino acid consensus (CRAC)-
 Motiv, welches für die Bindung an Cholesterol zuständig ist (Strauss et al., 2010). Die
 Aufnahme vom NPC1L1-Rezeptor in die Zelle erfolgt via Clathrin-abhängiger
-FOOTNOTE:Endozytose (Ge et al., 2008). Bei einem Knockdown der Flotilline kommt es zu einer
+Endozytose (Ge et al., 2008). Bei einem Knockdown der Flotilline kommt es zu einer
 verringerten Aufnahme von Cholesterin und Internalisierung des NPC1L1-Rezeptors.
 Außerdem nimmt die Interaktion des NPC1L1-Rezeptors mit dem Clathrin-
 Adapterprotein 2 (AP2) Komplex deutlich ab. Deshalb wird vermutet, dass Flotilline die
-Rekrutierung von Clathrin und AP2 an den NPC1L1-Rezeptor vermitteln und somit die
+Rekrutierung von Clathrin und AP$$$2$$$ an den NPC1L1-Rezeptor vermitteln und somit die
 Endozytose des Rezeptorproteins und Cholesterins vereinfachen (Ge et al., 2008, 2011).
 Im Rahmen der EGF-induzierten Endozytose ist die Phosphorylierung bestimmter
 Tyrosinreste der Flotilline, hauptsächlich Tyrosin 160 von Flotillin-1 und Tyrosin 163 von
@@ -292,26 +292,26 @@ Phosphorylierung multipler Tyrosinreste in Flotillin-2 bestätigt.
 
 
 Durch die Untersuchung der zellulären Lokalisation von Flotillin-2-Mutanten in HeLa-
-Zellen wurde gezeigt, dass Tyr163 eine wichtige funktionelle Rolle spielt. Nach EGF-
+Zellen wurde gezeigt, dass Tyr$$$163$$$ eine wichtige funktionelle Rolle spielt. Nach EGF-
 Stimulation blieb die Translokation des Y163F-R1-EGFP-Mutanten in die Endosomen
 aus, und das Protein war nur an der Plasmamembran lokalisiert. Gleiches galt für den
-7xYF-R1-EGFP Mutanten, wo Tyr163 ebenfalls fehlt. Aufgrund dieser Feststellung stellte
-man einen weiteren Mutanten her, um die Phosphorylierung von Tyr163 zu analysieren.
-In diesem Konstrukt blieben nur die Tyrosinreste Tyr27 und Tyr163 unverändert,
+7xYF-R1-EGFP Mutanten, wo Tyr$$$163$$$ ebenfalls fehlt. Aufgrund dieser Feststellung stellte
+man einen weiteren Mutanten her, um die Phosphorylierung von Tyr$$$163$$$ zu analysieren.
+In diesem Konstrukt blieben nur die Tyrosinreste Tyr$$$27$$$ und Tyr$$$163$$$ unverändert,
 während die anderen 6 Tyrosinreste zu Phe mutiert wurden (6xYF-R1-EGFP). Dabei
 stellte sich heraus, dass es im Vergleich zum 7xYF-R1-EGFP Mutanten zu einer
-deutlichen Phosphorylierung kommt. Somit stellt Tyr163 eine wichtige
+deutlichen Phosphorylierung kommt. Somit stellt Tyr$$$163$$$ eine wichtige
 Phosphorylierungsstelle dar (Neumann-Giesen et al., 2007).
 
 
 Im Rahmen der Doktorarbeit von Monia Amaddii wurde anhand von Flotillin-1-Mutanten
 die Phosphorylierung untersucht. Mit Hilfe des NetPhos 2.0 Programms wurden drei von
-den zehn Tyrosinresten des Flotillin-1 (Tyr56, Tyr121 und Tyr160) als potenzielle
+den zehn Tyrosinresten des Flotillin-1 (Tyr56, Tyr$$$121$$$ und Tyr160) als potenzielle
 Phosphorylierungsstellen ermittelt. Mittels Einzel- (Y56F, Y121F, Y160F) und
 Doppelmutanten (Y56F+Y121F, Y56F+Y160F, Y121F+Y160F) konnte nachgewiesen
 werden, dass alle Varianten phosphoryliert wurden. Dies deutet darauf hin, dass auch
 Flotillin-1 an mehreren Tyrosinresten phosphoryliert wird, ähnlich wie bei Flotillin-2
-FOOTNOTE:(Amaddii, 2009).
+(Amaddii, 2009).
 
 
 1.4 Der EGF-Signalweg
@@ -321,7 +321,7 @@ FOOTNOTE:(Amaddii, 2009).
 
 
 Die ErbB-Familie besteht aus vier verschiedenen Tyrosinkinase-Rezeptoren (ErbB1-4),
-darunter auch der epidermal growth factor receptor (EGFR/ErbB$$$1$$$/HER$$$1$$$). Die ErbB-
+darunter auch der epidermal growth factor receptor (EGFR/ErbB1/HER1). Die ErbB-
 
 
 Rezeptoren sind an verschiedenen Signalwegen beteiligt und regulieren unter anderem
@@ -333,7 +333,7 @@ extrazellulären Liganden-Bindungsdomäne mit dem N-Terminus und einer
 zytoplasmatischen Tyrosinkinase-Domäne, welches einen tyrosinreichen C- Terminus
 trägt. Beide Domänen sind über eine kurze hydrophobe Transmembran- Domäne und
 einem juxtamembranösen Teil verbunden. (Normanno et al., 2006; Scaltriti et al., 2006;
-FOOTNOTE:Red Brewer et al., 2009).
+Red Brewer et al., 2009).
 
 
 Die Liganden des EGF-Rezeptors bestehen, neben dem EGF (epidermal growth factor),
@@ -369,7 +369,7 @@ selbst besteht hauptsächlich aus drei Proteinkinasen, dem rapidly accelerating
 fibrosarcoma protein (Raf), MEK und Erk1/2 (siehe Abbildung 2).
 
 
-FOOTNOTE:Abbildung 2: Schematische Darstellung verschiedener Signalkaskaden
+Abbildung 2: Schematische Darstellung verschiedener Signalkaskaden
 
 
 Abbildung 2: Schematische Darstellung verschiedener Signalkaskaden
@@ -377,9 +377,9 @@ Nach EGF-Stimulation wird das kleine G-Protein Ras aktiviert, welches anschließ
 Raf1, MEK1/2 und Erk1/2 kaskadenartig aktiviert (1). Als Reaktion auf extrazelluläre Stimuli
 hydrolysiert Phospholipase C (PLC) Phosphatidyl-inositol-4,5-bisphosphat (PIP2), woraus
 Inositol-1,4,5-trisphosphat (IP3) und Diacylglycerol (DAG) entstehen, und gleichzeitig AMP
-freisetzt. IP3 fördert Calcium-Freisetzung, und DAG aktiviert die Proteinkinase C (2). Im Rahmen
-des PI3K- abhängigen Signalwegs wird nach Aktivierung von PI3K PIP2 in PIP3 umgewandelt,
-welches wiederum PDK1 phosphoryliert. PDK1 aktiviert zusammen mit der Src-Kinase Akt/PKB
+freisetzt. IP$$$3$$$ fördert Calcium-Freisetzung, und DAG aktiviert die Proteinkinase C (2). Im Rahmen
+des PI3K- abhängigen Signalwegs wird nach Aktivierung von PI3K PIP$$$2$$$ in PIP$$$3$$$ umgewandelt,
+welches wiederum PDK$$$1$$$ phosphoryliert. PDK$$$1$$$ aktiviert zusammen mit der Src-Kinase Akt/PKB
 (3). (Amaddii et al. 2008).
 
 
@@ -396,7 +396,7 @@ Isoformen, A-Raf, B-Raf und C-Raf (Raf-1). Nach seiner Aktivierung kommt es zur
 Raf-vermittelten Phosphorylierung von MEK1/2, einer dualspezifischen Kinase (Kyriakis
 
 
-FOOTNOTE:et al., 1992). Sie ist in der Lage, Tyrosin- und auch Threonin/Serin-Reste zu
+et al., 1992). Sie ist in der Lage, Tyrosin- und auch Threonin/Serin-Reste zu
 phosphorylieren (Dhanasekaran et al., 1998). Die letzte Stufe der Signalkaskade und das
 Hauptsubstrat von MEK stellt die Serin/Threonin Kinase Erk1/2 (extracellular Signal-
 regulated kinases) dar (Cobb et al., 1995). Nachdem MEK das Erk über das Thr202-
@@ -425,7 +425,7 @@ aber abhängig von der Hetero-Oligomerisierung von Flotillin-1 und Flotillin-2 i
 et al., 2009; Banning et al., 2014). Obwohl die Endozytose von EGFR in Flotillin-1-
 Knockdown Zellen nicht beeinflusst wird, sind die Flotilline am EGFR-Clustering beteiligt
 und bilden einen konstitutiven Komplex mit dem Rezeptor (Amaddii et al., 2012). Es
-wurde festgestellt, dass bei Flotillin-1-Knockdown die Lokalisation von EGFR, Grb2 und
+wurde festgestellt, dass bei Flotillin-1-Knockdown die Lokalisation von EGFR, Grb$$$2$$$ und
 C-Raf beeinträchtigt wird. Es kommt zur reduzierten Rekrutierung in die Lipid Rafts
 (Amaddii et al., 2012).
 
@@ -433,7 +433,7 @@ C-Raf beeinträchtigt wird. Es kommt zur reduzierten Rekrutierung in die Lipid R
 Abbildung 3: Die Flotillin-Proteine im EGF Signalweg modifiziert nach Meister et al. 2013
 
 
-FOOTNOTE:Beide Flotilline (rot) sind für die Aktivierung des EGF-Rezeptors (grau) essenziell. Nach EGF-
+Beide Flotilline (rot) sind für die Aktivierung des EGF-Rezeptors (grau) essenziell. Nach EGF-
 Stimulation kommt es zur Aktivierung des MAP-Kinase Signalwegs, wobei Flotillin-1 und Flotillin-
 2 als Scaffold-Proteine für die einzelnen MAPK-Komponenten (blau) agieren und zur
 Rekrutierung des Komplexes von der Plasmamembran in die Zelle führen können.
@@ -457,7 +457,7 @@ auch die Aktivität von Erk, MEK und C-Raf ansteigt, welches auf die konstitutiv
 PI3-Kinase zurückzuführen ist (Kurrle et al., 2013).
 
 
-FOOTNOTE:1.6 Ziele der Arbeit
+1.6 Ziele der Arbeit
 
 
 Flotillin-1 und Flotillin-2 werden an mehreren Tyrosinresten phosphoryliert und bilden
@@ -484,7 +484,7 @@ durch das endogene Flotillin-1 auszuschließen.
 2 Materialien
 
 
-FOOTNOTE:2.1 Geräte und Materialien
+2.1 Geräte und Materialien
 
 
 Im Folgenden werden die verwendeten Geräte und Materialien für die vorliegende
@@ -501,14 +501,14 @@ Die für die vorliegende Arbeit verwendeten Chemikalien und Reagenzien wurden mi
 ihren jeweiligen Herstellernamen und deren Niederlassungsorten in Tabelle 2 aufgelistet.
 
 
-FOOTNOTE:Tabelle 2: Auflistung der verwendeten Chemikalien und Reagenzien
+Tabelle 2: Auflistung der verwendeten Chemikalien und Reagenzien
 
 
 2.3 Puffer und Lösungen
 
 
 Die Puffer und Lösungen, die im Rahmen der vorliegenden Arbeit verwendet
-FOOTNOTE:wurden, sind mit Angabe ihrer Zusammensetzung in Tabelle 3 aufgelistet.
+wurden, sind mit Angabe ihrer Zusammensetzung in Tabelle 3 aufgelistet.
 
 
 Tabelle 3: Auflistung der Puffer und Lösungen und deren Zusammensetzung
@@ -519,7 +519,7 @@ Tabelle 3: Auflistung der Puffer und Lösungen und deren Zusammensetzung
 
 Die in der vorliegenden Arbeit eingesetzten Primär- und Sekundärantikörper für Western
 Blots (WB), Immunofluoreszenz (IF) und Immunopräzipitation (IP) sind in den Tabellen
-FOOTNOTE:4 und 5 aufgelistet.
+4 und 5 aufgelistet.
 
 
 2.4.1 Primärantikörper
@@ -528,7 +528,7 @@ FOOTNOTE:4 und 5 aufgelistet.
 2.4.2 Sekundärantikörper
 
 
-FOOTNOTE:Tabelle 5: Die Sekundärantikörper mit der jeweiligen Verdünnung und dem Hersteller
+Tabelle 5: Die Sekundärantikörper mit der jeweiligen Verdünnung und dem Hersteller
 
 
 2.5 Antibiotika
@@ -560,11 +560,11 @@ Die eingesetzten Plasmide bzw. Konstrukte, sowie deren Referenzen sind in der
 folgenden Tabelle aufgelistet.
 
 
-FOOTNOTE:Tabelle 9: Die verwendeten Plasmide und Vektoren mit der jeweiligen Referenz (Amaddii,
+Tabelle 9: Die verwendeten Plasmide und Vektoren mit der jeweiligen Referenz (Amaddii,
 2009)
 
 
-FOOTNOTE:3 Methoden
+3 Methoden
 
 
 3.1 Zellbiologische Standardmethoden
@@ -609,7 +609,7 @@ MACSfectin-Gemisch zum DNA-Gemisch hinzugegeben und für 30 Minuten inkubiert.
 Währenddessen wurde das DMEM ++ der Zellen gewechselt. Nach der Inkubation
 wurden pro Well 200 μl vom Transfektionsmix aufgetropft. Nach einer Inkubationszeit
 von 4-5 Stunden wurde das Medium erneut mit frischem DMEM ++ gewechselt und die
-FOOTNOTE:Zellen bis zum nächsten Tag in den Brutschrank bei 37°C gestellt.
+Zellen bis zum nächsten Tag in den Brutschrank bei 37°C gestellt.
 
 
 3.1.4 Stimulation der HeLa- und HEK-Zellen mit EGF
@@ -647,7 +647,7 @@ Sekundärantikörper ebenfalls bei Raumtemperatur für 1 Stunde inkubiert. Nach
 dreimaligem Waschen mit 1x PBS für jeweils 5 Minuten wurden sie einmal kurz mit
 destilliertem Wasser gespült und anschließend mit ca. 15 µl Fluormount und dem 4`,6-
 diamidino-2-phenylindol (DAPI), 1:50 verdünnt, auf Objektträger eingebettet. Die
-Aufnahmen erfolgten mit dem Zeiss LSM710 konfokalem Laserscanning Mikroskop und
+Aufnahmen erfolgten mit dem Zeiss LSM$$$710$$$ konfokalem Laserscanning Mikroskop und
 die Analyse mit dem ZEN-Programm.
 
 
@@ -658,7 +658,7 @@ Die in DMSO eingefrorenen Zellen wurden halbaufgetaut in 15 ml Röhrchen mit 5 m
 serumhaltigem DMEM resuspendiert und anschließend bei 2000 Umdrehungen pro
 Minute (rpm) für ca. 2 Minuten abzentrifugiert. Nach Abschütten des Überstands wurde
 der Vorgang wiederholt. Danach wurden ca. 1 ml DMEM ++ zu dem Zellpellet
-FOOTNOTE:hinzugefügt, resuspendiert und je nach Bedarf auf Zellkulturflaschen verteilt.
+hinzugefügt, resuspendiert und je nach Bedarf auf Zellkulturflaschen verteilt.
 
 
 3.2 Molekularbiologische Methoden
@@ -677,7 +677,7 @@ Macherey Nagel GmbH & Co, Düren (DE) wurde die Plasmid-DNA nach dem
 Herstellerprotokoll aufgereinigt.
 
 
-FOOTNOTE:3.3 Biochemische Methoden
+3.3 Biochemische Methoden
 
 
 3.3.1 Herstellung von Proteinlysaten aus HEK- und HeLa-Zellen
@@ -716,13 +716,13 @@ pipettiert. Als nächstes erfolgte die Kopplung der magnetischen Beads (Dynabead
 Protein A) mit dem polyklonalen rabbit anti-GFP Antikörper (2 µl pro Lysat) im Rotator
 für 3 Stunden. Anschließend wurden pro Lysat 30 µl vom Beads-Ansatz hinzugegeben
 und zur Blockierung unspezifischer Bindungsstellen des Antikörpers, zusätzlich jeweils
-FOOTNOTE:100 µl 10%iges BSA hinzupipettiert. Nach Resuspension wurden die Ansätze bei 4°C
+100 µl 10%iges BSA hinzupipettiert. Nach Resuspension wurden die Ansätze bei 4°C
 über Nacht rotierend inkubiert. Am darauffolgenden Tag wurden die Beads 4x mit 1 ml
 
 
 Stürmerpuffer gewaschen, in 35 µl 2x Ladepuffer mit DTT auf- und abpipettiert und bei
 94°C für 5 Minuten gekocht. Zu den 30 µl Lysat, die als Input dienten, wurden 10 µl 2x
-FOOTNOTE:Ladepuffer mit DTT hinzugegeben und gekocht.
+Ladepuffer mit DTT hinzugegeben und gekocht.
 
 
 3.3.3 SDS PAGE und Western Blot
@@ -748,7 +748,7 @@ Transfers zu beurteilen. Nach etwa 10 Sekunden waren die Proteinbanden sichtbar.
 3.3.4 Immundetektion
 
 
-FOOTNOTE:Im Anschluss nach der Entfärbung mit 1x Tris-Buffered-Saline & Tween (TBST), wurden
+Im Anschluss nach der Entfärbung mit 1x Tris-Buffered-Saline & Tween (TBST), wurden
 die freien Bindungsstellen auf der Membran mit 5%iger Milch in 1x TBST für 30 Minuten
 geblockt. Danach erfolgte die Inkubation des Primärantikörpers über Nacht bei 4°C. Am
 Tag darauf folgten 3 Waschschritte mit 1x TBST je 10 Minuten und die Inkubation des
@@ -765,7 +765,7 @@ die erneute Verwendung der Blots wurden sie gestrippt. Dafür wurden die Membran
 
 jeweils für 10 Minuten in 0,1 M Natronlauge, dann in Aquadest und anschließend in 1x
 TBST inkubiert. Nachfolgend wurden die unspezifischen Bindungsstellen erneut für 30
-FOOTNOTE:Minuten mit 5%ger Milch geblockt.
+Minuten mit 5%ger Milch geblockt.
 
 
 3.4 Statistische Auswertung und Bildbearbeitung
@@ -813,7 +813,7 @@ bis keine Zellen zu sehen. Aufgrund dessen beschränken sich die vorliegenden
 Ergebnisse nur auf die HeLa-Zellen. Die Flotillin-1-Knockout-Zellen wurden mit Hilfe des
 Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR/Cas9) -Systems
 hergestellt, um so eine vollständige Abwesenheit von Flotillin-1 sicherzustellen
-FOOTNOTE:(Kapahnke et al., 2016).
+(Kapahnke et al., 2016).
 
 
 Nach der transienten Transfektion der Wildtyp und Flotillin-1-Knockout HeLa-Zellen mit
@@ -882,9 +882,9 @@ erscheint (siehe Abbildungen 5a, 6a, 7a, 8a, 9a). Die Doppelbanden beim pY1173-
 EGFR-Signal nach EGF-Stimulation sind auf die unterschiedlichen
 Phosphorylierungsformen des EGF-Rezeptors zurückzuführen. Das Phospho-Erk1/2
 Signal weist ebenfalls Doppelbanden auf. Dabei handelt es sich um die Isoformen von
-Erk, wobei die obere Bande Erk1 (44kDa) und die untere Bande Erk2 (42kDa) darstellt.
+Erk, wobei die obere Bande Erk$$$1$$$ (44kDa) und die untere Bande Erk$$$2$$$ (42kDa) darstellt.
 Durch die Detektion von dem GFP-gekoppelten Flotillin-1 konnte die gelungene
-FOOTNOTE:Transfektion in die HEK-Zellen bestätigt werden. GAPDH dient als Ladekontrolle.
+Transfektion in die HEK-Zellen bestätigt werden. GAPDH dient als Ladekontrolle.
 
 
 Es ist jedoch zu beachten, dass die tEGFR-Signale in den stimulierten HEK-Zellen nicht
@@ -896,7 +896,7 @@ wurde Phospho-EGFR (pEGFR) deshalb auf Glyceraldehyd 3-phosphat Dehydrogenase
 (GAPDH) und Phospho-Erk (pErk) auf Gesamt-Erk (tErk) normalisiert. Die
 Normalisierung von pEGFR auf Gesamt-EGFR (tEGFR) wäre in diesem Fall nicht
 sinnvoll, weil das tEGFR-Signal aufgrund der mehrfachen Phosphorylierung in den
-FOOTNOTE:Western Blots schwächer erscheint (siehe Abbildung 5a,6a,7a,8a,9a).
+Western Blots schwächer erscheint (siehe Abbildung 5a,6a,7a,8a,9a).
 
 
 Die Abbildung 5b zeigt das Verhalten von pEGFR in HEK293T- und F1-KO Zellen,
@@ -927,7 +927,7 @@ HEK293T-Zellen und F1-KO-Zellen vor. Zwischen den unbehandelten und mit EGF
 behandelten F1-KO Zellen besteht sogar ein hoch signifikanter Unterschied.
 
 
-FOOTNOTE:Abbildung 5: Einfluss von Flotillin-1-EGFP auf die EGFR-Aktivierung in HEK293T-Zellen
+Abbildung 5: Einfluss von Flotillin-1-EGFP auf die EGFR-Aktivierung in HEK293T-Zellen
 (a) DIe HEK293T-Zellen (Wildtyp und Flotillin-1-Knockout) wurden mit dem Mutanten
 Y56F+Y121F-EGFP transient transfiziert. Die Zellen wurden für 10 min mit EGF stimuliert (+)
 oder nicht stimuliert (-). Jeweils 30 µg der Proteinlysate wurden auf einem 10% SDS-PAGE
@@ -941,7 +941,7 @@ und pErk auf tErk. Die statistische Auswertung erfolgte mittels der zweifachen V
 
 
 Abbildung 6: Einfluss von EGFP auf die EGFR-Aktivierung in HEK293T-Zellen
-FOOTNOTE:(a) DIe HEK293T-Zellen (Wildtyp und Flotillin-1-Knockout) wurden mit dem Mutanten
+(a) DIe HEK293T-Zellen (Wildtyp und Flotillin-1-Knockout) wurden mit dem Mutanten
 Y56F+Y121F-EGFP, transient transfiziert. Die Zellen wurden für 10 min mit EGF stimuliert (+)
 oder nicht stimuliert (-). Jeweils 30 µg der Proteinlysate wurden auf einem 10% SDS-PAGE
 aufgetrennt. Anschließend erfolgte die Immundetektion mit EGFR- Antikörpern (pY1173 oder
@@ -953,11 +953,11 @@ und pErk auf tErk. Die statistische Auswertung erfolgte mittels der zweifachen V
 (ANOVA) und der Bonferroni Post-Test.
 
 
-FOOTNOTE:Abbildung 7: Einfluss von Y56F+Y121F-EGFP Fl otillin-1- Mutanten auf die EGFR-
+Abbildung 7: Einfluss von Y56F+Y121F-EGFP Fl otillin-1- Mutanten auf die EGFR-
 Aktivierung in HEK293T-Zellen
 
 
-(Aak) tivDieier unHgE Kin$$$2$$$ H$$$93$$$ETK-Z29e3lleTn-Z e(lWleinld typ und Flotillin-1-Kn ockout) wurden mit dem Mutanten
+(Aak) tivDieier unHgE Kin$$$2$$$ H93ETK-Z29e3lleTn-Z e(lWleinld typ und Flotillin-1-Kn ockout) wurden mit dem Mutanten
 Y56F+Y121F-EGFP, transient transfiziert. Die Zellen wurden für 10 min mit EGF stimuliert (+)
 oder nicht stimuliert (-). Jeweils 30 µg der Proteinlysate wurden auf einem 10% SDS-PAGE
 aufgetrennt. Anschließend erfolgte die Immundetektion mit EGFR- Antikörpern (pY1173 oder
@@ -969,11 +969,11 @@ und pErk auf tErk. Die statistische Auswertung erfolgte mittels der zweifachen V
 (ANOVA) und der Bonferroni Post-Test.
 
 
-FOOTNOTE:Ab bildung 8: Einfluss von Y121F+Y160F-EGFP Flotillin-1- Mutanten auf die EGFR-
+Ab bildung 8: Einfluss von Y121F+Y160F-EGFP Flotillin-1- Mutanten auf die EGFR-
 Aktivierung in HEK293T-Zellen
 
 
-(Aak) tivDiIeer unHgE Kin$$$2$$$ H$$$93$$$ETK-Z29e3lleTn-Z e(lWleinld typ und Flotillin-1-K nockout) wurden mit dem Mutanten
+(Aak) tivDiIeer unHgE Kin$$$2$$$ H93ETK-Z29e3lleTn-Z e(lWleinld typ und Flotillin-1-K nockout) wurden mit dem Mutanten
 Y121F+Y160F-EGFP, transient transfiziert. Die Zellen wurden für 10 min mit EGF stimuliert (+)
 oder nicht stimuliert (-). Jeweils 30 µg der Proteinlysate wurden auf einem 10% SDS-PAGE
 aufgetrennt. Anschließend erfolgte die Immundetektion mit EGFR- Antikörpern (pY1173 oder
@@ -985,11 +985,11 @@ und pErk auf tErk. Die statistische Auswertung erfolgte mittels der zweifachen V
 (AN OVA) und der Bonferroni Post-Test.
 
 
-FOOTNOTE:Abbildung 9: Einfluss von Y56F+Y160F-EGFP Flotillin-1- Mutanten auf die EGFR-
+Abbildung 9: Einfluss von Y56F+Y160F-EGFP Flotillin-1- Mutanten auf die EGFR-
 Aktivierung in HEK293T-Zellen
 
 
-(Aak) tivDiIeer uHngE Kin$$$2$$$ $$$9$$$H3ETK-Z2e$$$9$$$l3leTn-Z e(lWleinld typ und Flotillin-1-Knockout) wurden mit dem Mutanten
+(Aak) tivDiIeer uHngE Kin$$$2$$$ 9H3ETK-Z2e9l3leTn-Z e(lWleinld typ und Flotillin-1-Knockout) wurden mit dem Mutanten
 Y56F+Y160F-EGFP, transient transfiziert. Die Zellen wurden für 10 min mit EGF stimuliert (+)
 oder nicht stimuliert (-). Jeweils 30 µg der Proteinlysate wurden auf einem 10% SDS-PAGE
 aufgetrennt. Anschließend erfolgte die Immundetektion mit EGFR- Antikörpern (pY1173 oder
@@ -1015,7 +1015,7 @@ A und dem polyklonalen Rabbit anti-GFP Antikörper die mutierten Flotillin-1 Pro
 ihren Interaktionspartnern präzipitiert. Um die Expression und erfolgreiche Präzipitation
 der Proteine zu bestätigen, wurde als Input ein Teil des vorgereinigten Lysats verwendet.
 Die Untersuchung der Präzipitate erfolgte anhand eines Western Blots und spezifischen
-FOOTNOTE:Antikörper gegen GFP und Flotillin-2.
+Antikörper gegen GFP und Flotillin-2.
 
 
 Flotillin-2 bildet in den mit Wildtyp Flotillin-1 (WT) -transfizierten Knockout-Zellen Hetero-
@@ -1030,19 +1030,19 @@ der Lage ist, mit dem endogenen Flotillin-2 einen Komplex zu bilden, denn beim
 Vergleich mit den Wildtyp-Zellen zeigen beide ein gleich starkes Signal. Der Y56F-
 Mutant weist keine Interaktion mit Flotillin-2 auf, was anhand drei voneinander
 unabhängiger Versuche bestätigt werden konnte. Die Ergebnisse zeigen damit deutlich,
-dass Tyr56 eine entscheidende Funktion bei der Hetero-Oligomerisierung der Flotilline
+dass Tyr$$$56$$$ eine entscheidende Funktion bei der Hetero-Oligomerisierung der Flotilline
 trägt. Y160F hingegen weist im Vergleich zum Wildtyp und Y121F ein etwas
 schwächeres Signal für Flotillin-2 auf. Dies könnte darauf hindeuten, dass der
-Austausch von Tyr160 zu Phe zu einer reduzierten Hetero-Oligomerisierung mit dem
+Austausch von Tyr$$$160$$$ zu Phe zu einer reduzierten Hetero-Oligomerisierung mit dem
 endogenen Flotillin-2 führt. Diese in vitro Ergebnisse sollten jedoch mit Ko-
 Immunpräzipitation bestätigt und quantitativ erfasst werden. Dies konnte in einem
 früheren Versuch von Babuke et. al. anhand der Mutation von Y163F in Flotillin-2
 ebenfalls beobachtet werden (Babuke et al., 2009). Man geht davon aus, dass
-Tyr160 bzw. Tyr163 eine wichtige Rolle bei der Oligomerisierung der Flotilline
+Tyr$$$160$$$ bzw. Tyr$$$163$$$ eine wichtige Rolle bei der Oligomerisierung der Flotilline
 einnehmen, da sie eine ähnliche Position im Flotillin- Protein tragen.
 
 
-FOOTNOTE:Abbildung 9: Nachweis der Oligomerisierung von Flotillin-1-Einzelmutanten mit Flotillin-
+Abbildung 9: Nachweis der Oligomerisierung von Flotillin-1-Einzelmutanten mit Flotillin-
 2
 
 
@@ -1063,7 +1063,7 @@ beim Vergleich mit den Wildtyp Flotillin-1-transfizierten Zellen alle Doppelmuta
 alle drei Mutanten mit dem endogenen Flotillin-2 oligomerisieren. Interessanterweise
 sind auch die Mutanten, die Y56F enthalten (Y56F+Y121F und Y56F+Y160F), in der
 Lage, mit dem endogenen Flotillin-2 zu binden, wohingegen der Y56F-Mutant im
-FOOTNOTE:vorherigen Versuch keine Interaktion mit Flotillin-2 aufweist.
+vorherigen Versuch keine Interaktion mit Flotillin-2 aufweist.
 
 
 Abbildung 10: Nachweis der Oligomerisierung von Flotillin-1-Doppelmutanten mit Flotillin-
@@ -1122,7 +1122,7 @@ ausschließlich an der Plasmamembran vorkamen. Ähnliches konnte auch in den 7xY
 Flot2-transfizierten Zellen beobachtet werden. Bei dem Konstrukt handelt es sich um die
 
 
-Mutation von sieben der acht Tyrosinreste, wobei Tyr27 nicht mutiert vorliegt. Die
+Mutation von sieben der acht Tyrosinreste, wobei Tyr$$$27$$$ nicht mutiert vorliegt. Die
 Mutation des Tyrosinrestes Y163F, welche in beiden Konstrukten vorhanden ist, führte
 zur Annahme, dass die Phosphorylierung von Y163F die zelluläre Lokalisation von
 Flotillin-2 reguliert. Sogar nach zusätzlicher EGF-Stimulation blieb die Translokation von
@@ -1137,7 +1137,7 @@ für die Src-Familie (Edgar et al., 2001). Zwar phosphorylieren die Src-Kinasen 
 Tyrosinreste der Flotilline, unter anderem auch Y163 und Y160, jedoch konnte
 nachgewiesen werden, dass die Fyn-Kinase, ebenfalls ein Mitglied der Src-Familie,
 beide Tyrosinreste direkt phosphorylieren kann (Neumann-Giesen et al., 2007; Amaddii,
-FOOTNOTE:2009; Riento et al., 2009).
+2009; Riento et al., 2009).
 
 
 Hinsichtlich der Hetero-Oligomerisierung sind die zwei Tyrosinreste von wichtiger
@@ -1163,7 +1163,7 @@ heraus, dass bei kompletter Abwesenheit eines Flotillin-Proteins das andere Flot
 erheblich reduziert und nicht mehr in den Membran-Mikrodomänen lokalisiert war (Ludwig
 
 
-FOOTNOTE:et al., 2010; Berger et al., 2013). Demzufolge hängt die Formation von den sogenannten
+et al., 2010; Berger et al., 2013). Demzufolge hängt die Formation von den sogenannten
 membrane rafts von Flotillin-1 und -2 ab (Banning et al., 2014).
 
 
@@ -1178,7 +1178,7 @@ nach Stimulation mit dem Wachstumsfaktor EGF mehrere Tyrosinreste der Flotillin-
 Proteine von der Src-Kinase phosphoryliert werden (Neumann-Giesen et al., 2007;
 Amaddii, 2009). Außerdem bilden der EGF-Rezeptor und Flotillin-1 und -2 einen
 konstitutiven Komplex, aber für die Endozytose vom EGF-Rezeptor in HeLa-Zellen sind
-FOOTNOTE:Flotilline nicht vorausgesetzt (Amaddii et al., 2012). In Flotillin-2-depletierten Zellen
+Flotilline nicht vorausgesetzt (Amaddii et al., 2012). In Flotillin-2-depletierten Zellen
 wiederum nimmt die Endozytose des EGF-Rezeptors ab, wobei die bei dieser Studie
 verwendeten Zellen eine sehr hohe Überexpression des EGF-Rezeptors aufwiesen
 (Solis et al., 2012). Bei Abwesenheit von Flotillin-1 ist nicht nur das Clustering des EGF-
@@ -1220,7 +1220,7 @@ Aktivierung aufwiesen (Banning et al., 2013; Wienen, 2019). Die Phosphatase DUSP
 (dual specificity phosphatase 1) gehört zum negativen Feedback-Loop System und kann
 Erk dephosphorylieren (Brondello et al., 1999). Die veränderte DUSP-1-Expression wirkt
 möglicherweise als ein Kompensationsmechanismus für die erhöhte Erk-Aktivität
-FOOTNOTE:(Banning et al., 2013).
+(Banning et al., 2013).
 
 
 Aufgrund dieses gegenteiligen Effekts bei Abwesenheit von Flotillin-2 ging man davon
@@ -1273,7 +1273,7 @@ löst das stabile Knockdown von Flotillinen das Gegenteil aus (Lin et al., 2011;
 al., 2013). Im Rahmen der Tumorgenese sind die stabilen Flotillin-Knockdown-Zellen
 repräsentativer und somit vergleichbar mit den Knockout-Zellen. EGFR passt sich dem
 Flotillin-Verlust an und reagiert wahrscheinlich deshalb mit einer kompensatorischen
-FOOTNOTE:Hochregulierung (Kurrle et al., 2012, 2013). Jedoch konnte keine verstärkte EGFR-
+Hochregulierung (Kurrle et al., 2012, 2013). Jedoch konnte keine verstärkte EGFR-
 Aktivierung in stabil mit shRNA-Plasmiden transfizierten HeLa-, MCF10A- und in
 Keratinozyten (HaCaT-Zellen) beobachtet werden, sondern nur in den MC7F-
 Knockdown-Zellen (Kurrle et al., 2013). In diesen Knockdown-Zellen ist die PI3-Kinase
