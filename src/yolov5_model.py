@@ -30,5 +30,3 @@ def initialize_yolov5_model(config: Config = Config()) -> AutoShape:
 
 
 yolov5_model = initialize_yolov5_model()
-# yolov5_table_detection_model = initialize_yolov5_model(TableDetectionConfig())
-# yolov5_layout_detection_model = initialize_yolov5_model(LayoutDetectionConfig())

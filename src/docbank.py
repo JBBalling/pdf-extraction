@@ -72,10 +72,7 @@ def visualize_bboxes(image: Imagetype, detections: Dict, index: int, pdf_file: s
     if not os.path.exists(pdf_file):
         os.mkdir(pdf_file)
     Image.fromarray(img).save(f"{pdf_file}/page_{index+1}.png")
-    # if "instances" in detections:
-    #     instances = detections["instances"].to(torch.device("cpu"))
-    #     vis_output = Visualizer.draw_instance_predictions(predictions=instances)
-
+  
 labels = ["abstract", "author", "caption", "date", "equation", "figure", "footer", "list", "paragraph", "reference", "section", "table", "title"]
 object_detector = ObjectDetection(
     config_path=os.path.join(cwd, "models", "docbank", "X101", "X101.yaml"),
@@ -96,11 +93,6 @@ pages = 0
 
 
 for pdf_file in os.listdir(pdf_path):
-    #if pdf_file != "diss_Senn.pdf":
-    #    continue
-    # if pdf_file != "_Dissertation_Johannes_Schildgen.pdf":
-    #    continue
-
     image_path = os.path.join(output_path, pdf_file.replace(".pdf", ""))
     print(f"processing pdf file {pdf_file}")
     filtered_text = ""  

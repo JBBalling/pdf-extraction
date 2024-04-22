@@ -127,17 +127,6 @@ def get_crop_height(pdf_doc) -> Tuple[int, int]:
             else:
                 boolean_crop_bottom.append(False)
 
-    #boolean_crop_top = [t == top_crops[0] if t is not None else 5/(i+1) for i, t in enumerate(top_crops)]
-    #boolean_crop_bottom = [t == bottom_crops[0] if t is not None else 5/(i+1) for i, t in enumerate(bottom_crops)]
-    # if all(boolean_crop_top) and any(boolean_crop_bottom):
-    #     crop_from_bottom = 0
-    #     crop_from_top = top_crops[0]
-    # elif any(boolean_crop_top) and all(boolean_crop_bottom):
-    #     crop_from_top = 0
-    #     crop_from_bottom = bottom_crops[0]
-    # elif any(boolean_crop_top) and any(boolean_crop_bottom):
-    #     crop_from_top = int(FIXED_CROP_TOP*page_height)
-    #     crop_from_bottom = page_height - int(FIXED_CROP_BOTTOM*page_height)
     if boolean_crop_top.count(True) >= len(boolean_crop_top) / 2 and boolean_crop_bottom.count(True) < len(boolean_crop_bottom) / 2:
         crop_from_bottom = 0
         crop_from_top = top_crops[0]
@@ -174,22 +163,11 @@ def get_crop_height(pdf_doc) -> Tuple[int, int]:
 
 
 for pdf_file in os.listdir(pdf_path):
-    #if pdf_file != "diss_Senn.pdf":
-    #    continue
-    # if pdf_file != "_Dissertation_Johannes_Schildgen.pdf":
-    #    continue
+   
 
     print(f"processing pdf file {pdf_file}")
     filtered_text = ""  
     filepath = os.path.join(pdf_path, pdf_file)
-
-    # parser = PDFParser(open(filepath, 'rb'))
-    # Create a PDF document object that stores the document structure.
-    # Supply the password for initialization.
-    # document = PDFDocument(parser, '')
-    # outlines = document.get_outlines()
-    # for (level,title,dest,a,se) in outlines:
-    #    print(level, title)
     pdf_doc = pdfplumber.open(filepath)
     crop_time_start = time.time()
     crop_from_top, crop_from_bottom = get_crop_height(pdf_doc)

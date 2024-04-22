@@ -95,24 +95,17 @@ def deduplicate_detections(detections: List, images: List) -> List:
     for page in range(len(detections)):
         idx_to_remove = []
         i = 0
-        while i < len(detections[page]["xmin"]): # for i in range(len(detections[page]["xmin"])):
-            # if i not in detections[page]["xmin"].keys():
-            #     i += 1
-            #     continue
+        while i < len(detections[page]["xmin"]): 
             bounding_box_i = [detections[page]["xmin"][i], detections[page]["ymin"][i], detections[page]["xmax"][i], detections[page]["ymax"][i]]
             class_i = detections[page]["class"][i]
             j = 0
-            while j < len(detections[page]["xmin"]): #for j in range(len(detections[page]["xmin"])):
+            while j < len(detections[page]["xmin"]): 
                 if i == j:
                     j += 1
                     continue
-                # if j not in detections[page]["xmin"].keys():
-                #     j += 1
-                #     continue
+                
                 bounding_box_j = [detections[page]["xmin"][j], detections[page]["ymin"][j], detections[page]["xmax"][j], detections[page]["ymax"][j]]
                 class_j = detections[page]["class"][j]
-                #print(boxOverlap(bounding_box_i, bounding_box_j))
-                #print(box_inside_box(bounding_box_i, bounding_box_j))
                 if boxOverlap(bounding_box_i, bounding_box_j) or box_inside_box(bounding_box_i, bounding_box_j):
                     # intersect
                     if CLASS_PRIORITIES.index(class_i) < CLASS_PRIORITIES.index(class_j) and i not in idx_to_remove:
@@ -137,12 +130,6 @@ def deduplicate_detections(detections: List, images: List) -> List:
 
                 j += 1
             i += 1    
-
-        # numpy_image = np.array(images[page])
-        # for i in detections[page]["xmin"].keys():
-        #     numpy_image = cv2.rectangle(numpy_image, (int(detections[page]["xmin"][i]), int(detections[page]["ymin"][i])), (int(detections[page]["xmax"][i]), int(detections[page]["ymax"][i])), (255,0,0), 2)
-        #     Image.fromarray(numpy_image).show()
-        # Image.fromarray(numpy_image).show()
                 
         for index in reversed(idx_to_remove):
             for c in ["xmin", "ymin", "xmax", "ymax", "confidence", "name", "class"]:
@@ -172,13 +159,6 @@ def get_pdf_fontsize_statistic(pdf_doc, num_pages) -> Dict:
 
 
 for pdf_file in os.listdir(pdf_path):
-    #if pdf_file != "diss_Senn.pdf":
-    #    continue
-    # if pdf_file != "_Dissertation_Johannes_Schildgen.pdf":
-    #    continue
-    # if pdf_file != "978-3-7315-1289-9.pdf":
-    #     continue
-
     print(f"processing pdf file {pdf_file}")
     filtered_text = ""  
     filepath = os.path.join(pdf_path, pdf_file)
@@ -192,9 +172,7 @@ for pdf_file in os.listdir(pdf_path):
     layout_detector = load_model(Config(), True, False, True, DEVICE, Config.CONF, category, Config.IOU)
     detections = get_results(layout_detector, images)
     filtered_detections = deduplicate_detections(detections, images)
-    # TODO: set margin based on bbox distances to each other -> close distance -> no margin, wider distance -> small margin
     footnote_page = 0
-    footnote_start = False
     for index, detection in enumerate(filtered_detections):
         pdf_page = pdf_doc.pages[index]
         numpy_image = np.array(images[index])
@@ -205,7 +183,6 @@ for pdf_file in os.listdir(pdf_path):
         words_of_page = pdf_page.extract_words(x_tolerance=X_TOLERANCE, y_tolerance=Y_TOLERANCE)
         average_height = sum([w["height"] for w in words_of_page])/len(words_of_page)
         grouped_by_size = group_words(words_of_page, 4, "height")
-        # print(grouped_by_size)
         pages += 1
         
         
@@ -251,38 +228,11 @@ for pdf_file in os.listdir(pdf_path):
                         # index
                         continue
                     elif (word["height"] < common_line_height and word["bottom"] < bottom_line_coordinate and has_digit(word["text"])) or (word["text"] == "¹") or (word["text"] == "²") or (word["text"] == "³"):
-                        # or (word["height"] >= pdf_fontsize_statistics[1][0] - FONT_MARGIN and word["height"] <= pdf_fontsize_statistics[1][0]):
-                        # footnote / footer -> extract by fontsize
-                        # print("found footnote in fouter")
-                        # if line_index > 0:
-                        #     # mark footnote end
-                        #     lines[line_index-1] = mark_footnote_end(lines[line_index-1])
-                        footnote_start = False
                         footnote = True
-                        footnote_page = index
-                        #if str.isdigit(word["text"]):
-                        #    word["text"] = 
-                        # break
-
-                    #elif (len(pdf_fontsize_statistics) > 1 and common_line_height <= pdf_fontsize_statistics[1][0] + (FONT_MARGIN * footnote_text_diff) and common_line_height >= pdf_fontsize_statistics[1][0] - (FONT_MARGIN * footnote_text_diff) and footnote_start and footnote_page != index):
-                        # footnote extension from last page -> introduces to much errors on other pdfs
-                    #    footnote = True
-                    #    footnote_page = index
-                    #    break
-                    # else:
-                    #     continue
-
-                    # word["text"] = common_error_replacements(word["text"])
-
+                        
                 if footnote:
                     line = mark_footnote_start(line)
-                    footnote_start = True
-            # fulltext += f"{text_from_box}\n\n"
-            # if footnote_start:
-            #     #if lines[line_index][-1]["text"][-1] != "." and common_line_height >= list(pdf_fontsize_statistics.items())[1][0] - FONT_MARGIN and common_line_height <= list(pdf_fontsize_statistics.items())[1][0] + FONT_MARGIN:
-            #     #    continue
-            #     lines[line_index] = mark_footnote_end(lines[line_index])
-            #     footnote_start = False
+            
             text_block = ""
             for line in lines:
                 text_block += " ".join(word["text"] for word in line) + "\n"
@@ -292,7 +242,6 @@ for pdf_file in os.listdir(pdf_path):
             print(text_block)
 
         visualize_page_layout(filtered_detections, images, index, os.path.join(output_path, pdf_file.replace(".pdf", "")))
-        # visualize_page_layout(detections, images, index, os.path.join(output_path, pdf_file.replace(".pdf", "")))
     
     with open(os.path.join(output_path, pdf_file.replace(".pdf", ".txt")), "w") as f:
         f.write(fulltext)

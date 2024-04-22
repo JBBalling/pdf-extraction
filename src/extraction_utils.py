@@ -139,6 +139,3 @@ def mark_footnote_start(line: str) -> str:
 def mark_footnote_end(line: str) -> str:
     line[-1]["text"] = f"{line[-1]['text']}FOOTNOTEEND"
     return line
-
-# def mark_footnote()
-# def mark_index(word: str) -> str:
