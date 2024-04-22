@@ -1,0 +1,1325 @@
+Die Trauerversorgung in Deutschland bis
+zur Einführung der ICD-11.
+Eine Retrospektive.
+
+
+Inauguraldissertation
+zur Erlangung des Grades eines Doktors der Medizin
+des Fachbereichs Medizin
+der Justus-Liebig-Universität Gießen
+
+
+vorgelegt von Steven Krämer
+aus Gießen
+
+
+Gießen 2021
+
+
+Aus dem Fachbereich Medizin der Justus-Liebig-Universität Gießen
+
+
+Medizinische Klinik V - Palliativmedizin
+
+
+Gutachter:
+Prof. Dr. Sibelius
+
+
+Gutachter:
+Prof. Dr. Leichsenring
+
+
+Tag der Disputation
+03.03.2022
+
+
+1! Einleitung
+
+
+Die Weltgesundheitsorganisation versteht unter Palliative Care einen Ansatz, „that
+improves the quality of life of patients and their families facing the problem associated
+with life-threatening illness, through the prevention and relief of suffering by means of
+early identification and impeccable assessment and treatment of pain and other problems,
+physical, psychosocial and spiritual“ (World Health Organization, 2002). Die Definition
+der WHO verdeutlicht, dass die Palliativversorgung nicht nur die Verbesserung der
+Lebensqualität von Erkrankten zum Ziel hat, sondern auch die der Angehörigen.
+
+
+Auch die S3-Leitlinie Palliativmedizin schließt Angehörige, auch nach Versterben des
+erkrankten Familienmitglieds, in den palliativen Versorgungsauftrag ausdrücklich mit
+ein: „Einrichtungen, die sterbende Menschen betreuen und versorgen, sollen eine
+hauseigene und kultursensible Abschieds- und Trauerkultur entwickeln und etablieren,
+die Patienten, Angehörigen und Mitarbeitern ein würdevolles Abschiednehmen
+ermöglicht. […] Angehörigen von Patienten mit einer nicht heilbaren Krebserkrankung
+sollte auf Wunsch das Angebot einer qualifizierten Trauerbegleitung bzw. -beratung,
+auch über den Tod des Patienten hinaus, vermittelt werden.“ (Leitlinienprogramm
+Onkologie (Deutsche Krebsgesellschaft, Deutsche Krebshilfe, AWMF), 2015) Die
+Trauerversorgung stellt somit einen integralen Teil der Palliativversorgung dar.
+
+
+Darüber hinausgehend fordert die S3-Leitlinie die multiprofessionellen Teams dazu auf,
+die Risikofaktoren zu identifizieren, die auf Probleme bei der Verlustverarbeitung
+hinweisen (Leitlinienprogramm Onkologie (Deutsche Krebsgesellschaft, Deutsche
+Krebshilfe, AWMF), 2015).
+
+
+Allerdings stellen derzeit verbreitete Versorgungsangebote wie Einladungen zur
+Teilnahme an Angehörigengottesdiensten, Trauercafés oder einzelnen
+Nachsorgekontakten kaum eine Erfüllung dieses konkreten Auftrages dar (Müller et al.,
+2017). Zuständig für die Versorgung Trauernder scheinen sich in Deutschland vor allem
+Fachkräfte aus unterschiedlichen Gesundheitsberufen zu sehen, die ihre Dienste unter
+Bezeichnungen wie etwa Trauerberatung, Trauerbegleitung oder Trauertherapie anbieten.
+Diese Bezeichnungen sind jedoch nicht geschützt. Sie weisen lediglich auf eine nicht
+genauer definierte und auch nicht notwendigerweise vorliegende Zusatzqualifikation hin.
+
+
+Es ist anzunehmen, dass es deutschlandweit zahlreiche Fachkräfte gibt, die in diesem
+Bereich tätig sind und eine hohe, wenngleich schwer schätzbare Zahl an Betroffenen, die
+deren Dienste in Anspruch nehmen.
+
+
+Mögliche Entwicklungsanstöße für die bundesdeutsche Trauerversorgung gibt die von
+der WHO im Mai 2019 verabschiedete ICD-11 (World Health Organization, 2019, S. 11).
+Unter dem Code 6b42 enthält diese eine neue trauerspezifische Diagnose – die
+,Prolongend Grief Disorder‘, zu Deutsch etwa Anhaltende Trauerstörung. Wann die ICD-
+11 in Deutschland eingeführt wird, ist derzeit noch unklar, voraussichtlich aber zum
+01.01.2022. Feststeht, dass damit für Betroffene die grundsätzliche Möglichkeit
+geschaffen wurde, gezielte Hilfe bei approbierten Psychotherapeut*innen in Anspruch zu
+nehmen und diese kassenärztlich abrechnen zu lassen.
+
+
+Wissenschaftlich fundierte Professionen, die aus einem Bedarf heraus entstehen, folgen
+einer beschreibbaren Entwicklungslogik (Wolfgang G. Stock, 1989): Während in der
+Anfangsphase Fakten von einer Wissenschaftler*innengemeinschaft zusammen getragen
+werden, die noch nicht handfest und empirisch fundiert sind, formt sich daraus über die
+Zeit eine ausdifferenzierte Bearbeitung des entsprechenden Felds. Zur weiteren
+Professionalisierung einer Profession gehört laut Stock auch die Standardisierung der
+Qualitätssicherung von Ausbildungsangeboten. Analog lässt sich erwarten, dass auch
+eine empirisch begründete Trauerversorgung – wenngleich es sich hierbei um ein
+berufsgruppenübergreifendes Feld handelt – einen Professionalisierungsprozesses wird
+durchlaufen müssen.
+
+
+Vorliegende Studie hat zum Ziel, ein deskriptives Bild der bundesdeutschen
+Trauerversorgung vor Etablierung der ICD-11-Diagnose zu zeichnen. Dabei stellt sich
+die Frage, wie sich die Trauerversorgung vor Einführung dieser darstellte, welche
+berufsspezifischen Gruppen im Bereich der Trauerversorgung bis dato tätig waren,
+inwieweit das deutsche Gesundheitssystem auf die neue Störung hinsichtlich der
+therapeutischen Möglichkeiten vorbereitet ist und welche Forderungen sich für deren
+Weiterentwicklung ableiten lassen.
+
+
+Dabei stellt die Studie$$$1$$$ eine Zwischenauswertung einer dreiteilig angelegten
+prospektiven Längsschnittstudie dar, die zwei Folgezeitpunkte umfasst (Folgezeitpunkt
+1: kurz nach Einführung der ICD-11-Diagnose; Folgezeitpunkt 2: ca. 10 Jahre nach
+Einführung der ICD-11-Diagnose).
+
+
+FOOTNOTE:1 Müller, H., Zwingmann, C., Krämer, S., Hauch, H., Sibelius, U. & Berthold, D. (eingereicht). Bevor die
+Diagnose kam … Eine Retrospektive der Trauerversorgung in Deutschland. Zeitschrift für Evidenz, Fortbil-
+dung und Qualität im Gesundheitswesen.
+
+
+2! Vertiefender Hintergrund
+
+
+2.1! Trauer
+
+
+1.1.1! Einordnung des Themas Trauer
+
+
+Heute gilt das Themenfeld ‚Trauer und Trauerbewältigung‘ als international vielseitig
+beforscht, wobei nicht nur Wissenschaftler*innen und Praktiker*innen, sondern auch
+unterschiedliche Fachrichtungen zusammenarbeiten (Parkes, 2001; Schut et al., 2001; M.
+S. Stroebe et al., 2007).
+
+
+Mittlerweile lassen sich in verschiedenen Ländern sogar unterschiedliche
+Arbeitsschwerpunkte ausmachen. So sind die Wissenschaftler*innen an der Clinic for
+Crisis Psychology in Bergen, Norwegen vor allem mit der Erforschung traumatischer
+Verlusterfahrungen befasst (Wittkowski, 2013b). In den Niederlanden liegt aktuell der
+Schwerpunkt auf störungswertigen Trauerprozessen. Klinische Studien zu Gewalt und
+gewaltsamem Tod stellen neben dem Zusammenhang von verschiedenen
+Bindungsmustern und Trauer auch in England einen Forschungsschwerpunkt dar
+(Wittkowski, 2013b). Für die USA lässt sich hingegen eine äußerst umfangreiche und
+ausdifferenzierte anwendungsbezogene und grundlagenwissenschaftliche Forschung
+notieren. Dort haben sich auch die beiden aktuell bestehenden Fachorganisationen
+gegründet. Die ‚Association of Death Education and counseling‘ (ADEC), die heute eine
+internationale Organisation ist, enthält Mitglieder vieler verschiedener Fachdisziplinen
+sowie die Gruppe der ehrenamtlich Tätigen (Association for Death Education and
+Counseling, ADEC, 2020). Ihr Ziel ist es, die Versorgung Sterbender und Trauernder in
+qualitativer Hinsicht zu verbessern. Die zweite Fachorganisation schloss sich zur
+‚International Group on Death, Dying and Bereavement‘ (IWG) zusammen. Auf der
+Grundlage der Kenntnisse und Erfahrungen arbeitet diese internationale,
+multidisziplinäre Gruppe unter anderem auch daran, praktische Handlungsempfehlungen
+zu entwickeln (Wittkowski, 2013b).
+
+
+Inzwischen haben sich in dem Forschungsgebiet Trauer zentrale Journals herausgebildet,
+darunter Death Studies, Omega-Journal of Death and Dying, Mortality of Loss and
+Trauma, Illness, Crisis and Loss und Bereavement Care (Brady, 2019).
+
+
+Wittkowski (2015) stellte in einer Untersuchung der Journals Death Studies und Omega
+fest, dass schwerpunktmäßig die Themen ‚bereavement/grief‘, ‚attitudes towards dying
+and death‘ sowie ‚suicide‘ beforscht werden. Zunehmend weniger publiziert wird in den
+untersuchten Key Journals hingegen zu ‚death education‘, ‚medical ethics‘ sowie ‚end-
+of-life issues‘ (Wittkowski et al., 2015).
+
+
+Im bundesdeutschen Raum finden die Erkenntnisse der internationalen Trauerforschung
+bisher keine Berücksichtigung in Lehr- und Fachbüchern. Auch existiert bislang keine
+Tradition der wissenschaftlichen Beforschung des Themas. So liegen bis heute keine
+systematischen Erhebungen vor, die sich dem Status quo der Versorgung Trauernder
+widmet.
+
+
+2.1.1! Trauer – Was ist das?
+
+
+Wie im Unterkapitel 2.1.1 dargelegt handelt es sich bei dem Forschungsfeld Trauer um
+ein multiprofessionelles Feld, indem entsprechend multiprofessionell geforscht wird.
+Dies mag dazu beitragen, dass es feldübergreifend noch keine einheitliche Verwendung
+des Begriffs der Trauer gibt. So schreiben Charmaz und Milligan (2007) „Grief is the
+emotion felt in the face of irretrievable loss“ (Charmaz & Milligan, 2007, S.518).
+
+
+Bonanno und Papa (2003) halten es allerdings für fraglich, dass es sich bei Trauer um
+eine Emotion handelt. Vielmehr sehen sie es als eine komplexe Erfahrung an, die
+Menschen im Laufe ihres Lebens machen (Bonanno & Kaltman, 2001).
+
+
+Stroebe et al. (2008) definieren Trauer als „…primarily emotional (affective) reaction to
+the loss of a loved one through death.” Diese Definition kann als verengt angesehen
+werden, denn denkbar sind auch andere Verlusterfahrungen, die nicht mit dem Tod eines
+Menschen in Verbindung stehen, aber dennoch eine Trauerreaktion hervorrufen.
+
+
+Im englischsprachigen Raum wird eine Definition zusätzlich dadurch erschwert, dass die
+englische Sprache drei Begriffe für den Begriff Trauer verwendet: Bereavement, Grief
+und Mourning. Bereavement ist die objektive Situation, etwas oder jemanden von
+Bedeutung verloren zu haben. Grief bezieht sich auf das innere Trauererleben und
+bezeichnet die vor allem (affektive) emotionale Reaktion auf einen Verlust. Mourning
+bezieht sich auf den Ausdruck oder die sozialen Praktiken von Trauer in einer bestimmten
+Gesellschaft und Kultur (M. S. Stroebe et al., 2007). Inwieweit diese Ausdifferenzierung
+
+
+der unterschiedlichen Bedeutungen zu einer präziseren Nutzung der Begriffe beigetragen
+hat, ist dabei fraglich. Denn sowohl Wissenschaftler*innen, wie auch Lai*innen
+verwenden die Begriffe häufig synonym (MacDonald, 2020).
+
+
+Für den deutschsprachigen Raum lieferte Sigmund Freud (1915) eine Definition, die bis
+heute häufig zitiert wird und als kleinster gemeinsamer Nenner angesehen werden kann
+„Trauer ist regelmäßig die Reaktion auf den Verlust einer geliebten Person […]“ (Freud,
+1915).
+
+
+Lammer (2014) betont, dass Trauer eine normale Reaktion auf eine Verlusterfahrung
+darstellt und wandelte Freuds Definition ab „Trauer ist die normale Reaktion auf einen
+bedeutenden Verlust“ (Lammer, 2014, S. 9).
+
+
+Eine deutschsprachige Definition, die die Kritikpunkte und Ergänzungen aufgreift wurde
+von Wittkowski (2011) formuliert: „Trauer bezeichnet die natürliche Reaktion auf das
+Erleben eines Verlusts bzw. die Bewältigung einer Verlusterfahrung. In der Regel handelt
+es dabei um den Verlust einer Bezugsperson durch deren Tod, prinzipiell kommen aber
+auch andere Verlustobjekte in Betracht (z.B. ein Körperteil, die Heimat, das Ende eines
+Lebensabschnitts, die Hoffnung auf eine Karriere)“ (Wittkowski et al., 2011, S.197).
+
+
+Aktuelle Definitionen berücksichtigen die komplexen syndromalen Aspekte von Trauer
+(M. S. Stroebe et al., 2008, S.5). So lassen sich affektive Erscheinungsformen wie zum
+Beispiel Traurigkeit, Wut und Sehnsucht ebenso wie kognitive Reaktionsweisen (z.B.
+Verleugnung, Hilflosigkeit und Konzentrationsschwierigkeiten) beobachten. Auf
+Verhaltensebene lassen sich Erscheinungsformen wie Unruhe, Anspannung und
+Müdigkeit feststellen. Zudem kann sich Trauer auch physiologisch-somatisch in Form
+von Appetitverlust, Schlafstörungen oder somatischer Beschwerden sowie
+immunologischen und endokrinen Veränderungen oder erhöhter Anfälligkeit für
+Erkrankungen äußern (M. Stroebe et al., 2007, S. 1964).
+
+
+Obwohl (Charmaz & Milligan, 2007) betonen, dass Trauer mit eher negativen Reaktionen
+assoziiert wird, erleben Menschen auch Gefühle wie Frieden oder Freude (Bonanno &
+Papa, 2003). Welche Reaktionsweisen Betroffene erleben ist individuell verschieden und
+hängt auch maßgeblich vom kulturellen Hintergrund der Hinterbliebenen ab (Charmaz &
+Milligan, 2007).
+
+
+2.2! Störungswertige Trauer
+
+
+2.2.1! Probleme in der Trauerbewältigung
+
+
+Menschliche Empfindungen, die zunächst als normal gelten, können zugleich normal sein
+oder in einem bestimmten Ausmaß behandlungsbedürftig werden. Bekannte Beispiele
+dafür sind Angst oder Traurigkeit, die in entsprechender Ausprägung als Angststörung
+oder Depression behandelt werden. Studien haben gezeigt, dass sich die anhaltende
+Trauer trotz vieler Überlappungen signifikant von Angst und Depression unterscheiden
+lässt (Fox & Jones, 2013; H. Prigerson et al., 1996).
+
+
+Bereits seit Lindemann (1944) besteht die Idee, dass Trauerverläufe auftreten können, die
+sich als störungswertig einordnen lassen. Dabei ist die Unterscheidung einer normalen
+und einer störungswertigen Trauerreaktion beziehungsweise psychischen Erkrankung
+komplex und bis heute viel diskutiert und beforscht (Fox & Jones, 2013; Parkes, 2001;
+Schut et al., 2001; M. S. Stroebe et al., 2007). Bisherige Studien haben auch gezeigt, dass
+sich klinisch auffällige und normale Trauerverläufe gut unterscheiden lassen (Corless et
+al., 2011; Müller, Berthold, et al., 2020; H. G. Prigerson et al., 1995; Tsai et al., 2020;
+Wagner, 2013).
+
+
+Doch herrscht unter Expert*innen – auch bei der Namensgebung auffälliger
+Trauerverläufe –Uneinigkeit. So sprechen Prigerson et al. (2007) zunächst etwa von
+prolongierter Trauer bzw. PGD. Shear et al. (2011) dagegen sprechen von Komplizierter
+Trauer. Andere Wissenschaftler*innen sprechen auch von chronischer Trauer,
+ambivalenter Trauer, verzögerter Trauer oder pathologischer Trauer (A. M. Horowitz,
+1993; Rando, 2013). Im Jahr 2013 kam der Begriff ‚Persistent Complex Bereavement
+Disorder‘ (PCBD) aus dem DSM-V hinzu. Zuletzt schließlich die PGD nach ICD-11.
+
+
+Hinter den verschiedenen Begriffen stehen durchaus auch unterschiedliche Kriterien auf
+inhaltlicher Ebene. Während Horowitz et al. (1997) aus einer Reihe klinischer Symptome
+insgesamt sieben Symptome filterten, die eine komplizierte Trauer prädiktiv hervorsagen
+konnten, entwickelten Prigerson et al. (1995) ein Symptomcluster, mit welchem ein
+qualitativer Unterschied zwischen Angst und Depression nach einem Verlust getroffen
+werden konnte. Die etwa zeitgleiche Arbeit der beiden Forschungsgruppen mündete in
+der Entwickelung eines Konsensuskriteriums, welches sich durch Trennungsstress und
+traumatischen Stress definierte (Wagner, 2013). Shear et al. (2011) entwickelten zwar
+auch sehr ähnliche Kriterien, von denen ebenso eine, wenngleich geringere, Mindestzahl
+
+
+an Symptomen zutreffen sollte. Daneben hingegen bezogen sie auch die Ausprägung
+typischer Dimensionen wie beispielsweise Kernsymptomen und Dauer beziehungsweise
+intensive Sehnsucht oder Beschäftigung mit dem Verstorbenen mit ein (Mauro et al.,
+2017; Müller & Willmann, 2020).
+
+
+Die Tatsache, dass ein häufiger Wechsel der Begrifflichkeit stattgefunden hat, erschwert
+den Prozess einer einheitlichen Definition zusätzlich (Falkai et al., 2018; Wagner, 2016).
+Denn die Kriterien, die den einzelnen Begriffen zuzuordnen sind, unterscheiden sich nicht
+nur sprachlich, sondern auch inhaltlich (Mauro et al., 2017).
+
+
+Eine breiter gefasste Definition von Stroebe et al. (2013), die einer erleichterten
+Einordnung von komplizierter Trauer dienen soll, lautet: „In general terms, complicated
+grief (CG) can be understood as something like a ,derailing’ of the normal, usually painful
+process of adapting to the loss of a significant person“ (M. Stroebe et al., 2012).
+
+
+Die Schwierigkeit, eine störungswertige von einer normalen Trauer unterscheiden zu
+können, liegt auch vor allem daran, dass sie sich zunächst mit den gleichen Symptomen,
+wie Traurigkeit, sozialem Rückzug oder emotionaler Taubheit präsentiert (Wagner,
+2013). Im Wesentlichen unterscheidet sie sich durch die Intensität, Qualität und Dauer
+der Trauerreaktion (Schut et al., 2001). Zudem spielen in der Verursachung
+störungswertiger Verläufe bestimmte Faktoren wie multiple Verluste, Todesumstände
+(z.B. Mord, Suizid), fehlende Unterstützung des sozialen Umfelds, finanzielle Notlage,
+vorangegangene Traumata, Substanzmissbrauch, problembehaftete Beziehung zur
+verstorbenen Person und Tod des eigenen Kindes eine entscheidende Rolle (Wagner,
+2019). Inwiefern diese potenziell beeinflussenden Aspekte eine komplizierte Trauer
+begünstigen beziehungsweise abschwächen, bedarf weiterer Forschung.
+
+
+Die Schwierigkeiten in der Wissenschaft haben ihre Ursachen auch in der
+gesellschaftlichen Variabilität des Untersuchungsgegenstandes. Denn Trauer ist
+maßgeblich von kultureller Prägung und damit von örtlichen und zeitlichen
+Entwicklungen beeinflusst.
+
+
+Zudem besitzen wir Menschen unterschiedlich stark ausgeprägte Resilienzmechanismen,
+um Krisensituationen im Leben bewältigen zu können (Bonanno et al., 2012). Diese
+sollen uns helfen, Ereignisse wie den Verlust eines nahestehenden Menschen bewältigen
+zu können. Doch nicht jeder Mensch verfügt über ausreichende Ressourcen, um derartige
+Anpassungsprozesse bewältigen zu können. „Vermutlich haben etwa 10-15 % aller
+
+
+Hinterbliebenen mit langwierigen Trauerreaktionen zu kämpfen […] Wenn wir uns
+jedoch vor Augen halten, dass sich nahezu jeder mit Verlustschmerz herumschlagen
+muss, stellen 10-15% eine Menge Menschen dar, was verdeutlicht, dass anhaltende
+Trauer tatsächlich ein ernsthaftes Problem ist“ (Bonanno et al., 2012, S. 108).
+
+
+Die tatsächliche Prävalenz für die Entwicklung einer störungswertigen Trauerreaktion ist
+aufgrund fehlender repräsentativ angelegter Studien und methodischer
+Herausforderungen wie Rekrutierung von multidisziplinären Studienteilnehmer*innen
+nicht eindeutig zu beziffern.
+
+
+2.2.2! Trauer als Forschungsdiagnose im DSM
+
+
+Auch im Zuge der Überarbeitung des ‚Diagnostic and Statistical Manual of Mental
+Disorders‘ (DSM) wurde die Thematik störungswertiger Trauer diskutiert. So wurde im
+Kontext der Diagnose einer Depression die sogenannte Trauerausschlussklausel in der
+aktuellen Version, dem DSM-V, entfernt. Diese hatte zuvor bewirkt, dass Hinterbliebene
+trotz Vorliegen von Symptomen, die zu einer Depression passen würden, diese Diagnose
+zunächst nicht erhielten, solange diese Symptome nicht länger als zwei Monate
+andauerten. Damit sollte erreichen werden, dass ein normales Trauern nicht irrtümlich als
+pathologische Erkrankung angesehen bzw. eine Depression nicht irrtümlich als normale
+Trauerreaktion angesehen wird (Müller, Kiepke-Ziemes, et al., 2020). Den Wegfall der
+Trauerausschlussklausel wird von manchen Expert*innen als kritisch betrachtet, denn so
+können Trauernde schon zwei Wochen nach dem Verlust die Diagnose einer Depression
+erhalten, ohne jedoch zwangsläufig unter dieser Erkrankung zu leiden (Münch et al.,
+2020).
+
+
+Hinsichtlich einer trauerspezifischen Diagnose wurde im DSM-V jedoch die
+Forschungsdiagnose ,Persistent Complex Bereavement Disorder‘ aufgenommen. Sie ist
+ausdrücklich nicht zur klinischen Anwendung gedacht, doch verlaufen aktuelle
+Bestrebungen verlaufen dahingehend, dass die in der ICD-11 aufgenommenen Diagnose
+,Prolonged Grief Disorder‘ (PGD) nun auch im DSM einen Nachtrag finden soll.
+
+
+Für die Kliniker*innen ist es daher für die zukünftige Beurteilung von allen psychischen
+Störungen und Störungen im Verhalten wichtig, wenige, aber dennoch sehr präzise
+Kriterien zur Erkennung der Kernsymptome für die im ICD-11 neu aufgenommene
+Diagnose als Richtlinie zu besitzen (Reed et al., 2013).
+
+
+2.2.3! Prolonged Grief Disorder in der ICD
+
+
+Im Jahr 2019 verabschiedete die Weltgesundheitsorganisation (WHO) die elfte Revision
+der ICD. Sie enthält erstmals eine trauerspezifische Diagnose namens ,Prolonged Grief
+FOOTNOTE:Disorder (PGD)‘:
+
+
+„Prolonged grief disorder is a disturbance in which, following the death of a
+partner, parent, child, or other person close to the bereaved, there is persistent and
+pervasive grief response characterised by longing for the deceased or persistent
+preoccupation with the deceased accompanied by intense emotional pain (e.g.
+sadness, guilt, anger, denial, blame, difficulty accepting the death, feeling one has
+lost a part of one’s self, an inability to experience positive mood, emotional
+numbness, difficulty in engaging with social or other activities). The grief response
+has persisted for an atypically long period of time following the loss (more than 6
+months at a minimum) and clearly exceeds expected social, cultural or religious
+norms for the individual’s culture and context. Grief reactions that have persisted
+for longer periods that are within a normative period of grieving given the person’s
+cultural and religious context are viewed as normal bereavement responses and
+are not assigned a diagnosis. The disturbance causes significant impairment in
+personal, family, social, educational, occupational or other important areas of
+functioning“ (WHO, 2020).
+
+
+Die Diagnose hebt die folgenden wenigen Kernsymptome und -kriterien hervor:
+ausgeprägte Sehnsucht, Symptome intensiven emotionalen Schmerzes und signifikante
+psychosoziale Beeinträchtigung für mindestens sechs Monate außerhalb der erwarteten
+soziokulturellen Normen (Killikelly & Maercker, 2018).
+
+
+Dennoch fällt in der Anlage der ICD-11 auf, dass die Diagnosestellung einer neuen Logik
+folgt. So erfolgt die Diagnosestellung anhand der Ausprägung spezifischer
+Kernsymptome und der Dauer, aber nicht mehr anhand von Symptomchecklisten, wie es
+Prigerson et al.(2007) oder auch Shear et al.(2011) vorgeschlagen haben (Müller &
+Willmann, 2020; Münch et al., 2020).
+
+
+So wird in Zukunft viel Forschung nötig sein, um mehr Klarheit und Übersicht zu
+erlangen. Das gilt insbesondere in Bezug auf die Anwendbarkeit und Nützlichkeit der
+Diagnose der PGD nach ICD-11 (Killikelly & Maercker, 2018).
+
+
+Wissenschaftler wie Stroebe et al. (2013) führen darüber hinaus an, dass es vor allem
+auch wichtig sei, einen multidisziplinären Ansatz aufzubauen, der zu einem
+
+
+interdisziplinären Ansatz erweitert wird. Dabei soll eine gemeinsame Wissensbasis
+geschaffen werden, die nicht nur von Forscherinnen und Forschern sondern in enger
+Zusammenarbeit mit den Kliniker*innen gespeist wird, die von den Ergebnissen der
+Forschung profitieren und deren Erfahrungen den Forscher*innen die Grundlage für neue
+Ansätze bieten. Einen ähnlichen Ansatz verfolgt Lund (1998).
+
+
+2.3! Intervention und Versorgung
+
+
+FOOTNOTE:$$$2$$$.3.1! Interventionen bei Trauernden
+
+
+Während Trauerreaktionen nach Trauerfällen für individuell einzigartig sind, wird
+zunehmend anerkannt, dass Trauerfälle bei einigen Menschen zu anhaltender
+psychiatrischer Belastung führen können (Breen & O’Connor, 2007). Es stellt sich dabei
+die Frage, ob man Hinterbliebenen mit einer störungswertigen Trauer helfen kann oder
+ob entsprechende Interventionen möglicherweise sogar schädlich für Hinterbliebene sein
+könnten.
+
+
+Regehr und Sussmann (2004) weisen darauf hin, dass für die Mehrheit der
+Hinterbliebenen Interventionen nur begrenzt hilfreich seien und zum Teil sogar schädlich
+für die Betroffenen sein könnten. Studien zeigen aber auch, dass Hinterbliebene, die
+aufgrund ihrer Reaktion unter psychiatrischen Schwierigkeiten leiden, von gezielten
+Trauerinterventionen profitieren (Currier et al., 2008; Rosner et al., 2010).
+
+
+Durch die Umfrage von Aoun et. al (2015) konnten auf Basis eines Fragebogens, der ein
+validiertes Risikobewertungs-Screening für die PGD, die PG-13, enthielt, Informationen
+über die bevölkerungsbezogenen Erfahrungen mit Trauerfällen gesammelt werden und
+eine Einteilung der Hinterbliebenen in Gruppen mit niedrigem, mittlerem und hohem
+Risiko für die Entwicklung einer PGD getroffen werden.
+
+
+„The PG-13 measures responses to separation social/functional impairment, and
+cognitive, emotional and behavioral symptoms over a period of not less than 6
+months since bereavement. All 5 criteria must be met to indicate the presence of
+PGD: event (bereavement); separation distress; duration (i.e., >6 months);
+cognitive, emotional and behavioral symptoms; and social/occupational
+impairment. The score range is 11–55 and a score of 36 or more is a clinical
+indicator of PGD“ (Aoun et al., 2015).
+
+
+Darüber hinaus konnten die Gruppen mit niedrigem, mittlerem und hohem Risiko anhand
+der PG-13-Werte klar unterschieden und auch Unterschiede im Grad des
+Unterstützungsbedarfs ermittelt werden, weshalb es sinnvoll erscheint, für die
+Trauerversorgung flexible und zielgerichtete Trauerdienste anzubieten.
+
+
+$$$2$$$.3.$$$2$$$! Trauerversorgung in Deutschland
+
+
+Obwohl sich das das Tätigkeitsfeld der Trauerversorgung in Deutschland vor über 30
+Jahren zu etablieren begonnen hat, liegt bis heute kein gesichertes Wissen darüber vor,
+was sich hinter den Versorgungsangeboten und -bezeichnungen verbirgt und wie die
+praktische Arbeit dieser Fachkräfte aussieht.
+
+
+Was sich vermuten lässt ist jedoch, dass die Angebote der Trauerversorgenden große
+qualitative Unterschiede aufweisen. Dafür spricht unter anderem das sehr heterogene
+Angebot an Qualifikationsmöglichkeiten, das sich durch uneinheitliche Standards, wie
+verschiedene inhaltliche Schwerpunkte, die fehlende wissenschaftliche Fundierung, der
+unterschiedliche Kosten- und Zeitrahmen sowie eine unabhängige Zertifizierungspraxis
+kennzeichnet (Müller et al., 2021; Wittkowski, 2013a). So bezeichnet auch Wittkowski
+(2013) dieses Versorgungsfeld als äußerst heterogen.
+
+
+Vergleicht man Deutschland mit Ländern wie den Niederlanden oder Großbritannien, so
+fällt eine mangelnde systematische wissenschaftliche Beschäftigung mit dem Thema
+Trauer auf (Müller, Berthold, et al., 2020). Auch innerhalb der palliativen
+Versorgungslandschaft kann das Thema Trauer in Deutschland als randständig
+bezeichnet werden. Dies zeigt sich beispielsweise darin, dass seine Anbindung an
+wissenschaftliche Fachgesellschaften jüngeren Datums ist. So wurde die Bereavement
+Task Force der European Association for Palliative Care (EAPC) im Jahre 2013
+gegründet; die Einbindung des Themas innerhalb der Deutschen Gesellschaft für
+Palliativmedizin erfolgte im Jahr 2018. Eine Grundlage für den empirisch gesicherten und
+konsentierten Transfer in die Versorgungspraxis scheint damit nur bedingt gegeben.
+
+
+Darüber hinaus lässt sich beobachten, dass die trauerspezifischen Inhalte in medizinisch-
+psychologischen Lehrbüchern sowohl in Deutschland als auch international häufig nicht
+dem aktuellen Forschungsstand entsprechen (Corr, 2019). Bestehende Curricula und
+Leitlinien lassen zudem vermuten, dass das Thema in Aus- und Fortbildungen
+
+
+unterrepräsentiert ist, sowie kaum evidenzbasierte Erkenntnisse vorliegen (Müller,
+Berthold, et al., 2020).
+
+
+Vor diesem Hintergrund soll die vorliegende Untersuchung der Frage nachgehen, wie
+sich die Trauerversorgung vor Einführung des ICD-11 darstellt.
+
+
+2.4! Fragestellung
+
+
+Die Fragestellung nach dem Status quo der Trauerversorgung vor Einführung des ICD-
+11 lässt sich weiter aufgliedern. Es wurden sieben Leitfragen identifiziert, die den Ver-
+sorgungsstandard auf unterschiedlichen Ebenen abzubilden versucht.
+
+
+FOOTNOTE:-! Wer leistet die Trauerversorgung?
+
+
+-! Wie beschreiben sich die Akteur*innen hinsichtlich der Trauerversorgung selbst?
+
+
+-! An wen richteten sich die Angebote?
+
+
+-! Zu welchem Zeitpunkt wird die Trauerversorgung aufgenommen?
+
+
+-! Wie wird die Trauerversorgung diagnostisch begleitet?
+
+
+-! Welche Konzepte und Interventionen kommen zur Anwendung?
+
+
+-! Finden Weiterleitungen an approbierte Psychotherapeut*innen statt?
+
+
+3! Methode
+
+
+3.1! Material
+
+
+Für die Beantwortung der Forschungsfragen wurde eine anonyme Querschnittserhebung
+über die freie Online-Umfrage-Applikation Limesurvey durchgeführt. Hierfür wurden 16
+selbst formulierte Fragen entwickelt. Die individuell präsentierte Itemzahl variierte, da
+der Fragebogen Filterfragen umfasste, d.h. Fragen, deren Antwort die nachfolgenden
+Items beeinflussen.
+
+
+Die ersten drei Fragen bezogen sich dabei zunächst auf den Zeitpunkt der Aufnahme der
+Arbeit im Bereich der Trauerversorgung und auf das berufliche Verhältnis zum Zeitpunkt
+der Datenerhebung. Die vierte Frage sollte hervorbringen, ob und wenn ja wann und bei
+welcher Institution eine trauerspezifische Zusatzausbildung erworben wurde.
+
+
+Die darauffolgenden Fragen fünf bis sieben beschäftigten sich damit, in welchem Ausmaß
+altersspezifische, verlustspezifische und verlustartspezifische Trauernde betreut werden.
+,verlustspezifisch‘ bedeutet in diesem Zusammenhang, in welchem Verhältnis der Trau-
+ernde und der Verstorbene zueinanderstanden, während mit der Kategorie ,verlustartspe-
+zifisch‘ die Ursache des Todes der nahestehenden Person erfragt wurde.
+
+
+In der achten Frage wurden die Teilnehmenden anhand einer Entscheidungsfrage gebe-
+ten, die Art der angewendeten Intervention zu spezifizieren. Diese sollten dabei wählen,
+ob sie ihre Intervention als ,Trauerberatung‘, ,Trauerbegleitung‘, ,Trauertherapie‘ oder
+als andere Interventionsform (Freitextfeld) bezeichnen. Es war in diesem Fall möglich,
+mehrfach mit Ja zu antworten (Multiple Choice). Wurde die Trauertherapie als Interven-
+tionsart ausgewählt, so sollte in Frage neun in einem Freitextfeld genauer beschrieben
+werden, um welche Art der angewendeten Trauertherapie es sich handelt. Zusätzlich
+sollte in der zehnten Frage in prozentualer Angabe geschätzt werden, in welchem Ausmaß
+Gruppen-, Einzel- Paar- oder sonstige Interventionen im Arbeitsalltag stattfinden.
+
+
+Mit Frage elf wurde erfasst, ob die Intervention der Teilnehmenden in der Regel vor oder
+nach Eintritt des Todesfalles beginnt. In Frage zwölf sollte zunächst angegeben werden,
+ob die Art der Intervention auf einem bestimmten Konzept beruht. Mit zwei weiteren
+
+
+Spezifizierungsfragen in einem Freitextfeld wurde erfragt, welche wesentlichen Ziele und
+Methoden dabei zur Anwendung kommen.
+
+
+In Frage 13 bzw. 14 wurde gefragt, ob zu Beginn der Intervention eine Eingangsdiagnos-
+tik zur Identifizierung von Risikofällen bzw. eine Abschlussdiagnostik zur Erfolgskon-
+trolle durchgeführt wird. Wird dies jeweils bejaht, so sollte zusätzlich noch beantwortet
+werden, ob die Diagnostik ohne Fragebogen, mittels Verhaltensbeobachtung, mit stan-
+dardisiertem Fragebogen oder durch andere psychologische Testverfahren durchgeführt
+wird.
+
+
+Danach sollte in Frage 15 noch angegeben werden, ob Trauernde an professionelle Psy-
+chotherapeut*innen weitergeleitet werden und, wenn ja, in einer Spezifizierungsfrage an-
+gegeben werden, wie häufig dies stattfindet. Dabei konnten die Befragten zwischen 1-20
+mal, 21-40 mal, 41-60 mal oder häufiger als 60 mal pro Jahr wählen. In der 16. Frage
+sollte abschließend angegeben werden, wie viele Trauernde pro Jahr die Intervention der
+Befragten in Anspruch nehmen, siehe Tabelle 1.
+
+
+FOOTNOTE:Tabelle 1 - Auswahlmöglichkeiten in Frage 16
+
+
+Des Weiteren wurden demografische und ausbildungsbezogene Merkmale erfasst (Ge-
+schlecht, Schulabschluss, vollzogene Ausbildungen, abgeschlossene und abgebrochene
+Studiengänge sowie weiteren Zusatzqualifikationen). Es wurden keine personenbezoge-
+nen Daten erfragt oder gespeichert.
+
+
+3.2! Datensammlung
+
+
+Bundesweit wurden alle Landespsychotherapeuten- und Landesärztekammern, ausge-
+wählte Hochschulambulanzen, der Berufsverband Deutscher Psychologinnen und
+Psychologen e.V., eine Stiftung zur Förderung der Klinischen Psychologie kontaktiert
+und um Unterstützung bei der Rekrutierung von Teilnehmenden gebeten. Außerdem
+
+
+wurden 885 Trauerversorgungseinrichtungen per E-Mail angeschrieben bzw. im Rahmen
+eines Newsletters kontaktiert und um Teilnahme gebeten. Der Beobachtungszeitraum be-
+lief sich insgesamt auf sieben Monate. Ein Zweitaufruf erfolgte nicht.
+
+
+Allen Teilnehmenden wurde eine E-Mail zugesendet, in welchem neben der Studienin-
+formation ein berufsgruppenspezifischer Zugangsschlüssel (4-stelliger Zahlencode) ent-
+halten war. Dieser konnte über die ebenfalls im Anschreiben enthaltene Internetadresse
+mit direkter Verbindung zum Fragebogen eingegeben werden, um die Befragung an-
+schließend starten zu können. Auf diese Weise wurde sichergestellt, die Anonymität der
+Teilnehmenden auch auf technischem Wege wahren zu können.
+
+
+3.3! Datenbereinigung
+
+
+Zur Bereinigung der Daten wurden zunächst alle Fragenbögen auf deren vollständige Be-
+antwortung untersucht. Es stellte sich heraus, dass ein nicht geringer Teil der Befragten
+den Fragebogen nicht vollständig beantwortete. Dies lässt vermuten, dass die Teilnahme
+in diesen Fällen mit reduzierter Motivation und geringfügiger Ernsthaftigkeit erfolgte.
+Um entsprechende Fragebögen zu identifizieren wurden Befragungen, die nur bis zur 8.
+Frage ausgefüllt wurden, aus der Studie ausgesondert. Befragungen, die zwar bis zum
+Ende ausgefüllt wurden, aber fehlende Antworten aufwiesen, wurden dann ausgesondert,
+wenn eine kritische Zahl an zuvor definierten Kernfragen unbeantwortet blieb. Auf diese
+Weise sollten neben den vollständig beantworteten Fragebögen auch jene mit einbezogen
+werden, die trotz Unvollständigkeit eine für diese Arbeit relevante Aussagekraft besitzen.
+
+
+Zur Identifikation der Kernfragen wurde eine Einteilung getroffen, welchen Fragen eine
+höhere Priorität (+) bzw. eine niedrigere Priorität (-) zugeordnet werden konnte, siehe
+Tabelle 2. Es sei darauf hingewiesen, dass dabei mögliche Spezifizierungsfragen nicht
+zusätzlich aufgeführt wurden, diese jedoch bei der Prioritätsbewertung miteinbezogen
+wurden. Maximal drei der sieben priorisierten Fragen durften unausgefüllt bleiben, um
+noch in die Auswertung mit einbezogen zu werden. Frage 13 und 14 (Eingangs-/Ab-
+schlussdiagnostik) wurden zusammen beurteilt, da diese entweder beide beantwortet wur-
+den oder beide frei blieben. (Zurückzuführen auf Abbruch des Fragebogens an bestimm-
+ten Stellen). Alle Fragebögen mit mehr als drei unbeantworteten höher priorisierten Fra-
+gen wurden daher von Auswertung ausgeschlossen und bereinigt.
+
+
+Tabelle 2 - Fragenpriorität
+
+
+3.4! Datenanalyse
+
+
+Die Datenauswertung erfolgte deskriptivstatistisch und wurde in Microsoft Excel durch-
+geführt. Zur Anwendung kam dabei als Lagemaß das arithmetische Mittel .
+
+
+4! Ergebnisse
+
+
+Nach durchgeführter Datenbereinigung wurden von den 676 bearbeiteten Fragebögen
+insgesamt 410 in die Auswertung einbezogen. 78,8% (323) der Personen stammten von
+verschiedenen Trauerbegleitungsstellen, 11,2% (46) von den
+Landespsychotherapeutenkammern, 6,6% (27) von dem befragten psychologischen
+Fachverband sowie 3,4% (14) aus den Hochschulambulanzen. Keine Rückläufe ergab das
+Anschreiben an die Landesärztekammern.
+
+
+71,5% (293) der Teilnehmenden waren weiblichen, 14,6% (60) waren männlichen
+Geschlechts. 13,9% (57) gaben keine Auskunft zum Geschlecht.
+
+
+4.1! Wer die Trauerversorgung in Deutschland leistet
+
+
+Im Folgenden wird gezeigt, welche Ergebnisse die Datenerhebung bezüglich der
+arbeitsspezifischen Fakten der Befragten hervorbringen konnte. So ergab die Auswertung
+der Daten, dass mit 57,6% (236) der Mehrheit der Befragten eine Berufserfahrung von
+weniger als zehn Jahren zugrunde lag. Zwischen 11 und 20 Jahren Berufserfahrung haben
+33,7% (138) der Befragten. 6,3% (26) gaben an, zwischen 21 und 30 Jahren und 2,4%
+(10) mehr als 30 Jahre Erfahrung in der Betreuung von Trauernden zu haben.
+
+
+Abbildung 1 - Ausübung der Tätigkeit in Jahren
+
+
+Insgesamt gaben 45,4% der Personen (186) an, ihre Tätigkeit hauptberuflich auszuüben,
+11,7% (48) arbeiteten nebenberuflich und 32,7% (134) ehrenamtlich. 10,2% (42) der
+Personen antworteten bei der zugehörigen Frage mit der Antwortmöglichkeit „Andere“.
+Diese Antwort wurde dann gegeben, wenn sich im Laufe der Tätigkeit der Berufsstatus
+geändert hat oder in verschiedenen Funktionen und Ausmaß in der Trauerversorgung
+gearbeitet wird.
+
+
+Die Tätigkeit wurde von 31% der Personen (127) freiberuflich beziehungsweise in
+selbstständiger Funktion ausgeführt. 40,7% (167) arbeiteten im Angestelltenverhältnis,
+2% (8) im Beamtenverhältnis im Rahmen einer Institution und die verbleibenden 26,3%
+(108) antworteten mit „Sonstige“, worunter die hauptsächlich ehrenamtlich Tätigen
+fallen.
+
+
+Insgesamt 61% (250) der Befragten haben eine trauerspezifische Zusatzausbildung
+abgeschlossen. Von den 186 hauptberuflich tätigen gaben genau 50% (93) an, diese
+Zusatzausbildung zu besitzen. Dabei stellte sich die in Abbildung 3 dargestellte
+Verteilung der zugrundeliegenden Ausbildung der Befragten dar. Die Diplom-
+Sozialpädagogen stellten dabei die größte Berufsgruppe mit 18,3% (17). Mit 44,1% (41)
+gab ein Großteil der Befragten hierbei keine Angabe ab.
+
+
+FOOTNOTE:Abbildung 3 - Zugrundeliegende Ausbildung der hauptberuflich tätigen (Antworten ohne Angabe wurden
+nicht abgebildet)
+
+
+Von den 32,7% (134) ehrenamtlich tätigen gaben 74,6% (100) an, eine trauerspezifische
+Ausbildung abgeschlossen zu haben. Dabei waren die beiden meist genannten
+zugrundeliegenden Berufe die Krankenpflege mit 11% (11) und Diplom-Sozialpädagogik
+mit 8% (8) Nennungen. 44% (44) der Befragten machten hier keine Angabe.
+
+
+Abbildung 4 - Zugrundeliegende Ausbildung der ehrenamtlich tätigen (Antworten ohne Angabe wurden
+nicht abgebildet)
+
+
+4.2! Wie sich die Akteure der Trauerversorgung selbst bezeichnen
+Bei der Frage, wie die Befragten ihre Tätigkeit selbst bezeichnen, waren verschiedene
+Bezeichnungen auswählbar, wobei auch Mehrfachauswahlen möglich waren. 80,2%
+(329) der Befragten gaben an, ihre Tätigkeit als ,Trauerbegleitung‘ zu bezeichnen, 53,2%
+(218) als ,Trauerberatung‘. Mit 47,8% (196) entschieden sich fast die Hälfte aller
+Befragten, ihre Tätigkeit sowohl als ,Trauerberatung‘ wie auch als ,Trauerbegleitung‘ zu
+bezeichnen.
+
+
+FOOTNOTE:Tabelle 3 - Berufsbezeichnung
+
+
+Bei der Frage, welche Art von Psychotherapie angeboten wird, falls eine
+trauertherapeutische Intervention durchgeführt wird, gab es vielfältige Bezeichnungen.
+Die häufigsten vier Begrifflichkeiten waren dabei ,Tiefenpsychologisch fundierte
+Psychotherapie‘, ,Gesprächspsychotherapie‘, ,Kognitive Verhaltenstherapie‘ und
+,Gestalttherapie‘.
+
+
+4.3! An wen sich die Angebote der Trauerversorgung richten
+In der Frage, an welche Altersgruppen sich die Angebote der Trauerversorgung richten,
+zeigen die Ergebnisse, dass die überwiegende Mehrheit mit insgesamt über 85% mit
+Erwachsenen arbeitet. Die Spitze dabei befindet sich mit 38,2% im Alter zwischen 41
+und 60 Jahren. Etwas weniger als 15% nimmt dabei die Arbeit mit Kindern und
+Jugendlichen ein. Die genauere Unterteilung der Altersgruppen ist in der folgenden
+Abbildung 5 dargestellt. Insgesamt konnten hierbei 357 abgegebene Antworten in die
+Auswertung einfließen.
+
+
+Mit einem Anteil von 48,2% wurde angegeben, dass die Trauerversorgenden in fast der
+Hälfte der Fälle mit Personen arbeiten, die einen Verlust des Lebenspartners erlitten
+haben. In 16% der Fälle haben die Trauernden einen Verlust eines Elternteils erlitten und
+in 12,7% den Verlust einer anderen nahestehen Bezugsperson wie Großeltern oder engen
+Freunden. In etwa jeder 20. Fall bezieht sich auf einen Verlust eines Geschwisterteils und
+in etwa 15% der Fälle wurde der Verlust eines Kindes im minderjährigen Alter betrauert.
+Die Befragten wählten im Schnitt zu 2,9% außerdem noch die Antwortmöglichkeit
+„Sonstige“. Die darauffolgenden Ausführungen zeigten, dass mit dieser
+Antwortmöglichkeit vor allem der Verlust eigener Kinder vor der Geburt im Rahmen
+
+
+einer Fehlgeburt sowie Verlusten von eigenen Kindern im Erwachsenenalter gemeint
+waren. Insgesamt konnten bei der Auswertung 348 abgegebene Antworten in die
+Auswertung einfließen.
+
+
+Bei der Frage, welche Verlustursache die Trauerversorgung zum Gegenstand hat, gaben
+diese an, in über der Hälfte der Fälle (53,2%) Personen zu betreuen, die einen Verlust
+einer nahestehenden Person erlitten haben, der eine Krankheit mit Leidenszeit
+vorausging. In etwa jedem fünften Fall betrauerten die Personen einen Verlust durch
+Krankheit ohne Leidenszeit. In etwa jedem zehnten Fall war der Verlust durch einen
+Suizid oder einen plötzlichen Tod (z.B. Unfall, Ertrinken). 4,2% der Personen wurden
+wegen einem Verlust durch eine Fehlgeburt betreut.
+
+
+Die weiteren Antwortmöglichkeiten zu verlustartspezifischen Personengruppen wie
+Gewaltverbrechen (1,0%), Einsatz in Krisen-/& Kriegsgebieten (0,2%), Katastrophe
+(z.B. Flugzeugabsturz, Erdbeben) (0,5%) und das Auswahlfeld „Sonstige“ (1,5%) wurden
+der Übersichtlichkeit zugunsten im Folgenden nicht abgebildet. Insgesamt konnten bei
+der Auswertung 350 abgegebene Antworten in die Auswertung einfließen.
+
+
+In 53,4% der Fälle findet die Trauerversorgung in Einzeltherapie und in 41% im Rahmen
+einer Gruppentherapie statt. Außerdem gaben die Befragten an, dass in 3,5% der Fälle
+eine Paartherapie durchgeführt wird. Die Antwortmöglichkeit „Sonstige“ wurde in 2,1%
+angegeben worunter als Folgeantwortmöglichkeit am Häufigsten Familieninterventionen
+und Trauercafés genannt wurde. Insgesamt konnten bei der Auswertung 339 abgegebene
+Antworten in die Auswertung einfließen.
+
+
+4.4! Zu welchem Zeitpunkt die Trauerversorgung aufgenommen
+wird
+
+
+Bei der Frage nach dem Zeitpunkt der Aufnahme der Trauerversorgung, ergab die
+Auswertung zunächst, dass der Interventionsbeginn unabhängig der Todesursache von
+78% (321) der Befragten nach dem Eintritt des Todesfalls und zu 21% (84) vor dem
+Eintritt des Todesfalls aufgenommen wird.
+
+
+Betrachtet man zusätzlich zu der reinen Unterteilung, wann die Befragten den
+Interventionsbeginn angegeben haben noch die Tätigkeitsform, so ergibt sich die in
+Abbildung 9 angegebene Verteilung.
+
+
+Von den 84 Befragten, die vor dem Eintritt des Todesfalls intervenieren, gaben 63,1%
+(53) an, hauptberuflich tätig zu sein. 22,6% (19) sind ehrenamtlich tätig, 4,8% (4) arbeiten
+dabei nebenberuflich und 9,5% (8) wählten die Antwortmöglichkeit „Andere“.
+
+
+Von den 321 Befragten, die nach dem Eintritt des Todesfalls intervenieren, gaben 40,5%
+(130) an, hauptberuflich tätig zu sein. 35,2% (113) sind ehrenamtlich tätig, 13,7% (44)
+arbeiten nebenberuflich und 10,6% (34) wählten die Antwortmöglichkeit „Andere“.
+
+
+Betrachtet man den Interventionsbeginn bezogen auf die Trauernden, die einen Verlust
+durch Krankheit mit Leidenszeit erlitten haben, so zeigt sich ein ähnliches Bild. Von den
+Befragten gaben hier 19% (80) an, die Versorgung vor dem Eintritt des Todesfalls
+aufzunehmen. 71% (291) nehmen die Versorgung erst nach Eintritt des Todesfalls auf
+und 10% machten keine Angabe.
+
+
+FOOTNOTE:Abbildung 10 - Zeitpunkt der Aufnahme der Trauerversorgung bei Verlust durch Krankheit mit Leidenszeit
+
+
+Auch hier lässt sich bei weiterer Unterteilung nach Tätigkeitsform feststellen, dass mit
+42,6% (124) fast die Hälfte der hauptberuflich tätigen die Betreuung erst nach dem
+Eintritt des Todesfalls aufgenommen haben, nachdem der Angehörige durch Krankheit
+mit Leidenszeit verstorben war. Bei den ehrenamtlich tätigen traf dies mit 33,0% (96) auf
+circa ein Drittel zu. Die folgende Abbildung 11 zeigt, wie sich die genaue Verteilung
+unter diesen Vorgaben darstellt.
+
+
+Die zusätzliche Unterteilung aller Tätigkeitsformen in die zugrundeliegenden Berufe
+zeigt eine heterogene Verteilung. In den folgenden Tabellen 4 und 5 sind die jeweils vier
+häufigsten genannten Berufe sowie die Antwortmöglichkeit „Andere“ und falls
+vorhanden „keine Angabe“ aufgeführt. Dabei war es möglich, Mehrfachantworten zu
+geben.
+
+
+FOOTNOTE:Tabelle 4 - Berufsgruppen mit entsprechender Tätigkeitsform (Auswahlmöglichkeit "Andere" (30) nicht
+abgebildet) bei Verlust durch Krankheit mit Leidenszeit & Intervention nach Eintritt des To-
+desfalls
+
+
+4.5! Diagnostische Begleitung
+
+
+Bei der Betrachtung, ob und wenn ja wie die diagnostische Begleitung angewandt wird,
+ergaben sich für die Eingangsdiagnostik folgende Ergebnisse. Insgesamt erfolgt eine
+standardisierte Eingangsdiagnostik durch 8,3 % (34), eine Erfolgskontrolle durch 6,8 %
+(28) der Trauerversorger. 43,2% (177) der Befragten gaben an, zu Beginn der Versorgung
+eine Eingangsdiagnostik durchzuführen. 48,5% (199) antworteten hier mit Nein und 8,3%
+(34) machten keine Angabe.
+
+
+In der nachfolgenden Spezifizierungsfrage bezüglich der Eingangsdiagnostik zeigte sich,
+dass die Befragten hauptsächlich als diagnostische Mittel die einfache Befragung ohne
+Fragebogen (78%) sowie die Verhaltensbeobachtung (74,6%) nutzen. Nur 19,2% gaben
+die Befragten an, standardisierte psychologische Fragebögen zu verwenden. Hierbei war
+es möglich, Mehrfachantworten zu geben.
+
+
+FOOTNOTE:Tabelle 6 - Verwendete diagnostische Mittel bei der Eingangsdiagnostik (Gesamtzahl 177)
+
+
+In 32,2% (132) der Fälle erfolgte am Ende der Versorgung eine Erfolgskontrolle während
+in 58,8% (241) der Fälle keine Erfolgskontrolle stattfand. 9% (37) der Befragten machen
+hierbei keine Angabe.
+
+
+In der nachfolgenden Spezifizierungsfrage bezüglich der Erfolgskontrolle zeigte sich
+auch hier, dass die Befragten hauptsächlich als diagnostische Mittel die einfache
+Befragung ohne Fragebogen (75,8%) sowie die Verhaltensbeobachtung (78%) nutzen.
+
+
+Hier gaben 21,2% der Befragten an, standardisierte psychologische Fragebögen zu
+verwenden. Mehrfachantworten konnten gegeben werden.
+
+
+Insgesamt gaben von allen Befragten 26,3% (108) an, sowohl eine Eingangsdiagnostik
+als auch eine Erfolgskontrolle im Rahmen ihrer Versorgung durchzuführen. Davon taten
+dies wiederum 19,4% (21) mit standardisierten psychologischen Fragebögen.
+
+
+4.6! Institutionen, Konzepte & Methoden in der Trauerversorgung
+Bei der Frage an welchen Institutionen die trauerspezifische Zusatzausbildung erworben
+wurde, zeigte sich ein sehr heterogenes Bild. Die fünf am Häufigsten genannten
+Einrichtungen waren:
+
+
+FOOTNOTE:-! Trauerinstitut Deutschland e.V., Chris Paul
+
+
+-! Akademie für menschliche Begleitung, Dr. Jorgos Canacakis
+
+
+-! Bildungswerkstatt Trauer erschließen, Dr. Ruthmarijke Smeding
+
+
+-! Alpha Rheinland
+
+
+-! Münchner Institut für Trauerpädagogik
+
+
+Ein Großteil der in dieser Frage gegebenen Antworten fiel auf hausinterne Fortbildungen
+in Krankenhäusern, Altenheimen und Hospizen.
+
+
+In der Frage nach dem bei der Versorgung verwendeten Konzepts, gaben grundsätzlich
+39% (160) der Befragten an, in der Versorgung ein bestimmtes Konzept zu verfolgen,
+während 55,9% (229) kein bestimmtes Konzept verfolgten. 5,1% (21) gaben zu dieser
+Frage keine Antwort ab.
+
+
+Die darauffolgende erste Spezifizierungsfrage zu Zielen des verfolgten Konzepts, zeigte
+ein sehr heterogenes Feld von Antworten, welches sich in Form von individuellen
+Bezeichnungen äußerte. Die häufigsten Formulierungen dabei waren
+„ressourcenorientiert“, „kreative Gestaltung“, „Körperarbeit“, „systemisch“. Zudem
+wurde in weiten Teilen mit ausformulierten Sätzen geantwortet, welche im Rahmen einer
+Frequenzanalyse nach Häufigkeiten ausgezählt wurden. Auch die zweite
+Spezifizierungsfrage zeigte in den gegebenen Antworten zu wesentlichen Methoden des
+Konzepts ein heterogenes Bild mit vor allem individuellen Bezeichnungen oder
+ausformulierten Sätzen. Die häufigsten Formulierungen waren hier „Gespräche“,
+„Symbolarbeit“, „Gestalttherapie“ und „Psychoedukation“.
+
+
+Die folgende Abbildung zeigt das Vorliegen eines bestimmten Behandlungskonzeptes
+unter der Bedingung ,Berufserfahrung‘ und ,Vorliegen einer trauerspezifischen
+Zusatzausbildung‘. Es zeigt sich, dass diejenigen Befragten, die seit weniger als zehn
+Jahren (236) eine Tätigkeit im Bereich der Trauerintervention ausüben, in 37,7% (89) mit
+einem bestimmten Konzept arbeiten. Die zwischen 11 und 20 Jahren im selbigen Bereich
+tätigen (138), arbeiten 44,9% (62) mit einem bestimmten Konzept. Bezieht man die
+zusätzliche Bedingung ,Vorliegen einer trauerspezifischen Zusatzausbildung‘ mit ein, so
+ergibt sich, dass 26,3% (65) von den seit weniger als 10 Jahren im Bereich der
+Trauerintervention Arbeitenden eine trauerspezifische Zusatzausbildung besitzen und ein
+bestimmtes Konzept dabei verfolgen. Bei den zwischen 11 bis 20 Jahre im selbigen
+Bereich Arbeitenden liegt der Anteil bei 31,9% (44).
+
+
+FOOTNOTE:Abbildung 12 - Unterschiedlich lange Berufserfahrung und dabei Vorliegen eines bestimmten Konzeptes
+sowie einer trauerspezifischen Zusatzausbildung (Berufserfahrung von 21 - 30 Jahren sowie >30
+Jahren hier nicht abgebildet)
+
+
+Schließlich ergab die Befragung von quantitativen Betreuungszahlen, dass 72% (295) der
+Befragten bis zu 50 Personen pro Jahr ihre Intervention in Anspruch nehmen und 11,5%
+(47) zwischen 51 und 100 Personen pro Jahr betreuen.
+
+
+4.7! Weiterleitung
+
+
+Eine Weiterleitung an Psycholog*innen und ärztliche Psychotherapeut*innen findet in
+75,6% (310) der Fälle statt. 14,4% (59) der Befragten gaben an, Trauernde nicht
+weiterzuleiten und 10% (41) machten dazu keine Angabe. Der Großteil der Befragten
+96,5% (299) leitet Trauernde zwischen 1 und 20 mal pro Jahr weiter.
+
+
+5! Diskussion
+
+
+Diese Untersuchung stellt eine Zwischenauswertung einer dreiteiligen prospektiven
+Längsschnittstudie dar. Der erste Erhebungszeitraum erfolgte in den Jahren 2009 bis
+2011. Der zweite Erhebungszeitraum erfolgte – zehn Jahre später – anlässlich des
+erwarteten Umbruchs im Feld der Trauerversorgung durch die Einführung der ICD-11-
+Diagnose ‘Prolonged Grief Disorder‘. Ein dritter Erhebungszeitraum ist etwa weitere
+zehn Jahre später, nach erfolgter Einführung der ICD-11 und damit Anwendung der PGD
+in der Praxis, vorgesehen.
+
+
+Ziel der Studie war es, sich ein berufsgruppenübergreifendes Bild der bundesdeutschen
+Trauerversorgungslandschaft zum Zeitpunkt vor Einführung der ICD-11-Diagnose PGD
+zu verschaffen.
+
+
+5.1! Limitationen
+
+
+Es stellt sich zunächst die Frage, welche Faktoren die Aussagekraft dieser Studie
+einschränken. Grundsätzlich lässt sich über das gewählte Erhebungsdesign nicht
+feststellen, ob ggfs. weitere Berufsgruppen (wie z.B. Bestatter*innen) möglicherweise
+auch in der Trauerversorgung tätig sind, aber in dieser Erhebung nicht berücksichtigt
+wurden – die tatsächliche Population ist unbekannt. Somit lassen sich Aussagen darüber,
+welche und wie viele Fachkräfte im Rahmen der Trauerversorgung tätig sind, nur
+vorbehaltlich der Repräsentativität der Stichprobe treffen. Darüber hinaus haben, trotz
+der großen Gesamtzahl an Teilnehmenden, vergleichsweise wenige Psychologinnen und
+Psychologen sowie Ärztinnen und Ärzten teilgenommen, was durch die fehlende
+Unterstützung durch entsprechende Verbände sowie Landesärzte- und
+Landestherapeutenkammern erschwert wurde. Die Repräsentativität der
+Studienergebnisse ist auch aus diesem Grund nicht sichergestellt.
+
+
+5.2! Einordnung der Ergebnisse
+
+
+Die Prävalenz von 6,7% an einer anhaltenden Trauerstörung zu erkranken, wie sie
+Kersting et al. (2011) in ihrer Studie ermittelt haben unterstreicht die Notwendigkeit einer
+professionellen Versorgung für die betroffenen Personen.
+
+
+Neben einer Vielzahl von nationalen und internationalen Studien, die sich mit diesen
+klinisch auffälligen Trauerverläufen sowie dem Bereich der Versorgungsforschung
+beschäftigen, lässt auch vorliegende, in Deutschland erstmalig zu diesem
+Versorgungsgebiet durchgeführte Studie erkennen, dass im gesamten Feld der
+Trauerversorgung dringender Handlungsbedarf besteht.
+
+
+Daraus ergeben sich einige Forderungen, um diese Versorgung im Sinne der Trauernden
+zu verbessern. Dabei sollte eine Grundlage gelegt werden, die eine Etablierung und
+Konsolidierung einer qualitativ hochwertigen Trauerversorgung ermöglicht.
+
+
+Berufsstatus der Befragten. In der Frage, welchen Berufsstatus die Befragten in Bezug
+auf die Trauerversorgung besitzen, zeigen die Ergebnisse dieser Studie, dass weniger als
+die Hälfte ihre Tätigkeit hauptberuflich ausüben. Da von den hauptberuflich Tätigen
+wiederum nur 50 % eine trauerspezifische Ausbildung besitzen, lässt sich darauf
+schließen, dass es insgesamt in Deutschland zum Zeitpunkt der Datenerhebung nicht
+ausreichend Anreize für eine professionelle Tätigkeit in diesem Arbeitsfeld gab. Zu
+ähnlichen Schlussfolgerungen kommt auch Wittkowski (2013b). Nur das Schaffen
+entsprechender Anreize kann dazu beitragen, dass die Akteur*innen der
+Trauerversorgung diese nicht nur als einen Teil ihrer Arbeit ansehen, sondern sich auf
+diesen Bereich spezialisieren und ihn hauptsächlich ausführen.
+
+
+Begriffsverwendung. Die Studie hat gezeigt, dass die Begriffe Trauerberatung,
+Trauerbegleitung aber auch Trauertherapie zur Bezeichnung ihrer Tätigkeit von den
+Fachkräften häufig synonym verwendet werden. Dies trifft insbesondere auf die Begriffe
+Trauerberatung und Trauerbegleitung zu (47,8%). Es scheint, als gäbe es begriffliche
+Unklarheiten, was die Definition der drei Begriffe, sowie deren Abgrenzungen und
+Überschneidungen betrifft, was wiederum Auswirkungen auf eine bedarfsgerechte
+Versorgung hat. Erschwert wird dies dadurch, dass bis heute eindeutige Definitionen
+dieser Begriffe fehlen. Im angloamerikanischen Raum wird häufig der Begriff ,Grief
+Counseling‘ verwendet, wenn von Unterstützung Hinterbliebener gesprochen wird.
+Damit ist eine beratende Leistung gemeint (Klass, 2010), die aber eine große Nähe zur
+
+
+Trauertherapie aufweist (Gamino & Ritter, 2012). Der Begriff der Trauerbegleitung
+findet dort keine Verwendung. In Deutschland gibt es jedoch sogar den Bundesverband
+Trauerbegleitung e.V. (BVT), der sich als Fachverband für Trauerbegleitung versteht.
+Auch der deutsche Hospiz- und Palliativverband e.V. spricht in seiner Broschüre ,Trauer
+und Trauerbegleitung‘ gar davon, dass Trauerbegleitung in der Hospiz- und
+Palliativarbeit von existenzieller Bedeutung ist (Deutscher Hospiz- und Palliativverband
+e.V., 2017). Dennoch findet sich weder auf den Internetpräsenzen anderer Vereine oder
+Fachkräften noch in der weiterführenden Literatur, was unter dem Begriff
+,Trauerbegleitung‘ im Zusammenhang mit der Unterstützung Trauernder verstanden
+wird. Obwohl eine genaue Definition des Begriffs ,Trauerbegleitung‘ fehlt, gibt es jedoch
+zahlreiche Angebote zur Qualifizierung, Curricula und Empfehlungen, die darlegen, was
+Trauerbegleitung leisten kann, welche Kenntnisse und Qualifikationen Menschen, die
+Trauernde begleiten möchten, aufweisen müssen.
+
+
+Fortbildung. Die Studie hat gezeigt, dass mit 61% verhältnismäßig wenige Fachkräfte
+über eine trauerspezifische Zusatzausbildung verfügen. Es scheint, als würde das Thema
+in Ausbildung, Studium, aber auch im beruflichen Kontext kaum wahrgenommen
+beziehungsweise als wichtig oder gar zentral erachtet werden. Dies erscheint
+überraschend, da Studien doch zeigen, dass Verluste ernsthafte Erkrankungen und auch
+eine erhöhte Mortalität nach sich ziehen können (M. Stroebe et al., 2007). Bleiben die
+Folgen unerkannt und unbehandelt, kann das nicht nur ernsthafte Konsequenzen für die
+Betroffenen haben, sondern auch zu beträchtlichen Kosten für das Gesundheitssystem
+führen (Becker et al., 2021; Miles et al., 2016; Stephen et al., 2015).
+
+
+Diagnostische Begleitung. Die Ergebnisse dieser Studie zeigen, dass nur durch 8,3% der
+Befragten eine standardisierte Eingangsdiagnostik durchführen, eine Erfolgskontrolle
+führten nur 6,8% der Trauerversorger*innen durch. Die Mehrheit verwendete als
+diagnostisches Mittel die einfache Befragung ohne Fragebogen (78%) sowie
+Verhaltensbeobachtung (74,6%). Daraus lässt sich schließen, dass die Beurteilung der
+Eingangsdiagnostik und der Erfolgskontrolle größtenteils auf Basis der praktischen
+Erfahrung erfolgt. Diese Form der Einschätzungen birgt die Gefahr, dass Probleme nicht
+erkannt werden (Unterversorgung) oder eine Überversorgung stattfindet. So können
+Interventionen ohne spezifische Indikation für Betroffene sogar schadhaft sein (Schut et
+al., 2001), wohingegen psychotherapeutische Interventionen insbesondere bei
+störungswertiger Trauer wirksam sind (Wittouck et al., 2011). Darüber hinaus können
+
+
+Betroffene, wie auch Breen et al. (2011) anmerken, durch zahlreiche Faktoren wie Alter,
+Umstände des Todes, frühere Trauer, gleichzeitige Stressfaktoren, Beziehung zum
+Verstorbenen, frühere Krisen, soziale Unterstützung und Kultur, aber auch von
+finanziellen, familiären Schwierigkeiten oder auch Erbstreitigkeiten besonders belastet
+sein. Vor diesem Hintergrund scheint es wenig zielgerichtet, allen Trauernden die gleiche
+Form an Unterstützung zukommen zu lassen, wodurch die Anwendung einheitlicher und
+standardisierter Diagnostik von Beginn bis zum Abschluss der Intervention eine
+bedeutende Rolle spielt und neben hoher Objektivität und Reliabilität zu einer hohen
+Übereinstimmungsvalidität beiträgt (Kubinger, 2019).
+
+
+Methoden und Konzepte. Die bereits beschriebene synonyme Verwendung der Begriffe
+von Trauerbegleitung, Trauerberatung und Trauertherapie erschweren auch die
+Einordnung der Methoden und Konzepte, die in den entsprechenden Patientenkontakten
+Verwendung finden beziehungsweise finden sollten. Verdeutlicht wird dies durch die
+sehr heterogene Beschreibung der Konzepte, die durch die Befragten Anwendung finden.
+Vergleichbare Ergebnisse erhielten auch Breen et al. (2011).
+
+
+Die Studie hat auch gezeigt, dass Interessierte bei sehr zahlreichen Instituten,
+Einzelpersonen oder auch durch hausinterne Angebote z.B. in Pflegeheimen eine
+trauerspezifische Fortbildung absolvieren. Dennoch gibt es derzeit keine unabhängige
+und übergeordnete Zertifizierungsstellen für trauerspezifische Angebote, ebenso wenig
+wie Leitlinien oder eine qualitätssichernde Instanz (Müller, Berthold, et al., 2020).
+Bekannt ist aber, dass damit die Qualität und Vergleichbarkeit derartiger Angebote kaum
+einschätzbar ist. Zusätzlich zeigt sich, dass die trauerspezifischen Inhalte in Lehrbüchern
+für Gesundheitsfachkräfte häufig nicht auf dem aktuellen Stand sind (Corr, 2019). Aus
+internationalen Studien weiß man, dass bei den Fachkräften aufgrund des fehlenden
+Zugangs zu wissenschaftlichen Fachzeitschriften kaum aktuelle und evidenzbasierte
+Erkenntnisse zum Thema vorliegen (Breen et al., 2014; Breen & Moullin, 2020). Das
+dürfte für deutschsprachige Fachkräfte ebenso zutreffen, insbesondere da es hierzulande
+an einer eigenständigen, langfristigen und systematischen Trauerforschung fehlt (Müller
+& Willmann, 2020; Wittkowski, 2013b) und die Fachkräfte zudem eine sprachliche
+Hürde zu überwinden haben.
+
+
+Spezifische Versorgung. Interessant scheint, dass überdurchschnittlich viele Menschen
+Angebote der Trauerversorgung nutzen, die einen Partner durch Krankheit Leidenszeit
+verloren haben. Meist befinden sich die Betroffenen im mittleren Lebensalter zwischen
+41 und 60 Jahren. Sie erleiden also einen Verlust in einem Alter, in dem es statistisch
+nicht zu erwarten ist. Da lange und intensive Erkrankungsphasen Paare gleichermaßen
+belasten, überrascht es einerseits nicht, dass die Betroffenen zusätzlichen Bedarf an
+Unterstützung haben. Andererseits macht es deutlich, wie wichtig es ist, die Belastungen
+der Angehörigen frühzeitig in den Blick zu nehmen und Angehörige bei Bedarf präventiv
+zu unterstützen (Müller, Berthold, et al., 2020).
+
+
+Die Ergebnisse zeigen auch, dass es bislang in der Praxis nur sehr schwer möglich war,
+Betroffene aller Altersgruppen und unabhängig der Verlustart oder der Beziehung zum
+Verstorbenen bedarfsgerecht zu versorgen. Die Tatsache, dass die Befragten in ihrer
+Arbeit insgesamt weniger Erfahrung mit jungen Erwachsenen oder Kindern
+beziehungsweise mit Todesfällen ohne vorangegangener Krankheit haben, ist
+wahrscheinlich hauptsächlich auf die geringere Zahl an Todesfällen von Kindern im
+Vergleich zu Erwachsenen zurückzuführen. Dennoch ist es besonders wichtig, gerade bei
+den jüngeren Altersgruppen diejenigen zu identifizieren, die deutlich von einer
+Behandlung profitieren würden, da gerade diese in ihrer persönlichen Entwicklung noch
+besonders vulnerabel sind (Dyregrov & Dyregrov, 2012; Unterhitzenberger & Rosner,
+2015).
+
+
+Die Ergebnisse zeigen auch, dass bei den hauptsächlich betreuten Personengruppen zwar
+sehr viel praktische Erfahrung vorhanden ist, sich aber auch Hinweise zeigen, bestimmte
+Abläufe verbessern zu können. Beispielsweise besteht in den Fällen, bei denen ein Verlust
+einer nahestehenden Person durch Krankheit mit Leidenszeit auftritt, die Chance,
+mögliche komplizierte Trauerverläufe frühzeitig zu identifizieren, wenn der Sterbende
+beispielweise in palliativem Setting betreut wurde und seine Angehörigen ihn dort
+begleiteten. In diesen absehbaren Fällen könnten die Trauerversorgenden beispielsweise
+mit einem standardisierten Fragebogen, wie dem Multiprofessionellen Fragebogen zur
+Trauerverarbeitung (Müller, Berthold, et al., 2020), eine Risikobewertung für die
+Wahrscheinlichkeit des Eintritts einer behandlungsbedürftigen Trauerreaktion
+vornehmen. Somit wäre in diesen Fällen die Möglichkeit gegeben, durch einen frühen,
+dem Bedarf angepassten Interventionsbeginn, ein möglicherweise langen Trauerverlauf
+mit den dadurch verbundenen Einschränkungen des alltäglichen Lebens des Betroffenen
+
+
+zu verkürzen. Die Ergebnisse zeigen, dass eine Intervention bislang nur in 19% der Fälle
+vor dem Eintritt des Todesfalls begonnen wurde.
+
+
+Interdisziplinäre Zusammenarbeit. Die Ergebnisse zeigen, dass Weiterleitungen der
+Betroffenen an professionelle Stellen eher selten (1 bis 20 mal pro Jahr) stattgefunden
+haben. Auch in dieser Frage wird Handlungsbedarf – oder zumindest der Bedarf einer
+genaueren Untersuchung – aufgezeigt. So ließe sich in einer Folgeuntersuchung über
+enger gefasste Kategorien sicherlich ein differenzierteres Bild darstellen. Denn auch die
+interdisziplinäre Zusammenarbeit stellt ein wichtiges Element des
+Professionalisierungsprozesses der Trauerversorgung dar, da die Folge aus einer
+unzureichenden Zusammenarbeit sein könnte, dass Trauernde nicht die Hilfe erhalten, die
+sie benötigen. Bekannte große Studien wie beispielsweise die von Aoun et al. (2020)
+zeigen, dass ein beträchtlicher Anteil der Hinterbliebenen in Australien und Irland keine
+oder weniger Unterstützung erhielt als sie wünschten und eine verschlechterte geistige
+und körperliche Gesundheit nach dem Verlust angaben. Der Anteil derer, die hingegen
+keine Unterstützung benötigen, war deutlich geringer. Da es in Deutschland bislang keine
+entsprechenden Studien gibt, lässt sich ein vergleichbarer Versorgungsbedarf vorerst nur
+vermuten.
+
+
+6! Ausblick
+
+
+Eine bedarfsgerechte Versorgung fußt nicht nur auf einer Spezialisierung des
+Versorgungsangebotes, sondern auch auf einer Vernetzung der Trauerversorgung in ihrer
+Breite. Dazu zählt auch die Einbindung von Familienmitgliedern oder Freunden.
+
+
+Derart mehrstufig ausgerichtete Versorgungsmodelle wurden beispielsweise (2004) vom
+National Institute for Clinical Excellence (NICE) für den britischen Versorgungsraum
+erstellt und bereits in Australien aufgegriffen und in seiner erfolgreichen Anwendbarkeit
+bestätigt (Aoun et al., 2012, 2015; Müller et al., 2021).
+
+
+In diesem britischen Versorgungsmodell ist vorgesehen, dass auf der ersten
+Versorgungsstufe Angehörige von Sterbenden, die sich im Rahmen palliativer bzw.
+hospizlicher Betreuung befinden, neben der Unterstützung durch ihr soziales Umfeld, wie
+Freunde und Verwandte, zudem Informationen über lokal vorhandene
+Unterstützungsangebote erhalten. Auf der zweiten Versorgungsstufe können Betroffene
+zusätzlich durch geschulte Ehrenamtliche oder durch Selbsthilfegruppen weitere
+Unterstützung erfahren. In der dritten Versorgungsstufe können Betroffene, die
+Anzeichen einer störungswertigen Trauer aufweisen, professionelle
+psychotherapeutische Hilfe erhalten.
+
+
+Durch die Erschaffung eines solchen Basisnetzwerks, in dem alle Berufsgruppen
+eingebunden werden, die mit Hinterbliebenen in Kontakt kommen (z.B. Hausärzt*innen,
+Psychotherapeut*innen, Bestattungsunternehmen, Seelsorger*innen,
+Trauerberater*innen, Palliativversorger*innen, Gemeinde, Pflegeheime) und auf das alle
+Mitglieder hinsichtlich einheitlicher Definitionen oder interdisziplinärem Austausch
+zurückgreifen können, wäre die Chance für eine bestmögliche und bedarfsgerechte
+Versorgung gegeben. Denn es gilt zu verdeutlichen, dass alle trauerversorgenden
+Personen mit ihren verschiedenen Qualifikationsgraden einen bedeutenden Beitrag dazu
+leisten können, eine möglichst einheitliche und effektive Trauerversorgung für Trauernde
+bieten zu können.
+
+
+Durch dieses Netzwerk könnte dann, wie auch Breen et al. (2011) fordern, für alle
+Trauerversorgenden der Zugang zu praxisbezogenen relevanten Informationen
+
+
+beziehungsweise Weiterbildungsmöglichkeiten erleichtert werden, um eine einheitliche
+Grundlage für die Einschätzung einer möglicherweise behandlungsbedürftigen Person zu
+legen.
+
+
+Um dieses Netzwerk bestmöglich ausschöpfen zu können, bedarf es natürlich einiger
+weiterer Ansatzpunkte, deren Strukturierung oder sogar Neuschaffung die Qualität der
+Versorgung gewährleisten. Nicht zuletzt bedarf es weiterer Forschung, um letztlich auch
+entsprechende Prozesse und Therapiekonzepte zu evaluieren und zu validieren.
+
+
+7! Zusammenfassung
+
+
+In der vorliegenden Arbeit war das gesetzte Ziel, im Rahmen einer Ersterhebung einer
+dreiteilig angelegten prospektiven Längsschnittstudie, eine Übersicht zu schaffen, wie der
+Stand der Trauerversorgung in Deutschland vor der Einführung der neuen ICD-11-
+Diagnose „Anhaltende Trauerstörung“ war. Dafür wurde eine anonyme Online-Erhebung
+durchgeführt, bei der die Befragten gebeten wurden, einen Fragebogen mit 16 Fragen zu
+ihrer Arbeit im Rahmen der Trauerversorgung zu beantworten. Insgesamt nahmen 676
+Personen an der Erhebung teil, wovon 410 Antworten deskriptiv ausgewertet werden
+konnten.
+
+
+FOOTNOTE:Die Erhebung ergab, dass die Berufserfahrung bei 57,6% der Befragten bei weniger als
+10 Jahren liegt. Mit 45,4% gaben 186 Personen an, ihre Tätigkeit hauptberuflich
+auszuüben, wovon die Hälfte eine trauerspezifische Zusatzausbildung vorweisen kann.
+Die Akteure der Trauerversorgung bezeichnen sich in 80,2% als Trauerbegleiter*innen,
+53,2% als Trauerberater*innen, was die synonyme Verwendung dieser Bezeichnungen
+verdeutlicht. Angebote der Trauerversorgung richten sich in der überwiegenden Mehrheit
+mit 85% an Erwachsene. Der Verlust des Ehepartners bzw. der Ehepartnerin ist bei den
+Trauerversorgenden in fast der Hälfte der Interventionsgrund. In 16% der Fälle erlitten
+die Trauernden den Verlust eines Elternteils. Die Häufigste Verlustursache, die
+Trauerversorgung notwendig macht, ist mit 53,2% der Verlust einer nahestehenden
+Person, der eine Krankheit mit Leidenszeit vorausging. Eine standardisierte
+Eingangsdiagnostik, ob die trauernde Person von einer Intervention profitieren könnte,
+findet in 8,3% der Fälle statt. Die Mehrheit der Trauerversorgenden folgt keinem klaren
+Interventionskonzept oder -methode. Trauerspezifische Zusatzausbildungen werden
+überwiegend in hausinternen Fortbildungen vermittelt ohne einheitliche, übergeordnete
+Vorgaben oder Institutionen. Eine Weiterleitung an Psycholog*innen und ärztliche
+Psychotherapeut*innen findet insgesamt nicht sehr häufig statt.
+
+
+Es besteht Entwicklungsbedarf in verschiedenen Aspekten der Trauerversorgung, die im
+Rahmen eines Professionalisierungsprozesses Trauernden eine bestmögliche
+Unterstützung geben sollen. Besondere Schwerpunkte sind dabei Qualifikation,
+Diagnostik und einheitliche Interventionskonzepte sowie Bezeichnung der Tätigkeit.
+
+
+8! Abstract
+
+
+The aim of this study was to provide an overview of the status of bereavement care in
+Germany before the introduction of the new ICD-11 diagnosis of Prolonged Grief
+Disorder, as part of an initial survey of a three-part prospective longitudinal study. For
+this purpose, an anonymous online survey was conducted in which respondents were
+asked to answer a questionnaire with 16 questions about their work in the context of
+bereavement care. A total of 676 respondents participated in the survey, of which 410
+responses were analyzed descriptively.
+
+
+The survey revealed that work experience was less than 10 years for 57.6% of
+respondents. At 45.4%, 186 respondents reported practicing their profession full-time,
+half of which had additional grief-specific training. The actors of bereavement care
+describe themselves in 80.2% as grief counselors, 53.2% as grief advisors, which
+illustrates the synonymous use of these terms. The vast majority of bereavement care
+services (85%) are directed at adults. The loss of a spouse is the reason for intervention
+in almost half of the cases. In 16% of the cases, the bereaved suffered the loss of a parent.
+
+
+The most common cause of loss requiring bereavement care, 53.2%, is the loss of a loved
+one preceded by an illness with a period of suffering. A standardized initial diagnosis of
+whether the grieving person could benefit from intervention occurs in 8.3% of cases. The
+majority of bereavement caregivers do not follow a clear intervention concept or method.
+Grief-specific additional training is predominantly imparted in in-house advanced
+training courses without uniform, superordinate guidelines or institutions. Referral to
+psychologists and medical psychotherapists does not take place very often.
+
+
+There is a need for development in various aspects of bereavement care, which should
+provide the best possible support for mourners within the framework of a
+professionalization process. Special focal points are qualification, diagnostics and
+uniform intervention concepts as well as the designation of the activity.
+
+

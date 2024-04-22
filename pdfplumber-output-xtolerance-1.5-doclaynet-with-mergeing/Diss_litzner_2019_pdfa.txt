@@ -1,0 +1,1768 @@
+Bildung für nachhaltige Entwicklung an bolivianischen Hochschulen:
+eine empirische Studie zum Ist–Stand
+
+
+von der Pädagogischen Hochschule Freiburg
+
+
+zur Erlangung des Grades
+
+
+eines Doktors der Erziehungswissenschaften (Dr. paed.)
+
+
+genehmigte Dissertation
+von
+
+
+Lorena Litzner
+
+
+aus Cochabamba, Bolivien
+
+
+Promotionsfach: Biologie und ihre Didaktik
+Erstgutachter: Prof. Dr. Werner Rieß (PH Freiburg)
+Zweitgutachter: Prof. Dr. Hans-Georg Kotthoff (PH Freiburg)
+Tag der mündlichen Prüfung: 8. November 2018
+
+
+Vorwort und Danksagung
+
+
+Durch eigene Erfahrungen als Hochschuldozentin für Umweltrecht in Bolivien wurde ich
+mit der Tatsache konfrontiert, dass sich die umweltrelevanten globalen Probleme und
+insbesondere die Bolivien betreffende Umweltproblematik nicht alleine durch die
+Umweltgesetzgebung ändern beziehungsweise verbessern lassen. Bis dahin hatte ich
+mich ausschließlich mit der Gesetzeslage zu Umweltbelangen und zur Nachhaltigkeit
+beschäftigt. Durch meine Tätigkeit und den Austausch und die Interaktion mit
+Studierenden in La Paz kam ich mit Themen der Pädagogik und Hochschulbildung in
+Berührung und begegnete so zum ersten Mal dem Begriff der Bildung für nachhaltige
+Entwicklung. Von Bedeutung war für mich die Frage nach der Rolle der
+Hochschuldozent/innen, welche als wichtige Bildungsakteure eine große Verantwortung
+für die Gestaltung der Zukunft tragen. Angesichts dieser persönlichen Überlegungen und
+der Tatsache, dass keine empirischen Studien zur Bildung für nachhaltige Entwicklung im
+Hochschulbereich in Bolivien vorhanden sind, wurde das vorliegende Forschungs-
+vorhaben in Angriff genommen.
+
+
+An dieser Stelle möchte ich mich bei all denjenigen bedanken, die mich während der
+Anfertigung dieser Arbeit unterstützt und motiviert haben:
+
+
+Bei meinem Betreuer Prof. Dr. Werner Rieß, der vom ersten Tag an, als ich an seiner Tür
+klopfte, diese immer für mich offen hatte und mich mit den richtigen Worten motivierte
+und sein Wissen und seine Erfahrung mit mir teilte.
+
+
+Ein besonderer Dank gilt meiner Mutter Ivonne Litzner, die mich auf meinem Weg durch
+das Studium immer begleitet hat. Ihre Hilfe war für mich von unschätzbarem Wert. Dank
+gilt auch meinem Bruder Klaus Litzner, der mir für den empirischen Teil der Studie sowie
+für die grafische Darstellung der Ergebnisse mit Rat und Tat zur Seite stand.
+
+
+Ein großer Dank geht auch an meinen Ehemann Javier Salinas, der sein Leben mit mir
+teilt, es bereichert und meinen Weg zusammen mit unseren Kindern immer unterstützt
+hat.
+
+
+Ein herzliches Dankeschön auch an unseren guten Freund der Familie Dr. Johannes
+Fähnle für das Korrekturlesen und die motivierenden Gespräche. Bedanken möchte ich
+mich auch bei meiner Freundin Dr. Katja Schnitzer, die ich in Bolivien kennengelernt
+habe, für die hilfreichen Ideen und Anregungen und ihre wertvollen Kommentare zu
+meiner Arbeit.
+
+
+Un especial agradecimiento a la Lic. Heidi Jimenez y a la Lic. Veronica Tristán por su
+apoyo en realización de la fase empírica del presente Estudio. Asimismo, a los docentes y
+personal administrativo de las universidades en La Paz y Cochabamba, quienes llenaron
+los cuestionarios.
+
+
+Kapitel 1. Einleitung
+
+
+1.1 Nachhaltige Entwicklung und Hochschulbildung – Ausgangslage
+
+
+Die Konferenz der Vereinten Nationen für Umwelt und Entwicklung (United Nations
+Conference on Environment and Development, UNCED) von 1992 gilt als Meilenstein und
+Geburtsstunde des Gedankens der „Nachhaltigkeit“ (Rieß 2010, S. 101). Mit der Rio-
+Deklaration (UNCED, BMU 1992), ist das Konzept der „nachhaltigen Entwicklung“ als
+bildungspolitisches Ziel und Leitbild im internationalen Kontext entstanden und hat sich
+nach und nach auf regionaler, nationaler und lokaler Ebene verankert. Unter
+„nachhaltiger Entwicklung“ versteht man eine „Entwicklung, die die Bedürfnisse der
+Gegenwart befriedigt, ohne zu riskieren, dass künftige Generationen ihre eigenen
+Bedürfnisse nicht befriedigen können“ (Hauff 1987, S. 46).
+
+
+Nach Rieß steht im Mittelpunkt des Konzepts der nachhaltigen Entwicklung „die Einsicht,
+dass der Schutz der natürlichen Umwelt, die soziale Verantwortung und die
+wirtschaftliche Leistungsfähigkeit untrennbar zusammengehören“ (Rieß 2010, S. 28). Die
+drei Dimensionen der „nachhaltigen Entwicklung“, Ökologie, Ökonomie und die sozio-
+kulturelle Dimension (Künzli David 2007, S. 21), bilden eine Trilogie gleichberechtigter
+Bereiche, die nebeneinander stehen und miteinander verbunden sind (vgl. Hauenschild &
+Bolscho 2005). Dieser umfassende dreidimensionale Anspruch der nachhaltigen
+Entwicklung, der als gesellschaftliches und politisches Leitbild zu verstehen ist, gestaltet
+den Zugang zu der Thematik „Nachhaltigkeit in der Bildung“ dementsprechend komplex.
+
+
+In Anlehnung an Stengel ist „nachhaltige Entwicklung […] eine für die Umwelt, die
+Gesellschaft und das Individuum verträgliche Entwicklung“ (Stengel et al. 2008, S. 30), die
+sich den Herausforderungen einer Umwelt stellt, welche immer stärkeren Belastungen
+ausgesetzt ist. Diese Herausforderungen für Mensch und Umwelt sind z.B. Klimawandel,
+Artenverlust, Umweltverschmutzung, ungerecht Verteilung zwischen Ländern des
+Nordens und Südes, um nur einige zu nennen. Sie erfordern einen Bewusstseinswandel,
+der sich nur über Lernen verwirklichen kann und als wesentliche Aufgabe des
+Bildungssystems zu verstehen ist (BNE als Lern—und Handlungsfeld, de Haan 2006). Im
+nachfolgenden Zitat wird dies deutlich:
+
+
+„Bildung ist als Prozess zu sehen, mit dessen Hilfe Menschen wie Gesellschaften ihr volles Potenzial
+verwirklichen können. Bildung ist eine unerlässliche Voraussetzung für die Förderung der
+nachhaltigen Entwicklung und die bessere Befähigung der Menschen, sich mit Umwelt- und
+Entwicklungsfragen auseinanderzusetzen“. (BMU 1992, Kapitel 36.3)
+
+
+Anlässlich der oben bereits erwähnten Konferenz in Rio de Janeiro im Jahr 1992 wurde
+die „Agenda 21“ verabschiedet, die zum ersten Mal den Bereich Bildung mit dem Auftrag
+und der Herausforderung einer nachhaltigen Entwicklung verknüpft. Das Konzept der
+Nachhaltigkeit wird im Bildungskontext auf international-politischer Ebene als zentraler
+Bestandteil, Inhalt und Leitidee anerkannt (Hauenschild & Rode 2013, S. 61) und als
+
+
+Schlüsselelement hin zu einer Erfüllung der Nachhaltigkeitsziele betrachtet. In diesem
+Sinne entsteht aus der internationalen politischen Willensbildung heraus das Konzept der
+Bildung für nachhaltige Entwicklung (BNE) und wird als inhaltliche und institutionelle
+Querschnittsaufgabe anerkannt, bringt eine integrierende Funktion mit sich und fördert
+lokale und globale Verantwortung (Deutsche UNESCO-Kommission e.V.[DUK] 2011, S. 10).
+Bildung für nachhaltige Entwicklung betrifft – ebenso wie der Nachhaltigkeitsgrundsatz –
+alle Menschen (vgl. DUK 2005, S.3; DUK 2011, S. 10). Es handelt sich um eine politische
+Forderung an das gesamte Hochschulsystem und ist als übergeordnetes Bildungsziel auch
+im Hochschulbildungskontext zu verstehen. Laut Zielsetzung der „Agenda 2030 -
+Sustainable Development Goals“$$$1$$$ sollen
+
+
+„alle Lernenden die notwendigen Kenntnisse und Qualifikationen zur Förderung nachhaltiger
+Entwicklung erwerben, unter anderem durch Bildung für nachhaltige Entwicklung und nachhaltige
+Lebensweisen, Menschenrechte, Geschlechtergleichstellung, eine Kultur des Friedens und der
+Gewaltlosigkeit, Weltbürgerschaft und die Wertschätzung kultureller Vielfalt und des Beitrags der
+Kultur zu nachhaltiger Entwicklung“. (BMZ 2015, S. 18)
+
+
+Des Weiteren ist Nachhaltigkeit in der Bildung ein expliziter bildungspolitischer Auftrag,
+der dem Ziel folgt:
+
+
+„allen Menschen Bildungschancen zu eröffnen, die es ermöglichen, sich Wissen und Werte
+anzueignen sowie Verhaltensweisen und Lebensstile zu erlernen, die für eine lebenswerte Zukunft
+und eine positive gesellschaftliche Veränderung erforderlich sind“. (Deutsche UNESCO-Kommission
+e.V.[DUK], 2005)
+
+
+Die weltpolitische Forderung nach einer nachhaltigen Entwicklung ist mit einem enormen
+pädagogischen Anspruch auch an die Hochschulbildung verbunden, die als Instrument zur
+Umsetzung des Leitbilds der Nachhaltigkeit gilt (Bildungsdimension nachhaltiger
+Entwicklung, dazu Kehren 2016, S. 1-2). Bildung ist als ein wesentlicher Teil des
+Nachhaltigkeitsprozesses zu verstehen (Michelsen & Fischer 2015, S.5) und stellt auch
+eine wesentliche Herausforderung im Hochschulkontext dar. Spätestens, seit die
+Vereinten Nationen die Weltdekade „Bildung für nachhaltige Entwicklung“ ausgerufen
+haben, ist die Bildung für nachhaltige Entwicklung auch in die Hochschulbildung zu
+integrieren und zu verankern (DUK 2005). Man spricht hier auch von Hochschulbildung
+für nachhaltige Entwicklung – HBNE.
+
+
+Der Auftrag der „nachhaltigen Entwicklung“ strebt nach einer neuen sowohl
+institutionellen als auch curricularen Ausrichtung der Hochschulen. Die Einbindung von
+Fragen der Nachhaltigkeit in die Hochschullehre erfordert nicht ausschließlich den
+Umgang mit komplexen Problemstellungen, sondern ist gleichzeitig mit besonderen
+didaktischen Herausforderungen verbunden (Michelsen et al. 2011, S. 65). Als
+Bildungsstätten für zukünftige Entscheidungsträger/innen bzw. als Orte der Forschung
+übernehmen Hochschulen in diesem Sinne eine große Verantwortung, sowohl durch die
+Vermittlung von Kenntnissen, Kompetenzen und Werten in Lehre und Studium, als auch
+durch die Generierung von Wissen und Innovation in der Forschung (vgl. DUK 2010, S. 2).
+
+
+FOOTNOTE:1 Agenda 2030 im September 2015 von den Vereinten Nationen verabschiedet. Umfasst 17 Ziele
+nachhaltiger Entwicklung: die Sustainable Development Goals (SDGs) (dazu BMZ 2015).
+
+
+Durch eigene Erfahrungen der Verfasserin als Dozentin für nationales und internationales
+Umweltrecht in Bolivien kam der Frage nach der Rolle der Hochschuldozent/innen als
+wichtige Akteure für die Integration der Inhalte und Ziele der nachhaltigen Entwicklung in
+der Hochschulbildungspraxis eine große Bedeutung zu. Durch erste Recherchen konnte
+festgestellt werden, dass im Bereich der Hochschullehre die BNE, ihre Inhalte und Ziele,
+als auch lehr-/lernrelevante Methoden und Didaktik keinen Platz gefunden haben.
+Weiter, dass es an BNE-relevanten Studien in der spanischsprachigen Region
+Lateinamerikas mangelt (dazu Ziff. 2.3 Empirische Bildungsforschung zur BNE – Stand der
+Forschung) und keine empirischen Studien zur BNE im Hochschulbereich in Bolivien
+vorhanden sind. Um ermitteln zu können, wie die Ausgangslage im Hinblick auf BNE in der
+Hochschulbildung sich darstellt, wurde am Beispiel Deutschlands bereits durchgeführten
+empirischen Studien (dazu Ziff. 2.4 Befunde aus der empirischen Bildungsforschung zur
+BNE) eine Survey-Studie über den „Ist-Stand“ der BNE angestrebt und geplant. Es wurden
+erste Kontakte zu bolivianischen Hochschulen geknüpft, um diesen die Möglichkeit zur
+Mitwirkung an dem vorliegenden Projekt zu geben.
+
+
+FOOTNOTE:1.2 Forschungsvorhaben im Überblick und Kapitelvorschau
+
+
+Die vorliegende Studie verfolgt die folgenden miteinander verbundenen Ziele:
+
+
+- Deskription des Ist-Stands der BNE an bolivianischen Hochschulen.
+
+
+- Darstellung der wesentlichen relevanten Merkmale und Zusammenhänge zwischen BNE-
+relevanten (1) inhaltlich-curricularen, (2) institutionell-strukturellen, (3) lehr-/lernmetho-
+dischen und (4) personellen Aspekten.
+
+
+- Interpretation und Diskussion dieser Merkmale in Bezug auf Reichweite, Bedeutung und
+Barrieren.
+
+
+- Formulierung von Empfehlungen.
+
+
+Eine Diagnose und Analyse des Status quo der BNE und die oben erwähnen Ziele wurden
+mittels einer quantitativen Studie im bolivianischen Hochschulkontext angestrebt. Dazu
+wurden zwei Fragebögen konstruiert und erprobt, der eine für Hochschuldozent/innen
+(Hauptstudie) und der andere für Mitglieder der Hochschulleitungen (ergänzende Studie).
+
+
+Das Kapitel 1 bietet eine kurze Beschreibung der Ausgangslage und stellt eine Einleitung
+zur nachhaltigen Entwicklung in der Bildung bzw. Hochschulbildung dar. Kapitel 2
+beschäftigt sich mit der Aufarbeitung der theoretischen Grundlagen zur Bildung für
+nachhaltige Entwicklung sowie dem Stand der empirischen Bildungsforschung zur BNE in
+der Hochschullehre und gibt einen Überblick des bolivianischen Hochschul-
+bildungssystems. Das Kapitel 3 enthält Fragestellung, Ziele und Teilaspekte des
+Vorhabens; außerdem beschreibt es das Forschungsdesign, welches aus
+Untersuchungsanlage, Fragebogenkonstruktion, Stichprobenbildung und dem
+
+
+Erhebungsverlauf der Haupt- und ergänzenden Studie besteht. Die Ergebnisse des
+empirischen Teils der Hauptstudie (Befragung der Dozentenschaft) werden in Kapitel 4
+und 5 dargestellt. Kapitel 6 beinhaltet die Ergebnisse der ergänzenden Studie (Befragung
+der Mitglieder der Hochschulleitung). Im Schlusskapitel (Kapitel 7) werden die wichtigsten
+Ergebnisse schlussfolgernd dargestellt, diskutiert und interpretiert, bevor darauf
+aufbauend Empfehlungen für die Umsetzung und Implementierung von BNE im
+Hochschulsektor Boliviens abgeleitet werden.
+
+
+Kapitel 2. Theoretische Grundlagen
+
+
+Dieses Kapitel enthält die theoretischen Grundlagen zur Bildung für nachhaltige
+Entwicklung, erläutert den Stand der empirischen Bildungsforschung zur BNE in der
+Hochschullehre und gibt einen Überblick über das bolivianische Hochschulbildungs-
+FOOTNOTE:system.
+
+
+2.1 Nachhaltigkeit und Bildung
+
+
+Das in der „Agenda 21“ neugeborene normative Bildungskonzept (Künzli David 2007 S.
+20-21; Michelsen et al. 2011a, S. 12), in dem die Nachhaltigkeit als Bestandteil und Ziel
+der Bildung anzustreben ist, ist kein gänzlich neues Konzept, sondern ist als Ergänzung
+und Erweiterung der Umweltbildung und entwicklungspolitischen Bildung (dazu Gräsel
+2009, S. 847ff.) zu betrachten.
+
+
+Die klassischen Konzepte und Inhalte der Umweltbildung werden durch die neue
+entwicklungspolitische Konzeption von Bildung für nachhaltige Entwicklung bedeutend
+erweitert (Hauenschild & Rode 2013, S. 62) und gestalten das Konzept einer Bildung, die
+eine gemeinsame Betrachtung der ökologischen, ökonomischen, sozio-kulturellen und
+politischen Sphären unterstreicht und die globale Verantwortung in den Fokus rückt
+(Bräutigam 2014, S. 6). BNE schließt an Umweltbildung an, zielt aber auf eine neue
+Ausrichtung ab (Kehren 2016, S.92-93). Anders als die klassische Umweltbildung, die ein
+Bedrohungsszenario (de Haan 2006, S. 5) zur Basis hatte und damit ein reaktives
+Handlungskonzept anbot, setzt BNE auf ein Modernisierungsszenario und stellt den
+Zukunfts- und Gestaltungsgedanken in den Vordergrund (de Haan & Harenberg 1999, S.
+18).
+
+
+Seit den 1990er Jahren hat sich BNE in der Bildungsforschung als eigenständiges Feld
+etabliert (Barth & Rieckmann 2016, S. 9) und weitgehend in der „pädagogischen Praxis
+und erziehungswissenschaftliche[n] Reflexion“ (Barth 2016, S. 37) gefunden. BNE wird zu
+einer „neuen Wissenschaft mit theoretisch-praktischen Anwendungsmöglichkeiten“
+(Beyer 2000 S. 22) und beinhaltet als innovatives Bildungskonzept (Buddeberg 2014, S. 3)
+einen Bildungsauftrag, der sich den großen ökologischen, ökonomischen und sozialen
+Herausforderungen unserer Zeit stellt.
+
+
+2.1.1 Begriffliche Grundlagen zur Bildung für nachhaltige Entwicklung$$$2$$$
+
+
+BNE (als Weiter-/Fortentwicklung des Konzepts der Umwelterziehung) wird als eine
+Bildung verstanden, welche die inter- und intragenerationale Gerechtigkeit, die
+Mehrdimensionalität des Entwicklungsprozesses, die globale Verantwortung, die Vielfalt
+der Kulturen und die Notwendigkeit der Partizipation mehrerer Akteure miteinbezieht
+(Rieß 2010, S. 15-16). Nach Heinrich ist BNE „die Entfaltung von Lebensbewältigungs- und
+Lebensgestaltungskompetenz in sozialer, ökologischer, ökonomischer und politischer
+Verantwortung gegenüber den Bedürfnissen der gegenwärtigen und kommenden
+FOOTNOTE:Generationen“. (Heinrich 2005, S. 86)
+
+
+Bildung für nachhaltige Entwicklung stellt einen neuwertigen und konstruktiven Ansatz
+dar, Bildung im 21. Jahrhundert zu denken und zu gestalten. Michelsen bringt es auf den
+Punkt und behauptet:
+
+
+„Bildung für nachhaltige Entwicklung zielt darauf ab, Menschen dazu zu befähigen, Probleme nicht-
+nachhaltiger Entwicklung zu erkennen und so zu handeln, dass heute und künftig lebende
+Generationen die Chance auf die Verwirklichung eines in sozialer, ökologischer und ökonomischer
+Hinsicht 'guten' Lebens$$$3$$$ haben“. (Michelsen et al. 2011b, S. 14)
+
+
+Bildung für nachhaltige Entwicklung möchte zu einem Verständnis komplexer
+Zusammenhänge beitragen, sowie ein eigenständiges und innovatives Bildungskonzept
+(Michelsen & Fischer 2015, S. 16-17) für das Lernen und Lehren in verschiedenen
+Bildungsbereichen bereitstellen. Durch BNE wird eine Neuorientierung der
+Bildungssysteme, die auf den Vorstellungen der nachhaltigen Entwicklung basieren,
+angestrebt (Bünning & Lettmann 2010, S. 2-3), um dabei eine Änderung der Denk- und
+Handlungsweisen der Bildungsakteure zu erreichen. Im Prozess der BNE-Verankerung
+kommt der Bildung die Verantwortung zu, „die notwendige Veränderung von Bewusstsein
+und Handeln der Menschen im Sinne des Leitbildes vorzubereiten bzw. durchzusetzen“.
+(Kehren 2016, S. 2)
+
+
+FOOTNOTE:2 S o w o h l d e r U m w e l t b i l d u n g s b e g r iff wie auch der Begriff einer BNE sind nicht eindeutig definiert und
+bestehen aus einer Fülle von Konzeptionen und Ansätzen, die jeweils andere Aspekte hervorheben
+(Heinrich 2005, S. 34). Dadurch entsteht eine inflationäre und heterogene Verwendung des Begriffes der
+BNE, die als diffuses (vgl. Helbling & Schwarz, 2005) und schwer zu fassendes Konzept (dazu Kyburz-Graber
+et al. 2000) wahrgenommen wird.
+
+
+FOOTNOTE:e3 tI na l.A 2n0l0e0h)n wunagh ragne ndoams mKeonn zweiprtd .d es „guten Lebens“ (im Spanischen „Buen vivir“) der indigenen Völker
+Boliviens, Ecuadors und Perus. Aus der Quechua-Sprache „Sumak Kawsay“, bezieht sich auf die Harmonie
+der Menschheit mit der „Pachamama“ („Mutter Erde“) sowie die Erhaltung der ökologischen Systeme und
+Kreisläufe. Weiter werden Gerechtigkeit, Solidarität und Würde, Respekt vor Vielfalt, einer Ethik der
+Verantwortung und ein harmonisches Leben im Einklang mit der Natur und den Menschen angestrebt(dazu
+Boff 2009; Acosta 2009b, 2011, 2015).
+
+
+Des Weiteren wird das übergreifende Bildungsziel der BNE als „Gestaltungskompetenz“$$$4$$$
+(de Haan et al. 2008, S 188) konzeptualisiert und damit die Fähigkeit bezeichnet, Wissen
+über nachhaltige Entwicklung anwenden und Probleme nicht nachhaltiger Entwicklung
+erkennen zu können (de Haan 1999, 2006). Ziel der BNE ist es Menschen für die
+Gestaltung einer sich nachhaltig entwickelnden Gesellschaft zu befähigen (vgl. Stengel et
+FOOTNOTE:al. 2008, S. 30) und kann wie folgt definiert werden:
+
+
+„Mit Gestaltungskompetenz wird die Fähigkeit bezeichnet, Wissen über nachhaltige Entwicklung
+anwenden und Probleme nicht nachhaltiger Entwicklung erkennen zu können. Das heißt, aus
+Gegenwartsanalysen und Zukunftsstudien Schlussfolgerungen über ökologische, ökonomische und
+soziale Entwicklungen in ihrer wechselseitigen Abhängigkeit ziehen und darauf basierende
+Entscheidungen treffen, verstehen und individuell, gemeinschaftlich und politisch umsetzen zu
+können, mit denen sich nachhaltige Entwicklungsprozesse verwirklichen lassen“. (de Haan 2006,
+S.5)
+
+
+Der Weg zu einer nachhaltigen Entwicklung ist ein Prozess, der auf Selbstständigkeit und
+Reflexivität angewiesen ist (Michelsen et al. 2011, S. 73). Nach Michelsen stehen im
+Mittelpunkt einer Bildungsstrategie für eine nachhaltige Entwicklung Formen des Lernens,
+die selbstorganisiert und projektorientiert sind$$$5$$$. Nur dann kann der Lernende sich selbst
+in die Lage versetzen, Zusammenhänge wahrzunehmen, sich als Teil des Gemeinwesens
+zu erfahren und sich letztendlich kritisch, produktiv, kreativ und wirksam mit der
+Problematik auseinandersetzen (ebd.). BNE soll keine Verhaltensänderungen
+“antrainieren“, sondern autonomes Handeln fördern (Michelsen 2006, S. 20).
+
+
+Weiter wird BNE als fächerübergreifendes „Handlungsfeld“ bezeichnet. Im Programm
+Transfer-21 (2007, S. 9) wird dies wie folgt dargestellt:
+
+
+„Bildung für nachhaltige Entwicklung (BNE) sich nicht einem einzelnen Unterrichtsfach zuordnen
+lässt und selbst auch keines konstituiert. BNE ist wie die Nachhaltigkeitswissenschaft
+interdisziplinär und problemorientiert ausgerichtet. Sie zielt auf die Befähigung zu reflektiertem
+Handeln. Themen der BNE können in Kooperation zwischen Fächern, eigenständig aber auch in
+einem Fach unter der Berücksichtigung von Multiperspektivität behandelt werden“.
+
+
+BNE ist vielseitig und kann nur durch ein Netzwerk an Theorien veranschaulicht werden
+(vgl. Michelsen et al. 2011a, S. 69). Ferner gilt es, die BNE als inter- und transdisziplinäre
+(Hauenschild & Rode 2013, S. 62) und als systemische Bildungsaufgabe zu verstehen.
+
+
+FOOTNOTE:4 Die Gestaltungskompetenz umfasst folgende Schlüsselkompetenzen: Perspektivübernahme, Antizipation,
+Interdisziplinäres Arbeiten, Umgang mit unvollständiger und überkomplexer Information, Kooperation,
+Berücksichtigung von Zielkonflikten bei der Reflexion, Handlungsstrategien, Partizipation, Motivation,
+Reflexion eigener und fremder Leitbilder, moralisches Handeln, Selbstständiges Planen/ Handeln und
+Empathie (de Haan et.al. 2008, S. 188).
+
+
+FOOTNOTE:E5 mDpaazuth iKeo (ndset rHuakatniv iestt.iascl.h 2e0 0L8e,r nSv. e1r8s8tä).n dnis in Künzli David (2007, S. 38-43) in dem Lernen las aktiver,
+selbstgesteuerter, konstruktiver, situativer und sozial eingebunden Prozess verstanden wird.
+
+
+2.1.2 UNESCO-Dekade der Bildung für nachhaltige Entwicklung
+
+
+Auf internationaler Ebene$$$6$$$ wurden nach der Verabschiedung der Agenda 21 (BMU 1992)
+im internationalen Kontext mehrere wichtige Beschlüsse gefasst, die sich mit
+Nachhaltigkeit in der Bildung befassen (Seybold & Winkelmann 2001, S. 1). Zehn Jahre
+nach der Rio Konferenz wurde 2002 auf dem Weltgipfel für nachhaltige Entwicklung in
+Johannesburg die starke Rolle der Nachhaltigkeit in der Bildung unterstrichen.
+Demzufolge ist nachhaltige Entwicklung auf allen Bildungsebenen in die Bildungssysteme
+zu integrieren um so die Bildung in stärkerem Maße zum Schlüsselkatalysator für den
+Wandel zu gestalten (BMU 2002). Als wichtige Maßnahme wurde die UNESCO-
+Weltdekade der BNE von 2005 bis 2014 ausgerufen. Seitdem erhielt die BNE eine formale,
+umfassende politische Legitimation. Mit der Dekade signalisierten die Vereinten Nationen
+und die UNESCO, dass Nachhaltigkeit alle betrifft und in allen Bildungsbereichen und auf
+allen Ebenen einzuführen und zu verankern ist (DUK 2013). Auf der UN-Weltkonferenz
+„Rio+20“ im Jahr 2012 empfahl die Staatengemeinschaft, BNE über die Dekade hinaus
+weiterhin zu fördern und fortzusetzen. BNE bleibt auch nach Ende der UNESCO-
+FOOTNOTE:Weltdekade, sowohl auf internationaler als auch nationaler Ebene, relevant.
+
+
+Den Rahmen für die internationalen Folgeaktivitäten der Dekade bildete das
+Weltaktionsprogramm WAP (2015-2019), welches das Ziel verfolgt, BNE weiterhin aktiv in
+alle Bildungsbereiche zu implementieren und politisch-institutionell zu stärken (UNESCO
+2014a). Eines der fünf Handlungsfelder des Weltaktionsprogramms hat auch im Kontext
+der Bildung für nachhaltige Entwicklung einen wichtigen Schwerpunkt aufgegriffen und
+fordert die Stärkung der Kompetenzen von Lehrer/innen, Ausbildner/innen und weiteren
+„change agents“ zur Vermittlung von BNE-relevanten Zielen und Inhalten (vgl. DUK 2014a,
+S. 15).
+
+
+Zum Abschluss der Weltdekade fand die Weltkonferenz „Bildung für nachhaltige
+Entwicklung“ im November 2014 in Japan statt, im Zuge derer die Aichi-Nagoya Erklärung
+(UNESCO 2014b) erlassen wurde. Mit dieser Deklaration wurde dazu aufgerufen, das
+Engagement für BNE fortzuführen und zu intensivieren. Auf nationaler Ebene fand zum
+Abschluss der UN-Dekade die nationale Konferenz „UN-Dekade mit Wirkung – 10 Jahre
+Bildung für nachhaltige Entwicklung in Deutschland“ (UNESCO 2014b) im September 2014
+statt, in der die Bonner Erklärung (DUK 2014b) verabschiedet wurde. In der nationalen
+Abschlusskonferenz der Dekade wurde das Weltaktionsprogramm (UNESCO 2014a)
+begrüßt und unterstützt. Die nationale Konferenz diente nicht nur dem Rückblick,
+sondern mit den neuen Perspektiven auch dem Ziel, BNE in allen Bildungsbereichen
+
+
+FOOTNOTE:6 W e i t e r e u m w e l t - u n d b i l d u n g s r e l e vante Konferenzen: MAB Programme der UNESCO, 1962; Club of Rome
+Report, 1971; Belgrade Charter, 1975; Tbilisi Intergovernmental Conference, 1977; International Meeting of
+Experts in Environmental Education of Paris, 1982; Moscow Conference, 1987; World Congress for
+Environmental Education and Communication on Environment and Development, 1992; Thessaloniki
+Conference, 1997; World Summit on Sustainable Development of Johannesburg, 2002 (vgl. Albrecht 2009,
+S. 62 -63).
+
+
+weiter zu verankern, auch im Bereich der Hochschulbildung. Im Hinblick auf die UNESCO-
+Weltkonferenz in Japan wurde im September 2014 im lateinamerikanischen Raum$$$7$$$ und in
+der Karibik (u.a. auch Bolivien) die Erklärung von Lima (CIDEA7 2014) im Rahmen des VII.
+Ibero-amerikanischen Kongresses über Umweltbildung$$$8$$$ verabschiedet mit dem Ziel die
+FOOTNOTE:Installierung von BNE als politische Verbindlichkeit zu erreichen.
+
+
+2.1.3 Weitere Konferenzen im Hochschulsektor
+
+
+Im Hochschulkontext wurde die Bedeutung der nachhaltigen Entwicklung in der Bildung
+in den vergangenen Jahren durch etliche nationale und internationale Konferenzen und
+Erklärungen hervorgehoben. Die ersten Impulse zur Implementierung der Nachhaltigkeit
+im europäischen Hochschulbereich gingen in den 1990er Jahren vom Erlass wichtiger
+Deklarationen zum Einbezug des Gedankens der Nachhaltigkeit im Hochschul-Curriculum
+aus. Erwähnenswert sind die Talloires Declaration (1990) der Konferenz „The role of
+Universities in Environmental Management and Sustainable Development“, die Halifax
+Declaration (1991), die Copernicus Charta der europäischen Rektorenkonferenz (1993),
+die Loccumer Resolution für nachhaltige Entwicklung an Hochschulen (2000), die
+Lüneburg Declaration im Rahmen der internationalen Konferenz „Higher Education for
+Sustainability“ (2001), die Ubuntu Declaration on Education and Science and Technology
+for Sustainable Development (2002), die Graz Deklaration on Committing Universities to
+Sustainable Development (2005), die Lübecker Erklärung „Hochschulen und
+Nachhaltigkeit“ (2005), die G8 University Summit Sapporo Sustainability Declaration
+(2008), sowie die G8 University Summit: Statement of Action (2010) (vgl. Leal Filho &
+Manolas 2012, S. 49).
+
+
+Im Juli 2009 fand in Paris die UNESCO-Weltkonferenz (UNESCO 2009a) über
+Hochschulbildung unter dem Titel „Die neue Dynamik in Hochschulbildung und Forschung
+für sozialen Wandel und Entwicklung“ statt. Diese Konferenz knüpfte an das “Unesco-
+Forum on Higher Education in the Europe Region: Access, Values, Quality and
+Competitiveness” an, das im Mai 2009 in Bukarest (UNESCO 2009c) stattfand. Für den
+lateinamerikanischen Raum fand die Vorbereitungskonferenz in Kolumbien statt (UNESCO
+2008). Hauptthemen der Weltkonferenz waren die Rolle der Hochschulen in Hinblick auf
+Bildung für nachhaltige Entwicklung und die Armutsbekämpfung. Ein weiterer
+
+
+FOOTNOTE:7 W e i t e r e i n t e r n a t i o n a l e B e m ü h u n gen in Hinblick Umweltbildung und Nachhaltigkeit in der Bildung im
+lateinamerikanischen Raum: I Ibero-amerikanische Kongress in Guadalajara, Mexiko (1992) mit dem Motto
+„Una estrategia para el porvenir – Eine Strategie für die Zukunft“; „Erklärung von Guadalajara“ (1997);
+Erklärung von Caracas, Venezuela (2000) mit dem Motto „Pueblos y caminos hacia el desarrollo sostenible-
+Völker und Wege hin zu einer nachhaltigen Entwicklung“; „Erklärung von Havanna“ über Umweltbidung von
+2003; Erklärung von Joinville, Brasilien (2006) über die Perspektiven der Umweltbildung in Lateinamerika
+und die Erklärung von San Clemente del Tuyú (2009), Argentinien (Enriqueciendo las propuestas educativo-
+ambientales para la acción colectiva) (dazu CIDEA7 2014, S. 2-3). 8
+
+
+FOOTNOTE:a8 mInb ideenrt aslpesa npiasrcah slap raaccchióigne cno lLeitcetirvaat)u (rd taazuuc ChIeDnE Ad7ie 2 B01e4gr, iSff.e 2 -„3U).m weltbildung“ und „Umwelterziehung“ im
+Gegensatz zur Bildung für nachhaltige Entwicklung häufiger auf. BNE ist als Begriff noch nicht etabliert,
+jedoch als Konzept verbreitet.
+
+
+Schwerpunkt der Konferenz war die Bedeutung der Hochschulbildung in Entwicklungs-
+ländern (UNESCO, 2009a).
+
+
+2.2 BNE in der Hochschulbildung
+
+
+Wie den vorangehenden Ausführungen zu entnehmen ist, hat die Hochschulbildung für
+die Verwirklichung der Ziele der nachhaltigen Entwicklung einen hohen Stellenwert. Auch
+im Hochschulkontext gilt die Aussage: „Ohne Bildung ist die Idee einer nachhaltigen
+Entwicklung nicht oder nur schwer zu verwirklichen“ (Rieß, Hörsch & Jakob 2013, S. 104).
+Hochschulen wird eine herausragende Bedeutung zur Erfüllung der
+FOOTNOTE:Nachhaltigkeitsgrundsätze zugewiesen (Rieckmann 2011, S. 14).
+
+
+Laut Deutsche UNESCO-Kommission (DUK) sind Hochschulen „Einrichtungen der
+Gesellschaft und stehen als Kern des Wissenschaftssystems mit ihren drei
+Aufgabenfeldern Forschung, Lehre und Dienstleistung in der Verantwortung, zur
+zukunftsorientierten Entwicklung der Gesellschaft beizutragen“ (DUK 2010, S. 2). Sie
+sehen sich einem ständigen Wechselspiel neuer Anforderungen und Herausforderungen –
+einschließlich der Globalisierung des Hochschulwesens – ausgesetzt (Adomßent & Henze
+2013, S. 161) und stellen den idealen Ort zur Konsolidierung der BNE dar mit dem
+übergeordneten Ziel, den Grundgedanken der Nachhaltigkeit zu verankern (Cotton 2007,
+S. 579). Hochschulen bilden den idealen Raum für BNE, zumal sie für die Ausbildung
+zukünftiger Pädagogen/innen, Wissenschaftler/innen und Führungskräften zuständig
+sind. Als Bildungsstätten für zukünftige Entscheidungsträger/innen und Orte der
+Forschung haben Hochschulen eine wesentliche Verantwortung (dazu Leal Filho 2010, S.
+179) zu übernehmen: Sie legen die nötigen Grundlagen für die Gestaltung der
+Weltgesellschaft im Sinne einer nachhaltigen Entwicklung (Rieckmann 2011, S. 14), indem
+sie in der Lehre Kenntnisse, Kompetenzen und Werte vermitteln sowie in der Forschung
+Wissen und Innovation erzeugen (DUK 2010, S. 2).Dennoch verläuft die
+Institutionalisierung der BNE im Hochschulkontext derzeit noch eher zögerlich (Junyent
+2008, S. 764). BNE im Hochschulsektor ist noch lange nicht dort angelangt, wo sie sein
+sollte, sowohl auf nationaler als auch internationaler Ebene (de Haan 2014, S. 3).
+
+
+2.3 Empirische Bildungsforschung zur BNE – Stand der Forschung
+
+
+Nachhaltige Entwicklung gilt als eine der großen Herausforderungen unserer Zeit. Auch
+für die Hochschulbildung stellt sich der Nachhaltigkeitsgrundsatz als Herausforderung für
+die Forschung dar (Adomßent 2007, S. 9). Empirische Forschung, die sich der BNE widmet,
+spielt im Hochschulbereich eine wesentliche Rolle, um das übergeordnete Ziel der
+Forschung, den Erkenntnisgewinn, zu verwirklichen. Forschung zur BNE verfolgt zwei
+wesentliche Ziele (Barth 2016, S. 39): Das erste ist ein umsetzungs- und
+anwendungsorientiertes Ziel – das auf einer evidenzbasierten Entwicklung und einer
+empirischen Überprüfung von pädagogischen Maßnahmen basiert. Das zweite ist ein
+
+
+theoretisch orientiertes Ziel, das die Ergänzung des BNE-Konzepts anstrebt (dazu auch
+Gräsel et al. 2013).
+
+
+Die BNE-relevante empirische Bildungsforschung ist umsetzungs- und anwendungs-
+orientiert und verfolgt das Ziel, BNE operationalisierbar und messbar zu machen (Kehren
+$$$2016$$$, S. 5). Empirisch forschungsbasierte Erkenntnisse sollen letztendlich einen Beitrag
+für eine wissenschaftlich fundierte Gestaltung von Bildungsprozessen und
+Bildungskonzepten leisten, mit dem übergeordneten Ziel, zu einer Verbesserung der
+pädagogischen Praxis beizutragen (vgl. Rieß & Mischo 2008, S. 6). Es ist festzustellen, dass
+der Bildung für nachhaltige Entwicklung „kaum empirisch bewährte Erkenntnisse und
+belastbares Wissen aus der Forschung zur Seite gestellt werden können“ (Rieß 2010, S.
+16). Es bestehen Forschungslücken, auch und gerade im Bereich der Hochschulbildung
+bzw. Hochschulbildung für nachhaltige Entwicklung. Die Literatur spricht in diesem
+Zusammenhang gar von „gravierenden Forschungslücken“ (Adomßent & Henze 2013, S.
+176). Auch im Bereich der Lehrerbildung ist die Hochschule noch nicht dort, wo sie sein
+FOOTNOTE:sollte (dazu Indikatoren der BNE, Michelsen et al. 2011b).
+
+
+Im Hinblick auf die Eigenschaften der bereits durchgeführten empirischen Studien sind
+gemäß Leal Filho (2012) sog. unterschiedliche „levels“, sowohl was die Quantität als auch
+die Qualität der Studien angeht, auffällig (Leal Filho & Manolas 2012, S. 67). Die Literatur
+verweist auf Case Studies und qualitative Studien im Raum Europa und in den USA, es
+mangelt jedoch an empirischen Studien in der Anden-Region Lateinamerikas (dazu Geli de
+Ciurana & Leal Filho 2006), wo eine fehlende Etablierung der BNE-Bildungsforschung in
+der Hochschulbildung festzustellen ist. Nach Cotton (2007, S. 579) ist wenig Forschung in
+Bezug auf die Dozentenschaft bezüglich BNE vorhanden, obwohl gerade dieser
+Forschungsbereich immer wichtiger für die Entwicklung von Curricula an Hochschulen
+wird. Zwar wurden einige BNE-relevanten Studien durchgeführt, z.B. in Costa Rica (García
+2010), Kolumbien (Orozco Silva 2001) und Mexiko (Velazquez, Munguía & Sanchez 2005),
+gleichwohl handelt es sich hierbei um Ausnahmen in dem noch überschaubaren
+Forschungsspektrum der empirischen Bildungsforschung zur BNE in Lateinamerika (vgl.
+dazu auch Geli de Ciurana & Leal Filho 2006). Good-Practice-Kooperationsprojekte wie
+das ENSU Projekt „Nachhaltigkeit lehren und lernen“$$$9$$$ in Ecuador sind in
+lateinamerikanischen Länder selten (dazu Rieckmann et. al. 2010). Obwohl in der
+Literatur häufig die Forderung nach einer Integration der BNE in der Hochschulbildung
+erhoben wird, sind vergleichbare Studien im Hochschulbildungssektor Boliviens nicht
+vorhanden.
+
+
+FOOTNOTE:9 Kooperationsprojekt zur Entwicklung und Erprobung eines Fortbildungsprogramms das Lehrende zur
+Integration der Konzepts de nachhaltigen Entwicklung uns zur Umsetzung didaktischer Methoden
+befähigen soll. (Rieckman et al. 2010, S.11)
+
+
+2.4 Befunde aus der empirischen Bildungsforschung zur BNE
+
+
+In Deutschland wird Bildungsforschung zur BNE noch auf relativ geringem Niveau
+betrieben. Im Hinblick auf empirische Studien, die sich mit BNE in Deutschland befassen,
+sind zwei Studien zu erwähnen. Diese werden im Folgenden erörtert.
+
+
+2.4.1 BNE an weiterführenden Schulen in Baden-Württemberg
+
+
+Die Evaluation „Bildung für nachhaltige Entwicklung an weiterführenden Schulen in
+Baden- Württemberg“ (Rieß & Mischo 2008) ist eine Studie zur Erhebung von Daten zum
+Ist-Stand der BNE an weiterführenden Schulen, die mittels einer quantitativen Studie$$$10$$$
+sowohl für die Lehrerschaft, wie auch für die Mitglieder der Hochschulleitungen
+durchgeführt wurde. Im Rahmen der Evaluationsstudie war es Ziel der Befragung, zu
+einem möglichst umfassenden Bild der schulischen BNE zu gelangen und die möglichen
+Einflussfaktoren zu erkennen. Weiter wurden neben dem aktuellen Stand der BNE in der
+Schulbildung ebenfalls „mögliche förderliche oder hinderliche Bedingungen für die
+Umsetzung der BNE“ (Rieß & Mischo 2008 S. 7) identifiziert. Über die Bestandsaufnahme
+hinaus erfasste die Evaluation kontext- und personenbezogene Informationen zur
+schulischen Umsetzung bzw. nicht-Umsetzung von BNE und stellte Erklärungsansätze für
+die Implementierung von BNE zur Verfügung, die als Grundlage für eine Verbesserung der
+schulischen BNE beitragen können (Rieß & Mischo 2008). Die Evaluation der schulischen
+BNE an weiterführenden Schulen hat jedoch gezeigt, dass gegenwärtig eine Diskrepanz
+zwischen den bildungspolitischen Vorstellungen über die BNE-Implementierung in die
+Schulbildung und der aktuellen Situation der schulischen BNE besteht (dazu auch
+FOOTNOTE:Siegmund & Jahn 2014, S. 3).
+
+
+2.4.2 Bildung für nachhaltige Entwicklung in der Lehramtsausbildung
+
+
+Die Evaluation „BNE in der Lehramtsausbildung an baden-württembergischen
+Hochschulen“ wurde im Rahmen des Projekts „Lernen über den Tag hinaus – Bildung für
+eine zukunfts-fähige Welt“ (Siegmund & Jahn 2014) im Auftrag des Ministeriums für
+Kultus, Jugend und Sport durchgeführt. Im Mittelpunkt stand die Frage nach dem
+aktuellen Stand der Implementierung der BNE in der Lehramtsausbildung an baden-
+württembergischen Hochschulen zum einen im Hinblick auf die Verankerung der BNE in
+institutionell-struktureller Hinsicht sowie zum anderen bezüglich der bereits erreichten
+Ziele, Inhalte und Methoden (Aspekt 1). Darüber hinaus standen auch die Möglichkeiten
+und Einschränkungen (Hemmnisse/ Aspekt 2) im Hinblick auf BNE in der Lehrerausbildung
+(Siegmund & Jahn 2014) im Fokus.
+
+
+FOOTNOTE:1 0 D a s M e s s i n s t r u m e n t w u r d e i m Großen und Ganzen in Anlehnung an das mehrebenenanalytische
+Rahmenmodell der BNE angelehnt (vgl. Abb. 3) und fokussierte neben organisatorisch-institutionellen,
+inhaltlich-curricularen, methodischen und personalen von Lehrkräfte und Schulleiter, Aspekten von
+schulischer BNE, Zusammenarbeit mit außerschulischen Partnern und Fortbildungsangeboten zu BNE (vgl.
+Rieß & Mischo 2008).
+
+
+Für die Evaluation wurde ein quantitatives Erhebungsinstrument in Form eines online-
+basierten Fragebogens entwickelt. Die Adressaten der Studie waren (1) Leiter der
+Lehramtsfächer, (2) Lehrende in den Lehramtsfächern und (3) Leiter der Zentren für
+Lehrerbildung. Die Ergebnisse der Datenerhebung sind in Anlehnung an Siegmund & Jahn
+FOOTNOTE:(2014, S. 51) als ernüchternd zu betrachten, zumal:
+
+
+„eine systematische strukturelle wie operationelle Verankerung des BNE-Konzepts in der
+Lehramtsausbildung an baden-württembergischen Hochschulen […] derzeit kaum erkennbar [ist] –
+die Umsetzung des Nachhaltigkeitsgedankens stellt insgesamt kein durchgehendes integratives
+"Paradigma" dar“.
+
+
+2.5 Das Bildungssystem Boliviens
+
+
+Es ist für die vorliegende Studie wichtig, zunächst einen kurzen Abriss über das
+bolivianische Bildungs- und insbesondere das Hochschulwesen des Landes zu geben.
+
+
+2.5.1 Demografischer, ethnischer und sozioökonomischer Hintergrund
+
+
+Bolivien ist ein Binnenland im Zentrum Südamerikas mit einer Fläche von 1‘098‘581 km$$$2$$$
+und damit dreimal größer als die Bundesrepublik Deutschland (Revollo 2015, S. 63). Es
+gehört weltweit zu den 10 Ländern mit den größten Waldreserven, verfügt auch über
+umfangreiche Energie- und Bergbauressourcen. Bolivien gehört drei wichtigen
+Flusseinzugsgebieten an: dem des Amazonasbeckens, des Río de la Plata und des Río
+Cuenca (Revollo 2015, S. 63ff.) und ist somit ein an Naturschätzen reiches Land.
+
+
+Das Land ist politisch und administrativ in neun „Departamentos“ (vergleichbar mit den
+deutschen Bundesländern) gegliedert. Es hat ca. 10,4 Mio. Einwohner, darunter 49,81%
+Männer und 50,19% Frauen. Wie in anderen lateinamerikanischen Ländern auch ist die
+Bevölkerung recht jung; 50% der Einwohner sind unter 20 Jahre alt (INE 2016a). Die
+Bevölkerung ist räumlich sehr ungleich verteilt. Der größte Teil, 70%, lebt auf der
+Mittelachse der drei größten Städte La Paz, Cochabamba und Santa Cruz, wo sich auch
+der größere Teil der Infrastruktur und das wirtschaftliche Zentrum des Landes
+konzentrieren. 82% der Bevölkerung sprechen Spanisch (Amtssprache), 28% Quechua,
+18% Aymara und 4% andere Sprachen (vgl. Rodríguez Ostria & Weise Vargas 2006, S. 14).
+Bolivien verfügt über eine große ethnische und kulturelle Vielfalt (37 Volksgruppen und
+10 verschiedene Sprachfamilien). Die indigene Bevölkerung Boliviens mit ihren
+zahlreichen Volksgruppen stellt mit 70% die Mehrheit der bolivianischen Gesellschaft,
+28% der Einwohner sind Mestizen und 2% sind europäischer Herkunft.
+
+
+Bolivien befindet sich, wie auch andere Länder der Region, gerade auch wegen der
+erwähnten kulturellen und ethnischen Diversität, derzeit mitten in verschiedenen
+dynamischen Veränderungsprozessen und in einer Phase des Umbruchs. Noch immer
+herrschen große Unterschiede und Ungleichheiten insbesondere bei den
+Lebensbedingungen der Bevölkerung. Nach Kolumbien und Haiti ist Bolivien das Land mit
+der dritthöchsten sozioökonomischen Ungleichheit in Lateinamerika. Zwei Drittel der
+
+
+Bevölkerung leben in Armut, 40% gar in extremer Armut, während gerade einmal 10% der
+bolivianischen Gesellschaft über 45% des Gesamteinkommens verfügen (Revollo 2015, S.
+64). „Neben Guatemala, Ecuador und Peru ist Bolivien nicht nur eines der Länder mit der
+größten indigenen Bevölkerung, sondern auch, nach Haiti und Paraguay, eines der
+ärmsten“ (Revollo 2015, S. 63-64). Strukturelle Probleme wie Armut, sozioökonomische
+Ungleichheit und Mangel an sozialer Kohäsion überlagern immer noch die Fortschritte der
+Regierung im Wirtschafts- und Produktionsbereich, sowie beim Aufbau und der Stärkung
+sozialpolitischer Maßnahmen (Aparicio 2015, S. 287).
+
+
+Die bolivianische Gesellschaft zeichnet sich durch große wirtschaftliche Unterschiede
+zwischen den sozialen Schichten und eine geringe soziale Mobilität aus (Revollo 2015, S.
+64). Die ethnische Struktur in Verbindung mit der systematischen Diskriminierung und
+soziopolitischen Ausgrenzung der indigenen Bevölkerung hat zweifellos eine sehr
+komplexe Gesellschaftsstruktur hervorgebracht. Aparicio (2015) unterstreicht dies, indem
+er behauptet, dass „beispielweise ist in Ländern wie Bolivien die Wahrscheinlichkeit sehr
+groß, dass Jugendliche aus ethnischen kulturellen Minderheiten und sozial
+benachteiligten Gruppen vom Bildungssystem ausgeschlossen bleiben“ (Aparicio 2015, S.
+292). Laut Aparicio (2015, S. 289) gibt es sich im bolivianischen Bildungssystem einen:
+
+
+FOOTNOTE:„ungleich[n] Zugang zu Bildungsangeboten, Mangel an Innovations-, Leistungs- und
+Verbesserungsinstrumenten vor allem im Blick auf Curricula, Mangel an informellen
+Bildungsangeboten, eine defizitäre Ausbildung der Lehrkräfte, Verschlechterung der
+Bildungsqualität, hohe Analphabetismus- und Schulabbruchsquoten, Mangel an Systematischer
+Organisation und Vermittlung von Lerninhalten und nicht zuletzt segmentierte[n] Zugang zu
+Bildung je nach sozioökonomischer Herkunft, Geschlecht, Wohnort sowie ethnischer und
+kultureller Zugehörigkeit“.
+
+
+Wie in den meisten Ländern Lateinamerikas ist Bildung auch in Bolivien sowohl eine
+Notwendigkeit für den sozialen Wandel, wie auch ein Ergebnis desselben. „Bildung allein
+kann nicht die tiefgehenden Probleme in Lateinamerika lösen, sie ist vielmehr zugleich
+notwendige Bedingung, Instrument und Ergebnis gesellschaftlicher Veränderungs-
+prozesse“. (Aparicio 2015, S. 286)
+
+
+2.5.2 Das bolivianische Bildungssystem
+
+
+Bolivien gehört mit Guatemala und Nicaragua zu den Ländern mit dem niedrigsten
+Bildungsniveau in Lateinamerika. Unter allen 24-Jährigen haben 17% die Primar- und 24%
+die Sekundarstufe nicht beendet (Revollo 2015, S. 75). Weitere entscheidende Faktoren
+für die Bildungschancen der bolivianischen Bevölkerung sind das Geschlecht und die
+Zugehörigkeit zu den unterschiedlichen sozioökonomischen Gruppen.
+
+
+Statistische Informationen sind in Bolivien nur sehr spärlich vorhanden, der Zugang ist
+limitiert. Die letzten veröffentlichten statistischen Daten über die Immatrikulationsraten
+an bolivianischen Hochschulen stammen aus dem Jahr 2002. Zum damaligen Zeitpunkt
+waren an den staatlichen Universitäten 240.428 Studierende immatrikuliert, 62,42% aus
+
+
+städtischen Gebieten und 37,58% aus ländlichen Gebieten$$$11$$$ (Rodríguez Ostria & Weise
+Vargas 2006, S. 14). Im Hochschulbereich (tertiärer Bereich) besuchten 30% der unteren
+sozialen und ökonomischen Schicht und 63% der jungen Menschen aus besseren
+sozioökonomischen Verhältnissen eine Hochschule. Nur 7% der aus ärmeren
+Verhältnissen stammenden Studenten schlossen ihr Studium ab, bei jenen aus besseren
+FOOTNOTE:finanziellen Verhältnissen waren es 37% (Revollo 2015, S. 75).
+
+
+Die Regierung von Evo Morales (2006-2019), dem ersten sozialistischen Staatspräsident
+indigener Abstammung, hat eine Reihe von umfangreichen Reformen in Gang gesetzt,
+auch im Bildungswesen. Sie zeichnen sich durch pro-indigene politische Maßnahmen,
+soziale Projekte und ökonomische Veränderungen, hauptsächlich aber durch die
+Durchsetzung einer antielitären, antikapitalistischen und antineokolonialistischen
+Ideologie aus (Revollo 2015, S. 70). Der Bereich des Bildungswesens wurde durch ein
+neues Bildungsgesetz (2010) – Ley de Educación N° 070 „Avelino Siñani-Elizardo Perez“ –
+neu strukturiert. Die Schulbildung ist kostenlos und seit der Gesetzesänderung bis zum
+Abitur obligatorisch. Die Praxis allerdings ist durch hohe Schulabbrecherquoten geprägt$$$12$$$.
+
+
+Das bolivianische Bildungssystem ist in drei Subsysteme wie folgt gegliedert:
+
+
+FOOTNOTE:1 1 L a u t n a t i o n a l e m B e r i c h t ( 2 0 1 6 ) i s t in Bolivien einer der großen Mängel des Hochschulsystems der Zugang
+zu Informationen. Es gibt keine aktuellen Daten über Studenten, Dozenten und Absolventen auf allen
+Ebenen und es sind nur bruchstückhafte Informationen vorhanden (Martínez, Santillán & Loayza 2016 S. 2,
+16; Rodríguez Ostria & Weise Vargas 2006, S. 9).
+
+
+FOOTNOTE:1126 E; sR ogidbrtí gkueeinz eO ostffriizai e&ll eWne Sistaet Visatirkgeans 2ü0b0e6r ,u Sn. i9ve).r sitäre Abbruchsraten. Laut Martínez et al. 2016, liegt diese
+Quote zwischen 50% und 60%.
+
+
+Laut Bildungsgesetz (2010) ist das Hauptziel des tertiären Bildungsbereichs nicht nur die
+Verbreitung eines modernen, internationalen Verständnisses der Welt und ihrer
+sozioökonomischen und politischen Dimensionen, sondern auch die Einbeziehung
+traditionellen Wissens und traditioneller Elemente der indigenen Völker$$$13$$$. Der
+Tertiärbereich weist vier Ebenen auf: Lehrerausbildung, berufliche Bildung, künstlerische
+FOOTNOTE:Bildung und Hochschulbildung (Revollo 2015, S. 72).
+
+
+2.6 Das Hochschulbildungssystem Boliviens
+
+
+Die Möglichkeiten einer beruflichen Ausbildung in Bolivien beschränken sich fast
+ausschließlich auf den Hochschulbereich (Rodríguez Ostria & Weise Vargas 2006, S. 58 ff.).
+Dies zeigt sich auch daran, dass sich jedes Jahr 78%-80% der Abiturienten für ein
+Universitätsstudium bewerben (Rodríguez Ostria & Weise Vargas 2006, S. 58-59). Eine
+Hochschulausbildung genießt im Gegensatz zu technischen Berufen und zur
+Lehrtätigkeit$$$14$$$ ein hohes soziales Ansehen (Rodríguez Ostria & Weise Vargas 2006, S.
+58ff.).
+
+
+Zum tertiären Bereich gehören: Allgemeine Hochschulen und Pädagogische Hochschulen.
+Diese werden im Folgenden beschrieben.
+
+
+2.6.1 Allgemeine Hochschulen
+
+
+Hochschulen in Bolivien befinden sich in öffentlicher bzw. staatlicher oder in privater
+Trägerschaft$$$15$$$ und sind nach der Koordinationsmethode der Zentralregierung in
+autonome und nicht-autonome Hochschulen (Martínez et al. 2016, S. 8) unterteilt. Erstere
+verfügen über Entscheidungsfreiheit in Entwicklung, Akademie und bei den Richtlinien
+und verwalten ihre Ressourcen autonom. Letztere stehen unter staatlicher Inspektion und
+Aufsicht und sind private Bildungsinstitutionen.
+
+
+Das bolivianische Hochschulsystem besteht aus insgesamt 58 Hochschulen (MinEDU 2016,
+S. 7ff.). Davon sind insgesamt 12 autonome Universitäten. Zu den autonomen
+Hochschulen gehören die insgesamt zehn staatlichen Hochschulen$$$16$$$ und zwei
+Universitäten, die keine staatliche Finanzierung erhalten und sich in Trägerschaft der
+
+
+FOOTNOTE:13 Bildungsgesetz – Ley de Educación N° 070 „Avelino Siñani-Elizardo Perez“ vom 20.12.2010
+(Bildungsgesetz 2010). 14
+
+
+FOOTNOTE:(1B4 iIlmdu bnogsligveiasneitszc h20e1n0 B).i ldungssystem ist die Lehrerausbildung anders strukturiert als in Deutschland. Sie ist
+von der allgemeinen Hochschulbildung abgekoppelt und vollzieht sich an Hochschulen, die sogenannten
+„Escuelas Superiores de Formación de Maestros y Maestras“. Diese befinden sich ausschließlich in
+staatlicher Trägerschaft (MinEDU 2015).
+
+
+FOOTNOTE:s15t aAaltlgliecmheeri nTerä Vgeerroscrhdanfutn (gMeinn EdDerU p 2r0iv1a5t)e.n Universitäten, Dekret Nr. 1433 vom 12. Dezember 2012.
+
+
+FOOTNOTE:16 A Bl olg lie vm iee ni n ise t V iner o nr ed un nu n Dg ee pn a rd te ar m p er niv ta ot se n (B U un ni dv ee sr ls äit nä dt ee rn ), aD ue fk gr ee tt e N iltr :. 1 L4 a 3 P3 a v zo , m Sa 1 n2 ta. D Ce rz ue zm , Cb oe cr h2 a0 b1 a2 m. ba, Beni,
+Pando, Potosi, Oruro, Tarija, Sucre, die jeweils in 112 Provincias (Provinzen) unterteilt sind. Die Anzahl der
+staatlichen Hochschulen beläuft sich auf, diese werden so eingeordnet, dass jedes Departamento
+(Bundesland) jeweils eine staatliche Hochschule besitzt. Nur La Paz, die Regierungshauptstadt, hat zwei
+öffentlich geförderte Hochschulen.
+
+
+Katholischen Kirche (Univeridad Católica Boliviana „San Pablo“ – UCB) bzw. der Armee
+(Escuela Militar del Ejército – EMI) befinden. Die restlichen 46 Hochschulen sind in
+privater Trägerschaft.
+
+
+2.6.2 Weitere Merkmale
+
+
+Bis Anfang der 1990er Jahre herrschte im bolivianischen Hochschulsystem ein freier
+Zugang zu den staatlichen Universitäten. Allmählich wurden Selektionsmechanismen und
+Zulassungsbeschränkungen eingeführt. Einige Beispiele sind die akademische
+Eignungsprüfung, Vorbereitungskurse und Immatrikulation durch herausragende
+schulische Leistungen (vgl. Martínez et al. 2016, S. 9).
+
+
+Im Falle der privaten Universitäten herrscht weiterhin freier Zugang. Die von einigen
+Hochschulen geforderten Eignungstests sind nicht selektiv angelegt und für alle
+Studiengänge gleich, sie gelten als formelle Voraussetzung und sind für die Zulassung
+nicht von Bedeutung. Dies ist mit der Tatsache verbunden, dass die wirtschaftliche
+Nachhaltigkeit dieser privaten Institutionen fast ausschließlich von den Einnahmen aus
+Immatrikulationsgebühren abhängig ist (Martínez et al. 2016, S. 9ff.).
+
+
+Die durchschnittliche Dauer der universitären Studiengänge beträgt für die meisten
+Fachrichtungen und Disziplinen 10 Semester. Die Studiengänge werden mit dem aka-
+demischen Grad des Lizenziats (Licenciatura) beendet.
+
+
+Seit Ende der 1990er Jahre gibt es in Bolivien auch die Möglichkeit, Magisterkurse zu
+belegen und zu promovieren. Das Angebot an Promotionsstellen ist bislang jedoch noch
+beschränkt. Allgemein bietet das Hochschulsystem in Bolivien sowohl im öffentlichen wie
+auch im privaten Sektor post-graduierte Studiengänge in zwei Modalitäten (dazu
+Rodríguez Ostria & Weise Vargas 2006, S. 61) an:
+
+
+1. Aufbaustudienprogramme, die einen Master- oder Doktorgrad gewähren. Seit
+2010, mit dem Erlass des Gesetzes zur Bildungsreform, besteht die Möglichkeit,
+Post-Doc-Programme anzubieten. In der Praxis ist ein Post-Doc-Studium bis dato
+jedoch weder an staatlichen noch an privaten Hochschulen möglich.
+
+
+2. Zertifikats-Programme (Diplomado), die keinen akademischen Grad gewähren.
+Dazu gehören Weiterbildungskurse, Aktualisierungs- und Fortbildungsangebote
+und Hochschulzertifikate (ausführlich Ziff. 4.6 Hochschulspezifische Fortbildung:
+“Diplomado”).
+
+
+Wichtig ist es in diesem Zusammenhang, hervorzuheben, dass für Magisterkurse und
+Promotionsstudiengänge an allen Hochschulen, auch an den staatlichen,
+Immatrikulationsgebühren zu entrichten sind. Sie sind damit nur für Studierende
+zugänglich, welche sich diese leisten können. Dieser Umstand bedeutet eine
+Beschränkung des freien Zugangs zu höherer Bildung, der angesichts der oben
+beschriebenen Überlegungen gerade für Länder wie Bolivien fundamental wichtig wäre.
+
+
+2.6.3 Pädagogische Hochschulen
+
+
+Die Lehrerausbildung ist anders strukturiert als in Deutschland. Die „Escuelas Superiores
+de Formación de Maestros/as“ gehören zu der Hochschulbildungslandschaft im
+bolivianischen Bildungsystem und sind mit deutschen Fachhochschulen zu vergleichen.
+Landesweit sind es 27 Pädagogische Hochschulen (MinEDU 2015), die für die Ausbildung
+von Lehrer/innen aller Stufen und Fächer zuständig sind.
+
+
+Die Lehrerausbildung hat sich seit der letzten Bildungsreform radikal gewandelt und
+unterliegt der alleinigen Verantwortung des Staates (Revollo 2015, S.10). Per Dekret
+wurden 2010 alle privaten Pädagogischen Hochschulen geschlossen und neue Formen
+von Pädagogischen Hochschulen geschaffen und/oder institutionalisiert. Als Folge davon
+gibt es in Bolivien zurzeit nur staatliche Pädagogische Hochschulen, die von der
+allgemeinen Hochschulbildung abgekoppelt und eher auf die ländliche und indigene
+Bevölkerung ausgerichtet sind.
+
+
+2.6.4 Die Dozentur an bolivianischen Hochschulen
+
+
+Im bolivianischen Hochschulsystem ist der akademische Grad für den Zugang zu
+Professuren und anderen Positionen mit akademischer Verantwortung nicht
+entscheidend bzw. verpflichtend. Bis 2014 hatte nur 3,3% der Dozentenschaft einen
+Doktortitel$$$17$$$. In den letzten Jahren hat sich das staatliche Hochschulwesen um eine
+Spezialisierung und Fortbildung der Dozentenschaft bemüht. So entstanden die ersten
+Masterstudiengänge, die sich speziell der Hochschulbildung widmen. Diese haben zum
+Ziel, den Mangel an geeigneten Bildungs- und institutionell-politischen Maßnahmen zur
+Verbesserung der akademischen Hochschuldozentur zu beheben (Rodríguez Ostria &
+Weise Vargas 2006, S. 89).
+
+
+Ein weiterer, erwähnenswerter Faktor ist die Tatsache, dass Hochschuldozent/innen nicht
+in der Wissenschaft und Forschung tätig sind, wie ein Bericht der UNESCO (Martínez et al.
+2016) über den Bildungssektor Lateinamerikas bestätigt. Demzufolge liegt der Fokus
+bolivianischer Universitäten nicht auf dem Bereich von Wissenschaft und Forschung,
+sondern dem der Lehre (Rodríguez Ostria & Weise Vargas 2006, S. 94). Dies ergibt sich
+auch aus der Tatsache, dass die Mehrheit der Hochschuldozent/innen, vor allem an
+privaten Universitäten, hauptberuflich einer anderen Tätigkeit nachgeht. Dadurch werden
+sie daran gehindert, sich der wissenschaftlichen Forschung zu widmen, mit dem Ergebnis,
+dass hier einer der großen Mängel des bolivianischen Hochschulwesens entsteht. Hinzu
+kommt, dass die Dozententätigkeit allgemein schlecht bezahlt wird.
+
+
+FOOTNOTE:17 Von den insgesamt 26.062 Dozierenden im bolivianischen Universitäts-System (Statistiken liegen nur bis
+zum Jahr 2014 vor) haben insgesamt 492 Lehrkräfte einen Doktortitel, was nur 3,3% ausmacht (dazu
+Martínez et al. 2016).
+
+
+Kapitel 3. Forschungsdesign: Fragestellung, Fragebogenkonstruktion und Verlauf der
+Studie
+
+
+3.1 Ziele der Arbeit
+
+
+Ziel der vorliegenden Arbeit ist es, den Ist-Stand der Bildung für nachhaltige Entwicklung
+an bolivianischen Hochschulen zu erheben und zu analysieren. Um dies zu ermöglichen,
+wurde ein Messinstrument konstruiert und validiert, welches das komplexe
+Bedingungsgefüge der Bildung für nachhaltige Entwicklung im Hochschulkontext
+untersucht und erlaubt, Aussagen darüber zu treffen, inwieweit Bildung für nachhaltige
+Entwicklung im Hochschulsektor verankert ist und wie die Voraussetzungen,
+Rahmenbedingungen und förderlichen bzw. hinderlichen Maßnahmen gestaltet sind.
+Neben der Bestimmung des Ist-Standes der BNE im bolivianischen Hochschulkontext ist es
+ein weiteres Ziel der vorliegenden Untersuchung, weitere BNE-relevante und
+kontextbezogene Zusammenhänge zu erkennen und zu ermitteln. Beispielsweise werden
+inhaltlich-curriculare Aspekte, die Verwendung und Anwendung BNE-relevanter Lehr-
+/Lernmethoden, organisatorisch-institutionelle Aspekte sowie förderliche und hinderliche
+Rahmenbedingungen für eine BNE im bolivianischen Hochschulkontext untersucht. Ferner
+sollen die Ergebnisse der Untersuchung einen wissenschaftlichen Beitrag zur empirischen
+Bildungsforschung leisten, aus dem neue Perspektiven für eine erweiterte
+Konzeptualisierung, Implementierung und Institutionalisierung von BNE im
+Hochschulbereich in Entwicklungsländern abgeleitet werden können. Aus den
+Ergebnissen der Datenerhebung werden Empfehlungen abgeleitet. Diese Empfehlungen
+können für die Weiterentwicklung der BNE an bolivianischen Hochschulen von Nutzen
+sein – mit dem erweiterten Ziel, einen Beitrag zur BNE in der allgemeinen Hochschulpraxis
+zu leisten.
+
+
+FOOTNOTE:3.2 Fragestellung
+
+
+In der vorliegenden Studie soll, mittels einer quantitativen Studie, der Status quo der
+Bildung für nachhaltige Entwicklung – BNE an bolivianischen Hochschulen untersucht
+werden. Zu der Frage: Was passiert an bolivianischen Hochschulen in Bezug auf BNE?
+sollen auch mögliche förderliche oder hinderliche Bedingungen für die Umsetzung
+identifiziert werden. Dabei stehen sowohl Dozierende als auch die Mitglieder der
+Hochschulleitung aus mehreren bolivianischen Hochschulen im Fokus.
+
+
+Die zentralen Fragestellungen der Studie lauten:
+
+
+Wie ist Bildung für nachhaltige Entwicklung an bolivianischen Hochschulen
+gekennzeichnet und welche förderlichen Bedingungen sind zu erkennen?
+
+
+In welcher Form werden BNE-relevante Inhalte an bolivianischen Hochschulen
+thematisiert und welche Bedingungen fördern die Bildung für nachhaltige Entwicklung
+im bolivianischen Hochschulbildungssystem?
+
+
+Diese zentralen Fragestellungen lassen sich in verschiedene Teilfragen aufspalten, die vier
+Teilaspekten zugeteilt werden können (dazu Abb. 2). Anhand dieser zu untersuchenden
+Teilaspekte können präzise Mechanismen zur Unterstützung der Hochschul-BNE ermittelt
+werden.
+
+
+FOOTNOTE:3.2.1 Personenbezogene Aspekte
+
+
+Dieser Teilaspekt der Studie fokussiert sich auf die Ausarbeitung eines
+Dozent/innenprofils, mittels dessen man die wichtigsten personenbezogenen Merkmale
+erkennen kann. Zum Beispiel Kenntnisse über die „nachhaltige Entwicklung“ und BNE-
+Konzepte, den jeweils persönlichen Stellenwert gegenüber nachhaltigkeitsrelevanten
+Themen und die persönlichen Einstellungen zu Umweltbelangen. Folgende Teilfragen
+gehören dazu: Welche Rolle spielt BNE für Lehrpersonen und Mitglieder der
+Hochschulleitungen an bolivianischen Hochschulen? Was wissen bzw. denken diese über
+BNE? Welchen Stellenwert hat die BNE im Hochschulkontext in der Einschätzung der
+Dozent/innen und der Mitglieder der Hochschulleitungen?
+
+
+3.2.2 Inhaltlich-curriculare Aspekte
+
+
+Der inhaltlich-curriculare Teilaspekt bezieht sich auf die Inhalte und Themen der
+Vorlesungen und Seminare an bolivianischen Universitäten. Mittels der Items, die zu
+diesem Aspekt gehören, werden zum Beispiel Aussagen über die thematischen Inhalte, je
+nach Fach und Fakultät getroffen, die sich mit BNE-relevanten Inhalten befassen. So
+21
+
+
+sollen folgende Leitfragen anvisiert werden: Welche Inhalte werden im Rahmen der BNE
+thematisiert? Ist BNE Bestandteil des Curriculums an bolivianischen Hochschulen?
+
+
+3.2.3 Lehr-/Lernmethodische Aspekte
+
+
+Der Aspekt der Lehr-/Lernmethodik ist für die vorliegende Studie von großer Bedeutung,
+denn mit einer Diagnose über die Methoden und Medien, die in der Lehre von BNE-
+relevanten Inhalten gestellt wird, ist es möglich, wesentliche Merkmale der BNE-
+relevanten Hochschulpraxis zu identifizieren. Die hier zu beantwortenden Leitfragen
+lauten: Wie werden die BNE-spezifischen Themen unterrichtet? Welche Lehr-/Lernmetho-
+den und –medien werden eingesetzt, um BNE-relevante Inhalte zu vermitteln bzw. um
+empfohlene Ziele einer BNE zu verwirklichen? In welchem zeitlichen Umfang wird BNE
+realisiert?
+
+
+3.2.4 Organisatorisch-institutionelle Aspekte
+
+
+Der letzte Teilaspekt ermöglicht einen Eindruck über die strukturellen und institutionellen
+Bedingungen der teilnehmenden Hochschulen zu schaffen. Dafür sind folgende Leitfragen
+zu stellen: Welche institutionell-strukturellen Aspekte können für BNE an bolivianischen
+Hochschulen als bedeutsam diagnostiziert werden? Welche von der Dozentenschaft (und
+Hochschulleitung) wahrgenommenen Hindernisse oder Barrieren spielen für die
+Verwirklichung einer Hochschulbildung für nachhaltige Entwicklung eine Rolle? Welche
+Unterstützungsangebote, wie zum Beispiel externe Kooperation oder Fortbildungen
+FOOTNOTE:existieren beziehungsweise sind erwünscht?
+
+
+3.3 Relevanz der Studie
+
+
+Im Rahmen der Bildungsforschung, und speziell im Hinblick auf BNE, liegen der Nutzen
+und die Notwendigkeit der empirischen Survey Forschung darin „repräsentative
+Erhebungen nicht nur mit informativen Charakter durchzuführen sondern ferner den
+Status quo der BNE zu erfassen und in einem wissenschaftlichen Kontext neues Wissen
+zu generieren, das für weitere Forschung nutzbar gemacht werden kann“ (Rieß & Mischo
+2008, S. 6). Survey-Studien wie in der vorliegenden Studie, können als wissenschaftlichen
+Beitrag zur Schaffung neuer Perspektiven dienen, die nötig sind für eine neue und
+erweiterte Konzeptualisierung, Implementierung und Institutionalisierung von BNE im
+Bereich der universitären Bildung sowohl im nationalen wie im internationalen Kontext.
+Empirische Datenerhebungen beziehungsweise Survey-Studien im Bereich der BNE im
+Hochschulkontext sind laut Fien (2002, S. 244-245) signifikant und haben über das Ziel des
+Erkenntnisgewinns (Rieß 2010, S. 16) hinaus zu einer Weiterentwicklung und „Situations-
+verbesserung“ der Forschung und Praxis (vgl. Schnell et al. 1999) beizutragen.
+
+
+FOOTNOTE:„Survey-Studien sollen in wissenschaftlichen Zusammenhängen jedoch nicht nur ‘rein deskriptiv‘,
+sondern zugleich ‘theoretisch relevant‘ sein und somit Ansätze für die Weiterentwicklung
+sozialwissenschaftlicher Theorien bieten; nach diesem Verständnis zielen sie über die
+Bestandsaufnahme hinaus auch auf Situationsverbesserung“.
+
+
+Wie erwähnt, wurden bis dato keine Studien zum Stand der BNE an bolivianischen
+Hochschulen durchgeführt, so dass eine quantitative Studie mit klaren Forschungsfragen,
+systematisch-strukturierten Forschungsprozessen und der Möglichkeit einer Replikation
+der Befunde erforderlich ist (Edelmann 2012, S. 83). Mit der Datenerhebung zum Ist-
+Stand der BNE im Hochschulbereich Boliviens können wichtige Tatbestände und
+Entwicklungen dargestellt werden, sowie neue Herausforderungen für die Zukunft
+identifiziert und Handlungsmöglichkeiten ermittelt werden. Interessant ist hierbei, auch
+im Vergleich zur deutschen Situation, zu untersuchen, welche sozialen, politischen und
+ökonomischen Überlegungen in einem Land wie Bolivien die Verwirklichung von BNE
+beeinflussen. Auch für andere Länder der Region (Lateinamerika und die Karibik) könnten
+solche Erkenntnisse bedeutsam sein. Im Sinne des Ziels der Gerechtigkeit des
+Nachhaltigkeitsgrundsatzes ist gerade in diesem Bereich der Bezug zu den Erfahrungen
+anderer Länder sehr wichtig, um die Interaktion mit verschiedener Entwicklungsländer zu
+bereichern. Ein Bedarf an Generierung von neuem Wissen durch inter- und
+multidisziplinäre Forschung ist auch im Bereich der BNE in der Hochschulpraxis Boliviens
+vorhanden und notwendig. Durch empirische Bildungsforschung kann ein solcher
+wissenschaftlicher Dialog geschaffen werden, der innovative, interkulturelle, sowie
+interdisziplinäre Bildungs-Settings (Rieckmann 2011, S. 13) ermöglicht.
+
+
+3.4 Allgemeiner Verlauf der Studie
+
+
+Im Folgenden werden der Prozess der Stichprobenbildung sowie das Erhebungsverfahren
+und der Verlauf der Studie beschrieben.
+
+
+3.4.1 Vorbereitungsphase, Stichprobenbildung und Verlauf der Studie
+
+
+Um die Fragestellung des Status quo der BNE an bolivianischen Hochschulen angemessen
+beantworten zu können, wurde eine quantitative Forschungsmethode eingesetzt (Bortz
+2009, S. 253). Dazu wurde eine Fragebogenstudie sowohl mit Hochschuldozent/innen
+(Hauptstudie) als auch Mitgliedern der Hochschulleitungen (Ergänzende Studie)
+durchgeführt. Dieses Kapitel gliedert sich in zwei Teile. Nachfolgend wird zunächst auf die
+Vorbereitungsphase und die Stichproben Bezug genommen, bevor der Verlauf der Studie
+erläutert wird.
+
+
+Im Hinblick auf die Hochschulart wurden folgende Hochschulen in den Fokus genommen:
+1. Allgemeine Hochschulen (in Ziff. 2.6.1 beschrieben) und 2. Pädagogische Hochschulen
+(in Ziff. 2.6.3 beschrieben). Bei der Vorbereitungsphase ging es zunächst darum,
+Mitwirkende zu finden. In Anlehnung an die bei Bortz (2009, S.88) beschriebene
+23
+
+
+Gelegenheitsstichprobe war man bei der Partizipation der Hochschulen auf Freiwilligkeit
+angewiesen. Es war wichtig, dass sich sowohl staatliche als auch private Hochschulen an
+der Studie beteiligen, um Aussagen über die Grundeinheit valide machen zu können und
+somit die Repräsentativität, das heißt die Vertrauenswürdigkeit und Aussagekraft der
+Ergebnisse der Befragung gewährleisten zu können (Bortz 2009, S. 395). Im Fall der
+Pädagogischen Hochschulen handelt es sich, wie bereits erwähnt, nur um staatlich
+geförderte Bildungsinstitutionen.
+
+
+Aus zeitlichen und ressourcentechnischen Gründen musste sich die Auswahl der
+teilnehmenden Hochschulen auf zwei Städte beschränken, also wurden Hochschulen und
+Pädagogische Hochschulen in Cochabamba und La Paz um eine Teilnahme an der Studie
+gebeten. Für die Auswahl der Hochschulen wurde auf die offiziellen Listen der
+Hochschulen (MinEDU 2016) und Pädagogischen Hochschulen (MinEDU 2015) des
+bolivianischen Hochschulsystems zurückgegriffen. Sobald die Kontaktdaten gesammelt
+waren, wurden im nächsten Schritt nach und nach die im Anhang I$$$18$$$ aufgelisteten
+Hochschulen und Pädagogischen Hochschulen telefonisch und/oder per Mail kontaktiert
+und angefragt. Die Kontaktaufnahme mit Pädagogischen Hochschulen hat sich in der
+Vorbereitungsphase als schwieriger herauskristallisiert. Nur eine der kontaktierten
+Pädagogischen Hochschulen erklärte sich zur Teilnahme bereit. Aus diesem Grund wurde
+angestrebt, vor Ort eine weitere Pädagogische Hochschule als Teilnehmerin zu gewinnen.
+
+
+3.4.2 Verlauf der Erhebung
+
+
+Gegen Ende der Vorbereitungsphase (Rekrutierung der Hochschulen) wurden weitere
+Kontaktaufnahmen mit den Ansprechpartnern der Universitäten und der Pädagogischen
+Hochschule getätigt, um die Zeitspanne festzulegen, in der die Termine für die
+Durchführung der Datenerhebung stattfinden sollten. Die Datenerhebung fand im August
+und September 2015 (vom 23. 9- 6.10) in La Paz und Cochabamba statt.
+
+
+In Bolivien angekommen, wurde Kontakt zu den Hochschulen aufgenommen, um ein
+persönliches Gespräch zu vereinbaren. Die meisten Universitäten benannten eine
+Kontaktperson, die für die Verteilung der Fragebögen an die Dozent/innen und an die
+Verwaltungsangestellten und die Weiterverfolgung der Studie verantwortlich war.
+Anschließend wurden die Modalitäten der Studie erklärt und die Fragebögen
+ausgehändigt (Anhang III und IV). Zeitgleich wurden auch noch weitere Hochschulen vor
+Ort aufgesucht, woraufhin sich eine weitere Universität zur Teilnahme entschloss (dazu
+FOOTNOTE:Anhang I).
+
+
+FOOTNOTE:18 In Anhang I befindet sich eine Übersicht der kontaktierten Hochschulen, mit Angaben über die
+Bestätigung bzw. Absage der Teilnahme an der Studie.
+
+
+3.4.3 Beobachtungen vor und während der Erhebung
+
+
+Es folgen einige Eindrücke aus dem Erhebungsverlauf. Sie besitzen rein informativen
+Charakter, handelt es sich doch um subjektive, im Verlauf dieser Studienphase
+FOOTNOTE:dokumentierte Wahrnehmungen:
+
+
+- Nicht alle von Deutschland aus kontaktierten Hochschulen, die eine Zusage erteilt
+haben, haben sich an der Studie beteiligt. Zwei dieser Hochschulen (siehe Tabelle im
+Anhang I), die sich zuerst bereit erklärt hatten, konnten letztendlich nicht miteinbezogen
+werden. Bei beiden Hochschulen wurden grundlos Termine abgesagt.
+
+
+- Eine weitere Hochschule konnte vor Ort direkt für die Studie gewonnen werden (Anhang
+I).
+
+
+- Eine der staatlichen Hochschulen beteiligte sich nicht an der Befragung der Mitglieder
+der Hochschulleitungen (Ergänzende Studie). Obwohl kein offizieller Grund genannt
+wurde, resultierte dies aus der zeitlichen Arbeitsbelastung der Hochschuleiter/innen. Es
+entstand, wie auch bei anderen staatlichen Hochschulen, aber auch der Eindruck, dass
+man der Studie skeptisch gegenüberstand.
+
+
+- Es entstand der Eindruck, dass bei staatlichen Einrichtungen Bedenken über die
+Ergebnisse der Studie bestanden. Im Gegensatz dazu zeigten sich private Einrichtungen
+aufgeschlossener.
+
+
+- Die Führungskräfte, inkl. Rektoren und akademische Leiter, haben sich trotz hoher
+Arbeitsbelastung Zeit für einen persönlichen Empfang genommen und verliehen ihrem
+Interesse am Forschungsthema Ausdruck.
+
+
+- Bei der Pädagogischen Hochschule waren mehrere Anläufe vonnöten. Die Verwaltung
+zeigte sich skeptisch einer Teilnahme gegenüber. Das fehlende Interesse spiegelt sich in
+dem geringen Rücklauf wider (dazu Ziff. 3.5 Die Stichprobe). Einer der erwähnten Gründe
+für die geringe Partizipation der Dozentenschaft war die ländliche Lage der jeweiligen
+Standorte, die sehr schlecht verbunden und schwer erreichbar sind. Ein weiterer Grund
+besteht darin, dass die interne Kommunikation im Kollegium und mit der
+Hochschulverwaltung sich sehr beschwerlich gestaltet. Diese Beobachtung spiegelt die
+prekären institutionellen Verhältnisse dieser Institutionen wider.
+
+
+- Bei der Pädagogischen Hochschule manifestierten sich offensichtliche infrastrukturelle
+Mängel, so gab es z.B. keine Bibliothek. Im direkten Vergleich mit privaten Hochschulen
+ist die Infrastruktur der privaten Institutionen als besser, da moderner einzustufen.
+
+
+- Obwohl die Bereitschaft zur Teilnahme an der Studie gut war, wurde man jedoch darauf
+hingewiesen, dass das Ausfüllen der Fragebögen durch Dozent/innen und
+Verwaltungspersonal freiwillig geschehen würde.
+
+
+- Bei der Abgabe der Fragebögen an den Universitäten ergaben sich gewisse Hindernisse
+für die Verteilung derselben. Die große Mehrheit der Dozentenschaft verfügt innerhalb
+der Hochschule über keine eigenen Büros bzw. Arbeitsplätze. So wurden die Fragebögen
+bei den Fachleitungen oder im Dozentenzimmer hinterlegt. Nur bei der Univalle-
+Universität wurden sie über die interne Post verteilt.
+
+
+- Die Verwaltungsabteilung der Universitäten hat sich das Recht ausbedungen, die
+Fakultäten, an denen die Fragebögen verteilt werden, selber zu bestimmen. Nach Ablauf
+der von jeder Universität selber bestimmten Frist wurden die ausgefüllten Fragebögen
+eingesammelt. Um den Rücklauf der Erhebung zu erhöhen, wurden bis Dezember
+Erinnerungsmails verschickt und Telefonanrufe getätigt (Porst 2001). Nach Absprache mit
+den Kontaktpersonen der Hochschulen in Bolivien wurden die Fragebögen bis Ende
+Februar 2015 eingesammelt.
+
+
+3.5 Die Stichprobe
+
+
+Nach den Kontaktaufnahmen von Deutschland aus wie auch vor Ort (vgl. Anhang I), haben
+sich folgende Hochschulen zur Teilnahme an der Datenerhebung bereit erklärt.
+
+
+Insgesamt wurden 1050 Fragebögen wie folgt ausgehändigt:
+
+
+FOOTNOTE:Tabelle 2: Hochschule(n), Standort(e) und Anzahl der Ausgehändigten Fragebögen
+
+
+Von den insgesamt 850 ausgehändigten Fragebögen, kamen 403 Fragebögen mit gültigen
+Daten zurück. Dies entspricht einer Ausschöpfung von 47,4% (Porst 2001). In Anbetracht
+der Charakteristika des bolivianischen Hochschulwesens, der Zeitspanne und der Anzahl
+26
+
+
+der Dozent/innen entspricht der Rücklauf den Erwartungen der Studienvorbereitungs-
+phase.
+
+
+Von den Hochschulleitungen sind von insgesamt 200 Fragebögen 47 mit gültigen Daten
+zurückgekommen. Dies entspricht einer Ausschöpfung von 23,5%. Dieser Rücklauf zeigt
+ein allgemein geringeres Interesse an der Teilnahme an der Befragung seitens der
+Hochschulleitungen. Vermutlich handelt es sich um ein Zeitproblem, aber auch um
+thematische Gründe, z.B. um fehlendes Interesse an der Nachhaltigkeitsthematik oder
+auch Sorge in Hinblick auf die Ergebnisse der Datenerhebung.
+
+
+FOOTNOTE:3.6 Die Fragebogenkonstruktion
+
+
+Im Hinblick auf die Fragebogenkonstruktion ist zunächst festzuhalten, dass das
+Hauptaugenmerk der Studie auf den Dozent/innen liegt (Hauptstudie). Ergänzend wurden
+auch Mitglieder der Hochschulleitungen (Ergänzende Studie) miteinbezogen.
+
+
+Für die Datenerhebung wurde jeweils ein Fragebogen für die Dozent/innen und für
+Hochschulleiter/innen der teilnehmenden bolivianischen Hochschulen als
+Messinstrument entwickelt und erprobt. Im Prozess der Konzipierung der Fragebögen
+wurden ein Vorabtest (= Pilotierung) miteingeplant (Edelmann 2012, S. 89). Alle
+entwickelten Items wurden von Experten im Hinblick auf Inhaltsvalidität, Verständlichkeit
+und Bearbeitungsschwierigkeit beurteilt (vgl. Bortz 2009). Auf dieser Basis wurden die
+Items überabeitet und optimiert. Die Übersetzung der Fragebögen war notwendig, da die
+Befragung auf Spanisch stattfand. Hier ist zu betonen, dass die Gestaltung des
+Fragebogens auf die Sprachgewohnheiten der untersuchten Zielgruppe hin ausgerichtet
+sein musste (Bortz 2009, S. 253) und dies mit der Unterstützung von
+Hochschuldozenten/innen in Bolivien realisiert wurde. Die vorläufige Version wurde im
+Rahmen einer Präpilotierung von drei Hochschuldozent/innen in Bolivien (Cochabamba
+und La Paz) ausgefüllt und auf Verständlichkeit und sprachlichen Usus hin überprüft. Das
+Instrument wurde dann angepasst, und es entstand die endgültige Version der
+Fragebögen (in Anhang III und IV).
+
+
+3.6.1 Das Messinstrument
+
+
+Für die Fragebogenkonstruktion wurde auf die Fragebögen der Studie von Rieß & Mischo
+(2008) und auch auf der Studie zur „Evaluation des aktuellen Stands der Implementierung
+von Bildung für nachhaltige Entwicklung in der Lehramtsausbildung an baden-
+württembergischen Hochschulen“ von Siegmund & Jahn (2014) zurückgegriffen. Beide
+Studien beziehen sich auf das mehrebenenanalytische Rahmenmodell (Abb. 3). Dieses
+Modell verdeutlicht, dass der Unterricht (bezogen auf den Schulunterricht) im Rahmen
+der BNE verschiedene Strukturelemente enthält, die untereinander komplex verknüpft
+sind (Riess 2010). Jedes Strukturelement kann einzeln untersucht werden, oder es können
+
+
+auch die Wechselwirkungen und die Interaktion zwischen zwei oder mehreren der
+Strukturelemente untersucht werden.
+
+
+Ziel der Fragebogenkonstruktion war es letzten Endes, ein Messinstrument zu
+konstruieren, das die Ausprägung der verschiedenen Strukturelemente des Rahmen-
+modells beinhaltet, um so einen breiten Überblick über die BNE im bolivianischen
+Hochschulkontext zu ermöglichen.
+
+
+Im Fokus der Befragung stehen:
+
+
+- die Thematisierung von BNE-relevanten Inhalten und Zielen,
+
+
+- die eingesetzten, bzw. verwendeten Lehr-/Lernmethoden,
+
+
+FOOTNOTE:- die Rolle und Bedeutung der BNE für Dozentenschaft und Hochschulleitung,
+
+
+FOOTNOTE:- die organisatorischen und institutionellen Aspekte in Bezug auf Barrieren und
+Hindernisse bei der Implementierung von BNE.
+
+
+Für den Aufbau des Erhebungsinstruments wurden folgende Strukturelemente des mehr-
+ebenenanalytischen Rahmenmodells berücksichtigt:
+
+
+- Unterrichtsprozesse (bzw. Lehr-/Lernprozesse)
+
+
+- Lehrermerkmale (bzw. Dozenten/-innenmerkmale)
+
+
+- Lehr-/Lernmaterialien
+
+
+- Schulmerkmale (bzw. Hochschulmerkmale)
+
+
+Die Abbildung 3 zeigt das Rahmenmodell mit den hervorgehobenen, für die Studie
+relevanten Strukturelementen. Für die vorliegende Studie wurde das Modell
+entsprechend angepasst, d.h. das Soziotop ist nicht mehr die „Schule“, sondern die
+„Hochschule“, und alle Strukturelemente, die sich auf den „Lehrer“ beziehen, wurden
+durch den „Dozent[en]“ ersetzt. Der Strukturelement Unterrichtsprozesse wurde durch
+Lehr-/Lernprozesse ersetzt. Weiter wurde jedem Strukturelement gleichzeitig eine der
+vier Teilfragen der Studie zugewiesen, so dass jedes Item zu einem der vier Teilaspekte
+der Forschungsfrage zugeteilt werden kann. Das heißt, die konstruierten Items zielen auf
+inhaltlich-curriculare, lehr-/lernmethodische, personenbezogene und organisatorisch-
+institutionelle Aspekte der BNE an bolivianischen Hochschulen ab. Als
+Erhebungsinstrument wurde letztendlich ein Fragebogen in zwei Versionen eingesetzt:
+Variante A für die Mitglieder der Hochschulleitung und Variante B für die Dozentenschaft.
+Beide Versionen beinhalten sowohl geschlossene als auch offene Fragen (vgl. dazu Stigler
+2005, S. 144; Bortz 2009, S. 256-8).
+
+
+Nachfolgende Aufstellung zeigt die Struktur beider Fragebögen. Jeder Teilaspekt wird mit
+dem entsprechenden Strukturelement des Rahmenmodells verknüpft.
+
+
+FOOTNOTE:Tabelle 3: Teilaspekte, Strukturelemente und Fragebogen-Varianten A und B
+
+
+3.7 Fragebogen für die Hochschuldozent/innen
+
+
+Im Fragebogen wurden zunächst Fragen zum Strukturelement „Dozent/innenmerkmale“
+gestellt. Dazu wurden Items verwendet, die sich auf Angaben unter anderem zu Alter,
+Geschlecht, Anstellungsverhältnis, akademischer Grad und Infrastruktur (Rating-Item)
+beziehen. Im nächsten Frageblock wurden Fragen über die Kenntnis wichtiger Konzepte,
+Begriffe, Ziele (offener Antwortmodus) und Lehr-/Lernmaterialien in Bezug auf
+nachhaltige Entwicklung und BNE erfragt. Dieser Frageblock bezieht sich auf die
+Strukturelemente „Dozent/innenmerkmale“ so wie auch „Lehr-/Lernmaterialien“.
+
+
+Mit dem nächsten Frageblock wurde die BNE-Hochschulpraxis ins Visier genommen. Diese
+Items sind dem Strukturelement „Unterrichtsprozesse“ bzw. Lehr-/Lernprozesse
+zuzuordnen. Es wurde dazu eine Liste mit BNE-relevanten Themenbeispielen vorgegeben.
+Diese Frage ist als Hauptfokus des vorliegenden Forschungsvorhabens zu betrachten und
+erfragt, ob die betreffende Person eines oder mehrere Themen der dargestellten Liste
+unterrichtet hat – mit der Möglichkeit, dies mit „ja“ oder „nein“ zu beantworten. Dieses
+Item gilt als wichtiger Schnittpunkt der Befragung. Im Falle einer Bejahung folgt der
+nächste Frageblock, der sich mit der Einbindung von BNE-relevanten Themen, Dauer der
+Behandlung dieser Themen, Motivation zur Behandlung, angewandten Methoden und
+Mitteln sowie Kooperationsmöglichkeiten befasst. Diese Items sind dem Strukturelement
+„Unterrichtsprozesse“ und „Lehr-/Lernmaterialien“ zuzuordnen.
+
+
+Der nächste Frageblock fordert eine Einschätzung der 1) allgemeinen Situation der BNE an
+der Hochschule (Rating-Item), 2) des allgemeinen Stellenwerts der BNE für die
+Hochschule (Rating-Item), 3) des Interesses der Studentenschaft, 4) der Barrieren und
+30
+
+
+Hindernisse und auch 5) des Stellenwerts der BNE im eigenen Berufsleben (Rating-Item).
+Dieser Frageblock enthält Items zu den Strukturelementen „Hochschulmerkmale“ und
+FOOTNOTE:„Dozent/innenmerkmale“ des Rahmenmodells.
+
+
+Der Fragebogen für die Dozentenschaft ist wie folgt aufgebaut:
+
+
+3.8 Fragebogen für die Mitglieder der Hochschulleitung
+
+
+Wie auch der Fragebogen der Dozent/innen enthält der Fragebogen für die Mitglieder der
+Hochschulleitungen unter anderem allgemeine Items bezüglich Alter, Geschlecht,
+Anstellungsverhältnis, Trägerschaft, akademischen Grad, Dauer der Tätigkeit und
+Infrastruktur (Rating-Item) und auch über die von der Hochschule angebotenen
+Aufbaustudiengänge (Post-graduierten Studiengänge). Anschließend folgen der
+Frageblock mit Items zum Kenntnisstand des Konzepts der „nachhaltigen Entwicklung“,
+der „Bildung für nachhaltige Entwicklung“ und auch die Frage nach der Kenntnis der
+UNESCO-Dekade der BNE und über BNE-relevante Lehr-/Lernmaterialien. Im nächsten
+Frageblock wurde die Einschätzung der allgemeinen Situation der BNE in der Hochschule
+(Rating-Item), des jeweils persönlich eingeräumten Stellenwerts der BNE (Rating-Item)
+und des Interesses der Dozierenden im Hinblick auf die BNE im Hochschulkontext erfragt.
+
+
+Folgende Tabelle zeigt die Struktur des eingesetzten Erhebungsinstruments:
+
+
+Kapitel 4. Hauptstudie – Teil 1
+
+
+FOOTNOTE:4.1 Beschreibung der Stichprobe der Dozentenschaft19
+
+
+Insgesamt haben an der Studie 403 Dozent/innen teilgenommen. Davon sind 62,8%
+männlich und 37,2% weiblich. Diese männliche Dominanz entspricht den nationalen
+Statistiken (INE 2016a) und spiegelt in gewissem Maße auch den Anteil männlicher
+Dozent/innen im bolivianischen und lateinamerikanischen Hochschulwesen wider (vgl.
+Rodríguez Ostria & Weise Vargas 2006, S.88 ff.).
+
+
+Das Durchschnittsalter der Befragten lag bei 43,9 Jahren und differierte zwischen 21 und
+79 Jahren. Folgende Grafik zeigt, dass es sich um eine eher junge Dozentenschaft handelt.
+
+
+FOOTNOTE:1 9 D i e s t a t i s t i s c h e A u s w e r t u n g e r f o l g te mit dem Software-Programm SPSS 22.
+
+
+4.2 Hochschulart
+
+
+Es ist festzuhalten, dass aufgrund der Eigenschaften des bolivianischen Bildungssystems
+Universitätsdozent/innen an mehreren Hochschulen (öffentlich und privat) gleichzeitig
+lehren können$$$20$$$. Diese Tatsache wird anhand des folgenden Ergebnisses deutlich, denn
+hinsichtlich der Hochschulart waren 75,7% der Dozent/innen (n=305) an einer oder
+mehreren privaten Hochschulen$$$21$$$, 14,1% (n=57) an staatlichen Hochschulen und 10,2%
+(n=41) an beiden Hochschularten tätig.
+
+
+FOOTNOTE:Die folgende Abbildung veranschaulicht diese Ergebnisse grafisch:
+
+
+Die Dozent/innen hatten bei diesem Item die Möglichkeit, bis zu 5 Hochschulen, an denen
+sie als Dozent tätig sind, anzugeben. 75,5% (n=305) der Befragten gaben an, an einer
+Universität zu arbeiten, 16,6% (n=67) an zwei, 6,5% (n=26) an drei, 1,0% (n=4) an vier und
+0,2% (n=1) an fünf Universitäten.
+
+
+FOOTNOTE:2 0 W e i t e r i s t f e s t z u s t e ll e n , d a s s n u r 0,5% der Stichprobe aus Dozenten/innen Pädagogischer Hochschulen
+besteht. Dies bedeutet für die Interpretation der Ergebnisse, dass diese nicht auf Pädagogische
+Hochschulen zu generalisieren sind.
+
+
+FOOTNOTE:H21o Dcihes Hchouclhesnc hzuu lgee(nn)e wraulirsdieer aennh sainndd. d er Listen der Hochschulen in privat und staatlich kategorisiert.
+
+
+Die folgende Tabelle (Nr. 6) zeigt die Verteilung der Dozent/innen nach Hochschulart und
+Anzahl der Hochschulen, an denen sie tätig sind. Die Ergebnisse zeigen, dass 75,7% der
+Dozent/innen an einer Hochschule arbeiten, während 24,3% an zwei oder mehr
+Hochschulen tätig sind. In diesem Fall besteht die Möglichkeit, dass die Dozent/innen nur
+an privaten oder an privaten und staatlichen Hochschulen arbeiten. Die Möglichkeit, an
+zwei oder mehr staatlichen Hochschulen zu arbeiten, ist nicht gegeben. Dies ist aus
+geografischen Gründen der Fall, denn es gibt nur eine staatliche Hochschule pro
+Departamento (Bundesland).
+
+
+FOOTNOTE:4.3 Anstellungsverhältnis
+
+
+Was die Art des Anstellungsverhältnisses betrifft, besteht ein markanter Unterschied
+zwischen deutschen und bolivianischen Universitätsdozent/innen. In Bolivien ist es üblich,
+dass Dozent/innen ihre Lehrtätigkeit nicht hauptberuflich (hauptamtlich) ausüben,
+sondern ergänzend zu einer anderen beruflichen Tätigkeit. Vollzeitdozent/innen, die sich
+ausschließlich der Lehrtätigkeit widmen, gibt es zwar, sie bilden jedoch eher die
+Ausnahme. Dies ist der Grund dafür, dass das Thema Anstellungsverhältnis in die
+
+
+Befragung mit aufgenommen wurde. Die Ergebnisse, in der folgenden Tabelle sichtbar,
+bestätigen diese Tatsache und sind für die spätere Interpretation und Analyse der
+erhobenen Daten von Bedeutung.
+
+
+Tabelle 7: Anstellungsverhältnis nach Hochschulart
+
+
+Frage: An welcher/n Hochschule bzw. Hochschulen sind Sie als Hochschuldozent/in tätig?)
+
+
+Aus Tabelle 7 geht hervor, dass 70,2% der teilnehmenden Dozent/innen nebenberuflich
+und 29,8% hauptberuflich tätig sind. Weitere Ergebnisse zeigen, dass 13,3% der
+Dozent/innen hauptberuflich in Vollzeit und 16,5% in Teilzeit arbeiten. Die erwähnten
+Anstellungsverhältnisse erklären auch die Tatsache, dass die Dozent/innen an mehr als
+einer Hochschule gleichzeitig arbeiten und an verschiedene Fakultäten lehren bzw. lehren
+können.
+
+
+Um der Frage nachzugehen: Welche Hochschulart stellt hauptberuflich an? (d.h. sind
+Dozent/innen aus privaten oder eher aus staatlichen Hochschulen solche, die eher
+hauptberuflich beschäftigt sind) wurde die Hochschulart und das Anstellungsverhältnis
+der Befragten verglichen. Die Ergebnisse zeigen, dass – prozentual betrachtet –
+Dozent/innen, die hauptberuflich tätig sind, mehrheitlich (36,8%) an staatlichen
+Hochschulen angestellt sind. Dagegen sind Dozierende, die nebenberuflich arbeiten
+(71,5%), eher an privaten Hochschulen tätig. Obwohl diese Ergebnisse nicht statistisch
+signifikant sind (Chi-Quadrat=1.604, df=1, n.s., N=359), bestätigen sie die Tatsache, dass
+staatliche Universitäten Anstellungen in Vollzeit bevorzugen (dazu Rodríguez Ostria &
+Weise Vargas 2006, S. 97).
+
+
+Diese nicht-institutionalisierten Beschäftigungsstrukturen der Dozent/innen sind ein
+großer Mangel des bolivianischen Hochschulwesens. Sie verhindern (1) die
+Professionalisierung der Dozent/innen, (2) die Fort- und Weiterbildungsmöglichkeiten der
+Dozent/innen und (3) auch die Institutionalisierung der wissenschaftlichen Forschung an
+den Universitäten (dazu Diskussion der Ergebnisse in Ziff. 7.1 Hauptstudie).
+
+
+Aufgeschlüsselt nach den Standorten der Universitäten, arbeiten 72,0% der befragten
+Dozent/innen in Cochabamba, 26,8% in La Paz und 1,2% in anderen Städten (dazu Abb.
+8). Die 1,2%, die in anderen Städten arbeiten, resultieren aus der Tatsache, dass ein/e
+Dozent/in an mehreren Universitäten gleichzeitig arbeiten kann.
+
+
+Nachfolgende Tabelle zeigt die Anzahl der Dozent/innen pro Fakultät
+
+
+Tabelle 8: Anzahl der Dozent/innen nach Fakultät
+
+
+(Frage: Welcher/n Fakultät(en) gehören Sie an?)
+
+
+FOOTNOTE:2 2 D a z u g e h ö r e n M a t h e m a t i k , P h y s i k u.a.
+
+
+Die Fakultäten mit mehr als 65 (>65) Personen sind fett gedruckt. Im Schnitt sind die
+befragten Dozent/innen an 1,4 Fakultäten tätig. Die Ergebnisse in Tab. 8 zeigen, dass die
+befragten Dozent/innen in mehreren und an verschiedenen Fakultäten bzw. Instituten
+tätig sind. Insgesamt handelt es sich um Dozierende aus 24 Fakultäten, die an der
+Befragung teilgenommen haben. Es ist anzumerken, dass die eher klassischen
+Studiengänge vorherrschen: Betriebswirtschaftslehre (27,5%), Medizin (23,1%),
+Ingenieurwissenschaften (20,1%) und Rechtswissenschaften (16,7%). Jedoch sind auch
+weitere Fachrichtungen an der Studie vertreten.
+
+
+4.5 Akademischer Grad
+
+
+Es ist zu erinnern, dass das bolivianische System für eine Dozentur an einer Hochschule
+keine Promotion, keinen Post-Doc oder eine Habilitation vorschreibt (dazu Ziff. 2.6.4 Die
+Dozentur an bolivianischen Hochschulen). Aus der Beantwortung der entsprechenden
+Frage geht hervor, dass von den insgesamt 386 Dozent/innen 47,7% eine „Licenciatura“$$$23$$$,
+46,1% einen Magister-$$$24$$$ und 6,2% einen Doktortitel haben.
+
+
+Diese Ergebnisse stützen die Tatsache, dass im bolivianischen Hochschulwesen für eine
+Dozentur kein PhD- oder Post-Doc-Titel nötig ist. Verglichen mit den letzten, verfügbaren
+Daten (Martínez et al. 2016, INE 2016b) lässt sich aber eine positive Entwicklung
+ausmachen. Demzufolge gibt es laut Stichprobe einen Anstieg der Gesamtzahl von
+Dozent/innen mit einem Magistergrad (46,1%). Dies ist als positives Indiz für die
+Professionalisierung des Berufs des Hochschuldozenten/ der Hochschuldozentin zu
+
+
+FOOTNOTE:23 Entspricht dem deutschen Diplom oder Bachelor. Eine „Licenciatura“ erwirbt man nach 10 Semestern und
+einer Abschlussarbeit. 24
+
+
+FOOTNOTE:2e4i nInekr lAusbisvceh Fluascshaarubsebitil.d ung Medizin.
+
+
+bewerten. Dozent/innen mit PhD bilden mit 6,2% der Stichprobe noch immer die
+Ausnahme.
+
+
+4.6 Hochschulspezifische Fortbildung: “Diplomado”
+
+
+In den 1980er Jahren wurde, gerade mit Blick auf eine Professionalisierung der
+Dozentenschaft, sowohl an privaten wie auch an öffentlichen Universitäten eine neue
+Form von Weiter- oder Fortbildung geschaffen: der „Diplomado“$$$25$$$ in Hochschulbildung.
+Im Allgemeinen sind die „Diplomados“ nicht formelle Programme oder Kurse. Sie führen
+weder zu einem Titel noch zu einem akademischen Grad. Ihr Ziel ist es, das Wissen der
+Teilnehmenden in bestimmten spezifischen Themen zu aktualisieren und/oder zu
+vertiefen. Sie sind modulförmig aufgebaut, curricular flexibel und dynamisch. Aufgelegt
+werden diese Fortbildungskurse je nach Nachfrage in spezifischen nationalen oder
+internationalen sozialen Themen.
+
+
+Die “Diplomados im Fach Hochschulbildung“ sind Weiterbildungskurse, die sowohl an
+privaten wie auch an öffentlichen Universitäten angeboten werden. Ihr Ziel ist es, die
+Weiterbildung der Dozentenschaft in Didaktik, Bildungspsychologie, Lehrstoffplanung und
+–entwicklung zu gewährleisten und so die Hochschulbildung zu stärken. Die “Diplomados”
+entsprechen den an einigen deutschen Universitäten angebotenen Zertifikaten. Sie
+richten sich an Berufstätige mit Diplom- bzw. Lizenziatsabschluss. Ihre Dauer variiert je
+nach Hochschule zwischen 3 und 9 Monaten.
+
+
+In Bolivien ist man dazu übergegangen, diese „Zertifikate in Hochschulbildung“
+(Diplomado en Educación Superior) sowohl an staatlichen als auch an privaten
+Hochschulen für eine Anstellung als Dozent/in vorauszusetzen. Die Ergebnisse der
+Datenerhebung zeigen diesbezüglich, dass 74,4% der Befragten über eine solche
+Weiterbildung verfügen. Die restlichen 25,6% haben „Diplomados“ in anderen
+Fachbereichen absolviert.
+
+
+Allerdings ist zu erwähnen, dass 31,3% der Befragten die entsprechende Frage auf dem
+Fragebogen nicht beantwortet haben, was vermuten lässt, dass sie keine entsprechenden
+Kurse besucht haben. Doch selbst unter Berücksichtigung dieser Annahme zeigt sich, dass
+51,1% aller befragten Dozent/innen über ein „Diplomado in Hochschulbildung“ verfügen.
+Illustriert wird dieser Umstand durch nachfolgende Grafik.
+
+
+FOOTNOTE:25 „Diplomado“ lässt sich frei übersetzen mit „Zertifikat“.
+
+
+In Hinblick auf die Art der Hochschule erkennt man sowohl an privaten wie auch
+staatlichen Hochschulen eine hohe Anzahl an Dozent/innen, die eine solche Fortbildung
+vorweisen können. Um herauszufinden, welche Dozent/innen über ein Zertifikat in
+Hochschulbildung verfügen, wurde dies mit der Hochschulart und dem
+Anstellungsverhältnis verglichen.
+
+
+Die Frage lautet: welche Dozent/innen können mehr Fortbildungen zum Thema
+Hochschulbildung vorweisen? Prozentual gesehen sind es die Dozierenden an staatlichen
+Hochschulen, die am häufigsten das Zertifikat in Hochschulbildung erworben haben. Die
+Ergebnisse sind statistisch jedoch nicht signifikant (Chi-Quadrat=0.045, df=1, n.s., N=243)
+und können daher nicht generalisiert werden.
+
+
+Frage: Welche Fortbildungen/ Hochschulzertifikate haben Sie erworben?
+
+
+Bezüglich des Anstellungsverhältnisses ist festzustellen, dass 80,8% der Dozent/innen, die
+hauptberuflich tätig sind, ein Zertifikat in Hochschulbildung haben. Von jenen, die
+39
+
+
+nebenberuflich tätig sind, sind es 71,9%. Diese Ergebnisse sind jedoch nicht statistisch
+signifikant (Chi-Quadrat=2.334, df=1, n.s., N=277) und werden anhand der folgenden
+Tabelle deutlich:
+
+
+Frage: Welche Fortbildungen/ Hochschulzertifikate haben Sie erworben?
+
+
+FOOTNOTE:4.7 Dauer der Hochschultätigkeit
+
+
+Die meisten Studiengänge im bolivianischen Hochschulwesen sind semesterweise$$$26$$$
+aufgebaut. Ein akademisches Jahr besteht aus 2 Semestern – von Februar bis Juni und von
+August bis Dezember. Auf dieser Grundlage und zur Bestimmung der Dauer der
+Hochschultätigkeit der Dozent/innen, wurde folgende Frage formuliert:
+
+
+Item 10: Wie viele Semester werden Sie bei Abschluss des derzeit laufenden Semesters
+als Dozent/in gearbeitet haben?
+
+
+Die Antworten schwanken zwischen 1 Semester (1/2 Jahr) und 78 Semestern (39 Jahre).
+Folgende Grafik veranschaulicht, dass Dozierende (n=392) durchschnittlich 14,4 Semester
+an der Hochschule verweilen.
+
+
+FOOTNOTE:26 Mit einigen Ausnahmen im öffentlichen Bereich. So ist z.B. das Medizinstudium jahresweise organisiert.
+Das Studienjahr dauert dabei von Februar bis November.
+
+
+In Perzentiles aufgeteilt, zeigen die Ergebnisse, dass die Mehrheit der Dozent/innen über
+20 Semester (10 Jahre) Berufserfahrung verfügt.
+
+
+Weiter wurde über die Dauer der Hochschultätigkeit mit dem nächsten Item (Item 11.
+Haben Sie vor, weiter als Hochschuldozent/in tätig zu sein?) nach der Bereitschaft, die
+Tätigkeit als Dozent/in fortzufahren, erfragt – mit dem Ergebnis, dass 96% der Befragten
+FOOTNOTE:(n=398) angaben, die Tätigkeit fortsetzen zu wollen.
+
+
+4.8 Zusammenfassung: Beschreibung der Dozentenschaft
+
+
+FOOTNOTE:Anhand der Auswertung lassen sich folgende Ergebnisse zusammenfassend darstellen:
+
+
+- An der Studie haben 403 Dozent/innen mit einem Durchschnittsalter von 43,9 Jahren
+(SD=10,7) teilgenommen. Davon 62,8% männlich und 37,2% weiblich. Im Durchschnitt
+haben die Befragten 14,4 Semester (SD=13,1) Arbeitserfahrung.
+
+
+- 305 Hochschuldozent/innen (75,5% der Befragten) arbeiten a einer Hochschule. Davon
+arbeiten 81,3% an einer privaten Hochschule und 18,7% an einer staatlichen Hochschule.
+- Die restlichen 24,3% der Befragten sind an zwei oder mehr Hochschulen
+(privat/privat=14,1%, privat/staatlich=10,2%) gleichzeitig tätig. Die Möglichkeit, an zwei
+oder mehr staatlichen Hochschulen zu arbeiten, ist nicht gegeben.
+
+
+- 70,2% der Befragten sind nebenberuflich als Dozent/innen tätig, 29,8% sind
+hauptberuflich beschäftigt (13,3% in Vollzeit und 16,5% in Teilzeit).
+
+
+- 96,0% der Befragten möchten ihre Tätigkeit als Hochschuldozent/in fortsetzen.
+
+
+- In der Stichprobe sind 24 Fakultäten und Instituten repräsentiert. Es handelt sich um die
+klassischen Studiengänge wie Betriebswirtschaftslehre (27,5%), Medizin (23,1%),
+Ingenieurswissenschaften (20,1%) und Rechtswissenschaften (16,7%) die am meisten
+Teilnehmer an der Befragung aufweisen können.
+
+
+- 47,7% der Dozent/innen verfügen über ein Lizenziat, 46,1% haben einen
+Magisterabschluss und 6,2% sind promoviert.
+
+
+4.9 Merkmale der teilnehmenden Hochschulen
+
+
+Um einen Eindruck über Mittel und Ressourcen an bolivianischen Hochschulen zu
+gewinnen, wurde ein Frageblock über das Vorhandensein folgender Ausstattungs-
+merkmale aufgenommen: Bibliothek, Internetzugang, Zugang zu Medien und PC/Laptop
+am Arbeitsplatz. Dieser Teil der Befragung ist dem Strukturelement
+„Hochschulmerkmale“ des Rahmenmodells (Abb. 3) zuzuordnen und gehört zu den
+organisatorisch-institutionellen Aspekten der Befragung. Demnach geben 98,5% der
+befragten Dozent/innen an, dass die Hochschule eine Bibliothek hat. 72,2% geben an, die
+Bibliothek zu nutzen.
+
+
+Folgende Tabelle gibt einen Überblick über die verwendeten Items im Hinblick auf
+Infrastruktur, Internetzugang und Literaturbestand an den Hochschulen. Die befragten
+Dozent/innen wurden gebeten, auf einer vierstufigen Skala (1=trifft vollständig zu, 2=
+trifft weitgehend zu, 3= trifft teilweise zu, 4= trifft nicht zu) Aussagen über das
+Vorhandensein einer Bibliothek, Zugang zum Internet, Zugang zu Literatur und andere
+Medien, gerade auch im Hinblick auf BNE und zu machen.
+
+

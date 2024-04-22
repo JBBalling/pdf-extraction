@@ -1,40 +1,78 @@
 Friedrich Schiller Universität Jena
 07737 Jena | Germany
+
+
 Fakultät für Mathematik und Informatik
 Institut für Informatik
+
+
 SixSigma4SOA
+
+
 Ein konzeptuelles Framework zur Qualitätsverbesserung in der
 Modellierung von serviceorientierten Softwarearchitekturen auf
 Basis von Six Sigma am Beispiel eines Projekts in der Schweizer
 Bundesverwaltung
+
+
 Dissertation zur Erlangung des akademischen Grades
 doctor rerum naturalium (Dr. rer. nat.)
 an der Friedrich Schiller Universität Jena
+
+
 Vorgelegt dem Rat der Fakultät für Mathematik und Informatik
 der Friedrich-Schiller-Universität Jena von:
 Dipl. Ing. (FH) Arnold Senn
 geboren am 14.02.1967 in Worms
+
+
 Gutachter:
+
+
 Prof. Dr. Andreas Hartmann
 Prof. Dr. Ursula Oesing
 Prof. Dr. Wilhelm R. Rossak
+
+
 Gutachter:
+
+
 1. Prof. Dr. Andreas Hartmann
+
+
 Professur für angewandte Informatik mit Schwerpunkt verteilte Anwendungen und
 deren Sicherheit,
+
+
 Fakultät Digitale Transformation,
+
+
 HTWK Leipzig
+
+
 2. Prof. Dr. Ursula Oesing
+
+
 Professur im Fachbereich Elektrotechnik und Informatik,
 Fachbereich Elektrotechnik und Informatik,
 Hochschule Bochum
+
+
 3. Prof. Dr. Wilhelm R. Rossak
 Lehrstuhl für Softwaretechnik,
 Department of Computer and Information Science,
 Friedrich-Schiller University (FSU) Jena
+
+
 Tag der öffentlichen Verteidigung:
+
+
 Jena, 23. April 2021
+
+
 Situation
+
+
 Die grafische Modellierung, dies steht außer Frage, ist in IT-Projekten immer wieder ein
 Kriterium, bei dem die Meinungen sehr konvergent sind und zu höchst unterschiedlichsten
 Entscheidungen führen. Zweifelsfrei tragen qualitativ hochwertige, grafische Modelle in
@@ -44,12 +82,18 @@ Interpretationsfähigkeit der Inhalte resultieren jedoch in eine Ablehnung der g
 Modellierung, wie dies aktuell in IT-Projekten wieder zunehmend festgestellt werden
 muss. Das Thema einer zielgerichteten und hochwertigen Modellierung ist heterogen und
 entsprechend komplex.
+
+
 Mit einem Blick auf das Ganze lässt es sich in der folgenden Kausalkette zusammenfassen:
 Modellierung ist zu aufwendig und somit zu kompliziert, dies hat eine erhöhte Fehleran-
 fälligkeit in der Modellierung zur Folge, was zu Verunsicherungen in der Verwendung der
 Modellinhalte führt, wodurch fehlerhafte Realisierungen erfolgen und den Projekterfolg
 negativ beeinflussen können.
+
+
 Ergo: Modellierung stellt ein Projektrisiko dar.
+
+
 Diese zusammenfassende Darstellung differenziert an dieser Stelle nicht zwischen den
 verschiedenen Arten von Modellqualität und möglicher Ursachen. In Projekten, in de-
 nen Qualitätssicherungen durchgeführt werden, erfolgt dies üblicherweise auf Basis von
@@ -58,7 +102,11 @@ werden. Dies wirkt sich jedoch nur auf die in der Modellierung nachgelagerten En
 lungsschritte eines IT-Projekts aus. Eine Rückkopplung zu den Ursachen findet in den
 seltensten Fällen statt. Das Risiko, eines Wiederauftretens der identifizierten Fehler wird
 hier nur unzureichend berücksichtigt.
+
+
 Ergebnis
+
+
 In dieser Arbeit wird der Standpunkt vertreten, dass zur Verbesserung und langfristigen
 Sicherung der Qualität von grafischen Modellen stärker die Ursachen als die Ergebnisse
 zu betrachten sind. Im Rahmen dieser Arbeit wird dies gegenüber der genannten Quali-
@@ -68,28 +116,42 @@ Qualitätsdefizite identifiziert und beseitigt und somit die erforderliche Rück
 herstellt, anstatt sich nur auf die Korrektur der Ergebnisse zu konzentrieren. Zum zweiten
 ist die Verwendung eines Qualitätsmodells notwendig, welches im Prozess als Maßstab
 angewendet wird.
+
+
 Der Inhalt dieser Arbeit betrachtet hierzu die mögliche Adaptierbarkeit des anerkannten
 Verbesserungsprozesses Six Sigma in den Kontext der grafischen Modellierung. So
 werden Werkzeuge bzw. Vorgehensempfehlungen der Six Sigma ISO Norm auf Ihre
 Anwendbarkeit untersucht und überführt.
+
+
 Auf Basis dieser Adaptionen wird der Verbesserungsprozess SixSigma4SOA (mit dem
 dafür notwendigen Meta-Modell und weiterer notwendiger Werkzeuge) entwickelt, der
 das Ergebnis dieser Arbeit darstellt. Wie gezeigt wird, ist SixSigma4SOA, analog zu Six
 Sigma, im Meta-Modell offen für die Integration bestehender Qualitätsmodelle, wodurch
 der zweite genannte Faktor erfüllt wird.
+
+
 Die Anwendbarkeit von SixSigma4SOA und die Betrachtung von Qualitätskriterien
 in der grafischen Modellierung von IT-Projekten erfolgt anhand der Modellierung von
 serviceorientierten Architekturen (ohne der Notwendigkeit auf aktuell angewendete Archi-
 tekturprinzipien eingehen zu müssen), da sich hier eine entsprechende Veranschaulichung
 von unterschiedlichen Abstraktionsstufen bietet.
+
+
 Der entwickelte Verbesserungsprozess wurde im Rahmen dieser Arbeit bereits mehrmals
 erfolgreich angewendet, wovon zwei unterschiedliche Szenarien Teil dieser Ausarbeitung
 sind und zeigen, dass hierdurch ein wirtschaftlicher Nutzen und Vorteil geschaffen werden
 konnte.
+
+
 Dadurch konnte die wichtigste These dieser Arbeit, dass sich anhand einer Adaptierung
 von Six Sigma die Qualität in grafischen Modellen langfristig verbessern lässt, bestätigt
 werden.
+
+
 Situation
+
+
 Graphical modeling, there is no question about it, is always a criterion in IT projects
 where opinions are very convergent and lead to the most diverse decisions. There is no
 doubt that high-quality, graphical models in IT projects make a significant contribution
@@ -97,27 +159,41 @@ to the successful achievement of objectives. However, high efforts in modelling 
 a frequently associated too high interpretability of the contents result in a rejection
 of graphical modelling, as is increasingly being observed in IT projects. The topic of
 targeted and high-quality modeling is heterogeneous and accordingly complex.
+
+
 With a view to the whole it can be summarized in the following causal chain: Modeling
 is too costly and therefore too complicated, which results in an increased susceptibility
 to errors in the modeling, which leads to uncertainties in the use of the model contents,
 which can lead to incorrect realizations and have a negative impact on the success of the
 project.
+
+
 Ergo: Modeling represents a project risk.
+
+
 At this point, this summary does not differentiate between the different types of model
 quality and possible causes. In projects in which quality assurance is performed, this is
 usually done on the basis of quality controls, in which identified deficits in the model are
 immediately corrected. However, this only affects the downstream development steps
 of an IT project in the modeling. Feedback on the causes rarely occurs. The risk of a
 recurrence of the identified errors is only insufficiently considered here.
+
+
 Conclusion
+
+
 In this thesis, the view is taken that in order to improve and ensure the quality of
 graphical models in the long term, the causes should be considered more than the
 results. In the context of this thesis this is called quality assurance in comparison to the
 mentioned quality control and requires two important factors.
+
+
 On the one hand, a quality assurance process is necessary that identifies and eliminates
 the causes of existing quality deficits and thus provides the necessary feedback instead
 of only focusing on the correction of the results. Secondly, the use of a quality model is
 necessary, which is used as a benchmark in the process.
+
+
 The content of this thesis considers the possible adaptability of the recognized improve-
 ment process Six Sigma in the context of graphical modeling. Thus, tools and process
 recommendations of the Six Sigma ISO standard are examined for their applicability and
@@ -126,45 +202,69 @@ the necessary meta-model and other necessary tools) is developed, which is the r
 of this work. As it is shown, SixSigma4SOA, analogous to Six Sigma, is open for the
 integration of existing quality models in the meta-model, thus fulfilling the second
 mentioned factor.
+
+
 The applicability of SixSigma4SOA and the consideration of quality criteria in the gra-
 phical modeling of IT projects is based on the modeling of service-oriented architectures
 (without the need to deal with currently applied architectural principles), since this
 provides a corresponding illustration of different levels of abstraction.
+
+
 The developed improvement process has already been successfully applied several times
 in the context of this thesis. Two different scenarios are part of this elaboration and
 show that an economic benefit and advantage could be created.
+
+
 Thus, the most important thesis of this work, that an adaptation of Six Sigma can
 improve the quality in graphical models in the long run, could be confirmed.
+
+
 1.1 Kurzeinführung
+
+
 Zu Beginn eines jeden Projekts sind neben der genauen Definition und Festlegung der
 Projektziele, Maßnahmen zur Einhaltung der Kosten- und Zeitrahmen auch Themen wie
 zum Beispiel der Art und Weise des Anforderungsmanagements, den Möglichkeiten der
 technischen Umsetzung und der Realisierung, sowie der Festlegung der Projektbeteiligten
 im Unternehmen und der Beteiligung von Fremdfirmen zu beantworten.
+
+
 Nun sind dies keine speziellen Themen, die ein IT-Projekt ausmachen. In vielen tech-
 nischen Projekten ist es seit hunderten von Jahren üblich, auch eine gewisse Art von
 technischen Zeichnungen oder auch Modelle vor einer Realisierung anzufertigen.
+
+
 In der Realisierung von IT-Projekten hat sich die grafische Modellierung jedoch bis zum
 heutigen Zeitpunkt immer noch nicht „flächendeckend“ durchgesetzt und stößt immer
-wieder neu auf Skepsis und Ablehnung. Das Zitat1 eines führenden Entwicklers eines
+wieder neu auf Skepsis und Ablehnung. Das Zitat$$$1$$$ eines führenden Entwicklers eines
 deutschen Unternehmens „Wir entwickeln in unsere Abteilung die notwendige Software
 für technische Komponenten unserer Autos eigentlich mit Outlook, Excel und JIRA.“ gibt
 die oft erschreckende Situation wieder.
+
+
 In einer Zeit, in der Time-to-market das Projektgeschäft bestimmt, wird die grafische
 Modellierung in IT-Projekten leider immer wieder als lästiger Faktor angesehen. Es ist
 leider unstrittig, dass in IT-Projekten immer wieder neu eine Diskussion geführt wird,
 gerade heute, in der ein starker Wandel nach agilen Projekten erkennbar ist (ohne, nach
 meiner Erfahrung, dass die Beteiligten oft genau wissen, was dies eigentlich bedeutet),
 in der die Modellierung als kostentreibendes Hindernis angesehen wird.
+
+
 Unstrittig sollte aber eigentlich sein, dass der Einsatz der grafische Modellierung zu
 einem größeren Projekterfolg und somit zu einer Realisierung führen kann, die von
+
+
 höherer Qualität und Einhaltung des Kostenrahmens geprägt ist, als wenn weitgehend
 auf grafische Modelle verzichtet wird.
+
+
 „Kann“ aus dem Grund, da der genaue Umfang der grafischen Modellierung und de-
 ren Detailtiefe leider allzu oft nur oberflächlich und mit geringer Bewertung in diese
 Diskussionen mit einfließen und schlussendlich schon mit geringem Einsatz fälschlicher-
 weise große Ergebnisse und damit verbundene Verbesserungen erwartet werden. Dieser
 minimalistischer Ansatz ist zum Scheitern verurteilt.
+
+
 Im Rahmen der Abstimmung über die Aspekte eines IT-Projekts, die grafisch modelliert
 werden sollen (z.B. nur Prozesse und/oder Datenmodelle und/oder Systemlandschafts-
 architekturen usw.), ergibt sich auch unweigerlich die daraus abzuleitende Frage der
@@ -172,32 +272,56 @@ Detaillierungstiefe und den damit verbundenen Anforderungen an die Qualität ein
 Modellierung (z.B. Abbildung nur der fachlichen und/oder auch der technischen Pro-
 zessbeschreibungen, ausschließliche Modellierung nur konzeptioneller Datenmodelle oder
 auch Abbildung der technischen, normalisierten und physikalischen Modelle, usw.).
+
+
 Es stellt sich die einfache Frage: "Wenn die Entscheidung zugunsten der grafischen
 Modellierung getroffen wurde, wie detailreich sollte diese sein, damit sie dem Projekt
 nutzt?"
+
+
 In einer engen Abhängigkeit zur Beantwortung der vorangegangenen Fragen des Umfangs
 und der Detaillierung ist in Folge auch eine Entscheidung über die zu verwendende
 Notation(en) und somit auch eine Auswahl der zu verwendenden Diagrammarten und
 Elemente zu fällen. So können z.B. Prozesse mit verschiedenen Notationsarten modelliert
-werden (z.B. BPMN2-Process vs. UML3-Activity).
+werden (z.B. BPMN$$$2$$$-Process vs. UML$$$3$$$-Activity).
+
+
 Wurde eine Entscheidung zugunsten der Modellierung getroffen, sind die wichtigsten
 Ziele, die durch einen qualitativ hochwertigen Einsatz der Modellierung in IT-Projekten
 erreicht werden sollten:
+
+
 • Gemeinsame, möglichst interpretationsfreie Sprache zwischen den verschiedenen
 Projektbeteiligten bzw. Stakeholdern und ihren unterschiedlichen Sichtweisen auf
 das Projekt (z.B. Fachabteilungen vs. Softwareentwicklung)
+
+
 • Frühzeitiges Erkennen von möglichen Problemen, Risiken und Auswirkungen in
 der Umsetzung auf Basis durchgängiger Modelle anhand von Impact Analysen.
+
+
 • Verbesserung in der Qualität der Realisierungsergebnisse durch möglichst interpre-
 tationsfreie Vorgaben in der Modellierung
+
+
 • Kostenreduzierung in der Realisierung aufgrund einer Reduzierung von Missver-
 ständnissen, Fehlinterpretationen und Abstimmungsaufwänden
-2siehe auch Kapitel 2.4.2 Business Process Model and Notation (BPMN)
-3siehe auch Kapitel 2.4.3 Unified Modeling Language (UML)
+
+
+$$$2$$$siehe auch Kapitel 2.4.2 Business Process Model and Notation (BPMN)
+$$$3$$$siehe auch Kapitel 2.4.3 Unified Modeling Language (UML)
+
+
 • Einhaltung zeitlicher Zielvorgaben unter Beibehaltung der zu Projektstart defi-
 nierten umzusetzenden Anforderungen
+
+
 Reduziert auf ein Minimum an Aussagen könnte dies lauten
+
+
 „Bevor wir lange reden, lass uns ein Bild malen, denn dies sagt mehr als tausend Worte.“
+
+
 Ausgehend von dem genannten Grundgedanken einer grafischen Modellierung in IT-
 Projekten und dem damit verbundenen Ziel eines allgemein besseren Gesamtverständnis-
 ses (z.B. eine grafische Prozessbeschreibung gegenüber einer rein textuellen Beschreibung)
@@ -206,12 +330,16 @@ von der Entscheidung abhängig, ob die Modellierung auf Verhalten oder Strukture
 im Idealfall auf die Kombination beider Aspekte angewendet wird. Unter der Verwendung
 eines Datenmodells kann z.B. das vorhandene Verhaltensmodell eines Prozesses um eine
 weitere Dimension der strukturellen Information erweitert und verfeinert werden.
+
+
 Am Beispiel der grafische Prozessmodellierung sei erwähnt, dass diese mittlerweile auch
 in verschiedenen Projektstandards und Normen empfohlen, umgesetzt und angewendet
-wird. Zu nennen sind hier z.B. verschiedene Bereiche in ITIL®4 oder auch verschiedenen
+wird. Zu nennen sind hier z.B. verschiedene Bereiche in ITIL®$$$4$$$ oder auch verschiedenen
 ISO-Normen (z.B. ISO 9001:2015 [49]). Auf einer noch allgemeineren Ebene, die sich
 nicht nur auf die IT bezieht, wird z.B. in verschiedenen Phasen eines Six Sigma Projekts
 [40][41] die Erstellung von Prozessmodellen empfohlen.
+
+
 Die grafische Modellierung in IT-Projekten ist angefangen von einer sehr fachlichen
 und abstrakten Beschreibung der zu realisierenden Prozesse über die Abbildung großer
 verteilter Systemlandschaften bis hin zu einer sehr technischen (und evtl. hardwarena-
@@ -219,20 +347,31 @@ hen) Modellierung ein sehr komplexes, umfangreiches und differenziert zu betrach
 Themengebiet. So orientiert sich diese Arbeit in der Betrachtung der Modellierung
 von Services bzw. Servicelandschaften in serviceorientierten Architekturen auf mögliche
 Qualitätsverbesserungen dieser Modelle.
+
+
 An dieser Stelle sei bereits betont, dass eine spezifischen Unterscheidung der verschiede-
-nen Arten von SOAs5 in dieser Arbeit nicht erfolgt, da angenommen werden kann, dass
+nen Arten von SOAs$$$5$$$ in dieser Arbeit nicht erfolgt, da angenommen werden kann, dass
 die Arten der Architekturen sich zwar auf Modellinhalte, aber nicht mögliche Arten der
 Modellierung und den geforderten Qualitätsmerkmale und damit verbundenen Risiken
 signifikant auswirken.
+
+
 Schlussendlich ergibt sich aber aus der Beantwortung der Frage eines Einsatzes zugunsten
 der grafischen Modellierung in IT-Projekten die nächste Frage: „Wie kann sicher gestellt
 werden, dass die Modelle die notwendige Qualität besitzen, damit aus diesen der erhoffte
 Mehrwert entstehen kann.“
-4IT Infrastructure Library [7]
-5
-5kITlasIsnifsrcahsetrSuOctAuremLitibkroamryp[l7e]xen Systemen vs. MicroServices mit kleinen in sich abgeschlossenen
+
+
+$$$4$$$IT Infrastructure Library [7] 5
+
+
+$$$5$$$kITlasIsnifsrcahsetrSuOctAuremLitibkroamryp[l7e]xen Systemen vs. MicroServices mit kleinen in sich abgeschlossenen
 Einheiten
+
+
 1.2 Problemstellung
+
+
 Die Kriterien, die zu einer Entscheidung für oder gegen eine Modellierung in IT-Pro-
 jekten führen und sich somit auf die Qualität des Projekts auswirken, sind oft nicht
 eindeutig nachvollziehbar. In indirektem Zusammenhang zu dieser Entscheidung steht
@@ -240,16 +379,24 @@ die Umsetzung der Qualitätssicherung der erstellten und verwendeten grafischen 
 und der Bewertung eines daraus möglichen abgeleiteten Mehrwerts für das Projekt bzw.
 Folgeprojekte. Die Thematik des Mehrwertes findet aufgrund der gemachten Erfahrungen
 in vielen Projekten weitgehend nicht die notwendige Beachtung.
+
+
 So führten viele Gespräche mit IT-Architekten und Entwicklern oft zu kontroversen
 Diskussionen, aber leider einem gemeinsamen Ergebnis:
+
+
 Modellierung kann helfen, aber das „Wie“ und das „Was“ sind oft nicht
 genau definiert und somit wird sie zu einem Risiko, einem Risiko,
 dass dann unsinnigerweise einfach durch Ausschluss der Modellierung
 komplett eliminiert wird.
+
+
 Das Ergebnis, dass die grafische Modellierung sich positiv auf das Ergebnis auswirken
 kann, aber in der Summe sehr oft darauf bewusst verzichtet wird, um Risiken, die oft
 nicht genau genannt und beschrieben werden können, zu vermeiden zeigt, dass hier eine
 detailliertere Betrachtung notwendig ist.
+
+
 In der gängigen Literatur zu den Themen „Modellierung“ und „SOA“ nimmt das Thema
 „Modellqualität“ leider nur einen sehr kleinen bis nicht vorhandenen Raum ein. Ist es
 doch ein wichtiges Thema, dass bei der Realisierung eines IT-Projekts nicht ignoriert
@@ -257,6 +404,8 @@ und erst recht auch nicht isoliert betrachtet werden darf. Wie Unhelkar [93] sch
 „... we must unterstand that model quality is not the only aspect of quality in a project.
 Model quality exists within the context of other quality dimensions or levels, and these
 influence each other...“.
+
+
 Ein Modell ist keine Insel, die von einem bestimmten Personenkreis quasi als Selbstzweck
 erstellt werden kann. Es stellt vielmehr eine grafische Dokumentation des Gesamtprojekts
 dar, auf das über alle Realisierungsphasen einer SOA von der Entwicklung bis hin
@@ -267,13 +416,19 @@ Risiko einer fehlerhaften Realisierung aufgrund einer schlechten Modellqualität
 jeder Entwicklungsphase. Dies ist nun keine neue Erkenntnis und lässt sich auf alle
 Entwicklungs- und Realisierungsprojekte anwenden. Umso erstaunlicher ist es, dass dem
 Thema einer nicht ausreichenden Modellqualität aktuell so wenig Beachtung geschenkt
+
+
 wird und zum jetzigen Zeitpunkt noch keine genaueren Betrachtungen über mögliche
-Risiken in der Modellierung6 von SOA-Projekten und deren Minimierungen existieren.
+Risiken in der Modellierung$$$6$$$ von SOA-Projekten und deren Minimierungen existieren.
+
+
 Abb. 1.1: Allgemein gebräuchliche und vereinfachte, schematische
 Darstellung von Modellierungsabhängigkeiten zwischen
 gebräuchlichen Phasen eines SOA-Projekts
 (Farben in Anlehnung an TOGAF [90]) [Zeichnung:
 Senn]
+
+
 Zur grafischen Modellierung selbst (von ArchiMate® über BPMN und UML bis zu den
 verschiedenen Arten der Datenmodellierung,...) existiert ein recht umfangreiches Angebot
 an Literatur und Abhandlungen, diese bewegen sich jedoch fast immer im Elfenbeinturm
@@ -282,6 +437,8 @@ In meiner nun über 20jährigen beratenden Tätigkeit in Projekten unterschiedli
 Größe und unter anderem auch als IT-Trainer wird mir immer wieder die Frage nach
 entsprechender Literaturempfehlung zum Thema „Modellqualität“ gestellt, die ich leider
 nicht zufriedenstellend beantworten kann.
+
+
 So durfte bzw. musste ich in meiner beruflichen Tätigkeit schon einige „Modellfriedhöfe
 aufräumen“. Dies waren fast immer das Ergebnis einer zu Projektbeginn zugunsten der
 grafischen Modellierung gefällten Entscheidung, ohne die damit verbundene Risiken
@@ -290,7 +447,11 @@ notwendigen Qualitätszielen zu fixieren. Die Erwartung, dass mit Modellen alles
 wird, hatte vielleicht existiert, wäre der qualitätsgetriebene Einsatz aber als eine ver-
 bindliche Voraussetzung und Basis für den Projektabschluss fixiert worden, wäre eine
 wertschöpfenden Verwendung dieser „Modellfriedhöfe“ nicht zum Problem geworden.
-6Hiervon ausgenommen sind zahlreiche Abhandlung über Softwarequalität.
+
+
+$$$6$$$Hiervon ausgenommen sind zahlreiche Abhandlung über Softwarequalität.
+
+
 In Projekten werden sehr oft nur ein bis zwei Schriftsprachen (z.B. Englisch und/oder
 Landessprache) angewendet, was rein sprachlich nicht das größte Risiko darstellt, da in
 den allermeisten Fällen, neben der englischen Sprache, eine der verwendeten Sprachen
@@ -298,19 +459,27 @@ die Mutter- oder Amtssprache der Projektbeteiligten ist. In der Modellierung kom
 jedoch oft verschiedene Notationen mit unterschiedlichen Diagrammarten und Elementen
 zum Einsatz, die zudem den Projektbeteiligten bei weitem nicht so vertraut sind, wie
 die eigene Muttersprache in Wort und Schrift.
+
+
 So wie z.B. auch die Anwendung der verwendeten Schriftsprachen durch die Projektbe-
 teiligte in den Projektdokumenten nicht tiefergreifend hinterfragt wird, wird bei einer
 Anwendung der Modellierung oft fälschlicherweise auch von einem allgemeinen ausrei-
 chenden Kenntnisstand der Projektbeteiligten in der Modellierung ausgegangen.
+
+
 Ein gerne gesagter Satz, ohne die Realität wirklich abzufragen, lautet: „Unsere Leute
-können alle UML7 bzw. BPMN8, die Modellierung ist kein Problem.“ Die Ergänzung,
+können alle UML$$$7$$$ bzw. BPMN$$$8$$$, die Modellierung ist kein Problem.“ Die Ergänzung,
 dass die genannten Personen dieses u.U. doch vor kurzem erst auf einer Schulung kennen
 gelernt haben, zeigt die fehlende Sensibilität für dieses Thema.
+
+
 Theorie und Realität treffen hier sehr oft konträr aufeinander. Die eigentlichen Voraus-
 setzungen und Inhalte, die den Kenntnisstand der Projektbeteiligten in der Modellierung
 in einer sehr individuellen Ordinal-Skala mit „können alles“ oder mindestens „ausrei-
 chend“ festlegen, werden allzu oft ignoriert bzw. nicht mit der notwendigen Aufmerk-
 samkeit betrachtet und beurteilt.
+
+
 Der bereits zitierte Grundgedanke der Aussage, dass ein Bild mehr als tausend Worte
 sagt, wird in diesem Fall mit steigender Komplexität der Modelle immer mehr zu
 einem neuen Risikofaktor in Projekten. Ein Modell ist immer eine Abstraktion der
@@ -321,40 +490,62 @@ Beim Erkennen der Diskripanzen In diesem Zusammenhang, wird dann doch einmal das
 Thema der Modellqualität betrachtet, gehen die Bemühungen in die Verbesserung der
 Modellinhalte. Dies kann, und dies zu erwähnen sollte eigentlich schon überflüssig sein,
 nur von kurzer Dauer sein, wenn die Ursachen nicht beseitigt werden.
+
+
 So können hier vorab zur Veranschaulichung der Problematik die wichtigsten Aspekte
 bzw. Risiken genannt werden, die im Bereich der Modellierung, aufgrund gemachter
 Erfahrungen, oft nur unzureichend Berücksichtigung finden:
+
+
 • Wie groß ist das Gesamtverständnis aller Beteiligten eines SOA-Projekts für die
 angestrebte Modellierungstiefe und der damit verbundenen Detaillierung?
-7Unified Modeling Language [69]
-8Business Process Model and Notation [65]
+
+
+$$$7$$$Unified Modeling Language [69]
+$$$8$$$Business Process Model and Notation [65]
+
+
 • Welche Notationen werden zur Modellierung gewählt und sind diese zur Erreichung
 der Ziele geeignet?
+
+
 • Welche Erfahrungen und Kenntnisse im Bereich der Modellierung sind bei den
 Projektbeteiligten, die die Modelle erstellen bzw. lesen bzw. verstehen müssen,
 vorhanden? Zu nennen sind hier die nicht unbeachtlichen Risiken, einer falschen
 Verwendung der Modellelemente der gewählten Notation durch die verschiedenen
 Projektbeteiligten.
+
+
 (Oft werden aus Kosten- und Zeitdruck entsprechende Weiterbildungen und Schu-
 lungen auf das Minimum beschränkt.)
+
+
 • Welche Maßnahmen zur Qualitätssicherung der Modellierungsergebnisse werden
 angewendet? Wird durch das Modell die Realität bzw. das zu erstellende Ziel
 grafisch richtig abgebildet oder geht die modellierende Person nur davon aus, dass
 dies richtig ist?
+
+
 Dies bedeutet, dass die Modellelemente durchaus im Sinne der Spezifikation der
 gewählten Modellierungssprache richtig angewendet werden, aber die Abstraktion
 u.U. nicht der Realität entspricht.
 Dies soll in Abb. 1.2 beispielhaft dargestellt werden, in der zwei Blackbox-Systeme
 über die genau beschriebene Schnittstelle „Interface“ kommunizieren.
+
+
 Das System „BlackBoxSystem-1“ (BBS1) realisiert diese Schnittstelle und ein
 zweites System „BlackBoxSystem-2“ (BBS2) benötigt diese. So wird dies z.B. in der
-UML mit den entsprechenden Elementen für «realize»9 und «use»10 Beziehungen
+UML mit den entsprechenden Elementen für «realize»$$$9$$$ und «use»$$$10$$$ Beziehungen
 eindeutig definiert und dargestellt.
+
+
 Was kann nun aber für die weniger erfahrene modellierende Person eine „Realisie-
 rung“ bzw. „Verwendung“ bedeuten? Ihr ist vielleicht die Bedeutung des „Reali-
 sierungs“ Elements nicht bewusst. Für sie „wandern“ lediglich Daten immer von
 BBS1 zu BBS2. Den Aspekt einer „Hol- bzw. Bringschuld“ bzgl. der Daten werden
 hier u.U. vielleicht nicht ausreichend berücksichtigt.
+
+
 Bedeutet eine Realisierung entweder eine Datenentgegennahme mit anschließender
 Verarbeitung oder die Aufbereitung und Bereitstellung der benötigten Daten, die
 über diese Schnittstelle ausgetauscht werden? Die richtige Verwendung der Symbole
@@ -363,12 +554,18 @@ stand sein, der für technische IT-Mitarbeiter außer Frage steht, in der fachli
 Modellierung aber unter Umstände für große Verwirrung und falscher Modellierung
 sorgen kann. Die Auswirkungen eines falschen Modells z.B. in einer serviceori-
 entierten Architektur können dann erheblich sein, da eine Schnittstelle anstatt
-9Definiert, dass das entsprechende System die in der Schnittstelle geforderte Funktionalität bereitstellt.
-10Definiert, dass das entsprechende System die in der Schnittstelle geforderte Funktionalität benötigt
+
+
+$$$9$$$Definiert, dass das entsprechende System die in der Schnittstelle geforderte Funktionalität bereitstellt.
+$$$10$$$Definiert, dass das entsprechende System die in der Schnittstelle geforderte Funktionalität benötigt
 bzw. verwendet.
+
+
 eindeutig und einmalig an einem System redundant an n Systemen implementiert
 werden muss. Diese Gefahr ist umso größer, umso weniger eine Abstimmung in
 einem Projekt zwischen den Arbeitsgruppen stattfindet.
+
+
 Es ist auch festzustellen, dass zum aktuellen Zeitpunkt keine eindeutigen Reifegradmo-
 delle für die verschiedenen Phasen in der IT-Modellierung existieren. Eine qualitative
 Bewertung von Modellen ist immer noch mit einem enormen menschlichen Aufwand
@@ -379,12 +576,18 @@ aufgaben für Folgeprojekte bleiben oft aus. (Eine gern getätigte Aussage, nach
 Probleme weitgehend beseitigt oder einfach akzeptiert wurden, ist: „Eigentlich wissen
 wir gar nicht, was wir jetzt noch verbessern sollen. Das Projekt ist fertig und im nächsten
 sieht es vermutlich eh ganz anderes aus.“)
+
+
 Zusammenfassend darf gesagt werden, dass die Art und Weise und die damit verbundenen
 Erwartungen und Ziele, wie grafische Modelle in SOA-Projekten eingesetzt werden,
 zum aktuellen Zeitpunkt unter den Aspekten möglicher Qualitätsverbesserungen nur
 individuell (und oft nur sehr projektspezifisch) betrachtet wurden bzw. werden und
 immer noch ein erhebliches Risiko in der Realisierung von SOA-Projekten darstellen.
+
+
 1.3 Qualität in der Modellierung
+
+
 Die Einsatzmöglichkeiten einer grafischen Modellierung in IT-Projekten ist nicht auf
 eine bestimmte Vorgehensweise in der Realisierung oder bestimmte Technologien be-
 grenzt und erstreckt sich von sehr hardwarenahen Embedded Systemen über dezentrale
@@ -393,6 +596,8 @@ garantiert aber per se noch keinen höheren Projekterfolg gegenüber IT-Projekte
 grafischem Modellierungsanteil. Nur qualitativ hochwertige Modelle ermöglichen auch
 einen höheren Projekterfolg und werden dann nicht zu einem schlecht einschätzbarem
 Risiko.
+
+
 Nun ist es kein Geheimnis, dass auch viele Jahre nach der Einführung des Paradigmas
 der serviceorientierten Architekturen es noch immer unzählige Bücher, Fachvorträge,
 Arbeiten und Diskussionen darüber gibt, wie die Qualität in diesen Projekten verbessert
@@ -400,8 +605,12 @@ werden kann. Jedoch beschäftigt sich fast kein Buch oder Vortrag mit der Qualit
 von grafischen Modellen in einer SOA. Das Thema ist schwer greif- und messbar und
 wird vermutlich aufgrund dieser Tatsachen gemieden bzw. umgangen oder anhand stark
 vereinfachter Beispiele nur kurz angerissen.
+
+
 Der Aspekt der Qualität von Modellen sollte jedoch immer Teil eines Qualitätsmanage-
 ments im Kontext einer SOA sein.
+
+
 Dies soll in Abb. 1.3 vereinfacht dargestellt werden, in der hier im Bereich des Qua-
 litätsmanagements eines IT-Projekts zwischen den verschiedenen Bereichen („Quality
 of...“ ), in denen Qualität definiert werden kann, unterschieden wird. Aufgrund der
@@ -409,33 +618,47 @@ Tatsache, dass dies ein grundsätzliches Problem darstellt, werden in dieser Dar
 die gebräuchlichen Phasen einer Produktentwicklung stark verallgemeinert von oben
 nach unten gezeigt, ohne hier auf ein bestimmtes Vorgehen (z.B. nach TOGAF® [90])
 genauer eingehen zu wollen. Die dargestellten Phasen können auch unabhängig von der
-Vorgehensweise (z.B. Wasserfallmodell11 vs. agile Softwareentwicklung12) angewendet
+Vorgehensweise (z.B. Wasserfallmodell$$$11$$$ vs. agile Softwareentwicklung$$$12$$$) angewendet
 und betrachtet werden.
+
+
 Der Bereich der „Quality of Service“13 (QoS) am Ende der Entwicklungsstrecke, mit der
-Überprüfung der Erfüllung der geforderten Servicevereinbarungen14, erhält aus meiner
+Überprüfung der Erfüllung der geforderten Servicevereinbarungen$$$14$$$, erhält aus meiner
 Erfahrung heraus die mit Abstand größte Aufmerksamkeit. Dieser Bereich wurde in der
 Vergangenheit intensivst und mehr oder weniger erfolgreich behandelt und in Projekten
 umgesetzt. Der Grund hierfür liegt in der „Greifbarkeit“ und somit der automatisierten
 Testbarkeit der Ergebnisse. Dieser Bereich wird im Rahmen dieser Arbeit nicht weiter
 betrachtet.
-11Ein nicht iteratives Vorgehensmodell (siehe Kap. 7.2, bei dem die einzelnen Phasen nacheinander
-bis zur technischen Bereitstellung der geforderten Funktionalität durchlaufen werden.
-12
-12z.B. mit Scrum, siehe Kap. 7.3, in der diese Phasen in kurzen Abständen iterativ wiederholt
+
+
+$$$11$$$Ein nicht iteratives Vorgehensmodell (siehe Kap. 7.2, bei dem die einzelnen Phasen nacheinander
+bis zur technischen Bereitstellung der geforderten Funktionalität durchlaufen werden. 12
+
+
+$$$12$$$z.B. mit Scrum, siehe Kap. 7.3, in der diese Phasen in kurzen Abständen iterativ wiederholt
 durchlaufen werden) werden die einzelnen Phasen iterative durchlaufen und das Projekt inkrementel
 realisiert.
-13Erfüllung der nicht funktionalen Anforderungen an den Service, wie z.B. Antwortzeiten, Wartezeiten,
-durchschnittliche Verfügbarkeit, max. tolerierte Ausfallzeiten
-14
-14hier wird sehr häufig die englische Bezeichnung Service Level Agreements (SLA) verwendet
+
+
+$$$13$$$Erfüllung der nicht funktionalen Anforderungen an den Service, wie z.B. Antwortzeiten, Wartezeiten,
+durchschnittliche Verfügbarkeit, max. tolerierte Ausfallzeiten 14
+
+
+$$$14$$$hier wird sehr häufig die englische Bezeichnung Service Level Agreements (SLA) verwendet
+
+
 Abb. 1.3: Zusammenführung von Projektphasen eines SOA-Projekts
 mit dazugehörigen Qualitätsbereichen
 (Farben in Anlehnung an ArchiMate® [91]) Inhalt:
 allgemeingültig bekannt, [Zeichnung: Senn]
+
+
 Qualitätssicherung ist jedoch keine Aufgabe, die erst am Ende einer Entwicklungskette
 [23, S. 181] beachtet werden darf. Lauer und Juwig [51] argumentieren, dass ein aktives
 Qualitätsmanagement ein wichtiger Teil eines SOA-Projekts ist, der von Anfang bis zum
 Ende permanent gelebt werden muss.
+
+
 Durch die Verbreitung von agilen Methoden in der Realisierung von IT-Projekten erhält
 aktuell das Thema „Qualität“ augenscheinlich bereits in früheren Phasen der Realisierung
 wieder eine stärkere Aufmerksamkeit. Bei genauerer Betrachtung von täglichen Abläufen
@@ -447,10 +670,14 @@ mit dem Kunden die Umsetzung der Anforderungen früher betrachtet. Der Bereich
 wird irrtümlich oft mit einem der Ziele des agilen Manifestes „Working software over
 comprehensive documentation“ [82] begründet, bei dem in vielen Projekten anscheinend
 aus einem „over“ ein „instead“ wird.
+
+
 Leider bezieht sich der Aspekt der Qualitätssicherung im Bereich der Realisierung somit
 schwerpunktmäßig auf den Bereich der eigentlichen Entwicklung und spart das Thema
 der Modellierung unverständlicherweise sehr oft noch mehr aus. Die Bewertung und
 Untersuchung von Aspekten wie z.B. das Verhältnis von Codezeilen zu Kommentaren
+
+
 oder z.B. der Cyclomatic complexity15 als Teil von „Quality of Code“ (QoC) setzen jedoch
 erst bei der Realisierung ein. Die Phase der Modellierung, die einer Realisierung (und dies
 gilt für Wasserfall-getriebene wie agile Projekte gleichermaßen) vorgelagert ist, wird im
@@ -458,49 +685,79 @@ Bereich der Qualitätssicherung aufgrund ihrer bereits genannten „Nichtgreifba
 oft gemieden. Besitzen evtl. vorhandene Modelle aufgrund mangelnder Fürsorge auch
 nicht eine notwendige Mindestqualität, so schließt sich der Kreis und die Modellierung
 wird zum Kostenfaktor ohne Mehrwert.
+
+
 Es ergibt sich die dringliche Frage, was verbessert werden kann, damit eine SOA nicht nur
 den QoC und QoS erfüllt, sondern vielmehr auch zeit- und kostengerecht die gestellten
 funktionalen Anforderungen modellbasiert umsetzen und erfüllen kann.
+
+
 Dieser nun viel wichtigere Aspekt eines übergreifenden Qualitätsmanagements, erstreckt
 sich von den Inhalten des Anforderungsmanagement, über die Analyse und das De-
 sign, bis zur Realisierung. Dieser Bereich soll, wie in Abb. 1.3 für ein Projekt in der
-klassischen Vorgehensweise des Wasserfallmodells16 dargestellt, hier nun als „Quality of
+klassischen Vorgehensweise des Wasserfallmodells$$$16$$$ dargestellt, hier nun als „Quality of
 Model“ bezeichnet werden.
+
+
 Da die Modellierungsergebnisse dieser Entwicklungsphasen jedoch schwer bis gar nicht
 automatisiert testbar sind, findet sehr oft unvernünftigerweise keine Qualitätsprüfung
 und -sicherung der erstellten Modellinhalte statt.
+
+
 Mehr als einmal wurde in Projekten die sehr ähnliche Aussage „Wir wissen ja, was
 gemeint ist.“ getätigt, damit nach einiger Zeit über den gleichen Modellteil „Das stimmt
 so überhaupt nicht und wird im System ganz anders umgesetzt.“ geurteilt wurde.
+
+
 Basierend auf der genannten Problematik unzureichender Modellqualitäten behandelt
 diese Arbeit nun eine Möglichkeit der Qualitätsverbesserung der Modellierung innerhalb
 von SOA-Projekten.
+
+
 Ziel wird es aber nicht sein, Modelle durch Nachbearbeitung nachträglich qualitativ zu
 verbessern bzw. hierzu notwendige Qualitätsmodelle zu definieren. Über die vielfältigen
 und möglichen Qualitätsmodelle u.a. auch aus der Softwareentwicklung abgeleitet, existie-
 ren bereits viele Arbeiten. Auch haben diese bereits teilweise Einzug in die Spezifikation
 von grafischen Notationen gefunden. Ebenfalls darf ein nachträgliches Überarbeiten von
 Modellinhalten zur Verbesserung der Modellqualität nicht die angestrebte Lösung sein.
+
+
 Nach dem Grundsatz „Der Weg ist das Ziel.“ kann eine erfolgreiche Qualitätsverbesserung
 nur durch eine Verbesserung des Modellierungsprozesses erreicht werden.
+
+
 Diese Arbeit untersucht, ob durch die gezielte Anwendung der Six Sigma Vorgehens-
-weise17, die in der Industrie eine anerkannte und gelebte Vorgehensweise zur Qualitäts-
-15Beschreibt die möglichen Wege durch ein betrachtendes Softwaremodul
-16
-16siehe hierzu Kapitel 7.2 Lineares Vorgehen
-17
+weise$$$17$$$, die in der Industrie eine anerkannte und gelebte Vorgehensweise zur Qualitäts-
+
+
+$$$15$$$Beschreibt die möglichen Wege durch ein betrachtendes Softwaremodul 16
+
+
+$$$16$$$siehe hierzu Kapitel 7.2 Lineares Vorgehen 17
+
+
 17sSiieehhee hhiieerrzzuu KKaappiitteell 75.
+
+
 verbesserung ist, eine Verbesserung von grafischen Modellen in SOA-Projekten erreicht
 werden kann.
+
+
 Im Bereich der Realisierung existieren bereits einige Ansätze der Qualitätsverbesserungen
 durch den Einsatz der Six Sigma Methodik wie z.B. bei Sun (heute Oracle) mit Sun
 Sigma. Diese sind jedoch auf spezielle Entwicklungsumgebungen beschränkt.
+
+
 Ein allgemein gültiger Ansatz zur Qualitätsverbesserung bzw. -sicherung auf Basis von
 Six Sigma im Bereich der Modellierung (Quality of Model), über Fachabteilungsgrenzen
 mit ihren Stakeholdern und ihren unterschiedlichen Sichtweisen, Fachkenntnissen und
 Anforderungen hinweg, existiert zum heutigen Zeitpunkt noch nicht bzw. wird weitgehend
 ignoriert oder auch nur ansatzweise in Projekten betrachtet.
+
+
 1.4 Fragen der Forschung
+
+
 In der IT stellt es sich aktuell so da, dass die Modellierung schwerpunktmäßig eher bei
 Neuprojekten zum Einsatz kommt. In der Realität ist es aber auch so, dass die wenigsten
 Projekte Neuentwicklungen sind. In den allermeisten Fällen werden bestehende Systeme
@@ -515,87 +772,149 @@ nachvollziehbar. Hier ist es umso wichtiger, dass das Wenige, was modelliert wur
 sich durch eine hohe Qualität auszeichnet. Die Qualität dieser Modelle zeichnen sich
 in einer ersten Betrachtung durch die beiden wichtigen Kenngrößen „Richtigkeit“ und
 „Vollständigkeit“ aus.
+
+
 Aus der geschilderten Situation leiten sich u.a. folgende Fragen ab:
+
+
 • Warum wird der Qualität von Modellen in der IT immer noch so wenig Bedeutung
 geschenkt?
+
+
 • Wie kann sich eine Qualitätsverbesserung allgemeingültig nachweisen lassen?
+
+
 • Welchen Einfluss auf die Modellierung hat die Anwendung eines Systems zur
 Prozessverbesserung?
+
+
 • Warum beschäftigt sich die gebräuchliche Fachliteratur und wissenschaftliche
 Qualitätsverbesserung nur wenig bis gar nicht und dann nur sehr allgemeingültig
 mit diesem Thema?
+
+
 Aus diesen leitet sich dann die Frage dieser Arbeit ab:
+
+
 • Wie kann ein qualitätsgestütztes Vorgehensmodell aussehen, in dem die Modellie-
 rung mit dem anerkannten Managementsystem zur Prozessverbesserung Six Sigma
 verbunden wird?
+
+
 1.5 Zu erbringender Beitrag
 1.5.1 Ziele
+
+
 Das Ziel und der Grundgedanke dieser Arbeit wird unter der Betrachtung der geschil-
 derten Problemstellung und dem Gedanken des Mikrokosmos im Makrokosmos, in dem
 Probleme in individuelle Teilprobleme aufzuteilen sind, sein:
+
+
 Wie kann die Qualität der Modellierungsergebnisse in SOA-Projekten ana-
 lysiert, gemessen und verbessert werden, um dieses Vorgehen auf andere
 Projekte adaptieren zu können?
+
+
 Somit wird folgende erste These (siehe hierzu auch Kapitel 8) aufgestellt:
+
+
 Die Qualität von grafischen Modellen in der Entwicklung von ser-
 viceorientierten Architekturen kann durch die Überführung von
 Six Sigma in den Kontext der Modellierung und der Verbesse-
 rung der verantwortlichen Modellierungsprozesse indirekt verbes-
 sert und langfristig gesichert werden.
+
+
 Hierzu werden die Inhalte bestehender grafischer Modelle mit dem im Rahmen dieser
 Arbeit entwickelten Verbesserungsprozesses auf Basis von Six Sigma analysiert, aus-
 gewertet und daraus mögliche Verbesserungen im angewendeten Modellierungsprozess
 herausgearbeitet.
-Dieses entwickelte Vorgehen trägt den Namen SixSigma4SOA und stellt das Ergebnis
+
+
+Dieses entwickelte Vorgehen trägt den Namen SixSigma$$$4$$$SOA und stellt das Ergebnis
 dieser Arbeit da.
+
+
 Die bereits aus Kap. 1.2 bekannten stark vereinfachten und gebräuchlichen Projektphasen
 zeigen in der vereinfachten Abb. 1.4 das Grundprinzip eines möglichen Modellierungs-
-prozesses18, bei dem nicht das Modell mit seinen Inhalten verändert, sondern der damit
+prozesses$$$18$$$, bei dem nicht das Modell mit seinen Inhalten verändert, sondern der damit
 verbundene Modellierungsprozess optimiert werden soll. Hierdurch soll eine notwendige
 Rückkopplung von den Modelldefiziten auf die verantwortlichen Ursachen analysiert und
-18Dies ist unabhängig von der Art des Vorgehens und ob sich die dargestellten Phasen auf ein
+
+
+$$$18$$$Dies ist unabhängig von der Art des Vorgehens und ob sich die dargestellten Phasen auf ein
 umfangreiches Projekt oder einen Sprint bezieht.
+
+
 hergestellt werden. Die daraus abgeleiteten und entwickelten Verbesserungen können
 zukünftig in der Modellierung angewendet werden, um eine höhere „Quality of Model“ zu
 erhalten.
+
+
 Die Durchführung eines SixSigma4SOA-Projekts ist unabhängig vom Modellierungspro-
 zess in jeder Phase eines SOA-Projekts möglich.
+
+
 Der Verbesserungsprozess muss ein genau spezifiziertes Vorgehen besitzen, welches
-trotzdem flexibel auf die verschiedenen Phasen eines SOA19-Projekts angewendet werden
+trotzdem flexibel auf die verschiedenen Phasen eines SOA$$$19$$$-Projekts angewendet werden
 kann. Der Prozess darf nicht an bestimmten Phasen bzw. Arbeitsergebnisse gebunden
 sein und muss losgelöst bzw. parallel zum eigentlichen Entwicklungsprozess ausführbar
 sein. Dies bedingt, dass keine Abhängigkeiten zu einem bestimmten Vorgehen (z.B.
-sequenzielles Vorgehen20 oder agiles Vorgehen21) bestehen dürfen.
+sequenzielles Vorgehen$$$20$$$ oder agiles Vorgehen$$$21$$$) bestehen dürfen.
+
+
 Abb. 1.4: Anwendung von SixSigma4SOA in möglichen Phasen
 eines SOA-Projekts
 (Farben in Anlehnung an ArchiMate® [91]) [Senn]
+
+
 Diese Arbeit leistet hierzu im Wesentlichen folgende Beiträge:
+
+
 • Analyse der qualitätsbeeinflussenden Faktoren in der Modellierung von serviceori-
 entierten Architekturen durch Befragung von Verantwortlichen in der Entwicklung,
 Zusammenfassung meiner langjährigen Erfahrungen, wie auch einer Analyse der
 in Projekten am meisten eingesetzten wissenschaftlichen Literatur.
+
+
 • Umfangreiches Literaturstudium, welches die erforderlichen Qualitätsmaßnahmen
 mit ihren Messmethoden und mögliche gewünschte Verbesserungen analysiert.
-19SOA wird im Rahmen dieser Arbeit im Kontext von IT-Landschaften zur Bereitstellung geforderter
-Services, ungeachtet einer möglichen technischen Realisierung, betrachtet.
-20
-e2r0vzic.Bes,Wuansgseearfcahltle(tsieeihneerKmaöpg.l7ic.2h)e
-21
+
+
+$$$19$$$SOA wird im Rahmen dieser Arbeit im Kontext von IT-Landschaften zur Bereitstellung geforderter
+Services, ungeachtet einer möglichen technischen Realisierung, betrachtet. 20
+
+
+e2r0vzic.Bes,Wuansgseearfcahltle(tsieeihneerKmaöpg.l7ic.2h)e 21
+
+
 21zz..BB.WScarsusmerfa(sllie(hseieKheapK.a7p..3)7
+
+
 • Entwicklung eines qualitätsgestützten Vorgehensmodells auf Basis von Six Sigma,
 dass die Lösungswege zur Reduzierung bzw. Beseitigung von Modellierungsdefiziten
 abbildet.
+
+
 • Auf Basis dieses qualitätsgestützten Vorgehensmodells werden die Thesen (Kap. 8,
 S. 301) anhand eines realen Projekts (das aufgrund des Datenschutzes hier nur
 eingeschränkt dokumentiert werden kann) analysiert, bestätigt oder widerlegt.
+
+
 Diese Arbeit soll einen Beitrag dazu liefern, wie ein qualitätsgetriebener Verbesserungs-
 prozess in der grafischen Modellierung von SOA-Softwareprojekten die Ergebnisse mess-
 und wiederholbar verbessern kann.
+
+
 1.5.2 Ergebnis
+
+
 Zur Verbesserung von Modellqualitäten in SOA-Projekten wird das Ergebnisse dieser
 Arbeit zweistufig angewendet werden. Wie in der folgenden Abb. 1.5 dargestellt, nimmt
 das zu verbessernde SOA-Projekt (2) eine zentrale Rolle ein.
-In einer initialen Anwendung wird in (1) mit SixSigma4SOA ein bestehendes SOA-Pro-
+
+
+In einer initialen Anwendung wird in ($$$1$$$) mit SixSigma4SOA ein bestehendes SOA-Pro-
 jekt (2) mit dem Ziel, aus den Ergebnissen erste Qualitätsverbesserungsmaßnahmen
 ableiten zu können, analysiert. In dieser initialen Anwendung werden vorhandene Model-
 lierungsergebnisse eines SOA-Projekts (z.B. modelliert in BPMN oder UML) und deren
@@ -604,7 +923,9 @@ Diese Analyse dient der Gewinnung von Informationen über die Eigenschaften eine
 vorhandenen oder eines noch unpräzise definierten Modellierungsprozesses. Das Ergebnis
 kann jedoch auch die Erkenntnis sein, dass aktuell kein Modellierungsprozesses für das
 zu verbessernde Projekt durchgängig definiert bzw. angewendet wird.
-In (1) schließt sich eine Untersuchung darüber an, wie die Qualität der Modellierung mit
+
+
+In ($$$1$$$) schließt sich eine Untersuchung darüber an, wie die Qualität der Modellierung mit
 SixSigma4SOA (durch Einsatz der auf die Modellierung adaptierten Six Sigma Vorgehens-
 weise) verbessert und die aktuelle Modellqualität auf ein höheres Six Sigma Niveau (siehe
 auch [40]) angehoben werden kann. Daraus wird für das entsprechende SOA-Projekt (2)
@@ -613,41 +934,59 @@ die Definition und Erarbeitung eines anzuwendenden Modellierungssprozesses initi
 vorhandenen Modellierungsprozesses bereits erste Verbesserungsmaßnahmen eingeleitet.
 Der Abschluss der initialen Anwendung bildet die Manifestierung der regelmäßigen und
 kontinuierlichen Durchführung von SixSigma4SOA im Unternehmen.
-In (3) wird im Anschluss auf Basis der gewonnenen Erkenntnisse der initialen Anwendung
+
+
+In ($$$3$$$) wird im Anschluss auf Basis der gewonnenen Erkenntnisse der initialen Anwendung
 SixSigma4SOA kontinuierlich zur Qualitätsverbesserung in aufeinander folgenden Six-
 Sigma4SOA-Projekten angewendet.
-Es muss jedoch auch berücksichtigt werden, dass eine initiale Durchführung in (1)
+
+
+Es muss jedoch auch berücksichtigt werden, dass eine initiale Durchführung in ($$$1$$$)
 aufgrund geringer vorhandener Informationen und somit eventuell mit einer geringeren
 Anzahl von Werkzeugen von SixSigma4SOA durchgeführt wurde, als dies dann in (3)
 getan werden kann, was eine reduzierte Menge an Ergebnissen für die erste kontinuierliche
 Verbesserungen zur Folge hat. So kann das Ergebnis der initialen Durchführung das
 Konzept eines Modellierungsprozesses oder einer Modellierungsmethodik darstellen, das
 in der kontinuierlich Anwendung zu detaillieren ist.
+
+
 Die in Abb. 1.5 innerhalb des SixSigma4SOA-Projekts grau dargestellten SixSigma4SOA-
-Modelle22 bilden das zu entwickelnde SixSigma4SOA-Meta-Model ab und dienen
+Modelle$$$22$$$ bilden das zu entwickelnde SixSigma4SOA-Meta-Model ab und dienen
 der strukturierten und modellbasierten Dokumentation der Vorgehensweise bzw. der
 Untersuchungsergebnisse und sind Bestandteil des Verbesserungsprozesses. Somit kön-
 nen die gewonnenen Erkenntnisse, wie bereits in Kap. 1.5.1 aufgeführt, auf weitere
 SOA-Modellierungsprozesse übertragen und angewendet werden.
+
+
 Dies unterstützt die Empfehlung der Six Sigma ISO Norm „ISO:13053-2“ [41], zu verbes-
 sernde Prozesse mit geeigneten Modell- bzw. Diagrammarten zu dokumentieren.
 Das SixSigma4SOA-Meta-Model beinhaltet alle wichtigen Artefakte und ist somit die
-22Das SixSigma4SOA-Modell wird hier lediglich aufgrund der Übersichtlichkeit doppelt dargestellt.
+
+
+$$$22$$$Das SixSigma4SOA-Modell wird hier lediglich aufgrund der Übersichtlichkeit doppelt dargestellt.
+
+
 Hauptinformationsquelle eines SixSigma4SOA-Projekts. Diese Modelle sind entsprechend
 Abb. 1.5 völlig losgelöst von den später in Kap. 2.6 aufgeführten Modellierungsebenen
 zur Beschreibung einer serviceorientierten Architektur zu betrachten. Die Inhalte der
 im Rahmen eines SixSigma4SOA-Projekts erstellten SixSigma4SOA-Modelle werden in
 dieser Arbeit auf Ihre Qualität hin nicht weiter untersucht.
+
+
 Da die Six Sigma ISO Norm die Vorgehensweise zu Qualitätsverbesserungen in einem
-DMAIC-Regelkreis23 allgemeingültig und ohne explizite Vorgaben einer grafischen Mo-
+DMAIC-Regelkreis$$$23$$$ allgemeingültig und ohne explizite Vorgaben einer grafischen Mo-
 dellierung betrachtet, kann das hier spezifisch betrachtete Problem einer schlechten bzw.
 fehlerhaften Modellierung innerhalb von Six Sigma (bzw. SixSigma4SOA-) Projekten
 nicht explizit behandelt werden. Auch werden keine Qualitätsprüfungsverfahren zur
 Bewertung dieser SixSigma4SOA-Modelle, die im Rahmen eines SixSigma4SOA-Projekts
 erstellt werden, festgelegt.
+
+
 Hieraus lassen sich die Schritte 1. und 3. mit einem eventuell snotwendigen Zwischen-
 schritt ableiten:
-1. Initiale Anwendung von SixSigma4SOA zur Identifikation und Verbes-
+
+
+FOOTNOTE:1. Initiale Anwendung von SixSigma4SOA zur Identifikation und Verbes-
 serung von Modellierungsdefiziten
 Auf Basis von Vorgehenstechniken und Methodenwerkzeugen, die in SixSigma4SOA
 (auf Basis von Six Sigma) definiert sind, wird die Modellierung genau festzule-
@@ -655,6 +994,8 @@ gender Betrachtungsebenen eines SOA-Projekts untersucht und analysiert. Diese
 initiale Durchführung dient auch der Gewinnung von Erkenntnissen, auf denen zu
 entscheiden ist, ob sich SixSigma4SOA mit seinen Anforderungen im Unternehmen
 anwenden lässt.
+
+
 2. Können im Rahmen der zeitlichen festgelegten initialen Durchführung von Six-
 Sigma4SOA nicht die erforderlichen Erkenntnissen gewonnen werden, um erste
 Regeln abzuleiten, die dauerhaft in SOA-Projekten und wenn möglich in einem
@@ -666,119 +1007,201 @@ diesem sollten die Ziele der initialen Anwendung weitgehend unverändert überno
 men werden. Dieser Sonderfall berücksichtigt Situationen, in denen eine Analyse
 aufgrund vieler Unbekannten und der damit aufwendigen Informationsbeschaffung
 aufwendiger, als initial angenommen ausfällt.
-3. Kontinuierliche Anwendung von SixSigma4SOA zur stetigen Verbesse-
+
+
+FOOTNOTE:3. Kontinuierliche Anwendung von SixSigma4SOA zur stetigen Verbesse-
 rung
+
+
 Durch die regelmäßige Durchführung wird im Unternehmen ein Bewusstsein für
-23siehe Kapitel 5.4
-die notwendige Modellqualität geschaffen. Zur Akzeptanz- und Bewusstseinsverbes-
+
+
+$$$23$$$siehe Kapitel 5.4
+
+
+FOOTNOTE:die notwendige Modellqualität geschaffen. Zur Akzeptanz- und Bewusstseinsverbes-
 serung eines Qualitätsverbesserungsprozess konzentriert sich dieser immer nur auf
 spezielle Aspekte der Modellierung, die in kurzer Zeit verbessert werden können.
 Dadurch können bei einer verantwortungsvollen Anwendung indirekt nachhaltig
 die Modellierungsergebnisse verbessert werden. Die Modellierung in SOA-Pro-
 jekten erfolgt dann auch auf Basis der durch die regelmäßig Durchführung von
 SixSigma4SOAgewonnen Verbesserungen.
+
+
 1.5.3 Ausschluss
+
+
 Diese Arbeit betrachtet die Möglichkeiten der Verbesserung der grafischen Modellierung
 durch die Verbesserung des damit verbundenen Modellierungsprozesses.
+
+
 Die Weiterentwicklung vorhandener Qualitätsmodelle oder eine Neuentwicklung ist
 jedoch nicht Teil dieser Arbeit.
+
+
 Ebenfalls umfasst diese Arbeit explizit keine Neuentwicklung von Modellierungsprozessen,
 da das hier entwickelte Vorgehensmodell weitgehend auf die in Projekten bewährten
 Vorgehensweisen anwendbar sein muss.
+
+
 In dieser Arbeit werden die Kriterien, die für die Auswahl spezieller Modellierungs-
 werkzeuge zu berücksichtigen sind, ebenfalls nur soweit wie für diese Arbeit notwendig
 betrachtet. So wie Modellierungssprachen und Six Sigma keine Modellierungswerkzeuge,
-sondern nur Notationen bzw. Methoden24 vorgeben, wird diese Arbeit auch nicht auf
+sondern nur Notationen bzw. Methoden$$$24$$$ vorgeben, wird diese Arbeit auch nicht auf
 die Auswahl eines bestimmten Modellierungswerkzeuges eingehen.
+
+
 Dass die in dieser Arbeit erstellten Diagramme und die entwickelten Vorgehensweisen
 mit einem geeigneten Modellierungswerkzeug erstellt wurden, ist ein elementarer und
 notwendiger Teil der Arbeit, wobei das Werkzeug selbst jedoch nur eine sekundär Rolle
 einnimmt und nicht als Voraussetzung bewertet und betrachtet wird, solange es die
 erforderlichen Funktionalitäten zur Modellierung besitzt.
+
+
 Ebenso wird sich die Arbeit nicht analytisch und wissenschaftlich mit den Themen der
 Realisierung anhand einer bestimmten Programmiersprache (z.b. Java, C++/C#) oder
-eine bestimmten Technologie (z.B. WEBServices mit JEE, XSD/WSDL, REST25-Services
+eine bestimmten Technologie (z.B. WEBServices mit JEE, XSD/WSDL, REST$$$25$$$-Services
 mit HTTP) beschäftigen.
+
+
 Aspekte, die die Hardware einer SOA betreffen sind ebenfalls kein Bestandteil dieser
 Arbeit.
-24In Six Sigma werden methodische Vorgehensweisen als Werkzeuge bezeichnet, diese sind jedoch
+
+
+$$$24$$$In Six Sigma werden methodische Vorgehensweisen als Werkzeuge bezeichnet, diese sind jedoch
 keine Werkzeuge im Sinne von IT-Anwendungen
-25REST : REpresentational State Transfer
+$$$25$$$REST : REpresentational State Transfer
+
+
 1.6 Inhaltsüberblick dieser Arbeit
-Der Aufbau dieser Arbeit orientiert sich konsequenter Weise an dem in der Abb. 1.6
-dargestellten DMAIC-Kreis26 von Six Sigma.
+
+
+FOOTNOTE:Der Aufbau dieser Arbeit orientiert sich konsequenter Weise an dem in der Abb. 1.6
+dargestellten DMAIC-Kreis$$$26$$$ von Six Sigma.
+
+
 Die folgende Abb. 1.7 stellt die Phasen dieser Arbeit mit den wichtigsten Arbeitsergeb-
 nissen in dem stark vereinfachten Prozessablauf (BPMN) grafisch dar.
+
+
 Define
+
+
 In der Define-Phase erfolgt eine kritische Betrachtung des Systems und der zu verbes-
 sernden Qualitätskriterien. Hierzu werden zu Beginn in Kapitel 2 die grundlegenden und
 im Rahmen dieser Arbeit relevanten Aspekte einer SOA kritisch betrachtet und deren
 grafischen Modellierungsmöglichkeiten identifiziert.
+
+
 In Kapitel 3 erfolgt die Definition der Qualitätskriterien, die zur Verbesserung der
 Modellierungsergebnisse zu beachten sind.
+
+
 Im folgenden Kapitel 4 erfolgt die Erarbeitung eines Lösungsansatzes, mit der eine
 gewünschte Qualitätssteigerung erzielt werden soll.
+
+
 Measure
+
+
 In der „Measure“-Phase werden die zu messende Größen und ihre Messmethoden festgelegt.
 Somit werden in Kapitel 5 die für diese Arbeit relevanten Faktoren von Six Sigma, die im
 Rahmen der Qualitätssteigerung auch Anwendung finden, betrachtet und beschrieben.
+
+
 Analyse
-Im darauf folgenden Kapitel 6 erfolgt in der „Analyse“-Phase die Untersuchung und
+
+
+FOOTNOTE:Im darauf folgenden Kapitel 6 erfolgt in der „Analyse“-Phase die Untersuchung und
 Auswertung von Fehlern in der Modellierung, deren Klassifizierung, Metriken und
 Messgrößen.
+
+
 Improve
+
+
 Nach einer kurzen Einführung möglicher Vorgehensmodelle in der Realisierung von
 IT-Projekten in Kapitel 7, werden diese auf Ihre prinzipielle Verwendbarkeit in Verbin-
 dung mit Six Sigma bewertet.
+
+
 Kapitel 8 stellt als Teil der angestrebten Verbesserung die Thesen auf, die mit Six-
 Sigma4SOA zu erreichen sind.
+
+
 Im Anschluss erfolgt in Kapitel 9 die Entwicklung eines Vorgehensmodells, in dem Six
 Sigma und die Modellierung von SOA-Projekten zusammengeführt werden, um in deren
 Anwendung die gestellten These zu belegen.
+
+
 Dieses neu entwickelte Vorgehensmodell wird in dieser Arbeit als „SixSigma4SOA“ und
 die modellbasierte Abbildung als SixSigma4SOA-Meta-Model bezeichnet.
+
+
 Dies, in der Abb. 1.7 symbolisch mit einem Blatt Papier dargestellten Elemente, stellen
 das Ergebnis dieser Arbeit dar.
+
+
 Control
+
+
 Die reale Anwendung und Kontrolle des Vorgehensmodells „SixSigma4SOA“ erfolgt im
 Kapitel 10.
+
+
 Hier sei bereits gesagt, dass die hier aufgeführten Projektinformationen der realen Anwen-
 dung aufgrund der vorgegebenen Geheimhaltungspflicht nicht umfassend veröffentlicht
 werden dürfen, weswegen mit verallgemeinerten Beispielen gearbeitet werden muss.
 Eine abschließende Zusammenfassung und Bestätigung der Thesen erfolgen dann im
 Kapitel 11.
+
+
 Serviceorientierte Architekturen
+
+
 2.1 Einleitung
-Der Begriff „SOA“ (Serviceorientierten Architektur) hat in den letzten ca. 15 Jahren
+
+
+FOOTNOTE:Der Begriff „SOA“ (Serviceorientierten Architektur) hat in den letzten ca. 15 Jahren
 eine Dynamik entwickelt, bei der immer wieder mit dem Versuch der Findung einer
 eindeutigen Definition, gleichzeitig die Feststellung erfolgt, dass diese mit jedem Zuwachs
 an technischen Möglichkeiten und der damit verbundenen organisationsübergreifenden
 Einbindung von unterschiedlichen IT-Infrastrukturen immer allgemein gültiger werden
 muss, die bestenfalls mit der vorangegangen Einführung des OO-Paradigmas verglichen
 werden kann.
+
+
 Aufgrund der Tatsache, dass die Einführung einer SOA und der damit verbundenen
 Komplexität viele Bereiche in Unternehmen innerhalb und außerhalb der IT völlig
 heterogenen Situationen betreffen, kann bis zum heutigen Datum keine eindeutige
 Definition hierfür existieren.
+
+
 Im Rahmen dieser Arbeit werden nun hier die Aspekte einer SOA betrachtet, die den
 Bereich möglicher Verbesserungen in der grafischen Modellierung von serviceorientierten
 Architekturen tangieren. Verbesserungen z.B. im Bereich der technischen Realisierungen,
 der Infrastruktur oder auch der Anbindung und Gestaltung von Datenbank-Systemen
 (DB-Systemen) bis hin zu DWH/BI-Lösungen (Data Warehouse / Business Intelligence)
 sind nicht Teil dieser Arbeit.
+
+
 Das Paradigma der serviceorientierten Architektur (SOA) wurde erstmals 1996 von
 Gartner definiert und beschrieben, in der zusammenfassend erklärt wird, dass eine SOA
 nicht nur eine spezielle Form der Umsetzung gewünschter Funktionalitäten auf Basis
-einer bestimmten Technologie sind: „A service-oriented architecture is a style of multitier
+FOOTNOTE:einer bestimmten Technologie sind: „A service-oriented architecture is a style of multitier
 computing that helps organizations share logic and data among multiple applications and
-usage modes.“ [31]
-Im Laufe der Jahre haben sich sowohl unterschiedliche Sichtweisen einer SOA, wie
+usage modes.“ [$$$31$$$]
+
+
+FOOTNOTE:Im Laufe der Jahre haben sich sowohl unterschiedliche Sichtweisen einer SOA, wie
 auch Herangehensweisen an dieses Thema entwickelt. Ebenso existiert ein teilweise
 sehr gegensätzliches Verständnis von der Bedeutung des Begriffs SOA. Die vielfältigen
 Definitionen erstrecken sich von einer sehr punktuellen Sichtweise, die die technische
 Umsetzung einer SOA betrachtet, über einen fachlich ausgerichtete Betrachtung einer ser-
 viceorientierten Architektur, bis zur unternehmensweiten Sichtweise, die auch Faktoren
 wie menschliche Ressourcen oder auch Auswirkungen auf das Management berücksichtigt.
+
+
 So ist es nicht verwunderlich, dass eine offiziell verabschiedete Definition für serviceorien-
 tierte Architekturen bis heute nicht existiert oder sich in einer Verabschiedung befindet.
 Nach meiner Erfahrungen und meinen Einschätzungen wird dies aufgrund vielfach tech-
@@ -786,13 +1209,19 @@ nisch unterschiedlicher Umsetzungsmöglichkeiten und des erwähnten unterschiedl
 Gesamtverständnis des Begriffs auch in absehbarer Zeit nicht möglich sein. Ebenfalls
 existiert auch kein Standard oder keine Definition darüber, was eine SOA betrachten
 soll und was nicht.
+
+
 So einfach die folgende Definition der OASIS1 auch sein mag, so bietet sie doch durch
 ihre Allgemeingültigkeit keinen Raum für mögliche Kritik oder Einschränkungen an
 der Aussage, beschränkt man sich hier doch bewußt nicht nur auf den fachlichen oder
 technischen oder organisatorischen Aspekt einer SOA.
+
+
 „Service Oriented Architecture (SOA) is a paradigm for organizing and uti-
 lizing distributed capabilities that may be under the control of different
 ownership domains.“ [64]
+
+
 Ein großer Vorteil dieser Definition liegt darin, dass sie nicht auf die technischen Aspekte
 die im Zusammenhang einer SOA stehen, wie z.B. der Realisierung (z.B. CORBA, JEE,
 REST), Eigenschaften (z.B. Robustheit, Lastverteilung,...) oder auch Architekturmerk-
@@ -801,24 +1230,36 @@ Arte der Beschreibungen möglicher Entwicklungsprozesse wie z.B. MDA (Model Driv
 Architecture) oder BPEL (Web Services Business Process Execution Language) vs.
 BPMN-Process-Engines. In dieser Definition wird vielmehr der sehr wichtige Aspekt der
 unterschiedlichen Verantwortungen explizit berücksichtigt und betont.
+
+
 Verantwortungen bzw. Zuständigkeiten haben in einer SOA einen sehr hohen Stellenwert.
 Wurde z.B. vor ca. 20 Jahren einer monolithischen Single-Applikation und deren Archi-
 tektur relativ oft nur von einem kleinen Personenkreis verantwortet, der die geforderte
-1Organization for the Advancement of Structured Information Standards, www.oasis-open.org
-Funktionalität (Prozesse und verwendetet Daten) recht gut verstand, ist dies bei heutigen
+
+
+$$$1$$$Organization for the Advancement of Structured Information Standards, www.oasis-open.org
+
+
+FOOTNOTE:Funktionalität (Prozesse und verwendetet Daten) recht gut verstand, ist dies bei heutigen
 verteilten und mitunter vielfach komplexeren SOA-Applikationen (Multi-Tier) nicht
 mehr vorstellbar. Die Verantwortungen und Zuständigkeiten einer serviceorientierten
 Architektur sind auf viele fachliche und technische Bereiche bzw. Verantwortlichkeiten
 verteilt. Verbunden mit der Entwicklung von 1-Tier-Applikation, hin zur heutigen Um-
 setzung einer komplexen und variabel nutzbaren SOA (u.U. bereits mit MicroServices,
-SaaS2, PaaS3,...) ist auch der Bedarf an einer allgemein verständlichen Dokumentation
+SaaS$$$2$$$, PaaS$$$3$$$,...) ist auch der Bedarf an einer allgemein verständlichen Dokumentation
 (und der damit verbundene Bedarf an Traceability zwischen den Dokumentationsar-
 tefakten über mehrere Software-Releases) und somit im erweiterten Sinne auch der
 Modellierungsbedarf über viele Zuständigkeitsbereiche stark gestiegen.
+
+
 So muss ich immer wieder folgendes feststellen:
+
+
 SOA-Umsetzungen ohne umfassende und qualitativ hochwertige grafische
 Dokumentation sind mittelfristig (verwaltungstechnisch und somit finanzi-
 ell) zum Scheitern verurteilt.
+
+
 SOA zum Beispiel reduziert auf eine Art der Bereitstellung von IT-Dienstleistungen
 anhand von WEB-Services zu definieren ist leider ein sehr gebräuchlicher, aber auch
 falscher Ansatz (siehe hierzu auch [77]). So vertrete ich aufgrund meiner Erfahrungen
@@ -829,9 +1270,13 @@ gigkeit, konnte dadurch kein Stück näher gekommen werden. Es ist lediglich der
 (durch die Bereitstellung der Web-Service-Schnittstelle) gestiegen. Web-Services sind
 auch nur eine Möglichkeit, die erforderlichen Funktionalitäten einer SOA technisch in
 einer IT-Landschaft bereitzustellen. [46, Kap.:1.5.3]
+
+
 Zu einer erfolgreichen SOA gehört jedoch viel mehr. Im Rahmen dieser Arbeit wird der
 Bereich der Modellierung in Verbindung mit einer Verbesserung der Modellierungsqualität
 betrachtet.
+
+
 SOA bedeutet auch nicht eine andere oder auch modernere Beschreibung für eine
 Realisierung von IT-Anwendungen auf der Java Enterprise Edition oder dem teilweise als
 altmodisch angesehenen CORBA zu definieren. Dies erklärt sich bereits aus der Tatsache,
@@ -839,26 +1284,44 @@ dass dann weitere technologische Arten der Realisierung wie z.B. der .NET-Plattf
 von Microsoft ebenfalls einzuschließen wären. Es sollte immer bewusst sein, dass der
 SOA-Begriff zu einem Zeitpunkt definiert wurde, als Technologien wie z.B. JEE, REST
 oder auch .NET noch nicht verfügbar waren.
-2Software as a Service
-3Platform as a Service
+
+
+$$$2$$$Software as a Service
+
+
+$$$3$$$Platform as a Service
+
+
 Diese beginnt mit den ersten Anforderungen, geht über Prozess- und Datenbeschreibun-
 gen und architekturellen Systembeschreibungen bis zur abschließenden Gesamtdokumen-
 tation. Auf allen Ebenen der Dokumentation können bzw. idealerweise sollten Modelle
 eingesetzt werden. Die Art und Weise der Modellierung unterscheidet sich jedoch stark
 von der jeweils betrachteten Ebene innerhalb der SOA. Hier wird auch bewusst die Art
 der Projektrealisation z.B. Wasserfall vs. Agile nicht berücksichtigt.
+
+
 2.2 Was bedeutet SOA in der Praxis?
-Bei der Betrachtung und Analyse des Begriffs SOA stellt sich immer wieder die Frage
+
+
+FOOTNOTE:Bei der Betrachtung und Analyse des Begriffs SOA stellt sich immer wieder die Frage
 des Huhns und des entsprechenden Ei. Was war zuerst da? Die Idee einer SOA oder
 das System, welches in eine Architektur überführt werden soll, die systemübergreifend
 und serviceorientiert ausgerichtet ist? Eine SOA ist kein Selbstzweck und soll auch nicht
 als technischer Hype (so er denn vor ca. 10-15 Jahren in der IT-Welt gelobt wie auch
 kritisiert wurde) angesehen werden.
+
+
 Zu Beginn soll der Begriff zuerst auf die Bedeutung der drei Wortteile einführend
 betrachtet werden, bevor dann im Anschluss auf die fachlichen und technischen Aspekte
 im Bereich der Modellierung eingegangen wird.
+
+
 2.2.1 Service...
+
+
 2.2.1.1 Unabhängigkeit
+
+
 Eine Grundidee hinter einer SOA steht primär in der Bereitstellung von erforderlichen und
 idealerweise unabhängigen Funktionalitäten, losgelöst von einer technischen Umsetzung.
 Eine technische Umsetzung ist sekundär und sollte immer erst dann betrachtet werden,
@@ -866,261 +1329,20 @@ wenn von allen Beteiligten definiert ist, was die SOA liefern soll. Dass eine vo
 Architektur einen Einfluss auf die Servicebeschreibungen nehmen kann ist unstrittig,
 darf aber nicht in der primären Betrachtung liegen. Aspekte der Architektur werden
 weiter unten noch genauer betrachtet.
+
+
 Ein Service stellt eine in sich abgeschlossene Einheit mit genau definierter Funktionalität
 dar.
+
+
 Ein Service wird im OASIS-SOA-Referenzmodell [64] beschrieben als:
+
+
 Der Begriff „Service“ wird in Wörterbüchern als „Die Durchführung einer
 Aufgabe (einer Tätigkeit) von jemanden für einen anderen“ bezeichnet.
+
+
 Ein Service ist keine umfassende Dienstleistung und darf nicht mit dieser verwechselt
 werden.
-Beispielhaft soll dies an dem realen Prozess einer Bereitstellung eines Telefonanschlusses
-im Bereich Festnetz betrachtet werden. In der fachlichen Beschreibung anhand eines
-grafischen Geschäftsprozessmodells (die zur grafischen Modellierung gewählten Notation
-ist hier nicht weiter von Interesse) können sehr schnell wichtige und voneinander unab-
-hängige Prozessschritte und auch Zuständigkeiten identifiziert werden. Es darf gesagt
-werden, dass ein Geschäftsprozess (hier: „Bereitstellung Telefonanschluss“) aus einzelnen
-Prozessschritten besteht. Jeder dieser Prozessschritte kann nun als ein benötigter Services
-betrachtet bzw. identifiziert und als solcher definiert und beschrieben werden.
-Diese könnten unter anderem sein:
-• Prüfung auf Verfügbarkeit von Anschlusskapazitäten
-• Prüfung auf Verfügbarkeit von verfügbaren Technologien am Endpunkt
-• Prüfung des Bereitstellungsdatums
-• Prüfung des Kundenscorings
-• Prüfung der externen Kundenbonität
-• Anlegen des Neukundens
-All diese Schritte sind eigenständig, da diese in anderen Geschäftsprozessen ebenso
-verwendet werden könnten. Eine Prüfung der externen Kundenbonität ist z.B. nicht an
-die Vertragsart zur Bereitstellung eines Telefonanschlusses (unabhängig, ob es sich nun
-um einen Festnetzanschluss oder ein Mobilfunkvertrag handelt) gebunden. Eine Prüfung
-der Anschlusskapazität könnte auch im Bereich Service benötigt werden, falls Kundenbe-
-schwerden eingehen, in denen die bestellte Leistung nicht der gelieferten entspräche.
-Hieraus leitet sich dann die folgende Forderung an eine SOA ab:
-Anforderung 1 (Unabhängigkeit)
-Services sind voneinander unabhängige und in sich abgeschlossene Dienstleistun-
-gen. [61]
-„Services sind klar gegeneinander abgegrenzte und aus betriebswirtschaftlicher
-Sicht sinnvolle Funktionen.“[88, S. 12]
-An dieser Stelle kann aber gesagt werden, dass mit einer höheren geforderten Unabhän-
-gigkeit (Autonomoy) A eines Services seine Komplexität (Complexity) C proportional
-zunimmt.
-Umgekehrt nimmt die Abhängigkeit (Dependency) D zwischen Services mit steigender
-Komplexität C um den Proportionalitätsfaktor p proportional ab.
-Inwieweit die Unabhängigkeit in der Realität umgesetzt werden kann und welche Aus-
-wirkungen dies eventuell hat, wird in Kapitel 2.3.1 weiter betrachtet.
-2.2.1.2 Wiederverwendung
-Im Kontext und einem engen Zusammenhang zur Unabhängigkeit steht auch die Wieder-
-verwendung eines Services [88, S. 12]. So ergab eine Umfrage von Hurwitz & Associates
-[8], an der Firmen in den USA und Großbritannien teilgenommen haben, dass für ca.
-90% der befragten Unternehmen eine Wiederverwendung die höchster Priorität besitzt.
-Weiter wird in der Literatur und auf fachlichen Veranstaltungen immer wieder von
-einem hohen Grad der Wiederverwendung von Services gesprochen. Für den Grad der
-Wiederverwendung gibt es aber zum jetzigen Zeitpunkt keine belastbare Messgröße,
-auch wenn diese in der Wirtschaft immer wieder verlangt wird. Aufgrund gemachter
-Erfahrungen kann gesagt werden, dass dieser Grad extremst projekt- und unterneh-
-mensabhängig und komplex ist, der immer wieder neu zu bewerten und nicht zwischen
-Projekten und Unternehmen übertragbar ist. Steigt die Komplexität eines Services,
-so steigt auch die Wahrscheinlichkeit, dass dieser aufgrund seiner sehr speziellen und
-komplexen Funktionalitäten (auch aus Kostengründen) nicht wiederverwendet wird (auch
-wenn es vielleicht möglich wäre). Die Beherrschbarkeit von Services sinkt in aller Regel
-mit steigender Komplexität.
-Die Wiederverwendung R eines Services steht, wie in Abb. 2.2 dargestellt, somit anti-
-proportional zu seiner Komplexität (Complexity) C.
-Die Wiederverwendung steht jedoch in einer starken Abhängigkeit zur Qualität der
-Dokumentation und hier im speziellen zur grafischen Modellierung der Services und
-ihrer Einbettung in eine Architektur. Je besser diese dokumentiert sind, desto höher
-kann eine Flexibilität eines Services schnell erkannt und falls notwendig erweitert wer-
-den. Hierdurch steigt die fachlich übergreifende Nutzbarkeit und somit die technische
-Wiederverwendung. Vorausschauend kann hier bereits gesagt werden, dass in einer SOA
-zwischen verschiedenen Arten von Services unterschieden wird. Dies ist ein weiterer
-Grund, dass an dieser Stelle keine allgemeingültige Aussage zur Wiederverwendung
-getroffen werden kann.
-2.2.1.3 Wirtschaftlicher Nutzen
-An dieser Stelle der Betrachtung eines wirtschaftlichen Nutzens ist eine klare Abgrenzung
-zwischen fachlicher Betrachtung und technischen Auswirkungen nicht möglich. Der
-wirtschaftliche Nutzen soll somit hier auch nur kurz analysiert werden.
-Bei meiner täglichen Arbeit hilft mir die folgende hier nicht zu beweisende Näherung:
-Je kleiner ein Service und somit seine Komplexität unter Einhaltung seiner
-erfolgreich abgeschlossenen Erfüllung der geforderten Funktionalität ist, desto
-größer ist die Wahrscheinlichkeit seiner Wiederverwendung.
-Die betriebswirtschaftliche Kennzahl für die Wirtschaftlichkeit (Economy) E eines Ser-
-vices steht somit antiproportional zu seiner Komplexität K.
-Der Antiproportionalitätsfaktor a kann hier von vielen Faktoren bestimmt werden.
-Dieser ist in jedem Projekt immer wieder neu zu bewerten, zu bestimmen und zu
-gewichten. Dies können sein: zeitliche und fachliche Verfügbarkeit von menschlichen
-(z.B. Deployment und Wartung des Services) und technischen Ressourcen (Performance).
-Eine einheitliche Definition und Vorgabe ist aufgrund unterschiedlicher Projekt- und
-Unternehmenssituationen nicht möglich.
-Es ist bei einer ersten Abschätzungsberechnung darauf zu achten, dass alle verwendeten
-Faktoren für a projekt- oder besser noch unternehmensweit gleich gewichtet und in der
-gleichen Einheit (Stunden h, Tage t,...) verwendet werden.
-So unnötig der Hinweise der gleichen Einheit auch erscheinen mag, so ist in Projekten
-jedoch immer wieder notwendig darauf hinzuweisen, dass „Äpfel nicht mit Birnen vergli-
-chen werden können.“
-Alternativ kann bei genauerer Betrachtung und Abschätzung der Wiederverwendung
-eine Gewichtung g von a durchgeführt werden:
-n
-Die Komplexität K wird aufgrund geforderter Funktionalitäten hauptsächlich bestimmt
-durch Aufwände der Analyse, Realisierung und Tests.
-Davon abgesehen, dass es in Projekten oft nur sehr schwer ist einen Bezug zwischen
-der Komplexität und der Aufwände herzustellen, wende ich auf Managementebene noch
-einen mathematisch und wissenschaftlich unsauberen Trick an, um eine noch stärkere
-Aussage der Wirtschaftlichkeit und der notwendigen Sensibilität bzgl. Zusammenhänge
-zu erhalten. Hierbei werden die einzelnen Faktoren für a und die Komplexitätsaufwände
-für K jeweils multipliziert, wodurch die Ergebnisse noch weiter von einander getrennt
-werden können.
-Es lässt sich somit ableiten, dass ein Service in seiner Komplexität möglichst klein sein
-sollte, damit seine Wiederverwendbarkeit hoch ist. Dies lässt sich jedoch immer nur
-in einer fachlichen Analyse der gewünschten Funktionalität beurteilen. Am genannten
-Beispiel kann z.B. die Prüfung des Kundenscorings auch bei der Bereitstellung eines
-anderen Produkts (z.B. TCP/IP-Anschluss) verwendet werden. Wäre die komplette
-Bereitstellung des Telefonanschlusses als ein einziger Service definiert worden, könnten
-Teile davon nicht wiederverwendet werden.
-Dem Gegenüber steht aber auch die Gefahr einer unverhältnismäßigen Vereinfachung
-und somit einer noch weiteren Aufteilung von erkannten Funktionalitäten. Der Aspekt
-„Unabhängigkeit“ darf hier auf keinen Fall außer Acht gelassen werden. Den Service
-„Anlegen des Neukunden“ weiter zu unterteilen (z.B. Erfassen des Namens, Erfassen des
-Vornamens, Erfassen des Geburtsdatums) wird nicht sinnvoll sein, da diese dann immer
-als Kombination ausgeführt werden müssen und zusätzliches fachliches Know-How bzgl.
-der notwendigen Abhängigkeiten erfordern. Weiter ergibt sich aus einer zu kleinteiligen
-Aufgliederung die nicht zu vernachläßigende Fehlerquelle, wie ich sie nenne, der „umfas-
-senden Unkenntnis“, da wichtige Schritte in der Verwendung der abhängigen Services
-vergessen werden könnten.
-Eine weitere Betrachtung der Wiederverwendbarkeit und des wirtschaftlichen Nutzens
-wird an dieser Stelle nicht erfolgen, da sie nicht zum Schwerpunkt dieser Arbeit gehört.
-Die Berücksichtigung möglicher IT-Realisierungen ist bei der Betrachtung des Begriffs
-„Service“ nicht zielführend und lenkt von der Analyse der benötigten Funktionalitäten und
-dem damit verbundenen unternehmens- bzw. projektübergreifenden gemeinsamen Ver-
-ständnis ab und führt im schlimmsten Fall zu einer Anpassung der Fachlichkeit aufgrund
-der vorhandenen (und evtl. eingeschränkten) technischen Umsetzungsmöglichkeiten.
-So darf hier behauptet werden, dass sogar manuell ausgeführte Tätigkeiten innerhalb
-einer geforderten Dienstleistung, für die eine IT-Realisierung zu einem bestimmten
-Zeitpunkt unwirtschaftlich sein kann, Teil einer SOA sein dürfen.
-Zur Erreichung einer möglichst idealen Komplexität C , aus der dann eine optimale
-ideal
-Wirtschaftlichkeit abgeleitet werden kann, ist eine Betrachtung der bereits vorgestellten
-Faktoren, vom Design bis zur Realisierung unerlässlich:
-• Komplexität (Complexity) C
-• Abhängigkeit (Dependency) D
-• Wiederverwendung (Reusability) R
-• Wirtschaftlichkeit (Economy) E
-Je höher die Wiederverwendbarkeit R eines Services ist, um so wirtschaftlicher ist dessen
-Realisierung.
-Ebenso gilt: Je unabhängiger ein Service, umso wirtschaftlicher kann dieser eingesetzt
-und wiederverwendet werden.
-Dem gegenüber steht, wie bereits aufgeführt, dass eine Wiederverwendung R eines
-Services mit steigender Komplexität C sinken kann, da davon ausgegangen werden kann,
-dass die angebotene Funktionalität nur in speziellen Situationen mit genau spezifizierten
-und notwendigen Voraussetzungen ausgeführt werden kann.
-Somit lässt sich die bereits bekannte Beziehung zwischen Wirtschaftlichkeit und idealer
-Komplexität C wie in Abb. 2.4 dargestellt abbilden. Diese Darstellung greift die
-ideal
-Abbildung eines Eutektikums, wie in Kap. 4.2.1 Schmelzpunktthese (S. 180) betrachtet
-auf.
-2.2.1.4 Fazit
-Zusammenfassend gilt somit: Services sind geforderte bzw. erforderliche Funktionalitäten
-zur automatisieren Ausführung von Dienstleistungen bei der eine technische Realisierung
-erst sekundär betrachtet werden sollte. Grafische Modelle und Diagramme sind hier ein
-sehr geeignetes Hilfsmittel, da aus diesen diese Informationen für die Wiederverwend-
-barkeit gegenüber einer möglichen Unabhängigkeit und somit zur idealen Komplexität
-abgeleitet werden können.
-2.2.2 ... orientierte ...
-Dieser Wortteil geht stark auf die Skalierung und Notwendigkeit eines Services ein. Eine
-Orientierung bedeutet „Ausrichtung“. Nun soll hier keine philosophische Abhandlung
-dieses Begriffes erstellt, sondern dieser nur unter dem Aspekt der Qualitätsverbesse-
-rung im Zusammenhang mit der Modellierung betrachtet werden. Ein Service ist kein
-Selbstzweck und darf nur aufgrund von fachlichen Anforderungen erstellt werden. Eine
-SOA erfordert neben notwendigen Änderungen in der Technologie (Programmierung,
-Deployment, Schneidung von Services,... ) unter Umständen auch ein Umdenken in
-Organisationen. Es darf behauptet werden, dass bei der ursprünglichen Definition des
-Paradigmas bewusste nicht der Begriff „Servicearchitekturen“ gewählt wurde. Die Orien-
-tierung muss an der Dienstleistung, die mit IT unterstützt werden soll, stattfinden und
-dieser folgen. Nicht die Technologie ist maßgebend, wie leider bei der überwiegenden Zahl
-an Büchern der Eindruck entsteht. Dies hat zur Konsequenz, dass bei der Einführung
-einer SOA nicht nur die vorhandene Technologie auf notwendige Änderungen überprüft
-werden muss, sondern auch die abzubildende Prozessabläufe, sonst wird die SOA nur
-auf eine geänderte Technologie reduziert. Die Kenntnis von Prozessabläufen ist eine
-wichtige Voraussetzung einer erfolgreichen SOA-Realisierung und somit auch absolut
-notwendiger Modellierungsinhalt. Sind die vorhandenen Prozessabläufe bekannt, so
-können daraus losgelöste und wie bereits oben definiert, unabhängige Funktionalitäten
-bereitgestellt werden, die manuelle Tätigkeiten automatisiert unterstützen. Betrachtet
-man Anwendungen aus den Anfängen der IT, so sind diese monolithischen Anwendungen,
-die als großer Klotz für eine Anwendung incl. der Datenhaltung notwendig waren, das
-schlechteste, was gebaut werden konnte. Erstaunlich, dass die Erfahrungen eines Henry
-Fords als Pionier des Fließbands mit Spezialisten, die oft nur wenige Arbeitsschritte,
-diese aber optimiert taten, erst so spät in die IT-Architekturen eingefloßen sind. (Hier
-sei die provozierende Anmerkung gestattet, dass die IT, die mit Abstand qualitativ und
-effizient schlechteste Wissenschaft ist, die aktuell betrieben wird und doch eigentlich
-eher den Status der kreativen Kunst inne hat.) Eine SOA sollte sich somit an die im
-Unternehmen bereitgestellten Dienstleistungen orientieren.
-Nach der bekannten Weisheit, dass niemand alles kann und es für gewisse Arbeiten
-Spezialisten gibt, orientiert sich eine SOA auch an dieser Spezialisierung. Beispielhaft wird
-hier auf das bekannte Facade-Pattern, wie in Abb. 2.5 dargestellt, verwiesen, das eines
-der wichtigstes Architekturmerkmale einer SOA ist. Das Facade-Pattern besagt, dass
-geforderte Dienstleistungen für den Nutzer so einfach wie möglich zur Verfügung gestellt
-werden sollen und eine eventuell notwendige Aufteilungen auf mehrere Teilschritte hinter
-dieser Facade erfolgen. Wie von Gama, Helm, Johnson und Vlissides4 [30] beschrieben,
-definieren Facaden „higher-level interfaces that makes the subsystem easier to use.“
-Dieses Pattern ist aber in einer SOA nicht mehr ausreichend, da neben der Kapselung
-von Funktionalitäten bzw. Zuständigkeiten z.B. auch administrative Aspekte, Auto-
-risierung und Authentifizierung eine wichtige Rolle einnehmen werden. Auch werden
-die ausführbaren Prozesse nicht mehr einer einzigen Anwendung zuordenbar sein, was
-4Die vier Autoren Gama, Helm, Johnson und Vlissides werden oft auch zusammengefasste als „Gang
-of Four“ (GoF) bezeichnet.
-es notwendig macht, dass eine übergeordnete „Ebene“ die Aufgabe der Koordination
-übernimmt. Dieses Pattern wird, wie in Abb. 2.6 dargestellt, somit um die Dimen-
-sion „Layer“ erweitert. Ein Layer kapselt nun nicht nur die zur Verfügung gestellten
-Funktionalitäten, sondern übernimmt Aufgaben der Facade wie z.B. um Aspekte der
-Transaktionssteuerung, Zugriffsbegrenzung, Load balancing, Ausfallsicherheit, usw.. Mit
-letzterem kann z.B. gesteuert werden, dass ein Service automatisch gestartet und bereit
-gestellt wird, wenn der reguläre Service aufgrund von Ausnahmesituationen nicht zur
-Verfügung steht.
-Gewöhnlich laufen fachliche Prozesse in Unternehmen über mehrer Abteilungen ab, in
-denen wiederholende Tätigkeiten von Personen in genau definierten Rollen ausgeführt
-werden. Ein Kunde kennt diese einzelnen Arbeitsschritte in den allermeisten Fällen nicht
-und ihm ist es auch nicht möglich, diese ohne weiteres in Anspruch zu nehmen, da sie für
-ihn nicht nur gekapselt, sondern auch mit Zugangsbeschränkungen geschützt sind. Auch
-die Zuständigkeit der Sicherung, dass Prozesse nur dann abgeschlossen werden, wenn diese
-komplett fehlerfrei durchlaufen wurden, liegt nun nicht mehr, wie vom Facade-Pattern
-bekannt in der Facade, sondern wurde auch in eine eigene Transaktionssteuerung verlagert.
-Vergleichbar mit einer Qualitätssteuerung in einer kompletten Produktionskette, die
-unabhängig von der Produktionssteuerung diese gesamtheitlich umfassend überwacht
-eingreift und fehlerhafte Produkte aus der Produktionskette nimmt und diese von einer
-Lieferung ausschließt.
-Technologisch betrachtet fasst dies Martin Fowler [25] zusammen mit: „It encapsulates
-the application’s business logic, controlling transactions and coordinating responses in
-the implementation of its operations.“
-Als Beispiel sei hier eine One-Klick-Bestellung in Onlineshops genannt. Ein Produkt wird
-im Onlineshop gesucht und kann mit nur einem Klick, vorausgesetzt die notwendigen
-Rechnungsdaten sind dem Shopbetreiber bereits bekannt, bestellt werden. Von der
-Zugangssicherung, bei der sichergestellt wird, dass ein Kunde den Layer der Security
-erfolgreich passiert hat, über einen kompletten transaktionsgestützten Bestellprozess, bis
-zum Versand, werden vor dem Kunden alle einzelnen notwendigen Aktionen verborgen.
-Konnte auch nur ein Schritt in der kompletten Bestellung nicht fehlerfrei ausgeführt
-werden, so muss sicher gestellt werden, dass von der Warenwirtschaft bis zur Belastung
-des Kundenkontos die Zustände nach der fehlgeschlagen Bestellung identisch sind mit
-denen vor der Bestellung.
-Der Begriff betrachtet somit die Zusammenarbeit von Dienstleistungen im Unternehmen
-und orientiert sich beim Design und Komposition der bereitgestellten Dienstleistungen
-zu einer Gesamtarchitektur am realen Workflow im Unternehmen.
-Zusammenfassend kann hier das Zitat „Form follows function“ von Horatio Greenough
-als Leitsatz aufgeführt werden, dass der fachliche Prozess und dessen Notwendigkeit die
-treibende Kraft in einer SOA sein sollten und nicht wie oft angenommen, die technische
-Verfügbarkeit von Systemen im Unternehmen.
-2.2.3 ... Architektur
-Der Begriff „Architektur“ in dem Synonym „SOA“ beschränkt sich nicht, wie oft ange-
-nommen, nur auf die Möglichkeiten eines Einsatz und der Verwendung von technischen
-Komponenten bestehend z.B. aus Serverlandschaften, Firewalls, Datenbanken, Loadba-
-lancern und weiterer Hardware. Christian Röder[88] zitiert: „Eine Architektur beschreibt
-die Struktur bzw. die Strukturen eines Systems. Sie besteht aus den Komponenten
-des Systems, deren nach außen sichtbaren Eigenschaften, sowie deren statischen und
-dynamischen Beziehungen untereinander.“[9] Ich möchte im Rahmen dieser Arbeit
-diese Sichtweise erweitern, indem der Raum der Architektur eine gesamtheitliche Be-
-trachtung erhält, die von den Geschäftsanforderungen5 und damit verbundene fachliche
-Prozessbeschreibungen, sowie der damit resultierenden technischen Umsetzung bis zum
-Deployment (der technischen Bereitstellung) reicht. Architektur, ist jedoch kein Selbst-
-zweck und sollte auch immer auf das notwendige Maß reduziert werden. Nur was dem
-Kunden bzw. dem Unternehmen dient, ist wert umgesetzt zu werden. Josuttis [46] fasst
-dies in einem Satz zusammen: „Eine Architektur ist notwendig, um all die Möglichkeiten
-von SOA auf ein sinnvolles Maß einzuschränken.“
-5Technologieunabhängige Beschreibung einer umzusetzenden Anforderung, die zur Erreichung eines
-unternehmerischen Ziels notwendig ist.
+
+

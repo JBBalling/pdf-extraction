@@ -1,58 +1,108 @@
 Karlsruher Schriften
 zur Anthropomatik
+
+
 Band 60
+
+
 Patrick Philipp
+
+
 Über die Formalisierung und Analyse
 medizinischer Prozesse im Kontext von
 Expertenwissen und künstlicher Intelligenz
 
+
 Patrick Philipp
+
+
 Über die Formalisierung und Analyse
 medizinischer Prozesse im Kontext von
 Expertenwissen und künstlicher Intelligenz
+
+
 Karlsruher Schriften zur Anthropomatik
 Band 60
 Herausgeber: Prof. Dr.-Ing. habil. Jürgen Beyerer
+
+
 Eine Übersicht aller bisher in dieser Schriftenreihe
 erschienenen Bände finden Sie am Ende des Buchs.
+
+
 Über die Formalisierung und
 Analyse medizinischer Prozesse
 im Kontext von Expertenwissen
 und künstlicher Intelligenz
+
+
 von
 Patrick Philipp
+
+
 Karlsruher Institut für Technologie
 Institut für Anthropomatik und Robotik
+
+
 Über die Formalisierung und Analyse medizinischer Prozesse
 im Kontext von Expertenwissen und künstlicher Intelligenz
+
+
 Zur Erlangung des akademischen Grades eines Doktors der Ingenieur-
 wissenschaften von der KIT-Fakultät für Informatik des Karlsruher
 Instituts für Technologie (KIT) genehmigte Dissertation
+
+
 von Patrick Philipp
+
+
 Tag der mündlichen Prüfung: 16. Februar 2023
 Erster Gutachter: Prof. Dr.-Ing. habil. Jürgen Beyerer
 Zweiter Gutachter: Prof. Dr. Michael Beigl
+
+
 Impressum
+
 
 Karlsruher Institut für Technologie (KIT)
 KIT Scientific Publishing
 Straße am Forum 2
 D-76131 Karlsruhe
+
+
 KIT Scientific Publishing is a registered trademark
 of Karlsruhe Institute of Technology.
 Reprint using the book cover is not allowed.
+
+
 www.ksp.kit.edu
+
+
 This document – excluding parts marked otherwise, the cover, pictures and graphs –
 is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0):
 https://creativecommons.org/licenses/by/4.0/deed.en
+
+
 The cover page is licensed under a Creative Commons
 Attribution-No Derivatives 4.0 International License (CC BY-ND 4.0):
 https://creativecommons.org/licenses/by-nd/4.0/deed.en
+
+
 Print on Demand 2023 – Gedruckt auf FSC-zertifiziertem Papier
+
+
 ISSN 1863-6489
+
+
 ISBN 978-3-7315-1289-9
+
+
 DOI 10.5445/KSP/1000156884
+
+
 Kurzfassung
+
+
 Die Digitalisierung hat bereits viele Bereiche der Wirtschaft und des gesell-
 schaftlichen Lebens verändert. Auch unterliegen die Aspekte des Gesund-
 heitswesens und der klinischen Praxis einem digitalen Wandel. Dabei steigt
@@ -61,12 +111,16 @@ und zur Auswertung medizinischer Daten. In diesem Zuge gewinnen die Fast
 Healthcare Interoperability Resources (FHIR) zunehmend an Bedeutung – in
 Deutschland werden sie beispielsweise in Zusammenhang mit der Elektroni-
 schen Patientenakte (ePA) eingesetzt.
+
+
 Im Hinblick auf diese Entwicklungen, wird FHIR in der vorliegenden Disser-
 tation zur Wissensrepräsentation genutzt. Dabei wird in einem ersten Bei-
 trag die probabilistische Erweiterung eines FHIR DataRequirements vollzo-
 gen. Die Erweiterung erlaubt es, Observationswahrscheinlichkeiten zu hin-
 terlegen und so ein Lücke bei der bisherigen Prozessmodellierung in FHIR zu
 schließen.
+
+
 Darüber hinaus wird in dieser Arbeit eine strukturierte Vorgehensweise zur
 Wissensakquisition und -formalisierung von medizinischen Prozessen im Be-
 reich der Diagnostik sowie der Therapie vorgestellt. Das Konzept beschreibt
@@ -75,9 +129,13 @@ den Wissenserwerb dienen Ablaufmodelle, die für alle Seiten, sprich: sowohl
 für den medizinischen als auch für den technischen Domänenexperten, ver-
 ständlich sind. Dies ist eine wichtige Voraussetzung, um in der tatsächlichen
 Praxis gemeinsam das Prozesswissen formalisieren zu können.
+
+
 Grundsätzlich können verschiedene Ablaufmodelle zur Formalisierung her-
 angezogen werden. In dieser Arbeit werden, aufgrund diverser positiver Ei-
 genschaften, UML Aktivitätsdiagramme exemplarisch eingesetzt.
+
+
 Für das dargestellte Konzept können aber auch andere Modelle, wie z.B. Er-
 eignisgesteuerte Prozessketten (EPK), genutzt werden. Ermöglicht wird dies
 durch insgesamt drei Transformationsschritte. Sie entkoppeln die Ablaufmo-
@@ -87,6 +145,8 @@ Netze und später in Prozessbäume überführt. Die anschließende Überfüh-
 rung eines Prozessbaums in einen FHIR-Plan ist Beitrag dieser Arbeit. Hierin
 wird gezeigt, dass die dargelegte Transformation sowohl für Hin- als auch für
 Rückrichtung strukturerhaltend ist.
+
+
 Darauf aufbauend wird eine neu entwickelte Transformation eines FHIR-
 Plans in ein expertenbasiertes Dynamisches Bayes-Netz (DBN) zur Phasen-
 erkennung besprochen. Das Ergebnis wird anhand zweier prototypischer
@@ -98,41 +158,71 @@ einer Leistungsbewertung unterzogen. Zum Einsatz kommt hierfür eine ver-
 schachtelte Kreuzvalidierung. Unter Berücksichtigung der gewählten Werte
 (Precision, Recall, Jaccard-Score) zeigt sich die Überlegenheit des Ansatzes
 bezüglich der Vergleichsmodelle.
+
+
 Danksagung
+
+
 Die vorliegende Dissertation entstand im Rahmen meiner Tätigkeit als wis-
 senschaftlicher Mitarbeiter sowohl am Lehrstuhl für Interaktive Echtzeitsys-
 teme (IES) des Karlsruher Instituts für Technologie (KIT), als auch in der Ab-
 teilung Interaktive Analyse und Diagnose (IAD) des Fraunhofer-Instituts für
 Optronik, Systemtechnik und Bildauswertung (IOSB).
+
+
 An dieser Stelle möchte ich mich bei allen bedanken, die mich während meiner
 Promotion begleitet und unterstützt haben.
+
+
 Insbesondere danke ich den Personen, die mir diese Arbeit ermöglicht ha-
 ben: Meinem Doktorvater und Institutsleiter des Fraunhofer IOSB Professor
 Dr.-Ing. habil. Jürgen Beyerer für die Förderung meiner Arbeiten, die inten-
 siven Diskussionen in Freitagsrunden und Sommerseminar sowie das stets
 entgegengebrachte Vertrauen. Ebenso danke ich Herrn Professor Dr. Michael
 Beigl für die Übernahme des Koreferats und dem Interesse an meiner Arbeit.
+
+
 Darüber hinaus gebührt mein Dank den Kolleginnen und Kollegen des Lehr-
 stuhls, der Abteilung IAD und insbesondere den Mitarbeitenden meiner For-
 schungsgruppe Decision Support Systems am Fraunhofer IOSB.
+
+
 Meiner Frau Lena gilt ein spezieller Dank für ihr entgegengebrachtes Ver-
 ständnis und genial-denkwürdige Diskussionen.
+
+
 1 Einleitung
+
+
 Künstliche Intelligenz (KI) wird viele Aspekte der klinischen Praxis und des
 Gesundheitswesens entscheidend mitprägen. Dies betrifft nach [Yu18] u.a.:
+
+
 • die Unterstützung bei der Diagnosestellung,
+
+
 • die Assistenz bei chirurgischen Interventionen,
+
+
 • die Auswertung der Ergebnisse bildgebender Verfahren,
+
+
 • die Unterstützung in der Arzneimittelforschung.
+
+
 Die Beiträge der vorliegenden Dissertation zur Formalisierung und Analyse
 von medizinischen Prozessen lassen sich in den beiden erstgenannten Berei-
 chen verorten (vgl. Abbildung 1.1). Sprich: der Bestimmung der zugrunde-
 liegenden Erkrankung eines Patienten und der Assistenz bei chirurgischen
 Behandlungsmaßnahmen.
+
+
 Als Grundlage für Künstliche Intelligenz (KI)-Methoden stehen klassischer-
 weise große Datenmengen im Fokus. Im Bereich der bildgebenden Verfahren
 können beispielsweise anhand großer Lern-, Validierungs- und Teststichpro-
 ben Tumore in Bildschichten segmentiert oder Anomalien erkannt werden.
+
+
 In anderen Bereichen stehen geeignete Daten nur eingeschränkt oder un-
 strukturiert zur Verfügung. Zum Beispiel liegen bei Diagnosestellung häufig
 große Teile der Daten in Form von Freitexten vor und sind damit für daten-
@@ -141,14 +231,20 @@ schätze mittels Methoden der KI zu bergen, wird deswegen üblicherweise ei-
 ne Strukturierung der Daten angestrebt. In der Vergangenheit entstand so ein
 ganzer Strauß an verschiedenen Insellösungen zur Strukturierung und Spei-
 cherung. Gleichzeitig erschweren Insellösungen aber Daten auf weltweiter
+
+
 Abbildung 1.1: Wichtige Aspekte auf dem Gebiet des Gesundheitswesens und der klinischen
 Praxis, in denen künstliche Intelligenz nach [Yu18] einen prägenden Einfluss
 haben wird. Die Beiträge der vorliegenden Dissertation liegen in den markierten
 Bereichen d.h. bei der Unterstützung der Diagnosestellung sowie der Assistenz
 bei chirurgischen Interventionen (vgl. Marker A).
+
+
 Ebene zu sammeln, auszutauschen und für nachfolgende Auswertungen zu
 nutzen. Abseits von Insellösungen entstand somit der Bedarf an weltweit ak-
 zeptierbaren Lösungen und Interoperabilität.
+
+
 In diesem Zuge gewannen die sogenannten Fast Healthcare Interoperability
 Resources (FHIR) in den letzten Jahren zunehmend an Bedeutung [Leh19a,
 Hub20]. Schon im Jahr 2018 verständigten sich die Technologieunternehmen
@@ -159,18 +255,26 @@ und angeschlossene Projekte bereits explizit genannt [Inf18, Leh19a], denn
 sie sollen es ermöglichen, medizinische Daten mit Methoden der KI weltweit,
 sowie unternehmensübergreifend effektiv und effizient nutzbar zu machen
 [Leh19b].
+
+
 Weiterhin ergab sich speziell in Deutschland die Frage nach akzeptierbaren
 Softwarelösungen im Hinblick auf die Elektronische Patientenakte (ePA), de-
 ren Entwicklung durch entsprechende Gesetze in den Jahren zuvor angeregt
 wurden. Im Jahr 2019 stellten hierzu [Plo19] ein Konzept vor, welches FHIR
+
+
 nutzt, um durch eine möglichst vertrauenswürdige Lösung eine hohe Akzep-
 tanz bei den Benutzern zu erreichen. Heute, im Jahr 2022, basieren Schnitt-
 stellen, sowie die auf der ePA ablegbaren und in Bearbeitung befindlichen
 medizinischen Informationsobjekte (MIO), wie beispielsweise Impfpass, Mut-
 terpass oder das Zahnärztliche Bonusheft, auf FHIR [Kas21].
+
+
 Abgeleitet aus den genannten Entwicklungen, nutzt die vorliegende Disserta-
 tion FHIR als Vehikel zur Wissensrepräsentation im Rahmen der Prozessmo-
 dellierungen und erweitert dieses wo notwendig.
+
+
 Besonders in Bereichen, die datenarm aber wissensreich sind, kann darüber
 hinaus das verfügbare Expertenwissen eine entscheidende Rolle spielen. Dies
 gilt beispielsweise für medizinische Prozesse im Rahmen der Diagnosestel-
@@ -180,11 +284,17 @@ werden. Wichtig werden solcherlei Überlegungen vor allem dann, wenn
 am Ende eine praxistaugliche Assistenz im Rahmen medizinischer Prozesse
 konzipiert und bereitgestellt werden soll. Aus diesem Grunde beschäftigen
 sich die Beiträge der vorliegenden Arbeit auch mit diesem Aspekt.
+
+
 1.1 Eigene Beiträge
+
+
 Einer der Beiträge dieser Dissertation ist eine strukturierte Vorgehensweise
 zur Wissensakquisition und -formalisierung von medizinischen Prozessen für
 eine KI-basierte Entscheidungsunterstützung im Bereich der medizinischen
 Diagnostik und Therapie, vgl. hierzu Abbildung 1.2.
+
+
 Medizinische Prozesse werden dabei durch Prozessmodelle beschrieben. Hier-
 zu muss das vorhandene Expertenwissen im Dialog mit dem Experten for-
 malisiert werden. Ziel der Formalisierung ist letztlich ein für alle Seiten ver-
@@ -192,6 +302,8 @@ ständliches Ablaufmodell, welches den Ablauf der einzelnen Prozessschritte
 des medizinischen Prozesses beschreibt. Grundsätzlich können für ein sol-
 ches Ablaufmodell unterschiedliche Prozessmodelle herangezogen werden.
 Aufgrund ihrer Verständlichkeit auch für nicht-technische Nutzer eignen sich
+
+
 Abbildung 1.2: Die Formalisierung des menschlichen Wissens kann im Dialog der medizini-
 schen und technischen Domänenexperten vollzogen werden. Ergebnis ist ein
 für alle Seiten verständliches Ablaufmodell, welches über Zwischenmodelle in
@@ -199,6 +311,8 @@ die FHIR-basierte Wissensbasis gelangt. Zusätzlich können Methoden zur Ent-
 deckung von Abläufen (vgl. Process Mining) eingebunden werden. Aus der Wis-
 sensbasis können wiederum Abgleichmodelle für die Bereitstellung von Assis-
 tenzfunktionen erzeugt werden.
+
+
 insbesondere grafische Prozessmodelle, wie beispielsweise Geschäftsprozess-
 modell und -notation (BPMN), Ereignisgesteuerte Prozessketten (EPK) oder
 UML Aktivitätsdiagramme [Ko09]. In dieser Arbeit werden UML Aktivitäts-
@@ -208,46 +322,74 @@ len über Zwischenmodelle entkoppelt, sodass diese mit alternativen Modellen
 zusammenspielen können. Weiterhin bieten die Zwischenmodelle eine Naht-
 stelle zu unterschiedlichen Techniken für das datenbasierte Entdecken von
 Prozessen.
+
+
 Die in den Prozessmodellen enthaltene Information muss schließlich für eine
 Wissensbasis verfügbar gemacht werden. Dafür werden die im Expertendia-
 log erstellten UML Aktivitätsdiagramme in FHIR überführt, sodass die Abläu-
 fe schließlich als FHIR-Pläne hinterlegt werden können. Dies erfolgt durch
+
+
 drei Transformationen, von denen zwei bereits Stand der Technik sind. Die
 dritte Transformation stellt einen eigenen Beitrag dar – hierin werden Pro-
 zessbäume und FHIR-Pläne hin- und rücktransformiert.
+
+
 In einem weiteren Beitrag wird eine probabilistische Erweiterung einer FHIR
 Ressource vorgestellt und schließlich wird in einem finalen Beitrag ein pro-
 babilistisches Abgleichmodell für die Assistenz im Rahmen chirurgischer In-
 terventionen abgeleitet. Das Abgleichmodell wird dann anhand zweier proto-
 typischer Vertreter evaluiert.
+
+
 1.2 Gliederung
+
+
 Die vorliegende Arbeit enthält sechs Kapitel, deren Inhalt nachstehend skiz-
 ziert wird:
+
+
 Kapitel 2 beleuchtet die Grundlagen der wissensbasierten Modellierung.
 Hierbei wird zunächst auf Expertensysteme und deren Zusammen-
 hang mit Künstlicher Intelligenz eingegangen. Weiterhin werden
 Bayes-Netze als Problemlösungskomponente ausführlich erläutert
 und schließlich die sogenannten Fast Healthcare Interoperability
 Resources zur Wissensrepräsentation dargestellt sowie erweitert.
+
+
 Kapitel 3 widmet sich den Begrifflichkeiten der Prozessmodellierung und
 stellt Notationselemente sowie Verschaltungen von Petri-Netzen,
 UML Aktivitätsdiagrammen als auch Prozessbäumen vor.
+
+
 Kapitel 4 stellt die entwickelte Transformation zwischen Prozessbäumen und
 FHIR dar. Zusätzlich wird die Strukturerhaltung bei Hin- und Rück-
 transformation beleuchtet.
+
+
 Kapitel 5 beschreibt die medizinischen Hintergründe zweier prototypischer
 chirurgischer Intervention: Zum einen die laparoskopische Chole-
 zystektomie und zum anderen die totale Endoprothese der Hüfte.
 Darauf aufbauen wird auf die Konstituenten des zugrunde liegen-
 den Problems und die Bewertung der Problemlösung eingegangen.
+
+
 Schließlich wird ausgehend vom Stande der Technik der eigene Bei-
 trag umrissen und schließlich detailliert vorgestellt.
+
+
 Kapitel 6 fasst die Erkenntnisse zusammen und gibt einen Ausblick.
+
+
 Diese Arbeit enthält neben den beschriebenen Kapiteln einen medizinischen
 Glossar (ab Seite 207), ein Symbolverzeichnis (ab Seite 209), ein Literaturver-
 zeichnis (ab Seite 215), ein Verzeichnis der eigenen Publikationen (ab Seite
 237) und ein Verzeichnis betreuter studentischer Arbeiten (ab Seite 245).
+
+
 2 Wissensbasierte Modellierung
+
+
 Wissensbasierte Modellierung steht in engem Zusammenhang mit dem For-
 schungsgegenstand der Wissensbasierte Systeme (WBS), die in Kapitel 2.1
 vorgestellt werden. Speziell auf den Aufbau von Expertensystemen wird im
@@ -258,7 +400,11 @@ wird in Kapitel 2.4 gemeinsam mit Bayes-Netze als Problemlösungskompo-
 nente eingangen. Schließlich werden als Grundlage zur Wissensrepräsentati-
 on die sogenannten Fast Healthcare Interoperability Resources (FHIR) in Ka-
 pitel 2.5 vorgestellt.
+
+
 2.1 Wissensbasierte Systeme
+
+
 Über die Zeit hinweg finden sich verschiedene Definitionen des Begriffs
 WBS [Ort77, Kur92, Ake09, Pup13b]. Allen gemein ist die Aufspaltung der
 Architektur des Systems in zwei Bereiche (vgl. Abbildung 2.1). Auf der einen
@@ -266,40 +412,64 @@ Seite steht die sogenannte Wissensbasis mit spezifischem Wissen über den
 Anwendungsbereich. Dem gegenüber steht die tatsächliche Verarbeitung des
 Wissens (Wissensverarbeitung) in Form einer anwendungsunabhängigen
 Problemlösungskomponente.
-An Anlehnung an die Definitionen aus [Ort77, Kur92, Ake09, Pup13b], wird
+
+
+An Anlehnung an die Definitionen aus [Ort$$$77$$$, Kur$$$92$$$, Ake$$$09$$$, Pup$$$13$$$b], wird
 in der vorliegenden Arbeit ein WBS definiert als:
+
+
 Definition 2.1. Ein WBS ist ein System oder Programm, bei dem das Wis-
 sen über ein Anwendungsgebiet (Wissensbasis) getrennt ist von allgemeinen
 Problemlösungsmethoden (Wissensverarbeitung).
+
+
 Diese Trennung hat zwei Vorteile: Zum einen können allgemeine Methoden
 zur Wissensverarbeitung herangezogen werden, die unabhängig von der Wis-
 sensbasis eines konkreten Anwendungsfalles sind und die auch auf weitere
 Anwendungen übertragbar sind. Zum anderen kann die Wissensbasis aktua-
 lisiert und erweitert werden, ohne dass dabei die Algorithmen der Wissens-
 verarbeitung angepasst werden müssen [Kol09].
+
+
 Abbildung 2.1: AuchwennesverschiedenartigeDefinitionendesBegriffsWBSgibt,istdieTren-
 nung zwischen Fachwissen über das Anwendungsgebiet des WBS und der ei-
 gentlichen Wissensverarbeitung mittels allgemeiner Problemlösungsmethoden
 allen Definitionen gemein.
+
+
 2.2 Expertensysteme
+
+
 In der Literatur findet sich üblicherweise eine Abgrenzung des Begriffs des
-Expertensystems zum Begriff WBS. Hierbei existieren verschiedene Sicht-
+FOOTNOTE:Expertensystems zum Begriff WBS. Hierbei existieren verschiedene Sicht-
 weisen, von einigen Autoren werden die Begriffe auch synonym verwendet
-[Hop92]. Eine gängige Möglichkeit ein Expertensystem von einem WBS ab-
+[Hop$$$92$$$]. Eine gängige Möglichkeit ein Expertensystem von einem WBS ab-
 zugrenzen ist die Herkunft des im System repräsentierten Wissens. Dabei sind
 Expertensysteme spezielle WBS, deren Wissen von Experten stammt [Wat86].
+
+
 Sie können somit als Teilmenge der WBS angesehen werden. Bei dieser Defi-
 nition bleibt es Auslegungssache, ob die Wissensbasis eines Expertensystems
 ausschließlich aus Expertenwissen bestehen muss. Denkbar ist auch eine da-
 tengetriebene Erweiterung der Wissensbasis durch Methoden des maschinel-
 len Lernens.
+
+
 In der vorliegenden Arbeit wird für Expertensysteme eine ähnliche Definition
 nach Puppe herangezogen [Pup13b]:
+
+
 Definition 2.2. Ein Expertensystem ist ein WBS, mit dem die Schlussfolge-
 rungsfähigkeit und das bereichsspezifische Wissen von Experten nachgebil-
 det werden soll.
+
+
 Diese Definition umfasst damit zwei Aspekte:
+
+
 1. Expertensysteme sind Teilmenge der WBS.
+
+
 2. Der Begriff Expertensystem entstammt einer externen Sichtweise und
 beschreibt, wie die Umwelt das System wahrnimmt. Speziell bleibt da-
 bei frei, wie das nachzubildende bereichsspezifische Wissen erworben
@@ -308,75 +478,113 @@ tenbanken, Bücher, Leitlinien oder menschliche Experten [Bei19]), so-
 wie die (teilweise) Generierung der Wissensbasis mit dem Werkzeug
 des Maschinellen Lernens (beispielsweise Erlernen von Entscheidungs-
 bäumen zur Entwicklung der Wissensbasis [Bei19]) .
+
+
 Die Architektur eines Expertensystems besteht aus einzelnen Komponenten,
 die in einem Austausch miteinander stehen. Grundlegend sind aber nur die
 Wissensbasis und die Problemlösungskomponente.
+
+
 Die Wissensbasis bildet dabei den Kern eines Expertensystems – in ihr wird
 das benötigte Fachwissen über das Anwendungsgebiet des Expertensystems
-in einer geeigneten Repräsentationsform abgelegt [Kur92]. Unabhängig von
+FOOTNOTE:in einer geeigneten Repräsentationsform abgelegt [Kur92]. Unabhängig von
 der Art der Wissensrepräsentation kann der Inhalt einer Wissensbasis nach
+
+
 [Pup13a] weiter unterteilt werden in sogenanntes fallspezifisches Wissen und
 bereichsbezogenes Expertenwissen¹.
+
+
 Dabei bezieht sich das fallspezifische Wissen ausschließlich auf eine konkrete,
 gerade betrachtete Problemstellung im Anwendungsgebiet des Expertensys-
 tems. Fallspezifisches Wissen kann aufgrund von Beobachtungen – im me-
 dizinischen Bereich beispielsweise aufgrund von Untersuchungsergebnissen
 eines Patienten – vorliegen. Das fallspezifische Wissen kann vom Benutzer
-des Expertensystems während der Nutzung eingegeben [Kna93] oder ohne
+des Expertensystems während der Nutzung eingegeben [Kna$$$93$$$] oder ohne
 direkte Benutzerbeteiligung erhoben werden [Bie13].
+
+
 Das bereichsbezogene Expertenwissen bezieht sich im Gegensatz zum fall-
 spezifischen Wissen auf Wissen, das über einen einzelnen konkreten Fall aus
 dem Anwendungsgebiet des Expertensystems hinaus geht – es meint damit
 Wissen, das alle Fälle aus dem Anwendungsgebiet umfasst. Es kann sich da-
 bei um Fachwissen der Domänenexperten handeln – wie beispielsweise das
 Wissen über den Ablauf einer Operation.
+
+
 Am Anfang der Entwicklung eines Expertensystems steht die Akquisition des
 Fachwissens aus der Anwendungsdomäne. Zur Akquisition des Wissens dient
 im Expertensystem eine sogenannte Wissenserwerbskomponente², die den
-Aufbau der Wissensbasis unterstützt [Bei19, Pup13b].
+Aufbau der Wissensbasis unterstützt [Bei$$$19$$$, Pup$$$13$$$b].
+
+
 Da unterschiedliche Quellen für den Wissenserwerb in Frage kommen
 [Bei19], z.B. Leitlinien oder menschliche Experten, muss das Expertenwissen
 aus diesen Quellen im Schritt der Wissensakquisition geeignet erhoben und
 in einem Wissensmodell dargestellt werden können [Kur92].
+
+
 Eine nicht zu unterschätzende Herausforderung ist dabei die Akquisition von
 Wissen mittels Expertendialog [Alt13]: Da das domänenspezifische Wissen
 eines Experten häufig nicht bewusst vorhanden ist, sondern unbewusst ange-
 wandt wird, gestaltet sich dessen Ermittlung und Strukturierung in der Praxis
-¹ Hinweis: Beierle unterteilt ähnlich in fallspezifisches Wissen und regelhaftes Wissen [Bei19].
+
+
+FOOTNOTE:¹ Hinweis: Beierle unterteilt ähnlich in fallspezifisches Wissen und regelhaftes Wissen [Bei19].
 Wobei letzteres im Sinne eines allgemeinen bzw. bereichsbezogenen Wissens zu interpretieren
 ist und nicht im Sinne der Form der Repräsentation in Form von Regeln.
+
+
 ² Histinuwnedisn:icEhint iigmeSAinuntoerdeenrsFporremchdeenr hRieeprräasuecnhtavtoionndinerFWormissvenonsaRkeqgueislnit.ionskomponente (vgl.
 [Kur92, Alt13]).
+
+
 häufig schwierig. Gleichzeitig kann das Ergebnis der Wissensakquisition aber
 maßgeblich für den Erfolg des Expertensystems verantwortlich sein. Der Pro-
 zess des Wissenserwerbs sollte daher sorgfältig vorbereitet und durchgeführt
 werden [Alt13].
+
+
 Deswegen ist einer der Beiträge dieser Arbeit eine strukturierte Vorgehens-
 weise für die Wissensakquisition und -formalisierung für Expertensysteme
 im Bereich der medizinischen Diagnostik und Therapie.
+
+
 2.3 Künstliche Intelligenz
+
+
 Als Ursprung des Forschungsfeldes KI wird üblicherweise eine Arbeitstagung
 zur Maschinenintelligenz angesehen, die im Jahre 1956 von John McCarthy
 am Dartmouth College in New Hampshire organisiert wurde [McC04, Rus09].
 Dabei erklärte McCarthy sinngemäß: „Ziel der KI ist es, Maschinen zu entwi-
 ckeln, die sich verhalten, als verfügten sie über Intelligenz“¹.
+
+
 Als eine Möglichkeit eine solche Maschinenintelligenz zu messen, galt zu-
 nächst der Turing Test. Dabei tritt ein menschlicher Fragesteller mit zwei
 verschiedenen Gesprächspartnern in Kontakt, zu denen er weder Sicht- noch
 Hörkontakt hat.
+
+
 Über eine Tastatur und einen Bildschirm kann er mit den Gesprächspartnern
 kommunizieren. Kann der Fragesteller auch nach intensiver Befragung nicht
 sagen, welcher der beiden Gesprächspartner die Maschine ist, so hat die Ma-
 schine den Turing Test bestanden. Der Maschine wird dann ein dem Men-
 schen ebenbürtiges Denkvermögen unterstellt [Tur50]².
-¹ Hinweis: Schon zuvor hatte Alan Turing die zentrale Frage „Können Maschinen denken?“ for-
+
+
+FOOTNOTE:¹ Hinweis: Schon zuvor hatte Alan Turing die zentrale Frage „Können Maschinen denken?“ for-
 muliert [Tur09]. Eine Frage die Hermann Schmidt sowie Norbert Wiener (vgl. das Wiener Filter
 bzw. Wiener-Kolmogoroff-Filter) mit dem Begriff „Kybernetik“ verknüpften [Wie48]. Nachhal-
 tig in den 1960er Jahren geprägt von Karl Steinbuch [Ste65], ist die Kybernetik heute weitest-
 gehend im Begriff der KI aufgegangen.
+
+
 ² Hgeihnewnedisi:mDBieegTreisfftedregrebKnIiassuefgheägnagnegnena.lso nicht von der Fähigkeit der Maschine ab, „korrekte“
 Antworten im Hinblick auf die Konstituenten des Problems zu geben, sondern nur davon, wie
 sehr ihre Antworten denen eines Menschen (bzw. der Menschen der Stichprobe) ähneln.
+
+
 Jedoch wurde, insbesondere von dem Philosophen John Searle, Kritik am Tu-
 ring Test hervorgebracht: er prüfe nur auf Funktionalität und nicht auf Ver-
 ständnis. Um dies darzustellen, zog Searle das Gedankenexperiment des „Chi-
@@ -386,6 +594,8 @@ sich so verhält, als verstünde sie Chinesisch, d.h. die Maschine kann basieren
 auf einem chinesischen Eingabetext einen passenden Ausgabetext so bereit-
 stellen, dass sie im Turing Test einen chinesischen Muttersprachler überzeu-
 gen kann.
+
+
 Laut Searle stellt sich nun die Frage, ob eine solche Maschine tatsächlich Chi-
 nesisch versteht, oder ob sie das Verständnis des Chinesischen nur simuliert.
 Um diesen Unterschied zu verdeutlichen, beschreibt Searle eine angepasste
@@ -401,18 +611,26 @@ des Fragestellers auf der Ebene der Zeichenerkennung mit den Fragen in der
 Schriftsammlung vergleichen und so die passenden Antwortzeichen heraus-
 finden. Hierbei muss er weder Frage noch Antwort verstehen, kann aber sei-
 nem Gegenüber vorgaukeln, er verstünde Chinesisch.
+
+
 Kann also analog eine Maschine auf in chinesischer Schrift gestellte Fragen
 mit passenden chinesischen Schriftzeichen antworten, sodass sie den Turing
 Test besteht, kann hierdurch noch nicht angenommen werden, dass die Ma-
 schine tatsächlich versteht was sie übersetzt – also eine Art von Bewusstsein
-für die Problemstellung hat [Sea80].
+für die Problemstellung hat [Sea$$$80$$$].
+
+
 2.3.1 Sichten
+
+
 Ausgehend von diesen frühen Versuchen den Begriff der KI zu fassen und
 zu vermessen, haben sich über die Zeit eine Vielzahl an Definitionen entwi-
 ckelt, die teils kontrovers diskutiert werden [Mon20]. In Folge findet sich in
 der Literatur auch heute keine einheitliche Definition der KI (engl. Artifici-
 al Intelligence (AI)). Vielmehr wird der Begriff aus unterschiedlichen Sichten
 heraus nutzbar gemacht.
+
+
 Eine dieser Sichten betrifft das Vorhandenseins eines Bewusstseins seitens der
 Maschine (vgl. Tabelle 2.1). In diesem Sinne lässt sich basierend auf Searle
 die KI in „stark“ (engl. strong) bzw. „schwach“ (engl. weak) einteilen [Sea80].
@@ -422,6 +640,8 @@ Sinne also, was sie tut, warum sie es tut, und ist in der Lage, selbständig neu
 Aufgaben zu finden und diese zu reflektieren. Im Gegenzug spricht man von
 schwacher KI, wenn eine Maschine Verständnis nur „vortäuscht“, tatsächlich
 jedoch unreflektiert und ohne Bewusstsein eine Aufgabe abarbeitet [Sea80].
+
+
 Eine weitere Sicht nimmt Bezug auf die Art der Aufgabe, die mittels KI be-
 wältigt werden kann, indem zwischen einer sogenannten „eingeschränkten“
 (engl. narrow) und „allgemeinen“ (engl. general) KI unterschieden wird¹. Die
@@ -432,11 +652,17 @@ Go-Spiel, Maschinelles Übersetzen) [Bun17, Kur05]. Im Falle der allgemeinen
 KI, ist eine Maschine unabhängig von einem konkreten Anwendungsfall in
 der Lage, verschiedenartige Probleme aus unterschiedlichen Bereichen anzu-
 gehen [Mon20].
+
+
 Wie eine Problemstellung innerhalb der KI repräsentiert und eingebracht
 wird, wurde schon zu Beginn der KI-Forschung intensiv untersucht. Die
-¹ Hinweis: Das englische Wort „narrow“ wird in der deutschsprachigen Literatur teils mit
+
+
+FOOTNOTE:¹ Hinweis: Das englische Wort „narrow“ wird in der deutschsprachigen Literatur teils mit
 „schwach“ übersetzt. Unabhängig davon wird das englische Wort „general“ auch mit „univer-
 sell“ übersetzt.
+
+
 sogenannte „symbolische“ (engl. symbolic) KI stellt eine Sichtweise dar, bei
 der eine symbolische Ebene [New76, New07], beispielsweise in Form von
 durch den Menschen vorgegebener Regeln, genutzt wird¹. Aus der heuti-
@@ -444,37 +670,55 @@ gen Perspektive wird dieser Ansatz teilweise auch als „Top-Down“ Ansatz
 bezeichnet, während abgrenzend dazu der „Bottom-Up“ Ansatz in der An-
 wendung subsymbolischer Methoden des Maschinellen Lernens im Sinne der
 Problemstellung besteht.
+
+
 Letzterer wird, gerade bei Verwendung von Künstlichen Neuronalen Netzen,
 mit dem Begriff der „konnektionistischen“ (engl. connectionist) oder „neuro-
 nalen“ (engl. neural) KI verknüpft [Smo87, Smo90].
-Tabelle 2.1: Drei Sichten auf den Begriff der KI. Die Sichten beleuchten verschiedene Aspekte,
+
+
+FOOTNOTE:Tabelle 2.1: Drei Sichten auf den Begriff der KI. Die Sichten beleuchten verschiedene Aspekte,
 wie das Vorhandensein eines Bewusstseins, der Universalität der Intelligenz oder
 der Repräsentation der Problemstellung.
+
+
 2.3.2 Verbindungen
+
+
 Das Forschungsfeld der KI ist mit verschiedenen weiteren Forschungsfeldern
 verknüpft. Im Bereich der Informatik bestehen starke Verbindungen zu den
+
+
 ¹ Hinweis: In diesem Zusammenhang wird die symbolische KI auch als Good Old-Fashioned
 Artificial Intelligence (GOFAI) bezeichnet [Hau89] und bezieht sich damit auf die symbolische
 Repräsentation der Wissensbasen früherer Expertensysteme.
-Abbildung 2.2: Die Abbildung zeigt ein Mengendiagramm zur Verdeutlichung der Zusammen-
+
+
+FOOTNOTE:Abbildung 2.2: Die Abbildung zeigt ein Mengendiagramm zur Verdeutlichung der Zusammen-
 hänge zwischen den Begriffen Künstliche Intelligenz, Maschinelles Lernen, Wis-
 senbasierte Systeme und Expertensysteme. Die Punkte A, B und C verdeutlichen
 den Schnitt dieser Mengen mit der Menge der Künstlichen Intelligenz. Dabei
-nutzt KI die Methoden des Maschinellen Lernens (C). Neben dem Aspekt des
+FOOTNOTE:nutzt KI die Methoden des Maschinellen Lernens (C). Neben dem Aspekt des
 Lernens spielt auch die Wissensbasierte Modellierung in Form von Wissensba-
 sierten Systemen und insbesondere Expertensystemen eine Rolle. Letztere kön-
 nenreinauf FormalisierungvonExpertenwissen(A)oderauf einerKombination
 mit erlerntem Wissen (B) basieren.
+
+
 Methoden des Maschinellen Lernens. Hierbei kann KI die Methoden des Ma-
 schinellen Lernens auf symbolischer Ebene (bspw. über Entscheidungsbäume)
 oder subsymbolischer Ebene (bpsw. Neuronale Netze) nutzen (vgl. Abbildung
 2.2, Punkt C). Die Teilmenge des Bereichs des Maschinellen Lernens, die sich
 speziell mit mehrschichtigen Neuronalen Netzen beschäftigt, wird auch Tie-
-fes Lernen (engl. Deep Learning [Goo16]) genannt – diese Teilmenge ist aus
+fes Lernen (engl. Deep Learning [Goo$$$16$$$]) genannt – diese Teilmenge ist aus
 Gründen der Übersichtlichkeit nicht Bestandteil der Abbildung.
+
+
 Die Begriffe dieser Mengen werden teils synonym mit dem Begriff der KI ver-
 wendet. Sie werden hier aber als mögliche Werkzeuge zur Umsetzung von KI
 gesehen.
+
+
 Für das Lösen konkreter Anwendungsprobleme im Rahmen der KI sind neben
 dem Aspekt des Lernens jedoch auch weitergehende Aspekte von Interesse.
 Beispielsweise die wissensbasierte Modellierung im Kontext der Experten-
@@ -485,18 +729,30 @@ Eine Kombination mit Methoden des Maschinellen Lernens, also der Kombi-
 nation von menschlichen Vorwissen und Wissen aus Daten, ist dabei ein viel-
 sprechender aber auch herausfordernder Ansatz der im Rahmen dieser Arbeit
 verfolgt wird (B)¹.
+
+
 2.4 Bayes-Netze als Komponente zur
 Problemlösung
+
+
 Zur Einführung werden verschiedene Wahrscheinlichkeitsbegriffe in Kapitel
 2.4.1 beleuchtet. Daran anschließend folgen in Kapitel 2.4.2 die Grundlagen
 der Wahrscheinlichkeitstheorie. In den darauf folgenden Kapiteln 2.4.3 und
 2.4.4 werden Bayes-Netze genauer besprochen.
+
+
 2.4.1 Wahrscheinlichkeitsbegriffe
+
+
 Historisch haben sich unterschiedliche Deutungen des Wahrscheinlichkeits-
 begriffs herausgebildet – die frequentistische Sichtweise und die Bayes’sche
 Sichtweise – auf die im Folgenden kurz eingegangen wird.
-¹ Hinweis: Teils wird die Verbindung von KI mit menschlichem (Vor-)wissen auch als Hybride
+
+
+FOOTNOTE:¹ Hinweis: Teils wird die Verbindung von KI mit menschlichem (Vor-)wissen auch als Hybride
 Intelligenz bezeichnet [Kam16, Del19].
+
+
 Die frequentistische Sichtweise wurde erstmals im 19. Jahrhundert von John
 Venn als mathematische Theorie ausgearbeitet, vgl. [Ven66]. Diese Sichtwei-
 se interpretiert die Wahrscheinlichkeit für das Eintreten eines Ereignisses als
@@ -504,6 +760,8 @@ die relative Häufigkeit, mit der dieses Ereignis in einer unendlichen Anzahl
 gleicher und voneinander unabhängiger Zufallsexperimente auftritt. Wahr-
 scheinlichkeit wird in der frequentistischen Sicht also auf einen bestimmten
 physikalischen Prozess bzw. dessen Ergebnis bezogen.
+
+
 Damit kann der frequentistische Wahrscheinlichkeitsbegriff dann angewen-
 det werden, wenn Ereignisse beliebig oft und unter gleichen Umständen wie-
 derholbar sind oder dies zumindest denkbar wäre. So beispielsweise beim
@@ -511,10 +769,14 @@ Münzwurf oder beim Erfassen einer Messgröße. Nicht möglich ist jedoch eine
 Bewertung von einmaligen Ereignissen („Wie hoch ist die Wahrscheinlichkeit,
 dass es morgen Nachmittag regnet?“) oder von Hypothesen („Es gibt Leben
 in anderen Galaxien“).
+
+
 Dies gelingt jedoch mittels des Bayes’schen Wahrscheinlichkeitsbegriffes, der
-den frequentistischen Wahrscheinlichkeitsbegriff erweitert [Kor10] und es
+den frequentistischen Wahrscheinlichkeitsbegriff erweitert [Kor$$$10$$$] und es
 insbesondere erlaubt, Vorwissen, beispielsweise von Experten, einzubeziehen
 [Mor90].
+
+
 Die Bayes’sche Deutung interpretiert Wahrscheinlichkeit als ein Maß dafür,
 wie sehr man – unter Berücksichtigung vorhandenen Wissens, Annah-
 men und Daten – vom Eintreten eines Ereignisses überzeugt ist [Leó19].
@@ -523,11 +785,17 @@ Man spricht daher auch von der Interpretation der Wahrscheinlichkeit als
 schen 0 (unglaubwürdig, falsch) und 1 (glaubwürdig, wahr) annehmen kann.
 Wahrscheinlichkeit ist damit also nicht nur eine Funktion des Ereignisses an
 sich, sondern zusätzlich abhängig vom Wissensstand [Mor90].
+
+
 Innerhalb der Bayes’schen Deutung gibt es noch einmal zwei Strömungen mit
 unterschiedlichen Interpretationen des Grad-des-Dafürhaltens: Die subjekti-
-ve Deutung und die objektive Deutung [Pre09].
+ve Deutung und die objektive Deutung [Pre$$$09$$$].
+
+
 Erstere interpretiert den Bayes’schen Wahrscheinlichkeitsbegriff als persönli-
 che Überzeugung eines Individuums. Der Grad-des-Dafürhaltens wird also als
+
+
 eine individuelle, subjektive Meinung aufgefasst, die so gewählt werden soll-
 te, dass sie konform zu den Axiomen nach Kolmorogov [Kol33] ist [Mor90].
 Beispielsweise sollten sich der Grad-des-Dafürhaltens, dass ein Ereignis pas-
@@ -535,18 +803,24 @@ siert und der Grad-des-Dafürhaltens, dass dieses nicht passiert, zu 1 addieren.
 Beim Erheben von Wahrscheinlichkeiten werden daher spezielle Techniken
 angewandt [Win67], sodass sich anschließend eine zu den Axiomen nach Kol-
 mogorov konforme Wahrscheinlichkeitsverteilung ableiten lässt [Leo54].
+
+
 Die objektive Deutung sieht im Grad-des-Dafürhaltens im Gegensatz zu
 dessen subjektiver Deutung keine individuelle Meinung. Der Grad-des-
 Dafürhaltens steht hier für eine allgemeine, neutrale Erwartung, die jeder
 mit dem gleichen Wissensstand teilen sollte. So sollte beispielsweise bei
 Nichtvorhandensein relevanter Evidenzen der Grad-des-Dafürhaltens ge-
 mäß des Indifferenz-Prinzips¹, gleichmäßig auf alle in Betracht kommenden
-möglichen Ereignisse verteilt werden [Eva19].
+möglichen Ereignisse verteilt werden [Eva$$$19$$$].
+
+
 Auf dem Konzept der Maximalen Entropie basieren zudem weitere Metho-
 den zur Konstruktion allgemeiner A-priori-Wahrscheinlichkeitsverteilungen
 [Jay88]. Jeffrey schlug spezielle, sogenannte „nicht-informative“ Referenz-
 Wahrscheinlichkeitsverteilungen vor, die gegenüber einer Reparametrisie-
 rung der Modellparameter invariant sind [Jef46].
+
+
 Für diese Arbeit von Bedeutung ist die subjektive Interpretation des Grad-des-
 Dafürhaltens, da sie es erlaubt, vorhandenes Expertenwissen durch Exper-
 tenbefragungen gezielt in die Wissensbasis einfließen zu lassen. Eine Heraus-
@@ -557,144 +831,237 @@ terschiedliche Wahrscheinlichkeiten zuordnen [Eis13]. Betrifft die Einschät-
 zung der Experten jedoch empirische Größen, wie in dieser Arbeit, ist eine
 valide Annahme, dass sich die angegebenen Wahrscheinlichkeiten zumindest
 ähneln werden – sofern die Experten einen ausreichend großen, ähnlichen
+
+
 Erfahrungsschatz besitzen. Denn nach Morgan und Henrion konvergiert ei-
 ne subjektiv gewählte Wahrscheinlichkeitsverteilung einer empirischen Grö-
 ße gegen deren frequentistische Wahrscheinlichkeitsverteilung, wenn für die
 Konstruktion der subjektiven Verteilung mehr und mehr Evidenzen herange-
 zogen werden [Mor90].
+
+
 Der erfahrene Experte kann in der hier vorgebrachten Argumentation als Be-
 obachter historischer, nicht in einer Datenbasis vorhandenen Evidenzen an-
 gesehen werden, die auf dem Wege der Expertenbefragung dennoch implizit
 in die Wissensbasis eingebracht werden können. Weiterhin existieren in der
 Literatur diverse Verfahren zur Kombination unterschiedlicher Expertenmei-
 nungen [Jac95].
-2.4.2 Wahrscheinlichkeitstheorie
+
+
+FOOTNOTE:2.4.2 Wahrscheinlichkeitstheorie
+
+
 Ein zentrales Element der Wahrscheinlichkeitstheorie ist ein Ereignis (vgl.
 Abschnitt 2.4.1). Dieses kann beispielsweise gegeben sein durch das Ergeb-
 nis eines Glücksrad-Gewinnspiels, wie in Abbildung 2.3 dargestellt.
-Es werde der Raum solcher Ergebnisse mit Ω bezeichnet. Für den Ereignis-
+
+
+FOOTNOTE:Es werde der Raum solcher Ergebnisse mit Ω bezeichnet. Für den Ereignis-
 raum 𝑆 gelten nun die drei Eigenschaften:
+
+
 1. ∅ ∈ 𝑆 und Ω ∈ 𝑆,
+
+
 2. Wenn 𝛼, 𝛽 ∈ 𝑆, dann 𝛼 ∪ 𝛽 ∈ 𝑆,
+
+
 3. Wenn 𝛼 ∈ 𝑆, dann Ω \ 𝛼 ∈ 𝑆.
+
+
 Nun müssen für einen Abbildung von 𝑆 nach ℝ und mithin für eine Wahr-
 scheinlichkeitsverteilung 𝑃 über (Ω, 𝑆) noch die drei Axiome nach Kolomo-
 gorow [Kol33] erfüllt sein:
+
+
 1. 𝑃(𝛼) ≥ 0 für alle 𝛼 ∈ 𝑆,
+
+
 2. 𝑃(Ω) = 1,
+
+
 3. Wenn 𝛼, 𝛽 ∈ 𝑆 und 𝛼 ∩ 𝛽 = ∅, dann 𝑃(𝛼 ∪ 𝛽) = 𝑃(𝛼) + 𝑃(𝛽).
+
+
 Als anschauliches Beispiel sei das Glücksrad-Gewinnspiel in Abbildung 2.3
 gegeben. Die Flächen des Rades sind mit römischen Ziffern versehen. Der Er-
 gebnisraum ist durch Ω = {I, II, III} gegeben. Die Potenzmenge 𝑆 möglicher
 Ereignisse beinhaltet sowohl Ω = {I, II, III} als auch ∅ = { }. Das Ereignis
 𝛼 = {II} ∈ 𝑆 repräsentiert ein gerades Ergebnis. Es gilt Ω \ 𝛼 = {I, III} ∈ 𝑆.
 Sei 𝛽 = {I, III} ∈ 𝑆, dann ist ebenso 𝛼 ∪ 𝛽 = {I, II, III} ∈ 𝑆.
+
+
 Wenn nun die Wahrscheinlichkeit proportional zur Fläche vergeben und mit
 der Gesamtfläche normiert wird, dann gilt für Abbildung 𝑃(⋅) zum Beispiel,
-dass 𝑃(𝛼) = 𝑃({II}) = 0,5. Weil weiterhin 𝛼 ∩ 𝛽 = ∅, gilt 𝑃(𝛼 ∪ 𝛽) =
+dass 𝑃(𝛼) = 𝑃({II}) = $$$0$$$,5. Weil weiterhin 𝛼 ∩ 𝛽 = ∅, gilt 𝑃(𝛼 ∪ 𝛽) =
 𝑃({I, II, III}) ist gleich der Summe der einzelnen Abbildungen 𝑃(𝛼) + 𝑃(𝛽) =
 𝑃({II}) + 𝑃({I, III}) = 1.
+
+
 Definition 2.3. Die bedingte Wahrscheinlichkeit ist die Wahrscheinlichkeit
 des Ereignisses 𝛽 unter Kenntnis des Eintretens des Ereignisses 𝛼:
+
+
 Wie sich leicht nachrechnen lässt, ergibt sich die bedingte Wahrscheinlichkeit
-für die konkreten, sich ausschließende Ereignisse, 𝛼 = {II} und 𝛽 = {I, III} zu:
-𝑃(𝛽|𝛼) = 0. Das bedeutet, dass sich die a-prior bekannte Wahrscheinlichkeit
+FOOTNOTE:für die konkreten, sich ausschließende Ereignisse, 𝛼 = {II} und 𝛽 = {I, III} zu:
+
+
+𝑃(𝛽|𝛼) = $$$0$$$. Das bedeutet, dass sich die a-prior bekannte Wahrscheinlichkeit
 𝑃(𝛽) = 0,5 unter Kenntnis des Eintretens des Ereignisses 𝛼 auf 𝑃(𝛽|𝛼) = 0
 reduziert hat.
+
+
 Sei nun ein weiteres Ereignis 𝛾 = {III} mit 𝑃(𝛾) = 0,25 gegeben. Die bedingte
 Wahrscheinlichkeit 𝑃(𝛾|𝛽) ergibt sich nach Gleichung (2.1) zu:
+
+
 Die a-priori Wahrscheinlichkeit 𝑃(𝛾) = 0,25 hat sich also unter Kenntnis des
 Ereignisses 𝛽 (d.h. es liegt ein ungerades Ergebnis vor) auf 𝑃(𝛾|𝛽) = 0,3 er-
 höht. Damit ergibt sich die bedingte Wahrscheinlichkeit anschaulich aus dem
 Verhältnis der Ergebnisse die sowohl in 𝛽 als auch in 𝛾 liegen zu den Ergeb-
-nissen die in 𝛽 liegen [Kol09].
+nissen die in 𝛽 liegen [Kol$$$09$$$].
+
+
 Um die Kettenregel der bedingten Wahrscheinlichkeiten zu erhalten, kann
 Gleichung 2.1 umgestellt werden zu:
+
+
 𝑃(𝛼 ∩ 𝛽) = 𝑃(𝛼)𝑃(𝛽|𝛼) .
+
+
 Allgemein gilt:
+
+
 Definition 2.4. Die Kettenregel der bedingten Wahrscheinlichkeiten ist de-
 finiert als:
-𝑃(𝛼 ∩ … ∩ 𝛼 ) = 𝑃(𝛼 )𝑃(𝛼 |𝛼 ) … 𝑃(𝛼 |𝛼 ∩ … ∩ 𝛼 ) .
-0 𝑘 0 1 0 𝑘 0 𝑘−1
+
+
+𝑃(𝛼 ∩ … ∩ 𝛼 ) = 𝑃(𝛼 )𝑃(𝛼 |𝛼 ) … 𝑃(𝛼 |𝛼 ∩ … ∩ 𝛼 ) . 0 𝑘 0 1 0 𝑘 0 𝑘−1
+
+
 Aus Gleichung 2.2 folgt unter Ausnutzung von
+
+
 𝑃(𝛼 ∩ 𝛽) = 𝑃(𝛽 ∩ 𝛼) sowie
+
+
 𝑃(𝛼)𝑃(𝛽|𝛼) = 𝑃(𝛽)𝑃(𝛼|𝛽)
+
+
 und Auflösung nach 𝑃(𝛼|𝛽) die nachfolgende Definition.
+
+
 Definition 2.5. Der Satz von Bayes ist definiert als
+
+
 Dieser ergibt sich ebenso über Gleichung 2.1 derart dass,
+
+
 Sprich: Mit dem Satz von Bayes lässt sich aus den a-priori Wahrscheinlich-
 keiten 𝑃(𝛼) und 𝑃(𝛽) sowie der Likelihood 𝑃(𝛽|𝛼) die a-posteriori Wahr-
 scheinlichkeit 𝑃(𝛼|𝛽) berechnen. Das ist besonders dann nützlich, wenn sich
 in der praktischen Anwendung die a-posteriore Wahrscheinlichkeit 𝑃(𝛼|𝛽)
 nicht oder nur unter enormen Aufwand bestimmen lässt.
+
+
 Weiterhin kann von Interesse sein, wie Ereignisse voneinander abhängen. Für
-eine vollständige Unabhängigkeit gilt [Kol09]:
+eine vollständige Unabhängigkeit gilt [Kol$$$09$$$]:
+
+
 Definition 2.6. In 𝑃 ist ein Ereignis 𝛼 unabhängig von einem Ereignis 𝛽, also
 𝑃 ⊧ (𝛼 ⟂ 𝛽), wenn 𝑃(𝛼|𝛽) = 𝑃(𝛼) oder wenn 𝑃(𝛽) = 0.
+
+
 Oder aus einer andere Perspektive betrachtet: 𝑃 genügt (𝛼 ⟂ 𝛽) genau dann
 wenn 𝑃(𝛼 ∩ 𝛽) = 𝑃(𝛼)𝑃(𝛽):
-Im Beispiel des Glücksrad-Gewinnspiels ist ein Ereignis 𝛼 = {II} unabhängig
-2
-von einem Ereignis 𝛼 = {II} aus einer vorangegangen Drehung des Rades.
-1
+
+
+FOOTNOTE:Im Beispiel des Glücksrad-Gewinnspiels ist ein Ereignis 𝛼 = {II} unabhängig 2
+von einem Ereignis 𝛼 = {II} aus einer vorangegangen Drehung des Rades. 1
 Es können aber auch Ereignisse der selben Drehung unabhängig voneinander
 sein.
-Zur Veranschaulichung werde das Glücksrad aus Abbildung 2.3 auf 6 Kreis-
+
+
+Zur Veranschaulichung werde das Glücksrad aus Abbildung $$$2$$$.3 auf $$$6$$$ Kreis-
 segmente zu einem fairen Glücksrad erweitert: Ω = {I, II, III, IV, V, VI} so-
 wie 𝑃({I}) = 𝑃({II}) = 𝑃({III}) = 𝑃({IV}) = 𝑃({V}) = 𝑃({VI}). Für dem
+
+
 fairen Glücksrad-Gewinnspiel gilt nun, dass die zwei Ereignisse der selben
 Drehung 𝛼 = {I, III, V} und 𝛽 = {I, II} unabhängig voneinander sind, denn
 𝑃(𝛼|𝛽) = 𝑃(𝛼). Oder anders ausgedrückt: die a-priore Wahrscheinlichkeit
 eines ungerades Ergebnisses 𝑃(𝛼) = 0,5 bleibt auch bei Kenntnis des Ereig-
 nisses 𝛽 erhalten.
+
+
 Ereignisse können allerdings auch nur bedingt unabhängig sein. Hierfür muss
 gelten [Kol09]:
+
+
 Definition 2.7. In 𝑃 ist ein Ereignis 𝛼 bedingt unabhängig von Ereignis 𝛽
 gegeben Ereignis 𝛾, also 𝑃 ⊧ (𝛼 ⟂ 𝛽|𝛾), wenn 𝑃(𝛼|𝛽 ∩𝛾) = 𝑃(𝛼|𝛾) oder wenn
 𝑃(𝛽 ∩ 𝛾) = 0.
+
+
 Oder alternativ betrachtet: Eine Verteilung 𝑃 genügt (𝛼 ⟂ 𝛽|𝛾) genau dann
 wenn 𝑃(𝛼 ∩ 𝛽|𝛾) = 𝑃(𝛼|𝛾)𝑃(𝛽|𝛾).
+
+
 Gegeben sei wieder das 6-segmentige, faire Glücksrad. Darüber hinaus sei-
 en zunächst zwei abhängige Ereignisse gegeben: 𝛼 = {I} und 𝛽 = {I, III, V}.
 Gegeben eine weiteres Ereignis 𝛾 = {I, III} sind 𝛼 und 𝛽 allerdings bedingt
 unabhängig: 𝑃(𝛼|𝛽 ∩ 𝛾) = 𝑃({I} | {I, III, V} ∩ {I, III}) = 𝑃({I} | {I, III}) = 𝑃(𝛼|𝛾).
+
+
 Wie zuvor beschrieben, können Ereignisse anschaulich über Mengen von
 Ergebnissen beschrieben werden. In der Praxis werden Ergebnisse häufig
 über Werte referenziert und zu Mengen gebündelt. Bei der fairen Glücksrat-
 Lotterie könnte dies zum Beispiel die Menge alle ungeraden Ergebnisse
-sein.
-Nach [Kol09] ist die Zuweisung solcher Werte zu einem Ergebnis gegeben
+FOOTNOTE:sein.
+
+
+Nach [Kol$$$09$$$] ist die Zuweisung solcher Werte zu einem Ergebnis gegeben
 durch:
-Definition 2.8. Eine Zufallsvariable 𝑋 sei definiert als eine Funktion 𝐹 .
-𝑋
-Diese Funktion weist jedem Ergebnis 𝜔 ∈ Ω einen Wert 𝑥 zu.
-Ein Ereignis kann also über {𝜔 ∈ Ω ∶ 𝐹 (𝜔) = 𝑥} angegeben werden – oder
-𝑋
-in Kurzschreibweise 𝑋 = 𝑥. Dabei wird eine Zufallsvariable 𝑋 als diskret
+
+
+Definition 2.8. Eine Zufallsvariable 𝑋 sei definiert als eine Funktion 𝐹 . 𝑋
+FOOTNOTE:Diese Funktion weist jedem Ergebnis 𝜔 ∈ Ω einen Wert 𝑥 zu.
+
+
+FOOTNOTE:Ein Ereignis kann also über {𝜔 ∈ Ω ∶ 𝐹 (𝜔) = 𝑥} angegeben werden – oder 𝑋
+FOOTNOTE:in Kurzschreibweise 𝑋 = 𝑥. Dabei wird eine Zufallsvariable 𝑋 als diskret
 bezeichnet, wenn der Wertebereich Val(𝑋) von 𝑋 endlich oder abzählbar ist
+
+
 – sie kann aber auch kontinuierlich sein, beispielsweise reellwertig [Nea04].
-Gilt |Val(𝑋)| = 2, wird die Zufallsvariable 𝑋 in dieser Ausarbeitung als binär
+Gilt |Val(𝑋)| = $$$2$$$, wird die Zufallsvariable 𝑋 in dieser Ausarbeitung als binär
 bezeichnet.
-Im Beispiel der fairen Glücksrad-Lotterie weise eine Zufallsvariable 𝑋 jedem
+
+
+FOOTNOTE:Im Beispiel der fairen Glücksrad-Lotterie weise eine Zufallsvariable 𝑋 jedem
 Ergebnis zu, ob dieses ungerade oder gerade ist. Das bedeutet, der Werte-
 bereich der binären Zufallsvariablen ist gegeben durch den Wertebereich
 Val(𝑋) = {ungerade, gerade}. Ein bestimmtes Ereignis kann zum Beispiel an-
-gegeben werden als {𝜔 ∈ Ω ∶ 𝐹 (𝜔) = gerade} = {II, IV, VI}. In Verbindung
-𝑋
+gegeben werden als {𝜔 ∈ Ω ∶ 𝐹 (𝜔) = gerade} = {II, IV, VI}. In Verbindung 𝑋
 mit 𝑃(⋅) ergibt sich die Schreibweise: 𝑃(𝑋 = gerade) = 𝑃({II, IV, VI}). Sofern
 sich aus dem Kontext die Zufallsvariable bereits ergibt, wird diese auch
 weggelassen, also im Beispiel statt 𝑃(𝑋 = gerade) vereinfachend 𝑃(gerade)
 geschrieben.
+
+
 2.4.3 Definition
+
+
 Um im Rahmen einer probabilistischen Wissensbasis eine multivariate Ver-
-teilung 𝑃 über Zufallsvariablen 𝑋 = 𝑋 , … , 𝑋 angeben zu können, muss
-0∶𝑛 0 𝑛
+teilung 𝑃 über Zufallsvariablen 𝑋 = 𝑋 , … , 𝑋 angeben zu können, muss 0∶𝑛 0 𝑛
 eine Vielzahl an Parametern festgelegt werden. Selbst in einem einfachen Falle
-von binären Zufallsvariablen müssten 2𝑛+1 mögliche Ergebniskombinationen
-parametrisiert werden, d.h. 2𝑛+1 − 1 Parameter gesetzt werden. Für 12 binäre
-Zufallsvariablen ergeben sich also 4096 − 1 = 4095 Parameter. Offensichtlich
+von binären Zufallsvariablen müssten $$$2$$$𝑛+1 mögliche Ergebniskombinationen
+FOOTNOTE:parametrisiert werden, d.h. $$$2$$$𝑛+1 − 1 Parameter gesetzt werden. Für 12 binäre
+Zufallsvariablen ergeben sich also $$$4096$$$ − $$$1$$$ = $$$4095$$$ Parameter. Offensichtlich
 steigt die Anzahl der Parameter exponentiell mit der Anzahl der Zufallsvaria-
 blen [Phi15b].
+
+
 Problematisch ist dies zum Beispiel, wenn diese Parameter im Rahmen ei-
 ner Expertenbefragung erhoben werden sollen. Neben dem rein quantitativen
 Aspekt, ist die Frage, ob Experten dabei überhaupt sinnvolle Wahrscheinlich-
@@ -705,84 +1072,115 @@ metern und der dafür notwendigen Datenmenge problematisch sein [Kol09].
 Solcherlei Gründe waren zunächst der Hemmschuh für den Einsatz probabi-
 listischer Wissensbasen in früheren Wissensbasierten Systemen bzw. Exper-
 tensystemen [Kol09].
+
+
 Mit Hilfe des Formalismus Bayes-Netz (BN) und der Ausnutzung von Unab-
 hängigkeit zwischen Zufallsvariablen können probabilistische Wissensbasen
 allerdings kompakter dargestellt und handhabbar repräsentiert werden.
-Definition 2.9. Ein BN über den Zufallsvariablen 𝑋 = 𝑋 , … , 𝑋 ist ge-
-0∶𝑛 0 𝑛
+
+
+FOOTNOTE:Definition 2.9. Ein BN über den Zufallsvariablen 𝑋 = 𝑋 , … , 𝑋 ist ge- 0∶𝑛 0 𝑛
 geben durch ein Tupel
+
+
 (𝐺, 𝑃) ,
+
+
 wobei 𝐺 einen gerichteten, azyklischen Graphen
+
+
 und
+
+
 die gemeinsame Wahrscheinlichkeitsverteilung repräsentieren [Kol09].
-Der Graph 𝐺 wird verwendet, um Abhängigkeiten zwischen Zufallsvariablen
-𝑋 zu definieren. Er wird auch als Struktur des BN bezeichnet und äußerst
-0∶𝑛
+
+
+FOOTNOTE:Der Graph 𝐺 wird verwendet, um Abhängigkeiten zwischen Zufallsvariablen
+𝑋 zu definieren. Er wird auch als Struktur des BN bezeichnet und äußerst 0∶𝑛
 sich als gerichteter (engl. directed) azyklischer Graph (DAG). Seine Knoten-
-bzw. Vertexmenge 𝒱 repräsentiert die Zufallsvariablen 𝑋 .
-0∶𝑛
-Während eine gerichtete Kante 𝑣 → 𝑣 der Kantenmenge ℰ eine direkte Ab-
-𝑖 𝑗
+bzw. Vertexmenge 𝒱 repräsentiert die Zufallsvariablen 𝑋 . 0∶𝑛
+
+
+FOOTNOTE:Während eine gerichtete Kante 𝑣 → 𝑣 der Kantenmenge ℰ eine direkte Ab- 𝑖 𝑗
 hängigkeit zwischen zwei Variablen angibt, symbolisiert eine fehlende Kante
 die Unabhängigkeit zweier Variablen¹.
+
+
 ¹ Hinweis: Da Graph 𝐺 sowohl gerichtet als auch azyklisch ist, existiert kein Pfad der von einem
 Knoten zu sich selbst zurück führt: ∄ Pfad 𝑣𝑖 → … → 𝑣𝑖.
+
+
 Die gemeinsame Wahrscheinlichkeitsverteilung ist durch das Produkt aller
 bedingten Wahrscheinlichkeitsverteilungen gegeben, welche mit den Kno-
 ten von 𝐺 verknüpft sind. Sie repräsentiert die Parameter des BN. Dabei be-
-zeichnet Pa(𝑋 ) die Menge der Eltern¹ einer Zufallsvariablen 𝑋 . Im Graphen
-𝑖 𝑖
-entspricht dies Knoten mit einer gerichteten Kante zum Knoten der mit 𝑋
-𝑖
-verknüpft ist². Die Faktoren 𝑃(𝑋 |Pa(𝑋 )) werden als Conditional Probability
-𝑖 𝑖
+zeichnet Pa(𝑋 ) die Menge der Eltern¹ einer Zufallsvariablen 𝑋 . Im Graphen 𝑖 𝑖
+entspricht dies Knoten mit einer gerichteten Kante zum Knoten der mit 𝑋 𝑖
+verknüpft ist². Die Faktoren 𝑃(𝑋 |Pa(𝑋 )) werden als Conditional Probability 𝑖 𝑖
 Distribution – bedingte Wahrscheinlichkeitsverteilung (CPD) bezeichnet. Im
 Falle diskreter Zufallsvariablen können sogenannte Conditional Probability
 Tables – bedingte Wahrscheinlichkeitstabellen (CPT) herangezogen werden,
 um die Verteilungen zu repräsentieren.
-Bei der obigen Darstellung wird angenommen, dass 𝐺 eine I-MAP (engl. Inde-
+
+
+FOOTNOTE:Bei der obigen Darstellung wird angenommen, dass 𝐺 eine I-MAP (engl. Inde-
 pence Map) der Wahrscheinlichkeitsverteilung 𝑃 ist, d.h. dass jede Unabhän-
 gigkeitsbeziehung, die durch 𝐺 gegeben ist, auch in 𝑃 erfüllt ist³ [Kol09]. Nur
 in diesem Falle kann die Berechnung von 𝑃 durch die bedingten Unabhän-
 gigkeiten so vereinfacht werden, dass sich die „Kettenregel der Bayesschen
 Netze“, wie in Formel (2.5) dargestellt, ergibt.
+
+
 Um die für die I-MAP benötigten bedingten Unabhängigkeiten formal ange-
 ben zu können, müssen folgende Knotenmengen definiert werden:
-• Pa(𝑋 ): Menge der Knoten, von denen eine gerichtete Kante nach 𝑋
-𝑖 𝑖
-führt (d.h. die Eltern von 𝑋 ),
-𝑖
-• Desc(𝑋 ): Menge der Knoten, die auf einem von 𝑋 ausgehenden Pfad
-𝑖 𝑖
-liegen (d.h. die Nachfahren von 𝑋 ),
-𝑖
-• NDesc(𝑋 ): Menge der Knoten, die weder in Pa(𝑋 ) noch in Desc(𝑋 )
-𝑖 𝑖 𝑖
-liegen, sowie nicht 𝑋 selbst sind (d.h. Nicht-Nachfahren von 𝑋 ).
-𝑖 𝑖
+
+
+FOOTNOTE:• Pa(𝑋 ): Menge der Knoten, von denen eine gerichtete Kante nach 𝑋 𝑖 𝑖
+führt (d.h. die Eltern von 𝑋 ), 𝑖
+
+
+FOOTNOTE:• Desc(𝑋 ): Menge der Knoten, die auf einem von 𝑋 ausgehenden Pfad 𝑖 𝑖
+liegen (d.h. die Nachfahren von 𝑋 ), 𝑖
+
+
+• NDesc(𝑋 ): Menge der Knoten, die weder in Pa(𝑋 ) noch in Desc(𝑋 ) 𝑖 𝑖 𝑖
+FOOTNOTE:liegen, sowie nicht 𝑋 selbst sind (d.h. Nicht-Nachfahren von 𝑋 ). 𝑖 𝑖
+
+
 ¹ Hinweis: Durch den verwendeten DAG (mit seiner azyklischen sowie gerichteten Eigenschaft)
 ist sichergestellt, dass die Elternbeziehung eindeutig für jeden Knoten angegeben werden kann.
-² Histinswicheiesr:gWesetnelnlt,Pdaa(s𝑋s d)ie=Elt∅er,nibsetzdieiehuZnugfaelilnsvdaeruiatibglefü𝑋r jedeiennWKnuortzeenlkannogteegneubenndw𝑃e(r𝑋den| ∅ka)n=n.
-𝑖 𝑖 𝑖
-𝑃(𝑋 ) gibt folglich die A-priori-Wahrscheinlichkeit an.
-𝑖
+
+
+FOOTNOTE:² Histinswicheiesr:gWesetnelnlt,Pdaa(s𝑋s d)ie=Elt∅er,nibsetzdieiehuZnugfaelilnsvdaeruiatibglefü𝑋r jedeiennWKnuortzeenlkannogteegneubenndw𝑃e(r𝑋den| ∅ka)n=n. 𝑖 𝑖 𝑖
+𝑃(𝑋 ) gibt folglich die A-priori-Wahrscheinlichkeit an. 𝑖
+
+
 ³ H𝑃(in𝑋w𝑖e)igs:ibUtmfoglgekliechhrdtime Aüs-spernioraib-WeranhircshcthaelilneliUchnkaebihtäanng.igkeiten in 𝑃 auch in 𝐺 repräsentiert
 sein.
-Abbildung 2.4: Bayessches Netz aus [Kol09, Kor10, Dar09] in Anlehnung an [Pea88]. Graph mit
+
+
+FOOTNOTE:Abbildung 2.4: Bayessches Netz aus [Kol09, Kor10, Dar09] in Anlehnung an [Pea88]. Graph mit
 Knoten und zugeordneten bedingten Wahrscheinlichkeitsverteilungen. Es gilt:
 𝑃(𝐴,𝐸,𝐾,𝑁,𝑆) = 𝑃(𝐴)𝑃(𝐸|𝑁)𝑃(𝑁|𝐴,𝐾)𝑃(𝐾)𝑃(𝑆|𝐴).
+
+
 Mit diesen Knotenmengen kann die lokale Markovbedingung, die der I-MAP
 zugrunde liegt, definiert werden:
-Definition 2.10. Der DAG 𝐺 eines Bayes-Netzes, dessen Knoten 𝑣 die Zu-
-fallsvariablen 𝑋 repräsentieren, steht für die Menge der lokalen bedingten
-0∶𝑛
+
+
+FOOTNOTE:Definition 2.10. Der DAG 𝐺 eines Bayes-Netzes, dessen Knoten 𝑣 die Zu-
+fallsvariablen 𝑋 repräsentieren, steht für die Menge der lokalen bedingten 0∶𝑛
 Unabhängigkeiten
-Die lokale Markovbedingung besagt also, dass jeder Knoten (𝑋 ) bedingt
-𝑖
+
+
+Die lokale Markovbedingung besagt also, dass jeder Knoten (𝑋 ) bedingt 𝑖
 unabhängig von nicht-nachfolgenden Knoten ist, gegeben seine Eltern, vgl.
 [Kol09].
+
+
 Beispielhaft sei das Bayes-Netz in Abbildung 2.4 gegeben. Sein DAG stellt
 Knoten und die jeweils verknüpften Zufallsvariablen aus der Menge
+
+
 {𝐴, 𝐸, 𝐾, 𝑁, 𝑆} dar. Aus didaktischen Gründen tragen die Knoten zusätz-
 lich eine sprechende Bezeichnung. Deutet man die Kanten in einem kausalen
 Zusammenhang (Ursache und Wirkung), so können sowohl das Kursniveau
@@ -793,138 +1191,187 @@ Scholastic Assessment Test, SAT)¹. Auch fehlende Kanten sind bedeutungs-
 tragend: Die nicht vorhandene Kante zwischen dem Knoten Kursniveau und
 dem Knoten Auffassungsgabe zeigt an, dass die verknüpften Zufallsvariablen
 𝐾 und 𝐴 unabhängig voneinander sind.
+
+
 Durch den DAG in Abbildung 2.4 ist die Menge der lokalen bedingten Unab-
 hängigkeiten wie folgt festgelegt:
-𝐼 (𝐺) = {(𝐸 ⟂ 𝐴,𝐾,𝑆|𝑁), (𝑆 ⟂ 𝐸, 𝐾, 𝑀|𝐴), (𝑁 ⟂ 𝑆|𝐴, 𝐾),
-𝑙
+
+
+𝐼 (𝐺) = {(𝐸 ⟂ 𝐴,𝐾,𝑆|𝑁), (𝑆 ⟂ 𝐸, 𝐾, 𝑀|𝐴), (𝑁 ⟂ 𝑆|𝐴, 𝐾), 𝑙
 (𝐾 ⟂ 𝐴, 𝑆|∅), (𝐴 ⟂ 𝐾|∅)} .
+
+
 2.4.4 d-Separation
+
+
 In Definition 2.10 aus Kapitel 2.4.3 wurde gezeigt, dass durch den Graphen
-𝐺 = (𝑉,𝐸) eines Bayes-Netzes die Menge lokaler bedingter Unabhängigkei-
-ten 𝐼 (𝐺) gegeben ist.
-𝑙
+FOOTNOTE:𝐺 = (𝑉,𝐸) eines Bayes-Netzes die Menge lokaler bedingter Unabhängigkei-
+ten 𝐼 (𝐺) gegeben ist. 𝑙
+
+
 Darüber hinaus kann ein Graph weitere, sogenannte globale Markovunabhän-
 gigkeiten enthalten. Diese lassen sich mittels des Konzeptes der d-Separation
 prüfen [Gei90]. Dieses Konzept kann genutzt werden, um zu überprüfen ob
 zwei Mengen an Zufallsvariablen gegeben einer Menge anderer Zufallsvaria-
 blen unabhängig von einander sind.
+
+
 Um dieses Konzept herzuleiten wird zunächst der Begriff des (aktiven) Weges
-definiert, vgl. [Gei90] und [Kol09]:
+definiert, vgl. [Gei$$$90$$$] und [Kol$$$09$$$]:
+
+
 ¹ Hinweis: Eine detaillierte Darstellung dieses Beispiels findet sich auch in der einschlägigen
 Literatur [Kol09, Kor10, Pea88].
+
+
 Definition 2.11. Gegeben sei der Graph 𝐺 = (𝒱, ℰ) eines Bayes-Netzes mit
-Zufallsvariablen 𝑋 . Weiterhin sei 𝒵 eine Teilmenge der Zufallsvariablen,
-0∶𝑛
-die beobachtet wurde. 𝒵 sei durch die Knotenmenge 𝒱 ⊆ 𝒱 repräsentiert. Ein
-𝒵
+Zufallsvariablen 𝑋 . Weiterhin sei 𝒵 eine Teilmenge der Zufallsvariablen, 0∶𝑛
+die beobachtet wurde. 𝒵 sei durch die Knotenmenge 𝒱 ⊆ 𝒱 repräsentiert. Ein 𝒵
 Weg ist eine Sequenz von Kanten, die in der ungerichteten Repräsentation des
 DAGs 𝐺 = (𝒱, ℰ) einen Pfad (Sequenz von Knoten) bildet¹. Hierfür schreibt
-man auch 𝑣 ⇌ ⋯ ⇌ 𝑣 mit 𝑣 , … , 𝑣 ∈ 𝒱.
-0 𝑚 0 𝑚
+man auch 𝑣 ⇌ ⋯ ⇌ 𝑣 mit 𝑣 , … , 𝑣 ∈ 𝒱. 0 𝑚 0 𝑚
+
+
 Ein solcher Weg wird als aktiver Weg gegeben 𝒵 bezeichnet, falls:
-1. Für jede existierende konvergierende Verbindung 𝑣 → 𝑣 ← 𝑣
-𝑖−1 𝑖 𝑖+1
-innerhalb des Weges, liegen entweder 𝑣 oder einer seiner Nachfolger
-𝑖
-in 𝒱 .
-𝒵
-2. Kein anderer Knoten des Weges liegt in 𝒱 .
-𝒵
-Insbesondere ist der Weg 𝑣 ⇌ ⋯ ⇌ 𝑣 nicht aktiv, wenn 𝑣 oder 𝑣 in 𝒱
-0 𝑚 0 𝑚 𝒵
+
+
+FOOTNOTE:1. Für jede existierende konvergierende Verbindung 𝑣 → 𝑣 ← 𝑣 𝑖−1 𝑖 𝑖+1
+innerhalb des Weges, liegen entweder 𝑣 oder einer seiner Nachfolger 𝑖
+in 𝒱 . 𝒵
+
+
+2. Kein anderer Knoten des Weges liegt in 𝒱 . 𝒵
+
+
+Insbesondere ist der Weg 𝑣 ⇌ ⋯ ⇌ 𝑣 nicht aktiv, wenn 𝑣 oder 𝑣 in 𝒱 0 𝑚 0 𝑚 𝒵
 liegen.
+
+
 Mithilfe der Definition eines aktiven Weges kann das Konzept der d-
-Separation definiert werden[Gei90]:
+Separation definiert werden[Gei$$$90$$$]:
+
+
 Definition 2.12. Seien 𝒲, 𝒴 und 𝒵 drei disjunkte Teilmengen der Zufalls-
 variablen, die in der Struktur 𝐺 = (𝒱, ℰ) eines Bayes-Netzes durch die dis-
-junkten Knotenmengen 𝒱𝒲, 𝒱𝒴 und 𝒱𝒵 repräsentiert werden. Dann heißt 𝒲
+FOOTNOTE:junkten Knotenmengen 𝒱𝒲, 𝒱𝒴 und 𝒱𝒵 repräsentiert werden. Dann heißt 𝒲
 d-separiert von 𝒴 gegeben 𝒵 genau dann, wenn es keinen aktiven Weg zwi-
 schen beliebigen Knoten 𝑣𝒲 ∈ 𝒱𝒲 und 𝑣𝒴 ∈ 𝒱𝒴 gibt, gegeben 𝒱𝒵.
+
+
 Mit dem Konzept der d-Separation können die globalen Markovunabhängig-
 keiten beschrieben werden.
+
+
 ¹ Hinweis: Die Begriffe Weg und Pfad werden in der deutschsprachigen Literatur teils synonym
 verwendet. Hier sind die Übersetzungen der Begriffe trail (= Sequenz von Kanten) und path (=
 Sequenz von Knoten) gemeint, die sich unterscheiden.
+
+
 Definition 2.13. Sei 𝐺 der DAG eines Bayes-Netzes und 𝒲, 𝒴 und 𝒵 dis-
 junkte Teilmengen der durch die Knoten des DAG repräsentierten Zufallsva-
 riablen. Dann sind die globalen Markovunabhängigkeiten von 𝐺 definiert als:
+
+
 𝐼(𝐺) = {(𝒲 ⟂ 𝒴|𝒵) ∶ 𝒲 ist d-separiert von 𝒴 gegeben 𝒵 .} (2.7)
+
+
 Für das Beispiel in Abbildung 2.4 sind somit die globalen Markovunabhängig-
 keiten gegeben durch:
+
+
 𝐼(𝐺) = {(𝐸 ⟂ 𝐴, 𝐾, 𝑆|𝑁)} .
+
+
 2.4.5 Dynamische Aspekte
+
+
 Ein BN ist ein probabilistisches graphisches Modell (PGM), das graphentheo-
 retische Ansätze mit Ansätzen der Wahrscheinlichkeitstheorie verbindet. Wie
 in Kapitel 2.4.3 ausführlich erläutert, ist ein BN über den Zufallsvariablen
-𝑋 = 𝑋 , … , 𝑋 gegeben durch ein Paar
-0∶𝑛 0 𝑛
+𝑋 = 𝑋 , … , 𝑋 gegeben durch ein Paar 0∶𝑛 0 𝑛
+
+
 𝐵 = (𝐺, 𝑃) .
+
+
 Dabei ist 𝐺 ein gerichteter, azyklischer Graph
+
+
 und
+
+
 die gemeinsame Wahrscheinlichkeitsverteilung [Kol09].
-Der Graph 𝐺 wird genutzt, um Abhängigkeiten zwischen den Zufallsvariablen
-zu definieren und repräsentiert damit die Struktur des BN (vgl. Kapitel 2.4.3).
+
+
+FOOTNOTE:Der Graph 𝐺 wird genutzt, um Abhängigkeiten zwischen den Zufallsvariablen
+zu definieren und repräsentiert damit die Struktur des BN (vgl. Kapitel $$$2$$$.4.3).
 Die Vertexmenge 𝒱 repräsentiert die Menge der Zufallsvariablen, während
-ung 2.5: Graph eines Bayes-Netzes (BN) über den Zufallsvariablen 𝑋 . Diese
-0∶4
+
+
+FOOTNOTE:ung 2.5: Graph eines Bayes-Netzes (BN) über den Zufallsvariablen 𝑋 . Diese 0∶4
 tur, die auch Naive BN genannt wird, ist gekennzeichnet durch ge
-te Kanten ausgehend von Wurzelknoten 𝑋 zu seinen Kindern 𝑋
-0 1∶
+te Kanten ausgehend von Wurzelknoten 𝑋 zu seinen Kindern 𝑋 0 1∶
 eine fehlende Kante die Unabhängigkeit zweier Zufallsvariablen verk
-kann die Verbundwahrscheinlichkeit 𝑃(𝑋 ) wie folgt faktorisiert w
-0∶4
-𝑃(𝑋 ) = 𝑃(𝑋 )𝑃(𝑋 |𝑋 )𝑃(𝑋 |𝑋 )𝑃(𝑋 |𝑋 )𝑃(𝑋 |𝑋 ).
-0∶4 0 1 0 2 0 3 0 4 0
-eine gerichtete Kante 𝑣 → 𝑣 der Menge der Kanten ℰ eine direkte Abhän-
-𝑖 𝑗
+kann die Verbundwahrscheinlichkeit 𝑃(𝑋 ) wie folgt faktorisiert w 0∶4
+𝑃(𝑋 ) = 𝑃(𝑋 )𝑃(𝑋 |𝑋 )𝑃(𝑋 |𝑋 )𝑃(𝑋 |𝑋 )𝑃(𝑋 |𝑋 ). 0∶4 0 1 0 2 0 3 0 4 0
+
+
+FOOTNOTE:eine gerichtete Kante 𝑣 → 𝑣 der Menge der Kanten ℰ eine direkte Abhän- 𝑖 𝑗
 gigkeit zwischen zwei Variablen darstellt. Eine fehlende Kante symbolisiert
 die Unabhängigkeit dieser beiden Variablen (cf. Figure 2.5).
+
+
 Die gemeinsame Wahrscheinlichkeitsverteilung repräsentiert die Parameter
 des BN (vgl. Kapitel 2.4.3) und ist durch das Produkt aller bedingten Wahr-
 scheinlichkeitsverteilungen gegeben, die mit den Vertices von 𝐺 verknüpft
-sind. Dabei bezeichnet Pa(𝑋 ) die Menge der Eltern einer Zufallsvariablen 𝑋 .
-𝑖 𝑖
+sind. Dabei bezeichnet Pa(𝑋 ) die Menge der Eltern einer Zufallsvariablen 𝑋 . 𝑖 𝑖
+
+
 Ein Dynamisches Bayes-Netz (DBN) ist eine Erweiterung eines BN, das auch
 die zeitlichen Abhängigkeiten der Zufallsvariablen berücksichtigen kann
 [Mur02]. Ein DBN ist dabei gegeben durch das Tupel
-𝐷𝐵𝑁 = (𝐵 , 𝐵 ) .
-0 →
-Ersteres, also 𝐵 , wird genutzt, um die Struktur als auch die a-priore Wahr-
-0
-scheinlichkeitsverteilung über den Zufallsvariablen 𝑋 in Zeitschritt 0,
-0∶𝑛
-sprich: 𝑃(𝑋0 ), anzugeben. Die Struktur von 𝐵 kann beispielsweise nach
-0∶𝑛 0
+
+
+𝐷𝐵𝑁 = (𝐵 , 𝐵 ) . 0 →
+
+
+Ersteres, also 𝐵 , wird genutzt, um die Struktur als auch die a-priore Wahr- 0
+FOOTNOTE:scheinlichkeitsverteilung über den Zufallsvariablen 𝑋 in Zeitschritt 0, 0∶𝑛
+FOOTNOTE:sprich: 𝑃(𝑋0 ), anzugeben. Die Struktur von 𝐵 kann beispielsweise nach 0∶𝑛 0
 Abbildung 2.5 erfolgen – die Variablen tragen dann zusätzlich einen hochge-
-stellten Index des Zeitschritts 0.
-Abbildung 2.6: Vereinfachte Darstellung eines zeitlichen Bayes-Netzes mit zwei Zeitscheiben.
+stellten Index des Zeitschritts $$$0$$$.
+
+
+FOOTNOTE:Abbildung 2.6: Vereinfachte Darstellung eines zeitlichen Bayes-Netzes mit zwei Zeitscheiben.
 Dieses wird im englischsprachigen Raum auch als Temporal Bayesian Network
 (TBN) mit zwei Zeitscheiben oder kurz als 2TBN bezeichnet. Das 2TBN (oder
 auch: 𝐵→) wird als Schablone für nachfolgende Zeitschritte 𝑡 eingesetzt. Aus
-Gründen der Übersichtlichkeit sind Knoten der Zufallsvariablen 𝑋𝑡−1 nicht ab-
-1∶4
+Gründen der Übersichtlichkeit sind Knoten der Zufallsvariablen 𝑋𝑡−$$$1$$$ nicht ab- 1∶4
 gebildet, denn es existiert in diesem Beispiel keine direkte Abhängigkeit zu
-𝑋0∶4. Eine solch vereinfachte Darstellung eines 2TBN, also eine Darstellung
-𝑡
+𝑋$$$0$$$∶4. Eine solch vereinfachte Darstellung eines 2TBN, also eine Darstellung 𝑡
 mit nur relevanten Knoten des vorgelagerten Zeitschritts, wird teils als 1,5TBN
 bezeichnet [Mur02].
-Weiterhin spezifiziert 𝐵 die bedingte Wahrscheinlichkeitsverteilung über
-→
+
+
+Weiterhin spezifiziert 𝐵 die bedingte Wahrscheinlichkeitsverteilung über →
 diskrete Zeitschritte 𝑡 hinweg, nämlich durch die Verwendung von:
-Dabei bezeichnet Pa(𝑋𝑡) die Menge der Eltern von 𝑋𝑡 im zugehörigen Gra-
-𝑖 𝑖
-phen. Eltern können hierin dem selben Zeitschritt 𝑡 oder aber dem voran-
-gegangenen Zeitschritt 𝑡 − 1 zugeordnet sein. Im letzteren Falle zeigen ge-
+
+
+Dabei bezeichnet Pa(𝑋𝑡) die Menge der Eltern von 𝑋𝑡 im zugehörigen Gra- 𝑖 𝑖
+FOOTNOTE:phen. Eltern können hierin dem selben Zeitschritt 𝑡 oder aber dem voran-
+gegangenen Zeitschritt 𝑡 − $$$1$$$ zugeordnet sein. Im letzteren Falle zeigen ge-
 richteten Kanten in Zeitschritte mit höherem Index, was das zeitliche Voran-
 schreiten widerspiegelt [Mur02]. Abbildung 2.6 zeigt hierzu beispielhaft den
-Graphen 𝐵 eines DBNs. Dabei besitzt der Knoten der Zufallsvariablen 𝑋𝑡
-→ 0
-einen Elternknoten im vorgelagerten Zeitschritt 𝑡 − 1; es existiert also eine
+FOOTNOTE:Graphen 𝐵 eines DBNs. Dabei besitzt der Knoten der Zufallsvariablen 𝑋𝑡 → 0
+FOOTNOTE:einen Elternknoten im vorgelagerten Zeitschritt 𝑡 − 1; es existiert also eine
 gerichtete Kante über zwei verschiedene Zeitschritte hinweg. Weiterhin exis-
 tieren Kanten innerhalb eines Zeitschrittes, beispielsweise zwischen Knoten
-der Zufallsvariablen 𝑋𝑡 und 𝑋𝑡.
-0 1
+der Zufallsvariablen 𝑋𝑡 und 𝑋𝑡. 0 1
+
+
 2.5 FHIR zur Wissensrepräsentation
+
+
 Ziel der FHIR¹ ist die Unterstützung des Austauschs von Informationen zwi-
 schen Softwaresystemen² im medizinischen Bereich³. Herausgeber ist die He-
 alth Level Seven (HL7)⁴ International, welche im Jahr 1987 als non-Profit Or-
@@ -932,249 +1379,40 @@ ganisation gegründet wurde und durch das American National Standards In-
 stitute (ANSI) seit 27 Jahren als Normungsorgan akkreditiert ist. Gemeinsam
 mit der ISO und anderen Normungsorganen werden kontinuierlich interna-
 tional einschlägige Normen etabliert.
+
+
 Mit FHIR können sowohl Ressourcen als auch Datenformate und Schnittstel-
 len spezifiziert werden [Ben21]. Ressourcen sind allerdings die zentralen Bau-
 steine der FHIR [Oem21]. Aus diesen allgemeinen Schablonen können do-
 mänentypische Objekte wie beispielsweise Patient (engl. Patient), Untersu-
 chungswert (engl. Observation) oder Behandlungsort (engl. Location) abge-
-leitet werden. Es stehen 145 verschiedene Ressourcen zur Verfügung [FHI21],
-die sich gemäß ihres Typus in einer Taxonomie verorten lassen [Ben21]. Mit
+leitet werden. Es stehen 145 verschiedene Ressourcen zur Verfügung [FHI$$$21$$$],
+die sich gemäß ihres Typus in einer Taxonomie verorten lassen [Ben$$$21$$$]. Mit
 Berücksichtigung der entsprechenden fachlichen Sicht ergibt sich Tabelle 2.2
 auf Seite 36 mit den jeweils beispielhaft dargestellten Ressourcen.
+
+
 Weitere Ressourcen können nach Bedarf hinzugefügt werden [Ben21]. Insge-
 samt können so Daten mittels FHIR auffindbar (engl. Findable), zugänglich
-¹ Gesprochen: [ˈfaɪə] (engl. fire).
+
+
+FOOTNOTE:¹ Gesprochen: [ˈfaɪə] (engl. fire).
+
+
 ¹² GHeinspwreoicsh: eSny:st[eˈfmaɪəe]w(eenrdgel.nfirine).der Begriffswelt der Softwaretechnik als Ausschnitte der realen
 oder gedanklichen Welt gesehen, welche aus Komponenten, darauf vorhandenen Strukturen
 sowie einer Systemgrenze bestehen [Hes84, Bal10]. Letztere wird auch als Schnittstelle oder
 seltener als Nahtstelle bezeichnet (engl. interface).
+
+
 ³ Hseilntewneeirs:aDlseNraAhntswteelnledubnezgesibcehrneeicth(eunmglf.aisnstteHrfuacmea).n- und Veterinärmedizin und hierin die me-
 dizinische Versorgung selbst als auch Finanz- und Verwaltungsaspekte[Ben21, FHI21].
+
+
 ⁴ Hdiizninwiescish:eDVieerZsaohrgl 7unisgt eseinlbesAt anlsspaieulcuhngFianuafndza-suOndpeVneSrwysatletmunsgIsnatseprceoknten[eBcetnio2n1,(OFHSII)2S1c]h. ichten-
 modell der International Organization for Standardization (ISO) – häufig kurz als ISO/OSI Mo-
 dell bezeichnet [Pro93]. Dieses bezieht sich auf die Verbindung (Interconnection) verschiedener
 Systeme. Hierin ist die Schicht 7 die sog. Anwendungsschicht, welche sich mit dem Austausch
 von Daten auf Anwendungsebene beschäftigt.
-(engl. Accessible), interoperabel (engl. Interoperable) sowie wiederverwend-
-bar (engl. Reusable) genutzt werden – also sprich: nach dem sogenannten
-FAIR-Prinzip [Wil16, Thu21].
-2.5.1 Motivation
-FHIR gewann in den letzten Jahren zunehmend an Bedeutung [Leh19a,
-Hub20]. Schon im Jahr 2018 verständigten sich die Technologieunternehmen
-IBM, Microsoft, Oracle, Google, Amazon und Salesforce in einer gemein-
-samen Erklärung auf die Notwendigkeit bestehende Hemmnisse bei der
-medizinischen Datenrepräsentation zu beseitigen. Hierin werden FHIR und
-angeschlossene Projekte bereits explizit genannt [Inf18, Leh19a], denn sie
-sollen es ermöglichen, medizinische Daten mit Methoden der KI weltweit
-sowie unternehmensübergreifend effektiv und effizient nutzen zu können
-[Leh19b].
-Mittlerweile wurden auf Basis dieser Bestrebungen Googles Cloud Healthcare
-API [Goo21] und Microsofts Azure API FHIR [Mic21] als Dienste zur Analyse
-großer medizinischer Datenbestände realisiert [Hub20]. Bei letzterem Dienst
-werden in regelmäßigen Abständen Fallbeispiele der Nutzer dieses Dienstes
-aus dem universitären und unternehmerischen Bereich veröffentlicht [Mic21].
-Im Bereich der Software für Patienten nutzt das Unternehmen Apple im Zuge
-der Verknüpfung von elektronischen Gesundheitsdaten mit der eigenen He-
-alth App die FHIR Technologie beispielsweise für die Repräsentation von All-
-ergien, Impfungen, Medikamenten und Vitalwerten [App21]. Solcherlei Um-
-setzungen mit FHIR werden auch allgemeiner betrieben. Zum Beispiel mit
-den Substitutable Medical Applications Reusable Technologies (SMART), die
-einen Einstiegspunkt für die Entwicklung von Gesundheitsanwendungen bie-
-ten [Man16] und die aus der Zusammenarbeit zwischen dem Bostoner Child-
-ren’s Hospital und der Harvard Medical School entstanden sind.
-Weiterhin ergab sich speziell in Deutschland die Frage nach akzeptierbaren
-Softwarelösungen im Hinblick auf ePA, deren Entwicklung durch entspre-
-chende Gesetze in den Jahren zuvor angeregt wurden. Im Jahr 2019 stellten
-Tabelle 2.2: In FHIR stehen mit Version 4 R4 insgesamt 145 verschiedene Ressourcen zur Ver-
-fügung [FHI21]. Dieses lassen sich gemäß ihres Typus in einer Taxonomie verorten
-[Ben21], die sich auf fachliche Sichten herunterbrechen lässt. Die erste Spalte der
-Tabelle zeigt die fachlichen Sichten und jeweils eine beispielhaft dargestellte Res-
-source in der zweiten Spalte. Es existiert ein große Bandbreite an Sichten und somit
-auch an zugeordneten Ressourcen.
-hierzu [Plo19] ein Konzept vor, welches FHIR nutzt, um durch eine möglichst
-akzeptierbare Lösung eine hohe Akzeptanz bei den Benutzern zu erreichen.
-Heute, im Jahr 2022, basieren Schnittstellen sowie die auf der ePA ablegbaren
-und in Bearbeitung befindlichen MIO wie beispielsweise Impfpass, Mutter-
-pass oder das Zahnärztliche Bonusheft auf FHIR [Kas21].
-2.5.2 Hierarchie der Ressourcen und Elemente
-Neben Ressourcen existieren in FHIR sogenannte Elemente, welche zum Be-
-füllen der Ressourcen dienen. Elemente sind beispielsweise primitive Daten-
-typen (Ganzzahl integer, Zeichenkette string etc.) oder auch spezielle Daten-
-typen (Postadresse Address, Alter Age etc.). Bei ersteren kann direkt der Da-
-tentyp mitsamt Wert und Bezeichner festgelegt werden (z. B. Datentyp integer
-mit Wert 3 und Bezeichner anzahlKinder). Bei letzterem sind je nach Datentyp
-weitere Klassen für die Spezifikation von Werten und Bezeichnern notwendig.
-Gemeinsame Basis von Elementen als auch von Ressourcen in FHIR ist
-aber ein abstraktes (engl. abstract) Wurzelelement, von dem ausgehend sich
-zwei inhaltlich verschiedene Hierarchien aufspannen [Oem21]. Abbildung
-2.8 zeigt ein stark vereinfachtes Klassendiagramm zur Verdeutlichung der
-groben Zusammenhänge am prototypischen Beispiel der Ressource Patient
-und den wichtigsten Datentypen.
-Weiße Pfeilspitzen in Abbildung 2.8 zeigen (wie bei Klassendiagrammen üb-
-lich) Vererbungen an, wobei der jeweilige Pfeil von der Spezialisierung hin
-zur Generalisierung zeigt. Die schwarze Raute repräsentiert eine Komposi-
-tion, also eine Teil-Ganze Beziehung bei der das Teil nicht ohne das Gan-
-ze existieren kann. Kardinalitäten, also Kann- bzw. Mussbeziehungen, sind
-in eckigen Klammern angegeben und beschränken sich in dem dargestellten
-Ausschnitt auf einfache Kannbeziehungen [0..1] oder mehrfache Kannbezie-
-hungen [0.. ∗].
-Auf der rechten Seite in Abbildung 2.8 befinden sich u.a. die von einem abs-
-trakten Element abgeleiteten primitiven Datentypen (beispielsweise Ganz-
-zahl) und allgemeine Datentypen (beispielsweise Adresse). In letzterem lassen
-Abbildung 2.8: Die Abbildung zeigt ein Klassendiagramm zur Verdeutlichung der Zusammen-
-hänge am Beispiel der FHIR Ressource Patient (links) und den wichtigsten
-Datentypen (rechts) [FHI21, Oem21]. Zur Vereinfachung sind einige Klassen
-und Zusammenhänge nicht dargestellt, was durch das Symbol ⋯ veranschau-
-licht wird. Die getrennten Hierarchien erlauben eine flexible Modellierung der
-Ressourcen- bzw. Elementaspekte, was als Anlehnung an die aus der Software-
-entwicklung als Entwurfsmuster „Brücke“ bekannten Herangehensweise gese-
-hen werden kann. Das gemeinsame Wurzelelement Base dient zur Etablierung
-gemeinsamer Eigenschaften die dann sowohl bei Elementen als auch Ressour-
-cen immer vorhanden sein müssen.
-sich auch umfangreiche Vokabularien verknüpfen, sodass sich Logical Obser-
-vation Identifiers Names and Codes (LOINC) oder Systematized Nomencla-
-ture of Medicine (SNOMED) in einfacher und konsistenter Weise einbinden
-lassen.
-Auf der linken Seite in Abbildung 2.8 sind die Ressourcen verortet. Konkret
-wird zunächst die Klasse Resource abgeleitet, von der wiederum die Klasse
-der sogenannten DomainResource spezialisiert wird. Diese zusätzliche Abs-
-traktionsebene ermöglicht es, in einer DomainResource mehrere Ressourcen
-zu verankern (engl. contained). Weiterhin lassen sich durch diese zusätzli-
-che Abstraktionsebene flexibel Erweiterungen (engl. Extensions) einbinden.
-Spezialisierungen der DomainResource sind dann beispielsweise Patient oder
-eine der anderen 145 Ressourcen (vgl. Symbole ⋯ rechts neben Patient in Ab-
-bildung 2.8). Die Ressourcen selbst stehen typischerweise auch in Beziehung
-zueinander, so kann ein Patient mehrere behandelnde Ärzte haben, die selbst
-auch Ressourcen im FHIR’schen Sinne sind.
-2.5.3 Medizinische Entscheidungsunterstützung
-Für die nachfolgenden Betrachtungen ist aus den unterschiedlichen Sichten
-(vgl. Tabelle 2.2 auf Seite 36) die Sicht der medizinischen Entscheidungsun-
-terstützung von besonderer Bedeutung. Hierin sind Ressourcen wie PlanDe-
-finition und Action verortet, die für eine Repräsentation eines Prozessmodells
-notwendig sind.
-Abbildung 2.10 auf Seite 42 zeigt ein Klassendiagramm mit den Klassen Plan-
-Definition, Action und RelatedAction. Zur besseren Übersichtlichkeit wurden
-optionale Attribute und Verbindungen zu anderen Klassen vernachlässigt.
-Zentrales Element ist die Action, welche den Baustein einer PlanDefinition
-bildet. Diese Teil-Ganze Beziehung zwischen PlanDefinition und Action wird
-durch die Komposition (schwarze Raute) gekennzeichnet. Eine PlanDefinition
-kann ihrerseits aus beliebig vielen Instanzen einer Action bestehen, was durch
-die mehrfache Kannbeziehung [0.. ∗] angegeben wird.
-Eine Action kann wiederum mit beliebig vielen (related-)Actions in Beziehung
-stehen. Hierfür muss die Action jeweils die id der Zielaktion der Beziehung
-kennen. Eine solche Beziehung kann neben der expliziten Darstellung über ei-
-ne solche 𝑖𝑑 auch durch eine gerichtete Kante angegeben werden. Die gerich-
-tete Kante zeigt dann von der betrachteten Action zur in Beziehung stehenden
-Action. Das bedeutet, es kann von der Quell- zur Zielaktion navigiert werden.
-Abbildung 2.9 zeigt die Zusammenhänge an einem Beispiel, in dem jeweils
-eine zeitliche Beziehungen (relationship=before-end) zwischen Aktion a und
-Aktion b zu einer anonymen Aktion besteht¹. Zur Übersichtlichkeit wurde an
-den beiden Kanten in der Abbildung 2.9 auf die Attributnamen relationship
-verzichtet und nur deren Ausprägungen dargestellt.
-Im rechten Teil des Klassendiagramms in Abbildung 2.10 auf Seite 42 zeigt
-sich eine reflexive Komposition. Diese gibt an, dass eine Action aus beliebig
-vielen weiteren Actions bestehen kann (aber nicht muss). Diese Beziehungen
-in Kombination mit zwei Attributen, dem sogenannten groupingBehavior und
-dem sogenannten selectionBehavior, ermöglichen, dass beispielsweise nur ei-
-nes der Kinder ausgeführt werden kann (groupingBehavior = logical-group,
-selectionBehavior = exactly-one), höchstens eines der Kinder ausgeführt wer-
-den kann (groupingBehavior = logical-group, selectionBehavior = at-most-one)
-oder alle Kinder in beliebiger Reihenfolge ausgeführt werden müssen (grou-
-pingBehavior = logical-group, selectionBehavior = all). Diese Festlegungen sind
-für Verschaltungen von Actions wichtig².
-Abbildung 2.9 zeigt beispielhaft wie die Aktionen 𝑎 und 𝑏 selektiv ausgeführt
-werden. In gleicher Weise führt das Setzen einer selectionBehavior mit dem
-Wert all oder aber at-most-one zu entsprechend anderem Verhalten. Die Kin-
-derknoten können dabei selbst Beziehungen zu weiteren Aktionen aufweisen
-oder auch Elternknoten sein.
-Ein weiteres Attribut einer Action ist das sogenannte cardinalityBehavior.
-Hierdurch wird festgelegt, ob eine Aktion nur einmalig ausgeführt werden
-kann (cardinalityBehavior = single) oder eine mehrfache Ausführung der
-¹ Hinweis: Die Abbildung zeigt ein Objektdiagramm. D.h. im Gegensatz zu einem Klassendia-
-gramm werden nicht Klassen, sondern konkrete Objekte (also Instanzen von Klassen) und ihre
-Beziehungen zueinander angegeben. Im vorliegenden Fall werden somit die Objekte 𝑎 und 𝑏
-angegeben, welche Instanzen der Klasse Action sind. Dieser Sachverhalt wird mit a:Action bzw.
-b:Actionausgedrückt.Vereinfachendformulierthandeltessichbei𝑎 und𝑏 umAktionen–oder
-genauer: um Instanzen der Klasse Action. Instanzen ohne Namen (anonyme Objekte) werden
-mit :Action angegeben.
-² Dmiiet :vAecrtsicohnieadnegneegnebAenrt.en möglicher Verschaltungen werden im folgenden Kapitel 3 (Prozess-
-modelle) ab Seite 47 näher beleuchtet.
-Abbildung 2.9: Die Abbildung zeigt die zwei Aktionen a, b. Hierbei werden a und b selektiv
-ausgeführt – d.h. entweder Aktion a oder aber Aktion b werden ausgeführt. Ein
-Knoten des Typs Action bündelt die Entscheidung (groupingBehavior=logical-
-group) über das Attribut selectionBehavior=exactly-one. Die verbundenen Kind-
-knoten a und b, von denen nur exakt einer ausgeführt werden kann, müssen
-beendet sein (groupingBehavior=before-end) bevor die Elternaktion endet und
-mithin die Ausführung andere Aktion beginnen kann. Eine merfache Ausfüh-
-rung des Elternknotens ist ausgeschlossen (cardinalityBehavior=single)
-Aktion möglich ist (cardinalityBehavior = multiple). In Abbildung 2.9 wird
-eine einmalige Ausführung der Entscheidung festgelegt.
-Gedanklich zurückkehrend auf das Klassendiagramm in Abbildung 2.10 (Seite
-42), kann eine Action auch einen (Daten-)input sowie einen (Daten-)output
-aufweisen.
-Letztgenannte sind von der Klasse DataRequirement, deren Typ spezifiziert
-werden muss und vom speziellen Datentypen Observation stammen kann. Der
-Datentyp Observation wird in FHIR verwendet, um Messwerte und einfache
-Angaben unter anderem über Patienten, Geräte, etc. festzuhalten.
-Abbildung 2.10: Die Abbildung zeigt Zusammenhänge zwischen den Klassen PlanDefinition,
-Action und RelatedAction in einem Klassendiagramm. Eine PlanDefinition be-
-steht aus beliebig vielen Actions. Umgekehrt besteht also eine Teil-Ganze-
-Beziehung (schwarze Raute), wobei das Ganze die PlanDefinition darstellt und
-die Teile die einzelnen Actions. Eine Action kann aus beliebig vielen weiteren
-Actions bestehen. Zusätzlich kann jede Action zu beliebig vielen anderen Ac-
-tions in Beziehung stehen sowie beliebig viele Ein- und Ausgaben vom Typ Da-
-taRequirement aufweisen. Letzterer wurde um einen optionalen Dezimalwert
-probObs erweitert und steht mit CodeableConcept und Coding in Verbindung.
-Um darüber hinaus Wahrscheinlichkeitswerte mit einem DataRequirement as-
-soziieren zu können, wurde eine Erweiterung (Extension) eingeführt, die einen
-solchen Wert als Dezimalzahl (decimal) aufnimmt¹. Vgl. hierzu Abbildung 2.10
-mittig, links.
-Gegenstand (engl. subject) des DataRequirements ist ein sogenanntes Codeab-
-leConcept. Referenziert wird letzteres über den Namen subjectCodableConcept.
-Dabei handelt es sich um einen Datentyp, der aus einem beschreibenden Frei-
-text (text), sowie einem oder mehreren Codings besteht.
-Ein Coding bezieht sich seinerseits auf ein Codesystem (system), welches ei-
-ne Menge möglicher codes definiert. Beispiele für ein solches Codesystem
-sind medizinische Nomenklaturen wie LOINC und SNOMED. Durch einzelne
-Codes sind hier beispielsweise medizinische Werkzeuge, Untersuchungswerte
-und Diagnosen referenzierbar. Dies erleichtert den Austausch des gemeinsam
-mit dem Experten formalisierten Wissens durch eine eindeutige und etablierte
-Begriffszuordnung.
-Für einen optionalen (Daten-)input sowie einen (Daten-)output einer Action
-können also mittels CodeableConcept beliebig viele solcher Coding-Instanzen
-hinterlegt werden, für die jeweils das System (system), der Code (code) sowie
-ein beschreibender Text (display) angegeben werden können.
-Abbildung 2.11 zeigt ein Objektdiagramm, bei dem ein DataRequirement als
-Output einer Aktion spezifiziert wurde. Das DataRequirement ist vom Typ
-Observation und trägt den Wahrscheinlichkeitswert probObs.value = 0.8.
-Darüber hinaus ist dem DataRequirement ein subjectCodeableConcept mit
-dem beschreibenden Freitext text=Trokar zugewiesen. Für dieses subject-
-CodeableConcept wurde weiterhin ein coding hinterlegt. Das coding ist
-aus dem System SNOMDED CT (system=SNOMED CT), trägt den Code
-118418003 (code=118418003) und verfügt über die Bezeichnung Trocar device
-(display=Trocar device).
-¹ Hinweis: Die Erweiterung wurde zur probabilistischen Modellierung von Arbeitsabläufen ei-
-gens erstellt, validiert und den FHIR-Interessensgruppen unter dem folgenden Link zur Verfü-
-gung gestellt: https://simplifier.net/probabilisticdm/probobservation/$validate.
-Abbildung 2.11: Die Abbildung zeigt ein Objektdiagramm mit einer Aktion a der Klasse Ac-
-tion, der als output[0] das Objekt der Klasse Datarequirement zugewiesen wur-
-de. Hinweis: Aus Gründen der Übersichtlichkeit werden alle weiteren Objek-
-te als Attribute in output[0] dargestellt und nicht separat mit Kante und Ob-
-jektkasten visualisiert. Das Objekt output[0] trägt den Typ Observation (ty-
-pe=Observation). Weiterhin weist das Objekt einen Wahrscheinlichkeitswert
-von0.8auf,derwiederumausdemObjektprobObs derKlasseExtensionstammt
-und dort unter dem Attributnamen value bekannt ist. Darüber hinaus hat das
-Datarequirement output[0] ein subjectCodeableConcept mit dem beschreiben-
-den Attribut text=Trokar. Für dieses subjectCodeableConcept wurde ein be-
-stimmtes coding aus SNOMED CT hinterlegt (system=SNOMED CT). Der Code
-lautet 118418003 (code=118418003) und wird für den Menschen lesbar mit der
-Bezeichnung Trocar device angegeben (display=Trocar device).
-In ähnlicher Weise lassen sich einer Aktion Bedingungen (engl. conditions)
-und eine Dauer (engl. duration) zuweisen.
-Abbildung 2.12 zeigt wie für eine Aktion eine Bedingung condition[0] der
-Klasse Condition festgelegt ist. Die Art (engl. kind) der Bedingung betrifft die
-Anwendbarkeit der entsprechenden Aktion (kind=applicability), sprich: wann
-diese Aktion ausgeführt werden soll. Hierfür ist in der Bedingung wiederum
-ein Ausdruck (engl. expression) hinterlegt. Für diesen kann die Sprache (engl.
-language) und der eigentliche Ausdruck angegeben werden. Im vorliegenden
-Falle ist expression.language=text/cql.identifier und expression.expression=x>0
+
+

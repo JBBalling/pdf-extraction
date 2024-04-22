@@ -1,0 +1,1110 @@
+Behandlungsergebnisse von Hypopharynxkarzinomen
+Eine retrospektive Single-Center-Analyse
+
+
+Inauguraldissertation
+zur Erlangung des Grades eines Doktors der Medizin
+des Fachbereichs Medizin
+der Justus-Liebig-Universität Gießen
+
+
+vorgelegt von Fischer, Yvonne-Christine
+aus Langenhagen
+
+
+Gießen 2021
+
+
+Aus dem Fachbereich Medizin der Justus-Liebig-Universität Gießen
+
+
+Gutachterin: Prof. Dr. med. U. Bockmühl
+Gutachter: Prof. Dr. med. C. Arens
+
+
+Tag der Disputation: 02.06.2022
+
+
+1 EINLEITUNG
+
+
+1.1 Epidemiologie
+
+
+Hypopharynxkarzinome gehören zu den Kopf-Hals-Malignomen, deren heterogene
+Gruppe auch die bösartigen Tumoren der Mundhöhle, des Oropharynx und des Larynx
+umfasst. Weltweit rangieren Malignome der Kopf-Hals-Region mit ca. 500.000 Neuer-
+krankungen unter den 10 häufigsten bösartigen Neubildungen [19][32]. Die Hypo-
+pharynxkarzinome haben daran einen Anteil von 5-8% [8][6] [40][60]. Die Inzidenz des
+Hypopharynxkarzinoms variiert stark von Land zu Land. Besonders häufig sind sie in
+Asien, speziell in Indien beschrieben. Hier wird ein Zusammenhang mit dem Konsum
+von Kautabak, Stachel- und Betelnüssen diskutiert [77]. In den USA wird die Anzahl
+von Neuerkrankungen jährlich auf 2450 geschätzt, wobei sie zwischen 1973 und 2010
+um ca. 2% jährlich abgenommen hat [50]. Dies wird vor allem mit einem Rückgang des
+Nikotin- und Alkoholkonsums in Zusammenhang gebracht [60][80]. Im europäischen
+Vergleich liegt die höchste Inzidenz an Hypopharynxkarzinomen in Süd-Europa, vor
+allem in Frankreich [7]. Nach Angaben des Deutschen Krebsregisters gibt es für
+Deutschland keine gesicherten Inzidenzdaten für das isolierte Hypopharynxkarzinom,
+aber im Jahr 2010 erkrankten an bösartigen Tumoren der Mundhöhle und des Rachens
+9340 Männer und 3490 Frauen [72]. Häufig wird das Hypopharynxkarzinom erst im
+fortgeschrittenen Stadium festgestellt und dann als Larynxkarzinom klassifiziert [80][8].
+Der Haupterkrankungsgipfel liegt zwischen dem 50. und 70. Lebensjahr. Dabei erkran-
+ken Männer 4-10-mal häufiger als Frauen [8][19].
+
+
+Ca. 70% der Hypopharynxkarzinome gehen vom Sinus piriformis aus, 15-20% von der
+Postkrikoidregion und 10-15% von der Hypopharynxhinterwand [64].
+Gekennzeichnet sind Hypopharynxkarzinome durch eine lange Symptomfreiheit der
+Patienten, durch ein frühes submuköses Wachstum und durch hohe Raten an regionären
+Metastasen und Fernmetastasen [30][50]. 70-80% der Patienten stellen sich erstmals im
+Stadium III oder IV der Erkrankung vor. Bei Erstdiagnose findet sich bereits in über
+60% eine lymphogene Metastasierung. Okkulte Metastasen werden auf 30-40% ge-
+schätzt. Fernmetastasen werden bei Erstdiagnose in 10-30% der Fälle diagnostiziert
+[73]. Außerdem weist das Hypopharynxkarzinom unter allen Kopf-Hals-Malignomen
+die höchste Rate an Zweitkarzinomen auf, insbesondere in der Lunge und dem Öso-
+phagus [5][63]. Hypopharynxkarzinome weisen die schlechteste Prognose aller Kopf-
+
+
+Hals-Malignome auf. Die 5 Jahres-Überlebensraten variierten in der Literatur zwischen
+10 und 60% [14].
+
+
+1.2 Ätiologie
+
+
+Nikotin und Alkohol sind die dominantesten Risikofaktoren der Kopf-Hals-Malignome,
+wobei für die Entstehung der Hypopharynxkarzinome der chronische Alkoholkonsum
+als stärkster Risikofaktor gilt [60]. Der gemeinsame Alkohol- und Nikotinkonsum hat
+einen synergistischen, multiplizierenden Effekt. Es besteht eine Dosis-Effekt-Beziehung
+bezüglich des Risikos der Malignomentstehung [96] [80][79][10].
+Als weitere Risikofaktoren werden industrielle Toxine wie Chrom, Nickel und Radium
+angesehen. Das humane Papillomavirus spielt in der Karzinogenese des Hypopharynx-
+karzinoms, im Gegensatz zum Oropharynxkarzinom, eher eine untergeordnete Rolle
+[60]. Studien von Joo et al., Wendt et al. und Wilson et al. [44][92][94] konnten nur in
+max. 11% der Fälle eine HPV-16 Assoziation unter den Hypopharynxkarzinomen nach-
+weisen.
+
+
+1.3 Anatomie des oberen Digestivtraktes
+
+
+1.3.1 Makroanatomie
+
+
+Der Hypopharynx bildet den untersten und längsten Abschnitt der oberen Schluckstraße
+auf Höhe des Kehlkopfskelettes. Er umfasst den Raum von der Oberkante der Epiglottis
+bis zum Ringknorpel und geht am Ösophagusmund in den Ösophagus über (s. Abb.1).
+Man unterscheidet folgende drei anatomische Unterbezirke:
+
+
+Hypopharynxhinterwand: liegt vor dem 3.-6. Halswirbelkörper.
+
+
+Postkrikoidregion: von der Hinterwand des Kehlkopfes bis zur Unterkante des
+Ringknorpels reichend.
+
+
+Recessus piriformis: Schleimhauttasche beidseitig zwischen Schildknorpel und
+aryepiglottischer Falte.
+
+
+Abb. 1: Zeichnung des anatomischen Aufbaus des Hypopharynx
+
+
+Histomorphologisch ist der Hypopharynx ein Muskelschlauch, der innen von einer
+Schleimhaut aus geschichtetem unverhorntem Plattenepithel ausgekleidet ist. Als Regio
+digestoria des Pharynx sind fast ausschließlich muköse Drüsen in der Schleimhaut vor-
+handen. Der große Anteil an lymphatischem Gewebe innerhalb der Mukosa spielt aus
+pathomorphologischer Sicht beim Vorliegen eines Malignoms eine wichtige Rolle.
+Die Blutversorgung des Pharynx erfolgt arteriell hauptsächlich über das Stromgebiet der
+A. carotis externa (Äste der A. facialis, A. maxillaris und A. pharyngea ascendens). Das
+venöse Blut mündet über den dorsal gelegenen Plexus pharyngeus direkt und indirekt in
+die Vena jugularis interna.
+
+
+Der Nervus glossopharyngeaus sowie der Nervus vagus sind über den Plexus
+pharyngeus maßgeblich an der motorischen, sensiblen und vegetativen Innervation des
+Hypopharynx beteiligt [69].
+
+
+1.3.2 Histologie
+
+
+Mehr als 90% der malignen Tumoren des Hypopharynx sind Plattenepithelkarzinome
+[19]. Sehr selten finden sich lymphoepitheliale Karzinome, Malignome der kleinen
+Speicheldrüsen oder maligne Lymphome [30].
+
+
+1.3.3 Lymphsystem des Halses
+
+
+Der Lymphabfluss im Kopf-Hals-Bereich erfolgt über ca. 300 Lymphknoten, die über
+ein komplexes Lymphgefäßsystem in Verbindung stehen. Die Lymphe drainiert entlang
+konstanter Lymphbahnen in bestimmte Lymphknotengruppen.
+Die Lokalisation der Lymphknoten wird entsprechend der Klassifikation des „Com-
+mittee for Neck Dissection Classification“ der „American Head and Neck Society“ [71]
+angegeben.
+
+
+Diese unterteilt sechs Hals-Level:
+
+
+Level I: Submentale (Ia) und submandibuläre (Ib) Lymphknoten
+Zwischen Os hyoideum und M. mylohyoideus bis zum hinteren Rand der
+Gl. submandibularis; Nll. submentales liegen vor dem vorderen Bauch
+des M. digastricus, Nll. submandibulares postolateral
+
+
+Zwischen der Schädelbasis und dem Os hyoideum, hinter der Gl. sub-
+mandibularis bis zum hinteren Rand des M. sternocleidomastoideus;
+unterschieden wird IIa (anterior, lateral oder medial der V. jugularis
+interna) von IIb (dorsal der V. jugularis interna)
+
+
+Zwischen Os hyoideum, Ringknorpel, Hinterrand des M. omohyoideus
+und Hinterrand des M. sternocleidomastoideus
+
+
+Zwischen Ringknorpel, Klavikula, Hinterrand des M. sternohyoideus und
+Hinterrand des M. sternocleidomastoideus
+
+
+Von der Schädelbasis bis zur Klavikula; hinter dem
+M. sternocleidomastoideus; unterschieden wird Va (oberhalb des
+Ringknorpels) von Vb (unterhalb des Ringknorpels)
+
+
+Vom Os hyoideum, Manubrium sterni und ventral der V. jugularis
+interna
+
+
+Neben den 6 Lymphknotengruppen gibt es noch die retroaurikulären, subokzipitalen,
+parotidealen und retropharyngealen Lymphknoten.
+Der Lymphabfluß des Hypopharynx erfolgt hauptsächlich über die Lymphknoten der
+Level II und III, seltener IV. Die Lymphe der Hypopharynxhinterwand gelangt über die
+retropharyngealen Lymphknoten zu den Lymphknoten der Level II und III [12][41].
+
+
+1.4 Wachstumsverhalten des Hypopharynxkarzinoms
+
+
+Karzinome des Sinus piriformis neigen zur frühen Tumorausdehnung nach lateral und
+apikal mit Invasion des Knorpels und submuköser Ausdehnung von mehr als 10 mm.
+Bei Tumoren der Hypopharynxlateralwand kommt es zu 55% zur Schildknorpelinva-
+sion, v.a. dorsal. Tumoren der Hypopharynxhinterwand weisen aufgrund der submu-
+
+
+kösen Ausbreitung und Infiltration der prävertebralen Faszie die schlechteste Prognose
+auf [38].
+
+
+Bei Erstdiagnose finden sich bereits in 60-80% Lymphknotenmetastasen, und die Zahl
+der kontralateralen okkulten Metastasen wird bis auf 40% geschätzt [86]. Eine Kor-
+relation zwischen der Größe des Primärtumors und der Inzidenz von lokoregionären
+Metastasen konnte in verschiedenen Untersuchungen nicht hergestellt werden. Entschei-
+dend sind Infiltrationstiefe und Differenzierungsgrad des Primärtumors. Gering oder un-
+differenzierte Karzinome gehen häufiger mit lokoregionären Lymphknotenmetastasen
+einher [88]. Ein großer Teil der zervikalen Lymphknotenmetastasen hat bei ihrer
+operativen Ausräumung bereits die Kapsel durchbrochen und das umgebende Weich-
+teilgewebe infiltriert [89]. Beim Vorliegen eines solchen Metastasierungsmusters ist die
+Gesamtprognose erheblich eingeschränkt [49].
+
+
+Beim Hypopharynxkarzinom besteht die höchste Inzidenz von Fernmetastasen unter
+allen Malignomen des oberen Aerodigestivtrakts. Bei bis zu 60% aller Patienten mit
+einem diagnostizierten Hypopharynxkarzinom können Fernmetastasen bei Erstdiagnose
+oder im Verlauf beobachtet werden [48]. In retrospektiven Studien von Spector et al.
+und Duprez lag eine Fernmetastasierung im Verlauf von 24% bzw. 21% vor. Im Falle
+einer Fernmetastasierung werden am häufigsten pulmonale Metastasen diagnostiziert
+[81][27]. Es kommen aber auch Leber- und Knochenmetastasen sowie Haut- und
+Hirnmetastasen vor [33].
+
+
+Neben einer Regional- und Fernmetastasierung ist die Entstehung eines Zweitkarzinoms
+keine Seltenheit. Der weitaus größte Anteil der Zweitkarzinome findet sich mit ca. 36%
+im Kopf- und Halsbereich [87]. In einer großen multizentrischen Studie wird der Anteil
+der Hypopharynxkarzinom-Patienten, bei denen ein Zweitkarzinom diagnostiziert
+wurde, mit 14,2 % angegeben [42]. Zweittumoren kommen häufig in der Lunge und im
+Ösophagus vor [42][56]. Neben supraglottischen Larynxkarzinomen weisen Hypo-
+pharynxkarzinome (23%) die höchste Rate an Zweitkarzinomen der Lunge auf [61].
+Dafür verantwortlich ist die identische exogene Belastung der Schleimhaut des oberen
+Aerodigestivtrakts mit ähnlichem lokalen Immunstatus bei gleicher intraindividueller
+genetischer Prädisposition. [14][61][53].
+
+
+Die Tumorausdehnung sowie der Metastasenstatus werden beim Hypopharynxkarzinom
+ebenso wie bei allen anderen Malignomen durch das TNM-System klassifiziert.
+
+
+1.5 TNM- und UICC Klassifikation
+
+
+Die Einteilung der Hypopharynxkarzinome nach Größe (T- Klassifikation), Befall der
+Halslymphknoten (N-Status) und Fernmetastasen (M1) erfolgte nach der offiziellen
+TNM-Klassifikation von 2010, sowie nach der Stadieneinteilung nach UICC (gültig ab
+1997) [95].
+
+
+T-Klassifikation
+
+
+N-Klassifikation
+
+
+M-Klassifikation
+
+
+L-Klassifikation
+
+
+V-Klassifikation
+
+
+UICC-Klassifikation
+
+
+1.6 Symptome und Diagnostik
+
+
+Aufgrund primär eher unspezifischer Symptome wie Fremdkörpergefühl oder Dys-
+phagie wird die Mehrzahl der Hypopharynxkarzinome erst im fortgeschrittenen
+Tumorstadium und/oder dem Vorhandensein von regionären Metastasen gestellt,
+nämlich dann, wenn tumorbedingte Beschwerden wie Schmerzausstrahlung ins Ohr,
+gelegentliche Aspiration von Speichel und Nahrung oder Stimmstörungen oder gar
+Luftnot hinzutreten.
+
+
+Zu den diagnostischen Standardverfahren gehören die HNO-Spiegeluntersuchung, in-
+klusive der Lupenlaryngoskopie mit Beurteilung des Hypopharynx und Larynx, sowie
+der Stimmlippenbeweglichkeit. Das entspricht der klinischen Ersterfassung der Tumor-
+ausdehnung, die mit der Panendoskopie in Narkose komplettiert wird. In dieser werden
+die Trachea und Bronchien sowie der Ösophagus in Narkose untersucht, um die genaue
+Tumorausdehnung zu bestimmen und eventuelle Zweitkarzinome zu sichern bzw. aus-
+
+
+zuschließen. Zur genauen Feststellung des Tumorstadiums wird das sog. Staging durch
+die radiologische Diagnostik, bestehend aus Sonographie des Halses, Computertomo-
+graphie (CT) oder Kernspintomographie des Halses (MRT) sowie CT vom Thorax und
+Sonographie des Abdomens, vervollständigt [9][68][90].
+
+
+1.7 Karnowsky-Index
+
+
+Der Karnowsky-Index dient der Einschätzung symptombezogener Einschränkungen
+bezüglich der Aktivität, Selbstversorgung und Selbstbestimmung von Patienten mit ma-
+lignen Erkrankungen, beschrieben durch David A. Karnowsky im Jahr 1949 [62].
+Anhand einer Skala mit Abstufungen in 10-Punkt Schritten von 100% bei keinerlei
+Beschwerden bis 0% (Tod) kann die Prognose sowie die Lebensqualität einheitlich ein-
+gestuft werden.
+
+
+Karnowsky-Index (%)
+
+
+1.8 Therapie
+
+
+Die Wahl der Erstbehandlung wird u.a. durch Kriterien der technischen Resektabilität
+des Tumors bestimmt, sowie in Abhängigkeit vom Wunsch des Patienten nach
+Funktions- und Organerhalt fallbezogen individuell in der interdisziplinären Tumor-
+konferenz auf der Basis der NCCN–Leitlinien [www.nccn.org] diskutiert und festgelegt.
+Als Standardtherapie gilt für resezierbare Tumore die komplette Resektion mit anschlie-
+ßender Strahlentherapie oder Radiochemotherapie und für nicht oder schwer resektable
+Tumoren die primäre kombinierte Radiochemotherapie, die durch die verbesserten
+strahlentherapeutischen Techniken, insbesondere die intensitätsmodulierte Strahlen-
+therapie an Bedeutung gewonnen haben [36].
+
+
+1.8.1 Chirurgische Therapie des Primärtumors
+
+
+Die operative Tumorentfernung ist nach wie vor die Therapie der ersten Wahl. Dabei
+stehen die klassischen transzervikalen chirurgischen Eingriffe und transoralen laser-
+chirurgischen Techniken zur Verfügung.
+Je nach Tumorausdehnung und –lokalisation werden nachfolgende operative Eingriffe
+durchgeführt.
+
+
+1.8.1.1 Transorale mikrolaryngoskopische CO2-Laserresektion
+So wie bei den Larynxkarzinomen hat sich die transorale mikrolaryngoskopische CO - 2
+Laserchirurgie in der organerhaltenden Therapie kleinerer und mittlerer Hypopharynx-
+karzinome durchgesetzt [1][82]. Die Voraussetzung für eine sichere Tumorresektion ist
+dabei die optimale Exposition des Kehlkopfes und des Sinus piriformis. Günstig sind
+verschiebliche Tumore des Recessus piriformis ohne Infiltration des paraglottischen
+Raumes mit frei einsehbarem Apex des Sinus piriformis, freiem Aryknorpel (aryepiglot-
+tische Falte) und frei beweglichen Stimmlippen. Die relativ selten vorkommenden
+Karzinome der Hypopharynxhinterwand können laserchirurgisch reseziert werden,
+wenn eine Infiltration in das Ligamentum longitudinale praevertebrale bzw. eine
+Tumorfixation am Wirbelköper ausgeschlossen werden kann [3]. Kontraindikationen
+für die transorale Laserchirurgie sind das schwer einstellbare Postkrikoidkarzinom, die
+Infiltration des Ösophaguseinganges und des Endolarynx. Karzinome des Sinus piri-
+formis können blockweise reseziert werden, wodurch die lokale Infiltration des Tumors
+erkennbar wird. Die Resektionsränder sollten einen Sicherheitsabstand zum Tumor von
+
+
+2-3cm haben. Die Resektion kann, falls erforderlich, auf den Oropharynx und die an-
+grenzenden Halsweichteile ausgedehnt werden. Die in sano Resektion wird intra-
+operativ immer durch Schnellschnitt-Untersuchungen gesichert [45][59][90].
+
+
+1.8.1.2 Larynx-Pharynxteilresektion
+
+
+Zu den konventionellen Tumorresektionen gehören die transzervikale partielle Pharyng-
+ektomie und die partielle Laryngopharyngektomie. Zu letzterer zählen die supra-
+krikoidale Hemilaryngopharyngektomie und die supraglottische Hemipharyngo-
+laryngektomie [1].
+
+
+1.8.1.3 Laryngo-Pharyngektomie
+
+
+Bei ausgedehnten Tumoren (T3-T4) mit ausgedehnter Infiltration der Hypopharynx-
+hinterwand oder der Postkrikoidregion kann eine Pharyngektomie in Kombination mit
+einer Laryngektomie erforderlich werden. Die Pharynxdefekte können mit verschie-
+denen Lappenplastiken, z.B. dem gestielten myokutanen Pectoralis-major-Insellappen
+oder dem freien mikrovaskulär gestielten Unterarm-Hautlappen gedeckt werden. Im
+Falle einer Tumorausdehnung auf den proximalen Ösophagus ist dessen Resektion mit
+einem Magenhochzug und dem freien mikrovaskulär anastomosierten Jejunuminter-
+ponat möglich [3].
+
+
+Palliative chirurgische Maßnahmen haben das Ziel die Lebensqualität des Patienten zu
+verbessern. Dies kann in Form eines Tumordebulkings oder einer Tracheotomie bei ver-
+legten Atem- und Schluckwegen erfolgen [10].
+
+
+1.8.2 Neck dissection
+
+
+Je nach Tumorstadium ist eine ein- oder beidseitige Ausräumung der Lymphknoten-
+stationen des Halses erforderlich. Es wird zwischen einer radikalen, modifiziert radika-
+len und selektiven Vorgehensweise unterschieden (siehe Tab. 1). Welches Verfahren
+angewandt wird, hängt im Wesentlichen von der Primärtumorlokalisation und dem
+Tumorstadium ab [84].
+
+
+Tab. 1: Übersicht der Arten einer Neck dissection
+
+
+1.8.3 Strahlentherapie
+
+
+Die Strahlentherapie ist ein wichtiger Bestandteil in der Therapie der Hypopharynx-
+karzinome. Sie kann als alleinige kurative Therapie von kleinen Tumoren oder adjuvant
+nach Resektion oder sekundär bei Rezidiven eingesetzt werden. Häufig wird die Strah-
+lentherapie mit einer Operation, einer Chemotherapie (simultan oder sequentiell) und
+mit monoklonalen Antikörpern kombiniert eingesetzt.
+
+
+Das Prinzip der Strahlentherapie beruht auf der Zerstörung der Tumorstammzellen
+durch energiereiche Strahlung. Der limitierende Faktor ist das umgebende Normal-
+gewebe, das nur eine Strahlendosis unterhalb der Grenze der reversiblen Akuttoxizität
+erhalten darf, damit irreversible Spättoxizitäten vermieden werden. Deshalb wird die
+Strahlendosis räumlich möglichst nur dort deponiert, wo sich makroskopisch Tumor
+befindet bzw. mikroskopischer Tumor vermutet wird.
+
+
+Das gelingt am besten mit der Intensitätsmodulierten Strahlentherapie (IMRT), die die
+3D-konformale Strahlentherapie in den letzten 15 Jahren sukzessive abgelöst hat.
+Außerdem wird die Strahlendosis fraktioniert, d.h. in der Regel 2 Gray (Gy) pro Frak-
+tion (pro Tag), an 5 Tagen die Woche über einen Zeitraum von 5-7 Wochen. Neben
+dieser Standardfraktionierung gibt es alternative Fraktionierungen, die der unterschied-
+lichen Zellproliferation Rechnung tragen sollen, wie z.B. die "akzelerierte Strahlen-
+therapie"
+
+
+(= 70 Gy in nur 5 Wochen) oder die "hyperfraktionierte Strahlentherapie (= 70 Gy nicht
+in 35, sondern in 40-45 Fraktionen) oder die "hyperfraktioniert-akzelerierte Strahlen-
+therapie" (= 70 Gy in 5 Wochen mit 2x tgl. Applikation).
+Im HNO-Bereich liegen die typischen Gesamtdosen für die Tumorregion bei einer
+primären kombinierten Radiochemotherapie zwischen 60 und 70 Gy, wobei N0-Lymph-
+knotenregionen, die ein hohes Befallsrisiko haben, mit 50-54 Gy bestrahlt werden. Bei
+einer adjuvanten Radiochemotherapie nach R0-Resektion erfolgt die Bestrahlung
+zweier unterschiedlicher Zielvolumina mit 50 bzw. 60 Gy, was früher in 2 Stufen
+erfolgte (50 Gy in einem großen Feld und danach weitere 10 Gy auf ein verkleinertes
+Feld). Mit der IMRT lassen sich Teilvolumina simultan applizieren durch sog. "simul-
+tan integrierte Boosts", wodurch eine Vereinfachung des Bestrahlungsablaufes und eine
+bessere Anpassung der Dosis an die Zielvolumina erreicht wird [93].
+Zu den gravierenden akuten Nebenwirkungen einer Radiatio im Kopf-Hals-Bereich zäh-
+len die Mukositis, die mit Schmerzen und Schluckbeschwerden einhergeht und die orale
+Nahrungsaufnahme einschränkt sowie die Dermatitis, die zu offenen Hautpartien führen
+kann. Außerdem treten chronische Nebenwirkungen auf, die in ihrem Ausmaß dosis-
+abhängig sind. Dazu können Xerostomie, Dysphagie, Osteonekrosen, Geschmacks-
+verlust und Wundheilungsstörungen zählen [76].
+
+
+1.8.4 Chemotherapie
+
+
+Die Chemotherapie ist der dritte Pfeiler in der Behandlung von Hypopharynxkarzi-
+nomen, wobei im Wesentlichen folgende Substanzen zur Anwendung kommen:
+
+
+FOOTNOTE:- Platinderivate wie Carboplatin und Cisplatin, die als Schwermetallkomplexe zur
+Vernetzung der DNA-Stränge führen;
+
+
+FOOTNOTE:- 5-Fluorouracil, das als Antimetabolit in die DNS-Synthese der Zellen integriert
+wird und deren weiteres Voranschreiten hemmt;
+
+
+FOOTNOTE:- Methotrexat, welches als zytostatisches Folsäureanalog die Bildung von Tetra-
+hydrofolsäure blockiert;
+
+
+FOOTNOTE:- Taxane wie Paclitaxel und Docetaxel sind natürlich vorkommende bzw. teilsyn-
+thetisierte Zytostatika, die am Spindelapparat angreifen und so die Zellteilung
+hemmen.
+
+
+Die genannten Substanzen können initial als Induktionschemotherapie oder als kurative
+primäre bzw. adjuvante simultane Radiochemotherapie eingesetzt werden. Sie können
+als Monotherapie oder in Kombinationen, auch in Palliativsituationen, verabreicht wer-
+den, um einen synergistischen Effekt auszunutzen. Die Ansprechrate ist bei einer Kom-
+bination verschiedener Substanzen höher, als bei der Monotherapie, wobei jede zusätz-
+liche Substanz auch die Toxizität der Chemotherapie erhöht. Die Nebenwirkungen
+reichen von Mukositis, Dermatitis, Nephro-, Oto-, Myelo-, Pulmo- und Hepatotoxizität
+bis zu peripheren Neuropathien und gastrointestinalen Beschwerden [43].
+
+
+1.8.5 Immuntherapie
+
+
+Unter dem Begriff „targeted therapy“ versteht man Substanzen (sog. „small
+molecules“), die auf ein bestimmtes molekulares Angriffsziel gerichtet sind und inhibi-
+torischen Einfluss auf intrazelluläre Signalwege der Tumorzelle nehmen und diese am
+Wachstum hindern. Cetuximab ist ein monoklonaler Anti-EGFR-Antikörper, der am
+EGF-Rezeptor bindet und ihn blockiert, sodass keine Aktivierung stattfindet. Hierdurch
+wird die Signalkaskade zur Aktivierung der Transkriptionsfaktoren nicht in Gang ge-
+setzt und somit ein antiproliferierender Effekt erzielt. Dies funktioniert, da bei Tumor-
+zellen des Kopf-Hals-Bereichs der EGF-Rezeptor regelmäßig überexprimiert ist.
+Cetuximab (Erbitux®) ist seit 2006 als Kombination mit einer Radiotherapie und seit
+2008 als zusätzliches Medikament für die Chemotherapie bei fortgeschrittenen
+Tumorstadien zugelassen [43].
+
+
+Ein weiteres Beispiel ist der jüngst zugelassene „Checkpoint-Inhibitor“ Nivolumab
+(Opdivo®), der eine Immunevasion der Krebszellen verhindert, indem er den Rezeptor
+für die PD-L1 Liganden auf den T-Zellen blockiert. Nivolumab (Opdivo®) wurde im
+Jahr 2016 für die Behandlung von Kopf-Hals-Plattenepithelkarzinoms bei Erwachsenen
+mit einer Progression nach einer platinbasierten Therapie zugelassen [18].
+
+
+1.9 Nachsorge
+
+
+Nach den deutschen Leitlinien von 2004 wird die Tumornachsorge im 1. Jahr min-
+destens alle 3 Monate, im 2. Jahr mindestens alle 4 bis 6 Monate und in den Jahren 3 bis
+5 mindestens alle 6 Monate empfohlen. Danach sollte die ambulante hno- ärztliche
+Nachsorge in jährlichen Abständen erfolgen.
+
+
+2 FRAGESTELLUNG
+
+
+Karzinome des Hypopharynx zeichnen sich gegenüber anderen Karzinomen der oberen
+Luft- und Speisewege durch ihre besonders schlechte Prognose aus. Diese liegt weniger
+in einer geringen Kontrollierbarkeit des Primärtumors, als in der hohen Inzidenz von
+regionären und fernen Metastasen sowie der häufigen Entstehung von Zweitkarzinomen
+begründet.
+
+
+Zur Verlängerung der tumorfreien Überlebenszeit und Verbesserung der posttherapeu-
+tischen Lebensqualität wurden innerhalb der letzten zwei Jahrzehnten in der Abteilung
+für Hals-, Nasen- und Ohrenheilkunde des Klinikums Kassel, wie auch in vielen ande-
+ren HNO-Abteilungen, vermehrt schonendere, teilweise multimodale Therapiekonzepte
+eingesetzt, so beispielsweise die transorale Laserchirurgie und die primär kurative
+simultane Radiochemotherapie. Um einen Überblick über die onkologischen Resultate
+der behandelten Patienten zu gewinnen, wurden retrospektiv die Krankenakten und
+Ambulanzkarten der zwischen 1990 und 2012 behandelten Hypopharynxkarzinom-
+Patienten hinsichtlich Einflussgrößen auf die tumorfreie Gesamtüberlebenszeit sowie
+die rezidiv- und metastasenfreie Überlebenszeit ausgewertet.
+
+
+Dabei sollen im Einzelnen folgende Fragen beanwortet werden:
+
+
+1. Welche epidemiologischen und histopathologischen Charakteristika weisen die in
+Kassel therapierten Hypopharynxkarzinome auf ?
+
+
+2. Bei welchen Tumoren wurden welche Therapieschemata angewendet ?
+
+
+3. Wie hoch ist die Häufigkeit von Rezidiven sowie von syn- und metachronen
+Metastasen und Zweitkarzinomen?
+
+
+4. Wie hoch ist die Gesamtüberlebensrate?
+
+
+5. Wie hoch ist die rezidiv- und metastasenfreie Überlebensrate?
+
+
+6. Welche Faktoren beeinflussen das Überleben?
+
+
+7. Gibt es unabhängige prognostische Marker für das Überleben der Patienten?
+
+
+3 MATERIAL UND METHODE
+
+
+3.1 Patienten
+
+
+In die Studie eingeschlossen wurden alle Patienten, bei denen zwischen 1990 und 2012
+ein neu diagnostiziertes Hypopharynxkarzinom in der HNO-Klinik des Klinikums
+Kassel therapiert worden ist.
+
+
+Die Patientendaten wurden aus dem Tumorregister der Tumordatenbank separiert.
+Ergänzt wurden Daten aus den digitalen und handschriftlichen Patientenakten sowie mit
+Hilfe der Auskunft durch niedergelassene Ärzte. Ausgeschlossen wurden Patienten mit
+lückenhafter Dokumentation und unklarem Behandlungsverlauf.
+
+
+3.2 Methode
+
+
+- Datum der Erstdiagnose
+
+
+- Alter bei Erstdiagnose
+
+
+- Geschlecht
+
+
+- Risikofaktoren
+
+
+- Tumorlokalisation
+
+
+- Tumorstadium (TNM/ UICC-Klassifikation)
+
+
+FOOTNOTE:- Histologie und Grading
+
+
+- Datum und Art der synchronen Metastasen
+
+
+- Datum und Art der Zweitkarzinome
+
+
+- Karnowsky-Index prä- und posttherapeutisch
+
+
+- Datum und Art der Therapie
+
+
+- Datum des lokoregionären Tumorrezidivs
+
+
+- Datum und Art der metachronen Metastasen
+
+
+- Todesdatum, Todesursache
+
+
+- Datum der letzten Nachsorge
+
+
+Anhand der Stagingdokumentation erfolgte die Einteilung in Karzinome des Sinus piri-
+formis, der Postkrikoidregion und der Hypopharynxhinterwand, entsprechend der doku-
+mentierten Tumorhauptmasse.
+
+
+Zur TNM-Klassifikation
+
+
+Alle Tumore wurden nach der 5., 6. oder 7. Auflage der TNM-Systems klassifiziert.
+Daraus ergab sich ein Unterschied in den T4-Angaben, die erst ab der 6. Auflage (2002)
+in T4a und T4b unterschieden wurden. Deshalb wurden die T4a und T4b Karzinome
+unter T4 zusammengefasst. In der vorliegenden Auswertung wurden die pTNM-Ergeb-
+nisse zugrunde gelegt, außer wenn nur cTNM angegeben war, weil keine Tumorresek-
+tion stattgefunden hatte bzw. die Patienten primär nicht operiert, sondern strahlenthera-
+peutisch oder radiochemotherapiert worden waren.
+
+
+Zu Karnowsky-Index
+
+
+Der Karnowsky-Index wurde vor und nach der Primärtherapie erhoben. Zum besseren
+Vergleich wurden Patienten mit einem Karnowsky-Index über 70 einem ausreichend
+guten Allgemeinzustand zugeschrieben, im Gegensatz zu Patienten mit einem
+Karnowsky-Index unter 70.
+
+
+Zu Art der Therapie
+
+
+Operation
+
+
+Es wurden alle Operationsmethoden erfasst, von der transoralen laserchirurgischen
+Hypopharynxteilresektion über die transzervikale partielle Pharyngektomie und die
+suprakrikoidale Hemilaryngopharyngektomie sowie die supraglottischen Hemi-
+pharyngolaryngektomie bis hin zur Pharyngolaryngektomie.
+
+
+Radiatio
+
+
+Im Klinikum Kassel wird seit 2005 grundsätzlich die Intensitätsmodulierte Radio-
+therapie (IMRT) angewandt.
+
+
+Bei der primären kurativen Radiatio und/oder Radiochemotherapie wurden die Patien-
+ten akzeleriert, hyperfraktioniert mit einer Gesamtdosis von 72 Gray (Gy) über 5,5
+Wochen (mit Boost von 1,5 Gy in der 4. und 5. Woche an den Tagen 1-5 und an den
+Tagen 1-2 in der 6.Woche) bestrahlt.
+
+
+Im Rahmen einer adjuvanten Radiatio und/oder Radiochemotherapie wurde die Primär-
+tumorregion fraktioniert mit 60 Gy bestrahlt.
+Bei fehlenden Lymphknotenmetastasen (N0-Status) erfolgte die Bestrahlung der
+Lymphabflusswege mit 50 Gy, bei Vorhandensein von Lymphknotenmetastasen (N+)
+mit über 60 Gy.
+
+
+Chemotherapie
+
+
+Bis 2010 wurde als Chemotherapeutikum Carboplatin eingesetzt, danach erfolgte auf-
+grund der besseren Strahlensensibilität die Umstellung auf Cisplatin.
+Im Rahmen von Studienprotokollen zum Organerhalt (Larynxerhalt) wurde bis 2007
+das DeLOS I Studienprotokoll angewandt. Dieses sah eine Induktionschemotherapie
+mit Paclitaxel ($$$200$$$mg/m2) und Cisplatin ($$$100$$$mg/m2) jeweils an Tag 1 und 22 gefolgt
+von einer akzelerierten, hyperfraktionierten Radiotherapie (69,9 Gy in 5,5 Wochen mit
+Boost von 1,5Gy in der 4. und 5. Woche an den Tagen 1-5 und an den Tagen 1-2 in
+Woche 6) vor. Danach, von 2007 bis 2009, folgte die Induktionschemotherapie dem
+ursprünglichen DeLOS-II-Studienprotokoll (s. Abb. 3). Nach 2009 bis 2012 wurde die
+Induktion aufgrund mehrerer Todesfälle infolge der hohen Toxizität von 5-Fluorouracil
+umgestellt, woraus das geänderte DeLOS-II-Studienprotokoll entstand (siehe Abb. 4),
+FOOTNOTE:das dann auch in Kassel zur Anwendung kam [21]. D e L O S I I : P r o t o c o l ( 2 0 0 7 – 2 0 0 9 )
+
+
+Die bei Hypopharynxkarzinom- Patienten durchgeführten Chemotherapiekonzepte des
+Klinikums Kassel sind in Tabelle 2 zusammenfassend aufgelistet.
+
+
+Zu Todesdatum / Datum der letzten Nachsorge
+
+
+Der Zeitpunkt des Versterbens wurde mit Hilfe der Patientenakten und durch die Aus-
+kunft der betreuenden niedergelassenen Ärzte sowie durch Angehörige der Patienten
+ermittelt. Die Todesursache wurde auf die Frage nach dem tumorbedingten Tod
+beschränkt.
+
+
+Die erfassten Patienten wurden über die eigentliche 5-jährige Tumornachsorge hinaus
+weiter beobachtet. Als Nachbeobachtungsendpunkt wurde der 30.03.2012 gewählt.
+
+
+Tab. 2: Chemotherapieschemata der Hypopharynxkarzinom- Patienten des Klinikums
+Kassel
+
+
+Die erhobenen Daten wurden in einer Excel–Tabelle erfasst und aufbereitet. Die statis-
+tische Auswertung erfolgte mit dem Datenanalyseprogramm SPSS Statistics for
+Windows, Version 17.0. Chicago: SPSS Inc. Neben der Beschreibung der einzelnen
+Parameter durch Häufigkeitstabellen, Grafiken und statistische Maßzahlen, wurde der
+Zusammenhang von jeweils zwei Faktoren in Form von Kreuztabellen dargestellt und
+mit dem Pearson-χ²-Test statistisch überprüft. Um den Einfluss der aufgenommenen
+Faktoren auf den Krankheitsverlauf, d.h. das Gesamt- sowie rezidiv- und metastasen-
+freie Überleben zu ermitteln, wurden Kaplan-Maier- und die Regressionsmethode nach
+dem Cox-Modell angewendet. Dabei wurde das Gesamtüberleben als die Zeit vom Tag
+der Erstdiagnose bis zum Tod des Patienten bzw. dem Ende des Beobachtungszeitraums
+definiert. Das rezidiv- und metastasenfreie Überleben wurde als der Zeitraum von der
+Erstdiagnose bis zum Auftreten eines Rezidivs oder einer Metastase bzw. dem Tod oder
+dem Ende des Beobachtungszeitraum definiert. Ein Teil der Beobachtungen lag nur in
+(rechts-)zensierter Form, d.h. ohne Kenntnis des Zeitraums bis zum tatsächlichen
+Eintritt des „Events“, also dem (Tumor)Tod bzw. dem Auftreten eines Rezidivs oder
+von Metastasen, vor. Diese Fälle wurden zensiert. Die Kaplan-Meier-Kurven wurden
+mit Hilfe des log-Rank-Testes auf statistische Signifikanz überprüft.
+
+
+Um den Effekt der klinisch-pathologischen Faktoren unter Berücksichtigung weiterer
+relevanter Einflussgrößen zu quantifizieren und Prognosen zu ermöglichen wurde die
+Cox-Regression durchgeführt. Dieses multiple Verfahren basiert auf der Hazard-Funk-
+tion, d.h. der Wahrscheinlichkeit für das Eintreten des Events zu einer bestimmten Zeit.
+Während keine besondere Verteilungsform der Daten nötig ist, wird vorausgesetzt, dass
+die Effekte auf das Überleben über die Zeit konstant sind. Die Regressionskoeffizienten
+b der Variablen sind ein Maß für ihre Bedeutung, der Hazard (=exp(b)) quantifiziert das
+Risiko im Vergleich zur Basisfunktion bei der die Einflüsse der Faktoren herausge-
+rechnet sind [97]. Zur Auswahl der wichtigen Variablen für die Cox-Regression wurde
+die Methode „forward“ angewandt. Faktoren wurden in Abhängigkeit ihrer Bedeutung,
+d.h. je geringer die Wahrscheinlichkeit p für einen zufälligen Effekt ist, solange schritt-
+weise eingefügt, bis alle Kovariaten mit einem deutlichen Einfluss (p-Wert < 0,05) in
+der Modellgleichung enthalten waren.
+Die Verfahren der Überlebensanalysen wurden auf Grund der multiplen Testproble-
+matik nur explorativ genutzt.
+
+
+4 ERGEBNISSE
+
+
+4.1 Alter und Geschlecht
+
+
+Das Patientenkollektiv umfasste insgesamt 264 Patienten im Alter von 40 bis 88 Jahren
+(Alter bei Erstdiagnose).
+
+
+Der Anteil der Männer lag über 90% (Männer-Frauen-Verhältnis 12:1). Das mittlere
+Alter aller Patienten lag bei ~60 Jahren. Das Erkrankungsalter differierte zwischen
+Männern und Frauen nicht wesentlich. Die Einzelheiten sind in Abbildung 5 graphisch
+dargestellt.
+
+
+4.2 Risikofaktoren
+
+
+Insgesamt konsumierten 12% der Patienten (n=32) regelmäßig Alkohol. Eine Nikotin-
+abhängigkeit lag bei 21% der Untersuchten (n=55) vor. Ein gemeinsamer regelmäßiger
+Alkohol- und Nikotinkonsum wurde von 43% der Patienten (n=114) angegeben. Es gab
+keine wesentlichen Unterschiede zwischen den Geschlechtern. Die Häufigkeitsvertei-
+lung der Risikofaktoren ist in Abbildung 6 veranschaulicht.
+
+
+4.3 Karnowsky-Index (KI)
+
+
+Während prätherapeutisch 10% des gesamten Patientengutes (264 Patienten) einen
+Index <70 hatten, mussten posttherapeutisch 16% einem Karnowsky-Index <70 zuge-
+ordnet werden.
+
+
+Bei 172 (93,5%) der 184 kurativ therapierten Patienten (operativ sowie auch strahlen-
+und chemotherapeutisch) lag nach Abschluss der Behandlung der KI unverändert bei ≥
+70. In 10 (5,4%) Fällen verschlechterte sich der Index im Verhältnis zum Therapie-
+beginn unter die Schwelle von 70. Dabei war kein Unterschied in der posttherapeu-
+tischen Verschlechterung des KI zwischen den Kollektiven der primär operierten und
+der primär radiochemotherapierten Patienten erkennbar.
+
+
+Bei den beiden Patienten mit einem niedrigen prä-therapeutischen KI (<70) blieb der
+reduzierte Allgemeinzustand nach Therapie erhalten. Die Einzelheiten sind in Tabelle 3
+aufgelistet.
+
+
+Tab. 3: Karnowsky-Index prä- und posttherapeutisch aller Patienten mit kurativem
+Behandlungskonzept
+
+
+Es zeigte sich ein Zusammenhang zwischen Karnowsky-Index und Tumorgröße. Pati-
+enten mit fortgeschrittenem Tumorstadium (T3/T4) gaben prätherapeutisch in 12% und
+posttherapeutisch in 18% einen Karnowsky-Index <70 an. Patienten mit Tumoren im
+Anfangsstadium (T1/T2) gaben in ~$$$7$$$% prätherapeutisch und in ~10% postthera-
+peutisch einen Karnowsky-Index <70 an (siehe Tab. 4).
+
+
+4.4 Tumorlokalisation
+
+
+In 72% (n=190) der Fälle befand sich der Primärtumor im Bereich des Sinus piriformis
+(SP), in 16% (n=43) im Bereich der Postkrikoidregion (PC), und in ~12% (n=31) der
+Fälle handelte es sich um ein Karzinom der Hypopharynxhinterwand (HH), siehe
+Abbildung 7.
+
+
+4.5 Histologie und Grading
+
+
+Histologisch handelte sich in 99,6% der 264 Fälle um Plattenepithelkarzinome. Ledig-
+lich in einem Fall wurde ein lymphoepitheliales Karzinom diagnostiziert.
+Das Grading ergab in 13 Fällen (4,9%) gut differenzierte (G1), in 175 Fällen (66,3%)
+mittelgradig differenzierte (G2) und in 76 Fällen (28,8%) schlecht differenzierte (G3)
+Plattenepithelkarzinome.
+
+
+Lymphangiosis oder Hämangiosis carcinomatosa (L- bzw. V-Status)
+Eine Lymphangiosis bzw. eine Hämangiosis carcinomatosa ließ sich nur im histolo-
+gischen Tumorpräparat nach einer Tumoroperation diagnostizieren. Von 110 operierten
+Patienten wiesen 37 (34%) einen positiven L– und/oder V-Status auf. Davon hatten 31
+Patienten (28%) einen positiven L-Status, ein Patient (1%) einen positiven V-Status und
+5 Patienten (5%) die Kombination von positivem L- und V-Status. Es zeigte sich ein
+positiver Zusammenhang zwischen zunehmender Tumorgröße und dem Auftreten einer
+Lymphangiosis carcinomatosa, der auch statistisch signifikant war (p= 0,034). Die
+
+
+geringen Fallzahlen für die Hämangiosis carcinomatosa ließen keine sicheren statis-
+tischen Rückschlüsse zu.
+
+
+4.6 TNM-Klassifikation
+
+
+Bei 131 Patienten (49,6%) befand sich das Hypopharynxkarzinom bei Erstdiagnose be-
+reits im Stadium T4. Am zweithäufigsten lag mit 28% (74 Patienten) ein T3-Stadium
+vor, gefolgt von 49 Patienten (18,6%) im Stadium T2. Nur 10 Patienten (3,8%) hatten
+bei Diagnosestellung ein T1-Hypopharynxkarzinom.
+
+
+Bezüglich der lokoregionären Lymphknotenmetastasierung hatten über 50% der Patien-
+ten ein N2-Stadium, wobei in dieser Gruppe ein ipsilaterales Auftreten von mehr als
+einer Lymphknotenmetastase kleiner 6cm (N2b) dominierte. Im fortgeschrittenen N3-
+Stadium befanden sich 32 Patienten (12%). Bei 13,6% (36 Patienten) konnte zum Zeit-
+punkt der Erstdiagnose keine Lymphknotenmanifestation nachgewiesen werden.
+
+
+Fernmetastasen fanden sich bei Erstdiagnose bei 27 Patienten (10,2%), hauptsächlich
+pulmonal (20 Patienten). Bei 5 Patienten waren Leberfiliae auffällig, jeweils ein weite-
+rer Patient hatte bereits Lungen- und Knochenmetastasen sowie Leber- und Lungen-
+metastasen. Die Häufigkeitsverteilung von Primärtumorgröße und Lymphknotenstatus
+sind in den Abbildungen 8 und 9 dargestellt. Die Tabelle der lokalisationsbezogenen
+Häufigkeit der synchronen Fernmetastasen aufgeschlüsselt nach T- und N-Stadien (Tab.
+37) befindet sich im Anhang.
+
+
+Ein Zweitkarzinom bei Erstdiagnose wiesen 5 (2%) Patienten auf, jeweils in Form eines
+Hypopharynxkarzinoms der Gegenseite, eines Bronchialkarzinoms, eines Larynxkarzi-
+noms und in Form von zwei Oropharynxkarzinomen auf.
+
+
+Die nachfolgende Tabelle 5 stellt die Beziehung zwischen Tumorausdehnung und
+Lymphknotenstatus für die einzelnen Tumorlokalisationen dar. Die großen Tumore mit
+fortgeschrittener Lymphknotenmetastasierung finden sich hauptsächlich in der Gruppe
+der Sinus-piriformis-Karzinome.
+
+
+Tab. 5: Aufschlüsselung der T- und N-Stadien nach der Tumorlokalisation
+
+
+4.7 UICC-Tumorstadium
+
+
+Entsprechend der TNM-Klassifikation bestätigte sich in den UICC-Stadien ein
+deutliches Überwiegen des fortgeschrittenen Stadiums IV in 83% der Fälle (218
+Patienten), gefolgt von 38 Patienten (14%) im Stadium III (siehe Abbildung 10).
+
+
+4.8 Therapie
+
+
+Von insgesamt 264 Patienten erhielten 241 Patienten (91%) eine tumorspezifische
+Therapie. Mit einem kurativen Behandlungskonzept wurden 184 Patienten (70%) be-
+handelt. Eine Therapie mit einem palliativen, lebensverlängernden Behandlungsziel
+wurde bei 57 Patienten (21%) angewandt.
+
+
+Die Standardtherapien waren die primäre Operation mit adjuvanter Radiotherapie (9,5%
+der Patienten) oder mit adjuvanter Radiochemotherapie (20% der Patienten) oder die
+primäre kombinierte Radiochemotherapie (26% der Patienten).
+
+
+Patienten, die lediglich operiert worden waren, stellten eine heterogene Gruppe dar: bei
+2 Patienten mit T1-Tumoren ohne lymphogene Metastasierung war das Behandlungsziel
+
+
+kurativ. 7 Patienten mit fortgeschrittenen Tumoren lehnten eine empfohlene adjuvante
+Therapie ab, während weitere 9 Patienten wegen des stark reduzierten Allgemein-
+zustandes keine weiterführende Therapie erhielten (siehe Tabelle 6).
+Dreiundzwanzig Patienten (9%) erhielten aufgrund eines fortgeschrittenen Tumorsta-
+diums mit deutlich reduziertem Allgemeinzustand oder mangelnder Compliance keine
+tumorspezifische Therapie, sondern ausschließlich „best supportive care“.
+
+
+Von 264 Patienten entwickelten nach abgeschlossener Tumortherapie im Verlauf 97
+Patienten (37%) ein Lokalrezidiv. Davon waren 6 Frauen (6%) und 91 Männer (94%)
+betroffen. Das mediane Alter bei Rezidivdiagnose betrug bei den Männern 59 Jahre und
+bei den Frauen 60 Jahre. Das Rezidiv trat im Mittel (Median) bei den Männern 8
+Monate nach der Erstdiagnose auf, bei Frauen nach 6 Monate.
+
+
+Hypopharynxkarzinome ausgehend vom Sinus piriformis (SP) hatten die höchsten
+Rezidivraten (n=70 Patienten, 72,2%). Postkrikoidkarzinome (PC) rezidivierten in
+15,5% der Fälle. Prinzipiell ähnelte die prozentuale Aufteilung der Lokalrezidive auf
+die unterschiedlichen Regionen denen der Primärtumoren (siehe Abb. 11).
+Es zeigte sich weiterhin, dass die Lokalrezidive zu fast 90% bei den Patienten entstan-
+den, deren Primärtumoren das UICC-Stadium IV hatten (siehe Abb. 12), wobei über die
+Hälfte der Fälle (59,8%) im Stadium IVA waren. Der Zusammenhang zwischen UICC-
+Stadium und Lokalrezidiv war statistisch signifikant (p=0,015).
+
+
+Bezogen auf die Therapie traten die Lokalrezidive in 36% der Fälle am häufigsten nach
+primärer kurativer kombinierter Radiochemotherapie auf. Patienten, die mit einer
+Induktionschemotherapie und nachfolgender Radiatio oder einer Tumoroperation mit
+anschließender kombinierter Radiochemotherapie behandelt worden waren, wiesen nur
+eine Rezidivrate von 11% bzw. 13% auf. Unter den Patienten nach einer Tumorresek-
+tion mit adjuvanter Radiatio kam es in nur 7% zum Lokalrezidiv. Diese Unterschiede
+waren statistisch signifikant (p= 0,00). Die Einzelheiten sind in Abbildung 13 graphisch
+veranschaulicht.
+
+
+Von den 184 Patienten, die mit einem kurativen Behandlungsansatz therapiert worden
+waren, entwickelten 66 (36%) ein Lokalrezidiv. Von diesen fanden sich 31 Fälle (47%)
+in der Gruppe der Patienten mit Sinus-piriformis-Karzinomen im UICC-Stadium IVA.
+Die Einzelheiten der lokalisationsbezogenen Häufigkeit der Lokalrezidive bezogen auf
+das UICC-Stadium der Primärtumoren und die kurative Therapiemodalität sind in
+Tabelle 7 aufgeschlüsselt.
+
+
+Tab. 7: Lokalisationsbezogene Häufigkeitsverteilung der Lokalrezidive bezogen auf das
+UICC-Stadium der Primärtumoren und die Therapiemodalität
+
+
+4.10 Metachrone lokoregionäre Lymphknotenmetastasen
+
+
+Vom erneuten Auftreten von lokoregionären Lymphknotenmetastasen nach Therapie-
+abschluss waren von 264 Patienten insgesamt 36 Patienten betroffen (14%), davon 34
+Männer (94%) und 2 Frauen (6%). Das mittlere (Median) Alter betrug bei beiden
+Geschlechtern 59 Jahre. Die metachronen Lymphknotenmetastasen traten im Mittel
+(Median) 11 Monate nach der Erstdiagnose auf.
+
+
+Patienten mit Primärtumoren im Sinus piriformis zeigten in 28 Fällen (78%) die höchste
+Rate an metachronen Lymphknotenmetastasen, gefolgt von 7 Patienten (19%) mit post-
+krikoidalen Primärtumoren. Bei nur einem Patienten befand sich der Primärtumor an
+der Hypopharynxhinterwand. (siehe Abb. 14)
+
+
+Abb. 14: Häufigkeitsverteilung der metachronen lokoregionäre Lymphknoten-
+metastasen bezogen auf die Primärtumorlokalisation
+
+
+Es zeigte sich weiterhin, dass die metachronen zervikalen Lymphknotenmetastasen zu
+über 90% bei den Patienten entstanden, deren Primärtumoren das UICC-Stadium IV
+hatten, wobei 69,4% im Stadium IVA waren (siehe Abb. 15). Der Zusammenhang zwi-
+schen UICC-Stadium und metachronen zervikalen Lymphknotenmetastasen war statis-
+tisch signifikant (p=0,015).
+
+
+Bezogen auf die Therapie traten, ähnlich wie bei den Lokalrezidiven, die häufigsten
+metachronen zervikalen Lymphknotenmetastasen nach primärer kurativer kombinierter
+Radiochemotherapie auf (~42%). Patienten, die mit einer Induktionschemotherapie und
+nachfolgender Radiatio oder einer Tumoroperation mit anschließender kombinierter
+Radiochemotherapie behandelt worden waren, wiesen metachrone Lymphknoten-
+metastasen in jeweils 14% auf. Die Einzelheiten gibt die Abbildung 16 graphisch
+wieder. Diese Unterschiede waren statistisch nicht signifikant (p= 0,055).
+
+
+Von den 184 Patienten, die mit einem kurativen Behandlungsansatz therapiert worden
+waren, entwickelten 27 (15%) metachrone zervikale Lymphknotenmetastasen. Diese
+fanden sich zu 56% (15 Fälle) in der Gruppe der Patienten mit Sinus-piriformis-Karzi-
+nomen im UICC-Stadium IVA. Die Einzelheiten der lokalisationsbezogenen Häufigkeit
+der metachronen zervikalen Lymphknotenmetastasen bezogen auf das UICC-Stadium
+der Primärtumoren und die Therapiemodalität sind in Tabelle 8 aufgeführt.
+
+
+Tab. 8: Lokalisationsbezogene Häufigkeitsverteilung der metachronen lokoregionären
+Lymphknotenmetastasen bezogen auf das UICC-Stadium der Primärtumoren
+und die Therapiemodalität
+
+
+4.11 Metachrone Fernmetastasen
+
+
+Fernmetastasen wurden nach Therapieabschluss der 264 Patienten durch Verlaufs-
+Bildgebung bei 50 Patienten (19%) diagnostiziert, wobei davon 47 Männer und 3
+Frauen waren. Das mittlere Alter zum Zeitpunkt des Auftretens der Fernmetastasen lag
+bei Männern bei 59 und bei Frauen bei 54 Jahren. Die metachronen Fernmetastasen
+traten 10 Monate nach der Erstdiagnose auf, wobei Lebermetastasen erst relativ spät,
+nach durchschnittlich 2 Jahren manifest wurden. Unter den Fernmetastasen fanden sich
+in 66% der Fälle Lungenmetastasen, in 18% Hirnmetastasen, in 8% Lebermetastasen
+und in 8% Skelettmetastasen.
+
+
+Patienten mit Primärtumoren im Sinus piriformis zeigten mit 86% der Fälle (n=43)
+ebenfalls die höchste Rate an metachronen Fernmetastasen (siehe Abb. 17).
+
+
+Abb. 17: Häufigkeitsverteilung der metachronen Fernmetastasen bezogen auf die
+Primärtumorregion
+
+
+Es zeigte sich weiterhin, dass die metachronen Fernmetastasen ebenfalls zu über 90%
+bei den Patienten entstanden, deren Primärtumoren das UICC-Stadium IV hatten, wobei
+52% im Stadium IVA waren (siehe Abb. 18). Der Zusammenhang zwischen UICC-
+Stadium und Fernmetastasen war statistisch signifikant (p=0,003).
+
+
+Bezogen auf die Therapie traten, ähnlich wie bei den Lokalrezidiven und metachronen
+lokoregionären Lymphknotenmetastasen, die häufigsten metachronen Fernmetastasen
+nach primärer kurativer kombinierter Radiochemotherapie (30%) und nach primärer
+Operation mit adjuvanter kombinierter Radiochemotherapie (24%) auf. Bei Patienten,
+die nach dem DeLOS-Protokoll behandelt worden waren, traten in nur 12% der Fälle
+Fernmetastasen auf. Wiederum zeigte sich in der Gruppe der Patienten, die kurativ ope-
+riert und adjuvant bestrahlt worden waren mit 8 % die niedrigste Fernmetastasierungs-
+rate, wobei 4 Patienten jeweils ein T2 bzw. T3-Stadium und nur zwei ein T4-Stadium
+aufwiesen. Die Einzelheiten gibt die Abbildung 19 graphisch wieder.
+
+
+Von den 184 Patienten, die mit einem kurativen Behandlungsansatz therapiert worden
+waren, entwickelten 37 (20%) metachrone Fernmetastasen. Die metachronen Fernme-
+tastasen fanden sich zu 54% (20 Patienten) in der Gruppe der Patienten mit Tumoren
+des Sinus piriformis im UICC-Stadium IVA (siehe Tab. 9).
+
+
+Tab. 9: Lokalisationsbezogene Häufigkeitsverteilung der metachronen Fernmetastasen
+bezogen auf das UICC-Stadium der Primärtumoren und die Therapiemodalität
+
+
+4.12 Metachrone Zweitkarzinome
+
+
+Bei 37 Patienten (14%) wurde ein metachrones Zweitkarzinom diagnostiziert. Am
+häufigsten fanden sich Bronchial- oder Öophaguskarzinome (siehe Abb. 20).
+
+
+Abb. 20: Lokalisationsbezogene Häufigkeitsverteilung der Zweitkarzinome
+
+
+Von den 184 Patienten, die mit einem kurativen Behandlungsansatz therapiert worden
+waren, entwickelten 24 (13 %) ein metachrones Zweitkarzinom. Die metachronen
+Zweitkarzinome fanden sich zu 58% (15 Patienten) in der Gruppe der Patienten mit
+Tumoren des Sinus piriformis im UICC-Stadium IVA.
+Die Tabelle der lokalisationsbezogenen Häufigkeit der metachronen Zweitkarzinome
+bezogen auf das UICC-Stadium der Primärtumoren und die Therapiemodalität (Tab. 38)
+befindet sich im Anhang.
+
+
+4.13 Überlebensanalyse
+
+
+Im Beobachtungszeitraum waren 144 der 264 Patienten (54,5%) an ihrem Tumorleiden
+verstorben, 116 am Primärtumor (80,6%) und 28 Patienten (19,4%) am metachronen
+Zweitkarzinom. Die nicht tumorspezifischen Todesursachen waren sehr inhomogen und
+wurden nicht weiter analysiert. Im medianen Durchschnitt verstarben die Patienten 18
+Monate nach Erstdiagnose an ihrem Tumor.
+
+
+In dem untersuchten Gesamt-Patientenkollektiv betrug die tumorspezifische kumulierte
+2-Jahres-Gesamtüberlebensrate (2-J-GÜLR) 61% und die tumorspezifische kumulierte
+5-Jahres-Gesamtüberlebensrate (5-J-GÜLR) 44% (siehe Abb. 21).
+
+
+Als wichtige Einflussfaktoren auf das tumorspezifische Gesamtüberleben erwiesen sich
+die Tumorgröße, der Lymphknotenstatus, das Vorhandensein von Fernmetastasen, ein
+mögliches Rezidiv, die Therapiemodalität, das Alter (<60/>60 Jahre), der Differen-
+zierungsgrad des Tumors sowie der Karnowsky-Index (<70/>70) und die Noxen.
+Keinen Einfluss hatten die Tumorlokalisation und das Geschlecht. Die Kaplan-Meier-
+Kurven der tumorspezifischen 5-J-GÜLR in Abhängigkeit von Alter (Abb. 39), Noxen
+(Abb. 40), Karnowsky-Index (Abb. 41) und Tumorlokalisation (Abb. 42) sind im
+Anhang aufgeführt.
+
+
+Die Abbildung 22 zeigt die Kaplan-Meier-Kurven der Gesamtüberlebensrate der
+Patienten in Abhängigkeit von der Tumorgröße. Die kumulierte 5-J-GÜLR betrug bei
+Patienten mit T1-Karzinomen 69% gegenüber 29% für Patienten mit T4-Karzinomen.
+
+
+Der Unterschied der Kurvenverläufe ist statistisch signifikant (p ≤ 0,000). Die Details
+sind in Tabelle 10 aufgelistet.
+
+
+Die Abbildung 23 zeigt die Kaplan-Meier-Kurven der Gesamtüberlebensrate der
+Patienten in Abhängigkeit vom Lymphknotenstatus. Die kumulierte 5-J-GÜLR betrug
+bei Patienten mit N0-Karzinomen 48% gegenüber 13% für Patienten mit N3-
+Karzinomen. Dabei ist interessant, dass sich die Überlebensraten zwischen N0, N1 und
+N2 statistisch nicht signifikant unterscheiden. Jedoch ist der Unterschied der
+Kurvenverläufe von N0, N1 und N2 zu N3 statistisch signifikant (p ≤ 0,01). Die Details
+FOOTNOTE:sind in Tabelle 11 aufgelistet.
+
+

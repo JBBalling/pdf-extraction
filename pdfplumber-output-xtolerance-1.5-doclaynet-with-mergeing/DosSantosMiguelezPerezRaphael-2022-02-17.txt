@@ -1,0 +1,1718 @@
+Brasilien, Deutschland und Japan für die UN-Sicherheitsratsreform:
+eine Kritische Diskursanalyse der Online-Reformvorschläge
+
+
+Inaugural-Dissertation
+
+
+zur
+
+
+Erlangung des Doktorgrades
+der Philosophie des Fachbereiches Geisteswissenschaften
+der Justus Liebig Universität Gießen
+
+
+vorgelegt von
+Raphael dos Santos Miguelez-Pérez
+
+
+aus Rio de Janeiro
+Brasilien
+
+
+2022
+
+
+Dekan: Prof. Dr. Thomas Möbius
+1. Berichterstatter: Prof. Dr. Joachim Born
+2. Berichterstatterin: Prof. Dr. Marion Grein
+Prof. Dr. Falk Seiler
+Prof. Dr. Verena Dolle
+Tag der Disputation: 17.02.2022
+
+
+“What governments and people don’t realize is that sometimes the collective
+interest – the international interest – is also the national interest.”
+
+
+(Kofi Annan)
+
+
+Agradecimentos
+
+
+Por se tratar de uma seção bastante pessoal, gostaria de escrever estas palavras de agradecimento
+em português, minha língua materna.
+
+
+O caminho para a obtenção de um doutorado pode ser bastante solitário, e em tempos de
+pandemia, essa sensação se torna ainda mais intensa. Apesar disso, tenho muitas pessoas para
+agradecer por me acompanharem ao longo dessa jornada, tanto presencialmente, quanto de longe.
+
+
+Agradeço primeiramente ao meu orientador, professor Joachim Born da Universidade de
+Giessen (JLU), e à minha coorientadora, professora Marion Grein da Universidade de Mainz (JGU),
+pela parceria e pela disponibilidade. Igualmente gostaria de agradecer à professora e colega Dinah
+Leschzyk (JLU) pelos conselhos e pela ajuda constante, bem como pelas revisões de partes da tese.
+Agradeço ainda ao professor Falk Seiler (JLU), pela ajuda com trâmites burocráticos, e à professora
+Verena Dolle (JLU), pelo convênio com a Universidade do Estado do Rio de Janeiro (UERJ), que
+resultou na minha vinda a Giessen.
+
+
+Também gostaria de agradecer às professoras Gabriela Marques-Schäfer e Magali dos Santos
+Moura, da UERJ, pelas cartas de recomendação para a CAPES e pela parceria em diversos projetos
+dos quais participamos juntos. Agradeço também à professora Satomi Takano Kitahara (UERJ)
+pela confiança e pelo convite para apresentar minha pesquisa na Universidade de Estudos
+Estrangeiros de Tóquio (TUFS). À professora Rika Hagino (UFRJ) também meu “muito obrigado”
+por me apoiar e me incentivar ao longos de todos esses anos. E ao professor Alexandre do Amaral
+Ribeiro (UERJ) pela minha iniciação na área de Português Língua Estrangeira/Segunda Língua.
+
+
+Agradeço também à CAPES pelo auxílio financeiro ao longo desses três anos de doutorado e à
+TUFS pelo convite e pela cobertura dos gastos do meu deslocamento até o Japão. E à JLU, em
+especial pela rica biblioteca e pela disponibilização de livros digitalizados, o que foi essencial para
+minha pesquisa durante os meses de isolamento e de portas fechadas da universidade.
+
+
+Meus mais ternos agradecimentos aos amigos Willian, Jacob, Mario, Bogdan e às amigas Janika,
+Katharina e Jenny pela revisão da tese e pelas correções e conselhos. Sei que não é fácil ter tempo
+para corrigir textos longos e dessa natureza, ainda mais quando é preciso esforço redobrado para
+entender o que eu queria dizer. Muito obrigado!
+
+
+Aos amigos Henrik, Victor e à amiga Liliana agradeço imensamente pelas tardes de escrita na
+companhia de vocês. Esses momentos juntos foram essenciais e revigorantes.
+
+
+Gostaria de agradecer ainda aos queridos Alan e Abimael, e à querida Cecília pelo apoio
+constante, mesmo de longe, ao longo de todo o processo. Como pessoas que estão também
+cursando o doutorado ou que já terminaram, creio que o apoio de vocês e as nossas constantes
+
+
+trocas de experiência foram de extrema importância para mim, desde os momentos de estresse até
+os momentos em que simplesmente rimos de tudo. Obrigado também à Fernanda, que, igualmente
+de longe, não só sempre me deu apoio emocional, como também material. Agradeço por todos os
+“mimos” que facilitaram minha vida consideravelmente.
+
+
+Por fim, meu “muito obrigado” à minha família, pelo incentivo constante e apoio incondicional
+sempre. Amo vocês!
+
+
+Zusammenfassung
+
+
+Im Rahmen des Weltgipfels 2005 begründeten Brasilien, Deutschland, Japan und Indien die Gruppe der
+Vier (G4-Staaten), die nach einer Reform des Sicherheitsrates der Vereinten Nationen streben. Von den vier
+Mitgliedern erstellten die Auswärtigen Ämter Brasiliens, Deutschlands und Japans ihre eigenen Webseiten
+für die Reform. Auf diesen Seiten begründen sie die Notwendigkeit und Wichtigkeit der Reform, sodass der
+Sicherheitsrat „repräsentativerer, legitimerer und effizienterer“ werden kann. Die vorliegende
+Promotionsstudie fokussierte sich auf den Vergleich der diskursiven Betrachtung der gleichen Fragen zur
+Reform des UN-Sicherheitsrates in unterschiedlichen Sprachen, also im Portugiesischen, Deutschen und
+Japanischen. Texte und Bilder auf den drei genannten Webseiten setzen das Korpus zusammen. Die Analyse
+wurde anhand des Ansatzes der Kritischen Diskursanalyse durchgeführt, insbesondere die in Language and
+Power eingeführte Methode Faircloughs (2015) und die in Linguistische Diskursanalyse zusammengefasste
+Bildanalyse Bendel Larchers (2015). Es konnte festgestellt werden, dass die brasilianischen Texte über kurze
+Sätze, meistens aktive, und über eine Häufigkeit von Koordination verfügen. Nennenswert ist zudem das
+häufige Vorkommen expressiver Modalitäten. Die deutschen Texte wirken sehr objektiv und zeigen einige
+Fälle von Superlativ, was die Dringlichkeit der Reform und die Vorteile eines ständigen UN-Sitzes für
+Deutschland hervorhebt. Die japanischen Texte hingegen verfügen über viele Nebensätze und, wie die
+brasilianischen, über vielen expressiven Modalitäten. Da die deutschen und die japanischen Webseiten über
+einen Q&A-Bereich verfügen, kommen Fragesätze vor, die aber auf der brasilianischen Webseite nicht zu
+sehen sind. Zudem können mehr assertive (behauptende) Sprechakte in den brasilianischen Texten gesehen
+werden, wohingegen deklarative (performative) Sprechakte häufiger in den deutschen und japanischen
+Texten zu finden sind, welche die aktive Teilnahme dieser Länder an der UNO hervorhebt. In Bezug auf
+die Bildanalyse ist das Foto auf der brasilianischen Startseite groß und wirkt ziemlich subjektiv, indem der
+leere Hörsaal des Sicherheitsrates in unterschiedlicher Intensität beleuchtet wird. Das deutsche Foto ist
+kleiner und wirkt eher objektiv, da der volle Raum betrachtet wird und der Fokus auf den menschlichen
+Aktivitäten liegt. Japan zeigt hingegen abstrakte Abbildungen wie Diagramme, was eher wissenschaftlich
+und didaktisch wirkt. Des Weiteren konnte noch festgestellt werden, dass der Diskurs Brasiliens die
+Unterrepräsentation der Entwicklungsländer im Sicherheitsrat hervorhebt, wohingegen Deutschland und
+Japan ihre finanziellen Beiträge für die UNO oft betonen. Die Entstehung der G4-Staaten kann daher als
+strategisch interpretiert werden. Einerseits vertreten Brasilien und Indien die Repräsentativität der
+Entwicklungsländer, andererseits bringen Deutschland und Japan ihren Status als Wirtschaftskräfte für die
+Gruppe. Auf diese Weise stehen die nationalen Interessen dieser Länder im Vordergrund, während die
+Lösung von praktischen Problemen, wie das Vetorecht, im G4-Reformvorschlag nicht vorgesehen ist.
+Nichtsdestotrotz kann man durch die informative und teilweise didaktische Art und Weise der Texte und
+Bilder der drei Webseiten von einer gewissen argumentativen Stärke sprechen, die bei der Leser:innenschaft
+Wahrheit und Reliabilität erzeugt. Dies legitimiert und normalisiert die Diskurse.
+
+
+Schlüsselwörter: Reform des Sicherheitsrats der Vereinten Nationen; G4-Staaten; Kritische Diskursanalyse;
+Repräsentativität; Legitimität
+
+
+Abstract
+
+
+At the 2005 World Summit, Brazil, Germany, Japan and India established the Group of Four (G4), a group
+of countries seeking the reform of the United Nations Security Council (UNSC). Of the four members, the
+Ministries of External Affairs of Brazil, Germany, and Japan created their own web pages for the reform.
+On these pages, they justify the need and importance of the reform, for the UNSC to become "more
+representative, legitimate and efficient". The present doctoral study focused on the comparison of the
+discursive treatment of the same questions on the reform of the UNSC in different languages, i.e. Portuguese,
+German and Japanese. Texts and images on the aforementioned websites compose the corpus. The analysis
+was carried out using the approach of Critical Discourse Analysis, in particular Fairclough's (2015) method
+introduced in Language and Power, and Bendel Larcher's (2015) image analysis summarized in Linguistische
+Diskursanalyse. The results show that the Brazilian texts present short sentences, most active, and a frequency
+of coordination. Many occurrences of expressive modalities are also noteworthy. The German texts seem
+very objective and show some instances of superlative, which emphasizes the urgency of the reform and
+the advantages of a permanent seat for Germany. The Japanese texts, on the other hand, present many
+subordinate clauses and, like the Brazilian ones, many expressive modalities. Since the German and Japanese
+websites have a Q&A section, interrogative sentences occur, which is not noticeable in the case of the
+Brazilian website. Moreover, more assertive speech acts can be seen in the Brazilian texts, whereas
+declarative (performative) speech acts are more frequent in the German and the Japanese texts, which
+highlights the active participation of these countries in the UN. In terms of image analysis, the photo on the
+Brazilian homepage is large and appears quite subjective, with an empty Security Council chamber portrayed
+with uneven lighting intensity. The German picture on the homepage is smaller and appears more objective
+as it focuses on the human activities in a full UNSC chamber. Japan, on the other hand, shows abstract
+images such as diagrams, which appear more scientific and didactic. Furthermore, it could be noted that
+Brazil's discourse emphasizes the under-representativeness of developing countries in the UNSC, whereas
+Germany and Japan often emphasize their financial contributions to the UN. The emergence of the G4
+countries can therefore be interpreted as strategic, with Brazil and India bringing representativeness to
+developing countries, whereas Germany and Japan bring their status as economic powers. In this sense, the
+national interests of these countries appear in the foreground, while the solution to practical problems such
+as the right of veto is not addressed in the G4 reform proposal. Nevertheless, the informative and partly
+didactic nature of the texts and images on the three websites shows a certain argumentative strength that
+generates truth and reliability among the readership. This legitimizes and normalizes these discourses.
+
+
+Keywords: United Nations Security Council Reform; G4; Critical Discourse Analysis; Representativeness;
+Legitimacy
+
+
+Resumo
+
+
+Na Cúpula Mundial de 2005, Brasil, Alemanha, Japão e Índia fundaram o Grupo G4, que defende uma
+reforma do Conselho de Segurança das Nações Unidas (CSNU). Dos quatro membros, os Ministérios das
+Relações Exteriores do Brasil, da Alemanha e do Japão criaram seus próprios sites dedicados à reforma.
+Nessas páginas, explicam a necessidade e a importância da reforma para que o Conselho de Segurança se
+torne “mais representativo, mais legítimo e mais eficiente”. A presente tese de doutorado teve como foco a
+comparação do tratamento discursivo das mesmas questões sobre a reforma do CSNU em diferentes
+idiomas, ou seja, em português, em alemão e em japonês. Textos e imagens dos três sites citados compõem
+o corpus de pesquisa. A análise foi realizada utilizando a abordagem da Análise Crítica do Discurso, em
+particular o método introduzido por Fairclough em Language and Power (2015) e a análise imagética,
+sintetizada por Bendel Larcher em Linguistische Diskursanalyse (2015). Constatou-se que os textos brasileiros
+apresentam frases curtas, em sua maioria na voz ativa, e com frequência de orações coordenadas. Muitas
+ocorrências de modalidades expressivas também merecem destaque. Os textos alemães têm um efeito mais
+objetivo e apresentam algumas ocorrências de superlativos, o que destaca a urgência da reforma e as
+vantagens de um assento permanente para a Alemanha no CSNU. Os textos japoneses, por outro lado,
+possuem muitas orações subordinadas e, como nos textos brasileiros, muitas modalidades expressivas.
+Como os sites alemão e japonês possuem uma seção de perguntas e respostas, há ocorrência de orações
+interrogativas, o que não se vê no site brasileiro. Além disso, uma maior ocorrência de atos de fala assertivos
+é conferida nos textos brasileiros, enquanto atos de fala declarativos (performativos) podem ser encontrados
+com mais frequência nos textos alemães e japoneses, o que evidencia a participação ativa desses países na
+ONU. Quanto à análise imagética, a foto na página inicial do site brasileiro é relativamente grande e tem um
+efeito bastante subjetivo ao representar a câmara vazia do Conselho de Segurança, com iluminação irregular.
+A foto do site alemão é menor e tem um efeito mais objetivo, pois a câmara cheia é retratada e o foco recai
+sobre as atividades humanas. Já o site japonês apresenta ilustrações abstratas, como diagramas, que têm um
+efeito mais científico e didático. Além disso, pode-se afirmar que o discurso brasileiro destaca a sub-
+representação dos países em desenvolvimento no CSNU, enquanto a Alemanha e o Japão costumam
+enfatizar suas contribuições financeiras para a ONU. O surgimento do Grupo G4 pode, portanto, ser
+interpretado como estratégico. Por um lado, Brasil e Índia representam os países em desenvolvimento, por
+outro lado, Alemanha e Japão trazem seus status de forças econômicas para o grupo. Dessa forma, os
+interesses nacionais desses países ganham destaque, enquanto a solução de problemas práticos como o
+direito de veto não está prevista na proposta de reforma do G4. No entanto, a natureza informativa e em
+parte didática dos textos e imagens dos três sites mostra uma certa força argumentativa que gera efeito de
+verdade e de confiabilidade entre os leitores, legitimando e normalizando os discursos.
+
+
+Palavras-chave: Reforma do Conselho de Segurança das Nações Unidas; G4; Análise Crítica do Discurso;
+Representatividade; Legitimidade
+
+
+1 Einleitung
+
+
+Der UN-Sicherheitsrat ist ein Organ der Organisation der Vereinten Nationen (UNO), der aus
+fünf ständigen Mitgliedern besteht, den sogenannten „Vetomächten“, die seit seiner Entstehung
+im Jahr 1945 gleich gebildet sind: die Vereinigten Staaten von Amerika (USA), das Vereinigte
+Königreich Großbritannien und Nordirland, die Russische Föderation (Sowjetunion bis 1991), die
+Volksrepublik China (Republik China bis 1971) und Frankreich. Zudem gibt es noch zehn
+nichtständige Mitglieder, die ihrerseits alle zwei Jahre neu gewählt werden. Bereits in den 1960er
+Jahren fingen einige Länder an, eine Erweiterung des UN-Sicherheitsrates vorzuschlagen, unter der
+Prämisse, dass Asien, Afrika und Lateinamerika unterrepräsentiert waren. Eine einmalige
+Erweiterung von sechs auf zehn nichtständige Mitglieder wurde 1965 von dem Rat durchgesetzt.
+Danach wurden keine weiteren Reformen vorgenommen (vgl. Reformando o Conselho de Segurança das
+Nações Unidas).
+
+
+Im Rahmen des Weltgipfels 2005 begründeten Brasilien, Deutschland, Japan und Indien die
+Gruppe der G4-Staaten, die nach einer Reform des UN-Sicherheitsrates streben, in der jedes der
+vier Mitglieder und zusätzlich zwei afrikanische Länder einen ständigen Sitz bekommen sollen (vgl.
+Pereira 2013: 117; Entwurf A/59/L.64 2005). Parallel mit der jährlichen UN-Generalversammlung
+finden bei Bedarf weitere Sitzungen in Form informeller Treffen statt. Im Kontext der
+Reformvorschläge gelten die G4-Staaten als eine der relevantesten und aktivsten Gruppen.
+
+
+Von den vier Mitgliedern haben Brasilien, Deutschland und Japan ihre eigenen Webseiten für
+die Reform erstellt (vgl. Reformando o Conselho de Segurança das Nações Unidas; Reform des
+Sicherheitsrates der Vereinten Nationen; Kokuren Gaikō: Kokuren Kaikaku – Anpori Kaikaku). Auf
+diesen Seiten versuchen sie die Notwendigkeit und Wichtigkeit der Reform zu erklären, sodass der
+Sicherheitsrat „repräsentativerer, legitimerer und effizienterer“ werden kann (vgl. G4-
+Pressemitteilung auf Deutsch 2015). Indien hat keine spezifische Webseite zur Verfügung gestellt,
+obwohl die UN-Dokumente bezüglich des Reformvorschlags auch online auf den Seiten des
+Auswärtigen Amts und seiner ständigen Vertretung bei der UNO gefunden werden können (vgl.
+Ministry of External Affairs – Government of India; Permanent Mission of India to the UN). Die G4-Staaten
+weisen zudem keine offizielle gemeinsame Webseite auf.
+
+
+Die vorliegende Promotionsstudie fokussiert sich auf den Vergleich der Diskurse bezüglich der
+Reform des Sicherheitsrates der Vereinten Nationen in unterschiedlichen Sprachen, also
+Portugiesischen, Deutschen und Japanischen. Es wird zudem die Hypothese aufgestellt, dass sich
+jede Sprache und ihr jeweiliger Kulturraum seiner eigenen sprachlichen, visuellen und diskursiven
+
+
+FOOTNOTE:Mustern bedient, auch wenn theoretisch das Ziel der analysierten Texte 1 dasselbe ist. Die
+sprachliche und visuelle Konstruktion des Diskurses kann in verschiedenen Kulturen
+unterschiedlich sein. Das kann sich in der Verwendung und Häufigkeit von Passivsätzen,
+Modalitäten, bestimmten Wörtern und Nominalisierungen, in der Betrachtung des Themas, in den
+Annahmen der Diskursteilnehmenden, im Aufbau der Texte und der Webseiten, in den
+ausgewählten Bildern usw. gezeigt werden$$$2$$$. Brasilien, Deutschland und Japan streben nach einer
+gleichen Reform, wie sie das diskursiv betrachten ist aber unterschiedlich. Auf diesen Unterschied
+konzentriert sich diese Studie. Außerdem liegt der Fokus darauf, wie die Auswärtigen Ämter die
+gemeinsamen Ziele der G4-Staaten und ihre eigenen nationalen Interessen ausdrücken.
+
+
+Das Ziel der vorliegenden Dissertation ist es, die Diskurse auf den Webseiten Brasiliens,
+Deutschlands und Japans zu vergleichen. Es wird untersucht, welche diskursiven
+Gemeinsamkeiten und Unterschiede sich erkennen lassen. Wie präsentiert und begründet jede
+Regierung den Reformvorschlag für ihre Bürger:innen? Welche Themen werden betrachtet und
+wie werden diese diskursiv organisiert? Welches Hintergrundwissen und welche Annahmen der
+Diskursteilnehmenden spiegeln sich in den Diskursen zur Reform wider? Welche Implikationen
+und Effekte erzeugen die Diskurse im Zusammenhang mit dem Reformvorschlag der G4-Staaten?
+
+
+Das Korpus besteht aus Texten und Bildern der offiziellen Webseiten Brasiliens, Deutschlands
+und Japans für die Reform des UN-Sicherheitsrates. Die zur Analyse herangezogenen Texte und
+Bilder umfassen solche, die spezifisch die Reform betrachten. Weitere Seiten und durch Hyperlinks
+verbundene Dokumente werden nicht analysiert. Die Kriterien zur Korpuswahl und die
+Beschreibung des Korpus werden ausführlich im Kapitel 4 betrachtet.
+
+
+Ich gehe davon aus, dass diese Untersuchung relevant ist, da die internationale Sicherheit eine
+fortwährende Thematik ist, insbesondere, wenn Krieg und Terrorismus eine Rolle spielen. Eine
+gleichwertige linguistische Analyse des Untersuchungsgegenstandes der vorliegenden Dissertation
+liegt bisher noch nicht vor. Außerdem ist es von Bedeutung, Sprachen diskursiv aus einer
+vergleichenden Perspektive zu analysieren, und zu verstehen, wie Menschen ihre Sprache
+gebrauchen, um Sinn zu erzeugen. Wie Petter (2011: 11) erklärt: „Como realidade material – organização
+de sons, palavras, frases – a linguagem é relativamente autônoma; como expressão de emoções, ideias, propósitos, no
+entanto, ela é orientada pela visão de mundo, pelas injunções da realidade social, histórica e cultural de seu
+
+
+FOOTNOTE:1 ,Text‘ wird in der vorliegenden Arbeit sowohl sprachlich verstanden als auch weitere Formen von visuellen
+Ressourcen, die ebenso relevant für die Diskursanalyse sind, wie Bilder.
+
+
+2 Eine sprachvergleichende Studie des Deutschen und des Japanischen (vgl. Grein 2008) weist beispielsweise darauf
+hin, dass die Japaner:innen eher Nominalisierungen, Nebensätze und Konjunktionen bei Ablehnung eines
+Vorschlags verwendeten, während die Deutschen lieber direkte und einfache Sätze bevorzugten.
+
+
+falante.“ (Hervorhebung im Original) Die Welt wird in unterschiedlichen Kulturen unterschiedlich
+wahrgenommen. Wie Weigand (2007: 47) auch feststellt: “I think it has become obvious that human
+FOOTNOTE:actions and behaviour are the result of both our biology and the environment we live in. […] It is the interaction of
+language, genes and culture or the sociobiology of language that determines how human beings interact in different
+cultures.”
+
+
+Diese Promotionsarbeit ist in neun Kapitel gegliedert. Kapitel 2 umfasst den theoretischen
+Hintergrund und die analytische Vorgehensweise bzw. Methodik für die Untersuchung.
+Unterkapitel 2.1 bringt einen Überblick über einige unterschiedliche Ansätze der Diskursanalyse
+(DA) und der in dieser Dissertation angewandten Kritischen Diskursanalyse (KDA). Danach wird
+in Unterkapitel 2.2 der methodologische Rahmen der Forschung zusammengefasst. Die Basis ist
+hier in erster Linie das dreidimensionale Modell Faircloughs und das Schema Bendel Larchers für
+die Bildanalyse (vgl. Fairclough 2015; Bendel Larcher 2015; Leschzyk 2016).
+
+
+Kapitel 3 bietet einen Überblick über die Reform des UN-Sicherheitsrates. Zunächst wird in
+Unterkapitel 3.1 der historische Hintergrund der Vereinten Nationen und des Sicherheitsrates
+vorgestellt. Die Reformvorschläge des UN-Sicherheitsrates werden dann in Unterkapitel 3.2
+diskutiert. Unterkapitel 3.3 widmet sich einer Deskription der G4-Staaten und einem Überblick
+über die wichtigsten Punkte ihres Reformvorschlags.
+
+
+Im Kapitel 4 werden die Beschreibung des Korpus und die Kriterien zur Korpuswahl vorgestellt.
+Kapitel 5 und 6 umfassen die vorgestellte Analyse. Im Kapitel 5 wird die Analyse der
+brasilianischen Webseite durchgeführt, während im Kapitel 6 die Analyse der deutschen und der
+japanischen Webseiten vorgestellt wird. Die Analyse der deutschen und der japanischen Seiten wird
+von der Analyse der brasilianischen Webseite abgeleitet. Auf diese Weise ziehe ich die relevantesten
+diskursiven Merkmale der brasilianischen Texte in Betracht und ab diesen Ergebnissen beobachte
+ich die deutschen und japanischen Texte. Kapitel 5 lässt sich in vier Analyseschritte unterteilen: zu
+Beginn die Textanalyse (Unterkapitel 5.1), gefolgt von der Analyse der diskursiven Praxis (5.2),
+anschließend die Analyse der sozialen Praxis (5.3) und zuletzt die Bildanalyse (5.4). Unterkapitel
+5.5 bietet eine Zusammenfassung der Ergebnisse an. Kapitel 6 beinhaltet die Textanalyse der
+deutschen Webseite (6.1), die Textanalyse der japanischen Webseite (6.2), die Analyse der
+diskursiven Praxis (6.3), die Analyse der sozialen Praxis (6.4), die Bildanalyse (6.5) und die
+Zusammenfassung der Ergebnisse (6.6).
+
+
+Das Fazit ist in Kapitel 7 zusammengefasst, in dem die Forschungsergebnisse
+zusammenhängend diskutiert werden. Kapitel 8 beinhaltet das Literaturverzeichnis und Kapitel 9
+die Anhänge, also die häufigsten Begriffe der analysierten Texten und die Screenshots der analysierten
+Webseite.
+
+
+Bezüglich formaler Aspekte dieser Dissertation sollen die folgenden Anmerkungen beachtet
+werden: Die Arbeit ist auf Deutsch verfasst, aber die analysierten Texte sind auch auf Portugiesisch
+und Japanisch geschrieben. Zitate auf Englisch und auf Portugiesisch werden nicht ins Deutsche
+übersetzt. Im Laufe der in dieser Arbeit durchgeführten Analyse der japanischen Texte werden
+eigene Übersetzungen bzw. Erklärungen auf Deutsch vorgelegt, wenn es relevant für die Analyse
+ist, sodass diese deutlicher und nachvollziehbarer wird.
+
+
+Als Hintergrund für die Analyse des Japanischen erlaube ich mir einige ergänzende
+Bemerkungen: Japanisch verwendet gleichzeitig drei unterschiedliche Schriftsysteme (Hiragana,
+Katakana und Kanji). Hiragana (ひらがな) und Katakana (カタカナ) sind Silbenschriften, welche
+jeweils 46 Zeichen umfassen, zusammen mit einigen anderen möglichen Kombinationen. Hiragana
+wird verwendet, um alle rein japanischen Wörter zu schreiben. Japanische Kinderbücher und
+vereinfachte Texte für Japanisch als Fremdsprache können vollständig im Hiragana geschrieben
+werden. Katakana wird hingegen hauptsächlich verwendet, um Fremd- und Lehnwörter zu
+schreiben. Wörter, die in einem Text betont werden, können auch in Katakana geschrieben werden.
+
+
+Zudem werden im Japanischen Kanji (漢字) verwendet. Kanji sind Schriftzeichen, die jeweils
+eine Bedeutung tragen. Sie lassen sich deswegen von Buchstaben- oder Silbenschriften
+unterscheiden, da sie eigentlich als Wortschriften bezeichnet werden können. Hiragana und
+Katakana selbst sind von Kanji abgeleitet; Hiragana wurde nach einigen Kanji-Formen und Katakana
+nach einigen Kanji-Teilen erschaffen. Kanji können untergliedert werden in: Bildzeichen
+(Darstellung von Gegenständen oder Figuren), Symbolzeichen (Darstellung von abstrakten
+Konzepten), Assoziativkomposita (logische Zusammensetzungen aus zwei oder drei bildhaften
+Komponenten bestanden), Piktophonogramme (Zusammensetzungen aus zwei Teilen, einer gibt
+einen Hinweis auf die Bedeutung, der andere einen auf die Aussprache) und Entlehnungszeichen
+(Schriftzeichen, die ursprünglich einen Gegenstand bezeichneten und später zur Schreibung
+anderer Wörter benutzt wurden) (vgl. Weber 2015: 14f.). Es gibt einige wenige Kanji, die in Japan
+erschaffen wurden. Kanji wurden jedoch größtenteils vom Chinesischen entliehen und circa 500 n.
+Chr. in Japan aufgenommen. Damals verwendete die japanische Sprache ausschließlich Kanji.
+Später, circa 800 n. Chr., wurden Hiragana und Katakana ins japanische Schriftsystem eingeführt.
+Es gibt ungefähr 87.000 Schriftzeichen, die aber längst nicht alle in Gebrauch sind. In China sind
+circa 3.000 Zeichen in Gebrauch (vgl. ebd.: 33). In Japan werden genau 2.136 Zeichen in der Schule
+erlernt, die sogenannte Jōyō Kanji (vgl. Sakade 2014: iv). Japanische Kanji haben normalerweise zwei
+oder mehr Leseformen, da sie keine Buchstaben, sondern bedeutungstragende Einheiten sind. Sie
+lassen sich in zwei Lesekategorien untergliedern: die sinojapanische Lesung, die der chinesischen
+Lesung ähnelt, und die japanische Lesung, bei der altjapanische Wörter den Kanji zugeordnet
+
+
+wurden. Kanji werden heute im modernen Japanisch meistens verwendet, um Nomen, Wortstämme
+von Verben und Adjektiven und einige Adverbien und Konjunktionen zu schreiben. Eigen- und
+Ortsnamen lassen sich üblicherweise auch mit chinesischen Schriftzeichen bezeichnen. Zusätzlich
+werden noch Zahlen in offiziellen Dokumenten mit Kanji geschrieben (vgl. ebd.: vi).
+
+
+In Bezug auf die Umschrift des Japanischen ins lateinische Schriftzeichen (Romanisierung)
+FOOTNOTE:liegen einige Transkriptionssysteme vor, von welchen das Hepburn-System 3 am häufigsten
+angewandt wird. Dieses System wird in der vorliegenden Dissertation angewandt, mit den von
+Sakade (2014: ix) empfohlenen Anpassungen.
+
+
+FOOTNOTE:3 Meiji Gakuin University Library: http://mgda.meijigakuin.ac.jp/mgda/waei/hepburn/ (letzter Zugriff: 11.12.2020)
+
+
+2 Theoretischer Hintergrund und analytische Vorgehensweise
+
+
+In diesem Kapitel werden Theorie und Methode dieser Dissertation dargestellt. Zunächst einmal
+wird die Kritische Diskursanalyse (KDA) erläutert (Unterkapitel 2.1). Anschließend wird die
+analytische Vorgehensweise der vorliegenden Arbeit präsentiert (Unterkapitel 2.2).
+
+
+2.1 Kritische Diskursanalyse
+
+
+Die europäische Diskursanalyse (DA) wurde vom französischen Philosophen und Historiker
+Michel Foucault begründet. Der Begriff ‚Diskurs‘ kann als „eine Menge von Aussagen, die einem
+gleichen Formationssystem zugehören“ (Foucault 2008 zitiert nach Leschzyk 2016: 9) definiert
+werden. Als Formationssystem oder diskursive Formation versteht man als das, was man in einer
+bestimmten Epoche in den Wissenschaften und in verschiedenen Bereichen des öffentlichen
+Lebens reden kann und reden darf oder nicht (vgl. Eggler 2015: 19). In einer Gesellschaft werden
+bestimmte soziale Rollen von Menschen gespielt, von denen bestimmte Einstellungen und Reden
+erwartet werden. Und was gesagt werden soll oder darf, wird wiederum von bestimmten Macht-
+und Wissensverhältnissen beeinflusst. Die Beschreibung dieser diskursiven Regeln ist die Aufgabe
+der DA. „Foucault interessiert sich dafür, welches Regelwerk, welche diskursiven Kräfte es möglich
+machen, dass eine bestimmte Äußerung in einem bestimmten Kontext genau so und nicht anders
+formuliert wird“ (Eggler 2015: 20) (Hervorhebung im Original).
+
+
+Die DA ist eine vielfältige Disziplin mit verschiedenen Traditionen und analytischen
+Vorgehensweisen. In einer Sammlung von Studien zu Diskursen, The Discourse Studies Reader
+(Angermuller/Maingueneau/Wodak 2014), versuchen die Diskursforscher:innen dieses breite
+Universum in einer nachvollziehbaren Weise einzugrenzen. Sie untergliedern die
+diskursanalytischen Traditionen in folgende Gruppen:
+
+
+1) Theoretische Anregungen: Strukturalismus vs. Pragmatik: Hier liegen Texte von
+Autor:innen vor, die, obwohl sie keine Diskursforscher:innen sind, in ihren theoretischen
+Werken einen großen Beitrag für die zukünftigen Diskursstudien leisten. Beiträge von
+Ferdinand de Saussure, Zellig S. Harris, Mikhail Bakhtin, Ludwig Wittgenstein, John L.
+Austin, H. Paul Grice und George Herbert Mead sind in diesem Teil zu finden.
+
+
+2) Von Strukturalismus zu Poststrukturalismus: Hier werden Beiträge von wichtigen
+Poststrukturalist:innen wie Jacques Lacan, Louis Althusser, Michel Pêcheux, Michel
+Foucault, Stuart Hall, Ernesto Laclau und Judith Butler gesammelt.
+
+
+3) Enunziative Pragmatik: Diese Tradition wird oft französische DA genannt, obwohl sie
+nur eine der französischen Traditionen ist. Die enunziativ-pragmatische DA beschäftigt
+sich mit Begriffen wie ,Deixis‘, ,Indirekte Rede‘, ,Polyphonie‘ und ,Subjektivität‘. Beiträge
+von Émile Benveniste, Dominique Maingueneau, Jacqueline Authier-Revuz, Oswald
+Ducrot und Johannes Angermuller sind hier zu finden.
+
+
+4) Interaktionismus: Hier werden meistens Forscher:innen aus der englischsprachigen
+Welt betrachtet, die sich mit Studien zu Interaktion beschäftigen, aus Bereichen wie der
+Soziologie (Harvey Sacks, Erving Goffmann, Aaron V. Cicourel), der Anthropologie
+(John Gumperz), den Erziehungswissenschaften (James Paul Gee) und der Psychologie
+(Jonathan Potter).
+
+
+5) Soziopragmatik: Die sogenannten Soziopragmatiker:innen beschäftigen sich mit dem
+Zusammenhang zwischen Sprachwissenschaft und den vom kommunikativen Kontext
+vorgeschriebenen Einschränkungen. Die Beiträge umfassen aber unterschiedliche
+theoretische Richtungen. Hier werden Autor:innen wie Michael A. K. Halliday, Theo van
+Leeuwen, Konrad Ehlich, John Swales, Patrick Charaudeau und Ruth Amossy
+eingeordnet.
+
+
+6) Historisches Wissen: Hier sind Beiträge enthalten, die sich auf die historischen
+Bedingungen der Sinnproduktion fokussieren. Texte von Dietrich Busse/Wolfgang
+Teubert, Thomas Luckmann, Reinhart Koselleck und Régine Robin werden hier genannt.
+Die im deutschsprachigen Raum entwickelten Traditionen der Linguistischen
+Diskursanalyse/Diskurslinguistik und der Wissenssoziologischen Diskursanalyse lassen
+sich hier zuordnen.
+
+
+7) Kritische Ansätze: Texte, die sich mit ethisch- und sozial-orientierten
+Diskursforschungen beschäftigen, sind in diesem letzten Kapitel zu sehen. Hier findet
+man Beiträge von Jürgen Habermas, Jan Blommaert/Jef Verschueren, Norman
+Fairclough, Teun van Dijk und Ruth Wodak. Diese Autor:innen stellen meistens Fragen
+zu Machtverhältnissen, sozialen Ungleichheiten, Rassismus, Fremdenfeindlichkeit u. a.
+
+
+Zu den kritischen Ansätzen gehört die KDA, welche sich auch in einige unterschiedliche
+Vorgehensweisen unterteilen lässt, besonders in Deutschland, wie das Duisburger Institut für
+Sprach- und Sozialforschung (DISS)$$$4$$$ (vgl. ebd.; Jäger 2001; 2012) und die Düsseldorfer Schule, die
+
+
+FOOTNOTE:4 Die Startseite der Webseite des Instituts bietet die folgende Einleitung an: „Seit dem Jahr 1987 forscht und publiziert
+das Duisburger Institut für Sprach- und Sozialforschung zu gesellschaftlichen Entwicklungen im In- und Ausland.
+Es analysiert die Genese von sozialen und kulturellen Ordnungen, um emanzipative Ansätze für eine
+demokratische Praxis in Politik, Pädagogik und Journalismus zu fördern. Dabei stützt sich das Institut auf die
+
+
+eher auf der Perspektive der Diskurslinguistik arbeitet (vgl. Spitzmüller/Warnke 2011: 87ff.; Niehr
+2014: 12; ebd.: 70). In der vorliegenden Dissertation wird der Ansatz des Briten Norman Fairclough
+genutzt.
+
+
+Die KDA entstand in den 1980er Jahren als eine Kritische Wissenschaft, und Norman
+Fairclough gilt als einer ihrer wichtigsten Vertreter:innen. Der Autor (vgl. Fairclough 2001; 2015)
+definiert Sprache als eine Form sozialer Praxis. Durch Sprache werden gewisse Machtverhältnisse
+aufrechterhalten oder kreativ gewandelt. Obwohl Fairclough stark von den foucaultschen Theorien
+zu Macht beeinflusst wurde, übt er zwei punktuelle Kritiken an dem Philosophen. Fairclough stellt
+fest, dass Foucault sich mit keinen echten Texten auseinandersetzt. Außerdem sei die foucaultsche
+Definition von Macht für eine Kritische Perspektive nicht geeignet, insofern als, dass Menschen
+hilflos den Machtsystemen unterworfen seien und nichts dagegen machen können. Angesichts
+dessen könnten keine sozialen Ungleichheiten bekämpft werden (vgl. Fairclough 2001: 82f.). Wie
+Bendel Larcher (vgl. 2015: 38) erläutert, verfolgt die KDA das Ziel, die Menschen aufzuklären, um
+damit einen Beitrag zu mehr Gleichheit und Gerechtigkeit in der Gesellschaft zu leisten.
+
+
+Diskurs lässt sich als eine soziale Praxis definieren, die von sozialen Strukturen bestimmt wird
+(vgl. Fairclough 2015: $$$51$$$)5. „What precisely does that imply? Firstly, that language is a part of society, and not
+somehow external to it. Secondly, that language is a social process. And thirdly, that language is a socially conditioned
+process, conditioned that is by other (non-linguistic) parts of society.“ (Fairclough 2015: 55f.)
+
+
+Diskurs ist nicht nur eine Art von Repräsentation der Welt, sondern bestimmt auch die Welt.
+Darüber hinaus übt man durch Diskurse Handlungen auf die Welt und auf andere Menschen aus,
+und beeinflusst in diesem Prozess die Art, in der Realität wahrgenommen wird. Durch den Diskurs
+gestalten Menschen alle Dimensionen der Struktur einer Gesellschaft, die auf sie zurückwirken (vgl.
+Fairclough 2001: 91).
+
+
+Sprache ist eine Dimension des Diskurses. Diskurs ist der Sprachgebrauch in spezifischen
+Kontexten. Diskurs ist auch als multimodal und multisemiotisch zu verstehen, da nicht nur die
+sprachlichen, sondern auch andere Elemente (z. B. die visuellen Elemente) Teil des Diskurses sind.
+Zudem sind Sprache und Diskurs immer dialogisch und polyphon (vielstimmig). Michail Bachtin
+(vgl. Ramalho/Resende 2013: 17f.) weist darauf hin, dass ein Diskurs immer in Bezug zu
+vorherigen Diskursen steht und auch nachfolgende Diskurse voraussetzt. Ebenso ist die
+Interaktion polyphon, indem sie sich auf vorherige Stimmen bezieht und nachfolgende Stimmen
+
+
+FOOTNOTE:Methode der Kritischen Diskursanalyse, die im DISS erarbeitet wurde und im Rahmen der konkreten Forschungen
+beständig weiterentwickelt wird.“
+
+
+FOOTNOTE:5 Im Original: […] language as social practice determined by social structures.
+
+
+voraussetzt. „[…] Discourse never just expresses one single point of view; rather, it is inherently
+dialogic.“ (Angermuller/Maingueneau/Wodak 2014: $$$27$$$)6
+
+
+Außerdem spricht Fairclough von einer ,Diskursordnung‘, welche einer diskursiven
+Organisation der Gesellschaft entspricht. „For example, we find 'conversation' as a discourse type in various
+orders of discourse, associated with various social institutions“ (Fairclough 2015: 61). Man spricht
+beispielsweise von neoliberalem Diskurs. Dieser bezieht sich auf eine Diskursordnung, die in
+verschiedenen Diskurstypen realisiert werden kann. Beispiele für ,Diskurstyp‘ sind u. a. Interview,
+Werbung, Vortrag, Zeitungsartikel, Rede. Der Begriff ,Diskurs‘ ist daher zu verstehen als die
+Gesamtheit von Texten, die in unterschiedlichen Diskurstypen organisiert werden und bestimmten
+Diskursordnungen zugeordnet werden. Zu einer bestimmten Diskursordnung (z. B. neoliberaler
+Diskurs) gehören unterschiedliche Diskurse (z. B. Diskurse dafür oder dagegen). In den Worten
+von Bendel Larcher (2015: 16):
+
+
+Ein Diskurs ist der gesellschaftliche Prozess der Verständigung darüber, wie die Welt zu deuten und
+zu gestalten ist. Der Diskurs wird durch die materielle Wirklichkeit geprägt und wirkt durch
+gesellschaftliche Praktiken auf diese zurück. Der Diskurs äußert sich in konkreten Texten, die das
+FOOTNOTE:Wissen und Denken einer bestimmten Zeit repräsentieren. (Hervorhebung im Original)
+
+
+Mit der ersten Auflage seines Buchs Language and Power im Jahr 1989, aktuell bereits in der dritten
+Auflage (2015) verfügbar, gilt Fairclough als einer der relevantesten Vertreter:innen der KDA. In
+Language and Power wird ein dreidimensionales Modell für die KDA erstellt. Eine erste Ebene dieses
+Modells umfasst die Textanalyse selbst, also die sprachlichen Merkmale, die als Basis für die
+anderen Ebenen der Analyse dienen; die zweite Ebene stellt den Zusammenhang zwischen Text
+und Interaktion dar, das heißt die Analyse des Prozesses der Textproduktion und -interpretation –
+Fairclough benennt diese Ebene als Analyse der diskursiven Praxis; die dritte Ebene der Analyse
+ist die sogenannte Analyse der sozialen Praxis, also eine Erklärung des Zusammenhangs zwischen
+Interaktion und sozialem Kontext. Hier werden die sozialen Bedingungen der Textproduktion und
+-interpretation diskutiert, nämlich eine Erklärung der sozialen Diskursdeterminanten und des
+Effektpotentials dieser Diskurse auf die Gesellschaft (vgl. Fairclough 2015: 58f.).
+
+
+Die von Fairclough entwickelte KDA beschäftigt sich vor allem mit Konzepten der Kritischen
+Sozialwissenschaft und der Linguistik (vgl. Ramalho/Resende 2013: 30). Indem der Autor
+den ,Diskurs‘ als eine Art sozialer Praxis definiert, versucht er zu verstehen, wie bestimmte
+Sprachgebräuche die Wirklichkeit durch ideologische Praktiken aufbauen und gewisse
+
+
+Machtverhältnisse durch gesunden Menschenverstand (common sense) legitimieren und naturalisieren
+bzw. normalisieren (vgl. Fairclough 2015: 113f.).
+
+
+Um seine KDA zu entwickeln, artikuliert Fairclough den Zusammenhang der Sprache mit
+Konzepten wie ,Macht‘, ,Hegemonie‘ und ,Ideologie‘ (vgl. Ramalho/Resende 2013: 22f.).
+Faircloughs Methode fokussiert die Analyse von sozialen Ungleichheiten, wie Rassismus und
+dessen Lösung auf sprachlicher Ebene. Dies erfolgt u. a. durch die Identifizierung von legitimierten
+und normalisierten Machtverhältnisse. Fairclough versucht, sowohl zur Schärfung des
+Bewusstseins für die sozialen Effekte von Texten als auch zu sozialen Veränderungen, die
+ungleiche Machtverhältnisse überwinden können, beizutragen (vgl. ebd.: 21f.).
+
+
+Van Leeuwen (vgl. 2008: 105ff.) identifiziert vier Formen der Legitimation von Aussagen und
+Normen: Berufung auf Autorität, Berufung auf Werte, Berufung auf Vernunft und Anwendung
+von Beispielgeschichte (vgl. Bendel Larcher 2015: 96f.). Diese Formen von Legitimation sind
+ideologisch. Laut Thompson (vgl. 2002: 78ff.) ist ,Ideologie‘ wesentlich hegemonial, indem durch
+Ideologie Herrschaftsverhältnisse etabliert und aufrechterhalten werden. Legitimation ist eine
+Funktionsweise der Ideologie, denn Herrschaftsverhältnisse werden durch Rationalisierung,
+Universalisierung oder Narrativierung als legitim dargestellt. Weitere Funktionsweisen der
+Ideologie sind die Verschleierung (Herrschaftsverhältnisse werden verborgen, ausgeblendet oder
+sogar verneint), die Vereinigung (symbolische Konstruktion kollektiver Identität), die
+Zerstückelung (Trennung von Individuen oder Gruppen, die den Herrschaftsverhältnissen
+bedrohlich sein können) und die Verdinglichung (Darstellung einer Übergangssituation als
+dauerhaft). Diese Funktionsweisen können (und sollen) im Diskurs identifiziert werden. Diese
+FOOTNOTE:Betrachtungen von Ideologie sind wichtig für die Entstehung der KDA Faircloughs.
+
+
+In seinen folgenden Werken entwickelt Fairclough die Beziehung zwischen Text und
+Gesellschaft weiter. Ein Fokus auf den Text und eine Verbesserung der linguistischen Werkzeuge
+für Analysen werden durch einen Dialog der KDA mit der Systemisch-Funktionalen Grammatik
+(SFG) von Halliday geschaffen, wie es in Analysing Discourse dargestellt wird (vgl. Fairclough 2003).
+
+
+Halliday (vgl. 2014: 264ff.) fokussiert sich auf den Zusammenhang zwischen dem sprachlichen
+System und der sozialen Struktur mithilfe einer sozialen Semiotik, deren Ziel es ist, die
+Konstruktion der Bedeutung in sozialem und kulturellem Kontext zu erfassen. Halliday (vgl. ebd.:
+268f.) erkennt drei funktionale Sprachkomponenten, die sogenannten ,ideationalen‘,
+,interpersonalen‘ und ,textuellen‘ Metafunktionen der Sprache. Die Grammatik ist nach diesen drei
+Metafunktionen aufgebaut. Die ideationale Metafunktion umfasst die Darstellung der Welt; die
+interpersonale Metafunktion fokussiert sich auf die sozialen Interaktionen; die textuelle
+Metafunktion fasst diese Ideen und Interaktionen in einen bedeutungsvollen Text zusammen.
+
+
+Fairclough versucht in seiner KDA, die von Halliday entwickelten SFG durch einen fruchtbaren
+Dialog in die DA erfolgreich zu integrieren (vgl. Ramalho/Resende 2013: 56). Der Zusammenhang
+zwischen der SFG und den Kenntnissen der Sozialwissenschaften ist meines Erachtens der größte
+Vorteil seiner Methode.
+
+
+Außerdem betont Fairclough in seinen Werken die Wichtigkeit von Bildern und visuellen
+Zeichen, und skizziert weitere multimodale Elemente als eine wesentliche Entwicklung für die
+KDA.
+
+
+It is well known, for example, that a photograph is often as important in getting across the ‘message’
+of a report in a newspaper as the verbal report, and very often visuals and ‘verbals’ operate in a
+mutually reinforcing way which makes them very difficult to disentangle. Moreover, the relative social
+significance of visual imagery is increasing dramatically – think of the degree to which one of the
+most populous and pervasive modern discourse types, advertising, works through visuals. (Fairclough
+2015: 60)
+
+
+Bilder spielen in derselben Weise eine wichtige Rolle in Diskursen wie Texte, beispielsweise bei
+Zeitungen, Werbung und Webseiten. In unserer digital entwickelten und globalisierten Welt sind
+Bilder ein zentrales Kommunikationsmittel und können ein bestimmtes Bild von der Welt erzeugen
+und vermitteln (vgl. Bendel Larcher 2015: 127). Daher ist die Bildanalyse genauso relevant wie die
+Textanalyse, um eine DA durchzuführen. Die Forscher:innen können dabei die folgenden
+Leitfragen stellen: „Welches Bild von der Welt vermittelt das Bild? Welches Weltbild erzeugt das
+Bild im Verbund mit dem Text? Wovon will das Bild die Betrachtenden überzeugen?“ (Bendel
+Larcher 2015: 133).
+
+
+Kress und Van Leeuwen (vgl. 2006: 1) entwickelten eine Methode für die Bildanalyse, die auf
+die Metafunktionen der SFG Hallidays zurückgeht. Die Autoren verstehen ihre Arbeit als Teil der
+KDA (vgl. ebd.: 2; 14), da sie versuchen aufzuzeigen, wie soziale Ungleichheit auch durch Bilder
+produziert und reproduziert werden kann (vgl. Bendel Larcher 2015: 44). Globalisierung kann
+beispielsweise als eine Quelle für Ungleichheit gelten.
+
+
+[…] ‘Globalization’ […] demands that the cultural specificities of semiotic, social epistemological and
+rhetorical effects of visual communication must be understood everywhere, since semiotic entities
+from anywhere now appear and are ‘consumed’ everywhere. (Kress/Van Leeuwen 2006: 14)
+
+
+Einerseits macht es die Globalisierung der Welt unabdingbar, dass die visuelle Kommunikation
+weltweit verstanden wird und daher sollte auch die Bildanalyse in den Bereich der Diskurforschung
+integriert werden. Sowohl visuelle Ressourcen als auch Texte spielen eine große Rolle bei dem
+Diskurseffekt in Gesellschaft. Andererseits wird häufig die wirtschaftlich stärkste Kultur in einer
+globalisierten Welt bevorzugt, was zu sozialen Ungleichheiten führt.
+
+
+As just one practical instance, in any one of the hugely culturally diverse classrooms in cities such as
+London or Sidney or Johannesburg, children still encounter a curriculum realized in the visual
+semiotic of the dominant culture and yet are likely to ‘read’ – and therefore ‘misread’ – that realization
+in terms of their ‘home culture’. (Kress/Van Leeuwen 2006: 266)
+
+
+Fairclough (vgl. 2015: 241) weist darauf hin, dass es sich um eine „Globalisierung des
+Diskurses“ handele, in der „Diskurse des Nordatlantiks“ vorherrschen. Andererseits kann man
+auch von „Diskurs der Globalisierung“ (vgl. ebd.: 243) sprechen. Diejenigen, die wirtschaftlich von
+einer globalen Wirtschaft profitieren, versuchen immer mehr Vorteile aus der Idee eines globalen
+Markts zu ziehen. Das schafft man durch Diskurse, die die Globalisierung normalisieren.
+
+
+Bei einem diskursvergleichenden Ansatz in unterschiedlichen Kulturen, wie im Fall der
+vorliegenden Dissertation, ist zu vermeiden, dass Diskursfoscher:innen eine auf Stereotypen und
+Verallgemeinerungen basierte Analyse durchführen. Van Dijk (vgl. 2012: 261) merkt an, dass
+Themenwahl, Argumentation und Strategien der Legitimierung nicht nur von Gender, Klasse oder
+Beruf der Menschen, sondern auch von komplexen kontextuellen Modellen beherrscht werden. Er
+führt aus, dass der Kontext diskursiv zu erfassen ist. Die sozialen Rollen, die von den Beteiligten
+diskursiv gespielt werden, sollen Schwerpunkt der Analyse sein und nicht ihre Zugehörigkeit einer
+Ethnie oder Gruppe (vgl. ebd.: 269). Anders formuliert, spielt die Kultur eine wichtige und sehr
+relevante Rolle im Diskurs, aber sie soll stets aus einer diskursiven kontextuellen Sicht betrachtet
+werden und nicht nur von den ursprünglichen Determinanten der Beteiligten. In dieser
+Dissertation spreche ich deswegen von keinem ,brasilianischen‘, ,deutschen‘ oder ,japanischen‘
+Diskurs, sondern von Diskursen, die kontextuell abhängig sind, hier in Bezug auf die UN-Reform.
+
+
+Für die Bildanalyse wird in dieser Dissertation die zusammengefasste Methode von Bendel
+Larcher (2015) angewandt, verbunden mit der Methode der KDA Faircloughs. Er analysiert zwar
+Bilder, bietet aber keine entsprechende Methode dazu, da sein Interesse eher auf der für ihn
+wichtigen semiotischen Form, also Sprache, liegt (vgl. Fairclough 2015: 8). Bendel Larcher trägt
+einige analytische Vorgehensweisen zur Bildanalyse in ihrer eigenen Methode zusammen. Daher
+FOOTNOTE:kombiniere ich die Methode Faircloughs mit der von Bendel Larcher.
+
+
+Bendel Larcher gehört der Tradition der Diskurslinguistik an. Diese entstand ab den 1990er
+Jahren in Deutschland als eine Kombination aus historischer Semantik und Textlinguistik. Zentral
+ist die Idee, dass Bedeutung immer kontextuell bestimmt ist und ihre historische Veränderung über
+die Zeit rekonstruiert werden soll (vgl. Bendel Larcher 2015: 33). Traditionell werden Texte
+analysiert, die für einen Diskurs repräsentativ oder typisch sind (vgl. ebd.: 34). Häufig werden
+qualitative und quantitative Methoden kombiniert (vgl. ebd.: 36). Der Unterschied zwischen
+Diskurslinguistik und KDA besteht hauptsächlich darin, dass die Vertreter:innen der
+Diskurslinguistik sich als deskriptiv sehen, da sie den Diskurs analysieren, aber nicht bewerten,
+
+
+während die KDA eher normativ ist (vgl. ebd.: 37; Niehr 2014: 50ff.). Diese normative Ansicht der
+KDA wird oft kritisiert und teilweise als tendenziös betrachtet.
+
+
+Die kritische Diskursanalyse ist allerdings problematisch, wenn sich durch den ideologiekritischen
+Anspruch gewisse Voreingenommenheiten in der Analysemethode und den -ergebnissen bemerkbar
+machen. Dies ist beispielsweise in einigen Arbeiten von Jäger zu bemerken, in denen selektiv
+ausgewählte Texte vorschnell als repräsentative Belege für einen rassistischen Diskurs in der
+FOOTNOTE:Öffentlichkeit fungieren […]. (Meier 2008: 47)
+
+
+Die Diskurslinguistik hält die KDA für manipulativ, weil das Forschungskorpus auch ideologisch
+ausgewählt werden kann. Üblicherweise werden rechtsorientierte Texte analysiert und kritisiert,
+während die Voreingenommenheit der Kritischen Diskursforscher:innen nicht in Betracht gezogen
+werden. Demzufolge sei die KDA eher ideologisch und nicht deskriptiv, wie sie als Wissenschaft
+sein solle.
+
+
+Während VertreterInnen der CDA [KDA] die Analyse von Macht als eine ihrer zentralen Aufgaben
+hervorheben, in diesem Kontext insbesondere Kritik von Machtbeziehungen und Gesellschaftskritik
+zum Ziel haben, stellt die deskriptiv orientierte Diskurslinguistik die Beschreibung des
+Sprachmaterials bzw. den Sprachbezug in den Vordergrund. (Gür-Şeker 2012: 12) (eigene
+Hervorhebung)
+
+
+Dennoch sind die Ansätze der Diskurslinguisten im Vergleich zu denen der analytischen
+Vorgehensweise der KDA ziemlich ähnlich. Nur der Ausgangspunkt und der Forschungszweck
+seien unterschiedlich, da die Diskurslinguistik keine Verantwortung übernehme, ideologisch zu
+arbeiten und normativ zu sein. Auf diese Weise nähert sich die Diskurslinguistik der französischen
+Tradition der Enunziativen Pragmatik, nur im Sinne eines eher deskriptiven Ansatzes.
+
+
+[…] in Germanistic linguistics, Diskursanalyse is mostly understood as ‘discourse analysis’ in the
+Anglo-Saxon sense of dialogue and conversation analysis. Moreover, in Germany, the term Diskurs
+has come to take on strong philosophical associations through Habermas, a movement also
+incompatible with French discourse analysis. (Busse/Teubert 2014: 340) (Hervorhebung im Original)
+
+
+Die Kritik von Busse und Teubert an der französischen Tradition liegt vor allem auf Foucaults
+Verständnis von Machtverhältnissen, wie schon am Anfang des vorliegenden Kapitels erwähnt.
+Dieser Punkt bringt die KDA und die Diskurslinguistik zusammen. Es gibt zusätzlich
+Ähnlichkeiten in Bezug auf die analytische Vorgehensweise. Bendel Larcher (2015: 12) erläutert
+derweil, der Ansatz von Fairclough erlaube ihr, Werbung wissenschaftlich zu kritisieren. In der Tat
+erfasst die von Bendel Larcher zusammengefasste Methodik im Vergleich zu der von Language and
+Power (Fairclough 2015) eine ähnliche Gliederung. Genau wie Fairclough, der die Analyse in drei
+Schritten unterteilt – ,Textanalyse‘ (description), ,Analyse der diskursiven Praxis‘ (interpretation)
+und ,Analyse der sozialen Praxis‘ (explanation) –, fasst Bendel Larcher die Analyse auch in drei
+
+
+Schritten zusammen – ,Textanalyse‘, ,Analyse textübergreifender Muster‘ und ,Analyse von Wissen
+und Macht‘. Die Methode Bendel Larchers beinhaltet zusätzlich Werkzeuge für Gesprächs- und
+Bildanalyse, die im Schritt Textanalyse zugeordnet werden können.
+
+
+Bezüglich der Kritik an einem normativen Ansatz, bin ich der Meinung, dass keine DA
+ideologisch frei sein kann. Von Thema- und Korpusauswahl bis hin zu den Analyseergebnissen
+und dem Umgang damit ist alles ideologisch orientiert. Eine Untersuchung wird immer in einer
+bestimmten Epoche unter bestimmten sozialen Gewohnheiten und bestimmten Wissens- und
+Machtverhältnissen durchgeführt; jede Art der Forschung entsteht immer in einem spezifischen
+diskursiven Formationssystem, welches die Wissenschaften beeinflusst und von den
+Wissenschaften beeinflusst wird. Wie Bendel Larcher (2015: 221) erläutert:
+
+
+Die Ansicht, Wissenschaft könne frei von Ideologie sein, ist selber eine der mächtigsten Ideologien
+unserer Tage. Das gilt selbstredend auch für die Diskursforschung. Auch Diskurslinguisten, die sich
+selber als deskriptiv verstehen, sollten sich darüber nicht hinwegtäuschen. […] Diskursforschende
+sollten also nicht zusammen mit anderen Disziplinen an der Aufrechterhaltung der Fiktion einer
+objektiven und neutralen Wissenschaft arbeiten, sondern sie sollten vorangehen und ihr eigenes Tun
+systematisch reflektieren, von der Wahl der Fragestellung über die Analysekonzepte bis hin zu den
+Schlussfolgerungen. Das wäre eine erste Form der Kritik, nämlich Selbstkritik. (Bendel Larcher 2015:
+FOOTNOTE:221) (Hervorhebung im Original)
+
+
+Die KDA folgt der Tradition der Kritischen Theorie (Frankfurter Schule), die zeigt, wie die
+Gesellschaft durch kommunikative Praktiken normalisiert werden kann. Das Ziel der Kritischen
+Theorie ist es, diese Normalisierungen zu identifizieren und aufzulösen (vgl. Angermuller et al.
+2014: 359). Das bedeutet aber nicht, dass andere Traditionen der DA, sei es die Diskurslinguistik
+oder die Enunziative Pragmatik, keine „echte“ Wirkung auf die Wirklichkeit zeigen können, also
+kritisch sein können. Eine Kritik der Gesellschaft ist nicht ausschließlich der KDA vorbehalten.
+Der Begriff ‚Kritik‛ bezieht sich hauptsächlich auf eine wissenschaftliche Tradition. Die vielen
+Ansätze der europäischen Diskursanalyse haben ein ähnliches Verständnis von Diskurs und davon,
+wie die Linguistik die geeigneten Werkzeuge zur DA anbieten kann. Was mit den
+Forschungsergebnissen getan wird, hängt in erster Linie von dem Forschungsziel ab.
+
+
+Mit der vorliegenden Promotionsarbeit versuche ich, die identifizierten Gemeinsamkeiten und
+Unterschiede zwischen Diskursen der brasilianischen, deutschen und japanischen Webseiten für
+die Reform des UN-Sicherheitsrates zu interpretieren. Die vergleichende Sichtweise hier soll nicht
+als rein kulturell verstanden werden, sondern als diskursiv. Kultur spielt zwar eine wichtige Rolle
+bei der Entstehung diskursiver Formationen, aber sie ist nicht als Synonym für Nation zu verstehen,
+wie Heringer (2014: 159) feststellt: „reinkulturelle oder homogene Länder dürften kaum zu finden
+sein.“ Wenn ich in dieser Arbeit über Brasilien, Deutschland und Japan spreche, meine ich nicht
+die Nationen selbst, sondern die spezifischen Texte, die aus den politischen Dimensionen in diesen
+
+
+Ländern entstehen und zu spezifischen Diskursen werden. Im Sinne von Czachur und Dreesen
+(2019: 76-77), „Deutungen und Erklärungen für identifizierte Unterschiede und Gemeinsamkeiten
+anzubieten, bedeutet allerdings der Gefahr ausgesetzt zu sein, Differenzen als ‚kulturspezifisch‘ zu
+sehen und damit ‚nationale Kulturspezifik‘ zu meinen.“ Daher spreche ich
+von ,brasilianischen‘, ,deutschen‘ und ,japanischen‘ Diskursen spezifisch im Rahmen der UN-
+Reform. Die Auffindung sprachlicher Merkmale im Portugiesischen, Deutschen und Japanischen
+können bei anderen diskursiven Formationen anders sein.
+
+
+Im Folgenden wird der Aufbau der analytischen Vorgehensweise für diese Dissertation
+vorgestellt.
+
+
+2.2 Analytische Vorgehensweise
+
+
+Die hier angewandte analytische Vorgehensweise greift sowohl die KDA-Version Faircloughs auf,
+spezifisch die in Language and Power ($$$2015$$$)7 entwickelten Modelle, als auch die zusammengefasste
+Methode für Bildanalyse von Bendel Larcher (2015).
+
+
+Die drei Bereiche der von Fairclough vorgeschlagenen Methode werden in der folgenden
+Abbildung dargestellt:
+
+
+Abb. 1: Faircloughs Ansatz für KDA (vgl. Fairclough 2015: 58)
+
+
+Wie in der Abbildung dargestellt, beeinflussen soziale Bedingungen die Interaktion unter den
+Beteiligten im Diskurs und bestimmen das, was in einer bestimmten Epoche und Gesellschaft als
+Diskurs betrachtet werden kann. Dabei erstellen Personen die Texte, die als Produkt des Diskurses
+gelten und in der Gesellschaft interpretiert werden. Anschließend wird der Kontext erklärt, indem
+die sozialen Bedingungen verstanden werden und auf die Diskurse wirken. So wird Sinn unter
+gegebenen Bedingungen in einer Gesellschaft hervorgebracht (vgl. Fairclough 2015: 57f.).
+
+
+Daraufhin unterteilt Fairclough die Analyse in drei Momente, nämlich die Beschreibung, die
+Interpretation und die Erklärung. Die Beschreibung betrifft die Textanalyse (Text), die
+Interpretation die Analyse der diskursiven Praxis (Interaktion) und die Erklärung die Analyse der
+sozialen Praxis (Kontext).
+
+
+2.2.1 Textanalyse
+
+
+Die Textanalyse bezieht sich auf die sprachliche Analyse von Texten, die Fairclough mithilfe der
+Linguistik und besonders der Systemisch-Funktionalen Grammatik durchführt. Die Textanalyse
+untergliedert der Autor in drei Bereiche: Analyse des Wortschatzes, der Grammatik und der
+Textstruktur$$$8$$$. Außerdem spricht Fairclough (vgl. 2015: 130) noch von vier Wertekategorien,
+nämlich Erfahrungswerte, Beziehungswerte, expressive Werte und konnektive Werte.
+Erfahrungswerte beziehen sich darauf, wie die Textproduzent:innen ihre Erfahrung der Welt
+sprachlich realisieren; Beziehungswerte weisen auf die im Text etablierten sozialen Beziehungen
+hin; expressive Werte beziehen sich darauf, wie die Textproduzent:innen die Wirklichkeit bewerten;
+und die konnektiven Werte weisen auf die formalen Konnektoren des Textes und zwischen dem
+Text und der diskursiven Praxis hin. Jede dieser Kategorien umfasst bestimmte lexikalische,
+grammatische und textuelle Realisierungen.
+
+
+Die Textanalyse ist in der KDA zentral. Jeder Text enthält spezifische sprachliche Merkmale,
+die für einen Text wichtig sein können, die aber in anderen Texten nicht das gleiche Gewicht haben.
+Fairclough (vgl. 2015: 129ff.) systematisiert bestimmte Kategorien anhand Beispiele, die für die
+Diskursanalytiker:innen nützlich sein können. Die folgenden Kategorien entsprechen allgemeinen
+Kategorien, die in Texten gesucht werden können. Das bedeutet aber nicht, dass alle relevant für
+FOOTNOTE:jeden Text sind.
+
+
+Auf der Wortschatzebene können Erfahrungswerte, Beziehungswerte und expressive Werte
+identifiziert werden (vgl. ebd.: 129). Als Erfahrungswerte ist die Wortwahl zum Beispiel immer
+relevant (vgl. ebd.: 131f.). Wie man Dinge benennt und bewertet, weist auf eine bestimmte
+Weltanschauung hin. Die Verwendung von Wörtern, die in der Gesellschaft ideologisch umstritten
+
+
+FOOTNOTE:8 Leschzyk (vgl. 2016: 20) erfasst noch als Kategorie dieses Analyseschritts die sogenannte ‚Textoberfläche‘. Diese
+Kategorie umfasst die Beschreibung von der graphischen Gestaltung, der Materialität und den Text-Bild-
+Beziehungen (zitiert nach Spitzmüller/Warnke 2011: 166). Solche formalen Gemeinsamkeiten von Texten bzw.
+Textmustern werden von Bendel Larcher (vgl. 2015: 181) hingegen als Teil der ‚Analyse textübergreifender
+Muster‘ (Analyse der diskursiven Praxis) eingebettet. Die Beschreibung der graphischen Gestaltung und der
+Materialität wird in dieser Dissertation im Kapitel 4 (Beschreibung des Korpus und Kriterien zur Korpuswahl)
+durchgeführt, während die Text-Bild-Beziehungen in der Bildanalyse betrachtet werden.
+
+
+FOOTNOTE:sind, beispielsweise ‚Ideologie‘, zeigt einen absichtlichen Versuch der Sprechenden 9 ein
+problematisches gesellschaftliches Feld zu betreten (vgl. ebd.: 132). Ebenso funktionieren
+bestimmte Wörter mit bestimmten festen Attributen oder eingebettet in einer bestimmten
+Kombination (Kollokationen). Diese Kollokationen legitimieren eine Realität, indem sie eine
+bestimmte Einordnung dieser Realität ideologisch darstellen (vgl. ebd.: 133). Bei den Beteiligten ist
+es relevant zu beobachten, ob sie durch generische Bezeichnungen vorgestellt werden: Ethnie,
+Beruf, Verhältnis zu anderen usw. (vgl. Bendel Larcher 2015: 64). Auch Wörter in einem Text zu
+wiederholen (Overwording) oder sie häufig durch Synonyme zu erklären, kann Aufschluss über die
+Sorge der Sprechenden um bestimmte Realitätsaspekte bieten. Damit kann der Fokus der
+Sprechenden hin zu einem ideologischen Kampf deutlich gemacht werden (vgl. Fairclough 2015:
+133). Ein absichtlicher Gegenteil von Wörtern (Rewording) im Text ist relevant für das Erfassen
+einer gemeinten Wirklichkeit (vgl. ebd.: 131). Semantische Beziehungen wie Bedeutungsgleichheit
+(Synonymie), Bedeutungsgegensätzlichkeit (Antonymie), Oberbegriffe (Hyperonymie) und
+Unterbegriffe (Hyponymie) weisen auch auf eine bestimmte Assoziation von Wörtern hin, die
+natürlich ideologisch ist (vgl. ebd.: 133f.). Zum Beispiel können zwei Wörter, die normalerweise
+nicht als Synonyme vorkommen, in einem bestimmten Text in einer solchen Beziehung dargestellt
+werden. Rhetorische Stilmittel wie Metaphern (und Metonymie) spielen bei manchen Texten
+gleichermaßen eine wichtige Rolle, weil diese Assoziationen zu anderen Wahrnehmungen der
+Wirklichkeit führen können, auch wenn diese Wirklichkeit von den Sprechenden gebildet wurde
+(vgl. ebd.: 137).
+
+
+Als Beziehungswerte können das Ansprechen, der Grad der Formalität und die Beschönigungen
+(Euphemismen) analysiert werden. Diese Kategorien geben eine Auskunft über die
+Beziehungswerte, also die Beziehung der Sprechenden mit den Angesprochenen (vgl. ebd.: 135).
+
+
+Expressive Werte hingegen können durch die Evaluation der Sprechenden identifiziert werden,
+also ob etwas oder jemand durch Adjektive oder Adverbien als positiv oder negativ bewertet
+worden ist (vgl. ebd.). Die Konnotation der Wörter weist auch auf eine bestimmte Perspektivierung
+der Sprechenden hin, was beispielsweise mithilfe rhetorischer Stilmittel, wie mit der Übertreibung
+(Hyperbel), ausgedrückt werden kann (vgl. Leschzyk 2016: 16). Verallgemeinerungen geben auch
+Aufschluss darüber, wie eine besondere Weltanschauung als Wahrheit legitimiert wird (vgl. ebd.:
+17).
+
+
+Auf der Grammatikebene lassen sich Erfahrungswerte, Beziehungswerte, expressive Werte und
+konnektive Werte identifizieren (vgl. Fairclough 2015: 137ff.). Als Erfahrungswerte ist Transitivität
+eine bedeutsame Kategorie für die KDA. Transitivität ist die Beziehung zwischen Beteiligten
+(participants), Verben (processes) und möglichen Verbergänzungen oder Attributen (objects, complements,
+adjuncts) (vgl. ebd.: 138). Fairclough (ebd.) spricht von den drei wichtigsten Arten von processes:
+actions (enthalten zwei participants: agents und patients), events (normalerweise einen participant),
+attributions (mit einem participant und Attributen wie Possessiva, Adjektiven oder Nomen). Die Wahl
+für eine bestimmte Form, die Beteiligten, Verben und Attribute darzustellen, weist auf bestimmte
+ideologische Effekte hin. „Such choices to highlight or background agency may be consistent, automatic and
+commonsensical, and therefore ideological; or they may be conscious hedging or deception“ (ebd.: 139). Die
+Nominalisierung von Verben personifizieren abstrakte Dinge. Ein nominalisierter Satz lässt einige
+Bedeutungen weg, die von Zeitformen, Modalitäten und oft participants in nicht nominalisierten
+Sätzen gezeigt werden können (vgl. ebd.: 140). Passivierung führt zu einer absichtlichen (oder auch
+unabsichtlichen) Deagentivierung. Nominalisierung und Passivierung haben eine ideologische
+Auswirkung von Verschleierung (und Verdinglichung) (vgl. ebd.: 141). Das Verneinen ist auch
+wichtig für die Analyse. Ducrot (vgl. 1987: 172ff.) zeigt, dass die Verneinung dialogisch und
+polyphon ist, da sie immer in Verhältnis zu einer bejahenden Stimme steht. Die Verneinung gilt als
+eine Voraussetzung dafür, was die anderen sagen können. Zudem nimmt Leschzyk (vgl. 2016: 20)
+die Verwendung von Klammern und Konjunktionen als Erfahrungswerte wahr. Klammern (und
+Appositionen) verweisen auf Passagen, die die Sprechenden als wichtig erachten. Konjunktionen
+FOOTNOTE:weisen ebenso darauf hin, wie die Sprechenden ihre Ideen in einem Text oder Satz verbinden.
+
+
+Als Beziehungswerte ermöglichen es Satztypen wie Aussagesatz, Fragesatz oder Befehlssatz,
+eine bestimmte Beziehung von den Sprechenden zu den Angesprochenen zu erkennen.
+Aussagesätze können eher behauptender erscheinen als Fragesätze, die wiederum Raum für
+Widerspruch offen lassen (vgl. Fairclough 2015: 141f.). Bei der Verwendung von Pronomina wie
+‚wir‘ weisen die Sprechenden oft darauf hin, dass sie sich mit den Angesprochenen identifizieren
+(vgl. ebd.: 143). Folglich wird eine Idee von Vereinigung gebildet.
+
+
+Die Modalitäten sind eine sehr wichtige Kategorie, sowohl als Beziehungswert als auch als
+expressiver Wert (vgl. Fairclough 2015: 142). ,Beziehungsmodalitäten‘ deuten auf die Einstellung
+der Sprechenden bezüglich ihrer Rede hin, indem sie die möglichen Effekte ihrer Rede auf die
+Hörenden in Betracht ziehen. Hier können bestimmte Modalverben, die Bedürfnis, Pflicht oder
+Erlaubnis ausdrücken, behandelt werden. „It is precisely implicit authority claims and implicit power relations
+[…] that make relational modality a matter of ideological interest“ (ebd.: 143). Die Verwendung von
+Adverbien oder von bestimmten Zeitformen wie Konjunktiv als Höflichkeit („ich möchte…“) sind
+
+
+auch ein Beispiel von Beziehungsmodalitäten. In Bezug auf expressive Werte bezeichnen
+die ,expressiven Modalitäten‘ Möglichkeit, Wahrscheinlichkeit oder Bestimmtheit u. a. durch
+Modalverben, Adverbien und durch die Verwendung von Präsens als kategorische
+Wahrheit/Tatsache („es ist (nicht)…“) – Konditional hingegen wird für hypothetisches Ereignis
+verwendet („es wäre…“). In Zeitungen werden Verben oft in nicht modalem Präsens oder Perfekt
+angewandt (vgl. ebd.: 144f.).
+
+
+The prevalence of categorical modalities supports a view of the world as transparent – as if it signalled
+its own meaning to any observer, without the need for interpretation and representation. ‘News’
+generally disguises the complex and messy processes of information gathering and interpretation
+which go into its production, and the role therein of ideologies embedded in the established practices
+FOOTNOTE:and assumptions which interpreters bring to the process of interpretation (ebd.).
+
+
+Im Kontext der KDA wird sich zudem dafür interessiert, wie der Text durch logische Konnektoren
+aufgebaut ist (vgl. Fairclough 2015: 146). Bestimmte Konjunktionen ermöglichen es, die
+ideologische Positionierung der Sprechenden zu verstehen. Ein Beispiel dafür ist, wenn ein:e
+Sprecher:in z. B. „nichts dagegen, aber…“ sagt, wobei das Wort ,aber‘ die echte Meinung der
+sprechenden Person erkennen lässt. Ebenso lassen sich Koordination und Subordination als
+logische Strukturen interpretieren. Einfache Sätze zeigen mehr Objektivität als Nebensätze, die
+sich durch komplexe Strukturen aufbauen lassen. Die vermittelte Information im Hauptsatz ist
+jedoch oft „informativ prominenter“ als die im Nebensatz (vgl. ebd.). Referenzbegriffe innerhalb
+und außerhalb des Textes (Pronomina und bestimmte Artikel) haben auch eine wichtige Funktion,
+indem sie sich auf Präsuppositionen beziehen können (vgl. ebd.: 147).
+
+
+Bezüglich der Textstruktur lassen sich Erfahrungswerte und Beziehungswerte erkennen (vgl.
+Fairclough 2015: 147). Auf der Ebene der Erfahrungswerte beschäftigt die KDA sich mit der
+Makrostruktur des Textes. Der Textaufbau steht immer in Verhältnis zu bestimmten Diskurstypen.
+Sobald der Diskurstyp identifiziert wird, werden bestimmte Textmerkmale erwartet. Diskurstypen
+sind in einem gegebenen Formationssystem eingerahmt und verdeutlichen in einer gewissen Weise,
+die Gesellschaft zu organisieren. Texte können kreativ sein und mit einem Diskurstyp spielen, sie
+folgen aber stets bestimmten Regeln, die den umgesetzten Diskurstyp erkennbar machen.
+Jedenfalls muss jeder Text gewissen Diskurstypen zugeordnet werden. Zum Schluss sollen noch
+die interaktionellen Konventionen auf der Ebene der Beziehungswerte in Betracht zogen werden,
+wenn sie vorhanden oder von Bedeutung sind. Bei bestimmten Diskurstypen wie Interviews,
+politischen Debatten, talking shows usw. sind turn-taking, Unterbrechungen, Verstärkung der
+Eindeutigkeit, Kontrolle des Themas, Formulierungen u. a. von Bedeutung und ermöglichen,
+bestimmte Machtverhältnisse im Diskurs zu erkennen (vgl. ebd.: 150).
+
+
+Das folgende Schema fasst die Analyse der Wertekategorien zusammen und beinhaltet Beispiele
+für die sprachlichen Realisierungen, die in der Analyse betrachtet werden können. Es basiert vor
+allem auf Fairclough (vgl. 2015: 129f.) und Leschzyk (vgl. 2016: 23) und weist zudem Referenzen
+zu Fairclough (vgl. 2001: 286ff.) und Bendel Larcher (vgl. 2015: 100f.) auf. Dieses Schema umfasst
+mögliche sprachliche Realisierungen in Bezug auf die Wertekategorien (unter Bezugnahme von
+Fairclough 2015: 129f.), in welche sie eingerahmt sind. Nicht alle Realisierungen sind in jedem
+analysierten Text zu finden oder für jede Analyse relevant.
+
+
+Tab. 1: Angepasste schematische Darstellung für die Textanalyse
+
+
+2.2.2 Analyse der diskursiven Praxis
+
+
+Die Analyse der diskursiven Praxis wird von Fairclough (vgl. 2015: 155) ,Interpretation‘ genannt.
+Auf dieser Analyseebene wird der Zusammenhang von Text und Interaktion betrachtet.
+Diskursteilnehmende interpretieren Diskurse durch ihr Hintergrundwissen und ihre Annahmen,
+was als Members’ Resources (,Interpretationsverfahren‘) von Fairclough (vgl. ebd.) bezeichnet wird.
+Menschen verfügen über unterschiedliches Hintergrundwissen, was zu unterschiedlichen
+
+
+Annahmen führt. Hintergrundwissen und Annahmen sind von Lebenserfahrung, Alter, Kultur,
+Bildung, sozialer Position, politischer Einstellung usw. beeinflusst. Die Interpretationen der
+Diskurse manifestieren sich in vielfältigen Formen und sind stets von den Members’ Resources
+abhängig (vgl. ebd.).
+
+
+Die Analyse der diskursiven Praxis beinhaltet Kategorien textübergreifender Muster wie
+Diskurstyp, Intertextualität, Annahme (Präsupposition), Verneinung, Kohärenz (z. B. deiktische
+Ausdrücke – vgl. Leschzyk 2016: 25), Sprechakte, Betrachtung des Themas (vgl. Fairclough 2015:
+159ff.). Der Methode in Language and Power (vgl. ebd.: 156) zufolge lassen sich die Kategorien für
+die Analyse der diskursiven Praxis in Textinterpretation und Kontextinterpretation untergliedern,
+welche sich gegenseitig beeinflussen.
+
+
+Im Bereich des Kontextes (vgl. ebd.: 159ff.) lassen sich zwei weitere Ebenen unterscheiden: Der
+situative Kontext und der intertextuelle Kontext. Der situative Kontext bezieht sich auf
+Diskurstypen und seine Eigenschaften. Hier werden Informationen zu den Ereignissen (worüber
+spricht man?), den Beteiligten (wer ist beteiligt?), ihren Beziehungen (in welchen sozialen
+Beziehungen geschieht es?) und den Sprachgebräuchen (wie ist das Geschehen beschrieben und
+evaluiert?) vermittelt. Auf der Ebene des intertextuellen Kontextes (vgl. ebd.: 164ff.) wiederum
+bezieht sich der Analytiker auf andere Texte, die durch ein bestimmtes Textnetz verbunden sind.
+Dieses Textnetz wird als ,Intertextualität‘ bezeichnet. Annahmen (Präsuppositionen) und die
+Verwendung von Verneinungen werden in diesem Schritt ebenfalls analysiert. Annahmen sind das
+Implizite im Text, also die Voraussetzungen. Auch alle Sorten von Referenzen auf andere Texte
+und Diskurse sowie das Ungesagte zählen zu dieser Diskursebene.
+
+
+In Bezug auf die Textinterpretation lassen sich viele Ähnlichkeiten mit dem ersten
+Analyseschritt (Textanalyse) bemerken. Der Fokus der Textinterpretation liegt jedoch auf der
+Semantik und der Pragmatik, deren Realisierungen auch außersprachlich zu erkennen sind. Das ist
+der Fall bei Sprechakten, Kohärenz (Deixis) und Betrachtung des Themas.
+
+
+Sprechakte sind in der Pragmatik zentral (vgl. Fairclough 2015: 166ff.). Sie beziehen sich nicht
+nur auf sprachliche Realisierungen, beim Interpretieren müssen zudem Informationen zum
+Kontext aufgerufen werden. Die klassischen Sprechakte, die von Searle (vgl. 1979: 12ff.)
+unterschieden wurden, lassen sich in fünf Typen kategorisieren. Assertive Sprechakte werden
+meistens durch Aussagen realisiert (z. B. behaupten, informieren, feststellen); direktive Sprechakte
+lassen sich anhand von Fragen und Aufforderungen erkennen (z. B. befehlen, erlauben,
+auffordern); die kommissiven Sprechakte stellen ein Versprechen dar (z. B. versprechen, drohen,
+schwören); die expressiven Sprechakte lassen sich durch Verben wie ‚danken‘, ‚gratulieren‘ oder
+‚sich entschuldigen‘ erkennen; deklarative Sprechakte sind performativ und an Institutionen
+
+
+gebunden (z. B. erklären, urteilen, taufen). Produktion und Interpretation von Sprechakten folgt
+den Regeln des jeweiligen Diskurstyps, dem sie zuzuordnen sind.
+
+
+Unter Kohärenz versteht Fairclough (vgl. 2015: 157) an dieser Stelle nicht die „globale
+Kohärenz“, die die Gesamtheit des Textes verbindet, sondern die „lokale Kohärenz“, die sich auf
+spezifische Textteile bezieht. Die lokale Kohärenz ist der Kohäsion ähnlich, aber ist nicht auf
+logische Konnektoren beschränkt; es geht eher um Schlussfolgerungen mittels impliziter
+Annahmen, die oft ideologisch sind. „Auf Ebene der Kohärenz werden Elemente und Strukturen
+betrachtet, die den Zusammenhang zwischen Äußerungen herstellen, wie beispielsweise deiktische
+Ausdrücke“ (Leschzyk 2016: 25).
+
+
+Des Weiteren stellt Fairclough (vgl. 2015: 168ff.) noch bestimmte Begriffe in Language and Power
+vor: schemata, frame, script, topic, point. Schemata umfassen frame und script, die eine ideologische Rolle
+durch Stereotypen bei der Interpretation von point spielen. Schemata sind dann mentale
+Repräsentationen von Aspekten der Welt und stellen soziales Verhalten dar. Frame betrifft
+Beteiligte, also Personen, Tiere, Gegenstände, Verben oder abstrakte Konzepte, die in einem
+Ereignis eingerahmt werden. Script stellt die Beteiligten und ihre Beziehungen in solchen
+Ereignissen dar und verweist auf, wie sich spezifische Klassen von Beteiligten bei sozialen
+Ereignissen verhalten und ihre Beziehungen verwalten. Point spiegelt die Texteffekte wider und
+umfasst die Dimensionen der Erfahrung, der Beziehung und des Ausdrucks. Point lässt sich von
+schemata durch Stereotypen unterscheiden und wird im Gedächtnis behalten. Topic ist der
+Erfahrungsaspekt von point. Zusammenfassend entspricht schemata dem Diskurstyp, point bezieht
+FOOTNOTE:sich auf die Wertekategorien und topic beschreibt das Thema.
+
+
+Die Kategorien für die Analyse der diskursiven Praxis sind in der folgenden Tabelle unter
+Bezugnahme auf Fairclough (vgl. 2015: 156) und Leschzyk (vgl. 2015: 26), mithilfe von Fairclough
+(vgl. 2001: 283ff.) und Bendel Larcher (vgl. 2015: 169) zusammengefasst:
+
+
+Tab. 2: Angepasste schematische Darstellung für die Analyse der diskursiven Praxis
+
+
+2.2.3 Analyse der sozialen Praxis
+
+
+Als letzter Analyseschritt gilt die sogenannte Analyse der sozialen Praxis. In diesem Schritt werden
+die Zusammenhänge zwischen Interaktion und Kontext erklärt. Somit wird die Frage gestellt, wie
+Diskurse von sozialen Strukturen bestimmt werden und wie sie auf diese Strukturen zurückwirken
+(vgl. Fairclough 2015: 173). Die sozialen Strukturen (gesellschaftliche Ebene, institutionelle Ebene,
+situative Ebene) bilden die Members’ Resources (Hintergrundwissen und Annahmen der
+Diskursteilnehmenden), die bestimmte Diskurse abbilden. Diskurse können ihrerseits entweder die
+Members’ Resources aufrechterhalten oder ändern. Ebenso können Members’ Resources die sozialen
+Strukturen aufrechterhalten oder kreativ ändern. Auf diese Weise steht die soziale Praxis in
+Beziehung zur diskursiven Praxis.
+
+
+Diese lassen sich in folgendem Schema veranschaulichen:
+
+
+Abb. 2: Analyse der sozialen Praxis (vgl. Fairclough 2015: 173)
+
+
+Mit dem Verweis auf Fairclough erwähnt Leschzyk (vgl. 2016: 29), dass die soziale Praxis in zwei
+Richtungen funktioniert. Einerseits determiniert der soziale Kontext die Diskurse. Andererseits
+wirken die Diskurse auf den sozialen Kontext zurück. Die Analyse der sozialen Praxis kann daher
+in zwei Bereiche untergliedert werden: Zum einen in die Erklärung der sozialen
+Diskursdeterminanten und zum anderen in die Erklärung des Effektpotentials dieser Diskurse auf
+die Gesellschaft. Es geht darum den Kontext zu beschreiben, bevor die Textanalyse und die
+Analyse der diskursiven Praxis durchgeführt wird, um sich anschließend besser mit dem Kontext
+zu beschäftigen. Theoretisch jedoch ist die Reihenfolge der Analyseschritte von den Forscher:innen
+abhängig (vgl. Fairclough 2001: 282; Fairclough 2015: 128).
+
+
+Der Zusammenhang zwischen Diskursdeterminanten und Diskurseffekten wird im Folgenden
+anhand eines Beispiels aus den Medien erläutert. In seinem Buch 21 Lektionen für das 21. Jahrhundert
+weist der Autor Yuval Noah Harari darauf hin, wie die Staaten gegen den Terrorismus kämpfen
+könnten. Harari (vgl. 2018: 224) empfiehlt verdeckte Aktionen der Regierungen gegen
+Terrornetzwerke, hysteriefreie Presseberichterstattung und rationales individuelles Risikokalkül. Es
+sei unser eigener innerer Terror, der die Medien dazu anrege, vom Terrorismus besessen zu sein
+
+
+und die Regierungen überreagieren zu lassen. Folglich beeinflussen die Reaktionen der Medien und
+der Regierungen unsere Wahrnehmung des Terrorismus und seiner realen Bedrohung. Diese Praxis
+führt zu einem unendlichen Zyklus von Aktionen und Reaktionen.
+
+
+Auf diese Weise funktionieren soziale Praktiken als Vermittler zwischen Gesellschaft und
+Diskurs. Als weiteres Beispiel für die Identifizierung und Beschreibung von sozialen Praktiken
+nennt Bendel Larcher (vgl. 2015: 202f.) die Institution der Ehe.
+
+
+Als Beispiel für eine soziale Praxis sei das Heiraten genannt. Auf der einen Seite haben wir eine
+Gesellschaft, die zu großen Teilen nach wie vor um die Institution der Ehe herum organisiert ist, was
+sich im Ehe-, Adoptions-, Steuer- und Erbrecht sowie im ganzen Sozialwesen zeigt. Gestützt und
+legitimiert wird die Institution Ehe von verschiedenen Diskursen und ihren Akteuren: von den
+Kirchen als Sakrament, von der Politik als kleinste Einheit der sozialen Ordnung, von der Roman-
+und Filmindustrie als Verwirklichung des romantischen Liebesideals. […] Auf der anderen Seite
+haben wir die Heiratenden, die durch die Inszenierung ihrer Hochzeit – mit vielen Herzen, Brautkleid,
+Ringetauschen, Torte, Tanz und Kinderwünschen – die gesellschaftliche Ideologie der Liebesheirat
+und der Wunschfamilie immer aufs Neue bestätigen. (ebd.)
+
+
+Zusammenfassend wird in diesem Analyseschritt untersucht, wie sich die ideologischen Strukturen
+auf die Gesellschaft auswirken und wie diese Effekte in Diskursen wiedergegeben und normalisiert
+werden. Wie wird diskursiv konstruiert, was in einer bestimmten Zeit, in einer bestimmten
+Gesellschaft als Wissen bzw. Wahrheit gilt? Wie hängen die Ideologien mit den Machtstrukturen
+einer Gesellschaft zusammen? Wie wird Normalität produziert und woraus besteht der Prozess der
+Normalisierung? (vgl. Bendel Larcher 2015: 203). Diese Fragen stellen Möglichkeiten für die
+Analyse der sozialen Praxis dar.
+
+
+Die folgende schematische Darstellung ist, ebenso wie die vorherigen (vgl. Tab. 1 und Tab. 2),
+ein von mir angepasstes Schema, das aus einer Zusammenstellung von Fairclough (2015; 2001),
+Leschzyk (2016) und Bendel Larcher (2015) erstellt wurde. Hier beziehe ich mich spezifisch auf
+Fairclough (vgl. 2015: 172ff.; 2001: 289ff.), Leschzyk (vgl. 2016: 29) und Bendel Larcher (vgl. 2015:
+201ff.).
+
+
+Tab. 3: Angepasste schematische Darstellung für die Analyse der sozialen Praxis
+
+
+Analyse der sozialen Praxis
+
+
+FOOTNOTE:Diskursive Praxis ↔ Members’ ResourAcesn ↔al yssoezi adleerr K soonzteixatl e(Dne Pterrmaxiniasn ten und Effekte)
+Diskursive Konstruktion des Wissens und der Wahrheit
+Produktion von Normalität (common sense)
+Zusammenhang der Ideologien mit den Machtstrukturen
+
+
+In dieser Dissertation wird auch eine Bildanalyse durchgeführt. Das vorliegende Kapitel basiert auf
+dem Kapitel 7 ,Die Ebene des Einzeltextes III: Bildanalyse‘ von Bendel Larcher (vgl. 2015: 127ff.).
+Die Autorin schlägt die Analyse der Bildmerkmale (vgl. ebd.) auf der Ebene der Textanalyse und
+ebenso die Analyse der visuellen Stereotype (vgl. ebd.: 195ff.) auf der Ebene der Analyse
+textübergreifender Muster (oder ,Analyse der diskursiven Praxis‘ laut der Terminologie Faircloughs,
+wie bereits erwähnt) vor. Meines Erachtens entspricht die Analyse visueller Stereotype auch der
+Analyse von Macht und Wissen (oder ,Analyse der sozialer Praxis‘ laut Fairclough), da Stereotype
+ideologisch sind und direkt auf Members’ Resources zurückwirken.
+
+
+Die von Bendel Larcher zusammengefassten Ausführungen stützen sich größtenteils auf Kress
+und Van Leeuwen (vgl. 2006). In ihrem Buch Reading Images verweisen die Autoren auf Hallidays
+drei Metafunktionen der Sprache (,ideationale‘, ,interpersonale‘ und ,textuelle‘). Die Kapitel 2
+(Narrative representations: designing social action) und 3 (Conceptual representations: designing social constructs)
+des Buches beschäftigen sich mit ,patterns of representation‘, Kapitel 4 (Representation and interaction:
+designing the position of the viewer) und 5 (Modality: designing models of reality) mit ,patterns of interaction‘, und
+Kapitel 6 (The meaning of composition) mit den ,visual texts‘ ihrer ,grammar of visual design‘ (vgl. ebd.: 15).
+Die nächsten zwei Kapitel widmen die Autoren der Materialität (Tinte, Pinsel, Papier, Bildschirm)
+(vgl. ebd.: 215ff.) und der Dreidimensionalität (Skulpturen und Spielzeuge) (vgl. ebd.: 239ff.).
+
+
+In dieser Dissertation wird die zusammengefasste Methode Bendel Larchers bevorzugt, da sie
+auch auf andere Autor:innen verweist (vgl. Bendel Larcher 2015: 168). Die Autorin (vgl. ebd.: 134)
+empfiehlt drei Hauptfragen für die Beschreibung von Bildern: Was wird gezeigt (Inhalt des Bildes
+und Bildausschnitt)?; Wie wird es gezeigt (Perspektivierung, Komposition und Modalität)?; Welche
+Funktion(en) übt das Bild aus (Bild-Text-Verhältnis)?
+
+
+Zu Beginn wird der Inhalt beschrieben, also wer oder was auf dem Bild gezeigt wird (vgl. Bendel
+Larcher 2015: 134ff.). Bildlegenden sind ebenfalls wichtig zu beschreiben. Der Ausschnitt zeigt die
+Entfernung, also wie viel zu sehen ist und wie nahe man/etwas am Geschehen ist. Ein Panorama
+z. B. verschafft eine Übersicht und gilt als unpersönlich. Ein Bild von einem Gebäude verschafft
+Orientierung über das Geschehen (wie oft in Nachrichten dargestellt). Eine Nahaufnahme
+wiederum fokussiert sich beispielsweise auf Einzelpersonen und ihre Handlungen und gilt daher
+als persönlich. Ein Bild des Oberkörpers oder ein klassisches Portrait suggeriert eine Beziehung zu
+den Betrachtenden und gilt als intim, da die Emotionen erkennbar sein können. Eine
+Detailaufnahme, wie die von Augen, verstärkt die Intimität und Dramatisierung. Dies ist auch bei
+Schemata und Visualisierungen der Fall. Bei Visualisierungen z. B. kann es entscheidend sein, wie
+
+
+viele und welche Kategorien in die Darstellung aufgenommen wurden. Der Hintergrund eines
+Bildes ist ebenso wichtig und kann zu symbolischen Interpretationen führen. Das, was von einem
+Bild weggelassen oder weggeschnitten ist, sollte auch hinterfragt werden. Symbolische
+Bedeutungen finden sich beispielsweise in der Taube als Friedenssymbol, in der Sonne als Symbol
+für Glück und Hoffnung, oder in einem Schnellzug, der für wirtschaftlichen Aufschwung und
+Entwicklung stehen kann.
+
+
+Bei der Beschreibung von Bildern ist es von Bedeutung nicht nur auf das zu achten, was gezeigt
+wird, sondern auch zu betrachten, wie etwas/jemand gezeigt wird. Bendel Larcher (vgl. 2015:
+141ff.) erklärt die Kategorien ,Perspektivierung‘, ,Komposition‘ und ,Modalität‘. Bei dem Analyse
+Aspekt der Perspektivierung ist von Bedeutung, aus welcher Perspektive das Foto aufgenommen
+wurde, denn dies beeinflusst, wie die Bildrezipient:innen das Bild wahrnehmen. Bilder werden aus
+einem bestimmten Winkel aufgenommen oder gezeichnet. Beim horizontalen Winkel liegt der
+Fluchtpunkt zentral. Als Bildrezipient:in nimmt man das Bild so wahr, als stünde man gegenüber
+der dargestellten Szene/Person. Diese Zentralperspektive wirkt eher statisch. Liegt der
+Fluchtpunkt außerhalb des Bildes, wird die Perspektive als ,seitlich‘ bezeichnet und wirkt eher
+dynamisch. Bei der Frontalaufnahme wird Betroffenheit erzeugt, Emotionen geweckt oder Fakten
+geschaffen. Bei der seitlichen Aufnahme erweckt es für die Bildrezipient:innen den Eindruck, als
+sähen sie die Szene aus der Ferne zu. Beim vertikalen Winkel, geht es darum, aus welcher Höhe
+das Bild aufgenommen wurde. Eine solche Perspektivierung kann Machtverhältnisse ausdrücken.
+„Politikerinnen und Mitglieder von Unternehmensleitungen am Rednerpult werden durchwegs in
+leichter Untersicht gezeigt […]. Flüchtlinge werden hingegen gerne von oben aufgenommen, was
+ihre Hilflosigkeit unterstreichen soll“ (Bendel Larcher 2015: 143). Zudem kann auch die
+Blickrichtung betrachtet werden. Blicken die Abgebildeten in die Kamera, gewinnen die
+Betrachtenden den Eindruck, dass sie auch angeschaut werden. Dies suggeriert eine soziale
+Beziehung zwischen Betrachtenden und Abgebildeten. Blicken die Abgebildeten auf ein anderes
+Objekt, dann werden die Abgebildeten von den Betrachtenden auch als Objekt betrachtet. Werden
+die Abgebildeten in Aktion gezeigt, dann wird die Illusion des Dokumentarischen wird
+aufrechterhalten.
+
+
+Im Kontext der Komposition von Bilder (vgl. Bendel Larcher 2015: 145ff.) wird sich damit
+beschäftigt, wie die Elemente im Bild angeordnet sind. Die Position von Elementen in einem Bild
+sind entscheidend. Zentrale Elemente gelten als das Wichtigste, während das, was am Rand eines
+Bildes zu sehen ist, als weniger bedeutsam gilt. Die Links-Rechts-Verteilung ist auch zu bemerken.
+In vielen Sprachen tendiert beispielsweise die Leserichtung von links nach rechts. Links befindet
+sich das Bekannte, die Ursache, der Anfang, die Vergangenheit, während rechts das Neue, die
+
+
+Wirkung, das Ende, die Zukunft zu verorten ist (vgl. ebd.: 147). Ebenso funktioniert es bei der
+Oben-Unten-Verteilung. Konventionell sind leichtere, kleinere und hellere Objekte oben zu finden,
+während sich schwerere, größere und dunklere Objekte unten befinden. Ideologisch kann das, was
+oben ist, als gut, ideal, göttlich, rational oder mächtig (der Kopf) wahrgenommen werden und das,
+was unten ist, als minderwertig, real, irdisch, irrational oder machtlos (der Körper) (vgl. ebd.: 148).
+Außerdem wirkt das Senkrechte stabil und statisch, das Waagerechte ruhig und sehr statisch, das
+Diagonale dominant und beweglich. Das Wichtigste liegt im Vordergrund und das, was nicht so
+wichtig ist, liegt im Hintergrund. Die Wichtigkeit eines Elements im Bild wird auch durch Größe,
+Farbe, Licht, Schärfe und Perspektive wahrgenommen. Zudem können Elemente in einem Bild
+isoliert oder auch als miteinander verbunden sein. Das zeigt sich besonders deutlich bei
+Diagrammen und Grafiken, weil diese die Illusion erzeugen, dass man die Welt ordnen, erklären
+und kontrollieren könne (vgl. ebd.: 152).
+
+
+FOOTNOTE:Bei der Kategorie der Modalität (vgl. Bendel Larcher 2015: 152ff.) wird darauf hingewiesen, wie
+die Abgebildeten dargestellt werden. Es geht darum, wie real etwas erscheint. Die Presse und die
+sozialen Netzwerke bevorzugen beispielsweise den Naturalismus (Farbfotografie), während in den
+Wissenschaften häufiger Abstraktionen (Schemata) verwendet werden. In der Mode oder in der
+Werbung ist hingegen ein Hyperrealismus (fotografische Komposition) wahrscheinlicher.
+Weiterhin sind Farben eine Art von Modalität: Standardfotografien verwenden das volle
+Farbenspektrum in allen Abstufungen mit hoher Sättigung, während bei Grafiken und Schemata
+wenige Farben verwendet werden, oft nur schwarz und weiß. Farben haben auch symbolische
+Werte. Blau kann für Entspannung, Treue oder Tugend stehen, rot für Lebenskraft oder
+Leidenschaft, grün für Natur oder Hoffnung, gelb für Optimismus, weiß für Göttliches, schwarz
+für Tod oder sogar Eleganz (vgl. Bendel Larcher 2015: 154). Licht spielt auch eine wichtige Rolle
+bei der Analyse von Bildern. Ein bläulich-weißes Licht wird als kalt empfunden, ein rötlich-gelbes
+hingegen als warm. Ein gebündeltes Licht, wie bei einem Scheinwerfer, legt die Wichtigkeit auf ein
+Element des Bildes. Die Intensität des Lichts wirkt sich auch auf unsere Stimmung aus, wie bei
+schwachem Licht, das beispielsweise als romantisch oder auch als erschreckend empfunden werden
+kann. Die Richtung des Lichts erzeugt auch unterschiedliche Effekte. Von oben wird es als
+natürlich empfunden, von unten kann eine Person als müde wahrgenommen werden, von der Seite
+werden starke Schatten erzeugt, was die Gegenstände plastisch erscheinen lässt. Bezüglich der
+Komplexität des Bildes kann dieses eher detailliert und daher natürlicher erscheinen, oder es kann
+hingegen eher abstrakter sein. Der Hintergrund kann in seiner natürlichen Vielfalt erscheinen,
+irgendwie als undurchsichtig bearbeitet werden oder sogar weggelassen werden. Zudem ist die
+Schärfe von Bildern zu analysieren. Verschwommene Bilder können als „missraten“ gelten.
+
+
+Andererseits können sie auch gezielt eingesetzt werden, um den Eindruck von Bewegung, Tempo
+oder Hektik zu erzeugen (vgl. ebd.: 156). Tiefenscharfe Elemente erscheinen wichtiger als
+verschwommene, da sie im Fokus stehen. Zusammenfassend erläutert Bendel Larcher (ebd.: 157):
+„Die Fähigkeit, mit abstrakten Bildern umgehen zu können, gilt als Zeichen von Bildung – das gilt
+auch für die moderne Malerei.“ Die Verwendung von Bildfolgen und Videos auf elektronischen
+Medien weist darauf hin, dass der gegenwärtige Trend wieder in Richtung Konkretisierung geht.
+Die Konkretisierung in Bildern führt dazu, dass diesen ein hoher Wahrheitsgehalt zugesprochen
+wird (vgl. ebd.).
+
+
+Zum Abschluss werden Bildfunktion, Bild-Text-Verhältnis und Bildlegende analysiert. Bendel
+Larcher (vgl. 2015: 159ff.) fasst einige mögliche Bildfunktionen zusammen: Bilder können
+Aufmerksamkeit erzeugen, Attraktivität steigern, dokumentieren, informieren, illustrieren,
+argumentieren, beweisen, werben, erklären, warnen, emotionalisieren, erzählen oder unterhalten.
+Das Verhältnis von Bild und Text ist im Rahmen der Analyse ebenfalls relevant. Hier stellen sich
+die Fragen: Wie sind Bild und Text angeordnet? Welche Informationen liefern Bild und Text? Wie
+sind Bild und Text logisch aufeinander bezogen? Ergänzen Bild und Text einander? Oder
+widersprechen sie sich? Dominiert der Text oder das Bild?
+
+
+Darüber hinaus können Bildlegenden auch vorliegen. „Die Bildlegende erklärt nicht nur, was
+auf dem Bild zu sehen ist, sondern sie gibt vor, wie das Bild im Sinne des Autors zu lesen und zu
+interpretieren ist“ (ebd.: 164). Somit können Bildlegenden ein relevantes Manipulationspotential
+aufweisen.
+
+
+Die obengenannten analytischen Kategorien sind in der folgenden Tabelle zusammengefasst:
+
+
+FOOTNOTE:Tab. 4: Bendel Larchers Darstellung für die Bildanalyse (2015: 167f.)
+
+
+Hinsichtlich der Kategorien ‚Perspektivierung‛, ‚Komposition‛ und ‚Modalität‛, also wie etwas in
+einem Bild gezeigt wird, bleibt offen, ob diese wirklich universell angewandt werden können.
+Beispielsweise bei dem „westlichen“ Verständnis von links und rechts (Links im Bild ist das
+Bekannte abgebildet und rechts das Neue), kann hinterfragt werden, ob man dieses Verständnis
+auch in der „östlichen“ Welt voraussetzen kann. Darüber hinaus stellt sich die Frage, ob die von
+Farben erzeugten Empfindungen kulturübergreifend gelten. Bendel Larcher (2015: 134, Fn 31)
+erklärt: „Viele Darstellungskonventionen wie zum Beispiel Links-rechts- oder Oben-unten-
+Orientierungen sind kulturspezifisch und müssen daher für jede Kultur einzeln erhoben
+werden.“ Kress und Van Leeuwen (2006: 4) erkennen ebenso die Einschränkungen ihrer grammar
+of visual design und erregen damit Aufmerksamkeit:
+
+
+This means, first of all, that it is not a ‘universal’ grammar. Visual language is not – despite
+assumptions to the contrary – transparent and universally understood; it is culturally specific. […] To
+give the most obvious example, Western visual communication is deeply affected by our convention
+of writing from left to right […]. The writing directions of cultures vary: from right to left or from
+left to right, from top to bottom or in circular fashion from the centre to the outside. Consequently
+different values and meanings are attached to such key dimensions of visual space. These valuations
+and meanings exert their influence beyond writing, and inform the meanings accorded to different
+compositional patterns, the amount of use made of them, and so on. In other words, we assume that
+the elements, such as ‘centre’ or ‘margin’, ‘top’ or ‘bottom’, will play a role in the visual semiotics of
+any culture, but with meanings and values that are likely to differ depending on that culture’s histories
+of use of visual space, writing included. The ‘universal’ aspect of meaning lies in semiotic principles
+and processes, the culture-specific aspect lies in their application over history, and in specific instances
+of use. Here we merely want to signal that our investigations have been restricted, by and large, to
+Western visual communication. Even though others have begun to extend the applications of the
+principles of this grammar, we make no specific claims for the application of our ideas to other cultures.
+Within Western visual design, however, we believe that our theory applies to all forms of visual
+FOOTNOTE:communication. (ebd.) (Hervorhebung im Original)
+
+
+Weltweit kann die westliche visuelle Kommunikation zusammen mit lokalen Mustern beobachtet
+werden. Westliche Muster kommen oft in gewissen Bereichen der öffentlichen Kommunikation
+vor, wie zum Beispiel in der Presse, in der Werbung, in visuellen Künsten, in Verkehrsmitteln, in
+Supermärkten usw. (vgl. ebd.). Spezifisch in der Japanischen Sprache, die mich für die vorliegende
+Dissertation interessiert, verläuft die Schriftrichtung üblicherweise von oben nach unten und dann
+von rechts nach links. Nichtsdestotrotz kann die „westliche“ Ausrichtung, waagerecht von links
+nach rechts zu schreiben, auch angewandt werden. Außerdem sind japanische Comics (manga) sehr
+populär im Westen und daher werden sie dort, wie auch in Brasilien, mit der Leserichtung von
+rechts nach links veröffentlicht. Dieser Dialog zwischen verschiedenen visuellen
+Kommunikationsmustern ist ein Effekt der Globalisierung, die ihrerseits kulturelle hierarchische
+
+
+Verhältnisse erzeugen kann (vgl. ebd.). Da die, in der vorliegenden Dissertation analysierte,
+japanische Webseite in einer „westlichen“ Weise erstellt wurde und die analysierten Seiten über
+wenige Bilder (vor allem Grafiken) verfügen, werde ich die Diskussion hier nicht vertiefen.
+
+
+Schließlich werden die visuellen Stereotype analysiert. Die Analyse visueller Stereotype
+ermöglicht bestimmte Stereotypisierungen zu identifizieren, da diese konventionell gebildet werden.
+„Daher sind auch private Fotos von Hochzeiten oder Urlaubsreisen vollkommen austauschbar:
+Man will sich gegenüber allfälligen Bildbetrachtern als ,richtiges‘ Brautpaar zeigen oder als Tourist,
+der die ,richtigen‘ Sehenswürdigkeiten abgeklappert und abgelichtet hat“ (Bendel Larcher 2015:
+195) (Hervorhebung im Original). Bilder dienen auch oft als „verkürzte Argumente“ (vgl. ebd.:
+197). Auf Zigarettenpackungen in Brasilien sind beispielsweise beeindruckende Bilder abgedruckt,
+die die gesundheitsschädlichen Effekte des Rauchens auf den Körper zeigen. Statt nur einen
+verbalen Warnhinweis zu machen, dass Rauchen nicht gesund ist, setzen die Zigarettenhersteller
+dort auf die schockierenden visuellen Auswirkungen, die dies auf die Betrachtenden hat. Bei einer
+diskursanalytischen Untersuchung von Bildern ist zu identifizieren, welche Stereotypisierungen in
+einer bestimmten Domäne und Zeit vorkommen und welche Auswirkungen diese Bilder erzeugen.
+Für die Analyse empfiehlt Bendel Larcher (vgl. ebd.) die folgenden Fragen: Welches visuelle
+Stereotyp liegt vor? Welche Bedeutungen vermittelt das visuelle Stereotyp? In welcher Funktion
+wird das visuelle Stereotyp im Diskurs eingesetzt? Auf diese Weise werden in dieser Dissertation
+die Bilder auf den brasilianischen, deutschen und japanischen Webseiten beschrieben und ihre
+diskursive Funktionen und Auswirkungen diskutiert.
+
+
+Im nächsten Kapitel gehe ich näher auf den UN-Reformvorschlag der G4-Staaten ein.
+
+
+Tab. 5: Zusammenfassung der schematischen Darstellung für die Analyse
+
+
+3 Der Reformvorschlag der G4-Staaten
+
+
+In diesem Kapitel gibt es einen Überblick über die Vereinten Nationen (UNO), den Sicherheitsrat
+und den Reformvorschlag der G4-Staaten.
+
+
+3.1 Die Vereinten Nationen und der Sicherheitsrat$$$10$$$
+
+
+Die UNO ist eine internationale Organisation und ist im Jahr 1945 mit dem Ende des Zweiten
+Weltkrieges entstanden. Heute zählen 193 Länder zu den UN-Mitgliedern. Ihre Aufgaben
+umfassen gemäß der UN-Charta (vgl. United Nations Charter) u. a. die Sicherung des Weltfriedens,
+die Wahrung des Völkerrechts, den Schutz der Menschenrechte, die Förderung der internationalen
+Zusammenarbeit, die Unterstützung im wirtschaftlichen, sozialen, humanitären und ökologischen
+Gebiet, die Einhaltung der Gleichberechtigung und der Menschenrechtspolitik, die
+Lebensmittelproduktion, den Klimawandel.
+
+
+Am 1. Januar 1942 wurde der Name „Vereinte Nationen“ von dem damaligen Präsidenten der
+USA, Franklin D. Roosevelt, in der Deklaration der Vereinten Nationen geprägt. Am 24. Oktober
+1945 trafen sich Vertreter:innen von 50 Ländern im Rahmen der Konferenz von San Francisco,
+um die UN-Charta auszuarbeiten, die bereits am 26. Juni 1945 unterzeichnet wurde. Polen hat sie
+später unterzeichnet und wurde der 51. Mitgliedsstaat. Offiziell wurde die UNO am 24. Oktober
+1945 ins Leben gerufen, als die Charta von China, Frankreich, der Sowjetunion, dem Vereinigten
+Königreich und den USA ratifiziert worden ist.
+
+
+Ein weiteres wichtiges UN-Dokument ist die Allgemeine Erklärung der Menschenrechte, die
+am 10. Dezember 1948 ergänzt wurde. Die Erklärung ist ein Meilenstein in der Geschichte der
+Menschenrechte und ist für die internationale Politik von großer Bedeutung. Im ersten Artikel steht
+dazu: „Alle Menschen sind frei und gleich an Würde und Rechten geboren. Sie sind mit Vernunft
+und Gewissen begabt und sollen einander im Geist der Brüderlichkeit begegnen.“ (vgl. Universal
+Declaration of Human Rights, Artikel 1)
+
+
+Der UNO gehören insgesamt sechs Hauptorgane und noch viele weitere Nebenorgane an. Die
+sechs Hauptorgane sind die UN-Generalversammlung, das UN-Sekretariat, der Internationale
+Gerichtshof, der UN-Wirtschafts- und Sozialrat, der UN-Treuhandrat und der UN-Sicherheitsrat.
+
+
+Im Rahmen der UN-Generalversammlung findet regelmäßig das Forum für internationale
+Diplomatie und für Debatten über weltpolitische Fragen statt. Hier können Empfehlungen an
+Staaten und Vorschläge an den UN-Sicherheitsrat angesprochen werden. Auch die Aufnahme
+neuer Mitglieder und die Wahl der nichtständigen Mitglieder des Sicherheitsrates sowie der/die
+UN-Generalsekretär:in und die Richter:innen des Internationalen Gerichtshofs werden in diesem
+Forum entschieden. Die UN-Generalversammlung ist deswegen das wichtigste UN-Organ. Die
+bedeutendsten Sitzungen finden jährlich im September im UN-Hauptgebäude in New York statt.
+Dort werden wichtige weltliche Fragen diskutiert und Entscheidungen getroffen. Jeder der 193
+Mitglieder hat eine Stimme und für die Beschlüsse ist eine Zweidrittelmehrheit der
+Generalversammlung erforderlich.
+
+
+Das UN-Sekretariat ist das UN-Verwaltungsorgan, dessen Vorsitzende(r) der/die UN-
+Generalsekretär:in ist. Der/die Generalsekretär:in wird im Rahmen der UN-Generalversammlung
+auf fünf Jahre gewählt und ist der/die wichtigste UN-Repräsentant:in. Die Hauptaufgabe des UN-
+Sekretariats ist die anderen UN-Organe administrativ zu unterstützen. Das Sekretariat hat seinen
+Hauptsitz in New York und noch weitere drei Sitze in Genf, Nairobi und Wien.
+
+
+Der Internationale Gerichtshof hat wiederum seinen Sitz in Den Haag, Niederlande, und gilt
+als das wichtigste UN-Rechtsorgan. Seine 15 Richter werden von der UN-Generalversammlung
+auf neun Jahre gewählt. Das Organ entscheidet Rechtsstreitigkeiten zwischen den Staaten.
+
+
+Der UN-Wirtschafts- und Sozialrat steht für Wirtschafts- und Sozialangelegenheiten, darunter
+fällt zum Beispiel die Hebung des allgemeinen Lebensstandards, die Lösung wirtschaftlicher,
+sozialer und gesundheitlicher Probleme, humanitäre Hilfe und die Förderung der Menschenrechte,
+sowie auch Kultur und Erziehung. Der Rat zählt 54 Mitglieder, die von der UN-
+Generalversammlung auf drei Jahre gewählt werden. Das Organ ist daher die zentrale Plattform
+für Überlegung, Diskussion und innovatives Denken für nachhaltige Entwicklung.
+
+
+Der UN-Treuhandrat ist die Verwaltung von Treuhandgebieten und ist derzeit nicht aktiv. Das
+Organ war ursprünglich dazu gedacht, ehemalige koloniale Besetzungen auf Unabhängigkeit und
+Selbstverwaltung vorzubereiten. 1994 wurde der Rat suspendiert, weil es keine Kolonien mehr gibt.
+
+
+Der UN-Sicherheitsrat steht für weltpolitische Sicherheitsfragen und ist zuständig für die
+Wahrung des Weltfriedens und die internationale Sicherheit. In der Präambel der UN-Charta (vgl.
+United Nations Charter) wurde vereinbart, dass die Staaten „als gute Nachbarn in Frieden
+miteinander“ leben sollen und ihre vereinten Kräfte verwenden sollen, „um den Weltfrieden und
+die internationale Sicherheit zu wahren.“ Es wurde auch beschlossen, dass „Waffengewalt nur noch
+im gemeinsamen Interesse angewendet wird.“ Außerdem setzt sich die UNO und der Sicherheitsrat
+das folgende Ziel:
+
+
+den Weltfrieden und die internationale Sicherheit zu wahren und zu diesem Zweck wirksame
+Kollektivmaßnahmen zu treffen, um Bedrohungen des Friedens zu verhüten und zu beseitigen,
+Angriffshandlungen und andere Friedensbrüche zu unterdrücken und internationale Streitigkeiten
+oder Situationen, die zu einem Friedensbruch führen könnten, durch friedliche Mittel nach den
+Grundsätzen der Gerechtigkeit und des Völkerrechts zu bereinigen oder beizulegen. (United Nations
+Charter, Kapitel I, Artikel 1)
+
+
+Es ist jedoch interessant zu beobachten, dass die UN-Charta keine klare Definition von ‚Frieden‛
+und ‚Sicherheit‛ vorstellt. Hassler (vgl. 2013: 8) definiert ‚kollektive Sicherheit‛ als das
+Gleichgewicht und die Bündelung militärischer Kräfte gegen Bedrohungen des Friedens und der
+Sicherheit der Gemeinschaft.
+
+
+[…] security implies a common interest and a strong presumption against the unilateral use of force,
+with two basic requirements: the prevention of armed conflict and peaceful resolution of disputes,
+and the containment of conflicts to prevent them from escalating to the point where they might affect
+general stability. Security of a community builds on goodwill and the preparedness to proceed by
+FOOTNOTE:consensus. (Hassler 2013: 7)
+
+
+Die Begriffe ‚Frieden‛ und ‚Sicherheit‛ kommen oft zusammen in Texten der UNO und des
+Sicherheitsrates vor. Beide Konzepte sind verbunden, denn Sicherheit kann Frieden ermöglichen.
+Friedenssicherung bedeutet, dass es den Staaten gelingt, ihre eigenen nationalen Interessen im Spiel
+der internationalen Beziehungen auszugleichen. Hassler (2013: 8) weist darauf hin, wie die
+internationalen Mechanismen für die Wahrung des Weltfriedens und der kollektiven Sicherheit
+wirken:
+
+
+Peace, accordingly, is more than the mere absence of war. A certain price will have to be paid. That
+price is the organization into a community and the willingness of each member to contribute his
+share of effort and, if need be, of blood to uphold the law of the community. A collective security
+regime is fully aware of the war-causing features of the system within which it operates and therefore
+seeks to provide a more effective mechanism for dealing with aggressors when they emerge, as well
+as to make aggression less likely by balancing the competitive nature of international relations. In
+effect, when it works, it confronts aggressors with preponderant as opposed to merely equal force.
+In summary, collective security is ‘the expectation of reciprocity, the fear of reprisal and the
+recognition that in the common interest of saving the community one cannot have one’s way on
+every issue’.
+
+
+Der Sicherheitsrat ist das mächtigste UN-Organ und ist relativ unabhängig bei der Erlassung seiner
+eigenen Beschlüsse. Der Rat kann Sanktionen verhängen und sogar die Anwendung von Gewalt
+zur Aufrechterhaltung oder Wiederherstellung des Friedens und der Sicherheit genehmigen.
+Insgesamt zählen 15 Mitglieder zum Sicherheitsrat, davon fünf ständige Mitglieder mit Vetorecht
+und noch zehn nichtständige Mitglieder ohne Vetorecht, die alle zwei Jahre neu gewählt werden.
+Das Organ hat eine monatlich wechselnde Präsidentschaft. Alle UN-Mitglieder erklären sich damit
+
+
+einverstanden, die Entscheidungen des Sicherheitsrates anzunehmen und auszuführen. Während
+andere UN-Organe Empfehlungen an die Mitgliedsstaaten richten, darf allein der Sicherheitsrat
+Entscheidungen treffen, zu deren Umsetzung die Mitgliedsstaaten gemäß der UN-Charta
+verpflichtet sind. Wenn eine Beschwerde über eine Bedrohung des Friedens eingereicht wird,
+besteht die erste Maßnahme des Rates in der Regel darin, die Parteien dazu aufzufordern auf
+friedlichem Wege eine Einigung zu erzielen.
+
+
+Unter Bezugnahme auf die UN-Charta (vgl. United Nations Security Council, unter About the Council
+– Functions and Powers)$$$11$$$ sind die Funktionen und Befugnisse des Sicherheitsrates folgende:
+
+
+FOOTNOTE:➢ Wahrung des internationalen Friedens und der internationalen Sicherheit im Einklang mit
+den Grundsätzen und Zwecken der UNO;
+
+
+FOOTNOTE:➢ Streitigkeiten oder Situationen zu untersuchen, die zu internationalen Reibereien führen
+könnten;
+
+
+➢ Methoden zur Anpassung solcher Streitigkeiten oder der Bedingungen für die Beilegung
+dieser zu empfehlen;
+
+
+FOOTNOTE:➢ Pläne für die Einrichtung eines Systems zur Regulierung der Rüstung zu formulieren;
+
+
+➢ das Bestehen einer Bedrohung für den Frieden oder den Akt der Aggression festzustellen
+und zu empfehlen, welche Maßnahmen ergriffen werden sollten;
+
+
+FOOTNOTE:➢ die Mitglieder aufzufordern, Wirtschaftssanktionen und andere Maßnahmen zu
+verhängen, bei denen keine Gewalt angewendet wird, um Aggressionen zu verhindern
+oder zu stoppen;
+
+
+➢ militärische Maßnahmen gegen einen Angreifer zu ergreifen;
+
+
+➢ die Aufnahme neuer Mitglieder zu empfehlen;
+
+
+FOOTNOTE:➢ die Treuhandfunktionen der UNO in strategischen Bereichen auszuüben;
+
+
+FOOTNOTE:➢ der VN-Generalversammlung die Ernennung des UN-Generalsekretärs zu empfehlen
+und zusammen mit der Versammlung die Richter des Internationalen Gerichtshofs zu
+wählen.
+
+
+Seit den 1960er führt der UN-Sicherheitsrat Diskussionen über seine Repräsentativität, aber erst
+ab den 2000er Jahren begannen diese Diskussionen, in Dokumenten organisiert zu werden. Eine
+Vielzahl von Reformvorschlägen wurde eingebracht, jedoch wurden fast keine Änderung
+vorgenommen. Nach dem UN-Beschluss 62/557 (2008) ,Question of equitable representation on and
+increase in the membership of the Security Council and related matters‘ (vgl. UN-Beschluss 62/557 (2008))
+
+
+verpflichtete sich die UN-Generalversammlung die Verhandlungen u. a. bezüglich der regionalen
+Repräsentationsgröße eines erweiterten Sicherheitsrates, der Arbeitsmethoden des Rates und der
+Frage des Vetorechts schriftlich anzufangen (vgl. ebd.). Diese Verhandlungen sind bis heute im
+Gange.
+
+
+Im Folgenden werden die Reformvorschläge des Sicherheitsrates vorgestellt.
+
+
+3.2 Reformvorschläge des Sicherheitsrates$$$12$$$
+
+
+Der UN-Sicherheitsrat hatte seine erste Sitzung am 17. Januar 1946 in London. Die Mitglieder
+setzen sich zusammen aus den die bis heute gleichgebliebenen fünf ständigen Mitgliedern –
+Republik China (heute Volksrepublik China), Frankreich, Vereinigtes Königreich, die USA und die
+damalige Sowjetunion (heute Russland), die sogenannten Vetomächte – und den sechs
+nichtständigen Mitgliedern, die seitdem alle zwei Jahre neu gewählt werden (vgl. Von Freiesleben
+2013: 2).
+
+
+Mit der 1965 in Kraft getretenen Reform des UN-Sicherheitsrates sind viele neue Mitglieder in
+die UN eingetreten, besonders aus Afrika und Asien. Die einzige Änderung des UN-
+Sicherheitsrates bis heute war die Erhöhung der Anzahl der nichtständigen Mitglieder von sechs
+auf zehn (vgl. Reformando o Conselho de Segurança das Nações Unidas – A Reforma de 1963-65).
+
+
+In den 90er Jahren begannen Japan und Deutschland nach einem ständigen Sitz im UN-
+Sicherheitsrat zu streben und begründeten dies damit, dass sie in der Zeit des Golfkrieges stark
+finanziell zur UNO beigetragen hätten (vgl. Von Freiesleben 2013: 2f.). Dennoch war Italien
+dagegen, weil dies eine regionale Drohung für sich sein könne. Mit der italienischen Position haben
+noch weitere Länder übereingestimmt (vgl. ebd.: 3). Indien und Brasilien schlossen sich den
+Forderungen Deutschlands und Japans an und diese Länder wurden später als G4-Staaten
+bezeichnet. Sie bekräftigten die Entstehung neuer ständigen Mitglieder, während Länder wie Italien,
+Spanien, Südkorea, Pakistan, Mexiko, Argentinien und Kanada (Mitglieder der sogenannten
+Konsensgruppe) neue Sitze für nichtständige Mitglieder vorschlugen, mit dem Argument, dass
+neue ständigen Sitze ungleiche Machtverhältnisse herstellen würden (vgl. ebd.). Außerdem strebt
+die sogenannte Afrikanische Union (AU – African Union/Ezulwini Consensus) nach zwei ständigen
+Sitzen für afrikanische Länder, was aber Konflikte innerhalb der Gruppe verursacht, beispielsweise
+darüber, welche afrikanischen Länder die angestrebten Sitze besetzen können (vgl. ebd.: 4).
+
+
+FOOTNOTE:12 Die am meisten verwendeten Quellen für das vorliegende Kapitel sind die Publikation des Center for UN Reform
+Education (vgl. 2013; Von Freiesleben 2013; Swart 2013) und die Webseiten der Regierungen Brasiliens (vgl.
+Reformando o Conselho de Segurança das Nações Unidas), Deutschlands (vgl. Reform des Sicherheitsrats der Vereinten
+Nationen) und Japans (vgl. Kokuren Gaikō: Kokuren Kaikaku – Anpori Kaikaku) für die Reform.
+
+
+1997 bei der UN-Generalversammlung wurde eine Reform vorgeschlagen, in der der
+Sicherheitsrat von 15 auf 24 Mitglieder erweitert werden sollte – zehn ständige und 14 nichtständige
+Sitze. Dessen Umsetzung war nicht erfolgreich (vgl. ebd.: 5). Darüber hinaus entstanden 2004 noch
+weitere Reformvorschläge. Einer davon empfahl sechs neue ständige Sitze ohne Vetomacht und
+noch drei nichtständige Sitze. Ein anderer schlug acht Sitze vor, die alle vier Jahre neu gewählt
+würden, und zusätzlich einen Sitz, der alle zwei Jahre gewählt werden sollte. Diese
+Reformvorschläge sind ebenfalls nicht angenommen worden (vgl. ebd.: 6).
+
+
+Im Jahr 2005 bei dem im Rahmen der UN-Generalversammlung stattgefundenen Weltgipfels
+haben die G4-Staaten einen Entwurf für eine Resolution für die Sicherheitsratsreform ausgearbeitet
+(vgl. Entwurf A/59/L.64). Die Gruppe schlägt sechs ständige Sitze vor, vier für die Gruppe selbst
+und zwei für afrikanische Länder und noch vier zusätzliche nichtständige Sitze. Für die neuen
+ständigen Mitglieder empfohlen sie die Vetomacht, die erst nach der Reform diskutiert werden
+sollte. Die Konsensgruppe (UfC – Uniting for Consensus) schlägt einen Rat mit 25 Sitzen vor, in
+denen 20 nichtständige Mitglieder alle zwei Jahre neu gewählt werden sollen (vgl. Entwurf
+A/59/L.68). Die AU brachte einen Entwurf (vgl. Entwurf A/59/L.67) ein, der nach zwei ständigen
+Sitzen mit Vetomacht und fünf nichtständigen Sitzen für afrikanische Länder strebt. Aufgrund des
+Widerstands der USA gegen Deutschland und China gegen Japan sowie der Frage über das Recht
+auf Veto für neue ständige Sitze ist immer noch keine Änderung im Sicherheitsrat vorgenommen
+worden (vgl. Von Freiesleben 2013: 9).
+
+
+Es gab auch einen brisanten Vorschlag (vgl. Entwurf A/60/L.49) von der sogenannten S5 (Small
+Five, die aus der Schweiz, Singapur, Jordan, Costa Rica und Liechtenstein besteht), die den
+Vorschlag direkt in der UN-Generalversammlung und nicht innerhalb des Sicherheitsrates
+eingebracht haben. Der Rat hat sich stark gegen den Vorschlag gestellt, weil dieses Vorgehen
+voraussetzte, dass die Generalversammlung Macht habe, dem Sicherheitsrat zu sagen, was er tun
+solle (vgl. Von Freiesleben 2013: 10).
+
+
+2007 entstand die Gruppe L69, die ursprünglich aus Indien, Brasilien und Südafrika bestand
+und daher auch IBSA genannt wurde. Die Gruppe schlägt u. a. eine Ausweitung des
+Sicherheitsrates, mehr Repräsentativität für Entwicklungs- und Schwellenländer und die
+Verbesserung der Arbeitsmethode des Rates vor (vgl. Entwurf A/61/L.69). Heute gehören der
+Gruppe ungefähr 40 Mitglieder an.
+
+
+Im gleichen Jahr haben die Mitglieder des UN-Sicherheitsrates dafür gestimmt, die Vorschläge
+für die Reform im Rahmen der sogenannten Intergovernmental Negotiations (IGN – ‚zwischenstaatliche
+Verhandlungen‛) endlich anzufangen zu behandeln, wie in dem Schreiben 62/557 von 2008
+
+

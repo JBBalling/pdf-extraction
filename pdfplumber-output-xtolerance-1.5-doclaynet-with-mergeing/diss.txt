@@ -1,19 +1,35 @@
 Transfer Meta Learning
 Herausforderungen der Mustererkennung
+
+
 Dissertation
+
+
 Dissertation zur Erlangung des Grades eines
 Doktor-Ingenieurs (bzw. Ph.D.)
 der Fakultät für Elektrotechnik und Informationstechnik
 an der Ruhr-Universität Bochum
+
+
 Nico Zengeler
 aus Luckenwalde
+
+
 Erscheinungsjahr: 2022
+
+
 Namen der Berichter/innen:
 Prof. Dr. Tobias Glasmachers
 Prof. Dr. Asja Fischer
 Prof. Dr. Uwe Handmann
+
+
 Tag der mündlichen Prüfung: 30.08.2022
+
+
 1 Einleitung
+
+
 Die Informatik gilt als Wissenschaft, deren Untersuchungsgegenstand in der Struktur
 von Information und deren automatisierter Verarbeitung besteht. Die frühe Informatik
 entstammt mathematischen Axiomen, insbesondere solchen der Zahlentheorie und Men-
@@ -25,6 +41,8 @@ die sich weder beweisen noch widerlegen lassen. Die Frage nach der Entscheidbark
 einer derart axiomatisierten Fragestellung lässt sich auf die Frage nach der Berechenbar-
 keit der Ergebniszahlen in Polynomialzeit mit einer deterministischen Turingmaschine
 zurückführen, wie etwa einem Computer, zurückführen [3].
+
+
 Die heutige Informatik unterteilt sich in verschiedene Disziplinen; namentlich die theore-
 tische, die praktische, die technische und die angewandte Informatik. Während sich die
 theoretische Informatik grundlegenden Fragen der Berechenbarkeit, formalen Sprachen
@@ -51,6 +69,8 @@ mathematisch abstrahiert und somit für maschinelle Lernverfahren programmatisch
 wendbar. Die Möglichkeit, intelligentes Verhalten auf diese Weise maschinell berechenbar
 zu gestalten, eröffnet die Suche nach algorithmischen Lernverfahren und die Frage nach
 der Unterscheidung derer Ergebnisse von natürlicher, etwa menschlicher, Intelligenz [4].
+
+
 In seinem technischen Report zu intelligenten Maschinen beschreibt Turing diese Suche
 „unter diesem Gesichtspunkt [...] als eine Aufgabe der menschlichen Gemeinschaft als
 Ganzes und nicht als eine Aufgabe des Einzelnen“ [4].
@@ -95,6 +115,8 @@ sagen und Entscheidungen auf der Grundlage von vorgegebenen Beispielmustern und
 implizierten Fakten und Regeln treffen. Solche Programme sind in der Regel schwer an
 eine sich ändernde Sachlage anzupassen, da ihre Lernfähigkeit durch ihre Wissensbasis,
 beziehungsweise durch die Trainingsdaten, eingeschränkt ist.
+
+
 Diese Programme lernen also nicht wie Lebewesen, aber genau auf diese Art des Lernens
 konzentriert sich die aktuelle interdisziplinäre Forschung im Bereich der Neuroinformatik
 und des maschinellen Lernens. Einzelne Lösungen des maschinellen Lernens, beispielsweise
@@ -102,6 +124,8 @@ die gelernten Parametervektoren künstlicher neuronaler Netzwerke, werden als sc
 künstliche Intelligenzen bezeichnet. Eine starke künstliche Intelligenz hingegen zeichnet
 sich durch perpetuelle Verallgemeinerungs- und Konkretisierungsfähigkeit aus, also der
 Fähigkeit, beliebig Wissen zu akkumulieren und für neue Aufgaben zu nutzen.
+
+
 Hierbei stellt sich die grundsätzliche Frage nach dem Wesen von Erkenntnis und dessen
 Übertragbarkeit in Form von Wissen. Im Rahmen des Deep Learning führt diese Suche
 zu den Forschungsfragen des Transferlernens und des Metalernens. Das Transferlernen
@@ -111,8 +135,9 @@ stabiler zu gestalten und besser zu generalisieren. Im Metalernen werden keine N
 der Aufgaben verwendet, sondern lediglich deren Metadaten, um in diesen Merkmalen zu
 finden, welche der Übertragung von Wissen dienlich sind. Der in dieser Dissertation vor-
 gestellte neue Ansatz des Transfer Meta Learning nutzt Metalernverfahren, um optimale
-Transferlernprozesse abzuschätzen [5, 6].
-Mit der wachsenden Popularität des maschinellen Lernens, beispielsweise des Lernens
+Transferlernprozesse abzuschätzen [$$$5$$$, $$$6$$$]. Mit der wachsenden Popularität des maschinellen Lernens, beispielsweise des Lernens
+
+
 Mit der wachsenden Popularität des maschinellen Lernens, beispielsweise des Lernens
 tiefer künstlicher neuronaler Netzwerke, entstehen immer dann neue Anwendungen,
 wenn zu Fragen neue Daten verfügbar und optimale Lösungen gesucht werden. Die
@@ -127,6 +152,8 @@ indem das von verschiedenen Modellen in unterschiedlichen Formen repräsentierte
 miteinander in Einklang gebracht wird, um mit weniger Rechenaufwand tiefgründigere
 Zusammenhände abzubilden und größere, bisweilen ungelöste, maschinelle Lernprobleme
 zu lösen [19, 20, 21].
+
+
 Die verschiedenen beteiligten wissenschaftlichen Disziplinen untersuchen die dem selbst-
 ständigen Lernen zugrundeliegenden Prinzipien aus unterschiedlichen Blickwinkeln, wo-
 durch interdisziplinäre Antworten zunehmend an Bedeutung gewinnen. Die Erforschung
@@ -140,7 +167,11 @@ aller anfallenden Daten in der Regel zu einer Verschlechterung bis hin zur Funkt
 higkeit des künstlichen neuronalen Netzwerks [23, 24, 25]. Methoden des Transferlernens
 bieten verschiedene Ansätze, das Problem des katastrophalen Vergessens im Rahmen
 schwacher künstlicher Intelligenz zu überwinden.
+
+
 1.1 Forschungsfrage
+
+
 Transferlernen ist eine Technik, welche vornehmlich für das Training tiefer künstlicher
 neuronaler Netzwerke eingesetzt wird, um bereits vorhandenes Wissen aus bekannten
 Aufgaben in unbekannte Aufgaben zu übertragen. Diese Technik erleichtert das Lernen
@@ -156,6 +187,8 @@ lichen, gelerntes Wissen aus einem Aufgabenbereich in einen anderen zu überfüh
 [44, 45]. Im großen Bild wird versucht ein System zu entwickeln, welches in beliebigen
 Datenlagen, also beispielsweise auch in virtuellen Umgebungen, lernen und das Gelernte
 auf andere, etwa reale, Umgebungen übertragen kann [46].
+
+
 Bei der Durchführung eines Transferlernprozesses stellt sich die Frage nach der Modell-
 auswahl und der Auswahl optimaler Hyperparameter, wie etwa die Anzahl der Lernschritte
 oder die Lernrate; an dieser Stelle ist Expertenwissen erforderlich, um einen effizienten
@@ -171,6 +204,8 @@ Wissensbasis für Transferlernmethoden, welche in Form von Metamodellen abgebild
 wird. Dieser Ansatz ist motiviert durch die Nutzung von Weltmodellwissen für spezifische
 Aufgaben, verallgemeinert das zugrundeliegende Prinzip jedoch auf programmatischer
 Ebene für Wissenstransferanwendungen.
+
+
 Zur Konzeptionalisierung dieses Ansatzes werden Begrifflichkeiten von Aufgaben und
 deren Lösungen benötigt, welche sich in Form der jeweiligen Datensätze und deren
 zugehörigen Optimierungsverfahren darstellen. Zur Schaffung einer Diskussionsgrundlage
@@ -180,7 +215,11 @@ benbereichen untersucht [6, 7, 8, 9, 10, 11]. Basierend auf theoretischen Grundl
 und vorangegangenen praktischen Arbeiten werden verschiedene Aufgaben und Lösungs-
 möglichkeiten untersucht, systematisch ausgewertet und miteinander verglichen, um die
 Relevanz der Wiederverwendung von maschinell gewonnenem Wissen zu verdeutlichen.
+
+
 1.2 Aufbau
+
+
 Zunächst wird in Kapitel 2 der bereits erforschte Stand der Wissenschaft und Technik dar-
 gelegt, der im Rahmen der Anwendungen dieser Forschungsarbeit als Grundlage relevant
 ist. Hierzu werden die mathematischen Konzepte, welche den verschiedenen Lernverfahren
@@ -202,6 +241,8 @@ Wissensrepräsentationen und Transferlernprozessen zur Reduktion der Rechenkoste
 sowie der Bedarf nach einer systematischen Analyse der hierbei anfallenden Metadaten.
 Jede beschriebene Herausforderung enthält in etwa das Muster der zugrundeliegenden
 Veröffentlichung, sodass der Kontext in der jeweiligen Sektion erhalten bleibt.
+
+
 Kapitel 4 beschreibt das in dieser Dissertation eingeführte, neue Konzept des Trans-
 fer Meta Learning nach den Standardparadigmen der Informatik, etwa dem Eingabe-
 Verarbeitung-Ausgabe (EVA) Prinzip und der objektorientierten Modellierung. Die Auswer-
@@ -210,6 +251,8 @@ im Allgemeinen, beziehungsweise der Objekterkennung im Besonderen. Hierbei zeigt
 sich der praktische Nutzen der systematischen Verwendung der Metadaten von Transfer-
 lernprozessen zur Findung optimaler Modelle und Hyperparameter für eine maschinelle
 Wissensübertragung.
+
+
 In der Diskussion in Kapitel 5 werden die informationstheoretischen Limitationen des
 Ansatzes, die praktischen Begrenzungen und zukünftige Arbeiten diskutiert und eine
 ethische Betrachtung vorgenommen. Diejenigen Themen und Ideen, welche in naher
@@ -219,7 +262,11 @@ andere akademische Abschlussarbeiten genannt, welche in Beziehung zu dieser Arbe
 entstanden. Anschließend werden Chancen und Risiken der künstlichen Intelligenz im
 Allgemeinen und des Transfer Meta Learning im Besonderen diskutiert. Zum Abschluss
 fasst das Kapitel 6 die wichtigsten Aussagen dieser Dissertation kurz zusammen.
+
+
 2 Grundlagen
+
+
 Zur datengetriebenen Lösung von Optimierungsproblemen fokussiert sich der Stand
 der Wissenschaft und Technik auf maschinelle Lernverfahren mit dem Training tiefer
 künstlicher neuronaler Netzwerke [47]. Verschiedene Arten von Lernverfahren erfüllen
@@ -257,7 +304,11 @@ Schlüsselaustausch als Kandidat für eine quantensichere Kommunikation gilt [82
 Werden neuronale Architekturen um ein Speicherwerk erweitert, sind diese neuronalen
 Turingmaschinen oder differenzierbaren neuronalen Rechner (E: Differentiable Neural
 Computer, DNC) in der Lage, einen Algorithmus zu lernen [85, 86].
+
+
 2.1 Evolutionäre Algorithmen
+
+
 Evolutionäre Algorithmen basieren auf dem Grundgedanken der biologischen Evolution
 und eignen sich insbesondere zur Lösung von Optimierungsproblemen, bei denen kei-
 ne zielführende Ableitung des Optimierungskriteriums nach den lernbaren Parametern
@@ -271,12 +322,18 @@ hier als Fitnesswert bezeichnet, geschieht über die iterative Anwendung von Pro
 der Selektion, Rekombination und Mutation bis zum Erreichen eines Abbruchkriteriums.
 Nach einer hinreichenden Anzahl von Iterationen entwickeln sich Individuen, welche über
 einen hohen Fitnesswert verfügen [89].
+
+
 Der Fitnesswert entspricht dem Maß für die Qualität der gefundenen Lösung bezüglich des
 Optimierungsproblems. Die Population der Lösungen liegt zunächst in einer Menge von
 Genotypen X vor und wird über eine Zuweisungsfunktion φ in entsprechend auswertbare
 Phänotypenmenge Y überführt:
+
+
 Diesen Phänotypen wird nun anhand einer Fitnessfunktion f ein reeller Fitnesswert
 zugewiesen, welchen der evolutionäre Algorithmus maximieren soll:
+
+
 Diese grundlegende Idee kann auf unterschiedliche Weisen auf konkrete Herausforde-
 rungen angewandt werden. Die verschiedenen evolutionären Algorithmen sind in der
 Lage, verschiedenartige Blackboxprobleme zu lösen. Genetische Algorithmen sind eine
@@ -288,12 +345,18 @@ Zeichenkette, einer Formel oder eines Quelltextes. Evolutionsstrategien erweiter
 Grundgedanken dahingehend, dass die Genotypen als Vektoren reeller Zahlen repräsen-
 tiert werden, die nach einer Wahrscheinlichkeitsverteilung mutieren, welche während des
 Evolutionsprozesses strategisch vorteilhaft angepasst wird.
+
+
 Im Kontext des Trainings tiefer künstlicher neuronaler Netzwerke im Allgemeinen und des
 Transferlernens im Besonderen finden evolutionäre Algorithmen Anwendung in der Opti-
 mierung von Hyperparametern [90], in der gegnerischen Umprogrammierung [91, 92] oder
 bei der Inferenz eines Weltmodells durch ein aufgabenspezifisches künstliches neuronales
 Netzwerk mit wenigen synaptischen Gewichten [19].
+
+
 2.1.1 Genetische Algorithmen
+
+
 Genetische Algorithmen sind eine Klasse von Algorithmen, welche unter Einsatz von
 Rekombinations- sowie Mutations- und Selektionsoperatoren mögliche Lösungen eines
 Optimierungsproblems suchen und in Form genotypischer Datenstrukturen speichern
@@ -321,7 +384,11 @@ bleibt kein Individuum der Elterngeneration erhalten. Ein anderer Ansatz, die Au
 durch ein Turnier (E: Tournament Selection), vergleicht eine zufällige Auswahl von Indi-
 viduen der Elterngeneration und erzeugt eine Kindgeneration aus denjenigen Individuen,
 welche in den direkten Vergleichen die höheren Fitnesswerte aufweisen.
+
+
 2.1.2 Genetische Programmierung
+
+
 Die genetische Programmierung ist eine evolutionäre Methode zur automatisierten Ent-
 wicklung eines Programms (E: Automatic Programming) [95, 96, 97]. Die Lösungen
 stellen Elemente einer Sprache dar, welche auch turingvollständig sein und somit einen
@@ -333,6 +400,8 @@ tive Knoten miteinander verbunden. Ausgehend vom Wurzelknoten führt eine Rekurs
 über die Baumstruktur zu einer auswertbaren Ergebniszeichenkette. Der Fitnesswert des
 Individuums ergibt sich durch die Auswertung der beschriebenen Lösung in verschiedenen
 Testfällen mit jeweils eigenen Eingabe- und Zielgrößen.
+
+
 Ähnlich wie bei einem genetischen Algorithmus wird das Programm in Form eines Genes
 repräsentiert. Aufgrund der Baumstruktur eröffnen sich in der genetischen Programmie-
 rung jedoch weitere Rekombinations- und Mutationsmöglichkeiten. Eine Baumstruktur
@@ -341,7 +410,11 @@ zufällig generierte Unterbaumstrukturen ersetzt werden oder indem zufällige Op
 Werte und Variablen geändert werden. Die Rekombination zweier Baumstrukturen kann
 erfolgen, indem zufällig gewählte Unterbaumstrukturen der gewählten Eltern miteinander
 vertauscht werden [96].
+
+
 2.1.3 Evolutionsstrategien
+
+
 Evolutionsstrategien sind eine, auf kontinuierliche Variablen spezialisierte, evolutionäre
 Optimierungsmethode [98, 99]. Evolutionäre Strategien nehmen genotypische Lösungen
 als Vektoren x ∈ Rn angenommen, deren Mutationen einer Wahrscheinlichkeitsvertei-
@@ -351,11 +424,12 @@ als eine Gaußverteilung modelliert, deren Mittelwert das Individuum x bildet, w
 mit der Standardabweichung σ entlang beliebiger Optimierungsdimensionen mutieren
 kann, so kann über die iterative Anpassung dieser Parameter x, σ eine zielführende
 Veränderung bewirkt werden. In einer (1 + 1)-Evolutionsstrategie kann beispielsweise Re-
-chenbergs 1-Regel zur Anpassung der Mutationswahrscheinlichkeitsverteilungsparameter
-5
+chenbergs 1-Regel zur Anpassung der Mutationswahrscheinlichkeitsverteilungsparameter 5
 eingesetzt werden [99, 100]. Pseudocode 1 demonstriert die Parameteraktualisierung der
 Mutationswahrscheinlichkeitsverteilung für eine (1 + 1)-Plusselektion und einer Evoluti-
 onsstrategieadaption über den Parameter σ.
+
+
 Fortgeschrittene Evolutionsstrategien modellieren die Mutationswahrscheinlichkeitsver-
 teilung in der Regel mit einer Kovarianzmatrix [101, 102, 103]. Durch die Anpassung der
 Kovarianzmatrix (E: Covariance Matrix Adaptation, CMA) nutzt die Evolutionsstrategie
@@ -363,29 +437,65 @@ die Fehlerlandschaft der Fitnessfunktion für die Populationsentwicklung. Pseudo
 zeigt eine vereinfachte Evolutionsstrategie auf Basis der Kovarianzmatrixadaption bei
 einer (µ, λ)-Kommaselektion. Der Vektor m entspricht hierbei den Mittelwerten der
 Mutationswahrscheinlichkeitsverteilungskomponenten.
-Die Gewichte w , ..., w entsprechen den Rängen der Individuen bezüglich der Fitness-
-1:µ µ:µ
+
+
+Die Gewichte w , ..., w entsprechen den Rängen der Individuen bezüglich der Fitness- 1:µ µ:µ
 funktion, sodass besser angepasste Individuen höher gewichtet werden. Der Parameter η
 erfüllt im Wesentlichen die Funktion einer Lernrate, die dabei hilft, dass das Optimie-
 rungsverfahren nicht in lokalen Optima endet.
-Algorithmus 1 (1 + 1)-Evolutionsstrategie nach Rechenbergs 1-Regel
-5
+
+
+Algorithmus $$$1$$$ (1 + 1)-Evolutionsstrategie nach Rechenbergs 1-Regel 5
+
+
 1: Parameter c > 1
-2: Initialisiere x ∈ Rn, σ > 0
+
+
+FOOTNOTE:2: Initialisiere x ∈ Rn, σ > 0
+
+
 3: while ¬ Abbruchkriterium do
-4: x0 ← N (x, σ2)
-5: if f(x0) ≤ f(x) then
-6: x ← x0)
-7: σ ← σ · c4
+
+
+FOOTNOTE:4: x0 ← N (x, σ2)
+
+
+FOOTNOTE:5: if f(x0) ≤ f(x) then
+
+
+FOOTNOTE:6: x ← x0)
+
+
+7: σ ← σ · c$$$4$$$
+
+
 8: else
+
+
 9: σ ←
+
+
 10: end if
+
+
 11: end while
-Algorithmus 2 (µ, λ)-Evolutionsstrategie mit Kovarianzmatrixadaption
-1: Parameter µ, λ, η, w 1:µ, ..., w µ:µ, m, C
+
+
+FOOTNOTE:Algorithmus 2 (µ, λ)-Evolutionsstrategie mit Kovarianzmatrixadaption
+
+
+FOOTNOTE:1: Parameter µ, λ, η, w 1:µ, ..., w µ:µ, m, C
+
+
 2: while ¬ Abbruchkriterium do
-3: for i ∈ {1, ..., λ} do
+
+
+FOOTNOTE:3: for i ∈ {1, ..., λ} do
+
+
 2.2 Tiefe künstliche neuronale Netzwerke
+
+
 Inspiriert durch das biologische Vorbild natürlich gewachsener neuronaler Netzwerke, wie
 sie beispielsweise im Gehirn des Säugetiers vorkommen, werden Modelle und Algorith-
 men entwickelt, welche neurowissenschaftliche Erkenntnisse mathematisch abstrahieren
@@ -397,8 +507,9 @@ nalen Netzwerks werden als Parametervektor Θ bezeichnet, dessen Komponenten die
 lernenden synaptischen Gewichte w und zugehörigen Biaswerte b darstellen. Zur Model-
 lierung einer gemessenen Werteverteilung entlang einer Eingabedimension x nennt eine
 Fehlerfunktion L(y, t), auch Verlustfunktion (E: Loss function) genannt, die Abweichung
-der hypothetischen Vorhersage y(x) zu den tatsächlichen Zielwerten t.
-In einem Verfahren, welches als Fehlerrückführung (E: ) be-
+der hypothetischen Vorhersage y(x) zu den tatsächlichen Zielwerten t. In einem Verfahren, welches als Fehlerrückführung (E: ) be-
+
+
 In einem Verfahren, welches als Fehlerrückführung (E: Backpropagation of errors) be-
 zeichnet wird, werden die lernbaren Parameter w mittels eines stochastischen Gradienten-
 abstiegs schrittweise derart verändert, dass die Abweichung zwischen Eingabedaten x und
@@ -411,21 +522,27 @@ Perzeptron (E: Multilayer Perceptron, MLP) abgebildet werden. MLPs sind universe
 Funktionsapproximatoren. Dies bedeutet, dass ein MLP eine Funktion f(x) bis auf eine
 minimale Abweichung (cid:15) genau abbilden kann, wenn genügend lernbare Entscheidungs-
 parameter vorhanden sind [104]. Demnach existiert für jede n-dimensionale Funktion
-f : [0, 1]n → R ein MLP mit endlicher Neuronenzahl, sodass:
+f : [$$$0$$$, 1]n → R ein MLP mit endlicher Neuronenzahl, sodass:
+
+
 Einige Lernprobleme, insbesondere solche aus der digitalen Bildverarbeitung, zeichnen
 sich durch einen Datenraum hoher Dimensionalität aus, welche für eine Abbildung durch
 ein MLP entsprechend viele Parameter benötigen. Das Training dieser Parameter ist so
 ressourcenintensiv, dass in der Praxis andere neuronale Architekturen eingesetzt werden,
 welche durch ihre Struktur einen Zeitvorteil gewähren. Zum Beispiel können Muster in
 den Nachbarschaften der Eingabebildpunkte mit einem, vom visuellen System inspirierten,
-faltenden neuronalen Netzwerk (E: Convolutional Neural Network, CNN) gelernt werden,
+FOOTNOTE:faltenden neuronalen Netzwerk (E: Convolutional Neural Network, CNN) gelernt werden,
 was die Anzahl der benötigten Parameter mindestens um den Faktor der Filtergröße
 reduziert. Die Anzahl der Filterparameter eines CNN ist also vergleichsweise gering und
 somit schnell zu lernen, die strukturellen Hierarchien dieser Netzwerke vereinfachen die
 Zusammensetzung komplexerer Muster aus einfachen Mustern.
+
+
 Von essentieller Bedeutung in allen Ansätzen des Deep Learning ist das Konzept der
 neuronalen Aktivierung a, welche im Prinzip die Summe der Aktivierungen der einge-
 henden Signale abbildet. Je nach Aufbau werden verschiedene Nichtlinearitäten in Form
+
+
 von Aktivierungsfunktionen σ(a) mit in die Berechnungen aufgenommen. Die Aktivie-
 rungsfunktion führt zur Begrenzung der neuronalen Aktivierung, was der Begrenzung der
 Feuerraten eines biologischen Neurons entspricht. Nach Kenntnis der Datenlage und der
@@ -434,6 +551,8 @@ den Vorhersagefehler auf die einzelnen neuronalen Gewichte zurückzuführen und 
 entsprechend dem Optimierungskriterium, zu verändern. Hierbei wird zunächst schicht-
 weise die Aktivierung bestimmt, zuletzt die Aktivierung der Ausgabeschicht betrachtet
 und einer erwarteten Zielausgabe gegenübergestellt.
+
+
 Neben den Anwendungen und vielzähligen Erfolgen im Bereich künstlicher Intelligenz
 werden auch die Grenzen und Nachteile dieses Ansatzes untersucht. In einem Artikel über
 die Grenzen des Deep Learning identifiziert [105] einige problematische Eigenschaften
@@ -449,7 +568,11 @@ neuronales Netzwerk erlaubt Angriffe gegen seine Funktionsweise. Beispielsweise 
 ein minimal verändertes Bild von einem künstlichen neuronalen Netzwerk falsch klas-
 sifiziert werden. Auf diese Weise kann eine Abweichung berechnet werden, die zu einer
 systematischen Fehlklassifikation führt [108, 109, 110].
+
+
 2.2.1 Aktivierungsfunktion
+
+
 Durch Aktivierungsfunktionen wird eine essentielle Nichtlinearität eingeführt, welche
 es einem neuronalen Optimierungsverfahren erlaubt, verschiedene optimale Parameter-
 konfigurationen anzunehmen. Die Aktivierung eines Neurons ist das Signal, welches an
@@ -462,12 +585,16 @@ rungsfunktionen einzelner neuronaler Schichten unterliegt den durch die Aufgaben
 gegebenen Bedingungen. In Abbildung 2.2 werden die wichtigsten Aktivierungsfunktionen
 gezeigt, welche die Ausgabeaktivierung σ(x) eines künstlichen Neurons entlang einer
 Eingabedimension x auf unterschiedliche Weise begrenzen.
+
+
 Welche Aktivierungsfunktion in welcher neuronalen Schicht genutzt wird hängt vom zu
 lösenden Optimierungsproblem ab. Um während der Fehlerrückführung verschwindend
 geringe oder über die Maßen hohe Gradienten zu vermeiden sind Aktivierungsfunktionen
-in der Regel stetig differenzierbar. Liegt die Zielgröße per Definition im Bereich [−1, 1],
-kann tanh(x) als Nichtlinearität verwendet werden. Für Zielwerte im Bereich [0, 1], wie
+in der Regel stetig differenzierbar. Liegt die Zielgröße per Definition im Bereich [−$$$1$$$, 1],
+kann tanh(x) als Nichtlinearität verwendet werden. Für Zielwerte im Bereich [$$$0$$$, 1], wie
 sie bei der Regression von Prozentzahlen oder bei Zuordnungswahrscheinlichkeiten in
+
+
 Abbildung 2.2: Eine Zusammenstellung der, im Kontext tiefer künstlicher
 neuronaler Netzwerke, häufig verwendeten Aktivierungsfunk-
 tionen. Die verschiedenen neuronalen Aktivierungsfunktionen
@@ -475,11 +602,15 @@ tionen. Die verschiedenen neuronalen Aktivierungsfunktionen
 beschränkte Ausgabeaktivierung zu. Mit Ausnahme der ReLU
 Funktion sind alle dargestellten Aktivierungsfunktionen stetig
 differenzierbar.
+
+
 Klassifikationsproblemen auftreten, bietet sich entweder die Sigmoidfunktion oder eine
 Aktivierung über gleichrichtende Lineareinheiten (E: Rectifying Linear Unit, ReLU) an.
 Bei der Sigmoidfunktion, auch bezeichnet als logistische Aktivierung, kann folgende
 Eigenschaft der Ableitung genutzt werden, um Berechnungen zu beschleunigen:
-Die ReLU-Aktivierungsfunktion schneidet Werte außerhalb des Bereichs [0, 1] ein-
+
+
+Die ReLU-Aktivierungsfunktion schneidet Werte außerhalb des Bereichs [$$$0$$$, 1] ein-
 fach ab, sodass der Gradient außerhalb des Wertebereichs gleich null ist. Weiterhin
 existieren Aktivierungsfunktionen, welche die Aktivierung in der gesamten neuronalen
 Schicht betrachten. So normiert beispielsweise die softmax-Aktivierungsfunktion die
@@ -487,7 +618,11 @@ Aktivierung einer gesamten neuronalen Schicht auf einen festgelegten Wertebereic
 eignet sich somit, um die Aktivierungsverteilung der Schicht als quantisierte Wahr-
 scheinlichkeitsverteilung zu formulieren. Zur Annäherung an lineare Werte, beispielsweise
 Belohnungssignale einer Umgebung, können lineare Aktivierungen angenommen werden.
-2.2.2 Fehlerrückführung
+
+
+FOOTNOTE:2.2.2 Fehlerrückführung
+
+
 Die numerischen Methoden des Gradientenabstiegs dienen zur Lösung eines Optimie-
 rungsproblems über die schrittweise Annäherung eines Parametervektors Θ an einen
 optimalen Parametervektor Θ∗. Durch die Ableitung der synaptischen Gewichte nach
@@ -498,26 +633,28 @@ Zunächst werden in einem Vorwärtspass schichtweise die Aktivierungen im künst
 neuronalen Netzwerk, von der Eingabeschicht bis hin zur Ausgabeschicht, berechnet.
 Eine Fehler- oder Verlustfunktion L gibt die Differenz zwischen Ausgabe- und Zielwerten
 an. Auf Grundlage von Verlust L und Aktivierung a wird ein Gradient bezüglich der
-Gewichte w ∈ Θ aufgestellt:
-i
+Gewichte w ∈ Θ aufgestellt: i
+
+
 In einem Rückwärtspass wird der Gradient für jedes Gewicht berechnet und auf dieses
 addiert, sodass die Fehlerfunktion minimiert wird. Eine Lernrate η tritt hierbei als Faktor
 auf, um das Ausmaß der Veränderungen gering genug zu halten, damit das Optimum nicht
 übersprungen wird. Pseudocode 3 illustriert den Ablauf dieses Optimierungsverfahrens:
-Algorithmus 3 Fehlerrückführung
+
+
+FOOTNOTE:Algorithmus 3 Fehlerrückführung
+
+
 Eingabewerte x, Zielwerte t
-Berechne schichtweise die Aktivierungen a und Ausgabe y
-i
+Berechne schichtweise die Aktivierungen a und Ausgabe y i
 Berechne die Fehlerfunktion L(y, t)
-Berechne die Ableitung ∆w ← dL
-0 da0
-for w ∈ W \ w do
-i 0
-Berechne die Ableitung ∆w ← dL = dL · dai
-i dwi dai dwi
+FOOTNOTE:Berechne die Ableitung ∆w ← dL 0 da0
+for w ∈ W \ w do i 0
+FOOTNOTE:Berechne die Ableitung ∆w ← dL = dL · dai i dwi dai dwi
 end for
-Ändere die synaptischen Gewichte w ← w η · ∆w
-i i i
+Ändere die synaptischen Gewichte w ← w η · ∆w i i i
+
+
 In Anwendungsfällen mit großem Datenaufkommen benötigt ein einfacher stochasti-
 scher Gradientenabstieg in der Regel viele Lernschritte. Zur Optimierung der benötigten
 Rechenzeit kann ein solcher Algorithmus auch als Stapellernverfahren formuliert werden.
@@ -528,19 +665,21 @@ Parametervektor selber, sondern ändern auch die Geschwindigkeit der Änderungen
 dem Vorbild des physikalischen Konzeptes der Beschleunigung. Dieser Ansatz erlaubt
 eine Beschleunigung der Gewichtsänderungen auf den relevanten Teilen des Parame-
 tervektors. Die Methode RMSProp nutzt den Mittelwert der bisherigen Gradienten als
-Skalierungsfaktor für die derzeitige Lernrate η ; dieser Ansatz führt bei tiefen neuronalen
-t
+Skalierungsfaktor für die derzeitige Lernrate η ; dieser Ansatz führt bei tiefen neuronalen t
 Netzwerken zu schnellerer Konvergenz [112].
-In konkreten Implementierungen können die Berechnungen der Lernraten η , gegeben ein
-t
+
+
+In konkreten Implementierungen können die Berechnungen der Lernraten η , gegeben ein t
 Gradientenbetrag g, wie folgt lauten:
-Typische Werte für die Hyperparameter ρ und (cid:15) lieben bei etwa ρ = 0, 95 und (cid:15) = e−6.
+
+
+Typische Werte für die Hyperparameter ρ und (cid:$$$15$$$) lieben bei etwa ρ = $$$0$$$, 95 und (cid:$$$15$$$) = e−$$$6$$$.
 Andere fortgeschrittene Ansätze, wie beispielsweise ADAM, AdaDelta oder AdaGrad,
-skalieren die Lernrate η mittels des Verhältnisses der vorangegangenen zu den derzeitigen
-t
+skalieren die Lernrate η mittels des Verhältnisses der vorangegangenen zu den derzeitigen t
 Gradientenbeträgen [113, 114, 115]. Hierbei ändert sich ein Parameters w in Abhängigkeit
-des Verhältnisses der Gradienten sowie zweier Hyperparameter β und β :
-1 2
+des Verhältnisses der Gradienten sowie zweier Hyperparameter β und β : 1 2
+
+
 In einigen Fällen, beispielsweise bei verteilten Architekturen oder Lernproblemen
 paralleler Natur, bietet es sich an, den Gradientenabstieg auf asynchrone Weise zu
 parallelisieren. Unter der Randbedingung, dass eine einzelne Änderung nur kleine Tei-
@@ -548,7 +687,11 @@ le des Parametervektors überschreibt, können die Änderungen einfach nacheinan
 auf den synaptischen Gewichtsvektor addiert werden. Hierbei bietet das HOGWILD!-
 Schema optimale Konvergenzraten für das Training verteilter Modelle mit einem geteilten
 Parametervektor, ohne zeitintensive Sperrungen der betroffenen Speicherbereiche [116].
+
+
 2.2.3 Mehrschichtiges Perzeptron
+
+
 Das Perzeptron bezeichnet ein künstliches Neuron, dessen Aktivierung sich als gewichtete
 Summe der Eingabesignale ergibt [117]. Mehrere Perzeptrone, welche Eingangssignale
 derselben Vorgänger erhalten, können in einer neuronalen Schicht zusammengefasst
@@ -560,32 +703,43 @@ versteckten Schicht z und einer Ausgabeschicht, in diesem einfachen Beispiel mit
 einzigen Neuron y. Wird eine lineare Aktivierung des Ausgabeneurons y angenommen,
 so ergibt sich dessen Funktionsvorschrift als inneres Produkt des Aktivierungsvektors der
 versteckten Schicht z mit der zugehörigen synaptischen Gewichtsmatrix W (2):
+
+
 Abbildung 2.3: Ein einfaches MLP mit einer Eingabeschicht x, einer versteck-
 ten Schicht z und einer Ausgabeschicht, welche in diesem
 Beispiel aus nur einem einzigen Neuron y besteht. Die kon-
 stanten Biaswerte betragen 1 und dienen als additiver Term.
 Die synaptischen Gewichte zwischen den Schichten präsentie-
 ren sich als Matrizen W (1),(2).
-Hierbei entspricht die skalare Aktivierung der einzelnen neuronalen Komponenten z
-j
+
+
+Hierbei entspricht die skalare Aktivierung der einzelnen neuronalen Komponenten z j
 in der versteckten Schicht einer Multiplikation des Eingabeneuronenvektors x mit den
-jeweiligen synaptischen Gewichten w(1) der ersten Schicht, gefolgt von einer, in der Regel
-ij
+jeweiligen synaptischen Gewichten w($$$1$$$) der ersten Schicht, gefolgt von einer, in der Regel ij
 stetig differenzierbaren, Aktivierungsfunktion σ:
-Die konstanten Biaswerte 1 werden hierbei als Aktivierung des Neurons x in die Glei-
-0
+
+
+Die konstanten Biaswerte 1 werden hierbei als Aktivierung des Neurons x in die Glei- 0
 chung aufgenommen. Die Verlustfunktion L zwischen der Ausgabe y und den Zielwerten
 t kann, für die Architektur in Abbildung 2.3, vektoriell formuliert werden als:
-Der Fehler L bezüglich der synaptischen Gewichte eines Neurons der Zwischen-
-zj
-schicht z kann mit Kenntnis einer, beispielsweise logistischen, Aktivierungsfunktion auf
-j
+
+
+Der Fehler L bezüglich der synaptischen Gewichte eines Neurons der Zwischen- zj
+schicht z kann mit Kenntnis einer, beispielsweise logistischen, Aktivierungsfunktion auf j
 Grundlage des vorhergehenden Fehlers L berechnet werden:
+
+
 Für die in diesem Beispiel gezeigte Architektur können die Änderungen an den einzelnen
 synaptischen Gewichte, mit einer Lernrate η, berechnet werden:
+
+
 Wobei die Veränderung des synaptischen Gewichtsvektors auch durch Anwendung der
 Fehlerrückführung mittels Kettenregel berechnet werden kann:
+
+
 2.2.4 Faltendes neuronales Netzwerk
+
+
 Einfache vorwärtsgerichtete künstliche neuronale Netze, wie das MLP, haben in der
 Regel vollständig verbundene Neuronen. Folglich steigt die Anzahl der Gewichte mit
 jedem zusätzlichen Neuron um die Anzahl der Neuronen in der vorherigen Schicht. Dies
@@ -603,13 +757,16 @@ Lernverfahren auf Basis digitaler Bilddaten bringt. Um bestimmte Merkmale in ein
 gangsbild zu erkennen, können Filter definiert werden, welche der Struktur der gesuchten
 spezifischen Merkmale entsprechen. Diese Filter, auch Kernel, Maske oder Faltungsmatrix
 genannt, werden, bildlich beschrieben, über das Eingangssignal geschoben und erzeugen
+
+
 an jedem Punkt eine Filterantwort; das Eingabesignal wird also mit dem Filter gefaltet.
 Die Antwort des Filters an den Ansatzpunkten entspricht dem Vorhandensein des be-
 schriebenen Merkmals. Die Faltungsoperation O (E: convolution) eines Eingabesignals I
 mit einem Filter F kann, beispielsweise für ein zweidimensionales Eingabesignal I, wie
 etwa ein Grauwertbild, beschrieben werden als:
-Hierbei entsprechen (x , x ) den Koordinaten im Eingabesignal und (x0 , x0 ) den Fil-
-1 2 1 2
+
+
+FOOTNOTE:Hierbei entsprechen (x , x ) den Koordinaten im Eingabesignal und (x$$$0$$$ , x$$$0$$$ ) den Fil- 1 2 1 2
 terkoordinaten. Das Konzept der Faltungsoperation kann als neuronale Schicht in ein
 künstliches neuronales Netzwerk integriert werden, indem ein Filter als Gewichtsmatrix
 formuliert wird. Auf ein beispielsweise zweidimensionales Eingabesignal I der Dimensio-
@@ -621,17 +778,18 @@ der Vorgängerschicht erkannten Merkmale gelernt werden können.
 Die rezeptiven Felder der ersten Schicht erfassen grundlegende Merkmale, welche die
 folgenden Schichten zu komplexeren Repräsentationen zusammensetzen. Das rezeptive
 Feld eines jeden Neurons einer Faltungsschicht erfasst jeweils eine Nachbarschaft aus der
-Vorgängerschicht. Die so erfassten Nachbarschaften werden mit jedem Faltungskern W
-i
+Vorgängerschicht. Die so erfassten Nachbarschaften werden mit jedem Faltungskern W i
 gewichtet und ergeben neuronale Aktivierungen in der Faltungsschicht. Die Gesamtakti-
 vierung der Faltungsschicht entspricht den Antworten aller Filter auf das Eingabesignal.
-Hierbei ergibt sich die Aktivierungsfunktionsvorschrift eines einzelnen Neurons y der
-ij
+Hierbei ergibt sich die Aktivierungsfunktionsvorschrift eines einzelnen Neurons y der ij
 Faltungsschicht als:
+
+
 Um die Komplexität dieser Berechnung zu reduzieren, kann der Filter mit einem
 Versatz aufgesetzt werden oder nur die Aktivierung des jeweils aktivsten Neurons einer
-Nachbarschaft weitergeführt werden.
-Der aktuelle Stand der Forschung kennt verschiedene Arten von Architekturen faltender
+Nachbarschaft weitergeführt werden. Der aktuelle Stand der Forschung kennt verschiedene Arten von Architekturen faltender
+
+
 Der aktuelle Stand der Forschung kennt verschiedene Arten von Architekturen faltender
 neuronaler Netzwerke. Tiefenbasierte faltende neuronale Netzwerke werden durch die
 Anzahl der aufeinanderfolgenden Schichten definiert [118]. In der Theorie bieten tiefe
@@ -644,6 +802,8 @@ sorgfältig gewählt werden, da der synaptische Parametervektor des künstlichen
 len Netzwerks leicht ein lokales Optimum annehmen kann. Durch das Kaskadieren von
 Schichten können zwar verschiedene Merkmalsrepräsentationen erlernt werden, aber die
 Qualität der Merkmale bleibt ungeklärt. Breitenbasierte faltende neuronale Netzwerke
+
+
 versuchen, den Verlust an den lokalen Minima mit einer größeren Breite der Schichten
 zu verringern [119]. Viele Parameter und Hyperparameter spielen eine Rolle beim Lern-
 prozess eines faltenden neuronalen Netzwerks, darunter die synaptischen Gewichte, die
@@ -661,7 +821,11 @@ beim automatischen Lernen von Nachbarschaftsmerkmalen, allerdings spielen einige
 Merkmale bei der Objektunterscheidung nur eine geringe oder gar keine Rolle, was eine
 Überanpassung an schwache Merkmale verursachen und durch gezieltes Annullieren
 betroffener Filterkanäle verhindert werden kann [123].
+
+
 2.2.5 Long Short-Term Memory
+
+
 Vorwärtsgerichtetete künstliche neuronale Netzwerke, wie das mehrschichtige Perzeptron
 oder das faltende neuronale Netzwerk, halten die neuronale Aktivierung nur für den
 Moment der Inferenz. Das Signal fließt von der Eingabeschicht zur Ausgabeschicht und
@@ -686,40 +850,54 @@ LSTM Zelle besteht im Kern aus einer Erinnerungszelle, welche ihre eigene Aktivi
 Ausgabe und das Vergessen. Die Torneuronen verfügen über eigene Gewichtsmatrizen,
 welche ähnlich den vorwärtsgerichteten künstlichen neuronalen Netzwerken durch einen
 Gradientenabstieg verändert werden können.
+
+
 Die Haltedauer der neuronalen Aktivierung in der Erinnerungszelle wird über das Öffnen
 und Schließen der neuronalen Toreinheiten bestimmt. Eine Erinnerungszelle j behält ihre
-Aktivierung y so lange bei, wie sich die Aktivierung der Torneuronen nicht ändert, also:
-j
-Im Beitrag von [124] wird σ als lineare Aktivierung gewählt, w = 1 gesetzt und
-jj
+Aktivierung y so lange bei, wie sich die Aktivierung der Torneuronen nicht ändert, also: j
+
+
+Im Beitrag von [124] wird σ als lineare Aktivierung gewählt, w = 1 gesetzt und jj
 das Konzept des constant error carousel (CEC) eingeführt. Während der BP kontrolliert
 das Eingangstorneuron einer LSTM Zelle den Fehlerfluss in das jeweilige CEC, das
 Ausgangstorneuron die Ausleitung des Fehlerflusses zu den anderen Zellen. Zur Laufzeit
 vermeidet das Öffnen und Schließen der Torneuronen Störungen durch für die jeweilige
 Erinnerungszelle unbedeutende Information. Wird das Eingangstorneuron geöffnet, so
 wird der Aktivierung der Erinnerungszelle i mit dem Eingabesignal ganz oder teilweise
-überschrieben. Öffnet das Ausgabetorneuron o , wird der Aktivierung der Erinnerungs-
-i
+überschrieben. Öffnet das Ausgabetorneuron o , wird der Aktivierung der Erinnerungs- i
 zelle den verbundenen Neuronen, entsprechend der Gewichtung des Ausgabetorneurons,
 zugänglich gemacht:
-Zur Bestimmung der internen Aktivierung s der Erinnerungszelle c nutzt [124] zwei
-c
+
+
+Zur Bestimmung der internen Aktivierung s der Erinnerungszelle c nutzt [124] zwei c
 differenzierbare Funktionen g und h:
+
+
 In einem späteren Beitrag von [125] wird die LSTM Architektur um ein Vergessen-
 storneuron f zum Erlernen eines systematischen Vergessens gehaltener Aktivierungen
 erweitert. Dies ermöglicht einer LSTM Zelle, ihre interne Aktivierung zu einem günstigen
 Zeitpunkt zurückzusetzen. Abbildung 2.4 veranschaulicht diese LSTM Architektur. Hier
 berechnen sich die Aktivierungen in der gezeigten Architektur wie folgt, wobei h hier der
 über die Zeit gehaltenen Aktivierung entspricht:
+
+
 Das gängige Gradientenverfahren zum Training eines LSTM Netzwerks ist die Feh-
 lerrückführung durch die Zeit (E: Backpropagation through time). Hierbei werden die
 Parameter des rekurrenten Netzwerks entlang der zu lernenden Sequenz entfaltet.
+
+
 Abbildung 2.4: Eine Zelle der rekurrenten neuronalen Long Short-Term Me-
 mory Architektur mit Vergessenstoren, veröffentlicht in [125].
+
+
 Über diese, in Raum und Zeit des Eingabesignals lokale, Struktur kann nun eine reguläre
 Fehlerrückausbreitung durchgeführt werden, indem die Gradienten beispielsweise einfach
 aufsummiert und anschließend auf den Parametervektor addiert werden.
+
+
 2.3 Transferlernen
+
+
 Die Fähigkeit, verschiedene Aufgaben zu erlernen und das Gelernte als Grundlage für
 zukünftige Aufgaben weiter zu verwenden, ist für die Entwicklung einer generischen
 künstlichen Intelligenz von essentieller Bedeutung. Ein tiefes künstliches neuronales
@@ -729,7 +907,11 @@ des Transferlernens werden Verfahren bezeichnet, welche Wissen über bereits gel
 Aufgaben nutzen und in ein Optimierungsverfahren mit einbeziehen [126]. Wissen aus
 einer Aufgabendomäne A soll genutzt werden, um den Lernvorgang in einer Domäne B zu
 verbessern, zu beschleunigen oder zu stabilisieren [127, 128, 23, 25, 6, 129, 44, 45, 130, 131].
+
+
 2.3.1 Verwandte Verfahren
+
+
 Die Idee des Transferlernens steht in enger Verbindung mit den Konzepten des fort-
 währenden Lernens (E: Continual Learning) [132], des gleichzeitigen Lernens mehrerer
 Aufgaben (E: Multitask Learning) [133], des Lernens von Metarepräsentationen (E: Meta
@@ -743,6 +925,8 @@ Hilfsinformation, wie beispielsweise Zwischenattributklassifikatoren [138], Misc
 gesehener Klassenanteile [139] oder Labelkompatibilität [140], klassifizieren kann. Diese
 Ansätze stellen sich als besonders nützlich für solche Klassifizierungsaufgaben heraus, in
 denen es nur wenige Daten gibt [136].
+
+
 Beim One-Shot-Lernen wird das Netzwerk auf der Grundlage eines oder weniger Lernbei-
 spiele konditioniert, beispielsweise durch die Darstellung von Kernmerkmalen [141] oder
 durch die Nutzung kernelbasierter Metriken [142]. One-Shot-Lernen ist besonders effizient,
@@ -750,7 +934,11 @@ wenn die Anzahl der bekannten Labels zunimmt, da das Modell wahrscheinlich berei
 Beispiele gesehen hat, welche dem zu lernenden Label ähneln [143]. Manche Methoden
 des Transferlernens kennen auch das sogenannte Few-Shot-Lernen, welche generell wenig
 Beispiele benutzen [144, 145, 146, 144].
-2.3.2 Anwendungen
+
+
+FOOTNOTE:2.3.2 Anwendungen
+
+
 Maschinelles Lernen, insbesondere das Training tiefer künstlicher neuronaler Netzwerke,
 ist datenintensiv. Bei genügenden Daten kann es hervorragende Genauigkeiten bringen,
 aber bei kleinen Datenmengen ist der Erfolg in der Regel begrenzt. Je nach Anwen-
@@ -770,7 +958,11 @@ Transferlernens sind insbesondere nützlich für Anwendungen, bei welchen aufgru
 Bedenken bezüglich des Datenschutzes, der Sicherheit oder ethischer Abwägungen wenige
 Lernbeispiele verfügbar sind [157]. Ein gemeinsamer Vorteil aller dieser Methoden besteht
 darin, dass sie die Rechenkosten beträchtlich verringern.
-2.3.3 Feinabstimmung
+
+
+FOOTNOTE:2.3.3 Feinabstimmung
+
+
 Eine sehr einfache und, je nach Wahl der Parameter, effiziente Form des Transferlernens
 besteht in der Feinabstimmung einzelner Bestandteile eines vortrainierten Netzwerks
 (E: Finetuning) [26, 158, 38, 159]. Die Feinabstimmung gilt als Standardverfahren des
@@ -780,6 +972,8 @@ mit Feinabstimmung der Klassifikationsteile des jeweiligen Netzwerks [26]. Hierz
 zum Erlernen einer neuen Aufgabe also lediglich die Gewichte in den relevanten Ausga-
 beschichten neu optimiert werden, die anderen Parameter können jedoch unverändert
 erhalten bleiben, wie in Abbildung 2.5 skizziert.
+
+
 Abbildung 2.5: Eine konzeptionelle Skizze der Feinabstimmung des Klassifika-
 torteils eines beispielhaften faltenden neuronalen Netzwerks
 zur Bildklassifikation; das Lernen relevanter Merkmale ge-
@@ -787,6 +981,8 @@ schieht über Faltungsschichten. Links: das vortrainierte Netz-
 werk. Rechts: die Feinabstimmung. Die blauen Schichten (Ein-
 gabeschicht und Merkmalsextraktion) bleiben unverändert,
 die rote Schicht (Klassifikation) wird feinabgestimmt.
+
+
 In der Ausarbeitung von [38] wird die Feinabstimmung großer vortrainierter Modelle
 der natürlichen Sprachverarbeitung (E: Natural Language Processing, NLP) untersucht und
 festgestellt, dass in vielen Zielaufgaben die Feinabstimmung in Bezug auf die Nutzung der
@@ -802,6 +998,8 @@ optimale Feinabstimmungsstrategie für die Daten einer Zielaufgabeninstanz ermit
 Hierbei wird ein Bild aus der Zielaufgabe und ein Strategienetzwerk verwendet, welches
 Entscheidungen darüber trifft, ob das Bild durch die fein abgestimmten Schichten oder
 durch die vortrainierten Schichten geleitet wird.
+
+
 Bei unregulierter Feinabstimmung eines künstlichen neuronalen Netzwerks auf mehrere
 Aufgaben tritt in der Regel das Problem des katastrophalen Vergessens auf (E: catastrophic
 forgetting) [23]. Durch das Überschreiben aufgabenspezifischer synaptischer Strukturen
@@ -810,7 +1008,11 @@ Aufgaben verlernt werden. Dies führt dazu, dass das betroffene künstliche neur
 Netzwerk keine der zugedachten Aufgaben mehr erfüllen kann. Daher werden beim
 Finetuning die alten Modelldateien in der Regel beibehalten, falls optimale Lösungen für
 vorherige Aufgaben benötigt werden.
+
+
 2.3.4 Elastische Gewichtskonsolidierung
+
+
 Ein weiterer gut untersuchter Ansatz des Transferlernens, welcher das Problem des
 katastrophalen Vergessens durch einen Regularisierungsterm im Optimierungskriteri-
 um überwindet, ist die Konsolidierung synaptischer Gewichte nach Aufgabenrelevanz
@@ -818,78 +1020,88 @@ um überwindet, ist die Konsolidierung synaptischer Gewichte nach Aufgabenreleva
 Parametervektors, welche für eine Aufgabe relevant sind, um diese beim Lernen neuer
 Aufgaben möglichst nicht zu verändern. Die Bedeutsamkeit der einzelnen synaptischen
 Gewichte zur Erfüllung der Aufgabe können einer Fisherinformationsmatrix abgelesen
-werden, welche während des Lernvorgangs mitberechnet wird [160].
-Ohne die Parameteranzahl des künstlichen neuronalen Netzwerks zu verändern, wird In-
+werden, welche während des Lernvorgangs mitberechnet wird [$$$160$$$]. Ohne die Parameteranzahl des künstlichen neuronalen Netzwerks zu verändern, wird In-
+
+
 Ohne die Parameteranzahl des künstlichen neuronalen Netzwerks zu verändern, wird In-
 formation über zusätzliche Aufgaben in den nicht relevanten Teilen des Parametervektors
 untergebracht, indem die Lernrate in diesen Teilen erhöht und in den anderen gesenkt
 wird. In den für eine Aufgabe A als relevant identifizierten synaptischen Gewichten wird
 für das Lernen einer neuen Aufgabe B die Lernrate reduziert, sodass das Wissen über
 Aufgabe A mit höherer Wahrscheinlichkeit erhalten bleibt.
+
+
 Kirkpatrick et al. zeigen die Umsetzung eines solchen Ansatzes für Klassifikations- und
 Verstärkungslernaufgaben, in welchem das Erlernen der für eine Aufgabe relevanten neu-
 ronalen Gewichte selektiv verlangsamt wird [23]. Die vorgestellte Optimierungsmethode
 beruht auf dem Konzept einer elastischen Konsolidierung der synaptischen Gewichte (E:
-Elastic Weight Consolidation, EWC), skizziert in Abbildung 2.6.
-Von essentieller Bedeutung ist die Fisherinformationsmatrix . Die Matrix ist positiv
+Elastic Weight Consolidation, EWC), skizziert in Abbildung $$$2$$$.6. Von essentieller Bedeutung ist die Fisherinformationsmatrix . Die Matrix ist positiv
+
+
 Von essentieller Bedeutung ist die Fisherinformationsmatrix F . Die Matrix F ist positiv
 semidefinit und gleicht nahe dem Minimum der Verlustfunktion der zweiten Ableitung,
 kann aber auf der Basis von Ableitungen erster Ordnung berechnet werden und ist
 somit auch für große Modelle geeignet [161]. Mit einer Abschätzung λ der Wichtigkeit
 der Aufgabe A bezüglich einer Aufgabe i wird in der elastischen Gewichtskonsolidie-
 rung die folgende Verlustfunktion zur Annäherung des, für beide Aufgaben optimalen,
-synaptischen Parametervektors Θ∗ minimiert [23]:
-A,i
+synaptischen Parametervektors Θ∗ minimiert [23]: A,i
+
+
 Zum Erlernen weiterer Aufgaben werden die Parameter des künstlichen neuronalen
 Netzwerks bei einer elastischen Gewichtskonsolidierung nahe am bisher optimalen Para-
-metervektor Θ∗ gehalten.
-A,i
+metervektor Θ∗ gehalten. A,i
+
+
 Abbildung 2.6: Konzeptionelle Skizze der elastischen Gewichtskonsolidierung
 (EWC) für einen beispielhaften zweidimensionalen Parame-
-tervektor Θ = (θ , θ )T . Für zwei Aufgaben A, B liegen die
-1 2
-jeweils optimalen Parametervektoren Θ∗ , Θ∗ im Minimum
-A B
+tervektor Θ = (θ , θ )T . Für zwei Aufgaben A, B liegen die 1 2
+jeweils optimalen Parametervektoren Θ∗ , Θ∗ im Minimum A B
 der jeweiligen Fehlerregion der Aufgabe (A blau, B rot). Ein
 einfaches Neutrainieren eines für Aufgabe A konditionierten
 Netzwerks führt zum Optimum für Aufgabe B (gestrichel-
 te Linie). Die Methode der EWC führt hingegen zu einem
-Optimum Θ∗ , welches bei gleicher Parameteranzahl beide
-AB
+Optimum Θ∗ , welches bei gleicher Parameteranzahl beide AB
 Aufgaben gut lösen kann.
+
+
 Die initialen Gewichte des künstlichen neuronalen Netzwerks zu Beginn des Lernens
 einer neuen Aufgabe sind also die Gewichte nach Abschluss des vorherigen Lernvorgangs.
 Nach bayes’scher Formulierung ist die a-posteriori-Verteilung nach einem Training also
 die a-priori-Verteilung vor dem nächsten Training. Die elastische Gewichtskonsolidierung
 nimmt eine diagonale Kovarianzmatrix in der a-posteriori-Verteilung an, trifft also zu-
 nächst die Annahme, dass die synaptischen Gewichte nicht korrelieren.
+
+
 Diese Annahme vernachlässigt die Bedeutung der Aufgabenbezogenheit zusammenhän-
 gender Komponenten des Parametervektors. In einer weiterführenden Methode der
 neuronalen Gewichtskonsolidierung, namentlich der inkrementellen Momentabgleichung
 (E: Incremental Moment Matching, IMM), wird die Bedeutsamkeit der Korrelationen in
 der a-posteriori-Verteilung modelliert [25]. Zur Modellierung der a-posteriori Korrelations-
 wahrscheinlichkeiten kann eine Gaußverteilung q angenommen werden. Für eine Sequenz
-von K Aufgaben mit den Datensätzen (x , y ) kann die wahre A-posteriori-Verteilung
-1:K 1:k
-p inkrementell über die Aufgaben k ∈ K approximiert werden:
-k
-Zu ermitteln ist der optimale Mittelwertvektor µ∗ : K und die optimale Kovarianzma-
-1
-trix Σ∗ der Verteilung q. Die Dimensionalität des Vektors µ und der Matrix Σ ergibt
-1:K
+von K Aufgaben mit den Datensätzen (x , y ) kann die wahre A-posteriori-Verteilung 1:K 1:k
+p inkrementell über die Aufgaben k ∈ K approximiert werden: k
+
+
+Zu ermitteln ist der optimale Mittelwertvektor µ∗ : K und die optimale Kovarianzma- 1
+trix Σ∗ der Verteilung q. Die Dimensionalität des Vektors µ und der Matrix Σ ergibt 1:K
 sich aus der Parameteranzahl des künstlichen neuronalen Netzwerks. Die Ermittlung
-von µ und Σ kann auf verschiedene Weisen realisiert werden, was zu unterschiedli-
-k k
+von µ und Σ kann auf verschiedene Weisen realisiert werden, was zu unterschiedli- k k
 chen Transfertechniken führt [25]. So kann die inkrementelle Momentabgleichung der
 Gaußverteilungen beispielsweise auf der Minimierung einer Kullback-Leibler-Divergenz
 basieren.
-2.3.5 Progressive neuronale Netzwerke
+
+
+FOOTNOTE:2.3.5 Progressive neuronale Netzwerke
+
+
 Ein anderer Ansatz des Transferlernens, welcher auf dem Hinzufügen neuer Parameter
 basiert, sind progressive neuronale Netzwerke [156, 46]. Für jede neue Aufgabe wird ein
 neues künstliches neuronales Netzwerk angelegt, welches durch einseitige Verbindungen
 eine Art Lesezugriff auf den Zustand des künstlichen neuronalen Netzwerks der vorherigen
 Aufgabe hat. Während des Lernvorgangs für die neue Aufgabe werden die Parameter des
 vorherigen Netzwerks eingefroren und nicht weiter verändert.
+
+
 Sind die Aufgaben einander ähnlich, kann angenommen werden, dass die neuronale Akti-
 vität im früheren Netzwerk bezüglich des fremden Eingabedatums dennoch Information
 beinhaltet, die für einen Transfer in die neue Aufgabe geeignet sein kann. Zunächst wird
@@ -900,20 +1112,21 @@ Unter Annahme ähnlicher Aufgaben kann nun die Aktivität im vorhergehenden Netz
 werk für einen Wissenstransfer genutzt werden. Über ein Adapternetzwerk verfügt das
 nachfolgende Netzwerk über laterale Verbindungen zu den Neuronen des vorhergehenden
 Netzwerks. Nach [156, 46] lässt sich dieser Zusammenhang generalisieren als:
-Die Aktivität h , i in den neuronalen Schichten i des Netzwerks der Aufgabe k er-
-k
-rechnen sich also aus den über die jeweilige Gewichtsmatrix W , i gewichtete Aktivität
-k
-h der vorhergehenden neuronalen Schicht derselben Aufgabe k sowie der über eine
-k,i−1
-Adaptionsmatrix U transformierte Aktivität h der neuronalen Schicht des Netzwerks
-j,i−1
-der vorangegangenen Aufgaben j. Die Parameter der Adaptionsmatrix U , welche die
-i,k:j
+
+
+Die Aktivität h , i in den neuronalen Schichten i des Netzwerks der Aufgabe k er- k
+rechnen sich also aus den über die jeweilige Gewichtsmatrix W , i gewichtete Aktivität k
+h der vorhergehenden neuronalen Schicht derselben Aufgabe k sowie der über eine k,i−1
+FOOTNOTE:Adaptionsmatrix U transformierte Aktivität h der neuronalen Schicht des Netzwerks j,i−1
+
+
+der vorangegangenen Aufgaben j. Die Parameter der Adaptionsmatrix U , welche die i,k:j
 in diesem Modell essentielle Transferleistung erbringt, werden beim Training für die
 Aufgabe k bezüglich der Parameter der vorhergehenden Aufgaben optimiert. Abbildung
 2.7 skizziert den Aufbau eines progressiven neuronalen Netzwerks für drei Aufgaben mit
 Eingabedaten X gleicher Dimensionalität.
+
+
 Dieses KonzeptXkann erweitert werden, sodass auch Transferleistungen zwischen Aufgaben
 unterschiedlicher Eingabedatendimensionalität erlernt werden können [46]. In diesem
 Beitrag wird ein Reinforcement Learning System vorgestellt, welches Transferlernen
@@ -927,28 +1140,36 @@ Aufgaben darstellen. Eine nachfolgende Aufgabe verfügt demnach über Eingabedat
 höherer Dimensionalität, wobei die Eingabedaten der nachfolgenden Aufgabe prinzipiell
 in die Dimensionalität der Eingabedaten der vorhergehenden Aufgabe überführt werden
 können, beispielsweise über die Skalierung eines hochauflösendes Farbbildes.
-2.3.6 Gegnerische Umprogrammierung
+
+
+FOOTNOTE:2.3.6 Gegnerische Umprogrammierung
+
+
 Die gegnerische Umprogrammierung (E: Adversarial Reprogramming) ist ein Konzept des
 Transferlernens, in welchem das in einem maschinellen Lernmodell vorhandene Wissen
 zur Erfüllung der Aufgabe eines Angreifers eingesetzt werden soll. Hierbei werden die
 Eingabedaten und die Interpretation der Ausgabe eines neuronalen Netzwerks derart
 verändert, dass das künstliche neuronale Netzwerk eine andere als die ursprünglich vor-
 gesehene Aufgabe erfüllt [108, 110, 92]. Zunächst wird eine Neuzuordnung eines Teils der
-Ausgabe y des künstlichen neuronalen Netzwerks zum Ausgaberaum y der neuen
-alt neu
+Ausgabe y des künstlichen neuronalen Netzwerks zum Ausgaberaum y der neuen alt neu
 Aufgabe vorgenommen; beispielsweise von den gelernten Klassen Hund, Katze, Maus
 eines Klassifikatiors hin zu neuen, nicht gelernten Klassen Apfel, Birne, Banane. Das
 umzuprogrammierende Netzwerk soll nun sein Wissen über die Hunde, Katzen und Mäuse
 nutzen, um Bilder von Äpfeln, Birnen und Bananen zu klassifizieren. Hierzu wird ein
 gegnerisches Programm P optimiert, bestehend aus den eigentlichen Manipulationspara-
 metern W sowie einer Maske M [108]:
+
+
 Die Matrix M trägt den Wert 1 dort, wo die Nutzdaten der gegnerischen Information
 liegen, ansonsten 0. Die Eingabebilder x˜ der neuen Klassen werden nun mit P maskiert:
+
+
 Das über die Eingabedaten umprogrammierte aber ansonsten unveränderte künstliche
-neuronale Netzwerk soll nun, entsprechend der angestrebten Neuzuordnung x → y ,
-neu neu
+neuronale Netzwerk soll nun, entsprechend der angestrebten Neuzuordnung x → y , neu neu
 die für eine andere Aufgabe gelernten Parameter nutzen, um eine neue Aufgabe erfüllen.
 Abbildung 2.8 illustriert dies am Beispiel aus [108].
+
+
 Je nach Kenntnis über die internen Parameter den umzuprogrammierenden Netz-
 werks bietet sich zur Optimierung des gegnerischen Programms ein White-box oder
 ein Black-box Ansatz an [110]. Während im White-box Ansatz ein gradientenbasiertes
@@ -965,6 +1186,8 @@ Umprogrammierung basiert und um aufgabenspezifische Worteinbettungen zu lernen,
 welche nach der Verknüpfung mit einem Eingabetext das Sprachmodell anweisen, eine
 neue Aufgabe zu lösen. Mit dieser Vorgehensweise übertreffen die Autoren von [162] die
 bisher existierenden Lösungen auf dem GLUE Benchmark [163].
+
+
 Abbildung 2.8: Eine Beispielanwendung der gegnerischen Umprogrammierung,
 entnommen aus [108]. Ein ImageNet Klassifikator soll umpro-
 grammiert werden, sodass er anstelle der gelernten Klassifika-
@@ -978,7 +1201,11 @@ Werden nun die Eingabedaten der neuen Aufgabe mitsamt
 des gegnerischen Programms präsentiert, so nennt das derart
 umprogrammierte Netzwerk die Klasse, welcher nach der Neu-
 zuordnung der Anzahl der weißen Vierecke entspricht (c).
+
+
 2.3.7 Weltmodelltransfer
+
+
 Eine weiterer Ansatz des Transferlernens ist das Übertragen von bereits gelerntem Welt-
 oder Sprachmodellwissen auf eine unbekannte, neue Aufgabe; ein Weltmodell umfasst
 hierbei nicht nur Wissen über eine spezielle Aufgabe, sondern versucht, einen möglichst
@@ -992,6 +1219,8 @@ GPT-3, ist in der Lage, noch wesentlich kohärentere Sprache zu modellieren, wel
 sich von menschlicher Leistung nur noch schwer auseinanderhalten lässt [165]. Auch die
 Komposition von Musik kann als natürliche Sprachverarbeitungsaufgabe formuliert und
 mit einem entsprechenden Sprachmodell ermöglicht werden [166].
+
+
 Unter der Annahme, dass genügend große Sprachmodelle in der Lage sind, konzeptionelle
 Zusammenhänge einer komplexen Welt abzubilden, kann ein Lerntransfer in eine neue
 Aufgabe als Frage der Inferenz eines Weltmodells formuliert werden. Für Aufgaben
@@ -1003,8 +1232,9 @@ als Modellierung einer Wahrscheinlichkeitsverteilung P (output|input, A) formuli
 bei input und output Symbolsequenzen sind, welche die Grundlage von natürlichen
 Sprachverarbeitungsaufgaben bilden. Nach dieser Formulierung entspricht das Finden der
 wahrscheinlichsten Antwort output der Abschätzung einer Wahrscheinlichkeitsverteilung
-p(x) auf Grundlage einer Symbolreihe input = {s , ..., s } [167, 168, 77]:
-1 n
+p(x) auf Grundlage einer Symbolreihe input = {s , ..., s } [167, 168, 77]: 1 n
+
+
 Zur Abschätzung dieser Wahrscheinlichkeitsverteilung nutzen GPT-Netzwerke ein
 Transformernetzwerk mit einem Aufmerksamkeitsmechanismus [169].
 Anstelle von Transformernetzwerken zur natürlichen Sprachverarbeitung können Weltmo-
@@ -1013,31 +1243,28 @@ Netzwerken umgesetzt werden, welche den Stand der Technik in schwierigen Umgebun
 übertreffen [19]. Die Beobachtungen des markov’schen Entscheidungsprozesses, in Form
 von Farbbildern, werden zunächst mit einem Variational Autoencoder (VAE) in eine laten-
 te Variable z überführt [170, 59, 62]. Das Weltmodell M besteht aus einem rekurrenten
-neuronalen Netzwerk mit versteckten Aktivierungen h , welches ausgehend von einer Ak-
-t
-tion a und einem latenten Zustand z versucht, den Folgezustand vorherzusagen. Anstelle
-t
-eines einzigen Folgezustandes wird eine Wahrscheinlichkeitsverteilung P (z |z , a , h )
-t+1 t t t
+neuronalen Netzwerk mit versteckten Aktivierungen h , welches ausgehend von einer Ak- t
+tion a und einem latenten Zustand z versucht, den Folgezustand vorherzusagen. Anstelle t
+eines einzigen Folgezustandes wird eine Wahrscheinlichkeitsverteilung P (z |z , a , h ) t+1 t t t
 als Mischung von Gaußverteilungen mit Hilfe von Mixture Density Networks (MDN)
 modelliert [171]. Das Transferlernen geschieht, indem ein kleines Netzwerk auf dem
 Weltmodell (VAE+MDN) aufbaut, um das dort enthaltene Wissen für das Lernen einer
+
+
 Abbildung 2.9: Darstellung des Weltmodellkonzepts für visuelles Verstärkungs-
 lernen, entnommen aus [19]. Zunächst werden die Beobach-
-tungen in eine latente Variable z encodiert. Das Weltmodell
-t
+tungen in eine latente Variable z encodiert. Das Weltmodell t
 M modelliert eine Wahrscheinlichkeitsverteilung für die Folge-
-zustände z , ausgehend vom aktuellen Zustand z und einer
-t+1 t
+zustände z , ausgehend vom aktuellen Zustand z und einer t+1 t
 Aktion a. Die Transferleistung erbringt der Controller C, wel-
 cher auf Grundlage der neuronalen Aktivierung im Weltmodell
 und der Beobachtung des aktuellen Zustands der Umgebung
 die optimale Strategie bezüglich für den jeweiligen Aktions-
 raum approximiert.
-neue Aufgabe wiederzuverwenden. Auf Grundlage der versteckten Aktivierungen h und
-t
-der latenten Zustandsvariable z kann ein Controllernetzwerk C genutzt werden, welches
-t
+
+
+neue Aufgabe wiederzuverwenden. Auf Grundlage der versteckten Aktivierungen h und t
+FOOTNOTE:der latenten Zustandsvariable z kann ein Controllernetzwerk C genutzt werden, welches t
 das Weltmodellwissen nutzt, um mit geringer Parameteranzahl eine optimale Strategie
 zu finden. Das Controllernetzwerk C kann aufgrund seiner geringen Parameterzahl auch
 über einen evolutionären Algorithmus entwickelt werden, [19] verwendet hier eine Evolu-
@@ -1045,7 +1272,11 @@ tionsstrategie mit Kovarianzmatrixadaption auf 867 Parametern. Das Belohnungssig
 des markovsch’en Entscheidungsprozesses wird bei diesem Ansatz nur dem Controller-
 netzwerk C zu Teil, das Encodernetzwerk V und das Weltmodell M arbeiten lediglich
 mit den Beobachtungen.
+
+
 2.4 Verstärkungslernen
+
+
 Entscheidungsprozesse stellen eine besonders interessante Klasse von Herausforderungen
 für die Methoden des maschinellen Lernens dar, da das zu lösende Lernproblem sich
 nicht nur auf einen statischen Datensatz begrenzt, sondern sich auf eine interaktive
@@ -1076,50 +1307,57 @@ eignen sich spieltheoretische Probleme, da sie aufgrund ihrer klar definierten R
 eine Grundlage für reproduzierbare Experimente bieten [178, 179]. Die erste Anfänge
 in der Erforschung selbständig lernender Agenten untersuchten das Spiel Schach, mit
 vollständiger Information über den Spielzustand [180]. Frühe Forschungen auf dem Gebiet
-des visuellen Verstärkungslernens untersuchten bereits Atati 2600 Spiele [176], Doom [181,
+des visuellen Verstärkungslernens untersuchten bereits Atati $$$2600$$$ Spiele [176], Doom [181,
 182, 183], auch Unreal Tournament [184] sowie Minecraft [185]; die Zahl der einschlägigen
 Publikationen dieser Domäne wächst schnell. Neuere Untersuchungen beschäftigen sich
 mit dem hochkomplexen Echtzeitstrategiespiel Starcraft 2 [186, 187, 188, 189, 190].
+
+
 2.4.1 Markov’scher Entscheidungsprozess
+
+
 Zur Beschreibung der dem bestärkenden Lernen zugrundeliegenden mathematischen
 Zusammenhänge zwischen einem Handelnden und dessen Umgebung wird der mar-
 kow’sche Entscheidungsprozess (E: Markov decision process, MDP) herangezogen [172].
 Dem markov’schen Entscheidungsprozess liegt das stochastische Modell der Markowkette
 zu Grunde, nach welchem ein Zustand s aus einem Zustandsraum S, nach einer gewissen
+
+
 Wahrscheinlichkeitsverteilung, in einen Folgezustand s ∈ S übergeht. Der markow’sche
 Entscheidungsprozess stellt eine Erweiterung dieser Idee dar, indem die Übergangswahr-
 scheinlichkeiten in Abhängigkeit einer Aktion formuliert werden.
+
+
 Da sich der Zustand der Umgebung nach der Handlung von deren Zustand vor der
 Handlung unterscheidet, ergibt sich ein Begriff schrittweiser zeitlicher Ordnung. Für
-jeden Zeitschritt t existiert ein Zustandsübergang s → s , bis die Umgebung in einen
-t t+1
+jeden Zeitschritt t existiert ein Zustandsübergang s → s , bis die Umgebung in einen t t+1
 Endzustand übergeht und sich nicht weiter verändert. In Zusammenhang mit jedem
-Zustandsübergang steht eine Aktion a aus dem Aktionsraum A, sowie eine, durch die
-t
+Zustandsübergang steht eine Aktion a aus dem Aktionsraum A, sowie eine, durch die t
 Umgebung vermittelte, positive oder negative Belohnung r ∈ R. Eine Relation P : S × A
 nennt die Wahrscheinlichkeiten, mit denen ein Zustand in einen der Folgezustände
-s = P (s , a ) übergeht, die Zuordnung r = R(s , a ) die entsprechenden Belohnungen.
-t+1 t t t t t
-Wären die Übergangswahrscheinlichkeiten P (s , a ) bereits bekannt, so könnten die tat-
-t t
+s = P (s , a ) übergeht, die Zuordnung r = R(s , a ) die entsprechenden Belohnungen. t+1 t t t t t
+Wären die Übergangswahrscheinlichkeiten P (s , a ) bereits bekannt, so könnten die tat- t t
 sächlichen Zustandswerte berechnet werden; diese Übergangswahrscheinlichkeiten sind
-dem Agenten jedoch unbekannt. Das Auswahlverfahren der Aktion a im Zustand s wird
-t t
-als Strategie a = π(s ) (E: policy) bezeichnet.
-t
+dem Agenten jedoch unbekannt. Das Auswahlverfahren der Aktion a im Zustand s wird t t
+als Strategie a = π(s ) (E: policy) bezeichnet. t
+
+
 An dieser Stelle muss in der Praxis eine Abwägung zwischen der Erkundung der Umge-
 bung und dem Verfolgen der optimalen Strategie vorgenommen werden (E: Exploration
 Exploitation Dilemma) [191]. Zur Lösung dieses Dilemmas können, einem linear abfallen-
 den Prozentwert (cid:15) folgend, zufällige Aktionen durchgeführt werden oder die Entropie der
 Strategie in das Optimierungskriterium integriert werden [175, 192, 193].
+
+
 Eine Strategie, welche auf Grundlage der Beobachtungen immer diejenigen Handlungen
 entscheidet, welche die Umgebung in Zustände mit höherem Zustandswerten versetzen,
 wird als optimale Strategie π∗ bezeichnet. Um die notwendige Zuordnung eines Zustands-
 wertes zu einer Beobachtung vorzunehmen, soll der Agent eine Wertefunktion V (s) lernen.
-Hierbei wird, von einem Anfangszustand s und der Befolgung der optimalen Strategie
-0
+Hierbei wird, von einem Anfangszustand s und der Befolgung der optimalen Strategie 0
 π∗ ausgehend, die Zustandswertefunktion V als Erwartungswert über die Belohnungen r
 aller nachfolgenden Zustandsübergänge definiert:
+
+
 Nach dieser Formulierung wäre eine direkte Berechnung aller korrekten Zustandswerte
 denkbar, indem in jedem Zustand jede Aktion ausgeführt würde. In komplexen Umgebun-
 gen ist dieses Vorgehen so nicht durchführbar, da dieselbe Aktion im selben Zustand nicht
@@ -1128,10 +1366,12 @@ Umgebungen, auf welche der Agent keinen Einfluss hat, oder aber auch andere Agen
 welche ihrerseits ebenfalls Einfluss nehmen. Da die Ausführung jeder möglichen Aktion in
 jedem Zustand unter diesen Annahmen nicht zielführend sein kann, wird zur Reduktion
 der Komplexität zu jedem Zeitschritt t nur die vielversprechendste Aktion ausgeführt:
-Der Wert des verlassenen Zustandes s wird anschließend anhand der tatsächlich
-t
-erhaltenen Belohnung r neu abgeschätzt.
-t
+
+
+Der Wert des verlassenen Zustandes s wird anschließend anhand der tatsächlich t
+erhaltenen Belohnung r neu abgeschätzt. t
+
+
 Dieser Ansatz entspricht dem Bellman’schen Optimierungsprinzip, welches besagt, dass
 sich optimale Teillösungen iterativ zu einer optimalen Gesamtlösung zusammenfügen
 lassen [194]. Das zeitschrittweise Approximieren wird auch als Zeitdifferenzlernen (E:
@@ -1146,7 +1386,11 @@ Aussage mehr über die Relevanz der Bildelemente getroffen werden kann. Dies ver
 die Findung einer optimalen Strategie. Um einer Divergenz der Wertefunktion entgegen
 zu wirken, wird ein Diskontfaktor γ eingeführt, welcher die Wertefunktion, also die
 Summe der erwarteten Belohnungen, über die Zeit abwertet:
-2.4.2 Q-Learning
+
+
+FOOTNOTE:2.4.2 Q-Learning
+
+
 Der einfache markow’sche Entscheidungsprozess trifft die Annahme, dass der Agent den
 Umgebungszustand vollumfänglich beobachten kann. Bei vielen Prozessoptimierungen
 besteht aber die Herausforderung eines nur teilweise beobachtbaren Umgebungszustandes.
@@ -1154,7 +1398,7 @@ Beispielsweise zeigt die Bildausgabe eines Computerspiels in einer dreidimension
 Welt nur eine zweidimensionale Abbildung des wahren Umgebungszustandes. Diese
 konzeptionelle Erweiterung des markov’schen Entscheidungsprozesses wird als teilwei-
 se beobachtbarer markow’scher Entscheidungsprozess (E: partially observable Markov
-decision process, POMDP) bezeichnet [196]. Die Lernverfahren für teilweise beobachtbare
+FOOTNOTE:decision process, POMDP) bezeichnet [196]. Die Lernverfahren für teilweise beobachtbare
 Umgebungen finden eine optimale Strategie unter der Annahme, dass nur ein gewisser
 Ausschnitt erfasst werden kann, wie etwa bei visuellen Computerspielen. Anstatt der
 gesamten Umgebungsinformation, welche beispielsweise die Positionen und Eigenschaften
@@ -1165,37 +1409,69 @@ Entscheidungsprozesses abzuschätzen, kann die Wertefunktion V (s) zu einer Qual
 funktion Q(s, a) umformuliert werden. Die Qualitätsfunktion Q(s, a) nennt nicht den
 Wert eines Folgezustandes, sondern trifft stattdessen eine Aussage über den erwarteten
 Folgezustandswert für ein Tupel aus einem Zustand s und einer Aktion a [174]:
+
+
 Die Abweichung der vorhergesagten zu den tatsächlichen Q-Werten dient einem künst-
 lichen neuronalen Netzwerk als Optimierungskriterium für einen stochastischen Gradien-
 tenabstieg, beispielsweise über die Minimierung eines mittleren quadratischen Fehlers. Der
 Wert eines Zustandes s ergibt sich als höchster Wert der Q-Funktion, unter Betrachtung
-aller möglichen Aktionen a0:
+aller möglichen Aktionen a$$$0$$$:
+
+
 Ebenso ergibt sich die optimale Aktion a∗ als die Aktion mit dem höchsten Q-Wert im
 aktuellen Zustand:
+
+
 Eine binäre Variable e kann angeben, ob es sich beim Folgezustand um einen End-
 zustand handelt; in diesem Fall wird nur die Belohnung r und nicht der geschätzte
-Folgewert q zur Zielvorgabe q addiert. Pseudocode 4 skizziert einen solchen Ablauf
-2 Ziel
+Folgewert q zur Zielvorgabe q addiert. Pseudocode 4 skizziert einen solchen Ablauf 2 Ziel
 des Q-Lernschrittes:
-Algorithmus 4 Q-Lernschritt
-1: procedure Q-Lernen(s t, a, s t+1, r, e)
+
+
+FOOTNOTE:Algorithmus 4 Q-Lernschritt
+
+
+FOOTNOTE:1: procedure Q-Lernen(s t, a, s t+1, r, e)
+
+
 2: Parametervektor Θ
-3: Lernrate η
-4: Diskontfaktor γ
-5: q 1 ← Ausgabe(Θ|s t)
-6: q 2 ← Maximum(Ausgabe(Θ|s t+1))
-7: q Ziel(s t, a) ← r + γ(1 − e)q 2
-8: L = Optimierungskriterium(q 1, q Ziel)
-9: ∆Θ = dL
-dΘ
-10: Θ = Θ + η∆Θ
+
+
+FOOTNOTE:3: Lernrate η
+
+
+FOOTNOTE:4: Diskontfaktor γ
+
+
+FOOTNOTE:5: q 1 ← Ausgabe(Θ|s t)
+
+
+FOOTNOTE:6: q 2 ← Maximum(Ausgabe(Θ|s t+1))
+
+
+FOOTNOTE:7: q Ziel(s t, a) ← r + γ(1 − e)q 2
+
+
+FOOTNOTE:8: L = Optimierungskriterium(q 1, q Ziel)
+
+
+FOOTNOTE:9: ∆Θ = dL dΘ
+
+
+$$$10$$$: Θ = Θ + η∆Θ
+
+
 11: end procedure
+
+
 Mit der Einführung eines Erinnerungswiederholungsprozesses (E: Action Replay Process,
 ARP) zeigt sich die Stabilisierung der Strategiefindung [174]. Während des Lernprozesses
 werden die Erfahrungen, also die Zustandsübergänge mitsamt durchgeführter Handlun-
 gen und erhaltener Belohnungen, in einem Erinnerungsspeicher gesammelt und dem
 Optimierungsprozess, gewichtet nach ihrer Wichtigkeit, präsentiert. Die Wichtigkeiten
 der einzelnen Erinnerungen folgen aus den Ausmaßen der jeweiligen Abschätzungsfehler.
+
+
 Zeigt sich bei der Neubewertung der Erinnerung ein hohes Fehlermaß, so birgt diese
 Erinnerung ein hohes Lernpotential [197]. Zur Optimierung der Entscheidungsparameter
 wird wiederholt eine Auswahl gesammelter Erfahrungen präsentiert und die Abweichung
@@ -1206,36 +1482,70 @@ welche durch ihren höheren Zeitdifferenzfehler ein höheres Lernpotential entha
 Pseudocode 5 beschreibt das Hinzufügen einer Aufzeichnung in den priorisierten Erinne-
 rungsspeicher und Pseudocode 6 das Aktualisieren des Prioritätsvektors nach [197]. Der
 kleinstmögliche Wert (cid:15) > 0 dient zur Vermeidung einer Nulldivision.
-Algorithmus 5 Hinzufügen zum priorisierten Erinnerungspeicher
-procedure Hinzufügen(Aufzeichnung [s , s , a, r, e])
-t t+1
+
+
+Algorithmus $$$5$$$ Hinzufügen zum priorisierten Erinnerungspeicher
+
+
+FOOTNOTE:procedure Hinzufügen(Aufzeichnung [s , s , a, r, e]) t t+1
+
+
 Erinnerungsliste M
+
+
 Prioritätsvektor P
+
+
 Wahrscheinlichkeitsverteilung p
+
+
 Vertrauensfaktor α
-i ← i + 1 mod |M|
-M[i] ← [s , s , a, r, e]
-t t+1
-P [i] ← max(P )
+
+
+FOOTNOTE:i ← i + 1 mod |M|
+
+
+M[i] ← [s , s , a, r, e] t t+1
+
+
+FOOTNOTE:P [i] ← max(P )
+
+
 end procedure
-Algorithmus 6 Aktualisieren des priorisierten Erinnerungspeichers
+
+
+Algorithmus $$$6$$$ Aktualisieren des priorisierten Erinnerungspeichers
 procedure Prioritäten aktualisieren(Zeitdifferenzfehler δ)
+
+
 Prioritätsvektor P
-Kleinstmöglicher Wert (cid:15) > 0
-for d ∈ δ do:
-i
-P [i] = d + (cid:15)
-i
+
+
+FOOTNOTE:Kleinstmöglicher Wert (cid:15) > 0
+
+
+for d ∈ δ do: i
+
+
+FOOTNOTE:P [i] = d + (cid:15) i
+
+
 end for
+
+
 end procedure
-2.4.3 Asynchrone Verfahren
+
+
+FOOTNOTE:2.4.3 Asynchrone Verfahren
+
+
 Wenn Umgebungen verschiedene Startzustände aufweisen, bieten sich asynchrone Lern-
 verfahren mit mehreren Agenten an, die in verschiedenen Startzuständen beginnen. Die
 Lernvorgänge der einzelnen Agenten werden in parallelen Prozessen berechnet, sodass
 die Umgebung in Form einer Breitensuche erkundet werden kann. Ein besonders gut
 untersuchtes Verfahren, welches unter Anderem das schwierige Problem der Navigation in
 einem dreidimensionalem Labyrinth löst, ist das asynchrone Aktor-Kritiker Vorteillernen
-(E: Asynchronous Advantage Actor-Critic, A3C). Der A3C Algorithmus erlaubt einen, in
+(E: Asynchronous Advantage Actor-Critic, A$$$3$$$C). Der A3C Algorithmus erlaubt einen, in
 einer Umgebung verteilten, Lernprozess mit mehreren unabhängigen Agenten [175].
 Der Lernprozess wird auf mehrere Instanzen einer Umgebung mit jeweils einem Agenten
 aufgeteilt. Die Lernprozesse approximieren additiv die optimale Strategie π∗ nach dem
@@ -1243,39 +1553,42 @@ REINFORCE Paradigma. REINFORCE ist hierbei das Akronym für „REward Increment
 = Nonnegative Factor × Offset Reinforcement × Characteristic Eligibility und beschreibt
 eine Klasse von Algorithmen zum Verstärkungslernen, deren Gradientenabstiegsregeln
 sich wie folgt zusammenfassen lassen [177]:
+
+
 Der Strategiegradient e entspricht der Ableitung der Strategie nach den Entscheidungs-
-parametern und wird nach der Abweichung zwischen der tatsächlichen Belohnung r und
-t
-der Belohnungsgrundlinie b gewichtet. Die Belohnungsgrundlinie b entspricht hierbei
-t t
-einer Zustandswertfunktion V (s ) zum Lernschritt t.
-t
-Das Verfahren A3C nutzt akkumulierte Belohnungen = P , um Gradienten
-Das Verfahren A3C nutzt akkumulierte Belohnungen R = P∞ γkr , um Gradienten
-t k=0 t+k
+parametern und wird nach der Abweichung zwischen der tatsächlichen Belohnung r und t
+der Belohnungsgrundlinie b gewichtet. Die Belohnungsgrundlinie b entspricht hierbei t t
+einer Zustandswertfunktion V (s ) zum Lernschritt t. t Das Verfahren A3C nutzt akkumulierte Belohnungen = P , um Gradienten
+
+
+FOOTNOTE:Das Verfahren A3C nutzt akkumulierte Belohnungen R = P∞ γkr , um Gradienten t k=0 t+k
 für den Entscheidungsparametervektor Θ nach folgender Funktionsvorschrift aufzustellen
 [175]:
-Diese Formulierung besteht aus dem Kritikerterm (R − b (s )), welcher durch die Ab-
-t t t
+
+
+Diese Formulierung besteht aus dem Kritikerterm (R − b (s )), welcher durch die Ab- t t t
 weichung der erwarteten zur tatsächlichen Belohnung nach dem aktuellen Lernpotential
-gewichtet, so wie dem Aktortem π(a |s ; Θ), welcher eine Wahrscheinlichkeitsverteilung
-t t
-über den Aktionsraum darstellt. Ein Entropieterm H = − P log(π(a ))π(a ) kann als
-t t
+gewichtet, so wie dem Aktortem π(a |s ; Θ), welcher eine Wahrscheinlichkeitsverteilung t t
+FOOTNOTE:über den Aktionsraum darstellt. Ein Entropieterm H = − P log(π(a ))π(a ) kann als t t
 Regularisierung in die Optimierungsfunktion mit aufgenommen werden, um den Agenten
 zur Erkundung anderer Aktionen zu motivieren.
+
+
 Das A3C Verfahren verzichtet, wie andere on policy Lernverfahren auch, auf einen
 Erinnerungswiederholungsprozess. Stattdessen wird ein gemeinsamer Parametervektor
 Θ verwendet. In regelmäßigen Abständen wird jedem Agenten eine aktualisierte Ar-
 beitskopie Θ0 für einen individuellen Gradientenabstieg zur Verfügung gestellt. Wird
-der Endzustand der Umgebung oder ein bestimmtes Zeitlimit t erreicht, werden die
-max
+FOOTNOTE:der Endzustand der Umgebung oder ein bestimmtes Zeitlimit t erreicht, werden die max
 lokalen Gradienten bezüglich der Parameter Θ0 berechnet und anschließend auf den
 gemeinsam geteilten Parametervektor Θ addiert. Die resultierenden Gewichtsveränderun-
 gen werden nach dem sogenannten HOGWILD! Schema asynchron auf den gemeinsamen
 Parametervektor addiert. Dieses Verfahren konvergiert unter der Voraussetzung, dass die
 einzelnen Additionen nur kleine Teile des Parametervektors verändern [116].
+
+
 3 Herausforderungen
+
+
 Die Forschung in der angewandten Informatik besteht in der Anwendung der informati-
 schen Methode auf Fragestellungen anderer wissenschaftlicher Bereiche, beispielsweise der
 Wirtschaftswissenschaft, der Mensch-Maschineinteraktion oder der Arbeitswissenschaft.
@@ -1289,6 +1602,8 @@ Zusammenhänge aus einer Datenlage lernen und einem Anwender entsprechende Schni
 stellen bereitstellen. Bei den Lernprozessen fallen Metadaten an, aus welchen systematisch
 Rückschlüsse auf die Güte eines Lernprozesses mit den jeweiligen Einstellungen und
 Datensätzen gewonnen werden können.
+
+
 In dieser Arbeit werden verschiedene Anwendungen beschrieben, welche nach diesem
 Prinzip eine Unschärfe zwischen Sensordaten und formellen Konzepten auflösen, indem
 sie künstlich intelligente Abbildungen nutzen, welche Schlüsse aus einer Datenlage ziehen
@@ -1299,6 +1614,8 @@ einige Modelle sich besonders gut für einen Transferlernprozess eignen; jedoch 
 hier die Frage offen, unter welchen Umständen ein Wissenstransfer von besonderem
 Nutzen ist [6]. Der Bedarf nach einer statistischen Auswertung der Metadaten dieser
 Transferlernprozesse führt zum Konzept des Transfer Meta Learning [5].
+
+
 Die einzelnen Umsetzungen werden mit Konzepten der objektorientierten Programmie-
 rung erläutert. Durch die Anwendung der objektorientierten Paradigmen gestaltet es sich
 einfacher, einzelne Softwarekomponenten ohne Änderungen anderer Teile des Programms
@@ -1311,7 +1628,11 @@ Detail konsequent objektorientiert umgesetzt wurden, beispielsweise sind die Abl
 den Lernprozessen der künstlichen neuronalen Netzwerke nach wie vor von prozeduraler
 Natur, so lassen sich die beteiligten Strukturen zur besseren Nachvollziehbarkeit und
 Wiederverwendbarkeit in Klassen abbilden.
+
+
 3.1 Automatische Handelssysteme
+
+
 Mit bestärkendem Lernen und tiefen künstlichen neuronalen Netzwerken können auto-
 matische Handelssysteme, im Rahmen dieser Herausforderung am Beispiel von Diffe-
 renzkontrakten, umgesetzt werden [7, 8]. Unter einem automatischem Handelssystem
@@ -1320,6 +1641,8 @@ Parameter handeln kann, ohne dass ein Mensch eingreifen muss [200]. Wirtschaftli
 Anwendungen der künstlichen Intelligenz im Allgemeinen und des maschinellen Lernens
 im Besonderen bieten neue Perspektiven, Möglichkeiten und Werkzeuge für die Modellie-
 rung von ökonomischen Vorgängen und Systemen [201].
+
+
 Die Forschung im Bereich des automatisierten Handels mit Finanzanlagen deckt ein
 recht breites Spektrum mit verschiedenen Ansätzen ab, welche die Informatik und die
 Wirtschaftswissenschaften eng miteinander verbinden [202, 203, 204, 205]. In einer solchen
@@ -1334,10 +1657,12 @@ sozialen Medien ein [206, 207, 208]. Diese Ansätze erfordern jedoch ein gewisse
 zeitlicher Information über den aktuellen Markt. Unter Verwendung historischer Handels-
 daten untersucht [209] ein LSTM-basiertes Kursvorhersagemodell für den chinesischen
 Aktienmarkt um steigende oder fallende Kurse auf täglichen Zeitskalen vorherzusagen
-und erreicht dabei Genauigkeiten zwischen 64, 3% und 77, 2%. Eine Deep-Learning Im-
+und erreicht dabei Genauigkeiten zwischen $$$64$$$, 3% und $$$77$$$, 2%. Eine Deep-Learning Im-
 plementierung von [210] lernt mit LSTM-Netzwerken, Aktienkurse auf der Grundlage
 von kombinierten Nachrichtentexten und rohen Aktienkursinformationen vorherzusagen,
 was ebenfalls profitable Handelsanwendungen ermöglicht.
+
+
 Die Nutzung solcher Systeme ermöglicht es Händlern, eine Strategie mit wesentlich
 höherer Frequenz abzuhandeln als es Menschen möglich sein kann; so ist der automa-
 tisierte Hochfrequenzhandel (E: High Frequency Trading(HFT)) für einen Großteil der
@@ -1350,7 +1675,11 @@ vor, welches Kauf-, Leerverkauf- und Halteentscheidungen auf der Grundlage von F
 und makroökonomischen Daten trifft. Es gibt auch Verstärkungslernansätze für den
 Hochfrequenzhandel an Devisenmärkten [214, 215, 216], jedoch keine Forschungsarbeiten
 zum maschinellen Hochfrequenzhandel mit Verstärkungslernen auf Differenzkontrakten.
+
+
 3.1.1 Differenzkontrakte
+
+
 Ein Differenzkontrakt (E: Contract for Difference, CfD) ist ein Total Return Swap
 Kreditderivat, welches es zwei Parteien ermöglicht, die Entwicklung eines Basiswerts
 gegen Zinszahlungen auszutauschen. In anderen Worten können Wirtschaftsakteure auf
@@ -1373,7 +1702,11 @@ derzeit ein Embargo für den Handel mit CfD. Nach einer Allgemeinverfügung der 
 desanstalt für Finanzdienstleistungsaufsicht darf ein Börsenmakler in Deutschland seinen
 Kunden solche spekulativen Optionen nur dann anbieten, wenn sie im Falle eines Ausfalls
 nicht zusätzlich haften, sondern nur ihre Sicherheitshinterlegung verlieren.
+
+
 3.1.2 Aufbau der Simulation
+
+
 Die Simulationsumgebung aus [7, 8] basiert auf historischen Handelsdaten, welche in
 entsprechenden Daten- und Kontrollstrukturen derart arrangiert werden, dass ein Agent
 eine Reihe von Marktwerten beobachten und eine Wette auf steigende oder fallende
@@ -1389,15 +1722,21 @@ Verzögerung, wie er beispielsweise beim Hochfrequenzhandel eine essentielle Rol
 außer Acht lässt. Als Zustand s stellt die simulierte Marktumgebung eine Folge von l
 Ticks bereit, ausgehend von einem beliebigen Punkt t in der Handelshistorie X. Die im
 Zustand enthaltenen Preise und Volumina werden um ihre Mittelwerte bereinigt:
+
+
 Abbildung 3.1: Ein Sequenzdiagramm zur Veranschaulichung des Ablaufs
 eines Lernschrittes in simulierten Marktumgebung. Die betei-
 ligten Objekte, also der Agent und die Umgebung, kommuni-
 zieren über Zustand, Aktion und Belohnung.
+
+
 Der Agent sieht also ein Eingabesignal fester Größe, welches aus einer Reihe von aufein-
 anderfolgenden Ticks besteht, die Preise für entsprechend ausgewählte Vermögenswerte
 darstellen. Jeder Tick umfasst den Zeitraum einer Sekunde und enthält sowohl den Brief-
 als auch den Geldkurs zum Sekundenschluss. Der Aktionsraum besteht also aus drei
 verschiedenen Aktionen: entweder kaufen, leerverkaufen oder abwarten:
+
+
 Für jeden Zustand s, welchen die simulierte Marktumgebung präsentiert, wählt der
 Agent eine Aktion a ∈ A. Der Verstärkungslerner kann mit der Marktumgebung interagie-
 ren, indem er seine Aktionen a an die Umgebung bekannt gibt, welche nach Auswertung
@@ -1405,16 +1744,20 @@ durch die Simulationslogik ein Belohnungssignal r in Form des finanziellen Gewin
 Verlustes zurückgibt, welchen der Agent im Erwartungswert zu maximieren versucht.
 Wenn der Agent die Aktion a = 0 wählt, um keinen Handel zu eröffnen, erhält er eine
 Belohnung von 0 und beobachtet den nächsten Zustand. Ein Auswertungsablauf in dieser
-Umgebung beginnt, wenn der Agent beschließt, einen Handel mit einer Aktion a 6= 0
+Umgebung beginnt, wenn der Agent beschließt, einen Handel mit einer Aktion a $$$6$$$= 0
 zu eröffnen. Je nach Handlung werden in der Simulationsumgebung Schleifen mit dem
 jeweiligen Abbruchkriterien aktiviert und solange ausgeführt, bis entweder ein Schwellwert
 überschritten oder das Ende der Aufzeichnungen erreicht ist; in letzterem Fall wird der
 Handel zum aktuellen Kurs ausgewertet und beendet. Nach Erreichen eines Take-Profit-
 oder den Stop-Loss-Wertes in Form von Gewinn- oder Verlustprozentsätzen von einem
+
+
 festzulegenden Prozentwert, in den Ausarbeitungen [7, 8] willkürlich mit zehn Prozent
 beziffert, beendet die Umgebung die Auswertungsprozedur und gibt dem Agenten ein
 Belohnungssignal auf der Grundlage des erzielten Ergebnisses sowie den neuen Zustand
 der Marktumgebung als Beobachtung zurück.
+
+
 Der Ansatz bietet die Möglichkeit, sowohl den Beobachtungszeitraum als auch die ge-
 handelten Werte und Abbruchkriterien zu variieren. Die Beobachtung besteht aus einer
 Matrix, welche für jeden Sekundentick sowohl die entsprechenden Handelsvolumina als
@@ -1433,17 +1776,19 @@ mit einem längeren Beobachtungszeitraum auch ein breiteres Verständnis des Mar
 erlangen würde, was sich in höheren Gewinnen widerspiegeln würde; doch die in den
 folgenden Sektionen diskutierten Ergebnisse zeigen, dass kurzfristige Beobachtungszeiten
 sich bei bestimmten Werten als gewinnbringender erweisen.
+
+
 3.1.3 Künstliche neuronale Architekturen
+
+
 Ein bestärkend lernender Agent schätzt Zusammenhänge zwischen Beobachtung, Ak-
 tion und Belohnungssignal mit Hilfe eines künstlichen neuronalen Netzwerks. Da das
 Auftragsbuch des Handelsplatzes dem Agenten nicht zur Verfügung steht, präsentiert
 sich das Problem des Handelns mit Differenzkontrakten als ein teilweise beobachtbarer
 markov’scher Entscheidungsprozesses. In diesem Falle kann die Eingabeschicht eines künst-
 lichen neuronalen Netzwerks nur für die beobachtbare Information modelliert werden;
-dies sind der Briefkurs p , der Geldkurs p und die entsprechenden Handelsvolumina
-ask bid
-v , v . Diese, über die Eingabeschicht präsentierten, Zustände s, welche in einem
-ask bid
+FOOTNOTE:dies sind der Briefkurs p , der Geldkurs p und die entsprechenden Handelsvolumina ask bid
+v , v . Diese, über die Eingabeschicht präsentierten, Zustände s, welche in einem ask bid
 Zeitrahmen der Länge l vorliegen, ermöglichen es dem Agenten, eine Entscheidung über
 den Kauf oder den Leerverkauf eines Vermögenswerts zu treffen. In der Ausgabeschicht
 schätzt die neuronale Architektur die Q-Werte Q(s, a) für jede Aktion im Aktionsraum
@@ -1455,34 +1800,76 @@ Korrelationen n verschiedener Basiswerte erfassen kann. Alle Architekturen haben
 zipiell den gleichen Aufbau von Eingabe- und Ausgabeschichten, aber unterschiedlich
 gestaltete Zwischenschichten; lediglich das rekurrente Faltungsnetzwerk erweitert die
 Eingabeschicht um eine weitere Dimension für die n zu korrelierenden Basiswerte.
-Algorithmus 7 Simulierte Marktlogik
-1: procedure Belohnungsfunktion R(Aktion a)
-2: Take-Profit, Stop-Loss Faktoren d profit ≥ 0, d loss ≤ 0
+
+
+FOOTNOTE:Algorithmus 7 Simulierte Marktlogik
+
+
+FOOTNOTE:1: procedure Belohnungsfunktion R(Aktion a)
+
+
+FOOTNOTE:2: Take-Profit, Stop-Loss Faktoren d profit ≥ 0, d loss ≤ 0
+
+
 3: Historische Handelsdaten X
+
+
 4: Sequenzlänge l
-5: r ← 0
-6: if a = 0 then
+
+
+FOOTNOTE:5: r ← 0
+
+
+FOOTNOTE:6: if a = 0 then
+
+
 7: t ← t+1
+
+
 8: end if
-9: if a = 1 then
-10: Eröffnungspreis ← X[t + l][Geldkurs]
-11: while t ≤ len(X) − l ∧ take-profit ≥ r ≥ stop-loss do
+
+
+FOOTNOTE:9: if a = 1 then
+
+
+FOOTNOTE:10: Eröffnungspreis ← X[t + l][Geldkurs]
+
+
+FOOTNOTE:11: while t ≤ len(X) − l ∧ take-profit ≥ r ≥ stop-loss do
+
+
 12: t ← t+1
+
+
 15: end while
+
+
 16: end if
-17: if a = 2 then
+
+
+FOOTNOTE:17: if a = 2 then
+
+
 20: t ← t+1
+
+
 Mehrschichtiges Perzeptron
+
+
 Das mehrschichtige Perzeptron besteht aus drei vollverbundenen vorwärtsgerichteten
 Schichten, wie in Abbildung 3.2 dargestellt. Die ersten beiden Schichten bestehen aus
-500 gleichrichtenden Lineareinheiten mit einem Biaswert von 0, 1. Die Initialisierung
+500 gleichrichtenden Lineareinheiten mit einem Biaswert von $$$0$$$, 1. Die Initialisierung
 der synaptischen Gewichte erfolgt nach der He-Gewichtsinitialisierung ([217]) mit einer
 gleichmäßigen Verteilung. Um zu Vergleichszwecken eine annähernd gleiche Parameterzahl
 wie in der rekurrenten LSTM-Architektur zu erhalten, wird eine dritte Schicht mit 180
-gleichrichtenden linearen Einheiten hinzugefügt, ebenfalls mit einem Bias von 0, 1. Bei
+gleichrichtenden linearen Einheiten hinzugefügt, ebenfalls mit einem Bias von $$$0$$$, 1. Bei
 einer Eingabesequenzlänge von l = 500 und einer Aktionsraumgröße von |A| = 3 verfügt
-diese Architektur über insgesamt 840.540 lernbare Parameter.
+diese Architektur über insgesamt $$$840$$$.540 lernbare Parameter.
+
+
 Long Short-Term Memory
+
+
 Als einfache rekurrente neuronale Architektur wird ein LSTM-Netzwerk mit Vergessens-
 gattern in der Ausgestaltung untersucht, wie es von [125] vorgeschlagen wurde. Gleich
 dem mehrschichtigen Perzeptron besteht die Eingabeschicht aus einer Folge von Handels-
@@ -1492,12 +1879,16 @@ Schicht. Die verborgene LSTM-Schicht besteht aus einer einzigen rekurrenten Schi
 mit 100 gleichrichtenden linearen Einheiten, wie in Abbildung 3.3 dargestellt. Die Initia-
 lisierung der Gewichte erfolgt nach der Normalverteilung. Bei einer festen Eingabelänge
 von l = 500 und einer Aktionsraumgröße von |A| = 3 verfügt dieses LSTM-Netzwerk
-insgesamt 840.300 lernbare Parameter.
+insgesamt $$$840$$$.300 lernbare Parameter.
+
+
 Rekurrentes Faltungsnetzwerk
+
+
 Abbildung 3.4 veranschaulicht die neuronale Architektur des rekurrenten Faltungsnetz-
 werks aus den Untersuchungen zu Beobachtungszeiteffekten von [8]. Hierbei besteht die
 Eingabeschicht für eine Anzahl von beobachteten Basiswerten n über eine Zeitspanne der
-Länge l aus (l×n×4) Eingabeneuronen, wobei die Zahl vier die Anzahl der Preis- und Vo-
+Länge l aus (l×n×$$$4$$$) Eingabeneuronen, wobei die Zahl vier die Anzahl der Preis- und Vo-
 lumensmerkmale wiederspiegelt. Für die erste Faltungsschicht wird die Anzahl der Filter
 f so gewählt, dass die resultierende Aktivierungsform die Dimensionalitätsbedingungen
 der nachfolgenden Faltungsschicht erfüllt. Nach dem Faltungsteil, bestehend aus ingesamt
@@ -1509,12 +1900,18 @@ zwischen einzelnen Vermögenswerten zu erfassen. Hierbei wird nicht von Nachbars
 zwischen den Vermögenswerten ausgegangen, sondern von zeitlichen Korrelationen. So
 kann beispielsweise ein Anstieg des Goldpreises erwartet werden, wenn ein Rückgang des
 Indexwertes beobachtet wird.
+
+
 3.1.4 Methode
+
+
 Diese automatische Handelsmethode mit spekulativen Vermögenswerten beruht auf einer
 statistischen Risikominimierung, welche einen Derivatemarkt als einen teilweise beob-
 achtbaren markov’schen Entscheidungsprozess für Verstärkungslerner simuliert, welche
 eine risikominimale Strategie abzuschätzen lernen. Zur Bestimmung des abzuschätzenden
 Belohnungssignals bewertet die Simulation die durchgeführten Handelsaktionen anhand
+
+
 historischer Marktdaten und gibt den finanziellen Gewinn oder Verlust zurück. Ein be-
 stärkend lernender Agent versucht, mittels Q-Learning, eine optimale Strategie zu finden,
 welche den erwarteten Gewinn maximiert und in gleichem Maße den Verlust minimiert.
@@ -1524,312 +1921,67 @@ faches vorwärtsgerichtetes mehrschichtiges Perzeptron, ein rekurrentes Long Sho
 Memory Netzwerk mit künstlichen Vergessenstoren wie auch ein rekurrentes Faltungsnetz-
 werk werden in der Marktumgebung trainiert und ausgewertet. Als Lernverfahren wird
 ein Q-Learning-Ansatz mit priorisiertem Erinnerungswiederholungsspeicher umgesetzt.
+
+
 Lernverfahren
+
+
 Ein Q-Learning-Ansatz, inspiriert von [218], mit priorisiertem Erfahrungslernen, wie
 von [219] beschrieben, und den verschiedenen bereits beschriebenen Architekturen tiefer
 künstlicher neuronaler Netzwerke ermöglicht es, optimale Handelsstrategien maschinell
 aus einer simulierten CfD-Marktumgebung mit historischen Daten zu lernen. Zur Umset-
 zung der Modelle und des Lernverfahrens wurden die Programmiersprache Python mit
-den Bibliotheken Theano und Lasagne verwendet [220, 221].
-In der Simulation führt jede Aktion zu einem normalisierten Belohnungssignal
+den Bibliotheken Theano und Lasagne verwendet [$$$220$$$, $$$221$$$]. In der Simulation führt jede Aktion zu einem normalisierten Belohnungssignal
+
+
 In der Simulation führt jede Aktion a ∈ A zu einem normalisierten Belohnungssignal
-r ∈ {−0.1...0.1}, welche das Optimierungskriterium darstellt und als solches das Op-
+r ∈ {−$$$0$$$.1...$$$0$$$.1}, welche das Optimierungskriterium darstellt und als solches das Op-
 timierungsverfahren anleitet. Der Agent schätzt mittels des neuronalen Netzwerks die
 Belohnung der Umgebung für seine Aktion und versucht auf diese Weise, die profita-
 belste Handelsaktion für eine bestimmte Marktbeobachtung zu finden. Als Optimisie-
 rungsverfahren wird AdaGrad, wie von [115] beschrieben, genutzt, um als synaptische
 Gewichtungsaktualisierungsregel zu einem optimalen Parametervektor zu finden.
-Für jede aufgezeichnete Handlung im Erinnerungsspeicher ist der Anfangszustand s ,
-1
-die gewählte Aktion a, der Folgezustand s , die erreichte Belohnung r und eine Variable
-2
+
+
+Für jede aufgezeichnete Handlung im Erinnerungsspeicher ist der Anfangszustand s , 1
+die gewählte Aktion a, der Folgezustand s , die erreichte Belohnung r und eine Variable 2
 e bekannt, welche angibt, ob die Aktion in einem geschlossenen Handel endet. Dies
 wäre beispielsweise nicht der Fall, wenn die Episode der Simulation endet, bevor die ent-
 sprechenden Schwellwerte erreicht wurden. Aus diesem Grund werden zur Beschreibung
 des Lernvorgangs einzelne Lernschritte und nicht durchlaufene Episoden der Simulation
-betrachtet. In einem Lernvorgang führt der Agent insgesamt 250.000 Lernschritte durch.
+betrachtet. In einem Lernvorgang führt der Agent insgesamt $$$250$$$.000 Lernschritte durch.
 Für jeden Lernschritt werden b Q-Werte für eine Menge von b unabhängigen Erfahrun-
-gen (s , a, s , r, e) aus dem priorisierten Wiedergabespeicher abgeschätzt. Anschließend
-1 2
+FOOTNOTE:gen (s , a, s , r, e) aus dem priorisierten Wiedergabespeicher abgeschätzt. Anschließend 1 2
 wird die AdaGrad-Gewichtsaktualisierung auf die Parameter des künstlichen neuronalen
 Netzwerks angewandt, welche auf der Differenz zwischen den vorhergesagten und den
 tatsächlichen Q-Werten basiert. Zur Lösung des Exploration-Exploitation Dilemmas wird
-eine (cid:15) − greedy Strategie umgesetzt, nach welcher die ersten zehn Prozent der Lernzeit
+eine (cid:$$$15$$$) − greedy Strategie umgesetzt, nach welcher die ersten zehn Prozent der Lernzeit
 nur zufällige Aktionen ausgeführt werden und in den letzten 40 Prozent der Lernzeit nur
-die Strategie befolgt wird; in der Zwischenzeit fällt (cid:15) linear. Der Pseudocode 8 beschreibt
+die Strategie befolgt wird; in der Zwischenzeit fällt (cid:$$$15$$$) linear. Der Pseudocode 8 beschreibt
 den Ablauf des Q-Lernverfahrens in der simulierten Derivatemarktumgebung aus [7, 8].
-Algorithmus 8 Training in der Marktsimulation
+
+
+Algorithmus $$$8$$$ Training in der Marktsimulation
+
+
 2: Historische Marktdaten X
-3: Priorisierter Erinnerungsspeicher M
-4: Eingabesequenzlänge l
-5: Stapelgröße b
-6: Strategie π(s|Θ)
+
+
+FOOTNOTE:3: Priorisierter Erinnerungsspeicher M
+
+
+FOOTNOTE:4: Eingabesequenzlänge l
+
+
+FOOTNOTE:5: Stapelgröße b
+
+
+FOOTNOTE:6: Strategie π(s|Θ)
+
+
 7: while Lernschritt < Anzahl Lernschritte do
-8: t ← Zufälliger Zeitpunkt in der Markthistorie
-Historische Marktdaten
-Die Grundlage des simulierten Derivatemarktes bilden historische Handelsinformationen.
-Die Abbruchkriterien der Schleifen in der Simulation bedienen sich der aufgezeichneten
-Marktdaten, um die Belohnungsfunktion zu berechnen. Der historische Marktdatensatz
-gliedert sich in zwei Teile; ein Datensatz für eine Machbarkeitstudie auf einem einzelnen
-Indexwert [7] und ein Datensatz für eine tiefergehende Untersuchung der Beobachtungsef-
-fekte auf mehreren Basiswerten [8]. Hierzu wurden im Juli 2019 pro Sekunde fünf Werte
-des deutschen Aktienindexes für eine Machbarkeitsstudie aufgezeichnet. Von den fünf
-pro Sekunde aufgezeichneten Datenpunkten wurden unverändert aufeinanderfolgende
-Datenpunkte gelöscht. Nachdem auf diese Weise einen Monat lang aufgezeichnet wurde,
-wurden die Daten in einen Datensatz für die Trainingssimulation und einen Datensatz
-für eine Testsimulation aufgeteilt. Daraus ergibt sich eine Datenbasis von etwa drei
-Millionen Ticks für die Trainingsumgebung und etwa einer halben Million Ticks für das
-Testverfahren, anhand dessen die Qualität der Modelle bewertet wird.
-Für weiterführende Untersuchungen wurden n = 43 Basiswerte im Sekundentakt vom
-25. Mai 2020 bis zum 27. Juli 2020 während derer gemeinsamen Handelszeiten zwischen
-11:00 und 18:00 Uhr aufgezeichnet. In dieser Marktphase wurde eine allgemeine Erho-
-lung vom Börsencrash im März 2020 beobachtet, Abbildung 3.5 zeigt beispielsweise die
-Tagesschlusskurse des Indexwertes US500 während des Aufzeichnungszeitraums. Die für
-die ausgewählten Vermögenswerte unterscheiden sich stark in der Art der Finanzanlagen,
-die sie darstellen; der Basiswert US500 bezieht sich auf den Standard & Poor’s Aktien-
-index, der die 500 größten börsennotierten Unternehmen in den Vereinigten Staaten
-von Amerika umfasst, während sich die Basiswerte GOLD und OIL auf die jeweiligen
-realen Rohstoffe beziehen. Der Basiswert EURUSD stammt von einem Währungsmarkt
-zwischen dem Euro und dem US-Dollar. Um eine Überanpassung zu vermeiden wurden
-die Daten in einen Trainings- und einen Testdatensatz aufgeteilt, so dass jeder dritte Tag
-dem Testdatensatz und nicht dem Trainingsdatensatz hinzugefügt wird.
-3.1.5 Auswertung
-Zunächst wurde von [7] eine Machbarkeitsstudie mit den einfachen Modellen allein auf
-den Werten des deutschen Aktienindexes durchgeführt. In diesem Zuge wurde auch ein
-Echtzeittest unter realen Marktbedingungen durchgeführt, um die Anwendbarkeit des
-Ansatzes in der realen Welt zu bewerten. Weiterführende Auswertungen von [8] befassen
-sich mit den Auswirkungen der Korrelation verschiedener Basiswerte in verschiedenen
-Beobachtungszeiträumen.
-Machbarkeitsstudie
-Um zu evaluieren, ob dieser Ansatz funktioniert, werden die Aufzeichnungen des DE30-
-Index, welcher den deutschen Aktienindex abbildet, aus dem Juli 2019 genutzt. Zur
-Bestimmung guter Trainingsparameter wird eine Gittersuche in einem Raum aus Sta-
-pelgröße b ∈ {10, 50, 100}, Lernrate η ∈ {10−4, 10−5, 10−6} und Eingabesequenzlän-
-ge l ∈ {50, 100, 250} durchgeführt. Durch den Vergleich der Kapitalentwicklung nach
-1.000 Testtransaktionen kann eine optimale Parameterkonfiguration bestimmt werden.
-Für das mehrschichtige Perzeptron findet sich diese optimale Trainingsparameterkon-
-figuration in (b = 100, l = 50, η = 10−5); für das einschichtige LSTM-Netzwerk in
-(b = 10, l = 50, η = 10−4). Zum Vergleich mit einer Baseline wurde, zusätzlich zu den
-Untersuchungen von [7], auch ein lineares Modell zur Annäherung der Q-Werte aus den
-Handelsdaten ausgewertet; hierfür wurde ebenfalls eine optimale Lernkonfiguration in
-den Parametern (b = 10, l = 50, η = 10−4) gefunden. Um nun die Modelle zu bewerten
-werden Tests in der Simulation mit den bisher ungesehenen Marktdaten durchgeführt.
-Hierbei führt der Agent keine Aktion aus wenn für eine optimale Aktion a die erwartete
-Belohnung Q(s, a) < 0 ist, da der Agent einen Gewinn und nicht etwa einen minimalen
-Verlust umsetzen soll. Dadurch verlängert sich die Zeit zwischen den Handelsaktivitäten
-zugunsten einer höheren Erfolgswahrscheinlichkeit. Jedes mehrschichtige Perzeptron und
-LSTM-Netzwerk führt insgesamt 1.000 Testgeschäfte auf den ungesehenen Daten durch,
-jede Testreihe beginnt mit einem Eigenkapital von 1.000$.
-Aus der Verteilung der Aktionen in der Abbildung 3.6 ist ersichtlich, dass sowohl der MLP-
-als auch der LSTM-Agent häufiger Leerverkaufspositionen als Kaufpositionen eröffnen.
-Das lineare Modell trifft häufiger Kaufentscheidungen und führt zwar zu einer positiven
-Kapitalentwicklung bei geringeren Trainingszeiten, unterliegt jedoch den Erträgen der
-tiefen neuronalen Architekturen. Um einen Handel auszuführen, beobachtet das mehr-
-schichtige Perzeptron im Durchschnitt 2429 Ticks, während das LSTM-Netzwerk auf 4.654
-Beobachtungen wartet, bevor es einen Handel ausführt. Während das LSTM-Netzwerk
-zum Abwarten neigt und häufiger die Aktion a = 0 wählt, trifft das MLP also schneller
-Entscheidungen. In der Eigenkapitalentwicklung aus Abbildung 3.6 kann ein Anstieg
-für alle drei Modelle gesehen werden; das LSTM-Netzwerk hat das Lernproblem am
-Besten gelöst, vermutlich aufgrund eines konzeptionellen Vorteils durch die immanente
-Behandlung von Sequenzen. Dies bestätigt sich bei der Betrachtung der in Abbildung
-3.6 dargestellten Unterschiede in der Gewinnverteilung.
-Echtzeittest
-Um die Ergebnisse der Machbarkeitsstudie unter realen Marktbedingungen zu überprüfen,
-wurde ein Demokonto bei einem CfD-Anbieter eingerichtet, welcher eine entsprechende
-API für maschinelles Handeln zur Verfügung stellt. Als Basiswert wurde der Differenzkon-
-trakt DE30 gewählt, welcher auf dem deutschen Aktienindex basiert. Die Handelsstrategie
-wird von einer LSTM-Architektur vorgeschlagen, da das LSTM-Netzwerk in der Machbar-
-keitsstudie bessere Ergebnisse erzielt hat als ein vergleichbares mehrschichtiges Perzeptron.
-Zunächst wird versucht, das beste gefundene Modell ohne weitere Veränderungen anzu-
-wenden; jedoch zeigten sich Latenzprobleme, da der Agent in der Simulation im Bereich
-von Sekundenbruchteilen gelernt hat, hier jedoch mit Verzögerungen in höheren Abstän-
-den handeln muss. Zum Einen veranlasst dies den Agenten, Entscheidungen auf der
-Grundlage einer längst vergangenen Beobachtung zu treffen, zum Anderen verzögert sich
-die Durchführung der Handelsorder, so dass sich die Marktsituation bereits geändert hat
-und die Festlegung der Schwellwerte nicht mehr passt. Als ersten Ansatz um diese Latenz-
-probleme zu lösen, wurde eine LSTM-Architektur mit einer zusätzlichen Schicht von 250
-LSTM-Zellen entwickelt, wie in Abbildung 3.7 dargestellt. Auch wurde der Aktionsraum
-auf A = |10| vergrößert, indem eine Schwellwertfunktion d (a) eingeführt wird, welche
-profit
-jeder Aktion a einen bestimmten Schwellwert δ zuordnet. Anstelle eines multiplikativen
-Faktors kann der Agent im Echtzeittest über seine Aktion einen Schwellwert wählen, um
-höhere Spreads zu antizipieren indem mehrere mögliche Stop-Loss- und Take-Profit-Werte
-zur Auswahl stehen:
-Hierbei entspricht die Aktion a = 0 der Warteaktion, die Aktionen a ≤ 5 eröffnen
-entsprechende Kaufpositionen und die Aktionen a > 5 entsprechende Leerverkaufsposi-
-tionen. Durch diese Methode wurde ein gewisser Spielraum in der Strategie geschaffen,
-um die verschiedenen, durch die Latenzzeit verursachten, Probleme zu bewältigen. Diese
-anpassbaren Werte δ ermöglichen es dem Agenten, unterschiedliche Preisänderungen zu
-antizipieren. Dies verringert zwar das Risiko eines sofortigen Ausfalls, führt in diesem Falle
-aber auch zu einem höheren Verlust. Um den Agenten auf aktuellen, realen Marktdaten
-zu trainieren, wurde dessen künstliches neuronales Netzwerk außerhalb der Handelszeiten
-mit den während dieses und vorheriger Handelstage aufgezeichneten Daten trainiert.
-Das LSTM-Netzwerk aus Abbildung 3.7 wurde mit einer Trainingsparameterkonfiguration
-von (b = 50, l = 250, η = 10−5) trainiert. In der entsprechenden Lerndynamik, darge-
-stellt in Abbildung 3.8, kann gesehen werden, dass der Agent potenziell hohe Gewinne
-beibehält und gleichzeitig versucht, Verluste zu reduzieren, was während des Trainings
-insgesamt zu einem kleinen Gewinn führt. Der Test auf dem realen Handelsplatz wurde
-zehn Handelstage lang durchgeführt, an welchen der Agent komplett selbständig und ohne
-manuelles Eingreifen 16 Handelsgeschäfte eröffnet und geschlossen hat. Hierzu wurde
-ein einfaches regelbasiertes Absicherungssystem umgesetzt, welches es dem Agenten
-erlaubt, eine Kaufposition, eine Leerverkaufsposition und eine dritte zufällige Position
-gleichzeitig zu eröffnen. Die Abbildung 3.9 zeigt die vom Agenten erzielten Gewinne und
-den entsprechenden Anstieg des Eigenkapitals.
-Abbildung 3.7: Die neuronale Architektur für die Anwendung im Echtzeittest,
-entnommen aus [7].
-Beobachtungseffekte
-Da bisher nur ein Basiswert mit einer festen Beobachtungslänge untersucht wurde, er-
-geben sich Fragen nach dem Effekt von unterschiedlichen Beobachtungszeiten und der
-Nutzung von Korrelationen zwischen verschiedenen Basiswerten. Um diese Auswirkungen
-zu verstehen, werden Kombinationen von Beobachtungszeiträumen und Vermögenswerten
-untersucht. Auf dieser Grundlage von Beobachtungen n = 43 unterschiedlicher Basis-
-werte werden Beobachtungszeiten systematisch in unterschiedlichen Maßen angepasst.
-Hierzu werden verschiedene Zeiträume T = {10s, 30s, 45s, 60s, 5m, 8m, 10m, 12m} in
-jeweils fünf Testdurchläufen ausgewertet, welche dazu dienen statistische Effekte zu
-glätten, um zu einem aussagekräftigeren Ergebnis zu gelangen. Damit werden sowohl
-kleine Beobachtungszeiträume, wie zum Beispiel zehn Sekunden, aber auch recht lange
-Beobachtungszeiträume mit einer Eingabelänge von zwölf Minuten erfasst. An dieser
-Stelle könnte die Annahme getroffen werden, dass längere Beobachtungszeiträume es
-ermöglichen würden, eine breitere Strategiegrundlage zu entwickeln, welche zur weiteren
-Maximierung von Gewinne beitragen würde; jedoch stellt sich heraus, dass für jeden
-Basiswert verschiedene optimale Beobachtungszeiträume existieren.
-Zur Auswertung eines jeden Beobachtungszeitraums wird derselbe Aufbau aus einem
-Haupttrainingszyklus und fünf verschiedenen Testzyklen verwendet. Ein Testzyklus be-
-steht dabei aus jeweils einhundert Testtransaktionen, bei denen der Agent jeweils eine
-Entscheidung auf der Grundlage der gegebenen Beobachtung aus allen 43 Basiswerten
-trifft. Hierbei wird die rekurrente Faltungsarchitektur aus Abbildung 3.4 genutzt, wobei
-die Größe der Eingabeschicht je nach der gegebenen Beobachtungszeit verändert wird. Die
-optimalen Hyperparameter, wie etwa die Lernrate und die Stapelgröße, werden hierzu aus
-der Machbarkeitsstudie übernommen; an dieser Stelle würde sich, wie später diskutiert,
-ein Metalernansatz anbieten, um optimale Trainingsparameter abzuschätzen.
-Als Indikator für die allgemeine Leistung eines auf diese Weise trainierten Handelsagen-
-ten wird die Anzahl der Tests mit finanziellem Gewinn oder Verlust gezählt. Wenn
-ein Agent einen Testlauf mit einem positiven Eigenkapitalzuwachs abschließt, zählen
-wir dies als Gewinn; es werden also nicht die Eigenkapitalentwicklungen sondern nur
-deren Vorzeichen gezählt. Dies ermöglicht es, ein breites Spektrum an möglichen Beob-
-achtungszeiträumen zu vergleichen, da der Gesamterfolg nicht von konkreten Preisen
-abhängt. Für jeden der vier zu handelnden Basiswerte (US500, OIL, GOLD, EURUSD)
-werden fünf Testdurchläufe in den jeweils acht verschiedenen Beobachtungszeiträumen
-durchgeführt, also insgesamt 160 Versuche, um zu bestimmen, welche Auswirkungen die
-Beobachtungszeiträume auf den Handelserfolg in den bestimmten Märkten haben.
-Abbildung 3.10 zeigt die Anzahl positiver Handelsabschlüsse für alle Beobachtungslängen
-und alle Vermögenswerte. Hier lässt sich kein eindeutiger Trend erkennen, jedoch kann
-interpretiert werden, dass eine optimale Laufzeit vom jeweiligen Basiswert abhängen
-muss. Die Darstellung der über alle Zeiträume summierten Ergebnisse in Abbildung 3.10
-zeigt, dass der Ansatz des bestärkenden Lernens am zuverlässigsten auf dem Devisen-
-markt funktioniert, während der Indexwert US500 und der Goldmarkt an zweiter Stelle
-stehen und die geringste Anzahl von Gewinnen auf dem Ölmarkt zu finden ist. Um die
-Zusammenhänge im Detail darzulegen zeigt Tabelle 3.1 die Anzahl der Gewinne für alle
-einzelnen Vermögenswerte und zeitlichen Auflösungen; hierbei zeigt sich keine eindeutig
-überlegene Konfiguration, jedoch gute Ergebnisse für den Indexwert US500 sowohl bei
-45 Sekunden als auch bei einem Beobachtungszeitrahmen von zehn Minuten, gefolgt vom
-Goldmarkt bei zehn Minuten und dem EURUSD Devisenmarkt bei zehn Minuten und
-45 Sekunden.
-Tabelle 3.1: Eine detaillierte Darstellung der Auswirkungen der Beobachtungs-
-zeiträume auf die Basiswerte in Tabellenform, entnommen aus
-[8]. Jede Zelle enthält die Gesamtzahl der positiven Auskommen
-(maximal 5) für jede Kombination von Vermögenswert und Beob-
-achtungszeitrahmen.
-Abbildung 3.10: Links: Die Anzahl der positiven Ergebnisse in allen Versu-
-chen einer bestimmten Beobachtungsdauer. Das Maximum
-von zehn positiven Versuchen findet sich bei einer Beobach-
-tungsdauer von zehn Minuten, das zweitbeste Ergebnis bei 45
-Sekunden. Rechts: Die Gesamtzahl der positiven Ergebnisse
-pro Basiswert, addiert über alle Zeitspannen. Beide Graphen
-sind entnommen aus [8].
-3.1.6 Diskussion
-Mit der im Rahmen dieser Herausforderung entwickelten Anwendung wurde parametrier-
-bare Trainingsumgebung beigesteuert, welche das Training bestärkt lernender Agenten
-für einen Derivatemarkt ermöglicht. Die Implementierungen mit tiefen künstlichen neuro-
-nalen Netze dienen als Konzeptnachweise für künstlich intelligente Handelsautomaten,
-welche auf hohen Frequenzen handeln können. Bezüglich der Marktsimulationslogik
-muss zunächst einmal festgestellt werden, dass die Untersuchungen den Einfluss der
-Handelsentscheidungen anderer Akteure auf die Preisentwicklung vernachlässigen. Eine
-Beobachtung der Lernerfolge in Derivatemarksimulation zeigt auf, dass es wichtig ist, ein
-Trainingsdesign zu verwenden, welches den tatsächlichen Handelsbedingungen entspricht.
-Durch den Vergleich der Ergebnisse des rekurrenten LSTM-Netzes mit dem mehrschichti-
-gen Perzeptron und einem linearen Modell kann die Annahme bestätigt werden, dass die
-Annahme von Sequenzen in Handelsdaten die Ergebnisse eines maschinellen Lernsystems
-verbessern. Die Untersuchungen zeigen, dass künstlich intelligente Handelsautomaten,
-je nach Umgebung, verschiedene optimale Strategien erlernen können. Jedoch wurde
-nicht untersucht, welche Auswirkungen eine Veränderung des Nutzen-Risiko-Verhältnisses
-während der Trainingszeit hat. Weiterhin wurde nicht untersucht, wie sich eine Vergröße-
-rung des Wiederholungsspeichers, oder andere Lernverfahren als Q-Lernen, beispielsweise
-asynchrone Verfahren, auf den Lernerfolg auswirken. Anstelle einer Stapelnormalisierung
-mit einer Division durch die Standardabweichung wurde nur der Mittelwert abgezogen.
-Für den Echtzeittest wurde ein Demokonto mit einer begrenzten Gültigkeit von nur 20
-Handelstagen verwendet, was die Ergebnisse relativiert, da effektiv nur zehn Handelstage
-genutzt werden konnten, um den Ansatz unter realen Bedingungen zu evaluieren.
-Für zukünftige Forschung in dieser Richtung bleibt die Frage nach einem Metalerner
-bezüglich der Variation der Hyperparameter des Lernvorgangs, welche das Lernverhalten
-des Agenten verändern können. Ebenso bleibt die Frage bestehen, inwiefern vortrainierte
-Modelle mit Hilfe von Transferlernen, beispielsweise über Feinabstimmung, an neue
-Marktsituationen angepasst werden können. Im Sinne des Transfer Meta Learning würde
-eine Vergleichsstudie benötigt, in welcher vortrainierte Modelle unter Zuhilfenahme von
-Metadaten auf neue Marktsituationen transferiert werden können. Um diese grundlegen-
-de Vergleichsstudie durchzuführen würde eine entsprechende Marktsimulation benötigt
-werden, welche die Daten in den verschiedenen benötigten Darstellungen bereitstellen und
-auch die verschiedenen Ordertypen interpretieren kann. Eine solche Umgebung könnte
-auch eine Handelslogik für verschiedene Basiswerte, Geschäftsarten und deren Derivate
-bieten. Durch die Einführung einer zufälligen Wartezeit würde die Simulation Versuche
-ermöglichen, welche den Anforderungen an Untersuchungen des Hochfrequenzhandels
-Rechnung tragen; so würde eine solche künstliche Latenz die Simulation verschiedener
-Agenten ermöglichen, welche in verschiedenen Signallaufzeiten miteinander konkurrieren.
-Die Erforschung der Auswirkungen einer Änderung der Beobachtungszeitspanne auf
-tägliche, oder gar wöchentliche, Zeitspannen bleibt ebenfalls Gegenstand für zukünftige
-Forschung. Darüber hinaus könnte in zukünftigen Arbeiten in dieser Richtung auch die
-Integration von Wirtschaftsnachrichten als Eingangswortvektoren in Betracht gezogen
-werden. Auf diese Weise können die Handelsvorschläge der bestärkend lernenden Agenten
-als hilfreicher Input für ausgefeiltere Handelsalgorithmen dienen, welche beispielsweise
-auf vorheriges Marktwissen über gesellschaftspolitische Zusammenhänge in Form von
-Nachrichten zurückgreifen. Da diese Anwendung es ermöglicht, Handelsstrategien auf
-prinzipiell beliebigen Zeitskalen zu erlernen, könnten auch Minuten-, Stunden- oder
-sogar Tagesschlusskurse als Datenbasis für das Training bereitgestellt werden. So könnte
-beispielsweise ein regelbasiertes System, welches langfristige Marktkenntnisse integriert,
-die Vorschläge der kurzfristig agierenden Agenten nutzen, um ein vollautomatisches,
-zuverlässiges Handelsprogramm zu erstellen. Ein solches Programm könnte die Agenten
-auch daran hindern, Positionen oberhalb oder unterhalb eines bestimmten Schwellenwerts
-zu eröffnen, welchen beispielsweise ein menschlicher Bediener auf der Grundlage seiner
-vorherigen Marktkenntnisse festlegen könnte.
-Weitere mögliche Entwicklungen in dieser Richtung bestehen darin, die verschiedenartigen
-Beobachtungen zunächst in einen latenten Raum zu überführen, beispielsweise mit einem,
-entsprechend der Herausforderung angepassten, Variational Autoencoder (VAE) [170, 59].
-Mit einem solchen latenten Vektor, welcher den Zustand des Marktes zusammenfassend
-beschreibt, könnten, nach dem Vorbild der Weltmodelle [19], Mixture Density Networks
-(MDN) [171] Einsatz finden, um den nächsten Zustand anhand des aktuellen Zustands
-vorherzusagen. Auf diese Weise kann das in einem Weltmodell zusammengeführte Wissen
-mit nur wenigen lernbaren Parametern in beliebige neue Handelssituation übertragen
-werden. Ein Transferlernansatz über Weltmodellwissen hat die Vorteile der zeitlichen
-Invarianz, erklärbarer Strategien, und der schnellen Übertragung auf neue Aufgaben.
-Zusammenfassend lässt sich sagen, dass diese Anwendung die Existenz eines Hochfre-
-quenzhandelssystems belegt, welches den Markt zumindest in einer Simulation bei einer
-Latenzzeit gegen Null deutlich übertrifft. Der Echtzeittest zeigt außerdem, dass zusätz-
-liche Modellparameter eine geringere Latenz bis zu einem gewissen Grad ausgleichen
-können. Abschließend wird bestätigt, dass sich keine allgemein optimale Beobachtungs-
-zeit finden lässt, sondern dass die optimale Beobachtungszeit stark von dem gewählten
-Handelsobjekt abhängt; bei der Verwendung unterschiedlicher Beobachtungszeiträume
-zeigt sich in keinem Fall eine generelle Verbesserung bei längerer oder kürzerer Dauer
-der Eingabesequenz.
-3.2 Handgestenerkennung
-Eine praktisch nützliche Anwendung maschinellen Lernens im Bereich der Mensch-
-Maschineinteraktion ist die Erkennung von Handgesten. Dies erlaubt einem Menschen
-über symbolische Handbewegungen mit einer Maschine, beispielsweise einem Automo-
-bilfahrzeug, intuitiv zu interagieren. Aktuelle Ansätze zur maschinellen Handgestener-
-kennung nutzen Kamerabilder, meistens in Kombination mit Raumtiefeninformation
-von Time-of-Flight-Sensoren, um mit faltenden neuronalen Netzwerken statische Gesten
-oder, mit Videoaufnahmen und LSTM-Netzwerken, dynamische Handgesten zu klassi-
-fizieren, wie in der Metastudie von [9] untersucht. Abbildung 3.11 veranschaulicht die
-Zusammenhänge dieser Problemstellung in Form eines UML-Diagramms.
-Abbildung 3.11: Ein UML-Diagramm zur Skizze der Zusammenhänge zwi-
-schen Sensordaten, neuronalen Netzwerken und Handgesten.
-Die Sensordaten entstammen entweder Farb- oder Raum-
-tiefenkameras. Verschiedene neuronale Netzwerke versuchen
-aus diesen Daten eine Abbildung zu Handgesten zu lernen,
-welche sich über eine Ganzzahl als Klasse eines Datensatzes
-klassifizieren lassen.
-In der Metastudie von [9] wurden verschiedene Handgestenerkennungssysteme auf
-Basis von Farb- und Raumtiefenbildern untersucht. Die untersuchten Forschungsarbei-
-ten in diesem Bereich verwenden eine Vielzahl von unterschiedlichen Modellen und
-Datensätzen. Abbildung 3.12 zeigt die zeitliche Entwicklung datengetriebener Handgeste-
-nerkennungssysteme auf Basis von Raumtiefeninformation von den ersten Ansätzen bis
-hin zu aktuellen tiefen künstlichen neuronalen Architekturen.
+
+
+FOOTNOTE:8: t ← Zufälliger Zeitpunkt in der Markthistorie
+
+

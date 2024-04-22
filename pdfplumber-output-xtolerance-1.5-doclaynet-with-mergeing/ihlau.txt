@@ -1,0 +1,1566 @@
+unter Einbeziehung einer computergestützten 3D-Rekonstruktion
+
+
+Dissertation
+
+
+Zur Erlangung des akademischen Grades
+doctorum rerum naturalium (Dr. rer. nat.)
+im Fach Biologie
+
+
+eingereicht an der Mathematisch-Naturwissenschaftlichen Fakultät I
+der Humboldt Universität zu Berlin
+
+
+von
+
+
+Dipl. Biol. Jan Ihlau
+
+
+Präsident der Humboldt-Universität zu Berlin
+Prof. Dr. Christoph Markschies
+Dekan der Mathematisch-Naturwissenschaftlichen Fakultät I
+Prof. Dr. Andreas Hermann
+
+
+Gutachter: 1. Prof. Dr. Ulrich Zeller
+
+
+2. Prof. Dr. Wolfgang Maier
+
+
+3. Prof. Dr. Martin S. Fischer
+
+
+Tag der mündlichen Prüfung: 31.03.2011
+
+
+Abstrakt
+
+
+An Hand einer Reihe Ontogenesestadien konnte die Entwicklung ausgewählter Bereiche des
+Schädels von Macroscelides proboscideus dargestellt werden. Die Befunde der Craniogenese
+vom Macroscelides proboscideus wurden mit Elephantulus spec., anderen Macroscelidea und
+Orycteropus afer verglichen. In der vorliegenden Arbeit wurden bisher nicht beschriebene
+Synapomorpien der Macroscelidea dargestellt, die einen Beitrag zur Erstellung des Grund-
+musters dieser Gruppe leisten. Es konnten folgende Befunde erhoben werden: Bei Macrosce-
+lides proboscideus wurde ein bisher nur bei Elephantulus brachyrhynchus und Elephantulus
+myurus beschriebener Knorpel gefunden: diese Cartilago lateralis dient bei Macroscelides
+proboscideus als rostraler Ursprung des Musculus maxillo-labialis ventralis. Wird dieser Be-
+fund für weitere Vertreter der Sengis bestätigt, könnte es sich um eine Autapomorphie der
+Macroscelidea handeln. Ein fehlender Processus postorbitalis des Frontale scheint für Mac-
+roscelides proboscideus abgeleitet zu sein. Das Foramen subopticum, das bei den Orycteropo-
+didae fehlt, ist eine Apomorphie der Sengis.
+
+
+Die eindeutig basale Position der Macroscelidea innerhalb des Stammbaums der Afrotheria,
+die auf wenigen Fossilien gestützte phylogenetische Entwicklung, die bis heute nicht geklär-
+ten intrafamiliären Beziehungen innerhalb der Macroscelididae und die fehlenden cranialen
+Apomorphien der Afrotheria lassen viel Raum für weitergehende vergleichende Untersuchun-
+gen.
+
+
+Es wurden histologische Schnittserien digital fotografiert und als Grundlage für eine compu-
+tergestützte 3D-Rekonstruktion verwendet, so dass ein digitales 3D-Modell eines Stadiums
+der Sengis für Vergeichszwecke vorliegt.
+
+
+Schlagworte:
+
+
+Elefantenspitzmäuse, Kraniogenese, Macroscelidea, Afrotheria, Stammartmuster, com-
+puter gestützte 3D-Rekonstruktion
+
+
+Abstract
+
+
+Sengis (formerly known as elephant shrews) represent a monophyletic group within Afrothe-
+ria. An ontogenetic study on cranial development was conducted by histological slicing 7 in-
+dividuals of Macroscelides proboscideus and Elephantulus spec. Through the development of
+an computer aided 3D- computer model following aspects could be found: The Cartilago lat-
+eralis, a separate cartilage holding the rostral beginning of the Musculus maxillo-labialis ven-
+tralis could be described for two species of Sengis and might turn out to be a cranial autapo-
+mophie for Macroscelidea. The in Oryctepodiadae missing Foramen subopticum is present in
+all Sengis. The basal position of Sengis within Afrotheria and the still missing cranial Apo-
+morphies for the Afrotheria leave much space for further discussions.
+
+
+Sengis, Craniogenesis, Macroscelidea, Afrotheria, stem species pattern, computer aided
+3D-Reconstruction
+
+
+Danksagung
+
+
+Mein besonderer Dank gilt Herrn Prof. Zeller für die freundliche Überlassung des Themas,
+der großzügigen Bereitstellung eines Arbeitsplatzes und der konstruktiven Betreuung meiner
+Arbeit.
+
+
+Herr Dr. Peter Giere unterstützte den Arbeitsprozess durch fruchtbare Diskussionen und viele
+Ratschläge. Seine Hinweise und Hilfestellungen waren besonders relevant für diese Arbeit.
+
+
+Bei den Laborarbeiten stand mir Frau Jutta Zeller immer hilfreich zur Seite. Ohne ihre Hilfe
+wäre das zu untersuchende Material kaum zu bearbeiten gewesen.
+
+
+Ganz herzlich möchte ich Dr. Robert Asher danken. Seine Unterstützung half mir über man-
+che Schwierigkeiten hinweg.
+
+
+Nicht zuletzt gilt mein Dank allen Mitarbeitern des Museum für Naturkunde, die es mir er-
+möglichten, alle notwendigen Geräte und Materialien zu nutzen und die mir mit Rat und Tat
+zur Seite standen.
+
+
+1 Einleitung
+
+
+In der Großgruppensystematik der Mammalia wird heute zwischen 18 traditionell als Ord-
+nungen zusammengefassten Taxa plazentaler (höherer) Säugetiere, sieben Taxa Marsupialia
+und einem Taxon Monotremen unterschieden (Douady, 2001). Auch wenn viele Großgruppen
+als gesicherte monophyletische Einheiten gelten (z. B. Primaten), besteht bei der Einordnung
+vieler Taxa innerhalb ihrer Gruppe noch eine Reihe von Unsicherheiten. Schon lange ist be-
+kannt, dass die phylogenetische Einordnung einiger Taxa, der ehemals unter dem Begriff „In-
+sectivora“$$$1$$$ zusammengefassten Arten, wichtig für das Verständnis und die weitere Klärung
+der Verwandtschaftsverhältnisse aller Säugetiere ist (Butler, 1972). Auch wenn die „Insectivo-
+ra“ heute nicht mehr als Monophylum gelten können, ist die phylogenetische Einordnung ei-
+niger ehemaliger Teilgruppen nicht endgültig geklärt. Die in der Vergangenheit wechselnde
+Anzahl an Vertretern der „Insectivora“ und die unscharfen Kriterien brachten dieser Gruppe
+die Bezeichnung „waste basket“ ein (vgl. Butler, 1972; Novacek, 1986). Schon Haeckel
+(1866) unterteilte sie in die Insectivora-Menotyphla (Dermoptera, Scandentia und Macrosce-
+lidea) und die Insectivora-Lipotyphla (Erinaceidae, Talpidae, Soricidae, Solenodontidae, Ten-
+recidae sowie Chrysochloridae). Mit molekularen Daten werden neue Hypothesen zu den ver-
+wandtschaftlichen Beziehungen der betrachteten Taxa formuliert, die häufig von den mit
+morphologischen Daten erstellten Stammbäumen abweichen. Auf der Grundlage solcher Be-
+funde wurde die Gruppe der Afrotheria bestimmt (Springer et al., 1997; Stanhope et al.,
+1998). Die in ihr zusammengefassten Taxa sind zu einem wesentlichen Forschungsschwer-
+punkt geworden (z.B. Schunke und Zeller, 2010). Befunde molekularer Untersuchungen an
+mitochondrialen Proteinen (Mouchaty et al., 2000; Arnason und Janke, 2002), am Growth
+Hormone Receptor Gen (Malia et al., 2002) und die Arbeiten an IRBP, vWF, BRCA 1 (Doua-
+dy, 2001) scheinen zu belegen die Monophylie der Afrotheria. Maier (2002) führt an, dass
+diese neuen molekularen Befunde als Arbeitshypothesen eine große Herausforderung für die
+vergleichend-anatomische Forschung darstellen. Es ist zu überprüfen, inwieweit sich die Er-
+gebnisse beider Forschungsmethoden ergänzen und zu neuen Schlussfolgerungen führen kön-
+nen. Zeller (1999) sieht gerade in einem integrativen Ansatz, also der Kombination aus gene-
+tischen Ergebnissen mit morphogenetischen Resultaten, eine wesentliche Grundlage zur
+Klärung phylogenetischer Fragen. Die Ergebnisse der molekularen Forschung zur Phylogenie
+
+
+FOOTNOTE:1 Begriffe, die keine systematischen Beziehungen widerspiegeln, aber der sprachlichen Vereinfachung oder zur
+Abgrenzung allgemein verwendeter Begriffe dienen, werden in dieser Arbeit in Anführungszeichen gesetzt.
+
+
+der Säugetiere geben Anlass, bisher als nicht näher verwandt geltende Taxa morphologisch-
+anatomisch miteinander zu vergleichen. So konnten Mess und Carter (2006) und Carter et al.
+(2006) unter Berücksichtigung molekular begründeter Stammbäume ein morphologisches
+Merkmal, den vierlappigen Alantois-Sack, als mögliche Autapomorphie der Afrotheria be-
+FOOTNOTE:schreiben.
+
+
+Obwohl die phylogenetische Position einiger der damals als „Insectivora“ zusammengefassten
+Taxa noch nicht endgültig geklärt ist, stellt die Afrotheria-Hypothese die Arbeitsgrundlage der
+vorliegenden Arbeit. Es wird davon ausgegangen, dass die rezenten Vertreter der Proboscidea,
+der Sirenia, der Macroscelidea, der Afrosoricida (Chrysochloridea und Tenrecoidea), der Hy-
+racoidea und der Tubulidentata eine gemeinsame Gruppe afrikanischer Herkunft bilden. Diese
+These scheint die am besten gestützte zu sein (Springer, 2003). Sie bietet die Möglichkeit,
+bisher erhobene Befunde mit neuen anatomisch-morphologischen Ergebnissen unter bisher
+wenig berücksichtigten phylogenetischen Gesichtspunkten zu betrachten.
+
+
+Viele afrikanische Kleinsäuger wurden seit ihrer Entdeckung, so weit das möglich war, mit
+Vertretern Europas und anderer Kontinente verglichen, entsprechend benannt und klassifiziert.
+Deshalb sind für Vertreter der Macroscelidea irreführende Trivialnamen, wie zum Beispiel
+„Elefantenspitzmaus“ und „Rüsselspringer“, erhalten geblieben. Um Verwechslungen vorzu-
+beugen und um eine klare Abgrenzung der hier untersuchten Macroscelidea vorzunehmen,
+wird in dieser Arbeit der Begriff „Sengis“$$$2$$$ als Ersatz für die Trivialnamen dieser Gruppe ver-
+wendet (vgl. auch Grafik 1, S. 3).
+
+
+Schon lange existieren Beschreibungen und Abbildungen von Tieren, die wir heute als Mac-
+roscelidea kennen. Lichtenstein (1831) präsentiert „Rhinomys jaculus“, die sich auf zwei Bei-
+nen hüpfend fortbewegen. Nach den Erklärungen und Zeichnungen zu urteilen, entspricht
+Rhinomys wohl Macroscelides proboscideus. Auf Grund morphologischer, ethologischer und
+molekularer Merkmale gilt heute jedoch als gesichert, dass die Macroscelidea nicht zu der
+Gruppe der „Mäuse“ oder gar „Spitzmäuse“ zählen. Schon Fitzinger (1867) beschreibt die
+quadrupede Fortbewegung der Macroscelidinae, und Geoffroy Saint-Hilaire (1829) bemerkt
+wesentliche Unterschiede der Zähne von Macrosceliden im Vergleich zu den „Insectivoren“.
+Durch Freilandbeobachtungen widerlegten unter anderem Rathbun (1979; 1995) und Sauer
+(1979; 1995) in neuerer Zeit einige ungesicherte Anekdoten wie z.B. die, dass Sengis sich im
+Wesentlichen hüpfend fortbewegen. Auch wenn die verhältnismäßig langen Hinterbeine eine
+
+
+FOOTNOTE:2 Nach Rathbun und Kingdon (2006) kann dieser Begriff, der laut Kingdon (1974) Kiswahili ist, sowohl für die
+Macroscelidea als auch für Macroscelididae verwendet werden.
+
+
+hüpfende oder springende Fortbewegung vermuten lassen, laufen die Tiere vorwiegend
+quadruped und springen nur bei Fluchtreaktionen. Viele Beobachtungen zu den Ernährungs-
+gewohnheiten, den Aktivitätszeiten und der Jungtieraufzucht bei den Macroscelidea wurden
+aus Zuchtkolonien in Zoologischen Gärten, Tierparks und aus privaten Zuchten gewonnen (z.
+B. Hoesch, 1959; Olbricht, 2006). Zu natürlichen Sozialstrukturen und zur Ökologie sind aber
+auch bei Feldstudien Befunde erhoben worden (z.B. Rathbun, 1979; Coster und Ribble, 2005;
+Rathbun und Rathbun, 2006). Sengis legen selbst keinen Bau an, sondern leben entweder un-
+ter Sträuchern und Steinen oder unterhalten ein kompliziertes Pfadesystem (Sauer und Sauer,
+1971; MacDonald, 2001). Dieses Wegesystem wird regelmäßig von Steinen, Zweigen oder
+anderen Objekten gesäubert und mit Duftstoffen markiert (Unger, 1999). Selten nutzen sie
+Höhlen oder den Bau anderer Kleinsäuger. In Einzelfällen wurde beobachtet, dass eine kleine
+Mulde vom Muttertier gescharrt wird. Die Jungen werden sehr reif, voll behaart und mit offe-
+nen Augen meist auf dem Pfadesystem geboren (Sauer, 1973; 1974; Szdzuy und Zeller, 2008).
+Die Jungtiere bei Macroscelides proboscideus bleiben nach der Geburt über mehrere Stunden
+auf sich allein gestellt, bevor die Mutter zum Säugen zu ihnen zurückkehrt. Nur einige Arten
+(vor allem innerhalb der Rhynchocyoninae) bauen ein einfaches Nest. Die Habitatpräferenzen
+unterscheiden sich stark innerhalb der Sengis. Während Elephantulus spec. (Rankin, 1965)
+und Macroscelides proboscideus eher offene Landschaften bevorzugen, finden sich die Rhyn-
+chocyoninae eher in Waldgebieten (Rathbun, 1995; Coster und Ribble, 2005). Zur Physiologie
+der Sengis ist wenig bekannt (Perrin, 1995), lediglich ihre Reproduktionsbiologie wurde in-
+tensiv untersucht (van de Horst, 1944; 1946; Tripp, 1971; Rosenthal, 1975; Neal, 1995,
+Olbricht et al., 2006). Kerley (1995) konnte bei Macroscelides proboscideus nachweisen, dass
+95% der von ihm untersuchten Individuen pflanzliche Nahrung verzehrten und dass dieser
+Nahrungsanteil bis zu 42% des Volumens der gesamten Nahrung ausmachen kann. Die Unter-
+suchung von Kerley (1995) wird durch Woodall und Mackie (1987) unterstützt, die an Hand
+der Darmlänge auf eine eher herbivore Ernährungsweise schlossen. Trotz dieser und anderer
+Ergebnisse besteht jedoch ein Konsens hinsichtlich der insektivoren bzw. omnivoren Lebens-
+weise der Sengis (Unger, 1999; Rathbun und Rathbun, 2006).
+
+
+Ein Vergleich verschiedener Veröffentlichungen über Macroscelidea zeigt, dass Definitionen,
+Beschreibungen und Erklärungen häufig nur an Hand einzelner Individuen und ausgewählter
+Arten vorgenommen wurden (Evans, 1942; Lindahl, 1946). So verallgemeinerte man exem-
+plarische Beschreibungen z. B. von Petrodromus tetradactylus oder Rhynchocyon spec. für
+alle Sengis (Bugge, 1972). Einerseits wurden dabei die damals gültigen phylogenetischen
+Zuordnungen der untersuchten Tiere als Tatsache hingenommen und eventuell nicht kritisch
+
+
+genug betrachtet (so kam es aus heutiger Sicht zur Fehlinterpretation von Ergebnissen und
+somit zu falschen Schlussfolgerungen), andererseits wurden Untersuchungsergebnisse ohne
+Berücksichtigung des Entwicklungsstadiums der einzelnen Tiere zur Extrapolation auf alle
+Macroscelidea verwendet (z. B. Muller, 1934; Brown, 1963). Es liegen heute viele Beschrei-
+bungen ontogenetischer Entwicklungen und morphologisch-anatomischer Strukturen der Sen-
+gis vor, die in der Mehrzahl neu interpretiert und bewertet werden müssen. Gerade die Rekon-
+struktion des Stammartmusters und die daraus resultierende Einordnung der Macroscelidea im
+Stammbaum der Afrotheria gibt wesentliche Hinweise auf die phylogenetische Platzierung
+der Afrotheria innerhalb der Säugetiere.
+
+
+FOOTNOTE:Grafik 1: Übersicht über die Systematik der Sengis, (in Klammern stehen die deutschen Bezeichnungen)
+
+
+1.1 Phylogenetische und palaeontologische Einordnung
+
+
+Es existieren einige wissenschaftliche Veröffentlichungen, die interordinale Beziehungen der
+Eutheria beschreiben. Hervorzuheben sind in diesem Zusammenhang die Arbeiten von Nova-
+cek (1992), Shoshani & McKenna (1998), Douady (2001) und Matthes (1921, 1923). Obwohl
+einige interordinale Beziehungen nicht völlig geklärt werden konnten, spiegeln die Arbeiten
+eine der derzeitigen Auffassungen über die phylogenetischen Verhältnisse der Eutheria wider.
+Die Macroscelidea sind durch eine Reihe vorwiegend abgeleiteter morphologischer Merkmale
+klar gekennzeichnet. Diese Gruppe lässt sich durch mehrere Synapomorphien (Extremitäten-
+merkmale, Merkmale der Sakralwirbel aber auch Palatinum- und Zahnmerkmale) gut von
+anderen afrikanischen Kleinsäugern abgrenzen und begründen (Novacek, 1984). Der außer-
+gewöhnlich komplexe Aufbau ihrer knöchernen Gehörkapsel (im Besonderen bei Macrosceli-
+des proboscideus) gehört ebenso dazu, wie das weit dorsal der Kauebene der Molaren liegen-
+4
+
+
+de Kiefergelenk. Außerdem verweisen Westheide und Rieger (2004) auf die große Orbita oh-
+ne geschlossene Postorbitalspange und den kleinen häkchenförmigen Coronoidfortsatz des
+Unterkiefers.
+
+
+Innerhalb der Macroscelidea gibt es ein einziges monophyletisches Taxon, die Macroscelidi-
+dae, mit zwei rezenten Untertaxa (Macroscelidinae und Rhynchocyoninae), in denen 15 re-
+zente Arten (siehe Tab. 1, S. 9) beschrieben sind (Corbet und Hanks, 1968; Nicoll und
+Rathbun, 1990; Schlitter, 2005). Die Schwierigkeiten beim Auflösen der Polytomien inner-
+halb des Stammbaums der Macroscelidea scheinen ihre Ursache in der sehr schnellen Diversi-
+fikation der Säugetiere zu haben (Matson, 1997; Douady, 2001). Da die phylogenetische Stel-
+lung einiger Gruppen innerhalb der Macroscelidea bis heute nicht zufriedenstellend geklärt
+werden kann (Wenhold und Robinson, 1987; Tolliver et al., 1989; Novacek, 1992) und durch
+Douady (2001) die Monophylie von Elephantulus angezweifelt wird, äußern sich einige Auto-
+ren gegenwärtig kritisch gegenüber dem von Corbet und Hanks (1968) aufgestellten Stamm-
+FOOTNOTE:baum der Macroscelidea.
+
+
+Unter anderem wurde aus der insektivoren Lebensweise der Macroscelidea auf ihre Zugehö-
+rigkeit zu den „Insektenfressern“ geschlossen. Es ist jedoch nachweisbar, dass die Gruppe der
+„Insectivora“, nicht mehr als taxonomische Einheit gelten kann (z. B. Springer et al., 1997;
+Giere, 2002; Asher, 2005). Fitzinger (1867) fasste die Macroscelidea zu einer eigenständigen
+Gruppe („Rohrrüssler“, „Macroscelis“) innerhalb der „Insectivora“ zusammen, die aber erst
+von Butler (1956) als Taxon aus der Gruppe der „Insectivora“ heraus gestellt wurde. Die Mac-
+roscelidea wurden durch Springer et al. (1997) in die übergeordnete Gruppe der Afrotheria
+eingeordnet, unter anderem wegen des endemischen Auftretens der Sengis in Afrika. Die
+Macroscelidea differenzierten sich nach Stanhope et al. (1998) als basale Abzweigung inner-
+halb der Afrotheria. Neben paläontologischen Entdeckungen (Simons et al., 1991; Helgen,
+2003) belegen auch die Aminosäuresequenzanalysen von de Jong et al. (1993) diese Zuord-
+nung. Durch Synapomorphien wird das Schwestergruppenverhältnis der Glires (Rodentia und
+Lagomorpha) und der Macroscelidea begründet (Szalay und McKenna, 1971; Novacek,
+1986). An Hand morphologischer Merkmale wurden die Macroscelidea mit den Glires und
+deren ausgestorbener Verwandten zu den Anagalida zusammengefasst (Szalay und McKenna,
+1971). Molekulare Untersuchungen zeigen widersprüchliche Ergebnisse bezüglich möglicher
+Adelphotaxa innerhalb der Afrotheria (z. B. Liu und Miyamoto, 1999; Springer et al, 1999).
+Im Vergleich mit möglichen Adelphotaxa sollen in der vorliegenden Arbeit die durch moleku-
+lare Methoden festgestellten phylogenetischen Beziehungen der Afrotheria mit morphologi-
+schen Merkmalen, die an den Sengis erhoben wurden, unterstützt werden.
+
+
+Laut Benton (2001) und Mouchaty et al. (2000) sind auf Grund des kurzen Zeitraums, der für
+die Evolution der Säugetiere angenommen wird, nur wenige morphologische Synapo-
+morphien der Säugetiergruppen zu erwarten. Eine von ihnen ist das verlängerte Rostrum, das
+Maier (2002) als typisch für „ursprüngliche Säugetiere“ beschreibt, in die demzufolge auch
+die Sengis einzuordnen sind.
+
+
+Die Unterscheidung der Rhynchocyoninae von den Macroscelidinae ist unproblematisch. Un-
+ter dem Begriff „Rüsselhündchen“ (Rhynchocyon spec.) werden die größten aller Sengis zu-
+sammengefasst. Dieser Gruppe gehören gleichzeitig die Arten mit der geringsten Verbreitung
+an (Corbet, 1971; Fitzgibbon, 1995). Innerhalb der Macroscelidinae gilt die Abgrenzung der
+monotypischen Taxa Petrodromus tetradactylus und Macroscelides proboscideus von allen
+anderen Arten als sicher. Petrodromus tetradactylus zeichnet sich durch das Fehlen des Hallux
+aus, so dass diese Art klar von den restlichen Sengis abgrenzbar ist. Macroscelides probosci-
+deus ist eindeutig durch die stark vergrößerten Mittelohrkapseln gekennzeichnet. Die Diffe-
+renzierung der zehn Elephantulus-Arten (Corbet, 1995) ist bis heute nicht zufrieden stellend
+gelöst. Erste Vertreter der Macroscelidea sind aus dem frühen Oligozän (Fayum, Ägypten)
+bekannt. Rezente Macroscelidea wurden zum ersten Mal von Broom (1938) aus Ablagerun-
+gen des Pleistozäns in Südafrika beschrieben. Patterson (1965) korrigierte die Taxonomie ei-
+niger paläontologischer Funde. Er ordnete das Taxon Mixodectidae, das heute als Metoldobo-
+tes spec. bekannt ist, die Spezies Metoldobotes stromeri Schlosser, 1910, das Taxon Myohyrax
+Andrews 1914 und Palaeothentoides Stromer, 1932 den Macroscelidea zu. Zusätzlich liegen
+aus dem frühen Eozän einzelne dentale Befunde für Chambius kasserinensis (Hartenberger,
+1986) und Herodotius pattersoni (Simons et al., 1991) vor, die als ausgestorbene Vorgänger
+der modernen Macrosceliden gelten (Butler, 1995). Simons et al. (1991) belegen an dentalen
+Merkmalen, dass Herodotius, Chambius und Metoldobotes die Übergangsformen zwischen
+den heutigen, den extinkten Macrosceliden und den Condylarthra sind.
+
+
+Archibald (2001) beruft sich auf Butler (1956), als er feststellt, dass die Macroscelidea etwa
+zeitgleich mit allen anderen Plazentaliern entstanden sind. Eine auf molekulare Untersuchun-
+gen gestützte Zeitskala der Entwicklung der Macroscelidea präsentieren Springer et al.
+(2003). Hierin datieren sie die Abspaltung der Macrosceliden von den Afrosoriciden vor der
+K/T-Grenze mit etwa 73 Mio. Jahren. Die Diversifikation der Macroscelidea jedoch erfolgte
+erst vor rund 20 Millionen Jahren. Ein ähnliches Bild zeichnet Novacek (1984), der die Viel-
+falt rezenter Sengis auf Diversitätsereignisse während des Miozäns (etwa 10 – 20 Millionen
+Jahre) zurückführt. Erste fossile Vertreter von Macroscelides proboscideus wurden in ca. 3
+Mio. Jahre alten Ablagerungen in Makapansgat (Südafrika) gefunden (Butler, 1995). Damit ist
+eine lückenlose Entwicklungsgeschichte der Macroscelidea seit dem Eozän nachgewiesen.
+
+
+1.2 Ontogenetische Untersuchungen
+
+
+Individualentwicklung und Wachstum sind räumlich und zeitlich definierte Vorgänge. Die
+Untersuchung eines Individuums stellt immer nur einen Ausschnitt aus einem kontinuierli-
+chen Prozess dar und kann damit nur exemplarisch für diesen speziellen Entwicklungszustand
+betrachtet werden. Verwendet man jedoch unterschiedlich alte Individuen, kann man diesen
+Prozess in seiner Abfolge erkennen (Maier, 1993). Verschiedene ontogenetische Stadien er-
+lauben es, die Entwicklung und Ossifikation des Schädels deutlich darzustellen und Beson-
+derheiten zu erfassen. Die vorliegenden Untersuchungen wurden an Individuen unterschiedli-
+chen Alters von Macroscelides proboscideus vorgenommen. Bisher liegen von den
+Macroscelidinae nur Beschreibungen von Embryonen mit nicht bestimmtem Entwicklungszu-
+stand (z. B. Broom, 1902) oder von sehr jungen Embryonen (du Toit, 1942; van der Horst,
+1942) vor. Daher scheint es notwendig, auch ältere Entwicklungsstadien einzubeziehen.
+
+
+Der Kopf ist bei allen Wirbeltieren ein charakteristisches und komplexes Organsystem. Die
+hier angeordneten Knochenstrukturen, die Sinnesorgane, die Hirnnerven und das Gehirn wei-
+sen in der ontogenetischen Entwicklung jeder Spezies typische Charakteristika auf. Ver-
+gleichsuntersuchungen der Morphologie des Kopfes und seiner Organsysteme dienen seit
+langem der Differenzierung und phylogenetischen Einordnung von Säugetieren
+(Starck, 1975).
+
+
+Erst durch die Plattenmodelliermethode von Born (1883) wurden die methodischen Voraus-
+setzungen für eine systematische Analyse und für die Erforschung der Entwicklungsgeschich-
+te des Kopfskeletts verschiedener Stadien gegeben. Immer noch sind Einzelstrukturen an
+Schädeln von Säugetieren bezüglich der Phylogenie unzureichend geklärt. Mit der vorliegen-
+den Arbeit soll auf der Grundlage morphologisch-anatomischer Befunde des Kopfes verschie-
+dener Ontogenesestadien der Macroscelidea ein Beitrag zur Lösung der Verwandtschaftsver-
+hältnisse innerhalb dieser Gruppe geleistet werden. Es wurden ausschließlich nichtdentale
+Merkmale untersucht. Das geschah aus zwei Gründen:
+
+
+- Die Zahneigenschaften einiger Säugetiere, welche zum Vergleich herangezogen werden
+könnten, fehlen (z. B. Fossilien) oder sind zu einzigartig (Orycteropus afer), als dass sie aus-
+FOOTNOTE:wertbar wären.
+
+
+- Zahnmerkmale wurden bereits in verschiedenen Publikationen intensiv untersucht (z. B.
+Shoshani, 1986; Butler, 1995), so dass keine weitere Forschungsarbeit in dieser Richtung
+notwendig erscheint.
+
+
+Die Vielfalt der Merkmale des Kopfes birgt die Notwendigkeit, sich auf einige Regionen und
+Merkmale zu konzentrieren. Von einzelnen Vertretern der Macroscelidea liegen bereits detail-
+lierte Beschreibungen der Ohrregion (van der Klaauw, 1929; Findlay, 1943; MacPhee, 1981),
+der Nasalregion (z. B. du Toit, 1942; Roux, 1947; Kratzing, 1988) und des Jacobsonschen
+Organs (Broom, 1902; Wöhrmann-Repenning, 1984) vor. Van der Klaauw (1931) stellt fest,
+dass die Tympanalregion in der vergleichenden Anatomie wesentliche Indizien für die phylo-
+genetische Einordnung der Gruppen liefert. Starck (1995) bemerkt, dass das Nasenskelett in
+der Ontogenese relativ spät Ausbau- und Differenzierungsprozesse erfährt, so dass gerade in
+dieser Region wesentliche postnatale Veränderungen auftreten. Deshalb steht im Vordergrund
+der vorliegenden Arbeit die Untersuchung sowohl embryonaler als auch postnataler Schädel-
+präparate von Macroscelides proboscideus, wobei die Nasal- und die Oticalregion besondere
+Beachtung finden.
+
+
+FOOTNOTE:Tab. 1: Übersicht über Bezeichnungen der Arten innerhalb der Macroscelidea (Sengis); Buchstaben in
+Klammern kennzeichnen alternative Schreibweisen
+
+
+1.3 Morphologische und molekulare Daten
+
+
+Die Afrotheria-Hypothese stützt sich bis heute hauptsächlich auf molekulare Untersuchungen.
+Die Bedeutung dieser Ergebnisse zeigt sich unter anderem an folgenden Resultaten (Douady,
+2001):
+
+
+- Die südliche Hemisphäre war der Ausgangspunkt der globalen Besiedlung durch die Säuge-
+tiere.
+
+
+- Trotz des gemeinsamen Ursprungs bestehen klare molekulare Unterschiede zwischen den
+Säugern der südlichen und nördlichen Hemisphäre.
+
+
+Es wird von einigen Autoren vermutet, dass sich die Phylogenese der Afrotheria und somit
+auch die der Sengis nur auf der Grundlage molekularer Befunde klären lässt. Seiffert (2002)
+formuliert diesen Gedanken folgendermaßen: „Phylogenetic studies conducted over the last
+decade have left it clear that the solution to these biogeographic puzzles probably lay not so
+clearly in available details of bony anatomy or tooth structure, but rather in patterns of varia-
+tion in nucleotide sequences“. Viele der vorgeschlagenen Gruppierungen widersprechen je-
+doch anatomisch-morphologischen Befunden. Die schleppenden Fortschritte bei der Aufstel-
+lung eines weitgehend universellen Säugetierstammbaums mit Hilfe der Molekularbiologie
+(Madsen et al., 1997) wird von einigen Autoren mit unzureichenden und unvollständigen Da-
+
+
+ten begründet (Novacek, 1992). Zudem überfordern die Vielzahl notwendiger mathematischer
+Berechnungen sowie die enorme Fülle an molekularen Daten die derzeit vorhandene Rechen-
+kapazität. Deshalb werden entweder nur die molekularen Daten exemplarischer Vertreter phy-
+logenetischer Gruppen bearbeitet, oder es werden verschiedene molekulare Daten (z. B. der
+DNA oder mitochondriale Sequenzen etc.) in einem engen phylogenetischen Bereich mitein-
+ander verglichen. Obwohl sich das Interesse vieler Autoren zunehmend den molekularen Un-
+tersuchungsmethoden zuwendet, ist man in der biologischen Forschung weiterhin auf her-
+kömmliche Methoden der Befunderhebung angewiesen. Dieses wird besonders klar, wenn
+man bedenkt, welche Bedeutung paläontologischen Funden für das Erkennen phylogeneti-
+scher Zusammenhänge bis heute zukommt (Novacek, 1992).
+
+
+Es wird davon ausgegangen, dass Ergebnisse molekularer Untersuchungen zwar eine wichtige
+Basis für neue Gesichtspunkte bezüglich der Phylogenese darstellen, sie aber nur in Verbin-
+dung mit Befunden konventioneller Untersuchungsmethoden zu zuverlässigen Aussagen füh-
+ren. Um einen Beitrag zur Frage der phylogenetischen Stellung der Macroscelidea innerhalb
+der Eutheria zu liefern, werden hier ausschließlich anatomisch-morphologische Methoden
+angewendet.
+
+
+1.4 Schnittserien und Rekonstruktion
+
+
+Bei der Untersuchung histologischer Schnittserien ist es immer wieder schwierig, sich eine
+genaue Vorstellung von der Topographie der Einzelstrukturen im gesamten anatomischen Prä-
+parat zu machen. Dieses gilt besonders für die komplizierte Anatomie des Kopfes. Born
+(1883) fertigte aus Schnittserien dreidimensionale Modelle an und konnte damit sehr genau
+die Topographie von Strukturen wie Knorpeln, Knochen und Muskeln darstellen. Das ist auch
+für eine differenzierte Interpretation von Fossilfunden bedeutungsvoll (Maier, 2002). Diese
+immer noch unentbehrliche Untersuchungsmethode wurde im Laufe der Zeit perfektioniert
+und durch weitere Verfahren ergänzt (z. B. Fleischer, 1973). Inzwischen gibt es neben dieser
+und anderen Formen der Modellierung die Möglichkeit mit Hilfe eines Computers virtuelle
+dreidimensionale Modelle darzustellen. In der Humanmedizin haben sich 3D-Darstellungen
+der menschlichen Anatomie für diagnostische Zwecke mit Hilfe der Computertomographie,
+der Magnet-Resonanz-Tomographie und anderer Methoden durchgesetzt. Die Anwendung
+dieser Methoden auf andere Wirbeltiere ist bisher jedoch ebenso wenig verbreitet, wie die
+Kombination herkömmlicher histologischer Arbeitsverfahren mit moderner Computertechnik
+zur Erstellung und Bearbeitung dreidimensionaler Modelle. Bisher wurden die Vorteile der
+Computertechnologie und die damit verbundene Möglichkeit ein zu untersuchendes Objekt
+11
+
+
+aus den vorliegenden Schnittserien zu rekonstruieren, für die biologische Forschung an
+Mammalia wenig genutzt. Spezielle Software und Hardware für wissenschaftlich-biologische
+Anwendungen wurden bis heute kaum entwickelt. Es besteht aber die Möglichkeit, auf für die
+Medizin entwickelte Software zurückzugreifen.
+
+
+Ein Ziel dieser Dissertation ist es, eine möglichst vollständige Darstellung des Kopfes eines
+Entwicklungsstadiums von Macroscelides proboscideus anzufertigen. Durch die Benennung
+und Homologisierung (vgl. Abschnitt 2.4.) einzelner Elemente des Kopfes während der Erar-
+beitung des Modells und durch die Kombination mit vorhandenen Abbildungen soll ein um-
+fassenderes Bild der morphologischen Gegebenheiten der Sengis erstellt werden. Darauf auf-
+bauend soll eine Diskussion um die Stellung der Macroscelidea stattfinden, um einerseits die
+Position der Sengis innerhalb der Eutheria näher zu bestimmen und andererseits die Afrothe-
+ria-Hypothese zu prüfen.
+
+
+1.5 Zielstellung
+
+
+Mit dieser Arbeit soll ein Beitrag zur Erstellung des Grundmusters der Macroscelidea geleistet
+werden, da das Stammartmuster die Voraussetzung für die phylogenetische Einordnung der
+Macroscelidea und ihrer supraordinalen Beziehungen ist. Erst die Rekonstruktion des Stem
+species pattern und die daraus resultierende Einordnung der Macroscelidea im Stammbaum
+der Afrotheria gibt wesentliche Hinweise auf die phylogenetische Platzierung der Afrotheria
+innerhalb der Säugetiere. Bis heute nehmen vergleichende Untersuchungen des Kopfes und
+seiner Organsysteme eine zentrale Stellung bei der phylogenetischen Einordnung von Säuge-
+tieren ein. Aus diesem Grund wird in der vorliegenden Arbeit diese Region sowohl in ihrer
+embryonalen als auch ihrer postanatalen Entwicklung mit anatomisch-morphologischen Me-
+thoden untersucht. Zudem besteht das Ziel eine detailierte computergestütze 3D-
+Rekonstruktion eines Kopfes der untersuchten Macroscelidinae vorzunehmen. Das dafür ver-
+wendete Compuertprogramm ist bisher zur Darstellung von Säugetierschädeln dieser Größen-
+ordnung nicht verwendet worden.
+
+
+2 Material und Methoden
+
+
+Als Untersuchungsobjekte dienten histologische Schnittserien und Schädel verschiedender
+Vertreter der Macroscelidea. Alle bearbeiteten Ontogenesestadien von Macroscelides probos-
+cideus stammen entweder aus der Sammlung oder aus der Kleinsäuger-Zucht des Museums
+für Naturkunde Berlin. Die Tiere waren in 70 %-igem Ethanol konserviert. Alle aus Züchtun-
+gen stammenden Individuen wurden nach ihrem natürlichen Tod für diese Untersuchung ver-
+wendet. Zusätzlich wurden mazerierte Schädel aus der Sammlung des Museums für Natur-
+kunde für makroskopische Untersuchungen genutzt (Tab. 4, S. 15).
+
+
+Der Zeitpunkt der Befruchtung der in Dauerverpaarung lebenden Zuchttiere konnte nicht be-
+stimmt werden. Das Alter der verwendeten Embryonen ließ sich daher nicht genau bestim-
+men. Laut van der Klaauw (1929) kann eine ungefähre Altersbestimmung von Embryonen an
+äußerlichen Merkmalen vorgenommen werden. Deshalb wurden als Kriterien für die Bestim-
+mung des individuellen Entwicklungszustandes die Scheitel-Steiß-Länge (SSL) und die Kopf-
+länge (KL) herangezogen. Weitere von ihm beschriebene Entwicklungsmerkmale (der Ent-
+wicklungszustand des Entotympanicums, der Ohrknöchelchen oder auch der Grad der
+Ossifikation des Perioticums) wurden hier nicht berücksichtigt, da zwischen den untersuchten
+Embryonen ein sehr großer Entwicklungsunterschied besteht. Das Alter von neonaten und
+subadulten Tieren wird in Tagen nach der Geburt (dpn) angegeben. Eine Übersicht über die
+Arten und den Entwicklungszustand der verwendeten Individuen zeigen die Tabellen 2 und 3
+(S. 14).
+
+
+FOOTNOTE:Tab. 2: Histologische Schnittserien von Macroscelides proboscideus, die für die vorliegende Arbeit angefertigt wurden.
+
+
+Tab. 3: Histologische Schnittserien von Elephantulus spec. und Loxodonta africana, die für die vorliegende Arbeit verwendet wurden.
+
+
+(1) Bei Tier Nr. 1 wurde von den vorhandenen Zwillingen, des während des BIOTA-Projekts gefangenen trächtigen Weibchens nur ein Jungtier bearbeitet; (2)SSL: Scheitel-
+Steiß-Länge; KL: Kopflänge; (3) nähere Erklärungen zur Herkunft siehe Abschnitt 2.1.; (4) Als Fixationsmedium wurde eine gepufferte 4 %ige Formalinlösung verwendet,
+Bouin wurde gemischt aus 15 Teilen gesättigter Pikrinsäure und 5 Teilen 37 % Formaldehyd. Kurz vor der Verwendung wurde 1 Teil Eisessig hinzugefügt; (5) HE = Häma-
+laun und Eosin; Azan nach Heidenhain = Azokarmin und Anillinblau-Orange; (6) Zur Verfügung gestellt als digitalisierte Schnittserie durch Robert Asher.
+
+
+FOOTNOTE:Tab. 4. Für diese Untersuchung herangezogene mazerierte Osteocranien aus der Sammlung des Muse-
+ums für Naturkunde
+
+
+Elephantulus rufescens
+
+
+Macroscelides proboscideus
+
+
+Elephantulus rupestris
+
+
+FOOTNOTE:(1) ZMB: vormals: Zoologisches Museum Berlin, heute: Museum für Naturkunde der Humboldt Universität zu
+Berlin; Z19 und Z6 stammen aus der Zucht von Prof. Zeller
+
+
+2.1 Materialverarbeitung
+
+
+Neben Schnittserien, die von anderen Institutionen ausgeliehen wurden (vgl. Tab. 3, S. 14),
+sind für die vorliegende Studie eigene histologische Schnittserien hergestellt worden.
+Individuen, die aus der Zucht des Museums stammen, wurden entweder in Bouin (Nr. 3,
+Nr. 4) oder Formaldehyd (Nr. 1, Nr. 2) fixiert und in 70 %-igem Ethanol für die weitere Ver-
+wendung gelagert. Zur Aufarbeitung wurde jeweils der Kopf vom Rumpf getrennt, so dass
+Frontalschnitte angefertigt werden konnten. Nur der Embryo Nr. 7 ist nicht dekapitiert son-
+dern insgesamt transversal zur Körperlängsachse aufgearbeitet worden.
+
+
+Alle Köpfe mit einer Mindestlänge von 15 mm mussten vor der Anfertigung der Schnittpräpa-
+rate dekalzifiziert werden. Dazu lagern sie für 6 Tage in 7 %-iger Salpetersäure. Anschließend
+wurde das Material gewässert, in Natriumsulfat gewaschen und in 70 %-igem Ethanol aufbe-
+FOOTNOTE:wahrt.
+
+
+Köpfe bis zu einer maximalen Länge von 40 mm wurden in Paraffin eingebettet. Für die his-
+tologischen Schnittserien der Paraffinpräparate wurde ein Schlitten-Mikrotom (Leica SM
+2000R, Feather Microtome Blades S35) verwendet. Die Schnittdicken lagen zwischen 8 µm
+und 12 µm (vgl. Tabelle 2, S. 15). Mit Eiweißglycerin wurden die Schnitte auf Objektträgern
+fixiert und auf einer Wärmeplatte bei 40° C gestreckt. Jeder zweite Schnitt wurde einer Teilse-
+rie zugeordnet, so dass jeweils eine A- und eine B-Serie vorliegen. Nur die Schnitte der A-
+Serien erfuhren eine Weiterbehandlung, während die B-Serien als Referenz und für weitere
+Untersuchung unbearbeitet erhalten blieben. A-Serien-Schnitte wurden in Xylol und einer
+aufsteigenden Alkoholreihe entparaffiniert. Die Färbung mit Hämalaun (nach Harris, 1900)
+und die Gegenfärbung mit einer 0,1 % wässrigen Eosinlösung (HE-Färbung) erlaubt eine Un-
+terscheidung von Knochen, Knorpeln und Weichgewebe (nach Romeis, 1948).
+
+
+Der Kopf mit der Länge von 40,9 mm (Nr. 4) wurde in Celloidin eingebettet (Schnelleinbet-
+tung nach Jaworski und Eckmiller, 1981). Dazu wurden sie in einer aufsteigenden Alkohol-
+Reihe vollständig entwässert, um dann in einer bis zu 14 % aufsteigenden Celloidin-Reihe
+(bei 40° C im Wärmeschrank) eingebettet zu werden. Die Eindickung des Celloidin fand bei
+35° C und Unterdruck in einem wasserfreien (CaCl -Granulat und konz. Schwefelsäure) Ex- 2
+sikkator statt. Danach wurde das Celloidin in einer Chloroformatmosphäre gehärtet und das
+Objekt in 70 %-igem Ethanol aufbewahrt, um später wie oben beschrieben weiterverarbeitet
+zu werden.
+
+
+Von einem Individuum (Nr. 8) ist ein Aufhellungspräparat angefertigt worden. Nach der Ent-
+wässerung des Präparats in einer aufsteigenden Alkoholreihe wurde das Individuum für
+36 Stunden in eine Färbelösung zur Knorpelfärbung (EtOH: Eisessig: Alcianblau8GX =
+16:4:3) gelegt. Zum Auswaschen der Färbelösung befand sich das Material für bis zu 2 Tage
+in Isopropanol (100 %). Nach der Wässerung in einer absteigenden Alkoholreihe wurde das
+Präparat innerhalb einer Woche in 60 %-iger Boraxlösung (Di-Natriumtetraborat) und 0,5 g
+Trypsin (kollagenasefrei) von den Muskelproteinen befreit. Erst jetzt konnte mit der Knochen-
+färbung begonnen werden. Dazu wurden 10 mg Alizarin S in 100 ml 0,5 %-ige KOH-Lösung
+gegeben und das zu präparierende Objekt für maximal 20 Stunden in dieser Lösung belassen.
+Zum Differenzieren und Auswaschen diente eine Lösung die zu 20 % Glycerin und 80 %
+KOH bestand. Das Präparat wurde anschließend in 40 %-igem und 70 %-igem Glycerin je-
+weils für 24 Stunden gewaschen. Danach wurde das Objekt in 85 %-igem Glycerin, dem als
+FOOTNOTE:Fungizid einige Thymolkristalle zugesetzt waren, aufbewahrt.
+
+
+Die gefärbten Präparate wurden entweder unter einem Zeiss-Binokular (KF2) bei einer
+12,5fachen Vergrößerung oder einem Zeiss-Mikroskop (maximale Vergrößerung 60fach) im
+Durchlicht mit einer digitalen Kamera (ProgRes 3012mF) unter Verwendung eines Mikro-
+skopaufsatzes (1,25fache Vergrößerung) fotografiert. Die so gewonnenen Fotos stellten die
+Arbeitsgrundlage sowohl für die grafische Analyse und Homologisierung als auch für die 3D-
+Rekonstruktion dar (vgl. Abschnitt 2.3.).
+
+
+2.2 Rekonstruktion
+
+
+Eine dreidimensionale Rekonstruktion der relevanten Teile des Kopfes erleichtert das Erfas-
+sen der vorliegenden äußeren und inneren morphologischen Gegebenheit. Der Rekonstruktion
+dienten die Abbildungen der digitalisierten Schnittserien als Basisdaten.
+
+
+Von der zu rekonstruierenden Schnittserie wurde mindestens jeder 5. Schnitt der A-Serie (das
+entspricht jedem 10. Schnitt des Individuums) digital fotografiert. Zur genauen dreidimensio-
+nalen Darstellung am Computer war es bei bestimmten Kopfregionen (z. B. Orbitotemporal
+Region) notwendig, jeden Schnitt der A-Serie zu digitalisieren, um auch kleinere Strukturen
+detailgenau erfassen zu können. Für die Rekonstruktion wurde immer die Gesamtansicht des
+jeweiligen histologischen Schnittes verwendet. Da die Größe der histologischen Schnitte stark
+differiert (z. B. ist der Querschnitt des Rostralorgans wesentlich kleiner als der des Kopfes im
+Bereich der Augen), wurden die fotografischen Abbildungen bei entsprechend unterschiedli-
+chen Vergrößerungen aufgenommen. Die jeweils gewählte Vergrößerungsstufe ist bei der
+
+
+Übertragung in die Software (Analysis, Version 5, 3D Add-On) berücksichtigt worden. Eine
+maßstabsgerechte Übertragung der abzubildenden Präparate wurde durch die gleichzeitige
+Abbildung einer Mikrometerskala überprüfbar.
+In der Software wurden alle übertragenen Schnittbilder einer Serie im JPG-Format zusam-
+mengefügt. Dadurch entstand ein Stapel übereinander liegender Fotos. Über die bekannten
+Schnittdicken waren die Abstände zwischen den einzelnen Fotos genau bestimmbar. Die
+nachträgliche Definition der Abstände zwischen den Fotos und die Alignierung sicherten die
+wirklichkeitsgetreue Darstellung der Rekonstruktion. Das Verschieben der Fotos gegeneinan-
+der bis zur Deckungsgleichheit der anatomischen Strukturen, also das Alignieren, wurde aus
+Gründen der Genauigkeit optisch (manuell) durchgeführt. Dabei wurden alle deutlich ab-
+grenzbaren Strukturen (äußerer Rand des Schnitts, Knochen, Knorpel und Gefäße) nach dem
+vorherigen Schnitt ausgerichtet. Der so entstandene Bilderstapel entspricht somit in der Ab-
+folge, den Abständen und der Ausrichtung dem unbearbeiteten Zustand des Gesamtpräparats.
+Jetzt konnte das Markieren der zu rekonstruierenden Strukturen erfolgen. Durch die histologi-
+sche Bearbeitung (Färben siehe Abschnitt 2.2.) waren die Strukturen gut gegeneinander ab-
+grenzbar. Nachdem das erste und letzte Foto, auf dem die zu rekonstruierende anatomische
+Einzelstruktur erkennbar ist, bestimmt worden war, konnte mit der manuellen Markierung der
+darzustellenden Elemente (z. B. Os nasale) auf jedem der aufeinanderfolgenden Fotos begon-
+nen werden. Die so gekennzeichnete Begrenzungslinie auf jedem einzelnen Fotos fügt die
+Software zu einem Modell zusammen (als Darstellungsverfahren wurde gewählt: Segmentie-
+rung = Skelettierung; Triangulation = minimaler Abstand). Jede anatomische Einzelstruktur
+(Element) des am Computer erstellten virtuellen Präparats kann durch individuelle Einfärbung
+deutlich von anderen Geweben abgegrenzt werden. Durch dieses Verfahren entstehen Elemen-
+te, die einzeln oder in beliebiger Kombination mit anderen Elementen als Modell dargestellt
+werden können. Die Kombination der Elemente zu einem Verbund gibt die dreidimensionale
+Rekonstruktion als Präsentation in Form einer Abbildung oder eines Video wieder. Erwähnt
+sei noch, dass ein Computer-3D-Modell in jeder beliebigen Achse gedreht und vergrößert
+werden kann, so dass alle Details aus jedem gewünschten Blickwinkel zu betrachten sind. Die
+dreidimensionale Drehung verdeutlicht Dimensionen von anatomischen Strukturen. Die Dre-
+hung (zum Beispiel in einer animierten Sequenz) lässt den räumlichen Eindruck und die Be-
+ziehungen zwischen den morphologischen Einzelmerkmalen erkennbar werden.
+
+
+2.3 Identifikation, Homologisierung und anatomische Nomenklatur
+
+
+Die Identifikation und die Homologisierung einzelner Strukturen sind wesentlicher Bestand-
+teil einer phylogenetischen und vergleichend anatomischen Untersuchung. Zur Identifizierung
+der anatomischen Strukturen und Gegebenheiten wurden folgende Quellen und Materialien
+herangezogen: die einzelnen Schnitte aus den Schnittserien, deren digitale Fotos, die erstellte
+3D-Rekonstruktion und mazerierte Schädel aus der Sammlung des Museums für Naturkunde.
+Zusätzlich wurden Beschreibungen, Abbildungen und Modelle aus der Literatur gleicher und
+anderer Arten verwendet. Gerade bei der Craniogenese der im 19. und 20. Jahrhundert unter-
+suchten Wirbeltiere ist eine zweifelsfreie Benennung von Beobachtetem oft schwierig, da
+Fachbegriffe nicht in jedem Fall eindeutig definiert waren bzw. für eine anatomische Struktur
+unterschiedliche Fachbegriffe verwendet wurden. Für eine Initialklärung wurde das vorlie-
+gende Material mit dem menschlichen Schädel, mit dem Schädel von Primaten und im Be-
+sonderen mit Schädeln von Vertretern der Afrotheria verglichen und die Begriffe der gefunde-
+nen anatomischen Gegebenheiten mit der Nomina anatomica (Feneis, 1998) abgeglichen. Für
+die Identifikation und damit für die Homologisierung der beschriebenen morphologischen
+Strukturen wurden folgende, im Text nicht mehr erwähnte Werke herangezogen: Bugge
+(1972), McDowell (1958 Glossar), Meinertz (1978).
+
+
+Als wesentliche Hauptkriterien zur Homologisierung der anatomischen Strukturen (nach
+Remane, 1952) wurden ihre Lagebeziehungen und ihre spezifische Qualität herangezogen.
+
+
+3 Ergebnisse
+
+
+Im Folgenden werden zunächst die Ergebnisse der morphologisch-anatomischen Untersu-
+chungen des Cranium verschiedener Entwicklungsstadien von Macroscelides proboscideus
+dargestellt. Der Vergleich der untersuchten Entwicklungsstadien geschieht immer bezüglich
+der in Kapitel 1.2 dargestellten sehr weiten Entwicklung der Jungtiere, wie sie für Nestflüch-
+ter typisch ist. Festgestellte Befunde werden beschrieben, mit denen anderer untersuchter
+Macroscelididae verglichen und sowohl Gemeinsamkeiten als auch Unterschiede verdeutlicht.
+Bei der Besprechung der Anatomie und Morphologie sind jedem Strukturkomplex des Schä-
+dels Detailbeschreibungen in Unterkapiteln zugeordnet, in denen Topographie und Definitio-
+nen der einzelnen anatomischen Strukturen beschrieben werden.
+
+
+Die Befunde aus der Untersuchung von Deckknochen und Orbitalmosaik, sowie aus der
+Computerrekonstruktion schließen sich an.
+
+
+3.1 Regio ethmoidalis
+
+
+Die Regio ethmoidalis ist die am weitesten rostral gelegene Region des Kopfes. Sie besteht
+aus der Pars anterior, der Pars lateralis und der Pars posterior. Intern wird sie durch das Sep-
+tum nasi auf der gesamten Länge geteilt. Die Regio ethmoidalis des Chondrocranium von
+Vertebraten besteht hauptsächlich aus der Nasenkapsel, die vollständig und kontinuierlich mit
+dem restlichen Cranium verbunden ist.
+
+
+Eines der auffälligsten äußeren anatomischen Merkmale der Sengis ist ihr sehr flexibles
+Rostralorgan (sensu Klauer, 1984), das beim adulten Tier fast ständig in Bewegung ist. Alle
+Sengis besitzen eine nach rostral verlängerte, sehr bewegliche Nase, die bis zur Spitze mit
+Fell bedeckt ist. Wenige lange Vibrissen haben mechano-sensorische Funktion. Die Haut an
+den Austrittsstellen der Vibrissen ist stark pigmentiert.
+
+
+Der vordere bewegliche Bereich ist bei allen untersuchten Stadien rund, wobei er caudal der
+Nares (Abb. 5a, 6b) einen etwa gleichbleibenden Umfang aufweist. Erst ab der Cartilago late-
+ralis (Abb. 19) erweitert sich der Nasenbinnenraum. Die äußere knorpelige Begrenzung der
+vorderen Nasenkapsel wird morphologisch in Tectum nasi (Nasendach) (Abb. 18), Solum nasi
+(Nasenbodenelemente) und Cavum nasi unterteilt.
+
+
+Das Rostralorgan ist schon bei sehr jungen Embryonen ausgebildet und deutlich sichtbar. Die
+Flexibilität dieses Bereiches ist einerseits durch eine Knickungszone, die dorsal vor dem Na-
+
+
+sale liegt, und andererseits durch drei Muskeln gegeben, die in den folgenden Abschnitten
+besprochen werden.
+
+
+Rostral beginnt die Zona anularis (Abb. 5a, 6b, 16) gemeinsam mit der Cartilago paraseptalis
+(Abb. 15). Diese setzt sich als vollständiges Knorpelrohr bis zum rostralen Anfang der Kni-
+ckungszone fort. Über die gesamte Länge der Zona anularis gibt es eine breite Verbindung
+dieser Knorpelspange mit dem Septum nasi (Abb. 15). An der Zona anularis setzt der Muscu-
+lus dilatator nasi an. Obwohl die Form des Rostralorgans der Macroscelidinae schon bei dem
+erst 6,6 mm (SSL) langen Embryo von Elephantulus spec. (Nr. 7) deutlich zu erkennen ist,
+sind hier viele Elemente noch nicht verknorpelt. Dies geschieht erst in späteren Ontogenese-
+stadien. Bei dem jüngsten untersuchten Macroscelides proboscideus-Embryo (Nr. 1) hingegen
+sind alle Knorpelelemente vollständig ausgebildet und alle Dermalknochen wenigstens teil-
+weise verknöchert, wie zum Beispiel das Dentale, das Praemaxillare und das Maxillare.
+Die Knickungszone ist bei Macroscelides proboscideus gekennzeichnet durch unregelmäßige
+Fenestration des Tectum nasi (Abb. 5b, 5c, 18) und des Septum nasi (Abb. 18). Es gibt weder
+eine regelmäßige Fenestration im Vergleich zwischen der rechten und der linken Seite des
+Tectum nasi, noch kann man eine einheitliche Fenestrierung zwischen den einzelnen ontoge-
+netischen Stadien feststellen. Bei dem jüngsten untersuchten Macroscelides proboscideus (Nr.
+1) fand sich keine Fenestration, jedoch kann man schon bei dieser Entwicklungsstufe ein
+deutlich ungleichmäßiges Knorpelwachstum erkennen. Eine wirkliche Fenestrierung tritt erst
+bei dem Individuum Nr. 2 auf. Ein zwei Tage altes Tier (Nr. 3) zeigt die stärkste Knorpelre-
+sorption aller untersuchten Individuen. Bei Individuum Nr. 4 entsprachen Anzahl und Größe
+der Knorpellücken im Tectum nasi der des Tieres Nr. 3. Allerdings sind beim Adultus (Nr. 4)
+die Unterbrechungen zwischen dem Tectum nasi und dem Septum nasi am deutlichsten aus-
+geprägt. Bei keiner anderen Art konnte mit dem vorliegenden Material eine vergleichbare
+Knickungszone beschrieben werden.
+
+
+3.1.1 Knorpelige Nasenkapsel
+
+
+Aus der Apertura piriformis des Osteocranium ragt bei Macroscelides proboscideus der vor-
+dere Nasenknorpel als Cupula nasi anterior hervor (de Beer, 1937; Gaupp, 1905). Die paarige
+Cartilago cupularis (Abb. 5c) wölbt sich kugelförmig nach dorsal. Damit ist sie deutlich vom
+übrigen Rostrum abgesetzt. Diese Abgrenzung ist schon beim jüngsten untersuchten Indivi-
+duum (Nr. 1) sichtbar. Zwischen den beiden Lamellen der Cartilagines cupulares befindet sich
+eine schmale Area internarina (Abb. 6b), die diese voneinander trennt. Das ist bereits am
+Embryo Nr. 1 zu erkennen und verstärkt sich bei allen älteren Stadien. Nur bei einem Tier (Nr.
+22
+
+
+3) wurde im Bereich der Verwachsungszone der beiden Cartilagines cupulares eine laterale
+Knorpellamelle, hier als Lamella lateralis bezeichnet (Abb. 11), gefunden.
+
+
+Die Nares (Abb. 6b) öffnen sich lateral und ein wenig nach ventral. Durch den Processus ala-
+ris superior (Abb. 6b, 12) sind weitere laterale Öffnungen unvollständig von den Nares ge-
+trennt. Rostral entstehen so die Nares und caudal das Fenestrum narina accessoria. In diese
+Öffnungen münden der Ductus nasolacrimalis ventral (Abb. 13) und der Ductus glandulae
+nasilateralis dorsal (Abb. 13). Schon bei dem jüngsten untersuchten Stadium von Macrosceli-
+des proboscideus (Nr. 1) ist dieser Processus knorpelig vorhanden. Es besteht eine durchge-
+hend knorpelige Verbindung zwischen dem Processus alaris superior und dem Paries nasi bei
+allen untersuchten Stadien. Direkt an der Verwachsungszone der Cartilago cupularis befindet
+sich der rostrale Beginn des Septum nasi. In diesem Bereich ist das Septum nasi sowohl bei
+Macroscelides proboscideus als auch bei den untersuchten Elephantulus-Exemplaren als ova-
+ler Knorpelfortsatz ausgebildet. Dadurch entsteht sowohl dorsal als auch ventral je ein binde-
+gewebig verschlossene Fenestra internasalis (Abb. 12).
+
+
+3.1.2 Tectum nasi
+
+
+Das knorpelige Nasendach beginnt bei allen untersuchten embryonalen Stadien caudal der
+Cartilago cupularis (Abb. 6b), welche die Nares (Abb. 6b) überspannt. Das gerade verlaufen-
+de knorpelige Tectum nasi bildet dorsal eine Sulcus, in dem sich ein Drüsenpaket befindet
+(Abb. 16). Das Tectum ist mit dem ebenfalls knorpeligen Septum nasi unvollständig verbun-
+den, da dieses teilweise durch Fenestrationen (vgl. Abschnitt 3.1.) unterbrochen wird. In allen
+untersuchten Entwicklungsstadien von Macroscelides proboscideus, mit Ausnahme des jüngs-
+ten (Nr. 1), finden sich in unregelmäßigen Abständen Knorpellücken (Abb. 18), welche durch
+Bindegewebe verschlossen sind.
+
+
+Das Nasendach bildet bei allen untersuchten Individuen in der vorderen Hälfte dieser Knor-
+pelstruktur eine Einheit mit dem Paries nasi. So entsteht zwischen der Nasenöffnung und der
+Knickungszone ein geschlossener Knorpelkanal, die Zona anularis (Abb. 5c, 6b). Sie endet in
+Höhe der Cartilago lateralis (Abb. 5a, 6a, 6b, 18, 20). In diesem Bereich lösen sich auch
+Knorpelelemente von diesem Röhrenknorpel. Deutlich abgrenzbar sind die Cartilago parasep-
+talis unterhalb des Septum nasi (Abb. 14, 17), die Cartilagines des Paries nasi (Abb. 18) und
+die Lamina transversalis anterior (Abb. 18).
+
+
+3.1.3 Paries nasi
+
+
+Die Seitenwände des Rostralorgans bilden den Paries nasi, der nach Reinbach (1952) bei den
+Theria aus drei paarigen Knorpelzentren entsteht. Bei den Eutheria wird die Seitenwand der
+embryonalen Nasenkapsel in drei Abschnitte untergliedert: die Pars anterior, die Pars lateralis
+und die Pars posterior (Spatz, 1963; Kuhn, 1971).
+
+
+Die Pars anterior entwickelt sich zusammen mit dem Tectum nasi aus der Cartilago parietalis
+(u. a de Beer, 1937; Kuhn, 1971). Sie umfasst bei Macroscelides proboscideus das vordere
+Drittel des Paries nasi und reicht von der Fenestra narina bis zum Processus lateralis anterior.
+Der Processus alaris superior (Abb. 6b, 11, 12) tritt bei Macroscelides proboscideus relativ
+spät in der Ontogenese (2 dpn) auf. Er zeigt sich als zapfenförmiger Fortsatz, etwa in Höhe
+des Marginoturbinale (vgl. Abschnitt 3.1.11.), rostro-lateral vom Paries nasi.
+
+
+Die Pars lateralis entsteht aus der Cartilago paranasalis. Sie wölbt sich bei allen untersuchten
+Sengis-Stadien (im jüngsten untersuchten Stadium als vorknorpeliges Gewebe) stark nach
+lateral vor und erstreckt sich im mittleren Drittel der Nasenkapsel zwischen dem Sulcus late-
+ralis anterior und dem Sulcus lateralis posterior, dem im Nasenbinnenraum die Crista semicir-
+cularis entspricht.
+
+
+Die Pars posterior entwickelt sich aus der Cartilago antorbitalis. Sie verläuft caudal des Sul-
+cus lateralis posterior, dem im Nasenbinnenraum der Ansatz des Ethmoturbinale I an der Sei-
+tenwand entspricht, und umfasst auch die Cupula nasi posterior. Der Paries bei Macroscelides
+proboscideus bildet einen lang gestreckten Ring mit dem Tectum nasi und dem Solum nasi im
+vorderen Bereich des beweglichen Teils des Rostralorgans. Diese Zona anularis (Abb. 5a, 16)
+ist schon beim jüngsten untersuchten Stadium (Nr. 1) deutlich ausgeprägt. Bei den Macrosce-
+lidinae werden im Laufe der Ontogenese sowohl das Tectum nasi als auch der Paries nasi
+teilweise abgebaut, so dass Knorpellücken entstehen (vgl. Abschnitt 3.1.). Im Verhältnis zum
+Lumen des Nasenbinnenraumes ist der Paries dick und behält seine Stärke auch über den ge-
+samten beweglichen Teil des Rostralorgans bei.
+
+
+Der Embryo Nr. 2 und das zwei Tage alte Individuum Nr. 3 lassen deutlich den Muskelstrang
+des Musculus dilatator nasi (Abb. 13) erkennen, dessen rostraler Ansatz sich am Paries nasi
+befindet. Dieser Muskel zieht weiter nach caudal und fächert sich dorso-lateral im Bereich des
+Tectum nasi auf (vgl. Abschnitt 3.1.12.).
+
+
+3.1.4 Septum nasi
+
+
+Das knorpelige Septum nasi (Abb. 6b, 12, 19) durchzieht die Nasenkapsel in allen untersuch-
+ten Stadien der Macroscelidinae, wobei sich der zunächst ovale Querschnitt nach caudal ver-
+breitert. In der Zona anularis nimmt er somit einen tropfenförmigen (Abb. 17), weiter caudal
+ohne Verbindung mit dem Tectum nasi einen runden Querschnitt an (Abb. 18). Im anschlie-
+ßenden Verlauf bildet das Septum nasi bis zu seinem caudalen Abschluss eine flache Wandung
+(Abb. 23) und verbindet sich in weiten Teilen mit dem Tectum nasi. Im Bereich des Recessus
+fronto-turbinalis ist bei Individuum Nr. 3 das Septum nasi sowohl ventral als auch dorsal
+leicht aufgetrieben (Abb. 21). Diese Verdickung ist bei dem untersuchten Adultus (Nr. 4) stär-
+ker ausgeprägt und kann in diesem Stadium eindeutig als Septoturbinale definiert werden.
+Caudal der Fenestra internarina bis zum Beginn der Zona anularis hat das Septum nasi außer-
+dem eine Verbindung mit Teilen des Solum nasi. Die Verwachsung des Tectum nasi mit dem
+Septum nasi ist teilweise so weit fortgeschritten, dass sie bei älteren Stadien nicht mehr sicher
+makroskopisch voneinander abgrenzbar sind. Beim jüngsten untersuchten Macroscelides-
+Embryo (Nr. 1) ist die Verschmelzung jedoch noch nicht vollständig und beide anatomische
+Strukturen sind deutlich voneinander getrennt. Auch bei Individuum Nr. 3 beobachtet man an
+einigen histologischen Schnitten (z.B. Abb. 16) eine deutliche Abgrenzung vom Tectum nasi
+zum Septum nasi, ohne dass jedoch eine Lücke zwischen beiden zu erkennen ist. In der Kni-
+ckungszone des Rostralorgans ist der Knorpel des Septum nasi in allen ontogenetischen Sta-
+dien ungleichmäßig resorbiert (Abb. 18). Dadurch existiert stellenweise keine Verbindung mit
+FOOTNOTE:dem Tectum nasi.
+
+
+3.1.5 Lamina cribrosa
+
+
+Die Lamina cribrosa befindet sich ventral vom Nasale und vom Frontale und überdacht haupt-
+sächlich die Pars posterior des Paries nasi. Sie schließt zusammen mit der Cupula nasi poste-
+rior die Nasenkapsel nach caudal ab. In ihr befindet sich eine Vielzahl Foramina olfactoria
+(Abb. 24), die den Fila olfaktoria den Eintritt in die extradurale Nasenkapsel erlauben (Abb.
+7b). Die Lamina cribrosa reicht bei Macroscelides proboscideus etwa vom rostralen Beginn
+des Vomer bis zum Austritt des Nervus opticus aus der Augenhöhle (Abb. 25). Beim zwei
+Tage alten Tier (Nr. 3) ist das Tectum nasi caudal teilweise verknöchert und in der Lamina
+cribrosa sind schmale Bereiche ossifiziert.
+
+
+3.1.6 Lamina transversalis anterior et posterior
+
+
+Ursprünglich ist die Lamina transversalis anterior bei Amnioten ein flacher Knorpel, der sich
+im Laufe der Phylogenese seitlich aufrichtet. So findet man bei den Theria einen horizontalen
+Knorpel, der zwar weiterhin zum Nasenboden gehört, von dem aber lateral eine senkrechte
+Knorpellamelle gebildet wird, die mit dem Paries nasi zur Zona anularis verwächst. Sie wurde
+bei allen untersuchten Stadien von Macroscelides proboscideus gefunden und ist beim Indivi-
+duum Nr. 3 teilweise zu einer Crista verdickt (Abb. 13). Hier ist die Ausprägung des vertika-
+FOOTNOTE:len Bereichs besonders deutlich.
+
+
+Die Lamina transversalis posterior bildet die Basis der Pars ethmoturbinalis der Nasenregion.
+Sie ist bei Macroscelides proboscideus nicht mit dem Nasenseptum verbunden, sondern liegt
+diesem nur an (Abb. 26). Es gibt aber eine knorpelige Verbindung mit der Cupula nasi poste-
+rior (Abb. 26).
+
+
+3.1.7 Cartilago paraseptalis
+
+
+Bei vielen Säugetieren findet sich eine röhrenförmig geschlossene Cartilago paraseptalis ante-
+rior (Kuhn, 1971; Zeller, 1989), die das Vomeronasalorgan beherbergt. Die paarig angelegte
+Cartilago paraseptalis der vorderen Gaumenregion ist bei allen untersuchten Macroscelides
+proboscideus-Stadien knorpelig vorhanden. Sie steht in Verbindung mit der Lamina transver-
+salis anterior (Abb. 13) und dem Septum nasi. Bei dem Individuum Nr. 3 ist im rostralen Ab-
+schnitt dieses Knorpels durch die Verwachsung mit dem Septum nasi die Abgrenzung beider
+Knorpel von einander nicht mehr deutlich. In diesem Bereich der Cartilago paraseptalis befin-
+det sich das „Outer Bar“ (Broom, 1897). Es überdeckt in allen untersuchten Stadien teilweise
+den Kanal des Jacobsonschen Organs, verschließt ihn aber nie vollständig. Bei Macroscelides
+proboscideus ist das „Outer bar“ ein sehr kleiner Knorpel, der schon beim jüngsten untersuch-
+ten Macroscelides-Embryo (Nr. 1) knorpelig angelegt ist. Der mediale Abschnitt der Cartilago
+paraseptalis steht bei allen untersuchten Stadien in Verbindung mit dem Septum nasi und
+flankiert dieses (Abb. 20). Erst im caudalen Bereich, mit dem Beginn des lateralen Aufrich-
+tens nach dorsal, kann die Cartilago lateralis eindeutig vom Nasenseptum abgegrenzt werden.
+Die Cartilago paraseptalis läuft nach caudal spitz aus. Ihre Stützfunktion wird im caudalen
+Bereich vom Vomer übernommen. Die Cartilago paraseptalis, die auch einen Teil der Nasen-
+scheidewand bildet, nimmt von rostral nach caudal in der Höhe zu. Von ihr zweigt lateral eine
+Knorpelfläche ab, die sich nach dorsal aufrichtet, um caudal einen Kanal für das Jacobsonsche
+Organ (vgl. Abschnitt 3.1.9.) zu bilden.
+
+
+Nach etwa zwei Drittel der Gesamtlänge der Cartilago paraseptalis hat der Vomer sein rostra-
+les Ende. Der Vomer reicht weiter nach caudal als die Cartilago paraseptalis.
+
+
+3.1.8 Ductus nasolacrimalis
+
+
+Ein Merkmal des Stammartmusters der Tetrapoden ist das Vorhandensein eines Ductus naso-
+lacrimalis. Er beginnt auch bei den Macroscelidea im vorderen Augenwinkel mit dem Canali-
+culus lacrimalis superior und dem Canaliculus lacrimalis inferior, über die die Tränenflüssig-
+keit abfließt (Abb. 5c, 6a). Die Öffnung des Saccus lacrimalis zur Augenhöhle, das Foramen
+lacrimale (vgl. Abschnitt 3.4.5.), ist sowohl beim jüngsten untersuchten Embryo (Nr. 1) als
+auch bei allen mazerierten Schädeln adulter Tiere von Macroscelides proboscideus erkennbar.
+Das Foramen lacrimale befindet sich bei den Macroscelididae innerhalb der Orbita (vgl. Ab-
+schnitt 3.4.5.).
+
+
+In seinem caudo-rostralen Verlauf liegt der Ductus lacrimalis zunächst etwas ventral des Fron-
+toturbinale und verlagert sich mit dem Beginn der Zona anularis noch weiter nach ventral. Die
+Mündung des Ductus nasolacrimalis in das Cavum nasi befindet sich zwischen Cartilago ala-
+ris superior und Lamina transversalis anterior (Abb.13).
+
+
+3.1.9 Jacobsonsches Organ
+
+
+Als Teil der Nasenhöhle liegt das Jacobsonsche Organ (Abb. 20) am Nasenboden, umgeben
+von der Cartilago paraseptalis (vgl. Abschnitt 3.1.7.). Bei dem Individuum Nr. 3 von Macros-
+celides proboscideus befindet sich der relativ weitlumige, schlitzförmige Ductus nasopalati-
+nus etwa im Bereich der längsten ventro-dorsalen Ausdehnung der Cartilago paraseptalis.
+Etwas weiter caudal öffnet sich der Ductus vomeronasalis dorsal vom Ausgang des Ductus
+nasopalatinus in den Nasenbinnenraum. Beide Ductus münden unabhängig von einander in
+den Nasenbinnenraum. Die Cartilago paraseptalis bilden einen breiten, nach dorsal offenen
+Kanal für das Jacobsonsche Organ, über dem nur im rostralen Bereich teilweise das „Outer
+Bar“ liegt. Das Jacobsonsche Organ reicht bei dem zwei Tage alten Individuum caudal bis
+etwa zum rostralen Ende des Vomer und endet dort blind.
+
+
+3.1.10 Cartilago lateralis
+
+
+Lateral des Paries nasi im vorderen Nasenbereich befindet sich bei allen untersuchten Ent-
+wicklungsstadien von Macroscelides proboscideus ein paariger Knorpel (Abb. 6a, 6b, 18, 19,
+20). Er hat keine Verbindung zu anderen knöchernen oder knorpeligen Strukturen, sondern
+
+
+liegt rostral der rostralen Ausläufern des Praemaxillare. Die Cartilago lateralis beginnt etwa
+auf der Höhe der ersten Trennung von Lamina transversalis anterior und Cartilago parasepta-
+lis (Abb. 18) und endet am rostralen Ende des Maxilloturbinale. Im rostralen Bereich verbrei-
+tert sich die Cartilago lateralis schaufelförmig, so dass sich der rechte und der linke Flügel
+medial fast berühren (Abb. 18). Dieser Knorpel ist schon in frühen embryonalen Stadien als
+präknorpeliges Bindegewebe zu erkennen, verknorpelt jedoch erst bei dem Embryo mit 30,5
+mm Scheitel-Steiß-Länge (Nr. 2). Bei dem drittjüngsten untersuchten Tier (2 dpn, Nr. 3) von
+Macroscelides proboscideus ist die Cartilago lateralis etwa 1,9 mm lang und weist im rostra-
+len Drittel eine Breite von etwa 0,8 mm auf, im caudalen Bereich von nur 0,1 mm. An der
+Cartilago lateralis hat der Musculus maxillo-labialis ventralis seinen rostralen Ansatz. Ein
+entsprechender Knorpel wurde auch bei dem in dieser Arbeit untersuchten Elephantulus-
+Individuum (Nr. 7) gefunden.
+
+
+3.1.11 Cavum nasi
+
+
+Der Nasenbinnenraum dient unter anderem der Leitung der durch die Nase eingeatmeten Luft,
+die dabei sowohl von Staubpartikeln befreit als auch erwärmt wird. Er ist teilweise mit che-
+mo-sensorischem Riechepithel ausgekleidet. Im vorderen Bereich des „Rüssels“ gibt es bei
+den Sengis kein solches Epithel. Der Nasenbinnenraum wird knorpelig vom Tectum nasi, vom
+Paries nasi und vom Solum nasi gebildet.
+
+
+Die inneren Strukturen, die Turbinalia (Abb. 6a, 6b), dienen hauptsächlich der Klimatisierung
+der Inspirationsluft und als Stützstrukutren für das Riechepithel. Die Pars anterior (Reinbach)
+des Nasenbinnenraumes beherbergt im ventralen Bereich das Marginoturbinale, das bei Mac-
+roscelides proboscideus durch einen bogenförmigen nach medio-dorsal gerichteten Anteil der
+rostralen Seitenwand im Bereich der Fenestra internarina entsteht.
+
+
+Das Atrioturbinale (Abb. 7a) liegt bei Individuum Nr. 3 auf gleicher dorso-ventraler Höhe wie
+das Marginoturbinale. Sein caudaler Abschluss befindet sich am rostralen Bereich der Knor-
+pellücken der Knickungszone. Das Nasoturbinale beginnt an der lateralen Nasenseitenwand in
+Höhe des Nasale und ist als einfacher, waagerechter Knorpel ausgebildet.
+
+
+Die Frontoturbinalia (I und II) enden rostral etwa in Höhe der beginnenden dorso-ventralen
+Verkürzung der Lamina semicircularis (Abb. 7b). Sie untergliedern den Raum lateral der La-
+mina (Abb. 21: Crista semicircularis). Beide Processus anteriores der Frontoturbinalia weisen
+nach ventral.
+
+
+Zwei Ethmoturbinalia (I und II) sind jeweils in einen anterioren und einen posterioren Proces-
+sus geteilt, während das Ethmoturbinale III nicht aufgespalten ist (Abb. 6b).
+Bei allen untersuchten embryonalen Macroscelides proboscideus-Stadien sind die Turbinalia
+knorpelig angelegt. Einige Stützstrukturen der Turbinalia (Frontoturbinale, Ethmoturbinale I)
+sind beim Tier Nr. 3 ossifiziert (Abb. 21), während sie beim adulten Individuum (Nr. 4) eine
+fortgeschrittene Ossifikation aufweisen: Die Turbinalia sind rostral etwa bis zur Lamina
+cribrosa knorpelig und ab dem Durchtritt der Fila olfactoria in den Nasenbinnenraum knö-
+chern ausgebildet. Die Crista semicircularis bildet bei Macroscelides proboscideus eine dorso-
+ventral fast senkrecht stehende Wand, die den Recessus maxillaris (Reinbach) vom übrigen
+Nasenbereich medial abgrenzt (Abb. 21). Nach caudal verliert die Lamina semicircularis die
+Verbindung zum Maxillare, behält aber den Kontakt zum Tectum nasi. Sie ist mit dem Proces-
+sus supracribrosus des Nasale verschmolzen, so dass eine Abgrenzung dieser beiden Struktu-
+FOOTNOTE:ren bei keinem Stadium möglich ist.
+
+
+3.1.12 Muskeln des Rostralorgans
+
+
+Die verlängerte Nase der Macroscelidinae kann durch drei Muskeln bewegt werden, die alle
+einen antorbitalen Ursprung haben. Ein kräftig ausgebildeter Muskel, der Musculus dilatator
+nasi, hat seinen Ursprung an der Fossa antorbitalis des Praemaxillare, ist an seiner rostralen
+Ansatzstelle sehr breit gefächert und sowohl mit dem Tectum nasi dorsal als auch mit dem
+Paries nasi lateral verbunden (Abb. 13). Er sorgt für die dorsale Beweglichkeit des Rostrums.
+Der paarige Musculus maxillo-labialis dorsalis (Abb. 16) hat seinen Ursprung an einer Grube
+des Maxillare. Er verläuft von ventral seitlich um den caudalen Teil der Zona anularis und ist
+in seinem mittleren Bereich mit ihr verbunden. Die rostrale Insertion reicht bis zum posterio-
+ren Rand der externen Nares. Mit diesem Muskel ist eine laterale Bewegung des Rostrums
+möglich.
+
+
+Der von allen drei Muskeln am weitesten caudal ansetzende ist der paarige Musculus maxillo-
+labialis ventralis (Abb. 18). Der Ursprung dieses Muskels liegt in einer Fossa zwischen Fron-
+tale und Lacrimale. Er verläuft ventral des Musculus maxillo-labialis dorsalis, inseriert so-
+wohl caudal der Zona anularis am Praemaxillare, als auch direkt an der Cartilago lateralis
+(vgl. Abschnitt 3.1.10.) und sorgt für die ventrale Bewegung des Rostralorgans.
+Beim jüngsten Embryo (Nr. 1) ist die Cartilago lateralis noch vorknorpelig, so dass in diesem
+Entwicklungsstadium der Musculus maxillo-labialis ventralis nur mit dem Praemaxillare ver-
+bunden ist. Erst bei dem fast geburtsreifen Embryo (Nr. 2) ist dieser Knorpel ausgebildet und
+hat eine Verbindung zu diesem Muskel (vgl. Abschnitt 3.1.10.).
+
+
+3.2 Regio orbitotemporalis
+
+
+Sowohl der Boden und die Seitenwand des Cavum cranii als auch Nasen- und Ohrkapseln
+begrenzen die Regio orbitotemporalis. Durch eine bei Säugetieren ausgebildete sekundäre
+Schädelseitenwand wird dieser Bereich in einen lateralen und einen medialen Abschnitt unter-
+teilt. Den medialen Bereich bezeichnet man bei allen Mammalia als Cavum epiptericum und
+FOOTNOTE:bezieht ihn in das Cavum cranii ein.
+
+
+3.2.1 Cavum epiptericum und Hirnnerven
+
+
+Das Cavum epiptericum (Gaupp, 1905) bezeichnet den Raum zwischen der primären und der
+sekundären Schädelseitenwand der Mammalia (Abb. 27). Im Chondrocranium besteht seine
+laterale und ventrale Begrenzung durch die Ala temporalis und die Membrana sphenoobtura-
+toria.
+
+
+Bei Macroscelides proboscideus, wie auch bei manchen anderen Taxa, wird in späten embry-
+onalen Stadien (bis Individuum Nr. 3) das Cavum epiptericum weiterhin ventral durch das
+Pterygoid und das Palatinum, sowie medial durch die Nasenkapsel und durch das Orbitosphe-
+noid begrenzt. Es beginnt in Höhe der rostralen Spitze des Tympanicum. Sehr weit rostral
+verlässt der Sehnerv (II) die Cavum cranii durch den Canalis opticus (vgl. Abschnitt 3.2.3.).
+Das Foramen opticum (Abb. 26) liegt rostral des dorsalen Endes der Cupula nasi posterior
+zwischen Alisphenoid und Orbitosphenoid. Diese Lage findet sich auch im jüngsten Macros-
+celides-Stadium (Nr. 1). Bei allen untersuchten Macroscelides-Stadien sind das Foramen ro-
+tundum und die Fissura supraorbitalis miteinander verschmolzen. Damit verlassen im Adultc-
+FOOTNOTE:ranium die Nerven III, IV, V , V und VI das Cavum epiptericum gemeinsam durch das 1 2
+Foramen sphenorbitale. Der Alisphenoid-Kanal fehlt bei den untersuchten Osteocranien so-
+wohl bei Macroscelidinae als auch bei den Rhynchocyoninae. In jungen Ontogenesestadien
+verläuft der Nervus trochlearis (IV) direkt nach seinem Austritt aus dem Cavum cranii dorsal
+des Ganglion trigeminale. In der weiteren ontogenetischen Entwicklung verlagert er sich zu-
+nehmend nach medial vom Ganglion trigeminale. Erst rostral des caudalen Endes der Cochlea
+liegt er dorsal des Ganglion trigeminale. Im gemeinsamen Verlauf mit dem Nervus trigeminus
+bilden der Nervus trochlearis und das Ganglion trigeminale einen lateral ausgerichteten ova-
+len Querschnitt (Abb. 31). Die caudale Verlängerung des Cavum epiptericum wird als Cavum
+supracochleare bezeichnet. Der Nervus facialis (Abb. 8b: N. VII) verläuft durch den Porus
+acusticus internus ventral unter dem Tegmen tympani, wobei die Commissura suprafacialis
+(Abb. 36b) die craniale Begrenzung dieses Foramens bildet.
+
+
+Schon bei dem jüngsten Stadium von Macroscelides proboscideus (Nr. 1) kann man die
+Commissura suprafacialis deutlich erkennen. Bei diesem Exemplar und bei Tier Nr. 3 ist diese
+Lamelle knorpelig ausgebildet. Der Canalis facialis verlängert sich im Laufe der Ontogenese.
+Die Commissura suprafacialis berührt in allen untersuchten Stadien fast das Cerebrum. Durch
+das Foramen lacerum posterius verlassen der Nervus glosso-pharyngeus (IX) und der Nervus
+vagus (X) die Ohrkapsel (Abb. 35c). Auch am jüngsten untersuchten Stadium von Macrosce-
+lides proboscideus (Nr. 1) sind das Foramen cochleae und das Foramen ovale deutlich zu un-
+terscheiden. Durch das perforierte Exoccipitale verlässt der Nervus hypoglossus als letzter
+Hirnnerv das Cavum cranii. Beim Embryo Nr. 1 existiert für den Durchtritt des Ganglion tri-
+geminale in das Cavum cranii eine breite Knorpellücke, die erst bei dem zweitältesten Emb-
+ryo (Nr. 2) zu einem Foramen geschlossen ist und im Verlauf der Verknöcherung der Bulla zu
+einem vollständig knorpelig umschlossenen Foramen wird.
+
+
+3.2.2 Alisphenoid
+
+
+Die beim jüngsten untersuchten Macroscelides-Embryo (Nr.1) noch vollständig knorpelige
+Ala temporalis zeigt bei dem Tier Nr. 2 erste Anzeichen einer Ossifikation, die beim Tier Nr. 3
+weiter fortgeschritten und beim adulten Tier vollständig ist.
+
+
+Das Alisphenoid von Macroscelides proboscideus bildet den ventralen Rand der Orbita und
+begrenzt dort zusammen mit dem Orbitosphenoid das Foramen opticum. Außerdem hat es
+Anteil an der Bildung des Foramen subopticum, das es zusammen mit dem Orbitosphenoid,
+welches erst im Stadium Nr. 3 teilweise ossifiziert ist, und dem Pterygoid, welches schon im
+jüngsten Stadium (Nr. 1) knöchern vorliegt, umschließt. Im caudalen Bereich der Bulla bei
+Macroscelides proboscideus hat das Alisphenoid Kontakt zum Parietale und zum Squamo-
+sum (Abb. 33). Sowohl bei Macroscelides proboscideus als auch bei Elephantulus gibt es
+keine Verbindung der letztgenannten Elemente. Bei Petrodromus tetradactylus und den Rhyn-
+chocyoninae kann man eine schmale fronto-alisphenoide Naht erkennen.
+
+
+Die Naht zwischen Cupula nasi posterior und Alisphenoid ist bei jedem Individuum der für
+diese Untersuchung zur Verfügung stehenden Stadien deutlich zu erkennen. Das Alisphenoid
+verwächst also in keinem Punkt vollständig mit der Cupula nasi posterior, sondern ist in allen
+untersuchten Stadien von dieser deutlich abgrenzbar. Caudal der Orbita und cranial der Mit-
+telohrkapsel ist bei Macroscelides proboscideus das Alisphenoid vergrößert und umschließt
+als Foramen caroticum die Arteria carotis interna vollständig (vgl. Abschnitt 3.4.). Beim zwei
+Tage alten Tier (Nr. 3) ist in diesem Bereich das Alisphenoid so breit, dass der Kanal für den
+
+
+Ramus infraorbitalis des Nervus trigeminus (Abb. 32) diesen Knochen weder cranial noch
+tympanal auftreibt. Die Knorpellamelle bei Tier Nr. 1, die in Individuum Nr. 2 zu verknöchern
+beginnt, ist relativ breit angelegt. Sie umschließt den Durchtritt des Nervus opticus. Das Ali-
+sphenoid beginnt bei Individuum 1 an der Stelle zu verknöchern, an der der Nervus opticus
+(Abb. 26, 27) in das Cavum cranii vollständig eintritt. Etwas rostral vor dem Ansatz der Coch-
+lea befindet sich der Anfang der tympanalen Ausstülpung des Alisphenoid für den Musculus
+tensor tympani (Abb. 34). Damit liegen die Arteria carotis interna, der Ramus infraorbitalis
+des Nervus maxillaris und der Musculus tensor tympani eng nebeneinander, durch Knochen-
+lamellen getrennt. Das Alisphenoid von Macroscelides proboscideus ist viel weiter nach
+rostral ausgedehnt als bei Elephantulus. Dadurch entsteht ein fließender Übergang zur Bulla.
+Bei Elephantulus endet die Bulla ziemlich abrupt mit Beginn der Lamina lateralis des Ptery-
+goid.
+
+
+3.2.3 Orbitalmosaik
+
+
+Die aus verschiedenen Deckknochen (Maxillare, Palatinum, Frontale, und z. T. Lacrimale)
+und Ersatzknochen (Orbitosphenoid, Alisphenoid) bestehende Schädelseitenwand der Theria
+im Bereich der Orbita (Abb. 3b, 5a) wurde schon oft für phylogenetische Vergleiche verschie-
+dener Taxa genutzt (u. a. Cox, 2006; Giere, 2002; Mess, 1997). Dieses Knochenmosaik zeigt
+innerhalb der Säugetiere stark variierende Merkmale.
+
+
+Bei allen Macroscelidinae bilden das Lacrimale, das Maxillare und das Jugale einen scharfen
+vorderen Orbitalrand aus. Große Variabilität hingegen findet man beim caudalen Orbitalrand.
+Ist er bei Macroscelides proboscideus und Petrodromus tetradactylus stark abgerundet, finden
+sich bei Elephantulus spec. verschiedene Ausprägungen. Elephantulus intufi hat einen Proces-
+sus postfrontalis, der sich über das Parietale fortsetzt und dort breit ausläuft. Der gesamte
+Fortsatz erhebt sich dorsal über das Frontale. Ein solcher Processus des Frontale findet sich
+auch bei Petrodromus tetradactylus, hier reicht er jedoch nicht über die Orbita hinaus.
+Elephantulus myurus besitzt ebenfalls einen knöchernen Fortsatz dorsal der Orbita, der aller-
+dings nur vom Os frontale gebildet wird. Bei Rhynchocyon spec. ist die gesamte Orbita von
+einem scharfen Rand umgeben, der im Processus postorbitalis des Squamosum endet.
+Alle Sengis haben eine durchgehende knöcherne Verbindung zwischen beiden Foramina opti-
+ci. Eine zusätzliche Öffnung im Orbitosphenoid, das Foramen subopticum, ist bei allen Mac-
+FOOTNOTE:roscelidea vorhanden.
+
+
+Der rostro-ventrale Abschluss der Orbita wird bei Rhynchocyoninae und bei den Orycteropo-
+didae vom Palatinum gebildet. Dieser Knochen hat zusätzlich eine Verbindung zum Maxillare
+und zur Pars orbitalis des Lacrimale. Bei den Macroscelidinae liegt dieser Kontakt nicht in-
+nerhalb der Orbita. Bei Macroscelides proboscideus ist die Pars orbitalis des Palatinum redu-
+ziert, so dass es keine Verbindung zum Frontale gibt. Das Maxillare hat bei den Rhynchocyo-
+ninae einen geringen Anteil an der rostro-ventralen Spitze der Orbita des adulten Schädels. Es
+hat hier eine Verbindung sowohl mit dem Palatinum als auch mit dem Lacrimale. Bei allen
+Macroscelidea sind das Foramen opticum und das Foramen subopticum deutlich voneinander
+abgegrenzt. Das Foramen subopticum liegt rostro-ventral vom Foramen opticum. Beide Fo-
+ramina werden durch das Alisphenoid und das Orbitosphenoid begrenzt, wobei auch das Pte-
+rygoid einen kleinen Anteil an der Bildung des Foramen subopticum hat.
+
+
+Als Teil des Orbitalmosaiks zeigt das Orbitosphenoid bei erwachsenen Tieren Verbindungen
+zum Frontale, zum Parietale und zum Alisphenoid. Das Orbitosphenoid ist eine dünne Knor-
+pellamelle, welche Anteil an der Begrenzung des Foramen subopticum und des Foramen opti-
+cum hat. Es liegt in embryonalen Stadien unverknöchert vor und ossifiziert relativ spät in der
+Ontogenese. Bei den hier untersuchten Stadien ist das Orbitosphenoid erst bei dem zwei Tage
+alten Tier (Nr. 3b) knöchern, während alle jüngeren Individuen knorpelige Strukturen besit-
+zen.
+
+
+3.3 Tympanalregion
+
+
+Einen großen Teil am Chondrocranium der Sengis nehmen neben dem Cavum cranii die Ohr-
+kapseln ein. Zusammen mit der dorso-medial von ihnen liegenden Schädelseitenwand und
+dem Schädeldach begrenzen sie das Cavum cranii lateral, bei Macroscelides proboscideus
+auch dorsal. Der oticale Abschnitt der Parachordalplatte bildet, dorsal zwischen den Ohrkap-
+seln liegend, den Boden der Schädelhöhle in der Regio otica (Zeller, 1998). In der Ohrregion
+und der Hinterhauptsregion wird die Schädelbasis von dem Planum basale gebildet. Die Ba-
+salplatte erstreckt sich caudal bis zum Foramen magnum, wird aber im Laufe der Ontogenese
+durch die Ersatzverknöcherung des Basioccipitale ersetzt. Die vertikale Ausdehnung des Pla-
+num basale nimmt von rostral nach caudal kontinuierlich ab. Bei Macroscelides proboscideus
+buchten die Mittelohrkapseln das Planum basale lateral ein. Über die Commissurae basicoch-
+learis anterior und posterior ist die Basalplatte mit den Ohrkapseln verbunden. Beide Com-
+missurae sind, wenn auch verdeckt, beim adulten Tier noch zu erkennen.
+
+
+3.3.1 Mittelohrkapsel
+
+
+Die schräge Lage der Achse der Mittelohrkapsel von rostro-medial nach caudo-lateral und
+von rostro-ventral nach caudo-dorsal findet sich bei allen untersuchten Sengis. Von allen an-
+deren Macroscelidea unterscheidet sich der Schädel von Macroscelides proboscideus eindeu-
+tig durch die von ventral sichtbare, stark vorgewölbte Mittelohrkapsel (Abb. 2, 4). Ihre Hohl-
+räume nehmen bei adulten Macroscelides proboscideus neben dem Hirnschädel den größten
+Teil des Kopfvolumens ein.
+
+
+Der Aufbau der Mittelohrkapsel (Abb. 8a, 8b) von Macroscelides proboscideus ist sehr kom-
+plex. Sie besteht aus dem Petrosum (Abb. 1, 3) und dem Tympanicum (Abb. 3, 5a), aus Teilen
+des Alisphenoid (Abb. 28), des Basisphenoid (Abb. 32), des Pterygoid (Abb. 25) und des En-
+totympanicum (Abb. 5b, 32) sowie dem Squamosum (Abb. 33). In bestimmten Phasen in der
+Ontogenese beteiligen sich der proximale Teil des Hyoid und das Goniale an dem Aufbau der
+Bulla. Beide Strukturen haben aber bei dem Individuum Nr. 3 keinen Anteil mehr am Aufbau
+der Mittelohrkapsel.
+
+
+Bei Macroscelides proboscideus ist die Mittelohrkapsel so stark pneumatisiert, dass an maze-
+rierten Schädeln selbst in dorsaler Sicht die rechte und die linke Bulla dorsal und caudal den
+restlichen Schädel überragen. Die sich nach dorsal und caudal erstreckenden von dem
+Squamosum und dem Parietale gebildeten pneumatisierten Höhlen sind auch am lebenden
+Tier deutlich zu erkennen. Nur der Arcus zygomaticus und der verknöcherte Meatus acusticus
+externus reichen weiter nach lateral als die Bullae. Der bei Rhynchocyoninae deutliche Ab-
+stand zwischen den Bullae verringert sich zunehmend bei Petrodromus tetradactylus sowie
+Elephantulus und ist bei Macroscelides proboscideus nahezu aufgehoben. Dies resultiert aus
+der starken Expansion der Bullae bei Macroscelides proboscideus. Bei Petrodromus tetradac-
+tylus und Elephantulus spec. ist der Abstand der Ohrkapseln etwas größer, weil bei diesen
+beiden Taxa unter anderem das caudale Entotympanicum kleiner ist.
+
+
+Die Mittelohrkapsel bei Macroscelides proboscideus ist stellenweise durch eine doppelte knö-
+cherne Wand begrenzt. Der Processus tympanicus squamosi bildet zusammen mit dem Pro-
+cessus tympanicus des Alisphenoid die Bulla und sorgt etwas caudal dieser Doppelwand für
+ihren dorso-lateralen Abschluss.
+
+
+Erst relativ spät in der Ontogenese expandiert die Bulla vollständig. Während bei jüngeren
+Embryonen ihre Größe vergleichbar mit der anderer Arten ist, zeigt sich bei einem zwei Tage
+alten Tier (Nr. 3) eine starke Vergrößerung. Ihre Expansion ergibt sich unter anderem durch
+ein im Vergleich mit gleichaltrigen Stadien anderer Taxa größeres Alisphenoid. Bei Macrosce-
+34
+
+
+lides proboscideus beteiligt sich das caudale Entotympanicum besonders stark an der Vergrö-
+ßerung der Bulla. Zusätzlich ist auch der Sinus epitympanicus bei Macroscelides probosci-
+deus stärker pneumatisiert als bei anderen Sengis-Arten.
+
+
+Im Innenohr können die Pars cochlearis sensu stricto, in der nur der Schneckengang liegt, und
+die Pars vestibularis, in dem sich die Fenestra vestibuli, das Foramen perilymphaticum, das
+Foramen acusticum sowie Teile des Sacculus befinden, unterschieden werden. Eine genaue
+anatomische Abgrenzung kann nur am Embryo erfolgen, weil bei adulten Tieren die Ossifika-
+tion des Petrosum so weit fortgeschritten ist, dass die Grenzen zwischen der Pars cochlearis
+sensu stricto und der Pars vestibularis nicht mehr sichtbar sind. Die Pars cochlearis ist kuppel-
+förmig, aber an ihrer der Schädelhöhle zugewandten Seite abgeflacht. Rostral setzt sie sich in
+der Commissura basicochlearis anterior und der Commissura alicochlearis fort. Die Cochlea
+von Macroscelides proboscideus besitzt zwei Windungen. In der Pars canalicularis befindet
+sich das vestibulo-cochleare Organ, welches Lageveränderungen des Kopfes sensorisch re-
+gistriert. Die drei Bogengänge, Ductus semicircularis lateralis, Ductus semicircularis anterior
+und Ductus semicircularis posterior, verändern ihren Durchmesser im jeweiligen Verlauf nicht
+(Abb. 10a-c) und sind vollständig von Knorpel (Individuum Nr. 1) bzw. Knochen (alle älteren
+Entwicklungsstadien) umschlossen. Der Ductus semicircularis lateralis ist nur etwa halb so
+hoch wie die beiden anderen Bogengänge. Der Winkel, den die beiden Ductus semicirculares
+superiores einschließen, beträgt etwa 81°. Betrachtet man die aufrecht stehenden Bogengänge
+von dorso-ventraler Richtung, ist der Ductus semicircularis lateralis etwa 61° in die Waage-
+rechte geneigt und zeigt nach rostro-lateral.
+
+
+3.3.2 Entotympanicum
+
+
+Van der Klaauw (1929) führt die Unterscheidung zwischen rostralem und caudalem Entotym-
+panicum ein. Er definiert damit alle knöchernen und knorpeligen ontogenetisch unabhängigen
+Elemente ventral der Wand der Paukenhöhle, ohne Berücksichtigung des Tympanohyale und
+der Knorpel der Eustachischen Röhre. Sowohl das rostrale als auch das caudale Entotympani-
+cum sind bei Macroscelides proboscideus in allen untersuchten Ontogenesestadien zu finden.
+Beide Elemente können bei Macroscelides proboscideus durch die gesamte Ontogenese ver-
+folgt werden (Abb. 3, 5b, 31, 32). Das rostrale Entotympanicum bleibt in allen Entwicklungs-
+stadien knorpelig, ist wesentlich kleiner als das caudale Entotympanicum und verwächst im
+Laufe der Ontogenese mit der Tuba auditiva. Bei den für die vorliegende Arbeit untersuchten
+Individuen zeigt sich, dass das caudale Entotympanicum mit dem Ectotympanicum eine enge
+
+
+Verbindung eingeht (36e). Die Verwachsungsgrenze dieser beiden Knochen ist noch am Emb-
+ryo Nr. 2 zu erkennen.
+
+
+3.3.3 Ossicula auditus
+
+
+Die Gehörknöchelchen von Macroscelides proboscideus sind deutlich sichtbar, wenn man den
+mazerierten Schädel von lateral betrachtet (Abb. 3a, 9a-c). Sie liegen nicht frei in der Ohrkap-
+sel, sondern sind über Ligamente mit der lateralen und caudalen Paukenhöhlenwand verbun-
+den. Das Crus breve des Incus liegt dabei so eng an der lateralen Paukenhöhlenwand an, dass
+bei Individuum Nr. 3 auch mikroskopisch kein Ligament erkennbar ist. Der rostrale Anteil des
+Malleus ist nach ventral gebogen, während nach caudal der Corpus des Incus einen ebenfalls
+gebogenen kurzen Abschluss der Gehörknöchelchen bildet.
+
+
+Das größte der drei Gehörknöchelchen, der Malleus (Abb. 9a-c, 35f), ist besonders gut sicht-
+bar am mazerierten Schädel (Abb. 3b). Der Kopf des Malleus von Macroscelides probosci-
+deus ist kurz und kräftig ausgebildet und wird an allen Seiten von der Auftreibung des Ge-
+lenks zwischen Hammer und Amboss überragt. Dieses Gelenk verbindet die beiden Knochen
+auf ihrer gesamten Breite. Der Processus gracilis ist sehr dünn, gerade und greift weit nach
+lateral. Er hat Anteil an der Bildung der Fissura petrotympanica und zeigt keine Strukturie-
+rung. In den beiden jüngsten untersuchten Entwicklungsstadien von Macroscelides probosci-
+deus ist das Goniale als separater Knorpel erkennbar, der teilweise bindegewebig mit dem
+unverknöcherten Tympanicum verbunden ist.
+
+
+Als drittes Glied in der Kette der Gehörknöchelchen verbindet der Steigbügel den Incus mit
+der Membran des ovalen Fensters (Abb. 35f). Das Corpus des Stapes ist bei Macroscelides
+proboscideus schwach entwickelt (Abb. 36d). Der Steigbügel besitzt verhältnismäßig lange,
+gerade und dünne Crura. Zwischen diesen verläuft von ventral nach dorsal der Canalis stape-
+dialis mit der Arteria stapedialis.
+
+
+FOOTNOTE:3.4 Deckknochen
+
+
+Im Folgenden werden die Anatomie und der Grad der Ossifikation der Deckknochen be-
+schrieben. Der Zeitpunkt des Beginns der Ossifikation war nicht zu bestimmen, da bei dem
+jüngsten untersuchten Macroscelides proboscideus-Embryo (Nr. 1) schon alle Deckknochen
+mindestens teilweise verknöchert waren. Das zweitälteste Stadium von Macroscelides pro-
+boscideus (Nr. 2) ist weit entwickelt, alle Deckknochen liegen weitgehend verknöchert vor,
+jedoch ist auch beim zwei Tage alten Tier (Nr. 3) die Ossifikation noch nicht abgeschlossen.
+
+
+Unter anderem weisen das Frontale und das Parietale immer noch unverknöcherte Bereiche
+auf. Die Bestimmung der genauen Ossifikationszeitpunkte wäre nur mit Hilfe jüngerer Emb-
+ryonalstadien von Macroscelides proboscideus zu ermitteln. Dieses Material stand nicht zur
+Verfügung.
+
+
+3.4.1 Nasale
+
+
+Das Nasale von Macroscelides proboscideus (Abb. 1, 5c) bildet die dorsale knöcherne Be-
+grenzung der Nasenregion und gemeinsam mit dem Praemaxillare die vordere Apertura nasi
+FOOTNOTE:ossea.
+
+
+Als relativ dünner Knochen grenzt es an die knorpelige Nasenkapsel und überlagert sie
+rostral. Lateral verbindet es sich mit dem Praemaxillare und dem Maxillare und berührt cau-
+dal das Frontale. Die rostrale Ausdehnung ist verglichen mit dem Praemaxillare bei allen un-
+tersuchten Stadien etwa gleich.
+
+
+Das Nasale endet rostral direkt caudal der Cartilago lateralis. Die Verbindung mit dem Prae-
+maxillare erstreckt sich etwa über die Hälfte seiner Gesamtlänge.
+
+
+Bei Macroscelides proboscideus bildet die Naht zwischen dem rechten und dem linken Nasale
+über die gesamte Länge einen Sulcus. Aus dorsaler Sicht erscheint das Nasale gerade, langge-
+streckt und an den Enden abgerundet. Ein deutlicher Sulcus am rostralen Ende des Nasale ist
+bei allen Macroscelidinae zu erkennen. Dieser existiert bei den Rhynchocyoninae nicht. Bei
+Macroscelides proboscideus liegt die Naht zwischen dem rechten und dem linken Nasale in
+einem Sulcus zwischen dem nach dorsal aufgewölbten Rücken der Nasalknochen.
+
+
+Im Gegensatz zu Macroscelides proboscideus verläuft bei Elephantulus intufi die Sutur zwi-
+schen Frontale und Nasale transversal gerade. Hierin unterscheiden sich die Rhynchocyoninae
+und die Macroscelidinae deutlich. Der caudale Abschluss bei den Rhynchocyoninae reicht in
+die Naht zwischen rechtem und linkem Frontale. Die Nasalia von Petrodromus tetradactylus,
+Elephantulus spec. und Macroscelides proboscideus enden immer rotral vor den Frontalia. Es
+gibt somit eine große Variabilität dieser Sutur innerhalb der Sengis. Sie unterscheidet sich
+sowohl interspezifisch als auch intraspezifisch.
+
+
+3.4.2 Praemaxillare
+
+
+Rostral verbindet sich der knorpelige „Rüssel“ mit dem paarigen Praemaxillare. Zwischen
+beiden Bereichen des Rostralorgans besteht ein stufenloser Übergang bei Macroscelides pro-
+boscideus (Abb. 1, 5c, 18). Bei den Rhynchocyoninae hingegen ist das Praemaxillare im
+
+
+rostralen Bereich lateral aufgetrieben, so dass hier ein deutlich abgesetzter Rand zwischen
+„Rüssel“ und Praemaxillare ausgebildet ist. Letzteres enthält die Alveolen für die drei oberen
+Incisivi. Das Praemaxillare hat dorsal Kontakt mit dem Nasale und caudal mit dem Maxillare.
+Diese Verbindung variiert zwischen den Taxa stark. Bei Macroscelides proboscideus verläuft
+die Sutur gerade und dorso-ventral. Bei Elephantulus-Arten variiert deren Form interspezi-
+fisch.
+
+
+Bei allen Sengis (einschließlich der Rhynchocyoninae) reicht der Processus palatinus medialis
+des Praemaxillare weit nach caudal. Am längsten ist er bei den Elephantulus-Arten, bei denen
+er sogar bis zum Caninus reichen kann.
+
+
+3.4.3 Maxillare
+
+
+Das Maxillare (Abb. 3, 5a, 24) ist das Hauptelement der lateralen Wand der caudalen Nasen-
+region und des harten Gaumens. Es enthält die Alveolen sowohl für die Canini als auch für
+die Praemolaren und Molaren. Bei den Sengis ist der Processus zygomaticus des Maxillare
+kräftig ausgebildet und über eine lange Naht mit dem Jugale verwachsen. Die Sutur mit dem
+Nasale verläuft gerade nach rostral. Weiter caudal bildet das Maxillare eine Sutur mit dem
+Frontale, die sich bis zur Orbita erstreckt. Im dorsalen Bereich befindet sich das Foramen
+infraorbitalis, dessen Form bei allen untersuchten Arten etwa gleich, oval und lateral abge-
+FOOTNOTE:flacht ist.
+
+
+Die Länge des Canalis infraorbitalis unterscheidet sich bei den untersuchten Arten stark. Der
+Kanal ist langgestreckt bei den Rhynchocyoninae, kürzer bei Elephantulus und nur noch ein
+Durchbruch des Maxillare zur Orbita bei Macroscelides proboscideus.
+
+
+Die Foramina incisiva (Abb. 2) sind bei allen Macroscelididae vorhanden. Sie sind immer
+länger als breit und bei Petrodromus tetradactylus und Rhynchocyon spec. rostro-medial
+schlitzförmig ausgebildet. Die Foramina nehmen bei Petrodromus tetradactylus einen bogen-
+förmigen Verlauf, wobei die die konvexe Seite nach lateral zeigt. Dies stellt unter den Sengis
+eine Ausnahme dar, denn bei allen anderen Macroscelidea verlaufen die Foramina gerade.
+
+
+3.4.4 Frontale
+
+
+Das Schädeldach medial der Orbita wird bei den Macroscelidea zum Teil durch das Frontale
+(Abb. 1, 5c) gebildet, welches außerdem Anteil an der medialen Wand der Orbita hat. Rostral
+steht es sowohl mit dem Nasale als auch, etwas lateral, mit dem Lacrimale in Kontakt. Die
+annähernd geradlinige Knochennaht zwischen den Frontalia verbindet die beiden Seiten flach,
+
+
+ohne Sulcus- oder Cristabildung miteinander. Das Frontale entspringt rostral zwischen der
+knorpeligen Nasenkapsel und dem Nasale, so dass eine kontinuierliche knöcherne Bedeckung
+der Nasenkapsel entsteht. An der Nahtstelle zu den Nasalia sind die Frontalia erheblich dicker
+als im flachen, den Nasenbinnenraum überdeckenden Bereich. Im Verlauf der Ontogenese
+verwachsen das rechte und das linke Os frontale eng miteinander. Diese Sutur ist allerdings
+bei dem zwei Tage alten Tier (Nr. 3) noch nicht vollständig ausgebildet (Abb. 5c). Der Über-
+gang von der Pars facialis zur Pars orbitalis des Frontale, der bei Macroscelides proboscideus
+und einigen Elephantulus-Arten abgerundet ist, bildet bei den Rhynchocyoninae und
+Elephantulus intufi eine deutliche Kante. Anhand dieses Befundes konnte unter den für diese
+Untersuchung zur Verfügung stehenden Exemplaren Elephantulus intufi eindeutig von allen
+anderen Elephantulus-Arten abgegrenzt werden.
+
+
+Die Sutur zwischen dem Frontale und dem Parietale ist bei den einzelnen Vertretern der Mac-
+roscelidinae sehr unterschiedlich geformt. Es treten sowohl gerade als auch stark konvex nach
+caudal gerichtete Nähte auf. Intraorbital und ventral der Sutur mit dem Parietale berührt das
+Frontale das Alisphenoid.
+
+
+3.4.5 Lacrimale
+
+
+Das Lacrimale (Abb. 1, 3, 5c) hat bei den zur Verfügung stehenden Exemplaren von Macros-
+celides proboscideus je eine Sutur zum Jugale (Abb. 5c), zum Frontale und zum Maxillare
+(Abb. 22). Bei allen Sengis ist es deutlich in eine Pars facialis und eine Pars orbitalis unter-
+teilt. Die Pars orbitalis ist bei allen Macroscelidinae wesentlich größer als die Pars facialis.
+Die Rhynchocyoninae haben als einzige Gruppe der Sengis eine im Vergleich zur Pars orbita-
+lis wesentlich größere Pars facialis.
+
+
+Die Pars orbitalis des Lacrimale erhebt sich bei Macroscelides proboscideus als eine scharfe
+Knochenlamelle oberhalb des vorderen Orbitalrandes. Bei allen anderen Sengis ist der Über-
+gang von der Pars facialis zur Pars orbitalis ebenfalls deutlich, jedoch ist bei ihnen keine der-
+artige nach rostro-dorsal gerichtete Lamelle ausgebildet.
+
+
+Das Foramen lacrimale liegt sowohl bei Macroscelides proboscideus als auch bei Petrodro-
+mus tetradactylus dorsal des Foramen infraorbitalis. Bei Rhynchocyon befindet sich das Fo-
+ramen lacrimale sehr weit lateral, bei Elephantulus ist es medial verschoben. Bei den erstge-
+nannten Taxa ist es größer und nahezu rund, bei den letztgenannten Taxa höher als breit und
+schlitzförmig.
+
+
+3.4.6 Parietale
+
+
+Das Parietale ist einer der Deckknochen, dessen Ossifikation bei Macroscelides proboscideus
+als letztes abgeschlossen wird. Bei dem Individuum Nr. 3 liegt es noch zum großen Teil un-
+verknöchert vor (Abb. 5a-c). An mazerierten Schädeln der Macroscelidea schließt sich das
+Parietale (Abb. 1) von dorsal betrachtet nach caudal direkt an das Frontale an. Der orbitale
+Anteil ist nach medial gewölbt. Außer der Naht zum Frontale hat das Parietale Verbindungen
+zum Squamosum, zum Alisphenoid und zum Orbitosphenoid. Im caudalen Bereich des Parie-
+tale ist ein Interparietale deutlich zu erkennen (vgl. Abschnitt 3.4.11.). Bei Macroscelides pro-
+boscideus sind die Parietalia nach rostral verschoben, da sich die stark ausgebildeten, nach
+dorsal aufwölbenden Teile des Squamosum zwischen die Parietalia und die Occipitalia schie-
+ben. Bei den vorliegenden Macroscelides-Stadien beginnt die Ossifikation des caudalen Parie-
+tale von medial und lateral. Es ist schon beim jüngsten Macroscelides-Embryo (Nr. 1) teilwei-
+se verknöchert.
+
+
+3.4.7 Dentale
+
+
+Das Dentale (Abb. 5a, 19) enthält unter anderem die Alveolen für die Zähne des Unterkiefers.
+Es hat eine gelenkige Verbindung zum Squamosum. Im Bezug zur Kauebene liegt das Kiefer-
+gelenk der Macroscelidea sehr hoch. Der Unterkiefer von Macroscelides proboscideus
+(Abb. 5a, 5b) besitzt einen kurzen, häkchenförmigen Coronoidfortsatz, der sich etwa auf einer
+Ebene mit dem Processus articularis befindet. Bei allen Sengis laufen sowohl der Processus
+angularis als auch der Processus coronoideus spitz zu. Der Processus coronoideus ist bei allen
+Elephantulus-Arten kräftiger ausgebildet als bei Macroscelides proboscideus und bietet so
+einen stärkeren Ansatz für die Kaumuskulatur. Der Processus angularis ist sichelförmig und
+im Vergleich zu Elephantulus relativ dünn. Die Spitze des Processus angularis endet bei allen
+Sengis-Arten auf Höhe der Kauebene. Ihr Abstand zur Spitze der Fossa coronoidea entspricht
+etwa der Breite dieser Fossa.
+
+
+3.4.8 Palatinum
+
+
+Gemeinsam mit dem Maxillare bildet das Palatinum (Abb. 2, 19) die knöcherne Begrenzung
+der Nasen- und Mundhöhle. Außerdem stützt es den caudalen Teil des Palatum durum. Im
+Verhältnis zum Maxillare reicht es weiter nach caudal. Es ist bei den adulten Macroscelidinae
+stark fenestriert. Bei allen Macroscelidinae reichen die Foramina incisiva nach caudal über die
+Naht zwischen Praemaxillare und Maxillare hinaus. Das Foramen palatinum majorus (Abb. 2)
+
+

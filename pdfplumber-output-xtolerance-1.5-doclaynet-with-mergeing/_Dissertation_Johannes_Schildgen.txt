@@ -1,25 +1,51 @@
 TECHNISCHE UNIVERSITÄT KAISERSLAUTERN
+
+
 DOKTORARBEIT
+
+
 Datentransformationen in
 NoSQL-Datenbanken
+
+
 Vom Fachbereich Informatik
 der Technischen Universität Kaiserslautern
 zur Verleihung des akademischen Grades
 Doktor der Ingenieurswissenschaften (Dr.-Ing.)
 genehmigte Dissertation
+
+
 von
+
+
 M.Sc. Johannes Schildgen
+
+
 Dekan des Fachbereichs Informatik:
+
+
 Prof. Dr.-Ing. Stefan Deßloch
+
+
 Prüfungskommison:
+
+
 Prüfungskommison:
 Vorsitzender: Prof. Dr.-Ing. Reinhard Gotzhein
 Berichterstatter: Prof. Dr.-Ing. Stefan Deßloch
 Prof. Dr.-Ing. Wolfgang Lehner
+
+
 Datum der wissenschaftlichen Aussprache:
 25. September 2017
+
+
 D 386
+
+
 Zusammenfassung
+
+
 NoSQL-Datenbanken werden als Alternative zu klassischen relationalen
 Datenbanksystemen eingesetzt, um die Herausforderungen zu meistern,
 die „Big Data“ mit sich bringt. Big Data wird über die drei V definiert: Es
@@ -29,6 +55,8 @@ zen zudem meist nur sehr einfache Anfragemethoden. Um auch komplexe
 Datenanalysen durchzuführen, kommen meist Datenverarbeitungsframe-
 works wie MapReduce, Spark oder Flink zum Einsatz. Diese sind jedoch
 schwieriger in der Benutzung als SQL oder andere Anfragesprachen.
+
+
 schwieriger in der Benutzung als SQL oder andere Anfragesprachen.
 In dieser Arbeit wird die Datentransformationssprache NotaQL vorge-
 stellt. Die Sprache verfolgt drei Ziele. Erstens ist sie mächtig, einfach zu er-
@@ -60,7 +88,11 @@ mittels der Entwicklung benutzerdefinierter Funktionen und Engines mög-
 lich. Die Anwendungsmöglichkeiten von NotaQL sind Datentransforma-
 tionen jeglicher Art, von Big-Data-Analysen und Polyglot-Persistence-An-
 wendungen bis hin zu Datenmigrationen und -integrationen.
+
+
 Abtract
+
+
 NoSQL databases are a new family of databases systems that do not ne-
 cessarily follow the relational model, they have simple access methods,
 and they are made to handle Big Data. Characterized with the 3 Vs, Big
@@ -69,6 +101,8 @@ processing frameworks like MapReduce, Spark, or Flink are often used to
 perform complex data analyses due to the simple access methods of NoSQL
 databases. These systems are powerfull but more difficult to use than query
 languages such as SQL.
+
+
 In this thesis, a data-transformation language called NotaQL is presen-
 ted. This language follows three objectives. Firstly, it is easy to learn, concise
 and powerful. Secondly, it is independent of the actual underlying databa-
@@ -83,6 +117,8 @@ ly the changes since the former computation to produce the new result. Dif-
 ferent incremental and non-incremental approaches are supported by the
 NotaQL transformation platform. An intelligent advisor component can be
 used to always execute a transformation in the best possible way.
+
+
 used to always execute a transformation in the best possible way.
 NotaQL supports all typical forms of NoSQL databases: key-value sto-
 res, wide-column stores, document stores and graph databases. Its power-
@@ -92,10 +128,16 @@ SQL databases; it can also be used to analyze and transform data from rela-
 tional databases, files, services, and data streams. When a user reaches the
 limits of NotaQL, user-defined functions and engines can be developed to
 extend the language and connect transformations to other systems.
+
+
 The fields of application of the presented language are data transforma-
 tions of any kind: from Big-Data analytics and polyglot-persistence appli-
 cations to data migrations and information integration.
+
+
 Danksagung
+
+
 Ich möchte einen besonderen Dank meinem Betreuer und Doktorvater Prof.
 Stefan Deßloch aussprechen. Er stand von Anfang an voll und ganz hin-
 ter meiner Forschung und zeigte mir stets mit wertvollen Ratschlägen den
@@ -105,11 +147,15 @@ beiden anderen Professoren des Lehrgebiets Informationssysteme, Prof. Theo
 Härder und Prof. Sebastian Michel danke ich dafür, dass sie mir ihr Wissen
 an Datenbanken weitergegeben haben und ich mich auch in deren Arbeits-
 gruppen in die Lehre mit einbringen durfte.
+
+
 gruppen in die Lehre mit einbringen durfte.
 Ein großer Dank geht an zwei weitere Professoren, und zwar zum einen
 Prof. Reinhard Gotzhein, der sich bereiterklärt hat, den Vorsitz des Promoti-
 onskommittees zu übernehmen und an Prof. Wolfgang Lehner, den zweiten
 Gutachter dieser Doktorarbeit.
+
+
 Ohne meine Kollegen am Lehrstuhl wäre meine Arbeit nur halb so an-
 genehm gewesen. Daher bedanke ich mich für unterhaltsame Mittagspau-
 sen in der Mensa und aufregende Partien am Kickertisch bei Caetano Sauer,
@@ -119,6 +165,8 @@ die wissenschaftlichen Mitarbeiter des Lehrgebiets zu meiner Studienzeit
 geht ein großer Dank, insbesondere Karsten Schmidt, Sebastian Bächle und
 Thomas Jörg. Ihr habt mir vorgemacht, wie man erfolgreich promoviert,
 lehrt, forscht und betreut.
+
+
 In meinen viereinhalb Jahren in der Arbeitsgruppe Heterogene Infor-
 mationssysteme hatte ich das große Glück, ständig von hervorragenden
 Studenten umgeben zu sein. Die Betreuung deren Bachelor- und Masterar-
@@ -128,9 +176,15 @@ Süß, Florian Haubold, Jan Adamczyk, Jonathan Priebe, Manuel Hoffmann,
 Marc Schäfer, Michael Emde, Nico Schäfer, Peter Brucker, Philipp Thau,
 Sougata Bhattacharjee, Stefan Braun, Thomas Lottermann, Tobias Hamann,
 Voichita Droanca und Yannick Krück!
+
+
 Zu guter Letzt möchte ich meiner Familie und ganz besonders Inna dan-
 ken – dafür, dass ich euch habe und dass ihr für mich da seid.
+
+
 Einle1itung
+
+
 Der Begriff des Daten-Managements hat sich im Laufe des letzten Jahrzehnts
 und mit dem Aufkommen von Web-Diensten wie sozialen Netzwerken und
 Online-Shops drastisch verändert. Während in klassischen betrieblichen In-
@@ -142,6 +196,8 @@ chern, sondern bringen auch eine gewisse Schema-Flexibilität mit sich. Eben-
 diese flexiblen Schemata erlauben die Speicherung heterogener Daten. We-
 der muss zu Beginn ein Datenschema definiert werden, noch müssen die
 zu speichernden Datensätze zueinander homogen sein.
+
+
 In relationalen Datenbanken bietet die Structured Query Language (SQL)
 Möglichkeiten zur Definition von Tabellen samt ihrer Spalten und deren
 Datentypen. In diesen Tabellen herrscht horizontale und vertikale Homogeni-
@@ -151,6 +207,8 @@ Spalten wertfrei zu lassen, belegen jedoch meistens trotzdem Speicher und
 müssen organisiert werden. Für die einzelnen Spalten einer Tabelle bedeu-
 tet die vertikale Homogenität, dass sich in einer Spalte über die komplette
 Tabelle hinweg Daten ein und des selben Typs befinden.
+
+
 Die Schema-Flexibilität und die teilweise sehr mächtigen Datenmodel-
 le von NoSQL-Datenbanken machen es möglich, dass Anwendungen ohne
 vorherige Datendefinitionsphasen beliebig strukturierte Objekte in die Da-
@@ -162,8 +220,12 @@ enthält -, sind die in verteilten Datenbanken sehr kostspieligen Verbun-
 doperationen nicht mehr vonnöten. In NoSQL-Datenbanken findet man
 dementsprechend nicht nur spezielle Datenmodelle, sondern auch neuar-
 tige und meist sehr schlichte Anfragemechanismen.
+
+
 tigeEusnzdeimgtesiiscths,edharssscdhileicHhteeteArnogfreangietämt,edchieainnisdmerenD.atenbankforschung be-
 reits seit langer Zeit eine große Herausforderung bei der Datenintegration
+
+
 und -migration darstellt [LN07], im Zeitalter von NoSQL auf neue Proble-
 me stößt. Dazu zählt auch der Trend zur polyglotten Persistenz [SF12]. So-
 genannte Polyglot-Persistence-Anwendungen greifen nicht auf eine einzi-
@@ -176,7 +238,11 @@ sen Anwendungen vorliegenden Heterogenität benötigt. In dieser Arbeit
 stellen wir als Lösungsansatz für diese neuen Herausforderungen bei der
 Datentransformation die Sprache NotaQL sowie eine dazugehörige Platt-
 form vor.
+
+
 1.1 Big Data
+
+
 Bei der Diskussion um die Definition des Begriffes Big Data startete man
 mit den sogenannten drei Vs: „Volume, Velocity, Variety“ [Lan01]. Diese Be-
 griffe verdeutlichen den weiter oben beschriebenen Trend, dass Datenmen-
@@ -189,6 +255,8 @@ ren Welt sprechen können. In Systemen, in denen vom Benutzer generierte
 Daten gespeichert und verbreitet werden, kommen falsche Informationen
 ebenso vor wie Widersprüche, fehlerhafte Übersetzungen sowie Nutzer-
 Reaktionen auf fälschlich interpretierte Nachrichten.
+
+
 Die Herausforderungen bei der Analyse von Big Data lassen sich aus den
 soeben dargestellten Vs ableiten: Da wir es mit großen Datenmengen zu tun
 haben, müssen Systeme in der Lage sein, diese enormen Mengen abspei-
@@ -203,7 +271,11 @@ teilte Datenbanken und verteilte Dateisysteme setzen dabei meist auf Hash-
 Partitionierung oder Bereichspartitionierung [DG92], um Daten basierend auf
 ihren Identifikatoren oder Attributswerten auf den jeweiligen Rechnern zu
 verteilen.
+
+
 1.2 Motivation
+
+
 Die Zeiten, in denen Anwendungen „nur SQL“ mit einer Datenbank spra-
 chen, sind vorbei. Der Begriff NoSQL bedeutet so viel wie „Mehr als nur
 SQL“ (Not only SQL) und findet in immer mehr Unternehmen und An-
@@ -226,7 +298,11 @@ Polyglot-Persistence-Anwendungen und beschreibt Ansätze, um Big-Data-
 Analysen durchzuführen, Daten zwischen den verschiedenen Systemen zu
 transferieren, Systeme durch andere zu ersetzen, Daten zu migrieren und
 sie zu modifizieren.
+
+
 1.3 Wissenschaftlicher Beitrag
+
+
 In dieser Arbeit werden NoSQL-Datenbanksysteme analysiert und neuar-
 tige Probleme aufgezeigt, die diese Systeme mit sich bringen. In der Litera-
 tur existieren Ansätze, die sich mit der Überwindung von Heterogenität be-
@@ -238,6 +314,8 @@ forderungen es noch zu meistern gilt. Aktuell existieren keine Ansätze, die
 das Ziel verfolgen, Heterogenität in der vollständigen NoSQL-Landschaft
 zu überwinden. Stattdessen entstehen immer mehr Ansätze, die lediglich
 auf einer speziellen Klasse von Systemen anwendbar ist.
+
+
 Der Hauptteil der Arbeit besteht aus der Vorstellung der Sprache No-
 taQL. Anhand dieser Sprache wird exemplarisch gezeigt, wie Datentrans-
 formationen auf flexiblen Schemata und unterschiedlichen Datenmodel-
@@ -247,9 +325,13 @@ einen hohen Aufwand bei der Einarbeitung, Entwicklung von Transforma-
 tionsprogrammen und der Wartung. Aus diesem Grund werden verschie-
 dene Ansätze vorgestellt, welche auf existierenden Frameworks basieren,
 um NotaQL-Transformationen effizient auszuführen.
+
+
 Der zweite große Teil der Arbeit beschäftigt sich mit inkrementellen Da-
 tentransformationen. Solche Art von Berechnungen kommen häufig im Data-
 Warehousing zum Einsatz, da sie deutlich schneller durchzuführen sind als
+
+
 Komplettberechnungen. Dazu müssen periodisch ausgeführten Transfor-
 mationsprogrammen die Änderungen seit einer vorherigen Ausführung
 vorliegen, damit diese basierend auf dem alten Ergebnis und ebendiesen
@@ -259,17 +341,31 @@ Wartbarkeit untersucht und auf NoSQL-Datenbanken sowie die Sprache
 NotaQL übertragen. Eine NotaQL-Plattform vereinigt verschiedene inkre-
 mentelle und nicht-inkrementelle Ausführungsarten und wählt mit ihrer
 Advisor-Komponente automatisch die als schnellste eingeschätzte Art.
+
+
 Zusammengefasst sind die Beiträge der vorliegenden Arbeit wie folgt:
+
+
 • Eine Datentransformationssprache, die für die Schema-Flexibilität und
 die Datenmodelle von NoSQL-Datenbanken optimiert ist.
+
+
 • Eine Ausführungsplattform, welche in der Lage ist, Datentransforma-
 tionen virtuell und materialisiert auszuführen.
+
+
 • Inkrementelle Berechnungsmethoden für die effiziente Ausführung
 sich periodisch wiederholender Transformationen.
+
+
 • Eine Analyse über die Anwendbarkeit der Sprache bei der Big-Data-
 Analyse, bei Polyglott-Persistence-Anwendungen, Datenintegrationen
 und Schema-Evolutionen.
+
+
 1.4 Grenzen
+
+
 Die Entwicklung der schnellsten Datentransformationsplattform ist nicht
 Ziel dieser Arbeit. Stattdessen wird die Machbarkeit einer solchen Platt-
 form gezeigt und Lösungen zur Überwindung von Heterogenität und zur
@@ -279,6 +375,8 @@ onsprogramms wird in der Regel zu einer effizienteren Ausführung führen
 als mit dem in dieser Arbeit vorgestelltem Ansatz. Auf der anderen Seite
 sind solche Programme aufwändiger zu entwickeln und können nicht ein-
 fach auf andersartige Systeme und Datenmengen übertragen werden.
+
+
 Des Weiteren soll nicht Ziel der Arbeit sein, NotaQL als die benutzer-
 freundlichste und mächtigste Transformationssprache anzupreisen. Die bei-
 den genannten Aspekte der Benutzerfreundlichkeit und Mächtigkeit waren
@@ -293,42 +391,62 @@ Sprache NotaQL, wie sie aktuell ist. Zum einen bedeutet das, dass weitere
 Iterationen die Sprache NotaQL weiter verändern, zum anderen kann bei
 der Entwicklung neuer Sprachen auf die hier vorgestellten Ansätze zurück-
 gegriffen werden.
+
+
 gegUrifmfeMn wissevrderesnt.ändnisse zu vermeiden, soll die folgende Aufzählung The-
 men zeigen, die zwar mit der vorliegenden Arbeit verwandt sind, jedoch
 als orthogonal oder außerhalb des Fokus angesehen werden:
+
+
 • Performanz: Die Performanz hängt vom verwendeten Datenbanksys-
 tem, dem zugrundeliegenden Transformationsframework, der Hard-
 ware und mehr ab.
+
+
 • Optimierungen: Die Ausführung von NotaQL-Transformationen und
 die Implementierung der Operatoren kann stets optimiert werden;
 diese sind vor allem auch von der Ausführungsart abhängig. Diese
 Arbeit soll jedoch generisch und nicht auf eine bestimmte Ausfüh-
 rungsart spezialisiert sein.
+
+
 • Transaktionsbegriff: Fragestellungen über die atomare und isolierte Aus-
 führung sowie das Verhalten im Fehlerfall wurden ausgeblendet, da
 diese Themen in der Literatur bereits detailliert behandelt wurden
 und ein Übertragen auf die generische NotaQL-Plattform den Rah-
 men dieser Arbeit sprengen würde.
+
+
 • Hardware- und Netzwerk-Charakteristika: Die vorgestellten Ansätze pro-
 fitieren von Hardware-Optimierungen und verteilten Speicherungen,
 setzen diese aber nicht voraus.
+
+
 • Anfragesprachen: NotaQL ist keine Anfragesprache, daher werden zur
 Interaktion zwischen der Anwendung und der Datenbank, in welcher
 sich Ein- und Ausgabedaten von Transformationen befinden, weiter-
 hin benötigt.
+
+
 1.5 Überblick
+
+
 Im zweiten Kapitel dieser Arbeit werden Grundlagen zu NoSQL-Daten-
 banken und Datenverarbeitungsframeworks präsentiert. Auch Techniken
 zur inkrementellen Wartbarkeit und Herausforderungen bei der Integrati-
 on von Daten sind Teil dieses Kapitels. Danach werden in Kapitel 3 exis-
 tierende Transformationssprachen für NoSQL untersucht und miteinander
 verglichen.
+
+
 verglichen.
 Der Hauptteil der Arbeit, welcher die Vorstellung der Sprache NotaQL
 ist, befindet sich in Kapitel 4. Nach einer Demonstration von Sprachkon-
 strukten für einfache Attribut-Mappings, Selektionen und Aggregationen
 folgen komplexere Sprachelemente zur Transformation von Graphen und
 Datenströmen.
+
+
 Die im zweiten Kapitel vorgestellten Datentransformationsframeworks
 dienen im fünften Kapitel als Basis für verschiedene Ausführungsarten von
 NotaQL. Anhand mehrerer solcher Frameworks, aber auch über alternati-
@@ -337,11 +455,17 @@ Transformationen werden unterschiedliche Ansätze präsentiert und vergli-
 chen. Um die genannten Ansätze um eine inkrementelle Wartbarkeit zu er-
 weitern, folgen in Kapitel 6 Implementierungsmöglichkeiten für die eben-
 falls im zweiten Kapitel vorgestellten Änderungserfassungsmethoden.
+
+
 falls im zweiten Kapitel vorgestellten Änderungserfassungsmethoden.
 In Kapitel 7 werden einige Anwendungsmöglichkeiten präsentiert, für
 welche sich die Sprache NotaQL einsetzen lässt. Zum Ende in Kapitel 8
 erfolgt eine Zusammenfassung der Arbeit.
+
+
 Grund2lagen
+
+
 In diesem Kapitel werden die Grundlagen zu dieser Arbeit präsentiert. Da-
 bei wird zunächst mit der Definition und Vorstellung von NoSQL-Daten-
 banksystemen begonnen. Da diese Systeme Daten meist auf eine verteilte
@@ -356,7 +480,11 @@ nur mit Datenanalysen, sondern mit Transformationen vielfältiger Art. Da-
 zu zählen auch Datenintegrationen, also der Transfer von Daten zwischen
 verschiedenen Systemen. Mit dem Thema der Datenintegration wird dieses
 Grundlagen-Kapitel abgeschlossen.
+
+
 2.1 NoSQL-Datenbanken
+
+
 Eine Definition für NoSQL-Datenbanksysteme ist in [Edl+10, S. 2] zu fin-
 den. Dort heißt es, dass einige - nicht zwangsläufig alle - der nachfolgenden
 Kriterien erfüllt sein müssen: Ein nicht-relationales Datenmodell, verteil-
@@ -365,11 +493,23 @@ Datenreplikation, eine einfache API und Flexibilität bezüglich der ACID-
 Einhaltung. Da es mittlerweile weit über einhundert Systeme gibt, die diese
 Kriterien mehr oder weniger erfüllen, erfolgt eine Klassifizierung meist in
 die folgenden vier Kategorien:
+
+
 • Key-Value-Stores,
+
+
 • Wide-Column-Stores,
+
+
 • Dokumentendatenbanken,
+
+
 • Graphdatenbanken.
+
+
 Tabelle 2.1: Terminologien verschiedener DBMS
+
+
 Es existieren zwar auch Systeme, die in keine dieser Kategorien fallen, nichts-
 destotrotz möchten wir im Rahmen dieser Arbeit den Fokus auf diese vier
 Kategorien legen. Die meisten Konzepte sind nämlich auf auch andere Da-
@@ -389,6 +529,8 @@ Kommentaren als eine Einheit speichern. Zusätzlich gilt für diese Systeme,
 dass jeder Datensatz einen Identifikator besitzt. Über welchen Geltungsbe-
 reich dieser eindeutig definiert sein muss, unterscheidet sich von Klasse zu
 Klasse.
+
+
 Da es keine einheitliche klassenübergreifende Terminologie gibt, wer-
 den in dieser Arbeit in der Regel die allgemeinen Begriffe Datenquelle, Da-
 tensatz, Attribut, Wert und ID verwendet. Bei relationalen Datenbanken wür-
@@ -397,7 +539,11 @@ tensatz ist eine Zeile, ein Attribut eine Spalte und die ID einer Zeile steht in
 denjenigen Spalten, über die man den Primärschlüssel definiert. Tabelle 2.1
 zeigt eine Gegenüberstellung der Terminologien verschiedener Datenbank-
 managementsysteme [SD16].
+
+
 Key-Value-Stores
+
+
 Ein zunächst sehr einfaches Datenmodell haben die Key-Value-Stores, da
 sie lediglich Schlüssel-Wert-Paare in der Datenbank ablegen. Man kann sich
 die Datenbank als eine Tabelle mit nur zwei Spalten (Schlüssel, Wert) vor-
@@ -406,11 +552,17 @@ mentierung gibt es global nur eine einzige Datenbank, in der alle Schlüssel
 eindeutig sein müssen, oder es gibt mehrere Datenbanken, die als eigen-
 ständig angesehen werden können. Im ersten Fall ist das Datenbanksystem
 eine Art Map, die zu jedem Schlüssel einen Wert zuordnet:
-Schlu¨ssel W ert
-→
+
+
+Schlu¨ssel W ert →
+
+
 Im zweiten Fall existiert für jede Datenbank eine eigene Map:
-Datenbank (Schlu¨ssel W ert)
-→ →
+
+
+Datenbank (Schlu¨ssel W ert) → →
+
+
 Der Key-Value-Store Riak [Bas15] ist ein Vertreter für diesen zweiten Typ.
 Die Datenbanken werden in Riak Buckets genannt. Beim Lese- und Schreib-
 zugriff ist stets anzugeben, auf welchem Bucket man arbeiten möchte. Im
@@ -424,7 +576,9 @@ dungen voneinander zu separieren. Eine Anwendung arbeitet dann meist
 nur auf einer einzigen Datenbank, deren Nummer direkt nach dem Ver-
 bindungsaufbau angegeben wird. Innerhalb dieser Datenbank werden un-
 terschiedliche Entitätsmengen meist mittels Schlüsselpräfixen voneinander
-separiert, z. B. produkt/812.
+separiert, z. B. produkt/$$$812$$$.
+
+
 Der Zugriff auf Schlüssel-Wert-Paare erfolgt ähnlich wie bei Maps mit
 den Methoden GET und PUT. GET nimmt einen Schlüssel entgegen und lie-
 fert den dazugehörigen Wert (oder null). PUT übergibt man ein Schlüssel-
@@ -432,27 +586,39 @@ Wert-Paar, um es zu speichern. Die PUT-Operation bietet ein sogenann-
 tes Upsert-Verhalten, welches eine Mischung aus Insert und Update dar-
 stellt. Das bedeutet, dass der Wert eines Schlüssels geändert wird, wenn
 der Schlüssel bereits vorhanden ist. Andernfalls erfolgt ein Einfügen.
+
+
 Die meisten Key-Value-Stores unterstützen eine Vielzahl von Datenty-
 pen für die zu speichernden Werte. Neben primitiven Typen wie Zahlen
 und Zeichenketten werden auch große binäre Objekte wie Bilder oder Vi-
 deos unterstützt. Aber auch komplexe Typen wie Listen, geordnete und un-
 geordnete (Multi-)Mengen und Maps können eingesetzt werden und bieten
 passende Zugriffsmethoden.
+
+
 passende Zugriffsmethoden.
 Das folgende Beispiel zeigt, wie mit Redis-Kommandos auf Schlüssel-
 Wert-Paare lesend und schreibend zugegriffen werden kann:
+
+
 SET counter 9
 INCR counter
 GET counter // liefert 10
 RPUSH pers:1:projekte "DB Projekt"
 HSET pers:1 vorname "Rita"
 HGET pers:1 vorname // liefert Rita
+
+
 Im Beispiel wurde ein Counter-Wert gesetzt, um eins erhöht und anschlie-
 ßend wieder gelesen. An das rechte Ende einer projekte-Liste wurde ein
 neues Projekt angefügt und in einer Hash-Map bekommt die Person mit
 dem Schlüssel pers:1 an der Stelle vorname den Wert Rita. Der letzte
 Befehlt gibt schließlich ebendiesen Vornamen aus.
+
+
 Wide-Column-Stores
+
+
 Das Datenmodell von Wide-Column-Stores gleicht dem der Key-Value-Sto-
 res, wenn als Werte die im vorherigen Beispiel zu sehende Hash-Map ver-
 wendet wird. Es erlaubt also die Speicherung von Datensätzen, die eine
@@ -465,27 +631,40 @@ pen. Im Wide-Colum-Store HBase [Apab] wird der Einfachheit halber nur
 der Datentyp Byte-Array unterstützt. Jegliche Datenwerte müssen also auf
 Anwendungsseite vor der Speicherung in einen Byte-Array gewandelt und
 beim Lesen wieder rückkonvertiert werden.
+
+
 Das vereinfachte Datenmodell eines Wide-Column-Stores lässt sich wie
 folgt darstellen:
+
+
 Eine bestimmte Spalte innerhalb einer Zeile einer Tabelle nennen wir auch
 Zelle. Wenn das Datenbankmanagementsystem Versionierung unterstützt,
 wird zu jeder Zelle eine Historie an Werten gespeichert, üblicherweise zu-
 sammen mit den Zeitstempeln des Schreibens:
-T abelle (Row-ID (Spalte (V ersion W ert)))
-→ → → →
-Der Datenzugriff erfolgt auch hier wieder mit den Kommandos GET und
+
+
+T abelle (Row-ID (Spalte (V ersion W ert))) → → → →
+
+
+FOOTNOTE:Der Datenzugriff erfolgt auch hier wieder mit den Kommandos GET und
 PUT. Das folgende Beispiel gilt für das Datenbankmanagementsystem HBa-
+
+
 se:
+
+
 PUT 'pers', 'P1', 'info:vorname', 'Rita'
 GET 'pers', 'P1'
 SCAN 'pers'
-Das erste Kommando fügt eine Zeile in die Tabelle pers mit der Row-ID
-P1 sowie einer Vornamen-Spalte hinzu. HBase kategorisiert Spalten in so-
+
+
+FOOTNOTE:Das erste Kommando fügt eine Zeile in die Tabelle pers mit der Row-ID
+P$$$1$$$ sowie einer Vornamen-Spalte hinzu. HBase kategorisiert Spalten in so-
 genannte Spaltenfamilien. Beim Anlegen einer Tabelle müssen die Spalten-
 familien festgelegt werden. Diese dienen zur Aufteilung unterschiedlicher
 Anwendungskonzepte innerhalb einer Zeile. Im genannten Beispiel wird
-lediglich die Spaltenfamilie info verwendet, in der die Spalte info:vor-
-name Platz findet. Informationen über Profilaufrufstatistiken oder Bezie-
+FOOTNOTE:lediglich die Spaltenfamilie info verwendet, in der die Spalte info:vor-
+FOOTNOTE:name Platz findet. Informationen über Profilaufrufstatistiken oder Bezie-
 hungen zwischen Personen könnten in anderen Spaltenfamilien abgelegt
 werden. Das GET-Kommando liefert die Zeile mit der gegebenen Row-ID
 samt aller ihrer Spalten. Über weitere Parameter kann eine Projektion nach
@@ -494,12 +673,19 @@ fert einen Cursor, um die Tabelle zeilenweise zu lesen. Auch hier ist der Ein-
 satz von Filtern möglich, oder aber die Angabe eines Bereiches, in dem die
 Row-IDs zu liegen haben. Letzteres ist aufgrund der in HBase verwendeten
 Bereichspartitionierung sehr effizient ausführbar.
+
+
 Dokumentendatenbanken
+
+
 Während das Datenmodell in den zwei bisher genannten Klassen relativ
 einfach war, sind in Dokumentendatenbanken komplexe hierarchische Struk-
 turen möglich. Das Datenmodell erscheint jedoch zunächst sehr simpel:
-Datenbank (Kollektion Dokument )
-→ → ∗
+
+
+Datenbank (Kollektion Dokument ) → → ∗
+
+
 Eine Kollektion, die sich in einer bestimmten Datenbank befindet, beinhaltet
 eine Menge von Dokumenten. Die Komplexität kommt erst durch den mög-
 lichen Aufbau dieser Dokumente zustande. Es gilt, dass die ID stets ein Teil
@@ -509,6 +695,8 @@ lich, sondern es werden - ähnlich wie bei SQL - beliebige Selektionen auf
 Sekundärattributen unterstützt. Zur effizienten Suche unterstützen Doku-
 mentendatenbanken die Definition von Indexen auf ebendiesen Attributen.
 Ein Index auf der Dokumenten-ID ist üblicherweise immer vorhanden.
+
+
 Dokumente haben objektähnliche Strukturen. Sie beinhalten Felder, die
 Werte haben. Diese Werte können neben Zahlen und Zeichenketten auch
 Listen und verschachtelte Unterdokumente sein. Listen können ebenfalls
@@ -519,7 +707,11 @@ werden, JSON [JSOa] verwendet. Für die interne Speicherung wird auf effi-
 zienter zu durchsuchende Strukturen wie das binäre JSON-Format BSON
 zurückgegriffen. Das folgende Beispiel zeigt einen MongoDB findOne-
 Befehl auf der Kollektion pers und das zurückgelieferte JSON-Dokument:
+
+
 db.pers.findOne( { _id: 1 } )
+
+
 _id: 1,
 vorname: "Rita",
 telefon: [
@@ -527,12 +719,14 @@ telefon: [
 { typ: "mobil", nr: "017555555" }
 ]
 }
+
+
 Ein zweites Beispiel für ein Dokumentendatenbanksystem ist CouchDB.
 Zwar verwaltet auch CouchDB Dokumente im JSON-Format und unter-
 stützt damit beliebige strukturierte Objekte mit Arrays und Unterdoku-
 menten, allerdings gibt es im Vergleich zu MongoDB einige fundamenta-
 le Unterschiede. Der standardmäßige Zugriff auf Dokumente erfolgt über
-eine REST-API unter der Verwendung von den HTTP-Methoden PUT, GET
+FOOTNOTE:eine REST-API unter der Verwendung von den HTTP-Methoden PUT, GET
 und DELETE. Für komplexere Suchanfragen über Sekundärattribute wird
 der Einsatz von Views empfohlen. Diese Sichten haben einen eindeutigen
 Namen und werden über eine JavaScript-Funktion definiert, welche eine
@@ -540,6 +734,8 @@ MapReduce-artige Transformation ausführt. Anders als Sichten in SQL sind
 CouchDB-Sichten materialisiert. Beim Einfügen, Ändern und Löschen von
 Dokumenten, werden also alle Sichten gemäß ihrer JavaScript-Implemen-
 tierung aktualisiert. Transformationen wie Projektionen und Selektionen
+
+
 bestehend lediglich aus einer Map-Funktion. Komplexere Transformatio-
 nen, in denen Gruppen aus mehreren Dokumenten gebildet werden und
 in denen Aggregatfunktionen ausgeführt werden, bestehen aus den Funk-
@@ -548,12 +744,19 @@ Abschnitt 2.2. Ein weiterer Unterschied zwischen CouchDB und MongoDB
 ist, dass es in einer CouchDB-Datenbank keine Kollektionen gibt. Alle Do-
 kumente werden also zusammen in eine Datenbank geschrieben, was in
 folgendem alternativen Datenmodell dargestellt werden soll:
-Datenbank Dokument
-→ ∗
+
+
+Datenbank Dokument → ∗
+
+
 Zur Unterscheidung verschiedenartiger Dokumententypen wird in Couch-
 DB oft das Attribut doc_type verwendet. Die erste Operation in der Defi-
 nition einer Sicht ist somit meistens if(doc.doc_type == "...").
+
+
 Graphdatenbanken
+
+
 Bei den drei zuvor genannten Kategorien von NoSQL-Datenbanksystemen
 erfolgt der Zugriff auf die Datensätze entweder über eine gegebene ID oder
 mittels eines sequentiellen oder eines Index-Scans auf einer einzigen Da-
@@ -573,21 +776,33 @@ mehreren Typen, z. B. „Kunde“ oder „Produkt“. Alle Knoten werden zu-
 sammen in einem Graphen gespeichert, sodass zusammen mit den Kanten,
 die die Knoten miteinander verbinden, das Datenmodell als Graph im ma-
 thematischen Sinne gesehen werden kann:
+
+
 G = (V, E)
-Der Property-Graph G besteht aus einer Menge von Knoten V und Kanten
+
+
+FOOTNOTE:Der Property-Graph G besteht aus einer Menge von Knoten V und Kanten
 E. Knoten besitzen beliebige Properties sowie optional Labels und eine ID.
 Auch Kanten können Properties besitzen. Bei ihnen ist das Label Pflicht,
 um die Art der Beziehung zwischen zwei Knoten anzugeben. Kanten sind
 in den meisten Graphdatenbanken stets gerichtet, sie besitzen also jeweils
 einen Start- und einen Ziel-Knoten.
+
+
 Das folgende Beispiel zeigt, wie ein Graph bearbeitet und angefragt
 werden kann. Die hier verwendete Sprache ist Gremlin [Rod15], die sich
 in Verbindung mit gängigen Graphdatenbanksystemen wie zum Beispiel
 Neo4J [Neo] verwenden lässt:
+
+
 k = g.addVertex(1, [label:"Person", vorname:"Kai"])
 u = g.addVertex(2, [label:"Person", vorname:"Ute"])
+
+
 g.addEdge(null, k, u, "Freund", [seit:2016])
 freunde = g.V.has("vorname", "Kai").both("Freund")
+
+
 Im Beispiel werden zwei Personen-Knoten erstellt, die mit einer Kante des
 Labels „Freund“ verbunden werden. Obwohl eine Freundschaftsbeziehung
 symmetrisch sein sollte, werden in Graphdatenbanken üblicherweise nur
@@ -597,7 +812,11 @@ zunächst die Person mit dem Vornamen Kai gesucht und von diesem Kno-
 ten aus über alle Kanten mit dem Label „Freund“ traversiert. Das Ergebnis
 des both-Schrittes liefert alle Knoten, die über solche Kanten, egal ob ein-
 oder ausgehend, erreichbar sind, also in diesem Fall alle Freunde von Kai.
+
+
 2.2 Datenverarbeitungsframeworks
+
+
 Wie wir im vorherigen Abschnitt gesehen haben, bieten typische NoSQL-
 Systeme sehr einfache Abfragemöglichkeiten. Anders als bei relationalen
 Datenbanksystemen kommt auf Anwendungsseite üblicherweise keine An-
@@ -621,6 +840,8 @@ se ähnliche Selektionsmethoden und Zugriffspfade bieten, wie man sie aus
 relationalen Datenbanken kennt. Durch das flexible Schema kann jedoch
 die Speicherung nicht so effizient wie in letzteren erfolgen, was schlussend-
 lich auch wieder die Zugriffsgeschwindigkeit reduziert.
+
+
 Geht man von einfachen Zugriffen und Suchoperationen zu Datenana-
 lysemethoden, bieten die meisten NoSQL-Datenbankmanagementsysteme
 dafür keine Unterstützung. Eine Ausnahme ist die MongoDB Aggregati-
@@ -634,6 +855,8 @@ ten Plattformen, die es erlauben, SQL-Anfragen an NoSQL-Datenbanken
 zu stellen. Damit kann sich der Anwender aus den aus SQL bekannten
 Möglichkeiten zur Gruppierung, Aggregation und mehr bedienen. Auch
 auf diese wird später, in Kapitel 3.1 detailliert eingegangen.
+
+
 Wenn große Datenmengen als Gesamtes analysiert oder transformiert
 werden sollen, ist es geschickt, ein Datenverarbeitungsframework einzuset-
 zen. Der Zugriff erfolgt dann anders als bei der Verwendung der Datenbank-
@@ -650,6 +873,8 @@ und durch geeignete Partitionierungstechniken optimiert werden kann. Die
 Ausgabe einer Berechnung wird üblicherweise in eine Datenbank oder ei-
 ne Datei geschrieben. Die direkte Verwendung des Ergebnisses innerhalb
 einer Anwendung ist in vielen Frameworks aber auch möglich.
+
+
 Bei Frameworks handelt es sich um Programmiergerüste, also um Schnitt-
 stellenbeschreibungen sowie fertige Klassen und Methoden, die einem An-
 wendungsprogrammierer gewisse Aufgaben abnehmen. Der Anwender ent-
@@ -659,22 +884,42 @@ sich dabei allerdings nicht um die Entwicklung generischer Aufgaben küm-
 mern, sondern kann sich auf die für den speziellen Datenanalysezweck spe-
 zifischen Aspekte konzentrieren. Die Frameworks bringen folgende, nicht
 zwangsweise alle, Funktionalitäten mit:
+
+
 • Ein Programmiermodell, an das sich der Anwender bei der Entwick-
 lung hält,
+
+
 • die verteilte Ausführung benutzerdefinierter Methoden,
+
+
 • Schnittstellen zu (verteilten) Datenbanken und Dateisystemen für die
 Ein- und Ausgabe,
+
+
 • Verteilung (Partitionierung) von Zwischen- und Endergebnissen auf
 die Rechnerknoten im Netzwerk,
+
+
 • Bereitstellung typischer Funktionen (Gruppieren, Aggregieren, Sor-
 tieren, Zählen, . . . ),
+
+
 • Wiederanlauf im Fehlerfall sowie das Wiederverwenden oder Ver-
 werfen unvollständiger (Zwischen-)ergebnisse,
+
+
 • Monitoring-Tools, um die Ausführung und Historie zu betrachten,
+
+
 • Sicherheitsmechanismen wie Authentifizierung und Datenverschlüs-
 selung.
+
+
 Im Folgenden werden einige prominente Datenverarbeitungsframeworks
 kurz vorgestellt.
+
+
 MapReduce / Apache Hadoop Das von Google vorgestellte Programmier-
 modell und Framework MapReduce [DG04] ist aufgrund seiner Einfachheit
 und dennoch sehr großen Mächtigkeit sehr populär. Der berühmteste Klon
@@ -690,15 +935,20 @@ gen. Eine benutzerdefinierte Reduce-Funktion nimmt nacheinander einen
 dieser Schlüssel sowie die Liste der zu diesem Schlüssel gehörenden Werte
 entgegen und berechnet anhand dieser das Endergebnis. Die Ausführung
 der Reduce-Funktion erfolgt ebenfalls wieder verteilt.
+
+
 map : Datensatz (Schlu¨ssel W ert)
 → × ∗
-reduce : Schlu¨ssel W ert Schlu¨ssel W ert
-× ∗ → ×
+reduce : Schlu¨ssel W ert Schlu¨ssel W ert × ∗ → ×
+
+
 Die hier gezeigte Definition der Map- und Reduce-Funktion soll lediglich
 dem groben Verständnis dienen. Verschiedene MapReduce-Implementie-
 rungen weichen teilweise stark von diesem Modell ab. Manche setzen vor-
 aus, dass bereits die Eingabedaten als Schlüssel-Wert-Paare vorliegen. Auch
 ist es möglich, dass die Reduce-Funktion mehrere Ausgaben liefern kann.
+
+
 In Hadoop erfolgt die Ausführung eines MapReduce-Jobs als eine Men-
 ge von Tasks. Auf jedem Rechner wenden ein oder mehrere Map-Tasks die
 Map-Funktion auf einer Menge von Eingabedatensätzen an. Beim Auftre-
@@ -708,6 +958,8 @@ worfen, um ein Exacly-Once-Verhalten und damit die Korrektheit des End-
 ergebnisses sowie eine deterministische Ausführung zu gewährleisten. Nach
 Abschluss der Map-Phase erfolgt äquivalent dazu die Ausführung der Re-
 duce-Tasks.
+
+
 Vorteile von MapReduce sind neben dem einfachen Programmiermo-
 dell, der Mächtigkeit und der Fehlertoleranz auch die gute Skalierbarkeit.
 MapReduce wird häufig für Text- und Log-Analysen eingesetzt sowie zur
@@ -721,13 +973,19 @@ ben und Lesen kann zu einer sehr inperformanten Ausführung führen. Das
 gleiche Problem tritt bei iterativen Berechnungen auf. Dort wird das Ergeb-
 nis jeder Iteration auf der Festplatte gespeichert, bevor es in der nächsten
 Iteration gelesen werden kann.
+
+
 Manche Datenbanksysteme - wie zum Beispiel MongoDB - bieten eine
 eingebaute MapReduce-Funktionalität, um benutzerdefinierte Berechnun-
 gen verteilt auszuführen. Der allgemeingültige und elegantere Weg ist es
 jedoch, Apache Hadoop in Verbindung mit den für ein Datenbanksystem
+
+
 spezifischen Ein- und Ausgabeformaten zu verwenden, wie zum Beispiel
 dem „TableInputFormat“ für HBase oder dem „MongoInputFormat“, wel-
 ches ein Teil des MongoDB Hadoop Connectors ist.
+
+
 Apache Spark Die Idee hinter Spark [Zah+10] ist es - genau wie beim
 MapReduce-Framework - eine Plattform zu bieten, um benutzerdefinierte
 Methoden auf großen Datenmengen verteilt auszuführen. Allerdings ver-
@@ -749,6 +1007,8 @@ gabedatei oder in eine Datenbank. Auch bei iterativen Berechnungen behält
 Spark die Zwischenergebnisse im RAM. Genau wie Hadoop ist Spark feh-
 lertolerant und garantiert eine Exactly-Once-Ausführung für alle Berech-
 nungen.
+
+
 In Spark gibt es zwei Arten von Operationen, nämlich Transformationen
 und Aktionen. Transformationen unterscheiden sich wiederum in solche mit
 nahen Abhängigkeiten und weiten Abhängigkeiten. Erstere können direkt hin-
@@ -769,11 +1029,15 @@ Kollektion, sie hebt also die Verteilung auf und materialisiert die Ergeb-
 nisse. Die cache-Operation liefert wie gehabt ein RDD, erzwingt aller-
 dings das Ausführen vorangegangener Transformationen. Dies ermöglicht
 ein mehrfaches Wiederverwenden von Berechnungszwischenergebnissen.
+
+
 Spark Streaming [Zah+12] erweitert Spark um die Möglichkeit, Daten-
 ströme in Echtzeit zu analysieren. Im Gegensatz zur klassischen Stapelver-
 arbeitung von gespeicherten Datensätzen sind Datenströme kontinuierlich,
 sodass die Berechnung theoretisch nie abgeschlossen ist. Stattdessen liegen
 die Ergebnisse von Datenstromanalysen auch wieder als Datenstrom vor.
+
+
 Analog zu RDDs werden bei Spark Streaming die gleichen Arten von Ope-
 rationen (Map, Reduce, Join, . . . ) auf diskretisierten Strömen (DStreams)
 ausgeführt. Der eingehende Datenstrom wird zunächst in Pakete („Bat-
@@ -787,6 +1051,8 @@ weise zur Analyse von Webserver-Logdateien eingesetzt, könnte eine An-
 frage alle fünf Minuten die Anzahl der Besuche pro Webseite innerhalb der
 letzten halben Stunde ausgeben. Hier wäre die Fenstergröße dreißig Minu-
 ten und das Aktualisierungsintervall fünf Minuten.
+
+
 Apache Flink Es existieren weitere Datenverarbeitungsframeworks, die
 eine ähnliche Funktionalität wie die oben vorgestellten Programme bieten.
 Apache Flink [Apa15b] ist speziell für die Analyse von Datenströmen kon-
@@ -795,7 +1061,11 @@ dung ist ähnlich zu der von Apache Spark, allerdings werden Ströme nicht
 als Sequenzen von RDDs mit einer gewissen zeitlichen Größe angesehen,
 sondern als tatsächliche kontinuierliche Datenstrom-Objekte. Dadurch eig-
 net sich Flink besonders für Echtzeit-Analysen.
+
+
 2.3 Inkrementelle Wartbarkeit
+
+
 Die zu Beginn dieses Kapitels vorgestellten API-Methoden wie PUT und
 GET bieten OLTP-Anwendungen einen Datenzugriff innerhalb weniger Mil-
 lisekunden. OLTP steht für Online-Transaction-Processing, also für die Echt-
@@ -804,6 +1074,8 @@ meist ID-basiert sind und Transaktionen in dem Sinne, dass sie eine ato-
 mare Folge von Datenbankaktionen darstellen, von den meisten Systemen
 nicht unterstützt werden, sind Datenbankzugriffe in OLTP-Anwendungen
 sehr schnell und es können sehr viele davon parallel stattfinden.
+
+
 Im zweiten Abschnitt dieses Kapitels wurden mehrere Datenverarbei-
 tungsframeworks vorgestellt, die für die Zwecke des Online-Analytical-Pro-
 cessings (OLAP) eingesetzt werden. OLAP-Anwendungen dienen zur Da-
@@ -817,18 +1089,32 @@ chen. Unter inkrementeller Wartbarkeit versteht man die Fähigkeit, dass
 eine Anwendung zur erneuten Berechnung eines Ergebnisses das vorheri-
 ge Ergebnis als Basis nehmen kann und die Änderungen an den Basisdaten
 darauf anwendet.
+
+
 Soll eine Berechnung inkrementell wartbar sein, müssen die folgenden
 Fragen geklärt werden:
+
+
 1. Was hat sich in den Basisdaten geändert?
+
+
 2. Welche Werte im vorherigen Ergebnis müssen geändert werden?
+
+
 3. Wie wirken sich die Änderungen auf das vorherige Ergebnis aus?
+
+
 Die Komponente zur Erfassung der Änderung (Punkt 1) ist die sogenann-
 te Änderungserfassung (Change-Data-Capture, CDC) [KR11]. Zuerst stellen
 wir verschiedene Change-Data-Capture-Verfahren vor, die es ermöglichen,
 die Änderungen in den Basisdaten seit der vorherigen Berechnung heraus-
 zufinden. Anschließend beschreiben wir Ideen zur Einbringung der Ände-
 rungen auf das vorherige Ergebnis (Punkte 2 und 3).
-Verfahren zur Änderungserfassung
+
+
+FOOTNOTE:Verfahren zur Änderungserfassung
+
+
 Verschiedene Änderungserfassungsverfahren unterscheiden sich zum einen
 bezüglich ihrer Einsetzbarkeit für die betrachteten Datenbanksysteme. Des
 Weiteren müssen je nach Verfahren unterschiedliche Mengen an Daten ana-
@@ -838,12 +1124,15 @@ Verfahren eignen sich gut, wenn die Änderungen seit der letzten Durch-
 führung gering sind, andere, wenn sich viel geändert hat. Wenn wir von
 Änderungen sprechen, teilen wir diese in zwei Arten auf, und zwar Einfü-
 gungen und Löschungen. Sei B die Datenbasis, auf der die Berechnung er-
-folgt. B(t 1) bezeichnet den aktuellen Zustand und B(t 0) den Zustand der
+folgt. B(t $$$1$$$) bezeichnet den aktuellen Zustand und B(t $$$0$$$) den Zustand der
 Basisdaten zum Zeitpunkt t 0 der vorherigen Berechnung.
-Einfügungen ∆ =B(t 1) B(t 0)
+
+
+FOOTNOTE:Einfügungen ∆ =B(t 1) B(t 0)
 −
-Löschungen =B(t 0) B(t 1)
-∇ −
+Löschungen =B(t $$$0$$$) B(t $$$1$$$) ∇ −
+
+
 Einfügungen sind also diejenigen Datensätze, die seit der vorherigen Be-
 rechnung neu hinzugekommen sind, Löschungen diejenigen, die seitdem
 entfernt wurden. Findet innerhalb eines existierenden Datensatzes eine Ver-
@@ -851,6 +1140,8 @@ entfernt wurden. Findet innerhalb eines existierenden Datensatzes eine Ver-
 sehen werden. Bei der nun folgenden Analyse der verschiedenen Ände-
 rungserfassungsverfahren wird auffallen, dass Löschungen nicht von allen
 Verfahren unterstützt werden.
+
+
 Audit-Columns Der Begriff stammt aus Data-Warehouse-Systemen, bei
 denen in den zu überwachenden Tabellen speziell für das CDC vorgese-
 hene Spalten hinzugefügt werden. Im allgemeinen Fall versteht man unter
@@ -862,9 +1153,13 @@ on beinhaltet, ob sich der Datensatz seit der vorherigen Berechnung ändert
 hat oder nicht. In letzterem Falle muss das Transformationssystem nach ei-
 ner Berechnung diesen Wert zurücksetzen, während Zeitstempel und Ver-
 sionsnummern in den Basisdaten erhalten bleiben können.
+
+
 Das relationale Datenbankmanagementsystem IBM DB2 für z/OS bietet
 eine native Unterstützung für Audit-Columns. Beim Anlegen der Tabelle
 wird die betreffende Spalte mit der Option ON UPDATE AS ROW CHANGE
+
+
 TIMESTAMP versehen, sodass das Datenbanksystem automatisch den Zeit-
 stempelwert aktuell hält. In MongoDB werden beim Einsatz automatisch
 erzeugter Objekt-IDs die ersten vier Bytes dieser ID für den Zeitstempel
@@ -881,20 +1176,30 @@ den. In jedem Fall ist das Erkennen von Löschungen ausgeschlossen. Um
 dieses Problem zu lösen, müssen Löschungen verboten werden und statt-
 dessen eine Audit-Column mit den Zeitpunkt der logischen Löschung ein-
 geführt werden.
+
+
 Mit Audit-Columns lässt sich zwar feststellen, dass sich etwas am Da-
 tensatz geändert hat, aber nicht was. Das Analyseprogramm hat nur Zu-
 griff auf den neuen Stand der Daten, nicht aber auf den Stand zum Zeit-
 punkt der vorherigen Berechnung. Das liegt daran, dass beim Einsatz von
 Audit-Columns keine automatische Historie vorheriger Attributwerte an-
 gelegt wird.
+
+
 geleDgat swfiorldg.ende Beispiel zeigt mehrere Varianten, wie Audit-Columns ein-
 gesetzt werden können, um Änderungen an Datensätzen zu erfassen:
+
+
 { _id: 1, name: "Ute", inserted: 1451606400 }
 { _id: 2, name: "Jörg", inserted: 1451606400,
 updated: 1451607333 }
 { _id: 3, name: "Lisa", modified: true }
 { _id: 4, deleted: 1451607444 }
+
+
 { _id: ObjectId("5650d1906b66d66a5dbfda29"), ...}
+
+
 Zeitstempel-basiertes CDC mittels Multi-Versionierung Verwaltet ein
 Datenbanksystem eine Historie von Attributwerten und bietet darauf Zu-
 griffsmöglichkeiten, kann diese zur Erfassung der Änderungen verwendet
@@ -911,15 +1216,18 @@ zu entfernen oder die Attributwerte auf null zu setzen. Einige NoSQL-
 Datenbanksysteme wie HBase bieten eine eingebaute Multi-Versionierung,
 die allerdings meist erst explizit aktiviert werden muss. Dazu gibt man die
 Anzahl n der zu verwaltenden Versionen an. Im Extremfall kann dies bei
-einer Datenbank der Größe N zu einem Speicheraufwand von O(N n)
-·
+FOOTNOTE:einer Datenbank der Größe N zu einem Speicheraufwand von O(N n) ·
 führen. Bei HBase wird zu jedem Attribut eine Historie von Datenwerten
+
+
 zusammen mit den Zeitstempeln des Schreibens gespeichert. Im Allgemei-
 nen könnte man aber auch eine laufende Versionsnummer verwenden. Für
 eine zuverlässige Änderungserfassung ist allerdings die Variante mit Zeit-
 stempeln klar im Vorteil, da basierend auf diesen leicht festgestellt werden
 kann, ob eine Version vor oder nach der Durchführung der vorherigen Be-
 rechnung erstellt wurde.
+
+
 Andere Ansätze verfolgen die Idee, dass sich nicht das Datenbankma-
 nagementsystem sondern die Anwendung um die Versionierung kümmert.
 Da der Zugriff bei NoSQL-Datenbanken meist über die ID erfolgt und vie-
@@ -934,6 +1242,8 @@ den, um Datenbankmethoden (PUT, GET, . . . ) wie gehabt verwenden zu
 können, um standardmäßig auf die aktuelle Version zuzugreifen und um
 beim Einfügen und Ändern die Zeitstempel automatisch zu setzen [Fel+14;
 CL13].
+
+
 Log-basiertes CDC Eine Log-Datei ist eine vom Datenbankmanagement-
 system gepflegte Datei, in welcher von Anwendungen durchgeführte Da-
 tenbankänderungen protokolliert werden [HR83]. Sie kommt für verschie-
@@ -963,10 +1273,14 @@ bei einem Stromausfall nicht zu verlieren, kommt die Log-Datei zum Ein-
 satz, welche persistent gespeichert ist. Aufgrund des sequenziellen und
 asynchronen Schreibens leidet die Performanz des Systems nicht so stark
 darunter wie beim tatsächlichen persistenten Einbringen jeder Änderung
+
+
 beim Abschluss einer Transaktion. Auch in MongoDB wird ein sogenann-
 tes Journal eingesetzt, um Anwendungen die Bestätigung der erfolgrei-
 chen Ausführung einer Operation zu geben, noch bevor diese persistent
 geschrieben, wohl aber geloggt, wurden.
+
+
 Ein anderer Anwendungsfall für Log-Dateien kommt bei der Datenrepli-
 kation zum Einsatz. Der Grundgedanke von Replikation ist, dass jede Än-
 derung, die auf einem Rechner (Replika) ausgeführt wird, ebenfalls auch
@@ -979,6 +1293,8 @@ erreichbar, müssen beim Wiederanlauf alle verpassten Operationen nach-
 geholt werden. Hierbei kommt die Log-Datei zum Einsatz. Diese enthält
 entweder Logsequenznummern oder Zeitstempel, mit denen sich feststel-
 len lässt, welche Änderungen noch auszuführen sind.
+
+
 Log-Dateien können im Wesentlichen auf zwei Arten aufgebaut sein.
 Die erste Möglichkeit ist logisches Logging oder auch Statement-basiertes Log-
 ging. Dabei beinhaltet jeder Log-Eintrag eine konkrete Datenbankoperati-
@@ -998,6 +1314,8 @@ aus den Log-Einträgen keine Information entnommen werden kann, wie
 eine Operationen wieder rückgängig gemacht werden kann. Die Log-Datei
 kann also nur vorwärts und nicht rückwärts abgespielt werden. Bei der Re-
 plikation ist ohnehin nur ersteres vonnöten.
+
+
 Für die Änderungserfassung bringt Statement-basiertes Logging große
 Nachteile mit sich. Mit der Log-Datei lässt sich zwar feststellen, welche Än-
 derungen an der Datenbank seit einer vorherigen Analyse ausgeführt wur-
@@ -1008,14 +1326,20 @@ wändige Methoden, wie dem Durchsuchen der Log nach vorherigen Ope-
 rationen auf einem gegebenen Datensatz oder über eine Kombination mit
 Snapshot-basiertem Logging (siehe nächster Absatz) lässt sich auch Log-
 basiertes CDC zuverlässig verwenden.
+
+
 Das folgende Beispiel zeigt einen Eintrag der in MongoDB zur Repli-
 kation geführten Operationen-Log. Er beinhaltet unter anderem einen Zeit-
 stempel (ts), die Art der Operation (i = Einfügung), die betroffene Da-
 tenbank und Kollektion (ns = Namespace) sowie das neue Objekt (o). Bei
 Änderungen und Löschungen befinden sich die IDs der zu ändernden bzw.
 zu löschenden Dokumente in den Log-Einträgen.
+
+
 { ts : Timestamp(1448269379, 1), ..., op: "i",
 ns: "test.personen", o: { _id: 1, name: "Ute" } }
+
+
 Snapshot-basiertes CDC Der Grundgedanke dieser Art der Änderungs-
 erfassung ist sehr einfach: Zum Zeitpunkt jeder Analyse wird ein vollstän-
 diges Abbild der Basisdaten, ein sogenannter Snapshot oder Schnappschuss,
@@ -1040,6 +1364,8 @@ dieser Zeit weiterhin Änderungen durchgeführt werden, dürfen nicht Teile
 des Snapshots alte und andere Teile neue Zustände haben. Eine Möglich-
 keit zur Erreichung der Konsistenz ist beispielsweise die Verwendung von
 Multi-Versionierung.
+
+
 Trigger-basiertes CDC Ein Datenbanktrigger ist eine aktive Komponente,
 welche benutzerdefinierte Operationen ausführt, sobald Änderungskom-
 mandos an die Datenbank gestellt werden. Unterstützt ein System Trigger,
@@ -1054,6 +1380,8 @@ und Werte-Historien. Wenn das Datenbankmanagementsystem keine Log-
 Dateien führt oder wenn Log-Dateien keine Redo-Informationen beinhal-
 ten, kann dies durch den Einsatz von manuellem Logging mittels Triggern
 kompensiert werden.
+
+
 kompensiert werden.
 Ein alternativer Ansatz von Triggern ist die unmittelbare Ausführung
 von Berechnungen. Während bei den vorherigen CDC-Ansätzen sowie bei
@@ -1063,12 +1391,18 @@ gesetzt wird, die Änderungen seit der vorherigen Berechnung zu ermitteln,
 ist es mit Triggern möglich, Änderungen auf das Ergebnis anzuwenden, so-
 bald sie auf den Basisdaten erfolgen. Abgesehen von der Berechnungsdau-
 er und anderen Verzögerungen, ist das Ergebnis bei dieser Variante immer
+
+
 „live“ und auf dem neusten Stand. In SQL ist ein äquivalentes Datenbank-
 objekt eine materialisierte Sicht mit der Option REFRESH IMMEDIATE. So-
 bald sich die Daten der in der FROM-Klausel stehenden Tabellen ändern,
 werden diese Änderungen direkt auf das materialisierte Ergebnis der Sicht
 angewandt.
-Inkrementelle Aggregationen
+
+
+FOOTNOTE:Inkrementelle Aggregationen
+
+
 Datentransformationen, die lediglich Selektionen oder Projektionen durch-
 führen sind leicht inkrementell ausführbar. Dazu wird bei neu eingefügten
 Datensätzen geschaut, ob sie das Selektionsprädikat erfüllen und dement-
@@ -1078,46 +1412,77 @@ schungen erfolgt auf gleiche Weise das Entfernen der Sätze. Lediglich bei
 ren und immer noch erfüllt sind. Sieht man Änderungen jedoch als Lö-
 schungen mit anschließendem Neueinfügen, ist auch hier die Lösung ein-
 fach.
+
+
 Komplexe Berechnungen sind jedoch diejenigen, in denen Daten grup-
 piert und aggregiert werden. Bei der Berechnung einer Summe wird das bei
 der vorherigen Analyse berechnete Ergebnis als Basis genommen und die
 betreffenden Werte der eingefügten Datensätze darauf aufaddiert. Gelösch-
 te Datensätze sorgen für Subtraktionen und Änderungen können auch hier
 wieder als eine Kombination aus beidem angesehen werden.
+
+
 wieder als eine Kombination aus beidem angesehen werden.
 Betrachten wir das folgende Beispiel, in dem die Gehaltsumme pro Fir-
 ma berechnet werden soll. Zu Beginn sehe der Datenbestand wie folgt aus:
+
+
 { _id: 1, name: "Ute", gehalt: 38000, firma: "IBM" }
 { _id: 2, name: "Jörg", gehalt: 37000, firma: "SAP" }
 { _id: 3, name: "Lisa", gehalt: 42000, firma: "IBM" }
+
+
 Das Ergebnis ist also dieses:
+
+
 { _id: 'IBM', summe: 80000 }
+
+
 { _id: 'SAP', summe: 37000 }
+
+
 Betrachten wir nun folgende Einfügung, Löschung und Änderung:
+
+
 db.personen.insert({ _id: 4, name: 'Rita',
 gehalt: 50000, firma: 'IBM' })
 db.personen.remove({ _id: 1 })
 db.personen.update({ _id: 3} {$set: { firma: 'SAP' }}
+
+
 Die Gehälter der einzelnen Firmen ändern sich also folgendermaßen:
+
+
 { _id: 'IBM', summe: 80000+50000-38000-42000=50000}
 { _id: 'SAP', summe: 37000+42000=79000 }
-Es fällt auf, dass die Zahl 42000, die zur Berechnung der neuen Summen
+
+
+Es fällt auf, dass die Zahl $$$42000$$$, die zur Berechnung der neuen Summen
 benötigt wird, nicht in der Liste der Änderungsoperationen zu finden ist.
 Es ist also auch nötig, unveränderte Attribute zu betrachten.
+
+
 Dieses Unterkapitel soll lediglich einen kleinen Einblick in die Heraus-
 forderungen bei inkrementellen Berechnungen liefern. Im späteren Verlauf
 der Arbeit wird auf diese genauer eingegangen. Bei der Verwendung von
 anderen Aggregatfunktionenen als der Summenfunktion treten noch wei-
 tere Probleme auf:
+
+
 AVG Die Berechnung eines Durchschnittes ist nicht möglich, wenn ledig-
 lich ein zuvor berechneter Durchschnittswert vorliegt. Dies liegt daran, dass
 die Durchschnittsfunktion nicht assoziativ ist:
-AVG(AVG(a, b), c) = AVG(a, AVG(b, c)) = AVG(a, b, c)
-6 6
+
+
+AVG(AVG(a, b), c) = AVG(a, AVG(b, c)) = AVG(a, b, c) 6 6
+
+
 Später in dieser Arbeit werden wir sehen, dass die Assoziativität für die
 inkrementelle Berechnung erfüllt sein muss. Bei der Durchschnittsfunktion
 lässt sich diese durch die Speicherung von Hilfsdaten, nämlich der Anzahl
 der aggregierten Elemente, erreichen.
+
+
 MIN / MAX Die Minimum- und Maximum-Funktionen sind ein Beispiel
 für irreversible Aggregatfunktionen. Sie unterstützen somit keine Löschun-
 gen. Wird der aktuell kleinste (bzw. größte) Wert einer Menge entfernt, ist
@@ -1125,12 +1490,16 @@ die Bestimmung des Minimums (Maximums) unmöglich. Hier kann ein
 MIN/MAX-Cache [Cha00] Abhilfe schaffen, in dem die n kleinsten und
 größten Werte gespeichert werden, um zumindest die Unterstützung von
 n Löschungen zu bieten.
-COUNT Nehmen wir an, es soll eine Zählung von Werten (1, 7, 9) vorge-
-nommen werden. Das Ergebnis ist 3. Soll nun die Zahl 9 eingefügt werden,
-ist das Ergebnis nicht COUNT(3, 9) = 2 sondern 3+COUNT(9) = 4. Beim Zäh-
+
+
+COUNT Nehmen wir an, es soll eine Zählung von Werten ($$$1$$$, $$$7$$$, $$$9$$$) vorge-
+nommen werden. Das Ergebnis ist $$$3$$$. Soll nun die Zahl $$$9$$$ eingefügt werden,
+ist das Ergebnis nicht COUNT($$$3$$$, $$$9$$$) = $$$2$$$ sondern $$$3$$$+COUNT(9) = $$$4$$$. Beim Zäh-
 len darf also nicht der Fehler gemacht werden, dass eine vorherige Zählung
 lediglich als ein einziges Element interpretiert wird. Als Lösung bietet sich
-an, die Zählfunktion als Summe von Einsen SUM(1) zu interpretieren.
+an, die Zählfunktion als Summe von Einsen SUM($$$1$$$) zu interpretieren.
+
+
 Sonstige Bei nicht-kommutativen Aggregatfunktionen wie IMPLODE (zur
 Konkatenation von Zeichenketten) kann bei der inkrementellen Berechnung
 eine Ordnung zerstört werden. Ein Beispiel: Es soll eine Komma-getrennte
@@ -1143,59 +1512,59 @@ Firmen zu ermitteln und dabei jede Firma nur einmal zu zählen. Bei einer
 Löschung tritt ähnlich wie bei MIN und MAX das Problem auf, dass man
 nicht mehr weiß, ob die letzte Instanz eines Wertes gelöscht wurde oder ob
 der Wert noch in anderen Datensätzen präsent ist.
-Änderungseinbringung
+
+
+FOOTNOTE:Änderungseinbringung
+
+
 Bei inkrementellen Berechnungen muss in der Regel auf zwei Datenquel-
 len lesend zugegriffen werden. Zum einen auf die eigentlichen Basisdaten,
 auf denen auch die Änderungserfassung erfolgt, zum anderen aber auch
 auf das Ergebnis der vorherigen Berechnung. Das Ziel der inkrementellen
 Berechnung soll sein, dass das Resultat äquivalent zu dem einer vollstän-
-digen Berechnung ist. Betrachten wir die Basisdatensätze a 1, . . . , aj, die be-
-reits bei einer vorherigen Berechnung das Ergebnis f(a 1, . . . , aj) erzeugt ha-
-ben. Nach der Löschung von ai, . . . , aj und der Einfügung von aj+1, . . . , a k
-gilt die inkrementelle Berechnung unter der Operation als korrekt, genau
-◦
+digen Berechnung ist. Betrachten wir die Basisdatensätze a $$$1$$$, . . . , aj, die be-
+reits bei einer vorherigen Berechnung das Ergebnis f(a $$$1$$$, . . . , aj) erzeugt ha-
+FOOTNOTE:ben. Nach der Löschung von ai, . . . , aj und der Einfügung von aj+$$$1$$$, . . . , a k
+gilt die inkrementelle Berechnung unter der Operation als korrekt, genau ◦
 dann wenn gilt:
-f(a 1, . . . , aj) f∗(ai, . . . , aj) f(aj+1, . . . , a k) = f(a 1, . . . , ai−1, aj+1, . . . , a k)
-◦ ◦
+
+
+f(a 1, . . . , aj) f∗(ai, . . . , aj) f(aj+1, . . . , a k) = f(a 1, . . . , ai−1, aj+1, . . . , a k) ◦ ◦
+
+
 Es fällt auf, dass eine Funktion f∗ vonnöten ist, um eine zu f inverse Be-
 rechnung auszuführen, also um die Auswirkungen einer Berechnung wie-
-der zu kompensieren. Es muss gelten f f∗ = e, wobei e das neutrale Ele-
-◦
+der zu kompensieren. Es muss gelten f f∗ = e, wobei e das neutrale Ele- ◦
 ment bezüglich ist. Des Weiteren ist Assoziativität und Kommutativität
-von vonnöten,◦ sodass , f∗ und e auf dem Wertebereich von f eine abel-
-◦ ◦
+von vonnöten,◦ sodass , f∗ und e auf dem Wertebereich von f eine abel- ◦ ◦
 sche Gruppe bilden. Die genaue Definition der Operationen hängt von der
 Art der Berechnung ab. Einige Beispiele:
+
+
 • Keine Aggregation: Die Berechnung bestehe lediglich aus einer Projek-
 tion. Aus jedem Personendatensatz aj soll das Geburtsjahr yj = f(aj)
 extrahiert werden. Da keine Aggregation erfolgt, ist das Ergebnis eine
-Multimenge von Geburtsjahren y 1, . . . , yj = f(a 1, . . . , aj). Bei der
-{ }
+Multimenge von Geburtsjahren y $$$1$$$, . . . , yj = f(a $$$1$$$, . . . , aj). Bei der { }
 Operation handelt es sich um die Multimengen-Vereinigung , die
-Funktion
-f◦∗
-fungiert wie f, jedoch mit negativen
-Häufigkeiten⊎
-. Das
-neutrale Element ist die leere Multimenge: f f∗ = = e.
-◦ ∅
-• S uu mm dm ieen Abi dld du itn ig o: nIs +t uf n(a d1, e. s. g. i, la tj f) ∗= =P1i∈a f1, ....,aj i, handelt es sich bei ◦
-− ·
-• Z mä ih tl ie sn t: af u( ca h1, h. i. e. r, aj d) ie=
-APddi∈ ita i1 o,. n..,a uj
-n1 dis ft ∗e =in Sp 1ez fia
-.
-lfall der Summe, so-
-◦ − ·
+Funktion f◦∗ fungiert wie f, jedoch mit negativen Häufigkeiten⊎ . Das
+neutrale Element ist die leere Multimenge: f f∗ = = e. ◦ ∅
+
+
+FOOTNOTE:• S uu mm dm ieen Abi dld du itn ig o: nIs +t uf n(a d1, e. s. g. i, la tj f) ∗= =P1i∈a f1, ....,aj i, handelt es sich bei ◦ − ·
+
+
+FOOTNOTE:• Z mä ih tl ie sn t: af u( ca h1, h. i. e. r, aj d) ie= APddi∈ ita i1 o,. n..,a uj n1 dis ft ∗e =in Sp 1ez fia . lfall der Summe, so- ◦ − ·
+
+
 Weitere Funktionen wie die Durchschnittsberechnung oder die Summen-
 bildung im Anschluss an eine Projektion unter der Bildung von Gruppie-
 rungen stellen Spezialformen der drei genannten Berechnungen dar und
 können durch ihre Kombination dargestellt werden. Dabei gelten die im
 vorherigen Abschnitt genannten Einschränkungen. Hier ist nochmals zu
 erwähnen, dass es zur Berechnung von Minima und Maxima nicht ohne
-Weiteres möglich ist,
-f∗
-zu definieren.
+Weiteres möglich ist, f∗ zu definieren.
+
+
 Bei der eigentlichen Berechnung eines Transformationsergebnisses un-
 ter Verwendung der sich seit der letzten Berechnung geänderten Basisda-
 ten sowie des vorherigen Ergebnisses gibt es zwei Alternativen, wann das
@@ -1205,13 +1574,15 @@ ersterem handelt es sich um die sogenannte Overwrite-Installation, bei zwei-
 terem um die Increment-Installation [Jör+11b]. Im Folgenden erläutern wir
 die Alternativen kurz und weisen auf deren Vor- und Nachteile sowie de-
 ren Einschränkungen hin.
+
+
 Overwrite-Installation Bei der Overwrite-Installation wird das Ergebnis
 der vorherigen Berechnung vollständig eingelesen und in eine geeignete
 Form gebracht, sodass es direkt mit den eigentlichen Basisdaten aggregiert
 werden kann. Nehmen wir als Beispiel die Berechnung der Gehaltsumme
 pro Firma. Aus dem Ergebnisdatensatz (SAP, 1500000) wird ein anony-
 mer Personen-Eingabedatensatz erzeugt mit der Firma SAP und dem Ge-
-halt 1500000. Zu Beginn der Berechnung - im gegebenen Beispiel also vor
+halt $$$1500000$$$. Zu Beginn der Berechnung - im gegebenen Beispiel also vor
 der Summenbildung - liegen alle zur Ermittlung des Endergebnisses not-
 wendigen Daten vor. Das Endergebnis ist vollständig und beinhaltet alle
 Endwerte, auch solche, die sich nicht geändert haben. Die Variante trägt
@@ -1222,14 +1593,15 @@ ist, dass das komplette vorherige Ergebnis eingelesen werden muss, selbst
 wenn daran nur sehr wenige Änderungen vorgenommen werden. Der Vor-
 teil ist die universelle Anwendbarkeit und eine hohe Performanz, wenn es
 viele Änderungen gibt [Sch+14].
+
+
 Increment-Installation Wie der Name schon sagt, beinhaltet diese Vari-
 ante eine Inkrement-Operation. Sie wird meist für die Berechnung von Sum-
 me und Anzahl verwendet. Theoretisch ist das Verfahren aber auch auf
 andere Analysen übertragbar. Die Berechnung läuft unter dieser Varian-
 te so ab, dass sie nur auf den Änderungen in den Basisdaten basiert. Das
 Ergebnis der Berechnung ist also nicht final, sondern stellt nur eine abso-
-lute Änderung dar, etwa (SAP, 17000), weil entweder das Gehalt einer
-−
+lute Änderung dar, etwa (SAP, $$$17000$$$), weil entweder das Gehalt einer −
 bei SAP arbeitenden Person gekürzt wurde oder weil eine ebensolche Per-
 son die Firma gewechselt hat oder ganz gelöscht wurde. Dieses Ergebnis
 darf natürlich nicht wie bei der Overwrite-Installation einfach die Werte
@@ -1249,6 +1621,8 @@ Datensatz muss also zunächst gefunden, dann gelesen und letztendlich zu-
 rückgeschrieben werden. Bei sehr vielen Änderungen kann dieser Prozess
 deutlich langsamer sein als bei der Overwrite-Installation oder als bei einer
 vollständigen Neuberechnung.
+
+
 Bei allen Varianten der inkrementellen Berechnung ist natürlich zu be-
 achten, dass sie nur durchgeführt werden können, wenn auf vorherige End-
 ergebnisse lesend zugegriffen werden kann. Erfolgt das Schreiben der Da-
@@ -1257,7 +1631,11 @@ inkrementelle Berechnungen nicht durchführbar. Ein Beispiel dazu ist eine
 Analyse, deren Ergebnisse per E-Mail versendet werden (es existiert kein
 Gesendet-Ordner) oder deren Ergebnisse mittels Text-to-Speech aus einem
 Lautsprecher ertönen.
+
+
 2.4 Datenintegration
+
+
 In diesem Abschnitt geht es um Vorgänge, bei denen Daten aus mehreren
 Quellsystemen in einem gemeinsamen Zielsystem integriert werden sollen.
 Integration bedeutet in diesem Falle, dass es nicht damit getan ist, die Da-
@@ -1276,7 +1654,11 @@ logien und Datentypen. Im Folgenden gehen wir auf insgesamt sechs Arten
 von Heterogenität ein [LN07, Kapitel 3]. Weiter unten werden zwei Mög-
 lichkeiten zur Datenintegration vorgestellt und diskutiert, nämlich die ma-
 terialisierte und die virtuelle Integration.
-Formen von Heterogenität
+
+
+FOOTNOTE:Formen von Heterogenität
+
+
 Technische Heterogenität Betrachtet man zwei verschiedene Datenbank-
 managementsysteme, bieten diese in der Regel zwei unterschiedliche Zu-
 griffsschnittstellen (APIs). Dazu zählen Methoden zum Verbindungsauf-
@@ -1290,6 +1672,8 @@ ner Anwendung schnell von einem System auf ein anderes gewechselt wer-
 den, indem lediglich ein anderer Datenbanktreiber zum Einsatz kommt.
 Bei NoSQL-Datenbanken kommen DB-Gateways aktuell in der Regel noch
 nicht zum Einsatz. Das bedeutet, dass jede Interaktion mit der Datenbank
+
+
 neu formuliert werden muss, wenn von einem System auf ein anderes ge-
 wechselt wird. Bei Datenintegrationen ist die Überwindung technischer He-
 terogenität meist einfach zu lösen, da dieser Prozess generisch für ein Da-
@@ -1299,6 +1683,8 @@ ziell für ein System entwickelte Komponente, welches zum Lesen und Schrei-
 ben von Daten eingesetzt werden kann. Nach dem Lesen bringt der Wrap-
 per die Daten in ein einheitliches internes Format, aus welchem vor dem
 Schreiben wieder das Datenbank-spezifische Format erzeugt wird.
+
+
 Datenmodell-Heterogenität Zwar gibt es viele verschiedene relationale
 Datenbankmanagementsysteme, im Großen und Ganzen verwenden sie je-
 doch das gleiche Datenmodell: Tabellen, Spalten, Zeilen, etc. Trotzdem gibt
@@ -1319,6 +1705,8 @@ tendatenbanken unterstützt werden. Für solche Zwecke muss man sich in-
 dividuell eine Abbildung im Ziel-Datenmodell überlegen, beispielsweise
 in diesem Fall über einen Array, der Kanten-Labels, -Properties und die IDs
 der Zieldatensätze enthält.
+
+
 Syntaktische Heterogenität Wenn es darum geht, Datenwerte zu spei-
 chern, gibt es meist viele alternativen Formen. Ein Kalender-Datum kann
 beispielsweise als eine mit Punkten getrennte Folge von Tag, Monat und
@@ -1330,6 +1718,8 @@ nen Zeichenkodierungen, Umlaut-Repräsentationen, Zahlenformaten oder
 Maßeinheiten auf. Im Allgemeinen lässt sich diese Form der Heterogenität
 allerdings leicht mittels einfacher Umrechnungsfunktionen oder regulärer
 Ausdrücke überwinden.
+
+
 Strukturelle Heterogenität Ein Datenbankdesigner muss sich bei seiner
 Arbeit stets die Frage stellen, welche Konzepte des Datenmodells für wel-
 che Reale-Welt-Konzepte verwendet werden sollen. Verwaltet eine Daten-
@@ -1351,6 +1741,8 @@ spielsweise jede Kategorie ein Dokument sein, welches einen Array aller in
 ihr enthaltenen Produkte beinhaltet. Zur Überwindung von struktureller
 Heterogenität sind Methoden oder Sprachen notwendig, die es erlauben,
 Metadaten in Daten und Daten in Metadaten umzuwandeln.
+
+
 Schematische Heterogenität Verwendet man zur Umsetzung ein und des
 selben Reale-Welt-Konzepts in zwei Implementierungen das gleiche Daten-
 modell-Konzept, können trotzdem zwei heterogene Schemata vorliegen. In
@@ -1366,7 +1758,9 @@ dung des einen Schemas in das andere ist mittels einer Verbundoperation
 bzw. umgekehrt mit einer Selektion und Projektion möglich. Im Allgemei-
 nen kann die schematische Heterogenität meist mit einfachen Operatoren
 überwunden werden.
-Semantische Heterogenität Während die bisher vorgestellten Formen der
+
+
+FOOTNOTE:Semantische Heterogenität Während die bisher vorgestellten Formen der
 Heterogenität damit zu tun hatten, wie die Konzepte der realen Welt in ei-
 nem speziellen Datenbanksystem umgesetzt werden, ist die semantische
 Heterogenität eine Folge der Autonomie bei der Verwendung von Namen
@@ -1379,6 +1773,8 @@ Synonyme sorgen dabei allerdings oft für Unklarheiten. Im Allgemeinen
 kann man sagen, dass die semantische Heterogenität die am schwierigsten
 zu überwindende Form darstellt, da vor allem in automatischen Prozes-
 sen schwierig festgestellt werden kann, was sich ein Datenbankdesigner
+
+
 mit der Vergabe eines Namens gedacht hat. Für die Überwindung wer-
 den Schema-Matching-Werkzeuge [MBR01; RB01] eingesetzt, welche Kor-
 respondenzen zweier heterogener Schemata erkennen. Ein solches Werk-
@@ -1391,7 +1787,11 @@ Instanzebene möglich. Mit dieser Methode wäre es sogar möglich, eine Kor-
 respondenz zwischen zwei Attributen mit kryptischen Namen herauszu-
 finden, wenn sie ähnliche Werte, z. B. Produktkategorien oder Personenna-
 men, enthalten.
+
+
 Materialisierte und virtuelle Integration
+
+
 Die weiter oben beschriebenen periodisch ausgeführten Datentransforma-
 tionen und Analysen mit den dazugehörigen Änderungserfassungsmetho-
 den entsprechen der materialisierten Integration [LN07, Kapitel 4]. Materiali-
@@ -1403,6 +1803,8 @@ beispielsweise die Übernahme von Kundendaten in ein neues System, ver-
 wendet man dazu die materialisierte Integration. Ändern sich jedoch die
 Basisdaten ständig und es ist vonnöten, dass die Änderungen im Zielsys-
 tem sofort sichtbar sind, kann eine virtuelle Integration sinnvoll sein.
+
+
 In einem Data-Warehouse findet man die materialisierte Integrationen
 in der Form von ETL-Jobs wieder. Die drei Phasen des Extract-Transform-
 Load bestehen daraus, Daten aus einem Basissystem zu extrahieren, diese
@@ -1427,8 +1829,12 @@ langsamung parallel laufender Transaktionen führen. Die Ausführung des
 ETL, also des Vorgangs, der nötig ist, um die Daten ins Datenwarenhaus zu
 bekommen, dauert allerdings je nach Datenmenge, Wahl des Änderungs-
 erfassungsverfahrens und Ausmaß an Änderungen seit einer vorherigen
+
+
 Ausführung eine gewisse Zeit. Um die Daten im Datenwarenhaus aktuell
 zu halten sind wiederholte Ausführungen vonnöten.
+
+
 Bei virtuellen Integrationen liegen die Daten stets im aktuellen Zustand
 vor. Stale Data, also veraltete Datenwerte, können aufgrund der direkten
 Weiterleitung der Leseaktionen zu den Basisdaten nicht auftreten. Des Wei-
@@ -1443,7 +1849,11 @@ können einfache virtuelle Transformationen sehr effizient ausgeführt wer-
 den. Allerdings sind komplexen Analysen, in denen große Datenmengen
 gelesen und aggregiert werden, bei der virtuellen Integration deutlich lang-
 samer als bei der materialisierten.
+
+
 Transformationssprachen für N3oSQL
+
+
 Anders als bei relationalen Datenbanken gibt es in der Welt heterogener
 NoSQL-Datenbanken keine einheitliche Anfragesprache. Die im vorheri-
 gen Kapitel vorgestellten Programme und Frameworks machen es mög-
@@ -1452,7 +1862,11 @@ Verwendung meist aufwendig und mit einer gewissen Einarbeitungszeit
 verbunden. Die Alternative zum Schreiben einer Analyse in einer Program-
 miersprache wie Java ist die Verwendung einer speziellen Anfrage- und
 Transformationssprache, wie sie in diesem Kapitel vorgestellt werden.
+
+
 3.1 SQL-basierte Sprachen
+
+
 Die Structured Query Language SQL ist mächtig und wird von einer großen
 Benutzergruppe beherrscht. Auch in der Programmierung unerfahrene An-
 wender sind oft im Formulieren von SQL-Anfragen auf relationalen Daten-
@@ -1467,6 +1881,8 @@ stark für relationale Datenbanken optimiert. Es gibt also keine einfache Un-
 terstützung für flexible Schemata oder komplexe Datentypen. Die im Fol-
 genden vorgestellten Ansätze versuchen dieses Manko teilweise durch die
 Erweiterung der Sprache zu kompensieren.
+
+
 Hive Apache Hive [Thu+09] ist eine Data-Warehouse-Erweiterung für Ha-
 doop [Apaa]. Ursprünglich wurde sie von Facebook entwickelt und im Jah-
 re 2008 der Open-Source-Gemeinde zur Verfügung gestellt [Hiv]. Die Spra-
@@ -1497,6 +1913,8 @@ eine HBase-Tabelle sein, was es möglich macht, SQL-Anfragen an existie-
 rende HBase-Tabellen zu stellen [Hiv]. Allerdings muss die HBase-Tabelle
 ein festes Schema besitzen, welches man beim Erstellen der Hive-Tabelle
 zusammen mit den Datentypen der einzelnen Spalten definieren muss.
+
+
 Impala Da Hive ursprünglich für die Ausführung mittels MapReduce
 entwickelt wurde und in Verbindung mit HBase sehr inperformant war,
 entstanden weitere Systeme, die ebenfalls den Gedanken verfolgten, Da-
@@ -1513,419 +1931,5 @@ ne Funktionen. Da Impala seine Daten üblicherweise im HDFS speichert,
 ist es hauptsächlich dazu gedacht, einmal geladene große Datenmengen zu
 analysieren, und nicht um Änderungen oder Löschungen auf diesen aus-
 zuführen.
-Phoenix Bei Apache Phoenix [Apad] wurde von Anfang an das Ziel ver-
-folgt, HBase zur Speicherung zu verwenden, während dies bei der Ent-
-wicklung von Hive und Impala nur zweitrangig war. Bei der Arbeit mit Ta-
-bellen pflegt Phoenix im Hintergrund viele Hilfsstrukturen wie Metadaten-
-Tabellen und Trigger, die ACID-Transaktionen sowie das Anlegen und Nut-
-zen von Indexen ermöglichen. Phoenix-Tabellen können mit einem CREATE
-TABLE-Kommando angelegt werden oder auf eine existierende HBase-Ta-
-belle abgebildet werden. Eine Funktionalität, welche über den SQL-Stan-
-dard hinaus geht, ist die Unterstützung von Schema-on-Read. Dies erlaubt
-es Anwendungen, in Anfragen Namen von Spalten zu verwenden, welche
-beim Anlegen einer Tabelle nicht definiert wurden. Flexible Schemata wer-
-den also von Phoenix unterstützt, allerdings gibt es keine Möglichkeit auf
-Spalten zuzugreifen, deren Namen der Anwendung unbekannt ist. Phoenix
-verwendet die nativen API-Methoden von HBase und setzt nicht auf Map-
-Reduce. Durch Server-seitige Berechnungen mittels Koprozessoren werden
-Berechnungen und Filter so weit es geht auf denjenigen Rechnern bearbei-
-tet, auf denen die Daten liegen, und somit die Netzwerklast minimiert. Das
-Resultat ist, dass die Geschwindigkeit von Phoenix um ein vielfaches höher
-ist als die von Hive oder Impala. Eine Test-Anfrage, welche in einer Tabelle
-mit zehn Millionen Zeilen die zehn höchsten Werte einer bestimmten Spal-
-te findet, dauerte in einem Test mit Hive über HBase 46 Sekunden und mit
-Phoenix nur sieben Sekunden [Pho].
-MRQL Obwohl die Abkürzung MRQL (ausgesprochen: miracle) [FLG12]
-für „MapReduce Query Language“ steht, ist das Ziel dieser Sprache, un-
-abhängig von einer bestimmten Ausführungsplattform zu sein, und statt-
-dessen dem Benutzer die Ausführung von Anfragen auf vielen verschiede-
-nen Plattformen zu ermöglichen. Neben Apache Hadoop zählen dazu auch
-Spark, Flink und Apache Hama [Seo+10]. MRQL orientiert sich zwar an
-SQL, unterscheidet sich jedoch davon sehr stark. Das Datenmodell wurde
-um verschachtelte Strukturen und Bäume erweitert, um auch Formate wie
-JSON oder XML zu unterstützen. Als Eingabe dienen Dateien, welche sich
-im Hadoop Distributed File System (HDFS) befinden. Die Sprache MRQL
-kann als mächtige Variante von Hive gesehen werden. Sie unterstützt nicht
-nur komplexere Datenmodelle, sondern bietet auch neue Sprachkonstruk-
-te, beispielsweise für iterative Berechnungen.
-BigQuery Der auf Dremel [Mel+11] basierende Web-Dienst Google BigQue-
-ry [Sat12; Goo15] dient zur Ad-Hoc-Analyse von großen Datenmengen.
-Mittels SQL ist es möglich, Lese-Anfragen an im Google Cloud Storage
-befindliche CSV-, JSON- oder Avro-Dateien [Apa15a] zu stellen, welche
-auf großen Rechenclustern mit tausenden von Knoten parallel ausgeführt
-werden. BigQuery erweitert SQL um die Unterstützung für verschachtel-
-te Attributwerte. Wenn beispielsweise die Eingabedaten im JSON-Format
-vorliegen und dort Attribute Unterattribute besitzen, kann auf diese mit-
-tels Dot-Notation zugegriffen werden, z. B. WHERE person.firma.ort
-= ’...’. Darüber hinaus bietet BigQuery die Unterstützung für sich wie-
-derholende Attribute, was gewisse Ähnlichkeiten zu Arrays hat. Eine im
-Schema angegebene repeated-Option erlaubt das mehrfache Vorkommen
-des gegebenen Attributs. Bei der Anfrage wird das Ergebnis „flachgeklopft“.
-Ein SELECT name, hobby FROM person liefert zu jedem Personen-Da-
-tensatz mehrere Zeilen, wenn in diesem das hobby-Attribut mehrfach prä-
-sent ist. Während die SQL-basierte Anfragesprache sehr mächtig ist und
-große Datenmengen in wenigen Sekunden analysiert werden können, wer-
-den Schreiboperationen auf den Daten von BigQuery nicht unterstützt.
-N1QL N1QL (ausgesprochen: Nickel) [OHR15] ist die zur Dokumenten-
-datenbank Couchbase [Cou] gehörende Anfragesprache. N1QL basiert auf
-SQL, verwendet jedoch als Datenmodell JSON-Dokumente. Für den Zu-
-griff auf Unterattribute wird wie bei BigQuery die Dot-Notation verwen-
-det. Sprachkonstrukte zum Zugriff und zum Kreieren von Arrays und Sub-
-dokumenten sind auf das JSON-Datenmodell abgestimmt. Gleichzeitig lässt
-sich die Sprache auch für relationale Datenbanken verwenden, da sie auf
-SQL basiert. Mittels INSERT-, UPDATE und DELETE-Anfragen kann N1QL
-auch zum Modifizieren von Daten verwendet werden.
-OQL Die Object Query Language [ASL89] ist eine durch die Object Da-
-tabase Management Group standardisierte Abfragesprache für Objektda-
-tenbanken. Da Objekte in solchen Datenbanken mehrwertige Attribute in
-Form von Arrays und Listen, sowie Referenzen zu anderen Objekten besit-
-zen können, wurden in OQL entsprechende Möglichkeiten eingebaut, die
-über die Mächtigkeit von SQL hinausgehen. Mittels Dot-Notation und Un-
-teranfragen kann Referenzen gefolgt werden. Ein Beispiel: FROM Person
-p, p.freunde f. Die Sprache hatte Einfluss auf die Enterprise Java Beans
-Query Language EJB-QL, welche ebenfalls ein direktes Traversieren von Re-
-ferenzen ohne die Verwendung von Joins erlaubt.
-FIRA/FISQL, SchemaSQL Die meisten der bisher vorgestellten Sprachen
-boten Spracherweiterungen für SQL, um vom relationalen Datenmodell ab-
-weichende Strukturen anfragen und erstellen zu können. Wie jedoch im
-vorherigen Kapitel beschrieben, gilt als eine Herausforderung beim Um-
-gang mit Big Data auch die Heterogenität von Daten. Da viele NoSQL-
-Datenbanken flexible Schemata ermöglichen, gewinnen Sprachen an Wich-
-tigkeit, welche mit dieser Schemaflexibilität umgehen können. Beim Stellen
-einer Anfrage in SQL muss nämlich immer das Schema der angefragten
-Tabellen bekannt sein. Die einzige Ausnahme ist ein SELECT *. Es gibt je-
-doch keine Möglichkeit, Drop-Projektionen durchzuführen, also alle Spal-
-ten zu bekommen, bis auf eine gegebene Liste. Des Weiteren ist es in SQL-
-Anfragen nicht möglich, Spalten- oder Tabellennamen abzufragen, Daten in
-Metadaten zu wandeln oder den Wert einer Spalte zu lesen, deren Namen
-als Wert in einer anderen Spalte steht. Genau für solche Anfragen wurde die
-relationale Algebra sowie SQL um spezielle Operationen erweitert. Die Fe-
-derated Interoperable Relational Algebra (FIRA) [WR05], die Federated Interope-
-rable Structured Query Language (FISQL) [WR05] sowie SchemaSQL [LSS96]
-zählen zu den sogenannten Schema-Anfragesprachen. Im Laufe dieser Ar-
-beit werden wir bei einzelnen Operatoren auf die korrespondierende Kon-
-strukte aus den genannten Sprachen aufmerksam machen.
-3.2 Systemübergreifende Sprachen
-Mittels systemübergreifender Sprachen ist es möglich, auf verschiedene aut-
-arke Systeme auf einmal zuzugreifen. Der SQL/MED Standard [Mel+02] legt
-fest, wie innerhalb einer SQL-Anfrage auf Daten von fremden Datenbank-
-systemen zugegriffen werden kann. Mittels Join-Operationen können so-
-gar Daten aus verschiedenen Systemen kombiniert werden. Eine Imple-
-mentierung von SQL/MED ist beispielsweise die Komponente der Foreign
-Data Wrappers von PostgreSQL [For]. Benutzer können Wrapper für ver-
-schiedene Systeme – dazu zählen auch NoSQL-Datenbanken, Dateiformate
-und Cloud-Dienste – erstellen und der Community zur Verfügung stellen.
-Mittels dieser Wrapper und dem Kommando CREATE FOREING TABLE
-wird eine Verbindung zu einer externen Quelle hergestellt. In SQL-Anfra-
-gen ist es dann möglich, auf diese fremden Tabellen, genau wie auf loka-
-le Tabellen und Sichten, zuzugreifen. Da am Ende die Sprache SQL ohne
-spezielle Erweiterungen zum Einsatz kommt, ist es die Aufgabe der Wrap-
-per, die Datenmodelle der verschiedenen Systeme in das relationale Modell
-zu überführen. Auch Garlic [RS97] und Apache Calcite [Cal] (vormals be-
-kannt unter dem Namen Optiq) verfolgen den Ansatz, mittels Wrappern
-bzw. Adaptern und der Sprache SQL auf Daten, die auf fremden Syste-
-men liegen, zuzugreifen. In [RLMW14] wird eine erweiterbare Middleware
-vorgestellt, die eine SQL-Anfrage entgegennimmt und in die Anfragespra-
-che eines NoSQL-Systems übersetzt, sodass diese dort direkt ausgeführt
-werden kann. Im Gegensatz zu Garlic unterstützt diese Middleware auch
-Einfügungen und Änderungen, allerdings sind keine Joins möglich. Des
-Weiteren können in den SQL-Anfragen nur solche Operationen zum Ein-
-satz kommen, die vom verwendeten System nativ unterstützt werden, also
-zum Beispiel keine Selektionen auf Werten in Key-Value-Datenbanken. Die-
-se Middleware sowie SQL/MED, Garlic und Calcite stoßen bei komplexen
-Typen und bei allem, was vom relationalen Modell abweicht, an ihre Gren-
-zen. Die nun folgenden weiteren Ansätze ermöglichen mächtigere system-
-übergreifende Anfragen und Transformationen auf NoSQL-Datenbanken.
-Viele davon erweitern wie die im vorherigen Abschnitt vorgestellten Spra-
-chen die Sprache SQL, um komplexe Datenstrukturen zu unterstützen. An-
-dere verwenden eine von SQL abweichende Syntax.
-SQL++ Die Sprache SQL++ [OPV14] verfolgt gleich mehrere Ansätze. Zum
-einen dient auch hier SQL als Basis, zum anderen werden verschiedenarti-
-ge Eingabequellen unterstützt und somit Möglichkeiten zur Überwindung
-technischer Heterogenität und Datenmodellheterogenität geboten. SQL++
-besteht aus der SQL++-Anfragesprache sowie zwei Kernkomponenten, näm-
-lich einer virtuellen Datenbank und einem Anfrageverarbeiter. Durch die
-Definition von Views in der virtuellen Datenbank können mittels Wrappern
-verschiedene Systeme mit unterschiedlichen Datenmodellen angebunden
-werden. Die Komponente zur Anfrageverarbeitung nimmt Anfragen ent-
-gegen und führt diese direkt auf den externen Datenquellen aus. SQL++
-verwendet als internes Datenmodell ein semi-strukturiertes Format mit Men-
-gen, Listen, Verschachtelungen und mehr, also eine Übermenge vom rela-
-tionalen Modell und JSON. Die Sprache ist abwärtskompatibel zu SQL und
-kann auch auf relationalen Datenbanksystemen eingesetzt werden. Der da-
-zu notwendige SQL Wrapper bietet eine Sicht auf die Tabellendaten als eine
-Menge von Tupeln. Für Unterattribute bei verschachtelten Strukturen wird
-in SQL++ die Dot-Notation verwendet, zur Unterstützung von Arrays und
-Mengen wurden Erweiterungen in die FROM-Klausel eingebaut. Mit die-
-sen können in der FROM-Klausel nicht nur Datenquellen aufgelistet wer-
-den, sondern auch Namen von mengenwertigen Attributen. Mittels FROM
-person AS p, p.hobbys AS h wird ähnlich wie in OQL der Hobbys-
-Array in der Personentabelle in eine flache Struktur gebracht. Anders als im
-SQL-Standard kann direkt auf die in der FROM-Klausel definierten Aliasse
-zugegriffen werden: SELECT p gibt den vollständigen Personendatensatz
-zurück und SELECT h jeden einzelnen Wert im Hobby-Array. Um Meta-
-daten wie zum Beispiel Spaltennamen in Daten umzuwandeln, gibt es das
-Sprachkonstrukt SELECT ATTRIBUTE n:v. Da SQL++ jedoch primär für
-die Verwendung als Anfragesprache in Applikationen und nicht als Daten-
-transformationssprache gedacht ist, gibt es keine Möglichkeiten, Daten in
-Metadaten zu wandeln oder auf die Datenquellen schreibend zuzugreifen.
-CloudMdsQL Die Cloud Multidatastore Query Language [Kol+15] verfolgt
-die Idee, innerhalb einer SQL-Anfrage die für ein verwendetes Datenbank-
-system typische Anfragesprache zu verwenden. Dadurch werden system-
-übergreifende Anfragen ermöglicht und dank der Einbettung nativer Spra-
-chen die technische Heterogenität und Datenmodell-Heterogenität über-
-wunden. Anders als bei SQL++ ist bei CloudMdsQL das Ergebnis einer
-Anfrage stets eine Menge von Tupeln. Die Sprache kann nur zum Abfragen,
-aber nicht zum Erzeugen komplexer Datenstrukturen verwendet werden.
-Toad Das zur Administration von Oracle Datenbanken entwickelte Pro-
-gramm Toad [Toa11] bietet mit einer Erweiterung für Cloud-Datenbanken
-die Möglichkeit, auf externe Datenbanken zuzugreifen. Im Gegensatz zu
-SQL++ unterstützt Toad auch das Einfügen, Ändern und Löschen auf ex-
-ternen Quellen. Diese werden genau wie Leseoperationen von einem Data
-Hub in API-Befehle des zugrunde liegenden Systems übersetzt. Da jedoch
-alle Anfragen auf ANSI SQL basieren, gibt es keine Unterstützung für kom-
-plexe Datentypen, nicht-relationale Datenmodelle oder flexible Schemata.
-BQL Die Bridge Query Language [Cur+11] ist eine generische Sprache, die
-sich auf die speziellen Datenmodelle verschiedener NoSQL-Datenbanken
-anpassen lässt. Der in [Cur+11] vorgestellte Prototyp nimmt eine SQL-An-
-frage entgegen, welche anschließend in eine Menge von BQL-Anfragen über-
-setzt wird – eine für jede in der Anfrage verwendete NoSQL-Datenbank.
-Für die unterschiedlichen Datenbanksysteme müssen Übersetzer geschrie-
-ben werden, welche BQL-Anfragen in die systemspezifische Sprache um-
-wandeln. Das Ziel von BQL ist eine virtuelle Datenintegration, um Anwen-
-dungen eine globale Sicht auf die Daten aus verschiedenen Quellen zu bie-
-ten. Die Sprache bietet Möglichkeiten zur Selektion, Projektion und zum
-Join, sowie Sprachkonstrukte zur Anfrage von Metadaten.
-3.3 Pipeline-basierte Sprachen
-SQL und andere deklarative Sprachen verfolgen die Grundidee, das Was
-und nicht das Wie zu formulieren. Pipeline-basierte Sprachen dagegen be-
-absichtigen, dass der Benutzer als eine Folge von Schritten angibt, wie das
-Endergebnis berechnet werden soll. Der erste Schritt ist üblicherweise ei-
-ne Definition woher die Daten stammen, der letzte Schritt eine Ausgabe
-als Objekt oder als Cursor, oder aber eine Angabe, wohin die Ergebnis-
-se geschrieben werden sollen. Dazwischen legen weitere Schritte fest, wie
-die Daten gefiltert, transformiert oder gruppiert werden sollen. Pipeline-
-basierte Sprachen sind sehr ähnlich zu einer Programmiersprache, da das
-Programm von oben nach unten abgearbeitet werden kann. Meist gibt es je-
-doch keine Kontrollstrukturen oder Schleifen. Eine Pipeline-basierte Spra-
-che ist im Gegensatz zu einer generischen Programmiersprache für einen
-ganz bestimmten Zweck und ein bestimmtes Datenmodell konzipiert. Von
-einem Pipeline-Schritt zum nächsten gibt es üblicherweise keine Seitenef-
-fekte und es herrscht Abgeschlossenheit; das Datenmodell wird also nicht
-verlassen. Letzteres ermöglicht es, flexibel einzelne Schritte hinzuzufügen
-oder zu entfernen. Dies macht auch die Arbeit mit der Sprache einfach.
-Nach jedem Schritt kann sich der Benutzer anschauen, wie die Daten bis
-dort hin aussehen, bevor man mit der Definition der darauf folgenden Schrit-
-te fortfährt.
-Apache Pig Die beiden Sprachen Pig [Ols+08] und Hive [Thu+09] wer-
-den oft zusammen genannt, obwohl sie sehr verschieden sind. Hive basiert
-auf SQL und ist deklarativ, Pig ist Pipeline-basiert. Der Grundgedanke bei
-beiden Sprachen war jedoch der gleiche: Als Alternative dazu, dass Benut-
-zer aufwändige Hadoop-Jobs programmieren, sollen sie ihre Programme
-in einer kompakten Sprache formulieren, welche im Anschluss in eine Fol-
-ge von MapReduce-Jobs umgewandelt und auf dem Hadoop-Framework
-ausgeführt werden. Ein Pig-Programm beginnt meist mit einer LOAD-An-
-weisung, um die Daten aus einer Datei oder einer Datenbank zu lesen. Das
-Ergebnis jeder Anweisung wird in Variablen geschrieben, auf welche in den
-folgenden Schritten zugegriffen werden können. Einige mögliche weitere
-Anweisungen sind Filter, Gruppierungen, Projektionen und Joins. Das Pig-
-Datenmodell ist eine Kombination aus Multimengen, Tupeln, Maps und
-atomaren Typen. Beim Lesen einer CSV-Datei entsteht beispielsweise ähn-
-lich wie bei relationalen Datenbanken eine Multimenge von Tupeln. Die
-Tupel haben jedoch nicht zwangsweise ein vorgegebenes Schema und de-
-ren Attribute können auch unbenannt sein. In letzterem Falle wird auf At-
-tributwerte mittels $0, $1, u. s. w. zugegriffen. Pig-Programme werden
-vor der Kompilierung in MapReduce optimiert, um nicht benötigte Attri-
-bute früh zu entfernen, Filter möglichst früh auszuführen und um eine
-geschickte Join-Reihenfolge zu wählen. Anders als bei den zuvor vorge-
-stellten Sprachen können in Variablen befindliche Zwischenergebnisse in
-Pig mehrfach wiederverwendet werden. So kann ein einzelnes Programm
-in mehrere Ausgabedateien oder -datenbanken auf einmal schreiben. Pig
-ist gut geeignet für komplexe Datentransformationen und ermöglicht dank
-unterschiedlicher Loader auch systemübergreifende Transformationen. Das
-Datenmodell der Quellen muss jedoch zum Pig-Datenmodell passen. Des
-Weiteren sind die Möglichkeiten zum Umgang mit flexiblen Schemata ein-
-geschränkt.
-Nova Oft werden einzelne Anfragen oder Skripte zu komplexen Work-
-flows zusammengeschaltet. Auf diese Art können komplexe Algorithmen
-in einzelne Module unterteilt werden, die sich jeweils um eine spezielle
-Aufgabe kümmern. Wiederkehrende Aufgaben lassen sich somit leicht wie-
-derverwenden, was nicht nur Programmieraufwand, sondern auch Berech-
-nungszeit einspart. Nova [Ols+11] ermöglicht die Definition von Workflows
-in Form von einem Graphen, der aus Pig-Programmen besteht. Es werden
-inkrementelle Aggregationen und Joins unterstützt, sodass sich Änderun-
-gen in den Basisdaten direkt durch den Workflow auf das Ergebnis anwen-
-den lassen, ohne dass eine vollständige Berechnung erfolgen muss.
-MongoDB Aggregation Pipeline Die Dokumentendatenbank MongoDB
-[Mona] bietet mit der Aggregation Pipeline die Möglichkeit, eine Abfolge
-von Schritten zu definieren, welche auf einer Dokumentensammlung zur
-Datenanalyse durchgeführt werden sollen. Die Pipeline gilt als Nachfol-
-ger der in MongoDB fest eingebauten MapReduce-Funktionalität, da sie
-deutlich einfacher als MapReduce zu benutzen, aber dennoch sehr mäch-
-tig ist und da die Berechnungen verteilt durchgeführt werden können. An-
-ders als bei Pig wird die MongoDB Aggregation Pipeline lediglich auf ei-
-ner einzigen Kollektion aufgerufen, mittels des $lookup-Schrittes ist es je-
-doch möglich, einen linken äußeren Verbund mit einer zweiten Kollekti-
-on durchzuführen. Schritte wie $match und $project werden auf jedem
-einzelnen Dokument in der Eingabe angewandt und dienen zur Selekti-
-on und Projektion. Schritte wie $sort und $group erfordern einen Da-
-tentransport über das Netzwerk, da alle Dokumente auf einmal betrachtet
-werden müssen. Einfache Graph-Analysen und Transformationen sind mit
-dem $graphLookup-Schritt möglich. Er funktioniert ähnlich dem $lookup-
-Schritt, jedoch werden Referenzen rekursiv traversiert. Beim zugrunde lie-
-genden Datenmodell handelt es sich jedoch stets um JSON-Dokumente und
-es ist abgeschlossen. Das heißt, jeder Schritt nimmt eine Sequenz von gülti-
-gen JSON-Dokumenten entgegen und liefert auch wieder eine ebensolche.
-Die einzige Ausnahme ist der $out-Schritt, welcher das Transformations-
-ergebnis in eine Ausgabe-Kollektion schreibt. Die Aggregation Pipeline ist
-gut geeignet für Dokumentendatenbanken, hat jedoch noch Schwächen im
-Umgang mit den dort auftretenden flexiblen Schemata. Es ist beispielswei-
-se nicht möglich, Daten in Metadaten zu wandeln und umgekehrt.
-3.4 FLWOR-Sprachen
-FLWOR steht für FOR, LET, WHERE, ORDER BY, RETURN und ist vor al-
-lem aus der XML-Anfragesprache XQuery [Cha+03a] bekannt. In der FOR-
-Klausel kann über eine Sequenz von Eingabedaten iteriert werden. Eine
-verschachtelte Iteration ist über weitere FOR-Klauseln möglich. Nachdem
-mittels LET gegebenenfalls zusätzliche Variablen definiert wurden, die in
-der Filteroperation WHERE und in der RETURN-Klausel verwendet werden
-können, wird letztere Klausel für jeden qualifizierenden Datensatz ange-
-wendet, um eine Sequenz von Ausgabedatensätzen zu erzeugen. Mittels
-ORDER BY kann zuvor eine Sortierung vorgenommen werden.
-XQuery Das von der XML-Anfragesprache XQuery [Cha+03a] verwende-
-te Datenmodell ist das XQuery Data Model (XDM), welches einer Sequenz
-aus Knoten und Literalen entspricht. Typischerweise ist die Eingabe ein
-oder mehrere XML-Dokumente, welche baumartige Strukturen vorweisen.
-In [SBH13] wurde gezeigt, wie XQuery-Anfragen auf dem MapReduce-
-Framework ausgeführt werden können, um Daten, die in unterschiedlichen
-Systemen – nicht zwangsweise in XML-Dokumenten - gespeichert sind,
-verteilt zu verarbeiten.
-JSONiq Die Sprache JSONiq [Rob+12] ermöglicht die Definition und Aus-
-führung von Anfragen mit FLWOR-Ausdrücken auf JSON-Daten. Es gibt
-verschiedene Implementierungen, die Verbindungen zu Systemen wie Mon-
-goDB, Couchbase, aber auch zu relationalen Datenbanken ermöglichen. Für
-letztere werden Funktionen bereitgestellt, die eine SQL-Anfrage als Para-
-meter nehmen und in der FOR-Klausel verwendet werden können. Ein da-
-zu ähnlicher Ansatz ist SQL/XML [EM01]. Diese Sprache erlaubt es mittels
-spezieller Funktionen, XQuery-Anfragen auf XML-Daten innerhalb von SQL
-zu verwenden. JSONiq jedoch kommt meist nur zur Abfrage von Daten
-in Dokumentendatenbanken oder JSON-Dateien zum Einsatz. Genau wie
-XQuery unterstützt JSONiq Selektionen, Joins und das Aggregieren von
-Daten. Zur Erzeugung von Arrays mit Subdokumenten kommen verschach-
-telte FLWOR-Anfragen zum Einsatz. Analog zum Standard XQuery Update
-[Cha+08a] ermöglicht es auch JSONiq, Dokumente zu modifizieren.
-3.5 Regelbasierte-Sprachen
-Regelbasierte Sprachen kommen oft bei Datentransformationen zum Ein-
-satz und dienen zur Definition von Transformationsregeln. Eine Regel legt
-fest, wie die Eingabe in die Ausgabe umgewandelt werden soll. Eine Regel
-kann zum Beispiel wie folgt definiert werden: Wenn in der Eingabe ein be-
-stimmtes Muster gefunden wird, dann wird für jedes Auftreten des Musters
-ein Eintrag in der Ausgabe angelegt.
-XSLT XSL-Transformationen [Cla+99] sind Teil der Extensible Stylesheet Lan-
-guage und dienen zur Transformation von XML-Dokumenten. Jede in XSLT
-formulierte Template-Regel beinhaltet ein Muster in Form eines XPath-Aus-
-drucks [Gro07] und einen Rumpf, welcher beschreibt, was die Ausgabe sein
-soll. In diesem Rumpf kann auf Unterelemente, Attribute und Textwerte zu-
-gegriffen werden, und ein rekursives Aufrufen der Template-Regeln ange-
-stoßen werden. Die Eingabe und Ausgabe einer XSL-Transformation sind
-in der Regel jeweils ein XML-Dokument. Die Sprache wird verwendet, um
-Dokumente von einem Schema in ein anderes zu überführen, aber auch um
-Datenwerte aus einem Dokument zu extrahieren oder zu aggregieren.
-Jolt In XSLT steht eine Transformationsspezifikation selbst im XML-For-
-mat. Auch bei der Regel-basierten Transformationssprache für JSON-Doku-
-mente Jolt [JSOb] ist die Spezifikation selbst ein JSON-Dokument. Anders
-als bei der MongoDB Aggregation Pipeline werden jedoch keine durchzu-
-führenden Schritte definiert, sondern eine Liste von Transformationsregeln
-der Form "a":{ "b":... }. Beinhalt das Eingabedokument das Feld a,
-wird im Ausgabedokument das Feld b auf den gegebenen Wert gesetzt. Da-
-bei dürfen Felder im Eingabedokument referenziert werden, allerdings gibt
-es keine Aggregatfunktionen. Mittels Wildcards (*, @, . . . ) können Trans-
-formationen auf Dokumenten mit heterogenen Schemata ausgeführt wer-
-den, sodass unabhängig von den Feldnamen die angegebenen Regeln aus-
-geführt werden.
-3.6 Query-By-Example
-Der Begriff Query-By-Example bedeutet, dass der Benutzer eine Anfrage da-
-durch formuliert, dass er ein Beispielergebnis angibt. Die Ergebnismenge
-einer Anfrage liefert also diejenigen Elemente, die zum angegebenen Bei-
-spiel passen. In Multimedia-Datenbanken wird diese Methode eingesetzt,
-um Bilder oder Tonaufnahmen zu finden. Der Benutzer malt eine Skizze
-oder summt eine Melodie ins Mikrofon und die Suchmaschine findet dazu
-passende Resultate. Die find-Methode der Dokumentendatenbank Mon-
-goDB [Mona] kann auch als Query-by-Example angesehen werden, um Se-
-lektionen auf Kollektionen durchzuführen. Der Benutzer übergibt der Me-
-thode ein Dokument, welches die Felder und Werte enthält, die in den zu
-findenden Dokumenten präsent sein sollen. Darin können auch Interval-
-le für Zahlenwerte sowie reguläre Ausdrücke für Zeichenkettenfelder ver-
-wendet werden.
-QBE Die von IBM entwickelte Sprache QBE [RG00, Kapitel 6] – was für
-„Query by Example“ steht – basiert auf dem Domänenkalkül für das rela-
-tionale Modell. Der Anwender sieht ein Tabellengerüst und füllt Felder, auf
-denen Selektionen ausgeführt werden sollen, mit Werten oder Bereichsprä-
-dikaten aus. Durch die Einführung von in mehreren Tabellen eingetragenen
-Variablennamen lassen sich damit auch Joins ausführen.
-Transformy Das Datentransformationsprogramm Transformy [Tra] dient
-zur Vorverarbeitung von Textdateien. Als Eingabe dienen CSV-, JSON- oder
-anders strukturierte Dateien, deren Einträge homogen sind. Der Benutzer
-formuliert eine Transformation indem er angibt, wie das Resultat der Trans-
-formation für den ersten Eintrag der Datei auszusehen hat. Im ersten Schritt
-sucht der Transformy-Algorithmus die Korrespondenzen zwischen der ge-
-gebenen Ein- und Ausgabezeile. Im zweiten Schritt führt er eine äquivalen-
-te Transformation für alle Eingabeelemente durch. Komplexe Transforma-
-tionen sind mit Transformy nicht möglich. Jede Transformation ist lediglich
-ein einfaches Mapping. Es können keine Zeilen gefiltert und keine Werte
-aggregiert werden.
-3.7 Graph-Anfragesprachen
-Die bisher vorgestellten Anfrage- und Transformationssprachen sind für
-die Verwendung auf relationalen Datenbanken, gesamtheitsorientierten No-
-SQL-Datenbanken sowie verschiedenen Dateiformaten ausgelegt. Um Be-
-ziehungen zwischen verschiedenen Datensätzen, wie sie beispielsweise in
-Graphdatenbanken vorkommen, zu unterstützen, werden spezielle Graph-
-Anfragesprachen verwendet.
-SPARQL Das Resoruce Description Framework (RDF) [LS99] wird einge-
-setzt, um Ressourcen und Beziehungen zwischen diesen in Form von Sub-
-jekt-Prädikat-Objekt-Tripeln zu beschreiben. Die SPARQL Protocol And RDF
-Query Language [PS+08] hat Ähnlichkeiten zu SQL. Prädikate in der WHERE-
-Klausel werden jedoch über die erwähnten Tripel formuliert. Anders als bei
-SQL gibt es keine FROM-Klausel, da die Eingabe stets der vollständige vor-
-liegende Graph ist. Mit Prädikaten wird ein Muster im Graphen gesucht,
-z. B. ?x abc:isCapitalOf ?y. Auf die im Muster verwendeten Varia-
-blen kann in den anderen Klauseln zugegriffen werden, um beispielsweise
-die Ausgabe zu definieren.
-Cypher Das Graphdatenbanksystem Neo4J [Neo] setzt als Abfragespra-
-che Cypher ein. Genau wie SPARQL ist Cypher musterorientiert und hat
-Ähnlichkeiten zu SQL. Jedoch ist Cypher auf das Datenmodell von Pro-
-perty-Graphen angepasst. Ein in der MATCH-Kausel stehendes Muster kann
-Knoten und Kanten samt ihrer Labels und Properties beinhalten. Zum Bei-
-spiel findet das folgende Muster zwei benachbarte Knoten in der Graphda-
-tenbank, wobei einer das Label Ort haben muss: MATCH (x:Ort)--(y).
-Für jedes gefundene Auftreten wird ein WHERE-Prädikat überprüft sowie
-eine ORDER BY- und RETURN-Klausel angewandt, um Ergebnisse zu sor-
-tieren und sie schließlich auszugeben. Cypher kann auch dazu eingesetzt
-werden, um Knoten und Kanten in den Graphen einzufügen und um Än-
-derungen durchzuführen.
-Gremlin Die Idee hinter der Graph-Anfragesprache Gremlin [Rod15] ist
-es, sich schrittweise durch den Graphen zu navigieren. Eine Anfrage be-
-ginnt in der Regel mit g.V(), womit alle Knoten des Graphen gefunden
-werden. Im Anschluss daran können mittels has-Prädikaten gewisse Kno-
-ten aussortiert werden, die gewisse Kriterien – basierend auf den Knoten-
-labels oder Properties – nicht erfüllen. Über die Schritte inE, outE, in
-und out kann zu den ein- bzw. ausgehenden Kanten oder Nachbarkno-
-ten navigiert werden. Gremlin unterscheidet sich also insofern von Cypher,
-dass nicht der Graph nach Mustern durchsucht wird, sondern dass man
-den Graphen von Knoten zu Knoten traversiert. Eine Gremlin-Anfrage be-
-schreibt anders als bei Cypher nicht was gefunden werden soll, sondern
-wie die Ergebnisse gefunden werden sollen [Neu13]. Die Möglichkeiten
-zum Erstellen und Bearbeiten von Knoten und Kanten sind zwar gege-
-benen, allerdings werden keine Batch-Updates oder vollständige Graph-
-Transformationen unterstützt.
-ArangoDB AQL Das NoSQL-Datenbanksystem ArangoDB [Ara] ist eine
-Kombination aus verschiedenartigen NoSQL-Systemen. In einer von Aran-
-goDB verwalteten Datenbank können sowohl Schlüssel-Wert-Paare als auch
-Dokumente und sogar Graphen gespeichert werden. Mit der Arango Query
-Language (AQL), die stark von SQL inspiriert wurde, können die Daten ver-
-schiedenartiger Datenmodelle abgefragt und modifiziert werden. Der glei-
-che Ansatz wurde von der Unstructured Data Query Language (UnQL) [Uns]
-verfolgt, welche letztendlich jedoch nur Anfragen ermöglichte, die in al-
-len zugrunde liegenden Datenmodellen möglich sind, also beispielsweise
-ein Schlüssel-basierter Zugriff [Wei12]. AQL dagegen bietet für jedes Da-
-tenmodell spezielle Sprachkonstrukte, beispielsweise Joins für Dokumente
-oder eine Mustersuche und die Bestimmung kürzester Pfade in Graphen.
+
+

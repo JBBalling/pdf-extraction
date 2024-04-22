@@ -1,23 +1,55 @@
 Ergebnisse von mehrstufigen Studien
+
+
 Der Rechts- und Wirtschaftswissenschaftlichen Fakultät /
 dem Fachbereich Wirtschafts- und Sozialwissenschaften
+
+
 der Friedrich-Alexander-Universität Erlangen-Nürnberg
+
+
 Erlangung des Doktorgrades Dr. rer. pol.
+
+
 vorgelegt von
+
+
 Dominic Lindner, M. Sc.
+
+
 aus Sonneberg
+
+
 Als Dissertation genehmigt
+
+
 von der Rechts- und Wirtschaftswissenschaftlichen Fa-
 kultät / vom Fachbereich Wirtschafts- und Sozialwis-
 senschaften der Friedrich-Alexander-Universität Erlan-
 gen-Nürnberg
+
+
 Promotionstermin: 16.06.2020
+
+
 Tag der mündlichen Prüfung: 27.05.2020
+
+
 Vorsitzende/r des Promotionsorgans: Prof. Dr. Markus Beckmann
+
+
 Prof. Dr. Michael Amberg
+
+
 Gutachter/in:
+
+
 Prof. Dr. Sven Laumer
+
+
 Danksagung
+
+
 In erster Linie möchte ich meinem Doktorvater Prof. Dr. Michael Amberg danken.
 Er war es, der mir die Chance auf diese Promotion gab und auch die besonderen
 Rahmenbedingungen akzeptiert hat. Es waren seine Tipps und Wegweisungen,
@@ -29,60 +61,90 @@ text wissenschaftlicher Arbeiten. Zusätzlich möchte ich seinem Team um Doris
 Zinkl und Tuba Karatas meinen Dank aussprechen. Ich möchte außerdem Prof.
 Dr. Sven Laumer für die Übernahme des Zweitgutachten sowie seine Flexibilität
 und Offenheit herzlich danken.
+
+
 Ein ganz besonderer Dank gilt meinen Forschungs- und Praxispartnern, welche
 mich 5 Jahre unterstützt haben. So danke ich Dr. Christian Leyh und Marko Ott
 aus Dresden, Tobias Greff aus Saarbrücken und Jun.-Prof. Dr. Thomas Ludwig
 aus Siegen als auch meinen Roundtable-Teilnehmern.
+
+
 Abstract
+
+
 Unter dem aktuellen Trend „Digitalisierung“ werden im Allgemeinen tiefgreifende
 Veränderungen bedingt durch die Anschaffung und Verwendung moderner Tech-
 nologie verstanden, welche sich auf Staat, Gesellschaft und Unternehmen aus-
 wirken (Reis et al. 2018). Die aktuellen Auswirkungen der Digitalisierung sind ein
 vielschichtiges und komplexes Themenfeld.
+
+
 Ziel dieser Arbeit ist es, die aktuellen Auswirkungen der Digitalisierung von Un-
 ternehmen speziell auf KMU mit Fokus auf wissensintensiven Dienstleistungen
 besser zu verstehen. Laut dem Institut für Mittelstandsforschung (2018a) werden
 KMU im Allgemeinen als Unternehmen mit weniger als 250 Mitarbeitern und we-
 niger als 50 Mio. Euro Umsatz verstanden. Wissensintensive Dienstleistungen
 sind allgemein problemlösende geistige Tätigkeiten.
+
+
 Um die Auswirkungen zielführend zu untersuchen, wird aktuelle und ausgewählte
 Literatur mit Experten aus KMU mit Fokus auf wissensintensiven Dienstleistun-
 gen diskutiert und ausgewählte Aspekte in vier Detailstudien untersucht. Die As-
 pekte sind Auswirkungen der Digitalisierung auf Agilität, Arbeit, Führung und Ar-
 beitsplatz-IT in KMU mit Fokus auf wissensintensiven Dienstleistungen.
+
+
 Aus den Detailstudien werden zentrale Aussagen zu den Auswirkungen der Di-
 gitalisierung abgeleitet und mit Experten aus KMU mit Fokus auf wissensintensi-
 ven Dienstleistungen diskutiert. Die Ergebnisse dienen Praktikern als Empfeh-
 lungen und Wissenschaftlern als mögliche Ansatzpunkte für weitergehende For-
 schung.
+
+
 Abstract
+
+
 The current trend of "digitization" generally is understood as profound changes
 due to the acquisition and use of modern technology, which affect the state,
 society and companies (Reis et al. 2018). The current effects of digitization are a
 complex topic.
+
+
 The goal of this research is the better understanding of the current effects of the
 digitalization of companies, especially on SMEs, with a focus on knowledge-
 intensive services. According to the Institut für Mittelstandsforschung (2018a),
 SMEs are generally understood as companies with fewer than 250 employees
 and less than EUR 50 million in sales. Knowledge-intensive services are
 generally problem-solving, intellectual activities.
+
+
 First current and selected literature is discussed with experts from SMEs with a
 focus on knowledge-intensive services and selected aspects are examined in four
 detailed studies. The aspects are the effects of digitization on agility, work,
 leadership and workplace IT in SMEs with a focus on knowledge-intensive
 services.
+
+
 The important results are key statements on the effects of digitalization which are
 derived from the detailed studies and discussed with experts from SMEs with a
 focus on knowledge-intensive services. The results serve as recommendations
 for practitioners and scientists as possible starting points for further research.
+
+
 1. Einleitung
+
+
 Dieses Kapitel ist die Einleitung und dient als Hinführung zum Thema der Disser-
 tationsschrift. Der erste Abschnitt erläutert die Motivation der Themenauswahl. In
 Abschnitt 1.2 werden Zielsetzung und Forschungsfrage erläutert. In den Ab-
 schnitten 1.3 und 1.4 werden die Vorgehensweise bzw. der Aufbau der Disserta-
 tionsschrift vorgestellt. Abschnitt 1.5 widmet sich bibliografischen Hinweisen und
 Abschnitt 1.6 den zentralen Konventionen.
+
+
 1.1 Motivation
+
+
 Dieser Abschnitt dient der Motivation des Forschungsthemas und wird wichtige
 und relevante Daten und Fakten erläutern. Zuerst wird der Begriff KMU (kleine
 und mittlere Unternehmen) erläutert und wichtige Daten zu KMU in Deutschland
@@ -90,17 +152,33 @@ gezeigt. Anschließend wird näher auf KMU mit Fokus auf wissensintensiven
 Dienstleistungen eingegangen. Am Ende des Abschnittes werden zwei ausge-
 wählte Studien zur Digitalisierung von KMU mit Fokus auf wissensintensiven
 Dienstleistungen zusammengefasst.
+
+
 Kleine und mittlere Unternehmen in Deutschland
+
+
 In Deutschland gibt es rund 3,5 Mio. Unternehmen (Institut für Mittelstandsfor-
 schung 2018a). Davon zählen knapp 99,5 % zu den sogenannten kleinen und
 mittleren Unternehmen. KMU sind in Deutschland im Allgemeinen wie folgt defi-
 niert (vgl. Abschnitt 3.1):
+
+
 • Kleinstunternehmen (88 %, bis 9 Mitarbeiter und 2 Mio. Umsatz),
+
+
 • Kleine Unternehmen (9,2 %, bis 49 Mitarbeiter und 10 Mio. Umsatz),
+
+
 • Mittlere Unternehmen (2,3 %, bis 249 Mitarbeiter und 50 Mio. Umsatz).
+
+
 Abbildung 1 zeigt die Verteilung der Unternehmen nach Größenklasse in
 Deutschland auf.
+
+
 Einleitung
+
+
 Laut dem Institut für Mittelstandsforschung (2018a) machen KMU einen wichti-
 gen Faktor für die Wirtschaftskraft in Deutschland aus. Eine Statistik des Instituts
 für Mittelstandsforschung (2018a) zeigt, dass aus einer Stichprobe von ca. 15,5
@@ -108,18 +186,30 @@ Mio. sozialabgabepflichtiger Arbeitnehmer 58 % in KMU beschäftigt sind und
 diese ca. 35 % aller Umsätze in Deutschland (2,3 Bio. Euro) erwirtschaften. In
 dieser Stichprobe werden Freiberufler als Einzelunternehmer bei entsprechender
 Rechtsform zu den Kleinstunternehmen gerechnet.
+
+
 Im Jahr 2016 haben KMU 35 % aller Umsätze in Deutschland (2,3 Bio. Euro)
 erwirtschaftet und beschäftigen rund 58 % (geschätzt 15,5 Mio.) der sozialabga-
 bepflichtigen Arbeitnehmer (Institut für Mittelstandsforschung 2018a). Abbildung
 2 zeigt die Verteilung der Arbeitnehmer.
+
+
 Einleitung
+
+
 Abbildung 2: Beschäftigungsverteilung der sozialpflichtigen Abreitnehmer in Deutschland 2018
 (IfM 2018a)
+
+
 KMU mit Fokus auf wissensintensiven Dienstleistungen
+
+
 Eine Herausforderung bei der Untersuchung der aktuellen Auswirkungen der Di-
 gitalisierung sind die Vielschichtigkeit (Hunt und Hayward 2018) sowie die hohe
 Anzahl an KMU (3,4 Mio. KMU in Deutschland (Institut für Mittelstandsforschung
 2018a).
+
+
 Peter F. Drucker (1999) empfiehlt, Unternehmen dediziert nach dem Fokus der
 Dienstleistung zu untersuchen. Der Autor nennt drei Arten des Fokus der Dienst-
 leistung von Unternehmen: Baugewerbe, Produktion und wissensintensive
@@ -129,12 +219,20 @@ sogenannte geistige Arbeit verrichtet wird. „Wissensintensive Dienstleistungen
 stehen für eine problemlösende, geistige Tätigkeit, die schwer automatisierbar
 ist, da der Lösungsweg ganz oder teilweise unbekannt ist“ (Dirbach 2011 ent-
 nommen aus Hube 2005).
+
+
 Eine solche Unterteilung ist auch bei KMU möglich. In einer aktuellen Studie der
 KfW (2016 – Kreditanstalt für Wiederaufbau) wird eine Aufteilung der KMU in
 Deutschland nach Art des Gewerbes vorgenommen (Abbildung 3).
+
+
 Einleitung
+
+
 Abbildung 3: Verteilung der kleinen und mittleren Unternehmen in Deutschland nach Art des
 Gewerbes im Jahr 2016 (angelehnt an KfW 2016, S. 15)
+
+
 Eine grundlegende Untersuchung für alle genannten Verteilungen der KMU aus
 Abbildung 3 würde ausreichend Potenzial für eine wissenschaftliche Arbeit bie-
 ten. Zudem läge es nahe, aufgrund der hohen Anzahl an produzierenden KMU
@@ -151,20 +249,30 @@ Dienstleistungen zählen größtenteils unternehmensnahe Dienstleistungen im
 B2B-Bereich (engl. Business to Business) wie bspw. IT-Consulting, Softwareent-
 wicklung, Personalvermittlungen als auch im B2C-Bereich (engl. Business to
 Customer) Versicherungen oder Finanzberatungen (KfW 2016).
+
+
 Digitalisierung von KMU mit Fokus auf wissensintensiven Dienstleistungen
+
+
 Unter den aktuellen Trend ‚Digitalisierung‘ werden im Allgemeinen tiefgreifende
 Veränderungen verstanden, die durch die Anschaffung und die Verwendung mo-
 derner Technologie bedingt sind und sich auf Staat, Gesellschaft und Unterneh-
 men auswirken (Reis et al. 2018). Laut einer umfangreichen Literaturanalyse von
 Reis et al. (2018) sind vor allem Unternehmen in zunehmendem Maß mit der
 Anschaffung und der Verwendung von moderner Technologie beschäftigt.
+
+
 Im Folgenden sollen durch zwei ausgewählte Studien Einblicke in aktuelle Digi-
 talisierungsvorhaben von KMU mit Fokus auf wissensintensiven Dienstleistungen
 gegeben werden.
+
+
 Die European SME Survey (2019) wird von den Behörden der Regierungen der
 EU-Mitgliedsstaaten jährlich europaweit durchgeführt. Nachfolgend werden die
 Ergebnisse für Deutschland zusammengefasst, die auf den Daten von 2.500
 KMU basieren.
+
+
 Aus der Studie geht hervor, dass mehr als zwei Drittel der befragten Unterneh-
 men Projekte, die mit der Anschaffung neuer Technologie in Zusammenhang ste-
 hen, als sehr wichtig priorisiert haben. Ebenfalls mehr als zwei Drittel der befrag-
@@ -176,6 +284,8 @@ sind aktuell nur für ein Drittel der befragten KMU Effizienzsteigerungen durch 
 terne Digitalisierungsprojekte erreicht worden, wobei die Effizienzsteigerungen
 mehrheitlich im Bereich der Standardprozesse liegen und noch kaum Umsatz-
 steigerungen festzustellen sind.
+
+
 In einer Erhebung, die ebenfalls jährlich durchgeführt wird, befragt die KfW
 15 000 KMU in Deutschland und fasst die Ergebnisse als sogenanntes Mittel-
 standspanel zusammen. Die wichtigsten Resultate sind, dass über 70 % der be-
@@ -185,6 +295,8 @@ Euro pro KMU) einsetzen wollen. Im Fokus sollen neben Standardprozessen vor
 allem der Ausbau von Vertriebsprozessen über Onlinekanäle, Beschaffungsplatt-
 formen und Marktplätze stehen. In der Studie wird ein Zuwachs von knapp 30 %
 5
+
+
 (153 Mrd. Euro) an Umsatz für KMU über Onlinekanäle genannt. Im Fazit der
 Studie zeigt sich, dass vor allem im Bereich der KMU mit Fokus auf wissensin-
 tensiven Dienstleistungen die Profitabilität laut den Befragten maßgeblich durch
@@ -193,12 +305,16 @@ im Vergleich zum Vorjahr zu verzeichnen ist. Die befragten Unternehmen rech-
 nen mit weiteren notwendigen Investitionen, um die gewünschten Umsatzpoten-
 ziale aus eigenen Digitalisierungsprojekten durch neue Märkte und Effizienzstei-
 gerungen zu nutzen.
+
+
 Anhand dieser beiden Studien wird deutlich, dass Projekte im Zusammenhang
 mit der Digitalisierung in KMU mit Fokus auf wissensintensiven Dienstleistungen
 bereits durchgeführt und in den nächsten Jahren noch weiter fortgeführt werden.
 Auch die Investitionen in Projekte in Zusammenhang mit der Digitalisierung der
 befragten Unternehmen der Studien werden deutlich weiterhin überdurchschnitt-
 lich hoch werden.
+
+
 Es werden laut der Studien weiterhin relativ hohe Anteile des Budgets der Be-
 fragten Unternehmen in neue Soft- und Hardware investiert. Die aktuellen Aus-
 wirkungen der Digitalisierung in KMU mit Fokus auf wissensintensiven Dienst-
@@ -207,7 +323,11 @@ oder stärker zeigen. Diese Forschungsarbeit wird mit einer ausgewählten Gruppe
 von Experten aus KMU mit Fokus auf wissensintensiven Dienstleistungen die ak-
 tuellen Auswirkungen der Digitalisierung in Deutschland auf deren Unternehmen
 für einen Zeitraum von mehreren Jahren untersuchen.
+
+
 1.2 Zielstellung
+
+
 Das Ziel der Forschungsarbeit ist es, die Auswirkungen der Digitalisierung (Nut-
 zung moderner Technologie) auf KMU in Deutschland mit Fokus auf wissensin-
 tensiven Dienstleistungen durch eine ausgewählte Gruppe von Experten zu un-
@@ -215,10 +335,14 @@ tersuchen und aus den wichtigsten Ergebnissen abzuleiten ob die Ergebnisse
 von anderen Unternehmensformen unterscheiden, eher allgemein zu betrachten
 sind oder ausschließlich auf die ausgewählten Experten zutreffen. Die überge-
 ordnete Frage lautet:
+
+
 • Welche Auswirkungen hat aktuell die Digitalisierung in KMU mit Fo-
 kus auf wissensintensiven Dienstleistungen für eine ausgewählte
 Zielgruppe und sind diese eher allgemein, KMU- oder Zielgruppen-
 spezifisch?
+
+
 Mithilfe von mehrstufigen Studien soll durch eine ausgewählte Gruppe an Exper-
 ten aus KMU mit Fokus auf wissensintensiven Dienstleistungen die Auswirkun-
 gen der Digitalisierung untersucht werden. Die Experten werden gezielt ausge-
@@ -233,14 +357,24 @@ ternehmen). Es wird in der Auswahl der Experten darauf geachtet, dass die Un-
 ternehmen der ausgewählten Experten im Unternehmensalter und auch von der
 Mitarbeiterzahl in diesem Bereich liegen. Somit wird sichergestellt, dass die aus-
 gewählte Expertengruppe repräsentativ ist.
+
+
 Nach Durchführung der Datenerhebung sollen die Ergebnisse untersucht werden
 ob diese eher allgemein, KMU- oder Zielgruppenspezifisch sind. Beispielsweise
 könnten spezifische Charakteristika von KMU im Vergleich zu Großunternehmen
 wie (Mugler 2005) maßgebliche Unterschiede in den Auswirkungen hervorbrin-
 gen. Die wichtigsten sind im Allgemeinen:
+
+
 • Geringe Budgets
+
+
 • Wenige Prozesse
+
+
 • Kurze Entscheidungswege
+
+
 So können sich KMU aufgrund der geringen Budgets die Anschaffung moderner
 Technologie häufig nicht im gleichen Maße leisten wie Großunternehmen und
 oftmals ist beispielsweise eine Automatisierung aufgrund geringer Prozessdurch-
@@ -248,16 +382,23 @@ läufe nicht wirtschaftlich. Auf der anderen Seite können neue Technologien auf
 grund kurzer Entscheidungswege eventuell schneller eingesetzt werden als in
 Großunternehmen. Jedoch könnten die Ergebnisse auch eher allgemein oder
 7
+
+
 aufgrund der ausgewählten Experten sehr spezifisch auf die persönlichen Präfe-
 renzen sein.
+
+
 1.3 Vorgehen der Forschungsarbeit
+
+
 Die in der Forschungsarbeit angewandte Vorgehensweise umfasst grob drei
 Teile, die in der folgenden Abbildung 4 dargestellt werden und verschiedene
 mehrstufige Untersuchungen (Studien) einschließen.
 
 
-
 Abbildung 4: Vorgehensweise der Forschungsarbeit
+
+
 In Teil 1 (Studie A) werden mithilfe einer Literaturanalyse mögliche Forschungs-
 aspekte aus der akademischen Literatur identifiziert und zusammengefasst. Im
 Rahmen einer Diskussion mit Experten aus KMU mit Fokus auf wissensintensi-
@@ -265,24 +406,36 @@ ven Dienstleistungen werden diese diskutiert und im Hinblick auf Aktualität und
 Relevanz bewertet. Als besonders bedeutsam für KMU mit Fokus auf wissensin-
 tensiven Dienstleistungen gelten die vier Aspekte Agilität, Führung, Arbeit und
 Arbeitsplatz-IT.
+
+
 In Teil 2 werden die vier ausgewählten Aspekte für KMU mit Fokus auf wissens-
 intensiven Dienstleistungen in vier Detailstudien (Studien B – E) anhand von ver-
 schiedenen Forschungsmethoden untersucht.
+
+
 Teil 3 (Studie F) konzentriert sich auf ausgewählte Ergebnisse der Detailstudien
 im Gesamtkontext. Diese werden mithilfe von Experten aus KMU mit Fokus auf
 wissensintensiven Dienstleistungen im Zusammenhang betrachtet. Zudem wer-
 den Schlussfolgerungen gezogen, ob die Studienergebnisse zu den befragten
 KMU in dieser Forschungsarbeit allgemein als KMU- oder als zielgruppenspezi-
 fisch zu betrachten sind.
+
+
 Im Anhang A dieser Dissertationsschrift findet sich eine detaillierte Erläuterung
 der Vorgehensweise.
+
+
 Chancen und Risiken des Forschungsdesigns
+
+
 Die Vorgehensweise bei der Forschung (Forschungsdesign) kann einen umfas-
 senden Einfluss auf die Forschungsergebnisse haben. Um das Forschungsdes-
 ign festzulegen, werden verschiedene Methoden miteinander verknüpft, Daten
 erhoben und ausgewertet. Die Entscheidungen für bestimmte Forschungsdes-
 igns hängen vielfach von den Vor- und den Nachteilen der einzelnen Forschungs-
 methoden ab.
+
+
 Im ersten Schritt wird das Untersuchungsobjekt ausgewählt, wobei es sich in die-
 sem Fall um Experten aus KMU mit Fokus auf wissensintensiven Dienstleistun-
 gen handelt. Anschließend werden Methoden zur Datenerhebung festgelegt.
@@ -296,31 +449,55 @@ delt sich bei der Untersuchung um die Betrachtung verschiedener Zeitpunkte in
 einem Zeitraum von drei Jahren. Somit können die Vor- und Nachteile beider
 Betrachtungen kombiniert werden. Die verschiedenen Zeitpunkte werden in der
 Gesamtbetrachtung miteinander verglichen.
+
+
 Eine Chance besteht in der Konzentration auf die festgelegte Zielgruppe: Exper-
 ten aus KMU mit Fokus auf wissensintensiven Dienstleistungen. Dabei werden
 Experten mit einer leitenden Managementposition bevorzugt, da nicht vorausge-
 setzt werden kann, dass Unternehmensberater oder externe Experten einen tie-
 fen Einblick in aktuelle Entscheidungsprozesse und die Auswirkungen der Digi-
 talisierung in KMU haben.
+
+
 Zur Digitalisierung lassen sich zahlreiche Auswirkungen in Literaturquellen ermit-
 teln, die sich in verschiedenen Themenbereichen wie
+
+
 • Cloud-Computing,
+
+
 • Datennutzung (Big Data),
+
+
 • Arbeitsplatz-IT,
+
+
 • Künstliche Intelligenz,
+
+
 • Vertriebskanäle im Internet und
+
+
 • Potenziale im Personalwesen
+
+
 zu gliedern lassen.
+
+
 Daraus ergibt sich ein Potential für eine sehr große Anzahl an Forschungsprojek-
 ten zu den Auswirkungen der Digitalisierung auf KMU mit Fokus auf wissensin-
 tensiven Dienstleistungen. Das Thema ist aktuell komplex und erfordert eine in-
 tensive Auseinandersetzung mit zahlreichen Teilaspekten. So ist es weder in ei-
 nem großen Forschungsprojekt noch in dieser Dissertation möglich, die aktuellen
 10
+
+
 Auswirkungen der Digitalisierung auf KMU mit Fokus auf wissensintensiven
 Dienstleistungen vollständig zu erfassen. Auch Unternehmen können nicht jedes
 Projekt gleichzeitig durchführen und müssen Ressourcen effizient und sinnvoll
 einzusetzen.
+
+
 Es könnte auf Basis der Häufigkeit der thematischen Schwerpunkte der aktuellen
 Literatur in akademischen Datenbanken eine Priorisierung vorgenommen wer-
 den, allerdings ist nicht garantiert, dass diese mit aktuellen Überlegungen und
@@ -328,6 +505,8 @@ Priorisierungen der Experten aus KMU mit Fokus auf wissensintensiven Dienst-
 leistungen übereinstimmt. Eine Chance des gewählten Forschungsdesigns be-
 steht darin, durch den intensiven Einbezug der Zielgruppe eine aktuelle und re-
 levante Eingrenzung des Forschungsthemas vorzunehmen.
+
+
 Eine weitere Chance ergibt sich aus der gewählten Methodik der Gruppendiskus-
 sion. Allgemein wird darunter eine mehrstündige Diskussion zwischen mehreren
 Personen zu einem festgelegten Thema im Rahmen einer Problemstellung und
@@ -342,6 +521,8 @@ oder er führt eine Tätigkeit aus, ist sich aber der konkreten Hintergründe ni
 bewusst und kann sie sich dadurch bspw. nicht erklären (unbewusste Durchfüh-
 rung). Ein Roundtable bietet die Möglichkeit, im Rahmen der die Interaktion der
 Teilnehmer dieses Wissen zur Sprache zu bringen.
+
+
 Eine weitere Chance beim Roundtable ist die Ermittlung von Gruppenmeinungen
 im Konsens. Ein Konsens ist laut Kuckartz et al. (2014) die Übereinstimmung in
 Bezug auf eine Meinung beim Großteil oder bei allen Teilnehmern einer Grup-
@@ -349,12 +530,16 @@ pendiskussion. Dabei wird der Konsens oft nicht durch explizite Zustimmung,
 sondern eher durch das Nichtvorhandensein von Gegenstimmen in einer Grup-
 pendiskussion erzeugt. Konsensaussagen gelten oft als aussagekräftiger als
 eine Vielzahl an Einzelinterviews.
+
+
 Eine weitere Chance bietet sich durch die dauerhafte Evaluation der Forschungs-
 ergebnisse. In der Praxis können sich die Meinungen von Experten durch neue
 Erkenntnisse oder andere Rahmenbedingungen schnell verändern. Auch könn-
 ten gewisse Aussagen im Roundtable lediglich eine Tageslaune widerspiegeln.
 Durch die Wiederholung der Roundtables mit dem gleichen Teilnehmerkreis ist
 es möglich, vergangene Aussagen zu evaluieren und zu vergleichen.
+
+
 Neben den Chancen ergeben sich aus dem gewählten Forschungsdesign auch
 Risiken. In Deutschland gibt es ca. 3,4 Mio. KMU, die in zahlreichen Branchen
 vertreten und durch verschiedene Rahmenbedingungen geprägt sind. Selbst
@@ -364,62 +549,93 @@ kleine Gruppe dar, die allerdings einen wesentlichen Teil zur Erweiterung des
 aktuellen Wissensstands beitragen kann, da bei Konsensmeinungen eine grö-
 ßere Chance auf Allgemeingültigkeit besteht als bei vergleichbaren Einzelinter-
 views.
+
+
 Weiterhin könnte der hohe Detaillierungsgrad der Diskussion ein Risiko sein. So
 kann es vorkommen, dass die Teilnehmer lediglich regionale oder unterneh-
 mensspezifische Details diskutieren, die zwar für die ausgewählte Gruppe rele-
 vant sind, aber nicht für die Mehrzahl der KMU mit Fokus auf wissensintensiven
 Dienstleistungen in Deutschland.
+
+
 Umgekehrt besteht das Risiko, dass aufgrund der Konsensmeinung eher allge-
 meine Erkenntnisse bestätigt werden, sodass kein Mehrwert generiert wird, son-
 dern nur eine oberflächliche Untersuchung stattfinden kann.
+
+
 Im Hinblick auf die große Anzahl an KMU mit Fokus auf wissensintensiven
 Dienstleistungen und unter Berücksichtigung des komplexen Themenfeldes der
 Digitalisierung erweisen sich die Auswahl des Forschungsdesigns und die Fo-
 kussierung auf eine Expertengruppe in Roundtables als sinnvoll und für die Un-
 tersuchung der Forschungsfrage geeignet. Die genannten Risiken können durch
 Moderation und eine sinnvolle Aufbereitung der Roundtables minimiert werden.
+
+
 Alternative Forschungsdesigns
+
+
 Neben dem aktuellen Forschungsdesign wären alternative Ansätze denkbar,
 durch die sich das komplexe Thema ebenfalls adäquat erfassen ließe. Im Fol-
 genden werden drei Ansätze erläutert und die Chancen/Risiken sowie die
 Gründe für die Bevorzugung des aktuellen Forschungsdesigns dargelegt. Die al-
 ternativen Ansätze lassen sich grob wie folgt charakterisieren:
+
+
 • Auflösung der Expertengruppe und Ausweitung auf eine große Anzahl von
 KMU (Alternatives Forschungsdesign 1),
+
+
 • Veränderung der Methode und Fokussierung auf vergleichbare Multifall-
 studien (Alternatives Forschungsdesign 2),
+
+
 • Besetzung der Expertengruppe mit Unternehmensform-unabhängigen Ex-
 perten wie Unternehmensberater (Alternatives Forschungsdesign 3).
+
+
 Alternatives Forschungsdesign 1: Befragung und Experteninterviews
+
+
 Ein erster alternativer Ansatz ist die Durchführung einer umfassenden Befragung
 zur Digitalisierung in KMU mit Fokus auf wissensintensiven Dienstleistungen und
 die anschließende Evaluierung durch Experteninterviews, wobei zusätzlich über-
 prüft wird, ob die Auswirkungen als allgemeingültig oder als KMU-spezifisch zu
 betrachten sind. In Abbildung 5 wird das Forschungsdesign aufgezeigt.
+
+
 Ein solches Vorgehen ist als Mixed-Method-Ansatz bekannt. Dabei handelt es
 sich um die Verzahnung verschiedener quantitativer und qualitativer Forschungs-
 methoden (Kuckartz 2014); in diesem Beispiel die Befragung und das Experten-
 interview.
 
 
-
 Abbildung 5: Alternatives Forschungsdesign 1
+
+
 In Teil 1 werden mithilfe einer Literaturanalyse mögliche Ansätze zur Digitalisie-
 rung in KMU mit Fokus auf wissensintensiven Dienstleistungen zusammenge-
 fasst und interpretiert.
+
+
 In Teil 2 soll ein Überblick über die in ausgewählten KMU mit Fokus auf wissens-
 intensiven Dienstleistungen verwendete Technologie gewonnen werden. Mithilfe
 eines Fragebogens soll die aktuelle Ausstattung hinsichtlich Hard- und Software
 erhoben werden.
+
+
 Teil 3 konzentriert sich auf die Auswertung der Befragung. Diese soll nicht durch
 den Forscher selbst, sondern durch Experten aus KMU mit Fokus auf wissensin-
 tensiven Dienstleistungen durchgeführt werden. Auf Basis der erhobenen Tech-
 nologien sollen die Experten erläutern, welche Auswirkungen deren Einsatz mit
 sich bringen kann. Im Rahmen der Diskussion sollen außerdem die Auswirkun-
 gen in allgemeingültige und KMU-spezifische unterschieden werden.
+
+
 Die Chance, die dieses Forschungsdesign bietet, ist die Generierung von Er-
 kenntnissen, die durch eine rein qualitative oder quantitative Forschung nicht ab-
 leitbar sind (Roch 2017).
+
+
 Aufgrund der genannten Chancen wird dieses Forschungsdesign zur Untersu-
 chung der Digitalisierung von Unternehmen aller Art häufig verwendet. Es wurde
 festgestellt, dass bereits zahlreiche Erhebungen vorliegen, beispielsweise Bley
@@ -430,7 +646,11 @@ rückgreifen. Daher wurde entschieden, durch das qualitative Forschungsdesign
 (Roundtable) die bereits gewonnen Erkenntnisse für eine grundlegende Evalua-
 tion in den Roundtables zu nutzen und auf diese Weise Einblicke in KMU mit
 Fokus auf wissensintensiven Dienstleistungen zu erhalten.
+
+
 Alternatives Forschungsdesign 2: Multifallstudien
+
+
 Ein weiterer alternativer Ansatz für ein Forschungsdesign ist die Verwendung von
 Fallstudien. Dadurch ist es möglich, kontext- bzw. auf einen bestimmten Fall be-
 zogen komplexe Sachverhalte zielgerichtet zu untersuchen. Fallstudien sind im
@@ -438,6 +658,8 @@ Allgemeinen als eine schriftliche Abbildung der Realität zu verstehen, durch di
 der Leser in die Rolle eines Beobachters versetzt wird (Borchardt und Göthlich
 2007). Sie geben grundlegende Einblicke beispielsweise in Unternehmen und
 erhöhen das Verständnis von Prozessen in der Praxis.
+
+
 Laut Borchardt und Göthlich 2007 gibt es zwei Arten von Fallstudien: In Einzel-
 fallstudien wird ein Einzelfall durch zahlreiche Beobachtungen und Gespräche
 betrachtet. Anhand von Multi- oder vergleichende Fallstudien können durch die
@@ -448,23 +670,30 @@ studien anhand von vergleichbaren Digitalisierungsprojekten mögliche KMU-
 spezifische Auswirkungen zu identifizieren.
 
 
-
 Abbildung 6: Alternatives Forschungsdesign 2
+
+
 In Teil 1 werden mithilfe einer Literaturanalyse mögliche ähnliche Fallstudien aus
 der Literatur zusammengefasst. Auf diese soll einerseits inhaltlich zurückgegrif-
 fen werden, andererseits dienen sie zur Orientierung für die Formulierung der
 Forschungsfrage. Auch soll die Literaturanalyse helfen, den Fokus auf bestimmte
 Digitalisierungsprojekte zu richten.
+
+
 In Teil 2 werden die ausgewählten Aspekte anhand von Fallstudien untersucht.
 Hierzu werden in KMU Beobachtungen und Interviews durchgeführt. Durch ein
 vorher festgelegtes Rahmenwerk wird gewährleistet, dass die einzelnen Fallstu-
 dien vergleichbar sind. Für die Iteration sollten mind. 50 Fallstudien durchgeführt
 werden. Es gibt auch den Ansatz, Fallstudien in KMU und in Großunternehmen
 durchzuführen und die Ergebnisse zu vergleichen.
+
+
 Teil 3 konzentriert sich auf die Auswertung der Fallstudien zu den Auswirkungen
 der Digitalisierung auf KMU mit Fokus auf wissensintensiven Dienstleistungen.
 Auch sollen gleichwertige Auswirkungen in der Analyse auf Allgemeingültigkeit
 oder KMU-Spezifika überprüft werden.
+
+
 Die Chancen des Forschungsdesigns liegen in der umfassenderen Abbildung der
 Digitalisierung und der entsprechenden Hintergründe in Unternehmen, beispiels-
 weise der sozialen Interaktionen. Da sich dadurch die Dynamik und die Ge-
@@ -477,7 +706,11 @@ rung von KMU mit Fokus auf wissensintensiven Dienstleistungen ab. Auch kann
 es sich als problematisch erweisen, KMU miteinander zu vergleichen. Aufgrund
 des möglicherweise zu geringen Erkenntnisgewinns und des hohen Aufwands
 wurde dieses Forschungsdesign nicht gewählt.
+
+
 Alternatives Forschungsdesign 3: Veränderung der Zielgruppe
+
+
 Ein weiterer alternativer Ansatz für ein Forschungsdesign ergibt sich durch die
 Veränderung der Zielgruppe. Die ausgewählten Experten stammen aus dem Be-
 reich der KMU mit Fokus auf wissensintensiven Dienstleistungen. Durch die Ein-
@@ -488,23 +721,30 @@ rung in beiden Unternehmensformen als Experten auszuwählen. Ein mögliches
 Vorgehen ist in Abbildung 7 dargestellt.
 
 
-
 Abbildung 7: Alternativen Forschungsdesign 3
+
+
 In Teil 1 werden mithilfe einer Literaturanalyse mögliche Forschungsaspekte aus
 der akademischen Literatur identifiziert und zusammengefasst. In diesem Fall
 wird nur nach allgemeiner Literatur gesucht, die im Roundtable näher betrachtet
 werden soll. In der anschließenden Diskussion werden mithilfe der Experten, die
 Erfahrungen in mehreren Unternehmensformen aufweisen, Aspekte identifiziert,
 die auf KMU-spezifische Auswirkungen der Digitalisierung hinweisen könnten.
+
+
 In Teil 2 werden die ausgewählten Aspekte anhand von Literaturanalysen unter-
 sucht. Hierzu wird zwischen KMU- und allgemeiner Literatur unterschieden. Die
 Ergebnisse werden für die folgende Serie von Roundtables aufbereitet.
+
+
 Teil 3 konzentriert sich auf ausgewählte Ergebnisse der Literaturanalysen. Mit-
 hilfe der Experten werden auf Basis der Literatur spezifische Unterschiede in den
 Auswirkungen der Digitalisierung diskutiert. Es könnte sein, dass die Experten
 aufgrund ihrer Erfahrung unterscheiden können, welche Auswirkungen z. B. für
 Großunternehmen oder für KMU gelten, oder bestätigen werden, wenn im Gro-
 ben keine wesentlichen Unterschiede bestehen.
+
+
 Chancen, die sich durch die veränderte Zielgruppe ergeben, sind der Fokus auf
 die Unterschiede in den Unternehmensformen und die Möglichkeit des Ver-
 gleichs durch die Erfahrung der Experten. Ein Risiko besteht allerdings darin,
@@ -516,97 +756,175 @@ die Forschung einerseits nur wenige wesentliche Erkenntnisse für KMU mit Fo-
 kus auf wissensintensiven Dienstleitungen ergeben und andererseits sehr allge-
 mein gehalten sein. Aus den genannten Gründen wurde dieses Forschungsdes-
 ign nicht gewählt.
+
+
 1.4 Aufbau der Arbeit
+
+
 Die Arbeit (Dissertationsschrift) ist in 10 Kapitel gegliedert. In Kapitel 1 werden
 wesentliche Grundlagen zu KMU mit Fokus auf wissensintensiven Dienstleistun-
 gen vorgestellt. Zudem werden die Zielsetzung und die Vorgehensweise erläutert
 sowie bibliografische Hinweise gegeben.
+
+
 Kapitel 2 ordnet die Forschung wissenschaftlich ein und erläutert die verwende-
 ten Forschungsmethoden sowie Grundlagen zur Verwendung der Methoden im
 Kontext der Arbeit.
+
+
 In Kapitel 3 werden die begrifflichen Grundlagen behandelt. Dies beinhaltet z. B.
 die Begriffe KMU und Digitalisierung. Ziel ist es, ein einheitliches Verständnis für
 zentrale Begriffe der Dissertationsschrift zu schaffen.
+
+
 Kapitel 4 (Studie A) umfasst eine Evaluation der aktuellen Literatur zu wissens-
 intensiven KMU. Dies schließt eine Literaturanalyse und eine Gruppendiskussion
 der Inhalte für KMU mit Fokus auf wissensintensiven Dienstleistungen ein.
+
+
 Kapitel 5 (Studie B) besteht aus einer Literaturanalyse und zwei Roundtables
 zum Thema Agilität im Kontext der Digitalisierung in wissensintensiven KMU.
+
+
 Kapitel 6 (Studie C) beinhaltet einen Roundtable, eine Literaturanalyse und eine
 Befragung von Führungskräften aus wissensintensiven KMU zum Thema Füh-
 rung im Kontext der Digitalisierung.
+
+
 In Kapitel 7 (Studie D) werden eine Literaturanalyse und ein Roundtable zum
 Thema der Arbeit im Kontext der Digitalisierung in KMU mit Fokus auf wissens-
 intensiven Dienstleistungen behandelt.
+
+
 Kapitel 8 (Studie E) schließt eine Literaturanalyse, eine Befragung und einen
 Roundtable zum Thema Arbeitsplatz im Kontext der Digitalisierung in KMU mit
 Fokus auf wissensintensiven Dienstleistungen ein.
+
+
 Kapitel 9 (Studie F) beinhaltet einerseits die Ergebnisse eines Roundtables, der
 die Studienergebnisse qualitativ evaluiert, und andererseits eine Befragung, mit
 der die Ergebnisse quantitativ evaluiert werden.
+
+
 Kapitel 10 enthält eine Zusammenfassung, Ausführungen zur Limitierung und ei-
 nen Ausblick.
+
+
 1.5 Bibliografische Hinweise
+
+
 Einzelne Ergebnisse der Arbeit wurden bereits im Vorfeld veröffentlicht. Die ent-
 sprechenden Teile sind durch Quellenangaben in den jeweiligen Kapiteln ausge-
 wiesen. Das betrifft folgende Publikationen:
+
+
 • Lindner, D., Ott, M., & Leyh, C. (2017). Der digitale Arbeitsplatz – KMU
 zwischen Tradition und Wandel. HMD – Praxis der Wirtschaftsinformatik,
 (5), 1–17.
+
+
 • Lindner, D., Ludwig, T., & Amberg, M. (2018). Arbeit 4.0 – Konzepte für
 eine neue Arbeitsgestaltung in KMU. HMD – Praxis der
 Wirtschaftsinformatik, 6(1), 17.
+
+
 • Lindner, D., & Leyh, C. (2018). Organizations in Transformation: Agility as
 Consequence or Prerequisite of Digitization? In W. Abramowicz & A.
 Paschke (Hrsg.), Lecture Notes in Business Information Processing (Vol.
 8 LNBIP, S. 15). Berlin, Heidelberg: Springer Gabler.
+
+
 • Lindner, D. (2019). KMU im digitalen Wandel – Ergebnisse empirischer
 Studien zu Arbeit, Führung und Organisation. Wiesbaden: Springer Gab-
 ler.
+
+
 • Lindner, D., & Greff, T. (2019). Führung im Zeitalter der Digitalisierung –
 was sagen Führungskräfte? HMD – Praxis der Wirtschaftsinformatik,
 56(3), 20.
+
+
 • Lindner, D. & Leyh C. (2019). Digitalisierung von KMU – Fragestellungen
 und Handlungsempfehlungen und Implikationen zu IT-Organisation und
 IT-Servicemanagement. HMD – Praxis der Wirtschaftsinformatik, (4), 21.
+
+
 Eine Unterscheidung zwischen den Publikationen der Teilergebnisse und dieser
 Dissertationsschrift findet sich in Tabelle 2.
+
+
 Tabelle 2: Unterschiede zwischen Publikationen und Dissertationsschrift
+
+
 1.6 Allgemeine Konventionen
+
+
 In dieser Arbeit wurden zentrale Konventionen definiert, die für alle Kapitel gültig
 sind:
+
+
 • Tabellen und Abbildungen ohne Quellenangabe sind eigene Darstellun-
 gen.
+
+
 • Sollte eine Abbildung oder Tabelle verändert worden sein, ist dies mit „in
 Anlehnung an“ gekennzeichnet.
+
+
 • Die Zitierung erfolgt nach dem Stil der American Psychological Associa-
 tion, 6th edition (APA).
+
+
 • Zahlen bis einschließlich 9 werden ausgeschrieben.
+
+
 • Aus Gründen der besseren Lesbarkeit wird die männliche Form verwen-
 det. Falls nicht explizit erwähnt, gelten die Ergebnisse in gleichem Maße
 für Männer und Frauen wie auch für Menschen jeder Herkunft.
+
+
 • Die erste Gliederungsebene wird als Kapitel, die zweite Gliederungsebene
 als Abschnitt und die dritte Gliederungsebene als Unterabschnitt bezeich-
 net.
+
+
 2. Methodische Grundlagen
+
+
 In diesem Kapitel werden einerseits die Grundlagen für das Forschungsdesign
 sowie die verschiedenen Forschungsmethoden gelegt und anderseits werden die
 wissenschaftstheoretische Einordnung und eine Erklärung der verschiedenen
 Forschungsmethoden vorgenommen. Diese sind:
+
+
 • Literaturanalyse,
+
+
 • Befragung,
+
+
 • Gruppendiskussion/ Roundtable und
+
+
 • Referenzmodellierung.
+
+
 2.1 Grundlagen empirischer Sozialforschung
+
+
 Die empirische Sozialforschung befasst sich laut Döring und Bortz (2015) mit so-
 zialen und humanen Sachverhalten. Der wichtigste Anwendungsfall ist die Erfor-
 schung des Verhaltens, Erlebens und Zusammenlebens von Menschen im Kon-
 text von Unternehmen und Gesellschaft.
+
+
 Das Ziel der empirischen Sozialforschung ist es, im Kontext einer beliebigen For-
 schungsfrage Sachverhalte wissenschaftlich zu untersuchen und auf diese
 Weise zu möglichst gesicherten Erkenntnissen zu gelangen (Döring und Bortz
 2015). Zur Sicherung der Erkenntnisse werden sogenannte empirische Daten er-
 hoben. Diese sind laut Döring und Bortz (2015, S. 5) wie folgt definiert:
+
+
 „Empirische Daten (‚empirical data‘) sind gezielt im Hinblick auf das Forschungs-
 problem ausgewählte und dokumentierte Informationen über die Erfahrungswirk-
 lichkeit. Sie werden mit wissenschaftlichen Datenerhebungsmethoden (Be-
@@ -614,310 +932,170 @@ obachtung, Interview, Fragebogen, psychologischer Test, physiologische Mes-
 sung, Dokumentenanalyse) unter Nutzung entsprechender standardisierter oder
 nicht-standardisierter Erhebungsinstrumente (Beobachtungsplan, Interviewleitfa-
 den, Fragebogen, Messgerät etc.) gesammelt.“
+
+
 Mithilfe dieser empirischen Daten kann ein Sachverhalt gesichert dargestellt wer-
 den. Der Vorteil ist, dass diese Daten bei der Lösung praktischer Probleme helfen
 können. Döring und Bortz (2014, S. 5) sprechen von einem wissenschaftlichen
 Erkenntnisgewinn, der wie folgt definiert ist:
+
+
 „Wissenschaftlicher Erkenntnisgewinn (‚scientific knowledge gain‘) basiert in Er-
 fahrungswissenschaften wie den Sozial- und Humanwissenschaften auf der sys-
 tematischen Sammlung, Aufbereitung und Analyse von empirischen Daten im
 Rahmen eines geordneten und dokumentierten Forschungsprozesses.“
+
+
 Laut Himme (2007) ist in empirischen Untersuchungen die Frage nach der Qua-
 lität des Messvorgangs, die den Untersuchungserfolg und die Aussagefähigkeit
 der Ergebnisse entscheidend beeinflusst, sehr wichtig. Bei der Erhebung von Da-
 ten können Unterschiede in der Interpretation durch sich ändernden Umgebun-
 gen auftreten. Empirische Daten unterliegen bestimmten Gütekriterien, anhand
 derer sich die Qualität der Daten beurteilen lässt. Diese Gütekriterien sind:
+
+
 • Objektivität
+
+
 • Reliabilität
+
+
 • Validität
+
+
 Das erste genannte Kriterium ist Objektivität. Laut Himme (2007) liegen objektive
 Messergebnisse vor, wenn verschiedene Personen, die die Messungen unab-
 hängig voneinander vornehmen, zu den gleichen Messergebnissen gelangen. Er
 unterscheidet drei Arten der Objektivität:
+
+
 Durchführungsobjektivität bewertet die Beeinflussung der Probanden durch den
 Messungsleiter. Auswertungsobjektivität bezieht sich auf die Freiheitsgrade der
 Messergebnisse bei der Erhebung, z. B. Rundungsfehler etc., und Interpreta-
 tionsobjektivität auf den Spielraum der Interpretation der Messergebnisse.
+
+
 Das zweite Kriterium ist Reliabilität. Dieses ist laut Himme (2007, S. 375) definiert
 als „die Zuverlässigkeit und Stabilität eines Messinstruments. Das Kriterium be-
 zieht sich auf die Frage, wie gemessen wird, und fordert, dass die Messergeb-
 nisse bei wiederholter Messung reproduzierbar sein sollten.“
+
+
 Das dritte Kriterium ist die Validität. Laut Himme (2007) bezieht sich die Validität
 auf die Gültigkeit und die materielle Genauigkeit eines Messinstruments.
+
+
 Neben den genannten Kriterien gibt es zahlreiche weitere Nebenkriterien, die von
 Forschern unterschiedlich definiert werden. Himme (2007) nennt als Beispiele
 Normierung (Eichung), Ökonomie (Kosten) und Praktikabilität (Nützlichkeit) der
 Daten, die je nach Kontext verwendet werden können.
+
+
 2.2 Grundlagen qualitativer Forschung
+
+
 Die qualitative Forschung stützt ihre theoretischen Aussagen auf empirische
 Phänomene (Brüsenmeister 2008). Diese werden anhand von in der Praxis ge-
 sammelten Daten untersucht und konkretisiert. Durch qualitative Forschung wer-
 den aus den gesammelten Daten theoretische Schlussfolgerungen hergeleitet.
 Beispiele für qualitative Forschungsmethoden sind laut Brüsenmeister (2008):
+
+
 • Experteninterviews
+
+
 • Gruppendiskussionen
+
+
 • Beobachtungen und Fallstudien
+
+
 • Gegenstandsverankerte Theorie (Grounded Theorie)
+
+
 Laut Röbken und Wetzel (2016) ist die qualitative Forschung objektbezogen und
 versucht anhand eines konkreten Forschungsobjekts oder Probanden Erklärun-
 gen oder Ursache-/Wirkungsbeziehungen darzustellen. Die folgende Abbildung
 8 zeigt die Vor- und Nachteile von qualitativen Methoden.
+
+
 Abbildung 8: Vor- und Nachteile von qualitativen Forschungsmethoden (Auszug aus Röbken
 und Wetzel 2016)
+
+
 Die Vorteile der qualitativen Forschung liegen in der flexiblen Anwendung der
 Methoden, die sich sowohl im Feld als auch in Laboren durchführen lassen. Bei-
 spielsweise kann die Methode der Beobachtung auch in der natürlichen Umge-
 bung des Probanden angewandt werden.
+
+
 Unter einem offenen Vorgehen ist die Auswertung der Daten erst nach vollstän-
 diger Sichtung durch den Forscher zu verstehen. Dies kann die Tatsache be-
 günstigen, dass bisher unbekannte Theorien und Aussagen abgeleitet werden
 können.
+
+
 Durch die direkte Interaktion z. B. durch Interviews mit Probanden können direkte
 Rückfragen erfolgen und Hintergründe erfragt werden und speziell bei offenen
 Interviews oder Gruppendiskussionen können durch die Offenheit der Methode
 neue Inhalte oder tieferer Informationsgehalt identifiziert werden.
+
+
 Die qualitative Forschung bringt jedoch auch Nachteile mit: Auf der einen Seite
 sind Beobachtungen und Interviews oft zeit- und kostenintensiv. Besonders der
 Umstand, dass eine relativ große Anzahl an Interviews zur Erreichung einer sig-
 nifikanten Menge erforderlich ist, führt oft zu hohem Zeitaufwand.
+
+
 Ein letzter Punkt ist, dass die Auswertung der Daten oftmals nicht standardisiert
 durchgeführt werden kann, da besonders offene Interviews schwer vergleichbar
 sind und die Erkenntnisse einzeln ausgewertet müssen.
+
+
 Zusammenfassend empfiehlt Brüsenmeister (2008) die Verwendung qualitativer
 Methoden aufgrund der genannten Vorteile bei der Exploration unbekannter und
 komplexer Phänomene in Wissenschaft und Praxis.
+
+
 2.3 Grundlagen quantitativer Forschung
+
+
 Laut Perkhofer et al. (2016) hat die quantitative Forschung ihren Ursprung im
 naturwissenschaftlichen Bereich und erfolgt deduktiv, d. h. sie prüft Theorien
 bzw. Hypothesen. Ein wichtiges Merkmal ist, dass die Methoden der quantitati-
 ven Forschung über standardisierte Methoden eine Fragestellung mittels „harter
 Daten“ (Zahlen) überprüfen (Perkhofer et al. 2016). Ziel ist es, eine einheitliche
 und allgemeingültige Aussage aus einem Datensatz zu formulieren.
+
+
 Wichtige Methoden der quantitativen Forschung sind laut Perkhofer et al. (2016):
+
+
 • Befragungen
+
+
 • Standardisierte Beobachtungen
+
+
 • Messungen
+
+
 • Standardisierte Inhaltsanalysen
+
+
 Laut Röbken und Wetzel (2016) besteht das Ziel der quantitativen Forschung
 darin, durch standardisierte Messverfahren das Verhalten in Form von Modellen,
 Zusammenhängen und numerischen Daten möglichst genau zu beschreiben. Die
 folgende Abbildung 9 zeigt die Vor- und Nachteile von quantitativer Forschung.
+
+
 Abbildung 9: Vor- und Nachteile von quantitativen Forschungsmethoden (Auszug aus Röbken
 und Wetzel 2016)
+
+
 Der wichtigste Vorteil der quantitativen Forschung sind klar quantifizierbare Er-
 gebnisse, die aufgrund von Daten oft verallgemeinerbar sind. Ein weiterer Vorteil
 besteht in der Ermittlung von Zusammenhängen der Daten mithilfe von statisti-
 schen Methoden, wie sie in Abschnitt 2.8 erklärt werden.
-Des Weiteren kann durch standardisierte und oftmals automatisierte quantitative
-Forschung wie die Onlinebefragung eine große Anzahl an Stichproben gesam-
-melt und verglichen werden. Diese Menge an Stichproben führt zu einer höheren
-Validität der Daten sowie zu einer besseren Objektivität und Vergleichbarkeit im
-Zuge der Auswertung der Daten. Durch die Standardisierung sind oftmals die
-Kosten bzw. der Aufwand geringer als bei vergleichbarer qualitativer Forschung.
-Quantitative Forschung hat ebenfalls Nachteile. Ein erster Nachteil ist die feh-
-lende Flexibilität durch die Standardisierung im Zuge der Datenerhebung, die im
-Verlauf der Datenerhebung kaum oder nur sehr schwer verändert werden kann.
-Ein weiterer Punkt ist, dass qualitative Forschung oft nur Befunde oder Tatsachen
-darstellen und meist keine Hintergründe oder Ursachen liefern bzw. diese durch
-statistische Auswertung oft nur schwer hergestellt werden und nur bedingt Hand-
-lungsempfehlungen abgeleitet werden können.
-Zusammenfassend empfehlen Perkhofer et al. (2016) die Verwendung quantita-
-tiver Forschung bei der Exploration bekannter und standardisierter Phänomene
-in Wissenschaft und Praxis.
-Neue Möglichkeiten im Zuge der qualitativen Forschung haben sich in den letzten
-Jahren durch neuartige Technologie im Bereich künstliche Intelligenz ergeben
-(Schubiger et al. 2018). Neben den bekannten Verfahren besteht die Möglichkeit,
-große Datenmengen leichter auszuwerten und auch die Wissensgenerierung
-(knowledge discovery) durch Daten schreitet weiter voran (Schubiger et al.
-2018).
-2.4 Grundlagen von Forschungsfragen und Forschungsdesign
-Wissenschaftliche Forschungen setzen in der Regel eine konkrete Forschungs-
-frage voraus. Eine Forschungsfrage ist laut Kuckhartz (2014) die Ausformulie-
-rung des Ziels eine Forschungsvorhabens und dient zur Überprüfung von Hypo-
-thesen oder des aktuellen Wissenstands.
-Laut Kornmeier (2017) gibt es verschiedene Arten von Forschungsfragen, die
-unterschiedliche Ziele verfolgen. Eine Übersicht findet sich in der folgenden Ta-
-belle 3.
-Tabelle 3: Übersicht über mögliche Arten von Forschungsfragen (In Anlehnung an Korn-
-meier 2017)
-Laut Stein (2014) setzt sich die Untersuchung einer Forschungsfrage aus einer
-Reihe von Entscheidungen zusammen. Dieser sogenannte Forschungsprozess
-oder das Forschungsdesign ist das gemeinsame Ergebnis verschiedener Ent-
-scheidungen z. B. bezüglich der Forschungsmethoden und bildet die Grundlage
-für empirische Forschungsarbeiten.
-Der Zweck eines Forschungsdesigns ist es, eine theoretische Forschungsfrage
-konkret in eine empirische Untersuchung umzusetzen (Stein 2014). Laut Heinrich
-et al. (2004) besteht eine wesentliche Herausforderung darin, auf Basis einer
-Forschungsfrage bekannte Forschungsmethoden sinnvoll miteinander zu ver-
-knüpfen und aufeinander abzustimmen. Es gilt, mit der Durchführung der Me-
-thode gezielt Informationen zu gewinnen und diese durch weitere Forschungs-
-methoden zu vertiefen oder zu erweitern.
-Frank (2007) empfiehlt die formale Anwendung eines Regelwerks, das im For-
-schungsdesign oder den methodischen Grundlagen einer Forschungsarbeit fest-
-gelegt ist (Abbildung 10).
-Die Verknüpfung von Forschungsmethoden ist an keinerlei Richtlinien geknüpft.
-Laut Wilde und Hess (2008) lassen sich die Forschungsmethoden häufig in so-
-genannte Haupt- und Nebenmethoden unterteilen. Beispielsweise könnte eine
-Befragung die Hauptmethode sein, die durch eine kurze Literaturanalyse lediglich
-unterstützt wird. Dies wird auch als Mixed-Method-Ansatz bezeichnet, der in Ab-
-schnitt 2.5 vertieft wird.
-Zur Konzeption eines Forschungsdesign empfiehlt Kuckhartz (2014) folgende
-Schritte:
-• Festlegung der Untersuchungsart
-• Festlegung der Datensammlung
-• Festlegung der Analysemethode
-Im ersten Schritt soll laut Kuckhartz (2014) festlegt werden, ob es sich um eine
-qualitative oder quantitative Forschungsarbeit handeln soll. Auf dieser Grundlage
-kann die Datensammlung durch eine bestimmte Methode wie Experteninterviews
-oder Befragungen durchgeführt werden. Die jeweilige Analysemethode richtet
-sich anschließend nach der Forschungsmethodik.
-2.5 Mixed-Method-Ansatz
-Der Mixed-Method-Ansatz lässt sich grob beschreiben als die Verzahnung von
-verschiedenen quantitativen und qualitativen Forschungsmethoden (Kuckhartz
-2014). Die Vorteile sind, dass eine Forschungsfrage durch mehrere Forschungs-
-methoden beleuchtet werden kann. Die mögliche Folge ist die Generierung von
-Erkenntnissen, wie sie durch rein qualitative oder quantitative Forschung nicht
-ableitbar waren (Roch 2017).
-Laut Roch (2017) gibt es verschiedene Ausprägungen des Mixed-Method-Ansat-
-zes. Die folgende Abbildung 11 zeigt diese auf.
 
 
-Abbildung 11: Veranschaulichung des Mixed-Method-Ansatzes (Roch 2017)
-Mixed-Method-Ansätze weisen häufig eine dominierende Forschungsmethode
-auf, die qualitativ oder quantitativ sein kann. Es ist außerdem möglich, dass die
-beiden Anteile gleich sind. Laut Kuckhartz (2014) ist sind folgende Beispiele oft
-vorzufinden:
-• die Evaluierung von Daten einer quantitativen Befragung durch qualitative
-Interviews (dominierend quantitativ)
-• die Untermauerung von qualitativen Interviews durch eine quantitative Be-
-fragung (dominierend qualitativ)
-• der Vergleich der Ergebnisse von qualitativen Interviews und eine quanti-
-tative Befragung (Equal Status)
-Durch eine solche Verknüpfung von Forschungsmethoden sollen gezielt Nach-
-teile ausgeglichen werden (Kuckhartz 2014). Roch (2017) reflektiert, dass zur
-Durchführung umfangreiche Kenntnisse beider Forschungsmethoden notwendig
-sind und empfiehlt, diese im wissenschaftlichen Kontext mit einem Co-Forscher
-durchzuführen. Es gibt keine Richtlinien in der Verteilung der Forschungsmetho-
-den auf die Mixed-Method-Ansätze, da sich diese an der Forschungsfrage orien-
-tiert. Oftmals ergeben sich laut Roch (2017) die genaue Verteilung und die domi-
-nierende Methodik erst im Verlauf der Forschung bzw. Datenerhebung.
-2.6 Wissenschaftstheoretische Einordnung der Studien
-In diesem Abschnitt werden die Ergebnisse der Arbeit im ersten Teil in das Me-
-thodenportfolio der Wirtschaftsinformatik eingeordnet und anschließend einem
-wissenschaftlichen Paradigma sowie einer wissenschaftlichen Ansicht zugeord-
-net. Am Ende erfolgt außerdem eine Darstellung des Zusammenhangs von Ma-
-nagement, WI (Wirtschaftsinformatik) und KMU-Forschung (kleine und mittlere
-Unternehmen).
-Im Verlauf der Forschungsarbeit werden verschiedene quantitative und qualita-
-tive Methoden in den einzelnen Studien verwendet. Dies ist laut Kuckhartz (2014)
-ein sogenannter Mixed-Method-Ansatz. Der Vorteil ist, dass durch die Kombina-
-tion die Potenziale beider Methoden genutzt und Sachverhalte wie beispiels-
-weise die Ergebnisse fundierter evaluiert werden können.
-Die verwendeten Methoden der einzelnen Studien lassen sich nach dem Rah-
-menwerk (Abbildung 12) von Wilde und Hess (2007) in das Methodenprofil der
-Wirtschaftsinformatik einordnen. So werden primär qualitative wie auch quantita-
-tive Querschnittsanalysen angewendet, die dem Paradigma der Verhaltenswis-
-senschaft zugeordnet werden. Laut Kuckhartz (2014) hat Verhaltenswissen-
-schaft im Bereich der Managementforschung das Ziel, das Verhalten von z.B.
-Menschen oder die Auswirkungen von Technologie innerhalb einer Organisation
-zu untersuchen. Alle Studien nutzen sind der Verhaltenswissenschaft zuzuord-
-nen. Studie B erweitert dieses Paradigma und hat einen konstruktiven Anteil.
-Abbildung 12: Formalisierung und Paradigmen der Wirtschaftsinformatik
-(Wilde & Hess 2016, S. 14)
-Mit Blick auf das Methodenportfolio verwenden alle Studien bis auf die Studien A
-und D quantitative und qualitative Methoden (Mixed-Method-Ansatz). Da in Stu-
-die B ein Referenzmodell entwickelt wird, kann diese einem konstruktiven Para-
-digma zugeordnet werden. Ein solches Paradigma hat laut Kuckhartz (2014) das
-Ziel, die Realität in Form eines Rahmenwerks o. Ä. zu konstruieren.
-Neben dem Methodenportfolio von Wilde und Hess (2006) wird in der
-WI(Wirtschaftsinformatik)-Forschung zwischen interpretativen, positivistischen
-und real-kritischen Ansätzen unterschieden. Fast alle Studien dieser Arbeit sind
-dem Paradigma der positivistischen Ansätze zuzuordnen. Positivistisch bedeutet
-die Beschränkung auf die Realität zur Beobachtung sowie zur Beschreibung von
-Sachverhalten (Orlikowski & Baroudi 1991). In dieser Dissertationsschrift wird der
-aktuelle Stand der Digitalisierung von KMU mit Fokus auf wissensintensiven
-Dienstleistungen beobachtet und hinterfragt. Am Ende werden die Studienergeb-
-nisse erneut betrachtet. Diese Betrachtung kann dem kritischen Realismus zu-
-geordnet werden, da die Studienergebnisse noch einmal kritisch überprüft wer-
-den sollen. Laut Popper (2005) kann der kritische Rationalismus als die Vermu-
-tung von Irrtum verstanden werden. Es gibt demzufolge kein rechtfertigbares
-Wissen, weshalb der kritische Rationalismus versucht, empirische Ergebnisse
-durch erneute Überprüfung zu widerlegen. Tabelle 4 fasst die Ansichten, Forma-
-lisierungen und Paradigmen zu jeder Studie zusammen.
-Tabelle 4: Wissenschaftstheoretische Einordnung der Ergebnisse dieser Arbeit
-2.7 Literaturanalyse/Inhaltsanalyse als Methode
-Die Literaturanalyse, auch Literaturreview genannt, ist nach Webster und Watson
-(2002) eine Forschungsmethode, mit deren Hilfe Grundlagen für Studien oder
-Publikationen hergestellt werden können. Der wichtigste Vorteil von Literaturana-
-lysen ist, dass ein Ausschnitt des aktuellen Wissensstands systematisch darge-
-stellt werden kann.
-Zur Durchführung einer systematischen Literaturanalyse existieren zahlreiche
-Verfahren. Ein oft genutztes Verfahren wurde von den Autoren Webster und
-Watson (2002) festgelegt. Dieses beinhaltet folgende Schritte:
-1. Erkennen/Identifikation relevanter Literatur
-2. Strukturierung der Überprüfung
-3. Theoretische Entwicklung der Forschungsschwerpunkte
-4. Evaluierung der Forschungsschwerpunkte
-In Schritt 1 empfehlen die Autoren eine Backward-/Forward-Suche. Die Back-
-ward-Suche definiert die Suche nach relevanter Literatur aus den zitierten Quel-
-len eines betrachteten Artikels (Webster und Watson 2002). Die Forward-Search
-ist definiert als die Suche nach Literatur, die den vorliegenden Artikel zitieren
-(Webster und Watson 2002).
-Schritt 2 analysiert die ausgewählte Literatur in logischer Hinsicht. Die Autoren
-empfehlen eine Konzeptmatrix, die Artikel nach festgelegten Variablen ordnet
-und eine Strukturierung ermöglicht.
-Schritt 3 stellt die Auswertung der Konzeptmatrix und Schritt 4 die Evaluierung
-und Diskussion dar.
-2009 haben vom Brocke et al. die Ergebnisse von Webster und Watson aufge-
-griffen. Die Autoren schlussfolgern, dass eine Suche in akademischen Datenban-
-ken eine Alternative zu einer Forward-/Backward-Suche darstellen kann. Eine
-Auswahl möglicher Datenbanken ist:
-• EBSCO Host
-• Google Scholar
-• Emerald
-• Sciencedirect
-• IEE
-• ECONBIZ
-• ProQuest
-• Springerlink
-• ACM
-• AIsel
-• Web of Science
-Die Autoren haben ein modifiziertes Konzept speziell mit Fokus auf die Literatur-
-suche dargestellt. Die Schritte sind in der folgenden Abbildung 10 aufgeführt.
-Das Verfahren erweitert die Erkenntnisse von Webster und Watson (2002) im
-Bereich der Literatursuche, die deutlich detaillierter durchgeführt wird. In den
-Schritten 1 und 2 werden eindeutige Suchkriterien wie Zeitraum, Journals, Da-
-tenbanken, Perspektive, Schreibstil etc. festgelegt. Ab Schritt 4 greifen die Auto-
-ren auf das systematische Vorgehen von Webster und Watson (2002) zurück.
-Im Zuge der Literaturauswertung kann neben der Konzeptmatrix auch die quali-
-tative Inhaltsanalyse von Mayring (2000) angewendet werden. Mayring (2000)
-hat untersucht, wie identifizierte Texte systematisch analysiert werden können,
-indem das Material schrittweise und theoriegeleitet bearbeitet wird. Es wird emp-
-fohlen, die Literatur in Kategorien zu ordnen. Jede Kategorie fasst gleichartige
-Literatur zusammen. So können Themen- bzw. Forschungscluster gebildet und
-identifiziert werden. Insgesamt wurden drei verschiedene Elemente der Inhalts-
-analyse identifiziert (Mayring 2000):
-• explizierende Inhaltsanalyse,
-• strukturierende Inhaltsanalyse und
-• zusammenfassende Inhaltsanalyse.
-Das Ziel der explizierenden Inhaltsanalyse ist es, zusätzliche Informationen (Hin-
-tergrundinformationen) zum Forschungsthema zu ermitteln, um einen höheren
-Detailgrad zu erreichen. Die strukturierende Inhaltsanalyse identifiziert beste-
-hende Inhalte und sortiert diese anhand einer festgelegten Vorgehensweise nach
-Kategorien. Die zusammenfassende Inhaltsanalyse reduziert das Textmaterial
-so weit, dass wesentliche Inhalte erfasst werden und ein überschaubarer Über-
-blick entsteht.
-Weiterhin empfiehlt Mayring (2000) fünf Möglichkeiten der Analyse des Inhalts
-der identifizierten Literatur:
-• Güterkriterien: Die Bewertung erfolgt aufgrund von festgelegten Variablen
-wie Reliabilität, Intersubjektivität oder Validität.
-• Systematisches Vorgehen: Die Analyse lehnt sich an ein konkretes Ana-
-lyseverfahren an.
-• Einordnung in ein Kommunikationsmodell: Die Interpretation der Inhalte
-erfolgt innerhalb eines Rahmenwerks oder eines Kontexts.
-• Kategorien im Zentrum der Analyse: Die Inhalte werden in Kategorien ein-
-geordnet, die den strukturellen Rahmen der Analyse darstellen.
-Die folgende Abbildung 14 zeigt eine Übersicht der beiden Schritte sowie der
-möglichen Konzepte und Kombinationsmöglichkeiten.

@@ -1,0 +1,2556 @@
+INSTITUT FÜR BIBLIOTHEKS- UND INFORMATIONSWISSENSCHAFT
+
+
+Anforderungen, Entwurfsmuster und Systeme
+für kollaboratives Schreiben
+
+
+D i s s e r t a t i o n
+zur Erlangung des akademischen Grades
+D o c t o r p h i l o s o p h i a e (Dr. phil.)
+
+
+eingereicht an der
+Philosophischen Fakultät I
+der Humboldt – Universität zu Berlin
+von
+
+
+Frank Stüber
+
+
+Dekan der Philosophischen Fakultät I:
+Prof. Dr. Michael Seadle
+
+
+1. Prof. Dr. Peter Schirmbacher
+
+
+Gutachter:
+
+
+2. Prof. Dr. Wolfgang Coy
+
+
+13. Oktober 2011
+
+
+Datum der Disputation:
+
+
+Vorwort
+
+
+Ich möchte mich an dieser Stelle bei all denjenigen bedanken, die ihren Beitrag zum
+Entstehen dieser Arbeit geleistet haben.
+
+
+An erster Stelle möchte ich Herrn Prof. Peter Schirmbacher meinen Dank ausspre-
+chen, der es mir ermöglicht hat, diese Dissertation am Institut für Bibliotheks- und
+Informationswissenschaft der Humboldt-Universität Berlin zu schreiben. Er war
+während der gesamten Zeit stets ein äußerst angenehmer Rat- und Ideengeber.
+
+
+Des Weiteren gilt mein Dank Herrn Prof. Wolfgang Coy, Frau Juliane Schiel, Frau
+Christa Nowakowski sowie allen Teilnehmern des Doktorandenkollegs.
+
+
+Mein besonderer Dank gilt meiner Familie, insbesondere meinen Eltern, welche im
+weiteren Sinne die entscheidenden Voraussetzungen für diese Arbeit gelegt haben,
+sowie meinen beiden Brüdern und meiner Frau Lidiya, die mir alle jene Unterstüt-
+zung haben zukommen lassen, ohne die ein Abenteuer dieser Art nicht möglich ge-
+wesen wäre.
+
+
+Einführung
+
+
+1
+
+
+Kollaboratives Schreiben bezeichnet das gemeinsame Erstellen eines Textdoku-
+ments in einer Gruppe, deren Mitglieder zur gleichen Zeit oder an unterschiedlichen
+Zeiten, am gleichen oder an unterschiedlichen Orten arbeiten können.
+
+
+Im Rahmen der Erforschung der Auswirkungen des Klimawandels auf die Umwelt
+hat das von der World Meteorological Organization (WMO) und dem United Nations
+Environment Programme (UNEP) ins Leben gerufene Intergovernmental Panel on
+Climate Change (IPCC) in den letzten Jahren eine Reihe von Berichten veröffentlicht,
+darunter den IPCC WG1 AR4 Report aus dem Jahre 2007. Insgesamt haben über 650
+Wissenschaftler aus allen Teilen der Welt zum Inhalt des Dokumentes beigetragen,
+hinzu kommen noch über 200 Gutachter. Dieses Beispiel zeigt, was kollaboratives
+Schreiben im Extremfall bedeuten kann. Ein Großteil aller erstellten Textdokumente
+weisen heutzutage mehr als einen Autor aus [Ede et al. 90]. Schon die Entstehung
+der Bibel war das Ergebnis einer Multiautorenschaft. Selbst in der Belletristik ist eine
+Multiautorenschaft keine Seltenheit. Als Beispiel sei hier der Kriminalroman
+„Machtspiele“ der drei französischen Autoren Daniel Pennac, Jean-Bernard Pouy
+und Patrick Raynal aus dem Jahre 1985 erwähnt, bei dem alle drei Autoren auf recht
+ungewöhnliche Weise kollaborieren, in dem sie ihren jeweils individuellen Schreibstil
+bewusst beibehalten und nicht homogenisiert haben.
+
+
+Das kollaborative Schreiben ist ein Teilaspekt des kollaborativen Arbeitens (Collabo-
+rative Work) zu dessen breit gefächertem Instrumentarium eine Vielzahl von Soft-
+ware-Systemen gehören, die auch oft unter dem Stichwort Groupware zusammen-
+gefasst werden. Beispiele hierfür sind:
+
+
+1. E-Mail als einen der ältesten und beständigsten Software-Dienste zum ge-
+meinsamen Austausch von Nachrichten, Dokumenten und Informationen.
+
+
+2. Chat und Video-Conferencing zur Echtzeitkommunikation, häufig miteinander
+verknüpft (siehe z.B. Skype).
+
+
+3. Zentrale Informationssysteme, die einer Gruppe von Nutzern eine beliebige
+Menge von gemeinsam nutzbaren Ressourcen (Kontakte, Termine, Doku-
+mente etc.) zu Verfügung stellen (z.B. Microsoft Exchange).
+
+
+4. Soziale Plattformen, die einer Gruppe von Teilnehmern unterschiedliche
+Möglichkeiten bieten, miteinander in Kontakt zu treten, um Gefühle, Ideen,
+Meinungen, Informationen untereinander auszutauschen.
+
+
+Kollaboratives Schreiben umfasst organisatorische, soziale und vor allem technolo-
+gische Aspekte. Sind Autoren auf unterschiedliche Orte und vielleicht noch Zeitzo-
+nen verteilt, benötigen sie Möglichkeiten, um sich untereinander zu synchronisie-
+ren. Dazu gehören Kommunikationswerkzeuge wie E-Mail, Chat, Video-Konferenz
+und das gute alte Telefon. Ein wesentlich effizienteres Werkzeug stellt jedoch eine
+
+
+Einführung
+
+
+gemeinsame Software zum Schreiben, Verwalten, Austauschen und Beobachten
+eines Textes dar. Entsprechende Software-Implementationen sind jedoch rar gesät.
+Die klassischen Textverarbeitungssysteme sind auf die Unterstützung von Einzelau-
+toren ausgelegt. Möchten mehrere Autoren am selben Text arbeiten, müssen sie
+sich untereinander abstimmten in Hinblick auf Inhalt, Layout und Zeit. Je größer die
+Anzahl der Autoren desto größer der Abstimmungsaufwand. Kommen weitere Ak-
+teure ins Spiel, die zwar nicht direkt schreiben, aber dennoch Zugriff auf den Text
+benötigen, wie zum Beispiel Teamleiter, Gutachter oder Editoren, nimmt der Kolla-
+borationsbedarf noch weiter zu.
+
+
+Dies steht im Kontrast zur aktuellen Entwicklung im Word Wide Web. Unter dem
+Stichwort Web 2.0 [O’Reilly 05] haben sich in den letzten Jahren eine Reihe von
+Diensten etabliert, deren gemeinsames Merkmal es ist, dass sie eine direkte Kolla-
+boration zwischen mehreren Teilnehmern über das Internet ermöglichen. Eines der
+prominentesten Beispiele stellt das Internetangebot von Wikipedia da, einer frei
+zugänglichen Online-Enzyklopädie in verschiedenen Sprachen. Laut Eigendarstel-
+lung zählt Wikipedia mittlerweile zu den zehn am häufigsten frequentierten Inter-
+netangeboten der Welt. Allein die englischsprachige Ausgabe von Wikipedia stellt
+über zwei Millionen Artikel zur Verfügung. Wikipedia erlaubt es jedem Besucher, die
+Inhalte von Artikeln direkt in einem Internet-Browser zu redigieren oder neue Arti-
+kel zu verfassen. Eine ähnliche rasante Entwicklung im Bereich der klassischen Text-
+verarbeitung ist nicht erkennbar, obwohl es in den letzten Jahren zahlreiche Neue-
+rungen auf dem Gebiet der Online-Textverarbeitung gegeben hat, sowie For-
+schungsprojekte, um die kollaborativen Fähigkeiten von Textverarbeitungssyste-
+men zu verbessern. Ein interdisziplinäres Projekt der Berliner Humboldt-Universität
+(siehe Kapitel 2.2.1), bei dem insgesamt 26 Historiker in direkter Zusammenarbeit
+ein gemeinsames Buch geschrieben haben, zeigt die Problematik in der Praxis auf.
+Die Suche nach einem geeigneten Software-Werkzeug im Vorfeld dieses Projektes
+kam zum Ergebnis, dass lediglich die von Wikipedia eingesetzte Basistechnologie
+(ein Wiki-System) das nötige Potential zur technischen Umsetzung besaß, obwohl
+sie eigentlich nicht für das kollaborative Schreiben von Büchern konzipiert ist.
+
+
+Diese Dissertation möchte daher einen Beitrag dazu leisten, den Paradigmenwech-
+sel in der Textverarbeitung zu beschleunigen, weg vom Einzelautor und hin zur Mul-
+tiautorenschaft. Die wissenschaftliche Fragestellung lässt sich zusammengefasst
+wie folgt formulieren:
+
+
+1. Welches Anforderungsprofil ergibt sich für eine kollaborative Textverarbei-
+tung?
+
+
+2. Welche alternativen oder auch sich ergänzende technische Möglichkeiten
+(Entwurfsmuster) stehen für die Unterstützung eines solchen Profils zur Ver-
+fügung?
+
+
+3. Was sind die sich aus beiden oben genannten Punkten ergebenden Realisie-
+rungsoptionen für eine idealtypische kollaborative Textverarbeitung und wie
+können diese umgesetzt werden?
+
+
+Einführung
+
+
+Die Arbeit konzentriert sich dabei auf das kollaborative Erstellen wissenschaftlicher
+bzw. technischer Texte, d.h. auf einen Bereich, in dem kollaboratives Schreiben häu-
+figer vorkommt als etwa in der Belletristik. Die Diskussionen und Ergebnisse dieser
+Arbeit lassen sich aber analog auf beliebige andere Textgattungen übertragen.
+
+
+In Kapitel 2 „Kollaboratives Schreiben (KS)“ wird unabhängig von einer bestimmten
+Software in die Thematik des kollaborativen Schreibens eingeführt. Neben Beispie-
+len aus Wissenschaft und Wirtschaft wird in diesem Kapitel eine allgemeingültige
+Taxonomie für kollaboratives Schreiben vorgestellt.
+
+
+In Kapitel 3 „KS-Software“ werden Textverarbeitungssysteme auf ihre kollaborati-
+ven Fähigkeiten hin untersucht. Im Anschluss daran werden Anforderungen an ein
+kollaboratives Textverarbeitungssystem formuliert und zwei populäre Vertreter für
+kollaboratives Schreiben, Google Text und Microsoft Word, analysiert.
+
+
+In Kapitel 4 „KS-Entwurfsmuster“ werden allgemeingültige Entwurfsmuster von
+Software-Werkzeugen zur Unterstützung des kollaborativen Schreibens herausge-
+arbeitet, auf die dann im Kapitel 5 Bezug genommen wird.
+
+
+In Kapitel 5 „KS-Software-Architekturen“ werden schließlich zwei spezielle Lö-
+sungsansätze für wissenschaftliche KS-Systeme beschrieben, welche aufgrund der
+vorhergehenden Überlegungen konkrete Vorschläge für eine spätere Implementa-
+tion machen. Der der erste Ansatz beschreibt eine implementationsunabhängige
+Erweiterung eines etablierten Netzwerkprotokolls um zusätzliche kollaborative Fä-
+higkeiten. Der zweite Ansatz ist eine Architekturvorgabe für das Organisieren eines
+kollaborativen Schreibprojektes innerhalb eines Softwaresystems, dessen konkrete
+Implementation Teil weiterführender Arbeiten sein könnte.
+
+
+Kollaboratives Schreiben (KS)
+
+
+2
+
+
+2.1 Einführung
+
+
+Während sich die Frage „Was ist kollaboratives Schreiben?“ im ersten Moment
+recht intuitiv beantworten lässt („Gemeinsame Erstellen eines Textes in einer Grup-
+pe“), stellen sich bei näherer Betrachtung der Thematik doch sehr viel mehr Fragen.
+Geht es wirklich nur um das Schreiben oder ist nicht auch das Planen des Inhalts, das
+Korrekturlesen, die Diskussion über einzelne Textpassagen oder die anschließende
+Publikation ein Teil dieses Prozesses? Wo beginnt und wo endet kollaboratives
+Schreiben? Ist die angebotene Hilfe beim Verfassen eines Textes schon und das
+Schreiben eines Zeitungsartikels noch kollaboratives Schreiben? Wie schnell kolla-
+boratives Schreiben an Komplexität gewinnen kann, soll das folgende kleine Bei-
+spiel aufzeigen: Zwei Autoren A und B möchten gemeinsam einen Artikel schreiben.
+Die Frage, die sich beiden stellt, ist: Wie sollen sie sich organisieren? Es ergeben sich
+spontan die folgenden vier Möglichkeiten:
+
+
+(a) Autor A diktiert und Autor B schreibt den Text.
+
+
+(b) Autor A schreibt einen ersten Entwurf, der anschließend von Autor B gegenge-
+lesen und ggf. überarbeitet wird.
+
+
+(c) Autor A schreibt erst den ersten Teil des Artikels und anschließend Autor B den
+zweiten Teil des Artikels
+
+
+(d) Autor A schreibt den ersten Teil des Artikels während gleichzeitig Autor B den
+zweiten Teil schreibt.
+
+
+Eine kurze Analyse der vier Optionen ergibt folgendes Ergebnis:
+
+
+(a) ist die einfachste aller Möglichkeiten. Autor A kann den Text auf ein Diktiergerät
+sprechen, das er Autor B zum Abtippen aushändigt. Er kann sich auch mit Autor
+B an einen Tisch setzen, um ihm direkt den Text zu diktieren.
+
+
+(b) ist schon etwas komplizierter. Möchte Autor B den Text von Autor A überarbei-
+ten, so muss er die Möglichkeit haben, Korrekturen vornehmen zu können,
+Textpassagen zu löschen oder neue einzufügen. Gegebenenfalls müssen diese
+Änderungen vorher noch gemeinsam diskutiert werden.
+
+
+(c) ist wieder etwas einfacher. Autor A muss lediglich den noch unfertigen Artikel
+an Autor B aushändigen, damit dieser ihn weiterschreiben kann.
+
+
+(d) ist am kompliziertesten. Zunächst müssen sich Autor A und Autor B darauf eini-
+gen, welchen Teil des Textes der eine und welchen Teil der andere zu schreiben
+hat und wo exakt die Schnittstelle zwischen beiden Teilen liegt. Anschließend
+
+
+Kollaboratives Schreiben (KS)
+
+
+müssen sie sich überlegen, wie die jeweiligen Teiltexte am Ende zu einem gan-
+zen Text zusammengefügt werden können.
+
+
+Aus diesem Beispiel lassen sich neben der Tatsache, dass es stets mehrere Möglich-
+keiten gibt, einen Text gemeinsam zu verfassen, auch noch folgende Beobachtun-
+gen ableiten: In allen vier Handlungsalternativen müssen Autor A und Autor B mit-
+einander kommunizieren. In (a) muss Autor A diktieren und Autor B zuhören, in (b)
+und (c) muss Autor A den Artikel an Autor B übergeben, in (d) müssen beide Auto-
+ren gemeinsam planen. In (b) – (d) müssen beide Autoren ihre Textbeiträge in ir-
+gendeiner Form synchronisieren, so dass am Ende ein Gesamttext entstehen kann.
+Der zeitliche Aufwand scheint in (d) am geringsten zu sein, da beide Autoren paral-
+lel arbeiten und jeweils nur die Hälfte des Artikels zu schreiben haben.
+
+
+Wenn man jetzt noch hinzunimmt, dass Texte sehr viel umfangreicher und komple-
+xer als ein Artikel seien können und dass mehr als zwei Autoren an der Entstehung
+eines Textes beteiligt sein können, dann ist man schon mitten im Forschungsgebiet
+Kollaboratives Schreiben. Arbeiten zu diesem Thema reichen zurück bis in die späten
+80er und frühen 90er Jahre. Die überwiegende Anzahl der Arbeiten versuchen an
+Hand von Feldversuchen sowie durch Interviews ein besseres Verständnis für die
+Thematik zu erhalten, um anschließend Anforderungen für Software-Werkzeuge
+abzuleiten. Andere Arbeiten versuchen vorhandene Software-Werkzeuge zu evalu-
+ieren und auf ihre Tauglichkeit für kollaboratives Schreiben zu untersuchen.
+
+
+Zunächst jedoch soll das kollaborative Schreiben unabhängig von einer bestimmten
+Software bzw. Software-Gruppe betrachtet werden, auch wenn eine völlige Aus-
+blendung von Software kaum möglich ist – immerhin wird heute nur noch in sehr
+seltenen Fällen auf die Schreibmaschine oder auf Papier und Bleistift zurückgegrif-
+fen. In den folgenden beiden Kapiteln wird Textkollaborationen sowohl im wissen-
+schaftlichen wie auch im unternehmerischen Umfeld betrachtet und analysiert. Das
+Ziel hierbei ist es, die Praxisrelevanz von Textkollaboration herauszuarbeiten.
+
+
+Das nächste Kapitel baut auf einen wissenschaftlichen Artikel von [Lowry et al. 04]
+auf und versucht die verschiedenen Aspekte Textkollaboration zu formalisieren. Das
+Ziel hierbei ist es, eine möglichst allgemeingültige Begrifflichkeit für die weitere
+Verwendung innerhalb dieser Arbeit zu definieren.
+
+
+2.2 Textkollaboration in der Wissenschaft
+
+
+2.2.1 Beispiel
+
+
+Die Deutsche Forschungsgemeinschaft hat im Mai 2004 die Einrichtung des
+Schwerpunktprogramms 1173 „Integration und Desintegration der Kulturen im eu-
+ropäischen Mittelalter" für sechs Jahre (2005-2011) beschlossen. Eines der Ergebnis-
+se der ersten Förderphase im Jahr 2007 war ein Buch mit dem Titel „Mittelalter im
+Labor: Die Mediävistik testet Wege zu einer transkulturellen Europawissenschaft“,
+das gleichzeitig in klassischer Papierform und als Hypertext im Internet [Schiel et al.
+08] veröffentlicht wurde. Das interessante an dieser Veröffentlichung ist nun, dass
+
+
+Kollaboratives Schreiben (KS)
+
+
+der Text durch eine kollaborative Zusammenarbeit von 26 Historikern aus ganz
+Deutschland entstanden ist. Die technische Grundlage für das praktizierte kollabo-
+rative Schreiben war eine abgepasste Version von MediaWiki, jenem Wiki-System,
+mit dem auch die Online-Enzyklopädie Wikipedia erstellt wird. Gespräche mit zwei
+Beteiligten an diesem Projekt haben einige interessante Aspekte zu Tage gefördert.
+Positive Aspekte waren:
+
+
+Durch die Einbindung aller in ein Team hat sich eine sehr enge Form der Zu-
+sammenarbeit gebildet, da sich die Autoren untereinander absprechen
+mussten in Hinblick auf Organisation, Ziele, Zeiten und Werkzeuge.
+
+
+Dies hat gleichzeitig durch Abgleich mit inhaltlichen, theoretischen und me-
+thodologischen Ansätzen der anderen beteiligten Disziplinen zu einer Förde-
+rung von neuen Ideen geführt.
+
+
+Da diese Form der Kooperation, dazu noch im geisteswissenschaftlichen Be-
+reich, sehr ungewöhnlich war, hat das gesamte Projekt automatisch eine hö-
+here Aufmerksamkeit in der Öffentlichkeit generiert.
+
+
+Es wurden aber auch einige psychologische Hemmnisse genannt. Für viele Autoren
+war diese Form der Zusammenarbeit eine mehr oder weniger große Umstellung.
+Der Einzelne ist nun Teil einer Autorengemeinschaft. Texte können von Kollegen
+korrigiert, geändert oder verworfen werden. Und damit ist die Urheberschaft eines
+Textes bzw. eines Textabschnittes nicht mehr in jedem Fall einem Einzelnen zuord-
+enbar. Als potentielle Problemstellen bei der Arbeit mit einem kollaborativen Soft-
+ware-Werkzeug wurden die folgenden Punkte genannt:
+
+
+Texte besitzen unterschiedliche inhaltliche Anforderungen wie das Einbinden
+von Formeln, Grafiken, Bildern und Videos.
+
+
+Texte besitzen unterschiedliche formale Anforderungen wie das Erstellen
+von Verzeichnissen (z.B. Inhaltsverzeichnisse, Abbildungsverzeichnisse, In-
+dexe, etc.) oder die spezielle Auszeichnung von Teiltexten (z.B. Zitate, etc.).
+
+
+Texte können mehrere Publikationsformen aufweisen (z.B. Buch und Web).
+
+
+Es ist üblich und auch gewollt, dass Teammitglieder nicht immer am gleichen
+Ort ihre Texte verfassen. Es gibt beispielsweise Zeiten, an denen im Büro ge-
+schrieben wird und es gibt Zeiten, zu denen zu Hause oder unterwegs ge-
+schrieben wird.
+
+
+Die technische Ausstattung von Teammitgliedern kann sehr stark variieren.
+Viele hatten zu Hause keinen oder nur einen sehr langsamen Internetan-
+schluss.
+
+
+Alle Beteiligten hatten zum Teil sehr unterschiedliche Erfahrungen und Ge-
+wohnheiten was Textverarbeitungssysteme angeht.
+
+
+Kollaboratives Schreiben (KS)
+
+
+In Arbeitsphasen mit hohem Zeitdruck (z.B. bedingt durch Redaktionsschlüs-
+se) ist die Zuverlässigkeit des genutzten Systems von großer Bedeutung.
+
+
+Insgesamt wurde die Arbeit mit dem Wiki-System als positiv bewertet, unter ande-
+rem aber auch auf Grund mangelnder Software-Alternativen.
+
+
+2.2.2 Wissenschaftliches Publizieren
+
+
+In Verallgemeinerung eines Mottos aus [Ebel et al. 06] sei angemerkt:
+
+
+Was immer wissenschaftlich entwickelt, theoretisiert, gefunden, erfunden,
+gemessen wird – es verdient nicht, entdeckt zu werden, wenn es anderen nicht
+mitgeteilt wird.
+
+
+Dazu haben sich seit den ersten Papyrusrollen eine Reihe von Formen entwickelt,
+geschriebenes Wissen anderen mitzuteilen. Eine wissenschaftliche Publikation ist in
+der Regel der Endpunkt einer vorangegangenen Forschungstätigkeit, deren Ergeb-
+nisse nun durch ihre Publikation der Öffentlichkeit zugänglich gemacht werden.
+Publikationen dieser Art besitzen einen hohen Wert für die beteiligten Autoren, da
+sie ihr Renommee fördern bzw. zu einer unmittelbaren Auszeichnung (z.B. Diplom)
+führen können. Dementsprechend verfolgt jeder Autor auch immer ein gewisses
+Eigeninteresse, das nicht immer in Einklang mit dem Team als Ganzes zu bekommen
+ist. Hinzu kommt, dass wissenschaftliche Texte bestimmten Formanforderungen
+genügen müssen und im Extremfall einen gedruckten Umfang von mehreren hun-
+dert Seiten erreichen können. All dies hat zur Folge, dass wissenschaftliche Textkol-
+laboration nur durch eine feine Ausbalancierung der zum Teil konkurrierenden Inte-
+ressen aller Akteure möglich ist.
+
+
+Unabhängig davon, ob die Publikation elektronisch oder per Papier erfolgt, orientie-
+ren sich die Publikationsformen derzeit in der Regel noch an der Publikation per
+Papier, die sich in folgende Kategorien unterscheiden lässt:
+
+
+Berichte – Ein Bericht ist ein wissenschaftlicher Text, der die Ergebnisse eines For-
+schungsprozesses strukturiert und konsistent zusammenfasst. Der Bericht ist ein
+dauerhaftes in sich abgeschlossenes Dokument. Ein Bericht muss in der Regel be-
+stimmten Formen genügen (z.B. darf ein wissenschaftlicher Artikel für ein wissen-
+schaftliches Journal eine bestimmte Anzahl von Worten nicht überschreiten), eine
+Zusammenfassung, ein Inhalts- und Stichwortverzeichnis und ein Literaturverzeich-
+nis haben. Ein Bericht entsteht in einem wissenschaftlichen Zusammenhang, der
+durch den Inhalt und Literaturverweise erkennbar sein soll. Ein Bericht enthält eine
+eindeutige Identifizierung durch Titel, Angabe des Datums, an dem der Bericht ab-
+geschlossen bzw. erstellt wurde und die Angabe des Autors bzw. der Autoren. Es
+lassen sich verschiedene Arten von Berichten je nach Umfeld unterscheiden, z.B.
+Laborberichte, Diplom-, Bachelor-, Seminar-, Praktikums-, Abschluss-, Doktorarbei-
+ten, Forschungsanträge, Gutachten.
+
+
+Labor- und Protokollbücher – Ein Laborbuch ist ein Tagebuch des experimentieren-
+den Naturwissenschaftlers, in dem der Fortschritt und das Ergebnis wissenschaftli-
+
+
+Kollaboratives Schreiben (KS)
+
+
+cher Experimente in einer Laborumgebung von einem oder mehreren Wissenschaft-
+lern festgehalten werden. Das Gegenstück zum Laborbuch außerhalb eines Labo-
+rumfeldes ist das Protokollbuch, in dem z.B. Biologen, Archäologen, Geologen ihre
+Befunde festhalten.
+
+
+Fachzeitschriften – In Fachzeitschriften werden wissenschaftliche Berichte (Artikel)
+zusammengefasst, in denen die Ergebnisse wissenschaftlicher Arbeit beschrieben
+werden, um sie dem Fachpublikum mitzuteilen. Ein wissenschaftliches Ergebnis gilt
+dann als veröffentlicht (publiziert).
+
+
+Fachbücher – Ein Fachbuch kann als ein sehr umfangreicher Bericht betrachtet wer-
+den, d.h. es umfasst in der Regel mehr Seiten als ein Bericht und erlaubt einen wis-
+senschaftlichen Sachverhalt, eine Theorie bzw. einen Prozess umfassender darzu-
+stellen. Der wesentliche Unterschied zu einem Bericht besteht jedoch darin, dass
+das Buch von einem Verlage verlegt worden ist.
+
+
+Elektronische Publikationsformen – Elektronische Publikationen können zum einen
+darin bestehen, ein elektronisches Gegenstück des Papierdokuments zu veröffentli-
+chen, z.B. indem man einen Bericht als PDF-Dokument veröffentlicht. Andere elek-
+tronische Publikationsformen liefern z.B. Wiki-Systeme, Content-Management-
+Systeme (CMS), Blogs, die aber mit den gleichen traditionellen Metaphern arbeiten:
+Ein Wiki-System entspricht einem Lexikon, ein CMS arbeitet mit Artikeln, ein Blog
+basiert ebenfalls auf Artikeln oder kurzen Mitteilungen. Der charakteristischen Un-
+terschiede elektronischer Publikationen gegenüber den Papierformen liegen in
+
+
+der Verfügbarkeit
+
+
+der Archivierbarkeit
+
+
+der Recherchierbarkeit
+
+
+der benutzerfreundlichen Navigation durch komplexe Sachverhalte aufgrund
+direkter Querverweise (Links) und eingebetteter Medien
+
+
+Benötigt man bei Papierformen umfangreiche Archive und Bibliotheken, in denen
+man oft persönlich und vor Ort recherchieren muss, können elektronische Systeme
+ihre Inhalte per Internet jedem bzw. dem Fachpublikum überall dort verfügbar ma-
+chen, wo ein Internetanschluss besteht (Open Access). Vor allem aber kann über
+Schlagworte, Taxonomien, Volltextsuche wesentlich detaillierter und breitgefächer-
+ter recherchiert werden. Dieser Vorteil ist gleichzeitig mit der Gefahr verbunden,
+dass die schiere Menge an Informationen, die auch durch die schnelleren Publikati-
+onszeiten elektronischer Medien begünstigt wird, eine weniger fokussierte und so-
+mit komplexere Darstellung von Forschungsergebnissen zur Folge hat. Direkte
+Querverweise (Links) und die Einbettung von Videos, Tondokumenten (z.B. der Ori-
+ginalaufnahme einer Rede) ermöglichen es, wissenschaftliche Texte um weitere
+Originalinformationen anzureichern, die gegenüber den Textzitaten der Papierfor-
+men eine neue Qualität darstellen. Zudem unterscheidet sich das Layout elektroni-
+scher Publikationen von Papierformen dadurch, dass die Seitengröße bedingt durch
+
+
+Kollaboratives Schreiben (KS)
+
+
+das Bildschirmformat nicht mehr den Papierformaten entspricht und durch die di-
+rekten Querverweise (Links) die Inhalte nicht notwendigerweise mehr sequenziell
+bzw. mit hierarchischen Überschriften wie in einem Bericht, Artikel bzw. Buch (Titel,
+Zusammenfassung, Einleitung, Hauptteil, Schlussfolgerungen, Quellenverzeichnis)
+orientiert werden müssen.
+
+
+Jede Publikationsform enthält Objekte aus einer vorgegebenen Menge von Klassen.
+Jede Objektklasse besitzt eigene Formanforderungen. In wissenschaftlichen Texten
+lassen sich in der Regel folgende Objektklassen finden:
+
+
+Gliederungen (Kapitel, Absätze, Aufzählungen)
+
+
+Verzeichnisse (Inhalt, Index, Abbildungen, Tabellen, Abkürzungen, Symbole,
+Literatur)
+
+
+Eingebettete Medien (Fotos, Grafiken, Videos, Ton)
+
+
+Zitate (Verweise auf Originalquellen)
+
+
+Eingebettete Originalquellen (Quelltexte, Auszüge aus Laborberichten)
+
+
+Aufzählungen
+
+
+Querverweise
+
+
+Tabellen
+
+
+Formeln
+
+
+Fußnoten
+
+
+Einige Objektklassen sind selbstverständlich häufiger zu finden (z.B. Verzeichnisse)
+als andere (z.B. Formeln). Auch ist diese Auflistung mit Sicherheit nicht erschöp-
+fend. Allerdings ist unmittelbar klar, dass eine wissenschaftliche Publikation For-
+manforderungen verlangt, deren Besonderheiten wiederum spezielle Anforderun-
+gen an das kollaborative Schreiben generieren. Als Beispiel sei das Zitieren genannt.
+Es gilt die Regel, dass ein Zitat nur im Original abgedruckt werden darf. Dieser Text-
+teil darf daher auch bei dringendem Verdacht auf Fehler unter keinen Umständen
+von einem anderen Autor ohne Zustimmung des Originalautors geändert werden.
+Mit anderen Worten: Zitate müssen einer besonderen Form der Zugriffsberechti-
+gung unterliegen. Ein Forderung, die bei Einzelautoren bedeutungslos wäre.
+
+
+2.2.3 Wissenschaftliche Kollaboration
+
+
+Bis in das letzte Jahrhundert hinein wurde Forschung vor allem durch weitestge-
+hend isoliert arbeitende Wissenschaftler oder wissenschaftliche Einrichtungen be-
+trieben. Dies hat sich in der Gegenwart grundlegend geändert. Die Gründe hierfür
+sind u.a.:
+
+
+Kollaboratives Schreiben (KS)
+
+
+Universitäten und Forschungseinrichtungen haben oftmals nicht das Geld,
+die Ausrüstung oder die Expertise, um die eigene Forschung auf höchstem
+Niveau vorantreiben zu können.
+
+
+Komplexe Forschungsfragen der heutigen Welt erfordern die – ggf. interdis-
+ziplinäre – Zusammenarbeit verschiedener Forschungsinstitutionen und Wis-
+senschaftlergruppen. Als Beispiele seien hier die umfangreichen Projekte
+zum Klimawandel, zur Genforschung, zur Aidsforschung, zur Kernenergie-
+nutzung und zur physikalischen Grundlagenforschung genannt.
+
+
+Der Austausch von wissenschaftlichen Daten, Ergebnissen und Informatio-
+nen über das Internet lässt die möglicherweise große geographische Entfer-
+nung von wissenschaftlichen Einrichtungen auf ein Minimum reduzieren. Das
+gleiche gilt in abgeschwächter Form auch für die Tatsache, dass ein Wissen-
+schaftler heute mit relativ wenig Geld zu nahezu jeden Punkt der Erde fliegen
+kann.
+
+
+Junge Wissenschaftler sind mit sozialen Diensten wie Facebook oder YouTu-
+be aufgewachsen und stehen dadurch Kollaborationen im Allgemeinen sehr
+viel offener gegenüber als dies manchmal bei Wissenschaftlern der älteren
+Generation der Fall ist.
+
+
+Wissenschaftliche Kollaboration hat unterschiedliche Ausprägungen. Es kann sich
+dabei um die lose Zusammenarbeit zweier Wissenschaftler handeln oder aber auch
+um ein multinationales Forschungsprojekt, wie sie zum Beispiel am European Orga-
+nization for Nuclear Research (CERN) in der Schweiz durchgeführt werden, einer Ein-
+richtung, bei der sich 20 Mitgliedstaaten finanziell und personell beteiligen. [Shrum
+et al. 2007] unterscheidet vier Typen von wissenschaftlicher Kollaboration:
+
+
+Bürokratische Kollaboration – Bürokratische Kollaboration ist wie der Name
+schon nahelegt durch hierarchische Autoritäten, geschriebene Regeln, for-
+malisierte Verantwortung und spezialisierte Arbeitsteilung gekennzeichnet.
+Diese Form der Kollaboration kennzeichnet in der Regel komplexe wissen-
+schaftliche Projekte.
+
+
+Führerlose Kollaboration – Führerlose Kollaboration ist wie bürokratische
+Kollaboration formalisiert, allerdings fehlt eine hierarchische Autorität, z.B.
+ein ausgezeichneter Wissenschaftler, der die Rolle des Teamleiters über-
+nimmt.
+
+
+Nicht-spezialisierte Kollaboration – Nicht-spezialisierte Kollaboration ist das
+Komplement zur führerlosen Kollaboration. Es gibt zwar eine hierarchische
+Autorität, eine spezialisierte Arbeitsteilung wie in der bürokratischen Kolla-
+boration existiert aber nicht.
+
+
+Partizipatorische Kollaboration – Partizipatorischer Kollaboration fehlt jede
+Arbeitsteilung und alle weiteren Merkmale der bürokratischen Kollaboration.
+Es arbeite also eine Gruppe von Spezialisten ohne nennenswerte Formalis-
+
+
+Kollaboratives Schreiben (KS)
+
+
+men und ohne hierarchische Autoritäten zusammen. Als Beispiel dient Teil-
+chenphysik-Projekt gegen Ende des Kalten Krieges: die beteiligten US-
+amerikanischen und sowjetischen Forscher konnten trotz der erheblichen
+Unterschiede in Ideologie und kulturellem Hintergrund wissenschaftliche
+Ideen und Kritik ohne nennenswerte Hindernisse austauschen.
+
+
+In einem Punkt ähneln sich jedoch alle wissenschaftliche Kollaborationen: Die Er-
+gebnisse müssen angemessen publiziert werden, ein Vorgang, der in der Regel auf
+eine Textkollaboration hinausläuft. Und genau dafür werden passende Software-
+Werkzeuge benötigt. Die von [Shrum et al. 2007] durchgeführte Typisierung weist
+dabei bereits auf organisatorische Rahmenbedingungen für kollaboratives Schrei-
+ben hin, die in Kapitel 2.4 weiter formalisiert werden.
+
+
+2.3 Textkollaboration in Unternehmen
+
+
+2.3.1 Beispiel
+
+
+Im Jahre 2007 war ich selbst an einem Projekt beteiligt, bei dem zwei Firmen ge-
+meinsam an einer europaweiten Ausschreibung für die Entwicklung einer Software
+für öffentliche Behörden teilgenommen haben. In diesem Zusammenhang wurde
+ein mehrere hundert Seiten großes Angebot, bestehend aus rechtlichen, techni-
+schen wie auch finanziellen Ausführungen, erstellt. Da kein Einzelautor die nötigen
+Kompetenzen für alle Bereiche des Angebotstextes hatte, musste die Arbeit auf
+beide Firmen bzw. auf mehrere Autoren aufgeteilt werden. Da zudem die Zeit für
+die Erstellung des Angebots begrenzt war, musste parallel am Text gearbeitet wer-
+den. Der praktizierte Workflow gestaltete sich wie folgt:
+
+
+Es wurde zunächst eine sogenannte Clearing-Stelle, bestehend aus zwei Au-
+toren, die keine wesentlichen inhaltlichen Beiträge verfassen sollten, einge-
+richtet.
+
+
+Diese Clearing-Stelle bereitete in Absprache mit allen anderen Autoren ein
+minimales Grundgerüst für das resultierende Gesamtdokument vor. Dieses
+minimale Grundgerüst bestand aus einem vorläufigen Inhaltsverzeichnis,
+Platzhaltern für die einzelnen Kapitel sowie einigen wenigen bereits gefüll-
+ten Kapiteln (z.B. rechtliche Textpassagen, die von älteren Angebotstexten
+einfach übernommen wurden).
+
+
+Anschließend wurde untereinander abgesprochen, welche Autoren welche
+Kapitel zu schreiben haben. Dies wurde direkt im Text hinter den Kapitel-
+überschriften temporär vermerkt.
+
+
+Das aktuelle Gesamtdokument wurde nun per E-Mail an alle Autoren ver-
+schickt. Als Textverarbeitung wurde damals Microsoft Word 2003 eingesetzt.
+
+
+Jeder Autor schrieb nun innerhalb des Gesamtdokuments die Kapitel, für die
+er verantwortlich war und schickte das geänderte Gesamtdokument zu ei-
+
+
+Kollaboratives Schreiben (KS)
+
+
+nem vorher abgesprochenen Zeitpunkt per E-Mail zurück an die Clearing-
+Stelle.
+
+
+Die Clearing-Stelle synchronisierte alle geänderten Texte in einem neuen Ge-
+samtdokuments, das wiederum an alle Autoren per E-Mail versendet wurde,
+damit sie weiter an ihren Kapiteln arbeiten konnten.
+
+
+In der Zeit zwischen dem Einsammeln der geänderten Texte und dem Vertei-
+len des synchronisierten Gesamtdokumentes durften keine weiteren Texte
+geschrieben werden.
+
+
+Dieser Zyklus von Schreiben, Einsammeln, manuellem Synchronisieren und
+erneutem Verteilen des Textes wurde so lange wiederholt, bis der Text in-
+haltlich seine endgültige Fassung erreicht hatte.
+
+
+Der Zyklus wurde durch regelmäßige persönliche Treffen unterbrochen, bei
+denen möglichst alle Autoren anwesend waren, um den bereits geschrieben
+Teil des Angebots gemeinsam am Bildschirm durchzugehen. Bei dieser Gele-
+genheit wurde bei Bedarf auch die Kapitelstruktur geändert oder die Ver-
+antwortlichkeit unter den Autoren neu aufgeteilt.
+
+
+Die Kollaboration unter den Autoren hat gut funktioniert, trotzdem muss im Rück-
+blick der gesamte Workflow aus meiner Sicht kritisch betrachtet werden.
+
+
+Die regelmäßige Textsynchronisation per E-Mail und Clearing-Stelle hat un-
+nötige Zeit gekostet.
+
+
+Der Clearing-Stelle sind bei der manuellen Synchronisation öfters Fehler un-
+terlaufen, die unter anderem damit zu erklären sind, dass beide Autoren kei-
+nen wirklichen inhaltlichen Bezug zum Text gehabt haben.
+
+
+Es gab keinen ausgewiesenen Projektleiter, der sich für Stil oder Layout des
+Gesamttextes verantwortlich gezeichnet hat. Jeder Autor hat darauf ver-
+traut, dass seine Kollegen ihren Teil schon richtig schreiben werden. Im re-
+sultierenden Gesamttext konnte man daher auch sehr gut die zum Teil sehr
+unterschiedlichen Schreibstile der einzelnen Autoren wiedererkennen, was
+in der Sache kein Nachteil (ein Angebot ist kein Prosatext) aber aus Sicht ei-
+ner einheitlichen Außendarstellung doch stark zu bemängeln war.
+
+
+Gegen Ende des Schreibens kam es öfters vor, dass nicht ganz klar war, wel-
+che Version des Gesamtdokumentes denn nun die richtige Version ist. Ein
+Zustand, der sich oftmals erst durch ein Telefonat bzw. nach sorgfältigem
+Durchsuchen und Lesen der sich angesammelten E-Mail-Korrespondenz auf-
+gelöst hat.
+
+
+Insgesamt lässt sich jedoch sagen, dass zum damaligen Zeitpunkt keine Alternative
+zu der beschriebenen Art und Weise der Texterstellung zur Diskussion stand.
+
+
+Kollaboratives Schreiben (KS)
+
+
+2.3.2 Kollaboration in Unternehmen
+
+
+Je größer Unternehmen sind, desto größer ist der Dokumentationsaufwand inner-
+halb eines Unternehmens. Beispiele für umfangreiche Textpublikationen sind u.a.:
+
+
+Werbematerial (z.B. Kataloge, Broschüren)
+
+
+Produktdokumentationen (z.B. Benutzerhandbücher, Spezifikationen)
+
+
+Vorgaben durch Zertifizierungen (z.B. Prozessdokumentationen)
+
+
+Knowledge–Management (z.B. Berichte, Analysen)
+
+
+Ausführliche Angebote (z.B. Ausschreibungen, Wettbewerbe)
+
+
+Es ist unmittelbar klar, dass diese Textumfänge nicht von einem oder einigen weni-
+gen Autoren erarbeitet werden kann. Dem einzelnen fehlt neben der Zeit oft auch
+das Wissen (z.B. bei Produktspezifikationen) oder das Können (z.B. bei zielgrup-
+pengerechten Formulieren von Werbetexten), um geforderte Text schreiben zu
+können.
+
+
+Eine weitere Dimension erfährt die Kollaboration in Unternehmen durch zwei weite-
+re Aspekte:
+
+
+Bedingt durch die Globalisierung agieren Mitarbeiter größerer Unternehmen
+oft über den Globus verteilt in unterschiedlichen Ländern und Zeitzonen.
+
+
+Bedingt durch die zunehmende Komplexität in der Technik schließen sich
+immer häufiger Unternehmen zu Partnernetzwerken zusammen, um bei-
+spielsweise die Entwicklungskosten neuer Produkte untereinander zu teilen.
+
+
+Beides hat unmittelbare Auswirkung auf die Komplexität von Kollaboration in Un-
+ternehmen. Dies fängt damit an, dass multinationale Unternehmen sich zunächst
+einmal auf eine gemeinsame Sprache (in der Regel Englisch) einigen müssen und
+endet nicht selten in der Frage, welche kollaborativen Software-Werkzeuge für eine
+effektive Zusammenarbeit am geeignetsten sind.
+
+
+Auch wenn der Schwerpunkt dieser Arbeit auf das kollaborative Erstellen wissen-
+schaftlicher Texte liegt, soll diese kleine Exkursion zeigen, dass Kollaboration bei
+weitem nicht auf den wissenschaftlichen Bereich beschränkt ist.
+
+
+2.4 Taxonomie
+
+
+[Lowry et al. 04] haben sich in ihrem Artikel „Building a Taxonomy and Nomencla-
+ture of Collaborative Writing to Improve Interdisciplinary Research“ einer große
+Anzahl theoretischer Arbeiten zum Thema kollaboratives Schreiben angenommen,
+um daraus eine möglichst allgemeingültige Taxonomie zu entwickeln. Diese wird im
+Folgenden vorgestellt und diskutiert.
+
+
+Kollaboratives Schreiben (KS)
+
+
+2.4.1 Was ist kollaboratives Schreiben?
+
+
+Der Begriff kollaboratives Schreiben ist eine direkte Übersetzung des englischen Be-
+griffs Collaborative Writing (CW), der in [Lowry et al. 04] wie folgt definiert wird:
+
+
+„CW is an iterative and social process that involves a team focused on a com-
+mon objective that negotiates, coordinates, and communicates during the cre-
+ation of a common document.“
+
+
+Kollaboratives Schreiben (KS) hat das Ziel, ein Dokument gemeinsam in einer Grup-
+pe zu verfassen. Je größer die Gruppe ist und je komplexer das Dokument sein soll,
+desto größer ist der Aufwand, diese Arbeit zu delegieren. Die Gruppenmitglieder
+können sich u.a. durch ihre Qualifikation, ihre Verfügbarkeit, ihre Motivation bzw.
+ihre Teamfähigkeit sehr stark voneinander unterscheiden. Es ist zum Beispiel ein
+Unterschied, ob sich alle Gruppenmitglieder bereits seit langem kennen oder sich
+vorher noch nie gesehen haben. Es ist auch ein Unterschied, ob alle Gruppenmit-
+glieder am selben Ort zusammenarbeiten oder über Ländergrenzen und Zeitzonen
+hinweg verteilt sind. KS ist ein komplexer Prozess, bei dem das eigentliche Schrei-
+ben des Textes nur einen Teilaspekt ausmacht. Vor, nach und während des Schrei-
+bens müssen sich alle Gruppenmitglieder stets untereinander abstimmen und syn-
+chronisieren.
+
+
+2.4.2 KS-Strategien
+
+
+Die technisch gesehen einfachste Möglichkeit, einen Text gemeinsam zu verfassen,
+ist es, ein Gruppenmitglied als alleinigen Autor zu bestimmen, der den gesamten
+Text schreibt. Alle anderen Gruppenmitglieder unterstützen ihn dabei (z.B. durch
+Informationsbeschaffung, als Diskussionspartner, etc.).
+
+
+Abbildung 1: Texterstellung durch Einzelautor
+
+
+Der Vorteil liegt in der effizienten Umsetzung (keine Textsynchronisation innerhalb
+der Gruppe ist nötig) und in der resultierenden Konsistenz des Textes (der Stil nur
+eines Autors). Mit zunehmendem Umfang des Textes ist diese spezielle Form von
+KS schon aus Zeitgründen nicht mehr durchführbar. Zudem besteht die Gefahr, dass
+der Autor nicht wirklich den gemeinsamen Konsens in der Gruppe in seinem Text
+reflektiert.
+
+
+Kollaboratives Schreiben (KS)
+
+
+Bei einer sequenziellen Texterstellung fängt ein Autor an zuschreiben und gibt seinen
+Text zu einem späteren Zeitpunkt weiter an den nächsten Autor. Die Vorgehenswei-
+se wird so lange wiederholt, bis jeder Autor der Gruppe seinen Teiltext geschrieben
+hat.
+
+
+Abbildung 2: Sequentielle Texterstellung
+
+
+Der Vorteil dieser Strategie liegt ebenfalls in einer einfachen organisatorischen Um-
+setzung, zudem kann die Texterstellung auf beliebig viele Autoren verteilt werden.
+Der Nachteil ist in der nicht vorhandenen Parallelität des Schreibens zu sehen. Damit
+dauert die Erstellung eines Textes theoretisch genauso lange wie die Erstellung
+durch einen gemeinsam bestimmten Einzelautor. Hinzu kommen noch eine Reihe
+weiterer Probleme:
+
+
+Autoren können nach Weitergabe des Textes an den ihnen folgenden Autor
+nicht mehr auf Meinungsänderungen oder neue Fakten reagieren.
+
+
+Jeder Autor kann die Teiltexte seiner Vorgänger verändern oder löschen,
+wenn dies nicht durch technische Maßnahmen unterbunden wird.
+
+
+Ein einzelner Autor kann durch unkooperatives Verhalten den gesamten Tex-
+terstellungsprozess aufhalten oder sogar ganz zum Erliegen bringen.
+
+
+Der Autor des letzten Teiltextes wird sehr stark durch die bereits
+vorhandenen Textteile beeinflusst, während der Autor des ersten Textteils
+frei von derartigen Einflüssen ist.
+
+
+Bei der parallelen Texterstellung schreiben mehrere Autoren zeitgleich am Gesamt-
+text. In der Regel wird dazu der Text in voneinander unabhängige Teiltexte aufge-
+teilt, die von jedem Autor eigenverantwortlich erstellt werden. Ein ausgewiesenes
+Teammitglied spielt als Koordinator die Teiltexte in ein Gesamtdokument zusam-
+men (diese Funktion lässt sich theoretisch auch automatisieren).
+
+
+Kollaboratives Schreiben (KS)
+
+
+Der Vorteil dieser Strategie liegt in der erheblichen Zeitersparnis, da mehrere Auto-
+ren gleichzeitig am Text arbeiten. Zudem könne neue Erkenntnisse während des
+Schreibens den anderen Autoren mitgeteilt werden, so dass sie eventuell darauf in
+ihren Texten reagieren können.
+
+
+Die Nachteile liegen in der Schwierigkeit, einen Text unter den Autoren adäquat
+aufzuteilen. Es ist nicht immer klar, wo genau die Grenzen zwischen den Teiltexten
+zu ziehen sind. Auch werden die unterschiedlichen Kompetenzen, Fähigkeiten oder
+Zeitkonten kaum berücksichtigt. Zudem besteht die Gefahr redundanter Texterstel-
+lung, wenn sich Autoren nicht ausreichend untereinander absprechen.
+
+
+Eine Möglichkeit, diese Probleme zu minimieren, ist es, die unterschiedlichen Fähig-
+keiten einzelner Gruppenmitglieder mehr in Betracht zu ziehen und eine Rollenauf-
+teilung anstatt einer Textaufteilung vorzunehmen. So könnte ein Teammitglied den
+eigentlichen Text schreiben, ein anderes Mitglied für Grafiken, Formeln und Tabel-
+len verantwortlich sein, weitere Mitglieder könnten die Rolle des Editors, Layouters
+oder Gutachters übernehmen.
+
+
+Abbildung 4: Parallele Texterstellung durch Rollenverteilung
+
+
+Der Vorteil der rollenbasierten parallelen Texterstellung liegt in einem wesentlich
+flexibleren Gesamtprozess, der die unterschiedlichen Fähigkeiten der Teammitglie-
+der berücksichtigt, während alle ihre Arbeit mehr oder weniger gleichzeitig ausfüh-
+
+
+Kollaboratives Schreiben (KS)
+
+
+ren können. Gleichzeitig wird auch die Kommunikation unter den Mitgliedern ge-
+fördert, weil alle sehr viel mehr voneinander abhängig sind.
+
+
+Der Nachteil ist, dass eine solche Strategie nicht mehr mit herkömmlichen Textver-
+arbeitungssystemen realisiert werden kann. Es wird vielmehr ein System benötigt,
+das eine adäquate Textsynchronisation unter allen Beteiligten ermöglicht.
+
+
+Bei einer reaktiven Texterstellung gibt es keine unmittelbaren organisatorischen
+Vorgaben für das gemeinsame Schreiben eines Textes. Alle Autoren haben vielmehr
+unmittelbar Zugriff auf alle Texte ihrer Mitautoren und können unmittelbar darauf
+reagieren und ihre eigenen Texte schreiben.
+
+
+Der Vorteil liegt in einer kreativen Schreibform ohne organisatorische Restriktionen.
+Der unmittelbare Zugriff auf alle Texte erhöht die Kommunikationsbereitschaft. Die
+Autoren können somit sehr schnell auf Konsensänderungen in der Gruppe reagieren
+und bekommen unmittelbar Rückmeldung zu ihren eigenen Texten.
+
+
+Der Vorteil kann auch gleichzeitig zum Nachteil werden. Ohne organisatorischen
+Rahmen kann es sehr schnell zu sozialen Spannungen in der Gruppe kommen, wenn
+beispielsweise ein Autor ungefragt den Text eines anderen Autors ändert oder
+löscht. Zudem ist diese Strategie nur unter gemeinsamer Nutzung eines für diesen
+Zweck spezialisierten Software-Systems möglich.
+
+
+2.4.3 KS-Aktivitäten
+
+
+Ein Text wird in der Regel nicht einfach nur herunter geschrieben. Das eigentliche
+Schreiben ist nur eine von vielen begleitenden Aktivitäten, die innerhalb eines KS-
+Prozesses stattfinden. Typische Aktivitäten sind in der folgende Tabelle aufgleistet:
+
+
+Kollaboratives Schreiben (KS)
+
+
+Tabelle 1: Typische Aktivtäten
+
+
+Diese Aktivitäten müssen nicht notwendigerweise sequentiell aufeinander folgen.
+So können bereits fertiggestellte Teiltexte einer Nachprüfung unterzogen werden,
+ohne dass der Gesamttext fertiggestellt ist. Auch sind nicht notwendigerweise alle
+Aktivitäten notwendig. Ist beispielsweise der Inhalt des Textes bereits vorgegeben,
+können die ersten beiden Aktivitäten des Ideen sammeln und filtern durchaus weg-
+fallen.
+
+
+2.4.4 KS-Textkoordination
+
+
+Ein KS-Prozess muss wie jeder von Menschen ausgeführte Prozess beaufsichtigt
+werden. Zeitliche (z.B. Dead-Line), technische (z.B. Software-Probleme) und zum
+Teil auch soziale (z.B. Autor liefert keinen Input) Probleme müssen erkannt und ge-
+löst werden. Dazu muss festgelegt werden, wer die Oberaufsicht über den Gesamt-
+text hat.
+
+
+Bei einer zentralen Textkoordination ist ein ausgewiesenes Gruppenmitglied ver-
+antwortlich für den Gesamttext. Diese Art der Koordination eignet sich sehr gut für
+alle KS-Strategien mit Ausnahme der reaktiven Texterstellung.
+
+
+Kollaboratives Schreiben (KS)
+
+
+Bei einer wechselnden Textkoordination übernimmt zunächst ein Teammitglied die
+zentrale Koordination für den Gesamttext, gibt diese aber nach einer bestimmten
+Zeit an ein anderes Teammitglied ab. Diese Art der Koordination eignet sich sehr gut
+für die sequentielle Texterstellung.
+
+
+Abbildung 7: Wechselnde Textkoordination
+
+
+Bei einer unabhängigen Textkoordination koordiniert jedes Teammitglied einen dis-
+junkten Teiltext. Diese Art der Koordination eignet sich sehr gut für die parallele
+Texterstellung durch Textaufteilung.
+
+
+Abbildung 8: Unabhängige Textkoordination
+
+
+Bei einer verteilten Textkoordination koordinieren alle Teammitglieder gleichberech-
+tigt den Gesamttext. Diese Art der Koordination eignet sich sehr gut für die reaktive
+Texterstellung.
+
+
+Abbildung 9: Verteilte Textkontrolle
+
+
+Kollaboratives Schreiben (KS)
+
+
+2.4.5 KS-Rollen
+
+
+In einem KS-Prozess nehmen Gruppenmitglieder unterschiedliche Rollen ein. Typi-
+sche Rollen sind in der folgenden Tabelle aufgelistet:
+
+
+Tabelle 2: Typische Rollen
+
+
+Diese Liste lässt sich natürlich beliebig erweitern. Die möglichen Rollen, welche die
+Gruppenmitglieder einnehmen können, hängen unter anderem ab von der gewähl-
+ten KS-Strategie, der Größe und der Zusammensetzung der Gruppe sowie der Kom-
+plexität des Textes.
+
+
+2.4.6 KS-Arbeitsmodi
+
+
+Der Arbeitsmodus innerhalb eines KS-Prozesses wird durch zwei Parameter be-
+stimmt:
+
+
+1. die physikalische Nähe und
+
+
+2. die Synchronität der Arbeit.
+
+
+Es ist ein Unterschied, ob sich alle die Gruppenmitglieder im selben Raum aufhalten
+oder sich über das Gebäude, über verschiedene Städte oder Länder verteilen. Es ist
+
+
+Kollaboratives Schreiben (KS)
+
+
+auch ein Unterschied, ob alle Gruppenmitglieder gleichzeitig (synchron) oder zeit-
+lich versetzt (asynchron) arbeiten.
+
+
+Sind alle Gruppenmitglieder zur selben Zeit am selben Ort, gestaltet sich die Kom-
+munikation am einfachsten (miteinander sprechen), allerdings ist die Koordinierung
+am restriktivsten (nicht jeder kann immer zur selben Zeit am gleichen Ort sein, ins-
+besondere dann, wenn Autoren in verschiedene Zeitzonen arbeiten). Können Grup-
+penmitglieder zur selben Zeit an unterschiedlichen Orten arbeiten, erleichtert dies
+die Koordinierung, gleichzeitig aber muss die Kommunikation durch Telefon oder
+Chat ersetzt werden. Bei einer asynchronen Zusammenarbeit verlagert sich auch die
+Kommunikation auf asynchrone Werkzeuge wie beispielsweise E-Mail. Dabei ist es
+im Prinzip unerheblich, ob alle Gruppenmitglieder am selben oder an unterschiedli-
+chen Orten arbeiten.
+
+
+2.4.7 Diskussion
+
+
+Eine ganz ähnliche Taxonomie mit fast den gleichen Begriffen wurde schon 1992 in
+einer älteren Studie aufgestellt [Posner et al. 92]. Es soll nicht unerwähnt bleiben,
+dass jene Studie und damit indirekt auch die hier vorgestellte Taxonomie durchaus
+kritisch gesehen werden kann. In [Noël et al. 04] wird beispielsweise darauf hinge-
+wiesen, dass die Grundlage der älteren Studie auf nur wenigen Interviewteilneh-
+mern basiert (es waren zehn) und somit die Allgemeingültigkeit der herausgearbei-
+teten Charakteristiken in Frage gestellt werden muss. Auf der anderen Seite spricht
+die Tatsache, dass diese Studie auch mehr als 10 Jahre nach ihrem Erscheinen immer
+noch eine zentrale Inspiration neben all den parallel herangezogenen Veröffentli-
+chungen darstellt, durchaus für ihre Qualität. Tatsache ist auch, dass die meisten
+anderen Studien und Artikel gar nicht erst den Versuch unternehmen, ein alternati-
+ves Vokabular zu entwickeln.
+
+
+Natürlich ist unmittelbar klar, dass [Lowry et al. 04] keinen Anspruch auf Vollstän-
+digkeit oder Allgemeingültigkeit erheben können. So sind beispielsweise die einzel-
+nen KS-Strategien nicht exklusiv zu betrachten. Sie können im Laufe eines KS-
+Prozesses wechseln, und durch geschickte Verknüpfung zweier Strategien ergeben
+sich wiederum weitere, wesentlich komplexere Strategien. Auch die aufgelisteten
+KS-Rollen und KS-Phasen sind beliebig erweiterbar.
+
+
+Kollaboratives Schreiben (KS)
+
+
+Trotzdem, diese vorgestellte Taxonomie besitzt zwei Vorteile: Zum einen erleichtert
+die begriffliche Definition der unterschiedlichen KS-Aspekten die weitere Diskussi-
+on. Zum anderen entsteht ein möglicher Referenzrahmen für die Analyse von KS-
+Software-Werkzeugen. Beispielsweise können derartige Werkzeuge dahingehend
+untersucht werden, ob sie vollständig oder nur teilweise die definierten KS-
+Strategien, KS-Phasen, KS-Rollen oder KS-Arbeitsmodi unterstürzen.
+
+
+2.5 Schlussbetrachtung
+
+
+Wissenschaftler aus unterschiedlichen Ländern arbeiten heute ganz selbstverständ-
+lich an gemeinsamen Forschungsprojekten. Multinationale Unternehmen haben
+ihre Forschungs- und Entwicklungsabteilungen rund um den Globus verteilt. Ort
+oder Zeit sind in der Regel keine entscheidenden Faktoren mehr für ein gemeinsa-
+mes Kollaborationsvorhaben, lediglich die Fähigkeiten der einzelnen Kollaborations-
+teilnehmer. Diese Asynchronität von Raum und Zeit (siehe KS-Arbeitsmodi) scheint
+mir in diesem Zusammenhang das größte Problem darzustellen. Wie stelle ich si-
+cher, dass zwei Menschen ihre Texte miteinander synchronisieren können, obwohl
+sie nie oder selten zur gleichen Zeit oder am selben Ort daran arbeiten? Das nächste
+Kapitel versucht eine Antwort darauf zu finden, in dem es einen Blick auf die vor-
+handenen Software-Werkzeuge zur Textkollaboration wirft.
+
+
+Darüber hinaus scheint mir jene Asynchronität noch zwei weitere Dimensionen zu
+besitzen: Eine soziale und eine kulturelle. Wenn zwei oder mehr Menschen zusam-
+menarbeiten, haben diese in der Regel unterschiedliche Vorstellung, wie das ge-
+meinsame Projekt geplant und ausgeführt werden soll. Im Idealfall kommuniziert
+man miteinander und einigt sich auf die notwendigen Gemeinsamkeiten. Dies ist
+jedoch nicht immer der Fall. Neben offenen Streit kann es noch eine Vielzahl von
+unausgesprochenen Konflikten geben, die einen unmittelbaren (meist negativen)
+Einfluss auf eine Kollaboration haben können. Beispiele hierfür sind persönliche
+Probleme (Gesundheit, Unlust, Überarbeitung), Neid (Verantwortung, Bezahlung)
+oder Überforderung (technisch, inhaltlich). Dies ist der soziale Aspekt.
+
+
+Wenn eine Kollaboration über Sprach- und Kulturgrenzen hinausgeht, kann noch ein
+kultureller Aspekt hinzukommen. Unterschiedliche Sprachen, Traditionen und Aus-
+bildungen können sehr schnell zu Missverständnissen führen, die eine Kollaboration
+in ihrer Effizienz beeinflussen können. Wenn beispielsweise die sprachliche Kom-
+munikation nicht mehr in der eigenen Muttersprache geführt werden kann oder gar
+mit Hilfe eines Übersetzers geführt werden muss, können viele Informationen ver-
+loren gehen. Und gerade in einer Textkollaboration ist die Sprache doch das ent-
+scheidende Ausdrucksmittel.
+
+
+Beide Aspekte sollen nicht weiter in dieser Arbeit thematisiert werden, werden aber
+auch nicht gänzlich ausgeblendet. So kann beispielsweise der aus Neid entstehende
+Drang nach Sabotage durch organisatorische Maßnahmen wie eindeutige Identifi-
+zierung, eingeschränktem Zugriff oder Änderungsprotokollierung weitestgehend
+neutralisiert werden.
+
+
+KS-Software
+
+
+3 -
+
+
+3.1 Einführung
+
+
+Der Computer ist heute das dominierende Werkzeug zum Verfassen von Texten
+jeglicher Art. Mit der Entwicklung der Hardware ging auch die Entwicklung der
+Software, sogenannter Textverarbeitungssysteme, einher. Waren es am Anfang
+noch einfache Texteditoren, welche lediglich die Eingabe und das Zusammenfügen
+von Buchstaben zu Wörtern, Sätzen und Texten ermöglichten, bieten heutige Soft-
+ware-Lösungen umfangreiche Möglichkeit, Texte grafisch ansprechend zu gestalten
+und mit Medienformaten wie Grafiken und Fotos anzureichen. Aus diesem Grund
+hat sich das Bild der automatisierten Textverarbeitung über die Jahre geändert, so
+dass zunächst eine Präzisierung dieses zentralen Begriffes angebracht erscheint, die
+man wie folgt vornehmen könnte:
+
+
+Ein Textverarbeitungssystem ist eine Software zum Erstellen, Bearbeiten und
+Organisieren von Texten jeglicher Art. Dies schließt auch die grafische Aufberei-
+tung durch Textformatierung und das Verknüpfen mit Medienformaten wie
+Grafiken, Fotos, Animationen und Videos mit ein.
+
+
+Die heutige Vielfallt von Textverarbeitungssystemen bedarf zunächst einer Syste-
+matisierung, die im Folgenden vorgenommen werden soll. Ein möglicher Ansatz ist
+es, Textverarbeitungssysteme auf Grund ihrer Kernfunktionalität zu klassifizieren:
+
+
+Texteditoren – Texteditoren ermöglichen das Erstellen und Editieren eines
+Textes unter Negierung jeglicher Metadaten (wie z.B. grafischen oder logi-
+schen Formatierungsanweisungen). Die elementare Einheit, der einzelne
+Buchstabe bzw. das einzelne Zeichen, gruppiert zu Wörtern ist zugleich auch
+die höchste Form der Abstraktion. Texteditoren reduzieren das Schreiben
+von Texten auf die reine Zeicheneingabe. Ein bekanntes Beispiel dafür ist die
+Anwendung „Editor“ (englisch: „Notepad“) unter den heute gängigen
+Windows-Betriebssystemen.1
+
+
+Textsatzsysteme – Ein Textsatzsystem ist eine Software, die einen Text au-
+tomatisiert in ein gewünschtes Ausgabeformat überführt. Anstatt konkrete
+Aussagen über das endgültige Layout zu machen (Schriftart, Schriftgröße,
+Schriftstil etc.) wird der Text logisch formatiert (Überschrift, Zitat, Formel,
+etc.). Dadurch entsteht eine höhere Abstraktionsebene, in der strikt zwi-
+schen Inhalt und Layout unterschieden wird. Bekannte Beispiele für Text-
+satzsysteme sind LaTeX (www.latex-project.org) und TUSTEP
+(www.tustep.uni-tuebingen.de).
+
+
+FOOTNOTE:1 Da die Anwendung „Editor“ eine doch recht rudimentäre Funktionalität aufweist, gibt es eine nahe-
+zu unüberschaubare Anzahl an Alternativen, die das Grundkonzept neu interpretieren (z.B. Note-
+pad++, Notepad2, usw.).
+
+
+KS-Software
+
+
+WYSIWYG-Textsysteme – Die Abkürzung WYSIWYG steht für das englische
+„What You See Is What You Get“, welches Textverarbeitungssysteme kenn-
+zeichnet, bei denen der Autor bereits während der Texterstellung auf dem
+Bildschirm das grafische Endergebnis sieht. Änderungen jeglicher Art (inhalt-
+lich wie gestalterisch) werden unmittelbar umgesetzt. Wird beispielsweise
+der Zeilenabstand innerhalb eines Absatzes verändert, so lässt sich das Er-
+gebnis unmittelbar auf dem Bildschirm nachvollziehen. Bei WYSIWYG-
+Systemen wird oft noch zwischen WYSIWYG-Textverarbeitungssystemen
+und Desktop-Publishing-Systemen (DTP-Systemen) unterscheiden. DTP-
+Systeme unterscheiden sich von Textverarbeitungssystemen dahingehend,
+dass sie ihren Schwerpunkt eher in der punktgenauen grafischen Gestaltung
+eines Textes in Verbindung mit Medienformaten wie Grafiken und Fotos als
+in der effizienten Organisation und Verarbeitung großer Texte sehen. Bei-
+spiele für WYSIWYG-Textverarbeitungssysteme wären Microsoft Word, O-
+pen Office Writer und Google Text. Bekannte Beispiele für DTP-Systeme sind
+Adobe InDesign und QuarkExpress.
+
+
+Die Abgrenzung zwischen den Textverarbeitungssystemen kann in heutiger Zeit als
+fließend betrachten werden. So sind beispielsweise Satzsysteme in der Regel auf
+das Vorhandensein von Texteditoren angewiesen, da sie oft keine eigene bzw. eine
+nur sehr unzureichende Editierkomponente besitzen. Auch besitzen moderne
+WYSWIG-Textverarbeitungssysteme genug Funktionalität, um Inhalt und Layout
+sauber zu trennen. Umgekehrt existieren mittlerweile Aufsätze für Satzsysteme, die
+dem Autor das Gefühl einer WYSIWYG-Textverarbeitung vermitteln.
+
+
+Diese traditionelle Klassifizierung von Textverarbeitungssystemen hat in den letzten
+Jahren eine zusätzliche Dimension erhalten. Unter dem Stichwort „Web 2.0“ hat
+sich das Internet von einem reinen Informationsmedium hin zu einem Kollaborati-
+onsmedium weiterentwickelt. Diese Entwicklung hat auch bei der Textverarbeitung
+nicht halt gemacht, so dass mir die folgende zusätzliche Klassifizierung sinnvoll er-
+scheint:
+
+
+Offline-Textverarbeitung – Offline bedeutet, dass ein Computer keine aktive
+Netzwerkverbindung zu anderen Computern besitzt, somit also keine Kom-
+munikation mit anderen Computern möglich ist. Eine Textverarbeitung, die
+unter diesen Rahmenbedingungen operieren kann ist eine Offline-
+Textverarbeitung. Beispiele hierfür wären Microsoft Word oder Open Office
+Writer.
+
+
+Online-Textverarbeitung – Online bedeutet, dass ein Computer eine oder
+mehrere aktive Netzwerkverbindungen zu anderen Computern besitzt. Die
+Art des Netzwerks kann dabei von einem einfachen lokalen Netzwerk, bei
+dem zwei oder mehrere Computer zusammengeschaltet werden, bis hin zu
+einer direkten Anbindung an das Internet reichen. Entscheidend dabei ist,
+dass die aktive Netzwerkverbindung Voraussetzung für den Einsatz der
+Textverarbeitung ist. Beispiele für Online- Textverarbeitungen wären Google
+Text und Microsoft Web Word.
+
+
+KS-Software
+
+
+Auch hier ergibt eine nähere Betrachtung, dass diese Abgrenzung oft rein theoreti-
+scher Natur ist. So muss zunächst unterscheiden werden, ob die gesamte Anwen-
+dung als Online-Dienst zur Verfügung steht (z.B. Google Text) oder lediglich der
+Text online gehalten wird (z.B. Microsoft Word 2010). Zudem besitzen manche
+Textverarbeitungssysteme die Fähigkeit zwischen einem Online- und Offline-Modus
+wechseln zu können (z.B. Offline-Funktionalität von Google Text mit Hilfe von
+Google Gears). Der entscheidende Punkt bei der Betrachtung von Textverarbei-
+tungssystemen jedoch ist, dass deren Online-Fähigkeit die Möglichkeit zur Kollabo-
+ration unter Einzelautoren eröffnet. Und genau diese software-technische Unter-
+stützung des kollaborativen Schreibens soll Thema der folgenden Kapitel sein.
+
+
+Kollaboratives Schreiben impliziert die Verfügbarkeit von passenden Textverarbei-
+tungssystemen. Der Frage, wie genau so eine Software auszusehen hat und was sie
+leisten soll, soll sich zunächst mit einem Überblick über aktuelle Textverarbeitungs-
+systeme und deren kollaborativen Fähigkeiten genähert werden. Anschließend wird
+ein Anforderungskatalog für kollaborative Textverarbeitungssysteme erstellt mit
+dessen Hilfe die beiden meiner Meinung nach interessantesten Vertreter der zuvor
+vorgestellten Textverarbeitungssysteme analysiert werden sollen.
+
+
+3.2 Kollaborative Textverarbeitungssysteme
+
+
+3.2.1 Klassische Textverarbeitung
+
+
+Gegenwärtig sind drei Software-Pakete für alle zugänglich und daher entsprechend
+weit verbreitet. Sie alle besitzen eine Textverarbeitung mit kollaborativen Fähigkei-
+ten, die im Folgenden vorgestellt werden:
+
+
+Microsoft Word 2010 ist ein umfangreiches kommerzielles Software-Paket
+der Firma Microsoft für die Betriebssysteme Microsoft Windows und Apple
+Mac OS X. Es besteht u.a. aus den Einzelanwendungen Word (Textverarbei-
+tung), Powerpoint (Präsentation) und Excel (Tabellenkalkulation).
+
+
+iWorks 09 ist ein kommerzielles Software-Paket der Firma Apple für das Be-
+triebssystem Apple Mac OS X. Es besteht aus den Einzelanwendungen Pages
+(Textverarbeitung), Keynote (Präsentation) und Numbers (Tabellenkalkulati-
+on).
+
+
+OpenOffice.org Version 3 ist ein frei verfügbares Open-Source-Software-
+Paket für die Betriebssysteme Microsoft Windows, Apple Mac OS X, Linux
+und zahlreiche Unix-Varianten. Es besteht aus den Modulen Writer (Textver-
+arbeitung), Math (Formeln), Calc (Tabellenkalkulation), Draw (Vektorgrafik),
+Impress (Präsentation) und Base (Datenbankoberfläche).
+
+
+Word, Pages und Writer erlauben alle drei die Gliederung eines Dokuments in ein
+Zentraldokument und in beliebig viele Filialdokumente. Ein Zentraldokument ist ein
+Container für eine bestimmte Anzahl voneinander getrennter Dateien, mit dem ein
+
+
+KS-Software
+
+
+aus mehreren Teilen bestehendes Dokument (z.B. ein Buch mit mehreren Kapiteln)
+erstellt und verwaltet werden kann.
+
+
+Word, Pages und Writer erlauben es, Änderungen an einem Text mit zu protokollie-
+ren. Damit kann jedes Gruppenmitglied jederzeit gelöschte, eingefügte oder ander-
+weitig bearbeitete Textstellen sichtbar machen. Geänderte Texte und Grafiken wer-
+den durch farbliche Markierungen hervorgehoben. Das Gruppenmitglied kann ent-
+scheiden, ob er die Änderungen übernimmt oder wieder verwirft. Werden Ände-
+rungen von mehreren unterschiedlichen Gruppenmitgliedern getätigt, werden diese
+durch Farbe und Namenskürzel unterschieden.
+
+
+Word, Pages und Writer erlauben es, einen Text mit Kommentaren zu versehen.
+Damit kann ein Gruppenmitglied den Text eines anderen Gruppenmitglieds mit No-
+tizen und Anmerkungen versehen. Diese werden in einer Sprechblase am Rand des
+Dokuments oder in einem Überarbeitungsfenster angezeigt. Werden Kommentare
+von mehreren unterschiedlichen Gruppenmitgliedern eingefügt, werden diese
+durch Farbe und Namenskürzel unterschieden.
+
+
+Word, Pages und Writer ermöglichen es, das aktuelle Dokument direkt per E-Mail an
+andere Gruppenmitglieder zu versenden.
+
+
+Word erlaubt einen gemeinsamen Zugriff auf Dokument über das Internetportal
+Office Live Workspace. Grundlage für den Austausch von Dokumenten sind soge-
+nannte Arbeitsbereiche. Jeder Arbeitsbereich besitzt einen Namen und kann belie-
+big viele Dokumente enthalten. Innerhalb eines Arbeitsbereichs können Dokumente
+wiederum hierarchisch in Ordnern organisiert werden. Der Besitzer eines Arbeitsbe-
+reichs hat nun die Möglichkeit den gesamten Arbeitsbereich, einzelne Dokumente
+oder seinen aktuellen Bildschirm anderen Gruppenmitgliedern freizugeben.
+
+
+Bei der Freigabe wird zwischen „Editoren“ und „Anzeigende Benutzer“ unterschie-
+den. „Editoren“ erhalten vollen Lese- und Schreibzugriff, können Inhalte löschen
+und mit Kommentaren versehen. „Anzeigende Benutzer“ erhalten lediglich Lesezu-
+griff und können Kommentare verfassen.
+
+
+Alle Aktivitäten (wer hat was und wann in einem Arbeitsbereich erstellt, geändert
+oder gelöscht) können jederzeit nachvollzogen werden. Auf Wunsch kann ein Grup-
+penmitglied bei jeder neuen Aktivität per E-Mail benachrichtigt werden.
+
+
+iWorks erlaubt den gemeinsamen Zugriff auf Dokumente über das Internetportal
+iworks.com. Vor der Veröffentlichung des Dokuments wird festgelegt, welche
+Gruppenmitglieder Zugriff erhalten sollen und in welcher Form sie Zugriff erhalten
+sollen. Standardmäßig kann das Dokument nur im Internet-Browser betrachtet
+werden. Alle Gruppenmitglieder werden automatisch per E-Mail darüber benach-
+richtigt, dass ein neues Dokument bereitsteht. Gruppenmitglieder können zusätz-
+lich beliebige Notizen hinterlegen. Je nach erteilter Berechtigung kann das Doku-
+ment auch auf den eigenen Rechner heruntergeladen und verändert oder mit
+Kommentaren versehen werden. Beim Herunterladen des Dokuments kann zusätz-
+lich zwischen den Formaten PDF, DOC oder RTF gewählt werden.
+
+
+KS-Software
+
+
+Dokumente können in Pages und Writer nicht parallel bearbeiten werden. Hat ein
+Gruppenmitglied beispielsweise ein Dokument zur Bearbeitung geöffnet und ein
+weiteres Gruppenmitglied möchte diese Datei ebenfalls aufrufen, erhält dieses ei-
+nen Warnhinweis und kann die betreffende Datei wahlweise nur mit Leserechten
+öffnen oder einen Hinweis erhalten, sobald die Datei wieder zur Verfügung steht
+
+
+Word erlaubt es dagegen mit zwei oder mehreren Benutzern auf einem gemeinsa-
+men Textdokument zu arbeiten. Dies setzt jedoch eine SharePoint-Infrastruktur
+voraus. SharePoint ist eine Server-Plattform zur Bereitstellen von Kollaborations-
+und Web-Publishing-Diensten der Firma Microsoft. Grundsätzlich gibt es zwei Mög-
+FOOTNOTE:lichkeiten, SharePoint nutzbar zu machen:
+
+
+1. Installation von SharePoint 2010 auf einem Server im Netzwerk oder Inter-
+net.
+
+
+2. Nutzung von SkyDrive, einem Internetdienst von Microsoft, der eine virtuelle
+Festplatte im Internet zur Verfügung stellt. Da SkyDrive auf der SharePoint-
+Infrastruktur aufbaut, kann dieser Dienst ebenfalls als Kollaborationsplatt-
+form genutzt werden. Die Nutzung von SkyDrive setzt voraus, dass alle Be-
+nutzer eine Windows-Live-ID$$$2$$$ besitzen.
+
+
+Möchten zwei oder mehr Benutzer gemeinsam an einem Dokument arbeiten, müs-
+sen sie zunächst wie folgt vorgehen:
+
+
+1. Ein Benutzer muss auf dem SharePoint-Server oder unter SkyDrive ein neues
+Dokument anlegen. Dies geschieht, in dem er ein neues oder bereits vorhan-
+denes lokales Dokument unter der gewünschten URL abspeichert.
+
+
+2. Anschließend fügt dieser Benutzer weitere Benutzer als Berechtigte zu die-
+sem Dokument hinzu. Er hat dabei die Wahl zwischen den Berechtigungen
+„Ansicht möglich“ und „Bearbeitung möglich“.
+
+
+Von diesem Zeitpunkt an können alle berechtigten Benutzer gemeinsam auf diesem
+Dokument arbeiten. Dabei stehen allen Benutzern folgende Möglichkeiten zur Ver-
+fügung.
+
+
+Jeder Benutzer sieht alle anderen aktiven Benutzer. Für jeden Benutzer wer-
+den sein Name und seine Kontaktdaten angezeigt. Weitere Optionen sind:
+
+
+o Unmittelbares Versenden einer E-Mail
+
+
+o Unmittelbares Starten einer Chat-Kommunikation
+
+
+o Unmittelbares Starten eines Telefonats
+
+
+FOOTNOTE:2 Das Anlegen einer Windows-Live-ID ist kostenlos und ermöglicht den Zugriff auf eine Reihe kosten-
+loser wie kostenpflichtiger Dienste von Microsoft. SkyDrive ist ein kostenloser Dienst.
+
+
+KS-Software
+
+
+FOOTNOTE:o Unmittelbare Planung eines Besprechungstermins
+
+
+Editiert ein Benutzer einen Absatz, wird dieser für andere Benutzer solange
+geblockt, bis dieser Absatz gespeichert wurde.
+
+
+Soll einem bestimmten Benutzer dauerhaft die Bearbeitung eines ganzen
+Abschnitts (z.B. eines Kapitels) nicht erlaubt werden, so kann dieser Benut-
+zer geblockt werden.
+
+
+Sobald ein Benutzer seine lokalen Änderungen speichert, werden diese auf
+den SharePoint-Server übertragen und in das zentrale Dokument eingespielt.
+Zuvor wird die vorherige Version des Dokuments gespeichert. Gleichzeitig
+werden die gespeicherten Änderungen aller anderen Benutzer lokal geladen.
+
+
+Tritt beim Speichern der lokalen Änderungen ein Konflikt auf, so wird der
+Benutzer drauf hingewiesen. Er hat nun die Möglichkeit, diese Konflikte ma-
+nuell aufzulösen. Dazu werden ihm alle Konflikte in einer Liste angezeigt. Der
+Benutzer hat nun für jeden Konflikt die Wahl zwischen „Annehmen“ oder
+„Ablehnen“ der fremden Änderung. Erst wenn alle Konflikte manuell aufge-
+löst sind, kann der Benutzer im Dokument weiterarbeiten.
+
+
+Über die Änderungsverfolgung können die Änderungen anderer Benutzer
+grafisch in das aktuelle Dokument integriert und damit nachvollzogen wer-
+den.
+
+
+Über den Dokumentenvergleich kann die aktuelle Version des Dokuments
+mit älteren Versionen, die automatisch auf dem SharePoint Server angelegt
+werden, verglichen werden.
+
+
+Einzelne Wörter, Sätze oder Absätze können mit einem Kommentar verse-
+hen werden, den alle anderen Benutzer lesen können.
+
+
+Einschränkungen: Der maximale Speicherplatz auf SkyDrive ist zur Zeit auf 25
+GB beschränkt.
+
+
+Die Speicherplatzbeschränkung unter SkyDrive ist großzügig bemessen und dürfte
+für viele Dokumentenumfänge ausreichen. Lediglich bei einer größeren Anzahl an
+Dokumenten oder bei Dokumenten, die außer Text intensiv weitere speicherinten-
+sive Quellen wie z.B. Videos einbinden, können diesen Speicherplatzrahmen schnell
+überschreiten. In diesen Fällen wäre ein Ausweichen auf eine selbst-administrierte
+SharePoint-Infrastruktur anzuraten.
+
+
+3.2.2 Dokumenten-Management-Systeme
+
+
+Dokumenten-Management-Systeme (DMS) sind datenbankgestützte Softwaresys-
+teme zur Verwaltung von elektronischen Dokumenten. Man unterscheidet dabei
+zwischen Dokumenten-Management im engeren Sinne und Dokumenten-
+Management im weiteren Sinne [Kampffmeyer et al. 99].
+
+
+KS-Software
+
+
+Dokumenten-Management im engeren Sinne umfasst klassische Software-Systeme,
+die sich ausschließlich auf die Verwaltung von elektronischen Dokumenten be-
+schränken. Typische Funktionen solcher Systeme sind:
+
+
+Metadatenverwaltung zur Beschreibung und Indizierung von Dokumenten
+
+
+Aufbau und Visualisierung von Organisationsstrukturen
+
+
+Umfangreiche Such- und Recherchemöglichkeiten
+
+
+Versionsverwaltung von Dokumenteninhalten
+
+
+Zugriffsmechanismen zum Schutz vor unerlaubten Zugriff
+
+
+Sicherungsmechanismen zum Schutz vor Datenverlust
+
+
+Dokumenten-Management im weiteren Sinne umfasst zusätzlich ein weites Spekt-
+rum von Technologien, die sich im Laufe der Zeit um die klassische Funktionalität
+herum gruppiert haben. Dazu zählen beispielsweise Workflow-Management, Lang-
+zeitarchivierung, Scanner-Technologien und automatische Texterkennung.
+
+
+Damit Software-Anwendungen ihre Dokumente in einem DMS ablegen bzw. wieder
+auslesen können, benötigen sie klar definierte Zugriffsschnittstellen. Da die Soft-
+ware-Hersteller jedoch nicht für jedes DMS eine extra Anbindung entwickeln wollen,
+wurden im Lauf der Jahre einige Technologien bzw. Standards entwickelt, die einen
+transparenten Zugriff erlauben sollen:
+
+
+Virtuelles Dateisystem: Eine Möglichkeit, den Zugriff auf ein DMS vollkom-
+men transparent zu gestalten, ist es, alle Dokumente durch ein virtuelles Da-
+teisystem zu publizieren. Ein virtuelles Dateisystem ist Dateisystem, dessen
+Inhalt (Dateien und Ordner) sich durch Zugriff auf einen physikalischen Da-
+tenträgers (z.B. Festplatte) speist, sondern durch Zugriff auf einen Soft-
+ware-Dienst, nämlich dem DMS, das sich auf einem anderen Computer im
+Netzwerk befindet. Der Vorteil liegt nun darin, dass Software-Anwendungen
+keine spezielle Anpassung machen müssen, um das DMS zu unterstützen.
+Das Auswählen eines Ordners oder einer Datei im Dateisystem genügt. Der
+Nachteil liegt in der hohen Systemnähe, d.h. für jedes Betriebssystem muss
+das DMS eine entsprechend Implementierung seines virtuellen Dateisystems
+vornehmen.
+
+
+ODMA: Die Open Document Management API (ODMA) wurde 1994 durch ei-
+nen Zusammenschluss mehrerer Software-Hersteller geschaffen [ODMA
+97]. Es handelt sich dabei um eine standardisierte Programmierschnittstelle
+für die einfache Integration von DMS in Desktop-Anwendungen. Beispiel-
+weise unterstützen einige Microsoft Office-Anwendungen (WinWord,
+Powerpoint) diesen Standard, so dass ein Benutzer in der Lage ist, ein Do-
+kument direkt aus Microsoft Office heraus in das DMS zu speichern bzw. aus
+dem DMS heraus zu öffnen. Der ODMA-Standard gilt allerdings nicht mehr
+
+
+KS-Software
+
+
+als zeitgemäß, da derartige API-Schnittstellen in zunehmendem Maße durch
+protokollorientierten Service-Schnittstellen ersetzt werden.
+
+
+WebDAV: Web-based Distributed Authoring and Versioning (WebDAV) ist ein
+Protokollstandard der IETF (Internet Engineering Task Force) [Dusseault 04].
+Mit diesem Protokoll ist es möglich, auf Basis von HTTP (Hypertext Transfer
+Protocol) Dateien und ganze Verzeichnisse auf einen Web-Server hoch zu la-
+den oder von diesem herunter zu laden. Dateien können kopiert, verscho-
+ben, umbenannt, gelöscht, gesperrt und versioniert werden. WebDAV ist
+mittlerweile in allen modernen Betriebssystemen (z.B. Microsoft Windows,
+Linux, Mac OS) standardmäßig eingebaut, so dass der Benutzer über den
+normalen Datei-Browser auf WebDAV-kompatible Dateiablagen zugreifen
+kann.
+
+
+Da die Technik des virtuellen Dateisystems Teil des Betriebssystems ist, können
+Textverarbeitungssysteme wie Word, Pages oder Writer darüber sehr leicht an ein
+DMS angebunden werden. ODMA wird lediglich in Word offiziell unterstützt. Web-
+DAV wird von Word und Writer offiziell unterstützt. Pages unterstützt WebDAV indi-
+rekt durch die Integration im Apple-Betriebssystem$$$3$$$.
+
+
+3.2.3 Kollaborative Texteditoren
+
+
+SubEthaEdit (www.subethaedit.de) ist ein kommerzieller, kollaborativer Texteditor
+einer Gruppe von Studenten der Technischen Universität München für das Betriebs-
+system Mac OS X. SubEthaEdit erlaubt das gleichzeitige Bearbeiten eines Textes in
+Echtzeit, ohne dass bestimmte Teile des Textes gesperrt werden müssen. Die Ände-
+rungen anderer Autoren werden in der eigenen Instanz farblich hervorgehoben.
+SubEthaEdit kommt eine zentrale Server-Instanz aus und verbindet sich automa-
+tisch mit anderen Client-Instanzen im Netzwerk.
+
+
+Ähnliche Texteditoren sind ACE (sourceforge.net/projects/ace), Gobby (gob-
+by.0x539.de) und MoonEdit (moonedit.com).
+
+
+3.2.4 Web-basierte kollaborative Textverarbeitung
+
+
+Google Docs (docs.google.com, auf Deutsch „Google Text & Tabellen“) ist eine kos-
+tenlos nutzbare Sammlung von Web-Applikationen der Firma Google. Es besteht
+aus den Einzelanwendungen Google Documents (Textverarbeitung, auf Deutsch
+„Google Text“), Google Presentations (Präsentation) und Google Spreadsheets (Ta-
+bellenkalkulation).
+
+
+Google Text erlaubt es, mit zwei oder mehreren Benutzern auf einem gemeinsamen
+Textdokument zu arbeiten. Google Text ist eine Browser-Anwendung, die auf der
+Internet-Infrastruktur der Firma Google basiert. Voraussetzung für die Nutzung vom
+
+
+FOOTNOTE:3 Interessanterweise basiert das Internetportal iworks.com selbst auf WebDAV.
+
+
+KS-Software
+
+
+Google Text ist ein Google-Konto$$$4$$$. Möchten zwei oder mehr Benutzer gemeinsam
+an einem Dokument arbeiten, müssen sie zunächst wie folgt vorgehen:
+
+
+1. Ein Benutzer muss sich an seinem Google-Konto anmelden und ein neues
+Dokument anlegen.
+
+
+2. Anschließend werden weitere Benutzer für dieses Dokument eingeladen.
+Jedem Benutzer muss eine der folgenden Rollen zugewiesen werden:
+
+
+FOOTNOTE:o Besitzer: Erlaubt das Editieren und Löschen von Dokumenten und das
+Einladen von Kollaborateuren und Betrachtern.
+
+
+FOOTNOTE:o Kollaborateure: Erlaubt das Editieren von Dokumenten und das Ein- und
+Ausladen (Berechtigung durch den Besitzer vorausgesetzt) von Kollabo-
+rateuren und Betrachtern. Es darf eine Kopie des Dokuments auf der ei-
+genen lokalen Festplatte angelegt werden.
+
+
+FOOTNOTE:o Betrachter: Erlaubt lediglich das Lesen der aktuellsten Version des Do-
+kuments. Es darf eine Kopie des Dokuments auf der eigenen lokalen
+Festplatte angelegen.
+
+
+Von diesem Zeitpunkt an können alle berechtigten Benutzer gemeinsam auf diesem
+Dokument arbeiten. Dabei stehen allen Benutzern folgende Möglichkeiten zur Ver-
+fügung.
+
+
+Dokumente können von verschiedenen Autoren zur gleichen Zeit bearbeitet,
+gelesen und kommentiert werden.
+
+
+Jeder Benutzer sieht alle anderen aktiven Benutzer. Für jeden Benutzer wer-
+den sein Name und seine Kontaktdaten angezeigt. Weitere Optionen sind:
+
+
+o Unmittelbares Versenden einer E-Mail
+
+
+o Unmittelbares Starten einer Chat-Kommunikation
+
+
+Alle Änderungen werden in Echtzeit unter allen Autoren synchronisiert und
+durch farbliche Markierungen unterschieden.
+
+
+Alle Änderungen können über eine Historie nachvollzogen werden.
+
+
+Einschränkungen: Dokumente dürfen nicht größer als 500 KB, eingebettete
+Bilder nicht größer als 2 MB sein. Die Anzahl der Dokumente ist auf 5000 be-
+grenzt. Der Umfang eines wissenschaftlichen Textes ist durch diese Be-
+schränkung in der Regel nicht mehr abbildbar.
+
+
+FOOTNOTE:4 Das Anlegen eines Google-Kontos ist kostenlos und ermöglicht den Zugriff auf eine Reihe kostenlo-
+ser wie kostenpflichtiger Dienste von Google. Google Text ist eine kostenloser Dienst.
+
+
+KS-Software
+
+
+Das frei verfügbare webbasierte Writeboard (writeboard.com) sowie das kommer-
+zielle ZohoWriter (writer.zoho.com/home?serviceurl=%2Findex.do) sind ähnliche KS-
+Systeme.
+
+
+Mit Office Web App (office.microsoft.com/de-de/web-apps) bietet Microsoft web-
+basierte Varianten der Anwendungen Word, Excel und PowerPoint an. Allerdings ist
+deren Funktionsumfang gegenüber den Desktop-Versionen stark reduziert. Insbe-
+sondere die fehlende Möglichkeit unter Office Web Apps Word-Dokumente gleich-
+zeitig von verschiedenen Autoren editieren zu können stellt einen nicht unerhebli-
+chen Nachteil gegenüber Google Text dar, weshalb auf eine ausführlichere Darstel-
+lung dieser web-basierten Textverarbeitung verzichtet werden soll$$$5$$$.
+
+
+3.2.5 Wiki-Systeme
+
+
+Ein Wiki ist eine Web-Seite, die von jedem Betrachter zu jeder Zeit beliebig verän-
+dert werden kann. Mit einem Wiki können Texte kollaborativ in Artikelform erstellt
+und miteinander verknüpft werden. Typische Funktionen eines Wiki sind:
+
+
+Erzeugen eines neuen Artikels zu einem beliebigen Thema
+
+
+Ändern und Löschen von Artikeln anderer Autoren
+
+
+Erzeugen von Verweisen zwischen Artikeln
+
+
+Zusammenfassen von inhaltlich nahestehenden Artikeln zu Kategorien
+
+
+Nachvollziehen von Änderungen an einem Artikel
+
+
+Erzeugen von Statistiken für Artikel (z.B. Popularität)
+
+
+Das erste wirkliche Wiki$$$6$$$ wurde 1995 vom US-amerikanischen Software-Entwickler
+Ward Cunningham unter dem Namen WikiWikiWeb (c2.com/cgi/wiki) der Öffentlich-
+keit zur Verfügung gestellt. Seit dem wurden zahlreiche weitere Wikis im Web ver-
+öffentlicht. Das bekannteste Wiki ist die Online- Enzyklopädie Wikipedia
+(www.wikipedia.org). Technologische Grundlage für Wikipedia ist das Wiki-System
+MediaWiki (www.mediawiki.org). MediaWiki besitzt folgende zusätzliche kollabora-
+tive Fähigkeiten:
+
+
+Zugriffsrechte: In MediaWiki können Benutzerrechte (z.B. Erzeugen, Bearbei-
+ten, Löschen und Lesen von Artikeln) für einzelne Benutzer oder Benutzer-
+gruppen zugewiesen werden
+
+
+FOOTNOTE:5 Es sei angemerkt, dass Office Web Apps noch eine relative junge Sammlung web-basierter Anwen-
+dungen ist und eine Fortentwicklung der kollaborativen Fähigkeiten in der Zukunft sehr wahrschein-
+lich ist.
+
+
+FOOTNOTE:6 Wiki ist das hawaiische Wort für „schnell“.
+
+
+KS-Software
+
+
+Konflikterkennung: In MediaWiki kann ein und derselbe Artikel von unter-
+schiedlichen Autoren editiert werden. Geschieht dies zeitgleich, gilt die Re-
+gel, dass der Autor, der zuerst seine Änderungen am Artikel speichert, Erfolg
+hat, während der zweite Autor gezwungen wird, seine Änderungen manuell
+einzufügen.
+
+
+3.2.6 Forschung
+
+
+Es existieren zahlreiche Veröffentlichungen zum Thema kollaboratives Schreiben.
+Neben dem besseren Verständnis und dem Erstellen von Anforderungsprofilen,
+werden vor allem die technologischen Herausforderungen näher untersucht. Bei-
+spiele dafür sind Arbeiten zur Konfliktvermeidung, -erkennung bzw. -auflösung (z.B.
+Operational Transformation$$$7$$$), Arbeiten zur besseren Integration von KS in beste-
+hende Systeme, sowie die konkrete Entwicklung von KS-Systemen. Im Folgenden
+sollen einige dieser KS-Systeme vorgestellt werden.
+
+
+In [McAlpine et al. 94] wird eine Architektur für ein kollaboratives Textverarbeitung
+vorgestellt. Die kollaborative Textverarbeitung Collaborwriter soll die Funktionalität
+(z.B. Formatierungen, Rechtschreibprüfung) und die Textstruktur (Fließtext, hierar-
+chisch gegliedert) gängiger Textverarbeitungssysteme beinhalten. Das Dokumen-
+tenformat soll SGML-basiert sein und in unterschiedliche Publikationsformate über-
+führt werden können. Collaborwriter soll Konflikte erkennen und auflösen. Doku-
+mente sollen versioniert und Änderungen nachverfolgt werden können. Die Soft-
+ware soll einfach zu bedienen und anpassbar sein. Collaborwriter ist meines Wissens
+nicht aus der Design-Phase herausgekommen.
+
+
+In [Meier 03] wird im Rahmen einer Diplomarbeit die kollaborative Textverarbeitung
+ShaDoW (Shared Document Writer) vorgestellt. Sie ist in Form eines Prototyps im-
+plementiert. ShaDoW ist ein dezentrales System, d.h. alle Instanzen müssen sich
+kennen und tauschen ihre Daten stets direkt untereinander aus. Texte können paral-
+lel editiert werden. Das Konflikt-Management wird durch eine adaptive Partitionie-
+rung des Textes in Kombination mit optimistischem Sperren umgesetzt. Konkret
+bedeutet dies, dass nur der gerade zu editierende Teiltext gesperrt wird. Sollten
+zwei Autoren dennoch an genau derselben Stelle Änderungen am Text vornehmen,
+wird dieser Konflikt beim nächsten Synchronisieren des Teiltextes erkannt.
+
+
+CoWord ist eine kollaborative Erweiterung für Microsoft Word in den Versionen
+2000, XP (2002) und 2003. Grundlage für die Entwicklung sind die in [Xia et al. 04]
+und [Shen et al. 06] dokumentierten Forschungsergebnisse. Mit Hilfe von CoWord
+
+
+FOOTNOTE:7 Operational Transformation (OT) ist eine Technologie zur Konfliktvermeidung bei zeitgleicher Be-
+arbeitung eines Textes durch mehrere Autoren. Ein Beispiel soll die Problematik verdeutlichen: Ge-
+geben ist der Text „abc“. Autor A fügt ein „x“ an Position 2 ein, während gleichzeitig Autor B den
+Buchstaben an Position 3 löschen möchte. Ohne OT würde aus „abc“ ein „axbc“ und anschließend
+ein „axc“ werden, oder umgekehrt aus „abc“ ein „ab“ und anschließend ein „axb“ werden. Mit OT
+würde der resultierende Text immer „axc“ lauten (für eine ausführliche Diskussion siehe Kapitel
+4.4.3.1).
+
+
+KS-Software
+
+
+können mehrere Nutzer in Echtzeit gemeinsam an einem Text arbeiten. Dazu wird
+Word um folgende Funktionalitäten erweitert:
+
+
+Angepasster Befehl „Speichern”: Der Speichern-Befehl erlaubt das Speichern
+des aktuellen Dokuments in einer zentralen Dokumentenablage im Netz-
+werk.
+
+
+Angepasster Befehl „Rückgängig“: Der Rückgängig-Befehl erlaubt wahlweise
+die Rücknahme lokaler als auch globaler Befehle. Lokale Befehle sind aus-
+schließlich die Befehle des lokalen Nutzers. Globale Befehle sind die Befehle
+aller kooperierenden Nutzer
+
+
+Action Modes: Der Nutzer kann zwischen einem Single-Actor- und Multi-
+Actor-Modus wechseln. Im Multi-Actor-Modus können alle Nutzer gleichzei-
+tig editieren, im Single-Actor-Modus kann ein ausgewiesener Nutzer (Action
+Controller) den Text editieren.
+
+
+View Modes: Der Nutzer kann zwischen einem Single-Viewer-Modus und ei-
+nem Multi-Viewer-Modus wechseln. Im Multi-Viewer-Modus kann jeder Nut-
+zer jeden Teil des Textes unabhängig von anderen Nutzern betrachten. Im
+Single-Viewer-Modus müssen alle Nutzer den gleichen von einer ausgewie-
+senen Nutzer (View Controller) vorgegeben Textausschnitt betrachten.
+
+
+Private Mode: Im Private Mode werden lokale Änderungen am Text nicht an
+andere Nutzer propagiert, allerdings werden weiterhin die Operationen der
+anderen Benutzer lokal ausgeführt.
+
+
+Farbliche Hervorhebungen: Durch farbliche Hervorhebungen werden die Än-
+derungen unterschiedlicher Nutzer mit unterschiedlichen Farben markiert.
+
+
+Die technologische Grundlage für CoWord ist eine Software-Bibliothek namens Ge-
+neric Collaboration Engine (GCE).
+
+
+3.3 Anforderungen an KS-Software
+
+
+3.3.1 Anforderungen aus der Forschung
+
+
+In [Noël et al. 04] wurden insgesamt 41 Personen unter Zuhilfenahme eines Frage-
+bogens u.a. nach Wünschen bezüglich eines idealen KS-Werkzeugs befragt. Dabei
+ergab sich die folgende Reihenfolge beginnend mit den am häufigsten genannten
+Wünschen hin zu den am wenigsten genannten Wünschen:
+
+
+Synchronisierter Zugriff auf Dokumente
+
+
+Einfache Möglichkeit zu kommunizieren
+
+
+Einfache Möglichkeit Texte mit Kommentaren zu versehen
+
+
+KS-Software
+
+
+Einfache Nachvollziehbarkeit von Textänderungen
+
+
+Einfaches Erstellen eines Zeitplans
+
+
+Einfache Möglichkeit Ideen auszudrücken
+
+
+Anlegen von Notizen
+
+
+Benachrichtigen bei Veränderungen am Text
+
+
+Projektplanung
+
+
+In einer anderen Studie [Tammaro et al. 97] wurden in den 90er Jahren 36 an geo-
+grafisch verteilten Orten beheimatete Mitarbeiter der MITRE Cooperation
+(www.mitre.org) über einen Zeitraum von drei Monaten bei der Nutzung einer neu
+eingeführten KS-Software beobachtet und anschließend befragt. Vor Beginn dieser
+Studie wurden die Anforderungen für ein solches System abgefragt, um anschlie-
+ßend ein passendes System auszuwählen. Dabei wurden die folgenden Anforderun-
+gen identifiziert:
+
+
+Die Software muss neben Text, auch das Erstellen von Tabellen und Präsen-
+tationen unterstützen.
+
+
+Texte, Tabellen oder Präsentationen müssen mit Kommentaren versehen
+werden können.
+
+
+Die Software muss unterschiedliche Rollen für die Gruppenmitglieder unter-
+stützen (Wer darf was lesen oder schreiben?)
+
+
+Die Software muss in der Lage sein, unterschiedliche Versionen eines Doku-
+ments speichern zu können.
+
+
+Dokumente müssen direkt (ohne Vermittlung eines weiteren Gruppenmit-
+glieds) änderbar sein und die Änderungen müssen für alle anderen Grup-
+penmitglieder nachvollziehbar gemacht werden. Alle Änderungen müssen
+mit ihrem Autor ausgewiesen werden.
+
+
+Beiträge aus unterschiedlichen Herkunftsquellen sollen einfach eingemischt
+werden können.
+
+
+Wird ein neues Dokument zur Verfügung gestellt oder wird ein bestehendes
+Dokument geändert, sollen alle beteiligten Gruppenmitglieder, die Zugriff
+auf das Dokument haben, automatisch darüber benachrichtigt werden.
+
+
+Für jedes Dokument soll ein Workflow definiert und auch nachträglich ver-
+ändert werden können. Dokumente sollen anschließend an Hand dieses
+Workflows automatisch verarbeitet werden. Die Prozesse, die ein Dokument
+aufgrund des Workflows durchläuft, müssen nachvollziehbar sein.
+
+
+KS-Software
+
+
+In [Jones 95] werden folgende Richtlinien für das Design und die Implementierung
+einer generischen KS-Software vorgeschlagen:
+
+
+Hierarchisierung von Strukturen und Aufgaben
+
+
+Unterschiedliche Sichtweisen auf ein und dieselbe Information (z.B. mit oder
+ohne Anmerkungen)
+
+
+Einfacher Wechsel zwischen diesen Sichtweisen
+
+
+Erzeugen und Bearbeiten von Notizen und ganzen Netzwerken von Notizen
+
+
+Unterstützung von Text und Meta-Text (z.B. Anmerkungen)
+
+
+Eindeutige Identifizierung von Gruppenmitgliedern
+
+
+Kommunikationsmöglichkeiten zwischen Gruppenmitgliedern
+
+
+Versionskontrolle
+
+
+Aufteilung eines Dokuments in Segmente
+
+
+Einmischen extern erstellter Texte
+
+
+Nachvollziehbarkeit aller Aktionen (Historie)
+
+
+Unterstützung von Einzelautoren wie auch mehreren Autoren
+
+
+Aktuellere Forschungsergebnisse, insbesondere vor dem Hintergrund der neueren
+technischen Möglichkeiten wie z.B. schnelles Internet und aktueller Kollaborati-
+onswerkzeuge wie Google Text und Microsoft Word, sind praktisch nicht vorhanden.
+Eine Tatsache, welche die folgenden Kapitel motiviert, die eine erweiterte Klassifi-
+kation von KS-Systemen aus heutiger Sicht geben.
+
+
+3.3.2 Anforderungen aus Sicht von KS-Rollen
+
+
+Während im vorherigen Kapitel durch Feldstudien, bei denen Anwender nach ihren
+Erfahrungen und Wünschen bezüglich eines kollaborativen Textverarbeitungssys-
+tems befragt wurden, Anforderungen extrahiert wurden, soll in diesem Abschnitt
+ein anderer Weg verfolgt werden. Ausgangspunkt diesmal sind die in Kapitel 2.4
+beschriebenen KS-Rollen, die Teammitglieder einnehmen können. Die Bedürfnisse$$$8$$$
+eines Teammitglieds können dabei in Konflikt mit den Bedürfnissen anderer Team-
+mitglieder treten. Dieses Konfliktpotential ist ein wesentlicher Aspekt in der Be-
+trachtung kollaborativer Textverarbeitungssysteme, aus denen sich Anforderungen
+
+
+FOOTNOTE:8 D i e s e S i c h t w e is e l e i t e t s i c h a u c h a us dem Software-Architekturstandard IEEE-1471 [IEEE 1471-2000]
+ab, der als Ausgangspunkt einer jeden Architekturbeschreibung die Bedürfnisse (Concerns) der Be-
+teiligten (Stakeholders) in den Mittelpunkt rückt.
+
+
+KS-Software
+
+
+ableiten lassen. Den möglichen Rollen Autor, Berater, Editor, Gutachter, Teamleiter
+und Lektor lassen sich folgende Bedürfnisse zuordnen:
+
+
+KS-Software
+
+
+Einfache und effiziente Kommunikationsmöglichkeit mit Team-
+leiter und Autoren
+
+
+FOOTNOTE:Tabelle 3: KS-Rollen und ihre Bedürfnisse
+
+
+Bei genauerer Betrachtung der KS-Rollen und ihrer Bedürfnisse lässt sich folgendes
+feststellen:
+
+
+Ein Team wissenschaftlicher Autoren zeichnet sich oft dadurch aus, dass je-
+der Autor ein Spezialist auf seinem Fachgebiet ist und nur er die Teiltexte
+bzw. Teilthemen editiert, für die er die Sachkompetenz hat und für die er als
+Autor auch vermerkt wird, um spätere Korrekturen und Ergänzungen durch
+denselben Autor zu ermöglichen und um die Grundlage für korrektes Zitieren
+(Nachvollziehbarkeit wissenschaftlicher Arbeiten) zu gewährleisten. Ein
+Team von Architekten hingegen, das einen Ausschreibungstext für ein Bau-
+vorhaben verfasst, kann den Ausschreibungstext vom Prinzip beliebig unter
+sich aufteilen, wobei der Autor eines Ausschreibungsteiltextes nicht geson-
+dert vermerkt werden muss (jeder Architekt kann z.B. die Rohbauausschrei-
+bung verstehen und somit ändern).
+
+
+Ein Teammitglied kann in mehreren Rollen agieren. So kann beispielsweise
+der Teamleiter auch gleichzeitig Autor sein, der Berater kann gleichzeitig
+auch Lektor sein.
+
+
+Eine Rolle kann durch mehrere Teammitglieder besetzt sein. Die Rolle Autor
+gehört typischerweise dazu.
+
+
+Nicht alle Rollen müssen zwingend besetzt sein. Die Rolle Berater wäre ein
+typisches Beispiel hierfür.
+
+
+Bestimmte Bedürfnisse sind für alle Rollen gültig (z.B. Orts- und zeitunab-
+hängiger Zugriff), manche Bedürfnisse sind nur für einzelne oder einige we-
+nige gültig (z.B. Identifikation der Autorenschaft).
+
+
+Einige Rollen haben die gleichen Bedürfnisse (z.B. Editor und Lektor) und
+können daher zusammengefasst werden:
+
+
+FOOTNOTE:o Der Teamleiter bestimmt die Teammitglieder und weist ihnen ihre Rollen
+zu.
+
+
+KS-Software
+
+
+FOOTNOTE:o Der Gesamttext wie auch Teiltexte muss zu zeit- und ortsunabhängig
+zugreifbar sein.
+
+
+FOOTNOTE:o Eigene Teiltexte können von Autoren zeit- und ortsunabhängig bearbei-
+tet werden.
+
+
+o Eigene Teiltexte müssen vor unerlaubter Veränderung von anderen
+Teammitgliedern geschützt werden.
+
+
+FOOTNOTE:o Alle Teammitglieder müssen auf einfache und effiziente Weise miteinan-
+der kommunizieren können.
+
+
+Diese Betrachtung ist sicherlich nicht erschöpfend, sie zeigt jedoch sehr gut das In-
+teraktions- und Interessengeflecht zwischen allen Beteiligten.
+
+
+3.3.3 Ableitung einer Taxonomie
+
+
+Der bisherige Blick auf mögliche Anforderungen fehlt ohne Zweifel eine gewisse
+Systematik, handelt es sich mehrheitlich um bloße Aufzählung von möglichen An-
+forderungen. Im Folgenden soll daher ähnlich der in Kapitel 2.4 vorgestellten Taxo-
+nomie für kollaboratives Schreiben eine korrespondierende Taxonomie für das An-
+forderungsprofil von KS-Systemen entwickelt werden. Ausgangspunkt hierfür sind
+die Anforderungen aus den Kapiteln 3.3.1 und 3.3.2 sowie die Funktionalität kollabo-
+rativer Textverarbeitungssysteme aus Kapitel 3.2.
+
+
+3.3.3.1 Klassifikation
+
+
+Betrachtet man all die vorgeschlagenen Anforderungen, so lassen sie sich meiner
+Meinung nach wie folgt klassifizieren:
+
+
+1. Organisation: Texte müssen entsprechend eines Zugriffsystems allen Akteu-
+ren entsprechend ihrer zugedachten Rollen zugänglich gemacht werden, sie
+müssen bei Bedarf sinnvoll in Teiltexte zerlegt werden können und ihr Work-
+flow sollte definierbar und beinflussbar sein. Zeitliche (z.B. Veröffentli-
+chungstermin) und formale (z.B. maximale Seitenanzahl) Rahmenbedingun-
+gen müssen planbar und kontrollierbar sein. Texte lassen sich aufteilen in In-
+halt, Layout sowie begleitende Ressourcen (z.B. Grafiken, Daten)
+
+
+2. Kommunikation: Insbesondere bei asynchronen KS-Arbeitsmodi sind Kom-
+munikationswerkzeuge für alle Gruppenmitglieder wichtig. Dazu zählen E-
+Mail, Chat und Telefon. Aber auch die Möglichkeit Kommentare, Bewertun-
+gen, Meinungen, Ideen und Notizen für alle sichtbar ablegen zu können so-
+wie ein Benachrichtigungssystem für Systemereignisse.
+
+
+3. Synchronisation: Verteilt erstellte Texte müssen zusammengeführt werden.
+Dazu benötigen die Gruppenmitglieder Werkzeuge zur Konfliktvermeidung
+(Wer darf wann was ändern?), Konflikterkennung (Wer hat wann was geän-
+dert?), Konfliktauflösung (Welche Änderung gewinnt?).
+
+
+KS-Software
+
+
+4. Nachvollziehbarkeit: Die Arbeit eines jeden Gruppenmitglieds muss eindeu-
+tig als seine gekennzeichnet werden können. Dazu werden Werkzeuge zur
+Versionskontrolle, zum Aufzeichnen von Änderungen (Logbuch) und zur
+eindeutigen Identifikation (Benutzerprofile) benötigt.
+
+
+5. Schutz: Bedingt durch die Tatsache, dass Texte über zum Teil öffentliche
+Netzwerke ausgetauscht und synchronisiert werden, müssen die Authentizi-
+tät von Texten sowie deren Schutz vor Einsicht durch eine nicht gewünschte
+Öffentlichkeit sichergestellt werden.
+
+
+Diese Klassifizierung enthält wiederum einige Begriffe, die genauer betrachtet wer-
+den sollen.
+
+
+3.3.3.2 Inhalt, Layout und Ressourcen
+
+
+Textsatzsysteme wie LaTeX oder TUSTEP liegen auch heute noch bei vielen Wissen-
+schaftlern hoch im Kurs, wenn es darum geht, wissenschaftliche (insbesondere na-
+turwissenschaftliche) Texte zu verfassen. Der Grund liegt in der sauberen und stan-
+dardisierten Druckausgabe, welche durch diese Systeme automatisch erstellt wird.
+Dies wird durch eine strikte Trennung von Inhalt und Layout erreicht. Der Autor gibt
+lediglich vor, um welches Strukturelement es sich bei einem Teiltext handelt, die
+visuelle Umsetzung wird später durch die Software mit Hilfe von vorgegebenen
+Regeln durchgeführt. Diese strikte Trennung von Text und Layout lässt sich in mo-
+dernen Textverarbeitungssystemen wie Word 2010 oft nur sehr unzureichend um-
+setzen. Generell gibt es zwei mögliche Ansätze, um dieses Ziel zu erreichen:
+
+
+1. Eine Sperrung der vorhandenen Formatierungsoptionen bis zu einem Grad,
+der lediglich die Zuweisung eines Formates zu einem Text ermöglicht, nicht
+aber die Bearbeitung des Formates als solches.
+
+
+2. Ein Verlagerung der Formatierung auf in einen Post-Prozess, der erst nach
+Fertigstellung des Textes angestoßen wird, um die gewünschte Publikations-
+form zu erstellen.
+
+
+Beide Ansätze unterscheiden sich dahingehend, dass der erste Ansatz dem Autor
+bereits während der Texterstellung das resultierende Layout vor Augen führt (WY-
+SIWYG-Prinzip), während der zweite Ansatz dies vor dem Autor verbirgt. Wichtig ist
+jedoch in beiden Fällen, dass der Autor keine Möglichkeit bekommt, das Layout zu
+ändern. Dies entspricht zum einem dem Rollenverständnis zwischen Autor und Lay-
+outer, und es dient im erheblichen Maße der Konfliktvermeidung.
+
+
+Die Betrachtung des Textes, bestehend aus Inhalt und Layout, als alleiniger Kollabo-
+rationsgegenstand ist zu kurz gefasst. Insbesondere die elektronische Publikation
+ermöglicht es Dokumente zu erstellen, die über den sequenziellen Textcharakter
+der klassischen Papierform hinausgehen: Eine Textkollaboration ist ebenfalls ab-
+hängig von externen Ressourcen, die direkt in den Text eingebunden werden oder
+aber als Informationsquelle für die Texterstellung dienen. Mögliche Ressourcen wä-
+ren beispielsweise Grafiken, Fotos, Videos, Tondokumente, Textdokumente und
+
+
+KS-Software
+
+
+Forschungsdaten. All diese Ressourcen sind genauso Teil der Kollaboration wie der
+eigentliche Text. Daher lassen sich folgende Anforderungen ableiten:
+
+
+Ressourcen müssen unabhängig von Ort und Zeit jedem Autor zur Verfügung
+stehen.
+
+
+Ressourcen müssen eindeutig identifizierbar und recherchierbar sein.
+
+
+Ressourcen müssen einer Versionierung unterliegen.
+
+
+Der Zugriff auf Ressourcen muss einschränkbar sein.
+
+
+Die Forderung nach einer Hochverfügbarkeit von Ressourcen ergibt sich aus der
+gleichen Forderung bei Texten. Da Ressourcen zum Teil durch Verweise direkt in
+den Text eingebunden werden können, müssen sie in gleicher Weise zur Verfügung
+stehen wie der Text. Je größer die Menge der verwendeten Ressourcen ist, desto
+wichtiger sind eine eindeutige Identifizierung der Ressource sowie deren Recher-
+chierbarkeit. Identifizierbarkeit bedeutet, dass Name, Zweck und Ersteller hinterlegt
+sind. Recherchierbarkeit bedeutet, dass eine effektive Suche über alle verfügbaren
+Ressourcen möglich sein sollte. Wie Texte sollten auch Ressourcen einer Versionie-
+rung unterzogen werden, wenn sie sich über die Zeit ändern (z.B. Anpassung einer
+Grafik).
+
+
+3.3.3.3 Verfügbarkeit
+
+
+Als Einzelautor hat man seinen Text in der Regel auf seinem eigenen Computer ge-
+speichert und damit eine uneingeschränkte Verfügbarkeit des Textes. Sobald man
+sich vor den Computer sitzt, steht auch der Text zur Verfügung. Im kollaborativen
+Umfeld ändert sich jedoch der Text auch dann, wenn ein Autor nicht vor seinem
+Computer sitzt. Dies impliziert die folgenden zwei Forderungen:
+
+
+Ein Text muss unabhängig von Ort und Zeit unmittelbar zur Verfügung ste-
+hen.
+
+
+Eigene Änderungen müssen unabhängig von Ort und Zeit unmittelbar allen
+anderen Teammitgliedern zur Verfügung gestellt werden können.
+
+
+Die Charakterisierung „unabhängig von Ort und Zeit“ besagt, dass lediglich der Zu-
+griff auf das Internet nötig sein sollte, um an den gemeinsamen Text zu gelangen.
+Dies wiederum setzt eine Hochverfügbarkeit eines KS-Systems voraus. Die aktuellen
+Angebote im Bereich Cloud-Services (z.B. Microsoft Azur oder Amazon S3) erlauben
+schon heute, eine einfache Implementierung von Hochverfügbarkeit. Diese Forde-
+rung ist beispielsweise vor dem Hintergrund stark variierender Systemvorausset-
+zungen bei Wissenschaftlern zu sehen. Vor allem im nicht-naturwissenschaftlichen
+Bereich ist das Wissen über das Einrichten und Administrieren zentraler Server-
+Infrastrukturen nur unzureichend vorhanden und oft auch gar nicht bezahlbar. Es
+bleibt also nur das Ausweichen auf bereits etablierte Dienstleistungen im Internet.
+
+
+KS-Software
+
+
+3.3.3.4 Konflikte
+
+
+Schreiben mehrere Autoren an einem Text, so entsteht das Problem der Textsyn-
+chronisation. Theoretisch kann ein Autor den Text eines anderen Autors verändern
+oder gar löschen. Da dies in den meisten Fällen unerwünscht bzw. unter allen Um-
+ständen zu vermeiden ist, ist das Interesse eines Autors sehr hoch, dass sein
+Textbeitrag nur von ihm selbst verändert oder gelöscht werden darf. Es können
+prinzipiell zwei Arten von Konflikten auftreten:
+
+
+1. Synchronisationskonflikte: Mehrere Autoren bearbeiten gleichzeitig densel-
+ben Teiltext.
+
+
+2. Zugriffskonflikte: Ein Beteiligter, z.B. ein anderer Autor, ein Editor, ein Lek-
+tor, möchte den Text eines Autors nachträglich ändern.
+
+
+Die Gründe dafür können sein:
+
+
+Durch eine unscharfe Abgrenzung des Inhalts unter den beteiligten Auto-
+FOOTNOTE:ren, muss ein Autor den Text eines anderen Autors bearbeiten.
+
+
+Ein Lektor muss in der Lage sein, einen Text bezüglich Rechtschreib- und
+Grammatikfehlern korrigieren zu können.
+
+
+Ein Projektleiter muss in der Lage sein, Textbeiträge von Autoren abzu-
+lehnen oder zu löschen, wenn Sie bestimmten Qualitätskriterien nicht ge-
+nügen oder der Autor sich aus dem Projekt vorzeitig zurückgezogen hat.
+
+
+Konflikte bedürfen eines Konflikt-Managements, das sich wie folgt charakterisieren
+lässt:
+
+
+Konfliktvermeidung – Hierbei geht darum, das Konfliktpotential von vorne-
+herein auf ein Minimum zu reduzieren. Dies kann beispielsweise dadurch ge-
+schehen, dass die Anzahl der Autoren minimiert wird oder aber der Schreib-
+zugriff möglichst exklusiv vergeben wird.
+
+
+Konflikterkennung – Ist dann doch ein Konflikt entstanden, so muss er zu-
+nächst erkannt werden, d.h. die Autoren oder der Projektleiter müssen ein
+Feedback bekommen, dass sich der Text momentan in einem inkonsistenten
+Zustand befindet und akuter Handlungsbedarf besteht.
+
+
+Konfliktauflösung – Ein erkannter Konflikt muss aufgelöst werden, d.h. der
+inkonsistente Zustand des Textes muss wieder in einen konsistenten Zu-
+stand überführt werden.
+
+
+Für eine ausführliche Behandlung des Themas Konflikt-Management auf technischer
+Ebene sei auf das Kapitel 4.4 verwiesen.
+
+
+KS-Software
+
+
+3.3.3.5 Authentizität
+
+
+Der Befürchtung mancher Autoren, dass sie innerhalb einer kollaborativen Texter-
+stellung der gewollten oder ungewollten Manipulation der eigenen Texte schutzlos
+ausgeliefert sind, lässt sich durch den Einsatz elektronischer Signaturen entgegen-
+wirken. Mit Hilfe einer elektronischen Signierung lassen sich die Integrität und die
+Authentizität eines digitalen Textes bzw. Teiltextes sicherstellen. Ähnlich einer Un-
+terschrift bei herkömmlichen Texten in Papierform wird hierbei der bestehende
+Text um eine elektronische Signatur erweitert. Das ganze Verfahren basiert auf ei-
+ner asynchronen Verschlüsslungstechnik und funktioniert wie folgt: Der Autor eines
+Textes ist im Besitz eines kryptographischen Schlüsselpaars, bestehend aus einem
+privaten Schlüssel (Private Key) und einem öffentlichen Schlüssel (Public Key). Der
+private Schlüssel ist geheim und nur dem Autor bekannt, der öffentliche Schlüssel
+dagegen wird der Öffentlichkeit zur Verfügung gestellt. Zwischen beiden Schlüs-
+selwerten besteht eine mathematische Abhängigkeit, die zur Folge hat, dass Infor-
+mationen, die mit einem privaten Schlüssel verschlüsselt werden, nur mit dem dazu
+passenden öffentlichen Schlüssel wieder entschlüsselt werden können.
+
+
+Möchte der Autor seinen Text elektronisch signieren, so lässt er sich zunächst mit
+Hilfe einer Hash-Funktion eine Prüfsumme für diesen Text errechnen. Diese Prüf-
+summe dient als digitaler Fingerabdruck des Textes. In einem zweiten Schritt wird
+diese Prüfsumme mit Hilfe des privaten Schlüssels verschlüsselt und an den beste-
+henden Text angehängt. Der Text besitzt jetzt eine elektronische Signatur. Der Le-
+ser des Textes hat nun die Möglichkeit nachzuprüfen, ob:
+
+
+a) die Signatur auch wirklich vom angegebenen Autor
+stammt (Authentizitätsprüfung)
+
+
+b) der Inhalt des Textes verändert wurde (Integritätsprüfung)
+
+
+Dazu entschlüsselt er zunächst die angehängte Prüfsumme mit Hilfe des öffentli-
+chen Schlüssels des Autors. Gelingt dies, so weiß der Leser, dass die Prüfsumme mit
+dem privaten Schlüssel des Autors verschlüsselt wurde, die Signatur also tatsächlich
+vom Autor stammt. Anschließend lässt der Leser erneut die Prüfsumme des Doku-
+mentes errechnen und vergleicht sie mit der soeben entschlüsselten Prüfsumme. Ist
+der Vergleich positiv, so weiß der Leser, dass der Inhalt nach der Signatur durch den
+Autor nicht mehr verändert wurde.
+
+
+3.4 Analyse: Microsoft Word und Google Text
+
+
+Dieser Abschnitt analysiert die in Kapitel 3.2.4 vorgestellten Textverarbeitungssys-
+teme Microsoft Word 2010 und Google Text anhand der KS-Anforderungen. Beide
+stellen unter den in dieser Arbeit erwähnten KS-Systemen die einzigen öffentlich
+verfügbaren Lösungen dar. Sie werden in den folgenden Abschnitten jeweils parallel
+betrachtet.
+
+
+Viele wissenschaftliche Publikationen werden heute mit Hilfe der Textverarbeitung
+Microsoft Word erstellt. Dies liegt zum einen daran, dass Word wohl die statistisch
+
+
+KS-Software
+
+
+gesehen am häufigsten eingesetzte Textverarbeitung ist und somit deren Bedie-
+nung den meisten Autoren geläufig ist. Zum anderen ist der Leistungsumfang von
+Word ausreichend, um auch komplexe Textdokumente verwalten zu können. Der
+eigentliche Grund, warum Word Gegenstand dieses Kapitel ist, liegt jedoch in den
+kollaborativen Fähigkeiten der aktuellen Version 2010. Diese ist ein beachtlicher
+Schritt, da es als das wohl prominenteste Textverarbeitungsprogramm den Gegen-
+satz zwischen komplexer, für Einzelautoren ausgelegter Textverarbeitung auf der
+einen Seite und reduzierter, für paralleles Schreiben ausgelegter Textverarbeitung
+auf der anderen Seite zu schließen beginnt. Eine Feststellung, die insofern Beach-
+tung verdient, da alle bisher untersuchten Systeme entweder zu wenig kollaborativ
+sind (z.B. Word 2007) oder aber zu wenig Textverarbeitung bieten (z.B. Google
+Text). In den folgenden Abschnitten soll die kollaborativen Fähigkeiten dieser Pro-
+gramme anhand der zuvor gemachten Überlegungen untersucht werden.
+
+
+Microsoft Word 2010 erlaubt es zwei oder mehreren Benutzern auf einem gemein-
+samen Textdokument zu arbeiten. Der Benutzer hat dabei die Wahl mit einer Web-
+Browser-Version von Word oder einer unter dem Betriebssystem Windows instal-
+lierten Desktop-Version von Word zu arbeiten. Da die kollaborativen Fähigkeiten der
+Browser-Version nicht so ausgeprägt sind wie jene der Desktop-Version (beispiels-
+weise kann ein Dokument zu einem Zeitpunkt nur exklusiv von einem Benutzer be-
+arbeitet werden), soll sich der Fokus auf die in diesem Zusammenhang interessante-
+re Desktop-Version richten.
+
+
+Google Text ist eine web-basierte Textverarbeitung. Während Microsoft Word auch
+für umfangreiche wissenschaftliche Texte eingesetzt wird, erlaubt der weitaus ge-
+ringere Funktionsumfang von Google Text, wie z.B. fehlende Vorlagen, praktisch
+keine Unterstützung von Quellenverzeichnissen, es gar nicht erst, Google Text für
+umfangreichere Veröffentlichungen zu verwenden. Da es sich für weniger komplexe
+Texte durchaus eignet und im Gegensatz zu Microsoft Word einen originär
+Webbrowser-basierten Ansatz darstellt, soll Google Text im Folgenden dennoch
+parallel betrachtet werden.
+
+
+3.4.1 Verfügbarkeit von Texten
+
+
+Bei Microsoft Word ist durch die Nutzung von SkyDrive$$$9$$$ eine Hochverfügbarkeit des
+Textes gewährleistet. Selbst externe Ressourcen können unter SkyDrive abgelegt
+werden. Allerdings setzt dies eine ständige Verfügbarkeit einer funktionierenden
+Internet-Verbindung voraus. Zumindest in Deutschland sollte dies in den überwie-
+genden Fällen kein Problem darstellen. Selbst das mobile Arbeiten in der Bahn ist
+heutzutage durch Nutzung von UMTS/GPRS möglich.
+
+
+Word 2010 besitzt jedoch eine Eigenschaft, welche die Verfügbarkeit des Textes an
+einem anderen Punkt im Netzwerk einschränken kann. Da Word 2010 lediglich unter
+Windows lauffähig ist, führt der Einsatz von anderen Betriebssystemen zwangsläu-
+fig zu einer Einschränkung der Verfügbarkeit. Ein Fakt, der gerade im wissenschaftli-
+
+
+FOOTNOTE:9 Siehe Abschnitt 3.2.1 Klassische Textverarbeitung
+
+
+KS-Software
+
+
+chen Bereich, nicht zu unterschätzen ist, da dem Einsatz von Microsoft-Produkten
+generell eine gewisse Ablehnung (unter anderem wegen deren kommerziellen Na-
+tur) entgegengebracht wird. Eine mögliche Abmilderung der Problematik könnte im
+Einsatz virtueller Maschinen bestehen, die das Betreiben eines Windows-
+Betriebssystems unter Unix, Linux, MacOS usw. erlauben und damit auch den Ein-
+satz von Word 2010.
+
+
+Google Text setzt als Web-Anwendung – analog zu Microsoft Word – eine ständig
+funktionierende Online-Internet-Verbindung voraus. Der Autor benötigt nur einen
+Webbrowser für seine Arbeit, der praktisch auf allen Plattformen verfügbar ist.
+
+
+3.4.2 Rechtesystem und Schutz vor Veränderung
+
+
+Word 2010 erlaubt das explizite Sperren von Textabschnitten. Damit lässt sich eine
+pessimistische Konfliktvermeidung auf Teiltextebene realisieren. Allerdings ist die
+Granularität der möglichen Sperrungen nicht ausreichend für die wissenschaftliche
+Texterstellung. So wäre beispielweise das explizite Sperren von Zitaten, Formeln
+oder Tabellen wünschenswert.
+
+
+Google Text erlaubt kein Sperren von Textabschnitten. Es entspricht in seiner Me-
+tapher den Wiki-Systemen, die allen Autoren Änderungen erlauben, wobei jeder die
+Änderungshistorie betrachten und ggf. Änderungen rückgängig machten kann.
+
+
+Bei beiden fehlt ein Rechtesystem, das ein differenziertes Sperren und Freigeben
+von Inhalten erst überhaupt ermöglichen würde. So ist bei beiden auch eine auto-
+matische Benachrichtigung eines Autors bei Änderungen in Dokumentbereichen
+nicht vorgesehen.
+
+
+3.4.3 Synchronisation
+
+
+Word 2010 unterstützt beide Synchronisationsszenarien, sowohl die Online-
+Synchronisation als auch die Offline-Synchronisation. Insbesondere die Offline-
+Synchronisation ist für die wissenschaftliche Texterstellung nach wie vor sehr wich-
+tig. Neben der Tatsache, dass eine ständige Internetverbindung nicht immer mög-
+lich ist, bietet nur sie ein wirklich flüssiges Arbeiten mit großen Texten. Es ist leicht
+zu beobachten, dass die Online-Synchronisation mit zunehmender Größe der Texte
+an Performanz verliert und somit den Arbeitsfluss erheblich stören kann. Zudem
+möchte ein Autor nicht ständig seinen Online-Status Preis geben, um keine Rück-
+FOOTNOTE:schlüsse auf seinen Arbeitsrhythmus zuzulassen.
+
+
+Das Konflikt-Management in Word 2010 ist durchaus als vorbildlich anzusehen. Im
+Online-Modus, in dem Textänderungen unmittelbar mit dem Server abgeglichen
+werden, ist jener Teil, der von einem Autor aktuell editiert wird, automatisch für alle
+anderen Autoren gesperrt. Änderungen, die im Offline Modus aufgelaufen sind,
+werden beim Synchronisieren mit dem Server automatisch auf Konflikte hin unter-
+sucht. Erst nach Auflösung aller Konflikte kann der Autor weiterarbeiten.
+
+
