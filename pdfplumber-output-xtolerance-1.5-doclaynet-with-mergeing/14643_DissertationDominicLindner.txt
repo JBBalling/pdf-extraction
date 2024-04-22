@@ -69,9 +69,6 @@ aus Dresden, Tobias Greff aus Saarbrücken und Jun.-Prof. Dr. Thomas Ludwig
 aus Siegen als auch meinen Roundtable-Teilnehmern.
 
 
-Abstract
-
-
 Unter dem aktuellen Trend „Digitalisierung“ werden im Allgemeinen tiefgreifende
 Veränderungen bedingt durch die Anschaffung und Verwendung moderner Tech-
 nologie verstanden, welche sich auf Staat, Gesellschaft und Unternehmen aus-
@@ -99,9 +96,6 @@ gitalisierung abgeleitet und mit Experten aus KMU mit Fokus auf wissensintensi-
 ven Dienstleistungen diskutiert. Die Ergebnisse dienen Praktikern als Empfeh-
 lungen und Wissenschaftlern als mögliche Ansatzpunkte für weitergehende For-
 schung.
-
-
-Abstract
 
 
 The current trend of "digitization" generally is understood as profound changes
@@ -176,9 +170,6 @@ Abbildung 1 zeigt die Verteilung der Unternehmen nach Größenklasse in
 Deutschland auf.
 
 
-Einleitung
-
-
 Laut dem Institut für Mittelstandsforschung (2018a) machen KMU einen wichti-
 gen Faktor für die Wirtschaftskraft in Deutschland aus. Eine Statistik des Instituts
 für Mittelstandsforschung (2018a) zeigt, dass aus einer Stichprobe von ca. 15,5
@@ -192,9 +183,6 @@ Im Jahr 2016 haben KMU 35 % aller Umsätze in Deutschland (2,3 Bio. Euro)
 erwirtschaftet und beschäftigen rund 58 % (geschätzt 15,5 Mio.) der sozialabga-
 bepflichtigen Arbeitnehmer (Institut für Mittelstandsforschung 2018a). Abbildung
 2 zeigt die Verteilung der Arbeitnehmer.
-
-
-Einleitung
 
 
 Abbildung 2: Beschäftigungsverteilung der sozialpflichtigen Abreitnehmer in Deutschland 2018
@@ -226,9 +214,6 @@ KfW (2016 – Kreditanstalt für Wiederaufbau) wird eine Aufteilung der KMU in
 Deutschland nach Art des Gewerbes vorgenommen (Abbildung 3).
 
 
-Einleitung
-
-
 Abbildung 3: Verteilung der kleinen und mittleren Unternehmen in Deutschland nach Art des
 Gewerbes im Jahr 2016 (angelehnt an KfW 2016, S. 15)
 
@@ -249,9 +234,6 @@ Dienstleistungen zählen größtenteils unternehmensnahe Dienstleistungen im
 B2B-Bereich (engl. Business to Business) wie bspw. IT-Consulting, Softwareent-
 wicklung, Personalvermittlungen als auch im B2C-Bereich (engl. Business to
 Customer) Versicherungen oder Finanzberatungen (KfW 2016).
-
-
-Digitalisierung von KMU mit Fokus auf wissensintensiven Dienstleistungen
 
 
 Unter den aktuellen Trend ‚Digitalisierung‘ werden im Allgemeinen tiefgreifende
@@ -571,9 +553,6 @@ tersuchung der Forschungsfrage geeignet. Die genannten Risiken können durch
 Moderation und eine sinnvolle Aufbereitung der Roundtables minimiert werden.
 
 
-Alternative Forschungsdesigns
-
-
 Neben dem aktuellen Forschungsdesign wären alternative Ansätze denkbar,
 durch die sich das komplexe Thema ebenfalls adäquat erfassen ließe. Im Fol-
 genden werden drei Ansätze erläutert und die Chancen/Risiken sowie die
@@ -851,9 +830,6 @@ IT-Servicemanagement. HMD – Praxis der Wirtschaftsinformatik, (4), 21.
 
 Eine Unterscheidung zwischen den Publikationen der Teilergebnisse und dieser
 Dissertationsschrift findet sich in Tabelle 2.
-
-
-Tabelle 2: Unterschiede zwischen Publikationen und Dissertationsschrift
 
 
 1.6 Allgemeine Konventionen

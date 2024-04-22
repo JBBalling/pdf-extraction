@@ -4,16 +4,11 @@ Eine Retrospektive.
 
 
 Inauguraldissertation
+
+
 zur Erlangung des Grades eines Doktors der Medizin
 des Fachbereichs Medizin
 der Justus-Liebig-Universität Gießen
-
-
-vorgelegt von Steven Krämer
-aus Gießen
-
-
-Gießen 2021
 
 
 Aus dem Fachbereich Medizin der Justus-Liebig-Universität Gießen
@@ -27,6 +22,8 @@ Prof. Dr. Sibelius
 
 
 Gutachter:
+
+
 Prof. Dr. Leichsenring
 
 
@@ -705,15 +702,21 @@ weniger als zehn Jahren zugrunde lag. Zwischen 11 und 20 Jahren Berufserfahrung 
 (10) mehr als 30 Jahre Erfahrung in der Betreuung von Trauernden zu haben.
 
 
-Abbildung 1 - Ausübung der Tätigkeit in Jahren
-
-
 Insgesamt gaben 45,4% der Personen (186) an, ihre Tätigkeit hauptberuflich auszuüben,
 11,7% (48) arbeiteten nebenberuflich und 32,7% (134) ehrenamtlich. 10,2% (42) der
 Personen antworteten bei der zugehörigen Frage mit der Antwortmöglichkeit „Andere“.
 Diese Antwort wurde dann gegeben, wenn sich im Laufe der Tätigkeit der Berufsstatus
 geändert hat oder in verschiedenen Funktionen und Ausmaß in der Trauerversorgung
 gearbeitet wird.
+
+
+Hauptberuflich
+
+
+Ehrenamtlich
+
+
+Nebenberuflich
 
 
 Die Tätigkeit wurde von 31% der Personen (127) freiberuflich beziehungsweise in
@@ -731,17 +734,12 @@ Sozialpädagogen stellten dabei die größte Berufsgruppe mit 18,3% (17). Mit 44
 gab ein Großteil der Befragten hierbei keine Angabe ab.
 
 
-Abbildung 3 - Zugrundeliegende Ausbildung der hauptberuflich tätigen (Antworten ohne Angabe wurden
-nicht abgebildet)
-
-
 Von den 32,7% (134) ehrenamtlich tätigen gaben 74,6% (100) an, eine trauerspezifische
 Ausbildung abgeschlossen zu haben. Dabei waren die beiden meist genannten
 zugrundeliegenden Berufe die Krankenpflege mit 11% (11) und Diplom-Sozialpädagogik
 mit 8% (8) Nennungen. 44% (44) der Befragten machten hier keine Angabe.
 
 
-Abbildung 4 - Zugrundeliegende Ausbildung der ehrenamtlich tätigen (Antworten ohne Angabe wurden
 nicht abgebildet)
 
 
@@ -824,6 +822,9 @@ Auswertung zunächst, dass der Interventionsbeginn unabhängig der Todesursache 
 Eintritt des Todesfalls aufgenommen wird.
 
 
+Abbildung 8 - Zeitpunkt der Aufnahme der Trauerversorgung
+
+
 Betrachtet man zusätzlich zu der reinen Unterteilung, wann die Befragten den
 Interventionsbeginn angegeben haben noch die Tätigkeitsform, so ergibt sich die in
 Abbildung 9 angegebene Verteilung.
@@ -844,9 +845,6 @@ durch Krankheit mit Leidenszeit erlitten haben, so zeigt sich ein ähnliches Bil
 Befragten gaben hier 19% (80) an, die Versorgung vor dem Eintritt des Todesfalls
 aufzunehmen. 71% (291) nehmen die Versorgung erst nach Eintritt des Todesfalls auf
 und 10% machten keine Angabe.
-
-
-Abbildung 10 - Zeitpunkt der Aufnahme der Trauerversorgung bei Verlust durch Krankheit mit Leidenszeit
 
 
 Auch hier lässt sich bei weiterer Unterteilung nach Tätigkeitsform feststellen, dass mit
@@ -963,11 +961,6 @@ ergibt sich, dass 26,3% (65) von den seit weniger als 10 Jahren im Bereich der
 Trauerintervention Arbeitenden eine trauerspezifische Zusatzausbildung besitzen und ein
 bestimmtes Konzept dabei verfolgen. Bei den zwischen 11 bis 20 Jahre im selbigen
 Bereich Arbeitenden liegt der Anteil bei 31,9% (44).
-
-
-Abbildung 12 - Unterschiedlich lange Berufserfahrung und dabei Vorliegen eines bestimmten Konzeptes
-sowie einer trauerspezifischen Zusatzausbildung (Berufserfahrung von 21 - 30 Jahren sowie >30
-Jahren hier nicht abgebildet)
 
 
 Schließlich ergab die Befragung von quantitativen Betreuungszahlen, dass 72% (295) der

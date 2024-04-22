@@ -25,7 +25,10 @@ Dekan der Mathematisch-Naturwissenschaftlichen Fakultät I
 Prof. Dr. Andreas Hermann
 
 
-Gutachter: 1. Prof. Dr. Ulrich Zeller
+1. Prof. Dr. Ulrich Zeller
+
+
+Gutachter:
 
 
 2. Prof. Dr. Wolfgang Maier
@@ -102,8 +105,6 @@ Arbeit.
 
 Herr Dr. Peter Giere unterstützte den Arbeitsprozess durch fruchtbare Diskussionen und viele
 Ratschläge. Seine Hinweise und Hilfestellungen waren besonders relevant für diese Arbeit.
-
-
 Bei den Laborarbeiten stand mir Frau Jutta Zeller immer hilfreich zur Seite. Ohne ihre Hilfe
 wäre das zu untersuchende Material kaum zu bearbeiten gewesen.
 
@@ -684,9 +685,6 @@ hung (zum Beispiel in einer animierten Sequenz) lässt den räumlichen Eindruck 
 ziehungen zwischen den morphologischen Einzelmerkmalen erkennbar werden.
 
 
-2.3 Identifikation, Homologisierung und anatomische Nomenklatur
-
-
 Die Identifikation und die Homologisierung einzelner Strukturen sind wesentlicher Bestand-
 teil einer phylogenetischen und vergleichend anatomischen Untersuchung. Zur Identifizierung
 der anatomischen Strukturen und Gegebenheiten wurden folgende Quellen und Materialien
@@ -837,9 +835,6 @@ talis unterhalb des Septum nasi (Abb. 14, 17), die Cartilagines des Paries nasi 
 die Lamina transversalis anterior (Abb. 18).
 
 
-3.1.3 Paries nasi
-
-
 Die Seitenwände des Rostralorgans bilden den Paries nasi, der nach Reinbach (1952) bei den
 Theria aus drei paarigen Knorpelzentren entsteht. Bei den Eutheria wird die Seitenwand der
 embryonalen Nasenkapsel in drei Abschnitte untergliedert: die Pars anterior, die Pars lateralis
@@ -879,9 +874,6 @@ befindet. Dieser Muskel zieht weiter nach caudal und fächert sich dorso-lateral
 Tectum nasi auf (vgl. Abschnitt 3.1.12.).
 
 
-3.1.4 Septum nasi
-
-
 Das knorpelige Septum nasi (Abb. 6b, 12, 19) durchzieht die Nasenkapsel in allen untersuch-
 ten Stadien der Macroscelidinae, wobei sich der zunächst ovale Querschnitt nach caudal ver-
 breitert. In der Zona anularis nimmt er somit einen tropfenförmigen (Abb. 17), weiter caudal
@@ -915,9 +907,6 @@ rior die Nasenkapsel nach caudal ab. In ihr befindet sich eine Vielzahl Foramina
 des Vomer bis zum Austritt des Nervus opticus aus der Augenhöhle (Abb. 25). Beim zwei
 Tage alten Tier (Nr. 3) ist das Tectum nasi caudal teilweise verknöchert und in der Lamina
 cribrosa sind schmale Bereiche ossifiziert.
-
-
-3.1.6 Lamina transversalis anterior et posterior
 
 
 Ursprünglich ist die Lamina transversalis anterior bei Amnioten ein flacher Knorpel, der sich
@@ -1089,9 +1078,6 @@ bunden ist. Erst bei dem fast geburtsreifen Embryo (Nr. 2) ist dieser Knorpel au
 hat eine Verbindung zu diesem Muskel (vgl. Abschnitt 3.1.10.).
 
 
-3.2 Regio orbitotemporalis
-
-
 Sowohl der Boden und die Seitenwand des Cavum cranii als auch Nasen- und Ohrkapseln
 begrenzen die Regio orbitotemporalis. Durch eine bei Säugetieren ausgebildete sekundäre
 Schädelseitenwand wird dieser Bereich in einen lateralen und einen medialen Abschnitt unter-
@@ -1249,9 +1235,6 @@ num basale nimmt von rostral nach caudal kontinuierlich ab. Bei Macroscelides pr
 buchten die Mittelohrkapseln das Planum basale lateral ein. Über die Commissurae basicoch-
 learis anterior und posterior ist die Basalplatte mit den Ohrkapseln verbunden. Beide Com-
 missurae sind, wenn auch verdeckt, beim adulten Tier noch zu erkennen.
-
-
-3.3.1 Mittelohrkapsel
 
 
 Die schräge Lage der Achse der Mittelohrkapsel von rostro-medial nach caudo-lateral und
@@ -1519,9 +1502,6 @@ mus tetradactylus dorsal des Foramen infraorbitalis. Bei Rhynchocyon befindet si
 ramen lacrimale sehr weit lateral, bei Elephantulus ist es medial verschoben. Bei den erstge-
 nannten Taxa ist es größer und nahezu rund, bei den letztgenannten Taxa höher als breit und
 schlitzförmig.
-
-
-3.4.6 Parietale
 
 
 Das Parietale ist einer der Deckknochen, dessen Ossifikation bei Macroscelides proboscideus

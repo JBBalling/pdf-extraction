@@ -28,17 +28,9 @@ Dr. Andreas Mittelbach
 
 
 Amtierender Dekan:
-
-
 1. Gutachter:
-
-
 2. Gutachter:
-
-
 Betreuer Mercedes-Benz AG:
-
-
 Tag der Promotion:
 
 
@@ -92,9 +84,6 @@ trägt. Aus diesem Grund beschäftigt sich die vorliegende Promotionsarbeit mit
 dem Einsatz von KI Methoden im Kontext des Korrosionsschutzes.
 
 
-Einleitung
-
-
 Korrosionskritische Konstruktionen
 
 
@@ -126,9 +115,6 @@ sonders geeignet, nachdem korrosionskritische Konstruktionen nicht eindeutig de-
 finiert sind und diese Algorithmen auch anhand inkonsistenter Daten lernen kön-
 nen. Aus diesem Grund werden insbesondere KI Methoden zur Umsetzung der
 Kanten- und Flanschsegmentierung in dieser Arbeit untersucht.
-
-
-Einleitung
 
 
 Korrosionsrisiko
@@ -302,9 +288,6 @@ Unsupervised Methoden arbeiten ohne vorgegebene Klassen und fassen beispiels-
 weise ähnliche Features zu Clustern zusammen. [13, 166]
 
 
-1 Aktueller Kenntnisstand
-
-
 1.1.2 Features, Labels und Regressionswerte
 
 
@@ -340,9 +323,6 @@ bestimmt, wobei die linear-transformierten Elemente f˜ des Trainingssets einen 
 Erwartungswert von 0 und eine Standardabweichung von 1 besitzen. [12, 191]
 Eine nicht-lineare Skalierung ergibt sich durch die sogenannte Softmax-Normali-
 sierung [191] mit einem vorinitialisierten positiven Skalierungsfaktor β > 0
-
-
-1 Aktueller Kenntnisstand
 
 
 wodurch die Werte f¯ im Intervall (0, 1) liegen. Durch diese Normalisierung wer- jk
@@ -390,9 +370,6 @@ FOOTNOTE:anz (cid:80)nu λ / (cid:80)nf λ der n Hauptkomponenten einen vorgegeb
 übersteigt. [97]
 
 
-1 Aktueller Kenntnisstand
-
-
 1.1.3 Methoden der künstlichen Intelligenz
 
 
@@ -416,9 +393,6 @@ Klassifizierung der Entität i durch
 eindeutig ist. Dabei bezeichnet
 
 
-die binäre Treppenfunktion. [13, 191]
-
-
 Im Rahmen einer Regression wird der Mittelwert der k -nächsten Nachbarn im nn
 Trainingsdatensatz (f , r ) , j = 1, . . . , n durch j j T
 
@@ -434,9 +408,6 @@ FOOTNOTE:Als Metrik werden unter anderem die euklidische d (x, y) = x y oder die
 FOOTNOTE:mit Σ 1 als Inverses der Kovarianzmatrix verwendet. Die Mahalanobis Distanz −
 berücksichtigt somit die unterschiedlichen Skalen der Features und deren Korre-
 lation. [13, 137, 191]
-
-
-1 Aktueller Kenntnisstand
 
 
 1.1.3.2 Classification And Regression Trees
@@ -488,9 +459,6 @@ daten im Gegensatz zu den Algorithmen [141, 179] reduziert. [125] Die ermittelte
 Entscheidungsregeln werden dann auf neue Testdaten angewandt.
 
 
-1 Aktueller Kenntnisstand
-
-
 Für eine Regression kann die Impurity durch die mittlere quadratische Abwei-
 FOOTNOTE:chung (engl. Mean Squared Error (MSE)) I( ) = 1 (cid:80)nK (r r ) bestimmt
 FOOTNOTE:werden, wobei dem Knoten der Mittelwert rK = 1
@@ -527,11 +495,10 @@ mittelt. [32, 49]
 
 FOOTNOTE:Die Lineare Diskriminanzanalyse (LDA) resultiert aus der Annahme Σ = Σ = Σ, 0 1
 FOOTNOTE:wodurch sich Gleichung (1.12) auf l = 1 ωtf > ω reduziert, mit ω = i i 0
-FOOTNOTE:⇔ Σ 1 (µ µ ) und ω = 1ωt (µ + µ ) für P (l = 1) = P (l = 0). [49]
-− 0 − 1 0 2 0 1 i i
-
-
-Die von−Fisher [57] publi2zierte lineare Diskriminanzanalyse kommt ohne die Ein-
+FOOTNOTE:⇔ Σ 1 (µ µ ) und ω = 1ωt (µ + µ ) für P (l = 1) = P (l = 0). [49] − 0
+−
+1 0 2 0 1 i i
+Die von Fisher [57] publizierte lineare Diskriminanzanalyse kommt ohne die Ein-
 schränkung Σ = Σ = Σ aus und maximiert das Verhältnis der Varianz zwischen 0 1
 und innerhalb der Klassen durch ω = (Σ 0 + Σ 1)−1 (µ 0 µ 1). [13, 49] Werden statt
 − den eigentlichen Features die über Gleichung (1.2) standardisierten Features ver-
@@ -571,9 +538,6 @@ auch nur eine lineare Entscheidungsfunktion, wie Abbildung 1.1 veranschaulicht.
 Dadurch ergeben sich zwei Problemstellungen:
 
 
-i) Zulassen von Fehlklassifikationen:
-
-
 Falls die Trainingsdaten nicht ohne Fehler linear separiert werden können,
 werden Schlupfvariablen ξ 0, j = 1, . . . , n in das Problem aus Glei- j T ≥
 
@@ -604,9 +568,6 @@ SV SV
 
 wobei die letzte Identität eine Funktion K(f , f ) enthält, die den Satz von j i
 1Eigene Abbildung in Anlehnung an [32].
-
-
-1 Aktueller Kenntnisstand
 
 
 Mercer erfüllt. [32] Durch solche Kernel Funktionen K muss die Funktion Φ
@@ -666,13 +627,14 @@ iii) Logistische Sigmoid-Funktion:
 
 
 iv) Softmax-Funktion:
-
-
 Erweiterung der logistischen Sigmoid-Funktion auf den d-dimensionalen Fall
 mit d > 1 exp (x )
 
 
 v) Exponential Linear Unit (ELU):
+
+
+(1.23)
 
 
 Dabei bezeichnet ψ > 0 einen wählbaren Parameter (häufig ψ = 1).
@@ -726,13 +688,10 @@ ii) Online:
 
 
 Für jede Trainingsinstanz (f , (cid:96) ) eines Klassifizierungsproblems werden die j j
-Gewichte durch ∂E (NN (f ), (cid:96) )
+Gewichte durch NN
 
 
 aktualisiert. Dieses Training besitzt somit sehr viele Gewichtsupdates. [13]
-
-
-1 Aktueller Kenntnisstand
 
 
 iii) Mini-Batch:
@@ -782,9 +741,6 @@ tat, dass zumindest theoretisch eine beliebig genaue Anpassung an entsprechende
 Trainingsdaten möglich ist. Die Schwierigkeit besteht vielmehr darin das trainierte
 
 
-1 Aktueller Kenntnisstand
-
-
 Modell nicht zu stark oder zu schwach an die Trainingsdaten anzupassen, sodass
 die gelernte Relation zwischen den Features und Labels auf die neuen Daten ver-
 allgemeinert wird. Im ML Kontext wird dabei von Über- und Unteranpassung
@@ -825,9 +781,6 @@ b) Die vordefinierte Trainingsdauer wird überschritten.
 
 
 3Eigene Abbildung in Anlehnung an [13].
-
-
-1 Aktueller Kenntnisstand
 
 
 c) Die Performance auf den Trainingsdaten unterschreitet einen vordefi-
@@ -883,9 +836,6 @@ durch die Wahrscheinlichkeit des Vorkommens des Knotens in den ausge-
 dünnten Netzwerken adaptiert werden. [83, 180]
 
 
-1 Aktueller Kenntnisstand
-
-
 Zeitreihenanalyse Die folgenden speziellen NN Typen werden zur Analyse von
 Zeitreihenfeatures und Regressionswerten verwendet. Für diese Daten sind Z Z
 F R alle Feature-Werte-Paare (f(z ), r(z )) , k = 1, . . . , n abhängig vom Zeitpunkt z . k k z k
@@ -923,9 +873,6 @@ vielen Zeitschritten ermöglicht wird.
 Der Loss für ein LSTM Netzwerk wird oftmals bezüglich der in einem Mini-
 Batch enthaltenen Zeitreihen ausgewertet. Für ein Regressionsproblem er-
 gibt sich damit beispielsweise
-
-
-1 Aktueller Kenntnisstand
 
 
 1.1.3.6 Boosting
@@ -1010,16 +957,13 @@ fern, allerdings ist für die direkte Vergleichbarkeit der dazugehörigen Algori
 eine einzelne Metrik, wie Genauigkeit, F oder MCC notwendig. 2
 
 
-Für den Fall eines schiefen DatensatzeFs2ergibt die Klassifikation aller Instanzen
+Für den Fall eines schiefen Datensatzes ergibt die Klassifikation aller Instanzen
 mit der mehrheitlich vorkommenden Klasse bereits eine hohe Genauigkeit, ob-
 wohl die Güte des Klassifikators schlecht ist. Wenn die Codierung der Klassen
 FOOTNOTE:getauscht wird, schwankt der F Wert, denn dieser ist unabhängig von der Anzahl 2
 der TN Instanzen. Der MCC berücksichtigt dagegen alle Fälle des Klassifizie-
 rungsproblems, ist invariant unter der Codierung der Klassen und ist für schiefe
 Datensätze geeignet. [29, 30, 189]
-
-
-1 Aktueller Kenntnisstand
 
 
 1.1.4.2 Regression
@@ -1052,9 +996,6 @@ Der MAE, MSE, RMSE und der MAPE sind dabei in der Literatur am häufigsten
 vertreten. [19]
 
 
-1 Aktueller Kenntnisstand
-
-
 1.1.5 Hyperparameter Optimierung
 
 
@@ -1070,11 +1011,6 @@ einer Bewertungsmetrik (Abschnitt 1.1.4) evaluiert. Für kontinuierliche Paramet
 wird eine feste Anzahl an Auswertungspunkten festgesetzt. Die manuelle Suche
 wird verwendet, um Bereiche des Parameterraums zu identifizieren, die vielver-
 sprechend sind. [11]
-
-
-Abbildung 1.4: Auswertung der Raster- und der Zufallssuche bezüglich eines ro-
-busten und eines sensitiven Hyperparameters hinsichtlich eines
-Maximierungsproblems.$$$4$$$
 
 
 Eine andere Möglichkeit zur Hyperparameter Optimierung besteht darin, die Pa-
@@ -1133,9 +1069,6 @@ ii) Initial Graphics Exchange Specification (IGES) [177] oder
 
 
 iii) Standard for the Exchange of Product Model Data (STEP) [95]
-
-
-1 Aktueller Kenntnisstand
 
 
 Datei erlaubt. Es stehen jeweils rund 40 Fahrzeugmodelle zur Verfügung, die in

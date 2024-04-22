@@ -40,7 +40,7 @@ der Friedrich-Alexander-Universität Erlangen-Nürnberg
 Tag der mündlichen Prüfung: 25.7.2019
 
 
-Prof. Dr. Thomas Demmelhuber
+Vorsitzende/r des Promotionsorgans: Prof. Dr. Thomas Demmelhuber
 
 
 Prof. Dr. Armin Scherb
@@ -50,6 +50,9 @@ Gutachter/in:
 
 
 Prof. Dr. Dr. h.c. Heiner Bielefeldt
+
+
+Vorwort
 
 
 Die vorliegende Arbeit steht im Zusammenhang mit meiner langjährigen ehrenamtli-
@@ -78,6 +81,8 @@ der intuitiven Abwehr zugestehen, dass dieser Universalismus historisch-partikul
 
 
 FOOTNOTE:1 Im Saal 600 fanden von 1945–1949 die Kriegsverbrecherprozesse statt.
+
+
 FOOTNOTE:2 Meine Begründung bezieht sich nicht auf museumspädagogische Konzeptionen.
 
 
@@ -614,7 +619,7 @@ Zu unterscheiden sind somit in dieser Bildungskonzeption
 ● die NS-Verbrechen als Gegenstand der Anklage und Urteile
 
 
-● das Prozessgeschehen selbst$$$26$$$
+● das Prozessgeschehen selbst26
 
 
 FOOTNOTE:26 Das komplexe Prozessgeschehen wird häufig in der dominierenden angelsächsischen Perspek-
@@ -1569,9 +1574,6 @@ behandelt „Auschwitz im Gerichtssaal - Die Aburteilung des Holocaust in Ost un
 Methoden gewidmet.
 
 
-Politische Bildung in Bayern mit dem IMT
-
-
 In die fachlich und institutionell etablierte politische Bildung in Bayern$$$70$$$ fanden NS-
 Prozesse, also Strafverfahren gegen NS-Täter, als Bausteine einer Antitotalitarismus-Ar-
 gumentation Eingang. So stellte im Jahr 1983 Manfred Hättich auf einer Tagung der Po-
@@ -1846,8 +1848,6 @@ FOOTNOTE:75 „Die ‚Politische Weltkunde‘ und der Horizont des Rechts“ ist
 satzes von Oetinger/Wilhelm aus dem Jahr 1965; siehe auch Grammes (2012, S. 58).
 FOOTNOTE:76 Zur Person Oetinger/Wilhelm und zur Tätigkeit als Pädagoge im Nationalsozialismus siehe das
 Personenportrait von Grammes in Sander & Steinbach (2014, S. 60/61).
-
-
 FOOTNOTE:77 „Zu den Gründungsmitgliedern des Instituts zählten folgende Vereine und Verbände: der Deut-
 sche Städtetag, der Landkreistag, der Städtebund, der Gemeindeverband, der Verein für öffentli-
 che und private Fürsorge, der Deutsche Verband für Wohnungswesen, Städtebau und Raumpla-

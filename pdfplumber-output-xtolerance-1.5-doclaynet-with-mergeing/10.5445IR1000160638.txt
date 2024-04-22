@@ -963,35 +963,28 @@ tatsächlich in Ballbesitz ist. Ist ein Verhaltensbaustein aktiv, gibt er über 
 Algorithmus 1 : Generisches Arbitrationsverfahren
 
 
-FOOTNOTE:1 function BesteAnwendbareAktion(Situation 𝒔)
+1 function BesteAnwendbareAktion(Situation 𝒔)
 
 
-2 funcFtiilotenreBeanswteeAnndwbaernedObpatrieonAeknti𝒜on⊂(𝒪Si
+FOOTNOTE:2 Filtere anwendbare Optionen 𝒜 ⊂ 𝒪
 
 
-2
-3 FWilätehrleeaInntwenentidobna𝜃re∈Op𝒜tiaounse
+FOOTNOTE:3 Wähle Intention 𝜃 ∈ 𝒜 aus
 
 
-4 WBeäshtilmemInete𝒖nt=ionAk𝜃t∈io𝒜n𝜃a(u𝒔s)
+// Arbitration
 
 
-return 𝒖
+FOOTNOTE:4 Bestimme 𝒖 = Aktion𝜃(𝒔)
 
 
-6 end
-
-
-FOOTNOTE:8 while true do
+8 while true do
 
 
 FOOTNOTE:9 Bestimme die aktuelle Situation 𝒔
 
 
-109 BBeessttiimmmmee d𝒖ie=akBteusetlleeASnitwueantidobna𝒔reAktion(𝒔)
-
-
-11 BFüehstriem𝒖maeu𝒖s
+10 BBeessttiimmmmee d𝒖ie=akBteusetlleeASnitwueantidobnareAktion(𝒔)
 
 
 Fortsetzungs-Bedingung Fortsetzung außerdem zurück, ob alle Bedingun-

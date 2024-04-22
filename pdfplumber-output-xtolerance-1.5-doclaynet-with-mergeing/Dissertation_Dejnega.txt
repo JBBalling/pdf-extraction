@@ -35,22 +35,10 @@ V. Fazit und Ausblick
 VI. Anhang
 
 
-Biographisches Glossar
-
-
 Transkriptionsstandards
 
 
 Quellenverzeichnis
-
-
-Literaturverzeichnis
-
-
-Danksagung
-
-
-Selbstständigkeitserklärung
 
 
 I. Einleitung
@@ -94,9 +82,7 @@ worden, siehe Statistisches Handbuch für die Republik Österreich, hg. vom öst
 Zentralamt, III. Jg., Wien 1952, 47.
 
 
-FOOTNOTE:Z4 Uenntirtaelda mStta, tIeIsI. HJgig.,h
-W
-Cioemn m19is5s2i,o 4n7er. for Austria, Statistical Report of Displaced Persons and Refugees in Austria,
+FOOTNOTE:4 United States High Commissioner for Austria, Statistical Report of Displaced Persons and Refugees in Austria,
 Vienna, June 30, 1952. Diese Zahl umfasst eingebürgerte wie nicht eingebürgerte “ethnic Germans”.
 FOOTNOTE:5 Im Fall der für diese Untersuchung Interviewten hatten alle Migrationen zwanghaften Charakter: Wenn nicht
 bereits die Ausweisung oder Flucht unter Zwang erfolgte, so führte die sukzessive Aberkennung ihrer
@@ -139,7 +125,7 @@ Sundhaussen, Forced Ethnic Migration, in: European History Online, http://www.ie
 2010-en [letzter Aufruf am 18. April 2017].
 
 
-FOOTNOTE:26 0H1e0i-deenm [aleritez tUerh Al: uDfreurf g aemge 1n8w. äArtpigriel O20r1t 7v]o.n „Flucht und Vertreibung“ im deutschen und österreichischen
+FOOTNOTE:6 Heidemarie Uhl: Der gegenwärtige Ort von „Flucht und Vertreibung“ im deutschen und österreichischen
 Gedächtnisdiskurs, in: Peter Haslinger/K. Erik Franzen/Martin Schulze Wessel (Hrsg.): Diskurse über
 Zwangsmigrationen in Zentraleuropa, München 2008, 157–174, 168.
 FOOTNOTE:7 Zur Klärung des Begriffs und seiner Verwendung in dieser Arbeit siehe weiter unten in diesem Kapitel.
@@ -237,9 +223,11 @@ Reich zur „Nationalisierung und Ethnisierung eines geographischen Gebiets“, 
 „Nation“ als identitätsstiftendes Konzept noch kaum präsent war.$$$14$$$
 
 
-w14 eJiutelira
-u
-Snctehnm iind ,d "iDeseeumts Kchabpöitheml eeinn". a ls Konstrukt deutscher Nationalisten in Österreich und dem Deutschen
+FOOTNOTE:13 Auf methodische Aspekte der Samplebildung, Interviewführung und Auswertung der Interviews gehe ich
+weiter unten in diesem Kapitel ein.
+
+
+FOOTNOTE:14 Julia Schmid, "Deutschböhmen" als Konstrukt deutscher Nationalisten in Österreich und dem Deutschen
 Reich, in: Bohemia. Zeitschrift für Geschichte und Kultur der böhmischen Länder 48 (2008) 2, 464–479, 464.
 
 
@@ -279,7 +267,7 @@ instrumentalisiert wurde.“ Zu unterschiedlichen Ansätzen und Befunden bei der
 Organisationen; 1945–1955, Frankfurt am Main 2008, 51.
 
 
-FOOTNOTE:O16 rNgaannicsya tMioenreinw; e1t9h4er5 –W1i9n5g5f,i eFlrda,n Fklfaugr tw aamrs M anadin s 2to0n0e8 s, a5i1n.t s. How the Bohemian lands became Czech, Cambridge
+FOOTNOTE:16 Nancy Meriwether Wingfield, Flag wars and stone saints. How the Bohemian lands became Czech, Cambridge
 2007; sowie Jeremy King, Budweisers into Czechs and Germans. A local history of Bohemian politics, 1848–
 1948, Princeton 2002.
 
@@ -366,7 +354,7 @@ deutschen Staaten hat sich Mathias Beer beschäftigt, siehe Matthias Beer, Flüc
 Heimatvertriebene. Flüchtlingspolitik und Flüchtlingsintegration in Deutschland nach 1945,
 begriffsgeschichtlich betrachtet, in: Matthias Beer/Martin Kintzinger/Marita Krauss (Hrsg.), Migration und
 Integration. Aufnahme und Eingliederung im historischen Wandel, Stuttgart 1997, 145–167. Für Österreich steht
-eine solche Untersuchung noch aus. 24
+eine solche Untersuchung noch aus.
 
 
 FOOTNOTE:e24i nZeu smo lBcheeis Upinetle irns uScthautinstgi sncohcehs aHuasn. d buch der Republik Österreich, hg. Vom Statistischen Zentralamt, I. Jg.,
@@ -467,7 +455,7 @@ Wien 1987; Herbert Nikitsch, Zur Organisation von Heimat. Die Heimatschutzbewegu
 Katharina Weigand (Hrsg.), Heimat. Konstanten und Wandel im 19./20. Jahrhundert: Vorstellungen und
 Wirklichkeiten, 1. Kolloquium des Alpinen Museums, München 1997, 285–306; sowie Barbara Stieber,
 Heimatliche Bilderwelten. Darstellung von Heimat und Lesarten der Filmkritik - eine qualitative Analyse zum
-österreichischen Heimatfilm, Diplomarbeit, Universität Wien, Wien 2009.
+österreichischen Heimatfilm, Diplomarbeit, Universität Wien, Wien 2009. 30
 
 
 FOOTNOTE:30 Einen Überblick über die österreichische Migrationsgeschichte findet man bei Sylvia Hahn, Österreich, in:
@@ -506,7 +494,7 @@ Expellees in post-war West Germany and Canada, Göttingen 2011; Susanne Greiter,
 Familiengedächtnis. Geschichte und Narrativ, München 2014.
 
 
-FOOTNOTE:F32a Dmailriuenntgeer dfäücr hKtnroisa. tGieens uchnidc hdtiee uVnodj vNoadrirnaat:i vT, hMomünacsh Cena s2a0g1ra4n. de, Die volksdeutsche SS-Division "Prinz Eugen".
+FOOTNOTE:32 Darunter für Kroatien und die Vojvodina: Thomas Casagrande, Die volksdeutsche SS-Division "Prinz Eugen".
 Die Banater Schwaben und die nationalsozialistischen Kriegsverbrechen, Frankfurt am Main/New York 2003;
 Zoran Janjetović, Between Hitler and Tito. The disappearance of the Vojvodina Germans, Belgrad 22005;
 Michael Portmann, Die kommunistische Revolution in der Vojvodina 1944-1952. Politik, Gesellschaft,
@@ -519,7 +507,7 @@ umfassend: Arnold Suppan, Hitler – Beneš – Tito. Konflikt, Krieg und Völke
 Südosteuropa, 3 Bände, Wien 2014.
 
 
-FOOTNOTE:S33ü Ddoasrutenutreor pfaü,r 3K Broäantdieen, Wunide nd i2e0 V14o.j v odina Bethke, Deutsche und ungarische Minderheiten; Zakić, The Price of
+FOOTNOTE:33 Darunter für Kroatien und die Vojvodina Bethke, Deutsche und ungarische Minderheiten; Zakić, The Price of
 Belonging; Für die böhmischen Länder v.a. Tara Zahra, Kidnapped souls. National indifference and the battle for
 children in the Bohemian Lands, 1900-1948, Ithaca 2009.
 
@@ -553,13 +541,13 @@ Oberläuter, Das zweite Dach. Eine Zwischenbilanz über Barackennot und Siedlerw
 1979.
 
 
-FOOTNOTE:1359 Y79v.o nne von Stedingk, Die Organisation des Flüchtlingswesens in Österreich seit dem Zweiten Weltkrieg,
+FOOTNOTE:35 Yvonne von Stedingk, Die Organisation des Flüchtlingswesens in Österreich seit dem Zweiten Weltkrieg,
 Wien 1970; Brunhilde Scheuringer, Dreißig Jahre danach. Die Eingliederung der volksdeutschen Flüchtlinge
 und Vertriebenen in Österreich, Wien 1983.
+
+
 FOOTNOTE:36 Gabriela Stieber, Nachkriegsflüchtlinge in Kärnten und der Steiermark, Graz 1997.
-
-
-FOOTNOTE:37 G Ma ib chri ae el la JS ot hie nb , e Br, e vN öa lc kh ek ruri ne gg s if nl ü dc eh r t Sli tn ag de t .i "n E K inä hrn eit men i su cn hd e "d e ur n S d t "e Fie rr em ma dr ek ", iG nr a Lz i n1 z9 (9 17 9. . und 20. Jahrhundert), Linz
+FOOTNOTE:37 Michael John, Bevölkerung in der Stadt. "Einheimische" und "Fremde" in Linz (19. und 20. Jahrhundert), Linz
 2000. Ebenso eine Zusammenschau der Situation unterschiedlicher Flüchtlingsgruppen nach dem Zweiten
 Weltkrieg bietet Tara Zahra,"Prisoners of the Postwar": Expellees, Displaced Persons, and Jews in Austria after
 World War II, in: Austrian History Yearbook 41 (2010), 191-215. Zur Wahrnehmung von Displaced Persons
@@ -698,13 +686,13 @@ verankerte antislawische Ressentiments befeuert.$$$47$$$ In diesem allgemein auf
 
 FOOTNOTE:44 Zur „Vielstimmigkeit“ in (vermeintlich) national einheitlichen Erinnerungskulturen siehe Jay Winter: Sites of
 Memory and Shadow of War, in: Astrid Erll/Ansgar Nünning (Hrsg.): Cultural Memory Studies, Berlin/ New
-York 2008, 61–74. 45
+York 2008, 61–74.
 
 
 FOOTNOTE:45 Siehe Uhl, "Flucht und Vertreibung".
 
 
-FOOTNOTE:46 S Wie ah lte e rU Mhl ., I" bF el ru /c Sh tet fu an nd K V ae rnrt er re ,i b Du in e g R" e. s titutions- und Entschädigungsbemühungen der Regierung Schüssel und
+FOOTNOTE:46 Walter M. Iber/Stefan Karner, Die Restitutions- und Entschädigungsbemühungen der Regierung Schüssel und
 ihre Rezeption im In- und Ausland, in: Walter M. Iber/Stefan Karner (Hrsg.), Schweres Erbe und
 "Wiedergutmachung". Restitution und Entschädigung in Österreich: die Bilanz der Regierung Schüssel,
 Innsbruck et al. 2015, 91–104, 98.
@@ -745,12 +733,12 @@ Hahn, Flucht und Vertreibung, in: Etienne François/Hagen Schulze (Hrsg.), Deuts
 Erinnerungen und Debatten in Deutschland und Polen seit 1989, Marburg 2011.
 
 
-FOOTNOTE:E49r Sininehereu hnigeerznu u anuds Dfüehbralitctehn K inat rDine uHtsacmhlmanedrs tuenind, PGoelemne sienista 1m9e8 9V, eMrgaarnbguerngh 2e0it1 -1 .g etrennte Erinnerung? Der
+FOOTNOTE:49 Siehe hierzu ausführlich Katrin Hammerstein, Gemeinsame Vergangenheit - getrennte Erinnerung? Der
 Nationalsozialismus in Gedächtnisdiskursen und Identitätskonstruktionen von Bundesrepublik Deutschland,
 DDR und Österreich, Göttingen 2017, 452–455.
 
 
-FOOTNOTE:D50 DNRo rubnedrt ÖKsatpererleleicr,h P, aGrölatmtinegnetanr 2is0c1h7e, G45ed2e–n4k5r5e.i s en im Gedenkjahr 2005. Eine österreichische
+FOOTNOTE:50 Norbert Kapeller, Parlamentarische Gedenkreisen im Gedenkjahr 2005. Eine österreichische
 Parlamentarierdelegation blickt auf die ehemalige Donaumonarchie und die Zukunft in einem gemeinsamen
 Europa, Freistadt/Wien 2008. Für den Hinweis auf diese Initiative bedanke ich mich sehr herzlich bei Oliver
 Rathkolb.
@@ -796,7 +784,7 @@ FOOTNOTE:52 Siehe hierzu im Detail Ernst Bruckmüller, Nation Österreich. Kultu
 politische Prozesse, Wien 21996.
 
 
-FOOTNOTE:p53o Zliutirs cuhmef Pasroseznedsseen, AWuiseeni n1an9d9e6r.s etzung mit der Geschichte deutsch(national)en Bewusstseins in Österreich und
+FOOTNOTE:53 Zur umfassenden Auseinandersetzung mit der Geschichte deutsch(national)en Bewusstseins in Österreich und
 Darstellung unterschiedlicher Standpunkte dazu siehe Gerhard Botz/Gerald Sprengnagel (Hrsg.), Kontroversen
 um Österreichs Zeitgeschichte. Verdrängte Vergangenheit, Österreich-Identität, Waldheim und die Historiker,
 Frankfurt/New York 22008.
@@ -842,7 +830,7 @@ siehe Volker Zimmermann, Geschichtsbilder sudetendeutscher Vertriebenenorganisat
 Volker Zimmermann, Sudetendeutsche Perspektiven auf den Nationalsozialismus. Einstellungen und Wertungen
 der NS-Zeit bis heute, in: Monika Glettler/Lubomír Lipták/Alena Míšková (Hrsg.), Geteilt, besetzt, beherrscht.
 Die Tschechoslowakei 1938–1945: Reichsgau Sudetenland, Protektorat Böhmen und Mähren, Slowakei, Essen
-2004, 229–248. 57
+2004, 229–248.
 
 
 FOOTNOTE:57 Ich beschränke mich im Folgenden auf die Entwicklung der Oral History in Deutschland und Österreich. Im
@@ -949,9 +937,6 @@ siehe Waltraud Kannonier-Finster/Meinrad Ziegler, Österreichisches Gedächtnis.
 der NS-Vergangenheit, Wien/Köln/Weimar 1993.
 
 
-Kontaktaufnahme, Samplebildung und Interviewführung
-
-
 Ein entscheidendes Merkmal, das vorliegende Studie von anderen über subjektive Erinnerung
 und Tradierung von „Flucht und Vertreibung“ unterscheidet, ist, dass die zu Interviewenden
 weder über landsmannschaftliche Organisationen noch im Schneeballsystem (d.h. anhand
@@ -1043,11 +1028,11 @@ vereinbarte ich mit meinen Interviewpartner/innen wie bereits erwähnt in der Re
 zwei Termine. Beim ersten Termin habe ich eine möglichst offene, neutrale Eingangsfrage
 
 
-FOOTNOTE:70 Interview der Autorin mit Catherine P., geführt am 15. und 30. März 2012; Interview der Autorin mit Imre V.,
+FOOTNOTE:70 Interview der Autorin mit Catherine P., geführt am 15. und 30. März 2012; Interview der Autorin mit Imre V
 geführt am 16. Juli und 10. September 2012.
 
 
-FOOTNOTE:g71e Efüihnret laitmer a1r6i.s cJhueli Buneadr 1b0ei.t Sunepgt feimndbeetr m20a1n2 b. e i Rosemarie Bovier, Heimat ist das, wovon die anderen reden.
+FOOTNOTE:71 Eine literarische Bearbeitung findet man bei Rosemarie Bovier, Heimat ist das, wovon die anderen reden.
 Kindheitserinnerungen einer Vertriebenen der zweiten Generation, Göttingen 2014.
 
 
@@ -1085,9 +1070,7 @@ siehe Dorothee Wierling, Oral History, in: Michael Maurer (Hrsg.), Neue Themen u
 Geschichtswissenschaft, Stuttgart 2003, 81–151, 110–112.
 
 
-FOOTNOTE:G73 eFsrcahnikcha tMswaiusbseancshc hhaatf ti,n
-S
-ithurtetgr aDrti s2s0e0rt3a,t i8o1n– g1e5z1e,i g1t1,0 d–a1s1s 2d.a s Konzept der „Raumerinnerung“ für die Stimulation
+FOOTNOTE:73 Franka Maubach hat in ihrer Dissertation gezeigt, dass das Konzept der „Raumerinnerung“ für die Stimulation
 sowie die räumliche und zeitliche Verortung von Erinnerungen äußerst nützlich ist. Siehe Franka Maubach, Die
 Stellung halten. Kriegserfahrungen und Lebensgeschichten von Wehrmachthelferinnen, Göttingen 2009.
 FOOTNOTE:74 So beschreibt Lutz Niethammer den Zweck dieses ersten Teils, siehe Niethammer, Oral History in der
@@ -1176,10 +1159,8 @@ FOOTNOTE:78 Siehe u. a. .Rudolf Schenda, Von Mund zu Ohr. Bausteine zu einer Kul
 Erzählens in Europa, Göttingen 1993, 259–260.
 
 
-FOOTNOTE:E79r Czähhrliesntisa nin G Eeuurloepna/K, Garöotltiinneg eTns c1h9u9g3g, n2a5l9l,– E2i6n0le. itung, in: Christian Geulen/Karoline Tschuggnall (Hrsg.), Aus
-einem deutschen Leben. Lesarten eines biographischen Interviews, Tübingen 2000, 7–16, 15. 80 Aleida Assmann, Im Dickicht der Zeichen, Berlin 2015, 301
-
-
+FOOTNOTE:79 Christian Geulen/Karoline Tschuggnall, Einleitung, in: Christian Geulen/Karoline Tschuggnall (Hrsg.), Aus
+einem deutschen Leben. Lesarten eines biographischen Interviews, Tübingen 2000, 7–16, 15.
 FOOTNOTE:80 Aleida Assmann, Im Dickicht der Zeichen, Berlin 2015, 301
 
 
@@ -1205,7 +1186,10 @@ Interpretation.$$$89$$$ So zeigte sich auch in den von mir geführten Interviews
 soziale Position als (aus Sicht der Interviewten) junge, im Moment des Interviews ihrem
 
 
-FOOTNOTE:82 LMyantína sA Mbraarmtísn,e Oz/rMali chhisateolr yS cthheeoffreyl,, LEoinnfdüohnr u2n0g1 0in, 2d1ie. Erzähltheorie, München 92012, 111-115. Markus Arnold
+FOOTNOTE:81 Lynn Abrams, Oral history theory, London 2010, 21.
+
+
+FOOTNOTE:82 Matías Martínez/Michael Scheffel, Einführung in die Erzähltheorie, München 92012, 111-115. Markus Arnold
 bezeichnet diese Herstellung von Begründungszusammenhängen als eine der zentralen Eigenschaften von
 Erzählungen, siehe Markus Arnold, Erzählen. Die ethisch-politische Funktion narrativer Diskurse, in: Markus
 Arnold (Hrsg.), Erzählungen im Öffentlichen. Über die Wirkung narrativer Diskurse, Wiesbaden 2012, 17–63,
@@ -1217,16 +1201,16 @@ angeführt ist, entfällt das Gendern. Dennoch sind natürlich weibliche und mä
 Adressaten gleichermaßen gemeint.
 
 
-FOOTNOTE:A84 dMreasrstaínteenz gul.e aic.,h Eeirnmfüaßherunn gge imn ediniet .E rzähltheorie, 32-34.
+FOOTNOTE:84 Martínez u. a., Einführung in die Erzähltheorie, 32-34.
 
 
 FOOTNOTE:85 MMaorntiíknae zF ulu. dae.,r nEiikn,f Tühorwuanrgd isn a d 'niea tEurrzaäl'h nltahreraotroielo, g3y2,- 3L4o.n don/New York 1996, 81–85
 
 
-FOOTNOTE:86 MDeobnoirkaah F Slucdheifrfnriink,, DToiswcoarudrss ea m'naartkuerarsl', nCaarmrabtorliodggye,, LUoKn/dNoenw/N Yewor kY 1o9rk8 71.
+FOOTNOTE:86 Deborah Schiffrin, Discourse markers, Cambridge, UK/New York 1987.
 
 
-FOOTNOTE:87 D Sie eb ho er hah ie rS zc uh i af ufr ci hn , M D ii es kc eo u Br as le , m Naa rr rk ae tr os l, o C gyam . Ib nr ti rd og de u, c U tioK n/ N toe w th eY to hr ek o r1 y9 8 o7 f . n arrative, Toronto 32009, 75. An
+FOOTNOTE:87 DSieebhoer hahie rSzcuh iafufrcihn ,M Diieskceo uBrasle, mNaarrrkaetrosl,o Cgyam. Ibnrtirdogdeu,c UtioKn/ Ntoe wth eY tohreko r1y9 8o7f .n arrative, Toronto 32009, 75. An
 dieser Stelle möchte ich mich ausdrücklich bei Mieke Bal bedanken, die mich im Rahmen mehrerer Treffen
 während ihres Gastaufenthalts an der Universität Graz im Sommer 2010 dazu motiviert hat, narratologische
 Methoden bei der Analyse lebensgeschichtlicher Interviews zu verwenden.
@@ -1447,7 +1431,7 @@ Opfernarrative. Konkurrenzen und Deutungskämpfe in Deutschland und im östliche
 Weltkrieg, Oldenburg 2012, 9–27, 27.
 
 
-FOOTNOTE:W103e Altkleriideag ,A Oslsdmeannbnu,r gE r2l0e1b2te,, 9e–ri2n7n, e2r7te. und erzählte Geschichte, in: Axel Rüth/Michael Schwarze (Hrsg.),
+FOOTNOTE:103 Aleida Assmann, Erlebte, erinnerte und erzählte Geschichte, in: Axel Rüth/Michael Schwarze (Hrsg.),
 Erfahrung und Referenz. Erzählte Geschichte im 20. Jahrhundert, Paderborn 2016, 43–58, 49.
 FOOTNOTE:104 So fasste auch Alexander von Plato jüngst zusammen, dass mit Oral History über nichts anderes als die
 Tradierung historischer Ereignisse und Erfahrungen Aussagen getroffen werden können. Siehe Alexander von
@@ -1613,7 +1597,7 @@ ein offensiver Integrationsprozess ein, der letztlich zur umfassenden rechtliche
 
 FOOTNOTE:113 Zwar stammte auch eine Interviewte bzw. ein Interviewter aus Rumänien bzw. aus Ungarn, die spezielle
 Situation in diesen Ländern kann in diesem Kapitel aber aus pragmatischen Gründen nicht detailliert
-berücksichtigt werden. 114
+berücksichtigt werden.
 
 
 FOOTNOTE:b11e4r Füückr seiicnhetnig Üt wbeerrbdleicnk. über die Geschichte „ethnischer Säuberungen“ in Europa im 20. Jahrhundert und eine
@@ -1626,8 +1610,6 @@ Reinisch/Elizabeth White (Hrsg.), The disentanglement of populations. Migration,
 post-war Europe, 1944–1949, Basingstoke/New York 2011, 27–47, 34 ff. Nach Frank seien auch die Vereinten
 Nationen zu dieser Zeit der Ansicht gewesen, dass die Aussiedlung der deutschen Bevölkerung aus den Staaten,
 in denen sie eine Minderheit darstellten, langfristig für Stabilität in der Region sorgen würde.
-
-
 FOOTNOTE:116 Siehe Fußnoten 32 und 33.
 
 
@@ -1671,7 +1653,7 @@ Deckard/Nancy Meriwether Wingfield (Hrsg.), Staging the past. The politics of co
 Central Europe, 1848 to the present, West Lafayette 2001, 112–152, 112.
 
 
-FOOTNOTE:C119e nAtruafl dEiue rBopede,e u1t8u4n8g t eoi nthees pkrreitsiesncht,e Wn Uesmt Lgaanfagyse mtteit 2d0e0n1 K, 1a1te2g–o1r5ie2n, 1„1N2a.t ionalität“ und „Ethnizität“ für die
+FOOTNOTE:119 Auf die Bedeutung eines kritischen Umgangs mit den Kategorien „Nationalität“ und „Ethnizität“ für die
 wissenschaftliche Erkenntnis haben Rogers Brubaker, Mara Loveman und Peter Stamatov hingewiesen, siehe
 Rogers Brubaker/Mara Loveman/Peter Stamatov, Ethnicity as Cognition, in: Theory and Society 33 (2004) 1,
 31–64.
@@ -1708,10 +1690,7 @@ ehemaliger Partisanen umverteilt.$$$122$$$ In der Tschechoslowakei wurden nach K
 FOOTNOTE:120 Dasselbe Phänomen lässt sich natürlich auch anhand der Konstruktion anderer Nationalitäten beschreiben. Da
 es aber in dieser Arbeit um als Deutsche evakuierte, geflüchtete und vertriebene Personen geht, konzentriere ich
 mich im Folgenden auf Prozesse der Herstellung deutscher Identität und werde nur soweit notwendig auf
-ähnliche Prozesse bei anderen Bevölkerungsgruppen in den Regionen eingehen.
-
-
-FOOTNOTE:121 Ther, Die dunkle Seite der Nationalstaaten, 179.
+ähnliche Prozesse bei anderen Bevölkerungsgruppen in den Regionen eingehen. 121 Ther, Die dunkle Seite der Nationalstaaten, 179.
 
 
 FOOTNOTE:122 Die Angaben beruhen auf einem undatierten Dokument der Abteilung für Agrarreform, z. n. Portmann,
@@ -1754,31 +1733,15 @@ Zugehörigkeit waren etwa Volkszählungen.$$$126$$$ In der Tschechoslowakei fand
 FOOTNOTE:123 Suppan, Hitler – Beneš – Tito, 1488 f.
 
 
-124
-S
-Bu öp hp ma en n,
-H
-unit dle dr a– s
-B
-öse tn lie cš h
+FOOTNOTE:124 SBuöphpmaenn, Hunitdle dr a–s Bösetnliecšh
 –
-d
-T
-avit oo n,
-1
-g4 e8 le8 g
-f
-e. n e Mähren waren bis 1918 Teil Österreich-Ungarns und bilden heute
+d Tavitoon, 1g4e8le8g fe.n e Mähren waren bis 1918 Teil Österreich-Ungarns und bilden heute
 (gemeinsam mit einem kleinen Teil Schlesiens) das Staatsgebiet der Tschechischen Republik.
 FOOTNOTE:125 Zum Prozess der Tschechisierung in den 1920er und 1930er Jahren siehe King, Budweisers into Czechs and
 Germans; Wingfield, Flag wars and stone saints; Zahra, Kidnapped souls.
 
 
-FOOTNOTE:G126e rRmoagnesr;s WBriunbgafikeeldr,, MFlaarga wLaorvse amnadn
-s
-utonnde P seatienrt sS; tZamahartao,v
-K
-hiadbneanp pdeied Bsoeudlesu. tung von Volkszählungen als
+FOOTNOTE:126 Rogers Brubaker, Mara Loveman und Peter Stamatov haben die Bedeutung von Volkszählungen als
 politisches Instrument in diesem Sinn zwar bejaht, allerdings auf den Unterschied zu politischen Praktiken der
 
 
@@ -1818,9 +1781,7 @@ FOOTNOTE:128 Tara Zahra, Reclaiming Children for the Nation: Germanization, Nati
 Bohemian Lands, 1900-1945, in: Central European History 4 (2004) 37, 501–54.
 
 
-FOOTNOTE:B129o hMemit idaenr LAannndesx, i1o9n0 d0e-s1 9„4S5u,d ient:e nCleanntdreasl“
-E
-eurrlaonpgetaenn Halilset o„rdye u4t s(2ch0e0n4 )V 3o7l,k 5sz0u1g–e5h4ö. rigen“ automatisch die
+FOOTNOTE:129 Mit der Annexion des „Sudetenlandes“ erlangten alle „deutschen Volkszugehörigen“ automatisch die
 deutsche Reichsbürgerschaft. Siehe Oliver Trevisiol, Die Einbürgerungspraxis im Deutschen Reich 1871–1945,
 Göttingen 2006, 54. Das Reichsbürgersetz vom 15. September 1935 unterschied zwischen Staatsangehörigen
 und „Reichsbürgern“, was der Schaffung von zwei Klassen innerhalb der Bürger/innen des Deutschen Reiches
@@ -1880,8 +1841,6 @@ FOOTNOTE:135 Zimmermann, Sudetendeutsche im NS-Staat, 279–281.
 
 
 FOOTNOTE:136 Siehe hierzu Detlef Brandes, „Umvolkung, Umsiedlung, rassische Bestandsaufnahme“. NS-
-
-
 Volkstumspolitik“ in den böhmischen Ländern, München 2012, 198 f.
 
 
@@ -1926,7 +1885,7 @@ FOOTNOTE:139 Chad Bryant, Prague in Black. Nazi rule and Czech nationalism, Camb
 Fallanalysen siehe Zahra, Kidnapped Souls, 169–202.
 
 
-FOOTNOTE:F14a0 lClahnaadly Bserny asniet,h Ee iZthaehrr aG, eKrmidanna popr eCdz Secohu:l sF, i1x6in9g– 2N0a2t.i onality in Bohemia and Moravia 1939-1946, in: Slavic
+FOOTNOTE:140 Chad Bryant, Either German or Czech: Fixing Nationality in Bohemia and Moravia 1939-1946, in: Slavic
 Review (2002) 61/4, 683–706, 688 f.
 
 
@@ -1956,18 +1915,16 @@ Praha/Prag letztlich befreite. In diesen Tagen kam es zu zahlreichen (oft wahllo
 
 
 FOOTNOTE:142 SFiüerh De ehtiaeirlzs us iBehryea Znitm, Gmeerrmmaann onr, SCuzdeecthe,n 6d8e9u.t sche im NS-Staat, 291–295.
-
-
-FOOTNOTE:143 F Imür S D oe mta mil es r s 1ie 9h 4e 2 Z wim urm dee nrm füa rn en i, n S eu ed ie nt ge en hd ee nu dts ec reh e „ ri am s sN enS k- uS nta da lt i, c h2 e9 “1 – B2 e9 s5 c. h äftigung mit dem „Problem“ unter
+FOOTNOTE:143 Im Sommer 1942 wurden für eine eingehendere „rassenkundliche“ Beschäftigung mit dem „Problem“ unter
 dem Deckmantel einer protektoratsweiten Gesundheitskampagne Röntgenbilder eines weiten Teiles der
 Bevölkerung angefertigt. Siehe Bryant, German or Czech, 694 f.
 
 
-FOOTNOTE:B144e vSöielkheer uJünrgg aenng Kefileiratnig, tK. Sriieegh ea uBfr Kyaonstt,e Gn earnmdearne or.r DCazse cRhe,i c6h9s4m fi. n isterium der Finanzen und die wirtschaftliche
+FOOTNOTE:144 Siehe Jürgen Kilian, Krieg auf Kosten anderer. Das Reichsministerium der Finanzen und die wirtschaftliche
 Mobilisierung Europas für Hitlers, München 2017, 151.
 
 
-FOOTNOTE:M145o Obirltissniearmuneng wEuerrodpenas i nfü dri Hesietlre Arsr,b Meiüt ninc hzewne 2i 0S1p7ra, c1h5e1n. wiedergegeben: erstens in den landesüblichen Sprachen
+FOOTNOTE:145 Ortsnamen werden in dieser Arbeit in zwei Sprachen wiedergegeben: erstens in den landesüblichen Sprachen
 (also tschechisch, serbisch/kroatisch), da diese mittlerweile auch im Deutschen Usus geworden sind. Zweitens
 werden die deutschen Ortsnamen angegeben, da diese von den meisten Interviewten verwendet wurden.
 
@@ -1993,7 +1950,7 @@ Nationalen Sicherheit über die nächstgelegene Grenze getrieben. Zwischen 600.0
 
 FOOTNOTE:146 So die Zahl in einer Mitteilung des Prager Polizeipräsidiums, siehe Tomáš Staněk, Verfolgung 1945. Die
 Stellung der Deutschen in Böhmen, Mähren und Schlesien (außerhalb der Lager und Gefängnisse), Wien 2002,
-95. 147
+95.
 
 
 FOOTNOTE:147 Staněk, Verfolgung 1945, 89–98. Staněk betont, dass sämtliche Angaben über gegen deutsche Zivilist/innen
@@ -2003,14 +1960,14 @@ FOOTNOTE:148 Diese arbeiteten zum Teil auch mit bewaffneten Einheiten des tschec
 zusammen. Siehe Frommer, National cleansing, 45 ff.
 
 
-FOOTNOTE:z14u9s Zamu mdeenn g. eSgieehne d Fier o„mdemuetsrc, hNea“t iBoenvaöl lckleearunnsign gge, r4i5ch ftfe. ten Racheaktionen siehe Bryant, Prague in black, 235 f.
-FOOTNOTE:150 Bryant, German or Czech, 697. 151
+FOOTNOTE:149 Zu den gegen die „deutsche“ Bevölkerung gerichteten Racheaktionen siehe Bryant, Prague in black, 235 f.
+FOOTNOTE:150 Bryant, German or Czech, 697.
 
 
-FOOTNOTE:151 BFrroymanmt,e Gr,e Nrmatainon oarl Cclzeeacnhs,i n6g9,7 5. 3.
+FOOTNOTE:151 Frommer, National cleansing, 53.
 
 
-FOOTNOTE:152 FInr oAmumfzeeri,c Nhnautinogneanl cdleesa tnsscihnegc, h5o3s.l owakischen Innenministeriums existierten 1945 221 solcher Lager, nach
+FOOTNOTE:152 In Aufzeichnungen des tschechoslowakischen Innenministeriums existierten 1945 221 solcher Lager, nach
 anderen Schätzungen bis zu 500, siehe Tomáš Staněk, Internierung und Zwangsarbeit. Das Lagersystem in den
 böhmischen Ländern 1945–1948, München 2007, 54.
 
@@ -2056,7 +2013,7 @@ Sicherheit) zu bezweifeln oder zumindest zu relativieren. Siehe Staněk, Verfolg
 FOOTNOTE:155 Frommer, National cleansing, 34.
 
 
-FOOTNOTE:156 FSrtaonměmk,e Vr,e Nrfaotligounnagl c1l9e4an5s, i1n9g7, .3
+FOOTNOTE:156 Staněk, Verfolgung 1945, 197.
 
 
 FOOTNOTE:157 Wilhelm R. Schießleder, Das österreichische Flüchtlingsproblem. Ein Bericht für die AER-Tagung in
@@ -2066,13 +2023,13 @@ von Brünn/Brno, wo in der Nacht von 30. auf 31. Mai rund 20.000 Deutsche über 
 Todesmarsch“ bekannt. Siehe Staněk, Verfolgung 1945, 115–120.
 
 
-FOOTNOTE:T15o8 d5e. sDmeakrrsecth d“e bs ePkraänsnidt.e Sntieenh ed Sert aRneěpku, bVleikrf voolgmu n1g9 .1 M94a5i, 1191455– 1üb2e0r. die Ungültigkeit einiger vermögensrechtlicher
+FOOTNOTE:158 5. Dekret des Präsidenten der Republik vom 19. Mai 1945 über die Ungültigkeit einiger vermögensrechtlicher
 Rechtsgeschäfte aus der Zeit der Unfreiheit und über die nationale Verwaltung der Vermögenswerte der
 Deutschen, der Madjaren, der Verräter und Kollaboranten und einiger Organisationen und Anstalten (Faksimile),
 mit einer Einleitung von Manfred Kittel und in Übersetzung von Leo Witrzens, siehe
 
 
-mhtittp :e/i/nwewr wEi.n1l0e0it0udnogk v.doing iMtalaen-fsraemd mKliuttnegl eunn.dd ei/nd oÜkb_e0r0se9t5z_ubnegn v.podnf L[leeot zWterit rAzuenfrsu, fs aiemh e1 3. Juli 2018]. Die beiden
+http://www.1000dok.digitale-sammlungen.de/dok_0095_ben.pdf [letzter Aufruf am 13. Juli 2018]. Die beiden
 Verfassungsdekrete 5/1945 und 33/1945 werden in Deutschland und Österreich in der Öffentlichkeit unter dem
 Namen „Beneš-Dekrete“ verhandelt.
 
@@ -2123,13 +2080,14 @@ damals Berechnungen von Rhode zufolge ihre Volkszugehörigkeit von „tschechisc
 
 FOOTNOTE:161 33. Verfassungsdekret des Präsidenten der Republik vom 2. August 1945 über die Regelung der
 Staatsbürgerschaft von Personen deutscher und magyarischer Nationalität (Faksimile), mit einer Einleitung von
-Manfred Kittel und in Übersetzung von Benjamin Müller, siehe http://1000dok.digitale- sammlungen.de/dok_0095_ben.pdf, [letzter Aufruf am 07. August 2017].
+Manfred Kittel und in Übersetzung von Benjamin Müller, siehe http://1000dok.digitale-
+sammlungen.de/dok_0095_ben.pdf, [letzter Aufruf am 07. August 2017].
 
 
-FOOTNOTE:s16a2m 3m3.l uVnegrefans.dsuen/dgoskd_e0k0re9t5 v_obmen 2.p. dAf,u [gluestzt t1e9r 4A5u.
+FOOTNOTE:162 33. Verfassungsdekret vom 2. August 1945.
 
 
-FOOTNOTE:163 3B3ry. aVnetr, fGasesrumnagnsd oerk Crezte vcohm, 7 20.1 A.
+FOOTNOTE:163 Bryant, German or Czech, 701.
 
 
 Bevölkerungsteile“ aus Polen, der Tschechoslowakei und Ungarn in die alliierten
@@ -2138,7 +2096,7 @@ genannten Kriterien „Deutsche“ wurden in der Folge nach Deutschland „repat
 Bruchteil von ihnen kam nach Österreich.
 
 
-Vojvodina$$$165$$$ und Slawonien$$$166$$$
+Vojvodina165 und Slawonien166
 
 
 Im Staat der Slowenen, Kroaten und Serben (SHS-Staat) bzw. ab 1929 im Königreich
@@ -2157,10 +2115,11 @@ Jugoslawien bemühte.$$$169$$$ Zentrale Akteure der Nationalisierungsdynamiken i
 
 
 FOOTNOTE:164 Artikel XIII der Mitteilung über die Dreimächtekonferenz von Berlin (Konferenz von Potsdam), 2. August
-1945 (Faksimile), mit einer Einleitung von Rolf Steininger, siehe http://1000dok.digitale- sammlungen.de/dok_0011_pot.pdf [letzter Aufruf am 18. Mai 2018].
+1945 (Faksimile), mit einer Einleitung von Rolf Steininger, siehe http://1000dok.digitale-
+sammlungen.de/dok_0011_pot.pdf [letzter Aufruf am 18. Mai 2018].
 
 
-FOOTNOTE:s16a5m Umnltuenr gdeenr .Vdeo/jdvookd_in0a0 1v1e_rsptoeth.pt dmfa [nle jteznteer GAeubfireutfe aimm 1N8o.r Mdeani S2e0r1b8i]e.n s, die bis 1918 zu Österreich-Ungarn
+FOOTNOTE:165 Unter der Vojvodina versteht man jene Gebiete im Norden Serbiens, die bis 1918 zu Österreich-Ungarn
 gehörten. Zur Vojvodina zählen Syrmien, die Batschka, das Banat und (bis 1945) die Baranja. Carl Bethke
 verweist auf die oft unscharfe Definition des genauen geographischen Gebietes. Bis 1945, als die Vojvodina
 autonome Provinz innerhalb der jugoslawischen Teilrepublik Serbien wurde, habe sie etwa vor allem
@@ -2168,13 +2127,12 @@ kulturgeschichtliche und geographische Bedeutung gehabt und weniger eine adminis
 Deutsche und ungarische Minderheiten, 62 f.
 
 
-FOOTNOTE:D166e uStlsacwhoe nuinend buenfgianrdiesct hsiec Mh iinn dNeorhrdeoitsetnk,r o6a2t ife. n und gehörte im Nationalsozialismus genauso wie Syrmien, das als
+FOOTNOTE:166 Slawonien befindet sich in Nordostkroatien und gehörte im Nationalsozialismus genauso wie Syrmien, das als
 Teil der Vojvodina gilt, zum Unabhängigen Staat Kroatien (USK).
 
 
-FOOTNOTE:T16e7 iAl duesr p Vraogjmvoadtiisncah geinlt G, zruümnd Uenn ahbahbäen igchig meni cSht adaatf Kürr oeanttisecnh i(eUdSenK,) i.n dieser Arbeit zur Bezeichnung der Regionen
-FOOTNOTE:die im deutschen Sprachraum üblichen Namen bzw. Schreibweisen zu verwenden. 168
-Bethke, Deutsche und ungarische Minderheiten, 19.
+FOOTNOTE:167 Aus pragmatischen Gründen habe ich mich dafür entschieden, in dieser Arbeit zur Bezeichnung der Regionen
+die im deutschen Sprachraum üblichen Namen bzw. Schreibweisen zu verwenden. 168 Bethke, Deutsche und ungarische Minderheiten, 19.
 
 
 FOOTNOTE:169 Zu kulturellen und wirtschaftlichen Vereinigungen der „deutschen“ Bevölkerung in der Zwischenkriegszeit

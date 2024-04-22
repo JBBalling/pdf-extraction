@@ -272,10 +272,24 @@ Nachfolgend ist die in dieser Arbeit verwendete Notation dargestellt.
 Allgemein
 
 
+Kalligraphie-Schrift in Schriftart AMS Euler
+Script
+
+
 Operator
 
 
 Konstanten
+
+
+𝐌 ∶= 𝐌 (90∘) P Ψ
+
+
+Abbildungsmatrix einer Ebenenspiegelung an der
+𝑥-Ebene:
+
+
+𝐓 ∶= diag(−1,1,1) 𝑥
 
 
 Abbildungsmatrix einer Achsenspiegelung an der
@@ -288,12 +302,12 @@ Abbildungsmatrix einer Achsenspiegelung an der
 Lateinische Symbole und Variablen
 
 
-𝐉 (Ψ) Jones-Matrix eines optischen Bauelements mit linearem Ψ
+Jones-Matrix eines optischen Bauelements mit linearem
 Dichroismus für den polarisationsabhängigen
 Verlustwinkel Ψ:
 
 
-𝐉 (Δ) Jones-Matrix eines Verzögerungselements in Δ
+Jones-Matrix eines Verzögerungselements in
 Transmissionsanordnung mit Verzögerung Δ und
 horizontaler schneller Achse:
 
@@ -301,13 +315,12 @@ horizontaler schneller Achse:
 Jones-Matrix der optischen Rotation um den Winkel 𝜙:
 
 
+Jacobi-Matrix der vektorwertigen Funktion 𝒇
+
+
 𝐌 (Ψ) Müller-Matrix eines optischen Bauelements mit linearem Ψ
 Dichroismus für den polarisationsabhängigen
 Verlustwinkel Ψ:
-
-
-𝐌 (Δ) Müller-Matrix eines Verzögerungselements mit Δ
-Verzögerung Δ:
 
 
 Müller-Matrix der optischen Rotation um den Winkel 𝜙:
@@ -326,6 +339,9 @@ Verzögerung und Absorption in Reflexions- oder
 Transmissionsanordnung:
 
 
+𝐌 (Ψ,Δ,𝑅) ∶= 2𝑅𝐌 (Ψ)𝐌 (Δ) L Ψ Δ
+
+
 𝑴, 𝑴 reelle bzw. komplexe Magnetisierung
 N(𝝁,𝚺) multivariate Normalverteilung mit Erwartungswert 𝝁
 und Kovarianzmatrix 𝚺
@@ -341,44 +357,57 @@ optischer Gangunterschied bzw. Verzögerung
 reelle Permittivität als Skalar bzw. Tensor
 
 
-xviii
-
-
 Operatoren und mathematische Symbole
 
 
 Vektor bestehend aus den Elementen 𝑎 𝑖
 Matrix bestehend aus den Matrixelementen 𝑎 𝑖𝑗
-) komplexer Tensor der Stufe 𝑛 mit den Tensor-Elementen …𝑖𝑛
+komplexer Tensor der Stufe 𝑛 mit den Tensor-Elementen
 FOOTNOTE:𝑎 und dazugehörigen Multiindizes (𝑖 , 𝑖 , … , 𝑖 ) 𝑖1𝑖2…𝑖𝑛 1 2 𝑛
 𝑖-tes Element des Vektors 𝒂
+
+
 Element einer Matrix 𝐀 in Zeile 𝑖 und Spalte 𝑗
+
+
 Teilvektor von 𝒂 = (𝑎 ) bestehend aus den Elementen 𝑎 𝑖 𝑖
 mit den Indizes 𝑖 ∈ I
+
+
 Menge von Teilvektoren, die aus den Elementen der
 Menge A gewonnen werden: (A) ∶= {(𝒗) ∣ 𝒗 ∈ A} I I
-eine Teilmatrix von 𝐀 = (𝑎 ) bestehend aus den J 𝑖𝑗
+eine Teilmatrix von 𝐀 = (𝑎 ) bestehend aus den 𝑖𝑗
 Elementen 𝑎 mit den Indizes (𝑖,𝑗) ∈ I × J 𝑖𝑗
 Transponierte der Matrix 𝐀
+
+
 Adjungierte der Matrix 𝐀
+
+
 Konjugierte der komplexen Zahl 𝑎 bzw. elementweise,
 komplexe Konjugation der komplexen Matrix 𝐀
+
+
 Skalarprodukt zweier Vektoren: ⟨𝒂, 𝒃⟩ = ∑ (𝒂) (𝒃) 𝑖 𝑖
-𝑖
-Standardskalarprodukt zweier Vektoren: s ∗
-⟨𝒂, 𝒃⟩ = ∑ (𝒂) (𝒃) 𝑖 𝑖
-𝑖
+
+
+Standardskalarprodukt zweier Vektoren: ∗
+⟨𝒂, 𝒃⟩ = ∑ (𝒂) (𝒃) 𝑖 𝑖 𝑖
+
+
 Kreuzprodukt der Vektoren 𝒂 = (𝑎 ) und 𝒃 = (𝑏 ): 𝑖 𝑖
-FOOTNOTE:𝑎 𝑏 − 𝑎 𝑏 ⎛ 2 3 3 2⎞
-𝒂 × 𝒃 = ⎜𝑎 𝑏 − 𝑎 𝑏 ⎟
-⎜ 3 1 1 3⎟
-⎝𝑎 𝑏 − 𝑎 𝑏 ⎠ 1 2 2 1
-𝐀) spaltenweise Vektorisierung der Matrix 𝐀
+
+
+spaltenweise Vektorisierung der Matrix 𝐀
+
+
 Determinante der Matrix 𝐀
-𝐁 Kronecker-Produkt der Matrizen 𝐀 und 𝐁
 
 
-∇ Nabla-Operator
+Kronecker-Produkt der Matrizen 𝐀 und 𝐁
+
+
+partielle Ableitung der Funktion 𝑓 nach der Variablen 𝑥
 
 
 ⟨∇, 𝑭⟩ Divergenz des Vektorfelds 𝑭 als formales Skalarprodukt
@@ -393,15 +422,15 @@ von ∇ und 𝑭
 Skalarprodukt zweier Nabla-Operatoren
 
 
-⟨𝒙, ∇⟩ Formales Skalarprodukt zwischen einem Vektor 𝒙 und
+Formales Skalarprodukt zwischen einem Vektor 𝒙 und
 dem Nabla-Operator
 
 
-R {𝑎} , R {𝑓} Realteil einer komplexen Zahl 𝑎 bzw. Realteil einer
+Realteil einer komplexen Zahl 𝑎 bzw. Realteil einer
 komplexen Funktion 𝑓
 
 
-{𝑎} , ℑ {𝑓} Imaginärteil einer komplexen Zahl 𝑎 bzw. Imaginärteil
+Imaginärteil einer komplexen Zahl 𝑎 bzw. Imaginärteil
 einer komplexen Funktion 𝑓
 
 
@@ -409,9 +438,15 @@ Moore-Penrose-Inverse einer Matrix 𝐀 ∈ R𝑚×𝑛 mit
 vollem Rang:
 
 
-𝑓 ∗𝒙 𝑔 Örtliche Faltung von 𝑓 und 𝑔 in drei Raumdimensionen
-A| Lebesgue-Borel-Maß der Menge A, wobei A eine
+Örtliche Faltung von 𝑓 und 𝑔 in drei Raumdimensione
+Lebesgue-Borel-Maß der Menge A, wobei A eine
 Borelmenge ist
+
+
+Kronecker-Delta von 𝑖 und 𝑗
+
+
+Intervall ganzer Zahlen: {1,2, … ,𝑛}
 
 
 Oberflächenintegral einer Funktion 𝑓 über einer
@@ -808,10 +843,6 @@ aufweisen. Bei der Einwellenlängen-Ellipsometrie bringt eine probabilistische
 Datenauswertung nicht immer einen Mehrwert, da die Anzahl der Messwerte
 
 
-FOOTNOTE:¹ https://www.horiba.com/de/scientific/products/ellipsometers/spectroscopic-ellipsometers/
-details/smart-se-14909/ (25.12.2020)
-
-
 oft unwesentlich größer als die Anzahl der Unbekannten ist. Dies resultiert
 in eine vergleichsweise geringe Fisher-Information, die mit der Anzahl der
 unabhängigen Observablen akkumuliert [Geo09]. Lediglich bei der Dimen-
@@ -874,6 +905,9 @@ daher meist in Kombination mit Mikroskopie eingesetzt und unterscheidet
 
 FOOTNOTE:¹ Um Unklarheiten bei der Ausrichtung von Polarisationsoptiken vorzubeugen, wurde die
 Nebraska-Konvention eingeführt, auf die hier verwiesen wird [Hau80, Fuj07].
+
+
+FOOTNOTE:² https://accurion.com/thin-film-characterization-imaging-ellipsometry (30.12.2020)
 
 
 sich zur nicht-abbildenden Ellipsometrie vor allem durch folgende Merkma-

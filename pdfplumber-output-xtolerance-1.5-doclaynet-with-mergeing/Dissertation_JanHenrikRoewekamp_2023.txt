@@ -4,8 +4,6 @@ interagierende Agenten
 
 
 An der Universität Hamburg eingereichte
-
-
 D i s s e r t a t i o n
 zur Erlangung des akademischen Grads
 Dr. rer. nat.
@@ -705,20 +703,7 @@ soll zunächst der Modellbegriff definiert werden.
 Stachowiak definiert Modelleigenschaften hierbei beispielsweise wie folgt:
 
 
-Modelle sind stets Modelle von etwas, nämlich Abbildungen, Re-
-präsentationen natürlicher oder künstlicher Originale, die selbst
-wieder Modelle sein können. [...] Modelle erfassen im allgemei-
-nen nicht alle Attribute des durch sie repräsentierten Originals,
-sondern nur solche, die den jeweiligen Modellerschaffern und/o-
-der Modellbenutzern relevant scheinen. [...] Modelle sind ihren
-Originalen nicht per se eindeutig zugeordnet. Sie erfüllen ihre
-Ersetzungsfunktion a) für bestimmte - erkennende und/oder han-
-delnde, modellbenutzende Subjekte, b) innerhalb bestimmter Zeit-
-intervalle und c) unter Einschränkung auf bestimmte gedankliche
-oder tatsächliche Operationen.
-
-
-— (Stachowiak, 1973, Seiten 131-133)
+(Stachowiak, 1973, Seiten 131-133)
 
 
 Für die Repräsentation der im einleitenden Teil der Arbeit beschriebenen Kom-
@@ -887,7 +872,7 @@ ist.
 Kanten ist.
 
 
-— (Girault und Valk, 2003, Seite 14)
+(Girault und Valk, 2003, Seite 14)
 
 
 Die vereinigte Menge 𝑃 ∪𝑇 aller Plätze und Transitionen in einem Netz wird auch
@@ -1360,6 +1345,10 @@ kretisierung der Anschriftensprache. Wie im Abschnitt 2.3.3 erläutert, umfasst
 die Konkretisierung der abstrakten Referenznetze im Rahmen dieser Arbeit die
 
 
+2Zum Begriff der »höheren« Petrinetz-Formalismen siehe beispielsweise (Jensen und Rozen-
+berg, 1991) und (Jensen, 2001)
+
+
 Anwendung auf die Programmiersprache Java. Aus diesem Grund wird auf die
 Darstellung eines Beispiels von Referenznetzen nur auf Basis des Formalismus
 verzichtet und dieses nur im Kontext der Realisierung mit Java betrachtet. Bei-
@@ -1400,8 +1389,6 @@ agents exist.
 (dt.: Eine Entität, welche fortlaufend und autonom in einer Um-
 gebung funktioniert, in der andere Prozesse ablaufen und andere
 Agenten existieren.)
-
-
 — (Shoham, 1993, Seite 52)
 
 

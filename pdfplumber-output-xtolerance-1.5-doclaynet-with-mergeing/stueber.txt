@@ -62,7 +62,16 @@ zung haben zukommen lassen, ohne die ein Abenteuer dieser Art nicht möglich ge-
 wesen wäre.
 
 
-Einführung
+4.1 Einführung
+
+
+4.2 System-Architekturen
+
+
+4.3.2 Textstrukturierung
+
+
+4.3.3 Textverteilung
 
 
 1
@@ -77,7 +86,7 @@ Im Rahmen der Erforschung der Auswirkungen des Klimawandels auf die Umwelt
 hat das von der World Meteorological Organization (WMO) und dem United Nations
 Environment Programme (UNEP) ins Leben gerufene Intergovernmental Panel on
 Climate Change (IPCC) in den letzten Jahren eine Reihe von Berichten veröffentlicht,
-darunter den IPCC WG$$$1$$$ AR$$$4$$$ Report aus dem Jahre 2007. Insgesamt haben über 650
+darunter den IPCC WG1 AR4 Report aus dem Jahre 2007. Insgesamt haben über 650
 Wissenschaftler aus allen Teilen der Welt zum Inhalt des Dokumentes beigetragen,
 hinzu kommen noch über 200 Gutachter. Dieses Beispiel zeigt, was kollaboratives
 Schreiben im Extremfall bedeuten kann. Ein Großteil aller erstellten Textdokumente
@@ -119,9 +128,6 @@ gische Aspekte. Sind Autoren auf unterschiedliche Orte und vielleicht noch Zeitz
 nen verteilt, benötigen sie Möglichkeiten, um sich untereinander zu synchronisie-
 ren. Dazu gehören Kommunikationswerkzeuge wie E-Mail, Chat, Video-Konferenz
 und das gute alte Telefon. Ein wesentlich effizienteres Werkzeug stellt jedoch eine
-
-
-Einführung
 
 
 gemeinsame Software zum Schreiben, Verwalten, Austauschen und Beobachten
@@ -178,9 +184,6 @@ rungsoptionen für eine idealtypische kollaborative Textverarbeitung und wie
 können diese umgesetzt werden?
 
 
-Einführung
-
-
 Die Arbeit konzentriert sich dabei auf das kollaborative Erstellen wissenschaftlicher
 bzw. technischer Texte, d.h. auf einen Bereich, in dem kollaboratives Schreiben häu-
 figer vorkommt als etwa in der Belletristik. Die Diskussionen und Ergebnisse dieser
@@ -212,9 +215,6 @@ Erweiterung eines etablierten Netzwerkprotokolls um zusätzliche kollaborative F
 higkeiten. Der zweite Ansatz ist eine Architekturvorgabe für das Organisieren eines
 kollaborativen Schreibprojektes innerhalb eines Softwaresystems, dessen konkrete
 Implementation Teil weiterführender Arbeiten sein könnte.
-
-
-Kollaboratives Schreiben (KS)
 
 
 2
@@ -275,9 +275,6 @@ gen, welchen Teil des Textes der eine und welchen Teil der andere zu schreiben
 hat und wo exakt die Schnittstelle zwischen beiden Teilen liegt. Anschließend
 
 
-Kollaboratives Schreiben (KS)
-
-
 müssen sie sich überlegen, wie die jeweiligen Teiltexte am Ende zu einem gan-
 zen Text zusammengefügt werden können.
 
@@ -332,9 +329,6 @@ se der ersten Förderphase im Jahr 2007 war ein Buch mit dem Titel „Mittelalte
 Labor: Die Mediävistik testet Wege zu einer transkulturellen Europawissenschaft“,
 das gleichzeitig in klassischer Papierform und als Hypertext im Internet [Schiel et al.
 08] veröffentlicht wurde. Das interessante an dieser Veröffentlichung ist nun, dass
-
-
-Kollaboratives Schreiben (KS)
 
 
 der Text durch eine kollaborative Zusammenarbeit von 26 Historikern aus ganz
@@ -396,9 +390,6 @@ Alle Beteiligten hatten zum Teil sehr unterschiedliche Erfahrungen und Ge-
 wohnheiten was Textverarbeitungssysteme angeht.
 
 
-Kollaboratives Schreiben (KS)
-
-
 In Arbeitsphasen mit hohem Zeitdruck (z.B. bedingt durch Redaktionsschlüs-
 se) ist die Zuverlässigkeit des genutzten Systems von großer Bedeutung.
 
@@ -457,9 +448,6 @@ Labor- und Protokollbücher – Ein Laborbuch ist ein Tagebuch des experimentier
 den Naturwissenschaftlers, in dem der Fortschritt und das Ergebnis wissenschaftli-
 
 
-Kollaboratives Schreiben (KS)
-
-
 cher Experimente in einer Laborumgebung von einem oder mehreren Wissenschaft-
 lern festgehalten werden. Das Gegenstück zum Laborbuch außerhalb eines Labo-
 rumfeldes ist das Protokollbuch, in dem z.B. Biologen, Archäologen, Geologen ihre
@@ -516,9 +504,6 @@ ginalaufnahme einer Rede) ermöglichen es, wissenschaftliche Texte um weitere
 Originalinformationen anzureichern, die gegenüber den Textzitaten der Papierfor-
 men eine neue Qualität darstellen. Zudem unterscheidet sich das Layout elektroni-
 scher Publikationen von Papierformen dadurch, dass die Seitengröße bedingt durch
-
-
-Kollaboratives Schreiben (KS)
 
 
 das Bildschirmformat nicht mehr den Papierformaten entspricht und durch die di-
@@ -585,9 +570,6 @@ trieben. Dies hat sich in der Gegenwart grundlegend geändert. Die Gründe hierf
 sind u.a.:
 
 
-Kollaboratives Schreiben (KS)
-
-
 Universitäten und Forschungseinrichtungen haben oftmals nicht das Geld,
 die Ausrüstung oder die Expertise, um die eigene Forschung auf höchstem
 Niveau vorantreiben zu können.
@@ -644,9 +626,6 @@ boration existiert aber nicht.
 Partizipatorische Kollaboration – Partizipatorischer Kollaboration fehlt jede
 Arbeitsteilung und alle weiteren Merkmale der bürokratischen Kollaboration.
 Es arbeite also eine Gruppe von Spezialisten ohne nennenswerte Formalis-
-
-
-Kollaboratives Schreiben (KS)
 
 
 men und ohne hierarchische Autoritäten zusammen. Als Beispiel dient Teil-
@@ -707,9 +686,6 @@ Jeder Autor schrieb nun innerhalb des Gesamtdokuments die Kapitel, für die
 er verantwortlich war und schickte das geänderte Gesamtdokument zu ei-
 
 
-Kollaboratives Schreiben (KS)
-
-
 nem vorher abgesprochenen Zeitpunkt per E-Mail zurück an die Clearing-
 Stelle.
 
@@ -767,9 +743,6 @@ gelöst hat.
 
 Insgesamt lässt sich jedoch sagen, dass zum damaligen Zeitpunkt keine Alternative
 zu der beschriebenen Art und Weise der Texterstellung zur Diskussion stand.
-
-
-Kollaboratives Schreiben (KS)
 
 
 2.3.2 Kollaboration in Unternehmen
@@ -836,9 +809,6 @@ um daraus eine möglichst allgemeingültige Taxonomie zu entwickeln. Diese wird 
 Folgenden vorgestellt und diskutiert.
 
 
-Kollaboratives Schreiben (KS)
-
-
 2.4.1 Was ist kollaboratives Schreiben?
 
 
@@ -885,9 +855,6 @@ der Autor nicht wirklich den gemeinsamen Konsens in der Gruppe in seinem Text
 reflektiert.
 
 
-Kollaboratives Schreiben (KS)
-
-
 Bei einer sequenziellen Texterstellung fängt ein Autor an zuschreiben und gibt seinen
 Text zu einem späteren Zeitpunkt weiter an den nächsten Autor. Die Vorgehenswei-
 se wird so lange wiederholt, bis jeder Autor der Gruppe seinen Teiltext geschrieben
@@ -929,9 +896,6 @@ Teammitglied spielt als Koordinator die Teiltexte in ein Gesamtdokument zusam-
 men (diese Funktion lässt sich theoretisch auch automatisieren).
 
 
-Kollaboratives Schreiben (KS)
-
-
 Der Vorteil dieser Strategie liegt in der erheblichen Zeitersparnis, da mehrere Auto-
 ren gleichzeitig am Text arbeiten. Zudem könne neue Erkenntnisse während des
 Schreibens den anderen Autoren mitgeteilt werden, so dass sie eventuell darauf in
@@ -959,9 +923,6 @@ Abbildung 4: Parallele Texterstellung durch Rollenverteilung
 Der Vorteil der rollenbasierten parallelen Texterstellung liegt in einem wesentlich
 flexibleren Gesamtprozess, der die unterschiedlichen Fähigkeiten der Teammitglie-
 der berücksichtigt, während alle ihre Arbeit mehr oder weniger gleichzeitig ausfüh-
-
-
-Kollaboratives Schreiben (KS)
 
 
 ren können. Gleichzeitig wird auch die Kommunikation unter den Mitgliedern ge-
@@ -1000,9 +961,6 @@ Schreiben ist nur eine von vielen begleitenden Aktivitäten, die innerhalb eines
 Prozesses stattfinden. Typische Aktivitäten sind in der folgende Tabelle aufgleistet:
 
 
-Kollaboratives Schreiben (KS)
-
-
 Tabelle 1: Typische Aktivtäten
 
 
@@ -1029,9 +987,6 @@ antwortlich für den Gesamttext. Diese Art der Koordination eignet sich sehr gut
 alle KS-Strategien mit Ausnahme der reaktiven Texterstellung.
 
 
-Kollaboratives Schreiben (KS)
-
-
 Bei einer wechselnden Textkoordination übernimmt zunächst ein Teammitglied die
 zentrale Koordination für den Gesamttext, gibt diese aber nach einer bestimmten
 Zeit an ein anderes Teammitglied ab. Diese Art der Koordination eignet sich sehr gut
@@ -1055,9 +1010,6 @@ Texterstellung.
 
 
 Abbildung 9: Verteilte Textkontrolle
-
-
-Kollaboratives Schreiben (KS)
 
 
 2.4.5 KS-Rollen
@@ -1091,9 +1043,6 @@ stimmt:
 
 Es ist ein Unterschied, ob sich alle die Gruppenmitglieder im selben Raum aufhalten
 oder sich über das Gebäude, über verschiedene Städte oder Länder verteilen. Es ist
-
-
-Kollaboratives Schreiben (KS)
 
 
 auch ein Unterschied, ob alle Gruppenmitglieder gleichzeitig (synchron) oder zeit-
@@ -1135,9 +1084,6 @@ nen KS-Strategien nicht exklusiv zu betrachten. Sie können im Laufe eines KS-
 Prozesses wechseln, und durch geschickte Verknüpfung zweier Strategien ergeben
 sich wiederum weitere, wesentlich komplexere Strategien. Auch die aufgelisteten
 KS-Rollen und KS-Phasen sind beliebig erweiterbar.
-
-
-Kollaboratives Schreiben (KS)
 
 
 Trotzdem, diese vorgestellte Taxonomie besitzt zwei Vorteile: Zum einen erleichtert
@@ -1191,9 +1137,6 @@ auch nicht gänzlich ausgeblendet. So kann beispielsweise der aus Neid entstehen
 Drang nach Sabotage durch organisatorische Maßnahmen wie eindeutige Identifi-
 zierung, eingeschränktem Zugriff oder Änderungsprotokollierung weitestgehend
 neutralisiert werden.
-
-
-KS-Software
 
 
 3 -
@@ -1250,9 +1193,6 @@ zu unüberschaubare Anzahl an Alternativen, die das Grundkonzept neu interpretie
 pad++, Notepad2, usw.).
 
 
-KS-Software
-
-
 WYSIWYG-Textsysteme – Die Abkürzung WYSIWYG steht für das englische
 „What You See Is What You Get“, welches Textverarbeitungssysteme kenn-
 zeichnet, bei denen der Autor bereits während der Texterstellung auf dem
@@ -1304,9 +1244,6 @@ einer direkten Anbindung an das Internet reichen. Entscheidend dabei ist,
 dass die aktive Netzwerkverbindung Voraussetzung für den Einsatz der
 Textverarbeitung ist. Beispiele für Online- Textverarbeitungen wären Google
 Text und Microsoft Web Word.
-
-
-KS-Software
 
 
 Auch hier ergibt eine nähere Betrachtung, dass diese Abgrenzung oft rein theoreti-
@@ -1365,9 +1302,6 @@ Zentraldokument und in beliebig viele Filialdokumente. Ein Zentraldokument ist e
 Container für eine bestimmte Anzahl voneinander getrennter Dateien, mit dem ein
 
 
-KS-Software
-
-
 aus mehreren Teilen bestehendes Dokument (z.B. ein Buch mit mehreren Kapiteln)
 erstellt und verwaltet werden kann.
 
@@ -1423,9 +1357,6 @@ lich beliebige Notizen hinterlegen. Je nach erteilter Berechtigung kann das Doku
 ment auch auf den eigenen Rechner heruntergeladen und verändert oder mit
 Kommentaren versehen werden. Beim Herunterladen des Dokuments kann zusätz-
 lich zwischen den Formaten PDF, DOC oder RTF gewählt werden.
-
-
-KS-Software
 
 
 Dokumente können in Pages und Writer nicht parallel bearbeiten werden. Hat ein
@@ -1489,9 +1420,6 @@ FOOTNOTE:2 Das Anlegen einer Windows-Live-ID ist kostenlos und ermöglicht den Z
 loser wie kostenpflichtiger Dienste von Microsoft. SkyDrive ist ein kostenloser Dienst.
 
 
-KS-Software
-
-
 o Unmittelbare Planung eines Besprechungstermins
 
 
@@ -1551,9 +1479,6 @@ Dokumenten-Management-Systeme (DMS) sind datenbankgestützte Softwaresys-
 teme zur Verwaltung von elektronischen Dokumenten. Man unterscheidet dabei
 zwischen Dokumenten-Management im engeren Sinne und Dokumenten-
 Management im weiteren Sinne [Kampffmeyer et al. 99].
-
-
-KS-Software
 
 
 Dokumenten-Management im engeren Sinne umfasst klassische Software-Systeme,
@@ -1616,9 +1541,6 @@ kument direkt aus Microsoft Office heraus in das DMS zu speichern bzw. aus
 dem DMS heraus zu öffnen. Der ODMA-Standard gilt allerdings nicht mehr
 
 
-KS-Software
-
-
 als zeitgemäß, da derartige API-Schnittstellen in zunehmendem Maße durch
 protokollorientierten Service-Schnittstellen ersetzt werden.
 
@@ -1674,9 +1596,6 @@ Internet-Infrastruktur der Firma Google basiert. Voraussetzung für die Nutzung 
 
 
 FOOTNOTE:3 Interessanterweise basiert das Internetportal iworks.com selbst auf WebDAV.
-
-
-KS-Software
 
 
 Google Text ist ein Google-Konto4. Möchten zwei oder mehr Benutzer gemeinsam
@@ -1742,9 +1661,6 @@ FOOTNOTE:4 Das Anlegen eines Google-Kontos ist kostenlos und ermöglicht den Zug
 ser wie kostenpflichtiger Dienste von Google. Google Text ist eine kostenloser Dienst.
 
 
-KS-Software
-
-
 Das frei verfügbare webbasierte Writeboard (writeboard.com) sowie das kommer-
 zielle ZohoWriter (writer.zoho.com/home?serviceurl=%2Findex.do) sind ähnliche KS-
 Systeme.
@@ -1807,9 +1723,6 @@ lich ist.
 FOOTNOTE:6 Wiki ist das hawaiische Wort für „schnell“.
 
 
-KS-Software
-
-
 Konflikterkennung: In MediaWiki kann ein und derselbe Artikel von unter-
 schiedlichen Autoren editiert werden. Geschieht dies zeitgleich, gilt die Re-
 gel, dass der Autor, der zuerst seine Änderungen am Artikel speichert, Erfolg
@@ -1863,9 +1776,6 @@ Buchstaben an Position 3 löschen möchte. Ohne OT würde aus „abc“ ein „a
 ein „axc“ werden, oder umgekehrt aus „abc“ ein „ab“ und anschließend ein „axb“ werden. Mit OT
 würde der resultierende Text immer „axc“ lauten (für eine ausführliche Diskussion siehe Kapitel
 4.4.3.1).
-
-
-KS-Software
 
 
 können mehrere Nutzer in Echtzeit gemeinsam an einem Text arbeiten. Dazu wird
@@ -1930,9 +1840,6 @@ Einfache Möglichkeit zu kommunizieren
 Einfache Möglichkeit Texte mit Kommentaren zu versehen
 
 
-KS-Software
-
-
 Einfache Nachvollziehbarkeit von Textänderungen
 
 
@@ -1995,9 +1902,6 @@ Für jedes Dokument soll ein Workflow definiert und auch nachträglich ver-
 ändert werden können. Dokumente sollen anschließend an Hand dieses
 Workflows automatisch verarbeitet werden. Die Prozesse, die ein Dokument
 aufgrund des Workflows durchläuft, müssen nachvollziehbar sein.
-
-
-KS-Software
 
 
 In [Jones 95] werden folgende Richtlinien für das Design und die Implementierung
@@ -2066,14 +1970,8 @@ ab, der als Ausgangspunkt einer jeden Architekturbeschreibung die Bedürfnisse (
 teiligten (Stakeholders) in den Mittelpunkt rückt.
 
 
-KS-Software
-
-
 ableiten lassen. Den möglichen Rollen Autor, Berater, Editor, Gutachter, Teamleiter
 und Lektor lassen sich folgende Bedürfnisse zuordnen:
-
-
-KS-Software
 
 
 Einfache und effiziente Kommunikationsmöglichkeit mit Team-
@@ -2124,9 +2022,6 @@ können daher zusammengefasst werden:
 
 o Der Teamleiter bestimmt die Teammitglieder und weist ihnen ihre Rollen
 zu.
-
-
-KS-Software
 
 
 o Der Gesamttext wie auch Teiltexte muss zu zeit- und ortsunabhängig
@@ -2190,9 +2085,6 @@ Dazu benötigen die Gruppenmitglieder Werkzeuge zur Konfliktvermeidung
 dert?), Konfliktauflösung (Welche Änderung gewinnt?).
 
 
-KS-Software
-
-
 4. Nachvollziehbarkeit: Die Arbeit eines jeden Gruppenmitglieds muss eindeu-
 tig als seine gekennzeichnet werden können. Dazu werden Werkzeuge zur
 Versionskontrolle, zum Aufzeichnen von Änderungen (Logbuch) und zur
@@ -2249,9 +2141,6 @@ der klassischen Papierform hinausgehen: Eine Textkollaboration ist ebenfalls ab-
 hängig von externen Ressourcen, die direkt in den Text eingebunden werden oder
 aber als Informationsquelle für die Texterstellung dienen. Mögliche Ressourcen wä-
 ren beispielsweise Grafiken, Fotos, Videos, Tondokumente, Textdokumente und
-
-
-KS-Software
 
 
 Forschungsdaten. All diese Ressourcen sind genauso Teil der Kollaboration wie der
@@ -2313,9 +2202,6 @@ Infrastrukturen nur unzureichend vorhanden und oft auch gar nicht bezahlbar. Es
 bleibt also nur das Ausweichen auf bereits etablierte Dienstleistungen im Internet.
 
 
-KS-Software
-
-
 3.3.3.4 Konflikte
 
 
@@ -2352,7 +2238,7 @@ nügen oder der Autor sich aus dem Projekt vorzeitig zurückgezogen hat.
 
 
 Konflikte bedürfen eines Konflikt-Managements, das sich wie folgt charakterisieren
-lässt:
+ässt:
 
 
 Konfliktvermeidung – Hierbei geht darum, das Konfliktpotential von vorne-
@@ -2374,9 +2260,6 @@ stand überführt werden.
 
 Für eine ausführliche Behandlung des Themas Konflikt-Management auf technischer
 Ebene sei auf das Kapitel 4.4 verwiesen.
-
-
-KS-Software
 
 
 3.3.3.5 Authentizität
@@ -2437,9 +2320,6 @@ Viele wissenschaftliche Publikationen werden heute mit Hilfe der Textverarbeitun
 Microsoft Word erstellt. Dies liegt zum einen daran, dass Word wohl die statistisch
 
 
-KS-Software
-
-
 gesehen am häufigsten eingesetzte Textverarbeitung ist und somit deren Bedie-
 nung den meisten Autoren geläufig ist. Zum anderen ist der Leistungsumfang von
 Word ausreichend, um auch komplexe Textdokumente verwalten zu können. Der
@@ -2493,9 +2373,6 @@ fig zu einer Einschränkung der Verfügbarkeit. Ein Fakt, der gerade im wissensc
 
 
 FOOTNOTE:9 Siehe Abschnitt 3.2.1 Klassische Textverarbeitung
-
-
-KS-Software
 
 
 chen Bereich, nicht zu unterschätzen ist, da dem Einsatz von Microsoft-Produkten

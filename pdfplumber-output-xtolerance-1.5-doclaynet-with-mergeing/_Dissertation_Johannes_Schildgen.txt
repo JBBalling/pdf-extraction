@@ -22,15 +22,12 @@ M.Sc. Johannes Schildgen
 
 
 Dekan des Fachbereichs Informatik:
-
-
 Prof. Dr.-Ing. Stefan Deßloch
 
 
 Prüfungskommison:
 
 
-Prüfungskommison:
 Vorsitzender: Prof. Dr.-Ing. Reinhard Gotzhein
 Berichterstatter: Prof. Dr.-Ing. Stefan Deßloch
 Prof. Dr.-Ing. Wolfgang Lehner
@@ -119,7 +116,6 @@ NotaQL transformation platform. An intelligent advisor component can be
 used to always execute a transformation in the best possible way.
 
 
-used to always execute a transformation in the best possible way.
 NotaQL supports all typical forms of NoSQL databases: key-value sto-
 res, wide-column stores, document stores and graph databases. Its power-
 ful and extensible data model allows for handling arrays, complex objects,
@@ -149,7 +145,6 @@ an Datenbanken weitergegeben haben und ich mich auch in deren Arbeits-
 gruppen in die Lehre mit einbringen durfte.
 
 
-gruppen in die Lehre mit einbringen durfte.
 Ein großer Dank geht an zwei weitere Professoren, und zwar zum einen
 Prof. Reinhard Gotzhein, der sich bereiterklärt hat, den Vorsitz des Promoti-
 onskommittees zu übernehmen und an Prof. Wolfgang Lehner, den zweiten
@@ -222,7 +217,7 @@ dementsprechend nicht nur spezielle Datenmodelle, sondern auch neuar-
 tige und meist sehr schlichte Anfragemechanismen.
 
 
-tigeEusnzdeimgtesiiscths,edharssscdhileicHhteeteArnogfreangietämt,edchieainnisdmerenD.atenbankforschung be-
+Es zeigt sich, dass die Heterogenität, die in der Datenbankforschung be-
 reits seit langer Zeit eine große Herausforderung bei der Datenintegration
 
 
@@ -341,8 +336,6 @@ Wartbarkeit untersucht und auf NoSQL-Datenbanken sowie die Sprache
 NotaQL übertragen. Eine NotaQL-Plattform vereinigt verschiedene inkre-
 mentelle und nicht-inkrementelle Ausführungsarten und wählt mit ihrer
 Advisor-Komponente automatisch die als schnellste eingeschätzte Art.
-
-
 Zusammengefasst sind die Beiträge der vorliegenden Arbeit wie folgt:
 
 
@@ -393,7 +386,7 @@ der Entwicklung neuer Sprachen auf die hier vorgestellten Ansätze zurück-
 gegriffen werden.
 
 
-gegUrifmfeMn wissevrderesnt.ändnisse zu vermeiden, soll die folgende Aufzählung The-
+Um Missverständnisse zu vermeiden, soll die folgende Aufzählung The-
 men zeigen, die zwar mit der vorliegenden Arbeit verwandt sind, jedoch
 als orthogonal oder außerhalb des Fokus angesehen werden:
 
@@ -439,7 +432,6 @@ tierende Transformationssprachen für NoSQL untersucht und miteinander
 verglichen.
 
 
-verglichen.
 Der Hauptteil der Arbeit, welcher die Vorstellung der Sprache NotaQL
 ist, befindet sich in Kapitel 4. Nach einer Demonstration von Sprachkon-
 strukten für einfache Attribut-Mappings, Selektionen und Aggregationen
@@ -457,7 +449,6 @@ weitern, folgen in Kapitel 6 Implementierungsmöglichkeiten für die eben-
 falls im zweiten Kapitel vorgestellten Änderungserfassungsmethoden.
 
 
-falls im zweiten Kapitel vorgestellten Änderungserfassungsmethoden.
 In Kapitel 7 werden einige Anwendungsmöglichkeiten präsentiert, für
 welche sich die Sprache NotaQL einsetzen lässt. Zum Ende in Kapitel 8
 erfolgt eine Zusammenfassung der Arbeit.
@@ -510,7 +501,7 @@ die folgenden vier Kategorien:
 Tabelle 2.1: Terminologien verschiedener DBMS
 
 
-Es existieren zwar auch Systeme, die in keine dieser Kategorien fallen, nichts-
+Es existieren zwar auch Systeme, die in keine dieser Kategorien fallen, nichts
 destotrotz möchten wir im Rahmen dieser Arbeit den Fokus auf diese vier
 Kategorien legen. Die meisten Konzepte sind nämlich auf auch andere Da-
 tenbanksysteme übertragbar. Beispielsweise haben Objektdatenbanken auf-
@@ -560,7 +551,7 @@ Schlüssel W ert →
 Im zweiten Fall existiert für jede Datenbank eine eigene Map:
 
 
-Datenbank (Schlu¨ssel W ert) → →
+Datenbank (Schlüssel W ert) → →
 
 
 Der Key-Value-Store Riak [Bas15] ist ein Vertreter für diesen zweiten Typ.
@@ -596,17 +587,11 @@ geordnete (Multi-)Mengen und Maps können eingesetzt werden und bieten
 passende Zugriffsmethoden.
 
 
-passende Zugriffsmethoden.
 Das folgende Beispiel zeigt, wie mit Redis-Kommandos auf Schlüssel-
 Wert-Paare lesend und schreibend zugegriffen werden kann:
 
 
-SET counter 9
-INCR counter
-GET counter // liefert 10
-RPUSH pers:1:projekte "DB Projekt"
-HSET pers:$$$1$$$ vorname "Rita"
-HGET pers:$$$1$$$ vorname // liefert Rita
+GET counter
 
 
 Im Beispiel wurde ein Counter-Wert gesetzt, um eins erhöht und anschlie-
@@ -712,15 +697,6 @@ Befehl auf der Kollektion pers und das zurückgelieferte JSON-Dokument:
 db.pers.findOne( { _id: 1 } )
 
 
-_id: 1,
-vorname: "Rita",
-telefon: [
-{ typ: "privat", nr: "06315555" },
-{ typ: "mobil", nr: "017555555" }
-]
-}
-
-
 Ein zweites Beispiel für ein Dokumentendatenbanksystem ist CouchDB.
 Zwar verwaltet auch CouchDB Dokumente im JSON-Format und unter-
 stützt damit beliebige strukturierte Objekte mit Arrays und Unterdoku-
@@ -776,9 +752,6 @@ mehreren Typen, z. B. „Kunde“ oder „Produkt“. Alle Knoten werden zu-
 sammen in einem Graphen gespeichert, sodass zusammen mit den Kanten,
 die die Knoten miteinander verbinden, das Datenmodell als Graph im ma-
 thematischen Sinne gesehen werden kann:
-
-
-G = (V, E)
 
 
 Der Property-Graph G besteht aus einer Menge von Knoten V und Kanten
@@ -937,9 +910,9 @@ entgegen und berechnet anhand dieser das Endergebnis. Die Ausführung
 der Reduce-Funktion erfolgt ebenfalls wieder verteilt.
 
 
-map : Datensatz (Schlu¨ssel W ert)
+map : Datensatz (Schlüssel W ert)
 → × ∗
-reduce : Schlu¨ssel W ert Schlu¨ssel W ert × ∗ → ×
+reduce : Schlüssel W ert Schlüssel W ert × ∗ → ×
 
 
 Die hier gezeigte Definition der Map- und Reduce-Funktion soll lediglich
@@ -1186,14 +1159,22 @@ Audit-Columns keine automatische Historie vorheriger Attributwerte an-
 gelegt wird.
 
 
-geleDgat swfiorldg.ende Beispiel zeigt mehrere Varianten, wie Audit-Columns ein-
+Das folgende Beispiel zeigt mehrere Varianten, wie Audit-Columns ein-
 gesetzt werden können, um Änderungen an Datensätzen zu erfassen:
 
 
 { _id: 1, name: "Ute", inserted: 1451606400 }
+
+
 { _id: 2, name: "Jörg", inserted: 1451606400,
+
+
 updated: 1451607333 }
+
+
 { _id: 3, name: "Lisa", modified: true }
+
+
 { _id: 4, deleted: 1451607444 }
 
 
@@ -1336,7 +1317,7 @@ tenbank und Kollektion (ns = Namespace) sowie das neue Objekt (o). Bei
 zu löschenden Dokumente in den Log-Einträgen.
 
 
-{ ts : Timestamp(1448269379, 1), ..., op: "i",
+ts : Timestamp(1448269379, 1), ..., op: "i",
 ns: "test.personen", o: { _id: 1, name: "Ute" } }
 
 
@@ -1382,7 +1363,6 @@ ten, kann dies durch den Einsatz von manuellem Logging mittels Triggern
 kompensiert werden.
 
 
-kompensiert werden.
 Ein alternativer Ansatz von Triggern ist die unmittelbare Ausführung
 von Berechnungen. Während bei den vorherigen CDC-Ansätzen sowie bei
 einer vollständigen Neuberechnung Analysen üblicherweise in gewissen
@@ -1422,7 +1402,6 @@ te Datensätze sorgen für Subtraktionen und Änderungen können auch hier
 wieder als eine Kombination aus beidem angesehen werden.
 
 
-wieder als eine Kombination aus beidem angesehen werden.
 Betrachten wir das folgende Beispiel, in dem die Gehaltsumme pro Fir-
 ma berechnet werden soll. Zu Beginn sehe der Datenbestand wie folgt aus:
 
@@ -1527,53 +1506,6 @@ reits bei einer vorherigen Berechnung das Ergebnis f(a 1, . . . , aj) erzeugt ha
 ben. Nach der Löschung von ai, . . . , aj und der Einfügung von aj+1, . . . , a k
 gilt die inkrementelle Berechnung unter der Operation als korrekt, genau ◦
 dann wenn gilt:
-
-
-f(a 1, . . . , aj) f∗(ai, . . . , aj) f(aj+1, . . . , a k) = f(a 1, . . . , ai−1, aj+1, . . . , a k) ◦ ◦
-
-
-Es fällt auf, dass eine Funktion f∗ vonnöten ist, um eine zu f inverse Be-
-rechnung auszuführen, also um die Auswirkungen einer Berechnung wie-
-der zu kompensieren. Es muss gelten f f∗ = e, wobei e das neutrale Ele- ◦
-ment bezüglich ist. Des Weiteren ist Assoziativität und Kommutativität
-von vonnöten,◦ sodass , f∗ und e auf dem Wertebereich von f eine abel- ◦ ◦
-sche Gruppe bilden. Die genaue Definition der Operationen hängt von der
-Art der Berechnung ab. Einige Beispiele:
-
-
-• Keine Aggregation: Die Berechnung bestehe lediglich aus einer Projek-
-tion. Aus jedem Personendatensatz aj soll das Geburtsjahr yj = f(aj)
-extrahiert werden. Da keine Aggregation erfolgt, ist das Ergebnis eine
-Multimenge von Geburtsjahren y 1, . . . , yj = f(a 1, . . . , aj). Bei der { }
-Operation handelt es sich um die Multimengen-Vereinigung , die
-Funktion f◦∗ fungiert wie f, jedoch mit negativen Häufigkeiten⊎ . Das
-neutrale Element ist die leere Multimenge: f f∗ = = e. ◦ ∅
-
-
-FOOTNOTE:• S uu mm dm ieen Abi dld du itn ig o: nIs +t uf n(a d1, e. s. g. i, la tj f) ∗= =P1i∈a f1, ....,aj i, handelt es sich bei ◦ − ·
-
-
-• Z mä ih tl ie sn t: af u( ca h1, h. i. e. r, aj d) ie= APddi∈ ita i1 o,. n..,a uj n1 dis ft ∗e =in Sp 1ez fia . lfall der Summe, so- ◦ − ·
-
-
-Weitere Funktionen wie die Durchschnittsberechnung oder die Summen-
-bildung im Anschluss an eine Projektion unter der Bildung von Gruppie-
-rungen stellen Spezialformen der drei genannten Berechnungen dar und
-können durch ihre Kombination dargestellt werden. Dabei gelten die im
-vorherigen Abschnitt genannten Einschränkungen. Hier ist nochmals zu
-erwähnen, dass es zur Berechnung von Minima und Maxima nicht ohne
-Weiteres möglich ist, f∗ zu definieren.
-
-
-Bei der eigentlichen Berechnung eines Transformationsergebnisses un-
-ter Verwendung der sich seit der letzten Berechnung geänderten Basisda-
-ten sowie des vorherigen Ergebnisses gibt es zwei Alternativen, wann das
-vorherige Ergebnis gelesen wird. Einmal vor dem Beginn der eigentlichen
-Berechnung, oder alternativ kurz vor dem Schreiben des Ergebnisses. Bei
-ersterem handelt es sich um die sogenannte Overwrite-Installation, bei zwei-
-terem um die Increment-Installation [Jör+11b]. Im Folgenden erläutern wir
-die Alternativen kurz und weisen auf deren Vor- und Nachteile sowie de-
-ren Einschränkungen hin.
 
 
 Overwrite-Installation Bei der Overwrite-Installation wird das Ergebnis

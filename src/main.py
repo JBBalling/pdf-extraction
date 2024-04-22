@@ -30,11 +30,13 @@ if not os.path.exists(output_path):
 # picture (6), section-header (7), table(8), text (9), title (10)
 
 CLASS_PRIORITIES = [10, 7, 3, 9]
-DPI = 200
+DPI = 300
 MARGIN = 0
 DEVICE = "cpu"
-HEADER_SECTION_MAX_TITLE_HEIGHT = 31
+HEADER_SECTION_MAX_TITLE_HEIGHT_RATIO = 0.02
 FONT_MARGIN = 0.05
+X_TOLERANCE = 1.5 # 1.5 for 200 DPI
+Y_TOLERANCE = 3.5 # 3.5 for 200 DPI
 
 def visualize_page_layout(detection_list: List[Dict], images: List[ImageType], index: int, save_path: str) -> None:
     for i, (image, detections) in enumerate(zip(images, detection_list)):
@@ -158,7 +160,7 @@ def get_pdf_fontsize_statistic(pdf_doc, num_pages) -> Dict:
     fontsize_statistics = {}
     for i in range(middle_page-n_pages, middle_page + n_pages):
         pdf_page = pdf_doc.pages[i]
-        words_of_page = pdf_page.extract_words(x_tolerance=1.5, y_tolerance=3.5)
+        words_of_page = pdf_page.extract_words(x_tolerance=X_TOLERANCE, y_tolerance=Y_TOLERANCE)
         height_frequencies = get_height_frequency(words_of_page)
         for k, v in height_frequencies:
             k = round(k, 2)
@@ -174,7 +176,7 @@ for pdf_file in os.listdir(pdf_path):
     #    continue
     # if pdf_file != "_Dissertation_Johannes_Schildgen.pdf":
     #    continue
-    # if pdf_file != "Diss_litzner_2019_pdfa.pdf":
+    # if pdf_file != "978-3-7315-1289-9.pdf":
     #     continue
 
     print(f"processing pdf file {pdf_file}")
@@ -196,11 +198,11 @@ for pdf_file in os.listdir(pdf_path):
     for index, detection in enumerate(filtered_detections):
         pdf_page = pdf_doc.pages[index]
         numpy_image = np.array(images[index])
-        text = pdf_page.extract_text(x_tolerance=1.5)
+        text = pdf_page.extract_text(x_tolerance=X_TOLERANCE, y_tolerance=Y_TOLERANCE)
         if pattern.search(text) or text == "":
             continue
 
-        words_of_page = pdf_page.extract_words(x_tolerance=1.5, y_tolerance=3.5)
+        words_of_page = pdf_page.extract_words(x_tolerance=X_TOLERANCE, y_tolerance=Y_TOLERANCE)
         average_height = sum([w["height"] for w in words_of_page])/len(words_of_page)
         grouped_by_size = group_words(words_of_page, 4, "height")
         # print(grouped_by_size)
@@ -220,8 +222,8 @@ for pdf_file in os.listdir(pdf_path):
             pdf_coordinates = [transform_coordinate_IMG2PDF(c, DPI) for c in crop_box_extended]
             pdf_coordinates = [pdf_coordinates[0], pdf_coordinates[1], pdf_coordinates[2], pdf_coordinates[3]]
             cropped_page = pdf_page.crop(pdf_coordinates)
-            text_from_box = cropped_page.extract_text(x_tolerance=1.5, y_tolerance=3.5)
-            if crop_box_xywh[3] <= HEADER_SECTION_MAX_TITLE_HEIGHT and (crop_box_xywh[1] + crop_box_xywh[3]) <= 0.10 * numpy_image.shape[0]:
+            text_from_box = cropped_page.extract_text(x_tolerance=X_TOLERANCE, y_tolerance=Y_TOLERANCE)
+            if crop_box_xywh[3] <= (HEADER_SECTION_MAX_TITLE_HEIGHT_RATIO * numpy_image.shape[0]) and (crop_box_xywh[1] + crop_box_xywh[3]) <= 0.10 * numpy_image.shape[0]:
                 print(f"Skipping Textbox with text:\n{text_from_box}\nbecause its in the headersection on page {index+1}")
                 continue
 
@@ -229,7 +231,7 @@ for pdf_file in os.listdir(pdf_path):
                 print(f"Skipping Textbox with text:\n{text_from_box}\nbecause its in the page footer section on page {index+1}")
                 continue
 
-            words_from_box = cropped_page.extract_words(x_tolerance=1.5, y_tolerance=3.5)
+            words_from_box = cropped_page.extract_words(x_tolerance=X_TOLERANCE, y_tolerance=Y_TOLERANCE)
             if len(words_from_box) <= 0:
                 continue
             average_height = sum([w["height"] for w in words_from_box])/len(words_from_box)
@@ -239,7 +241,7 @@ for pdf_file in os.listdir(pdf_path):
                 bottom_line_coordinate = round(get_bottom_coordinate_from_line(line), 2)
                 common_line_height = get_height_frequency(line)[0][0]
                 for word in line:
-                    if round(word["height"], 2) >= common_line_height:
+                    if round(word["height"], 2) > common_line_height:
                         # superscript
                         if has_digit(word["text"]):
                             word["text"] = mark_superscript(word["text"], "$$$")
@@ -270,7 +272,7 @@ for pdf_file in os.listdir(pdf_path):
                     # else:
                     #     continue
 
-                    word["text"] = common_error_replacements(word["text"])
+                    # word["text"] = common_error_replacements(word["text"])
 
                 if footnote:
                     line = mark_footnote_start(line)
@@ -281,12 +283,13 @@ for pdf_file in os.listdir(pdf_path):
             #     #    continue
             #     lines[line_index] = mark_footnote_end(lines[line_index])
             #     footnote_start = False
-
+            text_block = ""
             for line in lines:
-                fulltext += " ".join(word["text"] for word in line) + "\n"
+                text_block += " ".join(word["text"] for word in line) + "\n"
                 
-            fulltext += "\n\n"
-            print(fulltext)
+            text_block = common_error_replacements(text_block)
+            fulltext += f"{text_block}\n\n"
+            print(text_block)
 
         visualize_page_layout(filtered_detections, images, index, os.path.join(output_path, pdf_file.replace(".pdf", "")))
         # visualize_page_layout(detections, images, index, os.path.join(output_path, pdf_file.replace(".pdf", "")))

@@ -5,7 +5,7 @@ CD177 auf neutrophilen Granulozyten
 Inauguraldissertation
 zur Erlangung des Grades eines Doktors der Medizin
 des Fachbereichs Medizin
-der Justus-Liebig-Universita¨t Gießen
+der Justus-Liebig-Universität Gießen
 
 
 vorgelegt von Litmeyer, Anne-Sophie aus Fulda
@@ -15,15 +15,12 @@ Gießen 2021
 
 
 Fachbereich Medizin der Justus-Liebig-Universität Gießen
-Institut fu¨r klinische Immunologie und Transfusionsmedizin
+Institut für klinische Immunologie und Transfusionsmedizin
 
 
 Gutachter: Prof. Dr. med. Gregor Bein
 Gutachter: PD Dr. biol. hom. Zakrzewicz
 Tag der Disputation: 02. Dezember 2021
-
-
-Einleitung
 
 
 1 Einleitung
@@ -37,37 +34,37 @@ Einleitung
 
 Neutrophile Granulozyten gehören zur Gruppe der Leukozyten (Borregaard et al. 1997).
 Sie sind Teil der angeborenen Immunabwehr. 1−2 x 1011 neutrophile Granulozyten wer-
-den ta¨glich im Knochenmark neu produziert (Borregaard 2010). Die Granulopoese um-
+den täglich im Knochenmark neu produziert (Borregaard 2010). Die Granulopoese um-
 fasst die Bildung von basophilen, eosinophilen und neutrophilen Granulozyten (Borre-
 gaard et al. 1997).
 
 
 In neutrophilen Granulozyten können auf Basis ihrer Farbstoffaffinität zwei Typen
 von Granula unterschieden werden: azurophile Granula und spezifische Granula (Bor-
-regaard et al. 1997). Azurophile bzw. prima¨re Granula entsprechen den Lysosomen
+regaard et al. 1997). Azurophile bzw. primäre Granula entsprechen den Lysosomen
 der neutrophilen Granulozyten und enthalten saure Mucopolysaccharide und Enzyme
 wie beispielsweise die Myeloperoxidase, Elastase, die Neutrophilen Serinprotease 4
 (NSP4) (Perera et al. 2013) und Defensine (Borregaard et al. 1997). Sie lassen sich
-mittels Azure A anfa¨rben (Borregaard et al. 1997). Spezifische Granula bzw. sekunda¨re
+mittels Azure A anfärben (Borregaard et al. 1997). Spezifische Granula bzw. sekundäre
 Granula werden als sekretorische Granula charakterisiert. Sie lassen sich nicht mit
-den Standardfa¨rbemitteln anfa¨rben (Borregaard et al. 1997). Die Existenz einer dritten
+den Standardfärbemitteln anfärben (Borregaard et al. 1997). Die Existenz einer dritten
 Klasse an Granula ist mittels Elektronenmikroskopie identifiziert worden/entdeckt
 worden (Spicer et al. 1969; Borregaard et al. 1997). Die Granula enthalten neben
 proteolytischen und bakteriziden Proteinen auch Membranproteine, die durch Exozytose
-auf die Oberfla¨che der Granulozyten gelangen (Borregaard et al. 1997). Auf funktioneller
+auf die Oberfläche der Granulozyten gelangen (Borregaard et al. 1997). Auf funktioneller
 Ebene lassen sich die Granula der neutrophilen Granulozyten in Peroxidase-positive und
 Peroxidase-negative Granula einteilen (Borregaard et al. 1997). Die Peroxidase-positiven
-Granula entsprechen den azurophilen bzw. prima¨ren Granula, deren Charakteristikum
+Granula entsprechen den azurophilen bzw. primären Granula, deren Charakteristikum
 das Vorhandensein der Myeloperoxidase ist (Borregaard et al. 1997). Die Peroxidase-
-negativen Granula lassen sich in spezifische bzw. sekunda¨re und gelatinasehaltige bzw.
-tertia¨re Granula unterteilen (Borregaard et al. 1997). Die sekunda¨ren Granula sind
-durch ihren hohen Gehalt an Lactoferrin und die tertia¨ren Granula durch den gro¨ßten
+negativen Granula lassen sich in spezifische bzw. sekundäre und gelatinasehaltige bzw.
+tertiäre Granula unterteilen (Borregaard et al. 1997). Die sekundären Granula sind
+durch ihren hohen Gehalt an Lactoferrin und die tertiären Granula durch den größten
 prozentualen Anteil an Gelatinase B (= Matrixmetalloproteinase 9) definiert (Borregaard
-et al. 1997; Kolaczkowska et al. 2013). Neben den prima¨ren, sekunda¨ren und tertia¨ren
-Granula enthalten neutrophile Granulozyten sekretorische Vesikel. Ihre Membran entha¨lt
-eine Fu¨lle an Rezeptoren wie beispielsweise Mac-1 (macrophage-1 antigen/macrophage
+et al. 1997; Kolaczkowska et al. 2013). Neben den primären, sekundären und tertiären
+Granula enthalten neutrophile Granulozyten sekretorische Vesikel. Ihre Membran enthält
+eine Fülle an Rezeptoren wie beispielsweise Mac-1 (macrophage-1 antigen/macrophage
 integrin), den fMLF Rezeptor (formyl-Met-Leu-Phe-Rezeptor) und CD$$$16$$$ (Cowland et
-al. 2016). Hauptsa¨chlicher Bestandteil der sekretorischen Vesikel sind Plasmaproteine
+al. 2016). Hauptsächlicher Bestandteil der sekretorischen Vesikel sind Plasmaproteine
 (Borregaard et al. 1992; Borregaard et al. 1997). Als Marker dieser Zellorganellen
 fungiert der Komplement-Rezeptor 1 (CR1) (Sengelov et al. 1994). Die Mobilisation
 der sekretorischen Vesikel erfolgt nach Kontakt der neutrophilen Granulozyten mit dem
@@ -78,99 +75,99 @@ aktivierten Endothel (Borregaard et al. 1997).
 
 Bei einer Entzündungsreaktion verlassen die neutrophilen Granulozyten das Gefäßsystem
 in Richtung des betroffenen Gewebes (Phillipson et al. 2011). Die Extravasation der neu-
-trophilen Granulozyten aus dem Gefa¨ßsystem besteht aus den folgenden Phasen: Initiale
-Kontaktaufnahme und Rollen, Adha¨sion, intraluminales Krabbeln/Kriechen, parazel-
-lula¨re und transzellula¨re Migration sowie Migration durch die Basalmembran (Ley et al.
+trophilen Granulozyten aus dem Gefäßsystem besteht aus den folgenden Phasen: Initiale
+Kontaktaufnahme und Rollen, Adhäsion, intraluminales Krabbeln/Kriechen, parazel-
+luläre und transzelluläre Migration sowie Migration durch die Basalmembran (Ley et al.
 2007). Der Kontakt entsteht durch P-Selektin Glykoprotein Ligand-1 (PSGL-1) auf der
-Oberfla¨che neutrophiler Granulozyten, welcher mit P-Selektin interagiert, welches vom
-Endothel exprimiert wird (Moore et al. 1995). Fu¨r die Adha¨sion am Endothel ist neben
+Oberfläche neutrophiler Granulozyten, welcher mit P-Selektin interagiert, welches vom
+Endothel exprimiert wird (Moore et al. 1995). Für die Adhäsion am Endothel ist neben
 P-Selektin auch E-Selektin verantwortlich, welches mit dem E-Selektin-Ligand 1 (ESL-
-1) auf der Oberfla¨che leukozyta¨rer Mikrovilli interagiert (Steegmaier et al. 1997). Der
-Kontakt mit Selektinen fu¨hrt zum Rollen der neutrophilen Granulozyten (Zimmermann
+1) auf der Oberfläche leukozytärer Mikrovilli interagiert (Steegmaier et al. 1997). Der
+Kontakt mit Selektinen führt zum Rollen der neutrophilen Granulozyten (Zimmermann
 et al. 1992; Zimmerman et al. 1996). Durch endothelial freigesetzte Chemokine werden
-im rollenden neutrophilen Granulozyten Integrine aktiviert, die an Adha¨sionsmoleku¨le
-auf dem Endothel binden ko¨nnen (Zimmerman et al. 1996). Wichtige Integrine wa¨hrend
-der Adha¨sion sind lymphocyte function associated antigen 1 (CD11a/CD18; LFA-1),
+im rollenden neutrophilen Granulozyten Integrine aktiviert, die an Adhäsionsmoleküle
+auf dem Endothel binden können (Zimmerman et al. 1996). Wichtige Integrine während
+der Adhäsion sind lymphocyte function associated antigen 1 (CD11a/CD18; LFA-1),
 macrophage-1-antigen (CD11b/CD18; Mac-1) und very late antigen 4 (VLA-4), die an
-FOOTNOTE:Interzellula¨res Zelladha¨sionsmoleku¨l 1 (ICAM-1), Interzellula¨res Zelladha¨sionsmoleku¨l
+FOOTNOTE:Interzelluläres Zelladhäsionsmolekül 1 (ICAM-1), Interzelluläres Zelladhäsionsmolekül
 2 (ICAM-2) und vascular cell adhesion molecule 1 (VCAM-1) binden (Arnaout 1990;
 Wagner et al. 2000; Ley et al. 2007; Filippi 2019). Durch die Bindung an ICAM-1
-kommt es zu Vera¨nderungen im epithelialen Zytoskelett. Zellen, die migrieren, weisen
+kommt es zu Veränderungen im epithelialen Zytoskelett. Zellen, die migrieren, weisen
 eine Polarisation auf. F-Aktin in den neutrophilen Granulozyten polymerisiert und bildet
 Lamellopodien auf dem in Richtung des chemotaktischen Gradienten ausgerichteten
 Anteils der Plasmamembran aus (Weiner et al. 1999; Ridley et al. 2003; Stephens et al.
 2008; Williams et al. 2011; Filippi 2019). Die Transmigration erfolgt entweder mittels
-Transzytose oder zwischen zwei benachbarten Endothelzellen hindurch (parazellula¨r)
+Transzytose oder zwischen zwei benachbarten Endothelzellen hindurch (parazellulär)
 (Feng et al.1998). Ein wichtiges Protein bei der Transmigration ist platelet/endothelial
 cell adhesion molecule 1 (PECAM-1), welches sich auf Leukozyten und dem Endothel
-befindet (Muller et al. 1993). Das endotheliale PECAM und das leukozyta¨re PECAM
+befindet (Muller et al. 1993). Das endotheliale PECAM und das leukozytäre PECAM
 bilden eine homophile Bindung aus (Muller et al. 1993). Durch die PECAM Interaktion
-werden auf der Oberfla¨che der neutrophilen Granulozyten α6β1 Integrine vermehrt
+werden auf der Oberfläche der neutrophilen Granulozyten α6β1 Integrine vermehrt
 exprimiert (Dangerfield et al. 2002). Das Integrin α6β1 fungiert als Leukozytenrezeptor
-fu¨r das Basalmembranprotein Laminin (Dangerfield et al. 2002). Weitere neben PECAM
+für das Basalmembranprotein Laminin (Dangerfield et al. 2002). Weitere neben PECAM
 an der Transmigration beteiligte Proteine sind JAM-C, welches in interendothelialen
-junctions lokalisiert ist (Chavakis et al. 2004), sowie CD$$$99$$$ auf der Oberfla¨che der
+junctions lokalisiert ist (Chavakis et al. 2004), sowie CD$$$99$$$ auf der Oberfläche der
 neutrophilen Granulozyten (Muller 2002).
 
 
 Abbildung 1: Extravasation der neutrophilen Granulozyten aus dem Gefäßsystem
 ins Interstitium. 1“: Initiale Kontaktaufnahme und Rollen durch Interaktion von PSGL- ”
 1 und P-Selektin. 2“: Endothelial freigesetzte Chemokine aktivieren Integrine auf dem ”
-neutrophilen Granulozyten. 3“: Adha¨sion und intraluminales Krabbeln durch Kontakt ”
+neutrophilen Granulozyten. 3“: Adhäsion und intraluminales Krabbeln durch Kontakt ”
 der Integrine LFA-1, VLA-4 und Mac-1 mit ICAM-1, ICAM-2 und VCAM-1. 4“: Para- ”
-zellula¨re oder transzellula¨re Transmigration. Strukturen, die Interzellularkontakte vermit-
+zelluläre oder transzelluläre Transmigration. Strukturen, die Interzellularkontakte vermit-
 teln, sind beispielsweise Tight Junction, Zonula adhaerens, Gap Junction sowie Desmoso-
 men. Quelle: Eigene Darstellung (angelehnt an Muller 2002; Ley et al. 2007; Borregaard
 2010; Kolaczkowska 2013; Filippi 2019).
 
 
-Neutrophile Granulozyten ko¨nnen Erreger u¨ber drei Mechanismen abto¨ten: Phagozyto-
+Neutrophile Granulozyten können Erreger über drei Mechanismen abtöten: Phagozyto-
 se, Degranulation und neutrophil extracellular traps (NETs) (Kolaczkowska et al. 2013).
 Als Phagozytose wird die Aufnahme von Partikeln in die Zelle bezeichnet (Rassow et al.
 2016). Die Zellmembran umschließt den Partikel und bildet ein Phagosom (Rassow et al.
-2016). Das Phagosom verschmilzt mit einem prima¨ren Lysosom zu einem sekunda¨ren Ly-
-sosom, in dem der Inhalt des Phagosoms unscha¨dlich gemacht wird (Rassow et al. 2016).
+2016). Das Phagosom verschmilzt mit einem primären Lysosom zu einem sekundären Ly-
+sosom, in dem der Inhalt des Phagosoms unschädlich gemacht wird (Rassow et al. 2016).
 Degranulation ist als Prozess der Exozytose cytoplasmatischer Granula definiert (Lodge
-et al. 2020). NETs sind vom neutrophilen Granulozyten produzierte extrazellula¨re Fa-
+et al. 2020). NETs sind vom neutrophilen Granulozyten produzierte extrazelluläre Fa-
 sern bestehend aus Chromatin-DNA, Histonen und Granulaproteinen, in welchen sich
-Mikroorganismen verfangen und abgeto¨tet werden (Brinkmann et al. 2004). Antimikro-
+Mikroorganismen verfangen und abgetötet werden (Brinkmann et al. 2004). Antimikro-
 bielle Bestandteile der NETs sind unter anderem Myeloperoxidase, Neutrophile Elastase,
 Proteinase 3, Cathepsin G, Gelatinase, Tryptase et cetera (etc.) (Papayannopoulos 2009).
-NETs fangen, neutralisieren und to¨ten Bakterien (Brinkmann et al. S. 43), Pilze (Urban et
+NETs fangen, neutralisieren und töten Bakterien (Brinkmann et al. S. 43), Pilze (Urban et
 al. 2006), Viren (Saitoh et al. 2012) und Parasiten (Abdallah et al. 2012; Papayannopou-
 los 2018). NETs werden durch einen Zelltodprozess freigesetzt, der als NETose bezeich-
-net wird (Fuchs et al. 2007; Papayannopoulos 2018). Wa¨hrend der NETose verliert der
-Nucleus seine Form, das Eu- und das Heterochromatin homogenisieren, die Kernhu¨lle und
+net wird (Fuchs et al. 2007; Papayannopoulos 2018). Während der NETose verliert der
+Nucleus seine Form, das Eu- und das Heterochromatin homogenisieren, die Kernhülle und
 die Membran der Granula desintergrieren, was zu einer Vermischung der einzelnen NET
-Bestandteile fu¨hrt (Fuchs et al. 2007). Eine zweite Variante ist die nicht-lytische Form der
+Bestandteile führt (Fuchs et al. 2007). Eine zweite Variante ist die nicht-lytische Form der
 NETose, bei der bei Kontakt mit beispielsweise Staphylococcus aureus eine Degranula-
-tion und ein Herausschleudern von nuklea¨rem Chromatin zur Bildung von NETs fu¨hrt,
+tion und ein Herausschleudern von nukleärem Chromatin zur Bildung von NETs führt,
 ohne dass dabei der neutrophile Granulozyt zu Grunde geht (Papayannopoulos 2018).
 
 
-Tabelle 1: U¨ bersicht u¨ber die unterschiedlichen granulozyta¨ren Antigene. Quelle: Ei-
+Tabelle 1: Ü bersicht über die unterschiedlichen granulozytären Antigene. Quelle: Ei-
 gene Darstellung (angelehnt an Bux 1999; Stroncek 2002; Bux 2008; Muschter et al.
 2011; Flesch et al. 2018).
 
 
-1.1.2 Granulozyta¨re Antigene
+1.1.2 Granulozytäre Antigene
 
 
-Die ersten granulozyta¨ren Antigene wurden von Lalezari et al. in den 60er Jahren be-
+Die ersten granulozytären Antigene wurden von Lalezari et al. in den 60er Jahren be-
 schrieben (Lalezari et al. 1966; Bux 2008). Die Antigene wurden mit dem Anfangsbuch-
-staben ”N” fu¨r neutrophiler Granulozyt gekennzeichnet, nach Lokalisation und Entdeck-
+staben ”N” für neutrophiler Granulozyt gekennzeichnet, nach Lokalisation und Entdeck-
 ungszeitpunkt mit einem arabischen Buchstaben versehen und das Allel in Reihenfolge
 der Entdeckung nummeriert (Lalezari et al. 1971; Stroncek et al. 2002). Die Granulo-
 zyten Antigen Working Party der ISBT (International Society of Blood Transfusion) hat
-1998 eine neue Nomenklatur fu¨r granulozyta¨re Alloantigene festgesetzt/etabliert. Laut
-dieser seitdem bestehenden Nomenklatur sollen granulozyta¨re Antigene human neutro-
+1998 eine neue Nomenklatur für granulozytäre Alloantigene festgesetzt/etabliert. Laut
+dieser seitdem bestehenden Nomenklatur sollen granulozytäre Antigene human neutro-
 phil alloantigens (HNA) genannt werden (Bux 1999). Die Lokalisation des Antigens auf
 einem Glykoprotein wird durch eine arabische Zahl hinter dem Akronym HNA definiert
 (Bux 1999). Unterschiedliche Antigene auf demselben Glykoprotein sollten alphabetisch
-abha¨ngig vom Publikationsdatum gekennzeichnet werden (Bux 1999). Fu¨r neue Anti-
+abhängig vom Publikationsdatum gekennzeichnet werden (Bux 1999). Für neue Anti-
 gene, die noch nicht in die HNA Nomenklatur aufgenommen waren, wurde ein Akro-
 nym verwendet (Bux 1999). Basierend auf dieser Nomenklatur sind aktuell 12 Allele
-von insgesamt fu¨nf HNAs identifiziert (Tabelle 1). Antiko¨rper gegen granulozyta¨re An-
+von insgesamt fünf HNAs identifiziert (Tabelle 1). Antikörper gegen granulozytäre An-
 tigene spielen bei einer Reihe von Erkrankungen wie der neonatalen Immunneutropenie,
 der transfusionsassoziierten akuten Lungeninsuffizienz (transfusion-related acute lung
 injury (TRALI)), febrilen Transfusionsreaktionen, Immunneutropenien nach Knochen-
@@ -178,87 +175,84 @@ marktransplantationen, Autoimmunneutropenien und medikamenteninduzierten Immun-
 neutropenien eine Rolle (Bux 2008).
 
 
-Einleitung
-
-
 1.2 Alloimmunisierung, neonatale Alloimmunneutropenie und
 TRALI
 
 
-Unter Alloimmunisierung ist die Bildung von Antiko¨rper gegen ein ko¨rperfremdes An-
+Unter Alloimmunisierung ist die Bildung von Antikörper gegen ein körperfremdes An-
 tigen zu verstehen, welches von einem anderen Organismus derselben Spezies stammt
 (Gehrie et al. 2014). Die neonatale Neutropenie ist eine Erkrankung des Neugeborenen.
-Sie ist bedingt durch mu¨tterliche Antiko¨rper, die gegen kindliche Granulozyten gebildet
+Sie ist bedingt durch mütterliche Antikörper, die gegen kindliche Granulozyten gebildet
 wurden (Lalezari et al. 1971). Die Immunneutropenie ist charakterisiert durch ein kurz-
 zeitiges Fehlen von segmentkernigen neutrophilen Granulozyten im Blut und im Kno-
 chenmark der betroffenen Neugeborenen (Lalezari et al. 1971). Die Mutter entwickelt bei
-dieser Erkrankung Alloantiko¨rper gegen ein bestimmtes granulozyta¨res Antigen, welches
-der Fetus vom Vater vererbt bekommen hat (Porcelijn et al. 2018). Die mu¨tterlichen Iso-
-/Alloantiko¨rper passieren die Plazenta und verursachen im Neugeborenen eine Zersto¨rung
-der neutrophilen Granulozyten (Lalezari et al. 1971). Die Antiko¨rper ko¨nnen zudem die
-Granulozytopoese des Fetus inhibieren (Arneth 2020). Es sind Fa¨lle beschrieben, in denen
+dieser Erkrankung Alloantikörper gegen ein bestimmtes granulozytäres Antigen, welches
+der Fetus vom Vater vererbt bekommen hat (Porcelijn et al. 2018). Die mütterlichen Iso-
+/Alloantikörper passieren die Plazenta und verursachen im Neugeborenen eine Zerstörung
+der neutrophilen Granulozyten (Lalezari et al. 1971). Die Antikörper können zudem die
+Granulozytopoese des Fetus inhibieren (Arneth 2020). Es sind Fälle beschrieben, in denen
 bereits das erstgeborene Kind eine neonatale Alloimmunneutropenie aufwies (Lalezari
-et al. 1971). Dies zeigt, dass mu¨tterliche Immunisierung bereits wa¨hrend der Schwan-
+et al. 1971). Dies zeigt, dass mütterliche Immunisierung bereits während der Schwan-
 gerschaft oder sogar vor einer ersten Schwangerschaft stattfinden kann (Porcelijn et al.
 2018).
 
 
-Klinisch a¨ußert sich die neonatale Alloimmunnneutropenie durch Symptome, die von mil-
+Klinisch äußert sich die neonatale Alloimmunnneutropenie durch Symptome, die von mil-
 den Hautinfektionen und einer Omphalitis bis zu schweren Infektionen wie Pneumonie,
 Sepsis und Meningitis reichen (Bux et al. 1989; Porcelijn et al. 2018). Die Symptome der
-neonatalen Alloimmunneutropenie werden hauptsa¨chlich antibiotisch behandelt (van den
+neonatalen Alloimmunneutropenie werden hauptsächlich antibiotisch behandelt (van den
 Tooren et al. 2014).
 
 
-Eine weitere Erkrankung, die mit der Bildung von Alloantiko¨rpern gegen granulozyta¨re
+Eine weitere Erkrankung, die mit der Bildung von Alloantikörpern gegen granulozytäre
 Antigene, wie unter anderem HNA-2, in Zusammenhang steht, ist TRALI. An der
-TRALI-Pathogenese sind ha¨ufig Alloantiko¨rper im Spenderplasma beteiligt (immunoge-
+TRALI-Pathogenese sind häufig Alloantikörper im Spenderplasma beteiligt (immunoge-
 nes TRALI, siehe unten).
 
 
-Das Auftreten eines Lungeno¨dems nach Transfusionen ist erstmals 1936 beschrieben wor-
+Das Auftreten eines Lungenödems nach Transfusionen ist erstmals 1936 beschrieben wor-
 den (Plummer 1936). 2004 wurde TRALI von der Consensus Conference definiert als
 neue Episode von akutem Lungenversagen, das innerhalb von 6 Stunden nach einer Trans-
-fusion auftritt und durch das Vorhandensein einer Hypoxa¨mie und Auffa¨lligkeiten in der
+fusion auftritt und durch das Vorhandensein einer Hypoxämie und Auffälligkeiten in der
 Bildgebung vom Thorax gekennzeichnet ist (Kleinman et al. 2004).
 
 
 Laut International Hemovigilance Network kann die Diagnose TRALI gestellt werden,
 wenn Patienten unter einem innerhalb von 6 Stunden nach Transfusion neu aufgetrete-
-nem akuten Lungenversagen leiden. Folgende fu¨nf Kriterien mu¨ssen fu¨r die Diagnose-
-stellung erfu¨llt sein: po¨tzlicher Beginn, Hypoxa¨mie mit PaO2/FiO2 < 300 Millimeter
-Quecksilbersa¨ule (mmHg) oder einer Sauerstoffsa¨ttigung von < 90 % oder anderer kli-
+nem akuten Lungenversagen leiden. Folgende fünf Kriterien müssen für die Diagnose-
+stellung erfüllt sein: pötzlicher Beginn, Hypoxämie mit PaO2/FiO2 < 300 Millimeter
+Quecksilbersäule (mmHg) oder einer Sauerstoffsättigung von < 90 % oder anderer kli-
 
 
 nischer Evidenz für ein akutes Lungenversagen, bilaterale Infiltrate im Röntgen Thorax,
 kein Nachweis einer linksatrialen Hypertonie sowie kein zeitlicher Bezug zu alternativen
-Risikofaktoren fu¨r ein akutes Lungenversagen/Lungeninsuffizienz. Diese Definition gilt
-nur fu¨r Patienten, die vor der Transfusion keinen Nachweis eines akuten Lungenversa-
+Risikofaktoren für ein akutes Lungenversagen/Lungeninsuffizienz. Diese Definition gilt
+nur für Patienten, die vor der Transfusion keinen Nachweis eines akuten Lungenversa-
 gens hatten (International Haemovigilance Network 2011). Bei den alternativen Risiko-
-faktoren unterscheidet die Definition zwischen Risikofaktoren fu¨r eine direkte Lungenin-
-suffizienz/Lungenversagen und fu¨r eine indirekte Lungeninsuffizienz/indirektes Lungen-
-versagen. Alternative Risikofaktoren fu¨r ein direktes Lungenversagen sind Aspiration,
+faktoren unterscheidet die Definition zwischen Risikofaktoren für eine direkte Lungenin-
+suffizienz/Lungenversagen und für eine indirekte Lungeninsuffizienz/indirektes Lungen-
+versagen. Alternative Risikofaktoren für ein direktes Lungenversagen sind Aspiration,
 Pneumonie, toxische Inhalation, Lungenkontusion und das Beinaheertrinken. Risikofak-
-toren fu¨r ein indirektes Lungenversagen sind schwere Sepsis, Schock, Polytrauma, Ver-
+toren für ein indirektes Lungenversagen sind schwere Sepsis, Schock, Polytrauma, Ver-
 brennung, eine akute Pankreatitis, ein kardiopulmonaler Bypass sowie eine Medikamen-
-tenu¨berdosis (International Haemovigilance Network 2011). Laut International Haemovi-
-gilance Network ist TRALI ein klinisches Syndrom und bedarf fu¨r die Diagnosestellung
-weder eines Nachweises des Vorhandenseins von Anti-HLA oder Anti-HNA Antiko¨rpern
-im Spenderplasma noch des Nachweises des zugeho¨rigen Antigens bei den Empfa¨ngern
+tenüberdosis (International Haemovigilance Network 2011). Laut International Haemovi-
+gilance Network ist TRALI ein klinisches Syndrom und bedarf für die Diagnosestellung
+weder eines Nachweises des Vorhandenseins von Anti-HLA oder Anti-HNA Antikörpern
+im Spenderplasma noch des Nachweises des zugehörigen Antigens bei den Empfängern
 (International Haemovigilance Network 2011).
 
 
 Vlaar et al. haben eine differenziertere Definition vorgeschlagen. Unterschieden werden
 zwei Typen von TRALI, wobei TRALI Typ I ohne das Vorhandensein von Risikofaktoren
-fu¨r ARDS und TRALI Typ II durch Risikofaktoren eines ARDS oder eines bereits mild
+für ARDS und TRALI Typ II durch Risikofaktoren eines ARDS oder eines bereits mild
 existierenden ARDS definiert ist (Vlaar et al. 2019). Um einen Fall als TRALI Typ II zu
-klassifizieren, muss er drei Kriterien erfu¨llen:
+klassifizieren, muss er drei Kriterien erfüllen:
 
 
-1. Er muss dieselben Kriterien erfu¨llen wie TRALI Typ I.
+1. Er muss dieselben Kriterien erfüllen wie TRALI Typ I.
 
 
-2. Der Beginn eines posttransfusionsbedingten pulmonalen O¨ dems tritt in der Anwe-
+2. Der Beginn eines posttransfusionsbedingten pulmonalen Ö dems tritt in der Anwe-
 senheit eines ARDS Risikofaktors oder eines milden ARDS auf.
 
 
@@ -266,43 +260,43 @@ senheit eines ARDS Risikofaktors oder eines milden ARDS auf.
 Ratio) in den 12 Stunden vor der Transfusion auf (Vlaar et al. 2019).
 
 
-Fa¨lle, bei denen die ersten beiden aber nicht das dritte Kriterium zutreffen, du¨rfen als
+Fälle, bei denen die ersten beiden aber nicht das dritte Kriterium zutreffen, dürfen als
 ARDS klassifiziert werden (Vlaar et al. 2019).
 
 
 Es kann zwischen antikörpervermitteltem TRALI und antikörperunabhängigen TRALI
-FOOTNOTE:unterschieden werden. 4/ aller TRALI Fa¨lle sind antiko¨rpervermittelt (Middelburg et al. 5
+FOOTNOTE:unterschieden werden. 4/ aller TRALI Fälle sind antikörpervermittelt (Middelburg et al. 5
 2008).
 
 
-Die Ha¨ufigkeiten von immunvermitteltem TRALI betrugen vor Einfu¨hrung prophylak-
+Die Häufigkeiten von immunvermitteltem TRALI betrugen vor Einführung prophylak-
 tischer Maßnahmen (male only plasma; siehe unten) bei therapeutischem Plasma 1 :
 66.000, bei Erythrozytenkonzentraten 1: 2,86 Millionen und bei Thrombozytenkonzentra-
-ten 1: 420.000 (Keller-Stanislawski et al. 2010). Die Ha¨ufigkeit von TRALI vermittelten
-Todesfa¨llen betrug laut Studie 1: 285.000 fu¨r therapeutisches Plasma (Keller-Stanislawski
+ten 1: 420.000 (Keller-Stanislawski et al. 2010). Die Häufigkeit von TRALI vermittelten
+Todesfällen betrug laut Studie 1: 285.000 für therapeutisches Plasma (Keller-Stanislawski
 
 
 et al. 2010). Die Daten zeigen die Bedeutung einer stattgehabten Schwangerschaft bei
-den Spenderinnen der implizierten Plasmen fu¨r die Entwicklung von Antiko¨rper getrig-
+den Spenderinnen der implizierten Plasmen für die Entwicklung von Antikörper getrig-
 gertem TRALI (Keller-Stanislawski et al. 2010). Seit 2009 darf therapeutisches Plasma in
 Deutschland daher nur von Frauen mit zeitlich unbegrenzt negativer Schwangerschafts-
-anamnese fu¨r den Verkehr freigegeben werden (Bundesanzeiger 84:2064 (10.06.2009)).
+anamnese für den Verkehr freigegeben werden (Bundesanzeiger 84:2064 (10.06.2009)).
 
 
 Antileukozytäre Antikörper, insbesondere Antikörper gegen HNA-2 (Sachs et al. 2006),
-ebenso wie Antiko¨rper gegen HNA-3a (Davoren et al. 2003; Ganguly et al. 2004; Silliman
-et al. 2007) ko¨nnen TRALI verursachen. HLA Klasse I Antiko¨rper sind schwache Trigger
-fu¨r TRALI verglichen mit HNA oder HLA Klasse II Antiko¨rpern (Reil et al 2008). Das
-Ausmaß und die Induktion von TRALI durch Anti-HNA-2 Antiko¨rper stehen laut Sachs et
-al. im Zusammenhang mit dem Vorhandensein von Anti-HNA-2 Antiko¨rpern, der Anzahl
+ebenso wie Antikörper gegen HNA-3a (Davoren et al. 2003; Ganguly et al. 2004; Silliman
+et al. 2007) können TRALI verursachen. HLA Klasse I Antikörper sind schwache Trigger
+für TRALI verglichen mit HNA oder HLA Klasse II Antikörpern (Reil et al 2008). Das
+Ausmaß und die Induktion von TRALI durch Anti-HNA-2 Antikörper stehen laut Sachs et
+al. im Zusammenhang mit dem Vorhandensein von Anti-HNA-2 Antikörpern, der Anzahl
 an CD$$$177$$$ exprimierenden neutrophilen Granulozyten, der Dichte des CD$$$177$$$ Antigens
-auf der Oberfla¨che der neutrophilen Granulozyten und der antiko¨rpervermittelten Akti-
+auf der Oberfläche der neutrophilen Granulozyten und der antikörpervermittelten Akti-
 vierung der neutrophilen Granulozyten mit konsekutiver Bildung reaktiver Sauerstoff-
-spezies (Sachs et al. 2006). Die Interaktion von Antiko¨rpern mit granulozyta¨rem Antigen
-aktiviert den neutrophilen Granulozyten und sorgt konsekutiv fu¨r die Freisetzung reakti-
-ver Sauerstoffspezies und Proteasen sowie fu¨r die Bildung von NETs (Roubinian 2018),
-die das pulmonale vaskula¨re Endothelium scha¨digen und damit zum capillary leak, Lun-
-geno¨dem und TRALI fu¨hren (Fung et al. 2009).
+spezies (Sachs et al. 2006). Die Interaktion von Antikörpern mit granulozytärem Antigen
+aktiviert den neutrophilen Granulozyten und sorgt konsekutiv für die Freisetzung reakti-
+ver Sauerstoffspezies und Proteasen sowie für die Bildung von NETs (Roubinian 2018),
+die das pulmonale vaskuläre Endothelium schädigen und damit zum capillary leak, Lun-
+genödem und TRALI führen (Fung et al. 2009).
 
 
 Elevationen von IL-6, IL-8 und CRP vor einer Transfusion sind mit dem Auftreten von
@@ -310,11 +304,11 @@ TRALI assoziiert (Roubinian 2018). Das heißt, vor der Transfusion gibt es bei P
 die TRALI entwickeln, den Nachweis/Hinweis einer systemischen Inflammation (Rou-
 binian et al. 2015). Die TRALI-Pathogenese wird daher mit einem 2-HIT“ Modell be- ”
 schrieben. Im ersten Schritt erfolgt eine Aktivierung des pulmonalen Endothels, im zwei-
-ten Schritt fu¨hrt ein Antiko¨rper im transfundierten Plasma direkt oder indirekt zur Sto¨rung
-der endothelialen Integrita¨t mit konsekutiver Lungeninsuffizienz (Bux 2011).
+ten Schritt führt ein Antikörper im transfundierten Plasma direkt oder indirekt zur Störung
+der endothelialen Integrität mit konsekutiver Lungeninsuffizienz (Bux 2011).
 
 
-1.3 CD$$$177$$$
+1.3 CD177
 
 
 1.3.1 Struktur und Funktion
@@ -327,11 +321,8 @@ kanischen Amerikaner (Stroncek et al. 2004) und 88 – 99,5 % aller Japaner expr
 NB1/CD177 (Matsuo et al. 2000; Taniguchi et al. 2002).
 
 
-NB1/CD177 wird wa¨hrend der Granulopoese erstmals auf Ebene der Myelozyten expri-
+NB1/CD177 wird während der Granulopoese erstmals auf Ebene der Myelozyten expri-
 miert (Stroncek et al. 1998).
-
-
-Einleitung
 
 
 Der ursprüngliche Name des Antigens war NB1. Es folgte die Bezeichnung HNA-2
@@ -339,26 +330,26 @@ Der ursprüngliche Name des Antigens war NB1. Es folgte die Bezeichnung HNA-2
 matik aufgenommen (Mason et al. 2002).
 
 
-Typisch fu¨r CD$$$177$$$ ist sein bimodales Verteilungsmuster: Die meisten Menschen haben
-eine Population an neutrophilen Granulozyten, die CD$$$177$$$ auf ihrer Oberfla¨che exprimier-
-en ko¨nnen und eine zweite Population, die CD$$$177$$$ nicht tragen. 3 – 5 % aller Kaukasi-
-er exprimieren CD$$$177$$$ nicht (Lalezari et al. 1971). Dieser Pha¨notyp wird CD$$$177$$$ Null
+Typisch für CD$$$177$$$ ist sein bimodales Verteilungsmuster: Die meisten Menschen haben
+eine Population an neutrophilen Granulozyten, die CD$$$177$$$ auf ihrer Oberfläche exprimier-
+en können und eine zweite Population, die CD$$$177$$$ nicht tragen. 3 – 5 % aller Kaukasi-
+er exprimieren CD$$$177$$$ nicht (Lalezari et al. 1971). Dieser Phänotyp wird CD$$$177$$$ Null
 genannt.
 
 
-CD$$$177$$$ negative Individuen neigen zur Produktion von Alloantiko¨rpern, welche Erkran-
+CD$$$177$$$ negative Individuen neigen zur Produktion von Alloantikörpern, welche Erkran-
 kungen wie TRALI (Bux 2011) und neonatale Immunneutropenien (Bux 2002) verursa-
-chen ko¨nnen.
+chen können.
 
 
 Eulenberg-Gustavus et al. beschrieben eine monoallelische Expression von CD177 als
-Ursache dafu¨r, dass CD$$$177$$$ positive neutrophile Granulozyten nur ein CD$$$177$$$ Allel -
-entweder das mu¨tterlichen oder das va¨terlichen Ursprungs - exprimieren (Eulenberg-
-Gustavus et al. 2017). Eines von zwei CD$$$177$$$ Allelen wird wa¨hrend der neutrophilen
+Ursache dafür, dass CD$$$177$$$ positive neutrophile Granulozyten nur ein CD$$$177$$$ Allel -
+entweder das mütterlichen oder das väterlichen Ursprungs - exprimieren (Eulenberg-
+Gustavus et al. 2017). Eines von zwei CD$$$177$$$ Allelen wird während der neutrophilen
 Differenzierung stillgelegt, was zu einer monoallelischen Expression in reifen neutrophi-
-len Granulozyten fu¨hrt (Eulenberg-Gustavus et al. 2017). Laut Eulenberg-Gustavus et al.
+len Granulozyten führt (Eulenberg-Gustavus et al. 2017). Laut Eulenberg-Gustavus et al.
 sind CpG und Histon Methylierung sowie das Binden von AP-1 Transkriptionsfaktoren
-(c-Jun/c-Fos) an den Promotor von CD$$$177$$$ positiven neutrophilen Granulozyten fu¨r das
+(c-Jun/c-Fos) an den Promotor von CD$$$177$$$ positiven neutrophilen Granulozyten für das
 Vorhandensein von zwei unterschiedlichen neutrophilen Subpopulationen - das bimodale
 Verteilungsmuster - verantwortlich (Eulenberg-Gustavus et al. 2017). CpG Methylierung
 der Promotorsequenz legt die Expression eines CD$$$177$$$ Allels still (Eulenberg-Gustavus et
@@ -367,7 +358,7 @@ anders als die Subpopulation der CD$$$177$$$ negativen Granulozyten einen euchro
 CD$$$177$$$ Promotor und unmethylierte CpGs (Eulenberg-Gustavus et al. 2017). In Zell-
 kulturexperimenten konnte gezeigt werden, dass Demethylierung monoallelische CD$$$177$$$
 Expression in eine biallelische CD$$$177$$$ Expression konvertierte, was demonstriert, dass
-CpG Methylierung fu¨r das Stilllegen eines CD$$$177$$$ Allels verantwortlich ist (Eulenberg-
+CpG Methylierung für das Stilllegen eines CD$$$177$$$ Allels verantwortlich ist (Eulenberg-
 Gustavus et al. 2017). Die CD$$$177$$$ negative Subpopulation in CD$$$177$$$ positiven Individuen
 exprimiert weder messenger ribonucleic acid (mRNA) noch Protein; CD$$$177$$$ Protein und
 mRNA Expression finden sich nur in der CD$$$177$$$ positiven Subpopulation (Wolff et al.
@@ -375,7 +366,7 @@ mRNA Expression finden sich nur in der CD$$$177$$$ positiven Subpopulation (Wolf
 
 
 Eine aktuelle Studie von Flesch et al. konnte dahingegen complementary desoyribonucleic
-acid (cDNA) in voller La¨nge in beiden - der negativen und positiven - Subpopulationen
+acid (cDNA) in voller Länge in beiden - der negativen und positiven - Subpopulationen
 nachweisen (Flesch et al. 2020).
 
 
@@ -383,30 +374,27 @@ Das NB1-Antigen befindet sich auf einem 58 - 64 kilo Dalton (kD) schweren Glyko-
 protein (Stroncek et al. 1990). Das NB1-Antigen hat unter reduzierenden Bedingungen
 
 
-Einleitung
-
-
 eine Größe von 56 - 62 kD und unter nicht-reduzierenden Bedingungen von 49 - 55 kD
 (Goldschmeding et al. 1992). CD$$$177$$$ findet sich auf der Plasmamembran der neutrophi-
-len Granulozyten und in Sekunda¨rgranula (Stroncek et al. 1990). Die Subpopulation der
-CD$$$177$$$ tragenden neutrophilen Granulozyten exprimiert CD$$$177$$$ sowohl intrazellula¨r als
+len Granulozyten und in Sekundärgranula (Stroncek et al. 1990). Die Subpopulation der
+CD$$$177$$$ tragenden neutrophilen Granulozyten exprimiert CD$$$177$$$ sowohl intrazellulär als
 auch auf der Plasmamembran (Goldschmeding et al. 1992).
 
 
 CD177 gehört zur uPAR/CD59/Ly6 snake toxin Superfamilie (Kissel et al. 2002). Gene
 der uPAR/CD59/Ly6 snake toxin Superfamilie kodieren GPI verankerte Proteine, welche
-Doma¨nen aus 70 - 100 Aminosa¨uren und 8 - 10 Cysteinen besitzen (Stroncek et al. 2004).
+Domänen aus 70 - 100 Aminosäuren und 8 - 10 Cysteinen besitzen (Stroncek et al. 2004).
 
 
 Glycosylphosphatidylinositole agieren als Membrananker verschiedener eukaryontischer
-Oberfla¨chenproteine. Ein GPI Anker besteht aus Ethanolaminphosphat, drei Mannose-
-moleku¨len, einem nicht-N-acetylierten Glucosamin sowie einem Inositolphospholipid
+Oberflächenproteine. Ein GPI Anker besteht aus Ethanolaminphosphat, drei Mannose-
+molekülen, einem nicht-N-acetylierten Glucosamin sowie einem Inositolphospholipid
 (Abbildung 2) (Fankhauser et al. 1993; Kinoshita et al. 2016). GPIs sind an Proteine durch
 eine Amidbindung zwischen der C-terminalen Carboxylgruppe und einer Aminogruppe
 des Ethanolaminphosphates gebunden (Kinoshita et al. 2016). Ein GPI verankertes
-Protein verfu¨gt u¨ber eine GPI Signalsequenz, welche aus Elementen wie einer Omega
-Position (die Position, an die der GPI Anker geknu¨pft wird) besteht (Kinoshita et al.
-2016). Es gibt bestimmte Software-Programme, die Vorhersagen u¨ber eine mo¨gliche GPI
+Protein verfügt über eine GPI Signalsequenz, welche aus Elementen wie einer Omega
+Position (die Position, an die der GPI Anker geknüpft wird) besteht (Kinoshita et al.
+2016). Es gibt bestimmte Software-Programme, die Vorhersagen über eine mögliche GPI
 Verankerung bestimmter Proteine inklusive Omega-Position treffen (Caro et al. 1997;
 Eisenhaber et al. 1999; Eisenhaber et al. 2004; Kinoshita et al. 2016).
 
@@ -414,31 +402,28 @@ Eisenhaber et al. 1999; Eisenhaber et al. 2004; Kinoshita et al. 2016).
 Abbildung 2: Schematische Darstellung des in der Plasmamembran mittels GPI An-
 ker befestigten CD$$$177$$$ Proteins. Das CD$$$177$$$ Protein ist mittels GPI Anker in der Plas-
 mamembran der neutrophilen Granulozyten befestigt. Der GPI Anker besteht aus einem
-Inositolphopholipid (gru¨n), Glucosamin (dunkelrot), drei Mannosemoleku¨len (orange)
+Inositolphopholipid (grün), Glucosamin (dunkelrot), drei Mannosemolekülen (orange)
 sowie aus Ethanolaminphosphat (gelb). Die Omegaposition beschreibt die Position des
 Proteins, an die der GPI Anker gebunden wird. Quelle: Eigene Darstellung.
 
 
 Das CD$$$177$$$ Protein wird durch das CD$$$177$$$ Gen auf Chromosom 19 an Position 19q13.31
-kodiert (Kissel et al. 2001). Urspru¨nglich wurde CD$$$177$$$ als Allel des PRV-1 Gens be-
+kodiert (Kissel et al. 2001). Ursprünglich wurde CD$$$177$$$ als Allel des PRV-1 Gens be-
 schrieben (Bettinotti et al. 2002; Carrucio et al. 2004; Caruccio et al. 2006b). Die Nu-
 kleotidsequenz von CD$$$177$$$ und PRV-1 weisen Homologien auf (Bettinotti et al. 2002).
 
 
-Einleitung
-
-
-CD$$$177$$$ unterscheidet sich von PRV-1 in 4 Nukleotiden (Caruccio et al. 2006).
+CD177 unterscheidet sich von PRV-1 in 4 Nukleotiden (Caruccio et al. 2006).
 
 
 PRV-1 ist auf der Oberfläche der neutrophilen Granulozyten bei 95 % aller Polycythaemia
-vera Patienten u¨berexprimiert (Temerinac et al. 2000; Stroncek et al. 2004; Caruccio et al.
+vera Patienten überexprimiert (Temerinac et al. 2000; Stroncek et al. 2004; Caruccio et al.
 2006).
 
 
-Der ha¨ufigste Polymorphismus des CD$$$177$$$ Gens ist G42C in Exon 1, welcher zu einer
-Aminosa¨uresubstitution (Alanin zu Prolin) fu¨hrt (Carrucio et al. 2004). Die CD$$$177$$$ Ex-
-pression ist in 42 C/C ho¨her als in 42 G/G Spendern (Carrucio et al. 2004).
+Der häufigste Polymorphismus des CD$$$177$$$ Gens ist G42C in Exon 1, welcher zu einer
+Aminosäuresubstitution (Alanin zu Prolin) führt (Carrucio et al. 2004). Die CD$$$177$$$ Ex-
+pression ist in 42 C/C höher als in 42 G/G Spendern (Carrucio et al. 2004).
 
 
 Das CD177 Gen besteht aus 9 Exonen mit insgesamt 1311 Basenpaaren (Kissel et al.
@@ -452,72 +437,69 @@ Pseudogen getrennt (Wu et al. 2016).
 
 Die cDNA von CD$$$177$$$ umfasst 1614 Basenpaare (bp), wovon 1311 bp die kodierende
 Region darstellen. Die 5’ UTR besteht aus 27 bp und die 3’ UTR aus 276 bp (Kissel et al.
-2001). Die mRNA kodiert fu¨r 437 Aminosa¨uren, von denen 21 das Signalpeptid bilden.
-Die restlichen 416 Aminosa¨uren bilden ein N-terminales extrazellula¨res Protein mit zwei
-cysteinreichen Doma¨nen (aa12-195 und 209-388) (Kissel et al. 2001), drei potentiellen
+2001). Die mRNA kodiert für 437 Aminosäuren, von denen 21 das Signalpeptid bilden.
+Die restlichen 416 Aminosäuren bilden ein N-terminales extrazelluläres Protein mit zwei
+cysteinreichen Domänen (aa12-195 und 209-388) (Kissel et al. 2001), drei potentiellen
 Glykosylierungstellen und einem GPI Anker (Kissel et al. 2001).
 
 
-Innerhalb des Glykoproteins von CD$$$177$$$ befindet sich 25 - mal die Aminosa¨ure Cystein,
-welche Disulfidbru¨cken bilden kann (Kissel et al. 2001).
+Innerhalb des Glykoproteins von CD$$$177$$$ befindet sich 25 - mal die Aminosäure Cystein,
+welche Disulfidbrücken bilden kann (Kissel et al. 2001).
 
 
-Die antigene Determinante von CD$$$177$$$ beruht auf der durch Disulfidbru¨cken her-
-beigefu¨hrten Tertia¨rstruktur des Proteins und ist unabha¨ngig von den durch N-
-Glykosylierung angeha¨ngten Kohlenhydraten (Kissel et al. 2001). Dies konnte dadurch
+Die antigene Determinante von CD$$$177$$$ beruht auf der durch Disulfidbrücken her-
+beigeführten Tertiärstruktur des Proteins und ist unabhängig von den durch N-
+Glykosylierung angehängten Kohlenhydraten (Kissel et al. 2001). Dies konnte dadurch
 gezeigt werden, dass CD$$$177$$$ im Immunoblot auch nach Behandlung mit N-glycosidase
-F - das heißt nach Entfernung der Zuckermoleku¨le - mit 7D8 und Anti-CD177 reagiert,
-wohingegen sich nach Reduktion der Disulfidbru¨cken keine Reaktion mit Alloantiko¨rpern
+F - das heißt nach Entfernung der Zuckermoleküle - mit 7D8 und Anti-CD177 reagiert,
+wohingegen sich nach Reduktion der Disulfidbrücken keine Reaktion mit Alloantikörpern
 zeigte (Kissel et al. 2001).
 
 
 Die CD177 Expression ist während der Schwangerschaft erhöht (Caruccio et al. 2003).
-Neugeborene weisen eine ho¨here CD$$$177$$$ Expression auf als Erwachsene (Strince et al.
+Neugeborene weisen eine höhere CD$$$177$$$ Expression auf als Erwachsene (Strince et al.
 1998; Wolff et al. 2006).
 
 
-Die CD$$$177$$$ Expression bei Frauen ist ho¨her als bei Ma¨nnern (Matsuo et al. 2000). Die
-CD$$$177$$$ Expression fa¨llt mit zunehmendem Alter bei Frauen ab, jedoch nicht bei Ma¨nnern
-(Matsuo et al. 2000). O¨ strogen scheint einen Einfluss auf die CD$$$177$$$ Expression zu haben.
-Eine hohe Expression im Nabelschnurblut resultiert daher aus erho¨hten O¨ strogenwerten
+Die CD$$$177$$$ Expression bei Frauen ist höher als bei Männern (Matsuo et al. 2000). Die
+CD$$$177$$$ Expression fällt mit zunehmendem Alter bei Frauen ab, jedoch nicht bei Männern
+(Matsuo et al. 2000). Ö strogen scheint einen Einfluss auf die CD$$$177$$$ Expression zu haben.
+Eine hohe Expression im Nabelschnurblut resultiert daher aus erhöhten Ö strogenwerten
 
 
-Einleitung
-
-
-der Mutter wa¨hrend der Schwangerschaft (Matsuo et al. 2000).
+der Mutter während der Schwangerschaft (Matsuo et al. 2000).
 
 
 Durch die Gabe von G-CSF kann die CD177 Expression erhöht werden (Stroncek et al.
 1998).
 
 
-Die CD$$$177$$$ Expression ist bei einer Reihe von Erkrankungen vera¨ndert:
+Die CD177 Expression ist bei einer Reihe von Erkrankungen verändert:
 
 
 CD177 wird überexprimiert in Patienten mit chronisch myeloproliferativen Erkrankungen
-wie der Polycythaemia vera, essentieller Thrombozytha¨mie oder Myelofibrose (Passa-
+wie der Polycythaemia vera, essentieller Thrombozythämie oder Myelofibrose (Passa-
 monti et al. 2004). Ein niedriger Prozentsatz CD$$$177$$$ exprimierender Granulozyten ist mit
-dem myelodysplastischen Syndrom und der chronisch myeloischen Leuka¨mie assoziiert
+dem myelodysplastischen Syndrom und der chronisch myeloischen Leukämie assoziiert
 (Meyerson et al. 2013).
 
 
 Patienten mit schweren bakteriellen Infektionen haben erhöhte CD177 Werte bzw. weisen
-ihre neutrophile Granulozyten eine erho¨hte CD$$$177$$$ Expression auf (Go¨hring et al. 2004).
-Bei schwerem Verlauf der COVID-19 Erkrankung wurde eine U¨ berexpression von CD$$$177$$$
+ihre neutrophile Granulozyten eine erhöhte CD$$$177$$$ Expression auf (Göhring et al. 2004).
+Bei schwerem Verlauf der COVID-19 Erkrankung wurde eine Ü berexpression von CD$$$177$$$
 beobachtet (Aschenbrenner et al. 2021).
 
 
 Es konnte gezeigt werden, dass die CD177 Expression bei Patienten mit Helicobacter
-Pylori Gastritis signifikant ho¨her war als bei Patienten mit nicht Helicobacter assoziierter
+Pylori Gastritis signifikant höher war als bei Patienten mit nicht Helicobacter assoziierter
 Gastritis (Yang et al. 2017). Der CD$$$177$$$ Expressionsscore hat eine direkte Korrelation mit
-dem Entzu¨ndungsgrad. Der Entzu¨ndungsgrad ist angelehnt an die Helicobacter Koloni-
+dem Entzündungsgrad. Der Entzündungsgrad ist angelehnt an die Helicobacter Koloni-
 sierung (Yang 2019).
 
 
 Der Spiegel der CD177 Expression gilt als Prognosemarker beim Magenkarzinom (Toyo-
 da et al. 2013). Die CD$$$177$$$ Expression ist beim Magenkarzinom mit einer guten Progno-
-se und U¨ berlebensrate nach einem chirurgischen Eingriff korreliert (Toyoda et al. 2013).
+se und Ü berlebensrate nach einem chirurgischen Eingriff korreliert (Toyoda et al. 2013).
 CD$$$177$$$ ist ebenfalls bei Patienten, die unter der Kawasaki Erkrankung leiden, hochregu-
 liert (Huang et al. 2019).
 
@@ -526,218 +508,212 @@ Die CD177 Expression ist mit einer guten Prognose bei verschiedenen soliden Tumo
 ren wie Prostata-, Zervix- und Bronchialkarzinomen assoziiert (Kluz et al. 2020). Kluz
 et al. haben 2020 festgestellt, dass normale Brustepithelzellen CD$$$177$$$ exprimieren, wo-
 hingegen die CD$$$177$$$ Expression bei den Epithelzellen von invasiven Mammakarzinomen
-deutlich reduziert ist (Kluz et al. 2020). Der Verlust von CD$$$177$$$ fu¨hrt zu einer Modulati-
-on des Wnt/β-Cateninsignalweges, das heißt zu einem versta¨rkten β-Cateninsignal durch
+deutlich reduziert ist (Kluz et al. 2020). Der Verlust von CD$$$177$$$ führt zu einer Modulati-
+on des Wnt/β-Cateninsignalweges, das heißt zu einem verstärkten β-Cateninsignal durch
 Komplexbildung von CD$$$177$$$ und β-Catenin (Kluz et al. 2020) und damit zur einer Hy-
 perproliferation des Mammaepithels (Kluz et al. 2020).
 
 
 Es konnte gezeigt werden, dass die G-CSF-Produktion und konsekutiv die CD177 Ex-
-pression bei Patienten nach einer Lebendnierentransplantation erho¨ht sind (Volkmann
-et al. 2020). ABO Blutgruppeninkompatible Transplantatempfa¨nger wiesen eine ho¨here
+pression bei Patienten nach einer Lebendnierentransplantation erhöht sind (Volkmann
+et al. 2020). ABO Blutgruppeninkompatible Transplantatempfänger wiesen eine höhere
 CD$$$177$$$ Expression auf (Volkmann et al. 2020). Bei Patienten mit chronischer Niereninsuf-
-fizienz und unter Nierenersatztherapie war die CD177 Expression unvera¨ndert (Volkmann
-
-
-Einleitung
+fizienz und unter Nierenersatztherapie war die CD177 Expression unverändert (Volkmann
 
 
 et al. 2020).
 
 
-1.3.2 Interaktion mit PR$$$3$$$ und PECAM-1
+1.3.2 Interaktion mit PR3 und PECAM-1
 
 
 CD177 interagiert mit Proteinase 3, einer Serinprotease, die sowohl auf der Plasmamem-
 bran der neutrophilen Granulozyten als auch in sekretorischen Vesikeln und spezifischen
 Granula lokalisiert ist (Witkow-Sarsat et al. 1999; Korkmaz et al. 2008). PR$$$3$$$ ist das Ziel-
-antigen von antineutrophilen cytoplasmatischen Autoantiko¨rpern, die bei Patienten mit
+antigen von antineutrophilen cytoplasmatischen Autoantikörpern, die bei Patienten mit
 Granulomatose mit Polyangiitis gefunden werden (Korkmaz et al. 2008). CD$$$177$$$ und
 PR$$$3$$$ werden auf der Plasmamembran von neutrophilen Granulozyten koexprimiert (Bau-
 er et al. 2007). Durch enzymatische Entfernung des GPI Ankers von CD$$$177$$$ nimmt auch
-die PR$$$3$$$ Expression auf den Zellen ab (Vietinghoff et al. 2007). Zellen sind simultan fu¨r
-PR$$$3$$$ und CD$$$177$$$ positiv. Zellen, die fu¨r PR$$$3$$$ negativ sind, sind ebenfalls fu¨r CD$$$177$$$ ne-
+die PR$$$3$$$ Expression auf den Zellen ab (Vietinghoff et al. 2007). Zellen sind simultan für
+PR$$$3$$$ und CD$$$177$$$ positiv. Zellen, die für PR$$$3$$$ negativ sind, sind ebenfalls für CD$$$177$$$ ne-
 gativ (Bauer et al. 2007). Die Expression von membrangebundenen PR$$$3$$$ und CD$$$177$$$ auf
-der Plasmamembran ist gleichermaßen erho¨ht oder erniedrigt wa¨hrend der Zellstimulati-
-on oder spontanen Apoptose (Bauer et al. 2007). PR$$$3$$$ ist in prima¨ren Granula und CD$$$177$$$
-hauptsa¨chlich in sekunda¨ren Granula gespeichert (Bauer et al. 2007). Die PR$$$3$$$ Expression
+der Plasmamembran ist gleichermaßen erhöht oder erniedrigt während der Zellstimulati-
+on oder spontanen Apoptose (Bauer et al. 2007). PR$$$3$$$ ist in primären Granula und CD$$$177$$$
+hauptsächlich in sekundären Granula gespeichert (Bauer et al. 2007). Die PR$$$3$$$ Expression
 wird durch den CD$$$177$$$ Rezeptor gesteuert (Vietinghoff et al. 2007).
 
 
 CD$$$177$$$ bindet an PECAM-1; CD$$$177$$$ ist ein heterophiler Bindungspartner von PECAM-
 1 (Sachs et al. 2007). Die Interaktion zwischen PECAM-1 und CD$$$177$$$ beeinflusst den
 Phosphorylierungsstatus von PECAM-1 und erleichtert somit die Transmigration der neu-
-trophilen Granulozyten aus dem Gefa¨ßsystem (Bayat et al. 2010). Die PR$$$3$$$ Expressi-
-on und Aktivita¨t sind signifikant erho¨ht bei transmigrierenden neutrophilen Granulozy-
-ten (Kuckleburg et al. 2012). Die Hemmung der PR$$$3$$$ Aktivita¨t bzw. die Blockade der
+trophilen Granulozyten aus dem Gefäßsystem (Bayat et al. 2010). Die PR$$$3$$$ Expressi-
+on und Aktivität sind signifikant erhöht bei transmigrierenden neutrophilen Granulozy-
+ten (Kuckleburg et al. 2012). Die Hemmung der PR$$$3$$$ Aktivität bzw. die Blockade der
 CD177-PECAM-1 Interaktion inhibiert die Transmigration der neutrophilen Granulozy-
 ten (Kuckleburg et al. 2012).
 
 
 In MAIGA hat der falsch-positive Nachweis von Anti-FCGR3B * 2 (HNA-1b)
-in Seren, die Anti-HNA-2-Isoantikörper enthalten, dazu gefu¨hrt, eine CD177/PR3-
+in Seren, die Anti-HNA-2-Isoantikörper enthalten, dazu geführt, eine CD177/PR3-
 Wechselwirkung mit FCGR3B * 2 zu identifizieren (Flesch et al. 2020).
 
 
 Jerke et al. zeigten hingegen, dass die Migration der neutrophilen Granulozyten un-
-abha¨ngig von der Ho¨he der PR3-Expression ist (Jerke et al. 2017). Die CD$$$177$$$ positive,
+abhängig von der Höhe der PR3-Expression ist (Jerke et al. 2017). Die CD$$$177$$$ positive,
 PR$$$3$$$ tragende Subpopulation der neutrophilen Granulozyten zeigten in vivo und in vitro
-keinen Migrationsvorteil gegenu¨ber der CD$$$177$$$ negativen und PR$$$3$$$ negativen Subpo-
-pulation (Jerke et al. 2017). Der Komplex von PR$$$3$$$ und CD$$$177$$$ ist jedoch wichtig fu¨r
-die Expression von PR$$$3$$$ als Autoantigen und fu¨r seine Aktivita¨t als Serinprotease (Jerke
+keinen Migrationsvorteil gegenüber der CD$$$177$$$ negativen und PR$$$3$$$ negativen Subpo-
+pulation (Jerke et al. 2017). Der Komplex von PR$$$3$$$ und CD$$$177$$$ ist jedoch wichtig für
+die Expression von PR$$$3$$$ als Autoantigen und für seine Aktivität als Serinprotease (Jerke
 et al. 2017). PR$$$3$$$ ist gemeinsam mit Fcγ FIIIB und und p22phox -einer Untereinheit
 von Cytochrom b558 der NADPH Oxidase- in der Plasmamembran in neutrophilen
-Lipidflo¨ßen lokalisiert (David et al. 2005). Membrangebundenes PR3, CD$$$177$$$ und
-das Adha¨sionsmoleku¨l CD11b/CD18 (β2 Integrin) sind ebenfalls kolokalisiert (David
+Lipidflößen lokalisiert (David et al. 2005). Membrangebundenes PR3, CD$$$177$$$ und
+das Adhäsionsmolekül CD11b/CD18 (β2 Integrin) sind ebenfalls kolokalisiert (David
 
 
 et al. 2003; Jerke et al. 2011). Der Komplex aus Proteinase 3 und CD177 fungiert
 unter anderem als Mediator der Interaktion zwischen CD11b/CD18 und FcγFIIIB in
-Lipidflo¨ßen. Autoantiko¨rper gegen PR$$$3$$$ (ANCA = Antineutrophile cytoplasmatische
-Antiko¨rper) stimulieren die Degranulation und Superoxid-Produktion in den neutrophilen
+Lipidflößen. Autoantikörper gegen PR$$$3$$$ (ANCA = Antineutrophile cytoplasmatische
+Antikörper) stimulieren die Degranulation und Superoxid-Produktion in den neutrophilen
 Granulozyten, die eine hohe Expression an CD$$$177$$$ und PR$$$3$$$ aufweisen (Jerke et al.
-2011). Die Blockierung des PR3-CD177 Komplexes ko¨nnte zuku¨nftig eine Strategie
+2011). Die Blockierung des PR3-CD177 Komplexes könnte zukünftig eine Strategie
 sein, die ANCA vermittelte Aktivierung neutrophiler Granulozyten zu verhindern (Jerke
 et al. 2011). Deng et al. konnten zeigen, dass die Interaktion von CD$$$177$$$ mit PECAM-1
 die PR$$$3$$$ Expression vermindert und damit die Anti-PR3 ANCA vermittelte Aktivierung
-des neutrophilen Granulozyten mit konsekutiver Endothelscha¨digung abschwa¨cht (Deng
+des neutrophilen Granulozyten mit konsekutiver Endothelschädigung abschwächt (Deng
 et al. 2018).
 
 
 Abbildung 3: Interaktionen von CD$$$177$$$ mit PR3, CD11b/CD18, FcγRIIIb und
-PECAM-1. Auf der Oberfla¨che der neutrophilen Granulozyten ermo¨glicht CD$$$177$$$ die
+PECAM-1. Auf der Oberfläche der neutrophilen Granulozyten ermöglicht CD$$$177$$$ die
 Expression von PR3. Die CD$$$177$$$ Interaktionen werden in cis- und trans-Interaktionen ka-
-tegorisiert. CD177/PR3 verfu¨gt u¨ber eine cis-Interaktion mit CD11b/CD18 und FcγIIIb
+tegorisiert. CD177/PR3 verfügt über eine cis-Interaktion mit CD11b/CD18 und FcγIIIb
 und eine trans-Interaktion mit PECAM-1. Quelle: Bayat 2020.
 
 
 Abbildung 4: Transmigration neutrophiler Granulozyten aus dem Gefäßsystem ins
-Interstitium. Im Rahmen einer Infektion wird CD$$$177$$$ hochreguliert. Wa¨hrend der Mi-
+Interstitium. Im Rahmen einer Infektion wird CD$$$177$$$ hochreguliert. Während der Mi-
 gration interagiert CD$$$177$$$ mit PECAM-1. Zu sehen ist außerdem die Koexpression von
 CD177 und der Serinprotease PR3. Quelle: Eigene Darstellung.
 
 
-1.3.3 Isoformen von CD$$$177$$$
+1.3.3 Isoformen von CD177
 
 
 Abbildung 5: Schematische Darstellung der mRNA der Isoformen von CD177. Die
-Zahlen u¨ber den Balken stehen fu¨r die Aminosa¨ureposition bzw. die Gro¨ße des Proteins
+Zahlen über den Balken stehen für die Aminosäureposition bzw. die Größe des Proteins
 nach Translation der hier abgebildeten mRNA. Der rote Balken bei Isoform 6 markiert
-das Stop-Codon. Die la¨ngeren roten Balken bei Isoform 2 und Isoform 3 stellen die Inser-
-tionen dar, die zu einem Frameshift fu¨hren und jeweils mit einem Stop-Codon enden. Die
-Existenz eines Stop-Codons bei Isoform 6, Isoform 2 und Isoform 3 fu¨hrt wa¨hrend der
-Translation zum Abbruch der Proteinsynthese und damit zu einer verku¨rzten Variante von
+das Stop-Codon. Die längeren roten Balken bei Isoform 2 und Isoform 3 stellen die Inser-
+tionen dar, die zu einem Frameshift führen und jeweils mit einem Stop-Codon enden. Die
+Existenz eines Stop-Codons bei Isoform 6, Isoform 2 und Isoform 3 führt während der
+Translation zum Abbruch der Proteinsynthese und damit zu einer verkürzten Variante von
 Isoform 1. Isoform 1 ist die einzige bislang beschriebene Isoform, die auf mRNA Ebene
-u¨ber eine GPI Anker Sequenz und als Protein u¨ber einen GPI Anker verfu¨gt. Ly$$$6$$$ steht fu¨r
-eine Lysin$$$6$$$ Doma¨ne - eine cysteinreiche Doma¨ne. Mitglieder der Ly$$$6$$$ Proteinfamilie, zu
-der auch CD$$$177$$$ geho¨rt, neigen dazu, Splicing-Varianten zu bilden. Quelle: Eigene Dar-
+über eine GPI Anker Sequenz und als Protein über einen GPI Anker verfügt. Ly$$$6$$$ steht für
+eine Lysin$$$6$$$ Domäne - eine cysteinreiche Domäne. Mitglieder der Ly$$$6$$$ Proteinfamilie, zu
+der auch CD$$$177$$$ gehört, neigen dazu, Splicing-Varianten zu bilden. Quelle: Eigene Dar-
 stellung.
 
 
 Es sind unterschiedliche Isoformen von CD177 identifiziert worden, die zu dem CD177
-negativen Pha¨notyp fu¨hren. Kissel et al. untersuchten die neutrophilen Granulozyten von
-2 Frauen, welche wa¨hrend ihrer Schwangerschaft CD177-spezifische Alloantiko¨rper ge-
-gen intra- und extrazellula¨res CD$$$177$$$ gebildet haben (Kissel et al. 2002). Die mRNA
-der CD$$$177$$$ negativen Frauen verfu¨gte jeweils u¨ber eine off-frame-Insertion, welche ein
+negativen Phänotyp führen. Kissel et al. untersuchten die neutrophilen Granulozyten von
+2 Frauen, welche während ihrer Schwangerschaft CD177-spezifische Alloantikörper ge-
+gen intra- und extrazelluläres CD$$$177$$$ gebildet haben (Kissel et al. 2002). Die mRNA
+der CD$$$177$$$ negativen Frauen verfügte jeweils über eine off-frame-Insertion, welche ein
 Stop-Codon tga“ aufwies (Kissel et al. 2002). Die mRNA von Spenderin 1 wies eine ”
-kodierende Sequenz fu¨r 248 Aminosa¨uren auf, wobei die ersten 21 Aminosa¨uren die Si-
-gnalsequenz bildeten (Kissel et al. 2002). Die verbliebenen 227 Residuen kodierten fu¨r
-ein NH2-terminales Protein mit einer Doma¨ne (homolog zu Ly6) und mit 2 potentiellen
+kodierende Sequenz für 248 Aminosäuren auf, wobei die ersten 21 Aminosäuren die Si-
+gnalsequenz bildeten (Kissel et al. 2002). Die verbliebenen 227 Residuen kodierten für
+ein NH2-terminales Protein mit einer Domäne (homolog zu Ly6) und mit 2 potentiellen
 N- Glykosylierungsstellen (Kissel et al. 2002) (Abbildung 5). Die mRNA der anderen Pa-
-tientin kodierte fu¨r 145 Aminosa¨uren, wobei 21 Aminosa¨uren das Signalpeptid und 124
-Aminosa¨uren das NH2-terminale Protein bestehend aus einer Ly$$$6$$$ homologen Doma¨ne
+tientin kodierte für 145 Aminosäuren, wobei 21 Aminosäuren das Signalpeptid und 124
+Aminosäuren das NH2-terminale Protein bestehend aus einer Ly$$$6$$$ homologen Domäne
 und einer N-Glykosylierungstelle bildeten (Kissel et al. 2002). Beiden vorhergesagten
 Proteinen fehlten GPI Anker und Transmembransegmente (Kissel et al. 2002).
 
 
 Li et al. (2015) identifizierten eine CD$$$177$$$ Nonsensemutation (SNP c.787A>T), wel-
-che ein Stop-Codon an Aminosa¨ureposition 263 (Lysin => Stop-Codon) innerhalb der
+che ein Stop-Codon an Aminosäureposition 263 (Lysin => Stop-Codon) innerhalb der
 CD$$$177$$$ kodierenden Region erzeugt (Li et al. 2015). Alle c.[787T];[787T] homozygoten
-Spender waren pha¨notypisch negativ fu¨r CD$$$177$$$ (Li et al. 2015). Die CD$$$177$$$ Expression
+Spender waren phänotypisch negativ für CD$$$177$$$ (Li et al. 2015). Die CD$$$177$$$ Expression
 der heterozygoten Spender war geringer als diejenige der homozygoten c.[787A];[787A]
-Spender. C.787A>T heterozygote Personen mit CD$$$177$$$ Null Pha¨notyp wiesen in der von
-Li et al. untersuchten Kohorte zusa¨tzlich eine 955G Deletion auf (Li et al. 2015). Die
+Spender. C.787A>T heterozygote Personen mit CD$$$177$$$ Null Phänotyp wiesen in der von
+Li et al. untersuchten Kohorte zusätzlich eine 955G Deletion auf (Li et al. 2015). Die
 CD$$$177$$$ Expression wird außerdem durch Methylierung des CD$$$177$$$ Promotors beeinflusst
 (Li et al. 2015).
 
 
-Das von Li et al. beschriebene Stop-Codon, welches fu¨r die fehlende CD$$$177$$$ Expression
+Das von Li et al. beschriebene Stop-Codon, welches für die fehlende CD$$$177$$$ Expression
 verantwortlich ist, entsteht laut Wu et al. dadurch, dass Exon 7 des CD$$$177$$$ Gens
-vollsta¨ndig vom CD$$$177$$$ Pseudogen durch Genkonversion ausgetauscht wird. Das heißt,
-der CD$$$177$$$ Null Pha¨notyp resultiert aus der Insertion einer Pseudogen-Sequenz in
+vollständig vom CD$$$177$$$ Pseudogen durch Genkonversion ausgetauscht wird. Das heißt,
+der CD$$$177$$$ Null Phänotyp resultiert aus der Insertion einer Pseudogen-Sequenz in
 den CD$$$177$$$ Locus (Wu et al. 2016). Wu et al. identifizierten drei Populationen von
 neutrophilen Granulozyten dem Ausmaß der CD$$$177$$$ Expression entsprechend: negative,
-intermedia¨re und CD$$$177$$$ hoch exprimierende Granulozyten (Wu et al. 2016).
+intermediäre und CD$$$177$$$ hoch exprimierende Granulozyten (Wu et al. 2016).
 
 
 FOOTNOTE:Abbildung 6: CD177 Gen und das Pseudogen. Das Pseudogen entspricht der CD$$$177$$$
 Sequenz zwischen Exon 4 und Exon 9 in reverser Orientierung. Das Pseudogen ist 8,4
 kb entfernt vom CD$$$177$$$ Gen. Die c.787A>T Variante entsteht durch Konversion bzw.
-Insertion von Exon 7 des Pseudogens in das CD$$$177$$$ Gen. Der CD$$$177$$$ Null Pha¨nptyp ist
+Insertion von Exon 7 des Pseudogens in das CD$$$177$$$ Gen. Der CD$$$177$$$ Null Phänptyp ist
 also das Resultat der Insertion von Exon 7 des Pseudogens in das CD$$$177$$$ Gen, dem da-
 mit verbundenen Transkribieren der vom Pseudogen abgeleiteten Exon 7 Sequenz und
 dem Entstehen eines Stop-Codon auf mRNA Ebene an Position c.787. Ein hoher Anteil
-an CD$$$177$$$ hoch exprimierenden Granulozyten korreliert mit einer Homozygotie fu¨r das
-CD$$$177$$$ Referenzallel; wohingegen eine Heterozygotie fu¨r das ektope Pseudogen mit ver-
+an CD$$$177$$$ hoch exprimierenden Granulozyten korreliert mit einer Homozygotie für das
+CD$$$177$$$ Referenzallel; wohingegen eine Heterozygotie für das ektope Pseudogen mit ver-
 mehrt CD$$$177$$$ negativen neutrophilen Granulozyten einhergeht, in welchen sowohl das
-intakte als auch das Pseudogen transkribiert wird. Die Heterogenita¨t und Variabilita¨t der
+intakte als auch das Pseudogen transkribiert wird. Die Heterogenität und Variabilität der
 CD$$$177$$$ Expression ensteht also durch allelische Genkonversion. Quelle: Eigene Darstel-
 lung.
 
 
 Alle CD177 negativen Personen sind nach Wu et al. homozygot für die vom Pseudogen
-abgeleitete Exon 7 Sequenz (Wu et al. 2016). CD$$$177$$$ negative Zellen verfu¨gen also u¨ber
+abgeleitete Exon 7 Sequenz (Wu et al. 2016). CD$$$177$$$ negative Zellen verfügen also über
 zwei Transkripte der vom Pseudogen abgeleiteten Exon 7 Sequenz. CD$$$177$$$ hochexpri-
 mierende Zellen exprimieren nur Transkripte, welche sich von Exon 7 des CD$$$177$$$ Gens
 und nicht des Pseudogens ableiten (Wu et al. 2016). Der Anteil an CD$$$177$$$ tragenden neu-
 trophilen Granulozyten innerhalb eines Individuums ist genetisch determiniert und wird
-durch das Verha¨ltnis von intakten und konvertierten CD$$$177$$$ Allelen bestimmt (Wu et al.
-2016). Zusammenfassend la¨sst sich also feststellen, dass CD$$$177$$$ ein Antigen ist, wel-
-ches auf der Oberfla¨che neutrophiler Granulozyten exprimiert wird. Frauen mit einem
-CD$$$177$$$ Null Pha¨notyp ko¨nnen wa¨hrend einer Schwangerschaft Anti-CD177 Antiko¨rper
+durch das Verhältnis von intakten und konvertierten CD$$$177$$$ Allelen bestimmt (Wu et al.
+2016). Zusammenfassend lässt sich also feststellen, dass CD$$$177$$$ ein Antigen ist, wel-
+ches auf der Oberfläche neutrophiler Granulozyten exprimiert wird. Frauen mit einem
+CD$$$177$$$ Null Phänotyp können während einer Schwangerschaft Anti-CD177 Antikörper
 bilden, wenn der Fetus das CD$$$177$$$ Antigen von seinem Erzeuger ererbt hat. Es gibt zwei
-Erkrankungen, die mit Alloantiko¨rpern gegen CD$$$177$$$ assoziiert sind: Die neonatale Al-
+Erkrankungen, die mit Alloantikörpern gegen CD$$$177$$$ assoziiert sind: Die neonatale Al-
 loimmunneutropenie und TRALI. Die komplexe Regulation der CD$$$177$$$ Expression durch
-genetische Faktoren (Allele, die zu einem Null Pha¨notyp fu¨hren) und epigenetische Fak-
-toren (monoallelic silencing) ist noch nicht vollsta¨ndig aufgekla¨rt.
-
-
-Ziel der Arbeit
+genetische Faktoren (Allele, die zu einem Null Phänotyp führen) und epigenetische Fak-
+toren (monoallelic silencing) ist noch nicht vollständig aufgeklärt.
 
 
 2 Ziele der Arbeit
 
 
-3-5 % aller Kaukasier ko¨nnen CD$$$177$$$ nicht exprimieren (Lalezari et al. 1971). Li et al.
-identifizierten eine Variante (c.787A>T), welche fu¨r ein Stop-Codon kodiert und damit
-fu¨r eine fehlende CD177 Expression verantwortlich sein kann (Li et al. 2015).
+3-5 % aller Kaukasier können CD$$$177$$$ nicht exprimieren (Lalezari et al. 1971). Li et al.
+identifizierten eine Variante (c.787A>T), welche für ein Stop-Codon kodiert und damit
+für eine fehlende CD177 Expression verantwortlich sein kann (Li et al. 2015).
 
 
 Hieraus leiteten sich folgende Fragen ab:
 
 
 • Ist die durch Genkonversion aus dem CD$$$177$$$ Pseudogen hervorgegangene
-Genvariante c.787A>T bei allen Personen mit CD$$$177$$$ Null Pha¨notyp in ho-
+Genvariante c.787A>T bei allen Personen mit CD$$$177$$$ Null Phänotyp in ho-
 mozygoter Anlage nachweisbar?
 
 
 • Gibt es bei Personen mit heterozygoter Anlage andere genetische Varianten,
-die mit dem CD$$$177$$$ Null Pha¨notyp assoziiert sind?
+die mit dem CD$$$177$$$ Null Phänotyp assoziiert sind?
 
 
 Zur Beantwortung dieser Fragestellung soll der CD177 Phänotyp bei einer Kohorte von
 220 Personen ermittelt werden. Bei CD$$$177$$$ negativen Personen soll das CD$$$177$$$ Gen durch
 next generation sequencing resequenziert werden. Unbekannt ist, ob die bislang beschrie-
 benen Isoformen von CD$$$177$$$ (Kissel et al. 2002) immunogen sind (zum Beispiel Kissel
-et al. 2002). Diese Isoformen ko¨nnten bei Erkrankungen wie der neonatalen Alloimmun-
-neutropenie und TRALI eine Rolle spielen. Es sind Fa¨lle beschrieben, in denen CD$$$177$$$
-positive Mu¨tter CD$$$177$$$ Alloantiko¨rper gegen die Granulozyten ihrer Kinder gebildet ha-
-ben, welche zu einer Alloimmunneutropenie gefu¨hrt haben (Lalezari 2017). CD$$$177$$$ Al-
-loantiko¨rper, die von CD$$$177$$$ positiven Personen gebildet werden, ko¨nnten gegen CD$$$177$$$
+et al. 2002). Diese Isoformen könnten bei Erkrankungen wie der neonatalen Alloimmun-
+neutropenie und TRALI eine Rolle spielen. Es sind Fälle beschrieben, in denen CD$$$177$$$
+positive Mütter CD$$$177$$$ Alloantikörper gegen die Granulozyten ihrer Kinder gebildet ha-
+ben, welche zu einer Alloimmunneutropenie geführt haben (Lalezari 2017). CD$$$177$$$ Al-
+loantikörper, die von CD$$$177$$$ positiven Personen gebildet werden, könnten gegen CD$$$177$$$
 Isoformen gebildet werden (Lalezari 2017).
 
 
-Diese Beobachtung fu¨hrte zu folgenden Fragestellungen:
+Diese Beobachtung führte zu folgenden Fragestellungen:
 
 
 • Gibt es weitere - bisher nicht beschriebene - Isoformen von CD177?
@@ -748,10 +724,10 @@ einen GPI Anker auf und sind sie immunogen?
 
 
 Zur Beantworung dieser Fragestellung soll die mRNA verschiedener Spender untersucht
-werden, das Protein einer mo¨glichen neu entdeckten Isoform in der Zellkultur exprimiert
-und im Western Blot detektiert werden. Um eine Vorhersage bezu¨glich einer GPI Veran-
+werden, das Protein einer möglichen neu entdeckten Isoform in der Zellkultur exprimiert
+und im Western Blot detektiert werden. Um eine Vorhersage bezüglich einer GPI Veran-
 kerung zu treffen, soll ein bioinformatischer Algorithmus angewandt werden. Die Beant-
-wortung der Fragestellungen dieser Arbeit ko¨nnte ku¨nftig die Diagnostik der neonatalen
+wortung der Fragestellungen dieser Arbeit könnte künftig die Diagnostik der neonatalen
 Alloimmunneutropenie und der TRALI verbessern.
 
 
@@ -759,6 +735,9 @@ Alloimmunneutropenie und der TRALI verbessern.
 
 
 3.1 Material
+
+
+Tabelle 2: Verwendete Antikörper. Quelle: Eigene Darstellung.
 
 
 Tabelle 3: Kits. Quelle: Eigene Darstellung.
@@ -773,26 +752,23 @@ Tabelle 5: Primer. Quelle: Eigene Darstellung.
 Tabelle 6: Geräte. Quelle: Eigene Darstellung.
 
 
-Material und Methoden
-
-
 Lösungen für SDS-Gele
 
 
-• Lo¨sung A: fertig ka¨uflich erworben =>Rotiphorese Gel 30 (37,5:1) (Fa. Roth); bei
+• Lösung A: fertig käuflich erworben =>Rotiphorese Gel 30 (37,5:1) (Fa. Roth); bei
 4 Grad Celsius (◦C) aufbewahren
 
 
-• Lo¨sung B (3 Molar (M) Tris-Puffer pH 8,8): 36,3 Gramm (g) gelo¨st in 75 Milliliter
+• Lösung B (3 Molar (M) Tris-Puffer pH 8,8): 36,3 Gramm (g) gelöst in 75 Milliliter
 (ml) Aqua dest; mit HCL auf einen pH-Wert von 8,8 einstellen (Gesamtvolumen
 100 ml); bei 4 ◦C aufbewahren
 
 
-• Lo¨sung C (10 % SDS): 10 g SDS in 100 ml Wasser lo¨sen bei 37 ◦C; bei RT aufbe-
+• Lösung C (10 % SDS): 10 g SDS in 100 ml Wasser lösen bei 37 ◦C; bei RT aufbe-
 wahren
 
 
-• Lo¨sung D (0,5 M Tris-Puffer pH 6,8): 3 g Tris in 40 ml Aqua dest einstellen und
+• Lösung D (0,5 M Tris-Puffer pH 6,8): 3 g Tris in 40 ml Aqua dest einstellen und
 mit HCL auf einen pH-Wert von 6,8 einstellen (Gesamtvolumen 50 ml); bei 4 ◦C
 aufbewahren
 
@@ -801,26 +777,26 @@ aufbewahren
 4 ◦C in brauner Flasche aufbewahren
 
 
-• Temed: fertig ka¨uflich erworben (Fa. AppliChem)
+• Temed: fertig käuflich erworben (Fa. AppliChem)
 
 
-Lo¨sungen fu¨r SDS-Page und Blotten
+Lösungen für SDS-Page und Blotten
 
 
 • ECL-Waschlösung: 7,269 g Tris mit NaCl-Lösung 0,9 % (Fa. Fresenius) versetzen
 und den pH-Wert auf 7,4 einstellen; im Anschluss 1,5 ml Tween (Fa. Roth) dazu-
-geben und fehlende NaCl-Lo¨sung erga¨nzen (Gesamtvolumen 3000 ml)
+geben und fehlende NaCl-Lösung ergänzen (Gesamtvolumen 3000 ml)
 
 
-• Blockierungslo¨sung: 1,5 g BSA Pulver/Albumin Bovine Fraction (Fa. Serva) mit
-100 ml ECL-Waschlo¨sung versetzen
+• Blockierungslösung: 1,5 g BSA Pulver/Albumin Bovine Fraction (Fa. Serva) mit
+100 ml ECL-Waschlösung versetzen
 
 
 • Laufpuffer: Rotiphorese 10x SDS-PAGE (Fa. Roth) bestehend aus 0,25 M Tris, 1,92
-M Glycin und 1 % SDS mit Aqua dest auf 1 l auffu¨llen
+M Glycin und 1 % SDS mit Aqua dest auf 1 l auffüllen
 
 
-• Probenpuffer: Ansatz fu¨r 8 ml: 4 ml 4 % SDS, 1,5 ml 15 % Glycerol, 1,25 ml 62,5
+• Probenpuffer: Ansatz für 8 ml: 4 ml 4 % SDS, 1,5 ml 15 % Glycerol, 1,25 ml 62,5
 Millimolar (mM) Tris-HCl, 0,5 ml 0,0005 % Bromphenolblau und 0,75 ml Aqua
 dest mischen, in 400 Mikroliter (µl) Aliquots aufteilen und bei 4 ◦C lagern; immer
 frisch dazu geben: non reduced: 100 µl Aqua dest zu den 400 µl Probenpuffer
@@ -836,17 +812,14 @@ Transferpuffer für Semidry-Blot
 • Puffer B (pH 10,4): 3,03 g Tris + 800 ml Aqua dest + 200 ml Methanol
 
 
-• Puffer C: 5,2 g epsilon-Aminocapronsa¨ure + 800 ml Aqua dest + 200 ml Methanol
+• Puffer C: 5,2 g epsilon-Aminocapronsäure + 800 ml Aqua dest + 200 ml Methanol
 
 
-• Restore Western Blot Stripping Buffer: ka¨uflich erworben (Fa. Thermoscientific)
-
-
-Material und Methoden
+• Restore Western Blot Stripping Buffer: käuflich erworben (Fa. Thermoscientific)
 
 
 • Ammoniumchlorid: 8,3 g Ammoniumchlorid und 1,0 g Kaliumhydrogencarbonat
-und 0,037 g Titriplex in 700 ml Aqua dest auflo¨sen und einen pH-Wert von 7,4
+und 0,037 g Titriplex in 700 ml Aqua dest auflösen und einen pH-Wert von 7,4
 einstellen (Gesamtvolumen 1.000 ml)
 
 
@@ -882,57 +855,54 @@ Zellkulturmedien
 3.2 Methoden
 
 
-3.2.1 Pha¨notypische Untersuchung von Blutspendern hinsichtlich ihrer CD$$$177$$$ Ex-
+3.2.1 Phänotypische Untersuchung von Blutspendern hinsichtlich ihrer CD177 Ex-
 pression mittels quantitativer Durchflusszytometrie
 
 
-Mittels Durchflusszytometrie ko¨nnen Zellen und Partikel bzw. deren Ober-
-fla¨chenmerkmale und intrazellula¨re Proteine quantifiziert werden (Renz 2018). Dabei
-werden verschiedene Eigenschaften wie die relative Granularita¨t, die relative Gro¨ße
-und die relative Fluoreszenzintensita¨t als Parameter zur Quantifizierung herangezogen
-(Renz 2018). Die Zellen werden mit einem fluoreszenzmarkierten Antiko¨rper beladen, in
-einem Flu¨ssigkeitsstrom transportiert und von einem Laserstrahl getroffen (Renz 2018).
-Das entstehende Vorwa¨rtsstreulicht (,,forward scatter“) gibt Hinweis auf die Gro¨ße der
-Zelle und das Seitwa¨rtsstreulicht (,,side scatter“) auf die Granularita¨t (Renz 2018). Die
-Antiko¨rper werden zur Fluoreszenz angeregt und die dabei emittierten Wellenla¨ngen
+Mittels Durchflusszytometrie können Zellen und Partikel bzw. deren Ober-
+flächenmerkmale und intrazelluläre Proteine quantifiziert werden (Renz 2018). Dabei
+werden verschiedene Eigenschaften wie die relative Granularität, die relative Größe
+und die relative Fluoreszenzintensität als Parameter zur Quantifizierung herangezogen
+(Renz 2018). Die Zellen werden mit einem fluoreszenzmarkierten Antikörper beladen, in
+einem Flüssigkeitsstrom transportiert und von einem Laserstrahl getroffen (Renz 2018).
+Das entstehende Vorwärtsstreulicht (,,forward scatter“) gibt Hinweis auf die Größe der
+Zelle und das Seitwärtsstreulicht (,,side scatter“) auf die Granularität (Renz 2018). Die
+Antikörper werden zur Fluoreszenz angeregt und die dabei emittierten Wellenlängen
 detektiert und analysiert (Renz 2018). Die Charaktereigenschaften der detektierten
-Emissionswellen, das heißt deren Intensita¨t und spektrale Zusammensetzung, geben
-Ru¨ckschluss auf den relativen Anteil der in einer Zelle untersuchten Struktur (Renz
+Emissionswellen, das heißt deren Intensität und spektrale Zusammensetzung, geben
+Rückschluss auf den relativen Anteil der in einer Zelle untersuchten Struktur (Renz
 2018). Mittels quantitativer Durchflusszytometrie wurden 220 Blutspender hinsichtlich
-ihrer CD$$$177$$$ Expression untersucht. Die Auswahl der Spender erfolgte zufa¨llig. Jeweils
-100 µl Vollblut wurden mit 3 Mikrogramm (µg) 7D8 U¨ berstand und als Negativkontrolle
-mit 1 µg Maus IgG fu¨r 30 Minuten (min) bei 4 ◦C inkubiert. Nach Hinzugabe von 2
-
-
-Material und Methoden
+ihrer CD$$$177$$$ Expression untersucht. Die Auswahl der Spender erfolgte zufällig. Jeweils
+100 µl Vollblut wurden mit 3 Mikrogramm (µg) 7D8 Ü berstand und als Negativkontrolle
+mit 1 µg Maus IgG für 30 Minuten (min) bei 4 ◦C inkubiert. Nach Hinzugabe von 2
 
 
 ml Zelllysepuffer (Verdünnung 1:10 mit Aqua Dest) und einer Inkubation von 10 min
-erfolgten die zweimalige Waschung mit 2 ml 1 % PBS/BSA Lo¨sung (500 µl BSA und
+erfolgten die zweimalige Waschung mit 2 ml 1 % PBS/BSA Lösung (500 µl BSA und
 50 ml PBS) und Zentrifugation (5 min, 400 g). Dem gewonnenen Granulozytenpellet
-wurden 100 µl markierte sekunda¨re Antiko¨rper Anti-Maus-Alexa Fluor 488 (Verdu¨nnung
-1:50) hinzugefu¨gt. Nach 30-minütiger Inkubation bei 4◦C, Waschen mit PBS/BSA und
-Entfernung des U¨ berstandes wurden die verbliebenen Granulozyten mit 200 µl BD
-Cellfix (Verdu¨nnung 1:10) fixiert und am Durchflusszytometer gemessen.
+wurden 100 µl markierte sekundäre Antikörper Anti-Maus-Alexa Fluor 488 (Verdünnung
+1:50) hinzugefügt. Nach 30-minütiger Inkubation bei 4◦C, Waschen mit PBS/BSA und
+Entfernung des Ü berstandes wurden die verbliebenen Granulozyten mit 200 µl BD
+Cellfix (Verdünnung 1:10) fixiert und am Durchflusszytometer gemessen.
 
 
 3.2.2 DNA Isolation aus Vollblut
 
 
 Die DNA Isolation aus Vollblut erfolgte mittels des DNA-Isoliergerätes EZ1 advanced
-XL der Firma Quiagen. Die Reagenzien fu¨r die Isolierung und Aufreinigung der DNA
-befinden sich in einem la¨nglichen Probensytem, welches im hinteren Bereich des Gera¨tes
-platziert wird (QIAGEN 2015). Die Reagenzgla¨ser des Probensystems beinhalten einen
+XL der Firma Quiagen. Die Reagenzien für die Isolierung und Aufreinigung der DNA
+befinden sich in einem länglichen Probensytem, welches im hinteren Bereich des Gerätes
+platziert wird (QIAGEN 2015). Die Reagenzgläser des Probensystems beinhalten einen
 Lysierpuffer, einen Waschpuffer, einen Elutionspuffer sowie magnetische Partikel (QIA-
-GEN 2015). Die Arbeitsfla¨che des Gera¨tes besteht aus vier Reihen. In die erste Reihe
-werden Elutionsreagenzgla¨ser gesetzt, in die zweite Reihe Pipettenhalter und in die vierte
-Reihe Proben-Reagenzgla¨ser (QIAGEN 2015). 300 µl Vollblut wurden in ein Proben-
-Reagenzglas pipettiert. Das Prinzip des DNA Isoliergera¨tes ist das Folgende: Magne-
-tische Partikel werden dem lysierten Vollblut hinzugefu¨gt. Die Nukleinsa¨uren werden
-magnetisch an die Oberfla¨che der Partikel gebunden und somit von den restlichen Blutbe-
+GEN 2015). Die Arbeitsfläche des Gerätes besteht aus vier Reihen. In die erste Reihe
+werden Elutionsreagenzgläser gesetzt, in die zweite Reihe Pipettenhalter und in die vierte
+Reihe Proben-Reagenzgläser (QIAGEN 2015). 300 µl Vollblut wurden in ein Proben-
+Reagenzglas pipettiert. Das Prinzip des DNA Isoliergerätes ist das Folgende: Magne-
+tische Partikel werden dem lysierten Vollblut hinzugefügt. Die Nukleinsäuren werden
+magnetisch an die Oberfläche der Partikel gebunden und somit von den restlichen Blutbe-
 standteilen separiert. Die DNA wird im Anschluss gewaschen, aufgereinigt und in einem
-Elutionspuffer gelo¨st (QIAGEN 2015). Die Konzentration der DNA wurde mittels eines
-Nanodrop-Messgera¨tes bestimmt.
+Elutionspuffer gelöst (QIAGEN 2015). Die Konzentration der DNA wurde mittels eines
+Nanodrop-Messgerätes bestimmt.
 
 
 3.2.3 DNA Isolation aus Granulozyten
@@ -941,31 +911,28 @@ Nanodrop-Messgera¨tes bestimmt.
 Die DNA-Isolation erfolgte mittels eines QIAGEN-Kits. Hierzu wurden ca. 5x106 Gra-
 nulozyten in 200 µl PBS mit 20 µl Quiagen Protease und 200 µl Buffer AL versetzt.
 Nach kurzem Vortexen und einer Inkubationszeit von 10 min bei 56 ◦C wurden 200 µl
-Ethanol hinzugefu¨gt. Das Gemisch wurde im Anschluss in eine QIAamp Mini Spin Sa¨ule
-u¨berfu¨hrt und zentrifugiert (1 min, 6.000 g). Nach dem Hinzufu¨gen von 500 µl Buffer
-AW1, der erneuten Zentrifugation (1 min, 6.000 g), dem Hinzufu¨gen von 500 µl Buffer
-AW$$$2$$$ mit anschließender Zentrifugation (3 min, 20.000 g) konnte die Sa¨ule in ein neues
-unbenutztes Eppendorfgefa¨ß gesetzt werden. Zum Eluieren der DNA wurde auf die Sa¨ule
+Ethanol hinzugefügt. Das Gemisch wurde im Anschluss in eine QIAamp Mini Spin Säule
+überführt und zentrifugiert (1 min, 6.000 g). Nach dem Hinzufügen von 500 µl Buffer
+AW1, der erneuten Zentrifugation (1 min, 6.000 g), dem Hinzufügen von 500 µl Buffer
+AW$$$2$$$ mit anschließender Zentrifugation (3 min, 20.000 g) konnte die Säule in ein neues
+unbenutztes Eppendorfgefäß gesetzt werden. Zum Eluieren der DNA wurde auf die Säule
 200 µl destilliertes Wasser pipettiert, 1 min bei Raumtemperatur inkubiert und zum Ab-
 schluss zentrifugiert (6.000 g, 1 min). Die DNA Konzentration wurde mittels Nanodrop
 gemessen und zur Aufbewahrung bei -20 ◦C eingefroren.
-
-
-Material und Methoden
 
 
 3.2.4 Agarosegelelektrophorese
 
 
 Um das Gel zu gießen, wurden 50 ml 0,5 TBE mit 0,75 g Agarosepulver (Fa. peqlab) ver-
-setzt und das Gemisch im Anschluss in der Mikrowelle bis zur vollsta¨ndigen Auflo¨sung
+setzt und das Gemisch im Anschluss in der Mikrowelle bis zur vollständigen Auflösung
 des Pulvers erhitzt. Nach Zugabe von 5 µl SYBR Safe (Fa. invitrogen), dessen Farbstoff
-an die DNA bindet, wurde die noch flu¨ssige Lo¨sung zur Polymerisation in einen Gel-
+an die DNA bindet, wurde die noch flüssige Lösung zur Polymerisation in einen Gel-
 schlitten gegossen. Nach 30 min konnten 8 µl polymerase chain reaction (PCR) Produkt
-und 2 µl Loading Dye (Gel Loading Dye Purple (6x) BioLabs) in die dafu¨r im Gel vorge-
+und 2 µl Loading Dye (Gel Loading Dye Purple (6x) BioLabs) in die dafür im Gel vorge-
 sehenen Taschen pipettiert werden und gelektrophoretisch bei einer konstanten Spannung
-von 120 Volt (V) aufgetrennt werden. Ein Standard (je nach Gro¨ße des PCR Produktes 1
-kb oder 100 bp DNA ladder der Firma BioLabs) wurde ebenfalls im Gel mitgefu¨hrt. Nach
+von 120 Volt (V) aufgetrennt werden. Ein Standard (je nach Größe des PCR Produktes 1
+kb oder 100 bp DNA ladder der Firma BioLabs) wurde ebenfalls im Gel mitgeführt. Nach
 Auftrennung konnten die einzelnen DNA Fragmente mittels ultravioletten Lichtes unter
 einem Transilluminator visualisiert und mit einer Sofortbildkamera dokumentiert werden.
 
@@ -974,12 +941,12 @@ einem Transilluminator visualisiert und mit einer Sofortbildkamera dokumentiert 
 
 
 Aufgrund der Größe des zu amplifizierenden CD177 Gens wurde mit einem Long-
-Range-PCR Kit gearbeitet. Fu¨r die PCR wurden die von Li et al. konstruierten Primer
-verwendet: Vorwa¨rtsprimer 5’-CTGAAAAAGCAGAAAGAGATTACCAGCCACAG-3’
-und Ru¨ckwa¨rtsprimer 5’-GTCCAAGGCCATTAGGTTATGAGGTCAGA-3’ (Li et al.
+Range-PCR Kit gearbeitet. Für die PCR wurden die von Li et al. konstruierten Primer
+verwendet: Vorwärtsprimer 5’-CTGAAAAAGCAGAAAGAGATTACCAGCCACAG-3’
+und Rückwärtsprimer 5’-GTCCAAGGCCATTAGGTTATGAGGTCAGA-3’ (Li et al.
 2015). Der Mastermix setzte sich aus folgenden Reagenzien zusammen: 2,5 µl Puf-
-fer, 1,25 µl Desoxyribonukleosidtriphosphate (dNTP), jeweils 1 µl Vorwa¨rts- und
-Ru¨ckwa¨rtsprimer, 5 µl Q-Solution und 0,4 µl Taq Polymerase. Nach Mischung des Mas-
+fer, 1,25 µl Desoxyribonukleosidtriphosphate (dNTP), jeweils 1 µl Vorwärts- und
+Rückwärtsprimer, 5 µl Q-Solution und 0,4 µl Taq Polymerase. Nach Mischung des Mas-
 termix mit 250 Nanogramm (ng) DNA lief die PCR unter den folgenden Bedingungen
 ab: initial 3 min Denaturierung bei 93 ◦C, im Anschluss 38 Amplifikationszyklen mit De-
 naturierung (93 ◦C, 15 Sekunden (s)), Annealing (62 ◦C, 30 s) und Extension (68 ◦C, 9
@@ -989,31 +956,28 @@ min). Die Analyse der PCR-Produkte erfolgte mittels Gelelektrophorese.
 3.2.6 Nested-PCR
 
 
-Fu¨r die PCR wurden die von Bayat et al. konstruierten Primer mit folgender Sequenz ein-
-gesetzt: Vorwa¨rtsprimer 5‘-TGACCCAGCAGTTGTGATCA-3‘ (Bayat et al. 2016) und
-Ru¨ckwa¨rtsprimer 5‘-AGCGCCTCCTCCCTCGGA-3‘ (Bayat et al. 2016). Ein Master-
-mix wurde aus 14,5 µl Aqua dest, 2,5 µl Puffer, 4 µl dNTP, jeweils 1,25 µl Vorwa¨rts-
-und Ru¨ckwa¨rtsprimer und 0,5 µl Taq erstellt. Als Template wurde 1 µl des Long-Range-
-PCR Produktes hinzugefu¨gt. Fu¨r die PCR wurden folgende Einstellungen gewa¨hlt: Nach
+Für die PCR wurden die von Bayat et al. konstruierten Primer mit folgender Sequenz ein-
+gesetzt: Vorwärtsprimer 5‘-TGACCCAGCAGTTGTGATCA-3‘ (Bayat et al. 2016) und
+Rückwärtsprimer 5‘-AGCGCCTCCTCCCTCGGA-3‘ (Bayat et al. 2016). Ein Master-
+mix wurde aus 14,5 µl Aqua dest, 2,5 µl Puffer, 4 µl dNTP, jeweils 1,25 µl Vorwärts-
+und Rückwärtsprimer und 0,5 µl Taq erstellt. Als Template wurde 1 µl des Long-Range-
+PCR Produktes hinzugefügt. Für die PCR wurden folgende Einstellungen gewählt: Nach
 einer initialen Denaturierung (95 ◦C, 5 min) folgten 33 Zyklen mit jeweils Denaturierung
 (95 ◦C, 1 min), Annealing (56 ◦C, 1 min) und DNA-Synthese (72 ◦C, 1 min). Der letzte
-PCR Schritt erfolgte fu¨r 7 min bei 72 ◦C. Die Proben wurden bei 8 ◦C geku¨hlt und im
+PCR Schritt erfolgte für 7 min bei 72 ◦C. Die Proben wurden bei 8 ◦C gekühlt und im
 Anschluss elektrophoretisch aufgetrennt.
-
-
-Material und Methoden
 
 
 3.2.7 PCR-Produktaufreinigung
 
 
-Fu¨r die Aufreinigung des PCR-Produktes wurde das QIAquick PCR Purification Kit (Fa.
-Quiagen) verwendet. Zum Volumen des PCR-Produktes wurde die fu¨nffache Menge an
-Puffer PB hinzugefu¨gt. Die Gesamtmenge wurde in eine im Kit vorgesehene Sa¨ule pi-
+Für die Aufreinigung des PCR-Produktes wurde das QIAquick PCR Purification Kit (Fa.
+Quiagen) verwendet. Zum Volumen des PCR-Produktes wurde die fünffache Menge an
+Puffer PB hinzugefügt. Die Gesamtmenge wurde in eine im Kit vorgesehene Säule pi-
 pettiert und bei 130.000 revolutions per minute (rpm) 45 s zentrifugiert. Zum Waschen
-wurde 750 µl Buffer BE in die Sa¨ule gegeben und erneut 45 s bei 130.000 rpm zentrifu-
+wurde 750 µl Buffer BE in die Säule gegeben und erneut 45 s bei 130.000 rpm zentrifu-
 giert. Nach einer erneuten Zentrifugation, die zum Ziel hatte, den restlichen Waschpuffer
-zu entfernen, wurde die QIAquick Sa¨ule in einem Eppendorfgefa¨ß platziert. Die DNA
+zu entfernen, wurde die QIAquick Säule in einem Eppendorfgefäß platziert. Die DNA
 wurde mit 35 µl Aqua dest durch erneute Zentrifugation (13.000 rpm, 45 s) eluiert.
 
 
@@ -1021,24 +985,24 @@ wurde mit 35 µl Aqua dest durch erneute Zentrifugation (13.000 rpm, 45 s) eluie
 
 
 Als Alternative zur PCR-Produktaufreinigung wurde die Methode der Gelextraktion an-
-gewandt. Hierfu¨r wurde das QIAquick Gelextraktion Kit (Fa. Quiagen) verwendet. Nach
-der Agarosegelelektrophorese konnten die Banden, welche sich auf der richtigen Gro¨ße
+gewandt. Hierfür wurde das QIAquick Gelextraktion Kit (Fa. Quiagen) verwendet. Nach
+der Agarosegelelektrophorese konnten die Banden, welche sich auf der richtigen Größe
 befunden haben, mit einem Skalpell ausgeschnitten und gewogen werden. Zum Gel wur-
-de das dreifache Volumen an Buffer QG hinzugefu¨gt. Es folgte eine Inkubation von 10
-min bei 50 ◦C und das Mischen mit einem a¨quivalenten Volumen Isopropanol. Nach dem
-Hinzufu¨gen von 500 µl Buffer QG, einer Zentrifugation (13.000 rpm, 1 min), dem Wa-
+de das dreifache Volumen an Buffer QG hinzugefügt. Es folgte eine Inkubation von 10
+min bei 50 ◦C und das Mischen mit einem äquivalenten Volumen Isopropanol. Nach dem
+Hinzufügen von 500 µl Buffer QG, einer Zentrifugation (13.000 rpm, 1 min), dem Wa-
 schen mit 750 µl Buffer PE und der erneuten zweimaligen Zentrifugation (jeweils 13.000
-rpm, 1 min) wurde die QIAquick column in einem sauberen Eppendorfgefa¨ß platziert und
+rpm, 1 min) wurde die QIAquick column in einem sauberen Eppendorfgefäß platziert und
 DNA mit 30 µl Aqua dest eluiert.
 
 
 3.2.9 Sequencing PCR
 
 
-Fu¨r die Sequencing PCR wurden die Primer des jeweiligen aufgereinigten PCR Produktes
+Für die Sequencing PCR wurden die Primer des jeweiligen aufgereinigten PCR Produktes
 verwendet. 50 ng DNA/PCR Produkt wurden mit jeweils 2 µl Big Dye, 2 µl Puffer und
 1 µl Primer und HPLC Aqua Dest gemischt. Die PCR mit einem Gesamtvolumen von
-jeweils 20 µl mit Vorwa¨rtsprimer und 20 µl einschließlich Ru¨ckwa¨rtsprimer lief unter
+jeweils 20 µl mit Vorwärtsprimer und 20 µl einschließlich Rückwärtsprimer lief unter
 folgenden Bedingungen ab: 25 Zyklen mit jeweils Denaturierung (95 ◦C, 10 min), Anne-
 aling (50◦C, 5 min) und Elongation (60 ◦C, 2 min). Nach Beendigung der PCR wurde das
 PCR-Produkt aufgereinigt.
@@ -1047,50 +1011,48 @@ PCR-Produkt aufgereinigt.
 3.2.10 Aufreinigung des Sequenzierproduktes
 
 
-700 µl Sepharose wurde in eine Sa¨ule pipettiert (GE Healthcare illustra™ AutoSeq G-50
-Sa¨ulen). Im Anschluss erfolgte eine Zentrifugation (2 min, 2.500 rpm). Die Sa¨ule wurde
-in ein Eppendorfgefa¨ß mit 10 µl HiDi-Formamid u¨berfu¨hrt und das Sequencing PCR
-Produkt in die Sa¨ule pipettiert. Eine erneute Zentrifugation (2 min, 2.500 rpm) bildete
+700 µl Sepharose wurde in eine Säule pipettiert (GE Healthcare illustra™ AutoSeq G-50
+Säulen). Im Anschluss erfolgte eine Zentrifugation (2 min, 2.500 rpm). Die Säule wurde
+in ein Eppendorfgefäß mit 10 µl HiDi-Formamid überführt und das Sequencing PCR
+Produkt in die Säule pipettiert. Eine erneute Zentrifugation (2 min, 2.500 rpm) bildete
 den Abschluss der Aufreinigung des Sequenzierproduktes.
-
-
-Material und Methoden
 
 
 3.2.11 Next Generation Sequencing
 
 
-Das Prinzip des next generation sequencing beruht auf mehreren Teilabla¨ufen: In einem
+Das Prinzip des next generation sequencing beruht auf mehreren Teilabläufen: In einem
 ersten Schritt wird die DNA des Long-Range-PCR-Produkts fragmentiert und Adapter an
-das 5‘- und 3‘- Ende ligiert (Illumina 2017). Die Amplifikation erfolgt mittels Bru¨cken-
+das 5‘- und 3‘- Ende ligiert (Illumina 2017). Die Amplifikation erfolgt mittels Brücken-
 PCR. Die adaptergebundenen Fragmente werden an eine flow cell gebunden. Die auf
-der flow cell gebundenen Oligos sind komplementa¨r zur Adapterregion (Illumina 2017).
+der flow cell gebundenen Oligos sind komplementär zur Adapterregion (Illumina 2017).
 Jedes Fragment wird mithilfe einer DNA Polymerase amplifiziert der neu entstandene
-Doppelstrang denaturiert und das urspru¨ngliche DNA template entfernt (Illumina 2017).
-Die DNA Stra¨nge werden durch Bru¨ckenbildung amplifiziert, indem der DNA Strang
+Doppelstrang denaturiert und das ursprüngliche DNA template entfernt (Illumina 2017).
+Die DNA Stränge werden durch Brückenbildung amplifiziert, indem der DNA Strang
 mit seinem freien Ende an das andere sich auf der flow cell befindliche Oligo bindet
 (Illumina 2017). Die Oligos fungieren als Primer (Illumina 2017). Es entsteht eine dop-
-pelstra¨ngige Bru¨cke, die abermals denaturiert, wodurch zwei einzelstra¨ngige gebundene
-DNA Stra¨nge entstehen (Illumina 2017). Dieser Vorgang wird mehrfach wiederholt, wo-
-durch klonale cluster entstehen (Illumina 2017). Die Ru¨ckwa¨rtsstra¨nge werden jeweils
-entfernt, wodurch nur der Vorwa¨rtsstrang bestehen bleibt (Illumina 2017). Das 3‘-Ende
-der Oligos wird blockiert, wodurch eine unerwu¨nschte Amplifikation verhindert wird (Il-
-lumina 2017). Fluoreszenzmarkierte Nukleotide werden hinzugefu¨gt und binden komple-
-menta¨r an den DNA Strang (Illumina 2017). Die Emission jedes clusters wird aufgenom-
-men, wobei die Emissionswellenla¨nge und Intensita¨t genutzt werden, um die Basen zu
-identifizieren (Illumina 2017). Nach dem Lesen des Vorwa¨rtsstrangs wird wiederum der
-komplementa¨re Ru¨ckwa¨rtsstrang synthetisiert, der Vorwa¨rtsstrang entfernt und die Basen-
-paarabfolge des Ru¨ckwa¨rtsstranges bestimmt (Illumina 2017). Im letzten Schritt findet
+pelsträngige Brücke, die abermals denaturiert, wodurch zwei einzelsträngige gebundene
+DNA Stränge entstehen (Illumina 2017). Dieser Vorgang wird mehrfach wiederholt, wo-
+durch klonale cluster entstehen (Illumina 2017). Die Rückwärtsstränge werden jeweils
+entfernt, wodurch nur der Vorwärtsstrang bestehen bleibt (Illumina 2017). Das 3‘-Ende
+der Oligos wird blockiert, wodurch eine unerwünschte Amplifikation verhindert wird (Il-
+lumina 2017). Fluoreszenzmarkierte Nukleotide werden hinzugefügt und binden komple-
+mentär an den DNA Strang (Illumina 2017). Die Emission jedes clusters wird aufgenom-
+men, wobei die Emissionswellenlänge und Intensität genutzt werden, um die Basen zu
+identifizieren (Illumina 2017). Nach dem Lesen des Vorwärtsstrangs wird wiederum der
+komplementäre Rückwärtsstrang synthetisiert, der Vorwärtsstrang entfernt und die Basen-
+paarabfolge des Rückwärtsstranges bestimmt (Illumina 2017). Im letzten Schritt findet
 das alignment der unterschiedlichen reads mit einer Referenzsequenz statt (verwendete
 Referenzsequenz in der hier vorliegenden Arbeit: CD$$$177$$$ NC 00019.10) (Illumina 2017). 0
-Die Datenanalyse wurde mittels des sequencing Programms Geneious“ durchgefu¨hrt (Il- ” lumina 2017).
+Die Datenanalyse wurde mittels des sequencing Programms Geneious“ durchgeführt (Il- ”
+lumina 2017).
 
 
 3.2.12 Qubit-Messung
 
 
 Die Qubit-Messung diente der Bestimmung der DNA Konzentration im Long-Range-
-PCR-Produkt. Hierfu¨r wurde das molecular probes life technologies Qubit double-
+PCR-Produkt. Hierfür wurde das molecular probes life technologies Qubit double-
 stranded desoxyribonucleic acid (dsDNA) BR Assay Kit verwendet (Fa. Eugene). Als
 Mastermix pro Probe wurden 199 µl dsDNA BR Buffer und 1 µl Qubit dsDNA con-
 centrate gemischt. Zu Beginn wurde das Gemisch aus jeweils 190 µl Mastermix und 10
@@ -1098,35 +1060,32 @@ centrate gemischt. Zu Beginn wurde das Gemisch aus jeweils 190 µl Mastermix und
 Produkt gemessen.
 
 
-Material und Methoden
-
-
 3.2.13 Nanodrop-Messung
 
 
 Für die Nanodrop-Messung wurde ein Gerät der Firma Thermoscientific Fisher verwen-
-det. Das Gera¨t wurde zu Beginn mittels Aqua dest auf 0,0 ng/µl geeicht. Im Anschluss
-konnte die DNA-Messung durchgefu¨hrt werden, indem 2 µl der eluierten DNA auf die
-vorgesehene Messfla¨che appliziert wurde.
+det. Das Gerät wurde zu Beginn mittels Aqua dest auf 0,0 ng/µl geeicht. Im Anschluss
+konnte die DNA-Messung durchgeführt werden, indem 2 µl der eluierten DNA auf die
+vorgesehene Messfläche appliziert wurde.
 
 
 3.2.14 Isolierung von Granulozyten mit Dextran aus EDTA Blut
 
 
-Ausgewa¨hlte Spender wurden nochmals zur Blutspende einbestellt. Von diesen wurden
+Ausgewählte Spender wurden nochmals zur Blutspende einbestellt. Von diesen wurden
 Granulozyten isoliert und erneut durchflusszytometrisch untersucht, um die Ergebnis-
 se der CD$$$177$$$ Expression zu verifizieren. Zur Granulozytenisolation wurden 10 Milli-
 liter (ml) EDTA-Blut mit 2,5 ml Dextran gemischt und im Anschluss zur Beschleuni-
-gung der Sedimentation der Erythrozyten in Schra¨glage 30 min bei 37 ◦C stehen gelas-
-sen. Wa¨hrend der Inkubation wurden pro Ro¨hrchen mit 10 ml EDTA Blut zwei Ficoll-
-Gradienten durch Vorlage von 2 ml Ficoll-Plaque Plus in ein Polyro¨hrchen vorbereitet.
-Nach U¨ berschichtung des U¨ berstands von einem Ro¨hrchen Blut auf die beiden Ficoll-
-Ro¨hrchen erfolgte die Zentrifugation (20 min, 1.200 rpm) und im Anschluss das Absau-
-gen des U¨ berstandes. Die Granulozyten waren am Boden des Ro¨hrchens als Pellet sicht-
+gung der Sedimentation der Erythrozyten in Schräglage 30 min bei 37 ◦C stehen gelas-
+sen. Während der Inkubation wurden pro Röhrchen mit 10 ml EDTA Blut zwei Ficoll-
+Gradienten durch Vorlage von 2 ml Ficoll-Plaque Plus in ein Polyröhrchen vorbereitet.
+Nach Ü berschichtung des Ü berstands von einem Röhrchen Blut auf die beiden Ficoll-
+Röhrchen erfolgte die Zentrifugation (20 min, 1.200 rpm) und im Anschluss das Absau-
+gen des Ü berstandes. Die Granulozyten waren am Boden des Röhrchens als Pellet sicht-
 bar. Die Lyse der noch verbliebenen Erythrozyten konnte durch Zugabe von jeweils 2,5
-ml Ammoniumchlorid pro Ro¨hrchen, Resuspension und 5-minütiger Inkubation auf Eis
+ml Ammoniumchlorid pro Röhrchen, Resuspension und 5-minütiger Inkubation auf Eis
 erzielt werden. Nach Zugabe von 5 ml PBS, Zentrifugation (5 min, 800 rpm), Absaugen
-des U¨ berstands und zweimaligem Waschen mit jeweils 3 ml PBS war die Granulozyteni-
+des Ü berstands und zweimaligem Waschen mit jeweils 3 ml PBS war die Granulozyteni-
 solation abgeschlosssen. Die Zellzahl konnte am Sysmex-Counter bestimmt werden.
 
 
@@ -1137,10 +1096,10 @@ Zwecks quantitativer Aussagekraft wurde als Richtwert 1x107 Granulozyten pro 100
 Lysepuffer festgesetzt. Um den Lysepuffer zu erstellen, wurden 3,2 ml 20 mM Tris, 100
 µl Proteaseinhibitor-Cocktail, 25 µl Tritonx-100 und 75 µl 5 % EDTA gemischt. Die
 Granulozyten konnten durch Zentrifugation (3 min, 12.000 rpm) vom PBS getrennt, der
-U¨ berstand verworfen und das Zellpellet mit dem Lysepuffer versetzt werden. Die Inku-
-bation erfolgte im Ku¨hlraum bei 4 ◦C fu¨r 30 min auf einem Ru¨ttler und im Anschluss
-zur weiteren Lyse und Fragmentation im Ultraschallbad fu¨r 3 min. Nach erfolgter Zentri-
-fugation bei 4 ◦C (30 min; 13.000 rpm) wurde der U¨ berstand abgenommen und bis zur
+Ü berstand verworfen und das Zellpellet mit dem Lysepuffer versetzt werden. Die Inku-
+bation erfolgte im Kühlraum bei 4 ◦C für 30 min auf einem Rüttler und im Anschluss
+zur weiteren Lyse und Fragmentation im Ultraschallbad für 3 min. Nach erfolgter Zentri-
+fugation bei 4 ◦C (30 min; 13.000 rpm) wurde der Ü berstand abgenommen und bis zur
 weiteren Verwendung bei einer Temperatur von -80 ◦C gelagert.
 
 
@@ -1148,27 +1107,24 @@ weiteren Verwendung bei einer Temperatur von -80 ◦C gelagert.
 Lysats
 
 
-Um die Biotinstocklo¨sung herzustellen, wurden 27,83 mg NHS-LC-Biotin in 1 ml PBS
-gelo¨st. Zu den Granulozyten (1x107) wurde Biotinlo¨sung hinzugefu¨gt (Verha¨ltnis Bio-
-
-
-Material und Methoden
+Um die Biotinstocklösung herzustellen, wurden 27,83 mg NHS-LC-Biotin in 1 ml PBS
+gelöst. Zu den Granulozyten (1x107) wurde Biotinlösung hinzugefügt (Verhältnis Bio-
 
 
 tinlösung zu Granulozyten 1:10). Nach einer 30-minütigen Inkubation wurden die Gra-
 nulozyten mit PBS zweimal gewaschen und das verbliebene Pellet mit 100 µl Granulo-
 lysepuffer - bestehend aus 1,6 ml 20 mM Tris, 12,5 µl Tx-100, 37,5 µl 5 % EDTA und
 50 µl Proteaseinhibitorcocktail - versetzt. Nach einer 30-minütigen Inkubationszeit bei 4
-◦C auf dem Ru¨ttler, 3 min Ultraschallbad und einer Zentrifugation (30 min; 130.000 rpm)
-bei 4 ◦C wurde der U¨ berstand abgenommen. Zum Peclearen des Lysats wurden 50 µl
-Protein G Beads in einem neuen Eppendorfgefa¨ß vorgelegt und 500 µl IPB zugegeben.
-Nach einer Zentrifugation (1 min; 2.000 rpm) wurde der U¨ berstand abgesaugt und zu den
+◦C auf dem Rüttler, 3 min Ultraschallbad und einer Zentrifugation (30 min; 130.000 rpm)
+bei 4 ◦C wurde der Ü berstand abgenommen. Zum Peclearen des Lysats wurden 50 µl
+Protein G Beads in einem neuen Eppendorfgefäß vorgelegt und 500 µl IPB zugegeben.
+Nach einer Zentrifugation (1 min; 2.000 rpm) wurde der Ü berstand abgesaugt und zu den
 Beads 20 µl AB-Serum, 40 µl 100 mg/ml BSA und 200 µl biotinmarkiertes Granulozy-
 tenlysat zugegeben. Das Lysat und die Beads wurden 60 min auf dem Rotator inkubiert
-und im Anschluss zentrifugiert (1 min; 2.000 rpm). Der U¨ berstand wurde abgenommen
+und im Anschluss zentrifugiert (1 min; 2.000 rpm). Der Ü berstand wurde abgenommen
 und mit 10 µl AB-Serum, 50 µl 100 mg/ml BSA auf 50 µl neu gewaschene Protein G-
 Beads gegeben. Nach einer erneuten 60-minütigen Inkubation auf dem Rotator und einer
-Zentrifugation (1 min; 2.000 rpm) konnte der preclearte U¨ berstand abgenommen und bis
+Zentrifugation (1 min; 2.000 rpm) konnte der preclearte Ü berstand abgenommen und bis
 zur Weiterverarbeitung eingefroren werden.
 
 
@@ -1177,11 +1133,11 @@ sat/BCA Assay
 
 
 Zur Bestimmung der Proteinkonzentration wurde das Pierce BCA Protein Assay Kit ver-
-wendet (Fa. Thermoscientific). Hierfu¨r wurde eine Standardreihe aus BSA und Solubi-
-lisationspuffer erstellt (9 verschiedene Verdu¨nnungen zwischen 0 - 2.000 µg/ml). Das
+wendet (Fa. Thermoscientific). Hierfür wurde eine Standardreihe aus BSA und Solubi-
+lisationspuffer erstellt (9 verschiedene Verdünnungen zwischen 0 - 2.000 µg/ml). Das
 BCA-Reagenz wurde aus 50 Teilen Reagenz A und 1 Teil Reagenz B angesetzt. Jeweils
 500 µl BCA Reagenz wurde mit 25 µl Standard oder Probe versetzt. Nach einer Inkubati-
-on bei 37 ◦C fu¨r 30 min wurden die Standards und die Proben bei 562 nm im Photometer
+on bei 37 ◦C für 30 min wurden die Standards und die Proben bei 562 nm im Photometer
 gemessen.
 
 
@@ -1191,18 +1147,15 @@ gemessen.
 Zur RNA Isolation aus neutrophilen Granulozyten wurde das peqGOLD HP Total RNA
 Kit (peqlab VWR) verwendet. Jeweils 10 x 106 Granulozyten wurden mit 1 ml peqGOLD
 TriFast versetzt. Nach einer Inkubationszeit von 5 min, Zugabe von 0,2 ml Chloroform,
-15 s schu¨tteln und erneuter Inkubation von 7 min erfolgte die Zentrifugation der Probe
+15 s schütteln und erneuter Inkubation von 7 min erfolgte die Zentrifugation der Probe
 (5 min; 12.000 g). Ergebnis der Zentrifugation war die Phasenauftrennung in eine sich
-am Boden des Eppendorfgefa¨ßes befindliche rosafarbene Chloroform-Phenol-Phase, eine
-mittlere Interphase und eine obere durchsichtige wa¨ssrige Phase. Das Gemisch aus der
-wa¨ssrigen Phase und dem a¨quivalenten Volumen 70 % Ethanol wurde in eine PerfectBind
-RNA Column u¨berfu¨hrt, zentrifugiert (15 s; 10.000 g) und der Durchfluss verworfen.
-Nach Waschen der Sa¨ule mit 500 µl RNA Wash Buffer I, Zentrifugation (15 s; 10.000
+am Boden des Eppendorfgefäßes befindliche rosafarbene Chloroform-Phenol-Phase, eine
+mittlere Interphase und eine obere durchsichtige wässrige Phase. Das Gemisch aus der
+wässrigen Phase und dem äquivalenten Volumen 70 % Ethanol wurde in eine PerfectBind
+RNA Column überführt, zentrifugiert (15 s; 10.000 g) und der Durchfluss verworfen.
+Nach Waschen der Säule mit 500 µl RNA Wash Buffer I, Zentrifugation (15 s; 10.000
 g), zweimaligem Waschen mit 600 µl RNA Wash Buffer II mit jeweils nachfolgender
-Zentrifugation (15 s; 10.000 g) wurde die Sa¨ule zum Trocknen erneut zentrifugiert (1
-
-
-Material und Methoden
+Zentrifugation (15 s; 10.000 g) wurde die Säule zum Trocknen erneut zentrifugiert (1
 
 
 min; 10.000 g). Die Elution der RNA erfolgte mit 38 µl RNase freiem Wasser durch
@@ -1213,22 +1166,22 @@ Zentrifugation (1 min; 10.000 g).
 
 
 Die RNA wurde 10 min bei 65 ◦C inkubiert und anschließend 2 min im
-Eis belassen. 31 µl RNA und 2 µl einer 1:10 Verdu¨nnung des Primers 5‘-
+Eis belassen. 31 µl RNA und 2 µl einer 1:10 Verdünnung des Primers 5‘-
 GACTCGAGTCGACATCGATTTTTTTTTTTTTTTTT-3‘ wurden zu den Ready-To-Go
 You-Prime First-Strand Beads (Fa. GE Healthcare) gegeben. Nach 1 min Inkubation, ei-
-ner kurzen Anfugung und einer Inkubation bei 37 ◦C fu¨r 60 min war die Umschreibung
+ner kurzen Anfugung und einer Inkubation bei 37 ◦C für 60 min war die Umschreibung
 in cDNA beendet.
 
 
 3.2.20 PCR/mRNA Analyse zur Identifikation der CD177delEx7 Isoform
 
 
-Fu¨r die PCR wurden Primer mit folgender Sequenz verwendet: Vorwa¨rtsprimer
+Für die PCR wurden Primer mit folgender Sequenz verwendet: Vorwärtsprimer
 (NB1 25-47Kozak) 5‘-GTCATGGGCCCGGTATTACTGCT-3‘ (VP5) 5‘-
-GGCATCTTCTCCAATCTGAGA-3‘ und Ru¨ckwa¨rtsprimer (HNA-2a RPgesamt)
+GGCATCTTCTCCAATCTGAGA-3‘ und Rückwärtsprimer (HNA-2a RPgesamt)
 5‘-GCAGGAAGGGCAAACCACTCCCC-3‘. Der Mastermix setzte sich aus folgenden
 Substanzen zusammen: 20 µl Aqua dest, 5 µl Puffer, 8 µl dNTP, jeweils 2,5 µl Primer,
-10 µl Q-Solution, 1 µl Taq. Nach dem Hinzufu¨gen von 1 µl cDNA lief die PCR mit
+10 µl Q-Solution, 1 µl Taq. Nach dem Hinzufügen von 1 µl cDNA lief die PCR mit
 einem Gesamtvolumen von 50 µl unter folgenden Bedingungen ab: Vorlauf (95 ◦C; 5
 min), 38 Zyklen mit jeweils Denaturierung (95 ◦C; 30 s), Annealing (59,8 ◦C; 40 s) und
 Polymerisation (72 ◦C; 1,5 min).
@@ -1238,8 +1191,8 @@ Polymerisation (72 ◦C; 1,5 min).
 CD177delEx7 Isoform
 
 
-Die Primer dieser PCR hatten die folgende Sequenz: Vorwa¨rtsprimer CD177F601 5‘-
-AGCCAGTTTGCAACCTGCTCA-3‘ und der Ru¨ckwa¨rtsprimer CD177RdelEx 6-8 5‘-
+Die Primer dieser PCR hatten die folgende Sequenz: Vorwärtsprimer CD177F601 5‘-
+AGCCAGTTTGCAACCTGCTCA-3‘ und der Rückwärtsprimer CD177RdelEx 6-8 5‘-
 ACAGGGGCAGCTACATCTAGGAGCA-3‘. Das Gesamtvolumen von 25 µl setzte sich
 zusammen aus 12,6 µl Aqua dest, 2,5 µl Puffer, 4 µl dNTP, 0,5 µl Taq, 3 µl Template
 und jeweils 0,6 µl Primer. Nach einem Vorlauf (95 ◦C; 5 min) liefen 40 Zyklen mit De-
@@ -1251,20 +1204,17 @@ Der Nachlauf erfolgte 7 min bei 72 ◦C.
 
 
 Zum Klonieren wurde das Q5 Site-Directed Mutagenesis Kit (Fa. New England Biolabs)
-verwendet. Mithilfe des Kits war es mo¨glich, die gewu¨nschte Deletion - das Fehlen von
-Exon 7 - in doppelstra¨ngiger Plasmid DNA in nur wenigen Stunden zu erzeugen (New
+verwendet. Mithilfe des Kits war es möglich, die gewünschte Deletion - das Fehlen von
+Exon 7 - in doppelsträngiger Plasmid DNA in nur wenigen Stunden zu erzeugen (New
 England Biolabs 2017). Zur exponentiellen Amplifikation wurden in einem ersten Schritt
 12,5 µl Q5 Hot Start High-Fidelity 2x Master Mix - bestehend aus Polymerase Buffer,
 
 
-Material und Methoden
-
-
 dNTPs, Magnesium und einer DNA-Polymerase - jeweils 1,25 µl 10 µM Vorwärtsprimer
-und Ru¨ckwa¨rtsprimer, 1 µl Template DNA und 9 µl Nuklease-freies Wasser ge-
-mischt. Der Vorwa¨rtsprimer hatte die Sequenz 5‘-CTGCCCCTGTCCCAGGAG-3‘ und
-der Ru¨ckwa¨rtsprimer 5‘-CTACATCTAGGAGCAGCAGCG-3‘. Die Primer wurden so
-konstruiert, dass sie die gewu¨nschte Deletion flankieren. Als DNA Template wurden zwei
+und Rückwärtsprimer, 1 µl Template DNA und 9 µl Nuklease-freies Wasser ge-
+mischt. Der Vorwärtsprimer hatte die Sequenz 5‘-CTGCCCCTGTCCCAGGAG-3‘ und
+der Rückwärtsprimer 5‘-CTACATCTAGGAGCAGCAGCG-3‘. Die Primer wurden so
+konstruiert, dass sie die gewünschte Deletion flankieren. Als DNA Template wurden zwei
 unterschiedliche Plasmide eingesetzt: plasmid cloning deoxyribonucleic acid (pcDNA)
 3.1/V5-His-TOPO (5.523 bp) und pcDNA3.1/NT-GFP-TOPO (6.176 bp). Die PCR lief
 unter folgenden Bedingungen ab: Initiale Denaturierung (98 ◦C; 30 s), 25 Zyklen mit je-
@@ -1273,56 +1223,53 @@ weils Denaturierung (98 ◦C; 10 s), Annealing (60 ◦C; 10-30 s), Polymerisatio
 µl PCR Produkt zu 5 µl 2x KLD Reaction Buffer, 1 µl 10x KLD Enzyme Mix -bestehend
 aus Kinase, Ligase und DpnI -und 3 µl Nuklease-freien Wassers pipettiert und das Ge-
 misch 5 min bei Raumtemperatur inkubiert. Das Gemisch wurde anschließend zu 50 µl
-kompetenten E-Coli Zellen hinzugefu¨gt und 30 min auf Eis inkubiert. Nach einem Hitze-
-schock bei 42 ◦C fu¨r 30 s erfolgte eine erneute Inkubation fu¨r 5 min auf Eis. Nach Zugabe
-von 950 µl SOC Medium wurden die E-Coli bei 37 ◦C 60 min geru¨ttelt und im Anschluss
-jeweils 50 - 100 µl auf einer Agarplatte verteilt und u¨ber Nacht bei 37 ◦C inkubiert.
+kompetenten E-Coli Zellen hinzugefügt und 30 min auf Eis inkubiert. Nach einem Hitze-
+schock bei 42 ◦C für 30 s erfolgte eine erneute Inkubation für 5 min auf Eis. Nach Zugabe
+von 950 µl SOC Medium wurden die E-Coli bei 37 ◦C 60 min gerüttelt und im Anschluss
+jeweils 50 - 100 µl auf einer Agarplatte verteilt und über Nacht bei 37 ◦C inkubiert.
 
 
 3.2.23 Testen der Klonkolonien
 
 
-Um zu u¨berpru¨fen, welche von den gewachsenen Kolonien die Deletion tragen, wurde
+Um zu überprüfen, welche von den gewachsenen Kolonien die Deletion tragen, wurde
 eine Kontroll-PCR angesetzt. Die auf dem Agar gewachsenen Kolonien wurden mittels
-einer Pipettenspitze gepickt und in einem Eppendorfgefa¨ß in 50 µl Aqua dest gelo¨st, bei
-95 ◦C fu¨r 5 min erhitzt und zentrifugiert (1 min; 13.000 rpm). 5 µl U¨ berstand wurde abge-
-nommen und mit diesem die Kontroll-PCR angesetzt. Hierfu¨r wurden die 5 µl U¨ berstand
+einer Pipettenspitze gepickt und in einem Eppendorfgefäß in 50 µl Aqua dest gelöst, bei
+95 ◦C für 5 min erhitzt und zentrifugiert (1 min; 13.000 rpm). 5 µl Ü berstand wurde abge-
+nommen und mit diesem die Kontroll-PCR angesetzt. Hierfür wurden die 5 µl Ü berstand
 als Template mit 10,8 µl Aqua dest, 2,5 µl Puffer, 4 µl dNTP, 0,2 µl Taq Polymerase
-und jeweils 1,25 µl Vorwa¨rts- und Ru¨ckwa¨rtsprimer. Fu¨r den pcDNA 3.1/V5-His-TOPO
+und jeweils 1,25 µl Vorwärts- und Rückwärtsprimer. Für den pcDNA 3.1/V5-His-TOPO
 (5.523 bp) Vektor wurden die Primer T7 5‘-TAATACGACTCACTATAGGG-3‘ und BGH
-5‘-TAGAAGGCACAGTCGAGG-3‘ und fu¨r den pcDNA3.1/NT-GFP-TOPO (6.176 bp)
+5‘-TAGAAGGCACAGTCGAGG-3‘ und für den pcDNA3.1/NT-GFP-TOPO (6.176 bp)
 Vektor die Primer GFP 5‘-CACAATCTGCCCTTTCGAAA-3‘ und BGH verwendet. Die
 Bedingungen der PCR waren die folgenden: initiale Denaturierung (95 ◦C; 5 min), 35 Zy-
 klen mit Denaturierung (95 ◦C; 1 min), Annealing (57 ◦C; 1 min) und Polymerisation (72
-◦C; 1,5 min). Der letzte PCR Schritt erfolgte bei 72 ◦C fu¨r 7 min. Die positiv getesteten
+◦C; 1,5 min). Der letzte PCR Schritt erfolgte bei 72 ◦C für 7 min. Die positiv getesteten
 Klone, die die Deletion tragen, wurden zur Vermehrung mit 3 ml LB-Media und 3 µl 100
-mg/ml Carbenicillin in ein Bakterienro¨hrchen gefu¨llt und u¨ber Nacht auf dem Ru¨ttler mit
+mg/ml Carbenicillin in ein Bakterienröhrchen gefüllt und über Nacht auf dem Rüttler mit
 200 - 225 rpm bei 37 ◦C inkubiert.
 
 
 3.2.24 Plasmid Isolation
 
 
-Die u¨ber Nacht gewachsene Kultur wurde in ein Eppendorfgefa¨ß u¨berfu¨hrt und 1 min high
-speed zentrifugiert. Nach Entfernung des U¨ berstands und Zugabe von 100 µl Buffer P1
-
-
-Material und Methoden
+Die über Nacht gewachsene Kultur wurde in ein Eppendorfgefäß überführt und 1 min high
+speed zentrifugiert. Nach Entfernung des Ü berstands und Zugabe von 100 µl Buffer P1
 
 
 (Resuspension buffer Fa. Quiagen) wurde das Zellpellet resuspendiert und im Anschluss
-100 µl Lysepuffer/Buffer P2 (Fa.Quiagen) hinzugefu¨gt und das Eppendorfgefa¨ß 5-6 mal
-invertiert. Nach Lyse der Bakterien, der Zugabe von 150 µl Neutralisierungslo¨sung/Buffer
+100 µl Lysepuffer/Buffer P2 (Fa.Quiagen) hinzugefügt und das Eppendorfgefäß 5-6 mal
+invertiert. Nach Lyse der Bakterien, der Zugabe von 150 µl Neutralisierungslösung/Buffer
 P3 (Fa. Quiagen), Zentrifugation (10 min; 13.000 rpm), der Zugabe von 450 µl 100 %
-Ethanol und der erneuten Zentrifugation (10 min; 13.000 rpm) wurde der U¨ berstand ent-
-fernt und das DNA Pellet/Pra¨zipitat mit 20 µl H20 resuspendiert.
+Ethanol und der erneuten Zentrifugation (10 min; 13.000 rpm) wurde der Ü berstand ent-
+fernt und das DNA Pellet/Präzipitat mit 20 µl H20 resuspendiert.
 
 
 3.2.25 Auftauen der Zellen
 
 
 Die Zellen wurden aus dem Stickstofftank genommen, aufgetaut, nach Zugabe von 10 ml
-Medium gelo¨st und in Zellkulturflaschen u¨berfu¨hrt.
+Medium gelöst und in Zellkulturflaschen überführt.
 
 
 3.2.26 Vorbereitung der Transfektion
@@ -1330,12 +1277,12 @@ Medium gelo¨st und in Zellkulturflaschen u¨berfu¨hrt.
 
 Am Tag vor der Transfektion wurde das Medium aus den Flaschen verworfen, die Zel-
 len zweimal mit PBS gewaschen und die Zellen im Anschluss mit 1,5 ml Accutase (Fa.
-Sigma) gelo¨st. Nach 2-3 min wurde 5 ml Medium (ohne Antibiotikum) zugegeben und
-die Zellen mitsamt des Mediums in ein Blue Cap u¨berfu¨hrt, zentrifugiert (4 min; 12.000
-rpm) und der U¨ berstand verworfen. Das Zellpellet wurde in 1 ml PBS resuspendiert und
+Sigma) gelöst. Nach 2-3 min wurde 5 ml Medium (ohne Antibiotikum) zugegeben und
+die Zellen mitsamt des Mediums in ein Blue Cap überführt, zentrifugiert (4 min; 12.000
+rpm) und der Ü berstand verworfen. Das Zellpellet wurde in 1 ml PBS resuspendiert und
 die Zellsuspension am Sysmex-Counter gemessen. Dazu wurde 10 ml Casyton mit 10 µl
 Zellsuspension versetzt und die Zellzahl somit gemessen. In 10 cm Petrischalen wurde 10
-ml Medium pipettiert und die Zellen hinzugefu¨gt (Hek-Zellen: 2x106 Zellen/Petrischale;
+ml Medium pipettiert und die Zellen hinzugefügt (Hek-Zellen: 2x106 Zellen/Petrischale;
 Cos-Zellen: 1x106 Zellen/Petrischale).
 
 
@@ -1343,53 +1290,50 @@ Cos-Zellen: 1x106 Zellen/Petrischale).
 
 
 Zu 10 µg DNA wurde serumfreies Medium DMEM High Glucose (Fa. Capricorn Scien-
-tific GmbH) hinzugefu¨gt (Gesamtvolumen 300 µl). Fu¨r eine 1:10 Verdu¨nnung wurde
-100 µl SuperFect (Fa. Qiagen), fu¨r eine 1:5 Verdu¨nnung 50 µl SuperFect der DNA-
-Mediumsuspension zugefu¨gt. Wa¨hrend der Inkubationszeit von 10 min wurden die Zel-
+tific GmbH) hinzugefügt (Gesamtvolumen 300 µl). Für eine 1:10 Verdünnung wurde
+100 µl SuperFect (Fa. Qiagen), für eine 1:5 Verdünnung 50 µl SuperFect der DNA-
+Mediumsuspension zugefügt. Während der Inkubationszeit von 10 min wurden die Zel-
 len vom Vortag zweimal mit PBS gewaschen und im Anschluss 3.000 µl Zellmedium
 DMEM mit 10 % FCS (fetal calf dserum) und 1 % P/S (Benzylpenicillin-Procain und
 Dihydrostreptomycin) auf die Zellen gegeben. Die Mischung aus DNA, SuperFect, Se-
 rumfree Medium wurde auf die Platten getropft. Die Platten wurden bei 37 ◦C, 5 % C02 3
 Stunden inkubiert. Nach Zugabe von 10 ml DMEM (mit 10 % FCS und 1 % P/S) wurden
 die Zellen wieder in den Brutschrank gestellt. Bei den Cos Zellen wurde die Kultur nach
-2 Tagen beendet. Die Zellen standen fu¨r weitere Analysen zur Verfu¨gung. Bei den Hek
+2 Tagen beendet. Die Zellen standen für weitere Analysen zur Verfügung. Bei den Hek
 Zellen wurde nach 2 Tagen das Medium gewechselt und mit Gentamicin versetzt. Die
 Hek Zellen wurden alle 2-3 Tage gesplittet und das Medium neu ausgewechselt.
-
-
-Material und Methoden
 
 
 3.2.28 Erstellen und Preclearen von Zellkulturlysat
 
 
-Fu¨r das Zellkulturlysat wurde ein Lysepuffer - bestehend aus 2.88 ml IBP; 100 µl Pro-
+Für das Zellkulturlysat wurde ein Lysepuffer - bestehend aus 2.88 ml IBP; 100 µl Pro-
 tease Inhibitor Cocktail und 30 µl PMSF - angefertigt. 1 ml des Lysepuffers wurde auf
-die Petrischale pipettiert und der Puffer inklusive Zellen in ein Eppendorfgefa¨ß u¨berfu¨hrt.
-Nach einer 30 - minu¨tigen Inkubationszeit auf Eis und einer darauffolgenden Zentrifuga-
-tion (30 min, 4 ◦C, 13.000 rpm) konnte ein klarer U¨ berstand abgetragen worden und in
-ein neues Eppendorfgefa¨ß pipettiert werden. Um das Lysat zu preclearen, wurden 100 µl
+die Petrischale pipettiert und der Puffer inklusive Zellen in ein Eppendorfgefäß überführt.
+Nach einer 30 - minütigen Inkubationszeit auf Eis und einer darauffolgenden Zentrifuga-
+tion (30 min, 4 ◦C, 13.000 rpm) konnte ein klarer Ü berstand abgetragen worden und in
+ein neues Eppendorfgefäß pipettiert werden. Um das Lysat zu preclearen, wurden 100 µl
 Beads mit 500 µl IPB gewaschen. Auf die gewaschenen Beads wurden 1 ml Zellkultur-
 lysat, 30 µl AB-Serum und 130 µl 100 mg/ml BSA in Aqua pipettiert. Nach einer 30 -
-minu¨tigen Inkubation auf dem Rotator und einer Zentrifugation (1 min, 2.500 rpm) wurde
+minütigen Inkubation auf dem Rotator und einer Zentrifugation (1 min, 2.500 rpm) wurde
 der Preclear wiederholt. Es wurde erneut 30 µl AB-Serum zugegeben, das Gemisch 30
 Minuten bei Raumtemperatur inkubiert, zentrifugiert (1 min, 2.500 rpm und im Anschluss
-1 min, 13.000 rpm), der U¨ berstand abgenommen und das Lysat eingefroren (-80 ◦C).
+1 min, 13.000 rpm), der Ü berstand abgenommen und das Lysat eingefroren (-80 ◦C).
 
 
-3.2.29 Immunpra¨zipitation des Granulozytenlysats bzw. des Zellkulturlysats
+3.2.29 Immunpräzipitation des Granulozytenlysats bzw. des Zellkulturlysats
 
 
-Fu¨r die Immunpra¨zipitation wurden 50 µl biotinmarkiertes precleartes Granulozytenly-
-sat mit 5 µl 1 mg/ml Antiko¨rper bzw. 30 µl Serum und 300 µl Zellkulturlysat mit 5 µg
-Antiko¨rper u¨ber Nacht bei 4 ◦C auf dem Rotator inkubiert. Am na¨chsten Tag wurden
+Für die Immunpräzipitation wurden 50 µl biotinmarkiertes precleartes Granulozytenly-
+sat mit 5 µl 1 mg/ml Antikörper bzw. 30 µl Serum und 300 µl Zellkulturlysat mit 5 µg
+Antikörper über Nacht bei 4 ◦C auf dem Rotator inkubiert. Am nächsten Tag wurden
 die Lysate kurz anzentrifugiert. Nach dem Waschen von 50 µl Protein G Beads mit IPB
-konnten die u¨ber Nacht inkubierten Lysate zu den Beads gegeben und fu¨r 1h bei Raum-
-temperatur auf dem Rotator inkubiert werden. Die inkubierten Beads wurden fu¨nfmal mit
+konnten die über Nacht inkubierten Lysate zu den Beads gegeben und für 1h bei Raum-
+temperatur auf dem Rotator inkubiert werden. Die inkubierten Beads wurden fünfmal mit
 500 µl IPB gewaschen und im Anschluss 50 µl 2xSDS-Probenpuffer (reduzierend bzw.
 nicht-reduzierend) zugegeben. Die Beads und der Probenpuffer wurden 5 min bei 95 ◦C
-gekocht, zentrifugiert (1 min; 2.000 rpm), der U¨ berstand in ein neues Eppendorfgefa¨ß
-u¨berfu¨hrt, nochmal zentrifugiert (1 min; 13.000 rpm) und der U¨ berstand erneut in ein
+gekocht, zentrifugiert (1 min; 2.000 rpm), der Ü berstand in ein neues Eppendorfgefäß
+überführt, nochmal zentrifugiert (1 min; 13.000 rpm) und der Ü berstand erneut in ein
 neues Eppendorfgefäß überführt.
 
 
@@ -1397,45 +1341,42 @@ neues Eppendorfgefäß überführt.
 
 
 Zwei Glasplatten wurden mit Isopropanol und einem fusselfreien Tuch gereinigt und mit-
-tels Klammer aneinander fixiert. Ein Kamm wurde eingesetzt und die Ho¨he des Trenngels
-markiert (ca. 1 cm unter dem Kamm). Fu¨r das Trenngel wurden 3,735 ml Aqua dest, 2,39
-ml Lo¨sung A, 871,5 µl Lo¨sung B, 70,35 µl 10 % SDS, 9,4 µl Temed und 234,4 µl APS
-gemischt. Das Trenngel wurde bis zur Markierung zwischen die Glasplatten eingefu¨llt
-und zur Polymerisation mit Isopropanol u¨berschichtet. Nach 30 min konnte das Isopropa-
+tels Klammer aneinander fixiert. Ein Kamm wurde eingesetzt und die Höhe des Trenngels
+markiert (ca. 1 cm unter dem Kamm). Für das Trenngel wurden 3,735 ml Aqua dest, 2,39
+ml Lösung A, 871,5 µl Lösung B, 70,35 µl 10 % SDS, 9,4 µl Temed und 234,4 µl APS
+gemischt. Das Trenngel wurde bis zur Markierung zwischen die Glasplatten eingefüllt
+und zur Polymerisation mit Isopropanol überschichtet. Nach 30 min konnte das Isopropa-
 nol entfernt, das Sammelgel gegossen und der Kamm eingesetzt werden. Das Sammelgel
-setzte sich aus den folgenden Substanzen zusammen: 1,75 ml Aqua dest, 0,5 ml Lo¨sung
-A, 312,5 µl Lo¨sung D, 25 µl 10 % SDS, 7,5 µl Temed und 93,8 µl APS. Nach Entfernung
+setzte sich aus den folgenden Substanzen zusammen: 1,75 ml Aqua dest, 0,5 ml Lösung
+A, 312,5 µl Lösung D, 25 µl 10 % SDS, 7,5 µl Temed und 93,8 µl APS. Nach Entfernung
 des Kamms konnte das Gel in die Kammer mit bereits darin vorhandenem Laufpuffer Ro-
-
-
-Material und Methoden
 
 
 tiphorese 10 x SDS-PAGE (Fa. Roth) eingesetzt und mit Klammern fixiert werden. Die
 Proben (Granulozytenlysate/Zelkulturlysate/Proteine) wurden gemeinsam mit dem Pro-
-benpuffer bzw. als fertiges Immunpra¨zipitat und einem Standard PageRuler™ Prestained
+benpuffer bzw. als fertiges Immunpräzipitat und einem Standard PageRuler™ Prestained
 Protein Ladder (Fa.Thermoscientific Fisher) in die Taschen pipettiert. Die Laufzeit betrug
-1,5 - 2 Stunden (h) bei einer Spannung von 500 V und einer Stromsta¨rke von 15 - 20
+1,5 - 2 Stunden (h) bei einer Spannung von 500 V und einer Stromstärke von 15 - 20
 Milliampere (mA).
 
 
-Fu¨r das Blotten wurde eine Immobilon-P Membran (Fa. Merck) verwendet, die zu Be-
-ginn mit Methanol aktiviert wurde. Es wurden drei Scha¨lchen A, B und C vorbereitet,
+Für das Blotten wurde eine Immobilon-P Membran (Fa. Merck) verwendet, die zu Be-
+ginn mit Methanol aktiviert wurde. Es wurden drei Schälchen A, B und C vorbereitet,
 wobei jeweils drei Filterpapiere mit Puffer A, mit Puffer B und mit Puffer C befeuchtet
 wurden. Die Membran und das darauf liegende Gel wurden zwischen den mit Puffer B
-und Puffer C getra¨nkten Filterpapieren positioniert. Das Blotten lief fu¨r 45 min unter fol-
+und Puffer C getränkten Filterpapieren positioniert. Das Blotten lief für 45 min unter fol-
 genden Bedingungen ab: 45 mA, max. Voltzahl und 8 - 10 Watt. Nach Beendigung des
 Blottens wurde die Membran 10 - 15 min in Aqua dest und darauffolgend 60 min in einer
-Lo¨sung aus 1,5 g BSA Pulver und 100 ml ECL Puffer geblockt. Es folgte die Inkubati-
-on mit einem Prima¨rantiko¨rper u¨ber Nacht bei 4 ◦C, ein Waschvorgang mit ECL Puffer
-und die Inkubation u¨ber 45 min mit einem Sekunda¨rantiko¨rper. Folgende Kombinatio-
-nen aus Prima¨r- und Sekunda¨rantiko¨rper fanden Verwendung: 7D8 als Prima¨rantiko¨rper
-und Donkey-Anti-Mouse (DAM) als Sekunda¨rantiko¨rper, V5 als Prima¨rantiko¨rper und
-Donkey-Anti-Rabbit (DAR) als Sekunda¨rantiko¨rper sowie GFP als Prima¨rantiko¨rper und
-DAM als Sekunda¨rantiko¨rper. Nach einem weiteren Waschvorgang wurde die Membran
-fu¨r 5 min in jeweils 2 ml beider Lo¨sungen der Immobilon Western Chemiluminescent
+Lösung aus 1,5 g BSA Pulver und 100 ml ECL Puffer geblockt. Es folgte die Inkubati-
+on mit einem Primärantikörper über Nacht bei 4 ◦C, ein Waschvorgang mit ECL Puffer
+und die Inkubation über 45 min mit einem Sekundärantikörper. Folgende Kombinatio-
+nen aus Primär- und Sekundärantikörper fanden Verwendung: 7D8 als Primärantikörper
+und Donkey-Anti-Mouse (DAM) als Sekundärantikörper, V5 als Primärantikörper und
+Donkey-Anti-Rabbit (DAR) als Sekundärantikörper sowie GFP als Primärantikörper und
+DAM als Sekundärantikörper. Nach einem weiteren Waschvorgang wurde die Membran
+für 5 min in jeweils 2 ml beider Lösungen der Immobilon Western Chemiluminescent
 HRP Substrate (Fa. Millipore) geschwenkt. Die Entwicklung erfolgte nach Markierung
-des La¨ngenstandards mit einem Fluorezenzstift am FluorChem$$$2$$$ Gera¨t in der Dunkel-
+des Längenstandards mit einem Fluorezenzstift am FluorChem$$$2$$$ Gerät in der Dunkel-
 kammer.
 
 
@@ -1443,14 +1384,11 @@ kammer.
 
 
 3x 104 Zellkulturzellen bzw. Granulozyten wurden mit 40 µl Serum, wie zum Beispiel AB
-Serum, NB$$$2$$$ Serum, verschiedene Anti-NB1 Seren, fu¨r 30 min bei 4 ◦C inkubiert. Nach
-zweimaligem Waschen mit PBS/BSA wurden 2 µg/ml eines sekunda¨ren Antiko¨rpers wie
+Serum, NB$$$2$$$ Serum, verschiedene Anti-NB1 Seren, für 30 min bei 4 ◦C inkubiert. Nach
+zweimaligem Waschen mit PBS/BSA wurden 2 µg/ml eines sekundären Antikörpers wie
 Polyclonal Rabbit Anti-Human IgG/FITC auf die Zellen pipettiert. Nach einer erneuten
-30 - minu¨tigen Inkubation bei 4 ◦C, einem weiteren Waschvorgang mit 250 µl PBS/BSA
+30 - minütigen Inkubation bei 4 ◦C, einem weiteren Waschvorgang mit 250 µl PBS/BSA
 und einer Zentrifugation wurden die Zellen mit 150 µl Cellfix fixiert.
-
-
-Ergebnisse
 
 
 4 Ergebnisse
@@ -1462,88 +1400,88 @@ pression.
 
 
 Mittels Durchflusszytometrie wurden 220 Blutspender hinsichtlich ihrer CD$$$177$$$ Expressi-
-on untersucht. Die Untersuchungen erfolgten an Vollblut. Fu¨r diese Untersuchung wurden
-der monoklonale Antiko¨rper 7D8 und als Negativkontrolle murines IgG (mIgG) einge-
+on untersucht. Die Untersuchungen erfolgten an Vollblut. Für diese Untersuchung wurden
+der monoklonale Antikörper 7D8 und als Negativkontrolle murines IgG (mIgG) einge-
 setzt. Unter diesen 220 Blutspendern konnten 3 als CD$$$177$$$ negativ identifiziert werden,
-was einer Ha¨ufigkeit von ca. 1,4 % entspricht. Aus den Granulozyten der 3 negativ iden-
+was einer Häufigkeit von ca. 1,4 % entspricht. Aus den Granulozyten der 3 negativ iden-
 tifizierten Spender sowie weiterer vom Labor zuvor bereits typisierten Spender wurden
 Lysate erstellt, DNA und RNA isoliert und durchflusszytometrische Untersuchungen mit
 monoklonalem Anti-CD177 (Klon 7D8), mIgG als Negativkontrolle und Anti-CD16 als
-Positivkontrolle durchgefu¨hrt. Es wurde ein cut off-Wert von 5 % definiert, das heißt
+Positivkontrolle durchgeführt. Es wurde ein cut off-Wert von 5 % definiert, das heißt
 als CD$$$177$$$ negativ wurden alle diejenigen bezeichnet, deren CD$$$177$$$ Expression unter 5
 % der Negativkontrolle lag. Als positiv wurden konsekutiv diejenigen bezeichnet, die
-eine Fluoreszenzintensita¨t >95 % aller Ereignisse der Negativkontrolle aufwiesen. Die
+eine Fluoreszenzintensität >95 % aller Ereignisse der Negativkontrolle aufwiesen. Die
 durchflusszytometrische Untersuchung zeigte, dass die CD$$$177$$$ Expression hinsichtlich
 der Verteilung der einzelnen Subpopulationen deutliche Unterschiede aufweist (Abbil-
-dung 8). Die Ha¨ufigkeit der Neutrophilen-Fraktion mit CD$$$177$$$ Expression reichte von
+dung 8). Die Häufigkeit der Neutrophilen-Fraktion mit CD$$$177$$$ Expression reichte von
 21,03 % bis 90,08 %. Der MFI der CD$$$177$$$ exprimierenden neutrophilen Granulozyten
 zeigte eine Variationsbreite von 16 bis 137,32. Eine trimodale Verteilung wurde bei den
 CD$$$177$$$ positiven Spendern nicht beobachtet. Die untere Reihe (Abbildung 8) stellt eine
 Auswahl an CD$$$177$$$ negativen Spendern dar. Die CD$$$177$$$ Expression lag bei den CD$$$177$$$
 negativen Spendern zwischen 0,19 % und 0,38 % und der MFI bei 15,6 - 28,27. Um das
-durchflusszytometrische Ergebnis bezu¨glich einer vorhandenen oder fehlenden CD$$$177$$$
+durchflusszytometrische Ergebnis bezüglich einer vorhandenen oder fehlenden CD$$$177$$$
 Expression zu verifizieren, wurde ein Immunoblot angefertigt, der mit Anti-CD177 und
 GAPDH detektiert wurde (Abbildung 9). Bei den durchflusszytometrisch CD$$$177$$$ expri-
-mierenden Spendern erschien das Protein im Immunoblot als Bande bei einer Gro¨ße von
+mierenden Spendern erschien das Protein im Immunoblot als Bande bei einer Größe von
 ca. 55 kDa (Abbildung 9). Bei den durchflusszytometrisch CD$$$177$$$ negativen Spendern
 zeigte sich nur die Positivkontrolle mit GAPDH (Abbildung 9).
 
 
 Abbildung 7: Häufigkeitsverteilung CD177 positiver Granulozyten bei Personen mit
-CD$$$177$$$ Expression und bei Personen mit CD$$$177$$$ Null Pha¨notyp. Es ist eine Auswahl
+CD$$$177$$$ Expression und bei Personen mit CD$$$177$$$ Null Phänotyp. Es ist eine Auswahl
 an durchflusszytometrischen Histogrammen von Untersuchungen an Granulozyten darge-
 stellt, wobei die schwarze Kurve die Untersuchung mit mIgG, die rote Kurve diejenige mit
-Anti-7D8 und die blaue die mit Anti-CD16 repra¨sentiert.Y-Achse: Ha¨ufigkeit. X-Achse:
-Fluoreszenzintensita¨t. Als cut-off“ zwischen positiv und negativ wurde eine Grenze bei ”
+Anti-7D8 und die blaue die mit Anti-CD16 repräsentiert.Y-Achse: Häufigkeit. X-Achse:
+Fluoreszenzintensität. Als cut-off“ zwischen positiv und negativ wurde eine Grenze bei ”
 5 % der Negativkontrolle definiert. In der oberen Reihe sind die CD$$$177$$$ positiven Spender
 abgebildet. Es sind jeweils zwei Peaks zu sehen, die die Subpopulationen - also diejenigen
-Granulozyten, die CD$$$177$$$ auf ihrer Oberfla¨che tragen (rechter Peak) und die, die das An-
+Granulozyten, die CD$$$177$$$ auf ihrer Oberfläche tragen (rechter Peak) und die, die das An-
 tigen nicht exprimieren (linker Peak) - darstellen. Die untere Reihe stellt CD$$$177$$$ negative
 Spender dar. Es wird sichtbar, dass die Histogramme der CD$$$177$$$ negativen neutrophilen
-Granulozyten - unabha¨ngig davon, ob sie mit Anti-7D8 oder mit Anti-CD16 detektiert
-wurden - beinahe deckungsgleich sind. Als prima¨re Antiko¨rper wurden 7D8, mIgG und
-CD$$$16$$$ verwendet. Als Sekunda¨rantiko¨rper fungierte Anti-Maus-Alexa Fluor 488. Quelle:
+Granulozyten - unabhängig davon, ob sie mit Anti-7D8 oder mit Anti-CD16 detektiert
+wurden - beinahe deckungsgleich sind. Als primäre Antikörper wurden 7D8, mIgG und
+CD$$$16$$$ verwendet. Als Sekundärantikörper fungierte Anti-Maus-Alexa Fluor 488. Quelle:
 Eigene Darstellung.
 
 
 Abbildung 8: Immunoblot der CD177 Expression bei CD177 positiven und CD177
 negativen Spendern. Bei den CD$$$177$$$ exprimierenden Spendern (rechts abgebildet) er-
 scheint eine Bande bei ca. 55 kDa. Der Immunoblot diente neben der Durchflusszyto-
-metrie als zusa¨tzlicher Nachweis einer fehlenden CD$$$177$$$ Expression (links dargestellt).
+metrie als zusätzlicher Nachweis einer fehlenden CD$$$177$$$ Expression (links dargestellt).
 Bei den CD$$$177$$$ negativen Spendern fehlt die Bande bei 55 kDa; hier erscheint nur die
-Positivkontrolle mit GAPDH. Links im Bild ist der Gro¨ßenstandard zu sehen. Der Im-
-munoblot wurde mit 7D8 als Prima¨rantiko¨rper gegen CD177, mit donkey-anti-mouse als
-Sekunda¨rantiko¨rper und GAPDH als Negativkontrolle detektiert. Quelle: Eigene Darstel-
+Positivkontrolle mit GAPDH. Links im Bild ist der Größenstandard zu sehen. Der Im-
+munoblot wurde mit 7D8 als Primärantikörper gegen CD177, mit donkey-anti-mouse als
+Sekundärantikörper und GAPDH als Negativkontrolle detektiert. Quelle: Eigene Darstel-
 lung.
 
 
 4.2 Ergebnisse des Next Generation Sequencing.
 
 
-Tabelle 8: U¨ bersicht u¨ber die Ergebnisse der Resequenzierung des CD$$$177$$$ Gens mit
+Tabelle 8: Ü bersicht über die Ergebnisse der Resequenzierung des CD$$$177$$$ Gens mit
 allen gefundenen Varianten in den Exonen und in dem Bereich vor Exon 1, der zu-
-geho¨rigen Nukleotidnummer und Aminosa¨ure. In der roten Zeile ist die von Li et al.
+gehörigen Nukleotidnummer und Aminosäure. In der roten Zeile ist die von Li et al.
 publizierte c.787A>T Variante zu erkennen. Gelb markiert ist die in der hier vorliegenden
 Arbeit neu gefundene c.1291G>A Variante. Die in diesen Tabellen sichtbaren CD$$$177$$$ po-
 sitiven Spender wiesen alle die c.1291G>A Variante nicht auf. homo“ = hinsichtlich der ”
 Variante homozygot; homo wild“ = auf beiden Allelen den Wildtyp tragend; hetero“ ” ”
 = hinsichtlich der Variante heterozygot. Oben: Es wurden 2 hinsichtlich der c.787A>T
 Variante heterozygote durchflusszytometrisch CD$$$177$$$ positive Proben untersucht (hellrot
-hinterlegt). Unten: Es wurden 2 hinsichtlich der c.787A>T Variante fu¨r den Wildtyp ho-
+hinterlegt). Unten: Es wurden 2 hinsichtlich der c.787A>T Variante für den Wildtyp ho-
 mozygote durchflusszytometrisch CD$$$177$$$ negative Proben untersucht (hellrot hinterlegt).
 Quelle: Eigene Darstellung.
 
 
-Tabelle 9: U¨ bersicht u¨ber Ergebnisse der Resequenzierung des CD$$$177$$$ Gens mit allen gefundenen Varianten in den Exonen und in dem
-Bereich vor Exon 1, der zugeho¨rigen Nukleotidnummer und Aminosa¨ure. Es wurden 3 hinsichtlich der c.787A>T Variante heterozygote
+Tabelle 9: Ü bersicht über Ergebnisse der Resequenzierung des CD$$$177$$$ Gens mit allen gefundenen Varianten in den Exonen und in dem
+Bereich vor Exon 1, der zugehörigen Nukleotidnummer und Aminosäure. Es wurden 3 hinsichtlich der c.787A>T Variante heterozygote
 durchflusszytometrisch CD$$$177$$$ negative Proben untersucht (blau hinterlegt). In der roten Zeile ist die von Li et al. publizierte c.787A>T Variante
 zu erkennen. Gelb markiert ist die in der hier vorliegenden Arbeit neu gefundene c.1291G>A Variante. Alle CD$$$177$$$ negativen Spender, welche
-heterozygot fu¨r c.787A>T sind, weisen ebenfalls eine Heterozygotie gegenu¨ber c.1291G>A auf. homo“ = hinsichtlich der Variante homozygot; ”
+heterozygot für c.787A>T sind, weisen ebenfalls eine Heterozygotie gegenüber c.1291G>A auf. homo“ = hinsichtlich der Variante homozygot; ”
 homo wild“ = auf beiden Allelen den Wildtyp tragend; hetero“ = hinsichtlich der Variante heterozygot. Quelle: Eigene Darstellung. ” ”
 
 
-Tabelle 10: U¨ bersicht u¨ber die Ergebnisse der Resequenzierung des CD$$$177$$$ Gens mit allen gefundenen Varianten in den Exonen und in
-dem Bereich vor Exon 1, der zugeho¨rigen Nukleotidnummer und Aminosa¨ure. Es wurden 5 hinsichtlich der c.787A>T Variante homozygote
+Tabelle 10: Ü bersicht über die Ergebnisse der Resequenzierung des CD$$$177$$$ Gens mit allen gefundenen Varianten in den Exonen und in
+dem Bereich vor Exon 1, der zugehörigen Nukleotidnummer und Aminosäure. Es wurden 5 hinsichtlich der c.787A>T Variante homozygote
 durchflusszytometrisch CD$$$177$$$ negative Proben untersucht (blau hinterlegt). In der roten Zeile ist die von Li et al. publizierte c.787A>T Variante
 zu erkennen. Gelb markiert ist die in der hier vorliegenden Arbeit neu gefundene c.1291G>A Variante. Von den CD$$$177$$$ negativen hinsichtlich der
 c.787A>T Variante homozygoten Spender wies keiner die Variante c.1291G>A auf. n. k.“ = nicht kodierend; homo“ = hinsichtlich der Variante ” ”
@@ -1551,23 +1489,23 @@ homozygot; homo wild“ = auf beiden Allelen den Wildtyp tragend; hetero“ = hi
 
 
 4.3 Homozygotie fü r die Variante CD177 c.787A>T ist mit dem
-CD$$$177$$$ Null Pha¨notyp assoziiert. Die Variante CD$$$177$$$ c.787T ko-
-diert fu¨ r ein Stop-Codon in Exon 7.
+CD$$$177$$$ Null Phänotyp assoziiert. Die Variante CD$$$177$$$ c.787T ko-
+diert fü r ein Stop-Codon in Exon 7.
 
 
 FOOTNOTE:Abbildung 9: Agarosegel des CD177 Gens. Das Bild der Agarosegelelektrophorese
 zeigt auf der linken Seite das Long-Range-PCR-Produkt und auf der rechten Seite den
-Gro¨ßenstandard. Die Primer amplifizieren die gesamte kodierende Region des CD$$$177$$$
-Gens (von Exon 1 bis Exon 9), was einer Gro¨ße von 8729 bp entspricht. Das CD$$$177$$$ Gen
+Größenstandard. Die Primer amplifizieren die gesamte kodierende Region des CD$$$177$$$
+Gens (von Exon 1 bis Exon 9), was einer Größe von 8729 bp entspricht. Das CD$$$177$$$ Gen
 wurde mittels Long-Range-PCR amplifiziert mit dem Ziel, das CD$$$177$$$ Gen und nicht das
-Pseudogen zu vervielfa¨ltigen. Das CD$$$177$$$ Pseudogen besteht aus Exon 4 bis Exon 9 in
+Pseudogen zu vervielfältigen. Das CD$$$177$$$ Pseudogen besteht aus Exon 4 bis Exon 9 in
 reverser Orientierung. Quelle: Eigene Darstellung.
 
 
 12 DNA Proben wurden mittels Long-Range-PCR mit Primern, welche die Region zwi-
 schen Exon 1 und Exon 9 flankieren, amplifiziert. Ein kleiner Teil des PCR- Produktes
 wurde zur Kontrolle auf ein Agarosegel aufgetragen (Abbildung 9). Der andere Teil des
-PCR-Produktes wurde aufgereinigt, eine Qubit-Messung durchgefu¨hrt, im NGS-Gera¨t se-
+PCR-Produktes wurde aufgereinigt, eine Qubit-Messung durchgeführt, im NGS-Gerät se-
 quenziert und mittels des Programmes Genious“ analysiert. Wie in den Tabellen sichtbar ”
 ist, wurden acht CD$$$177$$$ negative und vier CD$$$177$$$ positive Spender sequenziert. Von den
 acht CD$$$177$$$ negativen Spender waren hinsichtlich der Variante c.787A>T 5 homozygot
@@ -1576,11 +1514,8 @@ mozygotie hinsichtlich dieser Variante beobachtet. Die Variante c.787A>T wandelt
 Codon AAA (Lysin, K) in das Stop-Codon TAA um (ochre) (Abbildung 10).
 
 
-Ergebnisse
-
-
-Abbildung 10: Schematische Darstellung der Konsequenzen der Homozygotie fu¨r
-c.787A>T. Das Vorhandensein von 2 T Allelen an Position c.$$$787$$$ fu¨hrt zu einem Stop-
+Abbildung 10: Schematische Darstellung der Konsequenzen der Homozygotie für
+c.787A>T. Das Vorhandensein von 2 T Allelen an Position c.$$$787$$$ führt zu einem Stop-
 Codon auf mRNA Ebene und damit zum Proteinsyntheseabbruch an Position 263. Al-
 le in dieser Kohorte untersuchten Personen, die diese Homozygotie (TT) hinsichtlich
 c.787A>T aufwiesen, waren CD$$$177$$$ defizient. Quelle: Eigene Darstellung.
@@ -1590,9 +1525,9 @@ c.787A>T aufwiesen, waren CD$$$177$$$ defizient. Quelle: Eigene Darstellung.
 quenzen mit dem CD$$$177$$$ Pseudogen entstanden.
 
 
-Abbildung 11: A: Die Pseudogenhypothese kann besta¨tigt werden. B: Das CD$$$177$$$ Gen
+Abbildung 11: A: Die Pseudogenhypothese kann bestätigt werden. B: Das CD$$$177$$$ Gen
 und das Pseudogen. Dargestellt ist die Gensequenz rund um die c.787A>T Variante. Bei
-der Probe, welche heterozygot fu¨r die c.787A>T Variante ist, sind die Vera¨nderungen
+der Probe, welche heterozygot für die c.787A>T Variante ist, sind die Veränderungen
 durch Konversion von Exon 7 des Pseudogens in das Gen durch die Buchstaben unterhalb
 der Gensequenz dargestellt. Quelle: Eigene Darstellung erstellt mittels Chromas 2021.
 B: Sichtbar ist die Sequenz des CD$$$177$$$ Gens und des Pseudogens. Durch die Pfeile mar-
@@ -1608,18 +1543,18 @@ c.782G>C, c.786A>C, c.790G>A und c.799A>G (Tabellen 8 - 10, Abbildung 11 A
 Probe AT und Abbildung 11 B) wurden in der in dieser Studie untersuchten Kohorte ge-
 funden. Das heißt, die Pseudogenkonversionshypothese – also die Konversion von Exon
 7 inklusive c.787A>T Variante des Pseudogens in das CD$$$177$$$ Gen mit daraus resultie-
-rendem CD177 negativen Pha¨notyp – kann in dieser Studie besta¨tigt werden.
+rendem CD177 negativen Phänotyp – kann in dieser Studie bestätigt werden.
 
 
 4.5 Einige Personen mit dem CD177 Null Phänotyp sind heterozygot
-fu¨ r das c.787T Allel. Auf dem zweiten Chromosom liegt bei allen
+fü r das c.787T Allel. Auf dem zweiten Chromosom liegt bei allen
 Personen eine andere Variante: CD177 c.1291G>A.
 
 
 Von den acht durchflusszytometrisch negativen Spendern waren fünf bezüglich der
 c.787A>T Variante homozygot und drei heterozygot (Tabellen 8 - 10). Bei den drei
 CD$$$177$$$ negativen Spendern, die hinsichtlich der c.787A>T Variante heterozygot waren,
-konnte zusa¨tzlich eine neue Variante identifiziert werden: c.1291GGA>AGA (Tabelle
+konnte zusätzlich eine neue Variante identifiziert werden: c.1291GGA>AGA (Tabelle
 9).
 
 
@@ -1627,7 +1562,7 @@ Abbildung 12: Chromatogramme der 3 möglichen SNP c.1291G>A Genotypen (ho-
 mozygot 1291 A/A, heterozygot 1291 A/G und homozygot 1291 G/G). Im oberen
 Bereich der Abbildung ist das CD$$$177$$$ Gen dargestellt, welches aus 9 Exonen besteht.
 Im unteren Bereich der Abbildung erkennt man die Gensequenz rund um die Variante
-c.1291G>A. Der CD$$$177$$$ SNP c.1291G>A ist fu¨r die 431G zu 431R Substitution verant-
+c.1291G>A. Der CD$$$177$$$ SNP c.1291G>A ist für die 431G zu 431R Substitution verant-
 wortlich (sichtbar in der ersten und zweiten Zeile). Der CD$$$177$$$ SNP c.1291G>A befindet
 sich innerhalb des hydrophoben Segmentes des GPI Signals. Quelle: Wu et al. 2019.
 
@@ -1637,13 +1572,13 @@ Klammern) der in dieser Studie untersuchten NGS Kohorte. Links sind die CD$$$177
 negativen Spender und rechts die CD$$$177$$$ exprimierenden Spender abgebildet. Es sind die
 Genotypen in absoluten und relativen Zahlen dargestellt. Es wird sichtbar, dass bei den
 CD$$$177$$$ negativen Spendern die Allelkombination c.[787T;1291G] und bei den CD$$$177$$$
-positiven Spendern die Kombination c.[787A;1291G] am ha¨ufigsten auftritt. Alle drei
+positiven Spendern die Kombination c.[787A;1291G] am häufigsten auftritt. Alle drei
 CD$$$177$$$ negativen Spender, welche an Position c.$$$787$$$ ein A-Allel aufweisen, tragen auf
 dem gleichen Allel die Variante c.1291G>A. Quelle: Eigene Darstellung.
 
 
 TG/TG konnte in der mittels NGS untersuchten Kohorte unter den CD$$$177$$$ negativen
-Spendern als ha¨ufigste Allelkombination identifiziert werden (0.81) (Tabelle 11). Un-
+Spendern als häufigste Allelkombination identifiziert werden (0.81) (Tabelle 11). Un-
 ter den CD$$$177$$$ exprimierenden Spendern zeigten sich sowohl die Allelkombinationen
 AG/TG als auch AG/AG.
 
@@ -1652,71 +1587,68 @@ AG/TG als auch AG/AG.
 ankerung.
 
 
-Um zu u¨berpru¨fen, ob die Variante c.1291G>A zu einer A¨ nderung der GPI Verankerung
-fu¨hrt, wurde die Aminosa¨uresequenz des Wildtyps sowie der Variante mit einem Algo-
-rithmus fu¨r die Vorhersage von GPI Ankersequenzen (Eisenhaber et al. 1998; Eisenhaber
+Um zu überprüfen, ob die Variante c.1291G>A zu einer Ä nderung der GPI Verankerung
+führt, wurde die Aminosäuresequenz des Wildtyps sowie der Variante mit einem Algo-
+rithmus für die Vorhersage von GPI Ankersequenzen (Eisenhaber et al. 1998; Eisenhaber
 et al. 1999; Sunyaev 1999; Eisenhaber et al. 2000; Eisenhaber et al. 2004) untersucht
-(Tabelle 12). Fu¨r die Wildtypsequenz wurde eine GPI Modifikationsstelle identifiziert
+(Tabelle 12). Für die Wildtypsequenz wurde eine GPI Modifikationsstelle identifiziert
 (Tabelle 12). Als Omega-Position - als Position, an welche der GPI Anker an das Protein
-angebracht wird - benennt das Programm die Position 408 (Tabelle 12). Fu¨r die Variante
-c.1291G>A mit konsekutivem Aminosa¨ureaustausch wurde keine potentielle GPI Modi-
+angebracht wird - benennt das Programm die Position 408 (Tabelle 12). Für die Variante
+c.1291G>A mit konsekutivem Aminosäureaustausch wurde keine potentielle GPI Modi-
 fikationsstelle gefunden (Tabelle 12).
 
 
 Tabelle 12: Bioinformatorische Analyse der GPI Verankerung des CD$$$177$$$ Wildtyps
-und der Variante c.1291G>A. Oben links ist die Aminosa¨uresequenz des CD$$$177$$$ Wild-
-typs (Isoform 1) und rechts die Aminosa¨uresequenz der Variante c.1291G>A zu erken-
-nen. Die bioinformatische Analyse zeigt, dass fu¨r den Wildtyp eine mo¨gliche GPI Modi-
-fikationsstelle an Aminosa¨ureposition 408 gefunden wurde, wohingegen fu¨r die Sequenz
+und der Variante c.1291G>A. Oben links ist die Aminosäuresequenz des CD$$$177$$$ Wild-
+typs (Isoform 1) und rechts die Aminosäuresequenz der Variante c.1291G>A zu erken-
+nen. Die bioinformatische Analyse zeigt, dass für den Wildtyp eine mögliche GPI Modi-
+fikationsstelle an Aminosäureposition 408 gefunden wurde, wohingegen für die Sequenz
 der Variante c.1291G>A keine potenzielle GPI Modifikationsstelle detektiert werden
-konnte. Der rote Buchstabe innerhalb der Aminosa¨uresequenz entspricht der Aminosa¨ure,
+konnte. Der rote Buchstabe innerhalb der Aminosäuresequenz entspricht der Aminosäure,
 die durch den Wildtyp (links) und die Variante (rechts) kodiert wird. Der blaue Buchstabe
-innerhalb der Aminosa¨uresequenz (links) markiert die Sequenzposition der Omegaposi-
+innerhalb der Aminosäuresequenz (links) markiert die Sequenzposition der Omegaposi-
 tion. Quelle: Eigene Darstellung erstellt mittels big-PI Predictor GPI Modification Site
 Prediction angelehnt an Eisenhaber et al. 1998; Eisenhaber et al. 1999; Sunyaev 1999;
 Eisenhaber et al. 2000.
 
 
-Ergebnisse
-
-
-4.7 Die Variante CD$$$177$$$ c.787T ist mit alternativem mRNA Splicing
+4.7 Die Variante CD177 c.787T ist mit alternativem mRNA Splicing
 assoziiert.
 
 
-Das CD$$$177$$$ Gen, welches fu¨r ein neutrophilenspezifisches Antigen kodiert, geho¨rt zur
-Ly$$$6$$$ Familie. Die Ly$$$6$$$ Familie ist dafu¨r bekannt, dass sie durch alternative Splicing Me-
+Das CD$$$177$$$ Gen, welches für ein neutrophilenspezifisches Antigen kodiert, gehört zur
+Ly$$$6$$$ Familie. Die Ly$$$6$$$ Familie ist dafür bekannt, dass sie durch alternative Splicing Me-
 chanismen unterschiedliche Splicing-Varianten des gleichen Proteins kodiert (Mallya et
 al. 2002). Um neue Splicing-Varianten von CD$$$177$$$ zu identifizieren, wurde die mRNA
 des CD$$$177$$$ Gens mittels PCR amplifiziert und das Produkt auf ein Agarosegel aufgetra-
 gen. Die Primer der PCR flankierten die Region von Exon 1 bis Exon 9. Nach Auftren-
 nung des mRNA-PCR Produktes wurden zwei Banden bzw. zwei Transkripte im Gel mit
-einer La¨nge von ca. 1400 und 1200 Basenpaaren sichtbar. Die PCR-Banden wurden aus-
+einer Länge von ca. 1400 und 1200 Basenpaaren sichtbar. Die PCR-Banden wurden aus-
 geschnitten und sequenziert (Abbildung 13). Das neue CD$$$177$$$ Transkript, bei welchem
-Exon 7 auf mRNA Level fehlt, ist etwas ku¨rzer (1125bp) als das CD$$$177$$$ PCR Produkt
-mit voller La¨nge (Abbildung 13) und entspricht dementsprechend der neuen Splicing-
+Exon 7 auf mRNA Level fehlt, ist etwas kürzer (1125bp) als das CD$$$177$$$ PCR Produkt
+mit voller Länge (Abbildung 13) und entspricht dementsprechend der neuen Splicing-
 Variante (Isoform 5 bzw. IsoformdelEx7).
 
 
 Die untersuchten Spender mit Isoform 5 wiesen alle die c.787T (entspricht der Position
 auf DNA Ebene) Variante auf, was andeutet, dass das Fehlen von Exon 7 mit diesem
 Polymorphismus bzw. dem Vorhandensein eines T-Allels auf DNA-Ebene assoziiert sein
-ko¨nnte. Alternatives Splicing wird durch Proteine der SR-Familie (SR = Ser/Arg-reich)
+könnte. Alternatives Splicing wird durch Proteine der SR-Familie (SR = Ser/Arg-reich)
 reguliert, die an Kontrollsequenzen auf der RNA binden (Graveley 2000). Ein Vorhersage-
 algorithmus (Wang et al. 2006), welcher nach alternativen splicing sites sucht, identifizier-
-te c.787T als Variante (entsprechend 895 in Tabelle 13), die eine splicing site vera¨ndert,
+te c.787T als Variante (entsprechend 895 in Tabelle 13), die eine splicing site verändert,
 konsekutiv aus einem unclassified donor“ an Position c.$$$777$$$ ein constitutive donor“ ” ”
-macht und damit zum alternativen Splicing fu¨hren kann. Die Software unterscheidet zwi-
+macht und damit zum alternativen Splicing führen kann. Die Software unterscheidet zwi-
 schen constitutive exons“ = Exone, welche am normalen Splicing beteiligt sind; skip- ” ”
 ped exons“ = Exone, welche ausnahmsweise nicht am Splicing beteiligt sind; cryptic ”
 exons“ = Exone, welche ausnahmsweise am Splicing beteiligt sind; Exon isoforms“ ”
-= verla¨ngerte oder trunkierte Exonisoformen, welche durch eine alternative splicing site
+= verlängerte oder trunkierte Exonisoformen, welche durch eine alternative splicing site
 bedingt sind (Wang et al. 2006).
 
 
-Tabelle 13: Ergebnis der bioinformatischen Analyse mo¨glicher splicing sites im Bereich von Exon 7. Oben in der Abbildung ist die Nukleo-
+Tabelle 13: Ergebnis der bioinformatischen Analyse möglicher splicing sites im Bereich von Exon 7. Oben in der Abbildung ist die Nukleo-
 tidsequenz von Exon 7 sichtbar. Der rote Buchstabe innerhalb der Sequenz markiert den Austausch von c.787A (links) zu c.787T (rechts). Durch
-diesen Austausch wird aus einem unclassified donor an Position c.$$$777$$$ ein constitutive donor (Position 895, welche gru¨n hinterlegt ist, entspricht
+diesen Austausch wird aus einem unclassified donor an Position c.$$$777$$$ ein constitutive donor (Position 895, welche grün hinterlegt ist, entspricht
 Position c.777). Das heißt, die Variante c.787A>T induziert alternatives Splicing. Quelle: Eigene Darstellung erstellt mittels Alternative Splice Site
 Predictor angelehnt an Wang et al. 2006.
 

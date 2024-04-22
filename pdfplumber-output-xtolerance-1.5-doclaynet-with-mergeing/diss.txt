@@ -68,7 +68,6 @@ ge natürlicher Intelligenz, vornehmlich die Verhaltensweisen von Nervenzellen, 
 mathematisch abstrahiert und somit für maschinelle Lernverfahren programmatisch an-
 wendbar. Die Möglichkeit, intelligentes Verhalten auf diese Weise maschinell berechenbar
 zu gestalten, eröffnet die Suche nach algorithmischen Lernverfahren und die Frage nach
-der Unterscheidung derer Ergebnisse von natürlicher, etwa menschlicher, Intelligenz [4].
 
 
 In seinem technischen Report zu intelligenten Maschinen beschreibt Turing diese Suche
@@ -135,7 +134,7 @@ stabiler zu gestalten und besser zu generalisieren. Im Metalernen werden keine N
 der Aufgaben verwendet, sondern lediglich deren Metadaten, um in diesen Merkmalen zu
 finden, welche der Übertragung von Wissen dienlich sind. Der in dieser Dissertation vor-
 gestellte neue Ansatz des Transfer Meta Learning nutzt Metalernverfahren, um optimale
-Transferlernprozesse abzuschätzen [5, 6]. Mit der wachsenden Popularität des maschinellen Lernens, beispielsweise des Lernens
+Transferlernprozesse abzuschätzen [5, 6].
 
 
 Mit der wachsenden Popularität des maschinellen Lernens, beispielsweise des Lernens
@@ -472,7 +471,7 @@ FOOTNOTE:6: x ← x0)
 8: else
 
 
-9: σ ←
+9: σ ← σ c
 
 
 10: end if
@@ -488,9 +487,6 @@ FOOTNOTE:1: Parameter µ, λ, η, w 1:µ, ..., w µ:µ, m, C
 
 
 2: while ¬ Abbruchkriterium do
-
-
-FOOTNOTE:3: for i ∈ {1, ..., λ} do
 
 
 2.2 Tiefe künstliche neuronale Netzwerke
@@ -646,12 +642,26 @@ Algorithmus 3 Fehlerrückführung
 
 
 Eingabewerte x, Zielwerte t
+
+
 Berechne schichtweise die Aktivierungen a und Ausgabe y i
+
+
 Berechne die Fehlerfunktion L(y, t)
-FOOTNOTE:Berechne die Ableitung ∆w ← dL 0 da0
+
+
+Berechne die Ableitung ∆w ← dL 0 da0
+
+
 for w ∈ W \ w do i 0
+
+
 Berechne die Ableitung ∆w ← dL = dL · dai i dwi dai dwi
+
+
 end for
+
+
 Ändere die synaptischen Gewichte w ← w η · ∆w i i i
 
 
@@ -719,7 +729,7 @@ jeweiligen synaptischen Gewichten w(1) der ersten Schicht, gefolgt von einer, in
 stetig differenzierbaren, Aktivierungsfunktion σ:
 
 
-Die konstanten Biaswerte 1 werden hierbei als Aktivierung des Neurons x in die Glei- 0
+Die konstanten Biaswerte 1 werden hierbei als Aktivierung des Neurons x in die Glei 0
 chung aufgenommen. Die Verlustfunktion L zwischen der Ausgabe y und den Zielwerten
 t kann, für die Architektur in Abbildung 2.3, vektoriell formuliert werden als:
 
@@ -775,6 +785,8 @@ und der Höhe m folgen. Hier berechnet sich die Anzahl der Neuronen in der entst
 nen Faltungsschicht als k · (N − n + 1) · (M − m + 1). Diese Faltungsschichten können
 aufeinander folgen, sodass in jeder Schicht neue Zusammenhänge auf Grundlage der von
 der Vorgängerschicht erkannten Merkmale gelernt werden können.
+
+
 Die rezeptiven Felder der ersten Schicht erfassen grundlegende Merkmale, welche die
 folgenden Schichten zu komplexeren Repräsentationen zusammensetzen. Das rezeptive
 Feld eines jeden Neurons einer Faltungsschicht erfasst jeweils eine Nachbarschaft aus der
@@ -787,7 +799,7 @@ Faltungsschicht als:
 
 Um die Komplexität dieser Berechnung zu reduzieren, kann der Filter mit einem
 Versatz aufgesetzt werden oder nur die Aktivierung des jeweils aktivsten Neurons einer
-Nachbarschaft weitergeführt werden. Der aktuelle Stand der Forschung kennt verschiedene Arten von Architekturen faltender
+Nachbarschaft weitergeführt werden.
 
 
 Der aktuelle Stand der Forschung kennt verschiedene Arten von Architekturen faltender
@@ -1035,7 +1047,7 @@ Kirkpatrick et al. zeigen die Umsetzung eines solchen Ansatzes für Klassifikati
 Verstärkungslernaufgaben, in welchem das Erlernen der für eine Aufgabe relevanten neu-
 ronalen Gewichte selektiv verlangsamt wird [23]. Die vorgestellte Optimierungsmethode
 beruht auf dem Konzept einer elastischen Konsolidierung der synaptischen Gewichte (E:
-Elastic Weight Consolidation, EWC), skizziert in Abbildung 2.6. Von essentieller Bedeutung ist die Fisherinformationsmatrix . Die Matrix ist positiv
+Elastic Weight Consolidation, EWC), skizziert in Abbildung 2.6.
 
 
 Von essentieller Bedeutung ist die Fisherinformationsmatrix F . Die Matrix F ist positiv
@@ -1127,7 +1139,7 @@ Aufgabe k bezüglich der Parameter der vorhergehenden Aufgaben optimiert. Abbild
 Eingabedaten X gleicher Dimensionalität.
 
 
-Dieses KonzeptXkann erweitert werden, sodass auch Transferleistungen zwischen Aufgaben
+Dieses Konzept kann erweitert werden, sodass auch Transferleistungen zwischen Aufgaben
 unterschiedlicher Eingabedatendimensionalität erlernt werden können [46]. In diesem
 Beitrag wird ein Reinforcement Learning System vorgestellt, welches Transferlernen
 anwendet, um die Unterschiede zwischen einem simulierten und einem realen Roboter
@@ -1435,12 +1447,10 @@ FOOTNOTE:1: procedure Q-Lernen(s t, a, s t+1, r, e)
 
 
 2: Parametervektor Θ
-
-
 FOOTNOTE:3: Lernrate η
 
 
-FOOTNOTE:4: Diskontfaktor γ
+4: Diskontfaktor γ
 
 
 FOOTNOTE:5: q 1 ← Ausgabe(Θ|s t)
@@ -1453,9 +1463,6 @@ FOOTNOTE:7: q Ziel(s t, a) ← r + γ(1 − e)q 2
 
 
 FOOTNOTE:8: L = Optimierungskriterium(q 1, q Ziel)
-
-
-FOOTNOTE:9: ∆Θ = dL dΘ
 
 
 10: Θ = Θ + η∆Θ
@@ -1502,13 +1509,16 @@ Wahrscheinlichkeitsverteilung p
 Vertrauensfaktor α
 
 
-FOOTNOTE:i ← i + 1 mod |M|
+FOOTNOTE:i ← i + 1 mod |M
 
 
 M[i] ← [s , s , a, r, e] t t+1
 
 
 P [i] ← max(P )
+
+
+p i ← PP[ Pi] [α i]α i
 
 
 end procedure
@@ -1724,6 +1734,15 @@ Ticks bereit, ausgehend von einem beliebigen Punkt t in der Handelshistorie X. D
 Zustand enthaltenen Preise und Volumina werden um ihre Mittelwerte bereinigt:
 
 
+Agent
+-Entscheidungsparameter: Neuronales Netzwerk
++entscheideAktion(Beobachtung: Tensor<double>): int
++lernen(Beobachtung: Tensor<double>, Belohnung: double, Aktion: int)
+
+
+inferieren()
+
+
 Abbildung 3.1: Ein Sequenzdiagramm zur Veranschaulichung des Ablaufs
 eines Lernschrittes in simulierten Marktumgebung. Die betei-
 ligten Objekte, also der Agent und die Umgebung, kommuni-
@@ -1805,9 +1824,6 @@ Eingabeschicht um eine weitere Dimension für die n zu korrelierenden Basiswerte
 Algorithmus 7 Simulierte Marktlogik
 
 
-FOOTNOTE:1: procedure Belohnungsfunktion R(Aktion a)
-
-
 FOOTNOTE:2: Take-Profit, Stop-Loss Faktoren d profit ≥ 0, d loss ≤ 0
 
 
@@ -1820,7 +1836,7 @@ FOOTNOTE:2: Take-Profit, Stop-Loss Faktoren d profit ≥ 0, d loss ≤ 0
 FOOTNOTE:5: r ← 0
 
 
-FOOTNOTE:6: if a = 0 then
+6: if a = 0 then
 
 
 7: t ← t+1
@@ -1829,13 +1845,10 @@ FOOTNOTE:6: if a = 0 then
 8: end if
 
 
-FOOTNOTE:9: if a = 1 then
+9: if a = 1 then
 
 
 FOOTNOTE:10: Eröffnungspreis ← X[t + l][Geldkurs]
-
-
-FOOTNOTE:11: while t ≤ len(X) − l ∧ take-profit ≥ r ≥ stop-loss do
 
 
 12: t ← t+1
@@ -1964,10 +1977,13 @@ den Ablauf des Q-Lernverfahrens in der simulierten Derivatemarktumgebung aus [7,
 Algorithmus 8 Training in der Marktsimulation
 
 
+1: procedure training
+
+
 2: Historische Marktdaten X
 
 
-FOOTNOTE:3: Priorisierter Erinnerungsspeicher M
+3: Priorisierter Erinnerungsspeicher M
 
 
 FOOTNOTE:4: Eingabesequenzlänge l
@@ -1977,11 +1993,5 @@ FOOTNOTE:5: Stapelgröße b
 
 
 FOOTNOTE:6: Strategie π(s|Θ)
-
-
-7: while Lernschritt < Anzahl Lernschritte do
-
-
-FOOTNOTE:8: t ← Zufälliger Zeitpunkt in der Markthistorie
 
 

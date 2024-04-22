@@ -1,19 +1,19 @@
 Dissertation
 
 
-Bistabilit¨at und Koh¨arenz in anisotropen Spindreiecken
+Bistabilität und Kohärenz in anisotropen Spindreiecken
 
 
 von
 
 
-Kilian Irl¨ander, M.Sc.
+Kilian Irländer, M.Sc.
 
 
 eingereicht an der
 
 
-Universit¨at Bielefeld
+Universität Bielefeld
 Fakultät für Physik
 
 
@@ -22,7 +22,7 @@ Doctor rerum naturalium
 (Dr. rer. nat.)
 
 
-am 16. M¨arz 2023
+am 16. März 2023
 
 
 1. Gutachter: Prof. Dr. Jürgen Schnack
@@ -34,165 +34,165 @@ am 16. M¨arz 2023
 Einleitung
 
 
-Anisotrope Spinsysteme werden seit Jahrzehnten als vielversprechende Kandidaten fu¨r
+Anisotrope Spinsysteme werden seit Jahrzehnten als vielversprechende Kandidaten für
 eine ganze Reihe von Anwendungen in der Informationstechnologie wie auch in der
-kryogenen Ku¨hlung und allgemein im Kontext von Spintronik untersucht [1]. Der Fokus
+kryogenen Kühlung und allgemein im Kontext von Spintronik untersucht [1]. Der Fokus
 der vorliegenden Arbeit liegt einerseits auf der theoretischen Untersuchung klassischer
-Informationsspeicherung in magnetischen Bin¨arbits unter der Beru¨cksichtigung von
-Phononen sowie andererseits auf der Analyse des Dekoh¨arenzverhaltens magnetischer
+Informationsspeicherung in magnetischen Binärbits unter der Berücksichtigung von
+Phononen sowie andererseits auf der Analyse des Dekohärenzverhaltens magnetischer
 Spin-Qubit-Kandidaten in einem Spinbad. In beiden Themenbereichen spielt die Idee
-der Isolierung eines Systems von seiner Umgebung sowie das Design von m¨oglichst
-robusten, gegenu¨ber St¨orungen insensitiven Systemen eine entscheidende Rolle.
+der Isolierung eines Systems von seiner Umgebung sowie das Design von möglichst
+robusten, gegenüber Störungen insensitiven Systemen eine entscheidende Rolle.
 
 
-Bistabilit¨at und klassische Informationsspeicherung
+Bistabilität und klassische Informationsspeicherung
 
 
-Einzelmoleku¨lmagnete (single molecule magnets, SMMs) gelten als besonders vielver-
-sprechende Kandidaten fu¨r magnetische Bits [2–5]. SMMs sind Moleku¨le, die, wenn sie
+Einzelmolekülmagnete (single molecule magnets, SMMs) gelten als besonders vielver-
+sprechende Kandidaten für magnetische Bits [2–5]. SMMs sind Moleküle, die, wenn sie
 ausreichend isoliert sind, ein magnetisches Zentrum mit einem stabilisierten magneti-
-schen Moment besitzen, welches auf elektronische oder Kernspins zuru¨ckzufu¨hren ist.
-Die in dieser Arbeit untersuchten Modell-Einzelmoleku¨lmagneten bestehen aus mehre-
+schen Moment besitzen, welches auf elektronische oder Kernspins zurückzuführen ist.
+Die in dieser Arbeit untersuchten Modell-Einzelmolekülmagneten bestehen aus mehre-
 ren im Heisenberg-Modell ferromagnetisch gekoppelten Spins unter dem Einfluss von
-Einzelionenanisotropien mit (ann¨ahernd) kollinearen leichten Magnetisierungsachsen
-in z-Richtung (o.B.d.A.). Hierbei repr¨asentieren die Spins das magnetische Zentrum,
-w¨ahrend die Einzelionenanisotropien die gemittelten Effekte der Liganden modellieren
+Einzelionenanisotropien mit (annähernd) kollinearen leichten Magnetisierungsachsen
+in z-Richtung (o.B.d.A.). Hierbei repräsentieren die Spins das magnetische Zentrum,
+während die Einzelionenanisotropien die gemittelten Effekte der Liganden modellieren
 sollen, die das magnetische Moment stabilisieren.
 
 
-In diesen Systemen existieren zwei Grundzust¨ande mit maximal positivem bzw. nega-
-tivem magnetischem Moment, welche durch h¨oherenergetische Zust¨ande mit kleineren
+In diesen Systemen existieren zwei Grundzustände mit maximal positivem bzw. nega-
+tivem magnetischem Moment, welche durch höherenergetische Zustände mit kleineren
 oder keinen magnetischen Momenten voneinander getrennt sind. Werden die Eigenener-
-gien dieser Zust¨ande gegen ihr jeweiliges magnetisches Moment aufgetragen, so bilden
-diese eine Parabel mit einer H¨ohe ∆E, die sogenannte Magnetisierungsbarriere vgl.
-hierzu die sp¨ater folgende Abb. 2.1. St¨orungstheoretisch betrachtet kann ein U¨bergang
-von einem der Grundzust¨ande in den anderen nur mit einem Energieaufwand von insge-
+gien dieser Zustände gegen ihr jeweiliges magnetisches Moment aufgetragen, so bilden
+diese eine Parabel mit einer Höhe ∆E, die sogenannte Magnetisierungsbarriere vgl.
+hierzu die später folgende Abb. 2.1. Störungstheoretisch betrachtet kann ein Übergang
+von einem der Grundzustände in den anderen nur mit einem Energieaufwand von insge-
 samt mindestens diesem ∆E geschehen, weshalb die beiden maximal magnetisierten
 Zustände in dieser Betrachtung als bistabil gelten.
 
 
-Dieses Bild ist jedoch unvollst¨andig, da hier die M¨oglichkeit des Magnetisierungs-
-tunnelns durch Landau-Zener-Prozesse nicht nativ beru¨cksichtigt wird. Diese treten
-auf, wenn die beiden maximal magnetisierten Zust¨ande des Einzelmoleku¨lmagneten bei
+Dieses Bild ist jedoch unvollständig, da hier die Möglichkeit des Magnetisierungs-
+tunnelns durch Landau-Zener-Prozesse nicht nativ berücksichtigt wird. Diese treten
+auf, wenn die beiden maximal magnetisierten Zustände des Einzelmolekülmagneten bei
 
 
-einem Magnetfeld B = 0 keine Eigenzust¨ande bilden und nicht entartet sind, sondern ei-
+einem Magnetfeld B = 0 keine Eigenzustände bilden und nicht entartet sind, sondern ei-
 ne verbotene Niveaukreuzung (avoided level crossing) vorliegt. Dies wiederum geschieht,
 wenn die im beschriebenen Modellsystem vorliegende S -Symmetrie gebrochen wird, z
-beispielsweise durch eine Schr¨agstellung einer oder mehrerer leichter Magnetisierungsach-
-sen. Dies kann jedoch in g¨angigen Modellen, die Phononen lediglich st¨orungstheoretisch
-behandeln, nur unzureichend beru¨cksichtigt werden.
+beispielsweise durch eine Schrägstellung einer oder mehrerer leichter Magnetisierungsach-
+sen. Dies kann jedoch in gängigen Modellen, die Phononen lediglich störungstheoretisch
+behandeln, nur unzureichend berücksichtigt werden.
 
 
 Der hier genutzte Ansatz ist es daher, den gemeinsamen Hilbertraum von Einzelmole-
-ku¨lmagnet und Phononen zu betrachten und somit beides auf der gleichen theoretischen
+külmagnet und Phononen zu betrachten und somit beides auf der gleichen theoretischen
 Stufe zu behandeln, um das angesprochene Magnetisierungstunneln theoretisch beob-
-achten und qualitativ untersuchen zu k¨onnen. Dabei wird kein konkretes, realistisches
-Moleku¨l simuliert, sondern lediglich fundamentale Ph¨anomene in einem so einfachen
+achten und qualitativ untersuchen zu können. Dabei wird kein konkretes, realistisches
+Molekül simuliert, sondern lediglich fundamentale Phänomene in einem so einfachen
 Modellsystem untersucht, dass sie in jedem realistischen System ebenfalls auftreten
-mu¨ssen, solange sie nicht durch einen anderen Effekt oder eine Symmetrie unterdru¨ckt
+müssen, solange sie nicht durch einen anderen Effekt oder eine Symmetrie unterdrückt
 werden.
 
 
 Es zeigt sich, dass Phononen in der Tat in der Lage sind, eine verbotene Niveaukreu-
-zung und damit die M¨oglichkeit eines Informationsverlustes durch Magnetisierungstun-
-neln hervorzurufen und dass es sehr schwierig bis unm¨oglich ist, Systeme vollst¨andig
-gegen dieses Ph¨anomen zu isolieren. Die Ergebnisse hierzu stammen im Wesentlichen
+zung und damit die Möglichkeit eines Informationsverlustes durch Magnetisierungstun-
+neln hervorzurufen und dass es sehr schwierig bis unmöglich ist, Systeme vollständig
+gegen dieses Phänomen zu isolieren. Die Ergebnisse hierzu stammen im Wesentlichen
 aus [6] und bauen auf den Ergebnissen aus der Masterarbeit [7] des Autors auf. Sie sind
 in Kap. 2 dargestellt.
 
 
-Eine leichte Ab¨anderung des Modells fu¨hrt auf einen interessanten Gerade-Ungerade-
-Effekt bezu¨glich der Spinquantenzahl s der im Einzelmoleku¨lmagnet enthaltenen Spins,
-welcher in einigen F¨allen die Bildung einer verbotenen Niveaukreuzung verhindert. Diese
+Eine leichte Abänderung des Modells führt auf einen interessanten Gerade-Ungerade-
+Effekt bezüglich der Spinquantenzahl s der im Einzelmolekülmagnet enthaltenen Spins,
+welcher in einigen Fällen die Bildung einer verbotenen Niveaukreuzung verhindert. Diese
 Ergebnisse sind veröffentlicht in [8] und werden in Kap. 3 gezeigt.
 
 
-Toroidales Moment und Dekoh¨arenz in magnetischen Spin-Qubits
+Toroidales Moment und Dekohärenz in magnetischen Spin-Qubits
 
 
-Der zweite, gr¨oßere, Themenkomplex dieser Arbeit umfasst die Untersuchung des
-Dekoh¨arenzverhaltens von Superpositionen in einem Spinsystem mithilfe unit¨arer Zeit-
+Der zweite, größere, Themenkomplex dieser Arbeit umfasst die Untersuchung des
+Dekohärenzverhaltens von Superpositionen in einem Spinsystem mithilfe unitärer Zeit-
 entwicklung, wiederum mit Heisenberg-Interaktion und Einzelionenanisotropie, unter
-Beru¨cksichtigung eines Spinbads. Insbesondere erfolgt eine kritische Auseinandersetzung
+Berücksichtigung eines Spinbads. Insbesondere erfolgt eine kritische Auseinandersetzung
 mit der Frage, ob das sogenannte toroidale Moment wie vielfach behauptet (siehe
-z.B. [9–11]) eine erstrebenswerte Eigenschaft einer solchen Superposition sein k¨onnte,
-um m¨oglichst lange Koh¨arenzzeiten zu erhalten.
+z.B. [9–11]) eine erstrebenswerte Eigenschaft einer solchen Superposition sein könnte,
+um möglichst lange Kohärenzzeiten zu erhalten.
 
 
 Zu diesem Zweck dient ein Spin-Dreieck als Beispielsystem, dessen Parameter sys-
-tematisch variiert werden. Statische Eigenschaften und Dekoh¨arenzverhalten einiger
+tematisch variiert werden. Statische Eigenschaften und Dekohärenzverhalten einiger
 
 
-Superpositionen aus den Eigenzust¨anden der niederenergetischen Spektren der so er-
+Superpositionen aus den Eigenzuständen der niederenergetischen Spektren der so er-
 zeugten Systeme werden untersucht und verglichen. Dabei ist vor allem das Konzept von
 clock transitions entscheidend [12]. Eine clock transition liegt vor, wenn das magnetische
-Moment der beiden an der Superposition beteiligten Zust¨ande etwa gleich groß ist,
-d.h. die Frequenz des U¨ bergangs unter St¨orung durch kleine homogene Magnetfelder
-ann¨ahernd konstant bleibt. Es wird gezeigt, dass die clock transition-Eigenschaft ei-
-ner Superposition eine notwendige, wenn auch nicht hinreichende Bedingung fu¨r eine
+Moment der beiden an der Superposition beteiligten Zustände etwa gleich groß ist,
+d.h. die Frequenz des Ü bergangs unter Störung durch kleine homogene Magnetfelder
+annähernd konstant bleibt. Es wird gezeigt, dass die clock transition-Eigenschaft ei-
+ner Superposition eine notwendige, wenn auch nicht hinreichende Bedingung für eine
 signifikant erhöhte Kohärenzzeit ist.
 
 
-Die oben genannten systematischen Untersuchungen fu¨hren insgesamt zur Erkenntnis,
+Die oben genannten systematischen Untersuchungen führen insgesamt zur Erkenntnis,
 dass das toroidale Moment keineswegs ein sinnvolles Kriterium im Kontext der Maximie-
-rung der Koh¨arenzzeit ist, da beides nicht oder nur sehr schwach korreliert ist. Daneben
-werden Abh¨angigkeiten von anderen Eigenschaften der betrachteten Superpositionen
+rung der Kohärenzzeit ist, da beides nicht oder nur sehr schwach korreliert ist. Daneben
+werden Abhängigkeiten von anderen Eigenschaften der betrachteten Superpositionen
 bzw. der Systemparameter untersucht. Die Ergebnisse sind in Kap. 4 dargestellt und
-basieren sowohl auf Erkenntnissen, die in Ku¨rze in [13] ver¨offentlicht werden, wie auch
+basieren sowohl auf Erkenntnissen, die in Kürze in [13] veröffentlicht werden, wie auch
 auf neuen Untersuchungen.
 
 
 1. Einheiten, Basiskodierung und Hamilton-Operator
 
 
-1.1. Natu¨rliche Einheiten und Konstanten
+1.1. Natürliche Einheiten und Konstanten
 
 
 In dieser Arbeit werden (cid:126)=k =1 gesetzt. Somit kann Kelvin (K) als Referenzeinheit B
-gew¨ahlt werden und die im Weiteren verwendeten Gr¨oßen haben die in nachfolgender
+gewählt werden und die im Weiteren verwendeten Größen haben die in nachfolgender
 Tabelle dargestellten Einheiten.
 
 
-Tab. 1.1: Austauschkopplung J , Anisotropiest¨arken D , Oszillationsfrequenzen ω , Spin- i,j i i
+Tab. 1.1: Austauschkopplung J , Anisotropiestärken D , Oszillationsfrequenzen ω , Spin- i,j i i
 Phonon-Kopplungskonstanten αK, modifizierte Spin-Phonon-Kopplungskonstanten α , Aus- i i
 lenkungen x , magnetische Flussdichte B (im Folgenden einfach als Magnetfeld bezeichnet), Zeit i
-t, magnetisches Moment MB, toroidales Moment τ und Dipol-Dipol-Wechselwirkungsst¨arken z
+t, magnetisches Moment MB, toroidales Moment τ und Dipol-Dipol-Wechselwirkungsstärken z
 A -A . 1 3
 
 
-Einheiten werden im Weiteren weggelassen und sind hier nur aus Gru¨nden der Vollst¨an-
+Einheiten werden im Weiteren weggelassen und sind hier nur aus Gründen der Vollstän-
 digkeit aufgeführt.
 
 
 1.2. Basiskodierung
 
 
-Alle untersuchten Systeme bestehen zumindest zum Teil aus miteinander u¨ber eine
+Alle untersuchten Systeme bestehen zumindest zum Teil aus miteinander über eine
 Heisenberg-Wechselwirkung gekoppelte Spins unter dem Einfluss einer Einzelionenani-
 sotropie sowie einem externen Magnetfeld. Des Weiteren wird auch der Einfluss von
-Phononen sowie der eines u¨ber Dipol-Dipol-Wechselwirkungen angekoppelten Spinbads
-auf das System betrachtet. Dementsprechend ist fu¨r jedes Modellsystem eine Anpassung
+Phononen sowie der eines über Dipol-Dipol-Wechselwirkungen angekoppelten Spinbads
+auf das System betrachtet. Dementsprechend ist für jedes Modellsystem eine Anpassung
 der Basiskodierung notwendig und der Hamilton-Operator besteht je nach System
 aus verschiedenen Termen, die im folgenden Unterkapitel sukzessive vorgestellt und
 motiviert werden.
 
 
-Als Basis wird stets eine Produktbasis gew¨ahlt, wobei die ersten k Eintr¨age aus Zu-
-st¨anden der s -Basen der k einzelnen Spins des untersuchten Systems zusammengesetzt z
-sind und die letzten l die St¨orung des Systems beschreiben. Im Falle eines Spinbads sind
-dies also wiederum Zust¨ande aus der s -Basis der Einzelspins, bei der Beru¨cksichtigung z
-von Phononen handelt es sich um Eigenzust¨ande von l harmonischen Oszillatoren. Da
+Als Basis wird stets eine Produktbasis gewählt, wobei die ersten k Einträge aus Zu-
+ständen der s -Basen der k einzelnen Spins des untersuchten Systems zusammengesetzt z
+sind und die letzten l die Störung des Systems beschreiben. Im Falle eines Spinbads sind
+dies also wiederum Zustände aus der s -Basis der Einzelspins, bei der Berücksichtigung z
+von Phononen handelt es sich um Eigenzustände von l harmonischen Oszillatoren. Da
 allerdings alle in dieser Arbeit betrachteten Modelle ein System mit genau drei Spins
 
 
 beinhalten (mit einer einzigen Ausnahme zu Illustrationszwecken), wird die Anzahl
-dieser fest auf k = 3 gesetzt. Dies fu¨hrt insgesamt auf die Basis
+dieser fest auf k = 3 gesetzt. Dies führt insgesamt auf die Basis
 
 
 Um das Auftreten negativer Zahlen im Programmcode zu vermeiden, wird a = s i i
 −
-m i 1, 2, 3 gew¨ahlt, womit fu¨r die im folgenden verwendete Basis B folgt i ∀ ∈ { }
+m i 1, 2, 3 gewählt, womit für die im folgenden verwendete Basis B folgt i ∀ ∈ { }
 
 
 Es ist nun trivial, mit den Definitionen
@@ -212,8 +212,8 @@ die Wirkungen der entsprechenden Leiteroperatoren.
 1.3. Terme der Hamilton-Operatoren
 
 
-Im Sinne der U¨ bersichtlichkeit werden alle Terme der Hamilton-Operatoren der be-
-trachteten Systeme in diesem Kapitel zur sp¨ateren Referenzierung vorab definiert.
+Im Sinne der Ü bersichtlichkeit werden alle Terme der Hamilton-Operatoren der be-
+trachteten Systeme in diesem Kapitel zur späteren Referenzierung vorab definiert.
 Da alle Systeme unter anderem drei als gleichseitiges Dreieck angeordnete Spins mit
 Einzelionenanisotropie enthalten, wird dieser Spezialfall betrachtet.
 
@@ -225,11 +225,11 @@ Das Heisenberg-Modell [14] quantifiziert die Wechselwirkungsenergie von (anti-) 
 magnetisch gekoppelten Spins an festen Gitterplätzen durch
 
 
-J repr¨asentiert hier die Austauschkopplung zwischen den Spins (cid:126)s und (cid:126)s . In dieser i,j ∼i ∼j
+J repräsentiert hier die Austauschkopplung zwischen den Spins (cid:126)s und (cid:126)s . In dieser i,j ∼i ∼j
 Arbeit gilt stets
 
 
-Explizite Berechnung fu¨r drei Spins liefert
+Explizite Berechnung für drei Spins liefert
 
 
 insgesamt
@@ -238,38 +238,38 @@ insgesamt
 1.3.2. Einzelionenanisotropie
 
 
-Die Spin-Bahn-Kopplung und Einflu¨sse des Kristallfeldes k¨onnen in erster Ordnung
+Die Spin-Bahn-Kopplung und Einflüsse des Kristallfeldes können in erster Ordnung
 durch quadratische Spin-Terme der Form
 
 
-modelliert werden [15], was zu einer Nullfeldaufspaltung fu¨hrt. Deren St¨arke sowie
-Informationen u¨ber Vorzugsrichtungen sind im Anisotropietensor kodiert. D
+modelliert werden [15], was zu einer Nullfeldaufspaltung führt. Deren Stärke sowie
+Informationen über Vorzugsrichtungen sind im Anisotropietensor kodiert. D
 
 
-In einem lokalen Koordinatensystem eines einzelnen Spins l¨asst sich Gleichung (1.10)
+In einem lokalen Koordinatensystem eines einzelnen Spins lässt sDich Gleichung (1.10)
 durch Hauptachsentransformation und unter Nutzung von Gl. (1.8) umschreiben zu
 
 
-mit i 1, 2, 3 , da wiederum drei Spins betrachtet werden. Es ist stets m¨oglich, die
+mit i 1, 2, 3 , da wiederum drei Spins betrachtet werden. Es ist stets möglich, die
 ∈ { }
-Eigenwerte von durch D, E und E auszudru¨cken, da durch Verschiebung der
+Eigenwerte von durch D, E und E auszudrücken, da durch Verschiebung der
 D −
-Energieskala einer der Eigenwerte stets frei w¨ahlbar ist, was die Anzahl unabh¨angiger
+Energieskala einer der Eigenwerte stets frei wählbar ist, was die Anzahl unabhängiger
 Eigenwerte auf zwei reduziert.
 
 
-In dieser Arbeit sei die St¨arke der Anisotropie stets fu¨r alle Systemspins gleich, sodass
-sich Gl. (1.12) schreiben l¨asst als
+In dieser Arbeit sei die Stärke der Anisotropie stets für alle Systemspins gleich, sodass
+sich Gl. (1.12) schreiben lässt als
 
 
 In Kap. 2 und 3 werden an dieser Stelle durch Modifizierungen des D- bzw. E-Term
-zus¨atzlich Phononen im Modell beru¨cksichtigt.
+zusätzlich Phononen im Modell berücksichtigt.
 
 
 1.3.3. Harmonischer Oszillator
 
 
-Die Energie von drei (einer pro Systemspin) unabh¨angigen harmonischen Oszillatoren
+Die Energie von drei (einer pro Systemspin) unabhängigen harmonischen Oszillatoren
 beträgt
 
 
@@ -280,7 +280,7 @@ mit den Phononenfrequenzen ω , i 1, 2, 3 , und den Leiteroperatoren aus Gl. (1.
 
 
 Eine Dipol-Dipol-Wechselwirkung zwischen verschiedenen Spins wird lediglich in Kap.
-4 beru¨cksichtigt und haupts¨achlich dazu genutzt, die St¨orung eines Systems durch ein
+4 berücksichtigt und hauptsächlich dazu genutzt, die Störung eines Systems durch ein
 
 
 Spinbad zu modellieren. Allgemein ist die Energie dieser Wechselwirkung definiert durch
@@ -289,95 +289,95 @@ Spinbad zu modellieren. Allgemein ist die Energie dieser Wechselwirkung definier
 Dabei gilt
 
 
-FOOTNOTE:mit der magnetischen Feldkonstante µ sowie den gyromagnetischen Verh¨altnissen g µ 0 i i
-und g µ fu¨r die beiden an der Wechselwirkung beteiligten Spins. Die gyromagnetischen j j
-Verh¨altnisse werden jedoch nicht spezifiziert; in dieser Arbeit wird A in den auftre- ij
-tenden Dipol-Dipol-Wechselwirkungstermen lediglich als variabler Parameter fu¨r die
-Interaktionsst¨arke verwendet. Zudem nimmt A stets einen festen Wert fu¨r alle Terme ij
-in der jeweiligen Summe an, d.h. es gilt fu¨r jede Summe A = A i, j mit verschiedenen ij
+FOOTNOTE:mit der magnetischen Feldkonstante µ sowie den gyromagnetischen Verhältnissen g µ 0 i i
+und g µ für die beiden an der Wechselwirkung beteiligten Spins. Die gyromagnetischen j j
+Verhältnisse werden jedoch nicht spezifiziert; in dieser Arbeit wird A in den auftre- ij
+tenden Dipol-Dipol-Wechselwirkungstermen lediglich als variabler Parameter für die
+Interaktionsstärke verwendet. Zudem nimmt A stets einen festen Wert für alle Terme ij
+in der jeweiligen Summe an, d.h. es gilt für jede Summe A = A i, j mit verschiedenen ij
 ∀
-Werten fu¨r A abh¨angig davon, welche Spins miteinander interagieren.
+Werten für A abhängig davon, welche Spins miteinander interagieren.
 
 
 1.3.5. Zeeman-Term
 
 
 Der Zeeman-Term modelliert den Einfluss eines externen Magnetfelds auf ein Spinsystem.
-Hier wird der gyromagnetische Faktor zu g = 2 gew¨ahlt. Es folgt also, wiederum fu¨r
+Hier wird der gyromagnetische Faktor zu g = 2 gewählt. Es folgt also, wiederum für
 drei Systemspins,
 
 
 und mit Gl. (1.8)
 
 
-2. St¨orung der Bistabilit¨at von Einzelmoleku¨lmagneten
+2. Störung der Bistabilität von Einzelmolekülmagneten
 durch Spin-Phonon-Wechselwirkung
 
 
-Einzelmoleku¨lmagnete sind, wie bereits in der Einleitung angerissen, Moleku¨le mit einem
-magnetischen Zentrum. Sie k¨onnen magnetische Materialien bilden, in denen sie eine
+Einzelmolekülmagnete sind, wie bereits in der Einleitung angerissen, Moleküle mit einem
+magnetischen Zentrum. Sie können magnetische Materialien bilden, in denen sie eine
 magnetische Hysterese zeigen, die ausschließlich molekularer Natur ist. Betrachtet man
-die niedrigsten Energieniveaus eines solchen Systems in Abh¨angigkeit von den jeweiligen
+die niedrigsten Energieniveaus eines solchen Systems in Abhängigkeit von den jeweiligen
 magnetischen Momenten, so bilden diese eine sogenannte Magnetisierungsparabel mit
 einer Energiebarriere ∆E, definiert als die Energiedifferenz zwischen dem Grundzustand
 und dem mittleren, unmagnetisierten Zustand der Magnetisierungsparabel, siehe Abb.
 2.1.
 
 
-Abb. 2.1: Skizze der tiefliegenden Energieniveaus (rot) eines Einzelmoleku¨lmagneten mit
+Abb. 2.1: Skizze der tiefliegenden Energieniveaus (rot) eines Einzelmolekülmagneten mit
 ganzzahligem Gesamtspin, aufgetragen gegen die jeweiligen magnetischen Momente. Bei
-bestehender S -Symmetrie zeigen die gru¨nen Pfeile den st¨orungstheoretisch einzigen Weg an, z
-wie das System von einem in den anderen maximal magnetisierten Zustand u¨bergehen kann,
-vgl. [16]. Im Falle des Brechens der S -Symmetrie sind die Zust¨ande links und rechts nicht l¨anger z
+bestehender S -Symmetrie zeigen die grünen Pfeile den störungstheoretisch einzigen Weg an, z
+wie das System von einem in den anderen maximal magnetisierten Zustand übergehen kann,
+vgl. [16]. Im Falle des Brechens der S -Symmetrie sind die Zustände links und rechts nicht länger z
 entartet und es kommt zu einer Tunnelaufspaltung bzw. einer verbotenen Niveaukreuzung bei
-B = 0, wodurch Magnetisierungstunneln durch Landau-Zener-U¨berg¨ange m¨oglich wird (blaue
+B = 0, wodurch Magnetisierungstunneln durch Landau-Zener-Übergänge möglich wird (blaue
 Pfeile).
 
 
-Die beiden Zust¨ande mit maximalem positivem bzw. negativem magnetischem Moment
-in z-Richtung k¨onnen als Speicherzust¨ande analog zu einem klassischen Bit auf einer
+Die beiden Zustände mit maximalem positivem bzw. negativem magnetischem Moment
+in z-Richtung können als Speicherzustände analog zu einem klassischen Bit auf einer
 
 
 Festplatte dienen und sind durch die Energiebarriere energetisch voneinander isoliert.
 FOOTNOTE:Seit der Entdeckung dieses Verhaltens in Mn -Azetat [17–23] wird dies als vielverspre- 12
-chende M¨oglichkeit zur Entwicklung von ressourcen- und platzsparenden magnetischen
+chende Möglichkeit zur Entwicklung von ressourcen- und platzsparenden magnetischen
 Speichern gehandelt.
 
 
-Die Isolierung des Systems gegen St¨orungen, die zu Spin-Flips und damit zum Ver-
-lust der gespeicherten Information fu¨hren k¨onnen, stellt das entscheidende Problem
-dieser vorgeschlagenen Technologie dar. Diese k¨onnen beispielsweise durch Magnetisie-
-rungstunneln oder durch von Phononen im Kristallgitter oder im Moleku¨l vermittelte
-thermische Anregungen (z.B. Orbach-Relaxationen) u¨ber die Energiebarriere verursacht
+Die Isolierung des Systems gegen Störungen, die zu Spin-Flips und damit zum Ver-
+lust der gespeicherten Information führen können, stellt das entscheidende Problem
+dieser vorgeschlagenen Technologie dar. Diese können beispielsweise durch Magnetisie-
+rungstunneln oder durch von Phononen im Kristallgitter oder im Molekül vermittelte
+thermische Anregungen (z.B. Orbach-Relaxationen) über die Energiebarriere verursacht
 werden [16, 24–34]. In dieser Arbeit wird ebenfalls der Effekt von Phononen betrachtet,
-jedoch nicht im Rahmen von Relaxationsprozessen u¨ber die Energiebarriere, sondern als
-Ursache fu¨r Tunnelaufspaltungen und damit von Magnetisierungstunneln durch Landau-
-Zener-U¨berg¨ange [35,36]. Um dies leisten zu k¨onnen, werden der Gesamthilbertraum
-des den Einzelmoleku¨lmagneten modellierenden Spinsystems und der die Phononen
-modellierenden harmonischen Oszillatoren, wie in Kap. 1 erl¨autert, betrachtet und somit
+jedoch nicht im Rahmen von Relaxationsprozessen über die Energiebarriere, sondern als
+Ursache für Tunnelaufspaltungen und damit von Magnetisierungstunneln durch Landau-
+Zener-Übergänge [35,36]. Um dies leisten zu können, werden der Gesamthilbertraum
+des den Einzelmolekülmagneten modellierenden Spinsystems und der die Phononen
+modellierenden harmonischen Oszillatoren, wie in Kap. 1 erläutert, betrachtet und somit
 Spins und Phononen auf derselben theoretischen Stufe untersucht.
 
 
 Das in diesem Kapitel verwendete Modellsystem ist in Abb. 2.2 dargestellt. Es
 besteht aus drei ferromagnetisch (J > 0) gekoppelten Spins mit s = 1 und jeweils i
 einer Einzelionenanisotropie mit leichter Magnetisierungsachse (D < 0) unter dem
-Einfluss eines externen Magnetfeldes in globaler z-Richtung. Zur Beru¨cksichtigung der
-Phononen muss dem Hamilton-Operator außerdem ein Term fu¨r die harmonischen
-Oszillatoren hinzuaddiert und der Term fu¨r die Einzelionenanisotropie wie in Kap. 2.2
+Einfluss eines externen Magnetfeldes in globaler z-Richtung. Zur Berücksichtigung der
+Phononen muss dem Hamilton-Operator außerdem ein Term für die harmonischen
+Oszillatoren hinzuaddiert und der Term für die Einzelionenanisotropie wie in Kap. 2.2
 und 2.3 beschrieben angepasst werden. Wie dort ebenfalls dargestellt, sind die leichten
 Magnetisierungsachsen außerdem um die festen Winkel ϕ und θ = θ i 1, 2, 3 i i,0 0
 ∀ ∈ { }
 verkippt. Zur Vereinfachung ist in Tab. (2.1) eine Standardkonfiguration angegeben, die
-fu¨r alle Berechnungen in diesem Kapitel genutzt wird.
+für alle Berechnungen in diesem Kapitel genutzt wird.
 
 
 Abb. 2.2: Schematische Darstellung des unter-
 suchten Systems bestehend aus drei ferromagne-
 tisch (blau) gekoppelten Spins s = 1 (rot) mit i
-Einzelionenanisotropien (gelbe St¨abe). Letzte-
-re sind um die fest gew¨ahlten Azimutwinkel
+Einzelionenanisotropien (gelbe Stäbe). Letzte-
+re sind um die fest gewählten Azimutwinkel
 ϕ = 0◦, 120◦, 240◦ gedreht, sodass sie bei Be- i
-ru¨cksichtigung eines Polarwinkels θ um die je- i
+rücksichtigung eines Polarwinkels θ um die je- i
 weilige Radialachse geneigt sind (gelbe Pfeile).
 Der Einfluss der Phononen wird im Folgenden
 durch monofrequente Schwingungen der leich-
@@ -389,78 +389,78 @@ Der gesamte Hamilton-Operator dieses ersten Modellsystems lautet mit den Definit
 der einzelnen Terme aus Kap. 1.3
 
 
-2.1. Bistabilit¨at im Spinsystem ohne Phononen
+2.1. Bistabilität im Spinsystem ohne Phononen
 
 
 Ausgehend von Gl. (1.13) wird im Folgenden lediglich die leichte Magnetisierungsachse
 entlang der lokalen z-Richtung betrachtet, also E = 0 gesetzt. Ohne Phononen sind
 damit alle leichten Magnetisierungsachsen kollinear und dadurch lokale und globale
-z-Achsen identisch. Dies fu¨hrt fu¨r jede der drei Anisotropieterme auf
+z-Achsen identisch. Dies führt für jede der drei Anisotropieterme auf
 
 
 mit i 1, 2, 3 . ∈ { }
 
 
-Die∈s b{eschre}ibt den perfekten“ Einzelmoleku¨lmagneten mit kollinearen Anisotropie- ”
+Die∈s b{eschre}ibt den perfekten“ Einzelmolekülmagneten mit kollinearen Anisotropie- ”
 achsen und S -Symmetrie, resultierend in einer theoretisch perfekten Hysterese, d.h. es z
-k¨onnen niemals Spin-Flips auftreten, da in dieser vereinfachten Darstellung keinerlei
-Mechanismus zum U¨bergang eines Zustands in einen anderen vorliegt.
+können niemals Spin-Flips auftreten, da in dieser vereinfachten Darstellung keinerlei
+Mechanismus zum Übergang eines Zustands in einen anderen vorliegt.
 
 
-Die maximal magnetisierten Zust¨ande in Abb. 2.1 sind unter Beru¨cksichtigung des in
+Die maximal magnetisierten Zustände in Abb. 2.1 sind unter Berücksichtigung des in
 dieser Arbeit stets eingeschalteten kleinen Magnetfelds B beinahe entartet (entartet z
-fu¨r B = 0), energetisch stabil und durch die anderen parabelf¨ormig angeordneten
-Zust¨ande voneinander getrennt. Somit existieren im System zwei stabile Zust¨ande, die
-durch instabile Zust¨ande voneinander getrennt sind, was die u¨bliche Definition von
+für B = 0), energetisch stabil und durch die anderen parabelförmig angeordneten
+Zustände voneinander getrennt. Somit existieren im System zwei stabile Zustände, die
+durch instabile Zustände voneinander getrennt sind, was die übliche Definition von
 
 
-Bistabilit¨at erfu¨llt. So k¨onnte das System in einem der beiden maximal magnetisierten
-Zust¨ande initialisiert werden, was wie oben erw¨ahnt analog zur Speicherung einer
-bin¨aren Information ist.
+Bistabilität erfüllt. So könnte das System in einem der beiden maximal magnetisierten
+Zustände initialisiert werden, was wie oben erwähnt analog zur Speicherung einer
+binären Information ist.
 
 
-Die magnetischen Momente MB unter dem Einfluss eines B-Feldes in z-Richtung fu¨r ν
-einen Energieeigenzustand ν mit Energie E k¨onnen berechnet werden mit ν | (cid:105)
+Die magnetischen Momente MB unter dem Einfluss eines B-Feldes in z-Richtung für ν
+einen Energieeigenzustand ν mit Energie E können berechnet werden mit ν | (cid:105)
 
 
-FOOTNOTE:wobei (m + m + m ) die Summe der magnetischen Quantenzahlen bezu¨glich des 1 2 3 k
+FOOTNOTE:wobei (m + m + m ) die Summe der magnetischen Quantenzahlen bezüglich des 1 2 3 k
 κ-ten Basisvektors der Produktbasis ist.
 
 
-Dieses Modell beschreibt fu¨r sich genommen ein sehr stabiles klassisches Bit, da
+Dieses Modell beschreibt für sich genommen ein sehr stabiles klassisches Bit, da
 die enthaltene Information lediglich durch thermische Relaxation verloren gehen kann,
 
 
-was bei ausreichend geringer Temperatur leicht zu unterdru¨cken ist. Insbesondere sind
-keine Landau-Zener-U¨berg¨ange m¨oglich, da der Hamilton-Operator des Systems eine S - z
+was bei ausreichend geringer Temperatur leicht zu unterdrücken ist. Insbesondere sind
+keine Landau-Zener-Übergänge möglich, da der Hamilton-Operator des Systems eine S - z
 Symmetrie besitzt, weshalb bei B = 0 wie in Abb. 2.3 zu sehen echte Niveaukreuzungen
 vorliegen.
 
 
 Es existieren jedoch auch Modelle, in denen dieses System als Ausgangspunkt genom-
-men wird, um dann den Einfluss von Phononen auf die Bistabilit¨at st¨orungstheoretisch
+men wird, um dann den Einfluss von Phononen auf die Bistabilität störungstheoretisch
 zu betrachten, beispielsweise Spin-Flips durch Orbach-Relaxation [34, 37, 38]. In dieser
 Betrachtungsweise kann jedoch der in dieser Arbeit beobachtete Effekt des phononenin-
-duzierten Magnetisierungstunnelns (vgl. Kap. 2.4) nicht beru¨cksichtigt werden. Dies
-wird erst durch die Betrachtung des gemeinsamen Spin-Phonon-Hilbertraums m¨oglich.
+duzierten Magnetisierungstunnelns (vgl. Kap. 2.4) nicht berücksichtigt werden. Dies
+wird erst durch die Betrachtung des gemeinsamen Spin-Phonon-Hilbertraums möglich.
 Der theoretische Hintergrund hierfür wird in den folgenden Unterkapiteln erläutert.
 
 
-2.2. Konkrete Berechnung des Anisotropieterms fu¨r
+2.2. Konkrete Berechnung des Anisotropieterms für
 nicht-kollineare leichte Magnetisierungsachsen
 
 
-Sollen sp¨ater Schwingungen der Einzelionenanisotropien betrachtet werden k¨onnen,
-bestehen fu¨r die Modellierung grunds¨atzlich zwei M¨oglichkeiten. Einerseits kann E = 0
-beibehalten und die Phononen als Oszillationen der leichten Magnetisierungsachse u¨ber
+Sollen später Schwingungen der Einzelionenanisotropien betrachtet werden können,
+bestehen für die Modellierung grundsätzlich zwei Möglichkeiten. Einerseits kann E = 0
+beibehalten und die Phononen als Oszillationen der leichten Magnetisierungsachse über
 den Parameter D modelliert werden, andererseits ist eine Kodierung der Schwingungen
-im E-Term m¨oglich. Letzteres wird in Kap. 3 betrachtet; in diesem Kapitel wird der
-D-Term modifiziert, es muss also eine Beschreibung der nicht l¨anger parallelen lokalen
+im E-Term möglich. Letzteres wird in Kap. 3 betrachtet; in diesem Kapitel wird der
+D-Term modifiziert, es muss also eine Beschreibung der nicht länger parallelen lokalen
 z-Achsen in einem gemeinsamen Koordinatensystem gefunden werden. Um die Terme
-aus Gl. (2.2) in einem solchen globalen Koordinatensystem ausdru¨cken zu k¨onnen,
-dessen z-Achse um einen Azimutwinkel ϕ und einen Polarwinkel θ gegenu¨ber den i i
+aus Gl. (2.2) in einem solchen globalen Koordinatensystem ausdrücken zu können,
+dessen z-Achse um einen Azimutwinkel ϕ und einen Polarwinkel θ gegenüber den i i
 einzelnen lokalen z-Achsen verkippt ist, wird eine Transformation unter Zuhilfenahme
-von Kugelkoordinaten durchgefu¨hrt. Es ergibt sich fu¨r jeden der drei Spins
+von Kugelkoordinaten durchgeführt. Es ergibt sich für jeden der drei Spins
 
 
 mit
@@ -469,17 +469,17 @@ mit
 und ϕ 0◦, 120◦, 240◦ . i ∈ { }
 
 
-Nach∈A{usmultipliziere}n sowie unter Benutzung von Gl. (1.8) und den Abku¨rzungen
+Nach∈A{usmultipliziere}n sowie unter Benutzung von Gl. (1.8) und den Abkürzungen
 
 
 folgt insgesamt
 
 
-Diese Darstellung des gesamten Anisotropie-Hamiltonoperators ohne Phononen enth¨alt
+Diese Darstellung des gesamten Anisotropie-Hamiltonoperators ohne Phononen enthält
 wiederum nur Operatoren, deren Wirkung auf eine Produktbasis bekannt ist.
 
 
-2.3. Anpassung des Anisotropieterms zur Beru¨cksichtigung von
+2.3. Anpassung des Anisotropieterms zur Berücksichtigung von
 Phononen
 
 
@@ -488,16 +488,16 @@ chenden Modell lediglich harmonische Oszillatoren, die an die leichten Anisotrop
 koppeln. Die Motivation hinter dieser Kopplung ist, dass eine Schwingung des Kris-
 tallgitters, i.e. ein Phonon, sich auf die Anisotropien auswirken sollte, da diese ihren
 Ursprung im Kristallfeld haben. Die drei Anisotropieachsen schwingen hier harmonisch
-mit einer konstanten Frequenz ω um die Polarwinkel θ . Da es sich um r¨aumliche i i
+mit einer konstanten Frequenz ω um die Polarwinkel θ . Da es sich um räumliche i i
 Auslenkungen handelt, werden diese unter Einbeziehung des verallgemeinerten Ortsope-
-rators ξ beschrieben. Es lassen sich so neue Winkel-Operatoren definieren; fu¨r kleine ∼
-Auslenkungen ergibt sich bei linearer N¨aherung der Auslenkung aus der Ruhelage θ i,0
+rators ξ beschrieben. Es lassen sich so neue Winkel-Operatoren definieren; für kleine ∼
+Auslenkungen ergibt sich bei linearer Näherung der Auslenkung aus der Ruhelage θ i,0
 
 
-Die Masse wird in den Kopplungskonstanten αK absorbiert, die insgesamt die St¨arke i
-der Spin-Phonon-Kopplungen angeben. Die θ k¨onnen nun in Gl. (2.7) durch die so i
+Die Masse wird in den Kopplungskonstanten αK absorbiert, die insgesamt die Stärke i
+der Spin-Phonon-Kopplungen angeben. Die θ können nun in Gl. (2.7) durch die so i
 definierten θ ersetzt werden. Deren Wirkung auf die Produktbasis aus Spins und ∼i
-Eigenzust¨anden des harmonischen Oszillators, siehe Gl. (1.2), sind nicht unmittelbar
+Eigenzuständen des harmonischen Oszillators, siehe Gl. (1.2), sind nicht unmittelbar
 bekannt, weshalb im Folgenden ein Basiswechsel in den Ortsraum durchgeführt wird.
 
 
@@ -506,7 +506,7 @@ Die Wirkung jeder Funktion f(θ ) aus Gl. (2.7) auf die Ortsbasis ξ ist bekannt
 
 
 Im Folgenden wird der Index i an den Winkeln und Kopplungskonstanten zwecks
-besserer Lesbarkeit weggelassen; alle Rechnungen gelten analog fu¨r alle drei Spins. Es
+besserer Lesbarkeit weggelassen; alle Rechnungen gelten analog für alle drei Spins. Es
 gilt nun mit n , n(cid:48) aus der Produktbasis B | (cid:105) | (cid:105)
 
 
@@ -522,16 +522,16 @@ Kopplungskonstante
 ergibt sich insgesamt
 
 
-Es ist nun zwar m¨oglich, jedes Matrixelement von H zu berechnen, allerdings ist ∼ Anisotropie
+Es ist nun zwar möglich, jedes Matrixelement von H zu berechnen, allerdings ist ∼ Anisotropie
 der Hilbertraum eines harmonischen Oszillators bekanntermaßen unendlichdimensional.
-Um trotzdem eine endlichdimensionale Hamiltonmatrix aufstellen zu k¨onnen, wird ein
-cut-off der Phononenhilbertr¨aume bei n gesetzt, sodass gilt max
+Um trotzdem eine endlichdimensionale Hamiltonmatrix aufstellen zu können, wird ein
+cut-off der Phononenhilberträume bei n gesetzt, sodass gilt max
 
 
 Umfangreiche numerische Analysen von Systemen mit verschiedenen n zeigen, dass max
-sogar die Wahl n = 1 m¨oglich ist, da sich die Ergebnisse mit gr¨oßeren Werten fu¨r max
-n quantitativ kaum ¨andern und qualitativ die in dieser Arbeit zu beobachtenden max
-Ph¨anomene auch fu¨r n = 1 sichtbar sind, vgl. [7]. Daher wird fu¨r alle folgenden max
+sogar die Wahl n = 1 möglich ist, da sich die Ergebnisse mit größeren Werten für max
+n quantitativ kaum ändern und qualitativ die in dieser Arbeit zu beobachtenden max
+Phänomene auch für n = 1 sichtbar sind, vgl. [7]. Daher wird für alle folgenden max
 Rechnungen n = 1 gesetzt. max
 
 
@@ -541,134 +541,134 @@ Rechnungen n = 1 gesetzt. max
 2.4.1. Systemeigenschaften
 
 
-Korrespondierend zu Abb. 2.1 zeigt Abb. 2.4 die Energieeigenwerte in Abh¨angigkeit
-von den magnetischen Momenten der Energieeigenzust¨ande sowie die Abh¨angigkeit der
-beiden energetisch niedrigsten Zust¨ande, bezeichnet als Ψ und Ψ , von einem 1 2
+Korrespondierend zu Abb. 2.1 zeigt Abb. 2.4 die Energieeigenwerte in Abhängigkeit
+von den magnetischen Momenten der Energieeigenzustände sowie die Abhängigkeit der
+beiden energetisch niedrigsten Zustände, bezeichnet als Ψ und Ψ , von einem 1 2
 | (cid:105) | (cid:105)
-externen Magnetfeld unter Beru¨cksichtigung von Phononen.
+externen Magnetfeld unter Berücksichtigung von Phononen.
 
 
-Abb. 2.4: Magnetische Momente der energetisch niedrigsten Eigenzust¨ande in Abh¨angigkeit
-von den zugeh¨origen Eigenenergien des Systems in Standardkonfiguration (vgl. Tab. 2.1) mit
-α = α = 0.01 und ω = ω = 1 fu¨r alle i 1, 2, 3 . Die Gruppen aus jeweils vier Zust¨anden i i
+Abb. 2.4: Magnetische Momente der energetisch niedrigsten Eigenzustände in Abhängigkeit
+von den zugehörigen Eigenenergien des Systems in Standardkonfiguration (vgl. Tab. 2.1) mit
+α = α = 0.01 und ω = ω = 1 für alle i 1, 2, 3 . Die Gruppen aus jeweils vier Zuständen i i
 ∈ { } haben ihren Ursprung in der Anzahl der phononischen Anregungen, so sind entweder alle
 drei harmonischen Oszillatoren in ihrem Grundzustand oder einer, zwei oder drei von ihnen
 befinden sich in ihrem ersten angeregten Zustand.
 
 
-Abbildung 2.5 zeigt, dass unter Beru¨cksichtigung der Phononen die S -Symmetrie z
+Abbildung 2.5 zeigt, dass unter Berücksichtigung der Phononen die S -Symmetrie z
 gebrochen wird und daher statt einer echten Kreuzung der Energieniveaus eine verbotene
-Niveaukreuzung auftritt. Ein Informationsverlust durch Landau-Zener-U¨berg¨ange sollte
-nun m¨oglich sein.
+Niveaukreuzung auftritt. Ein Informationsverlust durch Landau-Zener-Übergänge sollte
+nun möglich sein.
 
 
-Die Gr¨oße der Energielu¨cke der beiden Zust¨ande Ψ und Ψ sei bezeichnet mit 1 2
+Die Größe der Energielücke der beiden Zustände Ψ und Ψ sei bezeichnet mit 1 2
 | (cid:105) | (cid:105)
-E . Diese h¨angt stark von der Spin-Phonon-Kopplungsst¨arke α und schwach von der G
-Phononenfrequenz ω ab, vgl. [7] fu¨r eine detaillierte Betrachtung dieser Zusammenh¨ange.
+E . Diese hängt stark von der Spin-Phonon-Kopplungsstärke α und schwach von der G
+Phononenfrequenz ω ab, vgl. [7] für eine detaillierte Betrachtung dieser Zusammenhänge.
 
 
 Hier beschreibt
 
 
-die lineare A¨nderung eines zeitabh¨angigen Parameters q, im oben geschilderten Fall also
+die lineare Änderung eines zeitabhängigen Parameters q, im oben geschilderten Fall also
 B . Außerdem ist z
 
 
 FOOTNOTE:die Differenz der S -Erwartungswerte von Ψ und Ψ weit entfernt von B . Wei- z 1 2 0
 | (cid:105) | (cid:105)
-terhin entspricht a der halben Breite der Energielu¨cke, es gilt also a = E /2 bei G
+terhin entspricht a der halben Breite der Energielücke, es gilt also a = E /2 bei G
 B = B . 0
 
 
 Dann ist
 
 
-die Wahrscheinlichkeit eines Spin-Flips. Fu¨r ein solches Zweiniveausystem gilt also, dass
-selbst kleine Energielu¨cken E zu einem Informationsverlust fu¨hren k¨onnen, wenn der G
+die Wahrscheinlichkeit eines Spin-Flips. Für ein solches Zweiniveausystem gilt also, dass
+selbst kleine Energielücken E zu einem Informationsverlust führen können, wenn der G
 Schaltvorgang ausreichend langsam abläuft.
 
 
-Um nun zu u¨berpru¨fen, ob das Untersystem der beiden energetisch niedrigsten Zust¨an-
+Um nun zu überprüfen, ob das Untersystem der beiden energetisch niedrigsten Zustän-
 de Ψ und Ψ durch die Landau-Zener-Formel beschreibbar ist, wird numerisch 1 2
 | (cid:105) | (cid:105)
-eine unit¨are Zeitentwicklung durch L¨osung der Schr¨odinger-Gleichung als System gekop-
-pelter partieller Differentialgleichungen mit Mathematica™ durchgefu¨hrt. Die Ergebnisse
-fu¨r ein Beispielsystem mit Initialisierung in Ψ sind dargestellt in Abb. 2.6. 1 | (cid:105)
+eine unitäre Zeitentwicklung durch Lösung der Schrödinger-Gleichung als System gekop-
+pelter partieller Differentialgleichungen mit Mathematica™ durchgeführt. Die Ergebnisse
+für ein Beispielsystem mit Initialisierung in Ψ sind dargestellt in Abb. 2.6. 1 | (cid:105)
 
 
 Ein Vergleich dieser Berechnungen mit den nach Landau-Zener-Formel, siehe Gl. (2.15),
-zu erwartenden U¨bergangswahrscheinlichkeiten zeigt exzellente U¨bereinstimmung, vgl.
+zu erwartenden Übergangswahrscheinlichkeiten zeigt exzellente Übereinstimmung, vgl.
 Abb. 2.7. Das Verhalten des Untersystems aus Ψ und Ψ ist also durch die Landau- 1 2 | (cid:105) | (cid:105)
 
 
-Zener-Formel beschreibbar. Gleichzeitig ist dadurch auch klar, dass h¨ohere Zust¨ande
-kaum Einfluss auf das Untersystem nehmen und dieses daher in guter N¨aherung als
+Zener-Formel beschreibbar. Gleichzeitig ist dadurch auch klar, dass höhere Zustände
+kaum Einfluss auf das Untersystem nehmen und dieses daher in guter Näherung als
 Zweiniveausystem betrachtet werden kann.
 
 
-Interessant ist es nun, sich das Verhalten der Phononen w¨ahrend eines solchen
-Landau-Zener-U¨bergangs anzuschauen. Zu diesem Zweck wird der Erwartungswert fu¨r
+Interessant ist es nun, sich das Verhalten der Phononen während eines solchen
+Landau-Zener-Übergangs anzuschauen. Zu diesem Zweck wird der Erwartungswert für
 die Auslenkung aller drei Anisotropieachsen berechnet und in Abb. 2.8 zusammen mit
-dem durch den Landau-Zener-U¨bergang verursachten Verlust an magnetischem Moment
+dem durch den Landau-Zener-Übergang verursachten Verlust an magnetischem Moment
 des zeitentwickelten Zustands dargestellt.
 
 
-Magnetisierungstunneln ist also m¨oglich, obwohl keine mittlere Auslenkung der Ani-
+Magnetisierungstunneln ist also möglich, obwohl keine mittlere Auslenkung der Ani-
 sotropieachsen beobachtet werden kann. Dabei kommt es nicht darauf an, ob Ψ 1
 | (cid:105)
-oder Ψ als Startzustand gew¨ahlt wird; beide befinden sich zu Anfang und w¨ahrend 2
+oder Ψ als Startzustand gewählt wird; beide befinden sich zu Anfang und während 2
 | (cid:105)
-der gesamten Zeitentwicklung in ihren phononischen Grundzust¨anden, d.h. es gilt stets
-FOOTNOTE:n = 0, n = 0, n = 0 . Fu¨r das Magnetisierungstunneln ist also streng genommen 1 2 3
+der gesamten Zeitentwicklung in ihren phononischen Grundzuständen, d.h. es gilt stets
+FOOTNOTE:n = 0, n = 0, n = 0 . Für das Magnetisierungstunneln ist also streng genommen 1 2 3
 | (cid:105)
-nicht einmal die Anwesenheit eines oder mehrerer Phononen vonn¨oten, sondern es
-genu¨gt bereits die Nullpunktsschwingung der harmonischen Oszillatoren und damit
-lediglich die M¨oglichkeit einer Schwingungsanregung.
+nicht einmal die Anwesenheit eines oder mehrerer Phononen vonnöten, sondern es
+genügt bereits die Nullpunktsschwingung der harmonischen Oszillatoren und damit
+lediglich die Möglichkeit einer Schwingungsanregung.
 
 
 2.5. Zentrale Erkenntnisse
 
 
 Die Ergebnisse dieses Kapitels fußen auf einem sehr simplen Prinzip. Die einzige echte
-Voraussetzung fu¨r die O¨ ffnung einer verbotenen Niveaukreuzung ist die Anwesenheit
-der M¨oglichkeit einer Wechselwirkung, die die S -Symmetrie des Systems durch Null- z
-punktsschwingungen bricht. Wie im Anhang von [6] gezeigt, gilt diese Aussage auch fu¨r
-Systeme aus nur einem einzigen Spin und es existieren keine Gru¨nde zu vermuten, dass
+Voraussetzung für die Ö ffnung einer verbotenen Niveaukreuzung ist die Anwesenheit
+der Möglichkeit einer Wechselwirkung, die die S -Symmetrie des Systems durch Null- z
+punktsschwingungen bricht. Wie im Anhang von [6] gezeigt, gilt diese Aussage auch für
+Systeme aus nur einem einzigen Spin und es existieren keine Gründe zu vermuten, dass
 sich bei einer beliebigen anderen Anzahl irgendetwas an den qualitativen Ergebnissen
-¨andern sollte. Somit sollten die oben genannten Voraussetzungen in jedem realistischen
-System sicher erfu¨llt sein.
+ändern sollte. Somit sollten die oben genannten Voraussetzungen in jedem realistischen
+System sicher erfüllt sein.
 
 
-Es ist zudem offensichtlich unm¨oglich, ein System gegen Nullpunktsschwingungen zu
-isolieren, sodass perfekte“ Einzelmoleku¨lmagneten in der Praxis lediglich unter extrem ”
+Es ist zudem offensichtlich unmöglich, ein System gegen Nullpunktsschwingungen zu
+isolieren, sodass perfekte“ Einzelmolekülmagneten in der Praxis lediglich unter extrem ”
 idealisierten Bedingungen, i.e. eine verschwindende Ankopplung an das Kristallgitter,
-existieren k¨onnen, wenn nicht eine Symmetrie vorliegt, die eine echte Niveaukreuzung
+existieren können, wenn nicht eine Symmetrie vorliegt, die eine echte Niveaukreuzung
 erzwingt wie bereits durch die Autoren von [40] erkannt. Ein offensichtlicher Kandidat
-hierfu¨r w¨are ein System aus halbzahligen Spins, welches aufgrund der Zeitumkehrin-
+hierfür wäre ein System aus halbzahligen Spins, welches aufgrund der Zeitumkehrin-
 varianz eine Kramers-Entartung bei B = 0 aufweist [41]. Die Untersuchung eines
-solchen Systems ist jedoch nicht Teil dieser Arbeit, vielmehr wird im n¨achsten Kapitel
+solchen Systems ist jedoch nicht Teil dieser Arbeit, vielmehr wird im nächsten Kapitel
 (Kap. 3) eine andere, weniger offensichtliche, kombinierte Symmetrie von Freiheits-
 graden des Spinsystems sowie der Phononen betrachtet, die die Bildung verbotener
-Niveaukreuzungen fu¨r ungeradzahlige Spins verhindert.
+Niveaukreuzungen für ungeradzahlige Spins verhindert.
 
 
-3. Symmetriegeschu¨tzte echte Niveaukreuzungen
+3. Symmetriegeschützte echte Niveaukreuzungen
 
 
-In diesem Kapitel wird ein Beispiel fu¨r ein System mit einer Symmetrie gegeben, welche
-die O¨ ffnung einer Energielu¨cke der beiden energetisch niedrigsten Zust¨ande verhindert.
-Der offensichtliche Fall einer Kramers-Entartung fu¨r halbzahlige Spinquantenzahlen
-h¨atte denselben Effekt, die hier betrachtete Symmetrie bezieht sich jedoch auf Sys-
-teme aus ungeradzahligen Spins, also s 1, 3, 5, ... fu¨r eine bestimmte Art von i
+In diesem Kapitel wird ein Beispiel für ein System mit einer Symmetrie gegeben, welche
+die Ö ffnung einer Energielücke der beiden energetisch niedrigsten Zustände verhindert.
+Der offensichtliche Fall einer Kramers-Entartung für halbzahlige Spinquantenzahlen
+hätte denselben Effekt, die hier betrachtete Symmetrie bezieht sich jedoch auf Sys-
+teme aus ungeradzahligen Spins, also s 1, 3, 5, ... für eine bestimmte Art von i
 ∈ { }
-Phonon-Kopplung; sie enth¨alt also sowohl phononische als auch Spin-Freiheitsgrade.
+Phonon-Kopplung; sie enthält also sowohl phononische als auch Spin-Freiheitsgrade.
 Das System ohne Phononen ist identisch mit demjenigen beschrieben in Kap. 2.1, zur
-Beru¨cksichtigung der Phononen wird dieses Mal jedoch der Anisotropieterm im E- statt
+Berücksichtigung der Phononen wird dieses Mal jedoch der Anisotropieterm im E- statt
 im D-Term modifiziert.
 
 
-Fu¨r den Hamilton-Operator ergibt sich, wiederum mit den Definitionen aus Kap. 1.3,
+Für den Hamilton-Operator ergibt sich, wiederum mit den Definitionen aus Kap. 1.3,
 
 
 wobei nun gilt
@@ -684,49 +684,49 @@ Ankopplung der Phononen. Einige Beispielrechnungen zur Illustration der angespro
 nen Symmetrie sind in Abb. 3.1 und 3.2 dargestellt.
 
 
-Die oben beschriebene Symmetrie besteht nur fu¨r den Fall einer Kopplung mit ungerad-
+Die oben beschriebene Symmetrie besteht nur für den Fall einer Kopplung mit ungerad-
 
 
 zahligem Exponenten, also z.B. bei einer linearen, jedoch nicht bei einer quadratischen
-Kopplung. Ein mathematischer Beweis fu¨r dieses Verhalten von Heinz-Ju¨rgen Schmidt
+Kopplung. Ein mathematischer Beweis für dieses Verhalten von Heinz-Jürgen Schmidt
 sowie Einzelheiten zur Natur der Symmetrie sind in [8] zu finden.
 
 
-Insgesamt konnte also eine Symmetrie gefunden und erkl¨art werden, die fu¨r eine
-bestimmte Klasse von Spin-Phonon-Wechselwirkungen fu¨r Systeme mit ungeradzahligem
-Gesamtspin eine echte Niveaukreuzung erzwingt und somit Landau-Zener-U¨berg¨ange
-verhindert. Es ist unbekannt, ob ein solches System tats¨achlich synthetisiert werden
+Insgesamt konnte also eine Symmetrie gefunden und erklärt werden, die für eine
+bestimmte Klasse von Spin-Phonon-Wechselwirkungen für Systeme mit ungeradzahligem
+Gesamtspin eine echte Niveaukreuzung erzwingt und somit Landau-Zener-Übergänge
+verhindert. Es ist unbekannt, ob ein solches System tatsächlich synthetisiert werden
 kann. Andererseits ist die hier gefundene Symmetrie konzeptuell sehr interessant, da sie
-eine von nur sehr wenigen bisher beobachteten Beispielen fu¨r Ungerade-Gerade-Effekte
-bei Spins darstellt (selbst nach ausfu¨hrlicher Literaturrecherche konnte kein anderer
-Bericht u¨ber einen solchen Effekt gefunden werden).
+eine von nur sehr wenigen bisher beobachteten Beispielen für Ungerade-Gerade-Effekte
+bei Spins darstellt (selbst nach ausführlicher Literaturrecherche konnte kein anderer
+Bericht über einen solchen Effekt gefunden werden).
 
 
-4. Dekoh¨arenz in stark anisotropen Spin-Dreiecken mit
+4. Dekohärenz in stark anisotropen Spin-Dreiecken mit
 nicht-kollinearen leichten Magnetisierungsachsen
 
 
-Gegenstand dieses Kapitels ist die Betrachtung des Dekoh¨arenzverhaltens von Super-
-positionen von Eigenzust¨anden eines anisotropen Spin-Dreiecks unter dem Einfluss
-eines Spin-Bades. Dazu wird nacheinander der Begriff der Dekoh¨arenz erl¨autert, das
-Modellsystem eingefu¨hrt, die Methodik vorgestellt und zuletzt die Ergebnisse gezeigt
+Gegenstand dieses Kapitels ist die Betrachtung des Dekohärenzverhaltens von Super-
+positionen von Eigenzuständen eines anisotropen Spin-Dreiecks unter dem Einfluss
+eines Spin-Bades. Dazu wird nacheinander der Begriff der Dekohärenz erläutert, das
+Modellsystem eingeführt, die Methodik vorgestellt und zuletzt die Ergebnisse gezeigt
 und eingeordnet.
 
 
-4.1. Dekoh¨arenzbegriff und Hintergrund
+4.1. Dekohärenzbegriff und Hintergrund
 
 
-Dekoh¨arenz bezeichnet den Prozess der Dephasierung von quantenmechanischen Super-
+Dekohärenz bezeichnet den Prozess der Dephasierung von quantenmechanischen Super-
 positionen, verursacht durch die Interaktion eines offenen Quantensystems mit seiner
 Umgebung. In dieser Arbeit wird zwar insgesamt ein geschlossenes Quantensystem
 betrachtet, welches jedoch in ein System A und ein Bad B unterteilt wird, sodass A
 trotzdem als offenes System betrachtet werden kann, siehe dazu Abb. 4.1.
 
 
-Die Dekoh¨arenz einer Superposition von Eigenzust¨anden von A kann nach Zuschalten“ ”
-eines Bades B und Zeitentwicklung als Verlust der M¨oglichkeit beschrieben werden, den
-zeitentwickelten Zustand wieder als Produktzustand aus Zust¨anden aus A und B auszu-
-dru¨cken. Dies geschieht, da System- und Badzustand miteinander verschr¨anken, sodass
+Die Dekohärenz einer Superposition von Eigenzuständen von A kann nach Zuschalten“ ”
+eines Bades B und Zeitentwicklung als Verlust der Möglichkeit beschrieben werden, den
+zeitentwickelten Zustand wieder als Produktzustand aus Zuständen aus A und B auszu-
+drücken. Dies geschieht, da System- und Badzustand miteinander verschränken, sodass
 
 
 die Nebendiagonalelemente der durch Abspuren der Bad-Freiheitsgrade gewonnenen
@@ -734,12 +734,12 @@ reduzierten Dichtematrix im Laufe der Zeitentwicklung zerfallen (Details siehe K
 4.5).
 
 
-Welche Konsequenzen die Idee der Dekoh¨arenz fu¨r die Interpretation der Quantenme-
-chanik und insbesondere fu¨r das Messproblem hat, ist eine offene, in der Literatur aktiv
+Welche Konsequenzen die Idee der Dekohärenz für die Interpretation der Quantenme-
+chanik und insbesondere für das Messproblem hat, ist eine offene, in der Literatur aktiv
 diskutierte Frage der theoretischen Physik, siehe beispielsweise [42–45]. Diese zweifellos
 faszinierenden Ideen sind jedoch nicht Gegenstand dieser Arbeit. Vielmehr soll hier die
-praktische“ Seite der Dekoh¨arenz betrachtet werden, insbesondere im Kontext kleiner ”
-Modell-Spinsysteme fu¨r Moleku¨le, welche als Kandidatensysteme fu¨r Anwendungen
+praktische“ Seite der Dekohärenz betrachtet werden, insbesondere im Kontext kleiner ”
+Modell-Spinsysteme für Moleküle, welche als Kandidatensysteme für Anwendungen
 in Quantentechnologien gehandelt werden [9, 10, 46–70]. Der Fokus dieser Arbeit liegt
 dabei vor allem auf magnetischen Spin-Qubits.
 
@@ -747,32 +747,32 @@ dabei vor allem auf magnetischen Spin-Qubits.
 Ein Spin-Qubit muss, neben anderen Voraussetzungen, energetisch tiefliegende, leicht
 zu initialisierende und ausreichend weit voneinander getrennte (∆E k T ) Eigen- B
 (cid:29)
-zust¨ande besitzen, aus denen eine Superposition gebildet werden kann, die eine lange
-Koh¨arenzzeit aufweist [71]. Da in dieser Arbeit vor allem Zusammenh¨ange zwischen
-Systemeigenschaften und Koh¨arenzzeiten betrachtet werden sollen, wird jedoch die
+zustände besitzen, aus denen eine Superposition gebildet werden kann, die eine lange
+Kohärenzzeit aufweist [71]. Da in dieser Arbeit vor allem Zusammenhänge zwischen
+Systemeigenschaften und Kohärenzzeiten betrachtet werden sollen, wird jedoch die
 praktische Initialisierbarkeit der betrachteten Superpositionen lediglich insoweit in
-der Analyse beru¨cksichtigt, dass das niederenergetische Spektrum zur Bildung der
+der Analyse berücksichtigt, dass das niederenergetische Spektrum zur Bildung der
 Superpositionen herangezogen wird.
 
 
-Fu¨r Spin-Qubits sind viele verschiedene Kandidatensysteme im Gespr¨ach [72–74]. In
+Für Spin-Qubits sind viele verschiedene Kandidatensysteme im Gespräch [72–74]. In
 dieser Arbeit wird der Fokus auf solche Kandidaten gelegt, die durch anisotrope Spin-
-Dreiecke modelliert werden k¨onnen. Dies ist beispielsweise fu¨r Moleku¨le mit Dysprosium-
+Dreiecke modelliert werden können. Dies ist beispielsweise für Moleküle mit Dysprosium-
 Zentrum der Fall, die als vielversprechende Qubit-Kandidaten gelten [9, 10], aber auch
-fu¨r solche mit anderen Moleku¨lzentren wie beispielsweise Kupfer [75, 76], Eisen und
-Chrom [77] sowie weitere. In diesem Kontext f¨allt in der Literatur auch immer wieder der
+für solche mit anderen Molekülzentren wie beispielsweise Kupfer [75, 76], Eisen und
+Chrom [77] sowie weitere. In diesem Kontext fällt in der Literatur auch immer wieder der
 Begriff des toroidalen Momentes als interessanter oder sogar entscheidender Eigenschaft
-fu¨r eine lange Koh¨arenzzeit, insbesondere in [9–11]. Die Argumentation bezieht sich
+für eine lange Kohärenzzeit, insbesondere in [9–11]. Die Argumentation bezieht sich
 meist auf die Tatsache, dass ideal symmetrische Systeme mit maximalem toroidalem
 Moment kein magnetisches Moment besitzen und somit im Mittel nicht von homogenen
-Magnetfeldern gest¨ort werden k¨onnen. Diese Idee soll im Folgenden beleuchtet und auf
-ihre Tragf¨ahigkeit gepru¨ft werden.
+Magnetfeldern gestört werden können. Diese Idee soll im Folgenden beleuchtet und auf
+ihre Tragfähigkeit geprüft werden.
 
 
-Ziel dieses Kapitels ist es, durch numerische Simulationen das Dekoh¨arenzverhalten
+Ziel dieses Kapitels ist es, durch numerische Simulationen das Dekohärenzverhalten
 solcher Systeme im Rahmen eines realistischen Modells, welches jedoch ausreichend klein
 und daher numerisch noch behandelbar ist, zu untersuchen. Dieses Modell sowie die
-Vorgehensweise zur Dekoh¨arenzberechnung werden im Folgenden vorgestellt. Außerdem
+Vorgehensweise zur Dekohärenzberechnung werden im Folgenden vorgestellt. Außerdem
 
 
 wird der Begriff und das Konzept des toroidalen Momentes erläutert.
@@ -783,91 +783,88 @@ wird der Begriff und das Konzept des toroidalen Momentes erläutert.
 
 Bei dem untersuchten Spinsystem handelt es sich um ein anisotropes, antiferromagnetisch
 gekoppeltes Spin-Dreieck mit leichten Magnetisierungsachsen unter dem Einfluss eines
-Magnetfelds und gest¨ort durch ein u¨ber Dipol-Dipol-Wechselwirkungen angekoppeltes
+Magnetfelds und gestört durch ein über Dipol-Dipol-Wechselwirkungen angekoppeltes
 Spinbad. In Abb. 4.2 ist das System dargestellt.
 
 
 Abb. 4.2: System aus einem Spin-Dreieck aus drei Spins mit s = 1 in rot mit einer Heisenberg-
 FOOTNOTE:Kopplung (blau) und Anisotropieachsen geneigt um θ = θ = θ = θ (hier: θ = 50.4◦) in gelb 1 2 3
-mit einer variablen Anzahl von Badspins n lokalisiert auf der Oberfl¨ache einer Kugel mit B
+mit einer variablen Anzahl von Badspins n lokalisiert auf der Oberfläche einer Kugel mit B
 Radius d um den Koordinatenursprung. Zwischen den Badspins und dem Spin-Dreieck bestehen
-zus¨atzlich Dipol-Dipol-Wechselwirkungen, ebenso wie zwischen den Badspins untereinander
-und in manchen F¨allen zwischen den Systemspins.
+zusätzlich Dipol-Dipol-Wechselwirkungen, ebenso wie zwischen den Badspins untereinander
+und in manchen Fällen zwischen den Systemspins.
 
 
 Der Hamiltonoperator lautet
 
 
-mit Termen fu¨r das System H , das Bad H sowie die Interaktion zwischen System und ∼ S ∼ B
+mit Termen für das System H , das Bad H sowie die Interaktion zwischen System und ∼ S ∼ B
 
 
 Bad H . Diese sind wiederum aufgebaut aus den in Kap. 1.3 vorgestellten Termen, so ∼ SB
-gilt fu¨r H ∼ S
+gilt für H ∼ S
 
 
-mit einer Dipol-Dipol-Wechselwirkungsst¨arke A , fu¨r H 3 ∼ B
+mit einer Dipol-Dipol-Wechselwirkungsstärke A und für H 2 ∼ SB
 
 
-mit einer Dipol-Dipol-Wechselwirkungsst¨arke A und fu¨r H 2 ∼ SB
+mit einer Dipol-Dipol-Wechselwirkungsstärke A . 1
 
 
-mit einer Dipol-Dipol-Wechselwirkungsst¨arke A . 1
-
-
-Im Sinne der U¨bersichtlichkeit sind die fu¨r das in diesem Kapitel untersuchte System
-relevanten Gr¨oßen sowie deren feste bzw. Standardwerte in Tab. 4.1 gezeigt. Die
+Im Sinne der Übersichtlichkeit sind die für das in diesem Kapitel untersuchte System
+relevanten Größen sowie deren feste bzw. Standardwerte in Tab. 4.1 gezeigt. Die
 Wahl dieser hat das Ziel, mit mehr oder weniger realistischen Werten zu arbeiten, die
-jedoch im Folgenden in einem großzu¨gigen Rahmen ver¨andert werden, um somit einen
+jedoch im Folgenden in einem großzügigen Rahmen verändert werden, um somit einen
 breiten Parameterbereich abzudecken. Die Anzahl der Badspins ist vor allem deshalb so
-niedrig gew¨ahlt, um den numerischen Aufwand gering zu halten. Im Rahmen unserer
-Untersuchungen scheint zudem die Gr¨oße des Bades kaum qualitative Auswirkungen auf
+niedrig gewählt, um den numerischen Aufwand gering zu halten. Im Rahmen unserer
+Untersuchungen scheint zudem die Größe des Bades kaum qualitative Auswirkungen auf
 die Ergebnisse zu haben wie in Kap. 4.8.2 besprochen wird. Das kleine Magnetfeld dient
-vor allem dazu, bei B = 0 entartete Zust¨ande numerisch voneinander unterscheiden zu
-k¨onnen. Die Wahl von A = A kann so interpretiert werden, dass das gyromagnetische 1 2
-Verh¨altnis der System- und Badspins identisch ist und es sich somit um ein Bad aus
+vor allem dazu, bei B = 0 entartete Zustände numerisch voneinander unterscheiden zu
+können. Die Wahl von A = A kann so interpretiert werden, dass das gyromagnetische 1 2
+Verhältnis der System- und Badspins identisch ist und es sich somit um ein Bad aus
 elektronischen Spins handelt, da die Systemspins per Design elektronisch sind. Dies kann
-realistisch sein, beispielsweise fu¨r auf Oberfl¨achen deponierte Spinsysteme, allerdings
+realistisch sein, beispielsweise für auf Oberflächen deponierte Spinsysteme, allerdings
 wird in Kap. 4.8.1 der Fall unterschiedlicher A und A und damit auch ein Bad aus 1 2
-Kernspins abgedeckt, um m¨oglichst allgemeine Aussagen treffen zu k¨onnen.
+Kernspins abgedeckt, um möglichst allgemeine Aussagen treffen zu können.
 
 
-Wie bereits in der Einleitung erw¨ahnt, ist das Ziel diese Kapitels die Identifizierung von
-Voraussetzungen fu¨r das Design eines Systems mit U¨berg¨angen, die lange Koh¨arenzzeiten
-aufweisen. Zu diesem Zweck werden die variablen Gr¨oßen des Modells innerhalb grob
+Wie bereits in der Einleitung erwähnt, ist das Ziel diese Kapitels die Identifizierung von
+Voraussetzungen für das Design eines Systems mit Übergängen, die lange Kohärenzzeiten
+aufweisen. Zu diesem Zweck werden die variablen Größen des Modells innerhalb grob
 realistischer Parameterbereiche variiert und ein besonderer Fokus auf die Relevanz des
-toroidalen Moments, vgl. Kap. 4.3, fu¨r das Dekoh¨arenzverhalten gelegt.
+toroidalen Moments, vgl. Kap. 4.3, für das Dekohärenzverhalten gelegt.
 
 
-Tab. 4.1: Feste und variable Parameter des Systems mit Bad sowie deren fest gew¨ahlte
-bzw. Standardwerte soweit nicht anders bestimmt. Fu¨r die Positionen der Systemspins gilt
+Tab. 4.1: Feste und variable Parameter des Systems mit Bad sowie deren fest gewählte
+bzw. Standardwerte soweit nicht anders bestimmt. Für die Positionen der Systemspins gilt
 (cid:126)v = (0, 1), (cid:126)v = ( √3/2, 1/2) und (cid:126)v = (√3/2, 1/2); die Positionen der Badspins werden 1 2 3
-− − − zuf¨allig auf der Oberfl¨ache einer Kugel mit Radius d um den Ursprung gew¨ahlt, weshalb keine
+− − − zufällig auf der Oberfläche einer Kugel mit Radius d um den Ursprung gewählt, weshalb keine
 Standardwerte angegeben sind.
 
 
-Ein Beispiel fu¨r ein Zeeman-Diagramm der energetisch niedrigsten Zust¨ande in der
+Ein Beispiel für ein Zeeman-Diagramm der energetisch niedrigsten Zustände in der
 so definierten Standardkonfiguration ist in Abb. 4.3 mit θ = 50.4◦ gezeigt. Zudem
-ist dort auch die Legende fu¨r nachfolgende Abbildungen gegeben, die den betrachte-
-ten Superpositionen der niedrigstliegenden Eigenzust¨ande ein Farbschema zuordnet.
-Nachfolgend werden h¨aufig Grafiken gezeigt, in denen dieses Farbschema genutzt wird,
-weshalb die Legende zum leichteren Nachschlagen noch einmal gr¨oßer in Anhang B
+ist dort auch die Legende für nachfolgende Abbildungen gegeben, die den betrachte-
+ten Superpositionen der niedrigstliegenden Eigenzustände ein Farbschema zuordnet.
+Nachfolgend werden häufig Grafiken gezeigt, in denen dieses Farbschema genutzt wird,
+weshalb die Legende zum leichteren Nachschlagen noch einmal größer in Anhang B
 am Ende dieser Arbeit dargestellt ist. Es werden nur Superpositionen der energetisch
-tiefstliegenden Zust¨ande betrachtet, da h¨oherliegende Zust¨ande thermisch instabiler
-sowie in vielen F¨allen energetisch dichter verteilt und somit fu¨r Anwendungen in Quan-
+tiefstliegenden Zustände betrachtet, da höherliegende Zustände thermisch instabiler
+sowie in vielen Fällen energetisch dichter verteilt und somit für Anwendungen in Quan-
 tentechnologien wie beispielsweise einem Qubit weniger interessant sind (zumeist werden
 
 
-Superpositionen mit dem Grundzustand genutzt, vgl. z.B. [78, 79]). Es erfolgt daru¨ber
+Superpositionen mit dem Grundzustand genutzt, vgl. z.B. [78, 79]). Es erfolgt darüber
 hinaus keine gezielte Auswahl der betrachteten Superpositionen, um bei der Suche nach
-Zusammenh¨angen zwischen Eigenschaften des Zustands bzw. des Systems und dem
-beobachteten Dekoh¨arenzverhalten mit einem m¨oglichst diversen Datensatz zu arbeiten.
+Zusammenhängen zwischen Eigenschaften des Zustands bzw. des Systems und dem
+beobachteten Dekohärenzverhalten mit einem möglichst diversen Datensatz zu arbeiten.
 
 
-Abb. 4.3: Links: Zeeman-Diagramm der acht energetisch niedrigsten Zust¨ande fu¨r das System
+Abb. 4.3: Links: Zeeman-Diagramm der acht energetisch niedrigsten Zustände für das System
 ohne Bad in Standardkonfiguration, vgl. Tab. 4.1, mit θ = 50.4◦. Im Folgenden werden alle
-m¨oglichen Superpositionen der untersten sechs dieser Zust¨ande untersucht, die anderen beiden
-werden lediglich fu¨r den Kontext gezeigt. Rechts: Legende mit Festlegung jeweils einer Farbe
-pro Superposition. Die Nummerierung gibt jeweils an, wieviele energetisch niedrigere Zust¨ande
+möglichen Superpositionen der untersten sechs dieser Zustände untersucht, die anderen beiden
+werden lediglich für den Kontext gezeigt. Rechts: Legende mit Festlegung jeweils einer Farbe
+pro Superposition. Die Nummerierung gibt jeweils an, wieviele energetisch niedrigere Zustände
 unterhalb des jeweiligen Zustands existieren. Beispielsweise stellt (1/√2)( Ψ + Ψ ) eine 0 1
 | (cid:105) | (cid:105) Superposition des Grund- und ersten angeregten Zustands dar.
 
@@ -875,25 +872,25 @@ unterhalb des jeweiligen Zustands existieren. Beispielsweise stellt (1/√2)( Ψ
 4.3. Das toroidale Moment
 
 
-Abb. 4.4: Links: System mit θ = 0◦; dies entspricht einer typischen Konfiguration fu¨r einen
-Einzelmoleku¨lmagneten. Rechts: System mit θ = 90◦; dies entspricht einer typischen toroidalen
-Konfiguration. Fu¨r Zwischenwinkel siehe Abb. 4.2.
+Abb. 4.4: Links: System mit θ = 0◦; dies entspricht einer typischen Konfiguration für einen
+Einzelmolekülmagneten. Rechts: System mit θ = 90◦; dies entspricht einer typischen toroidalen
+Konfiguration. Für Zwischenwinkel siehe Abb. 4.2.
 
 
-W¨ahrend alle in Tab. 4.1 als variabel angegebene Parameter auf ihren Einfluss auf das
-Dekoh¨arenzverhalten untersucht werden, liegt der Fokus dieser Arbeit insbesondere auf
+Während alle in Tab. 4.1 als variabel angegebene Parameter auf ihren Einfluss auf das
+Dekohärenzverhalten untersucht werden, liegt der Fokus dieser Arbeit insbesondere auf
 dem Effekt des Polarwinkels der leichten Magnetisierungsachsen, beschrieben durch θ.
-Wird dieser zu θ = 90◦ gew¨ahlt, liegt eine perfekte toroidale Orientierung der leichten
-Magnetisierungsachsen vor, bei θ = 0◦ handelt es sich um ein Modell fu¨r einen perfekten
-Einzelmoleku¨lmagneten, vgl. Abb. 4.4.
+Wird dieser zu θ = 90◦ gewählt, liegt eine perfekte toroidale Orientierung der leichten
+Magnetisierungsachsen vor, bei θ = 0◦ handelt es sich um ein Modell für einen perfekten
+Einzelmolekülmagneten, vgl. Abb. 4.4.
 
 
-Abb. 4.5: Absolutwert des toroidalen Moments von allen 15 m¨oglichen Superpositionen der
-sechs energetisch niedrigsten Eigenzust¨ande des Systems in Standardkonfiguration aufgetragen
+Abb. 4.5: Absolutwert des toroidalen Moments von allen 15 möglichen Superpositionen der
+sechs energetisch niedrigsten Eigenzustände des Systems in Standardkonfiguration aufgetragen
 gegen 50 Werte des Polarwinkels der leichten Magnetisierungsachsen θ. Die Farben wechseln
-h¨aufig korrespondierend zu A¨nderungen in der Reihenfolge der Zust¨ande bei A¨nderungen
-von θ. Die Systeme mit θ 90◦ beinhalten tats¨achlich Superpositionen, insbesondere der
-≈ beiden energetisch niedrigsten Zust¨ande, mit einem großen toroidalen Moment. Fu¨r andere
+häufig korrespondierend zu Änderungen in der Reihenfolge der Zustände bei Änderungen
+von θ. Die Systeme mit θ 90◦ beinhalten tatsächlich Superpositionen, insbesondere der
+≈ beiden energetisch niedrigsten Zustände, mit einem großen toroidalen Moment. Für andere
 Superpositionen ist ein solcher Zusammenhang jedoch nicht klar erkennbar.
 
 
@@ -901,29 +898,29 @@ Das toroidale Moment ist definiert als
 
 
 mit den als (cid:126)r bezeichneten Spinpositionen im Raum. Die in dieser Arbeit beobachtete i
-Gr¨oße ist der Erwartungswert der z-Komponente von (cid:126)τ im jeweiligen Zustand Ψ , ∼ | (cid:105)
+Größe ist der Erwartungswert der z-Komponente von (cid:126)τ im jeweiligen Zustand Ψ , ∼ | (cid:105)
 
 
 also
 
 
 Sollte die Behauptung stimmen, dass Superpositionen mit starken toroidalen Momenten
-tats¨achlich besonders lange Koh¨arenzzeiten aufweisen, sind insbesondere die Systeme mit
+tatsächlich besonders lange Kohärenzzeiten aufweisen, sind insbesondere die Systeme mit
 θ 90◦ von Interesse, da diese mit der Existenz von Superpositionen der tiefliegenden
 ≈
-Eigenzust¨ande mit großen toroidalen Momenten korreliert sind. Dieser Zusammenhang
+Eigenzustände mit großen toroidalen Momenten korreliert sind. Dieser Zusammenhang
 zwischen Winkel und toroidalem Moment ist in Abb. 4.5 gezeigt.
 
 
-Hier sei erw¨ahnt, dass fu¨r das Auftreten eines toroidalen Momentes stets zumindest
-ein kleines Magnetfeld vonn¨oten ist, um eine Vorzugsrichtung entlang der geneigten
+Hier sei erwähnt, dass für das Auftreten eines toroidalen Momentes stets zumindest
+ein kleines Magnetfeld vonnöten ist, um eine Vorzugsrichtung entlang der geneigten
 leichten Magnetisierungsachsen zu definieren, da sonst die links- und rechtstoroidalen
-Konfigurationen stets entartet w¨aren. Aus diesem Grund wird die Konfiguration mit
+Konfigurationen stets entartet wären. Aus diesem Grund wird die Konfiguration mit
 θ = 90◦ weder in Abb. 4.5, noch in anderen Grafiken dieser Arbeit betrachtet, da diese
 exakt senkrecht auf der Magnetfeldrichtung stehende leichte Magnetisierungsachsen
 aufweist und hier somit mit einem B kein toroidales Moment induziert werden kann. z
-Diese Einschr¨ankung des Parameterraums ist gerechtfertigt, da es sich lediglich um eine
-einzige, im Sinne der Typikalit¨at atypische Konfiguration handelt, die in der Natur mit
+Diese Einschränkung des Parameterraums ist gerechtfertigt, da es sich lediglich um eine
+einzige, im Sinne der Typikalität atypische Konfiguration handelt, die in der Natur mit
 der Wahrscheinlichkeit P = 0 auftritt.
 
 
@@ -932,7 +929,7 @@ um ϕ = 90◦ gedrehten Anisotropieachsen (rechts). −
 
 
 Das toroidale Moment ist ein schwer greifbares Konzept. So ist sein konkreter Wert
-(außer fu¨r θ = 90◦) abh¨angig von der Wahl des Koordinatenursprungs. Außerdem ist ein
+(außer für θ = 90◦) abhängig von der Wahl des Koordinatenursprungs. Außerdem ist ein
 
 
 Hamilton-Operator mit einem Heisenberg-Term und einer Einzelionenanisotropie mit
@@ -940,34 +937,33 @@ leichten Magnetisierungsachsen invariant unter der kollektiven Rotation des Syst
 sowie der Richtung des Magnetfeldes um einen gemeinsamen Winkel, vgl. [80]. Rotiert
 man nun das System beispielsweise um den Azimutwinkel ϕ = 90◦, wie in Abb. 4.6
 −
-dargestellt, so ¨andert sich weder das Energiespektrum, noch die thermodynamischen
+dargestellt, so ändert sich weder das Energiespektrum, noch die thermodynamischen
 Observablen des Systems. Dagegen haben die betrachteten Superpositionen nun ein
 völlig anderes toroidales Moment.
 
 
-Aufgrund dieser Tatsache wird sp¨ater auch ein System mit gebrochener Symmetrie
-(A = 0, vgl. Tab. 4.1) betrachtet, sodass eine solche Transformation nicht l¨anger ohne 3
-(cid:54)
-die Ver¨anderung von Observablen einhergeht, siehe Kap. 4.8.6.
+Aufgrund dieser Tatsache wird später auch ein System mit gebrochener Symmetrie
+(A = 0, vgl. Tab. 4.1) betrachtet, sodass eine solche Transformation nicht länger ohne 3
+(cid:54) die Veränderung von Observablen einhergeht, siehe Kap. 4.8.6.
 
 
 4.4. Clock transitions
 
 
-Clock transitions sind Zustandspaare, die fu¨r ein gew¨ahltes Magnetfeld ann¨ahernd
+Clock transitions sind Zustandspaare, die für ein gewähltes Magnetfeld annähernd
 dasselbe magnetische Moment M besitzen [81]. Dies ist in einem Zeeman-Diagramm Ψ
-leicht daran zu erkennen, dass die zu den beiden Zust¨anden korrespondierenden Kurven
+leicht daran zu erkennen, dass die zu den beiden Zuständen korrespondierenden Kurven
 lokal parallel verlaufen, da das magnetische Moment proportional zur ersten Ableitung
 der Energie nach dem Magnetfeld ist. In z-Richtung1 ist das magnetische Moment
 gegeben durch
 
 
-Eine Superposition aus einem solchen Zustandspaar hat den Vorteil, dass beide Zust¨ande
-von einer externen St¨orung, welche h¨aufig als fluktuierendes, lokal homogenes Magnetfeld
-modelliert werden kann, gleich beeinflusst werden und somit die U¨ bergangsfrequenz
-zwischen den Zust¨anden gleich bleibt. Eine Frequenz¨anderung wu¨rde dazu fu¨hren,
-dass die Zust¨ande in der Superposition dephasieren und w¨are somit eine unmittelbare
-Ursache fu¨r Dekoh¨arenz. Dies soll in der folgenden mathematischen Illustration plausibel
+Eine Superposition aus einem solchen Zustandspaar hat den Vorteil, dass beide Zustände
+von einer externen Störung, welche häufig als fluktuierendes, lokal homogenes Magnetfeld
+modelliert werden kann, gleich beeinflusst werden und somit die Ü bergangsfrequenz
+zwischen den Zuständen gleich bleibt. Eine Frequenzänderung würde dazu führen,
+dass die Zustände in der Superposition dephasieren und wäre somit eine unmittelbare
+Ursache für Dekohärenz. Dies soll in der folgenden mathematischen Illustration plausibel
 gemacht werden.
 
 
@@ -975,8 +971,8 @@ Der zeitentwickelte Dichteoperator einer Zwei-Zustands-Superposition von Eigenzu
 ständen des Systems
 
 
-1Eine Betrachtung der magnetischen Momente in x-, y- und z-Richtung liefert fu¨r alle in dieser
-Arbeit behandelten Zusammenh¨ange jeweils qualitativ dieselben Ergebnisse, weshalb im Folgenden
+1Eine Betrachtung der magnetischen Momente in x-, y- und z-Richtung liefert für alle in dieser
+Arbeit behandelten Zusammenhänge jeweils qualitativ dieselben Ergebnisse, weshalb im Folgenden
 lediglich das magnetische Moment entlang des externen Magnetfelds in z-Richtung betrachtet wird.
 
 
@@ -984,14 +980,14 @@ kann mit m , m(cid:48) aus der Eigenbasis des Systems geschrieben werden als | (
 
 
 Nun wird die Eigenbasis des Systems als Basis zur Darstellung des Dichteoperators ρ ∼
-als Dichtematrix ρS gew¨ahlt.
+als Dichtematrix ρS gewählt.
 
 
-Zur Quantifizierung von (De-)Koh¨arenz wird jedoch nicht die Dichtematrix des
+Zur Quantifizierung von (De-)Kohärenz wird jedoch nicht die Dichtematrix des
 Systems betrachtet, sondern die reduzierte Dichtematrix, die nach Zeitentwicklung
-des Gesamtsystems durch das Abspuren u¨ber eine Basis des Badhilbertraums durch
+des Gesamtsystems durch das Abspuren über eine Basis des Badhilbertraums durch
 Summierung von Dimension des Bades Dichtematrizen berechnet wird. Konkret wird,
-wie bereits erw¨ahnt, der Absolutwert eines der Nebendiagonalelemente betrachtet, im
+wie bereits erwähnt, der Absolutwert eines der Nebendiagonalelemente betrachtet, im
 oben beschriebenen System also beispielsweise ei(Ep−En)t n p (das andere Neben-
 | (cid:105)(cid:104) |
 diagonalelement ist zu diesem lediglich komplex konjugiert, was durch die Bildung des
@@ -999,33 +995,33 @@ Absolutwerts keinen Unterschied macht).
 
 
 Wird nun der Einfluss des Bades auf das System als der eines lokal homogenen, fluktu-
-ierenden Magnetfeldes modelliert (was fu¨r ein Spinbad eine naheliegende Wahl darstellt),
-so ¨andern sich die Energien E und E . Ist diese Energie¨anderung der beiden Zust¨ande n p
+ierenden Magnetfeldes modelliert (was für ein Spinbad eine naheliegende Wahl darstellt),
+so ändern sich die Energien E und E . Ist diese Energieänderung der beiden Zustände n p
 stark unterschiedlich, so findet im Rahmen des Abspurens der Badfreiheitsgrade eine
-Summation u¨ber viele verschiedene komplexe Phasen statt, sodass der Absolutwert
-des Nebendiagonalelements innerhalb kurzer Zeit zerf¨allt. Sind die Energie¨anderungen
-durch das effektive Magnetfeld jedoch fu¨r beide Zust¨ande ann¨ahernd identisch, so kann
-der Zerfall des Nebendiagonalelements signifikant verlangsamt werden, da nur ¨ahnliche
-komplexe Phasen addiert werden. Clock transitions erfu¨llen genau diese Voraussetzung,
-was ihre h¨aufig langsame Dekoh¨arenz erkl¨art.
+Summation über viele verschiedene komplexe Phasen statt, sodass der Absolutwert
+des Nebendiagonalelements innerhalb kurzer Zeit zerfällt. Sind die Energieänderungen
+durch das effektive Magnetfeld jedoch für beide Zustände annähernd identisch, so kann
+der Zerfall des Nebendiagonalelements signifikant verlangsamt werden, da nur ähnliche
+komplexe Phasen addiert werden. Clock transitions erfüllen genau diese Voraussetzung,
+was ihre häufig langsame Dekohärenz erklärt.
 
 
 Es wurde in Experimenten nachgewiesen, dass die Nutzung von clock transitions
-die Koh¨arenzzeit um mehrere Gr¨oßenordnungen verl¨angern kann [82, 83]. Es existieren
+die Kohärenzzeit um mehrere Größenordnungen verlängern kann [82, 83]. Es existieren
 zudem Ideen dazu, dass clock transitions, bei denen nicht nur die erste Ableitung
-der Energie nach dem Magnetfeld, sondern auch h¨ohere Ableitungen verschwinden,
-besonders lange Koh¨arenzzeiten aufweisen mu¨ssten [84]. Beide Behauptungen werden
-im Folgenden auf ihre Gu¨ltigkeit fu¨r das hier behandelte System hin u¨berpru¨ft.
+der Energie nach dem Magnetfeld, sondern auch höhere Ableitungen verschwinden,
+besonders lange Kohärenzzeiten aufweisen müssten [84]. Beide Behauptungen werden
+im Folgenden auf ihre Gültigkeit für das hier behandelte System hin überprüft.
 
 
-4.5. Methodik zur Dekoh¨arenzberechnung
+4.5. Methodik zur Dekohärenzberechnung
 
 
 Gegenstand dieses Kapitel ist die in dieser Arbeit verwendete Methodik zur Berechnung
-von Koh¨arenzzeiten. Zun¨achst wird das Vorgehen zur Durchfu¨hrung einer Zeitentwick-
+von Kohärenzzeiten. Zunächst wird das Vorgehen zur Durchführung einer Zeitentwick-
 lung mithilfe exakter Diagonalisierung vorgestellt, um anschließend auf die Berechnung
-des Nebendiagonalelements der reduzierten Dichtematrix einzugehen, welches die Koh¨a-
-renz einer Superposition von Eigenzust¨anden quantifiziert. Hierbei sei das System mit
+des Nebendiagonalelements der reduzierten Dichtematrix einzugehen, welches die Kohä-
+renz einer Superposition von Eigenzuständen quantifiziert. Hierbei sei das System mit
 S und das Bad mit B bezeichnet.
 
 
@@ -1033,124 +1029,123 @@ Sei a die Eigenbasis des Hamiltonoperators des Systems S. Initialisiere S in i
 { | (cid:105)}
 einem Ausgangszustand Ψ (t = 0) . In dieser Arbeit wird dieser Zustand stets eine S
 | (cid:105)
-gleichgewichtete Superposition aus zwei nicht entarteten Eigenzust¨anden a und n
-| (cid:105)
-a sein, d.h. p | (cid:105)
+gleichgewichtete Superposition aus zwei nicht entarteten Eigenzuständen a und n
+| (cid:105) a sein, d.h. p | (cid:105)
 
 
 Definiere nun einen zufälligen2 Ausgangszustand Ψ (t = 0) des Bades B. Aus diesen B
 | (cid:105)
-beiden Zust¨anden kann ein Produktzustand gebildet werden gem¨aß
+beiden Zuständen kann ein Produktzustand gebildet werden gemäß
 
 
 Sei nun m die Produktbasis des Gesamtsystems (S B) und ϕ die Eigenbasis l
 { | (cid:105)} ⊗ { | (cid:105)}
-des Hamilton-Operators des Gesamtsystems mit Eigenwerten E . Fu¨hre nun einen l
+des Hamilton-Operators des Gesamtsystems mit Eigenwerten E . Führe nun einen l
 Basiswechsel von der Produktbasis in diese Eigenbasis durch:
 
 
-Es folgt fu¨r den zeitentwickelten Zustand
+Es folgt für den zeitentwickelten Zustand
 
 
 2Die Zufallszahlen sind reell, im Intervall [ 1, 1] gleichverteilt und jeder Eintrag des Zustands wird
 − mithilfe zweier Zufallszahlen als komplexe Zahl geschrieben, woraufhin der Zustand normiert wird.
 
 
-Ein weiterer Basiswechsel zuru¨ck in die Produktbasis liefert
+Ein weiterer Basiswechsel zurück in die Produktbasis liefert
 
 
 Alle Terme in dieser Gleichung sind durch exakte Diagonalisierung bis auf Maschinen-
-pr¨azision (in dieser Arbeit: 64 bit) bekannt.
+präzision (in dieser Arbeit: 64 bit) bekannt.
 
 
-Um nun die Koh¨arenz des Zustands zu jedem Zeitpunkt numerisch angeben zu k¨onnen,
+Um nun die Kohärenz des Zustands zu jedem Zeitpunkt numerisch angeben zu können,
 wird die reduzierte Dichtematrix ρ durch Ausspuren der Freiheitsgrade des Spinbades
 B aufgestellt. Es existieren verschiedene Definitionen zur Quantifizierung von (De-)Ko-
-h¨arenz, vgl. [42] fu¨r eine U¨ bersicht. In dieser Arbeit kommt es jedoch nicht darauf
-an, welche von diesen gew¨ahlt wird, da ohnehin nur Unterschiede in Koh¨arenzzeiten
+härenz, vgl. [42] für eine Ü bersicht. In dieser Arbeit kommt es jedoch nicht darauf
+an, welche von diesen gewählt wird, da ohnehin nur Unterschiede in Kohärenzzeiten
 betrachtet werden. Daher wird einfach der Absolutwert des Nebendiagonalelements von
-ρ als Maß fu¨r die Koh¨arenz eines Zustands verwendet. Wurde als Ausgangszustand eine
-Superposition gew¨ahlt, wie sie in Gl. (4.10) beschrieben ist, kann diese Gr¨oße berechnet
+ρ als Maß für die Kohärenz eines Zustands verwendet. Wurde als Ausgangszustand eine
+Superposition gewählt, wie sie in Gl. (4.10) beschrieben ist, kann diese Größe berechnet
 werden als
 
 
 Nach Initialisierung einer Zwei-Zustands-Superposition gilt zu Beginn (t = 0) stets
 ρ = 0.5; dieser Wert wird im Laufe der Zeitentwicklung immer kleiner, bis er n,p
 | |
-schlussendlich, abh¨angig von der Gr¨oße des Spinbades, mit mehr oder weniger großen
+schlussendlich, abhängig von der Größe des Spinbades, mit mehr oder weniger großen
 Amplituden chaotisch oszilliert.
 
 
-Um die Ergebnisse der Dekoh¨arenzrechnungen u¨bersichtlicher darstellen zu k¨onnen,
-FOOTNOTE:wird mit T aus den so gewonnenen Daten eine einzelne Kennzahl fu¨r jeden Deko- 0.49
-h¨arenzverlauf bestimmt. Diese Kennzahl ist definiert als die Zeit, die es braucht, bis
+Um die Ergebnisse der Dekohärenzrechnungen übersichtlicher darstellen zu können,
+FOOTNOTE:wird mit T aus den so gewonnenen Daten eine einzelne Kennzahl für jeden Deko- 0.49
+härenzverlauf bestimmt. Diese Kennzahl ist definiert als die Zeit, die es braucht, bis
 der Absolutwert des Nebendiagonalelements ρ das erste Mal unter den mehr oder n,p
 | |
-weniger beliebig gew¨ahlten Wert von 0.49 f¨allt. Diese Wahl einer Kennzahl erm¨oglicht
-erst einen quantitativen Vergleich des Dekoh¨arenzverhaltens von verschiedenen Super-
-positionen, jedoch wird ignoriert, dass nicht alle Dekoh¨arenzkurven einen ¨ahnlichen
-Verlauf zeigen. So sind manche Abf¨alle exponentiell und manche Gauss-artig, wie in [85]
-ausfu¨hrlich erl¨autert. Somit wird mit dieser Vergleichsmethode das Dekoh¨arenzverhal-
-ten nicht vollst¨andig abgebildet. Dies ist allerdings auch nicht das Ziel dieser Arbeit;
-dieses besteht lediglich darin, Superpositionen mit langen Koh¨arenzzeiten (welche im
-Wesentlichen Gauss-artige Dekoh¨arenz zeigen) zu identifizieren, wofu¨r die Betrachtung
-von T genu¨gt. 0.49
+weniger beliebig gewählten Wert von 0.49 fällt. Diese Wahl einer Kennzahl ermöglicht
+erst einen quantitativen Vergleich des Dekohärenzverhaltens von verschiedenen Super-
+positionen, jedoch wird ignoriert, dass nicht alle Dekohärenzkurven einen ähnlichen
+Verlauf zeigen. So sind manche Abfälle exponentiell und manche Gauss-artig, wie in [85]
+ausführlich erläutert. Somit wird mit dieser Vergleichsmethode das Dekohärenzverhal-
+ten nicht vollständig abgebildet. Dies ist allerdings auch nicht das Ziel dieser Arbeit;
+dieses besteht lediglich darin, Superpositionen mit langen Kohärenzzeiten (welche im
+Wesentlichen Gauss-artige Dekohärenz zeigen) zu identifizieren, wofür die Betrachtung
+von T genügt. 0.49
 
 
-4.6. Dekoh¨arenzberechnungen im Standardsystem fu¨r
+4.6. Dekohärenzberechnungen im Standardsystem für
 verschiedene Winkel θ
 
 
 In diesem Unterkapitel wird das System in der in Tab. 4.1 definierten Standardkonfigurati-
 on betrachtet. Die hier dargestellten Ergebnisse werden im Folgenden der Ausgangspunkt
-fu¨r Vergleiche mit anderen Konfigurationen sein. In besagter Standardkonfiguration ist θ
-variabel gehalten; dafu¨r werden 50 Werte zwischen [0◦, . . . , 88.2◦] gew¨ahlt und zun¨achst
+für Vergleiche mit anderen Konfigurationen sein. In besagter Standardkonfiguration ist θ
+variabel gehalten; dafür werden 50 Werte zwischen [0◦, . . . , 88.2◦] gewählt und zunächst
 die resultierenden Zeeman-Diagramme verglichen, siehe Abb. 4.7. Alle Berechnungen
-beziehen sich im Sinne der Anschaulichkeit zun¨achst nur auf eine (feste) zuf¨allige An-
+beziehen sich im Sinne der Anschaulichkeit zunächst nur auf eine (feste) zufällige An-
 ordnung von genau acht Badspins. Um sicherzugehen, keine wichtigen Effekte durch
-eine versehentlich ungu¨nstige Wahl des Spinbads zu u¨bersehen, sind in Kap. 4.8.2 die
-Ergebnisse fu¨r verschiedene Konstellationen und Badgr¨oßen dargestellt, fu¨r die die in
-diesem Kapitel gew¨ahlte Konfiguration einen guten Repr¨asentanten darstellt.
+eine versehentlich ungünstige Wahl des Spinbads zu übersehen, sind in Kap. 4.8.2 die
+Ergebnisse für verschiedene Konstellationen und Badgrößen dargestellt, für die die in
+diesem Kapitel gewählte Konfiguration einen guten Repräsentanten darstellt.
 
 
-Um nun das Dekoh¨arenzverhalten der verschiedenen Systeme zu vergleichen, wurden
-zun¨achst in jeder θ-Konfiguration alle m¨oglichen Superpositionen der sechs energetisch
-niedrigsten Zust¨ande gebildet und diese unter Beru¨cksichtigung des Spinbads wie in
+Um nun das Dekohärenzverhalten der verschiedenen Systeme zu vergleichen, wurden
+zunächst in jeder θ-Konfiguration alle möglichen Superpositionen der sechs energetisch
+niedrigsten Zustände gebildet und diese unter Berücksichtigung des Spinbads wie in
 Kap. 4.5 beschrieben zeitentwickelt. Der Absolutwert des Nebendiagonalelements ist
-fu¨r die zu Abb. 4.7 gezeigten Konfigurationen in Abb. 4.8 in Abh¨angigkeit von der Zeit
+für die zu Abb. 4.7 gezeigten Konfigurationen in Abb. 4.8 in Abhängigkeit von der Zeit
 dargestellt.
 
 
-Der ideale Wert fu¨r den Polarwinkel ergibt sich in der hier gew¨ahlten Konfiguration
-und fu¨r das hier betrachtete Spinbad nach Abb. 4.9 zu θ = 50.4◦, wenn das System
+Der ideale Wert für den Polarwinkel ergibt sich in der hier gewählten Konfiguration
+und für das hier betrachtete Spinbad nach Abb. 4.9 zu θ = 50.4◦, wenn das System
 in einer Superposition des Grund- und dritten angeregten Zustands initialisiert wird.
-Dieser Wert fu¨r θ ¨andert sich wie in Kap. 4.8.2 dargestellt nur unwesentlich unter Wahl
-eines anderen zuf¨alligen Spinbads mit derselben oder einer anderen Anzahl an Badspins
-n . Dies gilt auch fu¨r die qualitative Beobachtung, ob eine gegebene Superposition Bad
-im Vergleich zu anderen eine lange oder kurze Koh¨arenzzeit zeigt, w¨ahrend sich die
-konkreten Zahlenwerte fu¨r die Koh¨arenzzeiten moderat ¨andern k¨onnen.
+Dieser Wert für θ ändert sich wie in Kap. 4.8.2 dargestellt nur unwesentlich unter Wahl
+eines anderen zufälligen Spinbads mit derselben oder einer anderen Anzahl an Badspins
+n . Dies gilt auch für die qualitative Beobachtung, ob eine gegebene Superposition Bad
+im Vergleich zu anderen eine lange oder kurze Kohärenzzeit zeigt, während sich die
+konkreten Zahlenwerte für die Kohärenzzeiten moderat ändern können.
 
 
-Es f¨allt zudem auf, dass die meisten Superpositionen beinahe instantan dekoh¨arieren.
+Es fällt zudem auf, dass die meisten Superpositionen beinahe instantan dekohärieren.
 Eine Ausnahme bilden, wenn man Abb. 4.7 und 4.8 vergleicht, augenscheinlich lediglich
-einige Superpositionen, deren Zust¨ande in guter N¨aherung eine clock transition (vgl.
+einige Superpositionen, deren Zustände in guter Näherung eine clock transition (vgl.
 Kap. 4.4) bilden.
 
 
-Abb. 4.9: Koh¨arenzzeiten der betrachteten Superpositionen fu¨r das System in Standardkonfi-
-guration (vgl. Tab. 4.1) aufgetragen gegen den Polarwinkel θ. Die l¨angste Koh¨arenzzeit ist
-fu¨r die konkrete, hier betrachtete Konfiguration fu¨r eine Superposition des Grund- und des
+Abb. 4.9: Kohärenzzeiten der betrachteten Superpositionen für das System in Standardkonfi-
+guration (vgl. Tab. 4.1) aufgetragen gegen den Polarwinkel θ. Die längste Kohärenzzeit ist
+für die konkrete, hier betrachtete Konfiguration für eine Superposition des Grund- und des
 dritten angeregten Zustands bei θ = 50.4◦ zu beobachten. Eine Legende ist gezeigt in Abb.
 4.3.
 
 
-4.7. M¨ogliche Ursachen fu¨r das beobachtete Dekoh¨arenzverhalten
+4.7. Mögliche Ursachen für das beobachtete Dekohärenzverhalten
 
 
-In diesem Unterkapitel werden einige Ideen zur Erkl¨arung der in Kap. 4.6 gezeigten Er-
-gebnisse er¨ortert, begru¨ndet und anhand der gewonnenen Daten u¨berpru¨ft. Dabei ist zu
+In diesem Unterkapitel werden einige Ideen zur Erklärung der in Kap. 4.6 gezeigten Er-
+gebnisse erörtert, begründet und anhand der gewonnenen Daten überprüft. Dabei ist zu
 beachten, dass die betrachteten Eigenschaften nicht scharf voneinander zu trennen sind
-und sich zum Teil gegenseitig bedingen. Es ist dennoch im Sinne der U¨bersichtlichkeit
+und sich zum Teil gegenseitig bedingen. Es ist dennoch im Sinne der Übersichtlichkeit
 und Nachvollziehbarkeit sinnvoll, diese sequentiell zu betrachten.
 
 
@@ -1158,59 +1153,59 @@ und Nachvollziehbarkeit sinnvoll, diese sequentiell zu betrachten.
 
 
 Es ist bereits gut untersucht, dass die clock transition-Eigenschaft einer Superposition
-entscheidend fu¨r eine lange Koh¨arenzzeit ist, siehe Kap. 4.4. Zur genaueren Betrachtung
+entscheidend für eine lange Kohärenzzeit ist, siehe Kap. 4.4. Zur genaueren Betrachtung
 FOOTNOTE:dieses Zusammenhangs ist in Abb. 4.10 T gegen den Absolutwert der Differenz der 0.49
 magnetischen Momente (siehe Gl. (4.7)) der in der Superposition enthaltenen Eigenzu-
-st¨ande aufgetragen. Tats¨achlich stellen alle Superpositionen mit langen Koh¨arenzzeiten
+stände aufgetragen. Tatsächlich stellen alle Superpositionen mit langen Kohärenzzeiten
 clock transitions dar, jedoch ist dies keine hinreichende Bedingung, wie auf der rechten
 Seite von Abb. 4.10 zu sehen.
 
 
-Wie in Kap. 4.4 bereits erw¨ahnt, ist eine h¨aufig getroffene Annahme hier, dass die
-schnelle Dekoh¨arenz mancher clock transitions durch nicht verschwindende oder sogar
-große h¨ohere Ableitungen der Energie nach dem Magnetfeld zu erkl¨aren ist (sweet spots,
+Wie in Kap. 4.4 bereits erwähnt, ist eine häufig getroffene Annahme hier, dass die
+schnelle Dekohärenz mancher clock transitions durch nicht verschwindende oder sogar
+große höhere Ableitungen der Energie nach dem Magnetfeld zu erklären ist (sweet spots,
 
 
-vgl. [86–92]). Dem ist hier jedoch zumindest bezu¨glich der zweiten Ableitung nicht so,
-wie beim Vergleich von Abb. 4.10 und Abb. 4.11 auff¨allt. Die Abbildungen zeigen den
+vgl. [86–92]). Dem ist hier jedoch zumindest bezüglich der zweiten Ableitung nicht so,
+wie beim Vergleich von Abb. 4.10 und Abb. 4.11 auffällt. Die Abbildungen zeigen den
 Zusammenhang zwischen der Differenz in erster bzw. zweiter Ableitung der Energie nach
-dem Magnetfeld und der Koh¨arenzzeit (M ∂E/∂B ). Die beiden Verteilungen sind im z
+dem Magnetfeld und der Kohärenzzeit (M ∂E/∂B ). Die beiden Verteilungen sind im z
 ∝
-Wesentliche identisch; sie sind lediglich mit B zueinander skalierte. Die Ursache hierfu¨r z
-liegt in der Tatsache begru¨ndet, dass fu¨r so gut wie alle Superpositionen, welche auf
+Wesentliche identisch; sie sind lediglich mit B zueinander skalierte. Die Ursache hierfür z
+liegt in der Tatsache begründet, dass für so gut wie alle Superpositionen, welche auf
 der rechten Seite von Abb. 4.10 gezeigt sind, bei B = 0 die Differenz der magnetischen
-Momente M M = 0 ist. Damit gilt im Rahmen einer linearen N¨aherung p n | − |
+Momente M M = 0 ist. Damit gilt im Rahmen einer linearen Näherung p n | − |
 
 
-fu¨r kleine B (dies entspricht einer Taylorentwicklung bis zur zweiten Ordnung). Dies z
+für kleine B (dies entspricht einer Taylorentwicklung bis zur zweiten Ordnung). Dies z
 bedeutet, dass ein MBz MBz = 0 von der zweiten Ableitung erzeugt“ wird. Die
 | p − n | (cid:54) ”
-Kru¨mmung der Zeeman-Kurven ist auch nicht stark genug, als dass die dritte oder
-noch h¨ohere Ableitungen bei dem hier gew¨ahlten, kleinen Magnetfeld eine signifikante
-Rolle fu¨r die Ergebnisse spielen k¨onnten. Somit kann durch die Betrachtung der zweiten
+Krümmung der Zeeman-Kurven ist auch nicht stark genug, als dass die dritte oder
+noch höhere Ableitungen bei dem hier gewählten, kleinen Magnetfeld eine signifikante
+Rolle für die Ergebnisse spielen könnten. Somit kann durch die Betrachtung der zweiten
 Ableitung keine neue Information gewonnen werden, die nicht bereits in der Betrachtung
 der ersten Ableitung enthalten ist.
 
 
-4.7.2. Gr¨oße der Energielu¨cke in der Superposition
+4.7.2. Größe der Energielücke in der Superposition
 
 
-Eine weitere Eigenschaft von Superpositionen, die Einfluss auf ihr Dekoh¨arenzverhalten
-haben k¨onnte, ist die Gr¨oße der Energielu¨cke zwischen den beiden Zust¨anden, also
-∆E = E E . Das Argument fu¨r eine Korrelation von ∆E und der Koh¨arenzzeit ist p m
+Eine weitere Eigenschaft von Superpositionen, die Einfluss auf ihr Dekohärenzverhalten
+haben könnte, ist die Größe der Energielücke zwischen den beiden Zuständen, also
+∆E = E E . Das Argument für eine Korrelation von ∆E und der Kohärenzzeit ist p m
 −
-denkbar einfach: Vergr¨oßert man J und D und l¨asst die System-Bad-Kopplungsst¨arke
-FOOTNOTE:A konstant, so werden alle Energieabst¨ande im System, also auch ∆E, gr¨oßer, w¨ahrend 1
-FOOTNOTE:gleichzeitig A effektiv im Verh¨altnis kleiner wird. Eine solche Reduktion von A , welche 1 1
-in Kap. 4.8.1 besprochen wird und einer schw¨acheren Ankopplung des Bades entspricht,
-hat einen signifikanten positiven Einfluss auf die Koh¨arenzzeit, was auch intuitiv klar
+denkbar einfach: Vergrößert man J und D und lässt die System-Bad-Kopplungsstärke
+FOOTNOTE:A konstant, so werden alle Energieabstände im System, also auch ∆E, größer, während 1
+FOOTNOTE:gleichzeitig A effektiv im Verhältnis kleiner wird. Eine solche Reduktion von A , welche 1 1
+in Kap. 4.8.1 besprochen wird und einer schwächeren Ankopplung des Bades entspricht,
+hat einen signifikanten positiven Einfluss auf die Kohärenzzeit, was auch intuitiv klar
 ist.
 
 
 Zudem kann die Heuristik herangezogen werden, dass die Energieniveaus des Systems
 ohne Bad durch die Ankopplung des Bades sozusagen ausgeschmiert“ werden. Dieses ”
-FOOTNOTE:Ausschmieren wird st¨arker, je gr¨oßer A gew¨ahlt wird, wodurch verschiedene Eigenzu- 1
-st¨ande des Systems durch Ankopplung des Bades energetisch miteinander verbunden
+FOOTNOTE:Ausschmieren wird stärker, je größer A gewählt wird, wodurch verschiedene Eigenzu- 1
+stände des Systems durch Ankopplung des Bades energetisch miteinander verbunden
 werden können, was eine Verschränkung der Zustände und somit Dekohärenz begünstigt.
 
 

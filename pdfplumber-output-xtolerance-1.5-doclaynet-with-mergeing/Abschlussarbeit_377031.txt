@@ -778,8 +778,8 @@ deren stellt er während des Betriebs sicher, dass alle ihm durch den API Server
 zugewiesenen Workloads ordnungsgemäß auf dem Worker ausgeführt werden.
 
 
-Der Kube-Proxy ist ein Netzwerk-Proxy, welcher für die gesamte Netzwerkkom-
-• munikation des Clusters zuständig ist. Er sorgt unter anderem für die Vergabe
+Der Kube-Proxy ist ein Netzwerk-Proxy, welcher für die gesamte Netzwerkkom- •
+munikation des Clusters zuständig ist. Er sorgt unter anderem für die Vergabe
 eindeutiger IP-Adressen sowie das Routing und Load-Balancing zwischen den
 Containern innerhalb des Workers.
 
@@ -869,7 +869,7 @@ verschiedene URLs auf die Services des Clusters zugreifen, ohne dass sie deren I
 Adressen oder DNS-Namen kennen müssen. [46, 51]
 
 
-AÜdbrliecshseerwn eoidseerbDeNstSe-hNeanmveenrtekieltnenSeynsmteümseseanu.s[4e6in, e5r1]Vielzahl verschiedener Microser-
+Üblicherweise bestehen verteilte Systeme aus einer Vielzahl verschiedener Microser-
 vices. Um hierbei einen guten Überblick zu behalten, empfiehlt es sich logisch zusam-
 mengehörende Microservices jeweils in Gruppen zusammenzufassen. Hierzu bietet
 Kubernetes so genannte Namespaces. Ein Namespace ist eine Art „virtuelles Cluster“
@@ -972,8 +972,8 @@ z.B. die Anzahl an Timeouts oder Wiederholungen fehlgeschlagener Anfragen.
 Version 2.x gemeint und nicht Linkerd Version 1.x.
 
 
-Die Identity-Komponente: Sie dient als TLS-Zertifikatsautorität und stellt den •
-Sidecar-Proxies Zertifikate für mTLS-verschlüsselte Verbindungen zur Verfügung.
+Die Identity-Komponente: Sie dient als TLS-Zertifikatsautorität und stellt den
+• Sidecar-Proxies Zertifikate für mTLS-verschlüsselte Verbindungen zur Verfügung.
 
 
 Der Proxy Injector: Er sorgt dafür, dass sämtliche Pods innerhalb des Service •
@@ -1195,6 +1195,8 @@ komponenten in der Control Plane und Data Plane als einen der Schwachpunkte von
 Service Meshes. So könne es zum Beispiel zu inkonsistenten Systemzuständen kom-
 men, wenn die Control-Plane-Komponente, die für die Autorisierung und Authentifizie-
 rung zuständig ist, vorübergehend nicht verfügbar sei. Zudem könne es zu Verfügbar-
+
+
 keitsproblemen kommen, wenn Fehler in den Sidecar-Proxies aufträten. [11]
 Ein weiteres Problem von Service Meshes besteht in dem erhöhten Ressourcenver-
 brauch, der durch die zusätzliche Infrastrukturschicht entsteht. Sowohl Will Zhang als
@@ -1649,15 +1651,15 @@ oder Microsoft Azure zum Einsatz kommt. Die Infrastruktur dieses virtuellen Clus
 wird in Abbildung 3.3 schematisch dargestellt.
 
 
+Abbildung 3.3: Schematische Darstellung der Infrastruktur des Istio-Testsystems
+
+
 Wie zu sehen ist, besteht das Cluster aus einem Master- und drei Worker-Knoten.
 Die Knoten werden jeweils durch Container realisiert, die auf einem MacBook Pro in-
 nerhalb eines lokalen Netzwerks ausgeführt werden. Die Steuerung und Konfiguration
 
 
 des Clusters erfolgt dabei über die Command Line Interfaces von Kubernetes und Istio,
-welche ebenfalls auf dem MacBook Pro ausgeführt werden.
-
-
 welche ebenfalls auf dem MacBook Pro ausgeführt werden.
 Auf den vier Knoten des Clusters wird die Kubernetes-Distribution K3s eingesetzt, wel-
 che bereits aus dem Linkerd-Testsystem aus Abschnitt 3.3.1 bekannt ist. Für die Ein-
@@ -1674,7 +1676,7 @@ Istio-CLI: 1.9.2 •
 Istio-Control-Plane: 1.9.2 •
 
 
-Istio-Data-Plane: 1.9.2
+Istio-Data-Plane: 1.9.2 •
 
 
 Kubernetes-CLI: v1.21.1 •
@@ -1723,7 +1725,7 @@ grammiert. Er wird in einem NGINX-Webserver ausgeführt und in einem ReplicaSet
 tung des Testsystems.
 
 
-6Rt eu an cg td ise ts eT ie ns ets Sy os ft te wm as re. -Bibliothek für die Entwicklung grafischer Benutzeroberflächen in JavaScript
+6React ist eine Software-Bibliothek für die Entwicklung grafischer Benutzeroberflächen in JavaScript
 oder TypeScript.
 
 
@@ -1772,11 +1774,6 @@ tion senden und somit clientseitige Nutzerinteraktionen simulieren. Zudem verfü
 
 
 7Spring und Quarkus sind Frameworks für die Entwicklung von Webapplikationen in Java.
-
-
-über ein Logging sämtlicher aus dem Backend erhaltenen Antworten und stellt die so
-gewonnen Daten in Echtzeit grafisch in einem Diagramm dar. Abbildung 3.7 zeigt die
-grafische Benutzeroberfläche des entwickelten Traffic-Generators.
 
 
 Wie zu erkennen ist, verfügt der Traffic-Generator über einen Start-Button, durch wel-

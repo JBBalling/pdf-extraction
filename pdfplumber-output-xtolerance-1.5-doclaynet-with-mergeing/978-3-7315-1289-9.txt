@@ -535,7 +535,7 @@ Wobei letzteres im Sinne eines allgemeinen bzw. bereichsbezogenen Wissens zu int
 ist und nicht im Sinne der Form der Repräsentation in Form von Regeln.
 
 
-FOOTNOTE:² Histinuwnedisn:icEhint iigmeSAinuntoerdeenrsFporremchdeenr hRieeprräasuecnhtavtoionndinerFWormissvenonsaRkeqgueislnit.ionskomponente (vgl.
+FOOTNOTE:² Hinweis: Einige Autoren sprechen hier auch von der Wissensakquisitionskomponente (vgl.
 [Kur92, Alt13]).
 
 
@@ -580,7 +580,7 @@ tig in den 1960er Jahren geprägt von Karl Steinbuch [Ste65], ist die Kybernetik
 gehend im Begriff der KI aufgegangen.
 
 
-FOOTNOTE:² Hgeihnewnedisi:mDBieegTreisfftedregrebKnIiassuefgheägnagnegnena.lso nicht von der Fähigkeit der Maschine ab, „korrekte“
+FOOTNOTE:² Hinweis: Die Testergebnisse hängen also nicht von der Fähigkeit der Maschine ab, „korrekte“
 Antworten im Hinblick auf die Konstituenten des Problems zu geben, sondern nur davon, wie
 sehr ihre Antworten denen eines Menschen (bzw. der Menschen der Stichprobe) ähneln.
 
@@ -833,6 +833,9 @@ valide Annahme, dass sich die angegebenen Wahrscheinlichkeiten zumindest
 ähneln werden – sofern die Experten einen ausreichend großen, ähnlichen
 
 
+FOOTNOTE:¹ Hinweis: Auch als Prinzip des unzureichenden Grundes bezeichnet [Lau98].
+
+
 Erfahrungsschatz besitzen. Denn nach Morgan und Henrion konvergiert ei-
 ne subjektiv gewählte Wahrscheinlichkeitsverteilung einer empirischen Grö-
 ße gegen deren frequentistische Wahrscheinlichkeitsverteilung, wenn für die
@@ -943,8 +946,6 @@ Aus Gleichung 2.2 folgt unter Ausnutzung von
 
 
 𝑃(𝛼 ∩ 𝛽) = 𝑃(𝛽 ∩ 𝛼) sowie
-
-
 𝑃(𝛼)𝑃(𝛽|𝛼) = 𝑃(𝛽)𝑃(𝛼|𝛽)
 
 
@@ -974,6 +975,10 @@ Definition 2.6. In 𝑃 ist ein Ereignis 𝛼 unabhängig von einem Ereignis �
 
 Oder aus einer andere Perspektive betrachtet: 𝑃 genügt (𝛼 ⟂ 𝛽) genau dann
 wenn 𝑃(𝛼 ∩ 𝛽) = 𝑃(𝛼)𝑃(𝛽):
+
+
+𝑃(𝛼 ∩ 𝛽) 𝑃(𝛼)𝑃(𝛽) 𝑃(𝛼|𝛽) = = = 𝑃(𝛼).
+𝑃(𝛽) 𝑃(𝛽)
 
 
 FOOTNOTE:Im Beispiel des Glücksrad-Gewinnspiels ist ein Ereignis 𝛼 = {II} unabhängig 2
@@ -1150,11 +1155,12 @@ liegen, sowie nicht 𝑋 selbst sind (d.h. Nicht-Nachfahren von 𝑋 ). 𝑖 �
 ist sichergestellt, dass die Elternbeziehung eindeutig für jeden Knoten angegeben werden kann.
 
 
-FOOTNOTE:² Histinswicheiesr:gWesetnelnlt,Pdaa(s𝑋s d)ie=Elt∅er,nibsetzdieiehuZnugfaelilnsvdaeruiatibglefü𝑋r jedeiennWKnuortzeenlkannogteegneubenndw𝑃e(r𝑋den| ∅ka)n=n. 𝑖 𝑖 𝑖
+ist sichergestellt, dass die Elternbeziehung eindeutig für jeden Knoten angegeben werden kann.
+FOOTNOTE:² Hinweis: Wenn Pa(𝑋 ) = ∅, ist die Zufallsvariable 𝑋 ein Wurzelknoten und 𝑃(𝑋 | ∅) = 𝑖 𝑖 𝑖
 𝑃(𝑋 ) gibt folglich die A-priori-Wahrscheinlichkeit an. 𝑖
 
 
-FOOTNOTE:³ H𝑃(in𝑋w𝑖e)igs:ibUtmfoglgekliechhrdtime Aüs-spernioraib-WeranhircshcthaelilneliUchnkaebihtäanng.igkeiten in 𝑃 auch in 𝐺 repräsentiert
+FOOTNOTE:³ Hinw𝑖eigs:ibUtmfoglgekliechhrdtime Aüs-spernioraib-WeranhircshcthaelilneliUchnkaebihtäanng.igkeiten in 𝑃 auch in 𝐺 repräsentiert
 sein.
 
 
@@ -1308,11 +1314,11 @@ zu definieren und repräsentiert damit die Struktur des BN (vgl. Kapitel 2.4.3).
 Die Vertexmenge 𝒱 repräsentiert die Menge der Zufallsvariablen, während
 
 
-FOOTNOTE:ung 2.5: Graph eines Bayes-Netzes (BN) über den Zufallsvariablen 𝑋 . Diese 0∶4
-tur, die auch Naive BN genannt wird, ist gekennzeichnet durch ge
-FOOTNOTE:te Kanten ausgehend von Wurzelknoten 𝑋 zu seinen Kindern 𝑋 0 1∶
-eine fehlende Kante die Unabhängigkeit zweier Zufallsvariablen verk
-FOOTNOTE:kann die Verbundwahrscheinlichkeit 𝑃(𝑋 ) wie folgt faktorisiert w 0∶4
+FOOTNOTE:Abbildung 2.5: Graph eines Bayes-Netzes (BN) über den Zufallsvariablen 𝑋 . Diese Struk- 0∶4
+tur, die auch Naive BN genannt wird, ist gekennzeichnet durch gerichte-
+FOOTNOTE:te Kanten ausgehend von Wurzelknoten 𝑋 zu seinen Kindern 𝑋 . Da 0 1∶4
+eine fehlende Kante die Unabhängigkeit zweier Zufallsvariablen verkörpert,
+FOOTNOTE:kann die Verbundwahrscheinlichkeit 𝑃(𝑋 ) wie folgt faktorisiert werden: 0∶4
 𝑃(𝑋 ) = 𝑃(𝑋 )𝑃(𝑋 |𝑋 )𝑃(𝑋 |𝑋 )𝑃(𝑋 |𝑋 )𝑃(𝑋 |𝑋 ). 0∶4 0 1 0 2 0 3 0 4 0
 
 
@@ -1399,17 +1405,17 @@ samt können so Daten mittels FHIR auffindbar (engl. Findable), zugänglich
 ¹ Gesprochen: [ˈfaɪə] (engl. fire).
 
 
-¹² GHeinspwreoicsh: eSny:st[eˈfmaɪəe]w(eenrdgel.nfirine).der Begriffswelt der Softwaretechnik als Ausschnitte der realen
+FOOTNOTE:² Hinweis: Systeme werden in der Begriffswelt der Softwaretechnik als Ausschnitte der realen
 oder gedanklichen Welt gesehen, welche aus Komponenten, darauf vorhandenen Strukturen
 sowie einer Systemgrenze bestehen [Hes84, Bal10]. Letztere wird auch als Schnittstelle oder
 seltener als Nahtstelle bezeichnet (engl. interface).
 
 
-FOOTNOTE:³ Hseilntewneeirs:aDlseNraAhntswteelnledubnezgesibcehrneeicth(eunmglf.aisnstteHrfuacmea).n- und Veterinärmedizin und hierin die me-
+FOOTNOTE:³ Hinweis: Der Anwendungsbereich umfasst Human- und Veterinärmedizin und hierin die me-
 dizinische Versorgung selbst als auch Finanz- und Verwaltungsaspekte[Ben21, FHI21].
 
 
-⁴ Hdiizninwiescish:eDVieerZsaohrgl 7unisgt eseinlbesAt anlsspaieulcuhngFianuafndza-suOndpeVneSrwysatletmunsgIsnatseprceoknten[eBcetnio2n1,(OFHSII)2S1c]h. ichten-
+⁴ Hinweis: Die Zahl 7 ist eine Anspielung auf das Open Systems Interconnection (OSI) Schichten-
 modell der International Organization for Standardization (ISO) – häufig kurz als ISO/OSI Mo-
 dell bezeichnet [Pro93]. Dieses bezieht sich auf die Verbindung (Interconnection) verschiedener
 Systeme. Hierin ist die Schicht 7 die sog. Anwendungsschicht, welche sich mit dem Austausch

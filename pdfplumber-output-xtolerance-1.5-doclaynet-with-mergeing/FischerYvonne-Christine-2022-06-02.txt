@@ -104,11 +104,7 @@ Postkrikoidregion: von der Hinterwand des Kehlkopfes bis zur Unterkante des
 Ringknorpels reichend.
 
 
-Recessus piriformis: Schleimhauttasche beidseitig zwischen Schildknorpel und
-aryepiglottischer Falte.
-
-
-Abb. 1: Zeichnung des anatomischen Aufbaus des Hypopharynx
+Recessus piriformis:
 
 
 Histomorphologisch ist der Hypopharynx ein Muskelschlauch, der innen von einer
@@ -149,10 +145,13 @@ angegeben.
 Diese unterteilt sechs Hals-Level:
 
 
-Level I: Submentale (Ia) und submandibuläre (Ib) Lymphknoten
+el I: Submentale (Ia) und submandibuläre (Ib) Lymphknoten
 Zwischen Os hyoideum und M. mylohyoideus bis zum hinteren Rand der
 Gl. submandibularis; Nll. submentales liegen vor dem vorderen Bauch
 des M. digastricus, Nll. submandibulares postolateral
+
+
+Level II: Obere juguläre Lymphknoten
 
 
 Zwischen der Schädelbasis und dem Os hyoideum, hinter der Gl. sub-
@@ -165,6 +164,7 @@ Zwischen Os hyoideum, Ringknorpel, Hinterrand des M. omohyoideus
 und Hinterrand des M. sternocleidomastoideus
 
 
+Level IV: Untere juguläre Lymphknoten
 Zwischen Ringknorpel, Klavikula, Hinterrand des M. sternohyoideus und
 Hinterrand des M. sternocleidomastoideus
 
@@ -245,9 +245,6 @@ TNM-Klassifikation von 2010, sowie nach der Stadieneinteilung nach UICC (gültig
 1997) [95].
 
 
-T-Klassifikation
-
-
 N-Klassifikation
 
 
@@ -300,9 +297,6 @@ gestuft werden.
 
 
 Karnowsky-Index (%)
-
-
-1.8 Therapie
 
 
 Die Wahl der Erstbehandlung wird u.a. durch Kriterien der technischen Resektabilität
@@ -396,16 +390,12 @@ karzinome. Sie kann als alleinige kurative Therapie von kleinen Tumoren oder adj
 nach Resektion oder sekundär bei Rezidiven eingesetzt werden. Häufig wird die Strah-
 lentherapie mit einer Operation, einer Chemotherapie (simultan oder sequentiell) und
 mit monoklonalen Antikörpern kombiniert eingesetzt.
-
-
 Das Prinzip der Strahlentherapie beruht auf der Zerstörung der Tumorstammzellen
 durch energiereiche Strahlung. Der limitierende Faktor ist das umgebende Normal-
 gewebe, das nur eine Strahlendosis unterhalb der Grenze der reversiblen Akuttoxizität
 erhalten darf, damit irreversible Spättoxizitäten vermieden werden. Deshalb wird die
 Strahlendosis räumlich möglichst nur dort deponiert, wo sich makroskopisch Tumor
 befindet bzw. mikroskopischer Tumor vermutet wird.
-
-
 Das gelingt am besten mit der Intensitätsmodulierten Strahlentherapie (IMRT), die die
 3D-konformale Strahlentherapie in den letzten 15 Jahren sukzessive abgelöst hat.
 Außerdem wird die Strahlendosis fraktioniert, d.h. in der Regel 2 Gray (Gy) pro Frak-
@@ -501,9 +491,6 @@ destens alle 3 Monate, im 2. Jahr mindestens alle 4 bis 6 Monate und in den Jahr
 Nachsorge in jährlichen Abständen erfolgen.
 
 
-2 FRAGESTELLUNG
-
-
 Karzinome des Hypopharynx zeichnen sich gegenüber anderen Karzinomen der oberen
 Luft- und Speisewege durch ihre besonders schlechte Prognose aus. Diese liegt weniger
 in einer geringen Kontrollierbarkeit des Primärtumors, als in der hohen Inzidenz von
@@ -569,9 +556,6 @@ lückenhafter Dokumentation und unklarem Behandlungsverlauf.
 3.2 Methode
 
 
-- Datum der Erstdiagnose
-
-
 - Alter bei Erstdiagnose
 
 
@@ -612,6 +596,10 @@ lückenhafter Dokumentation und unklarem Behandlungsverlauf.
 
 
 - Datum der letzten Nachsorge
+
+
+Es wurden ausschließlich Nikotin und Alkohol erfasst, da die Bestimmung von p16 und
+HPV im Beobachtungszeitraum noch nicht routinemäßig durchgeführt worden war.
 
 
 Anhand der Stagingdokumentation erfolgte die Einteilung in Karzinome des Sinus piri-
@@ -742,11 +730,10 @@ die Methode „forward“ angewandt. Faktoren wurden in Abhängigkeit ihrer Bede
 d.h. je geringer die Wahrscheinlichkeit p für einen zufälligen Effekt ist, solange schritt-
 weise eingefügt, bis alle Kovariaten mit einem deutlichen Einfluss (p-Wert < 0,05) in
 der Modellgleichung enthalten waren.
+
+
 Die Verfahren der Überlebensanalysen wurden auf Grund der multiplen Testproble-
 matik nur explorativ genutzt.
-
-
-4 ERGEBNISSE
 
 
 4.1 Alter und Geschlecht
@@ -786,8 +773,6 @@ und chemotherapeutisch) lag nach Abschluss der Behandlung der KI unverändert be
 beginn unter die Schwelle von 70. Dabei war kein Unterschied in der posttherapeu-
 tischen Verschlechterung des KI zwischen den Kollektiven der primär operierten und
 der primär radiochemotherapierten Patienten erkennbar.
-
-
 Bei den beiden Patienten mit einem niedrigen prä-therapeutischen KI (<70) blieb der
 reduzierte Allgemeinzustand nach Therapie erhalten. Die Einzelheiten sind in Tabelle 3
 aufgelistet.
@@ -876,9 +861,6 @@ der Sinus-piriformis-Karzinome.
 Tab. 5: Aufschlüsselung der T- und N-Stadien nach der Tumorlokalisation
 
 
-4.7 UICC-Tumorstadium
-
-
 Entsprechend der TNM-Klassifikation bestätigte sich in den UICC-Stadien ein
 deutliches Überwiegen des fortgeschrittenen Stadiums IV in 83% der Fälle (218
 Patienten), gefolgt von 38 Patienten (14%) im Stadium III (siehe Abbildung 10).
@@ -891,13 +873,9 @@ Von insgesamt 264 Patienten erhielten 241 Patienten (91%) eine tumorspezifische
 Therapie. Mit einem kurativen Behandlungskonzept wurden 184 Patienten (70%) be-
 handelt. Eine Therapie mit einem palliativen, lebensverlängernden Behandlungsziel
 wurde bei 57 Patienten (21%) angewandt.
-
-
 Die Standardtherapien waren die primäre Operation mit adjuvanter Radiotherapie (9,5%
 der Patienten) oder mit adjuvanter Radiochemotherapie (20% der Patienten) oder die
 primäre kombinierte Radiochemotherapie (26% der Patienten).
-
-
 Patienten, die lediglich operiert worden waren, stellten eine heterogene Gruppe dar: bei
 2 Patienten mit T1-Tumoren ohne lymphogene Metastasierung war das Behandlungsziel
 
@@ -1051,9 +1029,6 @@ bezogen auf das UICC-Stadium der Primärtumoren und die Therapiemodalität
 
 Bei 37 Patienten (14%) wurde ein metachrones Zweitkarzinom diagnostiziert. Am
 häufigsten fanden sich Bronchial- oder Öophaguskarzinome (siehe Abb. 20).
-
-
-Abb. 20: Lokalisationsbezogene Häufigkeitsverteilung der Zweitkarzinome
 
 
 Von den 184 Patienten, die mit einem kurativen Behandlungsansatz therapiert worden

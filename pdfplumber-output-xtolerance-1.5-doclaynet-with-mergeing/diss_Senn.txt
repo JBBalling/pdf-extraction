@@ -1,4 +1,6 @@
 Friedrich Schiller Universität Jena
+
+
 07737 Jena | Germany
 
 
@@ -254,6 +256,9 @@ Unstrittig sollte aber eigentlich sein, dass der Einsatz der grafische Modellier
 einem größeren Projekterfolg und somit zu einer Realisierung führen kann, die von
 
 
+1ausgesprochen in 2017
+
+
 höherer Qualität und Einhaltung des Kostenrahmens geprägt ist, als wenn weitgehend
 auf grafische Modelle verzichtet wird.
 
@@ -272,8 +277,6 @@ Detaillierungstiefe und den damit verbundenen Anforderungen an die Qualität ein
 Modellierung (z.B. Abbildung nur der fachlichen und/oder auch der technischen Pro-
 zessbeschreibungen, ausschließliche Modellierung nur konzeptioneller Datenmodelle oder
 auch Abbildung der technischen, normalisierten und physikalischen Modelle, usw.).
-
-
 Es stellt sich die einfache Frage: "Wenn die Entscheidung zugunsten der grafischen
 Modellierung getroffen wurde, wie detailreich sollte diese sein, damit sie dem Projekt
 nutzt?"
@@ -330,8 +333,6 @@ von der Entscheidung abhängig, ob die Modellierung auf Verhalten oder Strukture
 im Idealfall auf die Kombination beider Aspekte angewendet wird. Unter der Verwendung
 eines Datenmodells kann z.B. das vorhandene Verhaltensmodell eines Prozesses um eine
 weitere Dimension der strukturellen Information erweitert und verfeinert werden.
-
-
 Am Beispiel der grafische Prozessmodellierung sei erwähnt, dass diese mittlerweile auch
 in verschiedenen Projektstandards und Normen empfohlen, umgesetzt und angewendet
 wird. Zu nennen sind hier z.B. verschiedene Bereiche in ITIL®4 oder auch verschiedenen
@@ -365,7 +366,7 @@ Mehrwert entstehen kann.“
 4IT Infrastructure Library [7] 5
 
 
-5kITlasIsnifsrcahsetrSuOctAuremLitibkroamryp[l7e]xen Systemen vs. MicroServices mit kleinen in sich abgeschlossenen
+5klassische SOA mit komplexen Systemen vs. MicroServices mit kleinen in sich abgeschlossenen
 Einheiten
 
 
@@ -420,13 +421,6 @@ Thema einer nicht ausreichenden Modellqualität aktuell so wenig Beachtung gesch
 
 wird und zum jetzigen Zeitpunkt noch keine genaueren Betrachtungen über mögliche
 Risiken in der Modellierung$$$6$$$ von SOA-Projekten und deren Minimierungen existieren.
-
-
-Abb. 1.1: Allgemein gebräuchliche und vereinfachte, schematische
-Darstellung von Modellierungsabhängigkeiten zwischen
-gebräuchlichen Phasen eines SOA-Projekts
-(Farben in Anlehnung an TOGAF [90]) [Zeichnung:
-Senn]
 
 
 Zur grafischen Modellierung selbst (von ArchiMate® über BPMN und UML bis zu den
@@ -529,6 +523,8 @@ dies richtig ist?
 Dies bedeutet, dass die Modellelemente durchaus im Sinne der Spezifikation der
 gewählten Modellierungssprache richtig angewendet werden, aber die Abstraktion
 u.U. nicht der Realität entspricht.
+
+
 Dies soll in Abb. 1.2 beispielhaft dargestellt werden, in der zwei Blackbox-Systeme
 über die genau beschriebene Schnittstelle „Interface“ kommunizieren.
 
@@ -641,7 +637,7 @@ realisiert.
 
 
 13Erfüllung der nicht funktionalen Anforderungen an den Service, wie z.B. Antwortzeiten, Wartezeiten,
-durchschnittliche Verfügbarkeit, max. tolerierte Ausfallzeiten 14
+durchschnittliche Verfügbarkeit, max. tolerierte Ausfallzeiten
 
 
 14hier wird sehr häufig die englische Bezeichnung Service Level Agreements (SLA) verwendet
@@ -736,7 +732,7 @@ weise17, die in der Industrie eine anerkannte und gelebte Vorgehensweise zur Qua
 16siehe hierzu Kapitel 7.2 Lineares Vorgehen 17
 
 
-17sSiieehhee hhiieerrzzuu KKaappiitteell 75.
+17Siehe hierzu Kapitel 5
 
 
 verbesserung ist, eine Verbesserung von grafischen Modellen in SOA-Projekten erreicht
@@ -881,14 +877,14 @@ in Projekten am meisten eingesetzten wissenschaftlichen Literatur.
 mit ihren Messmethoden und mögliche gewünschte Verbesserungen analysiert.
 
 
-19SOA wird im Rahmen dieser Arbeit im Kontext von IT-Landschaften zur Bereitstellung geforderter
+19SOA wird im Rahmen dieser Arbeit im Kontext von IT-Landschaften zur Bereitstellung geforderte
 Services, ungeachtet einer möglichen technischen Realisierung, betrachtet. 20
 
 
 e2r0vzic.Bes,Wuansgseearfcahltle(tsieeihneerKmaöpg.l7ic.2h)e 21
 
 
-21zz..BB.WScarsusmerfa(sllie(hseieKheapK.a7p..3)7
+21z.B. Scrum (siehe Kap. 7.3)
 
 
 • Entwicklung eines qualitätsgestützten Vorgehensmodells auf Basis von Six Sigma,
@@ -963,7 +959,7 @@ sernde Prozesse mit geeigneten Modell- bzw. Diagrammarten zu dokumentieren.
 Das SixSigma4SOA-Meta-Model beinhaltet alle wichtigen Artefakte und ist somit die
 
 
-22Das SixSigma4SOA-Modell wird hier lediglich aufgrund der Übersichtlichkeit doppelt dargestellt.
+22Das SixSigma4SOA-Modell wird hier lediglich aufgrund der Übersichtlichkeit doppelt dargestellt
 
 
 Hauptinformationsquelle eines SixSigma4SOA-Projekts. Diese Modelle sind entsprechend
@@ -1014,8 +1010,6 @@ rung
 
 
 Durch die regelmäßige Durchführung wird im Unternehmen ein Bewusstsein für
-
-
 23siehe Kapitel 5.4
 
 
@@ -1109,6 +1103,9 @@ Somit werden in Kapitel 5 die für diese Arbeit relevanten Faktoren von Six Sigm
 Rahmen der Qualitätssteigerung auch Anwendung finden, betrachtet und beschrieben.
 
 
+26Define - Measure - Analyse - Improve - Control (siehe Kapitel 5.4)
+
+
 Analyse
 
 
@@ -1136,8 +1133,6 @@ Anwendung die gestellten These zu belegen.
 
 Dieses neu entwickelte Vorgehensmodell wird in dieser Arbeit als „SixSigma4SOA“ und
 die modellbasierte Abbildung als SixSigma4SOA-Meta-Model bezeichnet.
-
-
 Dies, in der Abb. 1.7 symbolisch mit einem Blatt Papier dargestellten Elemente, stellen
 das Ergebnis dieser Arbeit dar.
 
@@ -1287,8 +1282,6 @@ oder auch .NET noch nicht verfügbar waren.
 
 
 2Software as a Service
-
-
 3Platform as a Service
 
 

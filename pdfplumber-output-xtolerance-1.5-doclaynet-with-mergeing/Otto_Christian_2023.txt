@@ -13,6 +13,8 @@ Dr. rer. nat.
 
 
 genehmigte Dissertation von
+
+
 M. Sc. Christian Ralf Otto
 
 
@@ -678,13 +680,6 @@ Supervision, Validation, Visualization, Writing – original draft, Writing – 
 editing
 
 
-[201] Christian Otto, Markos Stamatakis, Anett Hoppe, and Ralph Ewerth. “Predict-
-ing Knowledge Gain for MOOC Video Consumption”. In: Artificial Intelligence in
-Education. Posters and Late Breaking Results, Workshops and Tutorials, Industry and
-Innovation Tracks, Practitioners’ and Doctoral Consortium - 23rd International Confer-
-ence, AIED 2022, Durham, UK, July 27-31, 2022, Proceedings, Part II. ed. by Maria
-Mercedes T. Rodrigo, Noburu Matsuda, Alexandra I. Cristea, and Vania Dimitrova.
-Vol. 13356. Lecture Notes in Computer Science. Springer, 2022, pp. 458–462. doi:
 10.1007/978-3-031-11647-6_92
 
 
@@ -944,10 +939,6 @@ simplest form neurons resemble a linear function f (x) = w · x + b, where x is 
 a weight applied to x, and b a bias value, see Figure 2.1a.
 
 
-(a) The simple form of a neuron resembling a
-linear function.
-
-
 Since that is not very useful yet beyond linear problems, NNs extend this concept in
 multiple ways, see Figure 2.1b. First, similar to the brain, a neuron is not limited to one
 FOOTNOTE:input. Instead the number of inputs X = x , x , ..., x is variable, and each input comes 1 2 n
@@ -1167,6 +1158,9 @@ E given an adjustment of the parameters θ. With this, our neural network update
 parameters according to the following Equation 2.7:
 
 
+(2.7)
+
+
 2.6: Calculation of a parameter update (weights and biases) of a neural
 network according to the learning rate and the computed gradient.
 
@@ -1196,9 +1190,6 @@ predecessors. Therefore, the entire neural network resembles a nested function a
 a network with L layers that uses the mean squared error cost function (cf. Equation 2.6)
 the derivative for a weight wl between neuron k of layer l − 1 and neuron j of layer l, for jk
 instance, is computed as follows:
-
-
-EITHER: iteratively replace last term with next layer
 
 
 2.8: Computation of the influence weight wl has on the cost function. The jk
@@ -1280,6 +1271,10 @@ Chapter 5)
 4. model ties between certain word, e.g., capital - country (cf. Figure 2.7)
 
 
+Figure 2.7: Example of the relationships semantic word embeddings are able to infe
+(Source: https://developers.google.com/machine-learning/crash-course/images/linear-relationships.svg)
+
+
 The process of establishing a semantic word embedding relies on the assumption that
 words that appear in similar contexts have similar meanings [95, 129]. Modern approaches
 exploit this fact which allows them to convert words into high-dimensional vector rep-
@@ -1318,6 +1313,12 @@ Moreover, given the nature of the problem, the sample size can exceed billions o
 see Figure 2.9.
 
 
+Figure 2.9: Word2vec architecture. Input is the one-hot encoded vector of the focus word and the
+output vector the probabilities of each other word in the vocabulary appearing close to it. During
+training, the expected label is one-hot encoded as well with a context word that appeared close to
+the focus word in the underlying dataset.
+
+
 That means, given a random initialization of the word embeddings, one training step
 entails the relocation of all word vectors in a way that the input focus and context words
 move closer to each other and the rest moves further away. This computationally heavy
@@ -1325,9 +1326,6 @@ process has been improved in the same paper by Mikolov et al. [182]. By subsampl
 words, which means removing them from an input sentence with a probability proportional
 to their frequency in the training data, the number of training samples is decreased
 significantly. Words like the or a are removed, which a) improves the training time and
-
-
-2.3. Classifiers
 
 
 b) improves the quality of the sentence embedding in the end since they are not adding

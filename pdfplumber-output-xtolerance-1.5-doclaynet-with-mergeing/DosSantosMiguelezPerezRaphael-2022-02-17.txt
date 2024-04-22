@@ -5,19 +5,20 @@ eine Kritische Diskursanalyse der Online-Reformvorschläge
 Inaugural-Dissertation
 
 
-zur
-
-
 Erlangung des Doktorgrades
 der Philosophie des Fachbereiches Geisteswissenschaften
 der Justus Liebig Universität Gießen
 
 
 vorgelegt von
+
+
 Raphael dos Santos Miguelez-Pérez
 
 
 aus Rio de Janeiro
+
+
 Brasilien
 
 
@@ -587,6 +588,13 @@ den ,Diskurs‘ als eine Art sozialer Praxis definiert, versucht er zu verstehen
 Sprachgebräuche die Wirklichkeit durch ideologische Praktiken aufbauen und gewisse
 
 
+FOOTNOTE:6 Bachtins Beitrag zu diversen Bereichen ist sehr umfangreich. Seine Theorien zur Polyphonie und zum Dialogismus
+beeinflussen Studien zu Pragmatik, Diskurs, Sprache, Literatur, Kultur u. a. Außerdem kann Bachtins Einfluss im
+Bereich der Dialogforschung empfunden werden, beispielsweise in der Reihe Dialogue Studies des John Benjamins
+Verlags (siehe https://www.jbe-platform.com/content/series/18751792) und in der Entstehung der International
+Association for Dialogue Analysis (IADA) (siehe https://www.iada-web.org/).
+
+
 Machtverhältnisse durch gesunden Menschenverstand (common sense) legitimieren und naturalisieren
 bzw. normalisieren (vgl. Fairclough 2015: 113f.).
 
@@ -855,6 +863,9 @@ die sozialen Bedingungen verstanden werden und auf die Diskurse wirken. So wird 
 gegebenen Bedingungen in einer Gesellschaft hervorgebracht (vgl. Fairclough 2015: 57f.).
 
 
+FOOTNOTE:7 Die Modelle Faircloughs wird hier mithilfe der Interpretation Leschzyk (2016) verwendet.
+
+
 Daraufhin unterteilt Fairclough die Analyse in drei Momente, nämlich die Beschreibung, die
 Interpretation und die Erklärung. Die Beschreibung betrifft die Textanalyse (Text), die
 Interpretation die Analyse der diskursiven Praxis (Interaktion) und die Erklärung die Analyse der
@@ -891,7 +902,7 @@ relevant (vgl. ebd.: 131f.). Wie man Dinge benennt und bewertet, weist auf eine 
 Weltanschauung hin. Die Verwendung von Wörtern, die in der Gesellschaft ideologisch umstritten
 
 
-FOOTNOTE:8 Leschzyk (vgl. 2016: 20) erfasst noch als Kategorie dieses Analyseschritts die sogenannte ‚Textoberfläche‘. Diese
+Leschzyk (vgl. 2016: 20) erfasst noch als Kategorie dieses Analyseschritts die sogenannte ‚Textoberfläche‘. Diese
 Kategorie umfasst die Beschreibung von der graphischen Gestaltung, der Materialität und den Text-Bild-
 Beziehungen (zitiert nach Spitzmüller/Warnke 2011: 166). Solche formalen Gemeinsamkeiten von Texten bzw.
 Textmustern werden von Bendel Larcher (vgl. 2015: 181) hingegen als Teil der ‚Analyse textübergreifender
@@ -934,6 +945,13 @@ der Sprechenden hin, was beispielsweise mithilfe rhetorischer Stilmittel, wie mi
 (Hyperbel), ausgedrückt werden kann (vgl. Leschzyk 2016: 16). Verallgemeinerungen geben auch
 Aufschluss darüber, wie eine besondere Weltanschauung als Wahrheit legitimiert wird (vgl. ebd.:
 17).
+
+
+FOOTNOTE:9 Sprechende hier ist als Sprechende oder Schreibende zu verstehen. Ebenso werden Hörende und Lesende als
+Synonym verwendet, um die Angesprochenen zu bezeichnen. Die Enunziative Pragmatik, besonders der
+französische Diskursanalytiker Dominique Maingueneau, nennt die Angesprochenen Mitsprechende (co-énonciateur),
+in dem Sinne, dass Diskurs immer dialogisch ist (vgl. Maingueneau 2011: 54). Studien zu Subjektivität im Diskurs
+sind in der Enunziativen Pragmatik zentral.
 
 
 Auf der Grammatikebene lassen sich Erfahrungswerte, Beziehungswerte, expressive Werte und
@@ -1199,9 +1217,7 @@ Tab. 3: Angepasste schematische Darstellung für die Analyse der sozialen Praxis
 
 
 Analyse der sozialen Praxis
-
-
-Diskursive Praxis ↔ Members’ ResourAcesn ↔al yssoezi adleerr K soonzteixatl e(Dne Pterrmaxiniasn ten und Effekte)
+Diskursive Praxis ↔ Members’ Resources ↔ sozialer Kontext (Determinanten und Effekte)
 Diskursive Konstruktion des Wissens und der Wahrheit
 Produktion von Normalität (common sense)
 Zusammenhang der Ideologien mit den Machtstrukturen
@@ -1427,9 +1443,6 @@ diskursive Funktionen und Auswirkungen diskutiert.
 Im nächsten Kapitel gehe ich näher auf den UN-Reformvorschlag der G4-Staaten ein.
 
 
-Tab. 5: Zusammenfassung der schematischen Darstellung für die Analyse
-
-
 3 Der Reformvorschlag der G4-Staaten
 
 
@@ -1469,6 +1482,11 @@ Declaration of Human Rights, Artikel 1)
 Der UNO gehören insgesamt sechs Hauptorgane und noch viele weitere Nebenorgane an. Die
 sechs Hauptorgane sind die UN-Generalversammlung, das UN-Sekretariat, der Internationale
 Gerichtshof, der UN-Wirtschafts- und Sozialrat, der UN-Treuhandrat und der UN-Sicherheitsrat.
+
+
+FOOTNOTE:10 Die in dem vorliegenden Kapitel vorgestellten Informationen stehen auf den offiziellen Webseiten der Vereinten
+Nationen (vgl. United Nations) und des UN-Sicherheitsrates (vgl. United Nations Security Council) zur Verfügung.
+Wenn nicht, gebe ich die richtige Quelle an.
 
 
 Im Rahmen der UN-Generalversammlung findet regelmäßig das Forum für internationale
@@ -1621,6 +1639,9 @@ ab den 2000er Jahren begannen diese Diskussionen, in Dokumenten organisiert zu w
 Vielzahl von Reformvorschlägen wurde eingebracht, jedoch wurden fast keine Änderung
 vorgenommen. Nach dem UN-Beschluss 62/557 (2008) ,Question of equitable representation on and
 increase in the membership of the Security Council and related matters‘ (vgl. UN-Beschluss 62/557 (2008))
+
+
+FOOTNOTE:11 Siehe auch United Nations Charter, Kapitel V, VI, VII, VIII und XII.
 
 
 verpflichtete sich die UN-Generalversammlung die Verhandlungen u. a. bezüglich der regionalen

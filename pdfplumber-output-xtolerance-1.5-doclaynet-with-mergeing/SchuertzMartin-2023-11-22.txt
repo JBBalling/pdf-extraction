@@ -1,4 +1,6 @@
 ALTAR IV: Epidemiologie des präklinischen
+
+
 Airwaymanagements
 
 
@@ -174,12 +176,8 @@ der Präklinik?
 Der Rettungsdienstbereich (RDB) Gießen umfasst den Landkreis Gießen. Er hat eine
 vorwiegend ländliche Struktur, umfasst aber auch einzelne Ballungsräume bzw. Städte,
 wie Gießen, Grünberg, Reiskirchen, Lich und weitere.
-
-
 Der RDB Gießen hat eine Gesamteinwohnerzahl von 265699. Die Fläche umfasst 854,64
 km². Der RDB Gießen weist zehn Städte und acht Gemeinden auf.
-
-
 Zur präklinischen Versorgung der Bevölkerung des RDB Gießen stehen in dreizehn
 Rettungswachen und fünf Notarztstandorten folgende Rettungsmittel zur Verfügung: drei
 Notarzteinsatzfahrzeuge (NEF), ein Intensivtransportwagen (ITW), ein
@@ -365,21 +363,6 @@ Einsatzzeiten erfasst.
 AWM assoziierte Systemvariablen und Kernvariablen
 
 
-9 = Glidescope®
-
-
-10 = keine Intervention
-
-
-1 = Hypnotika
-
-
-2 = Muskelrelaxantien
-
-
-4 = Lokalanästhetika
-
-
 0 = keine Medikamente
 
 
@@ -389,22 +372,25 @@ Tabelle 1: AWM assoziierte Systemvariablen und Kernvariablen
 Kernvariablen nach Durchführung des AWM
 
 
-3 = “Assisted Spontaneous Breathing” (ASB)/ “Continuous
-
-
-5 = Hypoxie (Sp- O2 <90 %)
-
-
-6 = Bradykardie (HF < 60/ min)
-
-
 7 = Blutdruckabfall (RR < 90mm Hg)
 
 
-8 = sonstige
-
-
 9 = keine
+
+
+2 = Güdeltubus
+
+
+3 = Larynxmaske (LAMA)
+
+
+4 = Combi/ Larynxtubus
+
+
+5 = Wendltubus
+
+
+7 = ETT nasal
 
 
 8 = Koniotomie
@@ -485,7 +471,7 @@ Abbildung 10: PRISMA Flussdiagramm zur Datenerhebung
 3.1 Epidemiologie
 
 
-.1 Die Inzidenz der Indikation zur Atemwegssicherung im RDB Gießen,
+3.1.1 Die Inzidenz der Indikation zur Atemwegssicherung im RDB Gießen, die
 Vorerkrankungen (nach ASA Klassifikation), Geschlecht und Letalität
 
 
@@ -522,17 +508,10 @@ Einsatzstelle.
 AWM
 
 
-Grafik 1: Darstellung der Notfallpatienten im Rettungsdienstbereich Gießen zwischen 2010 und 2016 nach Altersklassen (1 = 0- 1
-Monate, 2 = 1 Monat- 1 Jahr, 3 = 1- 6 Jahre, 4 = 7- 14 Jahre, 5 = 15- 40 Jahre, 6 = 41- 60 Jahre, 7 = 60- 80 Jahre, 8 = > 80 Jahre)
-
-
 Grafik 1 stellt die Inzidenz zur Atemwegssicherung nach Altersklassen dar. Im
 Untersuchungszeitraum mussten fast 2/ 3 der Atemwegssicherungen bei Patienten im
 Alter von über 60 Jahren durchgeführt werden (65,8 %). Der Anteil der unter 14- Jährigen
 betrug 1,2 %.
-
-
-3.2 Inzidenz des AWM
 
 
 3.2.1 Indikationen für das AWM im RDB Gießen
@@ -542,7 +521,7 @@ AWM Indikationen, n=1088
 
 
 Grafik 2: Darstellung der Notfallpatienten im Rettungsdienstbereich Gießen zwischen 2010 und 2016 nach der Indikation zum
-AWM (Bewusstseinseisstörung (GCS), Hypoxie, Ateminsuffizienz, Verlegung (bestehend), Verlegung (drohend), Agitiertheit,
+AWM (Bewusstseinseisstörung (GCS), Hypoxie, Ateminsuffizienz, Verlegung (bestehend), Verlegung (drohend), Agitiertheit
 Schmerz/ notfallspez., CPR, sonstige (Anamnese/ Freitext))
 
 
@@ -564,9 +543,6 @@ bei mehr als einem Drittel (35,2 %, n = 338) der mit AWM versorgten Patienten
 keine exakte Aussage zum Zeitpunkt des Auftretens der AWS Indikation während des
 Notfalleinsatzes. Deswegen ist keine Aussage zu dem Zeitintervall zwischen Auftreten
 der Indikation zur AWS und dem Eintreffen des Notarztes ableitbar.
-
-
-3.3 Techniken und Medikation
 
 
 3.3.1 Verwendung der Hilfsmittel zum AWM (getrennt nach Berufsgruppen)
@@ -621,9 +597,6 @@ Notfallpatienten mit Indikation zum AWM verwendeten Medikamentgruppen. Bei 2/ 3
 der betreffenden Patienten wurde die Verwendung von Medikamenten dokumentiert. Es
 wurden vor allem Hypnotika (64,6 %), Vasopressoren (60,1 %), Muskelrelaxantien (MR)
 (49,9 %) und Opioide (43,8 %) eingesetzt.
-
-
-3.3.3 Angewandte Ventilationsarten
 
 
 Tabelle 4: Darstellung der Notfallpatienten mit Indikation zum und nach durchgeführtem AWM im Rettungsdienstbereich Gießen
@@ -685,10 +658,8 @@ RD- Personals nach Übernahme der Patientenversorgung durch Notärzte im RDB
 Gießen
 
 
-Grafik 11: Darstellung der Notfallpatienten im Rettungsdienstbereich Gießen mit Indikation zum AWM zwischen 2010 und 2016
-nach der Inzidenz des Verfahrenswechsels nach verschiedenen Indikationen (GCS, Hypoxie, Ateminsuffizienz, bestehende
-Atemwegsverlegung, drohende Atemwegsverlegung, Agitiertheit, CPR, sonstige, Gesamtzahl der Pat. b. denen das AWM durch den
-Notarzt übernommen wurde)
+Übernahme AWM durch NÄ nach Erstversorgung durch NFS bei
+verschiedenen Indikationen
 
 
 Grafik 11 zeigt die Inzidenz der Übernahme der Atemwegssicherung durch Notärzte nach
@@ -756,8 +727,6 @@ Notfalleinsätzen vergrößern.
 
 
 4.1.2 Biometrie der Notfallpatienten aus dem RDB Gießen mit Indikation zum AWM
-
-
 Konsistent mit der vorhandenen Literatur war auch in der vorliegenden Erhebung der
 überwiegende Anteil der untersuchten Notfallpatienten mit Indikation zum AWM am
 Einsatzort männlichen Geschlechts [20;21].
@@ -1149,9 +1118,6 @@ is an ethical and socio-political question, the answer to which lies outside the
 survey.
 
 
-HRDG Hessisches Rettungsdienstgesetz
-
-
 ITW Intensivtransportwagen
 
 
@@ -1161,39 +1127,9 @@ LAMA /LM Larynxmaske
 MIND Minimaler Notfalldatensatz
 
 
-MR Muskelrelaxanz, -ien
-
-
-NEF Notarzteinsatzfahrzeug
-
-
-NIS Notfallinformationsmanagementsystem
-
-
-NIV Nichtinvasive Ventilation
-
-
-Pat Patient, -en
-
-
-poi Parameters of Interest
-
-
-RDB Rettungsdienstbereich
-
-
-RDP Rettungsdienstpersonal
-
-
 RR systolischer Blutdruck
 
 
 RTH Rettungstransporthubschrauber
-
-
-RTW Rettungstransportwagen
-
-
-SpO$$$2$$$ partielle Sauerstoffsättigung
 
 

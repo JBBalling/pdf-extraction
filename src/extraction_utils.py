@@ -16,6 +16,25 @@ def common_error_replacements(word: str) -> str:
         "¨o": "ö",
         "¨a": "ä",
         "¨u": "ü",
+        "O¨": "Ö",
+        "A¨": "Ä",
+        "U¨": "Ü",
+        "¨O": "Ö",
+        "¨A": "Ä",
+        "¨U": "Ü",
+        "o¨ ": "ö",
+        "a¨ ": "ä",
+        "u¨ ": "ü",
+        "¨o ": "ö",
+        "¨a ": "ä",
+        "¨u ": "ü",
+        "O¨ ": "Ö",
+        "A¨ ": "Ä",
+        "U¨ ": "Ü",
+        "¨O ": "Ö",
+        "¨A ": "Ä",
+        "¨U ": "Ü",
+        
     }
     for k, v in common_errors.items():
         word = word.replace(k, v)
