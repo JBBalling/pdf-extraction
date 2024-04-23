@@ -380,7 +380,7 @@ welches wiederum PDK1 phosphoryliert. PDK1 aktiviert zusammen mit der Src-Kinase
 (3). (Amaddii et al. 2008).
 
 
-FOOTNOTE:Nach der Rezeptoraktivierung bindet die Src-homology 2 (SH2) -Domäne des growth
+Nach der Rezeptoraktivierung bindet die Src-homology 2 (SH2) -Domäne des growth
 factor receptor bound protein 2 (Grb-2) an den EGF-Rezeptor (Batzer et al., 1994). Die
 SH3-Domänen des Adapterproteins binden dann an das Polypeptid son of sevenless
 (Sos). Sos agiert als GTP-Austauschfaktor und wandelt das kleine G-Protein rat sarcoma
@@ -818,7 +818,7 @@ werden, weil die Transfektionsrate zu niedrig war.
 Y121F+Y160F-EGFP
 
 
-FOOTNOTE:Abbildung 4: Zelluläre Lokalisation von Flotillin-1-Mutanten in HeLa-Zellen.
+Abbildung 4: Zelluläre Lokalisation von Flotillin-1-Mutanten in HeLa-Zellen.
 Nach Kultivierung der HeLa-Zellen auf Deckgläschen, erfolgte die transiente Transfektion
 m it mutierten Flotillin-1 Konstrukten und dem Wildtyp Flotillin-1-EGFP und die Fixierung mit
 M ethanol. Mittels GFP-Fluoreszenz (grün) wurden die Flotillin-Fusionsproteine dargestellt.
@@ -1022,7 +1022,6 @@ einnehmen, da sie eine ähnliche Position im Flotillin- Protein tragen.
 
 
 Abbildung 9: Nachweis der Oligomerisierung von Flotillin-1-Einzelmutanten mit Flotillin-
-2
 
 
 Die Flotillin-1-Knockout HEK-Zellen wurden mit den Flot1-EGFP Konstrukten transient
@@ -1043,7 +1042,6 @@ vorherigen Versuch keine Interaktion mit Flotillin-2 aufweist.
 
 
 Abbildung 10: Nachweis der Oligomerisierung von Flotillin-1-Doppelmutanten mit Flotillin-
-2
 
 
 Die Flotillin-1-Knockout HEK-Zellen wurden mit den Flotillin-1-EGFP-Konstrukten transient

@@ -89,7 +89,7 @@ im rollenden neutrophilen Granulozyten Integrine aktiviert, die an Adhäsionsmol
 auf dem Endothel binden können (Zimmerman et al. 1996). Wichtige Integrine während
 der Adhäsion sind lymphocyte function associated antigen 1 (CD11a/CD18; LFA-1),
 macrophage-1-antigen (CD11b/CD18; Mac-1) und very late antigen 4 (VLA-4), die an
-FOOTNOTE:Interzelluläres Zelladhäsionsmolekül 1 (ICAM-1), Interzelluläres Zelladhäsionsmolekül
+Interzelluläres Zelladhäsionsmolekül 1 (ICAM-1), Interzelluläres Zelladhäsionsmolekül
 2 (ICAM-2) und vascular cell adhesion molecule 1 (VCAM-1) binden (Arnaout 1990;
 Wagner et al. 2000; Ley et al. 2007; Filippi 2019). Durch die Bindung an ICAM-1
 kommt es zu Veränderungen im epithelialen Zytoskelett. Zellen, die migrieren, weisen
@@ -265,7 +265,7 @@ ARDS klassifiziert werden (Vlaar et al. 2019).
 
 
 Es kann zwischen antikörpervermitteltem TRALI und antikörperunabhängigen TRALI
-FOOTNOTE:unterschieden werden. 4/ aller TRALI Fälle sind antikörpervermittelt (Middelburg et al. 5
+unterschieden werden. 4/ aller TRALI Fälle sind antikörpervermittelt (Middelburg et al. 5
 2008).
 
 
@@ -649,7 +649,7 @@ neutrophilen Granulozyten dem Ausmaß der CD$$$177$$$ Expression entsprechend: n
 intermediäre und CD$$$177$$$ hoch exprimierende Granulozyten (Wu et al. 2016).
 
 
-FOOTNOTE:Abbildung 6: CD177 Gen und das Pseudogen. Das Pseudogen entspricht der CD$$$177$$$
+Abbildung 6: CD177 Gen und das Pseudogen. Das Pseudogen entspricht der CD$$$177$$$
 Sequenz zwischen Exon 4 und Exon 9 in reverser Orientierung. Das Pseudogen ist 8,4
 kb entfernt vom CD$$$177$$$ Gen. Die c.787A>T Variante entsteht durch Konversion bzw.
 Insertion von Exon 7 des Pseudogens in das CD$$$177$$$ Gen. Der CD$$$177$$$ Null Phänptyp ist
@@ -1493,7 +1493,7 @@ CD$$$177$$$ Null Phänotyp assoziiert. Die Variante CD$$$177$$$ c.787T ko-
 diert fü r ein Stop-Codon in Exon 7.
 
 
-FOOTNOTE:Abbildung 9: Agarosegel des CD177 Gens. Das Bild der Agarosegelelektrophorese
+Abbildung 9: Agarosegel des CD177 Gens. Das Bild der Agarosegelelektrophorese
 zeigt auf der linken Seite das Long-Range-PCR-Produkt und auf der rechten Seite den
 Größenstandard. Die Primer amplifizieren die gesamte kodierende Region des CD$$$177$$$
 Gens (von Exon 1 bis Exon 9), was einer Größe von 8729 bp entspricht. Das CD$$$177$$$ Gen

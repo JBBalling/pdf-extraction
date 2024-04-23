@@ -813,7 +813,7 @@ welche im Allgemeinen häufig auftauchen wü rden, so in ihrer Rele-
 vanz niedriger.
 
 
-FOOTNOTE:Tabelle 2.1: Vergleich cf und df 2
+Tabelle 2.1: Vergleich cf und df 2
 
 
 Da aber versucht wird, mit einer Gewichtung auf Basis von unter-

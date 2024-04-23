@@ -407,7 +407,7 @@ pitel 2.5 vorgestellt.
 
 Über die Zeit hinweg finden sich verschiedene Definitionen des Begriffs
 WBS [Ort77, Kur92, Ake09, Pup13b]. Allen gemein ist die Aufspaltung der
-FOOTNOTE:Architektur des Systems in zwei Bereiche (vgl. Abbildung 2.1). Auf der einen
+Architektur des Systems in zwei Bereiche (vgl. Abbildung 2.1). Auf der einen
 Seite steht die sogenannte Wissensbasis mit spezifischem Wissen über den
 Anwendungsbereich. Dem gegenüber steht die tatsächliche Verarbeitung des
 Wissens (Wissensverarbeitung) in Form einer anwendungsunabhängigen
@@ -737,7 +737,7 @@ Problemlösung
 
 Zur Einführung werden verschiedene Wahrscheinlichkeitsbegriffe in Kapitel
 2.4.1 beleuchtet. Daran anschließend folgen in Kapitel 2.4.2 die Grundlagen
-FOOTNOTE:der Wahrscheinlichkeitstheorie. In den darauf folgenden Kapiteln 2.4.3 und
+der Wahrscheinlichkeitstheorie. In den darauf folgenden Kapiteln 2.4.3 und
 2.4.4 werden Bayes-Netze genauer besprochen.
 
 
@@ -981,8 +981,8 @@ wenn 𝑃(𝛼 ∩ 𝛽) = 𝑃(𝛼)𝑃(𝛽):
 𝑃(𝛽) 𝑃(𝛽)
 
 
-FOOTNOTE:Im Beispiel des Glücksrad-Gewinnspiels ist ein Ereignis 𝛼 = {II} unabhängig 2
-FOOTNOTE:von einem Ereignis 𝛼 = {II} aus einer vorangegangen Drehung des Rades. 1
+Im Beispiel des Glücksrad-Gewinnspiels ist ein Ereignis 𝛼 = {II} unabhängig 2
+von einem Ereignis 𝛼 = {II} aus einer vorangegangen Drehung des Rades. 1
 Es können aber auch Ereignisse der selben Drehung unabhängig voneinander
 sein.
 
@@ -1058,10 +1058,10 @@ geschrieben.
 
 
 Um im Rahmen einer probabilistischen Wissensbasis eine multivariate Ver-
-FOOTNOTE:teilung 𝑃 über Zufallsvariablen 𝑋 = 𝑋 , … , 𝑋 angeben zu können, muss 0∶𝑛 0 𝑛
+teilung 𝑃 über Zufallsvariablen 𝑋 = 𝑋 , … , 𝑋 angeben zu können, muss 0∶𝑛 0 𝑛
 eine Vielzahl an Parametern festgelegt werden. Selbst in einem einfachen Falle
 von binären Zufallsvariablen müssten 2𝑛+1 mögliche Ergebniskombinationen
-FOOTNOTE:parametrisiert werden, d.h. 2𝑛+1 − 1 Parameter gesetzt werden. Für 12 binäre
+parametrisiert werden, d.h. 2𝑛+1 − 1 Parameter gesetzt werden. Für 12 binäre
 Zufallsvariablen ergeben sich also 4096 − 1 = 4095 Parameter. Offensichtlich
 steigt die Anzahl der Parameter exponentiell mit der Anzahl der Zufallsvaria-
 blen [Phi15b].
@@ -1101,7 +1101,7 @@ die gemeinsame Wahrscheinlichkeitsverteilung repräsentieren [Kol09].
 
 
 Der Graph 𝐺 wird verwendet, um Abhängigkeiten zwischen Zufallsvariablen
-FOOTNOTE:𝑋 zu definieren. Er wird auch als Struktur des BN bezeichnet und äußerst 0∶𝑛
+𝑋 zu definieren. Er wird auch als Struktur des BN bezeichnet und äußerst 0∶𝑛
 sich als gerichteter (engl. directed) azyklischer Graph (DAG). Seine Knoten-
 bzw. Vertexmenge 𝒱 repräsentiert die Zufallsvariablen 𝑋 . 0∶𝑛
 
@@ -1231,7 +1231,7 @@ Literatur [Kol09, Kor10, Pea88].
 
 
 Definition 2.11. Gegeben sei der Graph 𝐺 = (𝒱, ℰ) eines Bayes-Netzes mit
-FOOTNOTE:Zufallsvariablen 𝑋 . Weiterhin sei 𝒵 eine Teilmenge der Zufallsvariablen, 0∶𝑛
+Zufallsvariablen 𝑋 . Weiterhin sei 𝒵 eine Teilmenge der Zufallsvariablen, 0∶𝑛
 die beobachtet wurde. 𝒵 sei durch die Knotenmenge 𝒱 ⊆ 𝒱 repräsentiert. Ein 𝒵
 Weg ist eine Sequenz von Kanten, die in der ungerichteten Repräsentation des
 DAGs 𝐺 = (𝒱, ℰ) einen Pfad (Sequenz von Knoten) bildet¹. Hierfür schreibt
@@ -1314,11 +1314,11 @@ zu definieren und repräsentiert damit die Struktur des BN (vgl. Kapitel 2.4.3).
 Die Vertexmenge 𝒱 repräsentiert die Menge der Zufallsvariablen, während
 
 
-FOOTNOTE:Abbildung 2.5: Graph eines Bayes-Netzes (BN) über den Zufallsvariablen 𝑋 . Diese Struk- 0∶4
+Abbildung 2.5: Graph eines Bayes-Netzes (BN) über den Zufallsvariablen 𝑋 . Diese Struk- 0∶4
 tur, die auch Naive BN genannt wird, ist gekennzeichnet durch gerichte-
-FOOTNOTE:te Kanten ausgehend von Wurzelknoten 𝑋 zu seinen Kindern 𝑋 . Da 0 1∶4
+te Kanten ausgehend von Wurzelknoten 𝑋 zu seinen Kindern 𝑋 . Da 0 1∶4
 eine fehlende Kante die Unabhängigkeit zweier Zufallsvariablen verkörpert,
-FOOTNOTE:kann die Verbundwahrscheinlichkeit 𝑃(𝑋 ) wie folgt faktorisiert werden: 0∶4
+kann die Verbundwahrscheinlichkeit 𝑃(𝑋 ) wie folgt faktorisiert werden: 0∶4
 𝑃(𝑋 ) = 𝑃(𝑋 )𝑃(𝑋 |𝑋 )𝑃(𝑋 |𝑋 )𝑃(𝑋 |𝑋 )𝑃(𝑋 |𝑋 ). 0∶4 0 1 0 2 0 3 0 4 0
 
 
@@ -1343,7 +1343,7 @@ die zeitlichen Abhängigkeiten der Zufallsvariablen berücksichtigen kann
 
 Ersteres, also 𝐵 , wird genutzt, um die Struktur als auch die a-priore Wahr- 0
 scheinlichkeitsverteilung über den Zufallsvariablen 𝑋 in Zeitschritt 0, 0∶𝑛
-FOOTNOTE:sprich: 𝑃(𝑋0 ), anzugeben. Die Struktur von 𝐵 kann beispielsweise nach 0∶𝑛 0
+sprich: 𝑃(𝑋0 ), anzugeben. Die Struktur von 𝐵 kann beispielsweise nach 0∶𝑛 0
 Abbildung 2.5 erfolgen – die Variablen tragen dann zusätzlich einen hochge-
 stellten Index des Zeitschritts 0.
 

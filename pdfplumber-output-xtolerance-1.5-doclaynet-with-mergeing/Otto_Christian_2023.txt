@@ -941,8 +941,8 @@ a weight applied to x, and b a bias value, see Figure 2.1a.
 
 Since that is not very useful yet beyond linear problems, NNs extend this concept in
 multiple ways, see Figure 2.1b. First, similar to the brain, a neuron is not limited to one
-FOOTNOTE:input. Instead the number of inputs X = x , x , ..., x is variable, and each input comes 1 2 n
-FOOTNOTE:with its own weight W = w , w , ..., w . The value of the resulting formula is computed by 1 2 3
+input. Instead the number of inputs X = x , x , ..., x is variable, and each input comes 1 2 n
+with its own weight W = w , w , ..., w . The value of the resulting formula is computed by 1 2 3
 the weighted sum of the inputs plus the bias, see Equation 2.1.
 
 
@@ -1028,7 +1028,7 @@ sequence of our input data X t, the hidden state H t−1 of the unit that encode
 token in our data, see Figure 2.4. At time step t, both X t and H t−1 have to pass through
 
 
-FOOTNOTE:the Reset Gate where the GRU decides whether to retain the information in H t−1 or discard
+the Reset Gate where the GRU decides whether to retain the information in H t−1 or discard
 it, In other words, it resets what the network has learned so far, see Equation 2.2. This
 decision is influenced by the activation function a, the weight matrices W , W , and the xr hr
 bias b . r
@@ -1039,7 +1039,7 @@ current GRU will reset (i.e., forget) what has been learned by the network so
 far.
 
 
-FOOTNOTE:Next, based on the input X t and the amount of information from H t−1 that passed
+Next, based on the input X t and the amount of information from H t−1 that passed
 through the Reset gate, a candidate hidden state H˜ is computed, see Equation 2.3. Its t
 content can be interpreted as the amount of new information that is potentially added
 to the memory of the network given our current sequence token. If R = 0, only X will t t
@@ -1068,7 +1068,7 @@ network.
 
 
 2.4: This equation computes output of the GRU combining the previous
-FOOTNOTE:memory H t−1 and the information from the current token H˜ t according to
+memory H t−1 and the information from the current token H˜ t according to
 the value of the Update gate Zt.
 
 
@@ -1182,7 +1182,7 @@ Computing the gradient of E follows a similar pattern for two reasons: First, th
 output of a neuron itself is a nested function (cf. Equation 2.1) since the weighted sum
 
 
-FOOTNOTE:z = ∑|X| w · x + b is input for the activation function a. Second, considering were are i i=1 i i
+z = ∑|X| w · x + b is input for the activation function a. Second, considering were are i i=1 i i
 not in the input layer, x resembles the output of the activation functions of the neurons i
 in the previous layer, which can be substituted by their nested inputs again. In other
 words, starting with the output layer, each layer is a function of the activations of its

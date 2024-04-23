@@ -3,6 +3,7 @@ import os
 import numpy as np
 import cv2 
 import re
+import logging
 
 from image_utils import boxOverlap, transform_coordinate_IMG2PDF, box_inside_box, xyxy_xywh, bounding_box_refinement, xywh_xyxy
 from extraction_utils import common_error_replacements, get_height_frequency, group_words, has_digit, is_digit, mark_footnote_start, mark_footnote_end, mark_superscript, get_bottom_coordinate_from_line
@@ -37,6 +38,26 @@ HEADER_SECTION_MAX_TITLE_HEIGHT_RATIO = 0.02
 FONT_MARGIN = 0.05
 X_TOLERANCE = 1.5 # 1.5 for 200 DPI
 Y_TOLERANCE = 3.5 # 3.5 for 200 DPI
+START_PAGE = 0 # set to None for whole document
+END_PAGE = 50 # set to None for whole document
+SUPERSCRIPT_MARKER = "$$$"
+LOG_FILENAME = "debug.log"
+
+
+total_pages = 0
+if os.path.exists(LOG_FILENAME):
+    os.remove(LOG_FILENAME)
+
+logging.root.handlers = []
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler(LOG_FILENAME),
+        logging.StreamHandler()
+    ]
+)
+LOGGER = logging.getLogger(__name__)
 
 def visualize_page_layout(detection_list: List[Dict], images: List[ImageType], index: int, save_path: str) -> None:
     for i, (image, detections) in enumerate(zip(images, detection_list)):
@@ -158,21 +179,16 @@ def get_pdf_fontsize_statistic(pdf_doc, num_pages) -> Dict:
     return sorted(fontsize_statistics.items(), key=lambda x: x[1], reverse=True)
 
 
-for pdf_file in os.listdir(pdf_path):
-    print(f"processing pdf file {pdf_file}")
-    filtered_text = ""  
-    filepath = os.path.join(pdf_path, pdf_file)
-    images = convert_from_path(filepath, DPI, first_page=0, last_page=50)
+def process_pdf(filepath: str, images: List) -> str:
     fulltext = ""
-
-    category = [3, 7, 9, 10]
+    # category = [3, 7, 9, 10]
     pdf_doc = pdfplumber.open(filepath)
     pdf_fontsize_statistics = get_pdf_fontsize_statistic(pdf_doc, 20)
     footnote_text_diff = pdf_fontsize_statistics[0][0] - pdf_fontsize_statistics[1][0]
-    layout_detector = load_model(Config(), True, False, True, DEVICE, Config.CONF, category, Config.IOU)
+    layout_detector = load_model(Config(), True, False, True, DEVICE, Config.CONF, CLASS_PRIORITIES, Config.IOU)
     detections = get_results(layout_detector, images)
     filtered_detections = deduplicate_detections(detections, images)
-    footnote_page = 0
+    pages = 0
     for index, detection in enumerate(filtered_detections):
         pdf_page = pdf_doc.pages[index]
         numpy_image = np.array(images[index])
@@ -180,9 +196,9 @@ for pdf_file in os.listdir(pdf_path):
         if pattern.search(text) or text == "":
             continue
 
-        words_of_page = pdf_page.extract_words(x_tolerance=X_TOLERANCE, y_tolerance=Y_TOLERANCE)
-        average_height = sum([w["height"] for w in words_of_page])/len(words_of_page)
-        grouped_by_size = group_words(words_of_page, 4, "height")
+        #words_of_page = pdf_page.extract_words(x_tolerance=X_TOLERANCE, y_tolerance=Y_TOLERANCE)
+        #average_height = sum([w["height"] for w in words_of_page])/len(words_of_page)
+        #grouped_by_size = group_words(words_of_page, 4, "height")
         pages += 1
         
         
@@ -201,11 +217,11 @@ for pdf_file in os.listdir(pdf_path):
             cropped_page = pdf_page.crop(pdf_coordinates)
             text_from_box = cropped_page.extract_text(x_tolerance=X_TOLERANCE, y_tolerance=Y_TOLERANCE)
             if crop_box_xywh[3] <= (HEADER_SECTION_MAX_TITLE_HEIGHT_RATIO * numpy_image.shape[0]) and (crop_box_xywh[1] + crop_box_xywh[3]) <= 0.10 * numpy_image.shape[0]:
-                print(f"Skipping Textbox with text:\n{text_from_box}\nbecause its in the headersection on page {index+1}")
+                LOGGER.info(f"Skipping Textbox with text:\n{text_from_box}\nbecause its in the headersection on page {index+1}")
                 continue
 
             if (crop_box_xywh[1] + crop_box_xywh[3]) >= 0.80 * numpy_image.shape[0] and is_digit(text_from_box):
-                print(f"Skipping Textbox with text:\n{text_from_box}\nbecause its in the page footer section on page {index+1}")
+                LOGGER.info(f"Skipping Textbox with text:\n{text_from_box}\nbecause its in the page footer section on page {index+1}")
                 continue
 
             words_from_box = cropped_page.extract_words(x_tolerance=X_TOLERANCE, y_tolerance=Y_TOLERANCE)
@@ -221,7 +237,7 @@ for pdf_file in os.listdir(pdf_path):
                     if round(word["height"], 2) > common_line_height:
                         # superscript
                         if has_digit(word["text"]):
-                            word["text"] = mark_superscript(word["text"], "$$$")
+                            word["text"] = mark_superscript(word["text"], SUPERSCRIPT_MARKER)
                         else:
                             continue
                     elif word["height"] < common_line_height and word["bottom"] > bottom_line_coordinate: 
@@ -242,10 +258,23 @@ for pdf_file in os.listdir(pdf_path):
             print(text_block)
 
         visualize_page_layout(filtered_detections, images, index, os.path.join(output_path, pdf_file.replace(".pdf", "")))
-    
-    with open(os.path.join(output_path, pdf_file.replace(".pdf", ".txt")), "w") as f:
-        f.write(fulltext)
-    
+    return fulltext, pages
+
+
+for pdf_file in os.listdir(pdf_path):
+    # if pdf_file != "Dissertation_Dejnega.pdf":
+    #     continue
+    LOGGER.info(f"processing pdf file {pdf_file}")
+    filtered_text = ""  
+    filepath = os.path.join(pdf_path, pdf_file)
+    images = convert_from_path(filepath, DPI, first_page=START_PAGE, last_page=END_PAGE)
+    try:
+        fulltext, processed_pages = process_pdf(filepath, images)
+        total_pages += processed_pages
+        with open(os.path.join(output_path, pdf_file.replace(".pdf", ".txt")), "w") as f:
+            f.write(fulltext)
+    except Exception as e:
+        LOGGER.exception(e.with_traceback())    
 
 end_time = time.time()
-print(f"Processing took {end_time-start_time} seconds, for {len(os.listdir(pdf_path))} PDF and {pages} Pages.")
+LOGGER.info(f"Processing took {end_time-start_time} seconds, for {len(os.listdir(pdf_path))} PDF and {total_pages} Pages.")

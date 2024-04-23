@@ -363,7 +363,7 @@ Operatoren und mathematische Symbole
 Vektor bestehend aus den Elementen 𝑎 𝑖
 Matrix bestehend aus den Matrixelementen 𝑎 𝑖𝑗
 komplexer Tensor der Stufe 𝑛 mit den Tensor-Elementen
-FOOTNOTE:𝑎 und dazugehörigen Multiindizes (𝑖 , 𝑖 , … , 𝑖 ) 𝑖1𝑖2…𝑖𝑛 1 2 𝑛
+𝑎 und dazugehörigen Multiindizes (𝑖 , 𝑖 , … , 𝑖 ) 𝑖1𝑖2…𝑖𝑛 1 2 𝑛
 𝑖-tes Element des Vektors 𝒂
 
 
@@ -450,7 +450,7 @@ Intervall ganzer Zahlen: {1,2, … ,𝑛}
 
 
 Oberflächenintegral einer Funktion 𝑓 über einer
-FOOTNOTE:zweidimensionalen Menge A ⊂ R3 mit skalarem
+zweidimensionalen Menge A ⊂ R3 mit skalarem
 Oberflächenelement d𝐴
 
 
@@ -1043,7 +1043,7 @@ Ein relativ einfaches, aber trotzdem genaues Kalibrierverfahren für die UE
 wurde in [Azz89a] vorgestellt. Ein möglichst idealer Polarisator wird vor dem
 PSD platziert und mittels einer Drehbühne gedreht. Die Drehwinkel wer-
 den dort als sehr genau vorausgesetzt (ca. 0,01∘). Durch Drehung des annä-
-FOOTNOTE:hernd idealen Polarisators kann bereits die Sub-Matrix (𝐀) über ei- [[1,4]]×[[1,3]]
+hernd idealen Polarisators kann bereits die Sub-Matrix (𝐀) über ei- [[1,4]]×[[1,3]]
 ne Fourier-Analyse präzise bestimmt werden, solange Intensitätsschwankun-
 gen des einfallenden Lichts herausgerechnet werden. Dazu wird ein Teil des
 einfallenden Lichts über eine Strahlteilerplatte unter einem kleinen Einfalls-
@@ -1114,14 +1114,14 @@ Polarisationseigenschaften gewöhnlicher Kugelreflektoren aus Glas gibt es
 bislang relativ wenig Publikationen. Das katadioptrische System aus [Sny75]
 wurde als polarisationserhaltend beschrieben, ohne eine genaue Begründung
 zu liefern. Aus Halbkugeln zusammengesetzte Makro-Reflektoren mit einem
-FOOTNOTE:Durchmesser von 40 − 100 mm wurden ebenfalls als polarisationserhal-
+Durchmesser von 40 − 100 mm wurden ebenfalls als polarisationserhal-
 tend beschrieben [Gol96]. Dort treffen die Lichtstrahlen unter annähernd
 senkrechtem Einfall auf der Kugeloberfläche auf, bevor sie zum Detektor
 zurück reflektiert werden. Daraus folgt die Polarisationserhaltung, da auf-
 treffendes Licht an isotropen Medien unter kleinen Einfallswinkeln eine
 vernachlässigbare Polarisationszustandsänderung erfährt. In [Li17b] wurde
 die Polarisationszustandsänderung einzelner paraxialer Lichtstrahlen bei
-FOOTNOTE:der Reflexion an einem Makro-Kugelreflektor (⌀ = 60 mm) mittels strah-
+der Reflexion an einem Makro-Kugelreflektor (⌀ = 60 mm) mittels strah-
 lenoptischer Simulation untersucht. Dabei wurden Maximalwerte für den
 Dichroismus und die Verzögerung ermittelt. Es lässt sich allerdings zeigen,
 dass diese Abschätzung von den geometrischen Randbedingungen abhängig

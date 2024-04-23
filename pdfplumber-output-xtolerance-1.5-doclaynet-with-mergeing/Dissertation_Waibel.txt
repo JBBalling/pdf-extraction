@@ -342,7 +342,7 @@ mals voneinander abhängen, so kann es hilfreich sein diese vor der eigentlichen
 Featureanalyse auf n < n unabhängige zu reduzieren. Durch die Hauptkompo- u f
 nentenanalyse [88] wird der Datensatz auf sogenannte Hauptkomponenten redu-
 ziert, sodass der Informationsgehalt, also die Varianz des ursprünglichen Datensat-
-FOOTNOTE:zes bestmöglich durch die wenigen Hauptkomponenten u , . . . , u approximiert 1 nu
+zes bestmöglich durch die wenigen Hauptkomponenten u , . . . , u approximiert 1 nu
 wird. Für den Fall, dass n = 1 gesetzt wird, so werden die originalen Featu- u
 res f j Rnf , j = 1, . . . , n T , die hier als Spaltenvektor interpretiert werden auf
 ∈ ut f R projiziert. Die Varianz der projizierten Daten wird durch ut Σu mit der
@@ -350,13 +350,12 @@ res f j Rnf , j = 1, . . . , n T , die hier als Spaltenvektor interpretiert werd
 Kovarianzmatrix
 
 
-FOOTNOTE:berechnet. Zusammen mit der Nebenbedingung ut u = 1, zeigt sich, dass die 1 1
-FOOTNOTE:projizierte Varianz maximiert wird, sobald Σu = λ u gilt. Die Varianz beträgt 1 1 1
-FOOTNOTE:dann ut Σu = λ 0. Das heißt, dass für eine Projektion mit maximalem Infor- 1 1 1
+berechnet. Zusammen mit der Nebenbedingung ut u = 1, zeigt sich, dass die 1 1
+projizierte Varianz maximiert wird, sobald Σu = λ u gilt. Die Varianz beträgt 1 1 1
+dann ut Σu = λ 0. Das heißt, dass für eine Projektion mit maximalem Infor- 1 1 1
 ≥ mationsgehalt die Hauptkomponente u dem Eigenvektor von Σ mit dem größten
-1
 Eigenwert entspricht. Falls n > 1 gewählt wird, so sind die Hauptkomponenten u
-FOOTNOTE:u , u . . . , u durch die Eigenvektoren von Σ korrespondierend zu den größten 1 2 nu
+u , u . . . , u durch die Eigenvektoren von Σ korrespondierend zu den größten 1 2 nu
 Eigenwerten λ λ . . . λ 0 gegeben. [13] 1 ≥ 2 ≥ ≥ nu ≥
 
 
@@ -366,7 +365,7 @@ tures abhängt. [97]
 
 
 Die Anzahl n wird beispielsweise so gewählt, dass die kumulierte erklärte Vari- u
-FOOTNOTE:anz (cid:80)nu λ / (cid:80)nf λ der n Hauptkomponenten einen vorgegebenen Anteil δ k=1 k k=1 k u u
+anz (cid:80)nu λ / (cid:80)nf λ der n Hauptkomponenten einen vorgegebenen Anteil δ k=1 k k=1 k u u
 übersteigt. [97]
 
 
@@ -401,11 +400,11 @@ ermittelt. Alternativ kann der Mittelwert durch das Inverse der Distanzen gewich
 tet werden. [35, 55]
 
 
-FOOTNOTE:Als Metrik werden unter anderem die euklidische d (x, y) = x y oder die 2
+Als Metrik werden unter anderem die euklidische d (x, y) = x y oder die 2
 (cid:107) − (cid:107)2 Mahalanobis Distanz [128]
 
 
-FOOTNOTE:mit Σ 1 als Inverses der Kovarianzmatrix verwendet. Die Mahalanobis Distanz −
+mit Σ 1 als Inverses der Kovarianzmatrix verwendet. Die Mahalanobis Distanz −
 berücksichtigt somit die unterschiedlichen Skalen der Features und deren Korre-
 lation. [13, 137, 191]
 
@@ -460,10 +459,10 @@ Entscheidungsregeln werden dann auf neue Testdaten angewandt.
 
 
 Für eine Regression kann die Impurity durch die mittlere quadratische Abwei-
-FOOTNOTE:chung (engl. Mean Squared Error (MSE)) I( ) = 1 (cid:80)nK (r r ) bestimmt
-FOOTNOTE:werden, wobei dem Knoten der Mittelwert rK = 1
+chung (engl. Mean Squared Error (MSE)) I( ) = 1 (cid:80)nK (r r ) bestimmt
+werden, wobei dem Knoten der Mittelwert rK = 1
 n
-FOOTNOTE:(cid:80)K nKj= r1 deµ r− darj in enthalte-
+(cid:80)K nKj= r1 deµ r− darj in enthalte-
 nen Regressionswerten zugewK iesen wird. [22]
 µ nK i=j j
 
@@ -489,13 +488,13 @@ und der Anwendung des natürlichen Logarithmus folgende Bayes-Regel für die
 Quadratische Diskriminanzanalyse (QDA)
 
 
-FOOTNOTE:mit einem Schwellwert ω . Dabei werden Σ und µ auf den Trainingsdaten er- 0 k k
+mit einem Schwellwert ω . Dabei werden Σ und µ auf den Trainingsdaten er- 0 k k
 mittelt. [32, 49]
 
 
-FOOTNOTE:Die Lineare Diskriminanzanalyse (LDA) resultiert aus der Annahme Σ = Σ = Σ, 0 1
-FOOTNOTE:wodurch sich Gleichung (1.12) auf l = 1 ωtf > ω reduziert, mit ω = i i 0
-FOOTNOTE:⇔ Σ 1 (µ µ ) und ω = 1ωt (µ + µ ) für P (l = 1) = P (l = 0). [49] − 0
+Die Lineare Diskriminanzanalyse (LDA) resultiert aus der Annahme Σ = Σ = Σ, 0 1
+wodurch sich Gleichung (1.12) auf l = 1 ωtf > ω reduziert, mit ω = i i 0
+⇔ Σ 1 (µ µ ) und ω = 1ωt (µ + µ ) für P (l = 1) = P (l = 0). [49] − 0
 −
 1 0 2 0 1 i i
 Die von Fisher [57] publizierte lineare Diskriminanzanalyse kommt ohne die Ein-
@@ -508,7 +507,7 @@ wendet, so hat dies keinen Einfluss auf die Klassifizierung. (Anhang A)
 Eine Regularisierung der linearen bzw. der Fisher Diskriminanzanalyse kann durch
 
 
-FOOTNOTE:realisiert werden, wobei (cid:0)Σ , Σ , . . . , Σ (cid:1)t die Diagonalelemente von Σ sind 1,1 2,2 nf,nf
+realisiert werden, wobei (cid:0)Σ , Σ , . . . , Σ (cid:1)t die Diagonalelemente von Σ sind 1,1 2,2 nf,nf
 und I die Einheitsmatrix ist. [61, 76, 181] nf
 
 
@@ -524,13 +523,13 @@ Minimierungsproblem L− L
 
 gelöst. Vektoren f , die (cid:96) (ωtf + ω ) = 1 erfüllen, werden Support Vektoren (SV) j j j 0
 genannt. Diese sind ausreichend, um die optimale Wahl von ω als Linearkombina-
-FOOTNOTE:tion ω = (cid:80)nT (cid:96) λ f = (cid:80) (cid:96) λ f mit λ 0 darzustellen, wobei λ > 0 nur für j=1 j j j SV j j j j
+tion ω = (cid:80)nT (cid:96) λ f = (cid:80) (cid:96) λ f mit λ 0 darzustellen, wobei λ > 0 nur für j=1 j j j SV j j j j
 ≥
 j
 SV gilt. Für neue Daten f ergibt sich dann das Label durch i
 
 
-FOOTNOTE:für einen SV f und f . [32, 195] 1(cid:48)j ∈ L1 −(cid:48) 1k ∈ L−1
+für einen SV f und f . [32, 195] 1(cid:48)j ∈ L1 −(cid:48) 1k ∈ L−1
 
 
 Diese linearen SVMs benötigen eine linear separierbare Trainingsmenge und liefern
@@ -544,7 +543,7 @@ werden Schlupfvariablen ξ 0, j = 1, . . . , n in das Problem aus Glei- j T ≥
 
 Abbildung 1.1: Entscheidungsebene H einer linearen SVM mit maximalem Ab-
 stand zwischen den linear separierbaren Klassen und sowie 1 1
-FOOTNOTE:den Support Vektoren f , f und f , f L− .L 1 1(cid:48)1 1(cid:48)2 ∈ L1 (cid:48) 11 (cid:48) 12 ∈ L−1
+den Support Vektoren f , f und f , f L− .L 1 1(cid:48)1 1(cid:48)2 ∈ L1 (cid:48) 11 (cid:48) 12 ∈ L−1
 
 
 chung (1.14) eingeführt, sodass folgendes Minimierungsproblem
@@ -558,11 +557,11 @@ Durch das Abbilden der nicht-linear separierbaren Inputs f j Rnf , j =
 ∈ 1, . . . , n in einen Raum Rm mithilfe einer passenden nicht-linearen Feature T
 Map Φ : Rnf Rm können linear separierbare Daten (Φ (f j) , (cid:96) j) erzeugt
 → werden. Die Nebenbedingung in Gleichung (1.14) entspricht in Rm somit
-FOOTNOTE:(cid:96) (ωtΦ (f ) + ω ) 1 und durch die Darstellung von ω als Linearkombina- j j 0
+(cid:96) (ωtΦ (f ) + ω ) 1 und durch die Darstellung von ω als Linearkombina- j j 0
 ≥ tion der Support Vektoren im Raum Rm ergibt sich
 
 
-FOOTNOTE:ωtΦ (f ) + ω = (cid:88) (cid:96) λ Φ (f )t Φ (f ) + ω = (cid:88) (cid:96) λ K (f , f ) + ω , (1.17) i 0 j j j i 0 j j j i 0
+ωtΦ (f ) + ω = (cid:88) (cid:96) λ Φ (f )t Φ (f ) + ω = (cid:88) (cid:96) λ K (f , f ) + ω , (1.17) i 0 j j j i 0 j j j i 0
 SV SV
 
 
@@ -575,8 +574,8 @@ und die Dimension des Bildraums m nicht bekannt sein, solange das inne-
 re Produkt des entsprechenden Raums bekannt ist. [34, 191] Beispielsweise
 (cid:16) (cid:17) erfüllen radiale Basisfunktionen
 K(x, y) = exp
-FOOTNOTE:−(cid:107)x σ−2y
-FOOTNOTE:(cid:107) oder Polynome
+−(cid:107)x σ−2y
+(cid:107) oder Polynome
 K(x, y) = (xty + 1)q , q > 0 den Satz von Mercer. [32, 195]
 
 
@@ -585,11 +584,11 @@ Im Falle einer Regression werden die Daten (f , r ) , j = 1, . . . , n , f Rn, r
 j
 ∈ durch eine lineare Funktion h(f) = ωtΦ (f) + ω im Raum Rm approximiert. Vap- 0
 nik [195] bestimmt dabei die optimalen Parameter ω und ω , indem das Funk- 0
-FOOTNOTE:tional 1 ω 2 + (cid:80)nT E (f , r ) mit einer ε-insensitiven Loss-Funktion E (f, r) = 2
-FOOTNOTE:(cid:107) (cid:107) j=1
+tional 1 ω 2 + (cid:80)nT E (f , r ) mit einer ε-insensitiven Loss-Funktion E (f, r) = 2
+(cid:107) (cid:107) j=1
 ε j j ε
 1 ( h(f) r > ε) h(f) r ε minimiert wird. Es wird gezeigt, dass die optimale
-FOOTNOTE:Lös| ung d− er| Form| h(f ,− λ, λ| − ) = (cid:80)nT (cid:0) λ λ (cid:1) K (f , f ) + ω entspricht, wobei i ∗ j=1 ∗j
+Lös| ung d− er| Form| h(f ,− λ, λ| − ) = (cid:80)nT (cid:0) λ λ (cid:1) K (f , f ) + ω entspricht, wobei i ∗ j=1 ∗j
 −
 j j i 0
 λ und λ Lösungen eines quadratischen Optimierungsproblems sind und K eine ∗
@@ -608,7 +607,7 @@ Speicherbedarfs.
 Multilayer Perzeptron Rosenblatt [162, 163] beschreibt ein Perzeptron, das li-
 near separierbare Daten trennen kann. Der Input f i Rnf der Instanz i wird
 ∈ der Klasse l 0, 1 zuweisen, indem eine lineare Trennebene zur Klassifikation i
-FOOTNOTE:∈ { } benutzt wird. Das Label wird also durch l (f , ω) = 1 (ωtf + ω > 0) 0, 1 i i i 0
+∈ { } benutzt wird. Das Label wird also durch l (f , ω) = 1 (ωtf + ω > 0) 0, 1 i i i 0
 ∈ { } berechnet. Wird zur Bestimmung des Outputs
 
 
@@ -699,7 +698,7 @@ iii) Mini-Batch:
 
 Aus dem Trainingsdatensatz werden n Elemente zu Mini-Batches zusam- b
 mengefasst und die Parameter werden durch ∆ω(τ) = ν (cid:80)nb ∆ω(τ) ak-
-FOOTNOTE:− j=1 j tualisiert. Dieser Ansatz aktualisiert die Gewichte seltener als das Online
+− j=1 j tualisiert. Dieser Ansatz aktualisiert die Gewichte seltener als das Online
 Training und die Anzahl der Updates kann unabhängig von der Trainings-
 größe gestaltet werden. [71]
 
@@ -960,7 +959,7 @@ eine einzelne Metrik, wie Genauigkeit, F oder MCC notwendig. 2
 Für den Fall eines schiefen Datensatzes ergibt die Klassifikation aller Instanzen
 mit der mehrheitlich vorkommenden Klasse bereits eine hohe Genauigkeit, ob-
 wohl die Güte des Klassifikators schlecht ist. Wenn die Codierung der Klassen
-FOOTNOTE:getauscht wird, schwankt der F Wert, denn dieser ist unabhängig von der Anzahl 2
+getauscht wird, schwankt der F Wert, denn dieser ist unabhängig von der Anzahl 2
 der TN Instanzen. Der MCC berücksichtigt dagegen alle Fälle des Klassifizie-
 rungsproblems, ist invariant unter der Codierung der Klassen und ist für schiefe
 Datensätze geeignet. [29, 30, 189]
@@ -1047,7 +1046,7 @@ Computer Aided Design (CAD) Applikation namens Engineering Client. Abbil-
 dung 1.5 veranschaulicht, wie Experten korrosionskritische Konstruktionen (Ab-
 schnitt 1.3.1.2), wie Kanten (orange) und Flansche (rote Box) mithilfe dieses Tools
 visuell ermitteln. Die Geometriedaten sind so aus dem Engineering Client auszule-
-FOOTNOTE:sen, dass diese in eine programmierbare Umgebung, wie beispielsweise Matlab R , (cid:13)
+sen, dass diese in eine programmierbare Umgebung, wie beispielsweise Matlab R , (cid:13)
 importiert und analysiert werden können.
 
 

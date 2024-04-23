@@ -321,7 +321,7 @@ durchgeführt.
 
 
 1.8.1.1 Transorale mikrolaryngoskopische CO2-Laserresektion
-FOOTNOTE:So wie bei den Larynxkarzinomen hat sich die transorale mikrolaryngoskopische CO - 2
+So wie bei den Larynxkarzinomen hat sich die transorale mikrolaryngoskopische CO - 2
 Laserchirurgie in der organerhaltenden Therapie kleinerer und mittlerer Hypopharynx-
 karzinome durchgesetzt [1][82]. Die Voraussetzung für eine sichere Tumorresektion ist
 dabei die optimale Exposition des Kehlkopfes und des Sinus piriformis. Günstig sind

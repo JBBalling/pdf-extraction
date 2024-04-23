@@ -265,7 +265,6 @@ merkmale, Merkmale der Sakralwirbel aber auch Palatinum- und Zahnmerkmale) gut v
 anderen afrikanischen Kleinsäugern abgrenzen und begründen (Novacek, 1984). Der außer-
 gewöhnlich komplexe Aufbau ihrer knöchernen Gehörkapsel (im Besonderen bei Macrosceli-
 des proboscideus) gehört ebenso dazu, wie das weit dorsal der Kauebene der Molaren liegen-
-4
 
 
 de Kiefergelenk. Außerdem verweisen Westheide und Rieger (2004) auf die große Orbita oh-
@@ -477,7 +476,6 @@ dieser Methoden auf andere Wirbeltiere ist bisher jedoch ebenso wenig verbreitet
 Kombination herkömmlicher histologischer Arbeitsverfahren mit moderner Computertechnik
 zur Erstellung und Bearbeitung dreidimensionaler Modelle. Bisher wurden die Vorteile der
 Computertechnologie und die damit verbundene Möglichkeit ein zu untersuchendes Objekt
-11
 
 
 aus den vorliegenden Schnittserien zu rekonstruieren, für die biologische Forschung an
@@ -565,7 +563,7 @@ Macroscelides proboscideus
 Elephantulus rupestris
 
 
-FOOTNOTE:(1) ZMB: vormals: Zoologisches Museum Berlin, heute: Museum für Naturkunde der Humboldt Universität zu
+(1) ZMB: vormals: Zoologisches Museum Berlin, heute: Museum für Naturkunde der Humboldt Universität zu
 Berlin; Z19 und Z6 stammen aus der Zucht von Prof. Zeller
 
 
@@ -792,7 +790,6 @@ Cartilago cupularis (Abb. 5c) wölbt sich kugelförmig nach dorsal. Damit ist si
 duum (Nr. 1) sichtbar. Zwischen den beiden Lamellen der Cartilagines cupulares befindet sich
 eine schmale Area internarina (Abb. 6b), die diese voneinander trennt. Das ist bereits am
 Embryo Nr. 1 zu erkennen und verstärkt sich bei allen älteren Stadien. Nur bei einem Tier (Nr.
-22
 
 
 3) wurde im Bereich der Verwachsungszone der beiden Cartilagines cupulares eine laterale
@@ -1277,7 +1274,6 @@ Erst relativ spät in der Ontogenese expandiert die Bulla vollständig. Während
 Embryonen ihre Größe vergleichbar mit der anderer Arten ist, zeigt sich bei einem zwei Tage
 alten Tier (Nr. 3) eine starke Vergrößerung. Ihre Expansion ergibt sich unter anderem durch
 ein im Vergleich mit gleichaltrigen Stadien anderer Taxa größeres Alisphenoid. Bei Macrosce-
-34
 
 
 lides proboscideus beteiligt sich das caudale Entotympanicum besonders stark an der Vergrö-

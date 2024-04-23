@@ -263,7 +263,7 @@ Portugiesischen, Deutschen und Japanischen. Es wird zudem die Hypothese aufgeste
 jede Sprache und ihr jeweiliger Kulturraum seiner eigenen sprachlichen, visuellen und diskursiven
 
 
-FOOTNOTE:Mustern bedient, auch wenn theoretisch das Ziel der analysierten Texte 1 dasselbe ist. Die
+Mustern bedient, auch wenn theoretisch das Ziel der analysierten Texte 1 dasselbe ist. Die
 sprachliche und visuelle Konstruktion des Diskurses kann in verschiedenen Kulturen
 unterschiedlich sein. Das kann sich in der Verwendung und Häufigkeit von Passivsätzen,
 Modalitäten, bestimmten Wörtern und Nominalisierungen, in der Betrachtung des Themas, in den
@@ -400,7 +400,7 @@ werden noch Zahlen in offiziellen Dokumenten mit Kanji geschrieben (vgl. ebd.: v
 
 
 In Bezug auf die Umschrift des Japanischen ins lateinische Schriftzeichen (Romanisierung)
-FOOTNOTE:liegen einige Transkriptionssysteme vor, von welchen das Hepburn-System 3 am häufigsten
+liegen einige Transkriptionssysteme vor, von welchen das Hepburn-System 3 am häufigsten
 angewandt wird. Dieses System wird in der vorliegenden Dissertation angewandt, mit den von
 Sakade (2014: ix) empfohlenen Anpassungen.
 
@@ -911,7 +911,7 @@ Materialität wird in dieser Dissertation im Kapitel 4 (Beschreibung des Korpus 
 durchgeführt, während die Text-Bild-Beziehungen in der Bildanalyse betrachtet werden.
 
 
-FOOTNOTE:sind, beispielsweise ‚Ideologie‘, zeigt einen absichtlichen Versuch der Sprechenden 9 ein
+sind, beispielsweise ‚Ideologie‘, zeigt einen absichtlichen Versuch der Sprechenden 9 ein
 problematisches gesellschaftliches Feld zu betreten (vgl. ebd.: 132). Ebenso funktionieren
 bestimmte Wörter mit bestimmten festen Attributen oder eingebettet in einer bestimmten
 Kombination (Kollokationen). Diese Kollokationen legitimieren eine Realität, indem sie eine

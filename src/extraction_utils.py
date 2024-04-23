@@ -6,9 +6,10 @@ from collections import Counter
 digit_pattern = re.compile(r"\d+")
 only_digit_pattern = re.compile(r"^\d+$")
 footnote_pattern = re.compile(r"^([a-zA-ZßöüäÖÄÜ.,;:?!\"\'“]){2,}[0-9]+$")
+start_digit_pattern = re.compile(r"^(\d+|[\u2074-\u2079]|\u00B9|\u00B2|\u00B3).*") # matches any digits and also ¹,²,³ ...
+page_num_pattern = re.compile(r"(\n\d+\n)")
 
-
-def common_error_replacements(word: str) -> str:
+def common_error_replacements(text_block: str) -> str:
     common_errors = {
         "o¨": "ö",
         "a¨": "ä",
@@ -37,9 +38,11 @@ def common_error_replacements(word: str) -> str:
         
     }
     for k, v in common_errors.items():
-        word = word.replace(k, v)
+        text_block = text_block.replace(k, v)
 
-    return word
+    if page_num_pattern.search(text_block):
+        text_block = page_num_pattern.sub("\n", text_block)
+    return text_block
 
 def group(l: List, group_range: int, sorting_index: int) -> List:
     """Groups vertical and horizontal lines by specific group range. This is needed to combine several lines into one line.
@@ -131,11 +134,12 @@ def mark_superscript(word: str, marker: str) -> str:
     else:
         return word
 
-def mark_footnote_start(line: str) -> str:
-    line[0]["text"] = f"FOOTNOTE:{line[0]['text']}"
+def mark_footnote_start(line: List) -> List:
+    if isinstance(line, list) and start_digit_pattern.search(line[0]["text"]): # reduce FP by only annotating footnotes starting with numbers
+        line[0]["text"] = f"FOOTNOTE:{line[0]['text']}"
     # line[-1]["text"] = f"{line[-1]['text']}FOOTNOTEEND"
     return line
 
-def mark_footnote_end(line: str) -> str:
+def mark_footnote_end(line: List) -> List:
     line[-1]["text"] = f"{line[-1]['text']}FOOTNOTEEND"
     return line

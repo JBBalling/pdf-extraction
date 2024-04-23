@@ -712,7 +712,7 @@ Ein Endlicher Zustandsautomat¹ besteht aus
 Ein Endlicher Zustandsautomat beginnt zunächst in dem Anfangszustand 𝑠 . 0
 Bei jedem, in der Regel von außen eingehenden, Ereignis 𝑒 ∈ Σ wechselt er 𝑖
 in einen neuen Zustand 𝑠 = 𝛿(𝑠 , 𝑒 ). Dabei kann der neue Zustand auch 𝑖+1 𝑖 𝑖
-FOOTNOTE:als derselbe Zustand 𝑠 = 𝑠 festgelegt sein. Nach jedem Zustandswechsel 𝑖+1 𝑖
+als derselbe Zustand 𝑠 = 𝑠 festgelegt sein. Nach jedem Zustandswechsel 𝑖+1 𝑖
 in einen Zustand 𝑠 gibt der Zustandsautomat die Ausgabe 𝑎 = 𝜆(𝑠 ) aus. Ein- 𝑖 𝑖 𝑖
 zelne Zustände können in Erweiterungen wie den Hierarchischen Zustands-
 automaten wiederum selbst Zustandsautomaten sein oder auch nebenläufige
@@ -779,7 +779,7 @@ schreibung von Klassifikationsregeln entworfen [Mor82, Qui90]. Formal wer-
 den sie als gerichtete geordnete Bäume formuliert. Die Knoten bilden da-
 bei Bedingungen in Form diskreter oder gar boolescher Entscheidungsva-
 riablen 𝑥 ab, während die Blätter die daraus resultierenden Entscheidungen 𝑖
-FOOTNOTE:𝑓(𝑥 , … ,𝑥 ) repräsentieren. Die Auswertung beginnt am Wurzelknoten und 1 𝑛
+𝑓(𝑥 , … ,𝑥 ) repräsentieren. Die Auswertung beginnt am Wurzelknoten und 1 𝑛
 wird, je nach Wert seiner Entscheidungsvariable 𝑥 = 𝑘 am 𝑘-ten Kindkno- 𝑖
 ten, rekursiv fortgesetzt bis ein Blatt erreicht wird und somit die Entscheidung
 feststeht.
@@ -1039,7 +1039,7 @@ gung, wenn seine erste Option 𝑜 eine wahre Start-Bedingung hat: 1
 Die Fortsetzungs-Bedingung eines Arbitrators zeigt wie bei den Verhaltens-
 bausteinen an, ob er in der aktuellen Situation fortgesetzt werden kann. Bei
 den meisten Arbitratoren trifft dies bereits dann zu, wenn eine ihrer Optio-
-FOOTNOTE:nen 𝒪 eine wahre Start-Bedingung hat oder die letzte Intention 𝜃 fortge- 𝑘−1
+nen 𝒪 eine wahre Start-Bedingung hat oder die letzte Intention 𝜃 fortge- 𝑘−1
 setzt werden kann. Dies trifft für den Prioritäts, Abschluss und Zufalls-Ar-
 bitrator zu:
 

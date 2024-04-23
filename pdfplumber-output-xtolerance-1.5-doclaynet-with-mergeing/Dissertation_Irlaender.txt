@@ -289,7 +289,7 @@ Spinbad zu modellieren. Allgemein ist die Energie dieser Wechselwirkung definier
 Dabei gilt
 
 
-FOOTNOTE:mit der magnetischen Feldkonstante µ sowie den gyromagnetischen Verhältnissen g µ 0 i i
+mit der magnetischen Feldkonstante µ sowie den gyromagnetischen Verhältnissen g µ 0 i i
 und g µ für die beiden an der Wechselwirkung beteiligten Spins. Die gyromagnetischen j j
 Verhältnisse werden jedoch nicht spezifiziert; in dieser Arbeit wird A in den auftre- ij
 tenden Dipol-Dipol-Wechselwirkungstermen lediglich als variabler Parameter für die
@@ -339,7 +339,7 @@ in z-Richtung können als Speicherzustände analog zu einem klassischen Bit auf 
 
 
 Festplatte dienen und sind durch die Energiebarriere energetisch voneinander isoliert.
-FOOTNOTE:Seit der Entdeckung dieses Verhaltens in Mn -Azetat [17–23] wird dies als vielverspre- 12
+Seit der Entdeckung dieses Verhaltens in Mn -Azetat [17–23] wird dies als vielverspre- 12
 chende Möglichkeit zur Entwicklung von ressourcen- und platzsparenden magnetischen
 Speichern gehandelt.
 
@@ -423,7 +423,7 @@ Die magnetischen Momente MB unter dem Einfluss eines B-Feldes in z-Richtung für
 einen Energieeigenzustand ν mit Energie E können berechnet werden mit ν | (cid:105)
 
 
-FOOTNOTE:wobei (m + m + m ) die Summe der magnetischen Quantenzahlen bezüglich des 1 2 3 k
+wobei (m + m + m ) die Summe der magnetischen Quantenzahlen bezüglich des 1 2 3 k
 κ-ten Basisvektors der Produktbasis ist.
 
 
@@ -575,7 +575,7 @@ die lineare Änderung eines zeitabhängigen Parameters q, im oben geschilderten 
 B . Außerdem ist z
 
 
-FOOTNOTE:die Differenz der S -Erwartungswerte von Ψ und Ψ weit entfernt von B . Wei- z 1 2 0
+die Differenz der S -Erwartungswerte von Ψ und Ψ weit entfernt von B . Wei- z 1 2 0
 | (cid:105) | (cid:105)
 terhin entspricht a der halben Breite der Energielücke, es gilt also a = E /2 bei G
 B = B . 0
@@ -620,7 +620,7 @@ sotropieachsen beobachtet werden kann. Dabei kommt es nicht darauf an, ob Ψ 1
 oder Ψ als Startzustand gewählt wird; beide befinden sich zu Anfang und während 2
 | (cid:105)
 der gesamten Zeitentwicklung in ihren phononischen Grundzuständen, d.h. es gilt stets
-FOOTNOTE:n = 0, n = 0, n = 0 . Für das Magnetisierungstunneln ist also streng genommen 1 2 3
+n = 0, n = 0, n = 0 . Für das Magnetisierungstunneln ist also streng genommen 1 2 3
 | (cid:105)
 nicht einmal die Anwesenheit eines oder mehrerer Phononen vonnöten, sondern es
 genügt bereits die Nullpunktsschwingung der harmonischen Oszillatoren und damit
@@ -788,7 +788,7 @@ Spinbad. In Abb. 4.2 ist das System dargestellt.
 
 
 Abb. 4.2: System aus einem Spin-Dreieck aus drei Spins mit s = 1 in rot mit einer Heisenberg-
-FOOTNOTE:Kopplung (blau) und Anisotropieachsen geneigt um θ = θ = θ = θ (hier: θ = 50.4◦) in gelb 1 2 3
+Kopplung (blau) und Anisotropieachsen geneigt um θ = θ = θ = θ (hier: θ = 50.4◦) in gelb 1 2 3
 mit einer variablen Anzahl von Badspins n lokalisiert auf der Oberfläche einer Kugel mit B
 Radius d um den Koordinatenursprung. Zwischen den Badspins und dem Spin-Dreieck bestehen
 zusätzlich Dipol-Dipol-Wechselwirkungen, ebenso wie zwischen den Badspins untereinander
@@ -1077,7 +1077,7 @@ Amplituden chaotisch oszilliert.
 
 
 Um die Ergebnisse der Dekohärenzrechnungen übersichtlicher darstellen zu können,
-FOOTNOTE:wird mit T aus den so gewonnenen Daten eine einzelne Kennzahl für jeden Deko- 0.49
+wird mit T aus den so gewonnenen Daten eine einzelne Kennzahl für jeden Deko- 0.49
 härenzverlauf bestimmt. Diese Kennzahl ist definiert als die Zeit, die es braucht, bis
 der Absolutwert des Nebendiagonalelements ρ das erste Mal unter den mehr oder n,p
 | |
@@ -1154,7 +1154,7 @@ und Nachvollziehbarkeit sinnvoll, diese sequentiell zu betrachten.
 
 Es ist bereits gut untersucht, dass die clock transition-Eigenschaft einer Superposition
 entscheidend für eine lange Kohärenzzeit ist, siehe Kap. 4.4. Zur genaueren Betrachtung
-FOOTNOTE:dieses Zusammenhangs ist in Abb. 4.10 T gegen den Absolutwert der Differenz der 0.49
+dieses Zusammenhangs ist in Abb. 4.10 T gegen den Absolutwert der Differenz der 0.49
 magnetischen Momente (siehe Gl. (4.7)) der in der Superposition enthaltenen Eigenzu-
 stände aufgetragen. Tatsächlich stellen alle Superpositionen mit langen Kohärenzzeiten
 clock transitions dar, jedoch ist dies keine hinreichende Bedingung, wie auf der rechten
@@ -1195,8 +1195,8 @@ haben könnte, ist die Größe der Energielücke zwischen den beiden Zuständen,
 ∆E = E E . Das Argument für eine Korrelation von ∆E und der Kohärenzzeit ist p m
 −
 denkbar einfach: Vergrößert man J und D und lässt die System-Bad-Kopplungsstärke
-FOOTNOTE:A konstant, so werden alle Energieabstände im System, also auch ∆E, größer, während 1
-FOOTNOTE:gleichzeitig A effektiv im Verhältnis kleiner wird. Eine solche Reduktion von A , welche 1 1
+A konstant, so werden alle Energieabstände im System, also auch ∆E, größer, während 1
+gleichzeitig A effektiv im Verhältnis kleiner wird. Eine solche Reduktion von A , welche 1 1
 in Kap. 4.8.1 besprochen wird und einer schwächeren Ankopplung des Bades entspricht,
 hat einen signifikanten positiven Einfluss auf die Kohärenzzeit, was auch intuitiv klar
 ist.
@@ -1204,7 +1204,7 @@ ist.
 
 Zudem kann die Heuristik herangezogen werden, dass die Energieniveaus des Systems
 ohne Bad durch die Ankopplung des Bades sozusagen ausgeschmiert“ werden. Dieses ”
-FOOTNOTE:Ausschmieren wird stärker, je größer A gewählt wird, wodurch verschiedene Eigenzu- 1
+Ausschmieren wird stärker, je größer A gewählt wird, wodurch verschiedene Eigenzu- 1
 stände des Systems durch Ankopplung des Bades energetisch miteinander verbunden
 werden können, was eine Verschränkung der Zustände und somit Dekohärenz begünstigt.
 

@@ -776,7 +776,7 @@ mit einem Filter F kann, beispielsweise für ein zweidimensionales Eingabesignal
 etwa ein Grauwertbild, beschrieben werden als:
 
 
-FOOTNOTE:Hierbei entsprechen (x , x ) den Koordinaten im Eingabesignal und (x0 , x0 ) den Fil- 1 2 1 2
+Hierbei entsprechen (x , x ) den Koordinaten im Eingabesignal und (x0 , x0 ) den Fil- 1 2 1 2
 terkoordinaten. Das Konzept der Faltungsoperation kann als neuronale Schicht in ein
 künstliches neuronales Netzwerk integriert werden, indem ein Filter als Gewichtsmatrix
 formuliert wird. Auf ein beispielsweise zweidimensionales Eingabesignal I der Dimensio-
@@ -1066,7 +1066,7 @@ metervektor Θ∗ gehalten. A,i
 
 Abbildung 2.6: Konzeptionelle Skizze der elastischen Gewichtskonsolidierung
 (EWC) für einen beispielhaften zweidimensionalen Parame-
-FOOTNOTE:tervektor Θ = (θ , θ )T . Für zwei Aufgaben A, B liegen die 1 2
+tervektor Θ = (θ , θ )T . Für zwei Aufgaben A, B liegen die 1 2
 jeweils optimalen Parametervektoren Θ∗ , Θ∗ im Minimum A B
 der jeweiligen Fehlerregion der Aufgabe (A blau, B rot). Ein
 einfaches Neutrainieren eines für Aufgabe A konditionierten
@@ -1090,11 +1090,11 @@ neuronalen Gewichtskonsolidierung, namentlich der inkrementellen Momentabgleichu
 (E: Incremental Moment Matching, IMM), wird die Bedeutsamkeit der Korrelationen in
 der a-posteriori-Verteilung modelliert [25]. Zur Modellierung der a-posteriori Korrelations-
 wahrscheinlichkeiten kann eine Gaußverteilung q angenommen werden. Für eine Sequenz
-FOOTNOTE:von K Aufgaben mit den Datensätzen (x , y ) kann die wahre A-posteriori-Verteilung 1:K 1:k
+von K Aufgaben mit den Datensätzen (x , y ) kann die wahre A-posteriori-Verteilung 1:K 1:k
 p inkrementell über die Aufgaben k ∈ K approximiert werden: k
 
 
-FOOTNOTE:Zu ermitteln ist der optimale Mittelwertvektor µ∗ : K und die optimale Kovarianzma- 1
+Zu ermitteln ist der optimale Mittelwertvektor µ∗ : K und die optimale Kovarianzma- 1
 trix Σ∗ der Verteilung q. Die Dimensionalität des Vektors µ und der Matrix Σ ergibt 1:K
 sich aus der Parameteranzahl des künstlichen neuronalen Netzwerks. Die Ermittlung
 von µ und Σ kann auf verschiedene Weisen realisiert werden, was zu unterschiedli- k k
@@ -1257,7 +1257,7 @@ von Farbbildern, werden zunächst mit einem Variational Autoencoder (VAE) in ein
 te Variable z überführt [170, 59, 62]. Das Weltmodell M besteht aus einem rekurrenten
 neuronalen Netzwerk mit versteckten Aktivierungen h , welches ausgehend von einer Ak- t
 tion a und einem latenten Zustand z versucht, den Folgezustand vorherzusagen. Anstelle t
-FOOTNOTE:eines einzigen Folgezustandes wird eine Wahrscheinlichkeitsverteilung P (z |z , a , h ) t+1 t t t
+eines einzigen Folgezustandes wird eine Wahrscheinlichkeitsverteilung P (z |z , a , h ) t+1 t t t
 als Mischung von Gaußverteilungen mit Hilfe von Mixture Density Networks (MDN)
 modelliert [171]. Das Transferlernen geschieht, indem ein kleines Netzwerk auf dem
 Weltmodell (VAE+MDN) aufbaut, um das dort enthaltene Wissen für das Lernen einer
@@ -1509,7 +1509,7 @@ Wahrscheinlichkeitsverteilung p
 Vertrauensfaktor α
 
 
-FOOTNOTE:i ← i + 1 mod |M
+i ← i + 1 mod |M
 
 
 M[i] ← [s , s , a, r, e] t t+1
@@ -1531,7 +1531,7 @@ procedure Prioritäten aktualisieren(Zeitdifferenzfehler δ)
 Prioritätsvektor P
 
 
-FOOTNOTE:Kleinstmöglicher Wert (cid:15) > 0
+Kleinstmöglicher Wert (cid:15) > 0
 
 
 for d ∈ δ do: i
@@ -1956,7 +1956,7 @@ rungsverfahren wird AdaGrad, wie von [115] beschrieben, genutzt, um als synaptis
 Gewichtungsaktualisierungsregel zu einem optimalen Parametervektor zu finden.
 
 
-FOOTNOTE:Für jede aufgezeichnete Handlung im Erinnerungsspeicher ist der Anfangszustand s , 1
+Für jede aufgezeichnete Handlung im Erinnerungsspeicher ist der Anfangszustand s , 1
 die gewählte Aktion a, der Folgezustand s , die erreichte Belohnung r und eine Variable 2
 e bekannt, welche angibt, ob die Aktion in einem geschlossenen Handel endet. Dies
 wäre beispielsweise nicht der Fall, wenn die Episode der Simulation endet, bevor die ent-
