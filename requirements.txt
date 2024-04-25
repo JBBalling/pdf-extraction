@@ -16,7 +16,7 @@ contourpy==1.1.1
 cryptography==42.0.5
 cycler==0.12.1
 decorator==5.1.1
-detectron2==0.6+cu113
+# detectron2==0.6+cu113
 executing==2.0.1
 fire==0.6.0
 fonttools==4.51.0
