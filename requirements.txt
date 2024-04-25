@@ -93,9 +93,9 @@ termcolor==2.4.0
 terminaltables==3.1.10
 thop==0.1.1.post2209072238
 toml==0.10.2
-torch==1.10.1+cu111
-torchaudio==0.10.1+cu111
-torchvision==0.11.2+cu111
+torch==1.10.1
+torchaudio==0.10.1
+torchvision==0.11.2
 tqdm==4.66.2
 traitlets==5.14.2
 typing_extensions==4.11.0
