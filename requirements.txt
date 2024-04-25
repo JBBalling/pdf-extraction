@@ -106,3 +106,4 @@ Werkzeug==3.0.2
 yacs==0.1.8
 yolov5==6.2.2
 zipp==3.18.1
+setuptools>=65.5.1
