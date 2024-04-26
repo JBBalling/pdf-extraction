@@ -183,8 +183,8 @@ def process_pdf(filepath: str, images: List) -> str:
     fulltext = ""
     # category = [3, 7, 9, 10]
     pdf_doc = pdfplumber.open(filepath)
-    pdf_fontsize_statistics = get_pdf_fontsize_statistic(pdf_doc, 20)
-    footnote_text_diff = pdf_fontsize_statistics[0][0] - pdf_fontsize_statistics[1][0]
+    # pdf_fontsize_statistics = get_pdf_fontsize_statistic(pdf_doc, 20)
+    # footnote_text_diff = pdf_fontsize_statistics[0][0] - pdf_fontsize_statistics[1][0]
     layout_detector = load_model(Config(), True, False, True, DEVICE, Config.CONF, CLASS_PRIORITIES, Config.IOU)
     detections = get_results(layout_detector, images)
     filtered_detections = deduplicate_detections(detections, images)
